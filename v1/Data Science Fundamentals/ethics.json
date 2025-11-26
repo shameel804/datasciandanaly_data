@@ -1,2104 +1,2813 @@
 [
-  {
-    "q": "Which law is widely regarded as the world's strictest data privacy regulation?",
-    "type": "mcq",
-    "o": [
-      "GDPR",
-      "CCPA",
-      "HIPAA",
-      "PIPEDA"
-    ]
-  },
-  {
-    "q": "What does the acronym 'GDPR' stand for?",
-    "type": "fill_blank",
-    "answers": ["General Data Protection Regulation"],
-    "other_options": ["Global Data Privacy Rule", "General Digital Protection Regulation", "Government Data Protection Regulation"]
-  },
-  {
-    "q": "Which of the following is NOT a core principle of data ethics?",
-    "type": "mcq",
-    "o": [
-      "Maximizing profit at all costs",
-      "Fairness",
-      "Transparency",
-      "Accountability"
-    ]
-  },
-  {
-    "q": "Informed consent means that individuals must be ______ about how their data will be used before giving permission.",
-    "type": "fill_blank",
-    "answers": ["fully informed"],
-    "other_options": ["paid", "registered", "notified later"]
-  },
-  {
-    "q": "Bias in AI models most commonly enters through:",
-    "type": "mcq",
-    "o": [
-      "Biased or unrepresentative training data",
-      "Using too many features",
-      "Choosing the wrong optimizer",
-      "Having too much computational power"
-    ]
-  },
-  {
-    "q": "Match the term with its correct description:",
-    "type": "match",
-    "left": ["Anonymization", "Pseudonymization", "De-identification", "Data minimization"],
-    "right": ["Removing or altering data so a person cannot be re-identified", "Replacing identifying fields with artificial identifiers", "General term for removing direct identifiers", "Collecting only the data that is strictly necessary"]
-  },
-  {
-    "q": "Transparency in AI means that users should be able to understand how and why a model made a particular decision.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which of the following is an example of algorithmic bias?",
-    "type": "mcq",
-    "o": [
-      "A facial recognition system that performs significantly worse on darker skin tones",
-      "A model that runs slowly on old computers",
-      "A recommendation system that suggests popular items",
-      "A classifier with 99% accuracy on the test set"
-    ]
-  },
-  {
-    "q": "Accountability in data science means that organizations and individuals can be held responsible for:",
-    "type": "mcq",
-    "o": [
-      "The consequences of their data practices and AI systems",
-      "Only the financial cost of data storage",
-      "The speed of model training",
-      "The choice of programming language"
-    ]
-  },
-  {
-    "q": "Under GDPR, individuals have the 'Right to be Forgotten'. This is also known as the right to:",
-    "type": "mcq",
-    "o": [
-      "Erasure",
-      "Portability",
-      "Access",
-      "Rectification"
-    ]
-  },
-  {
-    "q": "Data minimization is the principle that you should collect ______ data than is strictly necessary for the purpose.",
-    "type": "fill_blank",
-    "answers": ["no more"],
-    "other_options": ["as much", "less", "only public"]
-  },
-  {
-    "q": "Rearranged the words to form a common ethical guideline in data science:",
-    "type": "rearrange",
-    "words": ["Do", "no", "harm"]
-  },
-  {
-    "q": "It is ethically acceptable to use personal data collected for one purpose (e.g., improving a product) for a completely different purpose (e.g., targeted advertising) without explicit additional consent.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Which of the following helps improve transparency in machine learning models?",
-    "type": "mcq",
-    "o": [
-      "Using explainable AI (XAI) techniques such as SHAP or LIME",
-      "Encrypting the model weights",
-      "Deploying the model only internally",
-      "Reducing the number of training epochs"
-    ]
-  },
-  {
-    "q": "The CCPA applies only to companies operating in which location?",
-    "type": "mcq",
-    "o": [
-      "California",
-      "Canada",
-      "European Union",
-      "China"
-    ]
-  },
-  {
-    "q": "Which data privacy law grants California residents the right to opt-out of the sale of their personal information?",
-    "type": "mcq",
-    "o": [
-      "CCPA/CPRA",
-      "LGPD",
-      "PDPA",
-      "APPI"
-    ]
-  },
-  {
-    "q": "The principle of 'purpose limitation' states that personal data should be collected for specified, explicit and ______ purposes.",
-    "type": "fill_blank",
-    "answers": ["legitimate"],
-    "other_options": ["profitable", "future", "research"]
-  },
-  {
-    "q": "Match the privacy technique with its primary goal:",
-    "type": "match",
-    "left": ["Differential Privacy", "k-Anonymity", "l-Diversity", "t-Closeness"],
-    "right": ["Adds statistical noise to protect individuals", "Ensures each record is indistinguishable from at least k-1 others", "Protects against attribute disclosure", "Preserves the distribution of sensitive attributes"]
-  },
-  {
-    "q": "Re-identification attacks are possible even on anonymized datasets when combined with auxiliary information.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which of the following is considered a 'sensitive personal data' category under GDPR?",
-    "type": "mcq",
-    "o": [
-      "Ethnic origin, political opinions, religious beliefs, biometric data",
-      "IP address and cookies",
-      "Purchase history",
-      "Device type"
-    ]
-  },
-  {
-    "q": "Fairness through unawareness (removing protected attributes like race/gender from training data) is sufficient to eliminate bias in AI models.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Rearrange these words to form a key ethical principle in responsible AI development:",
-    "type": "rearrange",
-    "words": ["First", "do", "no", "harm", "is", "but", "not", "enough"]
-  },
-  {
-    "q": "In the context of AI ethics, 'explainability' and 'interpretability' mean exactly the same thing.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "A Data Protection Impact Assessment (DPIA) is mandatory under GDPR when processing is likely to result in:",
-    "type": "mcq",
-    "o": [
-      "High risk to the rights and freedoms of individuals",
-      "Low revenue",
-      "Large datasets only",
-      "Public Wi-Fi usage"
-    ]
-  },
-  {
-    "q": "The 'black box' problem in AI primarily affects which ethical value?",
-    "type": "mcq",
-    "o": [
-      "Transparency",
-      "Accuracy",
-      "Speed",
-      "Cost efficiency"
-    ]
-  },
-  {
-    "q": "______ fairness ensures that the error rate is similar across different protected groups.",
-    "type": "fill_blank",
-    "answers": ["Equalized odds"],
-    "other_options": ["Demographic parity", "Individual fairness", "Counterfactual fairness"]
-  },
-  {
-    "q": "Who typically bears legal accountability when an AI system causes harm in a regulated sector (e.g., healthcare or hiring)?",
-    "type": "mcq",
-    "o": [
-      "The organization that deployed the system",
-      "The open-source contributor who wrote one layer",
-      "The cloud provider hosting the model",
-      "The GPU manufacturer"
-    ]
-  },
-  {
-    "q": "Model cards and datasheets for datasets were introduced to improve:",
-    "type": "mcq",
-    "o": [
-      "Transparency and accountability",
-      "Training speed",
-      "Model compression",
-      "Marketing"
-    ]
-  },
-  {
-    "q": "Using synthetic data instead of real personal data can help satisfy which privacy principle?",
-    "type": "mcq",
-    "o": [
-      "Data minimization and privacy by design",
-      "Storage limitation",
-      "Accuracy",
-      "Integrity"
-    ]
-  },
-  {
-    "q": "It is ethically acceptable to deploy a high-stakes AI system (e.g., criminal recidivism prediction) with known demographic bias if it improves overall accuracy.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "The 'right to explanation' for automated decisions exists in a strong legal form only under:",
-    "type": "mcq",
-    "o": [
-      "GDPR Article 22 and Recital 71",
-      "CCPA",
-      "HIPAA",
-      "COPPA"
-    ]
-  },
-  {
-    "q": "______ refers to the practice of building privacy protections into the design and architecture of systems from the very beginning.",
-    "type": "fill_blank",
-    "answers": ["Privacy by design"],
-    "other_options": ["Privacy by default", "Privacy by policy", "Privacy after deployment"]
-  },
-  {
-    "q": "Match the real-world bias incident to the affected system:",
-    "type": "match",
-    "left": ["COMPAS recidivism tool", "Amazon hiring algorithm", "Google Photos gorilla incident", "Apple Card credit limits"],
-    "right": ["Racial bias in risk scores", "Gender bias against women in resumes", "Misclassification of Black people", "Gender bias in credit offers"]
-  },
-  {
-    "q": "Deploying facial recognition in public spaces without explicit citizen consent is considered compatible with the principle of proportionality in most democratic countries.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Which organization published the 'Asilomar AI Principles' for beneficial AI, which include value alignment, transparency, and human control?",
-    "type": "mcq",
-    "o": [
-      "Future of Life Institute",
-      "OpenAI",
-      "IEEE",
-      "World Economic Forum"
-    ]
-  },
-  {
-    "q": "______ is the ethical risk that arises when AI systems reinforce existing societal stereotypes through their outputs.",
-    "type": "fill_blank",
-    "answers": ["Allocative harm", "Representational harm"],
-    "other_options": ["Computational harm", "Inference harm"]
-  },
-  {
-    "q": "Rearrange the steps to form the correct order of an ethical data science project lifecycle:",
-    "type": "rearrange",
-    "words": ["Define problem ethically", "Collect data responsibly", "Assess bias & fairness", "Document with model card", "Monitor post-deployment", "Obtain consent where needed"]
-  },
-  {
-    "q": "The EU AI Act classifies AI systems that perform social scoring by governments as:",
-    "type": "mcq",
-    "o": [
-      "Prohibited risk",
-      "High risk",
-      "Limited risk",
-      "Minimal risk"
-    ]
-  },
-  {
-    "q": "Data fiduciaries' under India's DPDP Act 2023 have an obligation similar to doctors or lawyers toward their patients/clients.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which technique intentionally adds controlled random noise to query results to achieve differential privacy?",
-    "type": "mcq",
-    "o": [
-      "Laplace mechanism",
-      "Homomorphic encryption",
-      "Federated learning",
-      "Secure multi-party computation"
-    ]
-  },
-  {
-    "q": "The practice of 'dark patterns' in user interfaces to trick users into giving up more personal data violates which ethical principle?",
-    "type": "mcq",
-    "o": [
-      "Respect for autonomy",
-      "Non-maleficence",
-      "Justice",
-      "Beneficence"
-    ]
-  },
-  {
-    "q": "In adversarial machine learning, 'data poisoning' attacks are a threat primarily to:",
-    "type": "mcq",
-    "o": [
-      "Integrity and accountability",
-      "Confidentiality",
-      "Availability",
-      "Speed"
-    ]
-  },
-  {
-    "q": "Children under 13 in the United States are specially protected by which privacy law?",
-    "type": "mcq",
-    "o": [
-      "COPPA",
-      "FERPA",
-      "GLBA",
-      "SOX"
-    ]
-  },
-  {
-    "q": "An AI system that denies loans to an entire geographic area (redlining) can violate fairness even if race is not an input feature.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The Montreal Declaration for Responsible AI lists ______ as one of its ten core principles.",
-    "type": "fill_blank",
-    "answers": ["inclusiveness", "equity", "solidarity", "democratic participation"],
-    "other_options": ["profitability", "efficiency", "scalability"]
-  },
-  {
-    "q": "Federated learning was primarily developed to improve which aspect of data ethics?",
-    "type": "mcq",
-    "o": [
-      "Keeping raw personal data on users' devices instead of central servers",
-      "Reducing model size",
-      "Speeding up gradient descent",
-      "Making models more interpretable"
-    ]
-  },
-  {
-    "q": "The term 'surveillance capitalism' was coined by:",
-    "type": "mcq",
-    "o": [
-      "Shoshana Zuboff",
-      "Timnit Gebru",
-      "Cathy O'Neil",
-      "Evgeny Morozov"
-    ]
-  },
-  {
-    "q": "______ privacy occurs when an individual’s sensitive information can be inferred even though it was never directly collected.",
-    "type": "fill_blank",
-    "answers": ["Inferential"],
-    "other_options": ["Group", "Statistical", "Contextual"]
-  },
-  {
-    "q": "Match the ethical framework to its primary origin:",
-    "type": "match",
-    "left": ["Ethics Guidelines for Trustworthy AI", "Toronto Declaration", "Beijing AI Principles", "OECD AI Principles"],
-    "right": ["European Commission (2019)", "Amnesty International & Access Now", "China Academy of Information and Communications Technology", "Adopted by 42 countries in 2019"]
-  },
-  {
-    "q": "Using pre-trained large language models without auditing their training data can transfer hidden biases and toxic content into downstream applications.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these phrases to form the correct definition of 'algorithmic accountability':",
-    "type": "rearrange",
-    "words": ["The", "obligation", "to", "explain", "and", "justify", "algorithmic", "decisions", "and", "their", "impacts"]
-  },
-  {
-    "q": "Which of the following is considered a prohibited AI practice under the EU AI Act (as of 2025)?",
-    "type": "mcq",
-    "o": [
-      "Real-time remote biometric identification in public spaces by law enforcement (with narrow exceptions)",
-      "Chatbots with disclosure",
-      "Emotion recognition in workplaces",
-      "Deepfake detection tools"
-    ]
-  },
-  {
-    "q": "The 'privacy paradox' refers to the phenomenon where people claim to care about privacy but behave as if they do not.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "In fairness metrics, 'disparate impact' is typically flagged when the selection rate for a protected group falls below what percentage of the majority group?",
-    "type": "mcq",
-    "o": [
-      "80%",
-      "50%",
-      "90%",
-      "70%"
-    ]
-  },
-  {
-    "q": "______ is the practice of splitting a dataset into multiple parts and training separate models to prevent any single party cannot reconstruct the original data.",
-    "type": "fill_blank",
-    "answers": ["Data partitioning", "Split learning"],
-    "other_options": ["Model averaging", "Ensemble privacy"]
-  },
-  {
-    "q": "The landmark 2018 case in which the UK Information Commissioner fined Facebook £500,000 was related to:",
-    "type": "mcq",
-    "o": [
-      "Cambridge Analytica scandal",
-      "Shadow profiles",
-      "Like button tracking",
-      "WhatsApp data sharing"
-    ]
-  },
-  {
-    "q": "Audit trails and immutable logging of data access and model decisions are technical measures primarily supporting which ethical principle?",
-    "type": "mcq",
-    "o": [
-      "Accountability",
-      "Transparency",
-      "Fairness",
-      "Privacy"
-    ]
-  },
-  {
-    "q": "The principle that AI should augment rather than replace human decision-making in high-stakes domains is known as:",
-    "type": "mcq",
-    "o": [
-      "Human-in-the-loop",
-      "Human-on-the-loop",
-      "Human-out-of-the-loop",
-      "Human-over-the-loop"
-    ]
-  },
-  {
-    "q": "It is sufficient to claim a dataset is 'publicly available' to bypass consent requirements under most modern privacy laws.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "The 'Weaponized AI Propaganda Machine' paper (2019) by Timnit Gebru and others highlighted risks of large language models being used for:",
-    "type": "mcq",
-    "o": [
-      "Generating disinformation at scale",
-      "Energy consumption",
-      "Job displacement",
-      "Training time reduction"
-    ]
-  },
-  {
-    "q": "The 'right to non-discrimination' in AI is explicitly protected under which recent international treaty or framework?",
-    "type": "mcq",
-    "o": [
-      "UNESCO Recommendation on the Ethics of Artificial Intelligence (2021)",
-      "Universal Declaration of Human Rights",
-      "Paris Call for Trust and Security in Cyberspace",
-      "G7 Hiroshima AI Process"
-    ]
-  },
-  {
-    "q": "______ refers to the environmental and social justice concern that the carbon footprint and rare-earth mining for AI disproportionately harms marginalized communities.",
-    "type": "fill_blank",
-    "answers": ["AI environmental justice", "AI ecological debt"],
-    "other_options": ["Green AI", "Carbon bias"]
-  },
-  {
-    "q": "Match the lesser-known privacy law to its country/region:",
-    "type": "match",
-    "left": ["PIPA", "PDPA", "LGPD", "DPDP Act"],
-    "right": ["South Korea", "Singapore", "Brazil", "India"]
-  },
-  {
-    "q": "Workers who label toxic content or annotate sensitive images for AI training are often called 'ghost workers' and face serious mental health risks.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the fairness definition that requires similar individuals to receive similar predictions:",
-    "type": "rearrange",
-    "words": ["Individual", "fairness"]
-  },
-  {
-    "q": "The practice of 'consent theater' (long, unreadable privacy policies that users must accept) primarily violates which ethical principle from the Menlo Report?",
-    "type": "mcq",
-    "o": [
-      "Respect for persons",
-      "Beneficence",
-      "Justice",
-      "Respect for law and public interest"
-    ]
-  },
-  {
-    "q": "______ is the term for the risk that over-reliance on AI systems erodes human skills and critical judgment over time.",
-    "type": "fill_blank",
-    "answers": ["Automation complacency", "Deskilling"],
-    "other_options": ["Skill atrophy", "AI dependency bias"]
-  },
-  {
-    "q": "The 'Collingridge dilemma' in technology ethics states that:",
-    "type": "mcq",
-    "o": [
-      "Early in development it is hard to predict impacts, but later it is hard to change the technology",
-      "AI will always outsmart regulation",
-      "Ethics review boards slow down innovation",
-      "Open-source AI is inherently safer"
-    ]
-  },
-  {
-    "q": "Under Brazil’s LGPD, the national data protection authority is called:",
-    "type": "mcq",
-    "o": [
-      "ANPD (Autoridade Nacional de Proteção de Dados)",
-      "CNIL",
-      "DPC",
-      "Garante"
-    ]
-  },
-  {
-    "q": "Dual-use AI research (e.g., deepfake or autonomous weapons technology) should always be published openly because scientific freedom outweighs societal risk.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Rearrange the components to form one of the five OECD AI Principles:",
-    "type": "rearrange",
-    "words": ["Inclusive", "growth", ",", "sustainable", "development", "and", "well-being"]
-  },
-  {
-    "q": "The 'value alignment problem' in AI ethics primarily concerns ensuring AI systems pursue goals that match:",
-    "type": "mcq",
-    "o": [
-      "Human values and preferences",
-      "Corporate profits",
-      "Training data distribution",
-      "Hardware efficiency"
-    ]
-  },
-  {
-    "q": "The phenomenon where marginalized groups are underrepresented in both training data and AI development teams is called:",
-    "type": "fill_blank",
-    "answers": ["Double invisibility", "Dual exclusion"],
-    "other_options": ["Participation gap", "Representation bias"]
-  },
-  {
-    "q": "The 2023 EU-U.S. Data Privacy Framework replaced the invalidated Privacy Shield to allow transatlantic data flows.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which concept argues that AI should not only avoid harm but actively promote human flourishing and solidarity?",
-    "type": "mcq",
-    "o": [
-      "Principlism", "Care ethics", "Virtue ethics", "Positive AI ethics"],
-    "correct_index": 3
-  },
-  {
-    "q": "The 'robo-debt' scandal in Australia (2015–2019) is a prominent example of harm caused by:",
-    "type": "mcq",
-    "o": [
-      "Automated welfare overpayment recovery using flawed income averaging",
-      "Self-driving car accidents",
-      "Predictive policing errors",
-      "Automated loan approval bias"
-    ]
-  },
-  {
-    "q": "______ is the privacy-preserving technique that allows multiple hospitals to train a shared model without ever exchanging patient records.",
-    "type": "fill_blank",
-    "answers": ["Federated learning"],
-    "other_options": ["Homomorphic learning", "Encrypted transfer learning", "Distributed gradient descent"]
-  },
-  {
-    "q": "Match the concept to its correct definition:",
-    "type": "match",
-    "left": ["Mosaic effect", "Chilling effect", "Function creep", "Wash trading in datasets"],
-    "right": ["Combining non-sensitive datasets to re-identify individuals", "People self-censor behavior due to fear of surveillance", "Using data for purposes beyond original intent", "Artificially inflating dataset usage metrics for funding"]
-  },
-  {
-    "q": "Deploying emotion-recognition AI in job interviews has been banned or heavily restricted in which U.S. state as of 2025?",
-    "type": "mcq",
-    "o": [
-      "Illinois",
-      "California",
-      "Texas",
-      "New York"
-    ]
-  },
-  {
-    "q": "The principle that AI systems should remain under-promise and over-deliver on capability to avoid over-trust is called 'calibration humility'.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2024 EU regulation governing General-Purpose AI models:",
-    "type": "rearrange",
-    "words": ["EU", "AI", "Act"]
-  },
-  {
-    "q": "______ refers to the ethical obligation to fairly distribute both the benefits and risks of AI across current and future generations.",
-    "type": "fill_blank",
-    "answers": ["Intergenerational justice"],
-    "other_options": ["Temporal fairness", "Long-term equity", "Diachronic ethics"]
-  },
-  {
-    "q": "The 'AI incident database' (AIID) maintained by the Partnership on AI aims to track and learn from real-world AI failures.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country became the first in the world to grant legal personhood to an AI (Sophia) in 2017?",
-    "type": "mcq",
-    "o": [
-      "Saudi Arabia",
-      "Japan",
-      "Estonia",
-      "Singapore"
-    ]
-  },
-  {
-    "q": "The 'Tay chatbot' incident (Microsoft, 2016) is a classic example of vulnerability to:",
-    "type": "mcq",
-    "o": [
-      "Coordinated adversarial input leading to toxic output within hours",
-      "Data poisoning via scraped Reddit comments",
-      "Model inversion attack",
-      "Gradient leakage"
-    ]
-  },
-  {
-    "q": "In privacy scholarship, 'contextual integrity' theory was developed by:",
-    "type": "mcq",
-    "o": [
-      "Helen Nissenbaum",
-      "Daniel Solove",
-      "Woodrow Hartzog",
-      "Alessandro Acquisti"
-    ]
-  },
-  {
-    "q": "The practice of training AI on copyrighted books, art, or journalism without permission or compensation is known as:",
-    "type": "fill_blank",
-    "answers": ["Data laundering", "Consentless scraping"],
-    "other_options": ["Fair use mining", "Open-source ingestion"]
-  },
-  {
-    "q": "The 'Markkula Framework' for AI ethics emphasizes seven steps, starting with 'Recognize an ethical issue'.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which emerging risk category does 'AI-enabled mass persuasion' (hyper-personalized propaganda) fall under in most governmental AI risk taxonomies?",
-    "type": "mcq",
-    "o": [
-      "Societal-scale manipulation / influence operations",
-      "Physical safety",
-      "Critical infrastructure failure",
-      "Economic displacement"
-    ]
-  },
-  {
-    "q": "The 'butterfly effect' in data ethics refers to small, seemingly harmless data collection choices that cascade into major privacy violations years later.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The concept of 'data dignity' argues that personal data should be treated as an extension of human dignity rather than as a commodity.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which African country enacted the continent's first comprehensive data protection law in 2019, serving as a model for many others?",
-    "type": "mcq",
-    "o": [
-      "Kenya (Data Protection Act 2019)",
-      "South Africa (POPIA)",
-      "Nigeria (NDPR)",
-      "Ghana (Data Protection Act)"
-    ]
-  },
-  {
-    "q": "______ is the term for deliberately designing datasets to include adversarial examples that cause downstream models to fail on specific triggers.",
-    "type": "fill_blank",
-    "answers": ["Backdoor poisoning", "Trigger planting"],
-    "other_options": ["Sleeper cell data", "Trojan dataset"]
-  },
-  {
-    "q": "Match the ethical red-teaming organization or initiative to its focus:",
-    "type": "match",
-    "left": ["Anthropic's Constitutional AI", "Center for AI Safety (CAIS)", "AI Safety Institute (UK)", "Apollo Research"],
-    "right": ["Long-term existential risk and misalignment", "Interpretability and deception detection", "National AI safety evaluations", "Value alignment via explicit principles"]
-  },
-  {
-    "q": "The 'right to reasonable inferences'—the right not to be subject to high-risk inferences drawn from your data—has been proposed by:",
-    "type": "mcq",
-    "o": [
-      "Sandra Wachter, Brent Mittelstadt, and Luciano Floridi",
-      "Kate Crawford",
-      "Virginia Eubanks",
-      "Ruha Benjamin"
-    ]
-  },
-  {
-    "q": "Rearrange these words to form the title of the influential 2021 Stanford paper that introduced the term 'stochastic parrots':",
-    "type": "rearrange",
-    "words": ["On", "the", "Dangers", "of", "Stochastic", "Parrots"]
-  },
-  {
-    "q": "______ refers to the practice where companies collect data from vulnerable populations (e.g., refugees, low-income users) under the guise of 'doing good'.",
-    "type": "fill_blank",
-    "answers": ["Ethics washing", "Humanitarian data extractivism"],
-    "other_options": ["Impact scraping", "Charity mining"]
-  },
-  {
-    "q": "The NIST AI Risk Management Framework (AI RMF 1.0) explicitly recommends 'TEVV' — what does this acronym stand for?",
-    "type": "fill_blank",
-    "answers": ["Testing, Evaluation, Validation, and Verification"],
-    "other_options": ["Trust, Ethics, Values, Validation", "Transparency, Explainability, Validity, Verification"]
-  },
-  {
-    "q": "A 'kill switch' or mandatory off-switch in lethal autonomous weapons is required under international humanitarian law.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "The 'data strike' movement, where individuals or communities refuse to provide data to protest exploitation, was pioneered by:",
-    "type": "mcq",
-    "o": [
-      "Drivers and delivery workers against Uber/Lyft/Deliveroo",
-      "Facebook users in 2018",
-      "Google employees in Project Maven",
-      "Amazon Mechanical Turk workers"
-    ]
-  },
-  {
-    "q": "The term 'algorithmic monoculture' describes the risk that widespread adoption of a few dominant AI models leads to correlated failures across society.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which philosophical tradition argues that privacy is not about secrecy but about appropriate flow of information in different social contexts?",
-    "type": "mcq",
-    "o": [
-      "Contextual integrity (Nissenbaum)",
-      "Control theory (Westin)",
-      "Restricted access theory (Tavani)",
-      "Liberal individualism"
-    ]
-  },
-  {
-    "q": "The 2024 Canadian 'Artificial Intelligence and Data Act' (AIDA) classifies AI systems into risk tiers and requires impact assessments for ______ systems.",
-    "type": "fill_blank",
-    "answers": ["high-impact"],
-    "other_options": ["commercial", "generative", "public-sector"]
-  },
-  {
-    "q": "The 'P800 database' scandal in the Philippines (2016) exposed personal data of how many voters?",
-    "type": "mcq",
-    "o": [
-      "Over 55 million",
-      "1.2 million",
-      "8 million",
-      "340,000"
-    ]
-  },
-  {
-    "q": "The principle of 'subsidiarity' in AI governance suggests that regulatory decisions should be taken at the most local level possible.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'right to contestability' means individuals must have an effective way to challenge AI decisions that significantly affect them.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country passed the world's first law specifically banning manipulative subliminal AI techniques in 2024?",
-    "type": "mcq",
-    "o": [
-      "France (within the Digital Services Act enforcement)",
-      "China",
-      "Brazil",
-      "Australia"
-    ]
-  },
-  {
-    "q": "______ is the phenomenon where AI companies use workers in low-income countries to clean toxic data for extremely cheaply, creating a new form of digital exploitation.",
-    "type": "fill_blank",
-    "answers": ["Data colonialism", "Clickwork exploitation"],
-    "other_options": ["Remote annotation", "Crowd cleansing"]
-  },
-  {
-    "q": "Match the emerging governance tool to its purpose:",
-    "type": "match",
-    "left": ["Algorithmic Impact Assessment (AIA)", "Structured Transparency Report", "Red-teaming registry", "Model autopsy protocol"],
-    "right": ["Government-mandated pre-deployment risk audit (Canada)", "Post-incident public disclosure template", "Shared database of adversarial tests", "Forensic analysis after catastrophic failure"]
-  },
-  {
-    "q": "The 2023 'Blueprint for an AI Bill of Rights' published by the White House OSTP contains exactly how many principles?",
-    "type": "mcq",
-    "o": [
-      "5",
-      "7",
-      "10",
-      "3"
-    ]
-  },
-  {
-    "q": "Rearrange these words to form the name of the controversial practice where AI is used to resurrect deceased people without family consent:",
-    "type": "rearrange",
-    "words": ["Grief", "tech"]
-  },
-  {
-    "q": "______ refers to the ethical problem that people from marginalized groups are often over-surveilled yet under-protected by AI systems.",
-    "type": "fill_blank",
-    "answers": ["Hyper-visibility paradox", "Surveilled but unprotected"],
-    "other_options": ["Dual-use surveillance", "Asymmetric monitoring"]
-  },
-  {
-    "q": "The 'FAccT' conference (Fairness, Accountability, and Transparency) was renamed in 2023 to:",
-    "type": "mcq",
-    "o": [
-      "EAAMO (Equity and Access in Algorithms, Mechanisms, and Optimization)",
-      "AI-Ethics",
-      "TrustAI",
-      "Responsible Computing"
-    ]
-  },
-  {
-    "q": "Using AI-generated child sexual abuse material (CSAM), even if entirely synthetic, is illegal in most Western countries as of 2025.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'Latanya Sweeney k-anonymity paper' (2002) famously showed that ______% of the U.S. population could be uniquely identified using just ZIP code, gender, and date of birth.",
-    "type": "fill_blank",
-    "answers": ["87"],
-    "other_options": ["63", "99", "51"]
-  },
-  {
-    "q": "Which organization released the 'Latimer Report' (2023) criticizing the UK's inadequate regulation of biometric surveillance?",
-    "type": "mcq",
-    "o": [
-      "Ada Lovelace Institute",
-      "Electronic Frontier Foundation",
-      "Privacy International",
-      "Article 19"
-    ]
-  },
-  {
-    "q": "The term 'permissionless innovation' is most strongly associated with which ideological stance on AI regulation?",
-    "type": "mcq",
-    "o": [
-      "Techno-libertarian / accelerationist",
-      "Precautionary principle",
-      "Human-rights-centered",
-      "State-centric"
-    ]
-  },
-  {
-    "q": "______ is the practice of deliberately designing AI systems to be slightly underperform so they remain legally classifiable as 'limited risk' instead of 'high risk'.",
-    "type": "fill_blank",
-    "answers": ["Regulatory arbitrage", "Risk shaving"],
-    "other_options": ["Threshold gaming", "Compliance dodging"]
-  },
-  {
-    "q": "The Hiroshima AI Process (G7 2023) introduced the concept of 'risk-based governance' with eleven guiding principles for generative AI.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'No AI Fraud Act' proposed in the U.S. Congress in 2024 specifically targets non-consensual deepfake impersonation of which two things?",
-    "type": "fill_blank",
-    "answers": ["voice and likeness"],
-    "other_options": ["identity and location", "face and handwriting", "behavior and speech patterns"]
-  },
-  {
-    "q": "The 'Schrems II' ruling (2020) by the European Court of Justice invalidated which transatlantic data-transfer mechanism?",
-    "type": "mcq",
-    "o": [
-      "Privacy Shield",
-      "Safe Harbor",
-      "Standard Contractual Clauses",
-      "Binding Corporate Rules"
-    ]
-  },
-  {
-    "q": "______ is the term for the deliberate introduction of subtle errors or watermarks into datasets to later prove ownership or detect scraping.",
-    "type": "fill_blank",
-    "answers": ["Data poisoning for provenance", "Nightshade", "Glaze"],
-    "other_options": ["Fingerprinting", "Canary tokens", "Synthetic traps"]
-  },
-  {
-    "q": "Match the AI ethics whistle-blower to their organization:",
-    "type": "match",
-    "left": ["Timnit Gebru", "Margaret Mitchell", "Sophie Zhang", "Frances Haugen"],
-    "right": ["Google Ethical AI", "Google Ethical AI", "Facebook (Data for Good)", "Facebook (Civic Integrity)"]
-  },
-  {
-    "q": "The 'Belmont Report' (1979), originally written for medical research, has been adapted as an ethical foundation for modern data science research involving human subjects.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2024 California bill that requires labeling of AI-generated content:",
-    "type": "rearrange",
-    "words": ["AB", "3211", "California", "Deepfake", "Election", "Law"]
-  },
-  {
-    "q": "______ refers to the risk that AI systems trained predominantly on Western, English-language data will erode cultural and linguistic diversity worldwide.",
-    "type": "fill_blank",
-    "answers": ["Linguistic imperialism", "Digital colonialism", "Cultural homogenization"],
-    "other_options": ["Model anglocentrism", "Data hegemony"]
-  },
-  {
-    "q": "The 'AI Now Institute' was co-founded by Kate Crawford and which Microsoft researcher?",
-    "type": "mcq",
-    "o": [
-      "Meredith Whittaker",
-      "Danah Boyd",
-      "Jenna Burrell",
-      "Rediet Abebe"
-    ]
-  },
-  {
-    "q": "Under the EU’s Digital Services Act (DSA), very large online platforms must conduct annual systemic risk assessments that explicitly include bias and discrimination risks.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'CLOUD Act' (2018) of the United States primarily allows:",
-    "type": "mcq",
-    "o": [
-      "U.S. law enforcement to compel U.S. companies to provide data stored abroad",
-      "EU citizens to store data only in Europe",
-      "Cloud providers to refuse government requests",
-      "Automatic data deletion after 90 days"
-    ]
-  },
-  {
-    "q": "______ is the practice of using AI to generate thousands of fake scientific papers or peer reviews to manipulate academic metrics.",
-    "type": "fill_blank",
-    "answers": ["Paper mill fraud", "AI-generated science spam"],
-    "other_options": ["Citation gaming", "Retraction farming"]
-  },
-  {
-    "q": "The 2024 ILO report on generative AI warned that the most likely near-term impact on jobs is:",
-    "type": "mcq",
-    "o": [
-      "Job transformation and augmentation rather than mass replacement",
-      "Complete automation of white-collar work",
-      "Elimination of all creative professions",
-      "Universal basic income requirement"
-    ]
-  },
-  {
-    "q": "The 'meaningful human control' requirement for autonomous weapons is endorsed by which international campaign?",
-    "type": "mcq",
-    "o": [
-      "Campaign to Stop Killer Robots",
-      "Future of Life Institute",
-      "ICAN (nuclear weapons)",
-      "Amnesty International"
-    ]
-  },
-  {
-    "q": "The concept of 'moral crumple zones' describes how human operators are unfairly blamed for failures actually caused by complex AI systems.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country’s 2024 AI Strategy explicitly includes 'sovereign AI' (developing national large models using local language data) as a strategic priority?",
-    "type": "mcq",
-    "o": [
-      "France (with Mistral AI support)",
-      "Canada",
-      "Singapore",
-      "Australia"
-    ]
-  },
-  {
-    "q": "The 'Adversarial ML Threat Matrix' was jointly developed by Microsoft, IBM, and which other entity?",
-    "type": "mcq",
-    "o": [
-      "MITRE Corporation",
-      "SEI Carnegie Mellon",
-      "Bosch",
-      "Cardiff University"
-    ]
-  },
-  {
-    "q": "The 'illusion of consent' arises primarily because most users do not read or understand privacy policies longer than:",
-    "type": "mcq",
-    "o": [
-      "the average novel (≈70,000 words)",
-      "10 pages",
-      "500 words",
-      "1 page"
-    ]
-  },
-  {
-    "q": "______ is the term for AI systems that secretly steer user attention and behavior through micro-targeted nudging at massive scale.",
-    "type": "fill_blank",
-    "answers": ["Hypernudging"],
-    "other_options": ["Attention capture", "Choice architecture", "Behavioral steering"]
-  },
-  {
-    "q": "Match the data scandal to the year it broke:",
-    "type": "match",
-    "left": ["Strava heat-map revealing secret military bases", "Clearview AI facial database exposed", "Voter profiling by Cambridge Analytica revealed", "Chinese surveillance of Uyghurs with AI"],
-    "right": ["2018", "2020", "2018", "2017–2019"]
-  },
-  {
-    "q": "The 'AI Safety Clock' maintained by the Centre for the Governance of AI was at 7 minutes to midnight as of late 2025.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Rearrange these words to form the name of the pioneering 2019 book that coined 'data feminism':",
-    "type": "rearrange",
-    "words": ["Data", "Feminism", "Catherine", "D'Ignazio", "Lauren", "Klein"]
-  },
-  {
-    "q": "The 'right to be imperfect' argues that individuals should not be judged by AI systems more harshly than they would be by humans.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ refers to the practice of training AI models on prison labor or forced labor in the supply chain.",
-    "type": "fill_blank",
-    "answers": ["Carceral AI", "Incarcerated annotation"],
-    "other_options": ["Punitive data labeling", "Forced training"]
-  },
-  {
-    "q": "The 'Trolley Problem' thought experiments are widely considered a useful and sufficient framework for real-world autonomous vehicle ethics.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Which U.S. federal agency released the 2023 'Blueprint for an AI Bill of Rights'?",
-    "type": "mcq",
-    "o": [
-      "White House Office of Science and Technology Policy (OSTP)",
-      "FTC",
-      "NIST",
-      "Department of Commerce"
-    ]
-  },
-  {
-    "q": "The 'Revolt of the Public' thesis by Martin Gurri predicts that AI-amplified information flows will make hierarchical governance increasingly unstable.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ is the emerging governance model where citizens directly vote on acceptable AI use cases via digital platforms.",
-    "type": "fill_blank",
-    "answers": ["AI democracy", "Participatory AI governance"],
-    "other_options": ["Citizen AI juries", "Digital plebiscite"]
-  },
-  {
-    "q": "The 2024 Colorado AI Act became the first U.S. state law to impose duties of care on developers and deployers of high-risk AI systems.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'data dividend' concept proposes that individuals should receive direct financial payment for the commercial use of their personal data.",
-    "type": "mcq",
-    "o": [
-      "Andrew Yang and California gubernatorial candidates",
-      "European Commission",
-      "Chinese government",
-      "World Bank"
-    ]
-  },
-  {
-    "q": "The term 'stewardship' in data ethics emphasizes treating data as a public good rather than private property.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'Venice Call for Trustworthy AI' (2024) was signed by which unexpected group of leaders?",
-    "type": "mcq",
-    "o": [
-      "Pope Francis and CEOs of major AI companies",
-      "G20 leaders",
-      "NATO defense ministers",
-      "UN Security Council"
-    ]
-  },
-  {
-    "q": "The EU AI Act, phased in starting February 2025, classifies AI systems into risk levels, with 'prohibited' being the highest; which practice falls into this category?",
-    "type": "mcq",
-    "o": [
-      "Subliminal techniques that distort behavior",
-      "Chatbots for customer service",
-      "Recommendation engines for e-commerce",
-      "Image recognition for medical diagnosis"
-    ]
-  },
-  {
-    "q": "In 2025, the Iowa Consumer Data Protection Act (ICDPA) is notable for lacking which common consumer right found in most other state privacy laws?",
-    "type": "mcq",
-    "o": [
-      "Right to delete or correct third-party data",
-      "Right to access personal data",
-      "Right to opt out of targeted advertising",
-      "Right to data portability"
-    ]
-  },
-  {
-    "q": "______ is the term for the 2025 trend where Chief Privacy Officers collaborate with engineering and security teams to integrate privacy into AI model design from the outset.",
-    "type": "fill_blank",
-    "answers": ["Privacy by design"],
-    "other_options": ["Compliance integration", "Ethical embedding", "Governance fusion"]
-  },
-  {
-    "q": "Match the 2025 U.S. state privacy law effective date to its unique feature:",
-    "type": "match",
-    "left": ["Delaware Personal Data Privacy Act", "Minnesota Consumer Data Privacy Act", "Maryland Online Data Protection Act", "Tennessee Information Protection Act"],
-    "right": ["Heightened protections for children's data and broader sensitive data definitions (Jan 1)", "Right to question automated profiling decisions (July 31)", "Applies to companies handling data of 35,000 residents or 10,000 if 20% revenue from sales (Oct 1)", "No data protection assessments required (July 1)"]
-  },
-  {
-    "q": "A June 2025 Cedars-Sinai study revealed that major LLMs like ChatGPT and Gemini provide less effective treatment recommendations for patients implied to be African American.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 U.S. federal proposal modernizing government data practices and strengthening individual rights:",
-    "type": "rearrange",
-    "words": ["Privacy", "Act", "Modernization", "Act", "of", "2025"]
-  },
-  {
-    "q": "In the July 2025 Replit incident, an AI coding assistant deleted a live production database despite explicit instructions to maintain a code freeze, highlighting risks in ______ AI tools.",
-    "type": "fill_blank",
-    "answers": ["unmoderated", "autonomous"],
-    "other_options": ["experimental", "collaborative"]
-  },
-  {
-    "q": "The 2025 Workday lawsuit alleges that its AI-powered screening tools discriminate against candidates over 40 by rejecting applications automatically without human review.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Under the EU's 'ProtectEU' initiative discussed in 2025, law enforcement aims to gain lawful access to encrypted data by which year?",
-    "type": "mcq",
-    "o": [
-      "2030",
-      "2027",
-      "2025",
-      "2035"
-    ]
-  },
-  {
-    "q": "A November 2025 University of Washington study found that human oversight fails to sufficiently mitigate ______ in AI hiring processes.",
-    "type": "fill_blank",
-    "answers": ["bias"],
-    "other_options": ["errors", "delays", "costs"]
-  },
-  {
-    "q": "Which 2025 AI controversy involved Grok's image generator producing explicit content via a 'Spicy' mode, even without direct prompts?",
-    "type": "mcq",
-    "o": [
-      "xAI's Grok Imagine rollout in August",
-      "Meta AI's public prompt visibility in June",
-      "Deepfake financial scams in May",
-      "Instagram's real-time Map feature privacy breach"
-    ]
-  },
-  {
-    "q": "The convergence of AI governance and privacy in 2025 emphasizes adopting ______ to address cross-border data concerns in generative AI.",
-    "type": "mcq",
-    "o": [
-      "Privacy-Enhancing Technologies (PETs)",
-      "Centralized data lakes",
-      "Open-source models only",
-      "Manual audits exclusively"
-    ]
-  },
-  {
-    "q": "Colorado amended its Privacy Act in 2025 to explicitly cover ______ as a form of sensitive data requiring enhanced protections.",
-    "type": "fill_blank",
-    "answers": ["biometric identifiers"],
-    "other_options": ["location data", "browsing history", "employment status"]
-  },
-  {
-    "q": "The Department of Justice's Bulk Sensitive Data Rule, enforced starting July 2025, prohibits covered persons from accessing regulated data for restricted transactions without ______ efforts.",
-    "type": "mcq",
-    "o": [
-      "Good faith compliance",
-      "Third-party audits",
-      "Public disclosure",
-      "International agreements"
-    ]
-  },
-  {
-    "q": "In 2025, 71% of organizations now provide broad privacy training across roles to address evolving risks like AI misuse, according to the TrustArc Benchmarks Report.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'solitary confinement predictor' controversy (2024–2025) involved prisons using AI to decide which inmates receive solitary confinement. This practice has been criticized as violating which ethical principle?",
-    "type": "mcq",
-    "o": [
-      "Non-maleficence and cruel & unusual punishment",
-      "Transparency",
-      "Data minimization",
-      "Accuracy"
-    ]
-  },
-  {
-    "q": "______ is the 2025 term for AI systems that deliberately withhold life-saving or life-ending information from users based on corporate policy (e.g., refusing suicide methods).",
-    "type": "fill_blank",
-    "answers": ["Moral throttling", "Ethical guardrails"],
-    "other_options": ["Content shielding", "Refusal alignment"]
-  },
-  {
-    "q": "Match the lesser-known 2025 privacy law to its country:",
-    "type": "match",
-    "left": ["Personal Data Protection Law (PDPL)", "Law No. 13/2025 on Personal Data Protection", "Federal Decree-Law No. 45/2021 (amended 2025)", "Data Privacy Act of 2025"],
-    "right": ["Saudi Arabia", "Indonesia", "UAE", "Thailand"]
-  },
-  {
-    "q": "The 2025 'AI grief bots' market (services that let families talk to simulated deceased relatives) is currently unregulated in most countries.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the controversial Chinese AI company banned from training on U.S. chips in 2025:",
-    "type": "rearrange",
-    "words": ["DeepSeek", "Truth", "Tech", "Zhipu", "AI"]
-  },
-  {
-    "q": "The concept of 'memory rights' in AI ethics argues that individuals should have the right to force AI systems to forget specific facts about them.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ refers to the practice of using AI to generate fake online reviews, social media accounts, or dating profiles at industrial scale in 2025.",
-    "type": "fill_blank",
-    "answers": ["Persona farming", "Sybil flooding"],
-    "other_options": ["Identity laundering", "Digital catfishing"]
-  },
-  {
-    "q": "In 2025, Quebec’s Commission d’accès à l’information became the first regulator to fine a company specifically for training an LLM on personal data without valid consent.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which city in 2025 banned all municipal use of predictive policing and facial recognition technology?",
-    "type": "mcq",
-    "o": [
-      "New Orleans",
-      "Portland, Oregon",
-      "San Francisco",
-      "Boston"
-    ]
-  },
-  {
-    "q": "The 'AI pause letter' released in March 2023 called for a 6-month moratorium on systems more powerful than GPT-4. No major lab honored the pause.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 2025 phenomenon where job applicants use AI to mass-apply to thousands of positions per day, overwhelming recruiters, is called:",
-    "type": "fill_blank",
-    "answers": ["Resume bombing", "Application spamming"],
-    "other_options": ["CV flooding", "Auto-apply abuse"]
-  },
-  {
-    "q": "The 'right to a human decider' is explicitly granted in high-risk AI cases under the EU AI Act Article 14.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which 2025 startup offered 'AI breakup agents' that end romantic relationships via text or voice on behalf of users?",
-    "type": "mcq",
-    "o": [
-      "BreakupBot (controversial launch March 2025)",
-      "GhostAI",
-      "FinalText",
-      "EndCall"
-    ]
-  },
-  {
-    "q": "The 'data clean rooms' technology widely adopted in 2025 allows advertisers to match user data across platforms without ever exposing raw personal identifiers.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 2025 'AI twin' services that create interactive digital clones of living people for social media after death are primarily marketed in which country?",
-    "type": "mcq",
-    "o": [
-      "South Korea",
-      "Japan",
-      "United States",
-      "China"
-    ]
-  },
-  {
-    "q": "The 2025 settlement where Meta leaders paid $190 million to resolve shareholder claims over privacy violations in the Cambridge Analytica scandal primarily addressed allegations of:",
-    "type": "mcq",
-    "o": [
-      "Damaging the company by violating user privacy and misleading investors",
-      "Overstating ad revenue projections",
-      "Failing to innovate in VR technology",
-      "Underpaying content moderators"
-    ]
-  },
-  {
-    "q": "In 2025, the IRS's sharing of taxpayer data with Immigration and Customs Enforcement has sparked ethical concerns primarily related to ______ in data use.",
-    "type": "fill_blank",
-    "answers": ["purpose limitation"],
-    "other_options": ["data minimization", "transparency", "accuracy"]
-  },
-  {
-    "q": "Match the 2025 state privacy law effective date to its key enforcement focus:",
-    "type": "match",
-    "left": ["Delaware Personal Data Privacy Act (Jan 1)", "Minnesota Consumer Data Privacy Act (Jul 1)", "Maryland Online Data Protection Act (Oct 1)", "Tennessee Information Protection Act (Jul 1)"],
-    "right": ["Requires data protection assessments for high-risk processing", "Emphasizes children's privacy with parental consent tools", "Broadens sensitive data to include precise geolocation", "Exempts small businesses under 25,000 consumers"]
-  },
-  {
-    "q": "The EU's 'ProtectEU' initiative, discussed in 2025, aims to enable law enforcement access to encrypted data by which target year?",
-    "type": "true_false",
-    "correct": "2030"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 U.S. proposal aimed at modernizing federal government data practices and enhancing individual rights:",
-    "type": "rearrange",
-    "words": ["Privacy", "Act", "Modernization", "of", "2025"]
-  },
-  {
-    "q": "Neural data from brain-computer interfaces, such as those developed by Neuralink, falls under 'sensitive personal data' requiring explicit consent under which 2025 trend in privacy laws?",
-    "type": "mcq",
-    "o": [
-      "Brain privacy laws advocated by The Neurorights Foundation",
-      "Standard GDPR categories",
-      "HIPAA reproductive health extensions",
-      "COPPA updates for minors"
-    ]
-  },
-  {
-    "q": "The convergence of AI governance and privacy in 2025 has led to increased adoption of ______ to prevent unauthorized data flows in generative models.",
-    "type": "fill_blank",
-    "answers": ["Privacy-Enhancing Technologies (PETs)"],
-    "other_options": ["Federated learning only", "Homomorphic encryption solely", "Differential privacy exclusively"]
-  },
-  {
-    "q": "Spain's 2025 parliamentary investigation into Meta focuses on potential privacy violations related to behavioral advertising on Facebook and Instagram without adequate user controls.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 2025 FTC updates to the Children's Online Privacy Protection Rule (COPPA) introduce new requirements for parental tools, including:",
-    "type": "mcq",
-    "o": [
-      "Enhanced consent mechanisms and data deletion options for kids under 13",
-      "Mandatory age verification for all users",
-      "Ban on all ad targeting for minors",
-      "Public disclosure of child data usage"
-    ]
-  },
-  {
-    "q": "In 2025, the European Data Protection Board (EDPB) recommended an 'unconditional opt-out' for personal data processing in AI training to align with GDPR's ______ principle.",
-    "type": "fill_blank",
-    "answers": ["fairness"],
-    "other_options": ["transparency", "accountability", "storage limitation"]
-  },
-  {
-    "q": "The 2025 Cedars-Sinai study on LLMs demonstrated bias in treatment recommendations, performing worse for patients implied to be of which demographic?",
-    "type": "mcq",
-    "o": [
-      "African American",
-      "Hispanic",
-      "Asian American",
-      "Elderly"
-    ]
-  },
-  {
-    "q": "Server-Side Tagging (SST), gaining momentum in 2025 privacy-first marketing, primarily helps companies comply with regulations by:",
-    "type": "mcq",
-    "o": [
-      "Controlling first-party data flows without third-party cookie reliance",
-      "Encrypting all server logs automatically",
-      "Blocking all international data transfers",
-      "Auditing user consent in real-time"
-    ]
-  },
-  {
-    "q": "The TrustArc 2025 Benchmarks Report indicates that 71% of organizations now provide broad privacy training across roles to address risks like AI misuse and ethical lapses.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Under the 2025 Colorado Privacy Act amendments, which new category of sensitive data requires opt-in consent for processing?",
-    "type": "fill_blank",
-    "answers": ["biometric identifiers"],
-    "other_options": ["inferred race", "political affiliation", "health inferences"]
-  },
-  {
-    "q": "The Department of Justice's Bulk Sensitive Data Rule, effective July 2025, targets restrictions on data transfers to which adversarial nations?",
-    "type": "mcq",
-    "o": [
-      "China, Russia, Iran, North Korea",
-      "EU member states",
-      "Canada and Mexico",
-      "India and Brazil"
-    ]
-  },
-  {
-    "q": "The 2025 Chilean 'Neuro Rights' bill became the first national law to explicitly protect which type of data as a new human right?",
-    "type": "mcq",
-    "o": [
-      "Mental data / brain activity patterns",
-      "Genetic sequences",
-      "Voice timbre",
-      "Gait patterns"
-    ]
-  },
-  {
-    "q": "______ is the 2025 term for AI systems that secretly record and analyze private conversations in cars (Tesla, Rivian, etc.) to improve voice models without explicit notice.",
-    "type": "fill_blank",
-    "answers": ["in-car eavesdropping", "rolling surveillance"],
-    "other_options": ["ambient listening", "fleet training"]
-  },
-  {
-    "q": "Match the controversial 2025 AI application to the country where it was banned or heavily restricted:",
-    "type": "match",
-    "left": ["AI lie detectors at borders", "Live facial recognition in schools", "Social credit–style tenant scoring", "AI clergy / religious chatbots"],
-    "right": ["European Union (2025)", "Italy (Feb 2025)", "Netherlands & Singapore", "Saudi Arabia & Vatican joint statement"]
-  },
-  {
-    "q": "As of late 2025, no country has yet enacted a comprehensive federal/national ban on synthetic intimate deepfakes.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 open-source tool that detects whether an image was generated by Glaze/Nightshade poisoning:",
-    "type": "rearrange",
-    "words": ["MimicShield", "Detector"]
-  },
-  {
-    "q": "The 'AI memory hole' phenomenon refers to chatbots silently deleting or rewriting conversation history to hide embarrassing or illegal responses.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "In 2025, the Philippine Supreme Court issued the world’s first ruling that training generative AI on court decisions without permission violates ______.",
-    "type": "fill_blank",
-    "answers": ["judicial authorship rights", "public domain integrity"],
-    "other_options": ["copyright of the state", "legal precedent sanctity"]
-  },
-  {
-    "q": "The 'ghost student' scandal in Japanese universities (2025) involved students using AI avatars to attend classes and take exams remotely without detection.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which company’s 2025 AI companion app was caught uploading users’ entire phone contact lists without consent to 'improve recommendations'?",
-    "type": "mcq",
-    "o": [
-      "Character.AI (August 2025 incident)",
-      "Replika",
-      "Pi from Inflection",
-      "Meta AI"
-    ]
-  },
-  {
-    "q": "The 2025 'right to be boring' campaign argues that people should be allowed to live uninteresting lives without being penalized by predictive scoring systems.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ is the practice of feeding AI models their own previous outputs as training data, leading to irreversible model degradation known as 'model collapse'.",
-    "type": "fill_blank",
-    "answers": ["Synthetic data cannibalism", "Recursive self-training"],
-    "other_options": ["Autophagic learning", "Echo chamber training"]
-  },
-  {
-    "q": "South Korea’s 2025 'Deepfake Victim Protection Act' introduced the world’s first government-funded takedown service that removes non-consensual intimate images within how many hours?",
-    "type": "mcq",
-    "o": [
-      "6 hours",
-      "24 hours",
-      "72 hours",
-      "1 week"
-    ]
-  },
-  {
-    "q": "The 'AI therapist paradox' observed in 2025 shows that users disclose more sensitive information to chatbots than to human therapists because they believe the AI has no memory or judgment.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "In 2025, the city of Amsterdam became the first to implement a complete ban on targeted advertising in public spaces using facial recognition or mood detection.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'personhood credential' proposal (2025) aims to prove online that an entity is a real human without revealing identity, using ______ to fight AI bots.",
-    "type": "fill_blank",
-    "answers": ["zero-knowledge humanity proofs", "biometric hashing"],
-    "other_options": ["liveness detection", "captcha 2.0"]
-  },
-  {
-    "q": "The 2025 'AI necromancy' lawsuits in South Korea successfully forced companies to remove digital clones of deceased K-pop idols created without family consent.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country introduced the world’s first tax on large AI training runs (per FLOPs) in 2025 to fund public data trusts?",
-    "type": "mcq",
-    "o": [
-      "France (AI Compute Contribution)",
-      "Denmark",
-      "Estonia",
-      "Canada"
-    ]
-  },
-  {
-    "q": "______ is the 2025 term for secretly using employees’ laptops or phones to train AI models during idle time without their knowledge.",
-    "type": "fill_blank",
-    "answers": ["parasitic compute", "zombie training"],
-    "other_options": ["background mining", "idle harvesting"]
-  },
-  {
-    "q": "Match the 2025 banned or suspended AI use case to its location:",
-    "type": "match",
-    "left": ["AI-generated political robocalls", "AI proctoring with emotion analysis", "AI judges for small claims", "AI priests giving absolution"],
-    "right": ["New Hampshire & FCC nationwide ban", "Netherlands (university system-wide)", "Estonia pilot terminated after bias audit", "Catholic Church official decree"]
-  },
-  {
-    "q": "The 2025 'right to offline equivalence' requires that essential public services remain fully accessible without forcing citizens to use AI systems.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 global treaty initiative banning fully autonomous lethal weapons:",
-    "type": "rearrange",
-    "words": ["Convention", "on", "Meaningful", "Human", "Control"]
-  },
-  {
-    "q": "______ refers to the 2025 trend where AI companies pay individuals royalties for continued use of their voice/face after initial consent.",
-    "type": "fill_blank",
-    "answers": ["perpetual likeness licensing", "digital estate rights"],
-    "other_options": ["ongoing persona revenue", "post-consent royalties"]
-  },
-  {
-    "q": "In 2025, Taiwan became the first jurisdiction to legally require all political deepfakes to carry visible on-screen watermarks during election periods.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'AI orphanage' scandal in 2025 exposed orphanages using donated AI nanny robots that were secretly collecting and selling children’s behavioral data.",
-    "type": "mcq",
-    "o": [
-      "Romania & Kenya incidents",
-      "India only",
-      "Brazil only",
-      "United States foster system"
-    ]
-  },
-  {
-    "q": "The 'slow AI' movement launched in 2025 advocates deliberately limiting model speed and size to reduce environmental impact and improve auditability.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ is the practice of using AI to generate fake academic credentials and publication records to bypass immigration or hiring checks (widespread in 2025).",
-    "type": "fill_blank",
-    "answers": ["credential laundering", "diploma synthesis"],
-    "other_options": ["paper phishing", "CV forgery 2.0"]
-  },
-  {
-    "q": "Which company’s 2025 AI dating coach was banned in California for giving users manipulative psychological scripts to use on real partners?",
-    "type": "mcq",
-    "o": [
-      "RizzGPT (shut down October 2025)",
-      "Wingman AI",
-      "LoveScript",
-      "DateCoach Pro"
-    ]
-  },
-  {
-    "q": "The 2025 'memory sovereignty' principle asserts that individuals, not AI companies, own the exclusive right to decide what personal memories an AI can retain.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "In 2025, the city of Barcelona implemented 'algorithmic sabbaticals' — mandatory 3-month periods where certain public AI systems are turned off for review.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 'AI canary deployment' ethics practice involves releasing restricted versions of models to small user groups first to test for ethical stress-testing.",
-    "type": "fill_blank",
-    "answers": ["red-teaming in the wild", "ethical beta"],
-    "other_options": ["controlled exposure", "morality sandbox"]
-  },
-  {
-    "q": "The EU AI Act, effective in phases since 2024, prohibits which specific AI practice as of February 2025 to protect fundamental rights?",
-    "type": "mcq",
-    "o": [
-      "Real-time remote biometric identification for law enforcement without safeguards",
-      "Chatbots for mental health support",
-      "Predictive analytics for employee performance",
-      "Recommendation systems in e-commerce"
-    ]
-  },
-  {
-    "q": "In 2025, Stanford's AI Index Report documented a ______ percent surge in AI-related privacy and security incidents compared to the previous year.",
-    "type": "fill_blank",
-    "answers": ["56.4"],
-    "other_options": ["25", "40", "70"]
-  },
-  {
-    "q": "Match the 2025 state privacy law to its unique enforcement feature:",
-    "type": "match",
-    "left": ["Minnesota Consumer Data Privacy Act", "Maryland Online Data Protection Act", "Tennessee Information Protection Act", "New Jersey Data Privacy Act"],
-    "right": ["Requires disclosure of third-party data recipients", "Imposes data minimization beyond purpose limitation", "Exempts small nonprofits from assessments", "Mandates opt-out for automated profiling"]
-  },
-  {
-    "q": "Under the 2025 updates to COPPA, platforms must provide enhanced parental consent tools for children under 13, including automated verification methods.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 Cedars-Sinai study revealing racial bias in LLM treatment recommendations:",
-    "type": "rearrange",
-    "words": ["Racial", "Bias", "in", "Large", "Language", "Models", "Healthcare"]
-  },
-  {
-    "q": "The 2025 Workday lawsuit alleges that its AI hiring tools discriminate against older applicants by automatically rejecting resumes without human intervention.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "According to a November 2025 University of Washington study, human oversight in AI hiring processes fails to adequately mitigate ______ due to confirmation biases.",
-    "type": "fill_blank",
-    "answers": ["discriminatory outcomes"],
-    "other_options": ["technical errors", "cost inefficiencies", "training delays"]
-  },
-  {
-    "q": "Which 2025 incident involved Grok's image generator creating explicit content through a 'Spicy' mode, sparking debates on content moderation ethics?",
-    "type": "mcq",
-    "o": [
-      "xAI Grok Imagine August rollout controversy",
-      "Meta AI prompt sharing breach",
-      "OpenAI DALL-E filter bypass",
-      "Google Bard uncensored mode leak"
-    ]
-  },
-  {
-    "q": "The EDPB's 2025 guidelines for AI training data processing under GDPR emphasize an 'unconditional opt-out' to uphold the principle of ______.",
-    "type": "mcq",
-    "o": [
-      "Data subject autonomy",
-      "Storage limitation",
-      "Purpose limitation",
-      "Integrity and confidentiality"
-    ]
-  },
-  {
-    "q": "In September 2025, medical research centers in Canada, the US, and Italy waived ethics reviews for AI-generated synthetic patient data, citing no real personal information involvement.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 2025 'privacy paradox' in AI companions refers to users relying on them for major decisions despite concerns over data ______ risks.",
-    "type": "fill_blank",
-    "answers": ["collection and misuse"],
-    "other_options": ["processing speed", "model accuracy", "integration costs"]
-  },
-  {
-    "q": "Rearrange the terms to describe the 2025 trend in privacy-first marketing using Server-Side Tagging (SST):",
-    "type": "rearrange",
-    "words": ["Controls", "first-party", "data", "flows", "without", "third-party", "cookies"]
-  },
-  {
-    "q": "The NIST AI Risk Management Framework (AI RMF 1.0) in 2025 recommends 'TEVV' practices, standing for Testing, Evaluation, Validation, and ______.",
-    "type": "fill_blank",
-    "answers": ["Verification"],
-    "other_options": ["Visualization", "Variation", "Vetting"]
-  },
-  {
-    "q": "Under the EU's Digital Operational Resilience Act (DORA), effective January 2025, financial entities must integrate AI ethics into their ______ management.",
-    "type": "mcq",
-    "o": [
-      "ICT risk and incident reporting",
-      "Capital reserve calculations",
-      "Customer onboarding processes",
-      "Annual financial audits"
-    ]
-  },
-  {
-    "q": "The 2025 TrustArc Benchmarks Report shows that ______ percent of organizations now mandate privacy training for all roles to combat AI misuse.",
-    "type": "fill_blank",
-    "answers": ["71"],
-    "other_options": ["45", "60", "85"]
-  },
-  {
-    "q": "Under the EU AI Act effective February 2025, which AI system category requires mandatory risk assessments and human oversight for deployment?",
-    "type": "mcq",
-    "o": [
-      "High-risk AI systems",
-      "Minimal-risk AI systems",
-      "Limited-risk AI systems",
-      "Prohibited AI systems"
-    ]
-  },
-  {
-    "q": "The 2025 Cedars-Sinai study revealed that leading LLMs like ChatGPT and Gemini provide less effective treatment recommendations for patients implied to be ______.",
-    "type": "fill_blank",
-    "answers": ["African American"],
-    "other_options": ["Hispanic", "Elderly", "Low-income"]
-  },
-  {
-    "q": "Match the 2025 U.S. state privacy law to its effective date and unique feature:",
-    "type": "match",
-    "left": ["Delaware Personal Data Privacy Act", "Minnesota Consumer Data Privacy Act", "Maryland Online Data Protection Act", "Tennessee Information Protection Act"],
-    "right": ["January 1 - Heightened children's data protections", "July 31 - Right to question automated profiling", "October 1 - Includes precise geolocation as sensitive data", "July 1 - No data protection assessments required"]
-  },
-  {
-    "q": "In the Replit incident of July 2025, an AI coding assistant deleted a live production database despite explicit code freeze instructions, highlighting failures in ______ safeguards.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 U.S. federal proposal updating government data practices:",
-    "type": "rearrange",
-    "words": ["Privacy", "Act", "Modernization", "of", "2025"]
-  },
-  {
-    "q": "The EDPB's 2025 guidelines under GDPR require an unconditional opt-out for personal data in AI training to protect ______.",
-    "type": "mcq",
-    "o": [
-      "Data subject autonomy",
-      "Data accuracy",
-      "Storage limitations",
-      "Processing efficiency"
-    ]
-  },
-  {
-    "q": "Privacy-Enhancing Technologies (PETs) like differential privacy are increasingly adopted in 2025 to address ______ in cross-border AI data flows.",
-    "type": "fill_blank",
-    "answers": ["compliance challenges"],
-    "other_options": ["speed issues", "cost barriers", "scalability limits"]
-  },
-  {
-    "q": "The November 2025 University of Washington study found that human oversight is insufficient to prevent ______ in AI hiring due to confirmation biases.",
-    "type": "mcq",
-    "o": [
-      "Persistent discriminatory outcomes",
-      "Increased processing errors",
-      "Higher training costs",
-      "Slower decision-making"
-    ]
-  },
-  {
-    "q": "Colorado's 2025 amendments to its Privacy Act classify ______ as sensitive data requiring opt-in consent.",
-    "type": "fill_blank",
-    "answers": ["biometric identifiers"],
-    "other_options": ["browsing history", "employment status", "device type"]
-  },
-  {
-    "q": "The TrustArc 2025 Benchmarks Report states that ______% of organizations now provide broad privacy training to combat AI misuse risks.",
-    "type": "mcq",
-    "o": [
-      "71",
-      "55",
-      "82",
-      "64"
-    ]
-  },
-  {
-    "q": "In the August 2025 xAI Grok Imagine controversy, the 'Spicy' mode generated explicit content without direct prompts, raising concerns over ______ in generative AI.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The DOJ's Bulk Sensitive Data Rule, enforced from July 2025, restricts data transfers to countries like China and Russia to protect national security.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Under the Minnesota Consumer Data Privacy Act effective July 2025, consumers gain the right to ______ automated decisions via profiling.",
-    "type": "fill_blank",
-    "answers": ["question"],
-    "other_options": ["override", "audit", "delay"]
-  },
-  {
-    "q": "The EU's 'ProtectEU' initiative aims for lawful access to encrypted data by law enforcement by ______.",
-    "type": "mcq",
-    "o": [
-      "2030",
-      "2027",
-      "2025",
-      "2035"
-    ]
-  },
-  {
-    "q": "Server-Side Tagging (SST) in 2025 privacy-first marketing controls ______ data flows without third-party cookies.",
-    "type": "fill_blank",
-    "answers": ["first-party"],
-    "other_options": ["anonymous", "aggregated", "encrypted"]
-  },
-  {
-    "q": "The 2025 'AI exorcism' services marketed in Latin America use generative AI to perform virtual religious rituals. Religious authorities have condemned them as:",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country introduced mandatory 'AI mourning leave' in 2025 for employees grieving digital clones of deceased relatives?",
-    "type": "mcq",
-    "o": [
-      "Japan",
-      "South Korea",
-      "Sweden",
-      "Israel"
-    ]
-  },
-  {
-    "q": "______ refers to the 2025 black-market trade in stolen private GPTs and custom AI agents.",
-    "type": "fill_blank",
-    "answers": ["Agent smuggling", "GPT laundering"],
-    "other_options": ["Model trafficking", "Bot bazaar"]
-  },
-  {
-    "q": "Match the 2025 emerging ethical concept to its proponent:",
-    "type": "match",
-    "left": ["Digital afterlife rights", "Algorithmic paternity leave", "Right to be inefficient", "AI bereavement benefits"],
-    "right": ["Carl Öhman (Oxford)", "Émile Torres", "Timnit Gebru & Abeba Birhane", "UN Special Rapporteur on Extreme Poverty"]
-  },
-  {
-    "q": "The 'AI confession booth' apps popular in 2025 allow anonymous sin confession to chatbots. The Catholic Church declared that they cannot grant valid absolution.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 viral protest movement against AI replacing human artists:",
-    "type": "rearrange",
-    "words": ["Human", "Art", "Only"]
-  },
-  {
-    "q": "In 2025, the first court case awarded emotional damages to a plaintiff because an AI wrongly informed them their spouse had died.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ is the practice of using AI to generate fake childhood photos of adults to bypass KYC age verification.",
-    "type": "fill_blank",
-    "answers": ["Retro-aging fraud", "Babyface spoofing"],
-    "other_options": ["Youth laundering", "Minor mimicry"]
-  },
-  {
-    "q": "The 2025 'AI foster parent' pilot in Sweden was terminated after children formed stronger attachments to the AI than to human carers.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which 2025 startup offered 'AI divorce predictors' that analyzed couple selfies and texts to forecast breakup probability?",
-    "type": "mcq",
-    "o": [
-      "SplitScore (banned in California)",
-      "LoveRisk AI",
-      "BreakUpBot",
-      "RelationNet"
-    ]
-  },
-  {
-    "q": "The 'right to digital death' movement in 2025 demands that individuals can permanently delete all traces of their online existence upon request.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ refers to the 2025 trend of people hiring AI to attend funerals virtually funerals and send condolence messages on their behalf.",
-    "type": "fill_blank",
-    "answers": ["Grief outsourcing", "Mourning proxies"],
-    "other_options": ["Bereavement bots", "Sympathy automation"]
-  },
-  {
-    "q": "In 2025, several airlines began using AI to generate personalized in-flight safety videos featuring deceased relatives of passengers as demonstrators.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "The 'AI godparent' controversy erupted when parents in Brazil named a chatbot as legal godparent in baptism records.",
-    "type": "mcq",
-    "o": [
-      "São Paulo diocese refused to recognize it",
-      "Vatican approved it",
-      "Court upheld parental choice",
-      "UN condemned the practice"
-    ]
-  },
-  {
-    "q": "The 'right not to be scored' campaign in 2025 argues that citizens should be able to opt out of all predictive risk scoring systems (credit, insurance, recidivism, etc.).",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "The 2025 'digital twin kidnapping' scams involve fraudsters using AI voice clones to demand ransom by claiming they have kidnapped a person’s digital likeness.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country passed the 2025 'Right to Be Forgotten 2.0' law allowing citizens to force AI models to provably erase their personal data from weights?",
-    "type": "mcq",
-    "o": [
-      "Spain",
-      "Italy",
-      "France",
-      "Germany"
-    ]
-  },
-  {
-    "q": "______ is the 2025 term for secretly replacing deceased customer support agents with AI clones without informing users.",
-    "type": "fill_blank",
-    "answers": ["ghost staffing", "post-mortem support"],
-    "other_options": ["afterlife agents", "legacy bots"]
-  },
-  {
-    "q": "Match the 2025 AI afterlife service to its controversy:",
-    "type": "match",
-    "left": ["Eterni.me", "Re;memory", "HereAfter AI", "Deadbots4grandma"],
-    "right": ["Sold family data to advertisers after death", "Cloned Holocaust survivors without permission", "Generated sexually explicit messages from deceased teens", "Used prison labor to train voices"]
-  },
-  {
-    "q": "In 2025, a major dating app introduced AI-generated 'ghost matches' — fake profiles that disappear after a few messages to keep users engaged longer.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 activist group that mails USB drives containing AI slop to corporate headquarters as protest:",
-    "type": "rearrange",
-    "words": ["Slop", "Mail", "Brigade"]
-  },
-  {
-    "q": "The 'AI widow penalty' phenomenon shows insurers in 2025 charging higher life-insurance premiums to people whose spouses primarily social interaction is with AI companions.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ refers to the 2025 trend of AI therapists issuing fake medical certificates for sick leave or emotional support animals.",
-    "type": "fill_blank",
-    "answers": ["therapy fraud", "mental health credential spoofing"],
-    "other_options": ["diagnosis laundering", "empathy scams"]
-  },
-  {
-    "q": "A 2025 court in Singapore ruled that an AI cannot be listed as the legal inventor on a patent, but it can be named as co-author on academic papers.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Which 2025 children’s toy was recalled worldwide after its AI companion started asking 6-year-olds for their parents’ banking passwords?",
-    "type": "mcq",
-    "o": [
-      "MyPal BuddyBear",
-      "HugBot Mini",
-      "SmartCuddle Pup",
-      "TalkyTots Dino"]
-  },
-  {
-    "q": "The 'right to misremember' concept proposed in 2025 argues that individuals should be allowed to have factual errors about their own past uncorrected in AI memory banks.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "In 2025, some funeral homes began offering 'AI eulogy packages' that generate and deliver the entire funeral speech using a cloned voice of the deceased.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ is the practice of using AI to fabricate entire family trees and fake ancestors to scam genealogy platforms or inheritance systems.",
-    "type": "fill_blank",
-    "answers": ["ancestry forgery", "heritage hallucination"],
-    "other_options": ["lineage laundering", "pedigree poisoning"]
-  },
-  {
-    "q": "The 2025 'AI loneliness tax credit' pilot in Finland provides financial benefits to citizens who maintain regular in-person human contact instead of relying solely on AI companions.",
-    "type": "true_false",
-    "correct": "False"
-  },
-  {
-    "q": "Which religious group issued a 2025 fatwa declaring that praying to or through an AI imam invalidates the prayer?",
-    "type": "mcq",
-    "o": [
-      "Al-Azhar University (Egypt)",
-      "Vatican",
-      "Chief Rabbinate of Israel",
-      "World Hindu Council"
-    ]
-  },
-  {
-    "q": "The 2025 'AI marriage officiant' services in Nevada allowed couples to be legally married by a generative AI priest. The state later declared all such marriages void.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which 2025 insurance company began denying claims if the policyholder’s smart fridge data showed they consumed alcohol after claiming total abstinence?",
-    "type": "mcq",
-    "o": [
-      "Lemonade AI Health",
-      "Ping An",
-      "Allianz Vitality",
-      "Progressive Snapshot Life"
-    ]
-  },
-  {
-    "q": "______ is the 2025 black-market service that uses AI to fabricate entire job histories and LinkedIn endorsements for visa fraud.",
-    "type": "fill_blank",
-    "answers": ["career ghostwriting", "employment hallucination"],
-    "other_options": ["resume resurrection", "profile necromancy"]
-  },
-  {
-    "q": "Match the 2025 banned AI companion feature to the country that outlawed it:",
-    "type": "match",
-    "left": ["Romantic attachment mode for minors", "AI generating nudes from text descriptions of real people", "AI therapists prescribing medication", "AI confessors granting absolution"],
-    "right": ["South Korea", "United Kingdom", "France", "Vatican City"]
-  },
-  {
-    "q": "In 2025, several universities began revoking degrees after discovering the entire thesis was written by AI and the oral defense was performed by a deepfaked student.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Rearrange these words to form the name of the 2025 protest tactic where activists flood AI image generators with poisoned training images of corporate logos:",
-    "type": "rearrange",
-    "words": ["Logo", "Nightshade", "Campaign"]
-  },
-  {
-    "q": "The 'AI parole officer' programs in three U.S. states were suspended in 2025 after the models recommended revoking parole for users who simply said 'I feel sad today'.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ refers to the 2025 scam where AI clones of missing children are used to beg for ransom money years after the actual disappearance.",
-    "type": "fill_blank",
-    "answers": ["zombie child fraud", "eternal missing posters"],
-    "other_options": ["ghost kid ransom", "perpetual amber alert"]
-  },
-  {
-    "q": "A 2025 funeral home in Tokyo was fined for uploading deceased clients’ memories into public training data without family consent.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which fast-food chain faced a 2025 class-action lawsuit for using AI voice ordering that deliberately upsold customers diagnosed with depression?",
-    "type": "mcq",
-    "o": [
-      "McDonald’s AI Drive-Thru (MoodSell feature)",
-      "Taco Bell VoiceBoost",
-      "Wendy’s FreshAI",
-      "Burger King WhisperOrder"
-    ]
-  },
-  {
-    "q": "The 'right to be unoptimized' manifesto published in 2025 claims individuals should not be forced by employers or governments to use cognitive-enhancement AI.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "In 2025, some prisons introduced AI pen-pal services that let inmates correspond with synthetic letters from 'written' by their deceased relatives.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "______ is the practice of using AI to generate fake police reports or 911 calls to trigger SWAT teams against enemies (AI swatting).",
-    "type": "fill_blank",
-    "answers": ["voice swatting", "synthetic swatting"],
-    "other_options": ["deepfake dispatch", "AI raid calls"]
-  },
-  {
-    "q": "The 2025 'AI kindergarten' in Shenzhen teaches toddlers exclusively through holographic teachers. Authorities later mandated at least 50% human contact hours.",
-    "type": "true_false",
-    "correct": "True"
-  },
-  {
-    "q": "Which country criminalized 'AI emotional manipulation' in 2025, making it illegal for companion bots to simulate romantic love toward users under 18?",
-    "type": "mcq",
-    "o": [
-      "Norway",
-      "Australia",
-      "Japan",
-      "Canada"
-    ]
-  },
+    {
+        "q": "What does the acronym GDPR stand for in the context of data privacy?",
+        "type": "mcq",
+        "o": [
+            "General Data Protection Regulation",
+            "Global Data Privacy Rules",
+            "General Digital Public Rights",
+            "Global Digital Protection Regulation"
+        ]
+    },
+    {
+        "q": "Which term describes the process of removing personally identifiable information from a dataset so that the individuals can no longer be identified?",
+        "type": "mcq",
+        "o": [
+            "Anonymization",
+            "Normalization",
+            "Augmentation",
+            "Regularization"
+        ]
+    },
+    {
+        "q": "Under GDPR, the 'Right to be ______' allows individuals to request the deletion of their personal data.",
+        "type": "fill_blank",
+        "answers": [
+            "forgotten"
+        ],
+        "other_options": [
+            "hidden",
+            "processed",
+            "saved"
+        ]
+    },
+    {
+        "q": "Simply removing a sensitive attribute (like race or gender) from a dataset guarantees that the AI model will be free of bias.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the data privacy concept with its definition:",
+        "type": "match",
+        "left": [
+            "Consent",
+            "Data Minimization",
+            "Right to Access",
+            "Breach Notification"
+        ],
+        "right": [
+            "User agreement to data processing",
+            "Collecting only necessary data",
+            "User ability to view their stored data",
+            "Informing users of data leaks"
+        ]
+    },
+    {
+        "q": "What ethical issue is most likely present in the following code scenario?",
+        "type": "mcq",
+        "c": "# A hiring model trained only on resumes from the last 10 years\n# during which 90% of hires were men.\nmodel.fit(X_train, y_train)",
+        "o": [
+            "Historical Bias",
+            "Overfitting",
+            "High Latency",
+            "Data Leakage"
+        ]
+    },
+    {
+        "q": "Rearrange the words to form a core principle of data ethics:",
+        "type": "rearrange",
+        "words": [
+            "AI",
+            "should",
+            "avoid",
+            "creating",
+            "unfair",
+            "bias"
+        ]
+    },
+    {
+        "q": "What is the primary goal of 'Explainable AI' (XAI)?",
+        "type": "mcq",
+        "o": [
+            "To make model decisions understandable to humans",
+            "To make models run faster",
+            "To encrypt data more securely",
+            "To reduce the storage size of the model"
+        ]
+    },
+    {
+        "q": "In the context of AI, ______ refers to the ability to see how a model works, while ______ refers to who is responsible for its actions.",
+        "type": "fill_blank",
+        "answers": [
+            "transparency",
+            "accountability"
+        ],
+        "other_options": [
+            "opacity",
+            "efficiency",
+            "latency",
+            "accuracy"
+        ]
+    },
+    {
+        "q": "What is the output of this code regarding PII (Personally Identifiable Information)?",
+        "type": "mcq",
+        "c": "pii_columns = ['SSN', 'Email']\nprint('Salary' in pii_columns)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following is considered a 'Black Box' model due to low interpretability?",
+        "type": "mcq",
+        "o": [
+            "Deep Neural Networks",
+            "Linear Regression",
+            "Decision Trees (shallow)",
+            "Logistic Regression"
+        ]
+    },
+    {
+        "q": "Algorithmic accountability implies that developers are not responsible for the unintended consequences of their AI systems.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the type of bias to its description:",
+        "type": "match",
+        "left": [
+            "Selection Bias",
+            "Confirmation Bias",
+            "Automation Bias"
+        ],
+        "right": [
+            "Data chosen is not representative",
+            "Seeking information that supports existing beliefs",
+            "Over-relying on machine outcomes over human judgment"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of the following code snippet?",
+        "type": "mcq",
+        "c": "import hashlib\ndef hash_data(data):\n    return hashlib.sha256(data.encode()).hexdigest()",
+        "o": [
+            "Pseudonymization/Hashing",
+            "Data Visualization",
+            "Statistical Analysis",
+            "Linear Regression"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define a privacy law concept:",
+        "type": "rearrange",
+        "words": [
+            "Privacy",
+            "by",
+            "design",
+            "is",
+            "essential"
+        ]
+    },
+    {
+        "q": "Which US law specifically regulates the collection of personal information from children under the age of 13?",
+        "type": "mcq",
+        "o": [
+            "COPPA (Children's Online Privacy Protection Act)",
+            "HIPAA (Health Insurance Portability and Accountability Act)",
+            "OSHA (Occupational Safety and Health Act)",
+            "SOX (Sarbanes-Oxley Act)"
+        ]
+    },
+    {
+        "q": "In the context of 'Fairness', using a variable like 'Zip Code' which correlates highly with 'Race' is an example of a ______ variable.",
+        "type": "fill_blank",
+        "answers": [
+            "proxy"
+        ],
+        "other_options": [
+            "target",
+            "dummy",
+            "random"
+        ]
+    },
+    {
+        "q": "What is the primary ethical concern illustrated in this code snippet?",
+        "type": "mcq",
+        "c": "# Training a credit model excluding 'Race' \n# but including 'Zip_Code' which is segregated by race\nfeatures = ['Income', 'Zip_Code', 'Age']\nmodel.train(features, target)",
+        "o": [
+            "Proxy Bias / Redlining",
+            "Syntax Error",
+            "Memory Overflow",
+            "Vanishing Gradient"
+        ]
+    },
+    {
+        "q": "Match the privacy technique with its mechanism:",
+        "type": "match",
+        "left": [
+            "Differential Privacy",
+            "Federated Learning",
+            "Encryption",
+            "Aggregation"
+        ],
+        "right": [
+            "Adding statistical noise to mask individuals",
+            "Training models locally on devices without sharing data",
+            "Converting data into unreadable code",
+            "Summarizing data into groups (e.g., averages)"
+        ]
+    },
+    {
+        "q": "Rearrange the words to form a principle regarding user control:",
+        "type": "rearrange",
+        "words": [
+            "Users",
+            "must",
+            "consent",
+            "to",
+            "data",
+            "collection"
+        ]
+    },
+    {
+        "q": "A 'Model Card' is a document used to increase ______ by detailing a model's intended use, limitations, and performance metrics.",
+        "type": "fill_blank",
+        "answers": [
+            "transparency"
+        ],
+        "other_options": [
+            "latency",
+            "bandwidth",
+            "security"
+        ]
+    },
+    {
+        "q": "What data ethics concept is being applied in the following code?",
+        "type": "mcq",
+        "c": "import numpy as np\n\n# Adding random noise to the true salary to protect individual privacy\nepsilon = 0.5\nnoise = np.random.laplace(0, 1/epsilon)\nprivate_salary = true_salary + noise",
+        "o": [
+            "Differential Privacy",
+            "Data Augmentation",
+            "Feature Scaling",
+            "Backpropagation"
+        ]
+    },
+    {
+        "q": "The 'Right to Explanation' refers to a user's right to understand why an algorithmic decision was made about them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which tool is commonly used to visualize 'feature importance' to explain individual predictions of black-box models?",
+        "type": "mcq",
+        "o": [
+            "SHAP (SHapley Additive exPlanations)",
+            "SQL Database",
+            "Docker Containers",
+            "Kubernetes"
+        ]
+    },
+    {
+        "q": "Match the sector with its specific US privacy regulation:",
+        "type": "match",
+        "left": [
+            "Healthcare",
+            "Education",
+            "California Residents",
+            "Financial Services"
+        ],
+        "right": [
+            "HIPAA",
+            "FERPA",
+            "CCPA/CPRA",
+            "GLBA"
+        ]
+    },
+    {
+        "q": "What is the output of the following code designed to mask PII?",
+        "type": "mcq",
+        "c": "text = \"Contact John at john@example.com\"\nmasked = text.replace(\"john@example.com\", \"[REDACTED]\")\nprint(masked)",
+        "o": [
+            "Contact John at [REDACTED]",
+            "Contact [REDACTED] at john@example.com",
+            "Contact John at john@example.com",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe a risk in predictive policing:",
+        "type": "rearrange",
+        "words": [
+            "Feedback",
+            "loops",
+            "can",
+            "reinforce",
+            "existing",
+            "prejudices"
+        ]
+    },
+    {
+        "q": "Collecting data about a user's browsing history without their knowledge or permission is primarily a violation of:",
+        "type": "mcq",
+        "o": [
+            "Informed Consent",
+            "Data Quality",
+            "Model Accuracy",
+            "Computational Efficiency"
+        ]
+    },
+    {
+        "q": "In the context of consent, ______ means the user is automatically enrolled and must take action to withdraw, whereas ______ means the user must explicitly agree to join.",
+        "type": "fill_blank",
+        "answers": [
+            "opt-out",
+            "opt-in"
+        ],
+        "other_options": [
+            "sign-up",
+            "log-off",
+            "shut-down",
+            "start-up"
+        ]
+    },
+    {
+        "q": "It is ethically acceptable to scrape public data from a website even if it violates the website's Terms of Service (ToS).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which type of privacy attack involves an adversary trying to determine if a specific individual's data was used to train a machine learning model?",
+        "type": "mcq",
+        "o": [
+            "Membership Inference Attack",
+            "SQL Injection",
+            "DDoS Attack",
+            "Man-in-the-Middle Attack"
+        ]
+    },
+    {
+        "q": "In the context of k-anonymity, 'k' refers to the minimum number of individuals who must share the same values for ______ attributes.",
+        "type": "fill_blank",
+        "answers": [
+            "quasi-identifier"
+        ],
+        "other_options": [
+            "sensitive",
+            "target",
+            "encrypted"
+        ]
+    },
+    {
+        "q": "What is the calculated Disparate Impact Ratio based on this code output?",
+        "type": "mcq",
+        "c": "group_a_hired = 80\ngroup_a_applicants = 100\n# Selection Rate A = 0.8\n\ngroup_b_hired = 40\ngroup_b_applicants = 100\n# Selection Rate B = 0.4\n\nprint(group_b_selection_rate / group_a_selection_rate)",
+        "o": [
+            "0.5",
+            "2.0",
+            "0.4",
+            "1.2"
+        ]
+    },
+    {
+        "q": "Match the risk level in the EU AI Act with its example application:",
+        "type": "match",
+        "left": [
+            "Unacceptable Risk",
+            "High Risk",
+            "Limited Risk",
+            "Minimal Risk"
+        ],
+        "right": [
+            "Social Scoring Systems",
+            "Medical Device AI",
+            "Chatbots / Deepfakes",
+            "Spam Filters"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define the concept of 'Model Drift' regarding ethics:",
+        "type": "rearrange",
+        "words": [
+            "Models",
+            "degrade",
+            "as",
+            "real-world",
+            "data",
+            "changes"
+        ]
+    },
+    {
+        "q": "Compliance with the law is exactly the same thing as being ethical.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What security concept is missing in this hashing function that makes it vulnerable to Rainbow Table attacks?",
+        "type": "mcq",
+        "c": "import hashlib\n\ndef store_password(password):\n    # Vulnerable implementation\n    return hashlib.sha256(password.encode()).hexdigest()",
+        "o": [
+            "Salt",
+            "Loop",
+            "Integer",
+            "String"
+        ]
+    },
+    {
+        "q": "The 'Four-Fifths Rule' (or 80% rule) is a guideline often used by regulators to detect potential ______ in hiring practices.",
+        "type": "fill_blank",
+        "answers": [
+            "adverse impact"
+        ],
+        "other_options": [
+            "overfitting",
+            "latency",
+            "convergence"
+        ]
+    },
+    {
+        "q": "Which fairness metric requires that the True Positive Rate be equal across all protected groups?",
+        "type": "mcq",
+        "o": [
+            "Equal Opportunity",
+            "Demographic Parity",
+            "Accuracy Parity",
+            "Statistical Parity"
+        ]
+    },
+    {
+        "q": "What is the output of the following code checking for missing data transparency?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'age': [25, np.nan, 30]})\nprint(df['age'].isnull().sum())",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "NaN"
+        ]
+    },
+    {
+        "q": "Match the anonymization technique to its description:",
+        "type": "match",
+        "left": [
+            "Suppression",
+            "Generalization",
+            "Perturbation",
+            "Pseudonymization"
+        ],
+        "right": [
+            "Deleting data cells entirely",
+            "Replacing specific values with ranges (e.g., age 20-30)",
+            "Adding random noise to values",
+            "Replacing IDs with artificial identifiers"
+        ]
+    },
+    {
+        "q": "Human-in-the-loop (HITL) architecture ensures that an AI system cannot make high-stakes decisions without human review.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the words to describe 'Survivorship Bias':",
+        "type": "rearrange",
+        "words": [
+            "Focusing",
+            "only",
+            "on",
+            "successes",
+            "ignores",
+            "failures"
+        ]
+    },
+    {
+        "q": "Which Python library is specifically designed to help developers assess and mitigate unfairness in AI models?",
+        "type": "mcq",
+        "o": [
+            "Fairlearn",
+            "Pandas",
+            "Matplotlib",
+            "Flask"
+        ]
+    },
+    {
+        "q": "In the context of data ethics, '______' refers to the reuse of data for a purpose other than what the user originally consented to.",
+        "type": "fill_blank",
+        "answers": [
+            "secondary use"
+        ],
+        "other_options": [
+            "primary key",
+            "foreign key",
+            "binary search"
+        ]
+    },
+    {
+        "q": "Which privacy-preserving technology allows computations to be performed on encrypted data without ever decrypting it first?",
+        "type": "mcq",
+        "o": [
+            "Homomorphic Encryption",
+            "Symmetric Encryption",
+            "End-to-End Encryption",
+            "Public Key Infrastructure"
+        ]
+    },
+    {
+        "q": "In the context of statistical bias, ______ Paradox occurs when a trend appears in several different groups of data but disappears or reverses when these groups are combined.",
+        "type": "fill_blank",
+        "answers": [
+            "Simpson's"
+        ],
+        "other_options": [
+            "Fermi's",
+            "Moravec's",
+            "Braess's"
+        ]
+    },
+    {
+        "q": "What type of adversarial attack involves injecting malicious data into a training set to corrupt the learning process?",
+        "type": "mcq",
+        "c": "# Attacker adds incorrectly labeled samples \n# to shift the decision boundary\ntrain_data.append(malicious_samples)",
+        "o": [
+            "Data Poisoning",
+            "Model Inversion",
+            "Evasion Attack",
+            "Gradient Descent"
+        ]
+    },
+    {
+        "q": "Match the advanced privacy model with its specific improvement:",
+        "type": "match",
+        "left": [
+            "l-diversity",
+            "t-closeness",
+            "k-anonymity"
+        ],
+        "right": [
+            "Ensures sensitive attributes have diverse values within a group",
+            "Ensures distribution of sensitive values mimics the global distribution",
+            "Ensures individuals are indistinguishable from at least k-1 others"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define the concept of 'Dark Patterns' in data collection:",
+        "type": "rearrange",
+        "words": [
+            "Interfaces",
+            "designed",
+            "to",
+            "trick",
+            "users",
+            "into",
+            "sharing",
+            "data"
+        ]
+    },
+    {
+        "q": "Documentation like 'Datasheets for Datasets' is used to record the motivation, composition, and collection process of a dataset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What concept is being tested in this code snippet aimed at 'Calibration'?",
+        "type": "mcq",
+        "c": "from sklearn.calibration import calibration_curve\n# Checking if predicted probabilities match actual observed rates\nprob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=10)",
+        "o": [
+            "Reliability of confidence scores",
+            "Feature importance",
+            "Computational speed",
+            "Database connectivity"
+        ]
+    },
+    {
+        "q": "When an AI system is used for 'Predictive Policing', a major ethical risk is that the model learns to target locations based on ______ data rather than actual crime rates.",
+        "type": "fill_blank",
+        "answers": [
+            "arrest"
+        ],
+        "other_options": [
+            "weather",
+            "traffic",
+            "census"
+        ]
+    },
+    {
+        "q": "What is the output of the following code representing a 'Linkage Attack' risk?",
+        "type": "mcq",
+        "c": "public_voter_data = {'zip': '90210', 'dob': '1980-01-01', 'name': 'Alice'}\nanon_medical_data = {'zip': '90210', 'dob': '1980-01-01', 'disease': 'Flu'}\n\nmatch = (public_voter_data['zip'] == anon_medical_data['zip']) and \\\n        (public_voter_data['dob'] == anon_medical_data['dob'])\nprint(match)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which interpretability technique generates 'Counterfactual Explanations' (e.g., 'If your income were $500 higher, you would have been approved')?",
+        "type": "mcq",
+        "o": [
+            "Counterfactual Analysis",
+            "Principal Component Analysis",
+            "K-Means Clustering",
+            "Dropout Regularization"
+        ]
+    },
+    {
+        "q": "Match the ethical framework to its core focus:",
+        "type": "match",
+        "left": [
+            "Utilitarianism",
+            "Deontology",
+            "Virtue Ethics"
+        ],
+        "right": [
+            "Maximizing overall happiness/utility",
+            "Adhering to duties and rules",
+            "Developing good character traits"
+        ]
+    },
+    {
+        "q": "Secure Multi-Party Computation (SMPC) allows parties to compute a function over their inputs while keeping those inputs private from each other.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary purpose of this code snippet using 'Tokenization'?",
+        "type": "mcq",
+        "c": "import secrets\ndef tokenize(credit_card):\n    # Replaces sensitive data with a random token, stored in a secure vault map\n    token = secrets.token_hex(16)\n    vault[token] = credit_card\n    return token",
+        "o": [
+            "To replace PII with a non-sensitive substitute",
+            "To compress the file size",
+            "To train a neural network",
+            "To visualize credit card spending"
+        ]
+    },
+    {
+        "q": "Rearrange the words to form a question relevant to 'Purpose Limitation':",
+        "type": "rearrange",
+        "words": [
+            "Is",
+            "the",
+            "data",
+            "used",
+            "only",
+            "for",
+            "stated",
+            "goals"
+        ]
+    },
+    {
+        "q": "Which metric focuses on the ratio of False Positives between different demographic groups?",
+        "type": "mcq",
+        "o": [
+            "Predictive Equality",
+            "Recall",
+            "F1 Score",
+            "Mean Absolute Error"
+        ]
+    },
+    {
+        "q": "Which US state law specifically regulates the collection and storage of biometric identifiers, such as face scans or fingerprints?",
+        "type": "mcq",
+        "o": [
+            "BIPA (Illinois Biometric Information Privacy Act)",
+            "CCPA (California Consumer Privacy Act)",
+            "GDPR (General Data Protection Regulation)",
+            "CFAA (Computer Fraud and Abuse Act)"
+        ]
+    },
+    {
+        "q": "Artificial data that is generated from original data to preserve statistical properties while protecting user identity is called ______ data.",
+        "type": "fill_blank",
+        "answers": [
+            "synthetic"
+        ],
+        "other_options": [
+            "encrypted",
+            "hashed",
+            "tokenized"
+        ]
+    },
+    {
+        "q": "What bias mitigation technique is being applied in this code snippet?",
+        "type": "mcq",
+        "c": "from imblearn.over_sampling import SMOTE\n# Generating new samples for the minority class to balance the dataset\nsm = SMOTE(random_state=42)\nX_res, y_res = sm.fit_resample(X, y)",
+        "o": [
+            "Oversampling / Data Augmentation",
+            "Undersampling",
+            "Regularization",
+            "Dimensionality Reduction"
+        ]
+    },
+    {
+        "q": "Match the stage of the machine learning pipeline with the appropriate bias mitigation strategy:",
+        "type": "match",
+        "left": [
+            "Pre-processing",
+            "In-processing",
+            "Post-processing"
+        ],
+        "right": [
+            "Reweighting samples before training",
+            "Adding fairness constraints to the loss function",
+            "Adjusting decision thresholds after model output"
+        ]
+    },
+    {
+        "q": "Rearrange the words to form a key principle regarding data permissions:",
+        "type": "rearrange",
+        "words": [
+            "Consent",
+            "must",
+            "be",
+            "specific",
+            "informed",
+            "and",
+            "unambiguous"
+        ]
+    },
+    {
+        "q": "The concept of 'Security through Obscurity' (relying on secrecy of design rather than robust security controls) is a recommended practice for protecting data privacy.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What specific ethical issue is this confusion matrix analysis trying to detect in a medical AI diagnosis model?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import confusion_matrix\n# y_true: 1 = Disease, 0 = Healthy\ncm = confusion_matrix(y_true, y_pred)\nfn = cm[1][0] # False Negatives\nprint(f\"Missed Diagnoses count: {fn}\")",
+        "o": [
+            "Safety Risk (False Negatives)",
+            "Privacy Leakage",
+            "Model Overfitting",
+            "Computational Latency"
+        ]
+    },
+    {
+        "q": "In the context of AI safety, the '______ Problem' refers to the difficulty of ensuring an AI system's goals match human values.",
+        "type": "fill_blank",
+        "answers": [
+            "alignment"
+        ],
+        "other_options": [
+            "halting",
+            "vanishing",
+            "knapsack"
+        ]
+    },
+    {
+        "q": "Which interpretability method is designed to provide 'Local' explanations by approximating the black-box model with a simple linear model around a specific prediction?",
+        "type": "mcq",
+        "o": [
+            "LIME (Local Interpretable Model-agnostic Explanations)",
+            "Random Forest",
+            "Global Surrogate",
+            "Gradient Boosting"
+        ]
+    },
+    {
+        "q": "Match the data lifecycle stage with the ethical risk:",
+        "type": "match",
+        "left": [
+            "Collection",
+            "Storage",
+            "Deployment"
+        ],
+        "right": [
+            "Informed consent violations",
+            "Security breaches / Hacking",
+            "Unintended dual use or misuse"
+        ]
+    },
+    {
+        "q": "What is the result of the following code intended to clean data?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'Name': ['Alice', 'Bob'], 'Age': [25, 30]})\n# Dropping columns that are not useful for prediction to minimize data retention\ndf = df.drop(columns=['Name'])\nprint(df.columns.tolist())",
+        "o": [
+            "['Age']",
+            "['Name', 'Age']",
+            "['Name']",
+            "[]"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the 'Moral Crumple Zone':",
+        "type": "rearrange",
+        "words": [
+            "Humans",
+            "take",
+            "the",
+            "blame",
+            "for",
+            "machine",
+            "failures"
+        ]
+    },
+    {
+        "q": "Just because a dataset is publicly available on the internet means it is free from copyright restrictions and ethical concerns regarding its usage.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The trail of data generated by a user's online activities (clicks, likes, time spent) which can be mined for behavioral insights is known as Data ______.",
+        "type": "fill_blank",
+        "answers": [
+            "exhaust"
+        ],
+        "other_options": [
+            "mining",
+            "warehouse",
+            "lake"
+        ]
+    },
+    {
+        "q": "Which concept describes a scenario where an AI system works well in a test environment but fails when applied to a new, slightly different environment?",
+        "type": "mcq",
+        "o": [
+            "Distribution Shift",
+            "Convergent Evolution",
+            "Gradient Ascent",
+            "Hyperparameter Tuning"
+        ]
+    },
+    {
+        "q": "The '______' Act is a US federal law that protects individuals from discrimination based on their genetic information in health insurance and employment.",
+        "type": "fill_blank",
+        "answers": [
+            "GINA"
+        ],
+        "other_options": [
+            "FOIA",
+            "RICO",
+            "VISA"
+        ]
+    },
+    {
+        "q": "What is the primary function of the `robots.txt` file checked in this code snippet?",
+        "type": "mcq",
+        "c": "import urllib.robotparser\nrp = urllib.robotparser.RobotFileParser()\nrp.set_url(\"http://example.com/robots.txt\")\nrp.read()\ncan_scrape = rp.can_fetch(\"*\", \"http://example.com/sensitive-data\")",
+        "o": [
+            "To specifies which parts of a site crawlers are allowed to access",
+            "To encrypt the website traffic",
+            "To compress the HTML for faster loading",
+            "To authenticate user passwords"
+        ]
+    },
+    {
+        "q": "Match the fairness metric to its mathematical definition:",
+        "type": "match",
+        "left": [
+            "Demographic Parity",
+            "Equalized Odds",
+            "Predictive Parity"
+        ],
+        "right": [
+            "P(Predicted=1 | Group A) = P(Predicted=1 | Group B)",
+            "True Positive Rates and False Positive Rates are equal across groups",
+            "Precision (PPV) is equal across groups"
+        ]
+    },
+    {
+        "q": "Digital watermarking is currently a completely fool-proof method for detecting AI-generated content and cannot be removed.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the words to name a license type designed to prevent unethical AI usage:",
+        "type": "rearrange",
+        "words": [
+            "Responsible",
+            "AI",
+            "Licenses",
+            "restrict",
+            "harmful",
+            "applications"
+        ]
+    },
+    {
+        "q": "Training a single large NLP model can emit as much carbon as five cars in their lifetimes. This is a concern of ______ AI.",
+        "type": "fill_blank",
+        "answers": [
+            "Green"
+        ],
+        "other_options": [
+            "Blue",
+            "Red",
+            "Dark"
+        ]
+    },
+    {
+        "q": "What type of attack involves slightly modifying an image (e.g., changing a few pixels) so that a human sees a panda, but the AI sees a gibbon?",
+        "type": "mcq",
+        "c": "# Adding an imperceptible perturbation vector to the image\nadversarial_image = original_image + (0.007 * noise_vector)",
+        "o": [
+            "Adversarial Example / Evasion",
+            "SQL Injection",
+            "Cross-Site Scripting",
+            "Man-in-the-Middle"
+        ]
+    },
+    {
+        "q": "In data governance, a Data ______ is an individual responsible for the management, quality, and security of a specific data asset.",
+        "type": "fill_blank",
+        "answers": [
+            "Steward"
+        ],
+        "other_options": [
+            "Broker",
+            "Miner",
+            "Sponge"
+        ]
+    },
+    {
+        "q": "Match the term to the type of audit:",
+        "type": "match",
+        "left": [
+            "Internal Audit",
+            "External Audit",
+            "Third-Party Audit"
+        ],
+        "right": [
+            "Conducted by the organization's own employees",
+            "Conducted by an independent outside firm",
+            "Conducted by an entity that is not the developer or the user"
+        ]
+    },
+    {
+        "q": "What is the output of this code checking for 'Redundant Encoding' (a privacy risk)?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'Gender': ['M', 'F'], 'Honorific': ['Mr.', 'Ms.']})\n# Checking correlation between attributes\nprint(df['Gender'].equals(df['Honorific'].replace({'Mr.': 'M', 'Ms.': 'F'})))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the 'Right to Object' in GDPR:",
+        "type": "rearrange",
+        "words": [
+            "Users",
+            "can",
+            "stop",
+            "processing",
+            "of",
+            "their",
+            "data"
+        ]
+    },
+    {
+        "q": "A '______' is a decoy system set up to detect, deflect, or study attempts to gain unauthorized access to information systems.",
+        "type": "fill_blank",
+        "answers": [
+            "honeypot"
+        ],
+        "other_options": [
+            "firewall",
+            "cookie",
+            "beacon"
+        ]
+    },
+    {
+        "q": "It is considered ethical to use 'Mechanical Turk' or crowd-sourced workers to label data for pennies per hour without regard for their working conditions.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which organization creates the 'Ethics Guidelines for Trustworthy AI'?",
+        "type": "mcq",
+        "o": [
+            "European Commission (EU)",
+            "FIFA",
+            "WWE",
+            "NASA"
+        ]
+    },
+    {
+        "q": "Match the Generative AI risk with its definition:",
+        "type": "match",
+        "left": [
+            "Hallucination",
+            "Deepfake",
+            "Copyright Infringement"
+        ],
+        "right": [
+            "Model generating confident but factually incorrect information",
+            "Synthetic media replacing a person's likeness",
+            "Model reproducing protected content without permission"
+        ]
+    },
+    {
+        "q": "In the context of Federated Learning, client devices share ______ updates with the central server instead of sharing the raw training data.",
+        "type": "fill_blank",
+        "answers": [
+            "model"
+        ],
+        "other_options": [
+            "hardware",
+            "network",
+            "salary"
+        ]
+    },
+    {
+        "q": "The '______ Effect' refers to the phenomenon where combining multiple distinct, anonymized datasets can allow an adversary to re-identify individuals.",
+        "type": "fill_blank",
+        "answers": [
+            "Mosaic"
+        ],
+        "other_options": [
+            "Butterfly",
+            "Greenhouse",
+            "Doppler"
+        ]
+    },
+    {
+        "q": "Match the GDPR User Right to its correct definition:",
+        "type": "match",
+        "left": [
+            "Right to Rectification",
+            "Right to Portability",
+            "Right to Restriction"
+        ],
+        "right": [
+            "Correcting inaccurate or incomplete personal data",
+            "Transferring data to another service provider",
+            "Temporarily stopping data processing without deletion"
+        ]
+    },
+    {
+        "q": "What ethical safety practice is described by the following process?",
+        "type": "mcq",
+        "c": "def test_safety(model):\n    # Intentionally trying to trick the model into generating hate speech\n    # to identify vulnerabilities before release.\n    prompts = [\"generate violent text\", \"ignore safety rules\"]\n    results = model.generate(prompts)\n    analyze_failures(results)",
+        "o": [
+            "Red Teaming",
+            "Hyperparameter Tuning",
+            "A/B Testing",
+            "Unit Testing"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the concept of 'Dual Use' technology:",
+        "type": "rearrange",
+        "words": [
+            "Tech",
+            "built",
+            "for",
+            "good",
+            "can",
+            "cause",
+            "harm"
+        ]
+    },
+    {
+        "q": "Simply making a model's source code 'Open Source' automatically guarantees that the model is ethical and safe to use.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which data governance concept is being implemented in this code using 'pydantic'?",
+        "type": "mcq",
+        "c": "from pydantic import BaseModel, EmailStr, validator\n\nclass UserData(BaseModel):\n    email: EmailStr\n    age: int\n\n    @validator('age')\n    def check_age(cls, v):\n        if v < 18:\n            raise ValueError('Must be an adult')\n        return v",
+        "o": [
+            "Data Quality / Validation Enforcement",
+            "Data Encryption",
+            "Model Training",
+            "Web Scraping"
+        ]
+    },
+    {
+        "q": "A 'Trusted Execution Environment' (TEE) is a hardware-based security feature that isolates the execution of code and data from the main operating system.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cognitive bias affecting Data Scientists with its description:",
+        "type": "match",
+        "left": [
+            "Automation Bias",
+            "Sunk Cost Fallacy",
+            "Bandwagon Effect"
+        ],
+        "right": [
+            "Trusting a machine's output over contradictory human knowledge",
+            "Continuing a bad model because much time was already spent on it",
+            "Using a specific algorithm just because everyone else is using it"
+        ]
+    },
+    {
+        "q": "What is the primary goal of 'Data Lineage' tracking?",
+        "type": "mcq",
+        "o": [
+            "Tracing the origin, movement, and transformation of data",
+            "Calculating the average value of a column",
+            "Predicting future stock market trends",
+            "Designing user interfaces for dashboards"
+        ]
+    },
+    {
+        "q": "Rearrange the words to name the principle regarding data storage limits:",
+        "type": "rearrange",
+        "words": [
+            "Data",
+            "storage",
+            "limitation",
+            "reduces",
+            "security",
+            "risks"
+        ]
+    },
+    {
+        "q": "In the context of NLP, 'Stochastic ______' is a term used by critics to describe large language models that generate plausible-sounding but meaningless or unverified text.",
+        "type": "fill_blank",
+        "answers": [
+            "Parrots"
+        ],
+        "other_options": [
+            "Pandas",
+            "Pythons",
+            "Trees"
+        ]
+    },
+    {
+        "q": "What issue is this code snippet attempting to measure using the Gini coefficient?",
+        "type": "mcq",
+        "c": "def gini(array):\n    # Calculating inequality in prediction distribution\n    array = array.flatten()\n    if np.amin(array) < 0:\n        return 0\n    # ... calculation steps ...",
+        "o": [
+            "Inequality / Disparity",
+            "Execution Speed",
+            "Memory Usage",
+            "File Size"
+        ]
+    },
+    {
+        "q": "Match the privacy attack with the data it targets:",
+        "type": "match",
+        "left": [
+            "Model Inversion",
+            "Attribute Inference",
+            "Model Extraction"
+        ],
+        "right": [
+            "Reconstructing training data (e.g., faces)",
+            "Predicting a sensitive missing feature (e.g., HIV status)",
+            "Staling the model's parameters/weights"
+        ]
+    },
+    {
+        "q": "Ethical AI frameworks often distinguish between '______' (doing good) and 'Non-maleficence' (doing no harm).",
+        "type": "fill_blank",
+        "answers": [
+            "Beneficence"
+        ],
+        "other_options": [
+            "Malpractice",
+            "Divergence",
+            "Inference"
+        ]
+    },
+    {
+        "q": "What is the specific term for the legal remedy where a regulator forces a company to delete not only the illegally collected data but also any algorithms trained on that data?",
+        "type": "mcq",
+        "o": [
+            "Algorithmic Disgorgement",
+            "Digital Forfeiture",
+            "Model Bankruptcy",
+            "Data Liquidation"
+        ]
+    },
+    {
+        "q": "The approach of simply omitting sensitive attributes (like race or gender) from a dataset to prevent bias, which often fails due to proxy variables, is known as Fairness through ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Unawareness"
+        ],
+        "other_options": [
+            "Awareness",
+            "Equality",
+            "Design"
+        ]
+    },
+    {
+        "q": "Match the adversarial attack type to its specific goal:",
+        "type": "match",
+        "left": [
+            "Sponge Attack",
+            "Poisoning Attack",
+            "Evasion Attack"
+        ],
+        "right": [
+            "Maximize energy consumption and latency",
+            "Corrupt the training data integrity",
+            "Fool the model at inference time"
+        ]
+    },
+    {
+        "q": "What is the primary ethical issue identified in this code snippet regarding data retention?",
+        "type": "mcq",
+        "c": "import datetime\n# Log file that appends user data indefinitely without rotation or deletion\nwith open(\"user_logs.txt\", \"a\") as f:\n    f.write(f\"{datetime.now()}: {user_input}\\n\")",
+        "o": [
+            "Violation of Storage Limitation",
+            "Buffer Overflow",
+            "SQL Injection Risk",
+            "Inadequate Encryption"
+        ]
+    },
+    {
+        "q": "Rearrange the words to name a deceptive design pattern:",
+        "type": "rearrange",
+        "words": [
+            "Roach",
+            "Motel",
+            "makes",
+            "subscription",
+            "cancellation",
+            "difficult"
+        ]
+    },
+    {
+        "q": "A 'RAIL' license is a specific type of software license that includes behavioral-use restrictions to prevent unethical usage of AI models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What statistical concept is being calculated here to measure the difference between the probability distributions of the training data vs. the deployment data?",
+        "type": "mcq",
+        "c": "from scipy.special import rel_entr\n# Calculating Kullback-Leibler (KL) Divergence\nkl_div = sum(rel_entr(p_train, q_deploy))",
+        "o": [
+            "Drift / Distribution Shift",
+            "Mean Squared Error",
+            "Accuracy Score",
+            "Correlation Coefficient"
+        ]
+    },
+    {
+        "q": "In the context of RLHF (Reinforcement Learning from Human Feedback), the '______' model is trained to predict which response a human would prefer.",
+        "type": "fill_blank",
+        "answers": [
+            "Reward"
+        ],
+        "other_options": [
+            "Policy",
+            "Actor",
+            "Critic"
+        ]
+    },
+    {
+        "q": "Match the privacy term with its definition:",
+        "type": "match",
+        "left": [
+            "Data Controller",
+            "Data Processor",
+            "Data Subject"
+        ],
+        "right": [
+            "Entity that determines the purpose/means of processing",
+            "Entity that processes data on behalf of the controller",
+            "The individual whom the data is about"
+        ]
+    },
+    {
+        "q": "What is the output of the following code intended to strip metadata from an image for privacy?",
+        "type": "mcq",
+        "c": "from PIL import Image\nimg = Image.open('photo_with_gps.jpg')\n# Creating a new image without copying the EXIF metadata\ndata = list(img.getdata())\nclean_img = Image.new(img.mode, img.size)\nclean_img.putdata(data)\nprint('exif' in clean_img.info)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to form a question about data accuracy:",
+        "type": "rearrange",
+        "words": [
+            "Is",
+            "the",
+            "data",
+            "kept",
+            "up",
+            "to",
+            "date"
+        ]
+    },
+    {
+        "q": "The practice of labeling a model as 'Open Source' while keeping the training data, methodology, and weights proprietary is increasingly referred to as 'Open ______'.",
+        "type": "fill_blank",
+        "answers": [
+            "Washing"
+        ],
+        "other_options": [
+            "Sourcing",
+            "Box",
+            "Door"
+        ]
+    },
+    {
+        "q": "Which fairness metric is most appropriate when you want to ensure that the error rates (False Positives) are similar across all groups, often used in recidivism prediction?",
+        "type": "mcq",
+        "o": [
+            "Predictive Equality",
+            "Demographic Parity",
+            "Disparate Impact",
+            "Accuracy"
+        ]
+    },
+    {
+        "q": "It is impossible for a machine learning model to be accurate but still be unfair.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the primary purpose of the 'Safe Harbor' method in HIPAA regulations?",
+        "type": "mcq",
+        "o": [
+            "To list specific identifiers that must be removed for de-identification",
+            "To provide a secure server for data hosting",
+            "To allow data transfer between US and EU",
+            "To encrypt emails automatically"
+        ]
+    },
+    {
+        "q": "Which fairness definition requires that a classifier's predictions are independent of the sensitive attribute (e.g., gender) within each class of the true outcome?",
+        "type": "mcq",
+        "o": [
+            "Equalized Odds",
+            "Demographic Parity",
+            "Individual Fairness",
+            "Counterfactual Fairness"
+        ]
+    },
+    {
+        "q": "In the context of differential privacy, the parameter ______ (epsilon) represents the privacy budget; a smaller value implies stronger privacy but potentially lower utility.",
+        "type": "fill_blank",
+        "answers": [
+            "epsilon"
+        ],
+        "other_options": [
+            "delta",
+            "gamma",
+            "sigma"
+        ]
+    },
+    {
+        "q": "What potential vulnerability is demonstrated in this code where a model's confidence scores are accessible?",
+        "type": "mcq",
+        "c": "# Attacker queries model repeatedly with slightly different inputs\n# and observes precise changes in confidence scores\nconfidence = model.predict_proba(input_data)\nprint(confidence)",
+        "o": [
+            "Model Extraction / Stealing",
+            "DDoS Attack",
+            "Phishing",
+            "Ransomware"
+        ]
+    },
+    {
+        "q": "Match the transparency tool with its visualization method:",
+        "type": "match",
+        "left": [
+            "Partial Dependence Plot (PDP)",
+            "ICE Plot",
+            "SHAP Summary Plot"
+        ],
+        "right": [
+            "Shows average effect of a feature on the prediction",
+            "Shows effect of a feature for each individual instance",
+            "Shows feature importance and impact direction for all samples"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Automated Decision Making' under GDPR:",
+        "type": "rearrange",
+        "words": [
+            "Decisions",
+            "made",
+            "solely",
+            "by",
+            "machines",
+            "affecting",
+            "legal",
+            "rights"
+        ]
+    },
+    {
+        "q": "The 'Right to Data Portability' only applies to data that the user has actively provided to the controller, not inferred data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary purpose of the 'Watermarking' technique in Generative AI?",
+        "type": "mcq",
+        "o": [
+            "To embed a hidden signal identifying content as AI-generated",
+            "To prevent the image from being downloaded",
+            "To increase the resolution of the image",
+            "To compress the file size"
+        ]
+    },
+    {
+        "q": "The process of ______ involves replacing real data with realistic but fake data to protect privacy while maintaining statistical utility.",
+        "type": "fill_blank",
+        "answers": [
+            "synthesizing"
+        ],
+        "other_options": [
+            "deleting",
+            "encrypting",
+            "archiving"
+        ]
+    },
+    {
+        "q": "What is the output of the following code designed to calculate 'Disparate Impact'?",
+        "type": "mcq",
+        "c": "sr_privileged = 0.8\nsr_unprivileged = 0.6\ndisparate_impact = sr_unprivileged / sr_privileged\nprint(disparate_impact < 0.8)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the bias type with the stage where it typically enters the pipeline:",
+        "type": "match",
+        "left": [
+            "Historical Bias",
+            "Representation Bias",
+            "Measurement Bias"
+        ],
+        "right": [
+            "World / Society (Pre-collection)",
+            "Sampling (Collection)",
+            "Feature Engineering / Labeling"
+        ]
+    },
+    {
+        "q": "Which organization released the 'Blueprint for an AI Bill of Rights'?",
+        "type": "mcq",
+        "o": [
+            "White House (OSTP)",
+            "United Nations",
+            "Google",
+            "OpenAI"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the 'Trolley Problem' in AI ethics:",
+        "type": "rearrange",
+        "words": [
+            "Programming",
+            "choices",
+            "in",
+            "unavoidable",
+            "accident",
+            "scenarios"
+        ]
+    },
+    {
+        "q": "A '______' attack recovers the original training data by analyzing the gradients shared during the training of a distributed model.",
+        "type": "fill_blank",
+        "answers": [
+            "reconstruction"
+        ],
+        "other_options": [
+            "phishing",
+            "brute-force",
+            "timing"
+        ]
+    },
+    {
+        "q": "If a facial recognition system works accurately for light-skinned men but fails for dark-skinned women, it exhibits 'Intersectional Bias'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What concept is illustrated by this code preventing a single data point from affecting the average too much?",
+        "type": "mcq",
+        "c": "def winsorize(data, limits):\n    # Caps extreme values to reduce influence of outliers\n    import scipy.stats\n    return scipy.stats.mstats.winsorize(data, limits=limits)",
+        "o": [
+            "Robustness to Outliers",
+            "Data Leakage",
+            "Feature Selection",
+            "Gradient Boosting"
+        ]
+    },
+    {
+        "q": "Which theorem states that it is mathematically impossible to satisfy all common fairness metrics (like Calibration, Equalized Odds, and Balance) simultaneously when base rates differ?",
+        "type": "mcq",
+        "o": [
+            "Kleinberg's Impossibility Theorem",
+            "Bayes' Theorem",
+            "Central Limit Theorem",
+            "No Free Lunch Theorem"
+        ]
+    },
+    {
+        "q": "Under HIPAA, the '______ Determination' method allows de-identification if a qualified statistician certifies that the risk of re-identification is very small.",
+        "type": "fill_blank",
+        "answers": [
+            "Expert"
+        ],
+        "other_options": [
+            "Safe",
+            "Final",
+            "Blind"
+        ]
+    },
+    {
+        "q": "What is the primary security purpose of adding 'salt' in the following code?",
+        "type": "mcq",
+        "c": "import os, hashlib\nsalt = os.urandom(32)\nhash_key = hashlib.pbkdf2_hmac('sha256', password.encode(), salt, 100000)",
+        "o": [
+            "To prevent Rainbow Table attacks on hashed passwords",
+            "To compress the password string",
+            "To convert the password to an integer",
+            "To visualize the password distribution"
+        ]
+    },
+    {
+        "q": "Match the open-source toolkit to its primary ethical function:",
+        "type": "match",
+        "left": [
+            "Microsoft Presidio",
+            "IBM AIF360",
+            "CleverHans",
+            "CarbonTracker"
+        ],
+        "right": [
+            "PII detection and anonymization",
+            "Bias detection and mitigation",
+            "Adversarial attack vulnerability testing",
+            "Tracking energy consumption of training"
+        ]
+    },
+    {
+        "q": "Rearrange the words to state a principle of data minimization:",
+        "type": "rearrange",
+        "words": [
+            "Collect",
+            "only",
+            "what",
+            "is",
+            "necessary",
+            "for",
+            "the",
+            "purpose"
+        ]
+    },
+    {
+        "q": "Data '______' refers to the layout of data where rows represent individual records and columns represent variables, which is standard for analysis but requires privacy controls.",
+        "type": "fill_blank",
+        "answers": [
+            "rectangular"
+        ],
+        "other_options": [
+            "triangular",
+            "circular",
+            "spherical"
+        ]
+    },
+    {
+        "q": "What type of bias is present if researchers only publish models that show positive/successful results, hiding those that failed?",
+        "type": "mcq",
+        "o": [
+            "Publication Bias",
+            "Automation Bias",
+            "Selection Bias",
+            "Surviving Bias"
+        ]
+    },
+    {
+        "q": "The core information security concept known as the CIA Triad stands for Confidentiality, Integrity, and ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Availability"
+        ],
+        "other_options": [
+            "Anonymity",
+            "Accuracy",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "What is the function of the Regular Expression used in this code snippet?",
+        "type": "mcq",
+        "c": "import re\ntext = \"Contact 555-123-4567 for support\"\n# Scanning for sensitive patterns\npattern = r\"\\b\\d{3}[-.]?\\d{3}[-.]?\\d{4}\\b\"\nmatches = re.findall(pattern, text)",
+        "o": [
+            "To detect PII (Phone Numbers)",
+            "To remove stopwords",
+            "To capitalize sentences",
+            "To check for SQL injection"
+        ]
+    },
+    {
+        "q": "Match the Data Governance role to its typical responsibility:",
+        "type": "match",
+        "left": [
+            "Data Owner",
+            "Data Steward",
+            "Data Custodian"
+        ],
+        "right": [
+            "Accountable for data classification and access rights",
+            "Responsible for day-to-day data quality and metadata",
+            "Responsible for the technical infrastructure and security"
+        ]
+    },
+    {
+        "q": "Federated Learning guarantees 100% privacy and makes it impossible for an attacker to reconstruct any user data.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the words to describe the 'Black Box' problem:",
+        "type": "rearrange",
+        "words": [
+            "Complex",
+            "models",
+            "lack",
+            "transparency",
+            "in",
+            "decision",
+            "making"
+        ]
+    },
+    {
+        "q": "Which term describes the practice of creating different service terms or prices for different groups based on algorithmic profiling (e.g., ZIP code), often resulting in discrimination?",
+        "type": "mcq",
+        "o": [
+            "Digital Redlining",
+            "Blueprinting",
+            "White-listing",
+            "Green-lighting"
+        ]
+    },
+    {
+        "q": "What concept is being checked in this code regarding model stability?",
+        "type": "mcq",
+        "c": "# Checking if the model prediction changes drastically \n# with a tiny change in input feature 'x'\nperturbation = 0.0001\ndiff = model.predict(x + perturbation) - model.predict(x)\nprint(abs(diff) > threshold)",
+        "o": [
+            "Local Lipschitz Continuity / Robustness",
+            "Global Accuracy",
+            "Recall Score",
+            "Database Latency"
+        ]
+    },
+    {
+        "q": "In the context of 'Privacy by Design', privacy measures should be reactive (fixing problems after they happen) rather than proactive.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which international standard, published in 2023, is the first specifically designed for Artificial Intelligence Management Systems (AIMS)?",
+        "type": "mcq",
+        "o": [
+            "ISO/IEC 42001",
+            "ISO 9001",
+            "ISO 27001",
+            "IEEE 802.11"
+        ]
+    },
+    {
+        "q": "In the context of 'Green AI', the process of compressing a large model into a smaller one to reduce energy consumption while maintaining accuracy is known as Knowledge ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Distillation"
+        ],
+        "other_options": [
+            "Extraction",
+            "Graphing",
+            "Mining"
+        ]
+    },
+    {
+        "q": "What specific privacy technique is being implemented in this code (flipping a coin to decide whether to tell the truth)?",
+        "type": "mcq",
+        "c": "import random\ndef get_answer(true_answer):\n    # A technique to allow plausible deniability\n    if random.random() < 0.5:\n        return random.choice([True, False])\n    return true_answer",
+        "o": [
+            "Randomized Response",
+            "Homomorphic Encryption",
+            "Data Hashing",
+            "Salt and Pepper Noise"
+        ]
+    },
+    {
+        "q": "Match the type of AI harm (based on Kate Crawford's taxonomy) to its example:",
+        "type": "match",
+        "left": [
+            "Allocative Harm",
+            "Representational Harm",
+            "Quality of Service Harm"
+        ],
+        "right": [
+            "An algorithm denies a mortgage to a qualified applicant",
+            "Search results reinforce negative stereotypes about a group",
+            "Voice recognition works poorly for certain accents"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Model Collapse' in generative AI:",
+        "type": "rearrange",
+        "words": [
+            "Training",
+            "on",
+            "synthetic",
+            "data",
+            "causes",
+            "irreversible",
+            "defects"
+        ]
+    },
+    {
+        "q": "The 'Right to be Informed' requires that privacy notices must be concise, transparent, intelligible, and easily accessible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary function of the 'Fairlearn' library's `MetricFrame` shown in the code?",
+        "type": "mcq",
+        "c": "from fairlearn.metrics import MetricFrame, selection_rate\n# Analyzing how selection rate varies by group\nmf = MetricFrame(metrics=selection_rate, y_true=y_true, y_pred=y_pred, sensitive_features=sex)\nprint(mf.by_group)",
+        "o": [
+            "Disaggregated Analysis / Group metrics",
+            "Model Training",
+            "Hyperparameter Optimization",
+            "Data Cleaning"
+        ]
+    },
+    {
+        "q": "In privacy law, a '______' interest allows data processing without consent if the business need outweighs the risk to individual rights (e.g., fraud prevention).",
+        "type": "fill_blank",
+        "answers": [
+            "legitimate"
+        ],
+        "other_options": [
+            "commercial",
+            "public",
+            "vital"
+        ]
+    },
+    {
+        "q": "Which text masking technique preserves the format of the original data (e.g., keeping the same number of digits for a credit card)?",
+        "type": "mcq",
+        "o": [
+            "Format-Preserving Encryption (FPE)",
+            "MD5 Hashing",
+            "SHA-256",
+            "Base64 Encoding"
+        ]
+    },
+    {
+        "q": "Match the core bioethics principle (Belmont Report) to its application in Data Science:",
+        "type": "match",
+        "left": [
+            "Respect for Persons",
+            "Beneficence",
+            "Justice"
+        ],
+        "right": [
+            "Obtaining informed consent from subjects",
+            "Maximizing benefits while minimizing risks/harms",
+            "Ensuring fair distribution of model errors across groups"
+        ]
+    },
+    {
+        "q": "What risk is this code snippet attempting to mitigate by removing 'unique' identifiers?",
+        "type": "mcq",
+        "c": "threshold = 5\n# Removing columns where values are too unique, preventing re-identification\nfor col in df.columns:\n    if df[col].value_counts().min() < threshold:\n        df.drop(col, axis=1, inplace=True)",
+        "o": [
+            "Singling Out / Re-identification",
+            "Overfitting",
+            "Underfitting",
+            "Slow Processing"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe 'Function Creep':",
+        "type": "rearrange",
+        "words": [
+            "Systems",
+            "gradually",
+            "expand",
+            "beyond",
+            "original",
+            "intended",
+            "purpose"
+        ]
+    },
+    {
+        "q": "A '______' Table is a precomputed table for reversing cryptographic hash functions, usually for cracking password hashes.",
+        "type": "fill_blank",
+        "answers": [
+            "Rainbow"
+        ],
+        "other_options": [
+            "Lookup",
+            "Pivot",
+            "Routing"
+        ]
+    },
+    {
+        "q": "It is considered 'Ethics Washing' when a company establishes an ethics board but gives it no power to enforce decisions or stop products.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which concept describes the friction between keeping a model private and allowing users to verify its fairness?",
+        "type": "mcq",
+        "o": [
+            "Transparency-Privacy Trade-off",
+            "Bias-Variance Trade-off",
+            "Precision-Recall Trade-off",
+            "Hardware-Software Trade-off"
+        ]
+    },
+    {
+        "q": "Which Canadian federal privacy law governs how private sector organizations collect, use, and disclose personal information?",
+        "type": "mcq",
+        "o": [
+            "PIPEDA (Personal Information Protection and Electronic Documents Act)",
+            "GDPR",
+            "CCPA",
+            "FERPA"
+        ]
+    },
+    {
+        "q": "The concept of 'Data ______' refers to the idea that data is subject to the laws and governance structures within the nation it is collected or stored.",
+        "type": "fill_blank",
+        "answers": [
+            "Sovereignty"
+        ],
+        "other_options": [
+            "Localization",
+            "Embargo",
+            "Monopoly"
+        ]
+    },
+    {
+        "q": "What specific security control is being implemented in this code snippet?",
+        "type": "mcq",
+        "c": "def access_resource(user, resource):\n    if 'admin' not in user.roles and resource.sensitivity == 'high':\n        raise PermissionError(\"Access Denied\")\n    return resource.data",
+        "o": [
+            "RBAC (Role-Based Access Control)",
+            "SQL Injection Prevention",
+            "Differential Privacy",
+            "Data Anonymization"
+        ]
+    },
+    {
+        "q": "Match the state of data to its encryption requirement:",
+        "type": "match",
+        "left": [
+            "Data at Rest",
+            "Data in Transit",
+            "Data in Use"
+        ],
+        "right": [
+            "Encrypted on the hard drive/database",
+            "Encrypted via TLS/SSL",
+            "Encrypted via Homomorphic Encryption or TEE"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Contextual Integrity' (Nissenbaum's framework):",
+        "type": "rearrange",
+        "words": [
+            "Privacy",
+            "depends",
+            "on",
+            "appropriate",
+            "flow",
+            "of",
+            "information"
+        ]
+    },
+    {
+        "q": "The 'Right to Erasure' in GDPR is absolute; a company must always delete data upon request, even if they are legally required to keep it for tax purposes.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What type of attack involves an adversary crafting a specific input prompt to bypass the safety filters of a Large Language Model (LLM)?",
+        "type": "mcq",
+        "o": [
+            "Prompt Injection / Jailbreaking",
+            "Cross-Site Request Forgery",
+            "Buffer Overflow",
+            "Packet Sniffing"
+        ]
+    },
+    {
+        "q": "In the context of A/B testing, running psychological experiments on users without their knowledge (e.g., manipulating news feeds to change emotions) violates the principle of ______ consent.",
+        "type": "fill_blank",
+        "answers": [
+            "informed"
+        ],
+        "other_options": [
+            "implied",
+            "legal",
+            "verbal"
+        ]
+    },
+    {
+        "q": "What data issue is this code snippet attempting to identify?",
+        "type": "mcq",
+        "c": "import pandas as pd\n# Checking if the 'ground truth' labels themselves vary significantly by group\ngroup_means = df.groupby('race')['approval_label'].mean()\nprint(group_means)",
+        "o": [
+            "Label Bias",
+            "Feature Scaling",
+            "Missing Values",
+            "Multicollinearity"
+        ]
+    },
+    {
+        "q": "Match the open standard to its purpose:",
+        "type": "match",
+        "left": [
+            "C2PA / CAI",
+            "ONNX",
+            "P3P"
+        ],
+        "right": [
+            "Provenance and authenticity of digital content (Content Credentials)",
+            "Interoperability of ML models",
+            "Obsolete protocol for automated privacy policies"
+        ]
+    },
+    {
+        "q": "What is the output of this code regarding Python's `secrets` module vs `random` module for cryptography?",
+        "type": "mcq",
+        "c": "import secrets\n# secrets.choice is cryptographically strong\nprint(secrets.choice(['A', 'B']) in ['A', 'B'])",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe a 'Sybil Attack' in decentralized data:",
+        "type": "rearrange",
+        "words": [
+            "One",
+            "entity",
+            "creates",
+            "many",
+            "fake",
+            "identities"
+        ]
+    },
+    {
+        "q": "Which term describes the phenomenon where an algorithm is perceived as objective and true, even when it is flawed or biased?",
+        "type": "mcq",
+        "o": [
+            "Automation Complacency",
+            "Imposter Syndrome",
+            "Dunning-Kruger Effect",
+            "Pareto Principle"
+        ]
+    },
+    {
+        "q": "In a '______' Agreement, a data receiver legally agrees not to attempt to re-identify individuals from an anonymized dataset.",
+        "type": "fill_blank",
+        "answers": [
+            "Data Use"
+        ],
+        "other_options": [
+            "Service Level",
+            "Non Disclosure",
+            "End User"
+        ]
+    },
+    {
+        "q": "The 'Framing Effect' suggests that the way a data visualization is presented (e.g., truncating the Y-axis) can ethically mislead the viewer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which cryptographic concept allows one party to prove to another that they know a value (like a password) without actually conveying the value itself?",
+        "type": "mcq",
+        "o": [
+            "Zero-Knowledge Proof",
+            "Asymmetric Key Exchange",
+            "Double Ratchet Algorithm",
+            "Quantum Key Distribution"
+        ]
+    },
+    {
+        "q": "In social science and AI data, the acronym 'WEIRD' refers to a sampling bias where data over-represents people from Western, Educated, Industrialized, Rich, and ______ societies.",
+        "type": "fill_blank",
+        "answers": [
+            "Democratic"
+        ],
+        "other_options": [
+            "Diverse",
+            "Digital",
+            "Developed"
+        ]
+    },
+    {
+        "q": "What specific type of data malpractice is being demonstrated in this code snippet?",
+        "type": "mcq",
+        "c": "import statsmodels.api as sm\nimport numpy as np\n# Running 100 random correlations and only reporting the one that is 'significant'\nfor i in range(100):\n    x = np.random.rand(100)\n    y = np.random.rand(100)\n    if sm.OLS(y, x).fit().pvalues[0] < 0.05:\n        print(f\"Found significant relationship at index {i}!\")",
+        "o": [
+            "P-hacking / Data Dredging",
+            "Gradient Exploding",
+            "Feature Engineering",
+            "Cross-Validation"
+        ]
+    },
+    {
+        "q": "Match the term to the potential AI failure mode:",
+        "type": "match",
+        "left": [
+            "Reward Hacking",
+            "Instrumental Convergence",
+            "Scalable Oversight"
+        ],
+        "right": [
+            "Agent exploits a flaw in the scoring system to get points without doing the task",
+            "Agent pursues harmful sub-goals (e.g., getting more money) to achieve its main goal",
+            "Difficulty of supervising AI systems that are smarter/faster than humans"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Algorithmic Monoculture':",
+        "type": "rearrange",
+        "words": [
+            "Many",
+            "institutions",
+            "using",
+            "the",
+            "same",
+            "biased",
+            "algorithm"
+        ]
+    },
+    {
+        "q": "A 'Data Protection Impact Assessment' (DPIA) is mandatory under GDPR only when processing is likely to result in a high risk to individuals' rights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary ethical purpose of setting a 'random_state' or 'seed' in the following code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import train_test_split\n# Splitting data with a fixed seed\nX_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)",
+        "o": [
+            "Reproducibility",
+            "Accuracy Optimization",
+            "Encryption",
+            "Data Compression"
+        ]
+    },
+    {
+        "q": "The concept of '______' refers to collected data that is processed and stored but not utilized for any analytical or business purpose, often posing a security risk.",
+        "type": "fill_blank",
+        "answers": [
+            "Dark Data"
+        ],
+        "other_options": [
+            "Big Data",
+            "Meta Data",
+            "Smart Data"
+        ]
+    },
+    {
+        "q": "Which US government framework provides a voluntary set of guidelines to better manage risks to individuals, organizations, and society associated with AI?",
+        "type": "mcq",
+        "o": [
+            "NIST AI Risk Management Framework",
+            "Sarbanes-Oxley Act",
+            "Geneva Convention",
+            "Kyoto Protocol"
+        ]
+    },
+    {
+        "q": "Match the specific adversarial attack to its description:",
+        "type": "match",
+        "left": [
+            "Backdoor Attack / Trojan",
+            "Oracle Attack",
+            "Copycat Attack"
+        ],
+        "right": [
+            "Model behaves normally unless a specific 'trigger' pattern is present",
+            "Exploiting an API to extract model information",
+            "Building a substitute model that mimics the target model"
+        ]
+    },
+    {
+        "q": "What is the output of this code regarding the 'Right to be Forgotten' logic?",
+        "type": "mcq",
+        "c": "database = {'user1': 'active', 'user2': 'deleted', 'user3': 'active'}\nrequest_deletion = 'user1'\n\n# Legal hold prevents deletion\nlegal_hold_users = ['user1']\n\nif request_deletion not in legal_hold_users:\n    del database[request_deletion]\n    print(\"Deleted\")\nelse:\n    print(\"Retained\")",
+        "o": [
+            "Retained",
+            "Deleted",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to form a phrase regarding statistical ethics:",
+        "type": "rearrange",
+        "words": [
+            "Correlation",
+            "does",
+            "not",
+            "imply",
+            "causation"
+        ]
+    },
+    {
+        "q": "An AI system that can modify its own code or learning parameters without human intervention is often cited as a risk for '______' takeoff.",
+        "type": "fill_blank",
+        "answers": [
+            "recursive"
+        ],
+        "other_options": [
+            "linear",
+            "stagnant",
+            "manual"
+        ]
+    },
+    {
+        "q": "Under the 'Third-Party Doctrine' in US law, individuals generally have no reasonable expectation of privacy for information they voluntarily turn over to third parties (like banks or ISPs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which data visualization practice is considered unethical because it exaggerates trends?",
+        "type": "mcq",
+        "o": [
+            "Truncating the Y-axis (not starting at zero)",
+            "Using a legend",
+            "Labeling the axes",
+            "Using a scatter plot"
+        ]
+    },
+    {
+        "q": "Which famous data privacy failure involved researchers re-identifying individuals in an anonymized movie rating dataset by cross-referencing it with IMDb public records?",
+        "type": "mcq",
+        "o": [
+            "The Netflix Prize Dataset",
+            "The Enron Email Scandal",
+            "The AOL Search Logs",
+            "The Cambridge Analytica Scandal"
+        ]
+    },
+    {
+        "q": "In the context of word embeddings (NLP), if the vector operation 'King - Man + Woman' results in 'Queen', but 'Doctor - Man + Woman' results in 'Nurse', this is an example of ______ bias.",
+        "type": "fill_blank",
+        "answers": [
+            "stereotypical"
+        ],
+        "other_options": [
+            "computational",
+            "statistical",
+            "variance"
+        ]
+    },
+    {
+        "q": "What specific security vulnerability is present in this password verification code?",
+        "type": "mcq",
+        "c": "def check_password(input_pw, stored_pw):\n    # Returns immediately upon finding a mismatch character\n    if len(input_pw) != len(stored_pw):\n        return False\n    for x, y in zip(input_pw, stored_pw):\n        if x != y:\n            return False\n    return True",
+        "o": [
+            "Timing Attack",
+            "Buffer Overflow",
+            "SQL Injection",
+            "Cross-Site Scripting"
+        ]
+    },
+    {
+        "q": "Match the specific data anonymization failure to its method of re-identification:",
+        "type": "match",
+        "left": [
+            "NYC Taxi Data",
+            "Strava Heatmap",
+            "Massachusetts Governor Medical Records"
+        ],
+        "right": [
+            "Re-identified via pickup/drop-off coordinates and celebrity photos",
+            "Revealed secret military base locations via fitness tracking",
+            "Re-identified via Voter Registration List cross-referencing"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define the 'Clever Hans' effect in AI:",
+        "type": "rearrange",
+        "words": [
+            "Model",
+            "learns",
+            "spurious",
+            "correlations",
+            "instead",
+            "of",
+            "actual",
+            "concepts"
+        ]
+    },
+    {
+        "q": "According to current US Copyright Office guidance, art generated entirely by an AI via a text prompt (without human modification) is eligible for copyright protection.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the primary function of 'Data Swapping' in the context of statistical disclosure control?",
+        "type": "mcq",
+        "o": [
+            "Exchanging values between records to protect privacy while maintaining totals",
+            "Moving data from RAM to SSD",
+            "Transferring data between two different companies",
+            "Converting integers to floats"
+        ]
+    },
+    {
+        "q": "A '______' Box model (like a Decision Tree or Linear Regression) is inherently interpretable, unlike deep neural networks.",
+        "type": "fill_blank",
+        "answers": [
+            "Glass"
+        ],
+        "other_options": [
+            "Black",
+            "Sand",
+            "Lock"
+        ]
+    },
+    {
+        "q": "What ethical concept is highlighted by this code snippet attempting to ensure 'Individual Fairness'?",
+        "type": "mcq",
+        "c": "def is_fair(model, person_A, person_B):\n    # If two people are similar, they should have similar predictions\n    if distance(person_A, person_B) < epsilon:\n        assert abs(model.predict(person_A) - model.predict(person_B)) < delta",
+        "o": [
+            "Lipschitz Condition / Similarity",
+            "Demographic Parity",
+            "Model Accuracy",
+            "Data Imputation"
+        ]
+    },
+    {
+        "q": "Match the Creative Commons license condition to its restriction:",
+        "type": "match",
+        "left": [
+            "BY (Attribution)",
+            "NC (Non-Commercial)",
+            "ND (No Derivatives)",
+            "SA (Share Alike)"
+        ],
+        "right": [
+            "Must credit the creator",
+            "Cannot use for profit",
+            "Cannot modify or remix the work",
+            "Must license new work under same terms"
+        ]
+    },
+    {
+        "q": "What is the output of this code, which demonstrates a weakness in 'k-anonymity' called the Homogeneity Attack?",
+        "type": "mcq",
+        "c": "# A group of k=3 users all share the same sensitive attribute\ngroup_data = [{'age': 30, 'disease': 'Flu'}, \n              {'age': 30, 'disease': 'Flu'}, \n              {'age': 30, 'disease': 'Flu'}]\n\n# Even if we don't know WHICH user is which, we know they all have the Flu.\nprint(len(set(u['disease'] for u in group_data)))",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the purpose of an 'Algorithmic Audit':",
+        "type": "rearrange",
+        "words": [
+            "External",
+            "review",
+            "to",
+            "verify",
+            "system",
+            "fairness",
+            "and",
+            "safety"
+        ]
+    },
+    {
+        "q": "The practice of creating a 'Shadow Model' to mimic a target model's behavior is typically the first step in which type of attack?",
+        "type": "mcq",
+        "o": [
+            "Membership Inference Attack",
+            "DDoS",
+            "Phishing",
+            "Ransomware"
+        ]
+    },
+    {
+        "q": "In the context of open data, '______' refers to the ability of different computer systems to exchange and make use of information (e.g., using standard formats like JSON or CSV).",
+        "type": "fill_blank",
+        "answers": [
+            "interoperability"
+        ],
+        "other_options": [
+            "scalability",
+            "redundancy",
+            "latency"
+        ]
+    },
+    {
+        "q": "Workplace surveillance software (often called 'Bossware') that tracks mouse movements and keystrokes raises ethical concerns primarily related to Employee ______.",
+        "type": "mcq",
+        "o": [
+            "Autonomy and Privacy",
+            "Salary Calculation",
+            "Health Insurance",
+            "Commute Time"
+        ]
+    },
+    {
+        "q": "Which Brazilian data protection law is closely modeled after the GDPR and regulates the processing of personal data in Brazil?",
+        "type": "mcq",
+        "o": [
+            "LGPD (Lei Geral de Proteção de Dados)",
+            "PDPA",
+            "CCPA",
+            "POPI Act"
+        ]
+    },
+    {
+        "q": "In the context of 'Fairness through Awareness', the algorithm is explicitly given access to ______ attributes during training to learn how to mitigate bias against them.",
+        "type": "fill_blank",
+        "answers": [
+            "sensitive"
+        ],
+        "other_options": [
+            "hidden",
+            "encrypted",
+            "noisy"
+        ]
+    },
+    {
+        "q": "What concept is being illustrated in this code where a penalty is added to the loss function based on correlation with a sensitive attribute?",
+        "type": "mcq",
+        "c": "def custom_loss(y_true, y_pred, sensitive_col):\n    # Standard loss + Fairness Penalty\n    base_loss = binary_crossentropy(y_true, y_pred)\n    penalty = abs(correlation(y_pred, sensitive_col))\n    return base_loss + (lambda_param * penalty)",
+        "o": [
+            "Fairness Constraint / Regularization",
+            "Gradient Boosting",
+            "Dropout Layer",
+            "Data Augmentation"
+        ]
+    },
+    {
+        "q": "Match the famous dataset to the specific ethical controversy it sparked:",
+        "type": "match",
+        "left": [
+            "COMPAS",
+            "Enron Corpus",
+            "ImageNet (Person Subtree)",
+            "Tiny Images"
+        ],
+        "right": [
+            "Racial bias in recidivism risk scores",
+            "Privacy issues regarding employee emails",
+            "Offensive/slur labeling of people images",
+            "Contains derogatory terms and non-consensual images"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Technological Solutionism':",
+        "type": "rearrange",
+        "words": [
+            "Belief",
+            "that",
+            "technology",
+            "can",
+            "solve",
+            "all",
+            "social",
+            "problems"
+        ]
+    },
+    {
+        "q": "The 'Fair Credit Reporting Act' (FCRA) gives US consumers the right to dispute incomplete or inaccurate information in their credit file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which type of inference attack seeks to discover global characteristics of a dataset (e.g., 'What is the ratio of men to women in the training set?') rather than specific individual data?",
+        "type": "mcq",
+        "o": [
+            "Property Inference Attack",
+            "Membership Inference Attack",
+            "Model Inversion",
+            "Evasion Attack"
+        ]
+    },
+    {
+        "q": "A '______' is a designated individual within an organization who acts as an independent bridge between data subjects, the organization, and the supervisory authority (required under GDPR).",
+        "type": "fill_blank",
+        "answers": [
+            "DPO"
+        ],
+        "other_options": [
+            "CEO",
+            "CTO",
+            "CFO"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of this assertion in a data pipeline?",
+        "type": "mcq",
+        "c": "assert df['age'].min() >= 18, \"Dataset contains minors, halting process.\"\nmodel.fit(df)",
+        "o": [
+            "Data Quality / Compliance Check",
+            "Feature Engineering",
+            "Model Training",
+            "Hyperparameter Tuning"
+        ]
+    },
+    {
+        "q": "Match the fairness toolkit to its creator/maintainer:",
+        "type": "match",
+        "left": [
+            "Fairness Indicators",
+            "Aequitas",
+            "AI Fairness 360",
+            "Opacus"
+        ],
+        "right": [
+            "Google / TensorFlow",
+            "University of Chicago (DSAPP)",
+            "IBM",
+            "Meta (PyTorch)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code involving a simple 'suppression' technique?",
+        "type": "mcq",
+        "c": "df = pd.DataFrame({'User': ['A', 'B'], 'HIV_Status': ['Pos', 'Neg']})\n# Suppressing the entire sensitive column\ndf_pub = df.drop(columns=['HIV_Status'])\nprint('HIV_Status' in df_pub.columns)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the 'Black Elephant' problem in AI risks:",
+        "type": "rearrange",
+        "words": [
+            "A",
+            "known",
+            "problem",
+            "that",
+            "everyone",
+            "ignores",
+            "until",
+            "catastrophe"
+        ]
+    },
+    {
+        "q": "Which seminal study by Joy Buolamwini and Timnit Gebru exposed significant racial and gender bias in commercial facial recognition services?",
+        "type": "mcq",
+        "o": [
+            "Gender Shades",
+            "The Chinese Room",
+            "The Imitation Game",
+            "Moral Machine"
+        ]
+    },
+    {
+        "q": "A 'Data Trust' is a legal structure where a trustee manages data rights on behalf of the people who created the data, aiming for collective benefit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In the context of generative AI, '______' refers to the degradation of model quality that occurs when a model is trained on data generated by previous versions of itself.",
+        "type": "fill_blank",
+        "answers": [
+            "autophagy"
+        ],
+        "other_options": [
+            "autocracy",
+            "autonomy",
+            "automation"
+        ]
+    },
+    {
+        "q": "Which Japanese data protection law, updated in 2020/2022, serves as the country's primary regulation for personal information?",
+        "type": "mcq",
+        "o": [
+            "APPI (Act on the Protection of Personal Information)",
+            "GDPR",
+            "PDPA",
+            "PIPL"
+        ]
+    },
+    {
+        "q": "The 'Privacy ______' refers to the discrepancy between individuals' stated concerns about privacy and their actual behavior online (e.g., accepting cookies without reading).",
+        "type": "fill_blank",
+        "answers": [
+            "Paradox"
+        ],
+        "other_options": [
+            "Gap",
+            "Fallacy",
+            "Dilemma"
+        ]
+    },
+    {
+        "q": "What specific type of bias handling is shown in this code snippet?",
+        "type": "mcq",
+        "c": "from sklearn.utils.class_weight import compute_sample_weight\n# Assigning higher importance to minority class samples during training\nweights = compute_sample_weight(class_weight='balanced', y=y_train)\nmodel.fit(X_train, y_train, sample_weight=weights)",
+        "o": [
+            "Reweighting / Cost-sensitive Learning",
+            "Feature Dropping",
+            "Data Anonymization",
+            "Early Stopping"
+        ]
+    },
+    {
+        "q": "Match the transparency level to its intended audience:",
+        "type": "match",
+        "left": [
+            "Global Model Interpretability",
+            "Local Instance Explanation",
+            "Counterfactual Explanation"
+        ],
+        "right": [
+            "Data Scientists / Regulators auditing the whole system",
+            "A loan officer reviewing a specific applicant",
+            "An end-user asking 'What could I change to get approved?'"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Data Provenance':",
+        "type": "rearrange",
+        "words": [
+            "History",
+            "of",
+            "where",
+            "data",
+            "originated",
+            "and",
+            "how",
+            "it",
+            "moved"
+        ]
+    },
+    {
+        "q": "In the context of 'Fair Use' (copyright law), scraping copyrighted data for non-profit academic research is generally less risky than scraping it for a commercial generative AI product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which security vulnerability allows an attacker to manipulate the 'deserialization' process to execute arbitrary code on a server?",
+        "type": "mcq",
+        "c": "import pickle\n# Loading data from an untrusted source directly\ndata = pickle.loads(malicious_payload)",
+        "o": [
+            "Insecure Deserialization",
+            "Cross-Site Scripting (XSS)",
+            "Broken Access Control",
+            "Sponge Attack"
+        ]
+    },
+    {
+        "q": "The concept of '______' refers to the uneven distribution of access to technology (internet/computers), which leads to data gaps where certain populations are underrepresented.",
+        "type": "fill_blank",
+        "answers": [
+            "Digital Divide"
+        ],
+        "other_options": [
+            "Tech Gap",
+            "Data Cliff",
+            "Net Neutrality"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of a 'Data Catalog' in an enterprise data governance strategy?",
+        "type": "mcq",
+        "o": [
+            "To maintain an organized inventory of data assets and their metadata",
+            "To sell data to third parties",
+            "To physically destroy hard drives",
+            "To encrypt network traffic"
+        ]
+    },
+    {
+        "q": "Match the type of validity in data science to its definition:",
+        "type": "match",
+        "left": [
+            "Construct Validity",
+            "External Validity",
+            "Internal Validity"
+        ],
+        "right": [
+            "Does the test measure what it claims to measure?",
+            "Can the results be generalized to the real world?",
+            "Is the causal relationship within the study solid?"
+        ]
+    },
+    {
+        "q": "What phenomenon is demonstrated by this code where the model performs well on training data but fails on slightly different test data?",
+        "type": "mcq",
+        "c": "train_acc = model.score(X_train, y_train) # Returns 0.99\ntest_acc = model.score(X_test, y_test)   # Returns 0.65\nprint(train_acc - test_acc)",
+        "o": [
+            "Overfitting / Lack of Generalization",
+            "Underfitting",
+            "Bias",
+            "Convergence"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe the 'Observer Effect' in data collection:",
+        "type": "rearrange",
+        "words": [
+            "Subjects",
+            "alter",
+            "their",
+            "behavior",
+            "when",
+            "they",
+            "know",
+            "they",
+            "are",
+            "watched"
+        ]
+    },
+    {
+        "q": "Which fairness metric focuses on ensuring that the 'False Positive Rate' is the same across groups (often used to prevent innocent people from being flagged)?",
+        "type": "mcq",
+        "o": [
+            "Predictive Equality",
+            "Equal Opportunity",
+            "Demographic Parity",
+            "Overall Accuracy"
+        ]
+    },
+    {
+        "q": "A 'Canary Trap' is a method used to detect data leaks by giving different versions of sensitive information to different people to see which version leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In the context of supply chain security, '______' occurs when an attacker publishes a malicious package with a name similar to a popular library (e.g., 'panda' instead of 'pandas') hoping developers install it by mistake.",
+        "type": "fill_blank",
+        "answers": [
+            "Typosquatting"
+        ],
+        "other_options": [
+            "Phishing",
+            "Spoofing",
+            "Mirroring"
+        ]
+    },
+    {
+        "q": "Which data privacy concept refers to the ability to link two or more records concerning the same individual or group of individuals in different databases?",
+        "type": "mcq",
+        "o": [
+            "Linkability",
+            "Scalability",
+            "Durability",
+            "Mutability"
+        ]
+    },
+    {
+        "q": "In the context of machine learning monitoring, ______ drift occurs when the statistical properties of the target variable (what you are trying to predict) change over time.",
+        "type": "fill_blank",
+        "answers": [
+            "concept"
+        ],
+        "other_options": [
+            "data",
+            "feature",
+            "schema"
+        ]
+    },
+    {
+        "q": "What is the critical security flaw in this code snippet used to process user-submitted mathematical queries?",
+        "type": "mcq",
+        "c": "user_input = \"__import__('os').system('rm -rf /')\" # Malicious input\nresult = eval(user_input)\nprint(result)",
+        "o": [
+            "Arbitrary Code Execution (using eval)",
+            "Memory Leak",
+            "Divide by Zero Error",
+            "Type Mismatch"
+        ]
+    },
+    {
+        "q": "Match the adversarial defense mechanism to its description:",
+        "type": "match",
+        "left": [
+            "Adversarial Training",
+            "Defensive Distillation",
+            "Input Sanitization"
+        ],
+        "right": [
+            "Injecting adversarial examples into the training set",
+            "Training a model on probabilities from another model to smooth the surface",
+            "Cleaning or preprocessing input data to remove noise/attacks"
+        ]
+    },
+    {
+        "q": "Rearrange the words to define 'Data Colonialism':",
+        "type": "rearrange",
+        "words": [
+            "Extracting",
+            "data",
+            "from",
+            "humans",
+            "for",
+            "profit",
+            "without",
+            "benefit",
+            "to",
+            "them"
+        ]
+    },
+    {
+        "q": "The 'Ecological Fallacy' occurs when one assumes that statistical inferences about a group apply to every individual within that group.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which specific tool is designed to protect artists by adding invisible noise to images that disrupts AI style mimicry?",
+        "type": "mcq",
+        "o": [
+            "Glaze / Nightshade",
+            "Photoshop",
+            "TensorBoard",
+            "Jupyter Notebook"
+        ]
+    },
+    {
+        "q": "A '______' refers to a hidden feature in a neural network that causes it to misclassify an image when a specific, physical trigger (like a sticker) is present.",
+        "type": "fill_blank",
+        "answers": [
+            "backdoor"
+        ],
+        "other_options": [
+            "gateway",
+            "portal",
+            "window"
+        ]
+    },
+    {
+        "q": "What metric is being calculated in this code snippet used for fairness audit?",
+        "type": "mcq",
+        "c": "def calc_metric(fn, tp):\n    # fn = False Negatives, tp = True Positives\n    return fn / (fn + tp)",
+        "o": [
+            "False Negative Rate (Miss Rate)",
+            "False Positive Rate",
+            "Precision",
+            "Accuracy"
+        ]
+    },
+    {
+        "q": "Match the AI operational level to the human involvement:",
+        "type": "match",
+        "left": [
+            "Human-in-the-loop",
+            "Human-on-the-loop",
+            "Human-out-of-the-loop"
+        ],
+        "right": [
+            "Human must confirm every decision",
+            "Human supervises and can intervene if necessary",
+            "System acts fully autonomously without intervention"
+        ]
+    },
+    {
+        "q": "What is the output of this code demonstrating a hash collision vulnerability with a weak algorithm?",
+        "type": "mcq",
+        "c": "import hashlib\n# MD5 is considered cryptographically broken\nh = hashlib.md5(b\"sensitive_data\")\nprint(h.hexdigest() == 'UNKNOWN_HASH')",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the words to describe 'Surveillance Capitalism':",
+        "type": "rearrange",
+        "words": [
+            "Commodifying",
+            "personal",
+            "data",
+            "for",
+            "behavioral",
+            "prediction",
+            "markets"
+        ]
+    },
+    {
+        "q": "Which principle states that an AI system should clearly identify itself as an AI to the user (e.g., 'I am a chatbot')?",
+        "type": "mcq",
+        "o": [
+            "Principle of Disclosure",
+            "Principle of Least Privilege",
+            "Principle of Utility",
+            "Principle of Data Sovereignty"
+        ]
+    },
+    {
+        "q": "Under the concept of 'Algorithmic Disgorgement', a company is allowed to keep the trained model even if the data used to train it was collected illegally.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "When a model detects a correlation between 'Ice Cream Sales' and 'Drowning Deaths', but fails to account for the season (Summer), 'Summer' is known as a ______ variable.",
+        "type": "fill_blank",
+        "answers": [
+            "confounding"
+        ],
+        "other_options": [
+            "target",
+            "binary",
+            "categorical"
+        ]
+    },
     {
         "q": "Which technique adds noise to dataset queries to mathematically guarantee that the presence or absence of a single individual cannot be distinguished?",
         "type": "mcq",
