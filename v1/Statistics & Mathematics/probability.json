@@ -1,0 +1,5372 @@
+[
+    {
+        "q": "If two events A and B are mutually exclusive, the probability of both occurring simultaneously, P(A and B), is zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n\n# Calculate CDF for standard normal distribution at x=0\nprob = norm.cdf(0)\nprint(prob)",
+        "o": [
+            "0.5",
+            "0.0",
+            "1.0",
+            "-0.5"
+        ]
+    },
+    {
+        "q": "Match the Bayes' Theorem components to their standard definitions:",
+        "type": "match",
+        "left": [
+            "Posterior",
+            "Likelihood",
+            "Prior",
+            "Evidence"
+        ],
+        "right": [
+            "Probability of hypothesis given data",
+            "Probability of data given hypothesis",
+            "Initial probability of hypothesis",
+            "Total probability of the data"
+        ]
+    },
+    {
+        "q": "A random variable that can only take on distinct, countable values (like integers) is known as a ______ random variable.",
+        "type": "fill_blank",
+        "answers": [
+            "discrete"
+        ],
+        "other_options": [
+            "continuous",
+            "marginal",
+            "conditional"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate the Expected Value E[X] for a discrete random variable:",
+        "type": "rearrange",
+        "words": [
+            "List all outcomes",
+            "Find probability of each",
+            "Multiply outcome by probability",
+            "Sum the products"
+        ]
+    },
+    {
+        "q": "Which rule applies to independent events A and B to find the joint probability P(A and B)?",
+        "type": "mcq",
+        "o": [
+            "P(A) * P(B)",
+            "P(A) + P(B)",
+            "P(A) / P(B)",
+            "P(A) + P(B) - P(A and B)"
+        ]
+    },
+    {
+        "q": "The ______ distribution is commonly used to model the number of times an event occurs within a fixed interval of time or space.",
+        "type": "fill_blank",
+        "answers": [
+            "Poisson"
+        ],
+        "other_options": [
+            "Bernoulli",
+            "Normal",
+            "Uniform"
+        ]
+    },
+    {
+        "q": "In probability theory, the standard deviation is the square of the variance.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the probability distribution to its Expected Value formula:",
+        "type": "match",
+        "left": [
+            "Bernoulli(p)",
+            "Binomial(n, p)",
+            "Uniform(a, b)",
+            "Normal(mu, sigma)"
+        ],
+        "right": [
+            "p",
+            "n * p",
+            "(a + b) / 2",
+            "mu"
+        ]
+    },
+    {
+        "q": "Rearrange the logical flow of updating beliefs using Bayesian inference:",
+        "type": "rearrange",
+        "words": [
+            "Establish Prior Belief",
+            "Observe New Data",
+            "Calculate Likelihood",
+            "Compute Posterior Belief"
+        ]
+    },
+    {
+        "q": "The total area under the Probability Density Function (PDF) curve for a continuous random variable must always equal ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "100",
+            "infinity"
+        ]
+    },
+    {
+        "q": "What is the output of this calculation for the Expected Value?",
+        "type": "mcq",
+        "c": "import numpy as np\n\n# Values (x) and Probabilities (p)\nx = np.array([1, 2, 3])\np = np.array([0.2, 0.5, 0.3])\n\nexpected_val = np.sum(x * p)\nprint(expected_val)",
+        "o": [
+            "2.1",
+            "2.0",
+            "6.0",
+            "1.0"
+        ]
+    },
+    {
+        "q": "Match the probability concept to its correct notation or definition:",
+        "type": "match",
+        "left": [
+            "P(A | B)",
+            "P(A ∩ B)",
+            "P(A ∪ B)",
+            "1 - P(A)"
+        ],
+        "right": [
+            "Conditional Probability",
+            "Intersection (AND)",
+            "Union (OR)",
+            "Complement"
+        ]
+    },
+    {
+        "q": "The expected value of a random variable is always equal to one of the actual values the variable can take (e.g., the expected value of a die roll must be an integer).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange these probability values from impossible to certain:",
+        "type": "rearrange",
+        "words": [
+            "Zero Probability",
+            "Low Probability",
+            "Fifty-Fifty Chance",
+            "High Probability",
+            "Certainty (1.0)"
+        ]
+    },
+    {
+        "q": "Which property of Expected Value is valid for any constants 'a' and 'b' and random variable X?",
+        "type": "mcq",
+        "o": [
+            "E[aX + b] = aE[X] + b",
+            "E[aX + b] = E[X] + a + b",
+            "E[aX + b] = a + bE[X]",
+            "E[aX + b] = E[a] + E[b]"
+        ]
+    },
+    {
+        "q": "In a ______ probability distribution, every outcome in the sample space is equally likely to occur.",
+        "type": "fill_blank",
+        "answers": [
+            "uniform"
+        ],
+        "other_options": [
+            "normal",
+            "binomial",
+            "exponential"
+        ]
+    },
+    {
+        "q": "Match the scenario to the most appropriate probability distribution:",
+        "type": "match",
+        "left": [
+            "Single coin flip",
+            "IQ Scores of population",
+            "Decay of radioactive particles",
+            "Number of heads in 10 flips"
+        ],
+        "right": [
+            "Bernoulli",
+            "Normal (Gaussian)",
+            "Exponential",
+            "Binomial"
+        ]
+    },
+    {
+        "q": "If P(A) = 0.5, P(B|A) = 0.8, and P(B) = 0.4, what is P(A|B) calculated via Bayes Theorem?",
+        "type": "mcq",
+        "c": "p_a = 0.5\np_b_given_a = 0.8\np_b = 0.4\n\n# Bayes Theorem: P(A|B) = (P(B|A) * P(A)) / P(B)\nresult = (0.8 * 0.5) / 0.4\nprint(result)",
+        "o": [
+            "1.0",
+            "0.16",
+            "0.4",
+            "0.2"
+        ]
+    },
+    {
+        "q": "Rearrange the components to form the standard Normal Distribution notation:",
+        "type": "rearrange",
+        "words": [
+            "Variable X",
+            "follows",
+            "Normal Dist",
+            "Mean",
+            "Variance"
+        ]
+    },
+    {
+        "q": "The sum of probabilities for all possible outcomes of an event must always equal ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "100",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Which rule do you use to calculate the probability of Event A OR Event B occurring?",
+        "type": "mcq",
+        "o": [
+            "Addition Rule",
+            "Multiplication Rule",
+            "Subtraction Rule",
+            "Division Rule"
+        ]
+    },
+    {
+        "q": "Match the coin toss outcomes to their probabilities (assuming a fair coin):",
+        "type": "match",
+        "left": [
+            "Probability of Heads",
+            "Probability of Tails",
+            "Probability of Heads OR Tails",
+            "Probability of Heads AND Tails"
+        ],
+        "right": [
+            "0.5",
+            "0.5",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "In a probability distribution graph, the x-axis represents the probability values and the y-axis represents the possible outcomes.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange these values to calculate the mean (expected value) of a single die roll:",
+        "type": "rearrange",
+        "words": [
+            "(1+2+3+4+5+6)",
+            "divided by",
+            "6"
+        ]
+    },
+    {
+        "q": "What is the output of this basic probability check?",
+        "type": "mcq",
+        "c": "outcomes = ['Heads', 'Tails']\n# What is P(Heads)?\nprob_heads = 1 / len(outcomes)\nprint(prob_heads)",
+        "o": [
+            "0.5",
+            "1.0",
+            "2.0",
+            "0.25"
+        ]
+    },
+    {
+        "q": "A variable whose value is determined by the outcome of a random experiment is called a ______ variable.",
+        "type": "fill_blank",
+        "answers": [
+            "random"
+        ],
+        "other_options": [
+            "fixed",
+            "static",
+            "constant"
+        ]
+    },
+    {
+        "q": "Bayes' Theorem is mainly used to update probabilities after obtaining new evidence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the simple definition to the term:",
+        "type": "match",
+        "left": [
+            "Sample Space",
+            "Event",
+            "Experiment",
+            "Outcome"
+        ],
+        "right": [
+            "Set of all possible results",
+            "A subset of results",
+            "The process (e.g., rolling a die)",
+            "A single result"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to find the probability of picking a Red ball from a bag:",
+        "type": "rearrange",
+        "words": [
+            "Count Red Balls",
+            "Count Total Balls",
+            "Divide Red by Total"
+        ]
+    },
+    {
+        "q": "For a continuous random variable (like height), the probability of the variable assuming an exact, specific value (e.g., exactly 170.0000... cm) is always zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Python code calculating the probability of 'At least one Head' in 2 coin flips?",
+        "type": "mcq",
+        "c": "# Sample space: HH, HT, TH, TT\np_no_heads = 0.25\n# Rule of Complements: P(At least one) = 1 - P(None)\np_at_least_one = 1 - p_no_heads\nprint(p_at_least_one)",
+        "o": [
+            "0.75",
+            "0.25",
+            "0.50",
+            "1.00"
+        ]
+    },
+    {
+        "q": "Match the statistical term to its relationship between Mean and Median:",
+        "type": "match",
+        "left": [
+            "Symmetrical Distribution",
+            "Right-Skewed (Positive)",
+            "Left-Skewed (Negative)"
+        ],
+        "right": [
+            "Mean equals Median",
+            "Mean is greater than Median",
+            "Mean is less than Median"
+        ]
+    },
+    {
+        "q": "In a Normal Distribution, approximately ______ percent of the data falls within one standard deviation of the mean (according to the empirical rule).",
+        "type": "fill_blank",
+        "answers": [
+            "68"
+        ],
+        "other_options": [
+            "95",
+            "99",
+            "50"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate the Variance of a discrete random variable:",
+        "type": "rearrange",
+        "words": [
+            "Subtract mean from x",
+            "Square the difference",
+            "Multiply by P(x)",
+            "Sum all results"
+        ]
+    },
+    {
+        "q": "Which notation represents the 'Likelihood' in the context of Bayes' Theorem for parameters (theta) and data (D)?",
+        "type": "mcq",
+        "o": [
+            "P(D | theta)",
+            "P(theta | D)",
+            "P(theta)",
+            "P(D)"
+        ]
+    },
+    {
+        "q": "The Probability Mass Function (PMF) applies to continuous variables, while the Probability Density Function (PDF) applies to discrete variables.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the Python library function to its probability distribution:",
+        "type": "match",
+        "left": [
+            "scipy.stats.norm",
+            "scipy.stats.binom",
+            "scipy.stats.poisson",
+            "scipy.stats.uniform"
+        ],
+        "right": [
+            "Gaussian Distribution",
+            "Binomial Distribution",
+            "Poisson Distribution",
+            "Uniform Distribution"
+        ]
+    },
+    {
+        "q": "Events A and B are considered ______ if the occurrence of A does not affect the probability of B occurring.",
+        "type": "fill_blank",
+        "answers": [
+            "independent"
+        ],
+        "other_options": [
+            "dependent",
+            "mutually exclusive",
+            "conditional"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to form the 'Law of Total Probability' for two partitions B and not-B:",
+        "type": "rearrange",
+        "words": [
+            "P(A|B) * P(B)",
+            "plus",
+            "P(A|not B) * P(not B)",
+            "equals P(A)"
+        ]
+    },
+    {
+        "q": "Which theorem states that the distribution of sample means approximates a Normal Distribution as the sample size becomes large?",
+        "type": "fill_blank",
+        "answers": [
+            "Central"
+        ],
+        "other_options": [
+            "Bayes",
+            "Bernoulli",
+            "Total"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the mean of a Binomial Distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import binom\n\n# n = 10 trials, p = 0.5 probability of success\nmean, var = binom.stats(n=10, p=0.5, moments='mv')\nprint(mean)",
+        "o": [
+            "5.0",
+            "10.0",
+            "2.5",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the variable type to the specific example:",
+        "type": "match",
+        "left": [
+            "Discrete Random Variable",
+            "Continuous Random Variable",
+            "Binary Random Variable",
+            "Categorical Variable"
+        ],
+        "right": [
+            "Number of students in a class",
+            "Exact time taken to run a race",
+            "Outcome of a Yes/No question",
+            "Hair color (Black, Brown, Blonde)"
+        ]
+    },
+    {
+        "q": "If events A and B are mutually exclusive (disjoint), they are automatically independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the alternative formula for calculating Variance (Var(X)):",
+        "type": "rearrange",
+        "words": [
+            "E[X squared]",
+            "minus",
+            "(E[X]) squared"
+        ]
+    },
+    {
+        "q": "What is the specific name for a Binomial distribution where the number of trials (n) is exactly 1?",
+        "type": "mcq",
+        "o": [
+            "Bernoulli Distribution",
+            "Poisson Distribution",
+            "Gaussian Distribution",
+            "Uniform Distribution"
+        ]
+    },
+    {
+        "q": "What is the output of this set operation code representing the Intersection of events?",
+        "type": "mcq",
+        "c": "event_A = {1, 2, 3, 4}\nevent_B = {3, 4, 5, 6}\n\n# Intersection (A AND B)\nintersection = event_A & event_B\nprint(len(intersection))",
+        "o": [
+            "2",
+            "4",
+            "6",
+            "8"
+        ]
+    },
+    {
+        "q": "In the standard Normal Distribution (Z-score), the mean is 0 and the standard deviation is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "10",
+            "100"
+        ]
+    },
+    {
+        "q": "Match the Conditional Probability term P(A|B) to its components:",
+        "type": "match",
+        "left": [
+            "Numerator",
+            "Denominator",
+            "Condition",
+            "Target Event"
+        ],
+        "right": [
+            "P(A and B)",
+            "P(B)",
+            "Event B has occurred",
+            "Event A"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to determine if a game is 'fair' based on Expected Value:",
+        "type": "rearrange",
+        "words": [
+            "Calculate Expected Value",
+            "Check if result",
+            "Equals Zero"
+        ]
+    },
+    {
+        "q": "Which rule states that P(A U B) = P(A) + P(B) if and only if A and B are mutually exclusive?",
+        "type": "mcq",
+        "o": [
+            "Third Axiom of Probability",
+            "Multiplication Rule",
+            "Bayes Rule",
+            "Law of Large Numbers"
+        ]
+    },
+    {
+        "q": "The cumulative distribution function (CDF) F(x) gives the probability that the random variable X takes a value ______ than or equal to x.",
+        "type": "fill_blank",
+        "answers": [
+            "less"
+        ],
+        "other_options": [
+            "greater",
+            "more",
+            "equal"
+        ]
+    },
+    {
+        "q": "Match the Random Variable X to its range (support):",
+        "type": "match",
+        "left": [
+            "Bernoulli(p)",
+            "Poisson(lambda)",
+            "Uniform(0, 1)",
+            "Normal(mu, sigma)"
+        ],
+        "right": [
+            "{0, 1}",
+            "{0, 1, 2, 3, ...}",
+            "[0, 1] (Continuous)",
+            "(-inf, +inf)"
+        ]
+    },
+    {
+        "q": "What is the output of this calculation for the Variance of a 50-50 Bernoulli trial?",
+        "type": "mcq",
+        "c": "p = 0.5\n# Variance formula for Bernoulli: p * (1 - p)\nvar = p * (1 - p)\nprint(var)",
+        "o": [
+            "0.25",
+            "0.50",
+            "1.00",
+            "0.00"
+        ]
+    },
+    {
+        "q": "If X is a continuous random variable, P(X = c) is non-zero for any specific constant c.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the sequence of finding the Marginal Probability P(A) from a joint table of A and B:",
+        "type": "rearrange",
+        "words": [
+            "Identify Joint Probabilities",
+            "Sum P(A and B)",
+            "Over all values of B"
+        ]
+    },
+    {
+        "q": "When calculating the Expected Value of a function g(X), you compute sum(g(x) * P(x)) instead of sum(x * P(x)).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In the context of Bayes' Theorem, the term P(B) in the denominator is often called the ______ factor.",
+        "type": "fill_blank",
+        "answers": [
+            "normalization"
+        ],
+        "other_options": [
+            "multiplication",
+            "subtraction",
+            "prior"
+        ]
+    },
+    {
+        "q": "Match the scenario to the probability rule used:",
+        "type": "match",
+        "left": [
+            "Probability of A or B (disjoint)",
+            "Probability of A and B (independent)",
+            "Probability of A given B",
+            "Probability of not A"
+        ],
+        "right": [
+            "Sum Rule",
+            "Product Rule",
+            "Conditional Definition",
+            "Complement Rule"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the area under the curve (CDF) between -1 and 1 for a standard normal distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n\n# CDF at 1 minus CDF at -1 captures the middle area\narea = norm.cdf(1) - norm.cdf(-1)\n# Rounding for the quiz\nprint(round(area, 2))",
+        "o": [
+            "0.68",
+            "0.95",
+            "0.50",
+            "0.99"
+        ]
+    },
+    {
+        "q": "If P(A) = 0.6 and P(B) = 0.5, and the probability of their intersection P(A and B) is 0.2, what is P(A or B)?",
+        "type": "mcq",
+        "c": "p_a = 0.6\np_b = 0.5\np_intersection = 0.2\n\n# Inclusion-Exclusion Principle: P(A U B) = P(A) + P(B) - P(A n B)\nresult = p_a + p_b - p_intersection\nprint(round(result, 1))",
+        "o": [
+            "0.9",
+            "1.1",
+            "0.3",
+            "0.7"
+        ]
+    },
+    {
+        "q": "The property that E[X + Y] = E[X] + E[Y] holds true ONLY if the random variables X and Y are independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the Probability Distribution to its unique characteristic:",
+        "type": "match",
+        "left": [
+            "Exponential Distribution",
+            "Normal Distribution",
+            "Poisson Distribution",
+            "Student's t-distribution"
+        ],
+        "right": [
+            "Memoryless property",
+            "Symmetric Bell Curve",
+            "Mean equals Variance",
+            "Heavier tails than Normal"
+        ]
+    },
+    {
+        "q": "P(A and B) is equal to P(A) * P(B) if and only if the events A and B are ______.",
+        "type": "fill_blank",
+        "answers": [
+            "independent"
+        ],
+        "other_options": [
+            "disjoint",
+            "dependent",
+            "correlated"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to express the General Multiplication Rule (Chain Rule) for three events P(A, B, C):",
+        "type": "rearrange",
+        "words": [
+            "P(A)",
+            "times P(B|A)",
+            "times P(C | A,B)"
+        ]
+    },
+    {
+        "q": "What is the output of this code representing an Expected Value calculation for a game?",
+        "type": "mcq",
+        "c": "# Game: 10% chance to win $100, 90% chance to lose $5\nwin_val = 100\nwin_prob = 0.10\nlose_val = -5\nlose_prob = 0.90\n\nexpected_value = (win_val * win_prob) + (lose_val * lose_prob)\nprint(expected_value)",
+        "o": [
+            "5.5",
+            "10.0",
+            "0.5",
+            "-4.5"
+        ]
+    },
+    {
+        "q": "A Cumulative Distribution Function (CDF) is always a non-decreasing function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Bayes' Theorem, the probability P(Hypothesis | Data) calculated AFTER observing evidence is called the ______ probability.",
+        "type": "fill_blank",
+        "answers": [
+            "posterior"
+        ],
+        "other_options": [
+            "prior",
+            "likelihood",
+            "marginal"
+        ]
+    },
+    {
+        "q": "Match the distribution to its required parameters:",
+        "type": "match",
+        "left": [
+            "Normal(X)",
+            "Poisson(X)",
+            "Binomial(X)",
+            "Uniform(X)"
+        ],
+        "right": [
+            "Mean and Std Dev",
+            "Lambda (Rate)",
+            "Trials (n) and Probability (p)",
+            "Min (a) and Max (b)"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate Conditional Probability P(A|B) using subset counts:",
+        "type": "rearrange",
+        "words": [
+            "Count outcomes in A and B",
+            "Divide by",
+            "Count outcomes in B"
+        ]
+    },
+    {
+        "q": "If you are sampling from a deck of cards *without* replacement, the probability of the second draw depends on the outcome of the first draw.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code simulating the probability of getting two 'Heads' in a row (independent events)?",
+        "type": "mcq",
+        "c": "p_head = 0.5\n# Probability of Head AND Head\np_two_heads = p_head * p_head\nprint(p_two_heads)",
+        "o": [
+            "0.25",
+            "0.50",
+            "1.00",
+            "0.75"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to the specific question it answers:",
+        "type": "match",
+        "left": [
+            "Geometric Distribution",
+            "Binomial Distribution",
+            "Bernoulli Distribution",
+            "Poisson Distribution"
+        ],
+        "right": [
+            "How many trials until the first success?",
+            "How many successes in n trials?",
+            "Is this single trial a success or failure?",
+            "How many events in a fixed time interval?"
+        ]
+    },
+    {
+        "q": "The Expected Value of a constant number C (e.g., E[5]) is equal to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "C"
+        ],
+        "other_options": [
+            "0",
+            "1",
+            "infinity"
+        ]
+    },
+    {
+        "q": "Rearrange the mathematical steps to calculate Standard Deviation from Variance:",
+        "type": "rearrange",
+        "words": [
+            "Calculate Variance",
+            "Take the",
+            "Square Root"
+        ]
+    },
+    {
+        "q": "Which property correctly describes how Variance behaves when a constant 'c' is added to a random variable X?",
+        "type": "mcq",
+        "o": [
+            "Var(X + c) = Var(X)",
+            "Var(X + c) = Var(X) + c",
+            "Var(X + c) = Var(X) + c^2",
+            "Var(X + c) = 0"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the 'Total Probability' (Denominator of Bayes) given two partitions?",
+        "type": "mcq",
+        "c": "# P(B|A) * P(A) + P(B|not A) * P(not A)\nterm1 = 0.9 * 0.1\nterm2 = 0.2 * 0.9\ntotal_prob = term1 + term2\nprint(round(total_prob, 2))",
+        "o": [
+            "0.27",
+            "0.09",
+            "0.18",
+            "1.00"
+        ]
+    },
+    {
+        "q": "A 'False Positive' in probability testing refers to the case where the test reports positive, but the condition is actually absent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the summary statistic to its description in a probability density curve:",
+        "type": "match",
+        "left": [
+            "Mode",
+            "Median",
+            "Mean",
+            "Range"
+        ],
+        "right": [
+            "The peak of the curve",
+            "Splits area into equal halves (50/50)",
+            "The balance point (center of gravity)",
+            "Difference between Max and Min"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to form the definition of Conditional Probability P(A|B):",
+        "type": "rearrange",
+        "words": [
+            "Joint Probability P(A,B)",
+            "Divided by",
+            "Marginal Probability P(B)"
+        ]
+    },
+    {
+        "q": "If events A and B are independent, knowing that Event B has occurred gives us absolutely no information about whether Event A will occur.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code calculating the Z-score of a data point?",
+        "type": "mcq",
+        "c": "val = 150\nmean = 100\nstd_dev = 25\n\n# Z = (X - mu) / sigma\nz_score = (val - mean) / std_dev\nprint(z_score)",
+        "o": [
+            "2.0",
+            "50.0",
+            "0.5",
+            "1.5"
+        ]
+    },
+    {
+        "q": "Match the Statistical Moment number to the property it describes:",
+        "type": "match",
+        "left": [
+            "1st Moment",
+            "2nd Moment",
+            "3rd Moment",
+            "4th Moment"
+        ],
+        "right": [
+            "Mean (Central Tendency)",
+            "Variance (Spread)",
+            "Skewness (Asymmetry)",
+            "Kurtosis (Tailedness)"
+        ]
+    },
+    {
+        "q": "The Law of ______ Numbers states that as the number of trials increases, the experimental (observed) probability converges to the theoretical probability.",
+        "type": "fill_blank",
+        "answers": [
+            "Large"
+        ],
+        "other_options": [
+            "Total",
+            "Small",
+            "Random"
+        ]
+    },
+    {
+        "q": "Rearrange the mathematical operations to calculate the Variance of a constant multiple (Var(aX)):",
+        "type": "rearrange",
+        "words": [
+            "Square the constant 'a'",
+            "Multiply by",
+            "Variance of X"
+        ]
+    },
+    {
+        "q": "Which of the following equations represents the 'Linearity of Expectation' (which holds even if X and Y are dependent)?",
+        "type": "mcq",
+        "o": [
+            "E[X + Y] = E[X] + E[Y]",
+            "E[X * Y] = E[X] * E[Y]",
+            "E[X / Y] = E[X] / E[Y]",
+            "E[X + Y] = E[X] * E[Y]"
+        ]
+    },
+    {
+        "q": "What is the output of this NumPy code that sets a random seed?",
+        "type": "mcq",
+        "c": "import numpy as np\n\n# Setting seed ensures reproducibility\nnp.random.seed(42)\na = np.random.rand()\nnp.random.seed(42)\nb = np.random.rand()\n\n# Are a and b the same?\nprint(a == b)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The probability of an intersection of independent events, P(A and B and C), is calculated by adding the individual probabilities together.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the specific real-world example to the distribution that best models it:",
+        "type": "match",
+        "left": [
+            "Time between bus arrivals",
+            "Measurement errors in a lab",
+            "Drawing a card from a deck",
+            "Number of spam emails per day"
+        ],
+        "right": [
+            "Exponential",
+            "Normal",
+            "Uniform (Discrete)",
+            "Poisson"
+        ]
+    },
+    {
+        "q": "Rearrange the logical steps to Standardize a dataset (convert to Z-scores):",
+        "type": "rearrange",
+        "words": [
+            "Take data point X",
+            "Subtract the Mean",
+            "Divide by Standard Deviation"
+        ]
+    },
+    {
+        "q": "The probability of an event A occurring, given that event B has already occurred, is defined as P(A|B) = P(A ∩ B) / P(A).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code calculating the probability of a specific outcome in a Poisson distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import poisson\n\n# mu = average rate of 3 events per interval\n# What is prob of observing exactly 3 events?\nprob = poisson.pmf(k=3, mu=3)\n# Hint: It is the peak of this specific distribution\nprint(round(prob, 2))",
+        "o": [
+            "0.22",
+            "0.50",
+            "0.33",
+            "1.00"
+        ]
+    },
+    {
+        "q": "Match the probability axiom (Kolmogorov's axioms) to its statement:",
+        "type": "match",
+        "left": [
+            "Non-negativity",
+            "Normalization",
+            "Additivity (for disjoint events)"
+        ],
+        "right": [
+            "P(E) is at least 0",
+            "P(Sample Space) = 1",
+            "P(A U B) = P(A) + P(B)"
+        ]
+    },
+    {
+        "q": "A random variable X has an Expected Value of 10. If we define a new variable Y = 2X - 5, the Expected Value of Y is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "15"
+        ],
+        "other_options": [
+            "20",
+            "10",
+            "25"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to show the relationship between Standard Deviation (sigma) and Variance (sigma^2):",
+        "type": "rearrange",
+        "words": [
+            "Variance",
+            "equals",
+            "Standard Deviation",
+            "squared"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a requirement for a valid Probability Mass Function (PMF)?",
+        "type": "mcq",
+        "o": [
+            "The function must be continuous and differentiable.",
+            "The probability of each value must be between 0 and 1.",
+            "The sum of all probabilities must equal 1.",
+            "It maps discrete outcomes to probabilities."
+        ]
+    },
+    {
+        "q": "What is the output of this Python code verifying the sum of a PMF?",
+        "type": "mcq",
+        "c": "probs = [0.1, 0.2, 0.4, 0.3]\n# Check if this is a valid distribution\nis_valid = sum(probs) == 1.0\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "In a continuous probability distribution, the probability of the random variable falling within a specific interval [a, b] is calculated by finding the area under the PDF curve between a and b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the term to the part of the 'Law of Total Probability' formula P(A) = Σ P(A|Bi)P(Bi):",
+        "type": "match",
+        "left": [
+            "P(A)",
+            "P(A|Bi)",
+            "P(Bi)",
+            "Sigma (Σ)"
+        ],
+        "right": [
+            "Total Marginal Probability",
+            "Conditional Probability",
+            "Probability of Partition",
+            "Summation over all partitions"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate the probability of 'A or B' using the General Addition Rule:",
+        "type": "rearrange",
+        "words": [
+            "Add P(A)",
+            "plus P(B)",
+            "Subtract P(A and B)"
+        ]
+    },
+    {
+        "q": "According to De Morgan's Laws in probability, the probability of 'Neither A nor B occurring' is equivalent to P(not A AND not B).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code calculating the probability that a value X is GREATER than 2 in a standard normal distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n\n# P(X > 2) = 1 - P(X <= 2)\n# CDF gives P(X <= x)\nprob = 1 - norm.cdf(2)\nprint(round(prob, 3))",
+        "o": [
+            "0.023",
+            "0.977",
+            "0.500",
+            "0.159"
+        ]
+    },
+    {
+        "q": "Match the advanced distribution to its typical use case:",
+        "type": "match",
+        "left": [
+            "Hypergeometric",
+            "Geometric",
+            "Negative Binomial",
+            "Beta Distribution"
+        ],
+        "right": [
+            "Sampling without replacement",
+            "Trials until first success",
+            "Trials until Nth success",
+            "Modeling probabilities (Bayesian conjugate)"
+        ]
+    },
+    {
+        "q": "The ______ of two independent random variables is always zero (though the reverse is not strictly true).",
+        "type": "fill_blank",
+        "answers": [
+            "covariance"
+        ],
+        "other_options": [
+            "variance",
+            "expectation",
+            "sum"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to express the formula for the Correlation Coefficient (Pearson's r) between X and Y:",
+        "type": "rearrange",
+        "words": [
+            "Covariance(X, Y)",
+            "divided by",
+            "(StdDev(X) * StdDev(Y))"
+        ]
+    },
+    {
+        "q": "Which of the following is the correct definition of the 'Survival Function' S(t)?",
+        "type": "mcq",
+        "o": [
+            "S(t) = 1 - CDF(t)",
+            "S(t) = 1 + CDF(t)",
+            "S(t) = PDF(t) - 1",
+            "S(t) = 1 / CDF(t)"
+        ]
+    },
+    {
+        "q": "What is the output of this code checking the Linearity of Expectation?",
+        "type": "mcq",
+        "c": "E_X = 5\nE_Y = 10\n# E[2X + 3Y]\n# Property: 2*E[X] + 3*E[Y]\nresult = (2 * E_X) + (3 * E_Y)\nprint(result)",
+        "o": [
+            "40",
+            "15",
+            "30",
+            "50"
+        ]
+    },
+    {
+        "q": "In Bayesian statistics, the 'Base Rate Fallacy' occurs when one ignores the Likelihood and focuses only on the Prior probability.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the symbol to its standard meaning in Probability Theory:",
+        "type": "match",
+        "left": [
+            "μ (Mu)",
+            "σ (Sigma)",
+            "σ² (Sigma squared)",
+            "ρ (Rho)"
+        ],
+        "right": [
+            "Population Mean",
+            "Standard Deviation",
+            "Variance",
+            "Correlation Coefficient"
+        ]
+    },
+    {
+        "q": "Rearrange the logical steps to calculate the Marginal Probability P(A) using the Law of Total Probability:",
+        "type": "rearrange",
+        "words": [
+            "Summation of",
+            "P(A given B_i)",
+            "times",
+            "P(B_i)"
+        ]
+    },
+    {
+        "q": "If A is a subset of B (A ⊆ B), then the probability of A is always less than or equal to the probability of B.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code calculating the 'Complement' probability?",
+        "type": "mcq",
+        "c": "p_rain = 0.35\n# Probability of NO rain\np_no_rain = 1 - p_rain\nprint(round(p_no_rain, 2))",
+        "o": [
+            "0.65",
+            "0.35",
+            "1.35",
+            "0.00"
+        ]
+    },
+    {
+        "q": "Match the Random Variable X to the description of its Probability Mass Function (PMF):",
+        "type": "match",
+        "left": [
+            "Bernoulli(p)",
+            "Uniform Discrete(N)",
+            "Geometric(p)",
+            "Binomial(n,p)"
+        ],
+        "right": [
+            "P(X=1)=p, P(X=0)=1-p",
+            "P(X=k) = 1/N for all k",
+            "P(X=k) = (1-p)^(k-1) * p",
+            "P(X=k) = C(n,k) * p^k * (1-p)^(n-k)"
+        ]
+    },
+    {
+        "q": "The Expected Value of the sum of two random variables E[X + Y] is equal to E[X] + E[Y] ______ of whether X and Y are independent.",
+        "type": "fill_blank",
+        "answers": [
+            "regardless"
+        ],
+        "other_options": [
+            "only if",
+            "never",
+            "assuming"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to form the definition of Independence for P(A|B):",
+        "type": "rearrange",
+        "words": [
+            "P(A given B)",
+            "is equal to",
+            "P(A)"
+        ]
+    },
+    {
+        "q": "Which theorem links the prior probability, likelihood, and marginal probability to the posterior probability?",
+        "type": "mcq",
+        "o": [
+            "Bayes' Theorem",
+            "Pythagorean Theorem",
+            "Central Limit Theorem",
+            "Bernoulli's Theorem"
+        ]
+    },
+    {
+        "q": "What is the output of this Python code calculating the standard deviation of a list?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = [2, 4, 4, 4, 5, 5, 7, 9]\n# ddof=0 for population std dev\nstd = np.std(data, ddof=0)\n# The variance is 4.0\nprint(std)",
+        "o": [
+            "2.0",
+            "4.0",
+            "16.0",
+            "1.41"
+        ]
+    },
+    {
+        "q": "A random variable X follows a Normal Distribution with mean 50. The probability P(X = 50) is exactly 0.5.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the term to its role in a Probability Distribution:",
+        "type": "match",
+        "left": [
+            "Support",
+            "PDF",
+            "CDF",
+            "Parameter"
+        ],
+        "right": [
+            "Set of possible values X can take",
+            "Function describing relative likelihood",
+            "Function giving area up to point x",
+            "Value defining the shape (e.g., Lambda)"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate Expected Value E[X] from a given probability table:",
+        "type": "rearrange",
+        "words": [
+            "Multiply each X by P(X)",
+            "Add all the products",
+            "Result is E[X]"
+        ]
+    },
+    {
+        "q": "If P(A | B) = P(A), this implies that events A and B are mutually exclusive.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the theoretical probability of selecting 'Red' based on the weights defined in this code?",
+        "type": "mcq",
+        "c": "import numpy as np\noptions = ['Red', 'Blue', 'Green']\nweights = [0.7, 0.2, 0.1]\n\n# Sampling one item\n# np.random.choice(options, p=weights)",
+        "o": [
+            "0.7",
+            "0.2",
+            "0.1",
+            "0.33"
+        ]
+    },
+    {
+        "q": "Match the probability concept to its formula representation:",
+        "type": "match",
+        "left": [
+            "Union of Disjoint Events",
+            "Intersection of Independent Events",
+            "Conditional Probability",
+            "Bayes Theorem Numerator"
+        ],
+        "right": [
+            "P(A) + P(B)",
+            "P(A) * P(B)",
+            "P(A and B) / P(B)",
+            "P(B|A) * P(A)"
+        ]
+    },
+    {
+        "q": "For a continuous random variable, the Probability Density Function (PDF) represents the probability of the variable taking a specific exact value.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the components to describe the calculation of a Weighted Average (Expected Value):",
+        "type": "rearrange",
+        "words": [
+            "Value_1 * Weight_1",
+            "plus",
+            "Value_2 * Weight_2",
+            "..."
+        ]
+    },
+    {
+        "q": "The ______ of a random variable is a measure of the 'center of gravity' of its probability distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "mean"
+        ],
+        "other_options": [
+            "variance",
+            "skewness",
+            "kurtosis"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the variance of a list using numpy?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = [10, 10, 10, 10]\n# If all values are the same, what is the spread?\nvariance = np.var(data)\nprint(variance)",
+        "o": [
+            "0.0",
+            "10.0",
+            "1.0",
+            "40.0"
+        ]
+    },
+    {
+        "q": "Match the distribution shape to the relationship between Mean and Median:",
+        "type": "match",
+        "left": [
+            "Perfectly Symmetric",
+            "Positively Skewed (Right tail)",
+            "Negatively Skewed (Left tail)"
+        ],
+        "right": [
+            "Mean = Median",
+            "Mean > Median",
+            "Mean < Median"
+        ]
+    },
+    {
+        "q": "To convert a Normal Distribution N(mu, sigma) into the Standard Normal Distribution Z(0, 1), you must subtract the mean and divide by the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "deviation"
+        ],
+        "other_options": [
+            "variance",
+            "median",
+            "mode"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to express the formula for P(A and B) using the Multiplication Rule:",
+        "type": "rearrange",
+        "words": [
+            "P(A)",
+            "multiplied by",
+            "P(B given A)"
+        ]
+    },
+    {
+        "q": "If P(A) = 0.4 and P(B) = 0.3, and events A and B are mutually exclusive, what is P(A and B)?",
+        "type": "mcq",
+        "o": [
+            "0",
+            "0.12",
+            "0.7",
+            "0.1"
+        ]
+    },
+    {
+        "q": "The ______ of a random variable is the weighted average of all possible values that this random variable can take.",
+        "type": "fill_blank",
+        "answers": [
+            "expectation"
+        ],
+        "other_options": [
+            "variance",
+            "deviation",
+            "mode"
+        ]
+    },
+    {
+        "q": "Match the Random Variable definition to its type:",
+        "type": "match",
+        "left": [
+            "Time until a lightbulb fails",
+            "Number of defects in a batch",
+            "Height of a student",
+            "Result of a coin flip"
+        ],
+        "right": [
+            "Continuous",
+            "Discrete",
+            "Continuous",
+            "Discrete"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the probability of the complement event?",
+        "type": "mcq",
+        "c": "prob_success = 0.85\n# Probability of Failure = 1 - P(Success)\nprob_failure = 1 - prob_success\nprint(round(prob_failure, 2))",
+        "o": [
+            "0.15",
+            "0.85",
+            "1.15",
+            "0.00"
+        ]
+    },
+    {
+        "q": "In a Binomial distribution, the variance is calculated as n * p * (1 - p).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Posterior probability using Bayes' Theorem:",
+        "type": "rearrange",
+        "words": [
+            "Multiply Prior by Likelihood",
+            "Divide by",
+            "Marginal Probability"
+        ]
+    },
+    {
+        "q": "Which distribution describes the number of successes in a fixed number of independent Bernoulli trials?",
+        "type": "mcq",
+        "o": [
+            "Binomial",
+            "Geometric",
+            "Poisson",
+            "Exponential"
+        ]
+    },
+    {
+        "q": "A random variable X has a probability distribution P(X=k) = 1/6 for k = 1, 2, ..., 6. This is an example of a ______ distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "uniform"
+        ],
+        "other_options": [
+            "normal",
+            "binomial",
+            "poisson"
+        ]
+    },
+    {
+        "q": "Match the term to the correct probability formula:",
+        "type": "match",
+        "left": [
+            "P(A | B)",
+            "P(A or B) [general]",
+            "P(A and B) [independent]",
+            "E[X]"
+        ],
+        "right": [
+            "P(A and B) / P(B)",
+            "P(A) + P(B) - P(A and B)",
+            "P(A) * P(B)",
+            "Sum(x * P(x))"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to express the variance formula Var(X) = E[(X - μ)²]:",
+        "type": "rearrange",
+        "words": [
+            "Expected Value of",
+            "(X minus Mean)",
+            "Squared"
+        ]
+    },
+    {
+        "q": "Which property guarantees that the Variance of any random variable Var(X) is always greater than or equal to zero?",
+        "type": "mcq",
+        "o": [
+            "Non-negativity of squared deviations",
+            "Linearity of Expectation",
+            "Law of Large Numbers",
+            "Central Limit Theorem"
+        ]
+    },
+    {
+        "q": "What is the output of this code finding the unique outcomes (sample space) from a list of observations?",
+        "type": "mcq",
+        "c": "import numpy as np\nobs = [1, 2, 2, 3, 1, 4, 5, 5]\n# Find unique elements\nsample_space = np.unique(obs)\nprint(len(sample_space))",
+        "o": [
+            "5",
+            "8",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the medical testing term (related to Bayes' Theorem) to its probability definition:",
+        "type": "match",
+        "left": [
+            "Sensitivity (True Positive Rate)",
+            "Specificity (True Negative Rate)",
+            "False Positive Rate",
+            "Prevalence"
+        ],
+        "right": [
+            "P(Positive Test | Disease)",
+            "P(Negative Test | No Disease)",
+            "P(Positive Test | No Disease)",
+            "P(Disease) [Prior]"
+        ]
+    },
+    {
+        "q": "The ______ of two events A and B (written as A ∪ B) contains all outcomes that are in A, in B, or in both.",
+        "type": "fill_blank",
+        "answers": [
+            "union"
+        ],
+        "other_options": [
+            "intersection",
+            "complement",
+            "difference"
+        ]
+    },
+    {
+        "q": "Rearrange the notation to define the Covariance formula Cov(X, Y):",
+        "type": "rearrange",
+        "words": [
+            "Expected Value of",
+            "((X - mean_X)",
+            "times",
+            "(Y - mean_Y))"
+        ]
+    },
+    {
+        "q": "If X is a discrete random variable, the function f(x) = P(X = x) is called the Probability Density Function (PDF).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code calculating the probability of rolling a number > 4 on a fair die?",
+        "type": "mcq",
+        "c": "outcomes = [1, 2, 3, 4, 5, 6]\n# Condition: x > 4\nfavorable = [x for x in outcomes if x > 4]\nprob = len(favorable) / len(outcomes)\nprint(round(prob, 2))",
+        "o": [
+            "0.33",
+            "0.50",
+            "0.17",
+            "0.67"
+        ]
+    },
+    {
+        "q": "A random variable X has a Gaussian distribution. If we convert X to a 'Standard Score' (Z), the new mean is 1 and new standard deviation is 0.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the probability value to its interpretation:",
+        "type": "match",
+        "left": [
+            "P(E) = 0.0",
+            "P(E) = 1.0",
+            "P(E) = 0.5",
+            "P(E) = -0.1"
+        ],
+        "right": [
+            "Impossible Event",
+            "Certain Event",
+            "Equally Likely",
+            "Invalid Probability"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate the Marginal Probability of X from a joint distribution table P(X, Y):",
+        "type": "rearrange",
+        "words": [
+            "For a specific value x",
+            "Sum the joint probabilities P(x, y)",
+            "Over all possible values of y"
+        ]
+    },
+    {
+        "q": "Which property defines the relationship between the Cumulative Distribution Function (CDF) and the Probability Density Function (PDF) for a continuous variable?",
+        "type": "mcq",
+        "o": [
+            "PDF is the derivative of CDF",
+            "CDF is the derivative of PDF",
+            "PDF is the square of CDF",
+            "They are unrelated"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the probability of a specific intersection of events?",
+        "type": "mcq",
+        "c": "# P(A) = 0.5, P(B) = 0.5\n# A and B are independent\n# What is P(A and B)?\nprob = 0.5 * 0.5\nprint(prob)",
+        "o": [
+            "0.25",
+            "0.50",
+            "1.00",
+            "0.00"
+        ]
+    },
+    {
+        "q": "Match the set notation symbol to its probability meaning:",
+        "type": "match",
+        "left": [
+            "A ∪ B",
+            "A ∩ B",
+            "A'",
+            "A | B"
+        ],
+        "right": [
+            "Union (A or B)",
+            "Intersection (A and B)",
+            "Complement (Not A)",
+            "Conditional (A given B)"
+        ]
+    },
+    {
+        "q": "To calculate the probability of 'At least one' success in n trials, it is often most efficient to calculate 1 minus the probability of ______ successes.",
+        "type": "fill_blank",
+        "answers": [
+            "zero"
+        ],
+        "other_options": [
+            "one",
+            "all",
+            "negative"
+        ]
+    },
+    {
+        "q": "Rearrange the components to express the 'Inclusion-Exclusion Principle' for two events:",
+        "type": "rearrange",
+        "words": [
+            "P(A) + P(B)",
+            "minus",
+            "P(A and B)",
+            "equals P(A or B)"
+        ]
+    },
+    {
+        "q": "If P(A|B) = 0.7, then P(Not A | B) must be 0.3.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of a transformation E[X + 10] where E[X] = 5?",
+        "type": "mcq",
+        "c": "mean_x = 5\n# Property: E[X + c] = E[X] + c\nmean_y = mean_x + 10\nprint(mean_y)",
+        "o": [
+            "15",
+            "50",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "A 'Bernoulli Trial' is a random experiment with exactly ______ possible outcomes (typically labeled Success and Failure).",
+        "type": "fill_blank",
+        "answers": [
+            "two"
+        ],
+        "other_options": [
+            "one",
+            "three",
+            "infinite"
+        ]
+    },
+    {
+        "q": "Match the probability value to the event description:",
+        "type": "match",
+        "left": [
+            "P(E) is close to 0",
+            "P(E) is close to 1",
+            "P(E) > 1",
+            "P(E) < 0"
+        ],
+        "right": [
+            "Unlikely event",
+            "Very likely event",
+            "Mathematical error",
+            "Mathematical error"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to show the calculation of the 'Likelihood Ratio' in Bayesian terms:",
+        "type": "rearrange",
+        "words": [
+            "P(Evidence | Hypothesis)",
+            "divided by",
+            "P(Evidence | Not Hypothesis)"
+        ]
+    },
+    {
+        "q": "Which theorem explains why the sum of independent random variables tends toward a normal distribution, regardless of the original distribution?",
+        "type": "mcq",
+        "o": [
+            "Central Limit Theorem",
+            "Bayes' Theorem",
+            "Law of Total Probability",
+            "Chebyshev's Inequality"
+        ]
+    },
+    {
+        "q": "The ______ probability is the probability of an event occurring based on prior knowledge of conditions that might be related to the event.",
+        "type": "fill_blank",
+        "answers": [
+            "conditional"
+        ],
+        "other_options": [
+            "marginal",
+            "joint",
+            "independent"
+        ]
+    },
+    {
+        "q": "Match the Random Variable X to the formula for its Mean (Expected Value):",
+        "type": "match",
+        "left": [
+            "Bernoulli(p)",
+            "Uniform(a, b)",
+            "Exponential(lambda)",
+            "Poisson(lambda)"
+        ],
+        "right": [
+            "p",
+            "(a + b) / 2",
+            "1 / lambda",
+            "lambda"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the probability of a value falling within a range for a uniform distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import uniform\n# Uniform distribution between 0 and 10\n# What is P(2 < X < 8)?\n# CDF(8) - CDF(2)\np = uniform.cdf(8, 0, 10) - uniform.cdf(2, 0, 10)\nprint(round(p, 1))",
+        "o": [
+            "0.6",
+            "0.8",
+            "0.2",
+            "0.5"
+        ]
+    },
+    {
+        "q": "If two events A and B are independent, then P(A | B) is equal to P(B).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the terms to show the relationship between Joint Probability and Conditional Probability:",
+        "type": "rearrange",
+        "words": [
+            "P(A and B)",
+            "equals",
+            "P(A)",
+            "times P(B | A)"
+        ]
+    },
+    {
+        "q": "Which of the following is a key requirement for a valid Probability Density Function (PDF)?",
+        "type": "mcq",
+        "o": [
+            "The area under the curve must equal 1",
+            "The function values must be between 0 and 1",
+            "The curve must be symmetric",
+            "The function must be increasing"
+        ]
+    },
+    {
+        "q": "The ______ of a random variable X is defined as E[(X - E[X])^3] / (StdDev)^3, measuring asymmetry.",
+        "type": "fill_blank",
+        "answers": [
+            "skewness"
+        ],
+        "other_options": [
+            "kurtosis",
+            "variance",
+            "covariance"
+        ]
+    },
+    {
+        "q": "Match the concept to the appropriate notation:",
+        "type": "match",
+        "left": [
+            "Probability of A given B",
+            "Probability of A and B",
+            "Probability of A or B",
+            "Probability of not A"
+        ],
+        "right": [
+            "P(A | B)",
+            "P(A ∩ B)",
+            "P(A ∪ B)",
+            "P(A')"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate the standard deviation of a dataset:",
+        "type": "rearrange",
+        "words": [
+            "Find the mean",
+            "Square deviations from mean",
+            "Average the squares",
+            "Take square root"
+        ]
+    },
+    {
+        "q": "Which probability rule applies when calculating P(A - B), the probability that A occurs but B does not?",
+        "type": "mcq",
+        "o": [
+            "P(A) - P(A and B)",
+            "P(A) - P(B)",
+            "P(A) + P(B)",
+            "1 - P(B)"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value using NumPy's average function with weights?",
+        "type": "mcq",
+        "c": "import numpy as np\nvalues = [10, 20, 30]\nprobs = [0.2, 0.5, 0.3]\n\n# Weighted average is the Expected Value\nev = np.average(values, weights=probs)\nprint(ev)",
+        "o": [
+            "21.0",
+            "20.0",
+            "60.0",
+            "15.0"
+        ]
+    },
+    {
+        "q": "Match the distribution parameter to its effect on the Probability Density Function (PDF) graph:",
+        "type": "match",
+        "left": [
+            "Increasing Mean (Normal)",
+            "Increasing Std Dev (Normal)",
+            "Increasing Lambda (Exponential)",
+            "Degrees of Freedom (t-dist)"
+        ],
+        "right": [
+            "Shifts curve to the right",
+            "Flattens and widens the curve",
+            "Makes decay steeper/faster",
+            "Approaches Normal distribution"
+        ]
+    },
+    {
+        "q": "The set of all possible values that a random variable can take is formally known as its ______.",
+        "type": "fill_blank",
+        "answers": [
+            "support"
+        ],
+        "other_options": [
+            "domain",
+            "range",
+            "variance"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to express the Linearity of Expectation for E[aX + bY]:",
+        "type": "rearrange",
+        "words": [
+            "a * E[X]",
+            "plus",
+            "b * E[Y]"
+        ]
+    },
+    {
+        "q": "If P(A) > 0 and P(B) > 0, events A and B can be both mutually exclusive AND independent at the same time.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code calculating the probability of a specific sequence of independent coin flips (H-H-H)?",
+        "type": "mcq",
+        "c": "prob_heads = 0.5\n# P(H and H and H)\nprob_seq = prob_heads ** 3\nprint(prob_seq)",
+        "o": [
+            "0.125",
+            "0.5",
+            "0.333",
+            "0.0625"
+        ]
+    },
+    {
+        "q": "The Variance of a constant value (e.g., Var(5)) is always equal to 1.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the Expected Value (EV) calculation result to the game classification:",
+        "type": "match",
+        "left": [
+            "EV = 0",
+            "EV > 0",
+            "EV < 0",
+            "EV = Infinity"
+        ],
+        "right": [
+            "Fair Game",
+            "Favorable Game",
+            "Unfavorable Game",
+            "St. Petersburg Paradox"
+        ]
+    },
+    {
+        "q": "Rearrange the logical steps to convert 'Odds' (O) to 'Probability' (P):",
+        "type": "rearrange",
+        "words": [
+            "Take Odds",
+            "Divide by",
+            "(1 + Odds)"
+        ]
+    },
+    {
+        "q": "If two events A and B are mutually exclusive (disjoint) and have non-zero probabilities, they must be dependent events (because the occurrence of one prevents the other).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code calculating the Union probability P(A or B)?",
+        "type": "mcq",
+        "c": "p_a = 0.5\np_b = 0.4\np_a_and_b = 0.1\n\n# P(A or B) = P(A) + P(B) - P(A and B)\np_union = p_a + p_b - p_a_and_b\nprint(round(p_union, 1))",
+        "o": [
+            "0.8",
+            "0.9",
+            "1.0",
+            "0.2"
+        ]
+    },
+    {
+        "q": "Match the Random Variable concept to its Python/SciPy implementation method:",
+        "type": "match",
+        "left": [
+            "Probability Mass Function",
+            "Cumulative Distribution Function",
+            "Random Variates (Sampling)",
+            "Expected Value"
+        ],
+        "right": [
+            ".pmf()",
+            ".cdf()",
+            ".rvs()",
+            ".mean()"
+        ]
+    },
+    {
+        "q": "Unlike a probability (which must be ≤ 1), the value of a Probability Density Function (PDF) at a specific point ______ be greater than 1.",
+        "type": "fill_blank",
+        "answers": [
+            "can"
+        ],
+        "other_options": [
+            "cannot",
+            "must",
+            "never"
+        ]
+    },
+    {
+        "q": "Rearrange the components to form the 'Shortcut Formula' for Variance:",
+        "type": "rearrange",
+        "words": [
+            "E[X squared]",
+            "minus",
+            "(E[X]) squared"
+        ]
+    },
+    {
+        "q": "Which distribution models the number of trials required to achieve the FIRST success in a sequence of independent Bernoulli trials?",
+        "type": "mcq",
+        "o": [
+            "Geometric Distribution",
+            "Binomial Distribution",
+            "Hypergeometric Distribution",
+            "Uniform Distribution"
+        ]
+    },
+    {
+        "q": "What is the output of this code checking for independence?",
+        "type": "mcq",
+        "c": "p_a = 0.5\np_b = 0.5\np_a_given_b = 0.6\n\n# If Independent: P(A|B) == P(A)\nis_independent = p_a_given_b == p_a\nprint(is_independent)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The 'Expected Value' E[X] represents the most likely outcome of a single experiment (the mode).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the Bayes' Theorem application to the type of probability it calculates:",
+        "type": "match",
+        "left": [
+            "Spam Filter (Prob of Spam given Word)",
+            "Medical Test (Prob of Disease given Positive)",
+            "Search (Prob of Location given Signal)"
+        ],
+        "right": [
+            "Posterior",
+            "Posterior",
+            "Posterior"
+        ]
+    },
+    {
+        "q": "Rearrange the logical steps to calculate the probability of 'Not A' using the Complement Rule:",
+        "type": "rearrange",
+        "words": [
+            "Take the number 1",
+            "Subtract",
+            "Probability of A"
+        ]
+    },
+    {
+        "q": "Which inequality states that for any random variable with finite variance, the probability of deviating from the mean by 'k' standard deviations is at most 1/k²?",
+        "type": "mcq",
+        "o": [
+            "Chebyshev's Inequality",
+            "Markov's Inequality",
+            "Jensen's Inequality",
+            "Cauchy-Schwarz Inequality"
+        ]
+    },
+    {
+        "q": "What is the output of this code estimating a probability using Monte Carlo simulation?",
+        "type": "mcq",
+        "c": "import numpy as np\n# Simulate 1000 coin flips (0 or 1)\nflips = np.array([0, 1, 1, 0, 1, 0, 1]) # simplified for quiz\n# Calculate empirical probability of Heads (1)\np_heads = np.mean(flips)\nprint(round(p_heads, 2))",
+        "o": [
+            "0.57",
+            "0.43",
+            "0.50",
+            "1.00"
+        ]
+    },
+    {
+        "q": "Match the Distribution to its standard Support (possible values for X):",
+        "type": "match",
+        "left": [
+            "Beta Distribution",
+            "Exponential Distribution",
+            "Normal Distribution",
+            "Bernoulli Distribution"
+        ],
+        "right": [
+            "Interval [0, 1]",
+            "Interval [0, Infinity)",
+            "Interval (-Infinity, Infinity)",
+            "Set {0, 1}"
+        ]
+    },
+    {
+        "q": "If two random variables X and Y have a Correlation Coefficient of 0, they are guaranteed to be statistically independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the components of the Binomial Probability Formula P(X=k):",
+        "type": "rearrange",
+        "words": [
+            "(n choose k)",
+            "times p^k",
+            "times (1-p)^(n-k)"
+        ]
+    },
+    {
+        "q": "The concept of 'i.i.d.' variables is fundamental in statistics. It stands for 'Independent and ______ Distributed'.",
+        "type": "fill_blank",
+        "answers": [
+            "Identically"
+        ],
+        "other_options": [
+            "Individually",
+            "Instantly",
+            "Inversely"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Conditional Probability P(A|B) from raw counts?",
+        "type": "mcq",
+        "c": "count_A_and_B = 15\ncount_B = 60\n# P(A | B) = Count(A n B) / Count(B)\nprob = count_A_and_B / count_B\nprint(prob)",
+        "o": [
+            "0.25",
+            "4.00",
+            "0.15",
+            "0.60"
+        ]
+    },
+    {
+        "q": "In a symmetric probability distribution (like the Standard Normal), the Mean, Median, and Mode are all equal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Greek symbol to the parameter it typically represents in Probability Theory:",
+        "type": "match",
+        "left": [
+            "λ (Lambda)",
+            "ν (Nu)",
+            "χ² (Chi-squared)",
+            "Φ (Phi)"
+        ],
+        "right": [
+            "Rate (Poisson/Exp)",
+            "Degrees of Freedom",
+            "Test Statistic",
+            "CDF of Standard Normal"
+        ]
+    },
+    {
+        "q": "Rearrange the terms to express the Chain Rule of Probability for three events P(A, B, C):",
+        "type": "rearrange",
+        "words": [
+            "P(A)",
+            "times P(B | A)",
+            "times P(C | A, B)"
+        ]
+    },
+    {
+        "q": "If X and Y are independent random variables, then Var(X - Y) is equal to Var(X) - Var(Y).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code calculating the 'Inverse CDF' (Percent Point Function) to find a Z-score?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n# Find the Z-score where 97.5% of data lies to the left\n# This is commonly used for 95% Confidence Intervals (2-tailed)\nz = norm.ppf(0.975)\nprint(round(z, 2))",
+        "o": [
+            "1.96",
+            "1.65",
+            "2.58",
+            "3.00"
+        ]
+    },
+    {
+        "q": "Match the probability concept to its specific notation:",
+        "type": "match",
+        "left": [
+            "Joint Probability",
+            "Marginal Probability",
+            "Conditional Probability",
+            "Complement Probability"
+        ],
+        "right": [
+            "P(X, Y)",
+            "P(X)",
+            "P(X | Y)",
+            "1 - P(X)"
+        ]
+    },
+    {
+        "q": "The ______ distribution describes the time between events in a Poisson point process (e.g., time between bus arrivals).",
+        "type": "fill_blank",
+        "answers": [
+            "exponential"
+        ],
+        "other_options": [
+            "normal",
+            "binomial",
+            "gamma"
+        ]
+    },
+    {
+        "q": "Rearrange the shortcut formula to calculate Covariance(X, Y):",
+        "type": "rearrange",
+        "words": [
+            "E[X * Y]",
+            "minus",
+            "(E[X] * E[Y])"
+        ]
+    },
+    {
+        "q": "Which of the following scenarios is best modeled by a Hypergeometric Distribution?",
+        "type": "mcq",
+        "o": [
+            "Drawing cards from a deck without replacement",
+            "Flipping a fair coin 10 times",
+            "Counting cars passing a bridge in 1 hour",
+            "Measuring the height of adults"
+        ]
+    },
+    {
+        "q": "What is the output of this code simulating the set difference operation (Event A occurring but NOT Event B)?",
+        "type": "mcq",
+        "c": "set_A = {1, 2, 3, 4, 5}\nset_B = {4, 5, 6, 7}\n\n# Elements in A but not in B\ndiff = set_A.difference(set_B)\nprint(diff)",
+        "o": [
+            "{1, 2, 3}",
+            "{4, 5}",
+            "{6, 7}",
+            "{1, 2, 3, 4, 5, 6, 7}"
+        ]
+    },
+    {
+        "q": "If the Expected Value of a game is infinite (e.g., the St. Petersburg Paradox), it implies that the game is mathematically 'fair' in the real world.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the statistical theorem to its implication:",
+        "type": "match",
+        "left": [
+            "Law of Large Numbers",
+            "Central Limit Theorem",
+            "Bayes Theorem",
+            "Total Probability Law"
+        ],
+        "right": [
+            "Sample mean converges to True Mean",
+            "Sampling distribution becomes Normal",
+            "Updates belief with new evidence",
+            "Marginalizes joint probabilities"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to construct an Empirical CDF from data:",
+        "type": "rearrange",
+        "words": [
+            "Sort the data values",
+            "Calculate rank k",
+            "Divide k by Total Count"
+        ]
+    },
+    {
+        "q": "For two random variables X and Y, if Cov(X, Y) = 0, then X and Y are guaranteed to be statistically independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of a single fair six-sided die roll?",
+        "type": "mcq",
+        "c": "values = [1, 2, 3, 4, 5, 6]\n# Expected Value = Sum(x * P(x)) = Sum(x) / 6\nev = sum(values) / 6\nprint(ev)",
+        "o": [
+            "3.5",
+            "3.0",
+            "4.0",
+            "21.0"
+        ]
+    },
+    {
+        "q": "Match the formula component used in Bayes' Theorem to the calculation step it represents:",
+        "type": "match",
+        "left": [
+            "P(D|H) * P(H)",
+            "P(D)",
+            "P(H)",
+            "P(D|H)"
+        ],
+        "right": [
+            "Unnormalized Posterior / Joint Probability",
+            "Marginal Likelihood / Evidence",
+            "Prior Probability",
+            "Likelihood"
+        ]
+    },
+    {
+        "q": "The Variance of any constant value $c$, denoted $\\text{Var}(c)$, is always equal to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "0"
+        ],
+        "other_options": [
+            "1",
+            "c",
+            "c^2"
+        ]
+    },
+    {
+        "q": "Rearrange the components to form the formula for the Standard Error of the Mean (SEM):",
+        "type": "rearrange",
+        "words": [
+            "Population Standard Deviation",
+            "divided by",
+            "Square Root of Sample Size"
+        ]
+    },
+    {
+        "q": "What is the probability P(X < 1) for a continuous uniform distribution defined over the interval [0, 5]?",
+        "type": "mcq",
+        "c": "from scipy.stats import uniform\n# Uniform distribution starts at 0, ends at 5\n# P(X < 1) = (1 - 0) / (5 - 0)\nprob = uniform.cdf(1, loc=0, scale=5)\nprint(round(prob, 2))",
+        "o": [
+            "0.20",
+            "0.10",
+            "0.50",
+            "0.80"
+        ]
+    },
+    {
+        "q": "The domain (input range) of the Cumulative Distribution Function, $F(x)$, is restricted to the interval [0, 1].",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code simulating the probability of an event using a simple list complement check?",
+        "type": "mcq",
+        "c": "events = ['A', 'B', 'C']\nprob_known = {'A': 0.2, 'B': 0.3}\n\n# P(C) = 1 - P(A) - P(B)\np_c = 1 - (prob_known['A'] + prob_known['B'])\nprint(p_c)",
+        "o": [
+            "0.5",
+            "1.0",
+            "0.2",
+            "0.3"
+        ]
+    },
+    {
+        "q": "Which expression correctly defines the probability of an event A using the Law of Total Probability with mutually exclusive partitions B1 and B2?",
+        "type": "mcq",
+        "o": [
+            "P(A|B1)P(B1) + P(A|B2)P(B2)",
+            "P(A|B1) + P(A|B2)",
+            "P(A) * P(B1) * P(B2)",
+            "P(A|B1) / P(B2)"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the ratio of Prior Probability P(H) to its complement P(H^c)?",
+        "type": "mcq",
+        "c": "p_h = 0.2\np_not_h = 1 - p_h\n\n# Prior Odds: P(H) / P(H^c)\nodds = p_h / p_not_h\nprint(round(odds, 2))",
+        "o": [
+            "0.25",
+            "4.00",
+            "0.80",
+            "1.00"
+        ]
+    },
+    {
+        "q": "Match the specific characteristic of a Random Variable to the correct term:",
+        "type": "match",
+        "left": [
+            "Indicator Variable",
+            "Discrete Variable",
+            "T-distributed Variable",
+            "Continuous Variable"
+        ],
+        "right": [
+            "Takes only values 0 or 1",
+            "Has a countable number of outcomes",
+            "Used for small sample hypothesis testing",
+            "Has an uncountable number of outcomes"
+        ]
+    },
+    {
+        "q": "The Expected Value of a discrete random variable is mathematically equivalent to the distribution's ______ moment about the origin.",
+        "type": "fill_blank",
+        "answers": [
+            "first"
+        ],
+        "other_options": [
+            "second",
+            "third",
+            "zeroth"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate the **Standard Error of the Mean (SEM)**:",
+        "type": "rearrange",
+        "words": [
+            "Find Population Standard Deviation",
+            "Divide by",
+            "Square Root of Sample Size"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating a Conditional Probability P(A|B) from raw sample counts?",
+        "type": "mcq",
+        "c": "# Total observations = 100\ncount_A_and_B = 30\ncount_B = 50\n\n# P(A | B) = Count(A and B) / Count(B)\nprob = count_A_and_B / count_B\nprint(prob)",
+        "o": [
+            "0.6",
+            "0.3",
+            "1.67",
+            "0.5"
+        ]
+    },
+    {
+        "q": "The height of the Probability Density Function (PDF) for a continuous uniform distribution $U(a, b)$ is always equal to $1 / (b - a)$.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the distribution's support (domain) to its type:",
+        "type": "match",
+        "left": [
+            "Beta Distribution",
+            "Chi-Squared Distribution",
+            "Student's t-distribution",
+            "Poisson Distribution"
+        ],
+        "right": [
+            "Values in [0, 1]",
+            "Values in [0, ∞)",
+            "Values in (-∞, ∞)",
+            "Non-negative integers"
+        ]
+    },
+    {
+        "q": "Rearrange the formula to check if two random variables X and Y are uncorrelated (Cov(X, Y) = 0):",
+        "type": "rearrange",
+        "words": [
+            "E[X * Y]",
+            "equals",
+            "E[X] * E[Y]"
+        ]
+    },
+    {
+        "q": "In the odds form of Bayes' Theorem, the ratio of the Posterior Odds to the Prior Odds is equal to the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Likelihood ratio"
+        ],
+        "other_options": [
+            "Posterior probability",
+            "Marginal probability",
+            "Prior probability"
+        ]
+    },
+    {
+        "q": "The conditional probability $P(A|B)$ is generally equal to $P(B|A)$ only if $P(A) = P(B)$.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of a scaled variable $E[5X]$?",
+        "type": "mcq",
+        "c": "e_x = 7.5\n# Property: E[aX] = a * E[X]\nscaled_e_x = 5 * e_x\nprint(scaled_e_x)",
+        "o": [
+            "37.5",
+            "5.0",
+            "12.5",
+            "7.5"
+        ]
+    },
+    {
+        "q": "The Expected Value of an indicator random variable for an event A, $E[I_A]$, is exactly equal to the ______ of event A, $P(A)$.",
+        "type": "fill_blank",
+        "answers": [
+            "probability"
+        ],
+        "other_options": [
+            "variance",
+            "median",
+            "mode"
+        ]
+    },
+    {
+        "q": "Rearrange the components to calculate the Prior Odds in Bayesian analysis:",
+        "type": "rearrange",
+        "words": [
+            "P(Hypothesis)",
+            "divided by",
+            "P(Not Hypothesis)"
+        ]
+    },
+    {
+        "q": "Standard deviation is measured in the same units as the Mean, while Variance is measured in squared units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "For a joint Probability Mass Function (PMF), the summation over all possible values of X and Y must equal what value?",
+        "type": "mcq",
+        "o": [
+            "1",
+            "0",
+            "E[X] + E[Y]",
+            "P(X) * P(Y)"
+        ]
+    },
+    {
+        "q": "Rearrange the mathematical steps to transform a value X into its Standard Score (Z-score):",
+        "type": "rearrange",
+        "words": [
+            "Subtract the Mean",
+            "Divide the result by",
+            "Standard Deviation"
+        ]
+    },
+    {
+        "q": "The Variance of a continuous random variable X following a Uniform distribution $U(0, 1)$ is equal to:",
+        "type": "mcq",
+        "o": [
+            "1/12",
+            "1/2",
+            "1/4",
+            "1"
+        ]
+    },
+    {
+        "q": "The probability of the union of any set of events is always less than or equal to the sum of their individual probabilities (Subadditivity property).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If a data scientist defines a loss function $L(X)$, the Expected Value $E[L(X)]$ represents the expected ______ under that function.",
+        "type": "fill_blank",
+        "answers": [
+            "loss"
+        ],
+        "other_options": [
+            "gain",
+            "variance",
+            "median"
+        ]
+    },
+    {
+        "q": "What is the output of this code approximating a low-probability event using the Poisson distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import poisson\n# Binomial(n=1000, p=0.001) is approx Poisson(lambda=1)\n# P(X=0) for Poisson(1)\nprob_zero = poisson.pmf(k=0, mu=1)\nprint(round(prob_zero, 3))",
+        "o": [
+            "0.368",
+            "0.500",
+            "0.001",
+            "0.632"
+        ]
+    },
+    {
+        "q": "Match the probability notation to the specific calculation represented:",
+        "type": "match",
+        "left": [
+            "P(A|B)",
+            "E[X]",
+            "Var(X)",
+            "Cov(X, Y)"
+        ],
+        "right": [
+            "Conditional Probability",
+            "First Moment",
+            "Second Central Moment",
+            "Joint Central Moment"
+        ]
+    },
+    {
+        "q": "Rearrange the components to form the **Posterior Odds** in Bayesian terms:",
+        "type": "rearrange",
+        "words": [
+            "Likelihood Ratio",
+            "times",
+            "Prior Odds"
+        ]
+    },
+    {
+        "q": "If a random variable X is scaled by a constant $a$, the variance scales by the constant $a$: $\\text{Var}(aX) = a \\cdot \\text{Var}(X)$.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The Likelihood term $P(\\text{Data} | \\text{Hypothesis})$ in Bayes' Theorem is treated as a function of the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "hypothesis"
+        ],
+        "other_options": [
+            "prior",
+            "evidence",
+            "posterior"
+        ]
+    },
+    {
+        "q": "Rearrange the logical steps used to calculate Variance using the Expectation definition:",
+        "type": "rearrange",
+        "words": [
+            "Calculate $E[X^2]$",
+            "Subtract",
+            "$(E[X])^2$"
+        ]
+    },
+    {
+        "q": "If events A and B are mutually exclusive with P(A) = 0.3 and P(B) = 0.4, what is the value of P(A OR B)?",
+        "type": "mcq",
+        "o": [
+            "0.7",
+            "0.12",
+            "0.0",
+            "0.1"
+        ]
+    },
+    {
+        "q": "What is the output of this Python code representing a Bayes Theorem calculation?",
+        "type": "mcq",
+        "c": "p_a = 0.5\np_b_given_a = 0.8\np_b = 0.4\n\n# Calculate P(A|B) using Bayes Theorem\n# Formula: (P(B|A) * P(A)) / P(B)\nresult = (p_b_given_a * p_a) / p_b\nprint(int(result))",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "0.32"
+        ]
+    },
+    {
+        "q": "In a Poisson distribution, the parameter lambda represents both the ______ and the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "mean",
+            "variance"
+        ],
+        "other_options": [
+            "median",
+            "mode",
+            "standard deviation"
+        ]
+    },
+    {
+        "q": "Match the probability concepts with their correct mathematical definitions:",
+        "type": "match",
+        "left": [
+            "P(A | B)",
+            "P(A AND B)",
+            "P(A OR B)",
+            "Independence"
+        ],
+        "right": [
+            "Conditional Probability",
+            "Joint Probability",
+            "Union of Events",
+            "P(A|B) equals P(A)"
+        ]
+    },
+    {
+        "q": "The linearity of expectation, E[X + Y] = E[X] + E[Y], holds true even if the random variables X and Y are dependent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which statistical concept is calculated by this Python function?",
+        "type": "mcq",
+        "c": "def calculate_stat(outcomes, probabilities):\n    # outcomes: list of values (x)\n    # probabilities: list of probs (p)\n    return sum(x * p for x, p in zip(outcomes, probabilities))",
+        "o": [
+            "Expected Value",
+            "Standard Deviation",
+            "Variance",
+            "Median"
+        ]
+    },
+    {
+        "q": "Match the Random Variable type to its Probability Function:",
+        "type": "match",
+        "left": [
+            "Discrete Variable",
+            "Continuous Variable",
+            "CDF",
+            "Support"
+        ],
+        "right": [
+            "Probability Mass Function",
+            "Probability Density Function",
+            "Cumulative Distribution Function",
+            "Set of possible values"
+        ]
+    },
+    {
+        "q": "The total area under the curve of a Probability Density Function (PDF) must always equal ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "100",
+            "infinity"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate Marginal Probability from a Joint Probability Table:",
+        "type": "rearrange",
+        "words": [
+            "Identify Joint Table",
+            "Select Target Variable",
+            "Sum Rows or Columns",
+            "Resulting Marginal Prob"
+        ]
+    },
+    {
+        "q": "For a continuous random variable, the probability of the variable taking on an exact specific value is always 1.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Given P(A) = 0.6, P(B) = 0.5, and P(A U B) = 0.8, what is the value of the joint probability P(A AND B)?",
+        "type": "mcq",
+        "o": [
+            "0.3",
+            "0.1",
+            "0.8",
+            "1.1"
+        ]
+    },
+    {
+        "q": "According to the Central Limit Theorem, the distribution of sample means approaches a ______ distribution as the sample size increases.",
+        "type": "fill_blank",
+        "answers": [
+            "Normal"
+        ],
+        "other_options": [
+            "Uniform",
+            "Binomial",
+            "Poisson"
+        ]
+    },
+    {
+        "q": "What is the output of this code regarding the variance of a scaled Random Variable?",
+        "type": "mcq",
+        "c": "var_x = 10\nconstant = 3\n\n# Property: Var(aX) = (a^2) * Var(X)\nvar_y = (constant ** 2) * var_x\nprint(var_y)",
+        "o": [
+            "90",
+            "30",
+            "13",
+            "100"
+        ]
+    },
+    {
+        "q": "Match the Bayes Theorem terms to their descriptions:",
+        "type": "match",
+        "left": [
+            "Prior Probability",
+            "Posterior Probability",
+            "Likelihood",
+            "Evidence"
+        ],
+        "right": [
+            "Initial belief P(A)",
+            "Updated belief P(A|B)",
+            "Prob of data given hypothesis P(B|A)",
+            "Total probability of data P(B)"
+        ]
+    },
+    {
+        "q": "If two events A and B are mutually exclusive (and P(A)>0, P(B)>0), they are automatically independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Expected Value E[X] of a discrete random variable:",
+        "type": "rearrange",
+        "words": [
+            "List all outcomes x",
+            "Find P(x) for each",
+            "Multiply x by P(x)",
+            "Sum the products"
+        ]
+    },
+    {
+        "q": "Which distribution is simulated by this Python code?",
+        "type": "mcq",
+        "c": "import numpy as np\n# n=number of trials, p=probability of success\n# Simulating a single coin flip (n=1)\noutcomes = np.random.binomial(n=1, p=0.5, size=1000)",
+        "o": [
+            "Bernoulli Distribution",
+            "Gaussian Distribution",
+            "Poisson Distribution",
+            "Exponential Distribution"
+        ]
+    },
+    {
+        "q": "In a Normal Distribution, approximately ______ percent of data falls within one standard deviation of the mean.",
+        "type": "fill_blank",
+        "answers": [
+            "68"
+        ],
+        "other_options": [
+            "95",
+            "99",
+            "50"
+        ]
+    },
+    {
+        "q": "Match the scipy.stats function to the probability concept it calculates:",
+        "type": "match",
+        "left": [
+            "norm.pdf(x)",
+            "norm.cdf(x)",
+            "norm.ppf(q)",
+            "norm.rvs()"
+        ],
+        "right": [
+            "Density at x",
+            "Area to left of x",
+            "Percentile point",
+            "Random sample generation"
+        ]
+    },
+    {
+        "q": "The Cumulative Distribution Function (CDF), F(x), represents the probability that the random variable X takes a value less than or equal to x.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Given P(A AND B) = 0.2 and P(B) = 0.5, calculate the conditional probability P(A | B).",
+        "type": "mcq",
+        "o": [
+            "0.4",
+            "0.1",
+            "0.7",
+            "0.3"
+        ]
+    },
+    {
+        "q": "What parameter of the Normal Distribution does the argument 'loc' represent in this code?",
+        "type": "mcq",
+        "c": "import numpy as np\n# Generating samples\nsamples = np.random.normal(loc=5, scale=2, size=1000)",
+        "o": [
+            "Mean",
+            "Standard Deviation",
+            "Variance",
+            "Skewness"
+        ]
+    },
+    {
+        "q": "The formula Var(X) = E[X^2] - (E[X])^2 is a valid alternative method for calculating variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the probability distribution to its real-world use case:",
+        "type": "match",
+        "left": [
+            "Bernoulli",
+            "Poisson",
+            "Normal",
+            "Uniform"
+        ],
+        "right": [
+            "Single coin toss",
+            "Emails arriving per hour",
+            "Human heights",
+            "Rolling a fair die"
+        ]
+    },
+    {
+        "q": "If events A and B are Statistically Independent, then P(A|B) is equal to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "P(A)"
+        ],
+        "other_options": [
+            "P(B)",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate Variance for a discrete random variable:",
+        "type": "rearrange",
+        "words": [
+            "Calculate Mean E[X]",
+            "Subtract Mean from X",
+            "Square the Differences",
+            "Multiply by P(x) and Sum"
+        ]
+    },
+    {
+        "q": "What concept is calculated by this code snippet?",
+        "type": "mcq",
+        "c": "def calc_metric(p_a, p_b, p_b_given_a):\n    # p_a: Probability of Hypothesis\n    # p_b: Probability of Evidence\n    # p_b_given_a: Likelihood\n    return (p_b_given_a * p_a) / p_b",
+        "o": [
+            "Posterior Probability",
+            "Joint Probability",
+            "Marginal Probability",
+            "Standard Score"
+        ]
+    },
+    {
+        "q": "The Expected Value of a fair 6-sided die (outcomes 1 through 6) is exactly ______.",
+        "type": "fill_blank",
+        "answers": [
+            "3.5"
+        ],
+        "other_options": [
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the statistical notation to its meaning:",
+        "type": "match",
+        "left": [
+            "E[X]",
+            "Var(X)",
+            "σ (sigma)",
+            "μ (mu)"
+        ],
+        "right": [
+            "Expected Value",
+            "Variance",
+            "Standard Deviation",
+            "Population Mean"
+        ]
+    },
+    {
+        "q": "A probability distribution is invalid if the sum of all probabilities in the sample space is less than 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which rule states that P(A and B) = P(A) * P(B | A)?",
+        "type": "mcq",
+        "o": [
+            "General Multiplication Rule",
+            "Addition Rule",
+            "Law of Total Probability",
+            "Bayes Theorem"
+        ]
+    },
+    {
+        "q": "What statistical concept is demonstrated by this Python code simulation?",
+        "type": "mcq",
+        "c": "import numpy as np\n# Simulating waiting time until first success\ntrials = 0\nwhile np.random.rand() > 0.1:  # p = 0.1\n    trials += 1\nprint(trials)",
+        "o": [
+            "Geometric Distribution",
+            "Binomial Distribution",
+            "Uniform Distribution",
+            "Normal Distribution"
+        ]
+    },
+    {
+        "q": "The Exponential distribution exhibits the ______ property, meaning past history does not affect future probabilities.",
+        "type": "fill_blank",
+        "answers": [
+            "memoryless"
+        ],
+        "other_options": [
+            "symmetric",
+            "constant",
+            "linear"
+        ]
+    },
+    {
+        "q": "Match the probability distribution shape to its description:",
+        "type": "match",
+        "left": [
+            "Right Skewed",
+            "Left Skewed",
+            "Bimodal",
+            "Symmetric"
+        ],
+        "right": [
+            "Tail extends to the right (positive)",
+            "Tail extends to the left (negative)",
+            "Two distinct peaks",
+            "Mean equals Median"
+        ]
+    },
+    {
+        "q": "The equation E[X * Y] = E[X] * E[Y] is true for any two random variables X and Y, regardless of their relationship.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to normalize a set of raw likelihoods into probabilities:",
+        "type": "rearrange",
+        "words": [
+            "Calculate raw likelihoods",
+            "Sum all likelihoods",
+            "Divide each by Sum",
+            "Verify sum equals 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of a constant?",
+        "type": "mcq",
+        "c": "import numpy as np\n# E[c] = c\nvalues = np.full(100, 5) # Array of 100 5s\nexpected_val = np.mean(values)\nprint(int(expected_val))",
+        "o": [
+            "5",
+            "100",
+            "0",
+            "1"
+        ]
+    },
+    {
+        "q": "If the probability of an event NOT happening is 0.75, the probability of the event happening is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "0.25"
+        ],
+        "other_options": [
+            "0.75",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "Match the Random Variable properties to the correct variance logic:",
+        "type": "match",
+        "left": [
+            "Var(Constant C)",
+            "Var(X + C)",
+            "Var(X) is large",
+            "Var(X) is zero"
+        ],
+        "right": [
+            "0",
+            "Var(X)",
+            "Data is spread out",
+            "All values are identical"
+        ]
+    },
+    {
+        "q": "The Poisson distribution can be used as an approximation for the Binomial distribution when n is large and p is very small.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "For dependent random variables X and Y, the variance of their sum Var(X + Y) is equal to Var(X) + Var(Y) + 2 * ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Covariance"
+        ],
+        "other_options": [
+            "Correlation",
+            "Expectation",
+            "Standard Deviation"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of a custom discrete distribution?",
+        "type": "mcq",
+        "c": "import numpy as np\nvalues = np.array([10, 20, 100])\nprobs = np.array([0.8, 0.1, 0.1])\n\n# E[X] = sum(x * p(x))\nexpected_val = np.sum(values * probs)\nprint(int(expected_val))",
+        "o": [
+            "20",
+            "10",
+            "43",
+            "100"
+        ]
+    },
+    {
+        "q": "Unlike a Probability Mass Function (PMF), the value of a Probability Density Function (PDF) at a specific point can be greater than 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Probability Distribution to its specific support (range of possible values):",
+        "type": "match",
+        "left": [
+            "Beta Distribution",
+            "Normal Distribution",
+            "Exponential Distribution",
+            "Bernoulli Distribution"
+        ],
+        "right": [
+            "Interval [0, 1]",
+            "Interval (-infinity, +infinity)",
+            "Interval [0, infinity)",
+            "Set {0, 1}"
+        ]
+    },
+    {
+        "q": "Rearrange the components to form the 'Law of Total Probability' for finding P(B):",
+        "type": "rearrange",
+        "words": [
+            "Summation over i",
+            "P(B given Ai)",
+            "times",
+            "P(Ai)"
+        ]
+    },
+    {
+        "q": "The 'Naive' assumption in the Naive Bayes classifier is that all features are ______ given the class label.",
+        "type": "fill_blank",
+        "answers": [
+            "independent"
+        ],
+        "other_options": [
+            "dependent",
+            "normalized",
+            "correlated"
+        ]
+    },
+    {
+        "q": "What does this code snippet demonstrate regarding random number generation?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(42)\nprint(np.random.rand()) \nnp.random.seed(42)\nprint(np.random.rand())",
+        "o": [
+            "Reproducibility",
+            "Randomness",
+            "Convergence",
+            "Normalization"
+        ]
+    },
+    {
+        "q": "Which probability distribution describes the number of successes in a fixed number of independent Bernoulli trials drawn *without* replacement?",
+        "type": "mcq",
+        "o": [
+            "Hypergeometric",
+            "Binomial",
+            "Geometric",
+            "Poisson"
+        ]
+    },
+    {
+        "q": "Match the statistical 'Moment' to its common name:",
+        "type": "match",
+        "left": [
+            "1st Moment",
+            "2nd Central Moment",
+            "3rd Standardized Moment",
+            "4th Standardized Moment"
+        ],
+        "right": [
+            "Mean",
+            "Variance",
+            "Skewness",
+            "Kurtosis"
+        ]
+    },
+    {
+        "q": "If X is a continuous random variable, the probability P(X = c) for any specific constant c is exactly 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "For any two events A and B, the inequality P(A AND B) <= P(A) is always valid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Python code calculating the standard deviation of a Bernoulli trial with p=0.5?",
+        "type": "mcq",
+        "c": "import math\np = 0.5\n# Formula for Bernoulli Std Dev: sqrt(p * (1-p))\nstd_dev = math.sqrt(p * (1 - p))\nprint(round(std_dev, 1))",
+        "o": [
+            "0.5",
+            "0.25",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "In the context of Random Variables, the square root of the Variance is known as the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "standard deviation"
+        ],
+        "other_options": [
+            "mean absolute deviation",
+            "expected value",
+            "covariance"
+        ]
+    },
+    {
+        "q": "Match the probability notation to its English translation:",
+        "type": "match",
+        "left": [
+            "P(A') or P(A^c)",
+            "P(A | B)",
+            "P(A ∩ B)",
+            "P(A ∪ B)"
+        ],
+        "right": [
+            "Probability of Not A",
+            "Probability of A given B",
+            "Probability of A and B",
+            "Probability of A or B"
+        ]
+    },
+    {
+        "q": "Which rule is being applied in this calculation to find P(A)?",
+        "type": "mcq",
+        "c": "# Partition B1, B2\np_b1 = 0.3\np_b2 = 0.7\n# P(A) = P(A|B1)P(B1) + P(A|B2)P(B2)\np_a = (0.9 * p_b1) + (0.2 * p_b2)",
+        "o": [
+            "Law of Total Probability",
+            "Chain Rule",
+            "Bayes Theorem",
+            "Inclusion-Exclusion Principle"
+        ]
+    },
+    {
+        "q": "Rearrange the sequence of operations to standardize a random variable X (calculate Z-score):",
+        "type": "rearrange",
+        "words": [
+            "Take value X",
+            "Subtract mean μ",
+            "Divide result by",
+            "Standard Deviation σ"
+        ]
+    },
+    {
+        "q": "If X is a random variable representing the outcome of a fair coin toss (0 for Tails, 1 for Heads), then E[X^2] is equal to E[X].",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ distribution is often used to model the time elapsed between events in a Poisson process.",
+        "type": "fill_blank",
+        "answers": [
+            "Exponential"
+        ],
+        "other_options": [
+            "Gamma",
+            "Normal",
+            "Binomial"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to its characteristic parameter(s):",
+        "type": "match",
+        "left": [
+            "Poisson",
+            "Binomial",
+            "Normal",
+            "Uniform"
+        ],
+        "right": [
+            "Lambda (λ)",
+            "n and p",
+            "Mu (μ) and Sigma (σ)",
+            "a and b (min and max)"
+        ]
+    },
+    {
+        "q": "What happens to the variance of a random variable X if you add a constant C to it (Var(X + C))?",
+        "type": "mcq",
+        "o": [
+            "It remains unchanged",
+            "It increases by C",
+            "It increases by C squared",
+            "It becomes zero"
+        ]
+    },
+    {
+        "q": "If two random variables X and Y have a covariance of zero (are uncorrelated), they are necessarily statistically independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What statistical concept is represented by the variable 'result' in this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3, 4, 5])\nmu = np.mean(x)\n\n# E[X - mu]\nresult = np.mean(x - mu)\nprint(round(result, 1))",
+        "o": [
+            "Expectation of deviation",
+            "Variance",
+            "Standard Error",
+            "Mean Squared Error"
+        ]
+    },
+    {
+        "q": "The Student's t-distribution is similar to the Normal distribution but has ______ tails, making it more prone to outliers when sample sizes are small.",
+        "type": "fill_blank",
+        "answers": [
+            "heavier"
+        ],
+        "other_options": [
+            "lighter",
+            "infinite",
+            "zero"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to its specific Variance formula:",
+        "type": "match",
+        "left": [
+            "Bernoulli(p)",
+            "Poisson(λ)",
+            "Uniform(a, b)",
+            "Standard Normal"
+        ],
+        "right": [
+            "p(1-p)",
+            "λ",
+            "(b-a)^2 / 12",
+            "1"
+        ]
+    },
+    {
+        "q": "According to De Morgan's Laws in probability, P(Not A AND Not B) is equivalent to which of the following?",
+        "type": "mcq",
+        "o": [
+            "1 - P(A OR B)",
+            "1 - P(A AND B)",
+            "(1 - P(A)) * (1 - P(B))",
+            "P(A) + P(B)"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to calculate a Weighted Average (Expected Value) from a raw dataset:",
+        "type": "rearrange",
+        "words": [
+            "Identify unique values",
+            "Count frequency of each",
+            "Convert counts to probabilities",
+            "Sum products of value*prob"
+        ]
+    },
+    {
+        "q": "In Bayes' Theorem, the denominator P(B) is often referred to as the ______ constant, ensuring the posterior probabilities sum to 1.",
+        "type": "fill_blank",
+        "answers": [
+            "normalizing"
+        ],
+        "other_options": [
+            "deriving",
+            "integrating",
+            "likelihood"
+        ]
+    },
+    {
+        "q": "What is the output of this code simulating a 'fair game' concept?",
+        "type": "mcq",
+        "c": "# Win $10 with prob 0.2, Lose $2.50 with prob 0.8\nval_win = 10\nprob_win = 0.2\nval_lose = -2.5\nprob_lose = 0.8\n\nexpected_return = (val_win * prob_win) + (val_lose * prob_lose)\nprint(expected_return)",
+        "o": [
+            "0.0",
+            "2.5",
+            "7.5",
+            "-1.0"
+        ]
+    },
+    {
+        "q": "Match the Random Variable transformation to its effect on the Mean (Expected Value):",
+        "type": "match",
+        "left": [
+            "E[X + c]",
+            "E[X - c]",
+            "E[c * X]",
+            "E[c]"
+        ],
+        "right": [
+            "E[X] + c",
+            "E[X] - c",
+            "c * E[X]",
+            "c"
+        ]
+    },
+    {
+        "q": "For a continuous random variable, the Probability Density Function (PDF) represents the probability of an interval, while the probability of a single point is technically undefined (or zero).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What famous probability paradox is demonstrated by this simulation code?",
+        "type": "mcq",
+        "c": "import numpy as np\n# n = 23 people in a room\n# Simulating 10,000 rooms\nmatches = 0\nfor _ in range(10000):\n    birthdays = np.random.randint(1, 366, 23)\n    if len(birthdays) != len(set(birthdays)):\n        matches += 1\nprint(matches / 10000) # Output approx 0.5",
+        "o": [
+            "Birthday Paradox",
+            "Monty Hall Problem",
+            "Simpson's Paradox",
+            "Gambler's Fallacy"
+        ]
+    },
+    {
+        "q": "For a continuous random variable, the Probability Density Function (PDF) is the ______ of the Cumulative Distribution Function (CDF).",
+        "type": "fill_blank",
+        "answers": [
+            "derivative"
+        ],
+        "other_options": [
+            "integral",
+            "product",
+            "inverse"
+        ]
+    },
+    {
+        "q": "If P(A | B) = P(A), then events A and B are considered ______.",
+        "type": "fill_blank",
+        "answers": [
+            "independent"
+        ],
+        "other_options": [
+            "mutually exclusive",
+            "conditional",
+            "dependent"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution relationship to its description:",
+        "type": "match",
+        "left": [
+            "Binomial -> Normal",
+            "Binomial -> Poisson",
+            "Bernoulli -> Binomial",
+            "Log-Normal"
+        ],
+        "right": [
+            "Approximation when n is large",
+            "Approximation when n is large and p is small",
+            "Sum of n independent trials",
+            "Logarithm of variable is normally distributed"
+        ]
+    },
+    {
+        "q": "Chebyshev's Inequality guarantees that for any probability distribution, no more than 1/(k^2) of the values can be more than k standard deviations away from the mean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the result of the following Expectation calculation involving an Indicator Variable?",
+        "type": "mcq",
+        "c": "# Indicator Variable I_A is 1 if event A happens, 0 otherwise.\n# P(A) = 0.4\n# Calculate E[I_A]\np_a = 0.4\nexpected_val = (1 * p_a) + (0 * (1 - p_a))\nprint(expected_val)",
+        "o": [
+            "0.4",
+            "0.6",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "Rearrange the logic flow for a Monte Carlo simulation to estimate an Expected Value:",
+        "type": "rearrange",
+        "words": [
+            "Define domain of inputs",
+            "Generate random inputs",
+            "Evaluate function on inputs",
+            "Average the results"
+        ]
+    },
+    {
+        "q": "Which rule of probability states that P(A | B) + P(Not A | B) = 1?",
+        "type": "mcq",
+        "o": [
+            "Complement Rule (Conditional)",
+            "Addition Rule",
+            "Bayes Theorem",
+            "Chain Rule"
+        ]
+    },
+    {
+        "q": "Match the Statistical Inequality to its primary use:",
+        "type": "match",
+        "left": [
+            "Markov's Inequality",
+            "Chebyshev's Inequality",
+            "Jensen's Inequality",
+            "Cauchy-Schwarz"
+        ],
+        "right": [
+            "Bound for non-negative variables",
+            "Bound based on variance",
+            "Convex function expectations",
+            "Bound for Covariance"
+        ]
+    },
+    {
+        "q": "The Covariance of a random variable with itself, Cov(X, X), is equal to zero.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "If events A and B are independent, P(A) = 0.4 and P(B) = 0.5, what is the value of P(A OR B)?",
+        "type": "mcq",
+        "o": [
+            "0.7",
+            "0.9",
+            "0.2",
+            "0.5"
+        ]
+    },
+    {
+        "q": "What specific statistical concept does the 'ddof=1' argument handle in this variance calculation?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = [2, 4, 4, 4, 5, 5, 7, 9]\n# Calculating Sample Variance vs Population Variance\nvar_val = np.var(data, ddof=1)",
+        "o": [
+            "Bessel's Correction (Sample Variance)",
+            "Population Bias",
+            "Standard Normalization",
+            "Mean Absolute Error"
+        ]
+    },
+    {
+        "q": "The Correlation Coefficient is a normalized version of Covariance, always bounded between ______ and ______.",
+        "type": "fill_blank",
+        "answers": [
+            "-1",
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "100",
+            "-infinity"
+        ]
+    },
+    {
+        "q": "Match the Advanced Probability Distribution to its primary application:",
+        "type": "match",
+        "left": [
+            "Beta Distribution",
+            "Gamma Distribution",
+            "Multinomial Distribution",
+            "Chi-Squared Distribution"
+        ],
+        "right": [
+            "Modeling probabilities (Bayesian conjugate prior)",
+            "Wait times for 'k' events",
+            "Generalization of Binomial for >2 outcomes",
+            "Hypothesis testing / Goodness of fit"
+        ]
+    },
+    {
+        "q": "The inequality E[1/X] = 1/E[X] is generally true for non-linear transformations of random variables.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the logical steps to calculate the probability of 'At Least One' success using the Complement Rule:",
+        "type": "rearrange",
+        "words": [
+            "Calculate Prob of Failure q",
+            "Raise q to power n",
+            "Subtract result from 1",
+            "Result is P(At least one)"
+        ]
+    },
+    {
+        "q": "What is the output of this code representing the Law of Large Numbers?",
+        "type": "mcq",
+        "c": "import numpy as np\n# True mean is 0.5\n# As N increases, sample_mean converges to true_mean\nsample_means = []\nfor N in [10, 100, 100000]:\n    sample_means.append(np.mean(np.random.rand(N)))\n\n# Which value corresponds to N=100000?\nprint(round(sample_means[-1], 1))",
+        "o": [
+            "0.5",
+            "1.0",
+            "0.0",
+            "100000"
+        ]
+    },
+    {
+        "q": "In the context of Bayes Theorem, if a test has a 0% False Negative Rate, it is said to have perfect ______.",
+        "type": "fill_blank",
+        "answers": [
+            "sensitivity"
+        ],
+        "other_options": [
+            "specificity",
+            "precision",
+            "accuracy"
+        ]
+    },
+    {
+        "q": "Match the Random Variable operation to its resulting variance:",
+        "type": "match",
+        "left": [
+            "Var(X + Y) if Independent",
+            "Var(X + Y) if Dependent",
+            "Var(X - Y) if Independent",
+            "Var(2X)"
+        ],
+        "right": [
+            "Var(X) + Var(Y)",
+            "Var(X) + Var(Y) + 2Cov(X,Y)",
+            "Var(X) + Var(Y)",
+            "4 * Var(X)"
+        ]
+    },
+    {
+        "q": "A Probability Mass Function (PMF) maps discrete outcomes to probabilities, whereas a CDF maps outcomes to cumulative probabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code regarding the properties of the Standard Normal Distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n# CDF at the mean (0) for Standard Normal\n# Returns probability that X <= 0\nprob = norm.cdf(0)\nprint(prob)",
+        "o": [
+            "0.5",
+            "0.0",
+            "1.0",
+            "0.68"
+        ]
+    },
+    {
+        "q": "In Bayes Theorem applications, ignoring the prior probability of an event often leads to a cognitive bias known as the ______ fallacy.",
+        "type": "fill_blank",
+        "answers": [
+            "base rate"
+        ],
+        "other_options": [
+            "gambler's",
+            "selection",
+            "confirmation"
+        ]
+    },
+    {
+        "q": "The property E[X - E[X]] is always equal to zero for any random variable with a finite mean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Random Variable concept to its Python/NumPy representation:",
+        "type": "match",
+        "left": [
+            "Sample Space",
+            "Outcome",
+            "Event",
+            "Trial"
+        ],
+        "right": [
+            "All possible results (e.g., [1,2,3,4,5,6])",
+            "A single result (e.g., 4)",
+            "A subset of results (e.g., outcomes > 3)",
+            "A single execution (e.g., one coin flip)"
+        ]
+    },
+    {
+        "q": "For a Continuous Uniform Distribution defined on the interval [a, b], the height of the Probability Density Function is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1/(b-a)"
+        ],
+        "other_options": [
+            "1",
+            "b-a",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Rearrange the lifecycle of Recursive Bayesian Estimation:",
+        "type": "rearrange",
+        "words": [
+            "Start with Prior Belief",
+            "Observe New Evidence",
+            "Calculate Posterior",
+            "Set Posterior as New Prior"
+        ]
+    },
+    {
+        "q": "Which Probability Distribution would best model the number of pages a person reads in an hour, if the average rate is known but the variance is much higher than the mean (overdispersed)?",
+        "type": "mcq",
+        "o": [
+            "Negative Binomial",
+            "Poisson",
+            "Bernoulli",
+            "Uniform"
+        ]
+    },
+    {
+        "q": "What does the 'p' parameter represent in this specific NumPy function call?",
+        "type": "mcq",
+        "c": "import numpy as np\nelements = ['A', 'B', 'C']\n# Drawing a sample with weighted probabilities\ndraw = np.random.choice(elements, p=[0.1, 0.7, 0.2])",
+        "o": [
+            "Probability of selecting each element",
+            "The percentile to cut off",
+            "The population size",
+            "The power factor"
+        ]
+    },
+    {
+        "q": "Match the type of convergence in Probability Theory:",
+        "type": "match",
+        "left": [
+            "Convergence in Distribution",
+            "Convergence in Probability",
+            "Almost Sure Convergence"
+        ],
+        "right": [
+            "CDFs become similar (weakest)",
+            "Prob of difference > epsilon goes to 0",
+            "Prob of convergence is exactly 1 (strongest)"
+        ]
+    },
+    {
+        "q": "If X is a random variable, Variance cannot be negative, but Covariance can be negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In a right-skewed probability distribution (positive skew), the Mean is typically ______ than the Median.",
+        "type": "fill_blank",
+        "answers": [
+            "greater"
+        ],
+        "other_options": [
+            "less",
+            "equal",
+            "independent"
+        ]
+    },
+    {
+        "q": "What probability concept is illustrated by the argument 'replace=False' in this sampling code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndeck_of_cards = np.arange(52)\n# Drawing 5 cards\nhand = np.random.choice(deck_of_cards, size=5, replace=False)",
+        "o": [
+            "Sampling without replacement",
+            "Independent trials",
+            "Bernoulli process",
+            "Bootstrapping"
+        ]
+    },
+    {
+        "q": "If P(A | B) = 0.7, what is the value of P(Not A | B)?",
+        "type": "mcq",
+        "o": [
+            "0.3",
+            "0.7",
+            "0.0",
+            "Undefined without P(B)"
+        ]
+    },
+    {
+        "q": "Match the Medical Screening term (Bayesian context) to its probability definition:",
+        "type": "match",
+        "left": [
+            "Sensitivity (True Positive Rate)",
+            "Specificity (True Negative Rate)",
+            "False Positive Rate",
+            "False Negative Rate"
+        ],
+        "right": [
+            "P(Positive Test | Disease)",
+            "P(Negative Test | No Disease)",
+            "P(Positive Test | No Disease)",
+            "P(Negative Test | Disease)"
+        ]
+    },
+    {
+        "q": "For two random variables X and Y, if E[XY] = E[X]E[Y], this proves that X and Y are independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to determine the Median of a Discrete Probability Distribution:",
+        "type": "rearrange",
+        "words": [
+            "Order values x_i",
+            "Calculate Cumulative Probs",
+            "Find first cumulative value",
+            "Exceeding 0.5"
+        ]
+    },
+    {
+        "q": "What is the expected value output of this affine transformation code?",
+        "type": "mcq",
+        "c": "mean_x = 10\n# Applying transformation Y = 2X - 5\n# Property: E[aX + b] = aE[X] + b\nexpected_y = (2 * mean_x) - 5\nprint(expected_y)",
+        "o": [
+            "15",
+            "20",
+            "5",
+            "25"
+        ]
+    },
+    {
+        "q": "The Variance of a Bernoulli random variable reaches its maximum possible value when the probability of success p is equal to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "0.5"
+        ],
+        "other_options": [
+            "1.0",
+            "0.0",
+            "0.25"
+        ]
+    },
+    {
+        "q": "Match the Random Variable X to the values it can take (its Support):",
+        "type": "match",
+        "left": [
+            "Bernoulli(p)",
+            "Geometric(p)",
+            "Poisson(lambda)",
+            "Uniform(0, 1)"
+        ],
+        "right": [
+            "{0, 1}",
+            "{1, 2, 3, ...}",
+            "{0, 1, 2, ...}",
+            "All real numbers between 0 and 1"
+        ]
+    },
+    {
+        "q": "If the Joint Probability Density Function f(x, y) can be written as the product of marginals g(x) and h(y) for all x and y, then X and Y are independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If X is a random variable and 'a' is a constant, what is the value of Var(X - a)?",
+        "type": "mcq",
+        "o": [
+            "Var(X)",
+            "Var(X) - a",
+            "Var(X) - a^2",
+            "0"
+        ]
+    },
+    {
+        "q": "What specific component of the Binomial Probability formula is calculated by this code?",
+        "type": "mcq",
+        "c": "import math\nn = 10\nk = 3\n# Formula: n! / (k! * (n-k)!)\nval = math.factorial(n) / (math.factorial(k) * math.factorial(n - k))",
+        "o": [
+            "Binomial Coefficient (n choose k)",
+            "Bernoulli Trial",
+            "Probability Mass",
+            "Cumulative Probability"
+        ]
+    },
+    {
+        "q": "In the Standard Normal Distribution, the mean is 0 and the standard deviation is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "100",
+            "variable"
+        ]
+    },
+    {
+        "q": "Match the concept to the correct interpretation of 'Independence':",
+        "type": "match",
+        "left": [
+            "P(A | B) = P(A)",
+            "P(A AND B) = P(A)P(B)",
+            "Variance(X + Y) = Var(X) + Var(Y)",
+            "Covariance(X, Y) = 0"
+        ],
+        "right": [
+            "Definition via Conditional Prob",
+            "Multiplication Rule for Indep. Events",
+            "Sum of Variances Property",
+            "Necessary condition for Independence"
+        ]
+    },
+    {
+        "q": "If P(A) = 0.5 and P(B) = 0.2, and A and B are Mutually Exclusive, then P(A AND B) is 0.1.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to determine the probability of an event using the 'Frequency' approach:",
+        "type": "rearrange",
+        "words": [
+            "Perform N trials",
+            "Count successes k",
+            "Divide k by N",
+            "Estimate Probability"
+        ]
+    },
+    {
+        "q": "Which rule allows us to calculate P(B) by summing P(B | A_i) * P(A_i) across all partitions A_i?",
+        "type": "mcq",
+        "o": [
+            "Law of Total Probability",
+            "Bayes Theorem",
+            "Chain Rule",
+            "Marginalization Rule"
+        ]
+    },
+    {
+        "q": "The standard deviation of the sampling distribution of the sample mean is commonly called the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Standard Error"
+        ],
+        "other_options": [
+            "Sampling Variance",
+            "Population Mean",
+            "Confidence Interval"
+        ]
+    },
+    {
+        "q": "What property of Expectation is demonstrated in this code?",
+        "type": "mcq",
+        "c": "E_X = 5\nE_Y = 10\n# E[2X + 3Y]\nresult = (2 * E_X) + (3 * E_Y)\nprint(result) # Output: 40",
+        "o": [
+            "Linearity of Expectation",
+            "Independence of Variables",
+            "Law of Large Numbers",
+            "Central Limit Theorem"
+        ]
+    },
+    {
+        "q": "If a probability density function f(x) is symmetric around a mean μ, then the probability P(X > μ) is exactly 0.5.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If Event A is a subset of Event B (A ⊆ B), what is the value of the conditional probability P(A | B)?",
+        "type": "mcq",
+        "o": [
+            "P(A) / P(B)",
+            "1",
+            "P(B) / P(A)",
+            "0"
+        ]
+    },
+    {
+        "q": "What statistical property is illustrated by this code comparing the variance of 'Sum of Variables' vs 'Scaled Variable'?",
+        "type": "mcq",
+        "c": "import numpy as np\n# X and Y are independent\nvar_x = 5\nvar_y = 5\n# Var(X + Y) = 10\nvar_sum = var_x + var_y\n# Var(2X) = 2^2 * Var(X) = 20\nvar_scaled = 4 * var_x\nprint(var_sum < var_scaled)",
+        "o": [
+            "Variance of sum vs Scalar multiplication",
+            "Linearity of Expectation",
+            "Law of Large Numbers",
+            "Central Limit Theorem"
+        ]
+    },
+    {
+        "q": "In Bayesian statistics, if the Posterior distribution is in the same probability family as the Prior distribution, the Prior is called a ______ prior.",
+        "type": "fill_blank",
+        "answers": [
+            "conjugate"
+        ],
+        "other_options": [
+            "uniform",
+            "improper",
+            "marginal"
+        ]
+    },
+    {
+        "q": "Match the Statistical Moment to its description regarding the shape of a distribution:",
+        "type": "match",
+        "left": [
+            "Skewness = 0",
+            "Positive Skewness",
+            "High Kurtosis",
+            "Low Kurtosis"
+        ],
+        "right": [
+            "Symmetrical distribution",
+            "Long tail on the right",
+            "Heavy tails (Leptokurtic)",
+            "Light tails (Platykurtic)"
+        ]
+    },
+    {
+        "q": "The Probability Density Function (PDF) value f(x) represents the actual probability of the random variable being exactly equal to x.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to determine if a function f(x) is a valid Probability Density Function:",
+        "type": "rearrange",
+        "words": [
+            "Check f(x) >= 0",
+            "Integrate f(x) over range",
+            "Verify result equals 1",
+            "Confirm validity"
+        ]
+    },
+    {
+        "q": "What is the expected output of this code calculating the mean of a Geometric Distribution with p=0.2?",
+        "type": "mcq",
+        "c": "p = 0.2\n# Formula for Expected Value of Geometric Dist: 1/p\nexpected_val = 1 / p\nprint(expected_val)",
+        "o": [
+            "5.0",
+            "0.2",
+            "2.0",
+            "1.0"
+        ]
+    },
+    {
+        "q": "For independent events A and B, the probability of the intersection P(A AND B) is equal to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "P(A) * P(B)"
+        ],
+        "other_options": [
+            "P(A) + P(B)",
+            "P(A) / P(B)",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the inequality expression to its logical conclusion:",
+        "type": "match",
+        "left": [
+            "P(A) = 0",
+            "P(A) = 1",
+            "0 <= P(A) <= 1",
+            "P(A) + P(A') = 1"
+        ],
+        "right": [
+            "Impossible Event",
+            "Certain Event",
+            "Axiom of Probability",
+            "Rule of Complement"
+        ]
+    },
+    {
+        "q": "If X is a random variable, the expected value of the indicator function of an event A, E[I_A], is exactly equal to the probability P(A).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which logical fallacy occurs when one confuses the probability of the evidence given the hypothesis P(E|H) with the probability of the hypothesis given the evidence P(H|E)?",
+        "type": "mcq",
+        "o": [
+            "Prosecutor's Fallacy",
+            "Gambler's Fallacy",
+            "Sunk Cost Fallacy",
+            "Conjunction Fallacy"
+        ]
+    },
+    {
+        "q": "What is the expected net value calculated by this lottery simulation code?",
+        "type": "mcq",
+        "c": "ticket_cost = 5\nprize_amount = 100\nprob_win = 0.02\n\n# Net Value = (Prize - Cost)*P(Win) + (-Cost)*P(Lose)\n# Or simply: E[Winnings] - Cost\nexpected_net = (100 * 0.02) - 5\nprint(expected_net)",
+        "o": [
+            "-3.0",
+            "2.0",
+            "-5.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "A Binomial random variable with parameters n and p is theoretically equivalent to the sum of n independent ______ random variables.",
+        "type": "fill_blank",
+        "answers": [
+            "Bernoulli"
+        ],
+        "other_options": [
+            "Poisson",
+            "Gaussian",
+            "Uniform"
+        ]
+    },
+    {
+        "q": "Match the statistical concept to its formula/property for a Binomial Distribution B(n,p):",
+        "type": "match",
+        "left": [
+            "Mean",
+            "Variance",
+            "Max Variance Condition",
+            "Support"
+        ],
+        "right": [
+            "n * p",
+            "n * p * (1 - p)",
+            "p = 0.5",
+            "Integers from 0 to n"
+        ]
+    },
+    {
+        "q": "If two events A and B (with P(A)>0 and P(B)>0) are mutually exclusive, they cannot be statistically independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the terms to describe the Inclusion-Exclusion Principle for three events (P(A U B U C)):",
+        "type": "rearrange",
+        "words": [
+            "Sum P(A)+P(B)+P(C)",
+            "Subtract Pair Intersections",
+            "Add P(A and B and C)",
+            "Equals Union Probability"
+        ]
+    },
+    {
+        "q": "What property of the Covariance is demonstrated by this Python snippet?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.random.rand(100)\ny = np.random.rand(100)\n\n# Checking symmetry\ncov_xy = np.cov(x, y)[0][1]\ncov_yx = np.cov(y, x)[0][1]\nprint(cov_xy == cov_yx)",
+        "o": [
+            "Symmetry: Cov(X,Y) = Cov(Y,X)",
+            "Linearity: Cov(aX, Y) = aCov(X,Y)",
+            "Positivity: Cov(X,X) >= 0",
+            "Scale Invariance"
+        ]
+    },
+    {
+        "q": "The Covariance of two variables X and Y is measured in the product of their units, whereas the Correlation Coefficient is always ______.",
+        "type": "fill_blank",
+        "answers": [
+            "unitless"
+        ],
+        "other_options": [
+            "squared",
+            "positive",
+            "infinite"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to its unique 'Memoryless' property:",
+        "type": "match",
+        "left": [
+            "Exponential Distribution",
+            "Geometric Distribution",
+            "Normal Distribution",
+            "Uniform Distribution"
+        ],
+        "right": [
+            "Memoryless (Continuous time)",
+            "Memoryless (Discrete steps)",
+            "Not Memoryless (Bell curve)",
+            "Not Memoryless (Flat)"
+        ]
+    },
+    {
+        "q": "In a Probability Mass Function (PMF), the probability of the random variable taking a value outside its support is undefined.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What fundamental inequality (Boole's Inequality) states that the probability of the union of events is less than or equal to the sum of their individual probabilities?",
+        "type": "mcq",
+        "o": [
+            "Union Bound",
+            "Chebyshev's Inequality",
+            "Markov's Inequality",
+            "Jensen's Inequality"
+        ]
+    },
+    {
+        "q": "What is the output of this Python code calculating the 'Second Moment' (E[X^2]) of a random variable?",
+        "type": "mcq",
+        "c": "import numpy as np\nx_values = np.array([1, 2, 3])\nprobs = np.array([0.2, 0.5, 0.3])\n\n# E[X^2] = sum(x^2 * p(x))\nsecond_moment = np.sum((x_values**2) * probs)\nprint(round(second_moment, 1))",
+        "o": [
+            "4.9",
+            "2.1",
+            "3.0",
+            "1.0"
+        ]
+    },
+    {
+        "q": "In Machine Learning, a common assumption is that training data points are I.I.D., which stands for Independent and ______ Distributed.",
+        "type": "fill_blank",
+        "answers": [
+            "Identically"
+        ],
+        "other_options": [
+            "Inversely",
+            "Implicitly",
+            "Instantly"
+        ]
+    },
+    {
+        "q": "Match the Mean-Median-Mode relationship to the Distribution Shape:",
+        "type": "match",
+        "left": [
+            "Normal Distribution",
+            "Positively Skewed",
+            "Negatively Skewed",
+            "Uniform Distribution"
+        ],
+        "right": [
+            "Mean = Median = Mode",
+            "Mean > Median > Mode",
+            "Mode > Median > Mean",
+            "No single unique Mode"
+        ]
+    },
+    {
+        "q": "If Y = 2X is a linear transformation of a continuous random variable X, the Probability Density Function (PDF) of Y is half the height of the PDF of X to maintain an area of 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps for 'Inverse Transform Sampling' to generate random variables from a specific distribution:",
+        "type": "rearrange",
+        "words": [
+            "Generate Uniform U(0,1)",
+            "Compute Inverse CDF",
+            "Plug U into Inverse",
+            "Output Random Variable X"
+        ]
+    },
+    {
+        "q": "Which component of the Covariance Matrix is extracted by this code snippet?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = np.random.rand(10, 5) # 5 variables, 10 samples\ncov_matrix = np.cov(data, rowvar=False)\n\n# Extracting the diagonal\ndiagonal_vals = np.diag(cov_matrix)",
+        "o": [
+            "Variances of each variable",
+            "Correlation coefficients",
+            "Mean of each variable",
+            "Eigenvalues"
+        ]
+    },
+    {
+        "q": "The Log-Normal distribution is defined such that if X is Log-Normal, then ln(X) follows a ______ distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "Normal"
+        ],
+        "other_options": [
+            "Uniform",
+            "Exponential",
+            "Binomial"
+        ]
+    },
+    {
+        "q": "Match the Probability axiom or theorem to its description:",
+        "type": "match",
+        "left": [
+            "Non-negativity",
+            "Normalization",
+            "Additivity",
+            "Law of Large Numbers"
+        ],
+        "right": [
+            "P(E) >= 0",
+            "P(Sample Space) = 1",
+            "P(A U B) = P(A) + P(B) (if disjoint)",
+            "Sample mean converges to True mean"
+        ]
+    },
+    {
+        "q": "In a continuous probability distribution, P(a <= X <= b) is calculated by finding the integral of the PDF from a to b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which formula correctly represents the 'Chain Rule' of probability for three events A, B, and C?",
+        "type": "mcq",
+        "o": [
+            "P(A)P(B|A)P(C|A,B)",
+            "P(A)P(B)P(C)",
+            "P(A|B)P(B|C)P(C)",
+            "P(A) + P(B) + P(C)"
+        ]
+    },
+    {
+        "q": "What statistical concept is being calculated by this Scipy code?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n# 0.95 confidence, mean=0, std=1\nlower, upper = norm.interval(0.95, loc=0, scale=1)\nprint(lower, upper)",
+        "o": [
+            "Confidence Interval",
+            "Probability Density",
+            "Variance Ratio",
+            "Correlation Coefficient"
+        ]
+    },
+    {
+        "q": "As the 'degrees of freedom' parameter increases, the Student's t-distribution converges to the ______ distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "Normal"
+        ],
+        "other_options": [
+            "Uniform",
+            "Cauchy",
+            "Binomial"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to the formula for its Mean (Expected Value):",
+        "type": "match",
+        "left": [
+            "Exponential(λ)",
+            "Uniform(a, b)",
+            "Bernoulli(p)",
+            "Binomial(n, p)"
+        ],
+        "right": [
+            "1 / λ",
+            "(a + b) / 2",
+            "p",
+            "n * p"
+        ]
+    },
+    {
+        "q": "If getting a positive result on test B increases the probability of having condition A (i.e., P(A|B) > P(A)), then having condition A must also increase the probability of getting a positive result on test B.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to verify if two discrete variables X and Y are independent based on their Joint Probability Table:",
+        "type": "rearrange",
+        "words": [
+            "Select a cell (x, y)",
+            "Find Marginal P(x)",
+            "Find Marginal P(y)",
+            "Check if P(x,y) == P(x)P(y)"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Standard Error of the Mean (SEM)?",
+        "type": "mcq",
+        "c": "import numpy as np\npop_std = 20\nsample_size = 100\n# SEM = sigma / sqrt(n)\nsem = pop_std / np.sqrt(sample_size)\nprint(int(sem))",
+        "o": [
+            "2",
+            "20",
+            "200",
+            "5"
+        ]
+    },
+    {
+        "q": "For any valid Cumulative Distribution Function (CDF) F(x), the limit of F(x) as x approaches positive infinity must equal ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "infinity",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the NumPy random function to its behavior:",
+        "type": "match",
+        "left": [
+            "np.random.rand()",
+            "np.random.randn()",
+            "np.random.randint()",
+            "np.random.choice()"
+        ],
+        "right": [
+            "Uniform float in [0, 1)",
+            "Sample from Standard Normal",
+            "Random integer in range",
+            "Random element from array"
+        ]
+    },
+    {
+        "q": "If X and Y are independent Poisson random variables with rates λ1 and λ2, their sum X+Y follows a Poisson distribution with rate λ1 * λ2.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which probability distribution describes the number of successes in a sequence of n independent draws from a finite population *without* replacement?",
+        "type": "mcq",
+        "o": [
+            "Hypergeometric Distribution",
+            "Binomial Distribution",
+            "Geometric Distribution",
+            "Negative Binomial Distribution"
+        ]
+    },
+    {
+        "q": "What statistical concept is demonstrated by the 'update' function in this code snippet?",
+        "type": "mcq",
+        "c": "prior = 0.5\nlikelihood_ratio = 2.0\n\n# Updating belief based on new evidence strength\nposterior_odds = (prior / (1 - prior)) * likelihood_ratio\nnew_prob = posterior_odds / (1 + posterior_odds)\nprint(new_prob)",
+        "o": [
+            "Bayesian Update (Odds Form)",
+            "Frequentist Inference",
+            "Maximum Likelihood Estimation",
+            "Standardization"
+        ]
+    },
+    {
+        "q": "A set of events B1, B2, ..., Bk forms a ______ of the sample space if they are mutually exclusive and their union is the entire sample space.",
+        "type": "fill_blank",
+        "answers": [
+            "partition"
+        ],
+        "other_options": [
+            "subset",
+            "intersection",
+            "variance"
+        ]
+    },
+    {
+        "q": "Match the Statistical Moment to the shape characteristic it measures:",
+        "type": "match",
+        "left": [
+            "Variance (2nd Moment)",
+            "Skewness (3rd Moment)",
+            "Kurtosis (4th Moment)",
+            "Mean (1st Moment)"
+        ],
+        "right": [
+            "Spread / Width",
+            "Asymmetry / Tilt",
+            "Tail heaviness / Peak",
+            "Central location"
+        ]
+    },
+    {
+        "q": "If two events A and B are mutually exclusive (disjoint) and have non-zero probabilities, they must be dependent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to estimate a parameter using the 'Method of Moments':",
+        "type": "rearrange",
+        "words": [
+            "Calculate Theoretical Mean",
+            "Calculate Sample Mean",
+            "Equate the two means",
+            "Solve for parameter"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the variance of a uniform distribution U(0, 10)?",
+        "type": "mcq",
+        "c": "a = 0\nb = 10\n# Formula for Uniform Variance: (b-a)^2 / 12\nvariance = ((b - a) ** 2) / 12\nprint(round(variance, 1))",
+        "o": [
+            "8.3",
+            "5.0",
+            "100.0",
+            "25.0"
+        ]
+    },
+    {
+        "q": "The Expected Value E[X] corresponds physically to the ______ of the probability mass along the x-axis.",
+        "type": "fill_blank",
+        "answers": [
+            "center of mass"
+        ],
+        "other_options": [
+            "moment of inertia",
+            "maximum height",
+            "total length"
+        ]
+    },
+    {
+        "q": "Match the specialized probability distribution to its typical application:",
+        "type": "match",
+        "left": [
+            "Beta Distribution",
+            "Rayleigh Distribution",
+            "Cauchy Distribution",
+            "Pareto Distribution"
+        ],
+        "right": [
+            "Modeling probabilities/percentages",
+            "Signal processing / Vector magnitudes",
+            "Resonance / Undefined mean",
+            "Wealth distribution / 80-20 rule"
+        ]
+    },
+    {
+        "q": "For any Cumulative Distribution Function (CDF) F(x), the function is always non-decreasing, meaning if a < b, then F(a) <= F(b).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which probability distribution has the unique property that its Mean is equal to its Variance?",
+        "type": "mcq",
+        "o": [
+            "Poisson Distribution",
+            "Normal Distribution",
+            "Binomial Distribution",
+            "Exponential Distribution"
+        ]
+    },
+    {
+        "q": "What mathematical operation is performed by this code to calculate Expected Value?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3, 4])\np = np.array([0.1, 0.2, 0.3, 0.4])\n# Vectorized calculation\nexpected_value = np.dot(x, p)\nprint(expected_value)",
+        "o": [
+            "Dot Product",
+            "Cross Product",
+            "Matrix Multiplication",
+            "Standard Deviation"
+        ]
+    },
+    {
+        "q": "Two events A and B are Mutually Exclusive if their intersection (A AND B) is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "empty"
+        ],
+        "other_options": [
+            "independent",
+            "one",
+            "infinite"
+        ]
+    },
+    {
+        "q": "Match the Set Theory notation to its Probability Theory equivalent:",
+        "type": "match",
+        "left": [
+            "Universal Set (Ω)",
+            "Union (A ∪ B)",
+            "Intersection (A ∩ B)",
+            "Complement (A^c)"
+        ],
+        "right": [
+            "Sample Space",
+            "Event A OR Event B",
+            "Event A AND Event B",
+            "Event Not A"
+        ]
+    },
+    {
+        "q": "The conditional probability statement P(A | B) + P(Not A | B) = 1 is always true for any event B with P(B) > 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Covariance of two discrete variables X and Y:",
+        "type": "rearrange",
+        "words": [
+            "Find Means μ_x and μ_y",
+            "Calculate deviations (x-μ_x)",
+            "Multiply deviations (x-μ_x)(y-μ_y)",
+            "Sum products and weight by P"
+        ]
+    },
+    {
+        "q": "Which statistical metric describes the 'width' or 'spread' of a probability distribution around its mean?",
+        "type": "mcq",
+        "o": [
+            "Standard Deviation",
+            "Mode",
+            "Skewness",
+            "Expected Value"
+        ]
+    },
+    {
+        "q": "What does this Scipy code calculate regarding the Standard Normal Distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\nz_score = 1.96\n# 1 - P(Z <= z)\np_value = 1 - norm.cdf(z_score)",
+        "o": [
+            "Right-tail probability P(Z > z)",
+            "Left-tail probability P(Z < z)",
+            "Probability Density at z",
+            "Z-score from probability"
+        ]
+    },
+    {
+        "q": "Match the Discrete Distribution to the nature of its 'Number of Trials':",
+        "type": "match",
+        "left": [
+            "Bernoulli",
+            "Binomial",
+            "Geometric",
+            "Poisson"
+        ],
+        "right": [
+            "Exactly 1 trial",
+            "Fixed number 'n' trials",
+            "Trials until 1st success",
+            "Interval (Time/Space) not trials"
+        ]
+    },
+    {
+        "q": "If the Correlation Coefficient between two random variables is 0, they are automatically statistically independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which rule states that P(A but NOT B) is equal to P(A) - P(A AND B)?",
+        "type": "mcq",
+        "o": [
+            "Difference Rule",
+            "Addition Rule",
+            "Multiplication Rule",
+            "Bayes Rule"
+        ]
+    },
+    {
+        "q": "What specific statistical value does this Scipy function return?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n# The inverse of the CDF\n# Finding the z-score where 97.5% of data lies to the left\nvalue = norm.ppf(0.975)\nprint(round(value, 2))",
+        "o": [
+            "1.96",
+            "0.97",
+            "0.05",
+            "2.58"
+        ]
+    },
+    {
+        "q": "The Coefficient of Variation (CV), used to compare variability between datasets with different units, is calculated as the ratio of the Standard Deviation to the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Mean"
+        ],
+        "other_options": [
+            "Variance",
+            "Median",
+            "Mode"
+        ]
+    },
+    {
+        "q": "Match the Bayesian Conjugate Prior to its corresponding Likelihood function:",
+        "type": "match",
+        "left": [
+            "Beta Distribution",
+            "Gamma Distribution",
+            "Normal Distribution",
+            "Dirichlet Distribution"
+        ],
+        "right": [
+            "Binomial Likelihood",
+            "Poisson Likelihood",
+            "Normal Likelihood (known variance)",
+            "Multinomial Likelihood"
+        ]
+    },
+    {
+        "q": "If Event A is a subset of Event B (all outcomes of A are in B), then P(A AND B) is simply equal to P(B).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the computational steps to calculate Variance using the 'Short-Cut Formula':",
+        "type": "rearrange",
+        "words": [
+            "Calculate E[X^2]",
+            "Calculate E[X]",
+            "Square the E[X]",
+            "Subtract squared mean from E[X^2]"
+        ]
+    },
+    {
+        "q": "What aspect of a discrete random variable is extracted by this NumPy code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = np.array([1, 1, 2, 3, 3, 3, 4])\n# Identifying outcomes and their raw frequencies\nvalues, counts = np.unique(data, return_counts=True)",
+        "o": [
+            "PMF Components",
+            "CDF Integration",
+            "Correlation Matrix",
+            "Standard Error"
+        ]
+    },
+    {
+        "q": "Which probability distribution models the number of trials required to achieve a specific number of successes 'r'?",
+        "type": "mcq",
+        "o": [
+            "Negative Binomial",
+            "Geometric",
+            "Hypergeometric",
+            "Bernoulli"
+        ]
+    },
+    {
+        "q": "Match the Skewness value to the distribution's tail behavior:",
+        "type": "match",
+        "left": [
+            "Skewness > 0",
+            "Skewness < 0",
+            "Skewness = 0",
+            "Kurtosis > 3"
+        ],
+        "right": [
+            "Heavy tail on Right",
+            "Heavy tail on Left",
+            "Symmetrical",
+            "Heavy tails (Leptokurtic)"
+        ]
+    },
+    {
+        "q": "Linearity of Expectation, E[aX + bY] = aE[X] + bE[Y], requires X and Y to be independent random variables.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "If events A, B, and C are mutually independent, then P(A AND B AND C) is calculated as ______.",
+        "type": "mcq",
+        "o": [
+            "P(A) * P(B) * P(C)",
+            "P(A) + P(B) + P(C)",
+            "P(A) * P(B|A) * P(C|B)",
+            "1 - P(A OR B OR C)"
+        ]
+    },
+    {
+        "q": "What statistical property is calculated by this Python function?",
+        "type": "mcq",
+        "c": "def calc_property(values, probs):\n    mean_val = sum(v * p for v, p in zip(values, probs))\n    # Sum of p(x) * (x - mean)^2\n    return sum(p * ((v - mean_val) ** 2) for v, p in zip(values, probs))",
+        "o": [
+            "Variance",
+            "Standard Deviation",
+            "Kurtosis",
+            "Mode"
+        ]
+    },
+    {
+        "q": "In the context of the Law of Large Numbers, the sample mean converges to the ______ mean as the sample size approaches infinity.",
+        "type": "fill_blank",
+        "answers": [
+            "population"
+        ],
+        "other_options": [
+            "sample",
+            "geometric",
+            "harmonic"
+        ]
+    },
+    {
+        "q": "Match the Probability Rule to its mathematical definition:",
+        "type": "match",
+        "left": [
+            "Conditional Probability Definition",
+            "Multiplication Rule (Dependent)",
+            "Addition Rule (General)",
+            "Complement Rule"
+        ],
+        "right": [
+            "P(A|B) = P(A AND B) / P(B)",
+            "P(A AND B) = P(A) * P(B|A)",
+            "P(A OR B) = P(A) + P(B) - P(A AND B)",
+            "P(A) = 1 - P(Not A)"
+        ]
+    },
+    {
+        "q": "For a Continuous Random Variable, the Cumulative Distribution Function (CDF) is calculated by taking the derivative of the Probability Density Function (PDF).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Marginal Probability P(X=x) from a Joint Probability Distribution P(X, Y):",
+        "type": "rearrange",
+        "words": [
+            "Select specific value x",
+            "Identify all joint probs P(x, y)",
+            "Iterate through all y values",
+            "Sum the probabilities"
+        ]
+    },
+    {
+        "q": "Which Scipy function is used to calculate the probability that a value falls *inside* a specific interval for a continuous distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import norm\n# Probability that X is between -1 and 1\n# CDF(1) - CDF(-1)\nprob = norm.cdf(1) - norm.cdf(-1)",
+        "o": [
+            "cdf (Cumulative Distribution Function)",
+            "pdf (Probability Density Function)",
+            "ppf (Percent Point Function)",
+            "sf (Survival Function)"
+        ]
+    },
+    {
+        "q": "The ______ of two random variables is a measure of their linear dependence, though it is not normalized like the correlation coefficient.",
+        "type": "fill_blank",
+        "answers": [
+            "Covariance"
+        ],
+        "other_options": [
+            "Variance",
+            "Expectation",
+            "Skewness"
+        ]
+    },
+    {
+        "q": "Match the random variable scenario to the appropriate distribution:",
+        "type": "match",
+        "left": [
+            "Number of calls in 1 hour",
+            "Time until the next call",
+            "Success/Fail of 1 call",
+            "Number of successful calls in 10 attempts"
+        ],
+        "right": [
+            "Poisson",
+            "Exponential",
+            "Bernoulli",
+            "Binomial"
+        ]
+    },
+    {
+        "q": "If X is a random variable measuring height in meters, the Variance of X is measured in meters squared.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which rule allows us to calculate P(A OR B) as P(A) + P(B) - P(A AND B)?",
+        "type": "mcq",
+        "o": [
+            "General Addition Rule",
+            "Multiplication Rule",
+            "Law of Total Probability",
+            "Bayes Theorem"
+        ]
+    },
+    {
+        "q": "What statistical concept is calculated by this NumPy code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = [10, 20, 30, 40, 50]\n# q=75 means 75th percentile\nval = np.percentile(data, 75)\nprint(val)",
+        "o": [
+            "Third Quartile (Q3)",
+            "First Quartile (Q1)",
+            "Median",
+            "Mean"
+        ]
+    },
+    {
+        "q": "If a Random Variable X has a Mean of 0 and a Standard Deviation of 1, it is often referred to as a ______ random variable.",
+        "type": "fill_blank",
+        "answers": [
+            "standard"
+        ],
+        "other_options": [
+            "normalized",
+            "biased",
+            "complex"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to its type (Discrete or Continuous):",
+        "type": "match",
+        "left": [
+            "Binomial Distribution",
+            "Gaussian (Normal) Distribution",
+            "Poisson Distribution",
+            "Exponential Distribution"
+        ],
+        "right": [
+            "Discrete",
+            "Continuous",
+            "Discrete",
+            "Continuous"
+        ]
+    },
+    {
+        "q": "The equality E[XY] = E[X]E[Y] holds true if and only if X and Y are dependent variables.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Cumulative Distribution Function (CDF) value F(x) from a discrete Probability Mass Function (PMF):",
+        "type": "rearrange",
+        "words": [
+            "Sort outcomes low to high",
+            "Identify outcomes <= x",
+            "Get PMF prob for each",
+            "Sum these probabilities"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the variance of a single Bernoulli trial with p=0.5?",
+        "type": "mcq",
+        "c": "p = 0.5\n# Var(X) = p(1-p)\nvariance = p * (1 - p)\nprint(variance)",
+        "o": [
+            "0.25",
+            "0.5",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "The Student's t-distribution has ______ tails compared to the Standard Normal Distribution, allowing for more variability in small samples.",
+        "type": "fill_blank",
+        "answers": [
+            "fatter"
+        ],
+        "other_options": [
+            "thinner",
+            "shorter",
+            "no"
+        ]
+    },
+    {
+        "q": "Match the Variance property to its correct formula (where 'a' is a constant):",
+        "type": "match",
+        "left": [
+            "Var(X + a)",
+            "Var(aX)",
+            "Var(X) + Var(Y)",
+            "Var(Constant a)"
+        ],
+        "right": [
+            "Var(X)",
+            "a^2 * Var(X)",
+            "Var(X + Y) if Independent",
+            "0"
+        ]
+    },
+    {
+        "q": "In conditional probability, it is possible for P(A | B) to be greater than the marginal probability P(A).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If the odds in favor of event A are 4:1, what is the probability P(A)?",
+        "type": "mcq",
+        "o": [
+            "0.80",
+            "0.20",
+            "0.25",
+            "4.00"
+        ]
+    },
+    {
+        "q": "What statistical value is being calculated by this Python code using the 'describe' function?",
+        "type": "mcq",
+        "c": "from scipy.stats import describe\ndata = [1, 2, 3, 4, 5, 100]\nstats = describe(data)\n# The normalized 4th central moment\nprint(stats.kurtosis)",
+        "o": [
+            "Kurtosis",
+            "Skewness",
+            "Variance",
+            "Standard Deviation"
+        ]
+    },
+    {
+        "q": "In a Continuous Probability Distribution, the probability of the random variable X taking a value within the interval [a, b] is equal to the ______ of the PDF from a to b.",
+        "type": "fill_blank",
+        "answers": [
+            "integral"
+        ],
+        "other_options": [
+            "derivative",
+            "sum",
+            "product"
+        ]
+    },
+    {
+        "q": "Match the symbol to its standard meaning in Probability Theory:",
+        "type": "match",
+        "left": [
+            "Ω (Omega)",
+            "∅ (Empty Set)",
+            "~ (Tilde)",
+            "|"
+        ],
+        "right": [
+            "Sample Space",
+            "Impossible Event",
+            "Distributed as (e.g., X ~ N)",
+            "Given (Conditional)"
+        ]
+    },
+    {
+        "q": "If events A and B are independent, then their complements (Not A and Not B) are also automatically independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Interquartile Range (IQR) for detecting outliers:",
+        "type": "rearrange",
+        "words": [
+            "Sort the data",
+            "Find 75th percentile Q3",
+            "Find 25th percentile Q1",
+            "Subtract Q1 from Q3"
+        ]
+    },
+    {
+        "q": "What is the probability output of this code for a Uniform Distribution U(0, 10)?",
+        "type": "mcq",
+        "c": "from scipy.stats import uniform\n# Uniform distribution starting at 0 with width 10\n# Probability that X < 3\nprob = uniform.cdf(3, loc=0, scale=10)",
+        "o": [
+            "0.3",
+            "0.03",
+            "0.7",
+            "3.0"
+        ]
+    },
+    {
+        "q": "The ______ of a random variable X is defined as the expected value of (X - μ)^3 divided by σ^3, measuring the asymmetry of the distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "Skewness"
+        ],
+        "other_options": [
+            "Kurtosis",
+            "Variance",
+            "Covariance"
+        ]
+    },
+    {
+        "q": "Match the formula to the Expectation Rule it represents:",
+        "type": "match",
+        "left": [
+            "E[c]",
+            "E[X + c]",
+            "E[c * X]",
+            "E[X + Y]"
+        ],
+        "right": [
+            "c",
+            "E[X] + c",
+            "c * E[X]",
+            "E[X] + E[Y]"
+        ]
+    },
+    {
+        "q": "The Law of the Unconscious Statistician states that to find E[g(X)], you must first find the PDF of g(X) rather than integrating g(x)f(x).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "If events A and B are statistically dependent with $P(A|B) = 0.6$, $P(B|A) = 0.4$, and $P(A)=0.5$, what is the probability $P(B)$?",
+        "type": "mcq",
+        "o": [
+            "$\\frac{1}{3} \\approx 0.333$",
+            "0.3",
+            "0.75",
+            "0.2"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of $Y=X^2$, where $X \\in \\{1, 2\\}$ with $P(X=1)=0.7$ and $P(X=2)=0.3$?",
+        "type": "mcq",
+        "c": "x = [1, 2]\np = [0.7, 0.3]\n\n# Calculate E[X^2] = sum(x^2 * p(x))\ny_sq = [v**2 for v in x]\nexpected_y_sq = sum(v * p for v, p in zip(y_sq, p))\nprint(round(expected_y_sq, 1))",
+        "o": [
+            "1.9",
+            "1.3",
+            "2.5",
+            "1.0"
+        ]
+    },
+    {
+        "q": "In the odds form of Bayes' Theorem, the Posterior Odds are equal to the Prior Odds multiplied by the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Likelihood Ratio"
+        ],
+        "other_options": [
+            "Posterior Probability",
+            "Marginal Probability",
+            "Prior Ratio"
+        ]
+    },
+    {
+        "q": "Match the probability distribution to the typical range of its parameter(s):",
+        "type": "match",
+        "left": [
+            "Beta($\\alpha, \\beta$)",
+            "Normal($\\mu, \\sigma$)",
+            "Poisson($\\lambda$)",
+            "Binomial($n, p$)"
+        ],
+        "right": [
+            "Continuous on $[0, 1]$",
+            "Continuous on $(-\\infty, \\infty)$",
+            "Discrete on $\\{0, 1, 2, ...\\}$",
+            "Discrete on $\\{0, 1, ..., n\\}$"
+        ]
+    },
+    {
+        "q": "For any non-linear function $g$, the statement $E[g(X)] = g(E[X])$ is generally true for any random variable $X$.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Cumulative Distribution Function (CDF) $F(x)$ for a continuous random variable $X$:",
+        "type": "rearrange",
+        "words": [
+            "Define PDF $f(t)$",
+            "Set Integration Limits $(-\\infty \text{ to } x)$",
+            "Integrate $f(t)dt$",
+            "Result is $P(X \\le x)$"
+        ]
+    },
+    {
+        "q": "Which expression is mathematically equivalent to the probability of $A$ occurring but not $B$, written as $P(A \\cap B^c)$?",
+        "type": "mcq",
+        "o": [
+            "$P(A) - P(A \\cap B)$",
+            "$P(A) + P(B) - P(A \\cup B)$",
+            "$P(A)P(B^c)$",
+            "$1 - P(A^c \\cup B)$"
+        ]
+    },
+    {
+        "q": "The Cauchy distribution is an example of a distribution where its Expected Value (mean) is technically ______.",
+        "type": "fill_blank",
+        "answers": [
+            "undefined"
+        ],
+        "other_options": [
+            "zero",
+            "negative",
+            "infinity"
+        ]
+    },
+    {
+        "q": "Match the transformation of a random variable to its effect on the Standard Deviation $\\sigma(X)$:",
+        "type": "match",
+        "left": [
+            "$\\sigma(X + c)$",
+            "$\\sigma(c \\cdot X)$",
+            "$\\sigma(-X)$",
+            "$\\sigma(X - \\mu)$"
+        ],
+        "right": [
+            "$\\sigma(X)$ (unaffected by shifts)",
+            "$|c| \\cdot \\sigma(X)$ (absolute scaling)",
+            "$\\sigma(X)$ (unaffected by sign flip)",
+            "$\\sigma(X)$ (unaffected by mean shift)"
+        ]
+    },
+    {
+        "q": "In a Bayesian update, the Likelihood $P(E|H)$ must always be greater than 1 for the Posterior $P(H|E)$ to be greater than the Prior $P(H)$.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which expression mathematically defines the **Conditional Independence** of events A and B given event C?",
+        "type": "mcq",
+        "o": [
+            "P(A AND B | C) = P(A | C) * P(B | C)",
+            "P(A | B) = P(A)",
+            "P(A OR B | C) = P(A | C) + P(B | C)",
+            "P(A | B AND C) = P(A | C)"
+        ]
+    },
+    {
+        "q": "The function that assigns the probability that a **discrete** random variable $X$ takes on the specific value $x$ is called the Probability ______ Function.",
+        "type": "fill_blank",
+        "answers": [
+            "Mass"
+        ],
+        "other_options": [
+            "Density",
+            "Weight",
+            "Cumulative"
+        ]
+    },
+    {
+        "q": "Match the Expectation notation to the statistical quantity it defines:",
+        "type": "match",
+        "left": [
+            "E[X]",
+            "E[(X - E[X])^2]",
+            "E[I_A]",
+            "E[e^{tX}]"
+        ],
+        "right": [
+            "Mean / First Moment",
+            "Variance",
+            "Probability of event A",
+            "Moment Generating Function (MGF)"
+        ]
+    },
+    {
+        "q": "What is the Probability Mass Function (PMF) value calculated by this code snippet for a Hypergeometric Distribution?",
+        "type": "mcq",
+        "c": "from scipy.stats import hypergeom\n# N=Total population=10, K=Success items=3, n=Draws=5, k=Observed successes=2\n# P(X=2) for drawing 5 items from 10, with 3 being successes\nprob = hypergeom.pmf(k=2, M=10, n=3, N=5)\nprint(round(prob, 2))",
+        "o": [
+            "0.42",
+            "0.5",
+            "0.17",
+            "0.31"
+        ]
+    },
+    {
+        "q": "If the prior probability $P(H)$ is uniform, the posterior probability $P(H|E)$ is directly proportional to the likelihood $P(E|H)$.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to normalize a set of raw frequency counts into a valid **Probability Mass Function (PMF)**:",
+        "type": "rearrange",
+        "words": [
+            "List raw frequency counts",
+            "Calculate Total Count (Sum)",
+            "Divide each count by Total Sum",
+            "Verify PMF sum equals 1"
+        ]
+    },
+    {
+        "q": "What measure of central tendency is found by this Python function?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = [1, 2, 5, 8, 10]\n# Returns the 50th percentile of the data\nvalue = np.median(data)\nprint(value)",
+        "o": [
+            "Median",
+            "Mean",
+            "Mode",
+            "Variance"
+        ]
+    },
+    {
+        "q": "Match the concept of Independence to its corresponding definition:",
+        "type": "match",
+        "left": [
+            "Pairwise Independence",
+            "Mutual Independence",
+            "Statistical Dependence"
+        ],
+        "right": [
+            "Independence holds for every pair of variables",
+            "Independence holds for all subsets of variables",
+            "P(A AND B) $\\ne$ P(A)P(B)"
+        ]
+    },
+    {
+        "q": "The Normal distribution is the only continuous distribution for which the Mean, Median, and Mode are exactly equal.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The set of all possible values that a Random Variable can take (e.g., $\\{1, 2, 3, ...\\}$ or $[0, 1]$) is called its ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Support"
+        ],
+        "other_options": [
+            "Range",
+            "Kernel",
+            "Domain"
+        ]
+    },
+    {
+        "q": "If events A, B, and C are mutually exclusive, and $P(A)=0.2$, $P(B)=0.3$, $P(C)=0.1$, what is $P(A \\text{ OR } B \\text{ OR } C)$?",
+        "type": "mcq",
+        "o": [
+            "0.6",
+            "0.006",
+            "0.8",
+            "1.0"
+        ]
+    },
+    {
+        "q": "What is the output of this code calculating the Expected Value of the difference between two variables?",
+        "type": "mcq",
+        "c": "E_X = 15\nE_Y = 5\n# Property: E[X - Y] = E[X] - E[Y]\nexpected_difference = E_X - E_Y\nprint(expected_difference)",
+        "o": [
+            "10",
+            "20",
+            "75",
+            "5"
+        ]
+    },
+    {
+        "q": "The Cumulative Distribution Function $F(x)$ of a continuous random variable $X$ is mathematically defined as the ______ of the Probability Density Function $f(t)$ from $-\\infty$ to $x$.",
+        "type": "fill_blank",
+        "answers": [
+            "integral"
+        ],
+        "other_options": [
+            "derivative",
+            "sum",
+            "product"
+        ]
+    },
+    {
+        "q": "Match the Continuous Probability Distribution to its valid range (Support):",
+        "type": "match",
+        "left": [
+            "Normal Distribution",
+            "Exponential Distribution",
+            "Uniform Distribution",
+            "Chi-Squared Distribution"
+        ],
+        "right": [
+            "$(-\\infty, \\infty)$",
+            "$[0, \\infty)$",
+            "$[a, b]$",
+            "$[0, \\infty)$"
+        ]
+    },
+    {
+        "q": "The Law of Total Probability is used in the denominator of Bayes' Theorem to calculate the likelihood $P(E|H)$ (the probability of the evidence given the hypothesis).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the steps for calculating the Expected Value of a function $g(X)$ using the Law of the Unconscious Statistician (LOTUS) for a discrete variable:",
+        "type": "rearrange",
+        "words": [
+            "Define values x and probs P(x)",
+            "Compute $g(x)$ for each $x$",
+            "Multiply $g(x)$ by $P(x)$",
+            "Sum the resulting products"
+        ]
+    },
+    {
+        "q": "What is the probability output of this code calculating the probability of exactly $k=1$ success?",
+        "type": "mcq",
+        "c": "from scipy.stats import binom\n# P(X=1) for 5 trials with p=0.2\nprob = binom.pmf(k=1, n=5, p=0.2)\nprint(round(prob, 2))",
+        "o": [
+            "0.41",
+            "0.20",
+            "0.33",
+            "0.59"
+        ]
+    },
+    {
+        "q": "A random variable that has been transformed by subtracting its mean ($\\mu$) and dividing by its standard deviation ($\\sigma$) is called a ______ variable.",
+        "type": "fill_blank",
+        "answers": [
+            "standardized"
+        ],
+        "other_options": [
+            "normalized",
+            "marginal",
+            "logarithmic"
+        ]
+    },
+    {
+        "q": "Match the relationship between events to its corresponding probability formula:",
+        "type": "match",
+        "left": [
+            "A and B are Disjoint",
+            "A and B are Independent",
+            "A is a Subset of B ($A \\subset B$)",
+            "A and B are Dependent"
+        ],
+        "right": [
+            "$P(A \\cap B) = 0$",
+            "$P(A|B) = P(A)$",
+            "$P(A \\cap B) = P(A)$",
+            "$P(A \\cap B) \\ne P(A)P(B)$"
+        ]
+    },
+    {
+        "q": "For a continuous probability distribution, the Mode is defined as the value of $x$ where the Probability Density Function (PDF) $f(x)$ attains its maximum height.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Given $P(A)=0.4$, $P(B)=0.5$, and $P(A \\text{ OR } B)=0.7$, what is the conditional probability $P(A|B)$?",
+        "type": "mcq",
+        "o": [
+            "0.4",
+            "0.8",
+            "0.5",
+            "0.2"
+        ]
+    },
+    {
+        "q": "What statistical measure of spread is calculated by this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndata = np.array([10, 20, 30, 40, 50])\n# IQR = Q3 - Q1\niqr = np.percentile(data, 75) - np.percentile(data, 25)\nprint(int(iqr))",
+        "o": [
+            "20",
+            "10",
+            "40",
+            "5"
+        ]
+    },
+    {
+        "q": "In the formula for Bayes' Theorem, the term $P(E|H)$ is formally referred to as the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "Likelihood"
+        ],
+        "other_options": [
+            "Prior",
+            "Posterior",
+            "Evidence"
+        ]
+    },
+    {
+        "q": "Match the Probability Distribution to the formula for its Variance:",
+        "type": "match",
+        "left": [
+            "Normal Distribution",
+            "Poisson Distribution",
+            "Bernoulli Distribution",
+            "Uniform Distribution $U(a, b)$"
+        ],
+        "right": [
+            "$\\sigma^2$",
+            "$\\lambda$",
+            "$p(1-p)$",
+            "$(b-a)^2 / 12$"
+        ]
+    },
+    {
+        "q": "The Variance of a random variable, being a measure of dispersion, must always be greater than or equal to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to calculate the Variance $Var(X)$ using its fundamental definition $E[(X - \\mu)^2]$ for a discrete variable:",
+        "type": "rearrange",
+        "words": [
+            "Find Mean $\\mu$",
+            "Calculate Deviation $(x-\\mu)$",
+            "Square Deviation",
+            "Weight by $P(x)$ and Sum"
+        ]
+    },
+    {
+        "q": "What is the probability output of this code calculating the upper tail probability?",
+        "type": "mcq",
+        "c": "from scipy.stats import binom\n# P(X > 2) for 5 trials with p=0.4\n# sf is the survival function: P(X > k)\nprob = binom.sf(k=2, n=5, p=0.4)\nprint(round(prob, 2))",
+        "o": [
+            "0.32",
+            "0.68",
+            "0.50",
+            "0.40"
+        ]
+    },
+    {
+        "q": "Match the Set Operation to the corresponding Probability Identity:",
+        "type": "match",
+        "left": [
+            "A AND $B^c$",
+            "A OR B (if mutually exclusive)",
+            "A AND B (if independent)",
+            "A AND $\\Omega$"
+        ],
+        "right": [
+            "$P(A) - P(A \\cap B)$",
+            "$P(A) + P(B)$",
+            "$P(A)P(B)$",
+            "$P(A)$"
+        ]
+    },
+    {
+        "q": "The sum of two independent random variables that are normally distributed will always result in a normally distributed random variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Standard Score (Z-score) measures how many ______ a data point is from the mean.",
+        "type": "fill_blank",
+        "answers": [
+            "standard deviations"
+        ],
+        "other_options": [
+            "variances",
+            "expected values",
+            "percentiles"
+        ]
+    }
+]
