@@ -1,0 +1,6280 @@
+[
+    {
+        "q": "What is Apache Spark?",
+        "type": "mcq",
+        "o": [
+            "Unified analytics engine for large-scale data processing",
+            "Database management system",
+            "File storage system",
+            "Network monitoring tool"
+        ]
+    },
+    {
+        "q": "Spark was developed at UC Berkeley.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary advantage of Spark over MapReduce?",
+        "type": "mcq",
+        "o": [
+            "In-memory computing for faster processing",
+            "Better data compression",
+            "Simpler syntax",
+            "More storage capacity"
+        ]
+    },
+    {
+        "q": "The _____ is the main entry point for Spark functionality.",
+        "type": "fill_blank",
+        "answers": [
+            "SparkContext"
+        ],
+        "other_options": [
+            "SparkSession",
+            "SparkDriver",
+            "SparkEntry"
+        ]
+    },
+    {
+        "q": "What is an RDD in Spark?",
+        "type": "mcq",
+        "o": [
+            "Resilient Distributed Dataset - immutable distributed collection",
+            "Rapid Data Distribution",
+            "Replicated Data Definition",
+            "Remote Data Driver"
+        ]
+    },
+    {
+        "q": "RDDs are immutable once created.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Spark component with its purpose:",
+        "type": "match",
+        "left": [
+            "Spark Core",
+            "Spark SQL",
+            "MLlib",
+            "Spark Streaming"
+        ],
+        "right": [
+            "Core engine",
+            "Structured data",
+            "Machine learning",
+            "Real-time processing"
+        ]
+    },
+    {
+        "q": "What is SparkSession?",
+        "type": "mcq",
+        "o": [
+            "Unified entry point for Spark 2.0+ applications",
+            "User session manager",
+            "Security session",
+            "Connection pool"
+        ]
+    },
+    {
+        "q": "The _____ method creates an RDD from a local collection.",
+        "type": "fill_blank",
+        "answers": [
+            "parallelize"
+        ],
+        "other_options": [
+            "distribute",
+            "createRDD",
+            "toRDD"
+        ]
+    },
+    {
+        "q": "What is the output of this Spark code?",
+        "type": "mcq",
+        "c": "rdd = sc.parallelize([1, 2, 3, 4, 5])\nprint(rdd.count())",
+        "o": [
+            "5",
+            "[1, 2, 3, 4, 5]",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark application execution flow:",
+        "type": "rearrange",
+        "words": [
+            "Create SparkContext",
+            "Load data",
+            "Transform RDD",
+            "Perform action",
+            "Return result"
+        ]
+    },
+    {
+        "q": "What is a transformation in Spark?",
+        "type": "mcq",
+        "o": [
+            "Operation that creates a new RDD from existing one",
+            "Data modification in place",
+            "Format conversion",
+            "Data export"
+        ]
+    },
+    {
+        "q": "Transformations in Spark are lazily evaluated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is an action in Spark?",
+        "type": "mcq",
+        "o": [
+            "Operation that returns a value to the driver or writes to storage",
+            "Data transformation",
+            "RDD creation",
+            "Configuration change"
+        ]
+    },
+    {
+        "q": "Match the operation with its type:",
+        "type": "match",
+        "left": [
+            "map",
+            "filter",
+            "count",
+            "collect"
+        ],
+        "right": [
+            "Transformation",
+            "Transformation",
+            "Action",
+            "Action"
+        ]
+    },
+    {
+        "q": "The _____ transformation applies a function to each element.",
+        "type": "fill_blank",
+        "answers": [
+            "map"
+        ],
+        "other_options": [
+            "apply",
+            "foreach",
+            "transform"
+        ]
+    },
+    {
+        "q": "What does the filter transformation do?",
+        "type": "mcq",
+        "o": [
+            "Returns RDD with elements matching a condition",
+            "Removes all elements",
+            "Sorts elements",
+            "Groups elements"
+        ]
+    },
+    {
+        "q": "What is the output of this Spark code?",
+        "type": "mcq",
+        "c": "rdd = sc.parallelize([1, 2, 3, 4, 5])\nresult = rdd.filter(lambda x: x > 2).collect()\nprint(result)",
+        "o": [
+            "[3, 4, 5]",
+            "[1, 2]",
+            "[1, 2, 3, 4, 5]",
+            "Error"
+        ]
+    },
+    {
+        "q": "The reduce action combines elements using a function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does flatMap do?",
+        "type": "mcq",
+        "o": [
+            "Maps each element to multiple elements and flattens the result",
+            "Flattens nested RDDs",
+            "Maps only flat structures",
+            "Removes duplicates"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "rdd = sc.parallelize(['hello world', 'spark rdd'])\nresult = rdd.flatMap(lambda x: x.split()).collect()\nprint(result)",
+        "o": [
+            "['hello', 'world', 'spark', 'rdd']",
+            "[['hello', 'world'], ['spark', 'rdd']]",
+            "['hello world', 'spark rdd']",
+            "Error"
+        ]
+    },
+    {
+        "q": "The _____ action returns the first element of an RDD.",
+        "type": "fill_blank",
+        "answers": [
+            "first"
+        ],
+        "other_options": [
+            "head",
+            "top",
+            "get"
+        ]
+    },
+    {
+        "q": "What does take(n) return?",
+        "type": "mcq",
+        "o": [
+            "First n elements as a list",
+            "Last n elements",
+            "Random n elements",
+            "All elements except n"
+        ]
+    },
+    {
+        "q": "Rearrange the word count process:",
+        "type": "rearrange",
+        "words": [
+            "Read file",
+            "Split words",
+            "Map to pairs",
+            "ReduceByKey",
+            "Collect results"
+        ]
+    },
+    {
+        "q": "What is a pair RDD?",
+        "type": "mcq",
+        "o": [
+            "RDD of key-value tuples",
+            "Two connected RDDs",
+            "Paired data structure",
+            "Duplicate RDD"
+        ]
+    },
+    {
+        "q": "Match the pair RDD operation with its function:",
+        "type": "match",
+        "left": [
+            "reduceByKey",
+            "groupByKey",
+            "mapValues",
+            "join"
+        ],
+        "right": [
+            "Aggregate by key",
+            "Group values by key",
+            "Transform values only",
+            "Combine two RDDs"
+        ]
+    },
+    {
+        "q": "reduceByKey is more efficient than groupByKey for aggregation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "rdd = sc.parallelize([('a', 1), ('b', 2), ('a', 3)])\nresult = rdd.reduceByKey(lambda x, y: x + y).collect()\nprint(result)",
+        "o": [
+            "[('a', 4), ('b', 2)]",
+            "[('a', 1), ('b', 2), ('a', 3)]",
+            "[('a', 3), ('b', 2)]",
+            "Error"
+        ]
+    },
+    {
+        "q": "The _____ transformation combines two pair RDDs by key.",
+        "type": "fill_blank",
+        "answers": [
+            "join"
+        ],
+        "other_options": [
+            "merge",
+            "combine",
+            "union"
+        ]
+    },
+    {
+        "q": "What is a partition in Spark?",
+        "type": "mcq",
+        "o": [
+            "Logical division of data distributed across nodes",
+            "Physical disk partition",
+            "Memory segment",
+            "Network partition"
+        ]
+    },
+    {
+        "q": "More partitions allow more parallel processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does repartition do?",
+        "type": "mcq",
+        "o": [
+            "Redistributes data across specified number of partitions",
+            "Removes partitions",
+            "Creates partition copy",
+            "Displays partition info"
+        ]
+    },
+    {
+        "q": "Match the partitioning operation with its characteristic:",
+        "type": "match",
+        "left": [
+            "repartition",
+            "coalesce",
+            "partitionBy"
+        ],
+        "right": [
+            "Full shuffle",
+            "Reduce partitions efficiently",
+            "Custom partitioner"
+        ]
+    },
+    {
+        "q": "The _____ method returns the number of partitions.",
+        "type": "fill_blank",
+        "answers": [
+            "getNumPartitions"
+        ],
+        "other_options": [
+            "numPartitions",
+            "countPartitions",
+            "partitionCount"
+        ]
+    },
+    {
+        "q": "What is caching in Spark?",
+        "type": "mcq",
+        "o": [
+            "Storing RDD in memory for reuse",
+            "Disk storage only",
+            "Network buffering",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "cache() is equivalent to persist(MEMORY_ONLY).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which storage level stores data in memory and disk?",
+        "type": "mcq",
+        "o": [
+            "MEMORY_AND_DISK",
+            "MEMORY_ONLY",
+            "DISK_ONLY",
+            "MEMORY_DISK"
+        ]
+    },
+    {
+        "q": "Rearrange the storage level preference:",
+        "type": "rearrange",
+        "words": [
+            "MEMORY_ONLY",
+            "MEMORY_ONLY_SER",
+            "MEMORY_AND_DISK",
+            "DISK_ONLY"
+        ]
+    },
+    {
+        "q": "What does unpersist do?",
+        "type": "mcq",
+        "o": [
+            "Remove RDD from cache",
+            "Delete RDD permanently",
+            "Convert to disk storage",
+            "Compress cached data"
+        ]
+    },
+    {
+        "q": "The _____ method forces evaluation of all transformations.",
+        "type": "fill_blank",
+        "answers": [
+            "collect"
+        ],
+        "other_options": [
+            "execute",
+            "run",
+            "evaluate"
+        ]
+    },
+    {
+        "q": "What is a broadcast variable?",
+        "type": "mcq",
+        "o": [
+            "Read-only variable cached on each worker node",
+            "Variable sent to all nodes repeatedly",
+            "Messaging system",
+            "Log broadcast"
+        ]
+    },
+    {
+        "q": "Broadcast variables reduce data transfer overhead for large shared data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this broadcast code?",
+        "type": "mcq",
+        "c": "lookup = sc.broadcast({'a': 1, 'b': 2})\nrdd = sc.parallelize(['a', 'b', 'a'])\nresult = rdd.map(lambda x: lookup.value[x]).collect()\nprint(result)",
+        "o": [
+            "[1, 2, 1]",
+            "[{'a': 1}, {'b': 2}]",
+            "['a', 'b', 'a']",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the shared variable with its use case:",
+        "type": "match",
+        "left": [
+            "Broadcast",
+            "Accumulator"
+        ],
+        "right": [
+            "Read-only shared data",
+            "Write-only counters"
+        ]
+    },
+    {
+        "q": "What is an accumulator?",
+        "type": "mcq",
+        "o": [
+            "Variable that workers can only add to for aggregation",
+            "Memory accumulator",
+            "Data collector",
+            "Result aggregator"
+        ]
+    },
+    {
+        "q": "Accumulators are only visible to the driver.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ cluster manager is built into Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "Standalone"
+        ],
+        "other_options": [
+            "Local",
+            "Internal",
+            "Native"
+        ]
+    },
+    {
+        "q": "What cluster managers does Spark support?",
+        "type": "mcq",
+        "o": [
+            "Standalone, YARN, Mesos, Kubernetes",
+            "Only YARN",
+            "Only Standalone",
+            "Only Kubernetes"
+        ]
+    },
+    {
+        "q": "Match the cluster manager with its characteristic:",
+        "type": "match",
+        "left": [
+            "Standalone",
+            "YARN",
+            "Mesos",
+            "Kubernetes"
+        ],
+        "right": [
+            "Simple setup",
+            "Hadoop integration",
+            "Fine-grained sharing",
+            "Container orchestration"
+        ]
+    },
+    {
+        "q": "What is the driver program?",
+        "type": "mcq",
+        "o": [
+            "Main program that creates SparkContext and coordinates execution",
+            "Data driver",
+            "Hardware driver",
+            "Cluster driver"
+        ]
+    },
+    {
+        "q": "The driver runs on the master node by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is an executor in Spark?",
+        "type": "mcq",
+        "o": [
+            "Worker process that runs tasks and stores data",
+            "Job executor",
+            "Query executor",
+            "Command executor"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark execution hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Application",
+            "Job",
+            "Stage",
+            "Task"
+        ]
+    },
+    {
+        "q": "The _____ divides jobs into stages based on shuffle boundaries.",
+        "type": "fill_blank",
+        "answers": [
+            "DAGScheduler"
+        ],
+        "other_options": [
+            "TaskScheduler",
+            "JobScheduler",
+            "StageScheduler"
+        ]
+    },
+    {
+        "q": "What triggers a new stage in Spark?",
+        "type": "mcq",
+        "o": [
+            "Wide dependency transformation like reduceByKey",
+            "Any transformation",
+            "Action only",
+            "Data loading"
+        ]
+    },
+    {
+        "q": "Narrow dependencies allow pipelining without shuffle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is shuffle in Spark?",
+        "type": "mcq",
+        "o": [
+            "Redistributing data across partitions",
+            "Random data ordering",
+            "Data mixing",
+            "Memory shuffle"
+        ]
+    },
+    {
+        "q": "Match the dependency type with its transformation:",
+        "type": "match",
+        "left": [
+            "Narrow",
+            "Wide"
+        ],
+        "right": [
+            "map, filter",
+            "reduceByKey, join"
+        ]
+    },
+    {
+        "q": "What is a DataFrame in Spark?",
+        "type": "mcq",
+        "o": [
+            "Distributed collection of data organized into named columns",
+            "Data storage frame",
+            "Picture frame",
+            "Window frame"
+        ]
+    },
+    {
+        "q": "DataFrames provide higher-level API than RDDs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ method creates a DataFrame from a list.",
+        "type": "fill_blank",
+        "answers": [
+            "createDataFrame"
+        ],
+        "other_options": [
+            "toDF",
+            "makeDataFrame",
+            "newDataFrame"
+        ]
+    },
+    {
+        "q": "What is the output of this DataFrame code?",
+        "type": "mcq",
+        "c": "df = spark.createDataFrame([(1, 'Alice'), (2, 'Bob')], ['id', 'name'])\ndf.show()",
+        "o": [
+            "Shows table with id and name columns",
+            "Error",
+            "Empty result",
+            "Schema only"
+        ]
+    },
+    {
+        "q": "DataFrames are optimized by Catalyst optimizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Dataset in Spark?",
+        "type": "mcq",
+        "o": [
+            "Type-safe distributed collection combining RDD and DataFrame benefits",
+            "Data storage set",
+            "Configuration set",
+            "Result set"
+        ]
+    },
+    {
+        "q": "Match the Spark API with its characteristic:",
+        "type": "match",
+        "left": [
+            "RDD",
+            "DataFrame",
+            "Dataset"
+        ],
+        "right": [
+            "Low-level, untyped",
+            "High-level, untyped",
+            "High-level, typed"
+        ]
+    },
+    {
+        "q": "Datasets are available in Scala and Java but not Python.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ method reads a CSV file into a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.read.csv"
+        ],
+        "other_options": [
+            "spark.load.csv",
+            "spark.csv.read",
+            "spark.readCSV"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df = spark.read.option('header', 'true').csv('data.csv')\ndf.printSchema()",
+        "o": [
+            "Prints column names and data types from CSV with header",
+            "Prints file path",
+            "Shows row count",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the DataFrame creation from file:",
+        "type": "rearrange",
+        "words": [
+            "Import SparkSession",
+            "Create session",
+            "Read file",
+            "Specify options",
+            "Load data"
+        ]
+    },
+    {
+        "q": "What does inferSchema option do?",
+        "type": "mcq",
+        "o": [
+            "Automatically detect column data types",
+            "Validate schema",
+            "Print schema",
+            "Copy schema"
+        ]
+    },
+    {
+        "q": "inferSchema requires an extra pass over the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What DataFrame method selects specific columns?",
+        "type": "mcq",
+        "o": [
+            "select",
+            "columns",
+            "get",
+            "pick"
+        ]
+    },
+    {
+        "q": "Match the DataFrame method with its purpose:",
+        "type": "match",
+        "left": [
+            "select",
+            "filter",
+            "groupBy",
+            "orderBy"
+        ],
+        "right": [
+            "Choose columns",
+            "Filter rows",
+            "Aggregate",
+            "Sort data"
+        ]
+    },
+    {
+        "q": "The _____ method filters DataFrame rows based on condition.",
+        "type": "fill_blank",
+        "answers": [
+            "filter"
+        ],
+        "other_options": [
+            "where",
+            "select",
+            "query"
+        ]
+    },
+    {
+        "q": "filter and where are interchangeable in Spark DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df = spark.createDataFrame([(1, 100), (2, 200)], ['id', 'amount'])\nresult = df.filter(df.amount > 150).count()\nprint(result)",
+        "o": [
+            "1",
+            "2",
+            "200",
+            "Error"
+        ]
+    },
+    {
+        "q": "What does groupBy().agg() do?",
+        "type": "mcq",
+        "o": [
+            "Groups data and applies aggregate functions",
+            "Sorts groups",
+            "Filters groups",
+            "Joins groups"
+        ]
+    },
+    {
+        "q": "Rearrange the aggregation process:",
+        "type": "rearrange",
+        "words": [
+            "Select data",
+            "Group by key",
+            "Apply aggregation",
+            "Collect result"
+        ]
+    },
+    {
+        "q": "What aggregate function calculates average?",
+        "type": "mcq",
+        "o": [
+            "avg",
+            "mean",
+            "average",
+            "median"
+        ]
+    },
+    {
+        "q": "Match the aggregate function with its output:",
+        "type": "match",
+        "left": [
+            "sum",
+            "count",
+            "max",
+            "min"
+        ],
+        "right": [
+            "Total",
+            "Row count",
+            "Largest value",
+            "Smallest value"
+        ]
+    },
+    {
+        "q": "The _____ method adds a new column to a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "withColumn"
+        ],
+        "other_options": [
+            "addColumn",
+            "newColumn",
+            "createColumn"
+        ]
+    },
+    {
+        "q": "withColumn creates a new DataFrame; it does not modify the original.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df = spark.createDataFrame([(1, 10)], ['id', 'val'])\ndf2 = df.withColumn('doubled', df.val * 2)\ndf2.show()",
+        "o": [
+            "Shows id, val, and doubled (20) columns",
+            "Shows only doubled column",
+            "Error",
+            "Empty result"
+        ]
+    },
+    {
+        "q": "What does drop method do?",
+        "type": "mcq",
+        "o": [
+            "Removes specified columns",
+            "Removes rows",
+            "Deletes DataFrame",
+            "Drops duplicates"
+        ]
+    },
+    {
+        "q": "dropDuplicates removes duplicate rows from DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is DataFrame join?",
+        "type": "mcq",
+        "o": [
+            "Combines two DataFrames based on common column",
+            "Concatenates DataFrames",
+            "Merges schemas",
+            "Links data sources"
+        ]
+    },
+    {
+        "q": "Match the join type with its behavior:",
+        "type": "match",
+        "left": [
+            "inner",
+            "left",
+            "right",
+            "full"
+        ],
+        "right": [
+            "Matching only",
+            "All left + matching",
+            "All right + matching",
+            "All from both"
+        ]
+    },
+    {
+        "q": "The _____ join returns only rows with matches in both DataFrames.",
+        "type": "fill_blank",
+        "answers": [
+            "inner"
+        ],
+        "other_options": [
+            "outer",
+            "cross",
+            "semi"
+        ]
+    },
+    {
+        "q": "What is a left outer join?",
+        "type": "mcq",
+        "o": [
+            "All rows from left DataFrame plus matching rows from right",
+            "All rows from right DataFrame",
+            "Only matching rows",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "Rearrange the join operation steps:",
+        "type": "rearrange",
+        "words": [
+            "Load DataFrames",
+            "Specify join column",
+            "Choose join type",
+            "Execute join",
+            "Process result"
+        ]
+    },
+    {
+        "q": "What does union do in Spark DataFrames?",
+        "type": "mcq",
+        "o": [
+            "Combines two DataFrames with same schema vertically",
+            "Joins DataFrames horizontally",
+            "Intersects DataFrames",
+            "Subtracts DataFrames"
+        ]
+    },
+    {
+        "q": "union in Spark does not remove duplicates by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Spark SQL?",
+        "type": "mcq",
+        "o": [
+            "Module for structured data processing using SQL queries",
+            "SQL database",
+            "Query optimizer",
+            "Data storage"
+        ]
+    },
+    {
+        "q": "Spark SQL can query data from various sources using SQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ method executes SQL queries on DataFrames.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql"
+        ],
+        "other_options": [
+            "spark.query",
+            "spark.execute",
+            "spark.runSQL"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df.createOrReplaceTempView('users')\nresult = spark.sql('SELECT count(*) FROM users')\nresult.show()",
+        "o": [
+            "Shows count of rows in users DataFrame",
+            "Error",
+            "Shows all users",
+            "Creates new table"
+        ]
+    },
+    {
+        "q": "Match the SQL operation with its DataFrame equivalent:",
+        "type": "match",
+        "left": [
+            "SELECT",
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY"
+        ],
+        "right": [
+            "select",
+            "filter",
+            "groupBy",
+            "orderBy"
+        ]
+    },
+    {
+        "q": "What is a temporary view in Spark SQL?",
+        "type": "mcq",
+        "o": [
+            "Session-scoped table alias for DataFrame",
+            "Permanent table",
+            "View stored on disk",
+            "Database view"
+        ]
+    },
+    {
+        "q": "Global temporary views are accessible across sessions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the SQL query execution flow:",
+        "type": "rearrange",
+        "words": [
+            "Parse SQL",
+            "Analyze",
+            "Optimize",
+            "Generate plan",
+            "Execute"
+        ]
+    },
+    {
+        "q": "What is the Catalyst optimizer?",
+        "type": "mcq",
+        "o": [
+            "Query optimization framework for Spark SQL",
+            "Data catalyst",
+            "Memory optimizer",
+            "Network optimizer"
+        ]
+    },
+    {
+        "q": "The _____ generates optimized physical plans from logical plans.",
+        "type": "fill_blank",
+        "answers": [
+            "Catalyst"
+        ],
+        "other_options": [
+            "Tungsten",
+            "Optimizer",
+            "Planner"
+        ]
+    },
+    {
+        "q": "What does Tungsten provide in Spark?",
+        "type": "mcq",
+        "o": [
+            "Memory management and code generation optimizations",
+            "Data storage",
+            "Network optimization",
+            "Security features"
+        ]
+    },
+    {
+        "q": "Match the optimization component with its function:",
+        "type": "match",
+        "left": [
+            "Catalyst",
+            "Tungsten",
+            "Cost-based optimizer"
+        ],
+        "right": [
+            "Query planning",
+            "Memory and codegen",
+            "Statistics-based optimization"
+        ]
+    },
+    {
+        "q": "Tungsten uses off-heap memory for better performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is whole-stage code generation?",
+        "type": "mcq",
+        "o": [
+            "Compiles query into optimized JVM bytecode",
+            "Source code generation",
+            "Documentation generation",
+            "Test code generation"
+        ]
+    },
+    {
+        "q": "The _____ method shows the physical execution plan.",
+        "type": "fill_blank",
+        "answers": [
+            "explain"
+        ],
+        "other_options": [
+            "showPlan",
+            "describePlan",
+            "plan"
+        ]
+    },
+    {
+        "q": "What does explain(true) show?",
+        "type": "mcq",
+        "o": [
+            "Parsed, analyzed, optimized, and physical plans",
+            "Only physical plan",
+            "Query statistics",
+            "Error details"
+        ]
+    },
+    {
+        "q": "Understanding execution plans helps optimize queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a UDF in Spark?",
+        "type": "mcq",
+        "o": [
+            "User-Defined Function for custom transformations",
+            "Universal Data Format",
+            "Unified Data Framework",
+            "User Data File"
+        ]
+    },
+    {
+        "q": "Rearrange the UDF creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Define function",
+            "Register UDF",
+            "Apply in query",
+            "Get result"
+        ]
+    },
+    {
+        "q": "What is the output of this UDF code?",
+        "type": "mcq",
+        "c": "from pyspark.sql.functions import udf\nupper_udf = udf(lambda x: x.upper())\ndf.select(upper_udf('name')).show()",
+        "o": [
+            "Shows name column in uppercase",
+            "Error",
+            "Shows original names",
+            "Empty result"
+        ]
+    },
+    {
+        "q": "Match the function type with its characteristic:",
+        "type": "match",
+        "left": [
+            "UDF",
+            "UDAF",
+            "Pandas UDF"
+        ],
+        "right": [
+            "Row-by-row",
+            "Aggregate",
+            "Vectorized"
+        ]
+    },
+    {
+        "q": "The _____ decorator creates a Pandas UDF.",
+        "type": "fill_blank",
+        "answers": [
+            "@pandas_udf"
+        ],
+        "other_options": [
+            "@udf",
+            "@vectorized",
+            "@pdUDF"
+        ]
+    },
+    {
+        "q": "Pandas UDFs are faster than regular Python UDFs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a window function?",
+        "type": "mcq",
+        "o": [
+            "Function that operates on a group of rows and returns value for each",
+            "Window display function",
+            "Screen function",
+            "Frame function"
+        ]
+    },
+    {
+        "q": "Window functions require a window specification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this window function?",
+        "type": "mcq",
+        "c": "from pyspark.sql.window import Window\nwindow = Window.partitionBy('dept').orderBy('salary')\ndf.withColumn('rank', rank().over(window)).show()",
+        "o": [
+            "Shows rank of salary within each department",
+            "Shows overall rank",
+            "Error",
+            "Shows department totals"
+        ]
+    },
+    {
+        "q": "Match the window function with its purpose:",
+        "type": "match",
+        "left": [
+            "row_number",
+            "rank",
+            "dense_rank",
+            "lag"
+        ],
+        "right": [
+            "Sequential number",
+            "Rank with gaps",
+            "Rank without gaps",
+            "Previous row value"
+        ]
+    },
+    {
+        "q": "The _____ window function returns the value from a previous row.",
+        "type": "fill_blank",
+        "answers": [
+            "lag"
+        ],
+        "other_options": [
+            "prev",
+            "previous",
+            "before"
+        ]
+    },
+    {
+        "q": "What does lead function do?",
+        "type": "mcq",
+        "o": [
+            "Returns value from a following row",
+            "Returns first value",
+            "Returns last value",
+            "Returns max value"
+        ]
+    },
+    {
+        "q": "Rearrange the window function components:",
+        "type": "rearrange",
+        "words": [
+            "Define partition",
+            "Set ordering",
+            "Specify frame",
+            "Apply function"
+        ]
+    },
+    {
+        "q": "What is window frame in Spark?",
+        "type": "mcq",
+        "o": [
+            "Subset of rows relative to current row for calculation",
+            "Display frame",
+            "Data container",
+            "UI component"
+        ]
+    },
+    {
+        "q": "Match the frame boundary with its meaning:",
+        "type": "match",
+        "left": [
+            "unboundedPreceding",
+            "currentRow",
+            "unboundedFollowing"
+        ],
+        "right": [
+            "All previous rows",
+            "Current position",
+            "All following rows"
+        ]
+    },
+    {
+        "q": "The _____ function returns the first value in a window.",
+        "type": "fill_blank",
+        "answers": [
+            "first"
+        ],
+        "other_options": [
+            "head",
+            "initial",
+            "start"
+        ]
+    },
+    {
+        "q": "What does ntile function do?",
+        "type": "mcq",
+        "o": [
+            "Divides rows into specified number of buckets",
+            "Returns nth row",
+            "Creates n copies",
+            "Tiles data display"
+        ]
+    },
+    {
+        "q": "Cumulative sum uses window function with frame from start to current row.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Parquet format?",
+        "type": "mcq",
+        "o": [
+            "Columnar storage format optimized for analytics",
+            "Row-based format",
+            "Text format",
+            "Binary format"
+        ]
+    },
+    {
+        "q": "Parquet supports schema evolution and compression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ method reads Parquet files.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.read.parquet"
+        ],
+        "other_options": [
+            "spark.load.parquet",
+            "spark.parquet",
+            "spark.readParquet"
+        ]
+    },
+    {
+        "q": "What is the advantage of Parquet over CSV?",
+        "type": "mcq",
+        "o": [
+            "Better compression and faster column reads",
+            "Human readable",
+            "Simpler format",
+            "Smaller files always"
+        ]
+    },
+    {
+        "q": "Match the file format with its type:",
+        "type": "match",
+        "left": [
+            "Parquet",
+            "ORC",
+            "CSV",
+            "JSON"
+        ],
+        "right": [
+            "Columnar",
+            "Columnar",
+            "Row-based",
+            "Semi-structured"
+        ]
+    },
+    {
+        "q": "What is ORC format?",
+        "type": "mcq",
+        "o": [
+            "Optimized Row Columnar format from Hive",
+            "Original Row Content",
+            "Ordered Row Column",
+            "Open Record Container"
+        ]
+    },
+    {
+        "q": "Rearrange the data format efficiency (best to least):",
+        "type": "rearrange",
+        "words": [
+            "Parquet",
+            "ORC",
+            "JSON",
+            "CSV"
+        ]
+    },
+    {
+        "q": "What is schema inference?",
+        "type": "mcq",
+        "o": [
+            "Automatic detection of data types from data",
+            "Schema validation",
+            "Schema creation",
+            "Schema comparison"
+        ]
+    },
+    {
+        "q": "The _____ method writes DataFrame to Parquet format.",
+        "type": "fill_blank",
+        "answers": [
+            "df.write.parquet"
+        ],
+        "other_options": [
+            "df.save.parquet",
+            "df.toParquet",
+            "df.writeParquet"
+        ]
+    },
+    {
+        "q": "What does mode('overwrite') do when writing?",
+        "type": "mcq",
+        "o": [
+            "Replaces existing data at the path",
+            "Appends to existing data",
+            "Fails if data exists",
+            "Ignores if exists"
+        ]
+    },
+    {
+        "q": "Match the write mode with its behavior:",
+        "type": "match",
+        "left": [
+            "overwrite",
+            "append",
+            "ignore",
+            "error"
+        ],
+        "right": [
+            "Replace existing",
+            "Add to existing",
+            "Skip if exists",
+            "Fail if exists"
+        ]
+    },
+    {
+        "q": "Spark supports writing to multiple output formats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is partitioning by column?",
+        "type": "mcq",
+        "o": [
+            "Organizing output files by column values for efficient queries",
+            "Splitting columns",
+            "Column grouping",
+            "Data indexing"
+        ]
+    },
+    {
+        "q": "The _____ method partitions output by specified columns.",
+        "type": "fill_blank",
+        "answers": [
+            "partitionBy"
+        ],
+        "other_options": [
+            "partition",
+            "splitBy",
+            "groupTo"
+        ]
+    },
+    {
+        "q": "What is predicate pushdown?",
+        "type": "mcq",
+        "o": [
+            "Filtering data at the source before loading into Spark",
+            "Pushing filters down to database",
+            "Filter optimization",
+            "Query rewrite"
+        ]
+    },
+    {
+        "q": "Predicate pushdown reduces data transfer in Spark.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the optimization with its benefit:",
+        "type": "match",
+        "left": [
+            "Predicate pushdown",
+            "Column pruning",
+            "Partition pruning"
+        ],
+        "right": [
+            "Filter early",
+            "Read only needed columns",
+            "Skip irrelevant partitions"
+        ]
+    },
+    {
+        "q": "What is Spark Streaming?",
+        "type": "mcq",
+        "o": [
+            "Extension for processing real-time data streams",
+            "Video streaming",
+            "Data streaming protocol",
+            "File streaming"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark Streaming flow:",
+        "type": "rearrange",
+        "words": [
+            "Receive data",
+            "Batch into intervals",
+            "Process batches",
+            "Output results"
+        ]
+    },
+    {
+        "q": "The _____ represents a continuous stream of data in Spark Streaming.",
+        "type": "fill_blank",
+        "answers": [
+            "DStream"
+        ],
+        "other_options": [
+            "Stream",
+            "DataStream",
+            "LiveStream"
+        ]
+    },
+    {
+        "q": "What is micro-batch processing?",
+        "type": "mcq",
+        "o": [
+            "Processing streaming data in small time-based batches",
+            "Processing small files",
+            "Batch size reduction",
+            "Mini transactions"
+        ]
+    },
+    {
+        "q": "Spark Streaming uses micro-batch processing model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Structured Streaming?",
+        "type": "mcq",
+        "o": [
+            "DataFrame-based streaming API with exactly-once semantics",
+            "Structured data format",
+            "Stream organization",
+            "Data structure streaming"
+        ]
+    },
+    {
+        "q": "Match the streaming concept with its description:",
+        "type": "match",
+        "left": [
+            "Input source",
+            "Sink",
+            "Trigger",
+            "Checkpoint"
+        ],
+        "right": [
+            "Data origin",
+            "Output destination",
+            "When to process",
+            "State recovery"
+        ]
+    },
+    {
+        "q": "The _____ method reads from a streaming source.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.readStream"
+        ],
+        "other_options": [
+            "spark.stream",
+            "spark.liveRead",
+            "spark.streamRead"
+        ]
+    },
+    {
+        "q": "What is the output of this streaming code?",
+        "type": "mcq",
+        "c": "df = spark.readStream.format('kafka').load()\nquery = df.writeStream.format('console').start()",
+        "o": [
+            "Reads from Kafka and prints to console continuously",
+            "One-time read from Kafka",
+            "Error",
+            "Creates Kafka topic"
+        ]
+    },
+    {
+        "q": "Structured Streaming treats stream as unbounded table.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Structured Streaming setup:",
+        "type": "rearrange",
+        "words": [
+            "Define source",
+            "Apply transformations",
+            "Configure sink",
+            "Start query"
+        ]
+    },
+    {
+        "q": "What is output mode in Structured Streaming?",
+        "type": "mcq",
+        "o": [
+            "How results are written to sink after each trigger",
+            "Output format",
+            "Display mode",
+            "Write mode"
+        ]
+    },
+    {
+        "q": "Match the output mode with its behavior:",
+        "type": "match",
+        "left": [
+            "append",
+            "complete",
+            "update"
+        ],
+        "right": [
+            "Only new rows",
+            "All result rows",
+            "Changed rows only"
+        ]
+    },
+    {
+        "q": "The _____ output mode writes only new rows since last trigger.",
+        "type": "fill_blank",
+        "answers": [
+            "append"
+        ],
+        "other_options": [
+            "new",
+            "incremental",
+            "delta"
+        ]
+    },
+    {
+        "q": "Complete mode requires aggregation in the query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is watermarking in Structured Streaming?",
+        "type": "mcq",
+        "o": [
+            "Mechanism to handle late-arriving data",
+            "Data marking",
+            "Stream labeling",
+            "Timestamp addition"
+        ]
+    },
+    {
+        "q": "Watermarks define how late data can be and still included.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of checkpointing in streaming?",
+        "type": "mcq",
+        "o": [
+            "Preserve state for fault tolerance and recovery",
+            "Performance check",
+            "Data validation",
+            "Progress tracking"
+        ]
+    },
+    {
+        "q": "The _____ method sets checkpoint location for streaming query.",
+        "type": "fill_blank",
+        "answers": [
+            "checkpointLocation"
+        ],
+        "other_options": [
+            "checkpoint",
+            "saveState",
+            "stateLocation"
+        ]
+    },
+    {
+        "q": "What is MLlib?",
+        "type": "mcq",
+        "o": [
+            "Spark's machine learning library",
+            "Matrix library",
+            "Math library",
+            "Model library"
+        ]
+    },
+    {
+        "q": "MLlib supports both RDD-based and DataFrame-based APIs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the MLlib component with its function:",
+        "type": "match",
+        "left": [
+            "Estimator",
+            "Transformer",
+            "Pipeline",
+            "Evaluator"
+        ],
+        "right": [
+            "Fit model",
+            "Transform data",
+            "Chain stages",
+            "Measure quality"
+        ]
+    },
+    {
+        "q": "What is a Transformer in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Algorithm that transforms DataFrame to another DataFrame",
+            "Data converter",
+            "Type changer",
+            "Format transformer"
+        ]
+    },
+    {
+        "q": "The _____ method trains an Estimator on data.",
+        "type": "fill_blank",
+        "answers": [
+            "fit"
+        ],
+        "other_options": [
+            "train",
+            "learn",
+            "build"
+        ]
+    },
+    {
+        "q": "Rearrange the ML pipeline flow:",
+        "type": "rearrange",
+        "words": [
+            "Load data",
+            "Prepare features",
+            "Train model",
+            "Evaluate",
+            "Predict"
+        ]
+    },
+    {
+        "q": "What is feature extraction?",
+        "type": "mcq",
+        "o": [
+            "Converting raw data into numerical features for ML",
+            "Removing features",
+            "Selecting features",
+            "Copying features"
+        ]
+    },
+    {
+        "q": "VectorAssembler combines multiple columns into a feature vector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does StringIndexer do?",
+        "type": "mcq",
+        "o": [
+            "Encodes string column to numeric indices",
+            "Indexes strings in text",
+            "Searches for strings",
+            "Sorts strings"
+        ]
+    },
+    {
+        "q": "Match the feature transformer with its output:",
+        "type": "match",
+        "left": [
+            "StringIndexer",
+            "OneHotEncoder",
+            "StandardScaler",
+            "Normalizer"
+        ],
+        "right": [
+            "Numeric index",
+            "Binary vectors",
+            "Scaled values",
+            "Normalized vectors"
+        ]
+    },
+    {
+        "q": "The _____ normalizes features to unit norm.",
+        "type": "fill_blank",
+        "answers": [
+            "Normalizer"
+        ],
+        "other_options": [
+            "Scaler",
+            "Standardizer",
+            "UnitNorm"
+        ]
+    },
+    {
+        "q": "What is a Pipeline in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Sequence of stages combining estimators and transformers",
+            "Data pipeline",
+            "ETL process",
+            "Workflow system"
+        ]
+    },
+    {
+        "q": "Pipelines ensure consistent transformations on training and test data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is cross-validation?",
+        "type": "mcq",
+        "o": [
+            "Technique to evaluate model by training on different data subsets",
+            "Data validation",
+            "Cross-checking results",
+            "Validation dataset"
+        ]
+    },
+    {
+        "q": "The _____ performs hyperparameter tuning with cross-validation.",
+        "type": "fill_blank",
+        "answers": [
+            "CrossValidator"
+        ],
+        "other_options": [
+            "GridSearch",
+            "HyperTuner",
+            "ParamSearch"
+        ]
+    },
+    {
+        "q": "What is TrainValidationSplit?",
+        "type": "mcq",
+        "o": [
+            "Faster alternative to cross-validation using single train/validation split",
+            "Training data split",
+            "Validation method",
+            "Data separator"
+        ]
+    },
+    {
+        "q": "Match the classification algorithm with its type:",
+        "type": "match",
+        "left": [
+            "LogisticRegression",
+            "DecisionTreeClassifier",
+            "RandomForestClassifier",
+            "GBTClassifier"
+        ],
+        "right": [
+            "Linear",
+            "Tree-based",
+            "Ensemble",
+            "Gradient boosting"
+        ]
+    },
+    {
+        "q": "Rearrange model evaluation steps:",
+        "type": "rearrange",
+        "words": [
+            "Split data",
+            "Train model",
+            "Make predictions",
+            "Calculate metrics"
+        ]
+    },
+    {
+        "q": "What metric evaluates binary classification?",
+        "type": "mcq",
+        "o": [
+            "AUC (Area Under ROC Curve)",
+            "MSE",
+            "MAE",
+            "RMSE"
+        ]
+    },
+    {
+        "q": "The _____ evaluator measures regression model quality.",
+        "type": "fill_blank",
+        "answers": [
+            "RegressionEvaluator"
+        ],
+        "other_options": [
+            "RegressionMetrics",
+            "MSEEvaluator",
+            "RegressionScore"
+        ]
+    },
+    {
+        "q": "RMSE measures average prediction error in regression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is memory management in Spark?",
+        "type": "mcq",
+        "o": [
+            "Managing executor memory for storage and execution",
+            "RAM allocation",
+            "Disk management",
+            "Cache control"
+        ]
+    },
+    {
+        "q": "The _____ property sets executor memory size.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.executor.memory"
+        ],
+        "other_options": [
+            "spark.memory.executor",
+            "executor.memory",
+            "spark.exec.mem"
+        ]
+    },
+    {
+        "q": "Spark divides executor memory between storage and execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is unified memory management?",
+        "type": "mcq",
+        "o": [
+            "Dynamic sharing between storage and execution memory pools",
+            "Single memory pool",
+            "Unified allocation",
+            "Shared memory"
+        ]
+    },
+    {
+        "q": "Match the memory fraction with its purpose:",
+        "type": "match",
+        "left": [
+            "spark.memory.fraction",
+            "spark.memory.storageFraction"
+        ],
+        "right": [
+            "Total memory for Spark",
+            "Cache vs execution split"
+        ]
+    },
+    {
+        "q": "What is off-heap memory in Spark?",
+        "type": "mcq",
+        "o": [
+            "Memory outside JVM heap for better performance",
+            "External storage",
+            "Disk memory",
+            "Network buffer"
+        ]
+    },
+    {
+        "q": "Rearrange the memory hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Registers",
+            "CPU Cache",
+            "RAM",
+            "SSD",
+            "HDD"
+        ]
+    },
+    {
+        "q": "The _____ property enables off-heap memory.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.memory.offHeap.enabled"
+        ],
+        "other_options": [
+            "spark.offHeap.enabled",
+            "spark.memory.offheap",
+            "spark.heap.off"
+        ]
+    },
+    {
+        "q": "What causes out of memory errors in Spark?",
+        "type": "mcq",
+        "o": [
+            "Insufficient executor or driver memory for data size",
+            "Disk full",
+            "Network timeout",
+            "CPU overload"
+        ]
+    },
+    {
+        "q": "Increasing parallelism can help reduce memory pressure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data skew?",
+        "type": "mcq",
+        "o": [
+            "Uneven distribution of data across partitions",
+            "Corrupted data",
+            "Wrong data format",
+            "Missing data"
+        ]
+    },
+    {
+        "q": "Match the skew symptom with its indicator:",
+        "type": "match",
+        "left": [
+            "Slow tasks",
+            "OOM errors",
+            "Uneven stage duration"
+        ],
+        "right": [
+            "Large partitions",
+            "Data concentration",
+            "Partition imbalance"
+        ]
+    },
+    {
+        "q": "The _____ technique adds random keys to distribute skewed data.",
+        "type": "fill_blank",
+        "answers": [
+            "salting"
+        ],
+        "other_options": [
+            "splitting",
+            "spreading",
+            "hashing"
+        ]
+    },
+    {
+        "q": "What is broadcast join?",
+        "type": "mcq",
+        "o": [
+            "Sending small table to all executors to avoid shuffle",
+            "Network broadcast",
+            "Data propagation",
+            "Join announcement"
+        ]
+    },
+    {
+        "q": "Broadcast join is efficient when one table is small enough to fit in memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this broadcast join?",
+        "type": "mcq",
+        "c": "from pyspark.sql.functions import broadcast\nresult = large_df.join(broadcast(small_df), 'key')",
+        "o": [
+            "Joins without shuffling large table by broadcasting small table",
+            "Regular shuffle join",
+            "Error",
+            "Cartesian product"
+        ]
+    },
+    {
+        "q": "Rearrange join optimization preference:",
+        "type": "rearrange",
+        "words": [
+            "Broadcast join",
+            "Sort-merge join",
+            "Shuffle hash join",
+            "Cartesian join"
+        ]
+    },
+    {
+        "q": "The _____ property sets threshold for automatic broadcast.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.autoBroadcastJoinThreshold"
+        ],
+        "other_options": [
+            "spark.broadcast.threshold",
+            "spark.join.broadcast",
+            "spark.sql.broadcast.size"
+        ]
+    },
+    {
+        "q": "What is sort-merge join?",
+        "type": "mcq",
+        "o": [
+            "Join by sorting both tables on key and merging",
+            "Simple sort",
+            "Merge sort algorithm",
+            "Sorted merge"
+        ]
+    },
+    {
+        "q": "Sort-merge join requires shuffle and sort on both sides.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Adaptive Query Execution (AQE)?",
+        "type": "mcq",
+        "o": [
+            "Runtime optimization based on statistics from completed stages",
+            "Query adaptation",
+            "Adaptive programming",
+            "Dynamic queries"
+        ]
+    },
+    {
+        "q": "Match the AQE feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Coalesce shuffle partitions",
+            "Convert join strategy",
+            "Optimize skew joins"
+        ],
+        "right": [
+            "Reduce small partitions",
+            "Switch to broadcast",
+            "Split skewed partitions"
+        ]
+    },
+    {
+        "q": "The _____ property enables Adaptive Query Execution.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.adaptive.enabled"
+        ],
+        "other_options": [
+            "spark.aqe.enabled",
+            "spark.adaptive.query",
+            "spark.sql.aqe"
+        ]
+    },
+    {
+        "q": "AQE can automatically handle data skew at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dynamic partition pruning?",
+        "type": "mcq",
+        "o": [
+            "Pruning partitions based on join filter conditions at runtime",
+            "Automatic partitioning",
+            "Dynamic repartition",
+            "Partition creation"
+        ]
+    },
+    {
+        "q": "Dynamic partition pruning improves star schema queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is speculative execution in Spark?",
+        "type": "mcq",
+        "o": [
+            "Running duplicate tasks for slow-running tasks",
+            "Predictive execution",
+            "Future task planning",
+            "Queue speculation"
+        ]
+    },
+    {
+        "q": "The _____ property enables speculative execution.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.speculation"
+        ],
+        "other_options": [
+            "spark.speculative.enabled",
+            "spark.task.speculation",
+            "spark.spec"
+        ]
+    },
+    {
+        "q": "Match the tuning parameter with its effect:",
+        "type": "match",
+        "left": [
+            "spark.default.parallelism",
+            "spark.sql.shuffle.partitions",
+            "spark.executor.cores"
+        ],
+        "right": [
+            "RDD partitions",
+            "DataFrame shuffle partitions",
+            "Executor parallelism"
+        ]
+    },
+    {
+        "q": "Rearrange the performance tuning process:",
+        "type": "rearrange",
+        "words": [
+            "Identify bottleneck",
+            "Analyze metrics",
+            "Tune parameters",
+            "Test changes",
+            "Validate improvement"
+        ]
+    },
+    {
+        "q": "What is the Spark UI?",
+        "type": "mcq",
+        "o": [
+            "Web interface for monitoring Spark applications",
+            "User interface library",
+            "Frontend framework",
+            "Dashboard tool"
+        ]
+    },
+    {
+        "q": "Spark UI shows job, stage, and task details.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ tab in Spark UI shows executor metrics.",
+        "type": "fill_blank",
+        "answers": [
+            "Executors"
+        ],
+        "other_options": [
+            "Resources",
+            "Workers",
+            "Nodes"
+        ]
+    },
+    {
+        "q": "What indicates a shuffle in Spark UI?",
+        "type": "mcq",
+        "o": [
+            "Stage boundary with shuffle read and write metrics",
+            "Red warning icon",
+            "Error message",
+            "Slow task indicator"
+        ]
+    },
+    {
+        "q": "Match the Spark UI tab with its information:",
+        "type": "match",
+        "left": [
+            "Jobs",
+            "Stages",
+            "Storage",
+            "SQL"
+        ],
+        "right": [
+            "Overall progress",
+            "Task details",
+            "Cached data",
+            "Query plans"
+        ]
+    },
+    {
+        "q": "What is event timeline in Spark UI?",
+        "type": "mcq",
+        "o": [
+            "Visual representation of task execution over time",
+            "Event log",
+            "History timeline",
+            "Progress bar"
+        ]
+    },
+    {
+        "q": "Long GC times in Spark UI indicate memory pressure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GraphX?",
+        "type": "mcq",
+        "o": [
+            "Spark API for graph processing and analysis",
+            "Graphics library",
+            "Chart library",
+            "Visualization tool"
+        ]
+    },
+    {
+        "q": "The _____ represents a graph in GraphX.",
+        "type": "fill_blank",
+        "answers": [
+            "Graph"
+        ],
+        "other_options": [
+            "GraphFrame",
+            "Network",
+            "GraphRDD"
+        ]
+    },
+    {
+        "q": "GraphX extends RDDs with vertex and edge abstractions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a vertex in GraphX?",
+        "type": "mcq",
+        "o": [
+            "Node in a graph with associated properties",
+            "Edge endpoint",
+            "Graph property",
+            "Connection point"
+        ]
+    },
+    {
+        "q": "Match the GraphX concept with its description:",
+        "type": "match",
+        "left": [
+            "Vertex",
+            "Edge",
+            "Triplet",
+            "Graph"
+        ],
+        "right": [
+            "Node",
+            "Connection",
+            "Vertex-edge-vertex",
+            "Complete structure"
+        ]
+    },
+    {
+        "q": "What is Pregel in GraphX?",
+        "type": "mcq",
+        "o": [
+            "Iterative graph processing API based on bulk synchronous parallel",
+            "Graph algorithm",
+            "Preprocessing step",
+            "Graph format"
+        ]
+    },
+    {
+        "q": "Rearrange the Pregel iteration steps:",
+        "type": "rearrange",
+        "words": [
+            "Send messages",
+            "Receive messages",
+            "Update vertex",
+            "Check convergence"
+        ]
+    },
+    {
+        "q": "The _____ algorithm finds shortest paths in GraphX.",
+        "type": "fill_blank",
+        "answers": [
+            "ShortestPaths"
+        ],
+        "other_options": [
+            "Dijkstra",
+            "PathFinder",
+            "ShortPath"
+        ]
+    },
+    {
+        "q": "What is PageRank in GraphX?",
+        "type": "mcq",
+        "o": [
+            "Algorithm to rank vertices by importance based on connections",
+            "Page sorting",
+            "Ranking pages",
+            "Document ranking"
+        ]
+    },
+    {
+        "q": "GraphX includes built-in algorithms like PageRank and Connected Components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GraphFrames?",
+        "type": "mcq",
+        "o": [
+            "DataFrame-based graph processing library with more features",
+            "Graph storage format",
+            "Frame-based graphs",
+            "Graph UI"
+        ]
+    },
+    {
+        "q": "GraphFrames supports motif finding for pattern matching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Open-source storage layer providing ACID transactions",
+            "Data lake",
+            "Lake storage",
+            "Water-based storage"
+        ]
+    },
+    {
+        "q": "The _____ format is used by Delta Lake.",
+        "type": "fill_blank",
+        "answers": [
+            "delta"
+        ],
+        "other_options": [
+            "parquet",
+            "lakedelta",
+            "deltaparquet"
+        ]
+    },
+    {
+        "q": "Delta Lake supports schema evolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Delta Lake feature with its benefit:",
+        "type": "match",
+        "left": [
+            "ACID transactions",
+            "Time travel",
+            "Schema enforcement",
+            "Merge"
+        ],
+        "right": [
+            "Data consistency",
+            "Query past versions",
+            "Data quality",
+            "Upsert support"
+        ]
+    },
+    {
+        "q": "What is time travel in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Query historical versions of data",
+            "Time-based scheduling",
+            "Timezone conversion",
+            "Date processing"
+        ]
+    },
+    {
+        "q": "Rearrange the Delta Lake write process:",
+        "type": "rearrange",
+        "words": [
+            "Write data",
+            "Create log entry",
+            "Update metadata",
+            "Commit transaction"
+        ]
+    },
+    {
+        "q": "The _____ command optimizes Delta Lake tables.",
+        "type": "fill_blank",
+        "answers": [
+            "OPTIMIZE"
+        ],
+        "other_options": [
+            "COMPACT",
+            "VACUUM",
+            "TUNE"
+        ]
+    },
+    {
+        "q": "What does VACUUM do in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Remove old data files no longer referenced",
+            "Clean memory",
+            "Optimize queries",
+            "Compress data"
+        ]
+    },
+    {
+        "q": "Z-ordering in Delta optimizes data layout for specific columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Spark on Kubernetes?",
+        "type": "mcq",
+        "o": [
+            "Running Spark applications using Kubernetes as cluster manager",
+            "Kubernetes monitoring",
+            "Container spark",
+            "K8s plugin"
+        ]
+    },
+    {
+        "q": "The _____ property sets Kubernetes namespace for Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.kubernetes.namespace"
+        ],
+        "other_options": [
+            "spark.k8s.namespace",
+            "kubernetes.namespace",
+            "spark.namespace"
+        ]
+    },
+    {
+        "q": "Spark on K8s uses pod-per-executor model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deployment mode with its characteristics:",
+        "type": "match",
+        "left": [
+            "client mode",
+            "cluster mode"
+        ],
+        "right": [
+            "Driver on submitter",
+            "Driver in cluster"
+        ]
+    },
+    {
+        "q": "What is dynamic allocation?",
+        "type": "mcq",
+        "o": [
+            "Automatically adding and removing executors based on workload",
+            "Memory allocation",
+            "Resource planning",
+            "Dynamic partitioning"
+        ]
+    },
+    {
+        "q": "Rearrange the spark-submit command order:",
+        "type": "rearrange",
+        "words": [
+            "spark-submit",
+            "--class",
+            "--master",
+            "--deploy-mode",
+            "application.jar"
+        ]
+    },
+    {
+        "q": "The _____ property enables dynamic allocation.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.dynamicAllocation.enabled"
+        ],
+        "other_options": [
+            "spark.dynamic.allocation",
+            "spark.executor.dynamic",
+            "spark.alloc.dynamic"
+        ]
+    },
+    {
+        "q": "Dynamic allocation requires external shuffle service.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is event logging in Spark?",
+        "type": "mcq",
+        "o": [
+            "Recording application events for history server viewing",
+            "Error logging",
+            "Console output",
+            "Log aggregation"
+        ]
+    },
+    {
+        "q": "Match the logging property with its function:",
+        "type": "match",
+        "left": [
+            "spark.eventLog.enabled",
+            "spark.eventLog.dir",
+            "spark.history.fs.logDirectory"
+        ],
+        "right": [
+            "Enable logging",
+            "Log location",
+            "History server path"
+        ]
+    },
+    {
+        "q": "The Spark History Server displays completed application metrics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data locality in Spark?",
+        "type": "mcq",
+        "o": [
+            "Processing data on nodes where it is stored",
+            "Local data storage",
+            "Regional data",
+            "Data location service"
+        ]
+    },
+    {
+        "q": "The _____ locality level processes data on the same executor.",
+        "type": "fill_blank",
+        "answers": [
+            "PROCESS_LOCAL"
+        ],
+        "other_options": [
+            "EXECUTOR_LOCAL",
+            "LOCAL",
+            "SAME_EXECUTOR"
+        ]
+    },
+    {
+        "q": "Match the locality level with its description:",
+        "type": "match",
+        "left": [
+            "PROCESS_LOCAL",
+            "NODE_LOCAL",
+            "RACK_LOCAL",
+            "ANY"
+        ],
+        "right": [
+            "Same JVM",
+            "Same node",
+            "Same rack",
+            "Anywhere"
+        ]
+    },
+    {
+        "q": "Better data locality reduces network transfer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange locality levels from best to worst:",
+        "type": "rearrange",
+        "words": [
+            "PROCESS_LOCAL",
+            "NODE_LOCAL",
+            "RACK_LOCAL",
+            "ANY"
+        ]
+    },
+    {
+        "q": "What is shuffle spill in Spark?",
+        "type": "mcq",
+        "o": [
+            "Writing shuffle data to disk when memory is insufficient",
+            "Data overflow",
+            "Shuffle error",
+            "Memory leak"
+        ]
+    },
+    {
+        "q": "High shuffle spill indicates memory pressure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ metric shows shuffle data written to disk.",
+        "type": "fill_blank",
+        "answers": [
+            "Shuffle Spill (Disk)"
+        ],
+        "other_options": [
+            "Disk Spill",
+            "Shuffle Write",
+            "Spill Size"
+        ]
+    },
+    {
+        "q": "What is the shuffle service?",
+        "type": "mcq",
+        "o": [
+            "External service that serves shuffle files independent of executors",
+            "Data shuffle API",
+            "Shuffle algorithm",
+            "Transfer service"
+        ]
+    },
+    {
+        "q": "External shuffle service allows executors to be removed without losing shuffle data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is push-based shuffle?",
+        "type": "mcq",
+        "o": [
+            "Mappers push shuffle blocks to reduce fetch overhead",
+            "Push notification for shuffle",
+            "Active shuffle transfer",
+            "Forced shuffle"
+        ]
+    },
+    {
+        "q": "Push-based shuffle reduces random disk I/O on reducer side.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is continuous processing in Structured Streaming?",
+        "type": "mcq",
+        "o": [
+            "Ultra-low latency processing mode without micro-batches",
+            "Non-stop processing",
+            "Batch processing",
+            "Sequential processing"
+        ]
+    },
+    {
+        "q": "Match the trigger type with its behavior:",
+        "type": "match",
+        "left": [
+            "ProcessingTime",
+            "Once",
+            "Continuous"
+        ],
+        "right": [
+            "Fixed intervals",
+            "Single batch",
+            "Low latency"
+        ]
+    },
+    {
+        "q": "The _____ trigger mode provides millisecond latency.",
+        "type": "fill_blank",
+        "answers": [
+            "Continuous"
+        ],
+        "other_options": [
+            "RealTime",
+            "Instant",
+            "LowLatency"
+        ]
+    },
+    {
+        "q": "Continuous processing has limitations on supported operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is stateful streaming?",
+        "type": "mcq",
+        "o": [
+            "Maintaining state across micro-batches for aggregations",
+            "State machine processing",
+            "Stateful API",
+            "Memory-based streaming"
+        ]
+    },
+    {
+        "q": "Rearrange the stateful operation lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Initialize state",
+            "Update with new data",
+            "Expire old state",
+            "Output results"
+        ]
+    },
+    {
+        "q": "What is mapGroupsWithState?",
+        "type": "mcq",
+        "o": [
+            "Custom stateful processing with arbitrary state and timeout",
+            "Group mapping",
+            "State mapper",
+            "Group state function"
+        ]
+    },
+    {
+        "q": "The _____ function provides simpler stateful aggregation.",
+        "type": "fill_blank",
+        "answers": [
+            "flatMapGroupsWithState"
+        ],
+        "other_options": [
+            "updateState",
+            "aggregateWithState",
+            "mapState"
+        ]
+    },
+    {
+        "q": "Session windows group events by gaps in activity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is event-time processing?",
+        "type": "mcq",
+        "o": [
+            "Processing based on timestamp embedded in the data",
+            "Real-time processing",
+            "Current time processing",
+            "Batch timestamp"
+        ]
+    },
+    {
+        "q": "Match the time concept with its definition:",
+        "type": "match",
+        "left": [
+            "Event time",
+            "Processing time",
+            "Ingestion time"
+        ],
+        "right": [
+            "When event occurred",
+            "When Spark processes",
+            "When data arrives"
+        ]
+    },
+    {
+        "q": "Watermarks help handle late data in event-time processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of window in streaming aggregation?",
+        "type": "mcq",
+        "o": [
+            "Group events into time-based buckets for aggregation",
+            "Display window",
+            "Frame window",
+            "Rolling window"
+        ]
+    },
+    {
+        "q": "The _____ creates a tumbling window in Structured Streaming.",
+        "type": "fill_blank",
+        "answers": [
+            "window"
+        ],
+        "other_options": [
+            "tumbling",
+            "bucket",
+            "timeWindow"
+        ]
+    },
+    {
+        "q": "What is sliding window?",
+        "type": "mcq",
+        "o": [
+            "Overlapping windows with specified slide interval",
+            "Moving average window",
+            "Scroll window",
+            "Shift window"
+        ]
+    },
+    {
+        "q": "Tumbling windows do not overlap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the window type with its overlap behavior:",
+        "type": "match",
+        "left": [
+            "Tumbling",
+            "Sliding",
+            "Session"
+        ],
+        "right": [
+            "No overlap",
+            "Overlapping",
+            "Dynamic based on activity"
+        ]
+    },
+    {
+        "q": "What is foreach sink in Structured Streaming?",
+        "type": "mcq",
+        "o": [
+            "Custom output logic for each row or partition",
+            "Foreach loop",
+            "Iterator sink",
+            "Row-by-row output"
+        ]
+    },
+    {
+        "q": "Rearrange the ForeachWriter lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "open",
+            "process",
+            "close"
+        ]
+    },
+    {
+        "q": "The _____ provides efficient partition-level custom output.",
+        "type": "fill_blank",
+        "answers": [
+            "foreachBatch"
+        ],
+        "other_options": [
+            "batchForeach",
+            "partitionForeach",
+            "processBatch"
+        ]
+    },
+    {
+        "q": "foreachBatch is more efficient than foreach for batch operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is exactly-once semantics in streaming?",
+        "type": "mcq",
+        "o": [
+            "Processing each record exactly once even with failures",
+            "Processing once",
+            "Single execution",
+            "One-time processing"
+        ]
+    },
+    {
+        "q": "Structured Streaming achieves exactly-once with checkpointing and idempotent sinks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is K-means in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Clustering algorithm that partitions data into k clusters",
+            "K nearest neighbors",
+            "K-fold validation",
+            "K-means regression"
+        ]
+    },
+    {
+        "q": "The _____ parameter sets number of clusters in K-means.",
+        "type": "fill_blank",
+        "answers": [
+            "k"
+        ],
+        "other_options": [
+            "clusters",
+            "numClusters",
+            "n_clusters"
+        ]
+    },
+    {
+        "q": "Match the clustering algorithm with its characteristic:",
+        "type": "match",
+        "left": [
+            "K-means",
+            "Bisecting K-means",
+            "LDA",
+            "Gaussian Mixture"
+        ],
+        "right": [
+            "Centroid-based",
+            "Hierarchical",
+            "Topic modeling",
+            "Probabilistic"
+        ]
+    },
+    {
+        "q": "K-means uses euclidean distance to assign points to clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ALS in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Alternating Least Squares for recommendation systems",
+            "Advanced Linear Solver",
+            "Automatic Learning System",
+            "Algorithm Learning Standard"
+        ]
+    },
+    {
+        "q": "Rearrange the ALS recommendation process:",
+        "type": "rearrange",
+        "words": [
+            "Load ratings",
+            "Train ALS model",
+            "Generate recommendations",
+            "Evaluate"
+        ]
+    },
+    {
+        "q": "The _____ method generates recommendations for all users.",
+        "type": "fill_blank",
+        "answers": [
+            "recommendForAllUsers"
+        ],
+        "other_options": [
+            "recommend",
+            "predictAll",
+            "generateRecommendations"
+        ]
+    },
+    {
+        "q": "ALS handles implicit feedback differently than explicit ratings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is FP-Growth in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Frequent pattern mining algorithm for association rules",
+            "Forward propagation growth",
+            "Feature processing",
+            "Function pattern"
+        ]
+    },
+    {
+        "q": "FP-Growth discovers frequent itemsets in transactional data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is word2vec in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Algorithm to learn word embeddings from text",
+            "Word counter",
+            "Text vectorizer",
+            "Word converter"
+        ]
+    },
+    {
+        "q": "Match the NLP feature with its transformer:",
+        "type": "match",
+        "left": [
+            "Tokenizer",
+            "StopWordsRemover",
+            "CountVectorizer",
+            "TF-IDF"
+        ],
+        "right": [
+            "Split text",
+            "Remove common words",
+            "Word counts",
+            "Term frequency"
+        ]
+    },
+    {
+        "q": "The _____ converts text to vectors based on word frequency.",
+        "type": "fill_blank",
+        "answers": [
+            "CountVectorizer"
+        ],
+        "other_options": [
+            "TextVectorizer",
+            "WordCounter",
+            "FrequencyVector"
+        ]
+    },
+    {
+        "q": "What is model persistence in MLlib?",
+        "type": "mcq",
+        "o": [
+            "Saving and loading trained models for reuse",
+            "Model durability",
+            "Persistent prediction",
+            "Continuous training"
+        ]
+    },
+    {
+        "q": "MLlib models can be saved and loaded using save and load methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the model deployment steps:",
+        "type": "rearrange",
+        "words": [
+            "Train model",
+            "Evaluate performance",
+            "Save model",
+            "Load in production",
+            "Serve predictions"
+        ]
+    },
+    {
+        "q": "What is PySpark?",
+        "type": "mcq",
+        "o": [
+            "Python API for Apache Spark",
+            "Python version of Spark",
+            "Python-Spark converter",
+            "Spark dialect"
+        ]
+    },
+    {
+        "q": "PySpark uses Py4J to communicate between Python and JVM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ serializes data between Python and JVM workers.",
+        "type": "fill_blank",
+        "answers": [
+            "Arrow"
+        ],
+        "other_options": [
+            "Pickle",
+            "PyArrow",
+            "Py4J"
+        ]
+    },
+    {
+        "q": "What is Apache Arrow in PySpark?",
+        "type": "mcq",
+        "o": [
+            "Columnar memory format for efficient data transfer",
+            "Arrow function",
+            "Pointer system",
+            "Direction indicator"
+        ]
+    },
+    {
+        "q": "Arrow significantly improves Pandas UDF performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the PySpark component with its Scala equivalent:",
+        "type": "match",
+        "left": [
+            "SparkSession",
+            "DataFrame",
+            "RDD",
+            "UDF"
+        ],
+        "right": [
+            "SparkSession",
+            "Dataset[Row]",
+            "RDD",
+            "UserDefinedFunction"
+        ]
+    },
+    {
+        "q": "What is spark.sql.execution.arrow.pyspark.enabled?",
+        "type": "mcq",
+        "o": [
+            "Enables Arrow optimization for PySpark operations",
+            "Arrow SQL execution",
+            "PySpark to Arrow conversion",
+            "SQL arrow syntax"
+        ]
+    },
+    {
+        "q": "Column-based operations in PySpark are faster than row-based Python UDFs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is toPandas() impact on large DataFrames?",
+        "type": "mcq",
+        "o": [
+            "Collects all data to driver which may cause OOM",
+            "Faster processing",
+            "Distributed computing",
+            "No impact"
+        ]
+    },
+    {
+        "q": "The _____ method creates Spark DataFrame from Pandas efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "createDataFrame"
+        ],
+        "other_options": [
+            "fromPandas",
+            "toDask",
+            "pandasToSpark"
+        ]
+    },
+    {
+        "q": "Rearrange the PySpark optimization techniques:",
+        "type": "rearrange",
+        "words": [
+            "Use built-in functions",
+            "Avoid UDFs",
+            "Use vectorized operations",
+            "Minimize data transfer"
+        ]
+    },
+    {
+        "q": "What is Koalas/Pandas on Spark?",
+        "type": "mcq",
+        "o": [
+            "Pandas API on top of Spark for easier migration",
+            "Koala visualization",
+            "Animal-based library",
+            "Spark variant"
+        ]
+    },
+    {
+        "q": "Pandas API on Spark is built into PySpark 3.2+.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of wholeTextFiles?",
+        "type": "mcq",
+        "o": [
+            "Read each file as a single record with filename and content",
+            "Read all text files",
+            "Whole file parsing",
+            "Text file merger"
+        ]
+    },
+    {
+        "q": "The _____ method reads binary files.",
+        "type": "fill_blank",
+        "answers": [
+            "binaryFiles"
+        ],
+        "other_options": [
+            "readBinary",
+            "binary",
+            "loadBinary"
+        ]
+    },
+    {
+        "q": "Spark can read data from JDBC sources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is numPartitions option in JDBC read?",
+        "type": "mcq",
+        "o": [
+            "Number of parallel connections to database",
+            "Database partitions",
+            "Table partitions",
+            "Query partitions"
+        ]
+    },
+    {
+        "q": "Match the data source with its format:",
+        "type": "match",
+        "left": [
+            "Relational DB",
+            "NoSQL",
+            "File storage",
+            "Message queue"
+        ],
+        "right": [
+            "JDBC",
+            "Cassandra/MongoDB",
+            "Parquet/CSV",
+            "Kafka"
+        ]
+    },
+    {
+        "q": "Rearrange the JDBC read parameters:",
+        "type": "rearrange",
+        "words": [
+            "url",
+            "dbtable",
+            "user",
+            "password",
+            "numPartitions"
+        ]
+    },
+    {
+        "q": "What is table sampling in Spark?",
+        "type": "mcq",
+        "o": [
+            "Reading subset of data for faster development/testing",
+            "Sample table creation",
+            "Data sampling",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "The _____ method samples data with or without replacement.",
+        "type": "fill_blank",
+        "answers": [
+            "sample"
+        ],
+        "other_options": [
+            "takeSample",
+            "randomSample",
+            "sampleData"
+        ]
+    },
+    {
+        "q": "sample with fraction 0.1 returns approximately 10% of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is cost-based optimization?",
+        "type": "mcq",
+        "o": [
+            "Using table statistics to choose optimal execution plan",
+            "Cost calculation",
+            "Budget optimization",
+            "Financial planning"
+        ]
+    },
+    {
+        "q": "ANALYZE TABLE command collects statistics for CBO.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the statistics type with its information:",
+        "type": "match",
+        "left": [
+            "Table stats",
+            "Column stats",
+            "Histogram"
+        ],
+        "right": [
+            "Row count, size",
+            "Min, max, distinct",
+            "Value distribution"
+        ]
+    },
+    {
+        "q": "The _____ property enables cost-based join reordering.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.cbo.joinReorder.enabled"
+        ],
+        "other_options": [
+            "spark.cbo.joinReorder",
+            "spark.join.cbo",
+            "spark.sql.joinReorder"
+        ]
+    },
+    {
+        "q": "CBO can improve multi-way join performance significantly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is bucketing in Spark?",
+        "type": "mcq",
+        "o": [
+            "Pre-partitioning and sorting data by columns for efficient joins",
+            "Data grouping",
+            "Storage buckets",
+            "Hash bucketing"
+        ]
+    },
+    {
+        "q": "Rearrange the bucketing benefits:",
+        "type": "rearrange",
+        "words": [
+            "Avoid shuffle",
+            "Enable sort-merge join",
+            "Consistent partitioning"
+        ]
+    },
+    {
+        "q": "The _____ method creates bucketed table.",
+        "type": "fill_blank",
+        "answers": [
+            "bucketBy"
+        ],
+        "other_options": [
+            "bucket",
+            "createBucket",
+            "partitionAndSort"
+        ]
+    },
+    {
+        "q": "Bucketed tables must be saved as persistent tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the benefit of bucket pruning?",
+        "type": "mcq",
+        "o": [
+            "Skip reading unnecessary buckets based on filter conditions",
+            "Bucket removal",
+            "Pruning algorithm",
+            "Data cleanup"
+        ]
+    },
+    {
+        "q": "Two bucketed tables with same bucket count can join without shuffle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of spark.sql.files.maxPartitionBytes?",
+        "type": "mcq",
+        "o": [
+            "Maximum size of partition when reading files",
+            "Maximum file size",
+            "Partition limit",
+            "File count limit"
+        ]
+    },
+    {
+        "q": "Match the file read property with its effect:",
+        "type": "match",
+        "left": [
+            "maxPartitionBytes",
+            "openCostInBytes",
+            "minPartitionNum"
+        ],
+        "right": [
+            "Partition size limit",
+            "Small file overhead",
+            "Minimum partitions"
+        ]
+    },
+    {
+        "q": "The _____ property controls parallelism for small files.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.files.openCostInBytes"
+        ],
+        "other_options": [
+            "spark.files.parallelism",
+            "spark.smallFiles.open",
+            "spark.read.parallel"
+        ]
+    },
+    {
+        "q": "Too many small files can cause driver memory issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is file coalescing?",
+        "type": "mcq",
+        "o": [
+            "Combining small output files into larger ones",
+            "File merging",
+            "File compression",
+            "File splitting"
+        ]
+    },
+    {
+        "q": "Rearrange the file optimization techniques:",
+        "type": "rearrange",
+        "words": [
+            "Compact small files",
+            "Choose right partition count",
+            "Use appropriate format"
+        ]
+    },
+    {
+        "q": "What is Spark Connect?",
+        "type": "mcq",
+        "o": [
+            "Decoupled client-server architecture for Spark",
+            "Network connection",
+            "Database connector",
+            "API gateway"
+        ]
+    },
+    {
+        "q": "Spark Connect allows thin client connections to Spark clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the benefit of Spark Connect?",
+        "type": "mcq",
+        "o": [
+            "Client stability and resource isolation from cluster",
+            "Faster queries",
+            "Better compression",
+            "More storage"
+        ]
+    },
+    {
+        "q": "The _____ server handles Spark Connect requests.",
+        "type": "fill_blank",
+        "answers": [
+            "Spark Connect Server"
+        ],
+        "other_options": [
+            "Spark Gateway",
+            "Connect Server",
+            "Spark Proxy"
+        ]
+    },
+    {
+        "q": "Spark Connect uses gRPC for communication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of spark.driver.memory?",
+        "type": "mcq",
+        "o": [
+            "Set memory allocated to driver process",
+            "Driver speed",
+            "Driver cores",
+            "Driver disk"
+        ]
+    },
+    {
+        "q": "Match the memory setting with its scope:",
+        "type": "match",
+        "left": [
+            "spark.driver.memory",
+            "spark.executor.memory",
+            "spark.memory.offHeap.size"
+        ],
+        "right": [
+            "Driver JVM",
+            "Executor JVM",
+            "Off-heap per executor"
+        ]
+    },
+    {
+        "q": "Collect operations require sufficient driver memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the debugging workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify symptoms",
+            "Check Spark UI",
+            "Analyze logs",
+            "Isolate problem",
+            "Apply fix"
+        ]
+    },
+    {
+        "q": "The _____ log level provides most detailed output.",
+        "type": "fill_blank",
+        "answers": [
+            "DEBUG"
+        ],
+        "other_options": [
+            "TRACE",
+            "VERBOSE",
+            "ALL"
+        ]
+    },
+    {
+        "q": "What is the best practice for production Spark applications?",
+        "type": "mcq",
+        "o": [
+            "Use DataFrames over RDDs for optimization benefits",
+            "Always use RDDs",
+            "Minimize memory",
+            "Disable caching"
+        ]
+    },
+    {
+        "q": "Avoiding cartesian products is a Spark best practice.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the best practice with its benefit:",
+        "type": "match",
+        "left": [
+            "Cache reused DataFrames",
+            "Use broadcast for small tables",
+            "Avoid UDFs when possible",
+            "Right-size partitions"
+        ],
+        "right": [
+            "Reduce recomputation",
+            "Eliminate shuffle",
+            "Enable Catalyst optimization",
+            "Balance parallelism"
+        ]
+    },
+    {
+        "q": "What is Spark's lazy evaluation advantage?",
+        "type": "mcq",
+        "o": [
+            "Enables query optimization before execution",
+            "Faster computation",
+            "Less memory usage",
+            "Simpler code"
+        ]
+    },
+    {
+        "q": "Lazy evaluation allows Spark to optimize the entire computation DAG.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What happens when you call an action on uncached RDD?",
+        "type": "mcq",
+        "o": [
+            "Entire lineage is recomputed from source",
+            "Error occurs",
+            "Returns cached result",
+            "Nothing happens"
+        ]
+    },
+    {
+        "q": "The _____ method converts DataFrame column to list in driver.",
+        "type": "fill_blank",
+        "answers": [
+            "collect"
+        ],
+        "other_options": [
+            "toList",
+            "asList",
+            "getList"
+        ]
+    },
+    {
+        "q": "Match the action with its return type:",
+        "type": "match",
+        "left": [
+            "count",
+            "collect",
+            "first",
+            "take"
+        ],
+        "right": [
+            "Long",
+            "Array",
+            "Single element",
+            "Array of n elements"
+        ]
+    },
+    {
+        "q": "What is lineage in Spark?",
+        "type": "mcq",
+        "o": [
+            "Dependency graph of transformations",
+            "Data history",
+            "Log sequence",
+            "Execution timeline"
+        ]
+    },
+    {
+        "q": "Rearrange the RDD fault tolerance mechanism:",
+        "type": "rearrange",
+        "words": [
+            "Track lineage",
+            "Detect failure",
+            "Identify lost partitions",
+            "Recompute from source"
+        ]
+    },
+    {
+        "q": "Spark can recover lost partitions by replaying lineage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ method returns lineage information for an RDD.",
+        "type": "fill_blank",
+        "answers": [
+            "toDebugString"
+        ],
+        "other_options": [
+            "lineage",
+            "getDebug",
+            "showLineage"
+        ]
+    },
+    {
+        "q": "What is the purpose of checkpoint in RDD?",
+        "type": "mcq",
+        "o": [
+            "Truncate lineage by saving RDD to reliable storage",
+            "Create backup",
+            "Pause execution",
+            "Mark progress"
+        ]
+    },
+    {
+        "q": "Checkpointing is useful for RDDs with long lineage graphs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is local checkpointing?",
+        "type": "mcq",
+        "o": [
+            "Write to executor local storage without replication",
+            "Local file checkpoint",
+            "Driver checkpoint",
+            "Memory checkpoint"
+        ]
+    },
+    {
+        "q": "Match the checkpoint type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Reliable checkpoint",
+            "Local checkpoint"
+        ],
+        "right": [
+            "HDFS storage with replication",
+            "Fast but no fault tolerance"
+        ]
+    },
+    {
+        "q": "The _____ method triggers local checkpointing.",
+        "type": "fill_blank",
+        "answers": [
+            "localCheckpoint"
+        ],
+        "other_options": [
+            "localSave",
+            "checkpointLocal",
+            "fastCheckpoint"
+        ]
+    },
+    {
+        "q": "What is Spark SQL catalyst rule-based optimization?",
+        "type": "mcq",
+        "o": [
+            "Apply transformation rules to logical plan",
+            "Rule-based queries",
+            "SQL rules",
+            "Rule engine"
+        ]
+    },
+    {
+        "q": "Catalyst applies rules like predicate pushdown and constant folding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Catalyst optimization phases:",
+        "type": "rearrange",
+        "words": [
+            "Analysis",
+            "Logical optimization",
+            "Physical planning",
+            "Code generation"
+        ]
+    },
+    {
+        "q": "What is constant folding optimization?",
+        "type": "mcq",
+        "o": [
+            "Evaluate constant expressions at compile time",
+            "Fold constants into variables",
+            "Constant declaration",
+            "Value folding"
+        ]
+    },
+    {
+        "q": "The _____ phase resolves column names and types in Catalyst.",
+        "type": "fill_blank",
+        "answers": [
+            "Analysis"
+        ],
+        "other_options": [
+            "Resolution",
+            "Binding",
+            "Parsing"
+        ]
+    },
+    {
+        "q": "What is projection pruning?",
+        "type": "mcq",
+        "o": [
+            "Remove unused columns early in query plan",
+            "Project removal",
+            "Column projection",
+            "Data pruning"
+        ]
+    },
+    {
+        "q": "Projection pruning reduces I/O and memory usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the optimization with its Catalyst category:",
+        "type": "match",
+        "left": [
+            "Predicate pushdown",
+            "Join reordering",
+            "Broadcast selection"
+        ],
+        "right": [
+            "Rule-based",
+            "Cost-based",
+            "Cost-based"
+        ]
+    },
+    {
+        "q": "What is filter pushdown?",
+        "type": "mcq",
+        "o": [
+            "Apply filters as early as possible in query plan",
+            "Filter propagation",
+            "Push filters to output",
+            "Filter optimization"
+        ]
+    },
+    {
+        "q": "The _____ injects filters from dimension to fact tables in star schemas.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic partition pruning"
+        ],
+        "other_options": [
+            "filter injection",
+            "predicate injection",
+            "dynamic filter"
+        ]
+    },
+    {
+        "q": "What is subquery elimination?",
+        "type": "mcq",
+        "o": [
+            "Replace repeated subqueries with single evaluation",
+            "Remove subqueries",
+            "Subquery deletion",
+            "Query simplification"
+        ]
+    },
+    {
+        "q": "Common subexpression elimination avoids redundant computations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the physical plan operators:",
+        "type": "rearrange",
+        "words": [
+            "Scan",
+            "Filter",
+            "Project",
+            "Exchange",
+            "Aggregate"
+        ]
+    },
+    {
+        "q": "What does Exchange operator represent?",
+        "type": "mcq",
+        "o": [
+            "Shuffle operation between stages",
+            "Data exchange format",
+            "Value swap",
+            "Memory exchange"
+        ]
+    },
+    {
+        "q": "Match the physical operator with its function:",
+        "type": "match",
+        "left": [
+            "FileScan",
+            "Filter",
+            "BroadcastExchange",
+            "HashAggregate"
+        ],
+        "right": [
+            "Read files",
+            "Apply predicate",
+            "Broadcast data",
+            "Hash-based aggregation"
+        ]
+    },
+    {
+        "q": "WholeStageCodegen merges operators into single JVM function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ in explain output indicates codegen-enabled operators.",
+        "type": "fill_blank",
+        "answers": [
+            "*"
+        ],
+        "other_options": [
+            "+",
+            "#",
+            "@"
+        ]
+    },
+    {
+        "q": "What is columnar batch in Spark?",
+        "type": "mcq",
+        "o": [
+            "Process data in column-oriented batches for efficiency",
+            "Column storage",
+            "Batch column operations",
+            "Columnar database"
+        ]
+    },
+    {
+        "q": "Columnar processing improves CPU cache utilization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is vectorized reader in Spark?",
+        "type": "mcq",
+        "o": [
+            "Read Parquet data directly into columnar batches",
+            "Vector operations",
+            "SIMD reader",
+            "Batch reader"
+        ]
+    },
+    {
+        "q": "Match the optimization technique with its target:",
+        "type": "match",
+        "left": [
+            "Vectorized read",
+            "Codegen",
+            "Off-heap memory"
+        ],
+        "right": [
+            "I/O efficiency",
+            "CPU efficiency",
+            "Memory efficiency"
+        ]
+    },
+    {
+        "q": "The _____ property enables vectorized Parquet reader.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.parquet.enableVectorizedReader"
+        ],
+        "other_options": [
+            "spark.parquet.vectorized",
+            "spark.reader.vectorized",
+            "spark.vectorized.parquet"
+        ]
+    },
+    {
+        "q": "Rearrange the query execution optimization stack:",
+        "type": "rearrange",
+        "words": [
+            "SQL query",
+            "Catalyst optimization",
+            "Tungsten execution",
+            "Hardware execution"
+        ]
+    },
+    {
+        "q": "What is bloom filter join optimization?",
+        "type": "mcq",
+        "o": [
+            "Use bloom filter to prune non-matching rows before shuffle",
+            "Bloom filter merge",
+            "Filter-based join",
+            "Probabilistic join"
+        ]
+    },
+    {
+        "q": "Bloom filter reduces data transferred in shuffle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is runtime filtering in Spark?",
+        "type": "mcq",
+        "o": [
+            "Build filters from completed stages to prune later scans",
+            "Filter at runtime",
+            "Dynamic filter creation",
+            "Adaptive filtering"
+        ]
+    },
+    {
+        "q": "The _____ property enables bloom filter pushdown.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.optimizer.runtime.bloomFilter.enabled"
+        ],
+        "other_options": [
+            "spark.bloom.enabled",
+            "spark.filter.bloom",
+            "spark.sql.bloom"
+        ]
+    },
+    {
+        "q": "Match the join hint with its effect:",
+        "type": "match",
+        "left": [
+            "BROADCAST",
+            "MERGE",
+            "SHUFFLE_HASH",
+            "SHUFFLE_REPLICATE_NL"
+        ],
+        "right": [
+            "Broadcast small table",
+            "Sort-merge join",
+            "Hash join with shuffle",
+            "Nested loop"
+        ]
+    },
+    {
+        "q": "What is the purpose of join hints?",
+        "type": "mcq",
+        "o": [
+            "Override Spark's join strategy selection",
+            "Suggest join columns",
+            "Add join conditions",
+            "Optimize join order"
+        ]
+    },
+    {
+        "q": "Join hints take precedence over cost-based optimization decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hint?",
+        "type": "mcq",
+        "c": "df1.hint('broadcast').join(df2, 'key')",
+        "o": [
+            "Forces broadcast join with df1 as broadcast table",
+            "Regular shuffle join",
+            "Sort-merge join",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange join strategies by shuffle data transfer (least to most):",
+        "type": "rearrange",
+        "words": [
+            "Broadcast join",
+            "Bucketed join",
+            "Sort-merge join",
+            "Cartesian join"
+        ]
+    },
+    {
+        "q": "The _____ join is most expensive in terms of data transfer.",
+        "type": "fill_blank",
+        "answers": [
+            "Cartesian"
+        ],
+        "other_options": [
+            "Shuffle",
+            "Cross",
+            "Full"
+        ]
+    },
+    {
+        "q": "What is left semi join?",
+        "type": "mcq",
+        "o": [
+            "Returns left rows that have match in right without right columns",
+            "Half of left join",
+            "Partial left join",
+            "Semi-structured join"
+        ]
+    },
+    {
+        "q": "Left semi join is equivalent to IN or EXISTS subquery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is left anti join?",
+        "type": "mcq",
+        "o": [
+            "Returns left rows that have no match in right",
+            "Opposite of left join",
+            "Anti-pattern join",
+            "Negative join"
+        ]
+    },
+    {
+        "q": "Match the join type with its use case:",
+        "type": "match",
+        "left": [
+            "Left semi",
+            "Left anti",
+            "Cross",
+            "Natural"
+        ],
+        "right": [
+            "EXISTS check",
+            "NOT EXISTS check",
+            "All combinations",
+            "Join on same-name columns"
+        ]
+    },
+    {
+        "q": "The _____ function concatenates arrays from multiple rows.",
+        "type": "fill_blank",
+        "answers": [
+            "collect_list"
+        ],
+        "other_options": [
+            "array_concat",
+            "collect_array",
+            "aggregate_list"
+        ]
+    },
+    {
+        "q": "What does explode function do?",
+        "type": "mcq",
+        "o": [
+            "Converts array column into multiple rows",
+            "Expand data",
+            "Increase partitions",
+            "Scatter data"
+        ]
+    },
+    {
+        "q": "explode is the inverse of collect_list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the array operations:",
+        "type": "rearrange",
+        "words": [
+            "Create array",
+            "Filter elements",
+            "Transform elements",
+            "Aggregate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql.functions import array_contains\ndf.filter(array_contains('tags', 'spark'))",
+        "o": [
+            "Filters rows where tags array contains 'spark'",
+            "Error",
+            "Returns all rows",
+            "Creates new array"
+        ]
+    },
+    {
+        "q": "The _____ function applies transformation to each array element.",
+        "type": "fill_blank",
+        "answers": [
+            "transform"
+        ],
+        "other_options": [
+            "map_array",
+            "apply_array",
+            "array_map"
+        ]
+    },
+    {
+        "q": "What does struct function create?",
+        "type": "mcq",
+        "o": [
+            "Nested structure from multiple columns",
+            "Data structure",
+            "Table structure",
+            "Schema structure"
+        ]
+    },
+    {
+        "q": "Match the complex type with its access method:",
+        "type": "match",
+        "left": [
+            "Array",
+            "Map",
+            "Struct"
+        ],
+        "right": [
+            "element_at or []",
+            "getItem or []",
+            "dot notation"
+        ]
+    },
+    {
+        "q": "Nested structures can be accessed using dot notation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df.select('address.city')",
+        "o": [
+            "Selects city field from nested address struct",
+            "Error",
+            "Selects entire address",
+            "Creates new column"
+        ]
+    },
+    {
+        "q": "The _____ function creates a MapType column from key-value pairs.",
+        "type": "fill_blank",
+        "answers": [
+            "create_map"
+        ],
+        "other_options": [
+            "map",
+            "to_map",
+            "make_map"
+        ]
+    },
+    {
+        "q": "What does map_keys function return?",
+        "type": "mcq",
+        "o": [
+            "Array of all keys in the map",
+            "Key count",
+            "First key",
+            "Key types"
+        ]
+    },
+    {
+        "q": "Rearrange the map operations:",
+        "type": "rearrange",
+        "words": [
+            "Create map",
+            "Get value",
+            "Transform values",
+            "Explode to rows"
+        ]
+    },
+    {
+        "q": "What is schema merging in Parquet?",
+        "type": "mcq",
+        "o": [
+            "Combine schemas from multiple Parquet files",
+            "Merge data",
+            "Schema validation",
+            "Schema comparison"
+        ]
+    },
+    {
+        "q": "The _____ property enables Parquet schema merging.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.parquet.mergeSchema"
+        ],
+        "other_options": [
+            "spark.parquet.merge",
+            "spark.schema.merge",
+            "parquet.mergeSchema"
+        ]
+    },
+    {
+        "q": "Schema merging can slow down Parquet reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What are higher-order functions in Spark SQL?",
+        "type": "mcq",
+        "o": [
+            "Functions that take other functions as arguments",
+            "Advanced functions",
+            "Superior functions",
+            "Complex functions"
+        ]
+    },
+    {
+        "q": "Match the higher-order function with its purpose:",
+        "type": "match",
+        "left": [
+            "transform",
+            "filter",
+            "aggregate",
+            "exists"
+        ],
+        "right": [
+            "Map elements",
+            "Filter elements",
+            "Reduce to value",
+            "Check condition"
+        ]
+    },
+    {
+        "q": "The _____ higher-order function applies predicate to filter array.",
+        "type": "fill_blank",
+        "answers": [
+            "filter"
+        ],
+        "other_options": [
+            "where",
+            "select",
+            "remove"
+        ]
+    },
+    {
+        "q": "What is the output of this higher-order function?",
+        "type": "mcq",
+        "c": "df.selectExpr(\"transform(numbers, x -> x * 2)\")",
+        "o": [
+            "Doubles each element in numbers array",
+            "Error",
+            "Returns original array",
+            "Sums elements"
+        ]
+    },
+    {
+        "q": "Higher-order functions can be more efficient than explode/collect patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is forall function?",
+        "type": "mcq",
+        "o": [
+            "Check if all array elements satisfy condition",
+            "For each element",
+            "All elements",
+            "Universal quantifier"
+        ]
+    },
+    {
+        "q": "Rearrange the aggregate function parameters:",
+        "type": "rearrange",
+        "words": [
+            "Array",
+            "Initial value",
+            "Merge function",
+            "Finish function"
+        ]
+    },
+    {
+        "q": "What does zip_with function do?",
+        "type": "mcq",
+        "o": [
+            "Merge two arrays element-wise using a function",
+            "Compress arrays",
+            "Zip file creation",
+            "Array combination"
+        ]
+    },
+    {
+        "q": "The _____ function flattens nested arrays.",
+        "type": "fill_blank",
+        "answers": [
+            "flatten"
+        ],
+        "other_options": [
+            "unnest",
+            "flat",
+            "reduce"
+        ]
+    },
+    {
+        "q": "What is JSON schema inference in Spark?",
+        "type": "mcq",
+        "o": [
+            "Automatically detect JSON structure and types",
+            "JSON validation",
+            "Schema creation",
+            "Type checking"
+        ]
+    },
+    {
+        "q": "Match the JSON function with its output:",
+        "type": "match",
+        "left": [
+            "from_json",
+            "to_json",
+            "get_json_object",
+            "json_tuple"
+        ],
+        "right": [
+            "Parse to struct",
+            "Create JSON string",
+            "Extract by path",
+            "Extract multiple fields"
+        ]
+    },
+    {
+        "q": "The _____ function parses JSON string to struct column.",
+        "type": "fill_blank",
+        "answers": [
+            "from_json"
+        ],
+        "other_options": [
+            "parse_json",
+            "json_to_struct",
+            "json_parse"
+        ]
+    },
+    {
+        "q": "schema_of_json infers schema from sample JSON string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df.select(to_json(struct('name', 'age')))",
+        "o": [
+            "Creates JSON string from name and age columns",
+            "Parses JSON",
+            "Error",
+            "Returns struct"
+        ]
+    },
+    {
+        "q": "What is date trunc function?",
+        "type": "mcq",
+        "o": [
+            "Truncates date to specified precision like month or year",
+            "Date format",
+            "Date trim",
+            "Date round"
+        ]
+    },
+    {
+        "q": "Rearrange the date functions from most to least precision:",
+        "type": "rearrange",
+        "words": [
+            "second",
+            "minute",
+            "hour",
+            "day",
+            "month"
+        ]
+    },
+    {
+        "q": "The _____ function adds interval to date or timestamp.",
+        "type": "fill_blank",
+        "answers": [
+            "date_add"
+        ],
+        "other_options": [
+            "add_date",
+            "dateAdd",
+            "plus_date"
+        ]
+    },
+    {
+        "q": "What does months_between function return?",
+        "type": "mcq",
+        "o": [
+            "Number of months between two dates",
+            "Month difference",
+            "Date range",
+            "Month list"
+        ]
+    },
+    {
+        "q": "Match the date function with its output:",
+        "type": "match",
+        "left": [
+            "year",
+            "dayofweek",
+            "weekofyear",
+            "last_day"
+        ],
+        "right": [
+            "Year number",
+            "1-7 for Sun-Sat",
+            "Week number",
+            "Last day of month"
+        ]
+    },
+    {
+        "q": "unix_timestamp converts timestamp to seconds since epoch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "df.select(date_format('date', 'yyyy-MM'))",
+        "o": [
+            "Formats date as year-month string",
+            "Parses date string",
+            "Error",
+            "Returns date object"
+        ]
+    },
+    {
+        "q": "The _____ function generates sequence of dates.",
+        "type": "fill_blank",
+        "answers": [
+            "sequence"
+        ],
+        "other_options": [
+            "date_range",
+            "generate_dates",
+            "date_sequence"
+        ]
+    },
+    {
+        "q": "What are window aggregate functions?",
+        "type": "mcq",
+        "o": [
+            "Aggregate functions applied over window specification",
+            "Window management",
+            "Aggregation windows",
+            "Frame aggregates"
+        ]
+    },
+    {
+        "q": "Rearrange the window specification components:",
+        "type": "rearrange",
+        "words": [
+            "partitionBy",
+            "orderBy",
+            "rowsBetween or rangeBetween"
+        ]
+    },
+    {
+        "q": "What is the difference between rows and range frame?",
+        "type": "mcq",
+        "o": [
+            "Rows counts physical rows, range uses logical values",
+            "No difference",
+            "Rows is faster",
+            "Range is more accurate"
+        ]
+    },
+    {
+        "q": "Match the window bound with its meaning:",
+        "type": "match",
+        "left": [
+            "Window.unboundedPreceding",
+            "Window.currentRow",
+            "Window.unboundedFollowing"
+        ],
+        "right": [
+            "All preceding rows",
+            "Current row",
+            "All following rows"
+        ]
+    },
+    {
+        "q": "The _____ function calculates cumulative distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "cume_dist"
+        ],
+        "other_options": [
+            "cumulative",
+            "cum_distribution",
+            "cumDist"
+        ]
+    },
+    {
+        "q": "What does percent_rank return?",
+        "type": "mcq",
+        "o": [
+            "Relative rank as percentage from 0 to 1",
+            "Percentile",
+            "Rank percentage",
+            "Percent value"
+        ]
+    },
+    {
+        "q": "percent_rank of first row is always 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this window function?",
+        "type": "mcq",
+        "c": "df.withColumn('running_sum', sum('sales').over(Window.partitionBy('region').orderBy('date')))",
+        "o": [
+            "Calculates running sum of sales per region ordered by date",
+            "Total sum per region",
+            "Error",
+            "Sum of all sales"
+        ]
+    },
+    {
+        "q": "The _____ function returns first non-null value in window.",
+        "type": "fill_blank",
+        "answers": [
+            "first"
+        ],
+        "other_options": [
+            "coalesce",
+            "firstNonNull",
+            "firstValue"
+        ]
+    },
+    {
+        "q": "Rearrange the running average calculation steps:",
+        "type": "rearrange",
+        "words": [
+            "Define window",
+            "Order by date",
+            "Calculate sum",
+            "Divide by count"
+        ]
+    },
+    {
+        "q": "What is Spark application?",
+        "type": "mcq",
+        "o": [
+            "Self-contained computation with driver and executors",
+            "Spark installation",
+            "Single job",
+            "Query execution"
+        ]
+    },
+    {
+        "q": "One SparkSession can have multiple applications.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is job in Spark?",
+        "type": "mcq",
+        "o": [
+            "Parallel computation consisting of tasks spawned by an action",
+            "Work assignment",
+            "Task list",
+            "Execution unit"
+        ]
+    },
+    {
+        "q": "Match the concept with its granularity:",
+        "type": "match",
+        "left": [
+            "Application",
+            "Job",
+            "Stage",
+            "Task"
+        ],
+        "right": [
+            "Largest",
+            "Per action",
+            "Shuffle boundary",
+            "Smallest"
+        ]
+    },
+    {
+        "q": "The _____ is the smallest unit of work in Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "Task"
+        ],
+        "other_options": [
+            "Job",
+            "Stage",
+            "Operation"
+        ]
+    },
+    {
+        "q": "How many tasks per stage?",
+        "type": "mcq",
+        "o": [
+            "One task per partition",
+            "Fixed number",
+            "One task per executor",
+            "Variable based on data"
+        ]
+    },
+    {
+        "q": "All tasks in a stage execute the same code on different partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What triggers a stage boundary?",
+        "type": "mcq",
+        "o": [
+            "Wide transformation requiring shuffle",
+            "Any transformation",
+            "Action only",
+            "File read"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark cluster components:",
+        "type": "rearrange",
+        "words": [
+            "Cluster manager",
+            "Driver",
+            "Worker nodes",
+            "Executors"
+        ]
+    },
+    {
+        "q": "The _____ allocates resources to Spark applications.",
+        "type": "fill_blank",
+        "answers": [
+            "Cluster manager"
+        ],
+        "other_options": [
+            "Resource manager",
+            "Scheduler",
+            "Allocator"
+        ]
+    },
+    {
+        "q": "What does spark.executor.instances control?",
+        "type": "mcq",
+        "o": [
+            "Number of executors to launch",
+            "Executor ID",
+            "Instance type",
+            "Memory per instance"
+        ]
+    },
+    {
+        "q": "Match the resource setting with its impact:",
+        "type": "match",
+        "left": [
+            "executor.cores",
+            "executor.memory",
+            "executor.instances"
+        ],
+        "right": [
+            "Parallelism per executor",
+            "Memory per executor",
+            "Total executors"
+        ]
+    },
+    {
+        "q": "Executor cores times instances equals total parallelism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the recommended executor cores for YARN?",
+        "type": "mcq",
+        "o": [
+            "4-5 cores per executor for good parallelism without GC overhead",
+            "1 core",
+            "All available cores",
+            "8-10 cores"
+        ]
+    },
+    {
+        "q": "The _____ property reserves memory for user data structures.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.memory.fraction"
+        ],
+        "other_options": [
+            "spark.user.memory",
+            "spark.reserved.memory",
+            "spark.data.memory"
+        ]
+    },
+    {
+        "q": "Rearrange executor memory calculation:",
+        "type": "rearrange",
+        "words": [
+            "Total memory",
+            "Minus overhead",
+            "Minus reserved",
+            "Split execution/storage"
+        ]
+    },
+    {
+        "q": "What is memory overhead in executors?",
+        "type": "mcq",
+        "o": [
+            "Extra memory for JVM internals and off-heap storage",
+            "Unused memory",
+            "Cache overhead",
+            "Network buffer"
+        ]
+    },
+    {
+        "q": "spark.executor.memoryOverhead defaults to 10% of executor memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What causes GC pauses in Spark?",
+        "type": "mcq",
+        "o": [
+            "JVM garbage collection when memory pressure is high",
+            "Network issues",
+            "Disk I/O",
+            "CPU throttling"
+        ]
+    },
+    {
+        "q": "Match the GC tuning approach with its effect:",
+        "type": "match",
+        "left": [
+            "Increase memory",
+            "Reduce cached data",
+            "Use off-heap"
+        ],
+        "right": [
+            "Less GC frequency",
+            "Smaller heap",
+            "Avoid JVM GC"
+        ]
+    },
+    {
+        "q": "The _____ property configures garbage collector for Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.executor.extraJavaOptions"
+        ],
+        "other_options": [
+            "spark.gc.config",
+            "spark.jvm.gc",
+            "spark.memory.gc"
+        ]
+    },
+    {
+        "q": "G1GC is recommended for large heaps in Spark.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of spark.serializer?",
+        "type": "mcq",
+        "o": [
+            "Configure serialization for shuffles and caching",
+            "Data format",
+            "Output serializer",
+            "Network encoder"
+        ]
+    },
+    {
+        "q": "Rearrange the serializers by efficiency (best to worst):",
+        "type": "rearrange",
+        "words": [
+            "Kryo",
+            "Java",
+            "Pickle"
+        ]
+    },
+    {
+        "q": "The _____ serializer is more efficient than Java serialization.",
+        "type": "fill_blank",
+        "answers": [
+            "Kryo"
+        ],
+        "other_options": [
+            "Avro",
+            "Protobuf",
+            "Thrift"
+        ]
+    },
+    {
+        "q": "Kryo requires explicit class registration for best performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this configuration?",
+        "type": "mcq",
+        "c": "spark.conf.set('spark.serializer', 'org.apache.spark.serializer.KryoSerializer')",
+        "o": [
+            "Enables Kryo serialization for better shuffle performance",
+            "Disables serialization",
+            "Sets output format",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Spark property with its purpose:",
+        "type": "match",
+        "left": [
+            "spark.task.cpus",
+            "spark.task.maxFailures",
+            "spark.locality.wait"
+        ],
+        "right": [
+            "CPUs per task",
+            "Retries before failure",
+            "Wait for data locality"
+        ]
+    },
+    {
+        "q": "Increasing spark.locality.wait can improve data locality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is spark.scheduler.mode?",
+        "type": "mcq",
+        "o": [
+            "Set FIFO or FAIR scheduling between jobs",
+            "Task scheduling",
+            "Resource mode",
+            "Execution mode"
+        ]
+    },
+    {
+        "q": "The _____ scheduling mode shares resources among concurrent jobs.",
+        "type": "fill_blank",
+        "answers": [
+            "FAIR"
+        ],
+        "other_options": [
+            "ROUND_ROBIN",
+            "EQUAL",
+            "SHARED"
+        ]
+    },
+    {
+        "q": "Rearrange the fair scheduler configuration steps:",
+        "type": "rearrange",
+        "words": [
+            "Set mode to FAIR",
+            "Create pools XML",
+            "Assign jobs to pools"
+        ]
+    },
+    {
+        "q": "What is the purpose of scheduler pools?",
+        "type": "mcq",
+        "o": [
+            "Group jobs with specific resource allocations",
+            "Thread pools",
+            "Connection pools",
+            "Memory pools"
+        ]
+    },
+    {
+        "q": "Scheduler pools allow priority-based job scheduling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is blacklisting in Spark?",
+        "type": "mcq",
+        "o": [
+            "Temporarily exclude nodes or executors that fail repeatedly",
+            "Block list",
+            "Deny list",
+            "Exclusion feature"
+        ]
+    },
+    {
+        "q": "Match the blacklist setting with its scope:",
+        "type": "match",
+        "left": [
+            "spark.blacklist.task.maxTaskAttemptsPerNode",
+            "spark.blacklist.stage.maxFailedTasksPerExecutor"
+        ],
+        "right": [
+            "Node-level blacklist",
+            "Executor-level blacklist"
+        ]
+    },
+    {
+        "q": "The _____ enables automatic blacklisting of failing executors.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.blacklist.enabled"
+        ],
+        "other_options": [
+            "spark.executor.blacklist",
+            "spark.failed.blacklist",
+            "spark.auto.blacklist"
+        ]
+    },
+    {
+        "q": "Blacklisting helps in heterogeneous cluster environments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is barrier execution mode?",
+        "type": "mcq",
+        "o": [
+            "Synchronize all tasks at barrier points for distributed ML",
+            "Execution barrier",
+            "Resource barrier",
+            "Memory barrier"
+        ]
+    },
+    {
+        "q": "Barrier mode is useful for distributed deep learning training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ method creates barrier RDD in PySpark.",
+        "type": "fill_blank",
+        "answers": [
+            "barrier"
+        ],
+        "other_options": [
+            "sync",
+            "coordinate",
+            "wait"
+        ]
+    },
+    {
+        "q": "Match the ML framework with its Spark integration:",
+        "type": "match",
+        "left": [
+            "TensorFlow",
+            "PyTorch",
+            "XGBoost",
+            "Horovod"
+        ],
+        "right": [
+            "TensorFlowOnSpark",
+            "PyTorch-Lightning",
+            "XGBoost4J-Spark",
+            "Horovod-Spark"
+        ]
+    },
+    {
+        "q": "Rearrange the distributed training workflow:",
+        "type": "rearrange",
+        "words": [
+            "Partition data",
+            "Start workers",
+            "Synchronize gradients",
+            "Update model"
+        ]
+    },
+    {
+        "q": "What is spark-submit priority order for configurations?",
+        "type": "mcq",
+        "o": [
+            "Code > spark-submit > spark-defaults.conf > environment",
+            "Code only",
+            "Command line first",
+            "Config file first"
+        ]
+    },
+    {
+        "q": "The _____ file contains default Spark configurations.",
+        "type": "fill_blank",
+        "answers": [
+            "spark-defaults.conf"
+        ],
+        "other_options": [
+            "spark.conf",
+            "defaults.conf",
+            "spark-config.properties"
+        ]
+    },
+    {
+        "q": "spark.driver.extraClassPath adds JARs to driver classpath.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of spark-submit --packages?",
+        "type": "mcq",
+        "o": [
+            "Download and add Maven packages to application",
+            "Package application",
+            "List packages",
+            "Install packages globally"
+        ]
+    },
+    {
+        "q": "Match the spark-submit option with its function:",
+        "type": "match",
+        "left": [
+            "--jars",
+            "--files",
+            "--py-files",
+            "--conf"
+        ],
+        "right": [
+            "Additional JARs",
+            "Data files",
+            "Python dependencies",
+            "Configuration"
+        ]
+    },
+    {
+        "q": "What is spark.jars.packages for?",
+        "type": "mcq",
+        "o": [
+            "Specify Maven coordinates for dependencies",
+            "Package JARs",
+            "List installed packages",
+            "Package configuration"
+        ]
+    },
+    {
+        "q": "Maven coordinates follow groupId:artifactId:version format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ repository is used by default for --packages.",
+        "type": "fill_blank",
+        "answers": [
+            "Maven Central"
+        ],
+        "other_options": [
+            "JCenter",
+            "Spark repo",
+            "Apache repo"
+        ]
+    },
+    {
+        "q": "What is uber JAR or fat JAR?",
+        "type": "mcq",
+        "o": [
+            "JAR containing application code and all dependencies",
+            "Large JAR file",
+            "System JAR",
+            "Framework JAR"
+        ]
+    },
+    {
+        "q": "Match the build tool with its Spark plugin:",
+        "type": "match",
+        "left": [
+            "Maven",
+            "sbt",
+            "Gradle"
+        ],
+        "right": [
+            "shade plugin",
+            "assembly plugin",
+            "shadow plugin"
+        ]
+    },
+    {
+        "q": "Rearrange the application packaging steps:",
+        "type": "rearrange",
+        "words": [
+            "Write code",
+            "Add dependencies",
+            "Package JAR",
+            "Submit to cluster"
+        ]
+    },
+    {
+        "q": "What is provided scope for Spark dependencies?",
+        "type": "mcq",
+        "o": [
+            "Dependencies available in cluster, not packaged in JAR",
+            "Provider pattern",
+            "External dependencies",
+            "Optional dependencies"
+        ]
+    },
+    {
+        "q": "The _____ prevents dependency conflicts in uber JARs.",
+        "type": "fill_blank",
+        "answers": [
+            "shading"
+        ],
+        "other_options": [
+            "exclusion",
+            "isolation",
+            "separation"
+        ]
+    },
+    {
+        "q": "Shading relocates classes to avoid version conflicts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Spark on YARN client mode?",
+        "type": "mcq",
+        "o": [
+            "Driver runs on client machine, executors in YARN cluster",
+            "Full client deployment",
+            "Local mode",
+            "Interactive mode"
+        ]
+    },
+    {
+        "q": "Match the YARN mode with its use case:",
+        "type": "match",
+        "left": [
+            "client mode",
+            "cluster mode"
+        ],
+        "right": [
+            "Interactive development",
+            "Production batch jobs"
+        ]
+    },
+    {
+        "q": "In cluster mode, driver runs in YARN ApplicationMaster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ parameter sets YARN queue for Spark application.",
+        "type": "fill_blank",
+        "answers": [
+            "--queue"
+        ],
+        "other_options": [
+            "--yarn-queue",
+            "--resource-queue",
+            "--pool"
+        ]
+    },
+    {
+        "q": "What is spark.yarn.executor.memoryOverhead?",
+        "type": "mcq",
+        "o": [
+            "Additional memory for YARN container overhead",
+            "Extra executor memory",
+            "Memory padding",
+            "Overhead calculation"
+        ]
+    },
+    {
+        "q": "Rearrange YARN resource allocation hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Cluster resources",
+            "Queue allocation",
+            "Application allocation",
+            "Container allocation"
+        ]
+    },
+    {
+        "q": "What is YARN container?",
+        "type": "mcq",
+        "o": [
+            "Isolated execution environment with allocated resources",
+            "Docker container",
+            "Data container",
+            "Storage container"
+        ]
+    },
+    {
+        "q": "Each Spark executor runs in a separate YARN container.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ controls maximum memory per YARN container.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.scheduler.maximum-allocation-mb"
+        ],
+        "other_options": [
+            "yarn.container.max-memory",
+            "yarn.max.memory",
+            "yarn.memory.limit"
+        ]
+    },
+    {
+        "q": "What is Spark on Mesos fine-grained mode?",
+        "type": "mcq",
+        "o": [
+            "Each task gets individual resource allocation",
+            "Fine file processing",
+            "Detailed logging",
+            "Precise scheduling"
+        ]
+    },
+    {
+        "q": "Mesos coarse-grained mode pre-allocates resources like YARN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cluster manager with its authentication method:",
+        "type": "match",
+        "left": [
+            "Standalone",
+            "YARN",
+            "Kubernetes"
+        ],
+        "right": [
+            "Shared secret",
+            "Kerberos",
+            "RBAC"
+        ]
+    },
+    {
+        "q": "What is Kerberos authentication in Spark?",
+        "type": "mcq",
+        "o": [
+            "Ticket-based authentication for secure Hadoop clusters",
+            "Key-based auth",
+            "Password auth",
+            "Token auth"
+        ]
+    },
+    {
+        "q": "The _____ contains Kerberos credentials for Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "keytab"
+        ],
+        "other_options": [
+            "keystore",
+            "credential",
+            "token"
+        ]
+    },
+    {
+        "q": "Rearrange the Kerberos authentication flow:",
+        "type": "rearrange",
+        "words": [
+            "Kinit or keytab",
+            "Get TGT",
+            "Request service ticket",
+            "Access service"
+        ]
+    },
+    {
+        "q": "What is spark.authenticate for?",
+        "type": "mcq",
+        "o": [
+            "Enable internal Spark authentication between components",
+            "User authentication",
+            "API authentication",
+            "Database authentication"
+        ]
+    },
+    {
+        "q": "spark.authenticate.secret sets shared secret for authentication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SSL encryption in Spark?",
+        "type": "mcq",
+        "o": [
+            "Encrypt communication between Spark components",
+            "Data encryption",
+            "Disk encryption",
+            "Log encryption"
+        ]
+    },
+    {
+        "q": "Match the SSL property with its purpose:",
+        "type": "match",
+        "left": [
+            "spark.ssl.enabled",
+            "spark.ssl.keyStore",
+            "spark.ssl.trustStore"
+        ],
+        "right": [
+            "Enable SSL",
+            "Certificate storage",
+            "Trusted certificates"
+        ]
+    },
+    {
+        "q": "The _____ setting encrypts Spark shuffle data.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.network.crypto.enabled"
+        ],
+        "other_options": [
+            "spark.shuffle.encrypt",
+            "spark.crypto.shuffle",
+            "spark.encrypt.network"
+        ]
+    },
+    {
+        "q": "SASL authentication is used for shuffle file fetch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is credential provider in Spark?",
+        "type": "mcq",
+        "o": [
+            "Secure storage for sensitive configuration values",
+            "Authentication provider",
+            "Identity provider",
+            "Token provider"
+        ]
+    },
+    {
+        "q": "Rearrange the security layers from application to network:",
+        "type": "rearrange",
+        "words": [
+            "Application ACL",
+            "Authentication",
+            "Authorization",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "What is spark.acls.enable?",
+        "type": "mcq",
+        "o": [
+            "Enable access control lists for Spark UI and jobs",
+            "Accept connections",
+            "Allow clusters",
+            "Audit control"
+        ]
+    },
+    {
+        "q": "The _____ property specifies users who can view Spark UI.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.ui.view.acls"
+        ],
+        "other_options": [
+            "spark.acls.view",
+            "spark.ui.users",
+            "spark.view.access"
+        ]
+    },
+    {
+        "q": "Admin users can view and modify all applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is structured logging in Spark?",
+        "type": "mcq",
+        "o": [
+            "JSON-formatted logs for easier parsing and analysis",
+            "Organized logs",
+            "Categorized logs",
+            "Formatted text logs"
+        ]
+    },
+    {
+        "q": "Match the log component with its information:",
+        "type": "match",
+        "left": [
+            "Driver logs",
+            "Executor logs",
+            "Event logs"
+        ],
+        "right": [
+            "Application logic",
+            "Task execution",
+            "Job/stage history"
+        ]
+    },
+    {
+        "q": "The _____ aggregates executor logs in YARN.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.log-aggregation-enable"
+        ],
+        "other_options": [
+            "yarn.logs.aggregate",
+            "yarn.collect-logs",
+            "yarn.log.collection"
+        ]
+    },
+    {
+        "q": "Log aggregation enables viewing logs after application completion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is yarn logs command?",
+        "type": "mcq",
+        "o": [
+            "Retrieve aggregated logs for YARN application",
+            "Write logs",
+            "Configure logging",
+            "Clear logs"
+        ]
+    },
+    {
+        "q": "Rearrange the debugging workflow:",
+        "type": "rearrange",
+        "words": [
+            "Check application status",
+            "View Spark UI",
+            "Examine logs",
+            "Identify root cause"
+        ]
+    },
+    {
+        "q": "What is the purpose of executor logs?",
+        "type": "mcq",
+        "o": [
+            "Debug task execution issues and exceptions",
+            "Track executor count",
+            "Monitor memory",
+            "Log network traffic"
+        ]
+    },
+    {
+        "q": "The _____ environment variable sets log level for executors.",
+        "type": "fill_blank",
+        "answers": [
+            "SPARK_EXECUTOR_LOGS_LEVEL"
+        ],
+        "other_options": [
+            "EXECUTOR_LOG_LEVEL",
+            "SPARK_LOG_LEVEL",
+            "LOG_LEVEL"
+        ]
+    },
+    {
+        "q": "Custom log4j configuration can be passed via spark-submit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is metric system in Spark?",
+        "type": "mcq",
+        "o": [
+            "Framework for collecting and reporting performance metrics",
+            "Unit system",
+            "Measurement tools",
+            "Statistics collector"
+        ]
+    },
+    {
+        "q": "Match the metric sink with its destination:",
+        "type": "match",
+        "left": [
+            "ConsoleSink",
+            "CSVSink",
+            "JmxSink",
+            "GraphiteSink"
+        ],
+        "right": [
+            "Standard output",
+            "File output",
+            "JMX beans",
+            "Graphite server"
+        ]
+    },
+    {
+        "q": "The _____ directory contains metric system configuration.",
+        "type": "fill_blank",
+        "answers": [
+            "conf/metrics.properties"
+        ],
+        "other_options": [
+            "conf/spark.properties",
+            "conf/monitoring.conf",
+            "metrics/config.properties"
+        ]
+    },
+    {
+        "q": "Prometheus can scrape Spark metrics via PrometheusServlet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the monitoring stack components:",
+        "type": "rearrange",
+        "words": [
+            "Spark metrics",
+            "Prometheus scraping",
+            "Grafana dashboard",
+            "Alert manager"
+        ]
+    },
+    {
+        "q": "What is REST API in Spark?",
+        "type": "mcq",
+        "o": [
+            "HTTP interface for querying application status",
+            "Resource API",
+            "Data API",
+            "Remote API"
+        ]
+    },
+    {
+        "q": "Spark REST API returns JSON formatted responses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ endpoint returns all applications on cluster.",
+        "type": "fill_blank",
+        "answers": [
+            "/api/v1/applications"
+        ],
+        "other_options": [
+            "/v1/apps",
+            "/api/apps",
+            "/applications"
+        ]
+    },
+    {
+        "q": "What is the output of this API call?",
+        "type": "mcq",
+        "c": "GET /api/v1/applications/{appId}/jobs",
+        "o": [
+            "List of all jobs in the application",
+            "Application details",
+            "Job configurations",
+            "Running tasks"
+        ]
+    },
+    {
+        "q": "Match the REST endpoint with its information:",
+        "type": "match",
+        "left": [
+            "/jobs",
+            "/stages",
+            "/executors",
+            "/storage/rdd"
+        ],
+        "right": [
+            "Job list",
+            "Stage details",
+            "Executor metrics",
+            "Cached RDDs"
+        ]
+    },
+    {
+        "q": "What is profiling in Spark?",
+        "type": "mcq",
+        "o": [
+            "Analyzing application performance at code level",
+            "User profiling",
+            "Data profiling",
+            "Configuration profiling"
+        ]
+    },
+    {
+        "q": "The _____ profiler is commonly used for JVM profiling.",
+        "type": "fill_blank",
+        "answers": [
+            "async-profiler"
+        ],
+        "other_options": [
+            "JProfiler",
+            "YourKit",
+            "VisualVM"
+        ]
+    },
+    {
+        "q": "Flame graphs visualize CPU usage by call stack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the profiling workflow:",
+        "type": "rearrange",
+        "words": [
+            "Enable profiler",
+            "Run workload",
+            "Collect samples",
+            "Generate report"
+        ]
+    },
+    {
+        "q": "What is the purpose of spark.executor.extraJavaOptions?",
+        "type": "mcq",
+        "o": [
+            "Pass additional JVM arguments to executors",
+            "Extra configuration",
+            "Additional memory",
+            "More cores"
+        ]
+    },
+    {
+        "q": "JVM heap dump can help diagnose memory issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ JVM flag enables heap dump on OOM.",
+        "type": "fill_blank",
+        "answers": [
+            "-XX:+HeapDumpOnOutOfMemoryError"
+        ],
+        "other_options": [
+            "-XX:HeapDump",
+            "-XX:DumpOnOOM",
+            "-XX:MemoryDump"
+        ]
+    },
+    {
+        "q": "What is memory leak detection?",
+        "type": "mcq",
+        "o": [
+            "Finding objects not freed that accumulate over time",
+            "Memory testing",
+            "Leak prevention",
+            "Memory monitoring"
+        ]
+    },
+    {
+        "q": "Match the memory issue with its symptom:",
+        "type": "match",
+        "left": [
+            "Memory leak",
+            "GC thrashing",
+            "Data skew OOM"
+        ],
+        "right": [
+            "Gradual memory growth",
+            "High GC time percentage",
+            "Single task OOM"
+        ]
+    },
+    {
+        "q": "executor.memoryOverhead should include off-heap memory usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of spark.executor.instances vs dynamic allocation?",
+        "type": "mcq",
+        "o": [
+            "Static allocation requires fixed count while dynamic adjusts",
+            "Same purpose",
+            "Static is for testing",
+            "Dynamic is deprecated"
+        ]
+    },
+    {
+        "q": "Rearrange the capacity planning factors:",
+        "type": "rearrange",
+        "words": [
+            "Data volume",
+            "Computation complexity",
+            "Concurrency",
+            "SLA requirements"
+        ]
+    },
+    {
+        "q": "The _____ should be set higher for concurrent queries.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.sql.shuffle.partitions"
+        ],
+        "other_options": [
+            "spark.parallelism",
+            "spark.concurrent.partitions",
+            "spark.query.partitions"
+        ]
+    },
+    {
+        "q": "What is cluster sizing strategy?",
+        "type": "mcq",
+        "o": [
+            "Determining optimal resources for workload requirements",
+            "Cluster expansion",
+            "Node counting",
+            "Resource calculation"
+        ]
+    },
+    {
+        "q": "Match the workload type with its resource priority:",
+        "type": "match",
+        "left": [
+            "ETL batch",
+            "Interactive queries",
+            "ML training",
+            "Streaming"
+        ],
+        "right": [
+            "Throughput",
+            "Latency",
+            "GPU/memory",
+            "Sustained capacity"
+        ]
+    },
+    {
+        "q": "Memory-intensive workloads need higher executor memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is auto-scaling in cloud Spark deployments?",
+        "type": "mcq",
+        "o": [
+            "Automatically adjust cluster size based on workload",
+            "Automatic configuration",
+            "Self-tuning",
+            "Dynamic allocation"
+        ]
+    },
+    {
+        "q": "The _____ manages auto-scaling in Databricks.",
+        "type": "fill_blank",
+        "answers": [
+            "autoscaling"
+        ],
+        "other_options": [
+            "cluster-resize",
+            "dynamic-scale",
+            "auto-executor"
+        ]
+    },
+    {
+        "q": "Rearrange the auto-scaling triggers:",
+        "type": "rearrange",
+        "words": [
+            "Queue depth increases",
+            "Add workers",
+            "Process backlog",
+            "Scale down when idle"
+        ]
+    },
+    {
+        "q": "What is spot instances in cloud Spark?",
+        "type": "mcq",
+        "o": [
+            "Discounted instances that can be reclaimed by provider",
+            "Instant provisioning",
+            "Reserved instances",
+            "On-demand instances"
+        ]
+    },
+    {
+        "q": "Spot instances reduce costs but require graceful task handling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cloud provider with its managed Spark service:",
+        "type": "match",
+        "left": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "Databricks"
+        ],
+        "right": [
+            "EMR",
+            "HDInsight/Synapse",
+            "Dataproc",
+            "Multi-cloud"
+        ]
+    },
+    {
+        "q": "The _____ provides managed Spark with Delta Lake.",
+        "type": "fill_blank",
+        "answers": [
+            "Databricks"
+        ],
+        "other_options": [
+            "AWS",
+            "GCP",
+            "Azure"
+        ]
+    },
+    {
+        "q": "What is data lake architecture?",
+        "type": "mcq",
+        "o": [
+            "Central repository for structured and unstructured data at scale",
+            "Lake storage",
+            "Data warehouse",
+            "Database cluster"
+        ]
+    },
+    {
+        "q": "Rearrange the data lake zones:",
+        "type": "rearrange",
+        "words": [
+            "Raw/Bronze",
+            "Cleansed/Silver",
+            "Curated/Gold",
+            "Analytics"
+        ]
+    },
+    {
+        "q": "Delta Lake adds ACID transactions to data lakes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is lakehouse architecture?",
+        "type": "mcq",
+        "o": [
+            "Combines data lake flexibility with data warehouse performance",
+            "Lake and house combined",
+            "Storage architecture",
+            "Database design"
+        ]
+    },
+    {
+        "q": "Match the lakehouse feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Open formats",
+            "ACID transactions",
+            "Schema enforcement",
+            "BI integration"
+        ],
+        "right": [
+            "No vendor lock-in",
+            "Data consistency",
+            "Data quality",
+            "Analytics support"
+        ]
+    },
+    {
+        "q": "The _____ table format is used in modern lakehouses.",
+        "type": "fill_blank",
+        "answers": [
+            "Delta"
+        ],
+        "other_options": [
+            "Parquet",
+            "ORC",
+            "Avro"
+        ]
+    },
+    {
+        "q": "What is Apache Iceberg?",
+        "type": "mcq",
+        "o": [
+            "Open table format for large analytic datasets",
+            "Cold storage",
+            "Iceberg visualization",
+            "Data freezing"
+        ]
+    },
+    {
+        "q": "Iceberg, Delta, and Hudi are competing table formats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the table format features:",
+        "type": "rearrange",
+        "words": [
+            "Schema evolution",
+            "Partition evolution",
+            "Time travel",
+            "Merge on read"
+        ]
+    },
+    {
+        "q": "What is schema evolution in table formats?",
+        "type": "mcq",
+        "o": [
+            "Safely add, rename, or drop columns without rewriting data",
+            "Schema change",
+            "Data migration",
+            "Column update"
+        ]
+    },
+    {
+        "q": "The _____ performs update, delete, and merge operations efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "Delta Lake"
+        ],
+        "other_options": [
+            "Parquet",
+            "Spark SQL",
+            "Hive"
+        ]
+    },
+    {
+        "q": "What is copy-on-write vs merge-on-read?",
+        "type": "mcq",
+        "o": [
+            "Write vs read time trade-off for handling updates",
+            "Copy methods",
+            "Read strategies",
+            "Write patterns"
+        ]
+    },
+    {
+        "q": "Match the update strategy with its characteristic:",
+        "type": "match",
+        "left": [
+            "Copy-on-write",
+            "Merge-on-read"
+        ],
+        "right": [
+            "Faster reads, slower writes",
+            "Faster writes, slower reads"
+        ]
+    },
+    {
+        "q": "Copy-on-write rewrites entire files on updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is compaction in table formats?",
+        "type": "mcq",
+        "o": [
+            "Consolidate small files into larger ones for efficiency",
+            "Data compression",
+            "File deletion",
+            "Storage optimization"
+        ]
+    },
+    {
+        "q": "The _____ command removes old unreferenced files.",
+        "type": "fill_blank",
+        "answers": [
+            "VACUUM"
+        ],
+        "other_options": [
+            "CLEAN",
+            "PURGE",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "Rearrange the table maintenance tasks:",
+        "type": "rearrange",
+        "words": [
+            "Compact small files",
+            "Vacuum old files",
+            "Optimize layout",
+            "Update statistics"
+        ]
+    },
+    {
+        "q": "What is data versioning in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Track and access historical versions of data",
+            "Version control",
+            "Data backup",
+            "Change tracking"
+        ]
+    },
+    {
+        "q": "Match the time travel syntax with its meaning:",
+        "type": "match",
+        "left": [
+            "VERSION AS OF 5",
+            "TIMESTAMP AS OF '2023-01-01'"
+        ],
+        "right": [
+            "Query version 5",
+            "Query at specific timestamp"
+        ]
+    },
+    {
+        "q": "Delta Lake transaction log records all changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of DESCRIBE HISTORY?",
+        "type": "mcq",
+        "o": [
+            "View commit history of Delta table",
+            "Describe table schema",
+            "Show table statistics",
+            "List partitions"
+        ]
+    },
+    {
+        "q": "The _____ enables restoring Delta table to previous version.",
+        "type": "fill_blank",
+        "answers": [
+            "RESTORE"
+        ],
+        "other_options": [
+            "ROLLBACK",
+            "REVERT",
+            "UNDO"
+        ]
+    },
+    {
+        "q": "What is Change Data Capture (CDC) in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Track row-level changes for incremental processing",
+            "Data capture system",
+            "Change detection",
+            "Data migration"
+        ]
+    },
+    {
+        "q": "Enable Change Data Feed captures insert, update, and delete operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ column indicates operation type in CDF output.",
+        "type": "fill_blank",
+        "answers": [
+            "_change_type"
+        ],
+        "other_options": [
+            "_operation",
+            "_action",
+            "_op_type"
+        ]
+    },
+    {
+        "q": "Match the CDF change type with its meaning:",
+        "type": "match",
+        "left": [
+            "insert",
+            "update_preimage",
+            "update_postimage",
+            "delete"
+        ],
+        "right": [
+            "New row",
+            "Before update",
+            "After update",
+            "Removed row"
+        ]
+    },
+    {
+        "q": "What is liquid clustering in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Automatic data layout optimization without explicit partitioning",
+            "Cluster management",
+            "Memory clustering",
+            "Node grouping"
+        ]
+    },
+    {
+        "q": "Rearrange the Delta optimization commands:",
+        "type": "rearrange",
+        "words": [
+            "OPTIMIZE",
+            "VACUUM",
+            "ANALYZE TABLE",
+            "REORG TABLE"
+        ]
+    },
+    {
+        "q": "What is deletion vectors in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Soft deletes using bitmaps instead of rewriting files",
+            "Delete commands",
+            "Vector deletion",
+            "Data removal vectors"
+        ]
+    },
+    {
+        "q": "Deletion vectors improve delete performance for large tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ feature enables faster reads with deletion vectors.",
+        "type": "fill_blank",
+        "answers": [
+            "row tracking"
+        ],
+        "other_options": [
+            "deletion tracking",
+            "read optimization",
+            "vector reads"
+        ]
+    },
+    {
+        "q": "What is row tracking in Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Assign stable identifiers to rows for efficient operations",
+            "Row counting",
+            "Audit trail",
+            "Data lineage"
+        ]
+    },
+    {
+        "q": "Match the Delta feature with its requirement:",
+        "type": "match",
+        "left": [
+            "Time travel",
+            "CDF",
+            "Liquid clustering"
+        ],
+        "right": [
+            "Transaction log",
+            "Change data feed enabled",
+            "Cluster by columns"
+        ]
+    },
+    {
+        "q": "What is Photon in Databricks?",
+        "type": "mcq",
+        "o": [
+            "Native vectorized query engine for faster execution",
+            "Light-based processing",
+            "Photo analysis",
+            "Display engine"
+        ]
+    },
+    {
+        "q": "Photon provides C++ based execution for Spark SQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ enables Photon execution in Databricks.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.databricks.photon.enabled"
+        ],
+        "other_options": [
+            "spark.photon.enable",
+            "photon.enabled",
+            "spark.use.photon"
+        ]
+    },
+    {
+        "q": "What is Unity Catalog in Databricks?",
+        "type": "mcq",
+        "o": [
+            "Unified governance solution for data and AI assets",
+            "Data catalog",
+            "Asset directory",
+            "Metadata store"
+        ]
+    },
+    {
+        "q": "Rearrange the Unity Catalog hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Metastore",
+            "Catalog",
+            "Schema",
+            "Table"
+        ]
+    },
+    {
+        "q": "What is data lineage in Unity Catalog?",
+        "type": "mcq",
+        "o": [
+            "Track data flow from source to consumption",
+            "Data history",
+            "Lineage graph",
+            "Data ancestry"
+        ]
+    },
+    {
+        "q": "Match the Unity Catalog feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Fine-grained ACLs",
+            "Audit logs",
+            "Lineage",
+            "Data sharing"
+        ],
+        "right": [
+            "Access control",
+            "Compliance tracking",
+            "Impact analysis",
+            "External sharing"
+        ]
+    },
+    {
+        "q": "The _____ enables secure data sharing outside organization.",
+        "type": "fill_blank",
+        "answers": [
+            "Delta Sharing"
+        ],
+        "other_options": [
+            "Data Share",
+            "Secure Share",
+            "External Share"
+        ]
+    },
+    {
+        "q": "What is Delta Sharing?",
+        "type": "mcq",
+        "o": [
+            "Open protocol for secure data sharing across platforms",
+            "File sharing",
+            "Delta sync",
+            "Data replication"
+        ]
+    },
+    {
+        "q": "Delta Sharing works with any client that supports the protocol.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is serverless compute in Databricks?",
+        "type": "mcq",
+        "o": [
+            "On-demand compute without cluster management",
+            "No server needed",
+            "Cloud-free computing",
+            "Local execution"
+        ]
+    },
+    {
+        "q": "Rearrange the data engineering workflow:",
+        "type": "rearrange",
+        "words": [
+            "Ingest raw data",
+            "Clean and transform",
+            "Aggregate",
+            "Serve analytics"
+        ]
+    },
+    {
+        "q": "The _____ provides orchestration for data pipelines.",
+        "type": "fill_blank",
+        "answers": [
+            "Delta Live Tables"
+        ],
+        "other_options": [
+            "Workflow",
+            "Pipeline",
+            "Orchestrator"
+        ]
+    },
+    {
+        "q": "What is Delta Live Tables?",
+        "type": "mcq",
+        "o": [
+            "Declarative ETL framework with automatic data quality",
+            "Live data updates",
+            "Real-time tables",
+            "Streaming tables"
+        ]
+    },
+    {
+        "q": "Delta Live Tables supports both batch and streaming pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the DLT table type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Live table",
+            "Streaming live table",
+            "Materialized view"
+        ],
+        "right": [
+            "Batch processing",
+            "Continuous ingestion",
+            "Pre-computed results"
+        ]
+    },
+    {
+        "q": "What is expectations in Delta Live Tables?",
+        "type": "mcq",
+        "o": [
+            "Data quality rules that validate data during pipeline execution",
+            "Expected results",
+            "Test expectations",
+            "Output validation"
+        ]
+    },
+    {
+        "q": "The _____ action drops invalid rows in DLT expectations.",
+        "type": "fill_blank",
+        "answers": [
+            "warn"
+        ],
+        "other_options": [
+            "fail",
+            "skip",
+            "ignore"
+        ]
+    }
+]

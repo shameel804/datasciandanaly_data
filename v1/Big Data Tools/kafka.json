@@ -1,0 +1,6259 @@
+[
+    {
+        "q": "What is Apache Kafka?",
+        "type": "mcq",
+        "o": [
+            "Distributed event streaming platform",
+            "Database system",
+            "Message queue only",
+            "File storage"
+        ]
+    },
+    {
+        "q": "Kafka was originally developed at LinkedIn.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Kafka topic?",
+        "type": "mcq",
+        "o": [
+            "Category or feed name to which records are published",
+            "Discussion forum",
+            "Subject line",
+            "Message type"
+        ]
+    },
+    {
+        "q": "The _____ is the unit of data in Kafka.",
+        "type": "fill_blank",
+        "answers": [
+            "record"
+        ],
+        "other_options": [
+            "message",
+            "event",
+            "data"
+        ]
+    },
+    {
+        "q": "Match the Kafka concept with its description:",
+        "type": "match",
+        "left": [
+            "Topic",
+            "Partition",
+            "Broker",
+            "Producer"
+        ],
+        "right": [
+            "Message category",
+            "Topic subdivision",
+            "Kafka server",
+            "Message sender"
+        ]
+    },
+    {
+        "q": "What is a partition in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Ordered, immutable sequence of records in a topic",
+            "Data division",
+            "Storage unit",
+            "Topic split"
+        ]
+    },
+    {
+        "q": "Partitions enable parallel processing of topics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Kafka components:",
+        "type": "rearrange",
+        "words": [
+            "Producer",
+            "Broker",
+            "Topic",
+            "Consumer"
+        ]
+    },
+    {
+        "q": "What is a Kafka broker?",
+        "type": "mcq",
+        "o": [
+            "Server that stores and serves messages",
+            "Middleman",
+            "Connection manager",
+            "Load balancer"
+        ]
+    },
+    {
+        "q": "The _____ sends messages to Kafka topics.",
+        "type": "fill_blank",
+        "answers": [
+            "producer"
+        ],
+        "other_options": [
+            "sender",
+            "publisher",
+            "writer"
+        ]
+    },
+    {
+        "q": "What is a Kafka consumer?",
+        "type": "mcq",
+        "o": [
+            "Application that reads messages from topics",
+            "Data user",
+            "Message receiver",
+            "Subscriber"
+        ]
+    },
+    {
+        "q": "Consumers read messages in the order they were written within a partition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is an offset in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Unique sequential ID for each record within a partition",
+            "Time offset",
+            "Position marker",
+            "Index number"
+        ]
+    },
+    {
+        "q": "Match the component with its role:",
+        "type": "match",
+        "left": [
+            "Offset",
+            "Consumer group",
+            "Replica",
+            "Leader"
+        ],
+        "right": [
+            "Record position",
+            "Consumers sharing load",
+            "Data copy",
+            "Active partition"
+        ]
+    },
+    {
+        "q": "The _____ is a group of consumers working together.",
+        "type": "fill_blank",
+        "answers": [
+            "consumer group"
+        ],
+        "other_options": [
+            "consumer cluster",
+            "consumer set",
+            "consumer pool"
+        ]
+    },
+    {
+        "q": "What is the purpose of consumer groups?",
+        "type": "mcq",
+        "o": [
+            "Distribute message processing across multiple consumers",
+            "Group messages",
+            "Organize consumers",
+            "Manage subscriptions"
+        ]
+    },
+    {
+        "q": "Each partition is consumed by only one consumer in a group.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the message flow:",
+        "type": "rearrange",
+        "words": [
+            "Producer creates message",
+            "Broker stores message",
+            "Consumer reads message",
+            "Offset committed"
+        ]
+    },
+    {
+        "q": "What is a Kafka cluster?",
+        "type": "mcq",
+        "o": [
+            "Group of brokers working together",
+            "Server group",
+            "Data cluster",
+            "Network cluster"
+        ]
+    },
+    {
+        "q": "The _____ manages cluster metadata and leader election.",
+        "type": "fill_blank",
+        "answers": [
+            "ZooKeeper"
+        ],
+        "other_options": [
+            "Controller",
+            "Manager",
+            "Coordinator"
+        ]
+    },
+    {
+        "q": "What is ZooKeeper in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Distributed coordination service for cluster management",
+            "Data storage",
+            "Message queue",
+            "Load balancer"
+        ]
+    },
+    {
+        "q": "Kafka is moving away from ZooKeeper with KRaft mode.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is replication in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Copying partitions across multiple brokers for fault tolerance",
+            "Data duplication",
+            "Message copying",
+            "Backup creation"
+        ]
+    },
+    {
+        "q": "Match the replication term with its meaning:",
+        "type": "match",
+        "left": [
+            "Leader",
+            "Follower",
+            "ISR",
+            "Replication factor"
+        ],
+        "right": [
+            "Serves reads/writes",
+            "Copies data",
+            "In-sync replicas",
+            "Number of copies"
+        ]
+    },
+    {
+        "q": "The _____ is the number of copies of each partition.",
+        "type": "fill_blank",
+        "answers": [
+            "replication factor"
+        ],
+        "other_options": [
+            "copy count",
+            "replica number",
+            "backup factor"
+        ]
+    },
+    {
+        "q": "What is the leader replica?",
+        "type": "mcq",
+        "o": [
+            "Partition replica that handles all reads and writes",
+            "Primary server",
+            "Main copy",
+            "Active broker"
+        ]
+    },
+    {
+        "q": "Follower replicas only copy data from the leader.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ISR (In-Sync Replicas)?",
+        "type": "mcq",
+        "o": [
+            "Set of replicas fully caught up with the leader",
+            "Instant sync",
+            "In-sync readers",
+            "Internal sync"
+        ]
+    },
+    {
+        "q": "Rearrange the producer workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create message",
+            "Serialize",
+            "Partition",
+            "Send to broker"
+        ]
+    },
+    {
+        "q": "The _____ property sets the Kafka broker addresses.",
+        "type": "fill_blank",
+        "answers": [
+            "bootstrap.servers"
+        ],
+        "other_options": [
+            "broker.list",
+            "kafka.servers",
+            "server.address"
+        ]
+    },
+    {
+        "q": "What is producer acks setting?",
+        "type": "mcq",
+        "o": [
+            "Number of acknowledgments required before considering write successful",
+            "Acknowledgment type",
+            "Delivery confirmation",
+            "Write guarantee"
+        ]
+    },
+    {
+        "q": "acks=all provides the strongest durability guarantee.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the acks setting with its guarantee:",
+        "type": "match",
+        "left": [
+            "acks=0",
+            "acks=1",
+            "acks=all"
+        ],
+        "right": [
+            "No guarantee",
+            "Leader only",
+            "All ISR replicas"
+        ]
+    },
+    {
+        "q": "What does acks=0 mean?",
+        "type": "mcq",
+        "o": [
+            "Producer does not wait for any acknowledgment",
+            "Zero retries",
+            "No compression",
+            "Instant send"
+        ]
+    },
+    {
+        "q": "The _____ setting controls message compression.",
+        "type": "fill_blank",
+        "answers": [
+            "compression.type"
+        ],
+        "other_options": [
+            "compress.type",
+            "message.compression",
+            "data.compression"
+        ]
+    },
+    {
+        "q": "What compression types does Kafka support?",
+        "type": "mcq",
+        "o": [
+            "gzip, snappy, lz4, zstd",
+            "Only gzip",
+            "zip, rar",
+            "Only snappy"
+        ]
+    },
+    {
+        "q": "Compression reduces network bandwidth and storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the consumer workflow:",
+        "type": "rearrange",
+        "words": [
+            "Subscribe to topic",
+            "Poll for records",
+            "Process records",
+            "Commit offset"
+        ]
+    },
+    {
+        "q": "What is auto.offset.reset?",
+        "type": "mcq",
+        "o": [
+            "Behavior when no committed offset exists",
+            "Automatic offset setting",
+            "Reset timer",
+            "Offset recovery"
+        ]
+    },
+    {
+        "q": "Match the auto.offset.reset value with its behavior:",
+        "type": "match",
+        "left": [
+            "earliest",
+            "latest",
+            "none"
+        ],
+        "right": [
+            "Start from beginning",
+            "Start from end",
+            "Throw error"
+        ]
+    },
+    {
+        "q": "The _____ setting enables automatic offset commits.",
+        "type": "fill_blank",
+        "answers": [
+            "enable.auto.commit"
+        ],
+        "other_options": [
+            "auto.commit",
+            "commit.auto",
+            "offset.auto.commit"
+        ]
+    },
+    {
+        "q": "What is the poll method?",
+        "type": "mcq",
+        "o": [
+            "Fetches records from Kafka topic",
+            "Survey method",
+            "Vote collection",
+            "Check status"
+        ]
+    },
+    {
+        "q": "poll returns immediately when no data is available.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the group.id setting?",
+        "type": "mcq",
+        "o": [
+            "Unique identifier for the consumer group",
+            "Group name",
+            "Team ID",
+            "Cluster ID"
+        ]
+    },
+    {
+        "q": "Consumers with same group.id share partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the offset commit strategies:",
+        "type": "rearrange",
+        "words": [
+            "Auto commit",
+            "Sync commit",
+            "Async commit",
+            "Custom offset management"
+        ]
+    },
+    {
+        "q": "What is the difference between sync and async commit?",
+        "type": "mcq",
+        "o": [
+            "Sync blocks until complete, async continues immediately",
+            "No difference",
+            "Speed difference only",
+            "Sync is newer"
+        ]
+    },
+    {
+        "q": "The _____ method commits offsets synchronously.",
+        "type": "fill_blank",
+        "answers": [
+            "commitSync"
+        ],
+        "other_options": [
+            "commit",
+            "syncCommit",
+            "offsetCommit"
+        ]
+    },
+    {
+        "q": "What is a serializer in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Converts objects to bytes for transmission",
+            "Data formatter",
+            "Type converter",
+            "Encoder"
+        ]
+    },
+    {
+        "q": "Match the serializer with its data type:",
+        "type": "match",
+        "left": [
+            "StringSerializer",
+            "IntegerSerializer",
+            "ByteArraySerializer",
+            "JsonSerializer"
+        ],
+        "right": [
+            "Text data",
+            "Numbers",
+            "Raw bytes",
+            "JSON objects"
+        ]
+    },
+    {
+        "q": "The _____ converts bytes back to objects.",
+        "type": "fill_blank",
+        "answers": [
+            "deserializer"
+        ],
+        "other_options": [
+            "decoder",
+            "converter",
+            "parser"
+        ]
+    },
+    {
+        "q": "Producers use serializers, consumers use deserializers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a message key in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Optional field that determines partitioning",
+            "Unique identifier",
+            "Encryption key",
+            "Access key"
+        ]
+    },
+    {
+        "q": "Messages with same key go to the same partition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the key-based partitioning process:",
+        "type": "rearrange",
+        "words": [
+            "Produce message with key",
+            "Hash key",
+            "Select partition",
+            "Write to partition"
+        ]
+    },
+    {
+        "q": "What is message value in Kafka?",
+        "type": "mcq",
+        "o": [
+            "The actual data payload of the record",
+            "Message importance",
+            "Priority level",
+            "Data worth"
+        ]
+    },
+    {
+        "q": "The _____ contains additional metadata for a message.",
+        "type": "fill_blank",
+        "answers": [
+            "headers"
+        ],
+        "other_options": [
+            "metadata",
+            "attributes",
+            "properties"
+        ]
+    },
+    {
+        "q": "What are message headers?",
+        "type": "mcq",
+        "o": [
+            "Key-value pairs for metadata attached to records",
+            "Title information",
+            "Message prefix",
+            "Header text"
+        ]
+    },
+    {
+        "q": "Headers can be used for tracing and routing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the producer configuration with its purpose:",
+        "type": "match",
+        "left": [
+            "batch.size",
+            "linger.ms",
+            "buffer.memory",
+            "retries"
+        ],
+        "right": [
+            "Batch byte size",
+            "Wait time for batching",
+            "Total memory",
+            "Retry attempts"
+        ]
+    },
+    {
+        "q": "What is batching in Kafka producers?",
+        "type": "mcq",
+        "o": [
+            "Grouping multiple messages into single request",
+            "Message grouping",
+            "Batch processing",
+            "Bulk sending"
+        ]
+    },
+    {
+        "q": "Batching improves throughput by reducing network requests.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ setting controls how long to wait for batch to fill.",
+        "type": "fill_blank",
+        "answers": [
+            "linger.ms"
+        ],
+        "other_options": [
+            "wait.ms",
+            "batch.wait",
+            "delay.ms"
+        ]
+    },
+    {
+        "q": "What is idempotent producer?",
+        "type": "mcq",
+        "o": [
+            "Producer that guarantees exactly-once delivery",
+            "Identical producer",
+            "Same message producer",
+            "Duplicate remover"
+        ]
+    },
+    {
+        "q": "Idempotent producer prevents duplicate messages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ setting enables idempotent producer.",
+        "type": "fill_blank",
+        "answers": [
+            "enable.idempotence"
+        ],
+        "other_options": [
+            "idempotent.enable",
+            "exactly.once",
+            "no.duplicates"
+        ]
+    },
+    {
+        "q": "What is transactional producer?",
+        "type": "mcq",
+        "o": [
+            "Producer that provides atomic writes across partitions",
+            "Transaction manager",
+            "Payment producer",
+            "Secure producer"
+        ]
+    },
+    {
+        "q": "Rearrange the transactional workflow:",
+        "type": "rearrange",
+        "words": [
+            "Begin transaction",
+            "Send messages",
+            "Commit transaction",
+            "Abort on failure"
+        ]
+    },
+    {
+        "q": "Match the transaction concept with its meaning:",
+        "type": "match",
+        "left": [
+            "Atomicity",
+            "Isolation",
+            "Exactly-once",
+            "Idempotence"
+        ],
+        "right": [
+            "All or nothing",
+            "Transaction independence",
+            "No duplicates",
+            "Same result on retry"
+        ]
+    },
+    {
+        "q": "The _____ method starts a transaction.",
+        "type": "fill_blank",
+        "answers": [
+            "beginTransaction"
+        ],
+        "other_options": [
+            "startTransaction",
+            "initTransaction",
+            "openTransaction"
+        ]
+    },
+    {
+        "q": "What is read committed isolation?",
+        "type": "mcq",
+        "o": [
+            "Consumers only see committed transactional messages",
+            "Read-only mode",
+            "Committed data access",
+            "Secure reading"
+        ]
+    },
+    {
+        "q": "Uncommitted transactional messages are invisible to consumers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is partition assignment strategy?",
+        "type": "mcq",
+        "o": [
+            "Algorithm for distributing partitions among consumers",
+            "Partition selection",
+            "Assignment rule",
+            "Distribution method"
+        ]
+    },
+    {
+        "q": "Match the assignment strategy with its characteristic:",
+        "type": "match",
+        "left": [
+            "Range",
+            "RoundRobin",
+            "Sticky",
+            "CooperativeSticky"
+        ],
+        "right": [
+            "Contiguous partitions",
+            "Even distribution",
+            "Minimize reassignment",
+            "Incremental rebalance"
+        ]
+    },
+    {
+        "q": "The _____ strategy minimizes partition movement during rebalance.",
+        "type": "fill_blank",
+        "answers": [
+            "Sticky"
+        ],
+        "other_options": [
+            "Static",
+            "Fixed",
+            "Stable"
+        ]
+    },
+    {
+        "q": "What is consumer rebalance?",
+        "type": "mcq",
+        "o": [
+            "Redistributing partitions when consumers join or leave",
+            "Load balancing",
+            "Consumer restart",
+            "Partition reset"
+        ]
+    },
+    {
+        "q": "Rebalance causes temporary consumption pause.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the rebalance triggers:",
+        "type": "rearrange",
+        "words": [
+            "Consumer joins",
+            "Consumer leaves",
+            "Topic changes",
+            "Partitions added"
+        ]
+    },
+    {
+        "q": "What is cooperative rebalancing?",
+        "type": "mcq",
+        "o": [
+            "Incremental rebalancing without stopping all consumers",
+            "Team rebalancing",
+            "Shared rebalance",
+            "Gradual assignment"
+        ]
+    },
+    {
+        "q": "The _____ listener handles rebalance events.",
+        "type": "fill_blank",
+        "answers": [
+            "ConsumerRebalanceListener"
+        ],
+        "other_options": [
+            "RebalanceHandler",
+            "PartitionListener",
+            "AssignmentListener"
+        ]
+    },
+    {
+        "q": "What is static group membership?",
+        "type": "mcq",
+        "o": [
+            "Fixed consumer identity to avoid rebalance on restart",
+            "Static configuration",
+            "Fixed membership",
+            "Permanent group"
+        ]
+    },
+    {
+        "q": "Static membership uses group.instance.id for identification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the session timeout?",
+        "type": "mcq",
+        "o": [
+            "Time before consumer is considered dead without heartbeat",
+            "Login timeout",
+            "Connection timeout",
+            "Message timeout"
+        ]
+    },
+    {
+        "q": "Match the timeout with its purpose:",
+        "type": "match",
+        "left": [
+            "session.timeout.ms",
+            "heartbeat.interval.ms",
+            "max.poll.interval.ms"
+        ],
+        "right": [
+            "Dead consumer detection",
+            "Liveness signal frequency",
+            "Processing time limit"
+        ]
+    },
+    {
+        "q": "The _____ configuration sets maximum time between polls.",
+        "type": "fill_blank",
+        "answers": [
+            "max.poll.interval.ms"
+        ],
+        "other_options": [
+            "poll.timeout",
+            "poll.max.interval",
+            "max.poll.time"
+        ]
+    },
+    {
+        "q": "Long message processing may require increasing max.poll.interval.ms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is fetch.min.bytes?",
+        "type": "mcq",
+        "o": [
+            "Minimum data size before broker responds to fetch request",
+            "Minimum message size",
+            "Fetch threshold",
+            "Data minimum"
+        ]
+    },
+    {
+        "q": "Rearrange the consumer performance tuning order:",
+        "type": "rearrange",
+        "words": [
+            "Tune fetch size",
+            "Adjust poll interval",
+            "Optimize processing",
+            "Commit strategy"
+        ]
+    },
+    {
+        "q": "What is Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Client library for stream processing applications",
+            "Data streams",
+            "Streaming protocol",
+            "Flow control"
+        ]
+    },
+    {
+        "q": "Kafka Streams processes data in real-time without external systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ is the base abstraction in Kafka Streams.",
+        "type": "fill_blank",
+        "answers": [
+            "KStream"
+        ],
+        "other_options": [
+            "Stream",
+            "DataStream",
+            "KafkaStream"
+        ]
+    },
+    {
+        "q": "What is KStream?",
+        "type": "mcq",
+        "o": [
+            "Abstraction of unbounded stream of records",
+            "Key stream",
+            "Kafka stream object",
+            "Data flow"
+        ]
+    },
+    {
+        "q": "Match the Streams concept with its description:",
+        "type": "match",
+        "left": [
+            "KStream",
+            "KTable",
+            "GlobalKTable",
+            "Topology"
+        ],
+        "right": [
+            "Event stream",
+            "Changelog",
+            "Replicated table",
+            "Processing graph"
+        ]
+    },
+    {
+        "q": "What is KTable?",
+        "type": "mcq",
+        "o": [
+            "Changelog stream representing latest value per key",
+            "Kafka table",
+            "Key table",
+            "Data table"
+        ]
+    },
+    {
+        "q": "KTable updates overwrite previous values for same key.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Streams DSL operations:",
+        "type": "rearrange",
+        "words": [
+            "stream",
+            "filter",
+            "map",
+            "groupBy",
+            "aggregate"
+        ]
+    },
+    {
+        "q": "The _____ operation transforms each record.",
+        "type": "fill_blank",
+        "answers": [
+            "map"
+        ],
+        "other_options": [
+            "transform",
+            "convert",
+            "modify"
+        ]
+    },
+    {
+        "q": "What is stream-table join?",
+        "type": "mcq",
+        "o": [
+            "Enriching stream events with table lookups",
+            "Combining streams",
+            "Table merge",
+            "Data join"
+        ]
+    },
+    {
+        "q": "Stream-table joins use the latest table value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is windowed aggregation?",
+        "type": "mcq",
+        "o": [
+            "Grouping records by time windows for aggregation",
+            "Window grouping",
+            "Time-based grouping",
+            "Periodic aggregation"
+        ]
+    },
+    {
+        "q": "Match the window type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Tumbling",
+            "Hopping",
+            "Sliding",
+            "Session"
+        ],
+        "right": [
+            "Fixed non-overlapping",
+            "Fixed overlapping",
+            "On each event",
+            "Gap-based"
+        ]
+    },
+    {
+        "q": "The _____ window type has gaps based on activity.",
+        "type": "fill_blank",
+        "answers": [
+            "session"
+        ],
+        "other_options": [
+            "gap",
+            "activity",
+            "dynamic"
+        ]
+    },
+    {
+        "q": "What is state store in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Local storage for stateful operations like aggregations",
+            "Data store",
+            "State database",
+            "Cache storage"
+        ]
+    },
+    {
+        "q": "State stores are backed by changelog topics for recovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ksqlDB?",
+        "type": "mcq",
+        "o": [
+            "SQL interface for stream processing on Kafka",
+            "Kafka SQL database",
+            "Query language",
+            "SQL converter"
+        ]
+    },
+    {
+        "q": "Rearrange the ksqlDB statement types:",
+        "type": "rearrange",
+        "words": [
+            "CREATE STREAM",
+            "CREATE TABLE",
+            "SELECT",
+            "INSERT INTO"
+        ]
+    },
+    {
+        "q": "The _____ keyword creates continuous queries in ksqlDB.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE"
+        ],
+        "other_options": [
+            "DEFINE",
+            "MAKE",
+            "BUILD"
+        ]
+    },
+    {
+        "q": "What is Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Framework for integrating Kafka with external systems",
+            "Connection manager",
+            "Network connector",
+            "Data bridge"
+        ]
+    },
+    {
+        "q": "Kafka Connect uses connectors for source and sink systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the connector type with its direction:",
+        "type": "match",
+        "left": [
+            "Source connector",
+            "Sink connector"
+        ],
+        "right": [
+            "External to Kafka",
+            "Kafka to external"
+        ]
+    },
+    {
+        "q": "What is source connector?",
+        "type": "mcq",
+        "o": [
+            "Imports data from external system to Kafka",
+            "Data source",
+            "Origin system",
+            "Input connector"
+        ]
+    },
+    {
+        "q": "The _____ exports data from Kafka to external systems.",
+        "type": "fill_blank",
+        "answers": [
+            "sink connector"
+        ],
+        "other_options": [
+            "output connector",
+            "export connector",
+            "destination connector"
+        ]
+    },
+    {
+        "q": "What is Schema Registry?",
+        "type": "mcq",
+        "o": [
+            "Centralized schema management for Kafka messages",
+            "Schema storage",
+            "Type registry",
+            "Data catalog"
+        ]
+    },
+    {
+        "q": "Schema Registry supports Avro, JSON Schema, and Protobuf.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the schema evolution process:",
+        "type": "rearrange",
+        "words": [
+            "Define schema",
+            "Register schema",
+            "Check compatibility",
+            "Update schema"
+        ]
+    },
+    {
+        "q": "What is schema compatibility?",
+        "type": "mcq",
+        "o": [
+            "Rules for allowed schema changes",
+            "Schema matching",
+            "Version comparison",
+            "Type compatibility"
+        ]
+    },
+    {
+        "q": "Match the compatibility type with its rule:",
+        "type": "match",
+        "left": [
+            "BACKWARD",
+            "FORWARD",
+            "FULL",
+            "NONE"
+        ],
+        "right": [
+            "New reads old",
+            "Old reads new",
+            "Both directions",
+            "No check"
+        ]
+    },
+    {
+        "q": "The _____ compatibility allows adding optional fields.",
+        "type": "fill_blank",
+        "answers": [
+            "BACKWARD"
+        ],
+        "other_options": [
+            "FORWARD",
+            "OPTIONAL",
+            "FLEXIBLE"
+        ]
+    },
+    {
+        "q": "What is Avro in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Binary serialization format with schema support",
+            "Data format",
+            "Message type",
+            "Encoding standard"
+        ]
+    },
+    {
+        "q": "Avro is more compact than JSON serialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is log compaction?",
+        "type": "mcq",
+        "o": [
+            "Retaining only latest value for each key",
+            "Log compression",
+            "Data cleanup",
+            "Storage reduction"
+        ]
+    },
+    {
+        "q": "Log compaction keeps at least the last value for each key.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ policy enables log compaction.",
+        "type": "fill_blank",
+        "answers": [
+            "compact"
+        ],
+        "other_options": [
+            "compress",
+            "dedupe",
+            "latest"
+        ]
+    },
+    {
+        "q": "Match the cleanup policy with its behavior:",
+        "type": "match",
+        "left": [
+            "delete",
+            "compact",
+            "compact,delete"
+        ],
+        "right": [
+            "Remove old segments",
+            "Keep latest per key",
+            "Both behaviors"
+        ]
+    },
+    {
+        "q": "What is message retention?",
+        "type": "mcq",
+        "o": [
+            "How long messages are kept before deletion",
+            "Message storage",
+            "Data persistence",
+            "Keep duration"
+        ]
+    },
+    {
+        "q": "Rearrange the retention configuration priority:",
+        "type": "rearrange",
+        "words": [
+            "retention.ms",
+            "retention.bytes",
+            "segment.ms",
+            "cleanup.policy"
+        ]
+    },
+    {
+        "q": "The _____ setting configures retention by time.",
+        "type": "fill_blank",
+        "answers": [
+            "retention.ms"
+        ],
+        "other_options": [
+            "retention.time",
+            "keep.ms",
+            "ttl.ms"
+        ]
+    },
+    {
+        "q": "What is segment in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Physical file storing partition data",
+            "Data chunk",
+            "Storage unit",
+            "Log piece"
+        ]
+    },
+    {
+        "q": "Each partition consists of multiple segments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the active segment?",
+        "type": "mcq",
+        "o": [
+            "Currently open segment receiving new writes",
+            "Main segment",
+            "Current file",
+            "Live segment"
+        ]
+    },
+    {
+        "q": "Match the segment file with its content:",
+        "type": "match",
+        "left": [
+            ".log",
+            ".index",
+            ".timeindex"
+        ],
+        "right": [
+            "Message data",
+            "Offset index",
+            "Timestamp index"
+        ]
+    },
+    {
+        "q": "The _____ file maps offsets to physical positions.",
+        "type": "fill_blank",
+        "answers": [
+            ".index"
+        ],
+        "other_options": [
+            ".idx",
+            ".offset",
+            ".pos"
+        ]
+    },
+    {
+        "q": "What is min.insync.replicas?",
+        "type": "mcq",
+        "o": [
+            "Minimum replicas that must acknowledge for write success",
+            "Minimum replicas",
+            "Sync threshold",
+            "Replica minimum"
+        ]
+    },
+    {
+        "q": "min.insync.replicas with acks=all provides strong durability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is unclean leader election?",
+        "type": "mcq",
+        "o": [
+            "Allowing non-ISR replica to become leader",
+            "Invalid election",
+            "Emergency leadership",
+            "Fallback leader"
+        ]
+    },
+    {
+        "q": "Rearrange the leader election process:",
+        "type": "rearrange",
+        "words": [
+            "Leader fails",
+            "Controller notified",
+            "Select new leader from ISR",
+            "Update metadata"
+        ]
+    },
+    {
+        "q": "The _____ broker manages leader elections.",
+        "type": "fill_blank",
+        "answers": [
+            "controller"
+        ],
+        "other_options": [
+            "master",
+            "primary",
+            "coordinator"
+        ]
+    },
+    {
+        "q": "What is rack awareness?",
+        "type": "mcq",
+        "o": [
+            "Placing replicas across different racks for fault tolerance",
+            "Rack detection",
+            "Hardware awareness",
+            "Location tracking"
+        ]
+    },
+    {
+        "q": "Rack awareness prevents all replicas from failing together.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is preferred replica?",
+        "type": "mcq",
+        "o": [
+            "First replica in the list, intended to be leader",
+            "Best replica",
+            "Primary copy",
+            "Main replica"
+        ]
+    },
+    {
+        "q": "Match the broker configuration with its purpose:",
+        "type": "match",
+        "left": [
+            "num.partitions",
+            "default.replication.factor",
+            "log.dirs"
+        ],
+        "right": [
+            "Default partitions",
+            "Default replicas",
+            "Storage locations"
+        ]
+    },
+    {
+        "q": "The _____ setting specifies where Kafka stores data.",
+        "type": "fill_blank",
+        "answers": [
+            "log.dirs"
+        ],
+        "other_options": [
+            "data.dirs",
+            "storage.dirs",
+            "kafka.dirs"
+        ]
+    },
+    {
+        "q": "What is quotas in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Resource limits for clients to prevent overload",
+            "Data limits",
+            "Message quotas",
+            "Usage limits"
+        ]
+    },
+    {
+        "q": "Quotas can limit produce and fetch bandwidth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the monitoring metrics importance:",
+        "type": "rearrange",
+        "words": [
+            "Under-replicated partitions",
+            "Consumer lag",
+            "Request latency",
+            "Throughput"
+        ]
+    },
+    {
+        "q": "What is consumer lag?",
+        "type": "mcq",
+        "o": [
+            "Difference between latest offset and consumer position",
+            "Processing delay",
+            "Consumer slowdown",
+            "Message backlog"
+        ]
+    },
+    {
+        "q": "High consumer lag indicates consumers cannot keep up.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ metric shows partitions with fewer replicas than configured.",
+        "type": "fill_blank",
+        "answers": [
+            "under-replicated partitions"
+        ],
+        "other_options": [
+            "missing replicas",
+            "low replication",
+            "unhealthy partitions"
+        ]
+    },
+    {
+        "q": "What is MirrorMaker?",
+        "type": "mcq",
+        "o": [
+            "Tool for replicating data between Kafka clusters",
+            "Data mirror",
+            "Backup tool",
+            "Copy utility"
+        ]
+    },
+    {
+        "q": "MirrorMaker 2 is based on Kafka Connect.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the replication scenario with its use case:",
+        "type": "match",
+        "left": [
+            "Active-passive",
+            "Active-active",
+            "Aggregation"
+        ],
+        "right": [
+            "Disaster recovery",
+            "Multi-datacenter",
+            "Centralize data"
+        ]
+    },
+    {
+        "q": "What is exactly-once semantics (EOS)?",
+        "type": "mcq",
+        "o": [
+            "Guarantee that each message is processed exactly once",
+            "Single processing",
+            "One-time delivery",
+            "Unique handling"
+        ]
+    },
+    {
+        "q": "EOS requires idempotent producer and transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property sets processing guarantee in Kafka Streams.",
+        "type": "fill_blank",
+        "answers": [
+            "processing.guarantee"
+        ],
+        "other_options": [
+            "exactly.once",
+            "guarantee.type",
+            "processing.mode"
+        ]
+    },
+    {
+        "q": "What is KRaft mode?",
+        "type": "mcq",
+        "o": [
+            "ZooKeeper-less Kafka using internal consensus",
+            "Kraft protocol",
+            "Kafkaraft mode",
+            "New architecture"
+        ]
+    },
+    {
+        "q": "Rearrange the KRaft migration steps:",
+        "type": "rearrange",
+        "words": [
+            "Enable KRaft controllers",
+            "Migrate brokers",
+            "Remove ZooKeeper",
+            "Validate cluster"
+        ]
+    },
+    {
+        "q": "KRaft simplifies Kafka deployment and operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the controller quorum in KRaft?",
+        "type": "mcq",
+        "o": [
+            "Group of controllers managing cluster metadata",
+            "Controller group",
+            "Quorum consensus",
+            "Leader committee"
+        ]
+    },
+    {
+        "q": "Match the KRaft component with its role:",
+        "type": "match",
+        "left": [
+            "Controller",
+            "Broker",
+            "Combined"
+        ],
+        "right": [
+            "Metadata management",
+            "Message storage",
+            "Both roles"
+        ]
+    },
+    {
+        "q": "The _____ topic stores cluster metadata in KRaft.",
+        "type": "fill_blank",
+        "answers": [
+            "__cluster_metadata"
+        ],
+        "other_options": [
+            "__metadata",
+            "__controller",
+            "__kraft"
+        ]
+    },
+    {
+        "q": "What is SSL/TLS in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Encryption for data in transit between clients and brokers",
+            "Security layer",
+            "Authentication method",
+            "Certificate system"
+        ]
+    },
+    {
+        "q": "SSL can be used for both encryption and authentication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SASL authentication?",
+        "type": "mcq",
+        "o": [
+            "Framework for authentication mechanisms in Kafka",
+            "Security protocol",
+            "Login system",
+            "Access control"
+        ]
+    },
+    {
+        "q": "Match the SASL mechanism with its type:",
+        "type": "match",
+        "left": [
+            "PLAIN",
+            "SCRAM",
+            "GSSAPI",
+            "OAUTHBEARER"
+        ],
+        "right": [
+            "Username/password",
+            "Salted challenge",
+            "Kerberos",
+            "Token-based"
+        ]
+    },
+    {
+        "q": "The _____ mechanism uses Kerberos authentication.",
+        "type": "fill_blank",
+        "answers": [
+            "GSSAPI"
+        ],
+        "other_options": [
+            "KERBEROS",
+            "KRB5",
+            "GSS"
+        ]
+    },
+    {
+        "q": "What is ACL in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Access Control List defining permissions for resources",
+            "Access list",
+            "Control system",
+            "Permission set"
+        ]
+    },
+    {
+        "q": "ACLs can restrict access by user, group, or host.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ACL components:",
+        "type": "rearrange",
+        "words": [
+            "Principal",
+            "Resource",
+            "Operation",
+            "Permission"
+        ]
+    },
+    {
+        "q": "What is the authorizer in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Component that evaluates access control decisions",
+            "Permission checker",
+            "Access validator",
+            "Authorization module"
+        ]
+    },
+    {
+        "q": "The _____ command manages ACLs.",
+        "type": "fill_blank",
+        "answers": [
+            "kafka-acls"
+        ],
+        "other_options": [
+            "kafka-auth",
+            "kafka-permissions",
+            "acl-manager"
+        ]
+    },
+    {
+        "q": "What is delegation token?",
+        "type": "mcq",
+        "o": [
+            "Lightweight token for authentication without credentials",
+            "Access token",
+            "Delegate access",
+            "Permission token"
+        ]
+    },
+    {
+        "q": "Delegation tokens reduce Kerberos ticket management overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the security feature with its protection:",
+        "type": "match",
+        "left": [
+            "SSL",
+            "SASL",
+            "ACL",
+            "Quotas"
+        ],
+        "right": [
+            "Encryption",
+            "Authentication",
+            "Authorization",
+            "Resource limits"
+        ]
+    },
+    {
+        "q": "What is inter-broker communication?",
+        "type": "mcq",
+        "o": [
+            "Communication between Kafka brokers for replication",
+            "Internal messaging",
+            "Broker sync",
+            "Server communication"
+        ]
+    },
+    {
+        "q": "Inter-broker traffic should be encrypted in production.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ setting configures listener for inter-broker communication.",
+        "type": "fill_blank",
+        "answers": [
+            "inter.broker.listener.name"
+        ],
+        "other_options": [
+            "broker.listener",
+            "internal.listener",
+            "replication.listener"
+        ]
+    },
+    {
+        "q": "What is listener in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Network endpoint where broker accepts connections",
+            "Message listener",
+            "Event handler",
+            "Subscriber"
+        ]
+    },
+    {
+        "q": "Match the listener protocol with its security:",
+        "type": "match",
+        "left": [
+            "PLAINTEXT",
+            "SSL",
+            "SASL_PLAINTEXT",
+            "SASL_SSL"
+        ],
+        "right": [
+            "No security",
+            "Encryption only",
+            "Auth only",
+            "Auth + encryption"
+        ]
+    },
+    {
+        "q": "Rearrange the security configuration steps:",
+        "type": "rearrange",
+        "words": [
+            "Generate certificates",
+            "Configure brokers",
+            "Configure clients",
+            "Test connections"
+        ]
+    },
+    {
+        "q": "What is keystore in Kafka SSL?",
+        "type": "mcq",
+        "o": [
+            "Storage for private key and certificate",
+            "Password storage",
+            "Key database",
+            "Certificate cache"
+        ]
+    },
+    {
+        "q": "The _____ stores trusted CA certificates.",
+        "type": "fill_blank",
+        "answers": [
+            "truststore"
+        ],
+        "other_options": [
+            "castore",
+            "certstore",
+            "keystore"
+        ]
+    },
+    {
+        "q": "Truststore is used to verify server certificates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SCRAM authentication?",
+        "type": "mcq",
+        "o": [
+            "Salted Challenge Response Authentication Mechanism",
+            "Secure authentication",
+            "Simple auth",
+            "Scrambled password"
+        ]
+    },
+    {
+        "q": "SCRAM-SHA-256 is more secure than SCRAM-SHA-512.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the SCRAM variant with its hash strength:",
+        "type": "match",
+        "left": [
+            "SCRAM-SHA-256",
+            "SCRAM-SHA-512"
+        ],
+        "right": [
+            "256-bit hash",
+            "512-bit hash"
+        ]
+    },
+    {
+        "q": "What is OAuth authentication in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Token-based authentication using OAUTHBEARER mechanism",
+            "Open authentication",
+            "OAuth protocol",
+            "External auth"
+        ]
+    },
+    {
+        "q": "The _____ handler validates OAuth tokens.",
+        "type": "fill_blank",
+        "answers": [
+            "login callback"
+        ],
+        "other_options": [
+            "token handler",
+            "auth handler",
+            "oauth handler"
+        ]
+    },
+    {
+        "q": "What is audit logging in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Recording access and operations for compliance",
+            "Log auditing",
+            "Security logs",
+            "Access history"
+        ]
+    },
+    {
+        "q": "Audit logs help with compliance and security investigation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the partition strategy factors:",
+        "type": "rearrange",
+        "words": [
+            "Throughput needs",
+            "Consumer count",
+            "Ordering requirements",
+            "Storage capacity"
+        ]
+    },
+    {
+        "q": "What happens if consumers exceed partition count?",
+        "type": "mcq",
+        "o": [
+            "Extra consumers remain idle",
+            "Error occurs",
+            "Partitions are shared",
+            "Load balancing activates"
+        ]
+    },
+    {
+        "q": "The _____ limits parallelism in a consumer group.",
+        "type": "fill_blank",
+        "answers": [
+            "partition count"
+        ],
+        "other_options": [
+            "consumer count",
+            "broker count",
+            "topic limit"
+        ]
+    },
+    {
+        "q": "More partitions increase end-to-end latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is partition reassignment?",
+        "type": "mcq",
+        "o": [
+            "Moving partitions between brokers for load balancing",
+            "Partition reset",
+            "Reassign consumers",
+            "Partition migration"
+        ]
+    },
+    {
+        "q": "Match the partition tool with its function:",
+        "type": "match",
+        "left": [
+            "kafka-reassign-partitions",
+            "kafka-leader-election",
+            "kafka-topics"
+        ],
+        "right": [
+            "Move partitions",
+            "Trigger election",
+            "Manage topics"
+        ]
+    },
+    {
+        "q": "What is preferred leader election?",
+        "type": "mcq",
+        "o": [
+            "Making preferred replica the leader for balanced load",
+            "Best leader selection",
+            "Primary election",
+            "Optimal leader"
+        ]
+    },
+    {
+        "q": "The _____ triggers preferred leader election automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "auto.leader.rebalance.enable"
+        ],
+        "other_options": [
+            "leader.auto.rebalance",
+            "auto.election",
+            "preferred.leader.enable"
+        ]
+    },
+    {
+        "q": "Rearrange the partition increase process:",
+        "type": "rearrange",
+        "words": [
+            "Identify need",
+            "Plan increase",
+            "Execute change",
+            "Verify distribution"
+        ]
+    },
+    {
+        "q": "What is message timestamp in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Time associated with each record",
+            "Create time",
+            "Message age",
+            "Record time"
+        ]
+    },
+    {
+        "q": "Match the timestamp type with its source:",
+        "type": "match",
+        "left": [
+            "CreateTime",
+            "LogAppendTime"
+        ],
+        "right": [
+            "Producer sets",
+            "Broker sets"
+        ]
+    },
+    {
+        "q": "The _____ setting configures timestamp type.",
+        "type": "fill_blank",
+        "answers": [
+            "message.timestamp.type"
+        ],
+        "other_options": [
+            "timestamp.type",
+            "record.timestamp",
+            "time.type"
+        ]
+    },
+    {
+        "q": "LogAppendTime uses broker time instead of producer time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is message.max.bytes?",
+        "type": "mcq",
+        "o": [
+            "Maximum size of a single message",
+            "Max batch size",
+            "Total message limit",
+            "Payload maximum"
+        ]
+    },
+    {
+        "q": "Large messages may require increasing multiple configurations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the size setting with its scope:",
+        "type": "match",
+        "left": [
+            "message.max.bytes",
+            "replica.fetch.max.bytes",
+            "fetch.max.bytes"
+        ],
+        "right": [
+            "Broker limit",
+            "Replication limit",
+            "Consumer limit"
+        ]
+    },
+    {
+        "q": "What is max.partition.fetch.bytes?",
+        "type": "mcq",
+        "o": [
+            "Maximum data returned per partition in fetch request",
+            "Partition size limit",
+            "Fetch chunk size",
+            "Data maximum"
+        ]
+    },
+    {
+        "q": "The _____ limits total data in single fetch response.",
+        "type": "fill_blank",
+        "answers": [
+            "fetch.max.bytes"
+        ],
+        "other_options": [
+            "max.fetch.size",
+            "total.fetch.limit",
+            "response.max.bytes"
+        ]
+    },
+    {
+        "q": "Rearrange the large message handling options:",
+        "type": "rearrange",
+        "words": [
+            "Increase limits",
+            "Compress data",
+            "Use chunking",
+            "External storage reference"
+        ]
+    },
+    {
+        "q": "What is request.timeout.ms?",
+        "type": "mcq",
+        "o": [
+            "Maximum time to wait for request response",
+            "Request duration",
+            "Timeout limit",
+            "Wait time"
+        ]
+    },
+    {
+        "q": "Request timeout should be greater than replica.lag.time.max.ms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is replica.lag.time.max.ms?",
+        "type": "mcq",
+        "o": [
+            "Maximum time replica can lag before removal from ISR",
+            "Lag threshold",
+            "Replica timeout",
+            "Sync deadline"
+        ]
+    },
+    {
+        "q": "Match the timeout with its purpose:",
+        "type": "match",
+        "left": [
+            "request.timeout.ms",
+            "connections.max.idle.ms",
+            "metadata.max.age.ms"
+        ],
+        "right": [
+            "Request wait",
+            "Close idle connections",
+            "Refresh metadata"
+        ]
+    },
+    {
+        "q": "The _____ determines how often metadata is refreshed.",
+        "type": "fill_blank",
+        "answers": [
+            "metadata.max.age.ms"
+        ],
+        "other_options": [
+            "metadata.refresh",
+            "refresh.interval",
+            "metadata.timeout"
+        ]
+    },
+    {
+        "q": "What is controlled shutdown?",
+        "type": "mcq",
+        "o": [
+            "Graceful broker shutdown transferring leadership first",
+            "Rapid shutdown",
+            "Clean exit",
+            "Safe stop"
+        ]
+    },
+    {
+        "q": "Controlled shutdown minimizes unavailability during maintenance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the controlled shutdown steps:",
+        "type": "rearrange",
+        "words": [
+            "Transfer leadership",
+            "Sync replicas",
+            "Close connections",
+            "Stop broker"
+        ]
+    },
+    {
+        "q": "What is log flush in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Writing data from memory to disk",
+            "Clear logs",
+            "Log cleanup",
+            "Data transfer"
+        ]
+    },
+    {
+        "q": "The _____ controls how often logs are flushed to disk.",
+        "type": "fill_blank",
+        "answers": [
+            "log.flush.interval.ms"
+        ],
+        "other_options": [
+            "flush.interval",
+            "log.sync.interval",
+            "disk.flush.ms"
+        ]
+    },
+    {
+        "q": "Kafka relies on OS page cache for performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is zero-copy in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Transfer data directly from disk to network without CPU copy",
+            "No data copy",
+            "Direct transfer",
+            "Efficient copy"
+        ]
+    },
+    {
+        "q": "Match the performance feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Zero-copy",
+            "Page cache",
+            "Sequential I/O",
+            "Batching"
+        ],
+        "right": [
+            "Reduce CPU",
+            "Reduce disk I/O",
+            "Maximize throughput",
+            "Reduce overhead"
+        ]
+    },
+    {
+        "q": "Sequential disk I/O is faster than random access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is JMX in Kafka monitoring?",
+        "type": "mcq",
+        "o": [
+            "Java Management Extensions for exposing metrics",
+            "Java metrics",
+            "Monitoring extension",
+            "Management API"
+        ]
+    },
+    {
+        "q": "The _____ port exposes JMX metrics.",
+        "type": "fill_blank",
+        "answers": [
+            "JMX_PORT"
+        ],
+        "other_options": [
+            "METRICS_PORT",
+            "MONITOR_PORT",
+            "KAFKA_JMX"
+        ]
+    },
+    {
+        "q": "Rearrange the monitoring setup:",
+        "type": "rearrange",
+        "words": [
+            "Enable JMX",
+            "Configure exporter",
+            "Set up collector",
+            "Create dashboards"
+        ]
+    },
+    {
+        "q": "What is Cruise Control?",
+        "type": "mcq",
+        "o": [
+            "Tool for automated Kafka cluster management",
+            "Speed control",
+            "Rate limiter",
+            "Throttle manager"
+        ]
+    },
+    {
+        "q": "Cruise Control can automatically rebalance partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Cruise Control feature with its function:",
+        "type": "match",
+        "left": [
+            "Rebalance",
+            "Anomaly detection",
+            "Topic operations"
+        ],
+        "right": [
+            "Distribute load",
+            "Find issues",
+            "Manage topics"
+        ]
+    },
+    {
+        "q": "What is broker throttling?",
+        "type": "mcq",
+        "o": [
+            "Limiting replication bandwidth during partition movement",
+            "Slow broker",
+            "Rate control",
+            "Speed limit"
+        ]
+    },
+    {
+        "q": "The _____ limits replication bandwidth.",
+        "type": "fill_blank",
+        "answers": [
+            "kafka-configs --add-config follower.replication.throttled.rate"
+        ],
+        "other_options": [
+            "replication.limit",
+            "throttle.rate",
+            "bandwidth.limit"
+        ]
+    },
+    {
+        "q": "Throttling prevents partition reassignment from impacting production traffic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is network threads in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Threads handling network I/O operations",
+            "Internet threads",
+            "Connection handlers",
+            "Socket threads"
+        ]
+    },
+    {
+        "q": "Match the thread pool with its purpose:",
+        "type": "match",
+        "left": [
+            "num.network.threads",
+            "num.io.threads",
+            "num.replica.fetchers"
+        ],
+        "right": [
+            "Handle requests",
+            "Process I/O",
+            "Fetch replicas"
+        ]
+    },
+    {
+        "q": "The _____ setting controls request processing threads.",
+        "type": "fill_blank",
+        "answers": [
+            "num.io.threads"
+        ],
+        "other_options": [
+            "io.threads",
+            "request.threads",
+            "process.threads"
+        ]
+    },
+    {
+        "q": "Rearrange the request processing pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Network thread receives",
+            "Request queue",
+            "IO thread processes",
+            "Response sent"
+        ]
+    },
+    {
+        "q": "What is request queue in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Buffer for pending requests before processing",
+            "Message queue",
+            "Task queue",
+            "Work buffer"
+        ]
+    },
+    {
+        "q": "queued.max.requests limits request queue size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is purgatory in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Holding area for requests waiting for conditions",
+            "Message storage",
+            "Dead letter queue",
+            "Retry buffer"
+        ]
+    },
+    {
+        "q": "Match the purgatory type with its wait condition:",
+        "type": "match",
+        "left": [
+            "Produce purgatory",
+            "Fetch purgatory"
+        ],
+        "right": [
+            "Wait for acks",
+            "Wait for data"
+        ]
+    },
+    {
+        "q": "The _____ waits for followers to acknowledge writes.",
+        "type": "fill_blank",
+        "answers": [
+            "produce purgatory"
+        ],
+        "other_options": [
+            "ack purgatory",
+            "write purgatory",
+            "sync purgatory"
+        ]
+    },
+    {
+        "q": "What is watermark in Kafka?",
+        "type": "mcq",
+        "o": [
+            "High and low watermark indicating data availability",
+            "Water level",
+            "Data marker",
+            "Offset marker"
+        ]
+    },
+    {
+        "q": "High watermark is the last offset replicated to all ISR members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the offset types:",
+        "type": "rearrange",
+        "words": [
+            "Log start offset",
+            "Consumer offset",
+            "High watermark",
+            "Log end offset"
+        ]
+    },
+    {
+        "q": "What is log end offset?",
+        "type": "mcq",
+        "o": [
+            "Offset of next message to be written",
+            "Last message offset",
+            "Final offset",
+            "End position"
+        ]
+    },
+    {
+        "q": "Match the offset with its meaning:",
+        "type": "match",
+        "left": [
+            "Log start offset",
+            "Log end offset",
+            "High watermark",
+            "Consumer offset"
+        ],
+        "right": [
+            "Earliest available",
+            "Next write",
+            "Safe read",
+            "Current position"
+        ]
+    },
+    {
+        "q": "Consumers can only read up to the high watermark.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is leader epoch in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Monotonically increasing number for each leader change",
+            "Time period",
+            "Leader version",
+            "Election count"
+        ]
+    },
+    {
+        "q": "The _____ helps detect message truncation after leader change.",
+        "type": "fill_blank",
+        "answers": [
+            "leader epoch"
+        ],
+        "other_options": [
+            "epoch number",
+            "leader version",
+            "generation id"
+        ]
+    },
+    {
+        "q": "Leader epoch prevents data loss during leader failover.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is fetch protocol?",
+        "type": "mcq",
+        "o": [
+            "Protocol for consumers and followers to retrieve messages",
+            "Download protocol",
+            "Read protocol",
+            "Sync protocol"
+        ]
+    },
+    {
+        "q": "Match the fetch configuration with its behavior:",
+        "type": "match",
+        "left": [
+            "fetch.min.bytes",
+            "fetch.max.wait.ms",
+            "max.poll.records"
+        ],
+        "right": [
+            "Minimum response size",
+            "Maximum wait time",
+            "Records per poll"
+        ]
+    },
+    {
+        "q": "Rearrange the fetch optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Increase fetch size",
+            "Decrease wait time",
+            "Tune poll records",
+            "Monitor lag"
+        ]
+    },
+    {
+        "q": "What is max.poll.records?",
+        "type": "mcq",
+        "o": [
+            "Maximum records returned per poll call",
+            "Poll limit",
+            "Record maximum",
+            "Batch size"
+        ]
+    },
+    {
+        "q": "The _____ prevents consumer timeout during slow processing.",
+        "type": "fill_blank",
+        "answers": [
+            "max.poll.records"
+        ],
+        "other_options": [
+            "poll.records",
+            "record.limit",
+            "batch.records"
+        ]
+    },
+    {
+        "q": "Lower max.poll.records helps avoid rebalance during slow processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is partition.assignment.strategy?",
+        "type": "mcq",
+        "o": [
+            "Algorithm for distributing partitions to consumers",
+            "Assignment method",
+            "Partition allocation",
+            "Distribution strategy"
+        ]
+    },
+    {
+        "q": "Match the assignment strategy with its behavior:",
+        "type": "match",
+        "left": [
+            "Range",
+            "RoundRobin",
+            "Sticky"
+        ],
+        "right": [
+            "Contiguous assignment",
+            "Even distribution",
+            "Minimal movement"
+        ]
+    },
+    {
+        "q": "The _____ strategy is best for minimizing rebalance impact.",
+        "type": "fill_blank",
+        "answers": [
+            "CooperativeSticky"
+        ],
+        "other_options": [
+            "Sticky",
+            "Static",
+            "Optimized"
+        ]
+    },
+    {
+        "q": "What is incremental cooperative rebalancing?",
+        "type": "mcq",
+        "o": [
+            "Rebalancing that moves partitions incrementally without stopping all consumers",
+            "Gradual rebalance",
+            "Partial rebalance",
+            "Step rebalance"
+        ]
+    },
+    {
+        "q": "Rearrange the cooperative rebalance phases:",
+        "type": "rearrange",
+        "words": [
+            "Revoke only needed partitions",
+            "Rejoin group",
+            "Assign new partitions",
+            "Resume processing"
+        ]
+    },
+    {
+        "q": "Cooperative rebalancing reduces consumer downtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is consumer group coordinator?",
+        "type": "mcq",
+        "o": [
+            "Broker responsible for managing consumer group membership",
+            "Group leader",
+            "Consumer manager",
+            "Partition coordinator"
+        ]
+    },
+    {
+        "q": "The _____ handles consumer heartbeats and rebalancing.",
+        "type": "fill_blank",
+        "answers": [
+            "group coordinator"
+        ],
+        "other_options": [
+            "group leader",
+            "consumer coordinator",
+            "membership manager"
+        ]
+    },
+    {
+        "q": "What is consumer group leader?",
+        "type": "mcq",
+        "o": [
+            "Consumer that performs partition assignment",
+            "Primary consumer",
+            "First consumer",
+            "Group coordinator"
+        ]
+    },
+    {
+        "q": "Group leader is different from group coordinator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the group management concept with its responsibility:",
+        "type": "match",
+        "left": [
+            "Coordinator",
+            "Leader",
+            "Member"
+        ],
+        "right": [
+            "Manage membership",
+            "Assign partitions",
+            "Process messages"
+        ]
+    },
+    {
+        "q": "What is __consumer_offsets topic?",
+        "type": "mcq",
+        "o": [
+            "Internal topic storing consumer group offsets",
+            "Offset storage",
+            "Consumer data",
+            "Group metadata"
+        ]
+    },
+    {
+        "q": "The _____ compaction keeps only latest offset per consumer group.",
+        "type": "fill_blank",
+        "answers": [
+            "log"
+        ],
+        "other_options": [
+            "offset",
+            "message",
+            "record"
+        ]
+    },
+    {
+        "q": "Rearrange the offset commit flow:",
+        "type": "rearrange",
+        "words": [
+            "Process records",
+            "Prepare offset",
+            "Send to coordinator",
+            "Receive acknowledgment"
+        ]
+    },
+    {
+        "q": "What is offset management strategies?",
+        "type": "mcq",
+        "o": [
+            "Approaches for committing and tracking consumer progress",
+            "Offset storage",
+            "Position tracking",
+            "Progress management"
+        ]
+    },
+    {
+        "q": "Manual offset commit provides more control than auto commit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the commit strategy with its trade-off:",
+        "type": "match",
+        "left": [
+            "Auto commit",
+            "Sync commit",
+            "Async commit"
+        ],
+        "right": [
+            "Simple but may duplicate",
+            "Safe but slower",
+            "Fast but may fail"
+        ]
+    },
+    {
+        "q": "What is at-least-once delivery?",
+        "type": "mcq",
+        "o": [
+            "Guarantee that messages are delivered at least one time",
+            "Minimum delivery",
+            "Single delivery",
+            "Guaranteed once"
+        ]
+    },
+    {
+        "q": "The _____ delivery may result in duplicate processing.",
+        "type": "fill_blank",
+        "answers": [
+            "at-least-once"
+        ],
+        "other_options": [
+            "at-most-once",
+            "exactly-once",
+            "guaranteed"
+        ]
+    },
+    {
+        "q": "At-most-once may lose messages but never duplicates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is transactional messaging?",
+        "type": "mcq",
+        "o": [
+            "Atomic writes across multiple partitions and topics",
+            "Transaction support",
+            "Atomic messages",
+            "Guaranteed writes"
+        ]
+    },
+    {
+        "q": "Rearrange the transaction boundaries:",
+        "type": "rearrange",
+        "words": [
+            "initTransactions",
+            "beginTransaction",
+            "send messages",
+            "commitTransaction"
+        ]
+    },
+    {
+        "q": "Match the transaction state with its meaning:",
+        "type": "match",
+        "left": [
+            "Ongoing",
+            "PrepareCommit",
+            "Committed",
+            "Aborted"
+        ],
+        "right": [
+            "In progress",
+            "Preparing",
+            "Successful",
+            "Rolled back"
+        ]
+    },
+    {
+        "q": "What is transaction coordinator?",
+        "type": "mcq",
+        "o": [
+            "Broker managing transaction state for a producer",
+            "Transaction manager",
+            "Commit coordinator",
+            "Atomic controller"
+        ]
+    },
+    {
+        "q": "The _____ topic stores transaction metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "__transaction_state"
+        ],
+        "other_options": [
+            "__transactions",
+            "__tx_state",
+            "__coordinator"
+        ]
+    },
+    {
+        "q": "Each transactional producer has a unique transactional.id.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What happens when transaction times out?",
+        "type": "mcq",
+        "o": [
+            "Transaction is aborted automatically",
+            "Continues indefinitely",
+            "Error thrown",
+            "Retry initiated"
+        ]
+    },
+    {
+        "q": "Match the isolation level with its behavior:",
+        "type": "match",
+        "left": [
+            "read_uncommitted",
+            "read_committed"
+        ],
+        "right": [
+            "See all messages",
+            "Only committed messages"
+        ]
+    },
+    {
+        "q": "The _____ isolation hides uncommitted transactional messages.",
+        "type": "fill_blank",
+        "answers": [
+            "read_committed"
+        ],
+        "other_options": [
+            "committed",
+            "isolated",
+            "transactional"
+        ]
+    },
+    {
+        "q": "Rearrange the produce request processing:",
+        "type": "rearrange",
+        "words": [
+            "Validate request",
+            "Append to log",
+            "Update index",
+            "Send response"
+        ]
+    },
+    {
+        "q": "What is producer interceptor?",
+        "type": "mcq",
+        "o": [
+            "Hook for modifying records before send and after acknowledgment",
+            "Message filter",
+            "Data transformer",
+            "Send hook"
+        ]
+    },
+    {
+        "q": "Interceptors can add headers or modify messages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the interceptor method with its timing:",
+        "type": "match",
+        "left": [
+            "onSend",
+            "onAcknowledgement",
+            "onConsume",
+            "onCommit"
+        ],
+        "right": [
+            "Before send",
+            "After ack",
+            "After receive",
+            "After commit"
+        ]
+    },
+    {
+        "q": "What is consumer interceptor?",
+        "type": "mcq",
+        "o": [
+            "Hook for processing records after receive and before commit",
+            "Receive filter",
+            "Read hook",
+            "Data interceptor"
+        ]
+    },
+    {
+        "q": "The _____ method is called before records are returned to application.",
+        "type": "fill_blank",
+        "answers": [
+            "onConsume"
+        ],
+        "other_options": [
+            "onReceive",
+            "onFetch",
+            "onRead"
+        ]
+    },
+    {
+        "q": "What is Kafka AdminClient?",
+        "type": "mcq",
+        "o": [
+            "API for managing topics, configs, and cluster",
+            "Admin interface",
+            "Management tool",
+            "Configuration API"
+        ]
+    },
+    {
+        "q": "AdminClient can create topics programmatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the AdminClient operations:",
+        "type": "rearrange",
+        "words": [
+            "Create client",
+            "Perform operation",
+            "Handle result",
+            "Close client"
+        ]
+    },
+    {
+        "q": "What is KafkaAdminClient.describeCluster?",
+        "type": "mcq",
+        "o": [
+            "Method to get cluster information including brokers",
+            "Cluster description",
+            "Node listing",
+            "Broker info"
+        ]
+    },
+    {
+        "q": "Match the AdminClient method with its function:",
+        "type": "match",
+        "left": [
+            "createTopics",
+            "deleteTopics",
+            "describeConfigs",
+            "alterConfigs"
+        ],
+        "right": [
+            "Create topics",
+            "Remove topics",
+            "Get configs",
+            "Change configs"
+        ]
+    },
+    {
+        "q": "The _____ method lists all consumer groups.",
+        "type": "fill_blank",
+        "answers": [
+            "listConsumerGroups"
+        ],
+        "other_options": [
+            "getGroups",
+            "describeGroups",
+            "showConsumers"
+        ]
+    },
+    {
+        "q": "What is topic configuration?",
+        "type": "mcq",
+        "o": [
+            "Settings that can be applied per topic",
+            "Global settings",
+            "Broker configuration",
+            "Cluster settings"
+        ]
+    },
+    {
+        "q": "Topic configs override broker defaults.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the topic config with its purpose:",
+        "type": "match",
+        "left": [
+            "retention.ms",
+            "segment.bytes",
+            "min.insync.replicas",
+            "cleanup.policy"
+        ],
+        "right": [
+            "Keep duration",
+            "Segment size",
+            "Write safety",
+            "Cleanup behavior"
+        ]
+    },
+    {
+        "q": "What is dynamic broker configuration?",
+        "type": "mcq",
+        "o": [
+            "Configuration changes without broker restart",
+            "Runtime config",
+            "Live settings",
+            "Dynamic settings"
+        ]
+    },
+    {
+        "q": "The _____ tool modifies dynamic configurations.",
+        "type": "fill_blank",
+        "answers": [
+            "kafka-configs"
+        ],
+        "other_options": [
+            "kafka-config",
+            "config-tool",
+            "kafka-settings"
+        ]
+    },
+    {
+        "q": "Rearrange the configuration scopes by priority:",
+        "type": "rearrange",
+        "words": [
+            "Topic level",
+            "Broker level",
+            "Cluster default",
+            "Static config"
+        ]
+    },
+    {
+        "q": "Not all broker configurations support dynamic change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Kafka Streams topology?",
+        "type": "mcq",
+        "o": [
+            "Graph of processors and state stores defining stream processing logic",
+            "Network topology",
+            "Stream structure",
+            "Processing map"
+        ]
+    },
+    {
+        "q": "Match the topology component with its role:",
+        "type": "match",
+        "left": [
+            "Source processor",
+            "Stream processor",
+            "Sink processor",
+            "State store"
+        ],
+        "right": [
+            "Read from topic",
+            "Transform data",
+            "Write to topic",
+            "Local storage"
+        ]
+    },
+    {
+        "q": "The _____ creates topology programmatically.",
+        "type": "fill_blank",
+        "answers": [
+            "StreamsBuilder"
+        ],
+        "other_options": [
+            "TopologyBuilder",
+            "StreamBuilder",
+            "ProcessorBuilder"
+        ]
+    },
+    {
+        "q": "What is processor API in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Low-level API for custom stream processing",
+            "Message processor",
+            "Data handler",
+            "Custom API"
+        ]
+    },
+    {
+        "q": "Processor API provides more control than DSL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the processor lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "init",
+            "process",
+            "punctuate",
+            "close"
+        ]
+    },
+    {
+        "q": "What is punctuator in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Scheduled callback for periodic processing",
+            "Timer function",
+            "Periodic task",
+            "Scheduled event"
+        ]
+    },
+    {
+        "q": "Match the punctuator type with its trigger:",
+        "type": "match",
+        "left": [
+            "WALL_CLOCK_TIME",
+            "STREAM_TIME"
+        ],
+        "right": [
+            "System clock",
+            "Event time"
+        ]
+    },
+    {
+        "q": "The _____ is used for time-based operations in processor API.",
+        "type": "fill_blank",
+        "answers": [
+            "schedule"
+        ],
+        "other_options": [
+            "timer",
+            "callback",
+            "punctuate"
+        ]
+    },
+    {
+        "q": "What is RocksDB in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Default persistent state store implementation",
+            "Rock database",
+            "Stone storage",
+            "Embedded database"
+        ]
+    },
+    {
+        "q": "RocksDB enables large state stores exceeding memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the state store type with its characteristic:",
+        "type": "match",
+        "left": [
+            "In-memory",
+            "Persistent (RocksDB)"
+        ],
+        "right": [
+            "Fast but limited",
+            "Large but slower"
+        ]
+    },
+    {
+        "q": "What is interactive queries in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Querying state stores from external applications",
+            "Live queries",
+            "Real-time queries",
+            "State queries"
+        ]
+    },
+    {
+        "q": "The _____ method retrieves state store for querying.",
+        "type": "fill_blank",
+        "answers": [
+            "store"
+        ],
+        "other_options": [
+            "getStore",
+            "queryStore",
+            "stateStore"
+        ]
+    },
+    {
+        "q": "Rearrange the interactive query setup:",
+        "type": "rearrange",
+        "words": [
+            "Start streams app",
+            "Wait for state restore",
+            "Query local store",
+            "Handle distributed queries"
+        ]
+    },
+    {
+        "q": "What is QueryableStoreTypes in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Types for accessing different state store implementations",
+            "Query types",
+            "Store types",
+            "Access types"
+        ]
+    },
+    {
+        "q": "keyValueStore() is a QueryableStoreType for key-value stores.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GlobalKTable?",
+        "type": "mcq",
+        "o": [
+            "Table replicated to all stream instances",
+            "Global table",
+            "Shared table",
+            "Distributed table"
+        ]
+    },
+    {
+        "q": "Match the table type with its replication:",
+        "type": "match",
+        "left": [
+            "KTable",
+            "GlobalKTable"
+        ],
+        "right": [
+            "Partitioned by key",
+            "Full copy on each instance"
+        ]
+    },
+    {
+        "q": "The _____ enables joins without co-partitioning requirement.",
+        "type": "fill_blank",
+        "answers": [
+            "GlobalKTable"
+        ],
+        "other_options": [
+            "ReplicatedTable",
+            "BroadcastTable",
+            "SharedTable"
+        ]
+    },
+    {
+        "q": "GlobalKTable is suitable for small reference data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Kafka Streams instance management:",
+        "type": "rearrange",
+        "words": [
+            "Create topology",
+            "Configure streams",
+            "Start application",
+            "Monitor state"
+        ]
+    },
+    {
+        "q": "What is streams state in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Current lifecycle state of stream application",
+            "Data state",
+            "Store state",
+            "Application status"
+        ]
+    },
+    {
+        "q": "Match the streams state with its meaning:",
+        "type": "match",
+        "left": [
+            "CREATED",
+            "RUNNING",
+            "REBALANCING",
+            "ERROR"
+        ],
+        "right": [
+            "Initial state",
+            "Active processing",
+            "Partition reassignment",
+            "Fatal error"
+        ]
+    },
+    {
+        "q": "The _____ listener handles state change events.",
+        "type": "fill_blank",
+        "answers": [
+            "StateListener"
+        ],
+        "other_options": [
+            "StateHandler",
+            "StateCallback",
+            "StateObserver"
+        ]
+    },
+    {
+        "q": "What is streams exception handler?",
+        "type": "mcq",
+        "o": [
+            "Handler for processing exceptions during stream operations",
+            "Error handler",
+            "Exception manager",
+            "Fault handler"
+        ]
+    },
+    {
+        "q": "Match the exception type with its scope:",
+        "type": "match",
+        "left": [
+            "DeserializationExceptionHandler",
+            "ProductionExceptionHandler"
+        ],
+        "right": [
+            "Read errors",
+            "Write errors"
+        ]
+    },
+    {
+        "q": "The _____ determines behavior on serialization errors.",
+        "type": "fill_blank",
+        "answers": [
+            "DeserializationExceptionHandler"
+        ],
+        "other_options": [
+            "SerializationHandler",
+            "ErrorHandler",
+            "ExceptionHandler"
+        ]
+    },
+    {
+        "q": "What is exactly-once in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Processing each record exactly once with transactional writes",
+            "Single processing",
+            "One-time handling",
+            "Unique processing"
+        ]
+    },
+    {
+        "q": "Exactly-once semantics in Streams uses Kafka transactions internally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the stream processing loop:",
+        "type": "rearrange",
+        "words": [
+            "Poll records",
+            "Process records",
+            "Update state",
+            "Commit offsets"
+        ]
+    },
+    {
+        "q": "What is commit interval in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Frequency of committing offsets and flushing state stores",
+            "Update frequency",
+            "Sync interval",
+            "Save frequency"
+        ]
+    },
+    {
+        "q": "The _____ property sets commit interval.",
+        "type": "fill_blank",
+        "answers": [
+            "commit.interval.ms"
+        ],
+        "other_options": [
+            "commit.frequency",
+            "flush.interval",
+            "save.interval"
+        ]
+    },
+    {
+        "q": "Lower commit intervals increase exactly-once overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is stream thread in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Thread executing stream processing tasks",
+            "Main thread",
+            "Processing thread",
+            "Worker thread"
+        ]
+    },
+    {
+        "q": "Match the thread setting with its effect:",
+        "type": "match",
+        "left": [
+            "num.stream.threads",
+            "num.standby.replicas"
+        ],
+        "right": [
+            "Parallel processing",
+            "Warm standby state"
+        ]
+    },
+    {
+        "q": "More stream threads increase parallelism within a single instance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is standby replica in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Warm copy of state store for fast failover",
+            "Backup replica",
+            "Secondary copy",
+            "Idle replica"
+        ]
+    },
+    {
+        "q": "The _____ setting configures standby state store replicas.",
+        "type": "fill_blank",
+        "answers": [
+            "num.standby.replicas"
+        ],
+        "other_options": [
+            "standby.count",
+            "replica.standby",
+            "state.replicas"
+        ]
+    },
+    {
+        "q": "Rearrange the state restoration process:",
+        "type": "rearrange",
+        "words": [
+            "Detect partition assignment",
+            "Read changelog topic",
+            "Restore state store",
+            "Start processing"
+        ]
+    },
+    {
+        "q": "What is changelog topic in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Internal topic backing state store for recovery",
+            "Change log",
+            "Update topic",
+            "State topic"
+        ]
+    },
+    {
+        "q": "Changelog topics use log compaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is repartition topic?",
+        "type": "mcq",
+        "o": [
+            "Internal topic for re-keying operations",
+            "Partition topic",
+            "Key topic",
+            "Reorganization topic"
+        ]
+    },
+    {
+        "q": "Match the internal topic with its purpose:",
+        "type": "match",
+        "left": [
+            "Changelog",
+            "Repartition"
+        ],
+        "right": [
+            "State backup",
+            "Re-keying data"
+        ]
+    },
+    {
+        "q": "The _____ causes repartition topic creation.",
+        "type": "fill_blank",
+        "answers": [
+            "selectKey"
+        ],
+        "other_options": [
+            "rekey",
+            "changeKey",
+            "mapKey"
+        ]
+    },
+    {
+        "q": "What is co-partitioning requirement?",
+        "type": "mcq",
+        "o": [
+            "Streams with same key must have same number of partitions for joins",
+            "Partition matching",
+            "Key alignment",
+            "Partition sync"
+        ]
+    },
+    {
+        "q": "Co-partitioning is required for KStream-KTable joins.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the join types by complexity:",
+        "type": "rearrange",
+        "words": [
+            "KStream-KStream",
+            "KStream-KTable",
+            "KStream-GlobalKTable",
+            "KTable-KTable"
+        ]
+    },
+    {
+        "q": "What is grace period in windowed operations?",
+        "type": "mcq",
+        "o": [
+            "Time allowed for late arriving events",
+            "Wait time",
+            "Buffer period",
+            "Delay allowance"
+        ]
+    },
+    {
+        "q": "Match the window retention with its impact:",
+        "type": "match",
+        "left": [
+            "Short retention",
+            "Long retention"
+        ],
+        "right": [
+            "Less state but loses late events",
+            "More state but handles late events"
+        ]
+    },
+    {
+        "q": "The _____ method sets grace period for windows.",
+        "type": "fill_blank",
+        "answers": [
+            "grace"
+        ],
+        "other_options": [
+            "late",
+            "buffer",
+            "allow"
+        ]
+    },
+    {
+        "q": "What is suppress in Kafka Streams?",
+        "type": "mcq",
+        "o": [
+            "Hold back updates until window closes",
+            "Remove data",
+            "Filter records",
+            "Reduce output"
+        ]
+    },
+    {
+        "q": "Suppress reduces downstream load by emitting final results only.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is TimeWindows.ofSizeAndGrace?",
+        "type": "mcq",
+        "o": [
+            "Create time window with size and grace period",
+            "Window definition",
+            "Time range",
+            "Period specification"
+        ]
+    },
+    {
+        "q": "Match the window method with its result:",
+        "type": "match",
+        "left": [
+            "ofSizeWithNoGrace",
+            "ofSizeAndGrace"
+        ],
+        "right": [
+            "No late events",
+            "Accept late events"
+        ]
+    },
+    {
+        "q": "Rearrange the ksqlDB query execution:",
+        "type": "rearrange",
+        "words": [
+            "Parse query",
+            "Create topology",
+            "Execute stream",
+            "Produce output"
+        ]
+    },
+    {
+        "q": "What is pull query in ksqlDB?",
+        "type": "mcq",
+        "o": [
+            "One-time query against materialized state",
+            "Data pull",
+            "Request query",
+            "Fetch query"
+        ]
+    },
+    {
+        "q": "The _____ query returns continuous results.",
+        "type": "fill_blank",
+        "answers": [
+            "push"
+        ],
+        "other_options": [
+            "stream",
+            "continuous",
+            "live"
+        ]
+    },
+    {
+        "q": "Pull queries are synchronous and return immediately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is CREATE STREAM AS SELECT in ksqlDB?",
+        "type": "mcq",
+        "o": [
+            "Create new persistent stream from query",
+            "Stream copy",
+            "Query stream",
+            "Stream definition"
+        ]
+    },
+    {
+        "q": "Match the ksqlDB object with its characteristic:",
+        "type": "match",
+        "left": [
+            "STREAM",
+            "TABLE"
+        ],
+        "right": [
+            "Append-only",
+            "Upsert semantics"
+        ]
+    },
+    {
+        "q": "ksqlDB TABLE keeps latest value per key.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is connector in Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Plugin for integrating specific external system",
+            "Connection type",
+            "Data bridge",
+            "Integration point"
+        ]
+    },
+    {
+        "q": "The _____ runs multiple connector tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "worker"
+        ],
+        "other_options": [
+            "executor",
+            "runner",
+            "processor"
+        ]
+    },
+    {
+        "q": "Rearrange the Connect deployment modes:",
+        "type": "rearrange",
+        "words": [
+            "Standalone mode",
+            "Distributed mode",
+            "Connect cluster"
+        ]
+    },
+    {
+        "q": "What is standalone mode in Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Single process running all connector tasks",
+            "Independent mode",
+            "Solo mode",
+            "Single instance"
+        ]
+    },
+    {
+        "q": "Distributed mode is recommended for production use.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is task in Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Unit of work within a connector",
+            "Work item",
+            "Job unit",
+            "Process unit"
+        ]
+    },
+    {
+        "q": "Match the connector setting with its purpose:",
+        "type": "match",
+        "left": [
+            "tasks.max",
+            "connector.class",
+            "topics"
+        ],
+        "right": [
+            "Parallelism",
+            "Implementation",
+            "Topic selection"
+        ]
+    },
+    {
+        "q": "The _____ determines number of parallel tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "tasks.max"
+        ],
+        "other_options": [
+            "max.tasks",
+            "parallel.tasks",
+            "task.count"
+        ]
+    },
+    {
+        "q": "What is single message transform (SMT)?",
+        "type": "mcq",
+        "o": [
+            "Lightweight transformation applied to each record",
+            "Message converter",
+            "Data transform",
+            "Record modifier"
+        ]
+    },
+    {
+        "q": "SMTs can add, remove, or modify fields.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the SMT processing order:",
+        "type": "rearrange",
+        "words": [
+            "Read record",
+            "Apply source SMTs",
+            "Convert format",
+            "Apply sink SMTs"
+        ]
+    },
+    {
+        "q": "What is converter in Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Serializes and deserializes data between Connect and Kafka",
+            "Format converter",
+            "Type converter",
+            "Data transformer"
+        ]
+    },
+    {
+        "q": "Match the converter with its format:",
+        "type": "match",
+        "left": [
+            "JsonConverter",
+            "AvroConverter",
+            "StringConverter"
+        ],
+        "right": [
+            "JSON format",
+            "Avro with schema",
+            "Plain text"
+        ]
+    },
+    {
+        "q": "The _____ converter works with Schema Registry.",
+        "type": "fill_blank",
+        "answers": [
+            "AvroConverter"
+        ],
+        "other_options": [
+            "SchemaConverter",
+            "RegistryConverter",
+            "AvroSchemaConverter"
+        ]
+    },
+    {
+        "q": "What is dead letter queue in Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Topic for records that fail processing",
+            "Error queue",
+            "Failed messages",
+            "Retry queue"
+        ]
+    },
+    {
+        "q": "Dead letter queues prevent bad records from blocking processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is connector REST API?",
+        "type": "mcq",
+        "o": [
+            "HTTP interface for managing connectors",
+            "API endpoint",
+            "Management API",
+            "Control interface"
+        ]
+    },
+    {
+        "q": "Match the REST endpoint with its function:",
+        "type": "match",
+        "left": [
+            "/connectors",
+            "/connectors/{name}/status",
+            "/connectors/{name}/restart"
+        ],
+        "right": [
+            "List connectors",
+            "Get status",
+            "Restart connector"
+        ]
+    },
+    {
+        "q": "The _____ endpoint returns connector configuration.",
+        "type": "fill_blank",
+        "answers": [
+            "/connectors/{name}/config"
+        ],
+        "other_options": [
+            "/config/{name}",
+            "/connectors/{name}/settings",
+            "/connector/config"
+        ]
+    },
+    {
+        "q": "Rearrange the connector deployment steps:",
+        "type": "rearrange",
+        "words": [
+            "Deploy plugin",
+            "Configure connector",
+            "Submit via REST",
+            "Monitor status"
+        ]
+    },
+    {
+        "q": "What is offset management in Kafka Connect?",
+        "type": "mcq",
+        "o": [
+            "Tracking source connector progress for resumption",
+            "Offset storage",
+            "Position tracking",
+            "Progress management"
+        ]
+    },
+    {
+        "q": "Source connectors store offsets in internal Kafka topic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is MirrorMaker 2?",
+        "type": "mcq",
+        "o": [
+            "Kafka Connect-based cluster replication tool",
+            "Mirror tool",
+            "Copy utility",
+            "Replication service"
+        ]
+    },
+    {
+        "q": "Match the MM2 connector with its function:",
+        "type": "match",
+        "left": [
+            "MirrorSourceConnector",
+            "MirrorCheckpointConnector",
+            "MirrorHeartbeatConnector"
+        ],
+        "right": [
+            "Replicate data",
+            "Translate offsets",
+            "Monitor replication"
+        ]
+    },
+    {
+        "q": "The _____ enables offset translation between clusters.",
+        "type": "fill_blank",
+        "answers": [
+            "MirrorCheckpointConnector"
+        ],
+        "other_options": [
+            "OffsetConnector",
+            "TranslationConnector",
+            "SyncConnector"
+        ]
+    },
+    {
+        "q": "MirrorMaker 2 supports bidirectional replication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is topic naming in MirrorMaker 2?",
+        "type": "mcq",
+        "o": [
+            "Source cluster prefix added to replicated topic names",
+            "Naming convention",
+            "Topic format",
+            "Name mapping"
+        ]
+    },
+    {
+        "q": "Rearrange the multi-datacenter patterns:",
+        "type": "rearrange",
+        "words": [
+            "Active-passive",
+            "Active-active",
+            "Hub-and-spoke",
+            "Aggregation"
+        ]
+    },
+    {
+        "q": "What is geo-replication in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Replicating data across geographically distributed clusters",
+            "Geographic data",
+            "Location sync",
+            "Global replication"
+        ]
+    },
+    {
+        "q": "Match the replication pattern with its latency:",
+        "type": "match",
+        "left": [
+            "Sync replication",
+            "Async replication"
+        ],
+        "right": [
+            "Higher latency, stronger consistency",
+            "Lower latency, eventual consistency"
+        ]
+    },
+    {
+        "q": "Async replication is commonly used for cross-datacenter setups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is consumer offset translation?",
+        "type": "mcq",
+        "o": [
+            "Mapping offsets between source and target clusters",
+            "Offset conversion",
+            "Position mapping",
+            "Offset sync"
+        ]
+    },
+    {
+        "q": "The _____ topic stores offset mappings in MM2.",
+        "type": "fill_blank",
+        "answers": [
+            "checkpoints"
+        ],
+        "other_options": [
+            "offsets",
+            "mapping",
+            "translation"
+        ]
+    },
+    {
+        "q": "What is exactly-once source connector?",
+        "type": "mcq",
+        "o": [
+            "Source connector guaranteeing no duplicates using transactions",
+            "Unique source",
+            "Single read",
+            "Deduplicated source"
+        ]
+    },
+    {
+        "q": "Exactly-once source connectors require Kafka transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the monitoring priorities:",
+        "type": "rearrange",
+        "words": [
+            "Cluster health",
+            "Replication lag",
+            "Consumer lag",
+            "Throughput"
+        ]
+    },
+    {
+        "q": "What is lag monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking consumer offset behind latest message",
+            "Delay monitoring",
+            "Pending messages",
+            "Queue depth"
+        ]
+    },
+    {
+        "q": "Match the monitoring tool with its usage:",
+        "type": "match",
+        "left": [
+            "Burrow",
+            "kafka-consumer-groups",
+            "JMX metrics"
+        ],
+        "right": [
+            "Lag monitoring",
+            "CLI tool",
+            "Internal metrics"
+        ]
+    },
+    {
+        "q": "The _____ command shows consumer group lag.",
+        "type": "fill_blank",
+        "answers": [
+            "kafka-consumer-groups --describe"
+        ],
+        "other_options": [
+            "kafka-lag",
+            "consumer-lag",
+            "kafka-offset"
+        ]
+    },
+    {
+        "q": "What is Burrow?",
+        "type": "mcq",
+        "o": [
+            "LinkedIn's consumer lag monitoring tool",
+            "Hole monitor",
+            "Offset tracker",
+            "Lag analyzer"
+        ]
+    },
+    {
+        "q": "Burrow can detect stalled consumers and stuck offsets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is alerting based on lag?",
+        "type": "mcq",
+        "o": [
+            "Notifications when consumer lag exceeds threshold",
+            "Lag alerts",
+            "Delay warnings",
+            "Queue alerts"
+        ]
+    },
+    {
+        "q": "Match the metric with its concern level:",
+        "type": "match",
+        "left": [
+            "Under-replicated partitions",
+            "Offline partitions",
+            "Consumer lag"
+        ],
+        "right": [
+            "Warning",
+            "Critical",
+            "Warning"
+        ]
+    },
+    {
+        "q": "The _____ metric indicates partitions without leader.",
+        "type": "fill_blank",
+        "answers": [
+            "offline partitions"
+        ],
+        "other_options": [
+            "dead partitions",
+            "unavailable partitions",
+            "failed partitions"
+        ]
+    },
+    {
+        "q": "Rearrange the incident response steps:",
+        "type": "rearrange",
+        "words": [
+            "Detect issue",
+            "Diagnose cause",
+            "Apply fix",
+            "Verify resolution"
+        ]
+    },
+    {
+        "q": "What is broker disk usage monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking storage consumption to prevent full disks",
+            "Disk check",
+            "Storage monitor",
+            "Space tracking"
+        ]
+    },
+    {
+        "q": "Full disk can cause data loss and broker failure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is network utilization monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking bandwidth usage for capacity planning",
+            "Network check",
+            "Bandwidth monitor",
+            "Traffic monitoring"
+        ]
+    },
+    {
+        "q": "Match the network metric with its concern:",
+        "type": "match",
+        "left": [
+            "High network utilization",
+            "Packet drops",
+            "Latency spikes"
+        ],
+        "right": [
+            "Capacity limit",
+            "Network issues",
+            "Performance problems"
+        ]
+    },
+    {
+        "q": "The _____ metric tracks bytes sent per second.",
+        "type": "fill_blank",
+        "answers": [
+            "BytesOutPerSec"
+        ],
+        "other_options": [
+            "OutBytes",
+            "SendRate",
+            "OutputBytes"
+        ]
+    },
+    {
+        "q": "What is request latency monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking time to process produce and fetch requests",
+            "Response timing",
+            "Request timing",
+            "Latency check"
+        ]
+    },
+    {
+        "q": "High produce latency may indicate slow disks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the capacity planning factors:",
+        "type": "rearrange",
+        "words": [
+            "Current throughput",
+            "Growth rate",
+            "Retention needs",
+            "Peak capacity"
+        ]
+    },
+    {
+        "q": "What is broker scaling?",
+        "type": "mcq",
+        "o": [
+            "Adding or removing brokers to handle load",
+            "Server sizing",
+            "Cluster expansion",
+            "Resource scaling"
+        ]
+    },
+    {
+        "q": "Match the scaling approach with its complexity:",
+        "type": "match",
+        "left": [
+            "Add brokers",
+            "Remove brokers",
+            "Replace brokers"
+        ],
+        "right": [
+            "Moderate",
+            "Complex with reassignment",
+            "Moderate with planning"
+        ]
+    },
+    {
+        "q": "Adding brokers requires partition reassignment for benefit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is rolling upgrade?",
+        "type": "mcq",
+        "o": [
+            "Upgrading brokers one at a time without downtime",
+            "Gradual update",
+            "Sequential upgrade",
+            "Non-disruptive upgrade"
+        ]
+    },
+    {
+        "q": "The _____ ensures compatibility during rolling upgrades.",
+        "type": "fill_blank",
+        "answers": [
+            "inter.broker.protocol.version"
+        ],
+        "other_options": [
+            "broker.version",
+            "protocol.version",
+            "upgrade.version"
+        ]
+    },
+    {
+        "q": "Rearrange the upgrade steps:",
+        "type": "rearrange",
+        "words": [
+            "Backup configs",
+            "Upgrade one broker",
+            "Verify functionality",
+            "Repeat for all brokers"
+        ]
+    },
+    {
+        "q": "What is broker decommissioning?",
+        "type": "mcq",
+        "o": [
+            "Safely removing a broker from the cluster",
+            "Broker removal",
+            "Server retirement",
+            "Node removal"
+        ]
+    },
+    {
+        "q": "Partitions must be moved before decommissioning broker.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is topic deletion?",
+        "type": "mcq",
+        "o": [
+            "Removing a topic and all its data from the cluster",
+            "Topic removal",
+            "Data deletion",
+            "Topic cleanup"
+        ]
+    },
+    {
+        "q": "Match the cleanup operation with its scope:",
+        "type": "match",
+        "left": [
+            "Delete topic",
+            "Purge topic",
+            "Compact topic"
+        ],
+        "right": [
+            "Remove entirely",
+            "Clear data but keep topic",
+            "Remove duplicates"
+        ]
+    },
+    {
+        "q": "The _____ setting enables topic deletion.",
+        "type": "fill_blank",
+        "answers": [
+            "delete.topic.enable"
+        ],
+        "other_options": [
+            "topic.delete.enable",
+            "enable.delete",
+            "allow.delete"
+        ]
+    },
+    {
+        "q": "Topic deletion is asynchronous in Kafka.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is disaster recovery for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Strategy for recovering from catastrophic failures",
+            "Backup strategy",
+            "Recovery plan",
+            "Failure handling"
+        ]
+    },
+    {
+        "q": "Rearrange the DR components:",
+        "type": "rearrange",
+        "words": [
+            "Replication",
+            "Monitoring",
+            "Failover procedure",
+            "Recovery testing"
+        ]
+    },
+    {
+        "q": "What is RTO in disaster recovery?",
+        "type": "mcq",
+        "o": [
+            "Recovery Time Objective - maximum acceptable downtime",
+            "Recovery total",
+            "Return time",
+            "Restore objective"
+        ]
+    },
+    {
+        "q": "Match the DR term with its meaning:",
+        "type": "match",
+        "left": [
+            "RTO",
+            "RPO"
+        ],
+        "right": [
+            "Downtime tolerance",
+            "Data loss tolerance"
+        ]
+    },
+    {
+        "q": "The _____ defines acceptable data loss in disaster recovery.",
+        "type": "fill_blank",
+        "answers": [
+            "RPO"
+        ],
+        "other_options": [
+            "RTO",
+            "DLO",
+            "MDL"
+        ]
+    },
+    {
+        "q": "Lower RPO requires more frequent replication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is client failover?",
+        "type": "mcq",
+        "o": [
+            "Switching clients to backup cluster during outage",
+            "Client switch",
+            "Connection failover",
+            "Client redirect"
+        ]
+    },
+    {
+        "q": "DNS-based failover can redirect clients to backup cluster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the failover steps:",
+        "type": "rearrange",
+        "words": [
+            "Detect failure",
+            "Stop replication",
+            "Promote standby",
+            "Redirect clients"
+        ]
+    },
+    {
+        "q": "What is split-brain in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Multiple brokers believing they are the leader for same partition",
+            "Brain split",
+            "Leader conflict",
+            "Partition split"
+        ]
+    },
+    {
+        "q": "Match the prevention mechanism with its purpose:",
+        "type": "match",
+        "left": [
+            "Leader epoch",
+            "ISR",
+            "Controller"
+        ],
+        "right": [
+            "Version tracking",
+            "Sync check",
+            "Coordination"
+        ]
+    },
+    {
+        "q": "Fencing prevents split-brain scenarios.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is broker fencing?",
+        "type": "mcq",
+        "o": [
+            "Isolating broker to prevent stale operations",
+            "Broker isolation",
+            "Node blocking",
+            "Server fencing"
+        ]
+    },
+    {
+        "q": "The _____ prevents stale brokers from serving requests.",
+        "type": "fill_blank",
+        "answers": [
+            "broker epoch"
+        ],
+        "other_options": [
+            "broker id",
+            "broker version",
+            "fence token"
+        ]
+    },
+    {
+        "q": "What is data governance in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Policies and processes for managing data lifecycle",
+            "Data management",
+            "Data policies",
+            "Information governance"
+        ]
+    },
+    {
+        "q": "Match the governance aspect with its focus:",
+        "type": "match",
+        "left": [
+            "Data quality",
+            "Data lineage",
+            "Data security",
+            "Data compliance"
+        ],
+        "right": [
+            "Accuracy",
+            "Origin tracking",
+            "Access control",
+            "Regulations"
+        ]
+    },
+    {
+        "q": "Rearrange the compliance requirements:",
+        "type": "rearrange",
+        "words": [
+            "Identify requirements",
+            "Implement controls",
+            "Audit logs",
+            "Regular review"
+        ]
+    },
+    {
+        "q": "What is data masking in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Hiding sensitive data fields in messages",
+            "Data hiding",
+            "Field masking",
+            "Privacy protection"
+        ]
+    },
+    {
+        "q": "The _____ can implement data masking in Kafka Connect.",
+        "type": "fill_blank",
+        "answers": [
+            "SMT"
+        ],
+        "other_options": [
+            "converter",
+            "interceptor",
+            "filter"
+        ]
+    },
+    {
+        "q": "What is message encryption in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Encrypting message payload for confidentiality",
+            "Data encryption",
+            "Secure messages",
+            "Payload protection"
+        ]
+    },
+    {
+        "q": "SSL encrypts data in transit, not at rest.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the encryption scope with its protection:",
+        "type": "match",
+        "left": [
+            "SSL/TLS",
+            "Application encryption",
+            "Disk encryption"
+        ],
+        "right": [
+            "In transit",
+            "In message",
+            "At rest"
+        ]
+    },
+    {
+        "q": "What is end-to-end encryption?",
+        "type": "mcq",
+        "o": [
+            "Encryption from producer to consumer without broker access",
+            "Full encryption",
+            "Complete protection",
+            "Total encryption"
+        ]
+    },
+    {
+        "q": "The _____ must handle encryption for end-to-end security.",
+        "type": "fill_blank",
+        "answers": [
+            "application"
+        ],
+        "other_options": [
+            "broker",
+            "client",
+            "producer"
+        ]
+    },
+    {
+        "q": "Broker cannot read end-to-end encrypted messages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is key rotation?",
+        "type": "mcq",
+        "o": [
+            "Periodically changing encryption keys for security",
+            "Key change",
+            "Key update",
+            "Credential rotation"
+        ]
+    },
+    {
+        "q": "Rearrange the key management lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Generate key",
+            "Distribute key",
+            "Use key",
+            "Rotate key",
+            "Retire key"
+        ]
+    },
+    {
+        "q": "What is schema registry subject?",
+        "type": "mcq",
+        "o": [
+            "Namespace for schema versioning",
+            "Schema name",
+            "Topic mapping",
+            "Schema category"
+        ]
+    },
+    {
+        "q": "Match the subject strategy with its naming:",
+        "type": "match",
+        "left": [
+            "TopicNameStrategy",
+            "RecordNameStrategy",
+            "TopicRecordNameStrategy"
+        ],
+        "right": [
+            "Topic-based",
+            "Record-based",
+            "Both combined"
+        ]
+    },
+    {
+        "q": "The _____ strategy uses topic name as subject.",
+        "type": "fill_blank",
+        "answers": [
+            "TopicNameStrategy"
+        ],
+        "other_options": [
+            "TopicStrategy",
+            "NameStrategy",
+            "SubjectStrategy"
+        ]
+    },
+    {
+        "q": "TopicNameStrategy is the default in Schema Registry.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is schema normalization?",
+        "type": "mcq",
+        "o": [
+            "Canonicalizing schemas for consistent comparison",
+            "Schema cleanup",
+            "Schema format",
+            "Schema standard"
+        ]
+    },
+    {
+        "q": "Normalized schemas improve deduplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the schema evolution steps:",
+        "type": "rearrange",
+        "words": [
+            "Propose change",
+            "Check compatibility",
+            "Register version",
+            "Update clients"
+        ]
+    },
+    {
+        "q": "What is schema reference in Protobuf?",
+        "type": "mcq",
+        "o": [
+            "Including shared message types across schemas",
+            "Schema import",
+            "Type reference",
+            "Message include"
+        ]
+    },
+    {
+        "q": "Match the serialization format with its feature:",
+        "type": "match",
+        "left": [
+            "Avro",
+            "Protobuf",
+            "JSON Schema"
+        ],
+        "right": [
+            "Schema evolution",
+            "Code generation",
+            "Human readable"
+        ]
+    },
+    {
+        "q": "The _____ format is best for human readability.",
+        "type": "fill_blank",
+        "answers": [
+            "JSON"
+        ],
+        "other_options": [
+            "Avro",
+            "Protobuf",
+            "Thrift"
+        ]
+    },
+    {
+        "q": "Avro is more compact than JSON for binary data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is schema validation in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Rejecting messages that do not match registered schema",
+            "Schema check",
+            "Message validation",
+            "Format verification"
+        ]
+    },
+    {
+        "q": "Schema validation can be enforced at broker level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the validation mode with its behavior:",
+        "type": "match",
+        "left": [
+            "NONE",
+            "FULL"
+        ],
+        "right": [
+            "No validation",
+            "Strict validation"
+        ]
+    },
+    {
+        "q": "What is topic-level schema validation?",
+        "type": "mcq",
+        "o": [
+            "Configuring schema enforcement per topic",
+            "Topic validation",
+            "Per-topic check",
+            "Topic schema"
+        ]
+    },
+    {
+        "q": "The _____ property enables broker-side schema validation.",
+        "type": "fill_blank",
+        "answers": [
+            "confluent.schema.registry.validation"
+        ],
+        "other_options": [
+            "schema.validation",
+            "validate.schema",
+            "schema.enforce"
+        ]
+    },
+    {
+        "q": "What is Kafka performance tuning?",
+        "type": "mcq",
+        "o": [
+            "Optimizing configuration for throughput and latency",
+            "Speed improvement",
+            "Performance boost",
+            "System tuning"
+        ]
+    },
+    {
+        "q": "Match the tuning goal with its focus:",
+        "type": "match",
+        "left": [
+            "Throughput",
+            "Latency",
+            "Durability"
+        ],
+        "right": [
+            "Batch size, compression",
+            "Batch linger, network",
+            "Acks, replication"
+        ]
+    },
+    {
+        "q": "The _____ tradeoff exists between throughput and latency.",
+        "type": "fill_blank",
+        "answers": [
+            "batch"
+        ],
+        "other_options": [
+            "speed",
+            "size",
+            "buffer"
+        ]
+    },
+    {
+        "q": "Larger batches improve throughput but increase latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is producer throughput optimization?",
+        "type": "mcq",
+        "o": [
+            "Maximizing messages per second through batching and compression",
+            "Fast sending",
+            "High volume",
+            "Speed optimization"
+        ]
+    },
+    {
+        "q": "Rearrange the producer optimization priorities:",
+        "type": "rearrange",
+        "words": [
+            "Batch size",
+            "Compression",
+            "Buffer memory",
+            "Linger time"
+        ]
+    },
+    {
+        "q": "What is consumer optimization?",
+        "type": "mcq",
+        "o": [
+            "Tuning fetch settings and processing for efficiency",
+            "Fast reading",
+            "High consumption",
+            "Read optimization"
+        ]
+    },
+    {
+        "q": "Match the consumer setting with its effect:",
+        "type": "match",
+        "left": [
+            "fetch.min.bytes",
+            "max.poll.records",
+            "session.timeout.ms"
+        ],
+        "right": [
+            "Network efficiency",
+            "Processing batch",
+            "Liveness detection"
+        ]
+    },
+    {
+        "q": "The _____ can be tuned for long-running consumer processing.",
+        "type": "fill_blank",
+        "answers": [
+            "max.poll.interval.ms"
+        ],
+        "other_options": [
+            "poll.timeout",
+            "process.time",
+            "consumer.timeout"
+        ]
+    },
+    {
+        "q": "What is broker optimization?",
+        "type": "mcq",
+        "o": [
+            "Tuning broker parameters for cluster performance",
+            "Server tuning",
+            "Broker speed",
+            "Cluster optimization"
+        ]
+    },
+    {
+        "q": "Rearrange the broker tuning areas:",
+        "type": "rearrange",
+        "words": [
+            "Network threads",
+            "I/O threads",
+            "Log settings",
+            "Memory settings"
+        ]
+    },
+    {
+        "q": "socket.send.buffer.bytes affects network performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is disk I/O optimization?",
+        "type": "mcq",
+        "o": [
+            "Configuring storage for optimal read/write performance",
+            "Disk tuning",
+            "Storage speed",
+            "I/O improvement"
+        ]
+    },
+    {
+        "q": "Match the disk setting with its purpose:",
+        "type": "match",
+        "left": [
+            "log.dirs",
+            "log.segment.bytes",
+            "log.flush.interval.ms"
+        ],
+        "right": [
+            "Multiple drives",
+            "Segment size",
+            "Flush frequency"
+        ]
+    },
+    {
+        "q": "The _____ spreads I/O across multiple disks.",
+        "type": "fill_blank",
+        "answers": [
+            "log.dirs"
+        ],
+        "other_options": [
+            "disk.spread",
+            "multi.disk",
+            "storage.dirs"
+        ]
+    },
+    {
+        "q": "What is OS page cache?",
+        "type": "mcq",
+        "o": [
+            "Operating system memory cache for disk data",
+            "System cache",
+            "Memory buffer",
+            "File cache"
+        ]
+    },
+    {
+        "q": "Kafka relies heavily on OS page cache for performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is heap sizing for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Configuring JVM heap memory for broker/client processes",
+            "Memory allocation",
+            "Heap configuration",
+            "JVM sizing"
+        ]
+    },
+    {
+        "q": "Match the memory type with its usage:",
+        "type": "match",
+        "left": [
+            "JVM heap",
+            "OS page cache",
+            "Direct memory"
+        ],
+        "right": [
+            "Application objects",
+            "File data",
+            "Network buffers"
+        ]
+    },
+    {
+        "q": "Rearrange the GC optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Choose GC algorithm",
+            "Set heap size",
+            "Tune GC parameters",
+            "Monitor performance"
+        ]
+    },
+    {
+        "q": "What is G1GC for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Garbage collector recommended for Kafka brokers",
+            "Garbage type",
+            "GC algorithm",
+            "Memory cleaner"
+        ]
+    },
+    {
+        "q": "The _____ GC is recommended for Kafka in Java 8+.",
+        "type": "fill_blank",
+        "answers": [
+            "G1"
+        ],
+        "other_options": [
+            "CMS",
+            "Parallel",
+            "ZGC"
+        ]
+    },
+    {
+        "q": "Long GC pauses can cause consumer rebalancing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is network configuration for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Tuning network settings for efficient data transfer",
+            "Network setup",
+            "Connection config",
+            "Socket settings"
+        ]
+    },
+    {
+        "q": "Match the network setting with its effect:",
+        "type": "match",
+        "left": [
+            "Send buffer",
+            "Receive buffer",
+            "Connection timeout"
+        ],
+        "right": [
+            "Outgoing data",
+            "Incoming data",
+            "Connection limit"
+        ]
+    },
+    {
+        "q": "The _____ affects how quickly connections fail.",
+        "type": "fill_blank",
+        "answers": [
+            "connection.setup.timeout.ms"
+        ],
+        "other_options": [
+            "connect.timeout",
+            "socket.timeout",
+            "network.timeout"
+        ]
+    },
+    {
+        "q": "What is TCP tuning for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Optimizing OS-level TCP settings for Kafka",
+            "TCP optimization",
+            "Network tuning",
+            "Socket tuning"
+        ]
+    },
+    {
+        "q": "Rearrange the TCP optimization areas:",
+        "type": "rearrange",
+        "words": [
+            "Buffer sizes",
+            "Backlog queue",
+            "Keepalive",
+            "Congestion control"
+        ]
+    },
+    {
+        "q": "Increasing tcp_max_syn_backlog helps with high connection rates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is client configuration best practices?",
+        "type": "mcq",
+        "o": [
+            "Recommended settings for producers and consumers",
+            "Client setup",
+            "Configuration guide",
+            "Setup recommendations"
+        ]
+    },
+    {
+        "q": "Match the best practice with its benefit:",
+        "type": "match",
+        "left": [
+            "Idempotent producer",
+            "Static membership",
+            "Cooperative rebalance"
+        ],
+        "right": [
+            "No duplicates",
+            "Faster restart",
+            "Less downtime"
+        ]
+    },
+    {
+        "q": "The _____ prevents message duplicates during retries.",
+        "type": "fill_blank",
+        "answers": [
+            "enable.idempotence"
+        ],
+        "other_options": [
+            "no.duplicates",
+            "exactly.once",
+            "idempotent.mode"
+        ]
+    },
+    {
+        "q": "What is multi-tenancy in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Sharing Kafka cluster among multiple applications",
+            "Multi-user",
+            "Shared cluster",
+            "Tenant isolation"
+        ]
+    },
+    {
+        "q": "Quotas help isolate tenants from each other.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the multi-tenancy controls:",
+        "type": "rearrange",
+        "words": [
+            "Quotas",
+            "ACLs",
+            "Topic naming",
+            "Monitoring"
+        ]
+    },
+    {
+        "q": "What is topic naming convention?",
+        "type": "mcq",
+        "o": [
+            "Standardized format for topic names in organization",
+            "Name format",
+            "Topic format",
+            "Naming rule"
+        ]
+    },
+    {
+        "q": "Match the naming element with its purpose:",
+        "type": "match",
+        "left": [
+            "Environment prefix",
+            "Team prefix",
+            "Data type suffix"
+        ],
+        "right": [
+            "Separate prod/dev",
+            "Ownership",
+            "Data classification"
+        ]
+    },
+    {
+        "q": "The _____ convention helps with topic organization.",
+        "type": "fill_blank",
+        "answers": [
+            "hierarchical naming"
+        ],
+        "other_options": [
+            "flat naming",
+            "simple naming",
+            "direct naming"
+        ]
+    },
+    {
+        "q": "What is event sourcing with Kafka?",
+        "type": "mcq",
+        "o": [
+            "Storing all changes as sequence of events",
+            "Event storage",
+            "Source events",
+            "Change logging"
+        ]
+    },
+    {
+        "q": "Event sourcing enables full audit trail.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the event pattern with its characteristic:",
+        "type": "match",
+        "left": [
+            "Event sourcing",
+            "CQRS",
+            "Event-driven"
+        ],
+        "right": [
+            "Full history",
+            "Separate read/write",
+            "Async communication"
+        ]
+    },
+    {
+        "q": "What is CQRS with Kafka?",
+        "type": "mcq",
+        "o": [
+            "Command Query Responsibility Segregation pattern",
+            "Query separation",
+            "Command pattern",
+            "Data segregation"
+        ]
+    },
+    {
+        "q": "The _____ pattern separates write and read models.",
+        "type": "fill_blank",
+        "answers": [
+            "CQRS"
+        ],
+        "other_options": [
+            "Event sourcing",
+            "Command",
+            "Read-write"
+        ]
+    },
+    {
+        "q": "Rearrange the CQRS components:",
+        "type": "rearrange",
+        "words": [
+            "Command handler",
+            "Event store",
+            "Event processor",
+            "Query service"
+        ]
+    },
+    {
+        "q": "What is saga pattern?",
+        "type": "mcq",
+        "o": [
+            "Managing distributed transactions through events",
+            "Long story",
+            "Transaction pattern",
+            "Event chain"
+        ]
+    },
+    {
+        "q": "Sagas handle failures through compensating transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the saga type with its coordination:",
+        "type": "match",
+        "left": [
+            "Orchestration",
+            "Choreography"
+        ],
+        "right": [
+            "Central coordinator",
+            "Event-based"
+        ]
+    },
+    {
+        "q": "What is outbox pattern?",
+        "type": "mcq",
+        "o": [
+            "Reliable event publishing using database transaction",
+            "Message outbox",
+            "Event queue",
+            "Transactional publish"
+        ]
+    },
+    {
+        "q": "The _____ pattern ensures atomic update and publish.",
+        "type": "fill_blank",
+        "answers": [
+            "outbox"
+        ],
+        "other_options": [
+            "transactional",
+            "atomic",
+            "reliable"
+        ]
+    },
+    {
+        "q": "What is change data capture (CDC)?",
+        "type": "mcq",
+        "o": [
+            "Capturing database changes as events",
+            "Data capture",
+            "Change tracking",
+            "Database events"
+        ]
+    },
+    {
+        "q": "Rearrange the CDC pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Database change",
+            "Capture connector",
+            "Kafka topic",
+            "Consumer processing"
+        ]
+    },
+    {
+        "q": "Match the CDC tool with its database:",
+        "type": "match",
+        "left": [
+            "Debezium",
+            "Maxwell",
+            "GoldenGate"
+        ],
+        "right": [
+            "Multiple DBs",
+            "MySQL",
+            "Oracle"
+        ]
+    },
+    {
+        "q": "Debezium is a popular CDC connector for Kafka Connect.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is event-driven architecture?",
+        "type": "mcq",
+        "o": [
+            "Architecture based on producing and consuming events",
+            "Event system",
+            "Driver architecture",
+            "Event design"
+        ]
+    },
+    {
+        "q": "The _____ decouples producers from consumers.",
+        "type": "fill_blank",
+        "answers": [
+            "event-driven"
+        ],
+        "other_options": [
+            "decoupled",
+            "async",
+            "loosely-coupled"
+        ]
+    },
+    {
+        "q": "What is microservices communication with Kafka?",
+        "type": "mcq",
+        "o": [
+            "Using Kafka for async communication between services",
+            "Service messaging",
+            "Microservice events",
+            "Service integration"
+        ]
+    },
+    {
+        "q": "Match the communication style with its characteristic:",
+        "type": "match",
+        "left": [
+            "Sync (REST)",
+            "Async (Kafka)"
+        ],
+        "right": [
+            "Request-response",
+            "Fire-and-forget"
+        ]
+    },
+    {
+        "q": "Kafka enables loose coupling between microservices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the service integration patterns:",
+        "type": "rearrange",
+        "words": [
+            "Request-response",
+            "Event notification",
+            "Event-carried state",
+            "Query"
+        ]
+    },
+    {
+        "q": "What is stream processing architecture?",
+        "type": "mcq",
+        "o": [
+            "Real-time data processing using streaming platforms",
+            "Stream design",
+            "Flow architecture",
+            "Processing system"
+        ]
+    },
+    {
+        "q": "The _____ enables real-time analytics on streaming data.",
+        "type": "fill_blank",
+        "answers": [
+            "stream processing"
+        ],
+        "other_options": [
+            "batch processing",
+            "real-time processing",
+            "event processing"
+        ]
+    },
+    {
+        "q": "What is lambda architecture?",
+        "type": "mcq",
+        "o": [
+            "Architecture combining batch and stream processing",
+            "Lambda design",
+            "Dual processing",
+            "Hybrid architecture"
+        ]
+    },
+    {
+        "q": "Match the lambda layer with its purpose:",
+        "type": "match",
+        "left": [
+            "Batch layer",
+            "Speed layer",
+            "Serving layer"
+        ],
+        "right": [
+            "Historical processing",
+            "Real-time processing",
+            "Query results"
+        ]
+    },
+    {
+        "q": "Lambda architecture maintains two separate pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is kappa architecture?",
+        "type": "mcq",
+        "o": [
+            "Architecture using only stream processing for all data",
+            "Kappa design",
+            "Stream-only",
+            "Single pipeline"
+        ]
+    },
+    {
+        "q": "The _____ architecture simplifies by using one pipeline.",
+        "type": "fill_blank",
+        "answers": [
+            "kappa"
+        ],
+        "other_options": [
+            "lambda",
+            "unified",
+            "simple"
+        ]
+    },
+    {
+        "q": "Rearrange the data pipeline components:",
+        "type": "rearrange",
+        "words": [
+            "Ingestion",
+            "Processing",
+            "Storage",
+            "Serving"
+        ]
+    },
+    {
+        "q": "What is real-time analytics?",
+        "type": "mcq",
+        "o": [
+            "Analyzing data as it arrives for immediate insights",
+            "Live analytics",
+            "Instant analysis",
+            "Quick insights"
+        ]
+    },
+    {
+        "q": "Kafka enables sub-second latency for analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is IoT data streaming?",
+        "type": "mcq",
+        "o": [
+            "Collecting and processing sensor data through Kafka",
+            "IoT integration",
+            "Sensor streaming",
+            "Device data"
+        ]
+    },
+    {
+        "q": "Match the IoT challenge with its solution:",
+        "type": "match",
+        "left": [
+            "High volume",
+            "Variable format",
+            "Out-of-order"
+        ],
+        "right": [
+            "Partitioning",
+            "Schema registry",
+            "Windowing"
+        ]
+    },
+    {
+        "q": "The _____ handles timestamp ordering in IoT streams.",
+        "type": "fill_blank",
+        "answers": [
+            "event time processing"
+        ],
+        "other_options": [
+            "time ordering",
+            "timestamp handling",
+            "order management"
+        ]
+    },
+    {
+        "q": "What is log aggregation with Kafka?",
+        "type": "mcq",
+        "o": [
+            "Collecting logs from multiple sources into Kafka",
+            "Log collection",
+            "Log streaming",
+            "Log centralization"
+        ]
+    },
+    {
+        "q": "Rearrange the log pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Collect logs",
+            "Stream to Kafka",
+            "Process/enrich",
+            "Store in SIEM"
+        ]
+    },
+    {
+        "q": "Kafka can replace traditional log aggregators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is metrics streaming?",
+        "type": "mcq",
+        "o": [
+            "Sending monitoring metrics through Kafka pipeline",
+            "Metric collection",
+            "Monitoring stream",
+            "Metric flow"
+        ]
+    },
+    {
+        "q": "Match the monitoring component with its role:",
+        "type": "match",
+        "left": [
+            "Collector",
+            "Kafka",
+            "Processor",
+            "Store"
+        ],
+        "right": [
+            "Gather metrics",
+            "Transport",
+            "Aggregate",
+            "Time-series DB"
+        ]
+    },
+    {
+        "q": "The _____ is a common sink for Kafka metrics.",
+        "type": "fill_blank",
+        "answers": [
+            "Prometheus"
+        ],
+        "other_options": [
+            "Grafana",
+            "InfluxDB",
+            "Elasticsearch"
+        ]
+    },
+    {
+        "q": "What is clickstream analysis?",
+        "type": "mcq",
+        "o": [
+            "Analyzing user clicks and interactions in real-time",
+            "Click tracking",
+            "User analysis",
+            "Behavior tracking"
+        ]
+    },
+    {
+        "q": "Kafka enables real-time personalization from clickstream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the clickstream pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Capture clicks",
+            "Enrich with user data",
+            "Aggregate patterns",
+            "Trigger actions"
+        ]
+    },
+    {
+        "q": "What is fraud detection with Kafka?",
+        "type": "mcq",
+        "o": [
+            "Real-time detection of fraudulent transactions",
+            "Fraud monitoring",
+            "Security analysis",
+            "Risk detection"
+        ]
+    },
+    {
+        "q": "Match the fraud detection requirement with its feature:",
+        "type": "match",
+        "left": [
+            "Low latency",
+            "Pattern matching",
+            "Historical comparison"
+        ],
+        "right": [
+            "Stream processing",
+            "Complex rules",
+            "KTable lookup"
+        ]
+    },
+    {
+        "q": "The _____ enables sub-second fraud decisions.",
+        "type": "fill_blank",
+        "answers": [
+            "stream processing"
+        ],
+        "other_options": [
+            "batch processing",
+            "real-time analysis",
+            "instant detection"
+        ]
+    },
+    {
+        "q": "What is Kafka testing strategy?",
+        "type": "mcq",
+        "o": [
+            "Approach for testing Kafka applications",
+            "Test plan",
+            "Testing methodology",
+            "Quality strategy"
+        ]
+    },
+    {
+        "q": "Rearrange the testing levels:",
+        "type": "rearrange",
+        "words": [
+            "Unit tests",
+            "Integration tests",
+            "End-to-end tests",
+            "Performance tests"
+        ]
+    },
+    {
+        "q": "EmbeddedKafka enables unit testing without external cluster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Testcontainers for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Library for running Kafka in Docker for tests",
+            "Test containers",
+            "Docker testing",
+            "Container tests"
+        ]
+    },
+    {
+        "q": "Match the testing approach with its scope:",
+        "type": "match",
+        "left": [
+            "MockProducer",
+            "EmbeddedKafka",
+            "Testcontainers"
+        ],
+        "right": [
+            "Unit test",
+            "Fast integration",
+            "Full integration"
+        ]
+    },
+    {
+        "q": "The _____ provides mock objects for Kafka testing.",
+        "type": "fill_blank",
+        "answers": [
+            "MockProducer/MockConsumer"
+        ],
+        "other_options": [
+            "TestProducer",
+            "FakeKafka",
+            "StubConsumer"
+        ]
+    },
+    {
+        "q": "What is TopologyTestDriver?",
+        "type": "mcq",
+        "o": [
+            "Testing utility for Kafka Streams topologies",
+            "Topology tester",
+            "Stream driver",
+            "Test runner"
+        ]
+    },
+    {
+        "q": "TopologyTestDriver does not require running Kafka cluster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Streams test workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create topology",
+            "Create test driver",
+            "Pipe input",
+            "Read output"
+        ]
+    },
+    {
+        "q": "What is performance testing for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Measuring throughput and latency under load",
+            "Load testing",
+            "Speed testing",
+            "Capacity testing"
+        ]
+    },
+    {
+        "q": "Match the performance tool with its purpose:",
+        "type": "match",
+        "left": [
+            "kafka-producer-perf-test",
+            "kafka-consumer-perf-test"
+        ],
+        "right": [
+            "Measure produce rate",
+            "Measure consume rate"
+        ]
+    },
+    {
+        "q": "The _____ tool measures producer throughput.",
+        "type": "fill_blank",
+        "answers": [
+            "kafka-producer-perf-test"
+        ],
+        "other_options": [
+            "kafka-perf",
+            "producer-test",
+            "throughput-test"
+        ]
+    },
+    {
+        "q": "What is chaos engineering for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Testing system resilience through controlled failures",
+            "Failure testing",
+            "Chaos testing",
+            "Resilience testing"
+        ]
+    },
+    {
+        "q": "Chaos testing reveals hidden weaknesses in Kafka setup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the chaos scenario with its impact:",
+        "type": "match",
+        "left": [
+            "Broker failure",
+            "Network partition",
+            "Disk full"
+        ],
+        "right": [
+            "Leadership failover",
+            "ISR shrink",
+            "Producer failure"
+        ]
+    },
+    {
+        "q": "What is blue-green deployment for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Running two environments for zero-downtime deployments",
+            "Dual deployment",
+            "Color deployment",
+            "Parallel environments"
+        ]
+    },
+    {
+        "q": "The _____ approach switches between environments.",
+        "type": "fill_blank",
+        "answers": [
+            "blue-green"
+        ],
+        "other_options": [
+            "canary",
+            "rolling",
+            "staged"
+        ]
+    },
+    {
+        "q": "Rearrange the deployment strategies:",
+        "type": "rearrange",
+        "words": [
+            "Blue-green",
+            "Canary",
+            "Rolling",
+            "Recreate"
+        ]
+    },
+    {
+        "q": "What is canary deployment?",
+        "type": "mcq",
+        "o": [
+            "Gradually rolling out changes to subset of users",
+            "Partial deployment",
+            "Test deployment",
+            "Small rollout"
+        ]
+    },
+    {
+        "q": "Canary deployments reduce risk of widespread failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deployment concern with its solution:",
+        "type": "match",
+        "left": [
+            "Rollback speed",
+            "Testing in production",
+            "Zero downtime"
+        ],
+        "right": [
+            "Blue-green",
+            "Canary",
+            "Rolling"
+        ]
+    },
+    {
+        "q": "What is Kafka on Kubernetes?",
+        "type": "mcq",
+        "o": [
+            "Running Kafka cluster in Kubernetes environment",
+            "K8s Kafka",
+            "Container Kafka",
+            "Cloud-native Kafka"
+        ]
+    },
+    {
+        "q": "The _____ operator manages Kafka on Kubernetes.",
+        "type": "fill_blank",
+        "answers": [
+            "Strimzi"
+        ],
+        "other_options": [
+            "KafkaOperator",
+            "K8sKafka",
+            "KubeKafka"
+        ]
+    },
+    {
+        "q": "Rearrange the Kubernetes Kafka components:",
+        "type": "rearrange",
+        "words": [
+            "Operator",
+            "CRDs",
+            "StatefulSets",
+            "Services"
+        ]
+    },
+    {
+        "q": "What is StatefulSet for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Kubernetes resource for stateful Kafka brokers",
+            "State manager",
+            "Persistent pods",
+            "Stable pods"
+        ]
+    },
+    {
+        "q": "StatefulSets provide stable network identities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the K8s resource with its Kafka use:",
+        "type": "match",
+        "left": [
+            "StatefulSet",
+            "PersistentVolume",
+            "ConfigMap"
+        ],
+        "right": [
+            "Broker pods",
+            "Data storage",
+            "Configuration"
+        ]
+    },
+    {
+        "q": "What is Confluent Cloud?",
+        "type": "mcq",
+        "o": [
+            "Fully managed Kafka service by Confluent",
+            "Cloud platform",
+            "Kafka service",
+            "Managed streaming"
+        ]
+    },
+    {
+        "q": "The _____ eliminates operational overhead of managing Kafka.",
+        "type": "fill_blank",
+        "answers": [
+            "managed service"
+        ],
+        "other_options": [
+            "cloud service",
+            "SaaS",
+            "platform"
+        ]
+    },
+    {
+        "q": "Rearrange the managed Kafka benefits:",
+        "type": "rearrange",
+        "words": [
+            "No operations",
+            "Auto-scaling",
+            "Built-in security",
+            "Pay-per-use"
+        ]
+    },
+    {
+        "q": "What is Amazon MSK?",
+        "type": "mcq",
+        "o": [
+            "AWS managed Kafka service",
+            "Amazon streaming",
+            "AWS Kafka",
+            "Cloud Kafka"
+        ]
+    },
+    {
+        "q": "MSK integrates with other AWS services.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cloud provider with its Kafka service:",
+        "type": "match",
+        "left": [
+            "AWS",
+            "Azure",
+            "Confluent"
+        ],
+        "right": [
+            "MSK",
+            "Event Hubs",
+            "Confluent Cloud"
+        ]
+    },
+    {
+        "q": "What is Azure Event Hubs Kafka?",
+        "type": "mcq",
+        "o": [
+            "Azure service providing Kafka protocol compatibility",
+            "Azure Kafka",
+            "Event streaming",
+            "Azure messaging"
+        ]
+    },
+    {
+        "q": "The _____ provides Kafka API compatibility on Azure.",
+        "type": "fill_blank",
+        "answers": [
+            "Event Hubs"
+        ],
+        "other_options": [
+            "Azure Kafka",
+            "Stream Analytics",
+            "Service Bus"
+        ]
+    },
+    {
+        "q": "Clients can connect to Event Hubs using Kafka protocol.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GCP Pub/Sub vs Kafka?",
+        "type": "mcq",
+        "o": [
+            "Different messaging systems with distinct architectures",
+            "Same system",
+            "Cloud messaging",
+            "Streaming comparison"
+        ]
+    },
+    {
+        "q": "Match the platform with its characteristic:",
+        "type": "match",
+        "left": [
+            "Kafka",
+            "Pub/Sub",
+            "Kinesis"
+        ],
+        "right": [
+            "Consumer groups",
+            "Push subscriptions",
+            "Shards"
+        ]
+    },
+    {
+        "q": "The _____ model is used by Kafka for message delivery.",
+        "type": "fill_blank",
+        "answers": [
+            "pull"
+        ],
+        "other_options": [
+            "push",
+            "stream",
+            "queue"
+        ]
+    },
+    {
+        "q": "What is Kafka vs RabbitMQ?",
+        "type": "mcq",
+        "o": [
+            "Comparison between event streaming and message broker",
+            "Queue comparison",
+            "Messaging systems",
+            "Broker comparison"
+        ]
+    },
+    {
+        "q": "Kafka retains messages after consumption by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange from highest to lowest throughput:",
+        "type": "rearrange",
+        "words": [
+            "Kafka",
+            "RabbitMQ",
+            "ActiveMQ",
+            "SQS"
+        ]
+    },
+    {
+        "q": "What is message ordering guarantee?",
+        "type": "mcq",
+        "o": [
+            "Ensuring messages are consumed in production order",
+            "Sort guarantee",
+            "Sequence assurance",
+            "Order preservation"
+        ]
+    },
+    {
+        "q": "Match the ordering scope with its guarantee:",
+        "type": "match",
+        "left": [
+            "Within partition",
+            "Across partitions"
+        ],
+        "right": [
+            "Guaranteed order",
+            "No order guarantee"
+        ]
+    },
+    {
+        "q": "The _____ key ensures same partition for related messages.",
+        "type": "fill_blank",
+        "answers": [
+            "message"
+        ],
+        "other_options": [
+            "partition",
+            "routing",
+            "order"
+        ]
+    },
+    {
+        "q": "What is backpressure handling?",
+        "type": "mcq",
+        "o": [
+            "Managing producer speed when consumer is slow",
+            "Pressure management",
+            "Flow control",
+            "Rate limiting"
+        ]
+    },
+    {
+        "q": "Kafka handles backpressure through consumer lag.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data locality in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Processing data near where it is stored",
+            "Local data",
+            "Data placement",
+            "Storage location"
+        ]
+    },
+    {
+        "q": "Match the locality benefit with its impact:",
+        "type": "match",
+        "left": [
+            "Reduced latency",
+            "Lower bandwidth"
+        ],
+        "right": [
+            "Faster processing",
+            "Network savings"
+        ]
+    },
+    {
+        "q": "The _____ enables local state querying in Kafka Streams.",
+        "type": "fill_blank",
+        "answers": [
+            "interactive queries"
+        ],
+        "other_options": [
+            "local queries",
+            "state queries",
+            "store queries"
+        ]
+    },
+    {
+        "q": "Rearrange the data flow optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify bottleneck",
+            "Analyze metrics",
+            "Apply optimization",
+            "Measure improvement"
+        ]
+    },
+    {
+        "q": "What is topic partitioning strategy?",
+        "type": "mcq",
+        "o": [
+            "How to determine number and assignment of partitions",
+            "Partition plan",
+            "Division strategy",
+            "Split approach"
+        ]
+    },
+    {
+        "q": "More partitions enable higher parallelism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the consideration with its impact on partitions:",
+        "type": "match",
+        "left": [
+            "Consumer count",
+            "Ordering needs",
+            "Throughput"
+        ],
+        "right": [
+            "Upper bound",
+            "Lower bound",
+            "Scaling factor"
+        ]
+    },
+    {
+        "q": "What is Kafka best practices summary?",
+        "type": "mcq",
+        "o": [
+            "Collection of recommended approaches for production",
+            "Best tips",
+            "Practice guide",
+            "Recommendations"
+        ]
+    },
+    {
+        "q": "The _____ should be enabled for production producers.",
+        "type": "fill_blank",
+        "answers": [
+            "idempotence"
+        ],
+        "other_options": [
+            "compression",
+            "batching",
+            "retries"
+        ]
+    },
+    {
+        "q": "Rearrange the production checklist:",
+        "type": "rearrange",
+        "words": [
+            "Enable idempotence",
+            "Set proper acks",
+            "Configure retries",
+            "Monitor lag"
+        ]
+    },
+    {
+        "q": "What is observability in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Ability to understand system state from external outputs",
+            "Monitoring",
+            "Visibility",
+            "System insight"
+        ]
+    },
+    {
+        "q": "Match the observability pillar with its data:",
+        "type": "match",
+        "left": [
+            "Metrics",
+            "Logs",
+            "Traces"
+        ],
+        "right": [
+            "Numerical data",
+            "Event records",
+            "Request flow"
+        ]
+    },
+    {
+        "q": "The _____ provides end-to-end request tracing.",
+        "type": "fill_blank",
+        "answers": [
+            "distributed tracing"
+        ],
+        "other_options": [
+            "logging",
+            "monitoring",
+            "metrics"
+        ]
+    },
+    {
+        "q": "OpenTelemetry can instrument Kafka clients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SLA for Kafka?",
+        "type": "mcq",
+        "o": [
+            "Service Level Agreement defining uptime and performance targets",
+            "Service agreement",
+            "Level agreement",
+            "Uptime target"
+        ]
+    },
+    {
+        "q": "Rearrange the SLA components:",
+        "type": "rearrange",
+        "words": [
+            "Availability target",
+            "Latency target",
+            "Throughput target",
+            "Support response"
+        ]
+    },
+    {
+        "q": "Match the SLA metric with its measure:",
+        "type": "match",
+        "left": [
+            "Availability",
+            "Durability",
+            "Latency"
+        ],
+        "right": [
+            "Uptime percentage",
+            "Data retention",
+            "Response time"
+        ]
+    },
+    {
+        "q": "What is Kafka versioning?",
+        "type": "mcq",
+        "o": [
+            "Managing Kafka version compatibility across cluster",
+            "Version control",
+            "Release management",
+            "Update handling"
+        ]
+    },
+    {
+        "q": "The _____ setting controls protocol compatibility.",
+        "type": "fill_blank",
+        "answers": [
+            "inter.broker.protocol.version"
+        ],
+        "other_options": [
+            "kafka.version",
+            "protocol.version",
+            "broker.version"
+        ]
+    },
+    {
+        "q": "Log message format version should match broker version.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is future of Kafka?",
+        "type": "mcq",
+        "o": [
+            "Roadmap including KRaft, tiered storage, and elastic scaling",
+            "Kafka plans",
+            "Development direction",
+            "Future features"
+        ]
+    },
+    {
+        "q": "Match the future feature with its benefit:",
+        "type": "match",
+        "left": [
+            "KRaft",
+            "Tiered storage",
+            "Elastic scaling"
+        ],
+        "right": [
+            "Remove ZooKeeper",
+            "Cost savings",
+            "Auto-scaling"
+        ]
+    },
+    {
+        "q": "Tiered storage moves cold data to cheaper storage.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

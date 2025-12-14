@@ -1,0 +1,6376 @@
+[
+    {
+        "q": "What does HDFS stand for?",
+        "type": "mcq",
+        "o": [
+            "Hadoop Distributed File System",
+            "High Data File Storage",
+            "Hadoop Data File System",
+            "High Distributed File System"
+        ]
+    },
+    {
+        "q": "Which company originally developed Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Yahoo",
+            "Google",
+            "Facebook",
+            "Amazon"
+        ]
+    },
+    {
+        "q": "What is the default block size in HDFS for Hadoop 2.x and later?",
+        "type": "mcq",
+        "o": [
+            "128 MB",
+            "64 MB",
+            "256 MB",
+            "512 MB"
+        ]
+    },
+    {
+        "q": "Which daemon is responsible for managing the HDFS namespace?",
+        "type": "mcq",
+        "o": [
+            "NameNode",
+            "DataNode",
+            "ResourceManager",
+            "NodeManager"
+        ]
+    },
+    {
+        "q": "HDFS is designed to handle small files efficiently.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the primary function of a DataNode in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Store actual data blocks",
+            "Manage file metadata",
+            "Schedule MapReduce jobs",
+            "Coordinate cluster resources"
+        ]
+    },
+    {
+        "q": "The NameNode stores the actual data blocks in HDFS.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the default replication factor in HDFS?",
+        "type": "mcq",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a core component of Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Apache Kafka",
+            "HDFS",
+            "MapReduce",
+            "YARN"
+        ]
+    },
+    {
+        "q": "The _____ is the master node that manages HDFS metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "NameNode"
+        ],
+        "other_options": [
+            "DataNode",
+            "JobTracker",
+            "TaskTracker"
+        ]
+    },
+    {
+        "q": "What does MapReduce primarily do?",
+        "type": "mcq",
+        "o": [
+            "Process large datasets in parallel",
+            "Store files across clusters",
+            "Manage cluster resources",
+            "Monitor system health"
+        ]
+    },
+    {
+        "q": "Which phase comes first in MapReduce processing?",
+        "type": "mcq",
+        "o": [
+            "Map",
+            "Reduce",
+            "Shuffle",
+            "Sort"
+        ]
+    },
+    {
+        "q": "Hadoop can only run on Linux operating systems.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What does YARN stand for?",
+        "type": "mcq",
+        "o": [
+            "Yet Another Resource Negotiator",
+            "Your Application Resource Negotiator",
+            "Yarn Application Resource Node",
+            "Yet Another Runtime Node"
+        ]
+    },
+    {
+        "q": "Which daemon manages resources across the Hadoop cluster?",
+        "type": "mcq",
+        "o": [
+            "ResourceManager",
+            "NameNode",
+            "DataNode",
+            "Secondary NameNode"
+        ]
+    },
+    {
+        "q": "Match the Hadoop component with its function:",
+        "type": "match",
+        "left": [
+            "HDFS",
+            "MapReduce",
+            "YARN",
+            "NameNode"
+        ],
+        "right": [
+            "Distributed storage",
+            "Data processing",
+            "Resource management",
+            "Metadata management"
+        ]
+    },
+    {
+        "q": "The Secondary NameNode is a backup for the primary NameNode.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the role of the Secondary NameNode?",
+        "type": "mcq",
+        "o": [
+            "Checkpoint the NameNode metadata",
+            "Replace NameNode if it fails",
+            "Store backup data blocks",
+            "Manage cluster security"
+        ]
+    },
+    {
+        "q": "Which file stores HDFS metadata persistently?",
+        "type": "mcq",
+        "o": [
+            "fsimage",
+            "edits.log",
+            "namenode.xml",
+            "metadata.db"
+        ]
+    },
+    {
+        "q": "The _____ file contains a log of all HDFS transactions.",
+        "type": "fill_blank",
+        "answers": [
+            "edits"
+        ],
+        "other_options": [
+            "fsimage",
+            "logs",
+            "journal"
+        ]
+    },
+    {
+        "q": "What happens when a DataNode fails in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Data is automatically replicated from other nodes",
+            "All data on that node is lost permanently",
+            "The entire cluster shuts down",
+            "The NameNode fails too"
+        ]
+    },
+    {
+        "q": "Hadoop follows the write-once-read-many model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which port does the HDFS web interface typically use?",
+        "type": "mcq",
+        "o": [
+            "50070",
+            "8080",
+            "9000",
+            "8088"
+        ]
+    },
+    {
+        "q": "What is the minimum number of DataNodes required to satisfy replication factor of 3?",
+        "type": "mcq",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Rearrange the MapReduce job execution phases in correct order:",
+        "type": "rearrange",
+        "words": [
+            "Input Split",
+            "Map",
+            "Shuffle",
+            "Sort",
+            "Reduce",
+            "Output"
+        ]
+    },
+    {
+        "q": "Which command lists files in an HDFS directory?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfs -ls",
+            "hadoop list",
+            "hdfs dir",
+            "hadoop -list"
+        ]
+    },
+    {
+        "q": "What is the output of the Map function?",
+        "type": "mcq",
+        "o": [
+            "Key-value pairs",
+            "Single values",
+            "File blocks",
+            "SQL results"
+        ]
+    },
+    {
+        "q": "YARN was introduced in Hadoop version _____.",
+        "type": "fill_blank",
+        "answers": [
+            "2"
+        ],
+        "other_options": [
+            "1",
+            "3",
+            "1.5"
+        ]
+    },
+    {
+        "q": "Which component replaced JobTracker in Hadoop 2.x?",
+        "type": "mcq",
+        "o": [
+            "ResourceManager",
+            "ApplicationMaster",
+            "NodeManager",
+            "HistoryServer"
+        ]
+    },
+    {
+        "q": "What is the role of NodeManager in YARN?",
+        "type": "mcq",
+        "o": [
+            "Manage resources on individual nodes",
+            "Manage the entire cluster",
+            "Store file metadata",
+            "Process MapReduce jobs"
+        ]
+    },
+    {
+        "q": "Match the Hadoop daemon with its location:",
+        "type": "match",
+        "left": [
+            "NameNode",
+            "DataNode",
+            "ResourceManager",
+            "NodeManager"
+        ],
+        "right": [
+            "Master node (HDFS)",
+            "Slave nodes",
+            "Master node (YARN)",
+            "Slave nodes"
+        ]
+    },
+    {
+        "q": "The ApplicationMaster manages resources for the entire cluster.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is an InputSplit in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "A logical chunk of data for a mapper",
+            "A physical data block in HDFS",
+            "The output of the reduce phase",
+            "A configuration file"
+        ]
+    },
+    {
+        "q": "Which format is commonly used for intermediate data in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Key-value pairs",
+            "CSV files",
+            "JSON documents",
+            "XML files"
+        ]
+    },
+    {
+        "q": "Hadoop uses rack awareness for data placement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of the Combiner in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Local aggregation before shuffle",
+            "Final data aggregation",
+            "Data input splitting",
+            "Error handling"
+        ]
+    },
+    {
+        "q": "Which command copies files from local filesystem to HDFS?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfs -put",
+            "hdfs dfs -get",
+            "hdfs dfs -copy",
+            "hdfs dfs -move"
+        ]
+    },
+    {
+        "q": "The _____ command downloads files from HDFS to local filesystem.",
+        "type": "fill_blank",
+        "answers": [
+            "get"
+        ],
+        "other_options": [
+            "put",
+            "copy",
+            "fetch"
+        ]
+    },
+    {
+        "q": "What is a Hadoop container?",
+        "type": "mcq",
+        "o": [
+            "A unit of resource allocation in YARN",
+            "A Docker container in Hadoop",
+            "A storage block in HDFS",
+            "A type of data file"
+        ]
+    },
+    {
+        "q": "How does HDFS ensure fault tolerance?",
+        "type": "mcq",
+        "o": [
+            "Data replication across nodes",
+            "RAID configuration",
+            "Real-time backups",
+            "Snapshots only"
+        ]
+    },
+    {
+        "q": "The Partitioner in MapReduce determines which reducer receives which keys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which Apache project provides a SQL interface for Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Hive",
+            "Pig",
+            "Spark",
+            "Sqoop"
+        ]
+    },
+    {
+        "q": "What does Apache Sqoop do?",
+        "type": "mcq",
+        "o": [
+            "Transfer data between Hadoop and relational databases",
+            "Process streaming data",
+            "Provide SQL queries on HDFS",
+            "Coordinate cluster jobs"
+        ]
+    },
+    {
+        "q": "Match the Hadoop ecosystem tool with its purpose:",
+        "type": "match",
+        "left": [
+            "Hive",
+            "Pig",
+            "Sqoop",
+            "Flume"
+        ],
+        "right": [
+            "SQL queries",
+            "Data flow scripting",
+            "Database import/export",
+            "Log data collection"
+        ]
+    },
+    {
+        "q": "Apache Pig uses a language called _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Pig Latin"
+        ],
+        "other_options": [
+            "PigSQL",
+            "PigScript",
+            "HogQL"
+        ]
+    },
+    {
+        "q": "What is the purpose of Apache Oozie?",
+        "type": "mcq",
+        "o": [
+            "Workflow scheduling",
+            "Data storage",
+            "Query processing",
+            "Cluster monitoring"
+        ]
+    },
+    {
+        "q": "HDFS can modify files after they are written.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which service provides coordination for distributed applications in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "ZooKeeper",
+            "Oozie",
+            "Ambari",
+            "Ranger"
+        ]
+    },
+    {
+        "q": "What is the default port for HDFS NameNode RPC?",
+        "type": "mcq",
+        "o": [
+            "8020",
+            "9000",
+            "50070",
+            "8088"
+        ]
+    },
+    {
+        "q": "Rearrange the Hadoop data processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Data Ingestion",
+            "Storage in HDFS",
+            "Processing",
+            "Analysis",
+            "Output"
+        ]
+    },
+    {
+        "q": "The _____ daemon runs on every slave node to manage local resources.",
+        "type": "fill_blank",
+        "answers": [
+            "NodeManager"
+        ],
+        "other_options": [
+            "ResourceManager",
+            "DataNode",
+            "TaskTracker"
+        ]
+    },
+    {
+        "q": "What does Apache Flume primarily handle?",
+        "type": "mcq",
+        "o": [
+            "Streaming log data into Hadoop",
+            "SQL query processing",
+            "Batch data export",
+            "Resource management"
+        ]
+    },
+    {
+        "q": "Which file defines the HDFS block replication factor?",
+        "type": "mcq",
+        "o": [
+            "hdfs-site.xml",
+            "core-site.xml",
+            "yarn-site.xml",
+            "mapred-site.xml"
+        ]
+    },
+    {
+        "q": "Hadoop Streaming allows running MapReduce with non-Java languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of speculative execution in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Run duplicate tasks for slow tasks",
+            "Predict future resource needs",
+            "Cache frequently used data",
+            "Compress intermediate data"
+        ]
+    },
+    {
+        "q": "Which configuration file contains the HDFS NameNode address?",
+        "type": "mcq",
+        "o": [
+            "core-site.xml",
+            "hdfs-site.xml",
+            "yarn-site.xml",
+            "hadoop-env.sh"
+        ]
+    },
+    {
+        "q": "Match the configuration file with its content:",
+        "type": "match",
+        "left": [
+            "core-site.xml",
+            "hdfs-site.xml",
+            "yarn-site.xml",
+            "mapred-site.xml"
+        ],
+        "right": [
+            "Core Hadoop settings",
+            "HDFS configuration",
+            "YARN settings",
+            "MapReduce config"
+        ]
+    },
+    {
+        "q": "The _____ protocol is used for data transfer between DataNodes.",
+        "type": "fill_blank",
+        "answers": [
+            "TCP"
+        ],
+        "other_options": [
+            "UDP",
+            "HTTP",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is HDFS federation?",
+        "type": "mcq",
+        "o": [
+            "Multiple NameNodes managing separate namespaces",
+            "Combining multiple clusters",
+            "Replicating data across regions",
+            "Merging small files"
+        ]
+    },
+    {
+        "q": "Which authentication mechanism does Hadoop use by default?",
+        "type": "mcq",
+        "o": [
+            "Simple authentication",
+            "Kerberos",
+            "OAuth",
+            "LDAP"
+        ]
+    },
+    {
+        "q": "Kerberos is the only authentication method available in Hadoop.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the role of Apache Ambari?",
+        "type": "mcq",
+        "o": [
+            "Cluster management and monitoring",
+            "Data processing",
+            "SQL query interface",
+            "Workflow scheduling"
+        ]
+    },
+    {
+        "q": "Which command shows HDFS disk usage statistics?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfs -du",
+            "hdfs dfs -df",
+            "hdfs dfs -stat",
+            "hdfs dfs -usage"
+        ]
+    },
+    {
+        "q": "The _____ command creates a directory in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "mkdir"
+        ],
+        "other_options": [
+            "md",
+            "create",
+            "newdir"
+        ]
+    },
+    {
+        "q": "What does the term 'data locality' mean in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Processing data where it is stored",
+            "Storing data close to users",
+            "Caching data in memory",
+            "Compressing local data"
+        ]
+    },
+    {
+        "q": "Hadoop prefers moving computation to data rather than data to computation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Shuffle phase in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Transfer map output to reducers",
+            "Sort input data",
+            "Split input files",
+            "Combine final results"
+        ]
+    },
+    {
+        "q": "Which component handles job history in YARN?",
+        "type": "mcq",
+        "o": [
+            "JobHistoryServer",
+            "ResourceManager",
+            "ApplicationMaster",
+            "Timeline Server"
+        ]
+    },
+    {
+        "q": "Rearrange the HDFS write operation steps:",
+        "type": "rearrange",
+        "words": [
+            "Client request",
+            "NameNode allocation",
+            "Data pipeline",
+            "Block replication",
+            "Acknowledgment"
+        ]
+    },
+    {
+        "q": "What is a heartbeat in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Periodic signal from DataNode to NameNode",
+            "Error recovery mechanism",
+            "Data compression signal",
+            "Job completion notification"
+        ]
+    },
+    {
+        "q": "DataNodes send heartbeats to the NameNode every _____ seconds by default.",
+        "type": "fill_blank",
+        "answers": [
+            "3"
+        ],
+        "other_options": [
+            "1",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "What happens if NameNode does not receive heartbeats from a DataNode?",
+        "type": "mcq",
+        "o": [
+            "DataNode is marked as dead",
+            "Cluster shuts down",
+            "Data is immediately deleted",
+            "NameNode restarts"
+        ]
+    },
+    {
+        "q": "The Safe Mode in HDFS prevents data modifications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "When does NameNode enter Safe Mode?",
+        "type": "mcq",
+        "o": [
+            "During cluster startup",
+            "When disk is full",
+            "After every job",
+            "During data writes"
+        ]
+    },
+    {
+        "q": "Which command leaves HDFS Safe Mode manually?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfsadmin -safemode leave",
+            "hdfs safemode -off",
+            "hadoop dfs -safemode exit",
+            "hdfs admin -safe leave"
+        ]
+    },
+    {
+        "q": "Match the HDFS concept with its description:",
+        "type": "match",
+        "left": [
+            "Block",
+            "Replication",
+            "Rack",
+            "Heartbeat"
+        ],
+        "right": [
+            "Unit of storage",
+            "Data redundancy",
+            "Physical location",
+            "Health signal"
+        ]
+    },
+    {
+        "q": "What is the purpose of block reports in HDFS?",
+        "type": "mcq",
+        "o": [
+            "DataNode informs NameNode about stored blocks",
+            "NameNode reports cluster status",
+            "Client requests data blocks",
+            "Reducer reports progress"
+        ]
+    },
+    {
+        "q": "The _____ contains the mapping of files to blocks in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "NameNode"
+        ],
+        "other_options": [
+            "DataNode",
+            "Secondary NameNode",
+            "fsimage"
+        ]
+    },
+    {
+        "q": "What is the typical network topology in a Hadoop cluster?",
+        "type": "mcq",
+        "o": [
+            "Tree topology with racks",
+            "Star topology",
+            "Ring topology",
+            "Mesh topology"
+        ]
+    },
+    {
+        "q": "Apache HBase is built on top of HDFS.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What type of database is Apache HBase?",
+        "type": "mcq",
+        "o": [
+            "NoSQL column-oriented",
+            "Relational SQL",
+            "Document-based",
+            "Graph database"
+        ]
+    },
+    {
+        "q": "Which ecosystem component provides real-time query capabilities?",
+        "type": "mcq",
+        "o": [
+            "Apache Impala",
+            "Apache Hive",
+            "Apache Pig",
+            "Apache Sqoop"
+        ]
+    },
+    {
+        "q": "The _____ ecosystem component is used for machine learning on Hadoop.",
+        "type": "fill_blank",
+        "answers": [
+            "Mahout"
+        ],
+        "other_options": [
+            "Hive",
+            "Pig",
+            "Flume"
+        ]
+    },
+    {
+        "q": "What is the primary advantage of using Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Scalable processing of large datasets",
+            "Real-time data processing",
+            "Low latency queries",
+            "Simple single-node deployment"
+        ]
+    },
+    {
+        "q": "Hadoop is suitable for real-time data processing.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which statement about HDFS is correct?",
+        "type": "mcq",
+        "o": [
+            "Optimized for large sequential reads",
+            "Optimized for random writes",
+            "Supports file modifications",
+            "Uses small block sizes"
+        ]
+    },
+    {
+        "q": "Rearrange the HDFS read operation steps:",
+        "type": "rearrange",
+        "words": [
+            "Client request",
+            "NameNode lookup",
+            "DataNode connection",
+            "Block transfer",
+            "Data assembly"
+        ]
+    },
+    {
+        "q": "What is the minimum replication factor allowed in HDFS?",
+        "type": "mcq",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Which port does the YARN ResourceManager web UI typically use?",
+        "type": "mcq",
+        "o": [
+            "8088",
+            "8080",
+            "50070",
+            "9000"
+        ]
+    },
+    {
+        "q": "Match the port number with its Hadoop service:",
+        "type": "match",
+        "left": [
+            "50070",
+            "8088",
+            "8020",
+            "19888"
+        ],
+        "right": [
+            "HDFS NameNode UI",
+            "YARN ResourceManager UI",
+            "NameNode RPC",
+            "Job History Server"
+        ]
+    },
+    {
+        "q": "The _____ command displays the content of a file in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "cat"
+        ],
+        "other_options": [
+            "read",
+            "show",
+            "view"
+        ]
+    },
+    {
+        "q": "What is the purpose of the RecordReader in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Convert input splits to key-value pairs",
+            "Write output to HDFS",
+            "Shuffle data between mappers",
+            "Compress intermediate data"
+        ]
+    },
+    {
+        "q": "The OutputFormat class determines how MapReduce writes results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class is the base class for all MapReduce mappers?",
+        "type": "mcq",
+        "o": [
+            "Mapper",
+            "MapBase",
+            "MapFunction",
+            "MapTask"
+        ]
+    },
+    {
+        "q": "What is the default InputFormat in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "TextInputFormat",
+            "KeyValueInputFormat",
+            "SequenceFileInputFormat",
+            "NLineInputFormat"
+        ]
+    },
+    {
+        "q": "The _____ input format treats each line as a separate record.",
+        "type": "fill_blank",
+        "answers": [
+            "TextInputFormat"
+        ],
+        "other_options": [
+            "KeyValueInputFormat",
+            "LineInputFormat",
+            "FileInputFormat"
+        ]
+    },
+    {
+        "q": "What is a SequenceFile in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Binary format for key-value pairs",
+            "Text file with numbered lines",
+            "Compressed archive file",
+            "Configuration file format"
+        ]
+    },
+    {
+        "q": "SequenceFiles support compression in Hadoop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Hadoop command?",
+        "type": "mcq",
+        "c": "hdfs dfs -count /user/data",
+        "o": [
+            "Directory count, file count, and size",
+            "Only file count",
+            "Only directory size",
+            "Block locations"
+        ]
+    },
+    {
+        "q": "Which compression codec provides the best compression ratio in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "bzip2",
+            "gzip",
+            "snappy",
+            "lzo"
+        ]
+    },
+    {
+        "q": "Snappy compression is splittable without additional configuration.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the purpose of the Trash feature in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Recover accidentally deleted files",
+            "Compress unused files",
+            "Archive old data",
+            "Clear temporary files"
+        ]
+    },
+    {
+        "q": "The _____ property controls the trash checkpoint interval in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "fs.trash.checkpoint.interval"
+        ],
+        "other_options": [
+            "fs.trash.interval",
+            "dfs.trash.time",
+            "hdfs.trash.period"
+        ]
+    },
+    {
+        "q": "What happens during the checkpoint process in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Edits log is merged with fsimage",
+            "Data blocks are verified",
+            "Replication is increased",
+            "Dead nodes are removed"
+        ]
+    },
+    {
+        "q": "Match the compression codec with its characteristics:",
+        "type": "match",
+        "left": [
+            "Snappy",
+            "gzip",
+            "bzip2",
+            "LZO"
+        ],
+        "right": [
+            "Fast compression",
+            "Good ratio",
+            "Best ratio",
+            "Splittable with index"
+        ]
+    },
+    {
+        "q": "Which command displays HDFS filesystem statistics?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfs -df",
+            "hdfs dfs -du",
+            "hdfs dfs -stat",
+            "hdfs dfs -info"
+        ]
+    },
+    {
+        "q": "The _____ command changes the replication factor of a file in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "setrep"
+        ],
+        "other_options": [
+            "rep",
+            "replicate",
+            "factor"
+        ]
+    },
+    {
+        "q": "What is the purpose of the NameNode HA feature?",
+        "type": "mcq",
+        "o": [
+            "Eliminate single point of failure",
+            "Increase storage capacity",
+            "Speed up data processing",
+            "Reduce network traffic"
+        ]
+    },
+    {
+        "q": "HDFS High Availability requires at least two NameNodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the role of JournalNode in HDFS HA?",
+        "type": "mcq",
+        "o": [
+            "Store shared edit logs",
+            "Manage data blocks",
+            "Coordinate reducers",
+            "Schedule jobs"
+        ]
+    },
+    {
+        "q": "How many JournalNodes are typically deployed in an HDFS HA setup?",
+        "type": "mcq",
+        "o": [
+            "3 or more (odd number)",
+            "2",
+            "1",
+            "4 (even number)"
+        ]
+    },
+    {
+        "q": "What is the purpose of ZKFC in HDFS HA?",
+        "type": "mcq",
+        "o": [
+            "Automatic failover coordination",
+            "Data block management",
+            "Job scheduling",
+            "Log aggregation"
+        ]
+    },
+    {
+        "q": "ZKFC stands for _____ Failover Controller.",
+        "type": "fill_blank",
+        "answers": [
+            "ZooKeeper"
+        ],
+        "other_options": [
+            "Zone",
+            "Zero",
+            "Zonal"
+        ]
+    },
+    {
+        "q": "What is a MapReduce InputFormat responsible for?",
+        "type": "mcq",
+        "o": [
+            "Splitting input and creating RecordReader",
+            "Writing output to HDFS",
+            "Shuffling intermediate data",
+            "Managing task memory"
+        ]
+    },
+    {
+        "q": "Which InputFormat splits files by a fixed number of lines?",
+        "type": "mcq",
+        "o": [
+            "NLineInputFormat",
+            "TextInputFormat",
+            "KeyValueInputFormat",
+            "FixedLengthInputFormat"
+        ]
+    },
+    {
+        "q": "Match the InputFormat with its behavior:",
+        "type": "match",
+        "left": [
+            "TextInputFormat",
+            "KeyValueInputFormat",
+            "NLineInputFormat",
+            "SequenceFileInputFormat"
+        ],
+        "right": [
+            "Line offset as key",
+            "Tab-separated key-value",
+            "Fixed lines per split",
+            "Binary key-value"
+        ]
+    },
+    {
+        "q": "What is the Combiner function in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Mini-reducer running on mapper output",
+            "Final aggregation function",
+            "Input splitter",
+            "Output formatter"
+        ]
+    },
+    {
+        "q": "A Combiner must be commutative and associative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What determines the number of map tasks in a MapReduce job?",
+        "type": "mcq",
+        "o": [
+            "Number of input splits",
+            "Number of DataNodes",
+            "Cluster CPU cores",
+            "Available memory"
+        ]
+    },
+    {
+        "q": "The number of reduce tasks is determined by the _____ property.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.job.reduces"
+        ],
+        "other_options": [
+            "mapreduce.reduce.tasks",
+            "yarn.reduce.count",
+            "job.reducers"
+        ]
+    },
+    {
+        "q": "What is the output of this MapReduce driver code?",
+        "type": "mcq",
+        "c": "job.setNumReduceTasks(0);",
+        "o": [
+            "Map-only job with no reduce phase",
+            "Job fails with error",
+            "One default reducer",
+            "Automatic reducer count"
+        ]
+    },
+    {
+        "q": "Which class controls how keys are distributed to reducers?",
+        "type": "mcq",
+        "o": [
+            "Partitioner",
+            "Combiner",
+            "Mapper",
+            "OutputFormat"
+        ]
+    },
+    {
+        "q": "The default Partitioner in MapReduce is _____.",
+        "type": "fill_blank",
+        "answers": [
+            "HashPartitioner"
+        ],
+        "other_options": [
+            "RoundRobinPartitioner",
+            "KeyPartitioner",
+            "RandomPartitioner"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Sorting phase in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Sort mapper output by key before reducing",
+            "Sort final output files",
+            "Sort input splits",
+            "Sort reducer tasks"
+        ]
+    },
+    {
+        "q": "Rearrange the MapReduce secondary sort steps:",
+        "type": "rearrange",
+        "words": [
+            "Composite key",
+            "Custom partitioner",
+            "Key comparator",
+            "Grouping comparator"
+        ]
+    },
+    {
+        "q": "What is MapReduce counters used for?",
+        "type": "mcq",
+        "o": [
+            "Track job statistics and custom metrics",
+            "Count number of nodes",
+            "Measure disk space",
+            "Count configuration files"
+        ]
+    },
+    {
+        "q": "MapReduce counters can be incremented from both mappers and reducers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of the DistributedCache in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Distribute files to all task nodes",
+            "Cache intermediate results",
+            "Store output files",
+            "Compress input data"
+        ]
+    },
+    {
+        "q": "Which method adds a file to the DistributedCache?",
+        "type": "mcq",
+        "o": [
+            "job.addCacheFile()",
+            "job.addDistributedFile()",
+            "DistributedCache.addFile()",
+            "job.setCacheFile()"
+        ]
+    },
+    {
+        "q": "The _____ class provides setup and cleanup methods for mappers.",
+        "type": "fill_blank",
+        "answers": [
+            "Mapper"
+        ],
+        "other_options": [
+            "MapSetup",
+            "MapContext",
+            "MapRunner"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Context object in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Access configuration and write output",
+            "Store temporary data",
+            "Connect to NameNode",
+            "Manage block replication"
+        ]
+    },
+    {
+        "q": "Match the MapReduce method with its purpose:",
+        "type": "match",
+        "left": [
+            "setup()",
+            "map()",
+            "cleanup()",
+            "run()"
+        ],
+        "right": [
+            "Initialize resources",
+            "Process records",
+            "Release resources",
+            "Control task execution"
+        ]
+    },
+    {
+        "q": "What is a MapReduce side data file?",
+        "type": "mcq",
+        "o": [
+            "Reference data distributed via cache",
+            "Error log file",
+            "Intermediate shuffle data",
+            "Output metadata file"
+        ]
+    },
+    {
+        "q": "The ChainMapper class allows chaining multiple mappers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of MultipleOutputs in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Write to multiple output files",
+            "Read from multiple inputs",
+            "Create multiple reducers",
+            "Run parallel jobs"
+        ]
+    },
+    {
+        "q": "Which YARN component negotiates resources from ResourceManager?",
+        "type": "mcq",
+        "o": [
+            "ApplicationMaster",
+            "NodeManager",
+            "Container",
+            "Scheduler"
+        ]
+    },
+    {
+        "q": "YARN scheduler policies include FIFO, Capacity, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Fair"
+        ],
+        "other_options": [
+            "Priority",
+            "Round Robin",
+            "Weighted"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Capacity Scheduler in YARN?",
+        "type": "mcq",
+        "o": [
+            "Allocate resources to multiple queues",
+            "Run jobs in order received",
+            "Distribute tasks evenly",
+            "Prioritize short jobs"
+        ]
+    },
+    {
+        "q": "The Fair Scheduler aims to give all applications equal resources over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the YARN application submission flow:",
+        "type": "rearrange",
+        "words": [
+            "Client submission",
+            "RM accepts",
+            "AM container",
+            "Resource requests",
+            "Task execution"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Timeline Server in YARN?",
+        "type": "mcq",
+        "o": [
+            "Store application history and metrics",
+            "Schedule jobs",
+            "Manage containers",
+            "Monitor NodeManagers"
+        ]
+    },
+    {
+        "q": "Which property sets the maximum memory for YARN containers?",
+        "type": "mcq",
+        "o": [
+            "yarn.nodemanager.resource.memory-mb",
+            "yarn.container.max.memory",
+            "yarn.scheduler.maximum-allocation-mb",
+            "mapreduce.map.memory.mb"
+        ]
+    },
+    {
+        "q": "The _____ property controls virtual memory ratio in YARN.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.nodemanager.vmem-pmem-ratio"
+        ],
+        "other_options": [
+            "yarn.memory.ratio",
+            "yarn.vmem.ratio",
+            "yarn.container.vmem"
+        ]
+    },
+    {
+        "q": "What is container preemption in YARN?",
+        "type": "mcq",
+        "o": [
+            "Killing lower priority containers for higher priority",
+            "Reserving containers in advance",
+            "Caching container data",
+            "Restarting failed containers"
+        ]
+    },
+    {
+        "q": "Match the YARN scheduler with its characteristic:",
+        "type": "match",
+        "left": [
+            "FIFO",
+            "Capacity",
+            "Fair"
+        ],
+        "right": [
+            "First come first served",
+            "Queue-based allocation",
+            "Equal share over time"
+        ]
+    },
+    {
+        "q": "What does the ResourceManager Scheduler do?",
+        "type": "mcq",
+        "o": [
+            "Allocate resources to applications",
+            "Store application data",
+            "Monitor node health",
+            "Execute tasks"
+        ]
+    },
+    {
+        "q": "YARN supports running non-MapReduce applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of YARN node labels?",
+        "type": "mcq",
+        "o": [
+            "Partition cluster resources",
+            "Name cluster nodes",
+            "Label output files",
+            "Tag job priorities"
+        ]
+    },
+    {
+        "q": "Which command shows YARN application logs?",
+        "type": "mcq",
+        "o": [
+            "yarn logs -applicationId",
+            "yarn app -logs",
+            "hdfs logs -app",
+            "yarn log -show"
+        ]
+    },
+    {
+        "q": "The _____ command lists all running YARN applications.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn application -list"
+        ],
+        "other_options": [
+            "yarn apps",
+            "yarn status",
+            "yarn jobs"
+        ]
+    },
+    {
+        "q": "What is the output of this YARN command?",
+        "type": "mcq",
+        "c": "yarn application -kill application_1234567890_0001",
+        "o": [
+            "Terminates the specified application",
+            "Shows application status",
+            "Restarts the application",
+            "Lists application logs"
+        ]
+    },
+    {
+        "q": "What is Apache Tez used for?",
+        "type": "mcq",
+        "o": [
+            "DAG-based data processing on YARN",
+            "Stream processing",
+            "SQL queries",
+            "Data ingestion"
+        ]
+    },
+    {
+        "q": "Apache Tez can replace MapReduce as the execution engine for Hive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Apache Slider?",
+        "type": "mcq",
+        "o": [
+            "Deploy long-running applications on YARN",
+            "Process streaming data",
+            "Query HDFS data",
+            "Manage ZooKeeper"
+        ]
+    },
+    {
+        "q": "Match the Apache project with its function:",
+        "type": "match",
+        "left": [
+            "Tez",
+            "Slider",
+            "Spark",
+            "Storm"
+        ],
+        "right": [
+            "DAG processing",
+            "Long-running apps",
+            "In-memory processing",
+            "Real-time streaming"
+        ]
+    },
+    {
+        "q": "What is HDFS caching used for?",
+        "type": "mcq",
+        "o": [
+            "Cache frequently accessed data in memory",
+            "Compress data blocks",
+            "Encrypt sensitive files",
+            "Archive old files"
+        ]
+    },
+    {
+        "q": "HDFS centralized cache management requires explicit directives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which command creates a cache pool in HDFS?",
+        "type": "mcq",
+        "o": [
+            "hdfs cacheadmin -addPool",
+            "hdfs cache -create",
+            "hadoop cache -pool",
+            "hdfs admin -cache"
+        ]
+    },
+    {
+        "q": "The _____ command adds a cache directive in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs cacheadmin -addDirective"
+        ],
+        "other_options": [
+            "hdfs cache -add",
+            "hdfs cacheadmin -directive",
+            "hadoop cache -set"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS snapshots?",
+        "type": "mcq",
+        "o": [
+            "Create point-in-time copies of directories",
+            "Compress old data",
+            "Delete temporary files",
+            "Increase replication"
+        ]
+    },
+    {
+        "q": "HDFS snapshots require additional storage proportional to changed data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this HDFS command?",
+        "type": "mcq",
+        "c": "hdfs dfsadmin -allowSnapshot /data",
+        "o": [
+            "Enables snapshots for /data directory",
+            "Creates a snapshot of /data",
+            "Deletes snapshots in /data",
+            "Lists snapshots in /data"
+        ]
+    },
+    {
+        "q": "Which command creates an HDFS snapshot?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfs -createSnapshot",
+            "hdfs snapshot -create",
+            "hadoop fs -snap",
+            "hdfs admin -snapshot"
+        ]
+    },
+    {
+        "q": "Rearrange the HDFS snapshot workflow:",
+        "type": "rearrange",
+        "words": [
+            "Enable snapshotable",
+            "Create snapshot",
+            "Access data",
+            "Delete snapshot"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS ACLs?",
+        "type": "mcq",
+        "o": [
+            "Fine-grained access control beyond POSIX permissions",
+            "Encrypt file contents",
+            "Compress data blocks",
+            "Schedule file deletion"
+        ]
+    },
+    {
+        "q": "HDFS ACLs extend the standard POSIX permission model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which command sets an ACL on an HDFS file?",
+        "type": "mcq",
+        "o": [
+            "hdfs dfs -setfacl",
+            "hdfs acl -set",
+            "hadoop fs -acl",
+            "hdfs admin -setacl"
+        ]
+    },
+    {
+        "q": "The _____ command displays ACL entries for an HDFS path.",
+        "type": "fill_blank",
+        "answers": [
+            "getfacl"
+        ],
+        "other_options": [
+            "showacl",
+            "listacl",
+            "acl"
+        ]
+    },
+    {
+        "q": "What is HDFS encryption zone?",
+        "type": "mcq",
+        "o": [
+            "Directory with transparent encryption",
+            "Network security zone",
+            "Compressed storage area",
+            "Cached data region"
+        ]
+    },
+    {
+        "q": "HDFS encryption is transparent to applications reading encrypted files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the HDFS security feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Kerberos",
+            "ACLs",
+            "Encryption zones",
+            "Ranger"
+        ],
+        "right": [
+            "Authentication",
+            "Fine-grained permissions",
+            "Data-at-rest encryption",
+            "Centralized authorization"
+        ]
+    },
+    {
+        "q": "What is the purpose of Apache Ranger?",
+        "type": "mcq",
+        "o": [
+            "Centralized security administration",
+            "Data processing",
+            "Workflow scheduling",
+            "Cluster monitoring"
+        ]
+    },
+    {
+        "q": "Apache Knox provides _____ for Hadoop clusters.",
+        "type": "fill_blank",
+        "answers": [
+            "gateway security"
+        ],
+        "other_options": [
+            "data processing",
+            "workflow scheduling",
+            "storage management"
+        ]
+    },
+    {
+        "q": "What is the output of this HDFS command?",
+        "type": "mcq",
+        "c": "hdfs dfs -setrep -w 5 /data/file.txt",
+        "o": [
+            "Sets replication to 5 and waits for completion",
+            "Sets 5 permissions on the file",
+            "Creates 5 copies immediately",
+            "Deletes 5 replicas"
+        ]
+    },
+    {
+        "q": "Which tool is used for Hadoop cluster benchmarking?",
+        "type": "mcq",
+        "o": [
+            "TestDFSIO",
+            "HadoopBench",
+            "ClusterTest",
+            "HDFSPerf"
+        ]
+    },
+    {
+        "q": "The _____ tool tests HDFS read and write performance.",
+        "type": "fill_blank",
+        "answers": [
+            "TestDFSIO"
+        ],
+        "other_options": [
+            "DFSTest",
+            "HDFSBench",
+            "IOTest"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Terasort benchmark?",
+        "type": "mcq",
+        "o": [
+            "Test cluster sorting performance",
+            "Verify data integrity",
+            "Monitor cluster health",
+            "Compress large files"
+        ]
+    },
+    {
+        "q": "Rearrange the Terasort benchmark phases:",
+        "type": "rearrange",
+        "words": [
+            "TeraGen",
+            "TeraSort",
+            "TeraValidate"
+        ]
+    },
+    {
+        "q": "What does TeraGen do?",
+        "type": "mcq",
+        "o": [
+            "Generate random data for benchmark",
+            "Sort data in parallel",
+            "Validate sorted output",
+            "Clean up test data"
+        ]
+    },
+    {
+        "q": "TeraValidate checks if the TeraSort output is correctly sorted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of NNBench?",
+        "type": "mcq",
+        "o": [
+            "Stress test NameNode operations",
+            "Test network bandwidth",
+            "Benchmark MapReduce",
+            "Measure disk I/O"
+        ]
+    },
+    {
+        "q": "Which benchmark tests HDFS small file handling?",
+        "type": "mcq",
+        "o": [
+            "NNBench",
+            "TestDFSIO",
+            "TeraSort",
+            "MRBench"
+        ]
+    },
+    {
+        "q": "Match the benchmark with what it tests:",
+        "type": "match",
+        "left": [
+            "TestDFSIO",
+            "TeraSort",
+            "NNBench",
+            "MRBench"
+        ],
+        "right": [
+            "HDFS throughput",
+            "Cluster sorting",
+            "NameNode operations",
+            "MapReduce overhead"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS balancer?",
+        "type": "mcq",
+        "o": [
+            "Redistribute data across DataNodes evenly",
+            "Balance CPU load",
+            "Manage memory usage",
+            "Schedule MapReduce jobs"
+        ]
+    },
+    {
+        "q": "The _____ command runs the HDFS balancer.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs balancer"
+        ],
+        "other_options": [
+            "hdfs balance",
+            "hadoop balancer",
+            "dfs balancer"
+        ]
+    },
+    {
+        "q": "What is the default threshold for HDFS balancer?",
+        "type": "mcq",
+        "o": [
+            "10%",
+            "5%",
+            "15%",
+            "20%"
+        ]
+    },
+    {
+        "q": "The HDFS balancer moves blocks between DataNodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HDFS fsck command?",
+        "type": "mcq",
+        "o": [
+            "Check filesystem health and find missing blocks",
+            "Fix corrupted blocks",
+            "Delete orphan files",
+            "Compact small files"
+        ]
+    },
+    {
+        "q": "Which option shows block locations in hdfs fsck?",
+        "type": "mcq",
+        "o": [
+            "-files -blocks -locations",
+            "-show -blocks",
+            "-list -all",
+            "-verbose -blocks"
+        ]
+    },
+    {
+        "q": "The _____ command reports under-replicated blocks.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs fsck"
+        ],
+        "other_options": [
+            "hdfs check",
+            "hadoop fsck",
+            "hdfs health"
+        ]
+    },
+    {
+        "q": "What is the output of this HDFS command?",
+        "type": "mcq",
+        "c": "hdfs fsck / -files -blocks -racks",
+        "o": [
+            "Shows files, blocks, and rack distribution",
+            "Repairs corrupted files",
+            "Deletes empty directories",
+            "Compacts small files"
+        ]
+    },
+    {
+        "q": "What is the purpose of rack awareness in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Optimize data placement for fault tolerance and performance",
+            "Increase storage capacity",
+            "Speed up network transfer",
+            "Reduce power consumption"
+        ]
+    },
+    {
+        "q": "Hadoop places replicas on different racks when possible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the default replica placement policy in HDFS?",
+        "type": "mcq",
+        "o": [
+            "First replica local, second on different rack, third on same rack as second",
+            "All replicas on same rack",
+            "Random distribution across all racks",
+            "Round-robin across nodes"
+        ]
+    },
+    {
+        "q": "The _____ script is used to configure rack topology in Hadoop.",
+        "type": "fill_blank",
+        "answers": [
+            "topology.script.file.name"
+        ],
+        "other_options": [
+            "rack.script.name",
+            "net.topology.script",
+            "hadoop.rack.script"
+        ]
+    },
+    {
+        "q": "What is the impact of incorrect rack topology configuration?",
+        "type": "mcq",
+        "o": [
+            "Reduced fault tolerance and increased network traffic",
+            "Increased storage capacity",
+            "Faster job completion",
+            "Better compression ratio"
+        ]
+    },
+    {
+        "q": "Match the HDFS replication strategy with its goal:",
+        "type": "match",
+        "left": [
+            "Cross-rack replication",
+            "Same-rack replica",
+            "Local-node replica",
+            "Pipeline transfer"
+        ],
+        "right": [
+            "Fault tolerance",
+            "Fast recovery",
+            "Data locality",
+            "Efficient writes"
+        ]
+    },
+    {
+        "q": "What is the purpose of the HDFS short-circuit read?",
+        "type": "mcq",
+        "o": [
+            "Read data directly from local disk bypassing DataNode",
+            "Skip small files during read",
+            "Compress data during transfer",
+            "Cache data in memory"
+        ]
+    },
+    {
+        "q": "Short-circuit reads require shared memory configuration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which property enables HDFS short-circuit reads?",
+        "type": "mcq",
+        "o": [
+            "dfs.client.read.shortcircuit",
+            "hdfs.shortcircuit.enabled",
+            "dfs.read.bypass.enabled",
+            "hdfs.direct.read"
+        ]
+    },
+    {
+        "q": "What is HDFS erasure coding used for?",
+        "type": "mcq",
+        "o": [
+            "Reduce storage overhead while maintaining fault tolerance",
+            "Encrypt data at rest",
+            "Compress large files",
+            "Speed up data access"
+        ]
+    },
+    {
+        "q": "Erasure coding requires less storage than 3x replication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ scheme uses Reed-Solomon algorithm for erasure coding.",
+        "type": "fill_blank",
+        "answers": [
+            "RS"
+        ],
+        "other_options": [
+            "EC",
+            "XOR",
+            "LDPC"
+        ]
+    },
+    {
+        "q": "What is the trade-off of erasure coding compared to replication?",
+        "type": "mcq",
+        "o": [
+            "Higher CPU usage during recovery",
+            "More storage required",
+            "Slower writes",
+            "Less fault tolerance"
+        ]
+    },
+    {
+        "q": "Which command sets erasure coding policy on a directory?",
+        "type": "mcq",
+        "o": [
+            "hdfs ec -setPolicy",
+            "hdfs erasure -set",
+            "hadoop ec -policy",
+            "hdfs dfs -ec"
+        ]
+    },
+    {
+        "q": "Rearrange the erasure coding recovery process:",
+        "type": "rearrange",
+        "words": [
+            "Detect failure",
+            "Read parity",
+            "Calculate missing",
+            "Reconstruct data",
+            "Write recovered"
+        ]
+    },
+    {
+        "q": "What is the output of this Hadoop erasure coding command?",
+        "type": "mcq",
+        "c": "hdfs ec -listPolicies",
+        "o": [
+            "Lists all available erasure coding policies",
+            "Shows current policy on a path",
+            "Creates a new policy",
+            "Removes existing policy"
+        ]
+    },
+    {
+        "q": "Which RS-3-2 erasure coding policy means?",
+        "type": "mcq",
+        "o": [
+            "3 data blocks and 2 parity blocks",
+            "3 replicas with 2 backups",
+            "3 nodes with 2 racks",
+            "3 files with 2 copies"
+        ]
+    },
+    {
+        "q": "Match the erasure coding policy with its storage overhead:",
+        "type": "match",
+        "left": [
+            "RS-3-2",
+            "RS-6-3",
+            "RS-10-4",
+            "XOR-2-1"
+        ],
+        "right": [
+            "67%",
+            "50%",
+            "40%",
+            "50%"
+        ]
+    },
+    {
+        "q": "What is the purpose of storage policies in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Specify storage types for files based on access patterns",
+            "Encrypt different file types",
+            "Compress data by category",
+            "Schedule deletion of old files"
+        ]
+    },
+    {
+        "q": "HDFS supports heterogeneous storage with different media types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ storage type represents solid-state drives in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "SSD"
+        ],
+        "other_options": [
+            "FLASH",
+            "FAST",
+            "NVME"
+        ]
+    },
+    {
+        "q": "Which storage policy stores all replicas on SSD?",
+        "type": "mcq",
+        "o": [
+            "ALL_SSD",
+            "SSD_ONLY",
+            "FAST_STORAGE",
+            "HOT"
+        ]
+    },
+    {
+        "q": "What is the difference between HOT and WARM storage policies?",
+        "type": "mcq",
+        "o": [
+            "HOT uses DISK only, WARM uses DISK and ARCHIVE",
+            "HOT is faster than WARM",
+            "WARM uses encryption",
+            "HOT uses SSD only"
+        ]
+    },
+    {
+        "q": "Match the storage policy with its use case:",
+        "type": "match",
+        "left": [
+            "HOT",
+            "WARM",
+            "COLD",
+            "ALL_SSD"
+        ],
+        "right": [
+            "Frequent access",
+            "Less frequent access",
+            "Archival",
+            "High performance"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Mover tool in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Move data to appropriate storage based on policy",
+            "Move files between directories",
+            "Transfer data between clusters",
+            "Migrate blocks between DataNodes"
+        ]
+    },
+    {
+        "q": "The _____ property defines the storage type of a DataNode directory.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.datanode.data.dir"
+        ],
+        "other_options": [
+            "dfs.data.storage.type",
+            "hdfs.storage.dir",
+            "datanode.storage.type"
+        ]
+    },
+    {
+        "q": "What is a MapReduce join operation?",
+        "type": "mcq",
+        "o": [
+            "Combine data from multiple datasets based on a key",
+            "Split large files into smaller chunks",
+            "Merge mapper outputs",
+            "Connect to external databases"
+        ]
+    },
+    {
+        "q": "Which join strategy is most efficient for small-large dataset joins?",
+        "type": "mcq",
+        "o": [
+            "Map-side join with distributed cache",
+            "Reduce-side join",
+            "Merge join",
+            "Hash join only"
+        ]
+    },
+    {
+        "q": "Reduce-side join handles datasets of any size but is slower.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this MapReduce join configuration?",
+        "type": "mcq",
+        "c": "job.addCacheFile(new URI(\"/data/small.txt\"));",
+        "o": [
+            "Caches small.txt on all task nodes for map-side join",
+            "Reads small.txt from each mapper",
+            "Writes output to small.txt",
+            "Compresses small.txt"
+        ]
+    },
+    {
+        "q": "Match the join type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Map-side join",
+            "Reduce-side join",
+            "Semi-join",
+            "Broadcast join"
+        ],
+        "right": [
+            "Requires sorted input",
+            "Any input format",
+            "Filters before join",
+            "Cache one dataset"
+        ]
+    },
+    {
+        "q": "What is a semi-join in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Filter one dataset before joining to reduce data transfer",
+            "Join only half the data",
+            "Join without reducer",
+            "Partial join result"
+        ]
+    },
+    {
+        "q": "The _____ class is commonly used for reduce-side joins.",
+        "type": "fill_blank",
+        "answers": [
+            "CompositeInputFormat"
+        ],
+        "other_options": [
+            "JoinInputFormat",
+            "MergeInputFormat",
+            "UnionInputFormat"
+        ]
+    },
+    {
+        "q": "What is the purpose of secondary sort in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Sort values within a key in reducer",
+            "Sort keys after reduce phase",
+            "Secondary shuffle phase",
+            "Backup sort mechanism"
+        ]
+    },
+    {
+        "q": "Rearrange the secondary sort implementation steps:",
+        "type": "rearrange",
+        "words": [
+            "Composite key",
+            "Custom partitioner",
+            "Key comparator",
+            "Grouping comparator",
+            "Reduce"
+        ]
+    },
+    {
+        "q": "Which component ensures same natural key goes to same reducer in secondary sort?",
+        "type": "mcq",
+        "o": [
+            "Custom Partitioner",
+            "Key Comparator",
+            "Grouping Comparator",
+            "Combiner"
+        ]
+    },
+    {
+        "q": "The Grouping Comparator determines which keys are sent to the same reduce call.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the WritableComparable interface used for?",
+        "type": "mcq",
+        "o": [
+            "Define custom keys that can be serialized and compared",
+            "Write output files",
+            "Compare file sizes",
+            "Validate input data"
+        ]
+    },
+    {
+        "q": "The _____ method must be implemented for custom Writable keys.",
+        "type": "fill_blank",
+        "answers": [
+            "compareTo"
+        ],
+        "other_options": [
+            "compare",
+            "equals",
+            "hashCode"
+        ]
+    },
+    {
+        "q": "What is TotalOrderPartitioner used for?",
+        "type": "mcq",
+        "o": [
+            "Ensure global sorted order across all reducers",
+            "Partition by total record count",
+            "Order partitions alphabetically",
+            "Count total partitions"
+        ]
+    },
+    {
+        "q": "TotalOrderPartitioner requires a partition file created by sampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this InputSampler code?",
+        "type": "mcq",
+        "c": "InputSampler.writePartitionFile(job, new RandomSampler<>(0.1, 10000, 10));",
+        "o": [
+            "Creates partition file by sampling 10% of records up to 10000",
+            "Writes 10% of output randomly",
+            "Creates 10 random partitions",
+            "Samples 10000 files"
+        ]
+    },
+    {
+        "q": "Match the MapReduce optimization with its purpose:",
+        "type": "match",
+        "left": [
+            "Combiner",
+            "Compression",
+            "Speculation",
+            "JVM reuse"
+        ],
+        "right": [
+            "Reduce shuffle data",
+            "Smaller intermediate files",
+            "Handle slow tasks",
+            "Reduce startup overhead"
+        ]
+    },
+    {
+        "q": "What is the purpose of MapReduce job chaining?",
+        "type": "mcq",
+        "o": [
+            "Run multiple MapReduce jobs in sequence",
+            "Chain multiple mappers in one job",
+            "Link reducers together",
+            "Connect to multiple clusters"
+        ]
+    },
+    {
+        "q": "The _____ class from Apache Oozie manages MapReduce job workflows.",
+        "type": "fill_blank",
+        "answers": [
+            "WorkflowJob"
+        ],
+        "other_options": [
+            "JobChain",
+            "WorkflowManager",
+            "ChainJob"
+        ]
+    },
+    {
+        "q": "What is iterative MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Repeatedly run MapReduce until convergence",
+            "Process data in iterations",
+            "Map in multiple passes",
+            "Reduce iteratively"
+        ]
+    },
+    {
+        "q": "Iterative algorithms are inefficient in traditional MapReduce due to disk I/O.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which property controls the number of map task JVM slots per TaskTracker?",
+        "type": "mcq",
+        "o": [
+            "mapreduce.tasktracker.map.tasks.maximum",
+            "mapreduce.map.slots",
+            "yarn.map.tasks.per.node",
+            "mapreduce.mapper.count"
+        ]
+    },
+    {
+        "q": "What is the purpose of uber mode in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Run small jobs in ApplicationMaster JVM",
+            "Very fast job execution",
+            "Ultra big job handling",
+            "Universal batch execution"
+        ]
+    },
+    {
+        "q": "Uber mode reduces overhead for small jobs by avoiding container negotiation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property enables uber mode in MapReduce.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.job.ubertask.enable"
+        ],
+        "other_options": [
+            "mapreduce.uber.mode",
+            "yarn.uber.enable",
+            "mapreduce.fast.mode"
+        ]
+    },
+    {
+        "q": "What determines if a job qualifies for uber mode?",
+        "type": "mcq",
+        "o": [
+            "Number of maps, reducers, and input size thresholds",
+            "Job priority",
+            "User permissions",
+            "Cluster load"
+        ]
+    },
+    {
+        "q": "Match the MapReduce configuration with its unit:",
+        "type": "match",
+        "left": [
+            "mapreduce.map.memory.mb",
+            "mapreduce.task.io.sort.mb",
+            "mapreduce.reduce.shuffle.parallelcopies",
+            "mapreduce.job.reduces"
+        ],
+        "right": [
+            "Megabytes",
+            "Megabytes",
+            "Thread count",
+            "Task count"
+        ]
+    },
+    {
+        "q": "What is the purpose of io.sort.mb in MapReduce?",
+        "type": "mcq",
+        "o": [
+            "Size of circular buffer for sorting map output",
+            "Maximum input file size",
+            "Output buffer size",
+            "Network buffer size"
+        ]
+    },
+    {
+        "q": "Increasing io.sort.mb can reduce disk spills during map phase.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the default value of io.sort.spill.percent?",
+        "type": "mcq",
+        "o": [
+            "0.80 (80%)",
+            "0.90 (90%)",
+            "0.50 (50%)",
+            "0.75 (75%)"
+        ]
+    },
+    {
+        "q": "The _____ property controls parallel copy threads during shuffle.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.reduce.shuffle.parallelcopies"
+        ],
+        "other_options": [
+            "mapreduce.shuffle.threads",
+            "mapreduce.parallel.copies",
+            "yarn.shuffle.threads"
+        ]
+    },
+    {
+        "q": "What happens when io.sort buffer reaches spill threshold?",
+        "type": "mcq",
+        "o": [
+            "Buffer contents are sorted and written to disk",
+            "Job fails with error",
+            "Buffer is doubled in size",
+            "Data is sent to reducers"
+        ]
+    },
+    {
+        "q": "Rearrange the map output handling steps:",
+        "type": "rearrange",
+        "words": [
+            "Write to buffer",
+            "Sort in memory",
+            "Spill to disk",
+            "Merge spills",
+            "Transfer to reducer"
+        ]
+    },
+    {
+        "q": "What is the purpose of mapreduce.job.reduce.slowstart.completedmaps?",
+        "type": "mcq",
+        "o": [
+            "Percentage of maps to complete before starting reduce shuffle",
+            "Time delay before reduce starts",
+            "Threshold for slow map detection",
+            "Mapper completion timeout"
+        ]
+    },
+    {
+        "q": "Setting reduce slowstart to 1.0 delays reduce until all maps complete.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the impact of too early reduce start?",
+        "type": "mcq",
+        "o": [
+            "Wasted resources waiting for map output",
+            "Faster job completion",
+            "Better resource utilization",
+            "More accurate results"
+        ]
+    },
+    {
+        "q": "Match the MapReduce memory parameter with its function:",
+        "type": "match",
+        "left": [
+            "mapreduce.map.memory.mb",
+            "mapreduce.map.java.opts",
+            "mapreduce.task.io.sort.mb",
+            "mapreduce.reduce.memory.mb"
+        ],
+        "right": [
+            "Container memory",
+            "JVM heap size",
+            "Sort buffer",
+            "Reducer container memory"
+        ]
+    },
+    {
+        "q": "The Java heap size should be _____ of container memory.",
+        "type": "fill_blank",
+        "answers": [
+            "80%"
+        ],
+        "other_options": [
+            "50%",
+            "100%",
+            "90%"
+        ]
+    },
+    {
+        "q": "What causes 'Container killed by YARN for exceeding memory limits'?",
+        "type": "mcq",
+        "o": [
+            "JVM heap plus off-heap memory exceeds container allocation",
+            "Too many map tasks",
+            "Network timeout",
+            "Disk full"
+        ]
+    },
+    {
+        "q": "Off-heap memory includes native libraries and direct buffers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of YARN reservation system?",
+        "type": "mcq",
+        "o": [
+            "Reserve resources for future job execution",
+            "Store job configurations",
+            "Cache frequently used data",
+            "Backup cluster state"
+        ]
+    },
+    {
+        "q": "The _____ property enables YARN reservation system.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.resourcemanager.reservation-system.enable"
+        ],
+        "other_options": [
+            "yarn.reservation.enable",
+            "yarn.scheduler.reservation",
+            "yarn.reserve.enable"
+        ]
+    },
+    {
+        "q": "What is the Capacity Scheduler queue hierarchy?",
+        "type": "mcq",
+        "o": [
+            "Parent queues containing child sub-queues",
+            "Priority-based queue list",
+            "Round-robin queue system",
+            "Single flat queue"
+        ]
+    },
+    {
+        "q": "Capacity Scheduler supports hierarchical queue configuration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Capacity Scheduler property with its purpose:",
+        "type": "match",
+        "left": [
+            "yarn.scheduler.capacity.root.queues",
+            "yarn.scheduler.capacity.root.default.capacity",
+            "yarn.scheduler.capacity.root.default.maximum-capacity",
+            "yarn.scheduler.capacity.root.default.user-limit-factor"
+        ],
+        "right": [
+            "Define sub-queues",
+            "Minimum guarantee",
+            "Maximum resource limit",
+            "Per-user limit multiplier"
+        ]
+    },
+    {
+        "q": "What is elastic capacity in YARN Capacity Scheduler?",
+        "type": "mcq",
+        "o": [
+            "Queue can use resources beyond its capacity when available",
+            "Resources automatically scale",
+            "Dynamic node addition",
+            "Flexible container sizing"
+        ]
+    },
+    {
+        "q": "The _____ property controls maximum resources a queue can use.",
+        "type": "fill_blank",
+        "answers": [
+            "maximum-capacity"
+        ],
+        "other_options": [
+            "max-capacity",
+            "max-resources",
+            "capacity-limit"
+        ]
+    },
+    {
+        "q": "What is preemption in Capacity Scheduler?",
+        "type": "mcq",
+        "o": [
+            "Take resources from over-capacity queues for under-served queues",
+            "Reserve resources in advance",
+            "Prioritize certain jobs",
+            "Cancel running tasks"
+        ]
+    },
+    {
+        "q": "Preemption ensures fair resource distribution across queues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this YARN queue configuration?",
+        "type": "mcq",
+        "c": "yarn.scheduler.capacity.root.prod.capacity=60\nyarn.scheduler.capacity.root.dev.capacity=40",
+        "o": [
+            "Allocates 60% to prod queue and 40% to dev queue",
+            "Creates 60 prod and 40 dev containers",
+            "Sets queue priorities",
+            "Limits queue users"
+        ]
+    },
+    {
+        "q": "Which property enables ACL-based queue access in Capacity Scheduler?",
+        "type": "mcq",
+        "o": [
+            "yarn.scheduler.capacity.root.queuename.acl_submit_applications",
+            "yarn.scheduler.queue.acl",
+            "yarn.acl.submit.queue",
+            "yarn.scheduler.capacity.acl"
+        ]
+    },
+    {
+        "q": "Match the queue ACL with its permission:",
+        "type": "match",
+        "left": [
+            "acl_submit_applications",
+            "acl_administer_queue",
+            "state",
+            "maximum-applications"
+        ],
+        "right": [
+            "Submit jobs",
+            "Kill/modify jobs",
+            "Queue running state",
+            "Max queued jobs"
+        ]
+    },
+    {
+        "q": "What is the Fair Scheduler DRF policy?",
+        "type": "mcq",
+        "o": [
+            "Dominant Resource Fairness - fair share based on dominant resource",
+            "Default Resource Fairness",
+            "Dynamic Resource Fairness",
+            "Distributed Resource Fairness"
+        ]
+    },
+    {
+        "q": "DRF considers multiple resource types like CPU and memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property configures Fair Scheduler allocation file.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.scheduler.fair.allocation.file"
+        ],
+        "other_options": [
+            "yarn.fair.scheduler.file",
+            "yarn.scheduler.fair.config",
+            "fair.scheduler.allocation"
+        ]
+    },
+    {
+        "q": "What is the purpose of minResources in Fair Scheduler?",
+        "type": "mcq",
+        "o": [
+            "Guarantee minimum resources for a queue",
+            "Set minimum file size",
+            "Define minimum container size",
+            "Specify minimum nodes"
+        ]
+    },
+    {
+        "q": "Rearrange the Fair Scheduler resource allocation priority:",
+        "type": "rearrange",
+        "words": [
+            "Minimum share",
+            "Fair share",
+            "Maximum share",
+            "Preemption"
+        ]
+    },
+    {
+        "q": "What is steady fair share in Fair Scheduler?",
+        "type": "mcq",
+        "o": [
+            "Share calculated based on weight regardless of demand",
+            "Fixed resource allocation",
+            "Stable container count",
+            "Constant queue capacity"
+        ]
+    },
+    {
+        "q": "Instantaneous fair share changes based on active applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Sqoop import?",
+        "type": "mcq",
+        "o": [
+            "Transfer data from RDBMS to HDFS",
+            "Import files from local filesystem",
+            "Load configuration files",
+            "Import MapReduce jobs"
+        ]
+    },
+    {
+        "q": "The _____ command exports data from HDFS to RDBMS.",
+        "type": "fill_blank",
+        "answers": [
+            "sqoop export"
+        ],
+        "other_options": [
+            "sqoop push",
+            "sqoop send",
+            "sqoop write"
+        ]
+    },
+    {
+        "q": "What is the output of this Sqoop command?",
+        "type": "mcq",
+        "c": "sqoop import --connect jdbc:mysql://db/mydb --table users --split-by id",
+        "o": [
+            "Imports users table splitting by id column for parallel mappers",
+            "Splits the database into multiple tables",
+            "Divides output files by id",
+            "Creates id-based partitions in Hive"
+        ]
+    },
+    {
+        "q": "Match the Sqoop option with its function:",
+        "type": "match",
+        "left": [
+            "--split-by",
+            "--num-mappers",
+            "--target-dir",
+            "--incremental"
+        ],
+        "right": [
+            "Column for parallel import",
+            "Number of map tasks",
+            "HDFS destination",
+            "Delta import mode"
+        ]
+    },
+    {
+        "q": "Sqoop incremental import supports append and lastmodified modes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Sqoop direct mode?",
+        "type": "mcq",
+        "o": [
+            "Use database-native tools for faster transfer",
+            "Direct connection without JDBC",
+            "Bypass MapReduce entirely",
+            "Direct write to HDFS"
+        ]
+    },
+    {
+        "q": "The _____ option in Sqoop creates a Hive table for imported data.",
+        "type": "fill_blank",
+        "answers": [
+            "--hive-import"
+        ],
+        "other_options": [
+            "--create-hive",
+            "--hive-table",
+            "--to-hive"
+        ]
+    },
+    {
+        "q": "What is the purpose of Apache Flume Source?",
+        "type": "mcq",
+        "o": [
+            "Receive events from external data producers",
+            "Store data in HDFS",
+            "Transform event data",
+            "Route events to destinations"
+        ]
+    },
+    {
+        "q": "Rearrange the Flume data flow components:",
+        "type": "rearrange",
+        "words": [
+            "Source",
+            "Channel",
+            "Sink"
+        ]
+    },
+    {
+        "q": "What is the role of Flume Channel?",
+        "type": "mcq",
+        "o": [
+            "Buffer events between source and sink",
+            "Route events to multiple sinks",
+            "Transform event format",
+            "Compress event data"
+        ]
+    },
+    {
+        "q": "Match the Flume channel type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Memory",
+            "File",
+            "JDBC",
+            "Kafka"
+        ],
+        "right": [
+            "Fast but volatile",
+            "Durable on disk",
+            "Database backed",
+            "Distributed queue"
+        ]
+    },
+    {
+        "q": "The _____ channel provides durability through write-ahead logging.",
+        "type": "fill_blank",
+        "answers": [
+            "File"
+        ],
+        "other_options": [
+            "Memory",
+            "JDBC",
+            "Durable"
+        ]
+    },
+    {
+        "q": "What is Flume interceptor used for?",
+        "type": "mcq",
+        "o": [
+            "Modify or filter events before they reach the channel",
+            "Intercept network traffic",
+            "Block unauthorized access",
+            "Route events to multiple sinks"
+        ]
+    },
+    {
+        "q": "Flume supports multiplexing events to multiple channels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Flume configuration?",
+        "type": "mcq",
+        "c": "agent.sources.s1.selector.type = multiplexing\nagent.sources.s1.selector.header = type\nagent.sources.s1.selector.mapping.log = c1\nagent.sources.s1.selector.mapping.metric = c2",
+        "o": [
+            "Routes events to different channels based on type header",
+            "Creates multiple copies of events",
+            "Filters events by type",
+            "Compresses events before routing"
+        ]
+    },
+    {
+        "q": "Match the Flume selector type with its behavior:",
+        "type": "match",
+        "left": [
+            "replicating",
+            "multiplexing",
+            "load_balance",
+            "failover"
+        ],
+        "right": [
+            "Copy to all channels",
+            "Route by header",
+            "Distribute evenly",
+            "Primary with backup"
+        ]
+    },
+    {
+        "q": "What is the purpose of Flume Sink Groups?",
+        "type": "mcq",
+        "o": [
+            "Group sinks for load balancing or failover",
+            "Combine multiple sources",
+            "Merge event data",
+            "Compress sink output"
+        ]
+    },
+    {
+        "q": "The _____ sink processor provides automatic failover between sinks.",
+        "type": "fill_blank",
+        "answers": [
+            "failover"
+        ],
+        "other_options": [
+            "backup",
+            "redundant",
+            "ha"
+        ]
+    },
+    {
+        "q": "What is Flume Avro source used for?",
+        "type": "mcq",
+        "o": [
+            "Receive events from other Flume agents via RPC",
+            "Read Avro files from disk",
+            "Convert JSON to Avro format",
+            "Compress events using Avro codec"
+        ]
+    },
+    {
+        "q": "Rearrange the multi-tier Flume architecture:",
+        "type": "rearrange",
+        "words": [
+            "Agent tier",
+            "Collector tier",
+            "Storage tier",
+            "HDFS sink"
+        ]
+    },
+    {
+        "q": "What is the purpose of Apache Oozie Coordinator?",
+        "type": "mcq",
+        "o": [
+            "Schedule recurring workflow jobs based on time or data availability",
+            "Coordinate cluster resources",
+            "Monitor running jobs",
+            "Manage job dependencies"
+        ]
+    },
+    {
+        "q": "Oozie workflow uses XML format for job definition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Oozie component with its function:",
+        "type": "match",
+        "left": [
+            "Workflow",
+            "Coordinator",
+            "Bundle",
+            "SLA"
+        ],
+        "right": [
+            "DAG of actions",
+            "Time/data triggers",
+            "Group coordinators",
+            "Service agreements"
+        ]
+    },
+    {
+        "q": "What is the output of this Oozie workflow action?",
+        "type": "mcq",
+        "c": "<action name='mapreduce-node'>\n  <map-reduce>\n    <job-tracker>${jobTracker}</job-tracker>\n    <name-node>${nameNode}</name-node>\n  </map-reduce>\n  <ok to='end'/>\n  <error to='fail'/>\n</action>",
+        "o": [
+            "Defines a MapReduce action with success and error transitions",
+            "Maps input to reduce nodes",
+            "Reduces job count to one",
+            "Creates tracker for job monitoring"
+        ]
+    },
+    {
+        "q": "The _____ variable in Oozie references the workflow application path.",
+        "type": "fill_blank",
+        "answers": [
+            "${wf:appPath()}"
+        ],
+        "other_options": [
+            "${oozie.path}",
+            "${workflow.path}",
+            "${app.dir}"
+        ]
+    },
+    {
+        "q": "What is data availability trigger in Oozie Coordinator?",
+        "type": "mcq",
+        "o": [
+            "Start workflow when input data becomes available",
+            "Notify when data is ready",
+            "Check data validity",
+            "Trigger data cleanup"
+        ]
+    },
+    {
+        "q": "Oozie supports conditional logic using decision nodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does the fork-join pattern do in Oozie?",
+        "type": "mcq",
+        "o": [
+            "Execute multiple actions in parallel and synchronize",
+            "Split large jobs into smaller ones",
+            "Create job branches",
+            "Fork the Oozie process"
+        ]
+    },
+    {
+        "q": "Rearrange the Oozie workflow lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "PREP",
+            "RUNNING",
+            "SUSPENDED",
+            "SUCCEEDED",
+            "KILLED"
+        ]
+    },
+    {
+        "q": "What is the purpose of Oozie SLA monitoring?",
+        "type": "mcq",
+        "o": [
+            "Track job execution against expected completion times",
+            "Monitor service level agreements",
+            "Check cluster SLA compliance",
+            "Measure storage usage"
+        ]
+    },
+    {
+        "q": "Match the Oozie action type with its purpose:",
+        "type": "match",
+        "left": [
+            "map-reduce",
+            "pig",
+            "hive",
+            "shell"
+        ],
+        "right": [
+            "Run MR job",
+            "Run Pig script",
+            "Run HiveQL",
+            "Run shell command"
+        ]
+    },
+    {
+        "q": "The _____ Oozie action runs a Spark job on YARN.",
+        "type": "fill_blank",
+        "answers": [
+            "spark"
+        ],
+        "other_options": [
+            "spark-submit",
+            "yarn-spark",
+            "spark-action"
+        ]
+    },
+    {
+        "q": "What is Apache HBase used for?",
+        "type": "mcq",
+        "o": [
+            "Real-time random read/write access to big data",
+            "Batch data processing",
+            "SQL queries on HDFS",
+            "Workflow scheduling"
+        ]
+    },
+    {
+        "q": "HBase stores data in HDFS and provides random access capabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the HBase data model organized by?",
+        "type": "mcq",
+        "o": [
+            "Row key, column family, column qualifier, timestamp",
+            "Tables and columns only",
+            "Documents and collections",
+            "Nodes and edges"
+        ]
+    },
+    {
+        "q": "Match the HBase component with its function:",
+        "type": "match",
+        "left": [
+            "HMaster",
+            "RegionServer",
+            "ZooKeeper",
+            "Region"
+        ],
+        "right": [
+            "Cluster coordination",
+            "Serve data requests",
+            "Distributed coordination",
+            "Contiguous rows"
+        ]
+    },
+    {
+        "q": "The _____ daemon handles data read/write requests in HBase.",
+        "type": "fill_blank",
+        "answers": [
+            "RegionServer"
+        ],
+        "other_options": [
+            "HMaster",
+            "DataNode",
+            "HRegion"
+        ]
+    },
+    {
+        "q": "What is a column family in HBase?",
+        "type": "mcq",
+        "o": [
+            "Logical grouping of columns stored together",
+            "Set of related tables",
+            "Family of database users",
+            "Column data type definition"
+        ]
+    },
+    {
+        "q": "Column families must be defined at table creation time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this HBase shell command?",
+        "type": "mcq",
+        "c": "create 'users', 'info', 'activity'",
+        "o": [
+            "Creates table 'users' with column families 'info' and 'activity'",
+            "Creates two tables named info and activity",
+            "Creates user accounts in two groups",
+            "Creates indexes on info and activity columns"
+        ]
+    },
+    {
+        "q": "How does HBase handle write operations?",
+        "type": "mcq",
+        "o": [
+            "Write to WAL then MemStore, flush to HFile",
+            "Direct write to HFile",
+            "Write to disk then memory",
+            "Batch writes only"
+        ]
+    },
+    {
+        "q": "Rearrange the HBase write path:",
+        "type": "rearrange",
+        "words": [
+            "Client request",
+            "Write to WAL",
+            "Write to MemStore",
+            "Flush to HFile",
+            "Compaction"
+        ]
+    },
+    {
+        "q": "What is compaction in HBase?",
+        "type": "mcq",
+        "o": [
+            "Merge multiple HFiles into larger files",
+            "Compress data on disk",
+            "Delete old versions",
+            "Reduce memory usage"
+        ]
+    },
+    {
+        "q": "Major compaction rewrites all HFiles in a region.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ in HBase stores recent writes before flushing to disk.",
+        "type": "fill_blank",
+        "answers": [
+            "MemStore"
+        ],
+        "other_options": [
+            "WriteCache",
+            "Buffer",
+            "WAL"
+        ]
+    },
+    {
+        "q": "What is region splitting in HBase?",
+        "type": "mcq",
+        "o": [
+            "Divide large region into smaller regions",
+            "Split table into partitions",
+            "Separate read and write regions",
+            "Create region copies"
+        ]
+    },
+    {
+        "q": "Match the HBase operation with its purpose:",
+        "type": "match",
+        "left": [
+            "Get",
+            "Put",
+            "Scan",
+            "Delete"
+        ],
+        "right": [
+            "Retrieve single row",
+            "Insert/update row",
+            "Range query",
+            "Remove data"
+        ]
+    },
+    {
+        "q": "What triggers automatic region splitting?",
+        "type": "mcq",
+        "o": [
+            "Region size exceeds configured threshold",
+            "Too many read requests",
+            "Memory pressure",
+            "Manual administrator action"
+        ]
+    },
+    {
+        "q": "HBase Bloom filters reduce disk I/O for reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HBase BlockCache?",
+        "type": "mcq",
+        "o": [
+            "Cache frequently accessed data blocks in memory",
+            "Block unauthorized access",
+            "Cache write operations",
+            "Store block metadata"
+        ]
+    },
+    {
+        "q": "The _____ coprocessor in HBase runs on each region server.",
+        "type": "fill_blank",
+        "answers": [
+            "observer"
+        ],
+        "other_options": [
+            "endpoint",
+            "filter",
+            "trigger"
+        ]
+    },
+    {
+        "q": "What is HBase coprocessor used for?",
+        "type": "mcq",
+        "o": [
+            "Run custom code on region servers for server-side processing",
+            "Copy data between regions",
+            "Process data in parallel",
+            "Coordinate region servers"
+        ]
+    },
+    {
+        "q": "Match the HBase API with its use case:",
+        "type": "match",
+        "left": [
+            "Java API",
+            "REST API",
+            "Thrift API",
+            "Shell"
+        ],
+        "right": [
+            "Native client access",
+            "HTTP-based access",
+            "Cross-language RPC",
+            "Interactive queries"
+        ]
+    },
+    {
+        "q": "What is Apache Phoenix?",
+        "type": "mcq",
+        "o": [
+            "SQL layer on top of HBase",
+            "Monitoring tool for HBase",
+            "Backup solution for HBase",
+            "HBase performance optimizer"
+        ]
+    },
+    {
+        "q": "Phoenix provides JDBC driver for HBase access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of dfs.replication configuration?",
+        "type": "mcq",
+        "o": [
+            "Set default replication factor for new files",
+            "Configure replica placement",
+            "Enable replication monitoring",
+            "Set replication timeout"
+        ]
+    },
+    {
+        "q": "The _____ property specifies the NameNode heap size.",
+        "type": "fill_blank",
+        "answers": [
+            "HADOOP_NAMENODE_OPTS"
+        ],
+        "other_options": [
+            "NAMENODE_HEAP",
+            "HADOOP_HEAP_SIZE",
+            "DFS_NAMENODE_HEAP"
+        ]
+    },
+    {
+        "q": "What is the recommended NameNode heap size per million blocks?",
+        "type": "mcq",
+        "o": [
+            "1 GB per million blocks",
+            "100 MB per million blocks",
+            "10 GB per million blocks",
+            "500 MB per million blocks"
+        ]
+    },
+    {
+        "q": "Large NameNode heap can cause long garbage collection pauses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Hadoop tuning parameter with its effect:",
+        "type": "match",
+        "left": [
+            "dfs.blocksize",
+            "dfs.namenode.handler.count",
+            "dfs.datanode.max.transfer.threads",
+            "dfs.client.socket-timeout"
+        ],
+        "right": [
+            "File chunk size",
+            "RPC threads",
+            "Data transfer threads",
+            "Network timeout"
+        ]
+    },
+    {
+        "q": "What is the impact of small block size on NameNode?",
+        "type": "mcq",
+        "o": [
+            "More metadata to store increasing memory usage",
+            "Faster data access",
+            "Better compression",
+            "Improved write throughput"
+        ]
+    },
+    {
+        "q": "The _____ property controls number of DataNode handler threads.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.datanode.handler.count"
+        ],
+        "other_options": [
+            "dfs.handler.threads",
+            "datanode.threads",
+            "dfs.data.handlers"
+        ]
+    },
+    {
+        "q": "What is the purpose of dfs.namenode.avoid.read.stale.datanode?",
+        "type": "mcq",
+        "o": [
+            "Avoid reading from DataNodes that havent sent heartbeats recently",
+            "Prevent reading old data versions",
+            "Skip corrupted blocks",
+            "Ignore slow DataNodes"
+        ]
+    },
+    {
+        "q": "Rearrange the Hadoop cluster sizing considerations:",
+        "type": "rearrange",
+        "words": [
+            "Data volume",
+            "Growth rate",
+            "Processing needs",
+            "Hardware selection",
+            "Network design"
+        ]
+    },
+    {
+        "q": "What is the recommended ratio of map slots to reduce slots?",
+        "type": "mcq",
+        "o": [
+            "Depends on workload, typically 2:1 or 3:1",
+            "Always 1:1",
+            "Fixed at 4:1",
+            "Reduce slots should exceed map slots"
+        ]
+    },
+    {
+        "q": "Over-provisioning map slots can lead to memory contention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of yarn.nodemanager.vmem-check-enabled?",
+        "type": "mcq",
+        "o": [
+            "Enable or disable virtual memory limit checking",
+            "Check VM availability",
+            "Validate VM configuration",
+            "Monitor virtual machines"
+        ]
+    },
+    {
+        "q": "Match the YARN configuration with its purpose:",
+        "type": "match",
+        "left": [
+            "yarn.app.mapreduce.am.resource.mb",
+            "yarn.scheduler.minimum-allocation-mb",
+            "yarn.scheduler.maximum-allocation-mb",
+            "yarn.nodemanager.resource.cpu-vcores"
+        ],
+        "right": [
+            "AM container size",
+            "Smallest container",
+            "Largest container",
+            "Available CPU cores"
+        ]
+    },
+    {
+        "q": "The _____ property sets the default queue for YARN applications.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.job.queuename"
+        ],
+        "other_options": [
+            "yarn.queue.default",
+            "yarn.app.queue",
+            "mapreduce.queue.name"
+        ]
+    },
+    {
+        "q": "What is the impact of setting too small container sizes?",
+        "type": "mcq",
+        "o": [
+            "Tasks may run out of memory and fail",
+            "Faster job completion",
+            "Better resource utilization",
+            "More parallel tasks"
+        ]
+    },
+    {
+        "q": "Container memory should account for JVM heap plus overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of YARN label-based scheduling?",
+        "type": "mcq",
+        "o": [
+            "Restrict applications to run on specific labeled nodes",
+            "Label job output files",
+            "Tag applications for monitoring",
+            "Organize queue hierarchy"
+        ]
+    },
+    {
+        "q": "Rearrange the YARN troubleshooting steps:",
+        "type": "rearrange",
+        "words": [
+            "Check RM logs",
+            "Review AM logs",
+            "Examine container logs",
+            "Analyze metrics",
+            "Identify root cause"
+        ]
+    },
+    {
+        "q": "What is the primary cause of 'AM Container launch failure'?",
+        "type": "mcq",
+        "o": [
+            "Insufficient resources or classpath issues",
+            "Network timeout",
+            "Disk full",
+            "Permission denied"
+        ]
+    },
+    {
+        "q": "Match the Hadoop log file with its content:",
+        "type": "match",
+        "left": [
+            "namenode.log",
+            "datanode.log",
+            "resourcemanager.log",
+            "nodemanager.log"
+        ],
+        "right": [
+            "HDFS namespace operations",
+            "Block operations",
+            "YARN resource events",
+            "Container execution"
+        ]
+    },
+    {
+        "q": "The _____ command retrieves aggregated YARN logs after job completion.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn logs -applicationId"
+        ],
+        "other_options": [
+            "yarn app -logs",
+            "hadoop logs",
+            "yarn container -logs"
+        ]
+    },
+    {
+        "q": "What is log aggregation in YARN?",
+        "type": "mcq",
+        "o": [
+            "Collect container logs and store in HDFS after application completes",
+            "Combine log files from multiple nodes",
+            "Compress log entries",
+            "Filter duplicate log messages"
+        ]
+    },
+    {
+        "q": "Log aggregation must be enabled for historical log access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Hadoop metrics system?",
+        "type": "mcq",
+        "o": [
+            "Collect and publish cluster performance data",
+            "Measure file sizes",
+            "Calculate job costs",
+            "Track user activity"
+        ]
+    },
+    {
+        "q": "Hadoop metrics can be exported to Ganglia or Graphite.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Hadoop metric with what it measures:",
+        "type": "match",
+        "left": [
+            "GcTimeMillis",
+            "MemHeapUsedM",
+            "BlocksTotal",
+            "VolumeFailures"
+        ],
+        "right": [
+            "JVM garbage collection",
+            "Memory consumption",
+            "HDFS block count",
+            "Disk failures"
+        ]
+    },
+    {
+        "q": "The _____ JMX metric indicates NameNode RPC processing time.",
+        "type": "fill_blank",
+        "answers": [
+            "RpcProcessingTimeAvgTime"
+        ],
+        "other_options": [
+            "RpcCallTime",
+            "RpcAvgTime",
+            "ProcessingLatency"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS disk balancer?",
+        "type": "mcq",
+        "o": [
+            "Balance data across disks within a single DataNode",
+            "Balance data across the cluster",
+            "Balance network traffic",
+            "Balance CPU usage"
+        ]
+    },
+    {
+        "q": "The disk balancer addresses uneven disk utilization on individual nodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What causes disk imbalance within a DataNode?",
+        "type": "mcq",
+        "o": [
+            "Adding new disks or replacing failed disks",
+            "Network issues",
+            "Too many read requests",
+            "Incorrect permissions"
+        ]
+    },
+    {
+        "q": "Rearrange the disk balancer workflow:",
+        "type": "rearrange",
+        "words": [
+            "Generate plan",
+            "Review plan",
+            "Execute plan",
+            "Monitor progress",
+            "Verify balance"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS quotas?",
+        "type": "mcq",
+        "o": [
+            "Limit space or file count per directory",
+            "Set user permissions",
+            "Define access patterns",
+            "Configure replication"
+        ]
+    },
+    {
+        "q": "HDFS supports both space quotas and namespace quotas.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the HDFS quota type with its limit:",
+        "type": "match",
+        "left": [
+            "Name quota",
+            "Space quota",
+            "Storage type quota"
+        ],
+        "right": [
+            "Number of files/directories",
+            "Bytes of storage",
+            "Per-storage-type limit"
+        ]
+    },
+    {
+        "q": "The _____ command sets namespace quota on a directory.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs dfsadmin -setQuota"
+        ],
+        "other_options": [
+            "hdfs quota -set",
+            "hadoop fs -quota",
+            "hdfs -setQuota"
+        ]
+    },
+    {
+        "q": "What happens when a directory exceeds its quota?",
+        "type": "mcq",
+        "o": [
+            "New writes to that directory are rejected",
+            "Old files are automatically deleted",
+            "Quota is automatically increased",
+            "Data is moved to another directory"
+        ]
+    },
+    {
+        "q": "What is WebHDFS?",
+        "type": "mcq",
+        "o": [
+            "REST API for HDFS file operations",
+            "Web-based file browser",
+            "HDFS monitoring dashboard",
+            "Web server on HDFS"
+        ]
+    },
+    {
+        "q": "WebHDFS supports authentication via delegation tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this WebHDFS request?",
+        "type": "mcq",
+        "c": "curl -X PUT 'http://namenode:50070/webhdfs/v1/data?op=MKDIRS'",
+        "o": [
+            "Creates a directory named 'data' in HDFS root",
+            "Uploads data to HDFS",
+            "Lists directory contents",
+            "Deletes the data directory"
+        ]
+    },
+    {
+        "q": "Match the WebHDFS operation with its HTTP method:",
+        "type": "match",
+        "left": [
+            "LISTSTATUS",
+            "MKDIRS",
+            "DELETE",
+            "OPEN"
+        ],
+        "right": [
+            "GET",
+            "PUT",
+            "DELETE",
+            "GET"
+        ]
+    },
+    {
+        "q": "The _____ operation in WebHDFS reads file contents.",
+        "type": "fill_blank",
+        "answers": [
+            "OPEN"
+        ],
+        "other_options": [
+            "READ",
+            "GET",
+            "FETCH"
+        ]
+    },
+    {
+        "q": "What is HttpFS?",
+        "type": "mcq",
+        "o": [
+            "Gateway providing WebHDFS API independent of NameNode",
+            "HTTP file server",
+            "HDFS over HTTP protocol",
+            "File system browser"
+        ]
+    },
+    {
+        "q": "HttpFS can act as a proxy for HDFS access from outside the cluster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the advantage of HttpFS over direct WebHDFS?",
+        "type": "mcq",
+        "o": [
+            "All traffic goes through single gateway simplifying firewall rules",
+            "Faster data transfer",
+            "Better compression",
+            "More authentication options"
+        ]
+    },
+    {
+        "q": "What is Apache Atlas used for in Hadoop ecosystem?",
+        "type": "mcq",
+        "o": [
+            "Metadata management and data governance",
+            "Cluster monitoring",
+            "Job scheduling",
+            "Data processing"
+        ]
+    },
+    {
+        "q": "Atlas provides data lineage tracking for Hadoop data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the governance tool with its function:",
+        "type": "match",
+        "left": [
+            "Atlas",
+            "Ranger",
+            "Knox",
+            "Sentry"
+        ],
+        "right": [
+            "Metadata catalog",
+            "Authorization",
+            "Gateway security",
+            "Role-based access"
+        ]
+    },
+    {
+        "q": "The _____ feature in Atlas shows how data flows through processing stages.",
+        "type": "fill_blank",
+        "answers": [
+            "lineage"
+        ],
+        "other_options": [
+            "flow",
+            "pipeline",
+            "tracking"
+        ]
+    },
+    {
+        "q": "What is the purpose of data classification in Atlas?",
+        "type": "mcq",
+        "o": [
+            "Tag data with sensitivity labels for governance",
+            "Categorize files by size",
+            "Organize directories",
+            "Sort data by date"
+        ]
+    },
+    {
+        "q": "Rearrange the data governance workflow:",
+        "type": "rearrange",
+        "words": [
+            "Discover data",
+            "Classify data",
+            "Define policies",
+            "Monitor compliance",
+            "Remediate issues"
+        ]
+    },
+    {
+        "q": "What is the purpose of distcp in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Distributed copy of large data between clusters",
+            "Distribute configuration files",
+            "Copy data to local filesystem",
+            "Create data copies for backup"
+        ]
+    },
+    {
+        "q": "Distcp uses MapReduce for parallel data copying.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this distcp command?",
+        "type": "mcq",
+        "c": "hadoop distcp -update -skipcrccheck hdfs://src/data hdfs://dest/data",
+        "o": [
+            "Copies only new or modified files skipping CRC verification",
+            "Updates source from destination",
+            "Skips all file copying",
+            "Checks CRC then copies"
+        ]
+    },
+    {
+        "q": "Match the distcp option with its function:",
+        "type": "match",
+        "left": [
+            "-update",
+            "-overwrite",
+            "-m",
+            "-bandwidth"
+        ],
+        "right": [
+            "Copy only changed files",
+            "Replace existing files",
+            "Number of mappers",
+            "Limit bandwidth per mapper"
+        ]
+    },
+    {
+        "q": "The _____ distcp option preserves file attributes during copy.",
+        "type": "fill_blank",
+        "answers": [
+            "-p"
+        ],
+        "other_options": [
+            "-a",
+            "-preserve",
+            "-attr"
+        ]
+    },
+    {
+        "q": "What is HDFS inter-cluster replication?",
+        "type": "mcq",
+        "o": [
+            "Replicate data between separate Hadoop clusters",
+            "Replication within the same cluster",
+            "Cross-rack replication",
+            "DataNode to DataNode replication"
+        ]
+    },
+    {
+        "q": "Snapshot-based distcp can reduce data transferred during incremental copies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HDFS NFS Gateway?",
+        "type": "mcq",
+        "o": [
+            "Mount HDFS as NFS filesystem for legacy applications",
+            "Network file sharing",
+            "File synchronization",
+            "Backup to network storage"
+        ]
+    },
+    {
+        "q": "Rearrange the disaster recovery planning steps:",
+        "type": "rearrange",
+        "words": [
+            "Risk assessment",
+            "Backup strategy",
+            "Recovery procedures",
+            "Testing",
+            "Documentation"
+        ]
+    },
+    {
+        "q": "What is the recommended backup strategy for NameNode metadata?",
+        "type": "mcq",
+        "o": [
+            "Store fsimage and edits on multiple independent storage locations",
+            "Single disk backup",
+            "Memory-only storage",
+            "Weekly backups only"
+        ]
+    },
+    {
+        "q": "NameNode metadata should be backed up to local disk and remote storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the backup type with its RPO:",
+        "type": "match",
+        "left": [
+            "Continuous replication",
+            "Hourly snapshots",
+            "Daily backups",
+            "Weekly archives"
+        ],
+        "right": [
+            "Near zero RPO",
+            "One hour RPO",
+            "24 hour RPO",
+            "One week RPO"
+        ]
+    },
+    {
+        "q": "The _____ property configures additional NameNode metadata storage directories.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.namenode.name.dir"
+        ],
+        "other_options": [
+            "dfs.namenode.backup.dir",
+            "dfs.metadata.dir",
+            "namenode.checkpoint.dir"
+        ]
+    },
+    {
+        "q": "What is the impact of losing all NameNode metadata?",
+        "type": "mcq",
+        "o": [
+            "Complete loss of filesystem structure and file locations",
+            "Only recent files are lost",
+            "Data can be recovered from DataNodes",
+            "Automatic recovery from replicas"
+        ]
+    },
+    {
+        "q": "DataNode data can be recovered without NameNode metadata.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the purpose of HDFS Storage Balancing?",
+        "type": "mcq",
+        "o": [
+            "Distribute data evenly based on storage type policies",
+            "Balance network traffic",
+            "Equalize CPU usage",
+            "Distribute jobs evenly"
+        ]
+    },
+    {
+        "q": "The _____ daemon moves data between storage types according to policy.",
+        "type": "fill_blank",
+        "answers": [
+            "Mover"
+        ],
+        "other_options": [
+            "Balancer",
+            "StorageManager",
+            "PolicyEnforcer"
+        ]
+    },
+    {
+        "q": "What is the output of this storage policy command?",
+        "type": "mcq",
+        "c": "hdfs storagepolicies -setStoragePolicy -path /data -policy WARM",
+        "o": [
+            "Sets WARM storage policy storing data on DISK with backup on ARCHIVE",
+            "Warms up data for faster access",
+            "Sets temperature monitoring",
+            "Moves data to warmer storage"
+        ]
+    },
+    {
+        "q": "Match the storage tier with its typical use case:",
+        "type": "match",
+        "left": [
+            "RAM_DISK",
+            "SSD",
+            "DISK",
+            "ARCHIVE"
+        ],
+        "right": [
+            "Transient data",
+            "Hot data",
+            "Warm data",
+            "Cold data"
+        ]
+    },
+    {
+        "q": "What is lazy persistence in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Write data to RAM_DISK first then lazily persist to disk",
+            "Delay all writes",
+            "Persist on shutdown only",
+            "Skip persistence entirely"
+        ]
+    },
+    {
+        "q": "Lazy persist trades durability for better write performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of provided storage in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Reference external storage without copying data into HDFS",
+            "Provide extra storage",
+            "Storage provisioning automation",
+            "Temporary storage allocation"
+        ]
+    },
+    {
+        "q": "Rearrange the HDFS provided storage workflow:",
+        "type": "rearrange",
+        "words": [
+            "External data",
+            "Image generation",
+            "Mount provided",
+            "Access via HDFS",
+            "Query data"
+        ]
+    },
+    {
+        "q": "What is HDFS Router-based Federation?",
+        "type": "mcq",
+        "o": [
+            "Federated access to multiple namespaces through single mount point",
+            "Network routing for HDFS",
+            "Router for data blocks",
+            "Federation through replication"
+        ]
+    },
+    {
+        "q": "The _____ component routes client requests in HDFS Router Federation.",
+        "type": "fill_blank",
+        "answers": [
+            "Router"
+        ],
+        "other_options": [
+            "Gateway",
+            "Proxy",
+            "Dispatcher"
+        ]
+    },
+    {
+        "q": "What is the advantage of Router-based Federation over traditional ViewFS?",
+        "type": "mcq",
+        "o": [
+            "Dynamic mount table without client-side configuration",
+            "Faster data access",
+            "Better compression",
+            "More storage capacity"
+        ]
+    },
+    {
+        "q": "Match the federation approach with its characteristic:",
+        "type": "match",
+        "left": [
+            "ViewFS",
+            "Router Federation",
+            "HDFS Federation",
+            "Namespace Federation"
+        ],
+        "right": [
+            "Client-side mount table",
+            "Server-side routing",
+            "Multiple NameNodes",
+            "Separate namespaces"
+        ]
+    },
+    {
+        "q": "What is the purpose of StateStore in Router Federation?",
+        "type": "mcq",
+        "o": [
+            "Store mount table and routing information",
+            "Save cluster state",
+            "Cache router data",
+            "Store authentication tokens"
+        ]
+    },
+    {
+        "q": "Router Federation supports load balancing across namespaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HDFS Observer NameNode?",
+        "type": "mcq",
+        "o": [
+            "Handle read requests to reduce load on Active NameNode",
+            "Observe cluster health",
+            "Monitor file changes",
+            "Watch for security events"
+        ]
+    },
+    {
+        "q": "The _____ property enables Observer NameNode reads.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.client.read.observer"
+        ],
+        "other_options": [
+            "dfs.observer.enable",
+            "dfs.read.observer.enabled",
+            "hdfs.observer.read"
+        ]
+    },
+    {
+        "q": "Observer NameNodes serve stale reads with minimal latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Observer NameNode configuration?",
+        "type": "mcq",
+        "c": "dfs.ha.tail-edits.in-progress = true\ndfs.ha.tail-edits.period = 1s",
+        "o": [
+            "Configures Observer to tail active edits every second for fresher reads",
+            "Enables periodic health checks",
+            "Sets edit log retention",
+            "Configures failover timing"
+        ]
+    },
+    {
+        "q": "Rearrange the Observer NameNode read path:",
+        "type": "rearrange",
+        "words": [
+            "Client request",
+            "Check state staleness",
+            "Tail edits if needed",
+            "Read from Observer",
+            "Return response"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS RBF StateStore?",
+        "type": "mcq",
+        "o": [
+            "Persist routing and mount information for Router Federation",
+            "Store block states",
+            "Save file metadata",
+            "Cache query results"
+        ]
+    },
+    {
+        "q": "Match the NameNode role with its purpose:",
+        "type": "match",
+        "left": [
+            "Active",
+            "Standby",
+            "Observer",
+            "Secondary"
+        ],
+        "right": [
+            "Handle all operations",
+            "Ready for failover",
+            "Serve reads",
+            "Checkpoint metadata"
+        ]
+    },
+    {
+        "q": "What is the maximum staleness acceptable for Observer reads?",
+        "type": "mcq",
+        "o": [
+            "Configurable based on application requirements",
+            "Always 0 staleness",
+            "Fixed 1 minute",
+            "No staleness allowed"
+        ]
+    },
+    {
+        "q": "Observer NameNode requires JournalNode for synchronization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Hadoop KMS?",
+        "type": "mcq",
+        "o": [
+            "Key Management Server for HDFS encryption",
+            "Kerberos Management Service",
+            "Kubernetes Management System",
+            "Knowledge Management Server"
+        ]
+    },
+    {
+        "q": "The _____ stores encryption zone keys in Hadoop KMS.",
+        "type": "fill_blank",
+        "answers": [
+            "KeyProvider"
+        ],
+        "other_options": [
+            "KeyStore",
+            "KeyManager",
+            "KeyVault"
+        ]
+    },
+    {
+        "q": "What is the output of this KMS REST call?",
+        "type": "mcq",
+        "c": "curl -X POST 'http://kms:16000/kms/v1/keys/mykey?op=ROLLOVER'",
+        "o": [
+            "Creates new version of mykey for key rotation",
+            "Rolls back to previous key",
+            "Deletes the key",
+            "Lists key versions"
+        ]
+    },
+    {
+        "q": "Match the KMS operation with its purpose:",
+        "type": "match",
+        "left": [
+            "createKey",
+            "rolloverKey",
+            "deleteKey",
+            "getKeyMetadata"
+        ],
+        "right": [
+            "Create new key",
+            "Rotate key version",
+            "Remove key",
+            "Get key information"
+        ]
+    },
+    {
+        "q": "Hadoop KMS supports integration with external HSMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of ACL-based key access in KMS?",
+        "type": "mcq",
+        "o": [
+            "Control which users can use specific encryption keys",
+            "Access control for files",
+            "Key creation permissions",
+            "Cluster access control"
+        ]
+    },
+    {
+        "q": "Rearrange the HDFS encryption workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create key in KMS",
+            "Create encryption zone",
+            "Write encrypted data",
+            "Read decrypted data"
+        ]
+    },
+    {
+        "q": "What is transparent data encryption in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Automatic encryption/decryption without application changes",
+            "Manual encryption by users",
+            "Visible encryption markers",
+            "Optional encryption"
+        ]
+    },
+    {
+        "q": "The _____ property enables wire encryption in Hadoop.",
+        "type": "fill_blank",
+        "answers": [
+            "hadoop.rpc.protection"
+        ],
+        "other_options": [
+            "hadoop.wire.encryption",
+            "dfs.encrypt.data",
+            "hadoop.security.wire"
+        ]
+    },
+    {
+        "q": "What are the three levels of hadoop.rpc.protection?",
+        "type": "mcq",
+        "o": [
+            "authentication, integrity, privacy",
+            "none, basic, advanced",
+            "low, medium, high",
+            "open, secure, encrypted"
+        ]
+    },
+    {
+        "q": "Setting hadoop.rpc.protection to privacy enables wire encryption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the security level with its protection:",
+        "type": "match",
+        "left": [
+            "authentication",
+            "integrity",
+            "privacy"
+        ],
+        "right": [
+            "Verify identity",
+            "Detect tampering",
+            "Encrypt data"
+        ]
+    },
+    {
+        "q": "What is the purpose of Hadoop service level authorization?",
+        "type": "mcq",
+        "o": [
+            "Control access to specific Hadoop services",
+            "Service discovery",
+            "Load balancing",
+            "Service monitoring"
+        ]
+    },
+    {
+        "q": "The _____ property enables service authorization in Hadoop.",
+        "type": "fill_blank",
+        "answers": [
+            "hadoop.security.authorization"
+        ],
+        "other_options": [
+            "hadoop.service.auth",
+            "security.service.enable",
+            "hadoop.auth.enable"
+        ]
+    },
+    {
+        "q": "What is the purpose of hadoop-policy.xml?",
+        "type": "mcq",
+        "o": [
+            "Define access control lists for Hadoop services",
+            "Configure cluster policies",
+            "Set storage policies",
+            "Define queue policies"
+        ]
+    },
+    {
+        "q": "Rearrange the Kerberos authentication flow:",
+        "type": "rearrange",
+        "words": [
+            "Request TGT from KDC",
+            "Receive TGT",
+            "Request service ticket",
+            "Access service",
+            "Mutual authentication"
+        ]
+    },
+    {
+        "q": "What is kinit used for in Hadoop security?",
+        "type": "mcq",
+        "o": [
+            "Obtain Kerberos ticket from KDC",
+            "Initialize Hadoop services",
+            "Start Kerberos server",
+            "Configure authentication"
+        ]
+    },
+    {
+        "q": "Keytab files allow unattended Kerberos authentication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Kerberos command?",
+        "type": "mcq",
+        "c": "kinit -kt /etc/security/keytabs/hdfs.keytab hdfs/host@REALM",
+        "o": [
+            "Authenticates using keytab file for hdfs principal",
+            "Creates new keytab",
+            "Lists principals in keytab",
+            "Destroys existing ticket"
+        ]
+    },
+    {
+        "q": "Match the Kerberos component with its function:",
+        "type": "match",
+        "left": [
+            "KDC",
+            "TGT",
+            "Service ticket",
+            "Keytab"
+        ],
+        "right": [
+            "Authentication server",
+            "Initial ticket",
+            "Service access",
+            "Stored credentials"
+        ]
+    },
+    {
+        "q": "The _____ command lists valid Kerberos tickets.",
+        "type": "fill_blank",
+        "answers": [
+            "klist"
+        ],
+        "other_options": [
+            "ktlist",
+            "ktutil",
+            "kinit -l"
+        ]
+    },
+    {
+        "q": "What is the purpose of delegation tokens in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Allow jobs to access services without repeated Kerberos authentication",
+            "Delegate administrative tasks",
+            "Token-based authorization",
+            "Temporary access grants"
+        ]
+    },
+    {
+        "q": "Delegation tokens have limited validity and must be renewed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is block token in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Short-lived token for accessing specific blocks",
+            "Token representing a block ID",
+            "Block encryption key",
+            "DataNode authentication token"
+        ]
+    },
+    {
+        "q": "Rearrange the delegation token lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Request token",
+            "Use token",
+            "Renew token",
+            "Cancel token"
+        ]
+    },
+    {
+        "q": "What is the purpose of CredentialProvider in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Store sensitive configuration values like passwords securely",
+            "Provide user credentials",
+            "Credential validation",
+            "Authentication provider"
+        ]
+    },
+    {
+        "q": "The _____ command creates entries in credential provider.",
+        "type": "fill_blank",
+        "answers": [
+            "hadoop credential create"
+        ],
+        "other_options": [
+            "hadoop cred add",
+            "hdfs cred create",
+            "hadoop security create"
+        ]
+    },
+    {
+        "q": "What is the advantage of using CredentialProvider over plaintext passwords?",
+        "type": "mcq",
+        "o": [
+            "Passwords are encrypted and not visible in configuration files",
+            "Faster authentication",
+            "Easier password management",
+            "Automatic password rotation"
+        ]
+    },
+    {
+        "q": "Match the credential storage with its characteristic:",
+        "type": "match",
+        "left": [
+            "jceks",
+            "localjceks",
+            "kms",
+            "vault"
+        ],
+        "right": [
+            "Java keystore on HDFS",
+            "Local keystore",
+            "Hardware security",
+            "External vault"
+        ]
+    },
+    {
+        "q": "What is the purpose of YARN timeline service v2?",
+        "type": "mcq",
+        "o": [
+            "Store application history with improved scalability using HBase",
+            "Timeline-based scheduling",
+            "Time series data storage",
+            "Job execution timing"
+        ]
+    },
+    {
+        "q": "Timeline Service v2 stores data in HBase for scalability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property enables YARN Timeline Service v2.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.timeline-service.version"
+        ],
+        "other_options": [
+            "yarn.timeline.v2.enable",
+            "yarn.ats.version",
+            "yarn.history.version"
+        ]
+    },
+    {
+        "q": "What metrics does Timeline Service v2 store?",
+        "type": "mcq",
+        "o": [
+            "Application, flow, and container level metrics",
+            "Only application metrics",
+            "System metrics only",
+            "Network metrics"
+        ]
+    },
+    {
+        "q": "Rearrange the Timeline Service v2 architecture:",
+        "type": "rearrange",
+        "words": [
+            "Collector",
+            "Reader",
+            "HBase storage",
+            "Client query"
+        ]
+    },
+    {
+        "q": "What is flow in YARN Timeline Service v2?",
+        "type": "mcq",
+        "o": [
+            "Group of related applications for aggregate tracking",
+            "Data flow between services",
+            "Network traffic flow",
+            "Workflow execution"
+        ]
+    },
+    {
+        "q": "Match the Timeline entity with its scope:",
+        "type": "match",
+        "left": [
+            "User",
+            "Flow",
+            "Application",
+            "Container"
+        ],
+        "right": [
+            "Top level owner",
+            "Group of apps",
+            "Single execution",
+            "Task instance"
+        ]
+    },
+    {
+        "q": "What is the purpose of YARN opportunistic containers?",
+        "type": "mcq",
+        "o": [
+            "Run low-priority tasks on spare cluster capacity",
+            "Container opportunities",
+            "Optional container features",
+            "Container discovery"
+        ]
+    },
+    {
+        "q": "Opportunistic containers may be preempted when guaranteed containers need resources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property enables opportunistic container allocation.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.resourcemanager.opportunistic-container-allocation.enabled"
+        ],
+        "other_options": [
+            "yarn.opportunistic.enable",
+            "yarn.opp.containers",
+            "yarn.scheduler.opportunistic"
+        ]
+    },
+    {
+        "q": "What is the advantage of opportunistic containers?",
+        "type": "mcq",
+        "o": [
+            "Better cluster utilization during low demand periods",
+            "Guaranteed execution",
+            "Higher priority scheduling",
+            "Faster container launch"
+        ]
+    },
+    {
+        "q": "Match the container type with its scheduling:",
+        "type": "match",
+        "left": [
+            "Guaranteed",
+            "Opportunistic"
+        ],
+        "right": [
+            "Reserved allocation",
+            "Best effort"
+        ]
+    },
+    {
+        "q": "What is YARN global scheduling?",
+        "type": "mcq",
+        "o": [
+            "Centralized scheduling considering all cluster resources",
+            "Scheduling across multiple clusters",
+            "Worldwide job distribution",
+            "All queue scheduling"
+        ]
+    },
+    {
+        "q": "Global scheduling improves allocation efficiency for heterogeneous workloads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of placement constraints in YARN?",
+        "type": "mcq",
+        "o": [
+            "Control container placement based on affinity or anti-affinity",
+            "Place containers randomly",
+            "Constraint-based scheduling priority",
+            "Container size constraints"
+        ]
+    },
+    {
+        "q": "Rearrange the placement constraint evaluation:",
+        "type": "rearrange",
+        "words": [
+            "Parse constraint",
+            "Evaluate affinity",
+            "Check anti-affinity",
+            "Select node",
+            "Launch container"
+        ]
+    },
+    {
+        "q": "What is affinity placement constraint?",
+        "type": "mcq",
+        "o": [
+            "Place containers close to specific resources or other containers",
+            "Container attraction",
+            "Similar container grouping",
+            "Resource affinity mapping"
+        ]
+    },
+    {
+        "q": "The _____ property specifies allocation tag for placement constraints.",
+        "type": "fill_blank",
+        "answers": [
+            "allocation-tags"
+        ],
+        "other_options": [
+            "placement-tags",
+            "container-tags",
+            "affinity-tags"
+        ]
+    },
+    {
+        "q": "Anti-affinity spreads containers across different nodes or racks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the placement constraint with its effect:",
+        "type": "match",
+        "left": [
+            "Node affinity",
+            "Node anti-affinity",
+            "Cardinality",
+            "Tag-based"
+        ],
+        "right": [
+            "Prefer specific nodes",
+            "Avoid specific nodes",
+            "Limit per scope",
+            "Reference other containers"
+        ]
+    },
+    {
+        "q": "What is the purpose of GPU scheduling in YARN?",
+        "type": "mcq",
+        "o": [
+            "Allocate GPU resources to containers for ML workloads",
+            "Graphics rendering",
+            "GPU monitoring only",
+            "Virtual GPU creation"
+        ]
+    },
+    {
+        "q": "YARN supports GPU resource type as first-class resource.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property enables GPU scheduling in YARN.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.nodemanager.resource-plugins.gpu.allowed-gpu-devices"
+        ],
+        "other_options": [
+            "yarn.gpu.enable",
+            "yarn.nodemanager.gpu",
+            "yarn.resource.gpu"
+        ]
+    },
+    {
+        "q": "What is isolation in GPU scheduling?",
+        "type": "mcq",
+        "o": [
+            "Ensure containers can only use their allocated GPUs",
+            "Separate GPU memory",
+            "Isolate GPU drivers",
+            "GPU network isolation"
+        ]
+    },
+    {
+        "q": "Match the resource type with its YARN configuration:",
+        "type": "match",
+        "left": [
+            "Memory",
+            "CPU",
+            "GPU",
+            "FPGA"
+        ],
+        "right": [
+            "yarn.nodemanager.resource.memory-mb",
+            "yarn.nodemanager.resource.cpu-vcores",
+            "yarn.nodemanager.resource-plugins.gpu",
+            "yarn.nodemanager.resource-plugins.fpga"
+        ]
+    },
+    {
+        "q": "What is the purpose of YARN Service framework?",
+        "type": "mcq",
+        "o": [
+            "Deploy and manage long-running services on YARN",
+            "Background service monitoring",
+            "Service discovery only",
+            "Container services"
+        ]
+    },
+    {
+        "q": "YARN Service allows deploying Docker-based applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this YARN Service command?",
+        "type": "mcq",
+        "c": "yarn app -launch myapp /path/to/spec.json",
+        "o": [
+            "Launches long-running service based on JSON specification",
+            "Lists application details",
+            "Starts job scheduler",
+            "Creates application template"
+        ]
+    },
+    {
+        "q": "Rearrange the YARN Service lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Submission",
+            "Starting",
+            "Stable",
+            "Upgrading",
+            "Stopped"
+        ]
+    },
+    {
+        "q": "What is rolling upgrade in YARN Service?",
+        "type": "mcq",
+        "o": [
+            "Upgrade containers gradually without service downtime",
+            "Roll back to previous version",
+            "Upgrade YARN itself",
+            "Container rotation"
+        ]
+    },
+    {
+        "q": "The _____ component manages service instances in YARN Service.",
+        "type": "fill_blank",
+        "answers": [
+            "ApplicationMaster"
+        ],
+        "other_options": [
+            "ServiceManager",
+            "InstanceController",
+            "ContainerManager"
+        ]
+    },
+    {
+        "q": "What is container restart policy in YARN Service?",
+        "type": "mcq",
+        "o": [
+            "Define behavior when container fails - on_failure, always, never",
+            "Container reboot schedule",
+            "Restart YARN daemons",
+            "Policy for job restarts"
+        ]
+    },
+    {
+        "q": "Match the restart policy with its behavior:",
+        "type": "match",
+        "left": [
+            "on_failure",
+            "always",
+            "never"
+        ],
+        "right": [
+            "Restart only on failure",
+            "Always restart",
+            "Never restart"
+        ]
+    },
+    {
+        "q": "What is Docker support in YARN?",
+        "type": "mcq",
+        "o": [
+            "Run containers inside Docker for isolated execution environment",
+            "Docker image storage",
+            "Container orchestration",
+            "Docker networking only"
+        ]
+    },
+    {
+        "q": "YARN Docker containers provide process-level isolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property configures Docker runtime in YARN.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.nodemanager.runtime.linux.docker"
+        ],
+        "other_options": [
+            "yarn.docker.enable",
+            "yarn.container.runtime.docker",
+            "nodemanager.docker.runtime"
+        ]
+    },
+    {
+        "q": "What is the purpose of trusted Docker registries in YARN?",
+        "type": "mcq",
+        "o": [
+            "Restrict which registries containers can pull images from",
+            "Store container logs",
+            "Registry for YARN images",
+            "Container artifact storage"
+        ]
+    },
+    {
+        "q": "Rearrange the Docker container launch in YARN:",
+        "type": "rearrange",
+        "words": [
+            "Image pull",
+            "Container create",
+            "Volume mount",
+            "Network setup",
+            "Execute"
+        ]
+    },
+    {
+        "q": "What is the purpose of cgroups in YARN container isolation?",
+        "type": "mcq",
+        "o": [
+            "Limit and isolate CPU and memory usage per container",
+            "Container grouping",
+            "Control group networking",
+            "Container cluster management"
+        ]
+    },
+    {
+        "q": "Match the cgroup controller with what it limits:",
+        "type": "match",
+        "left": [
+            "cpu",
+            "memory",
+            "blkio",
+            "net_cls"
+        ],
+        "right": [
+            "CPU usage",
+            "Memory consumption",
+            "Disk I/O",
+            "Network traffic"
+        ]
+    },
+    {
+        "q": "The _____ property enables strict container memory enforcement.",
+        "type": "fill_blank",
+        "answers": [
+            "yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage"
+        ],
+        "other_options": [
+            "yarn.cgroup.strict",
+            "yarn.memory.enforce",
+            "nodemanager.cgroup.memory"
+        ]
+    },
+    {
+        "q": "What happens when container exceeds cgroup memory limit?",
+        "type": "mcq",
+        "o": [
+            "Container is killed by the kernel OOM killer",
+            "Memory is swapped",
+            "Container is throttled",
+            "Warning is logged"
+        ]
+    },
+    {
+        "q": "CPU shares in cgroups provide soft limits rather than hard limits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HDFS audit logging?",
+        "type": "mcq",
+        "o": [
+            "Record all filesystem operations for security compliance",
+            "Performance auditing",
+            "Storage usage tracking",
+            "Job execution logging"
+        ]
+    },
+    {
+        "q": "The _____ property enables HDFS audit logging.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.namenode.audit.loggers"
+        ],
+        "other_options": [
+            "dfs.audit.enable",
+            "hdfs.audit.log",
+            "namenode.audit"
+        ]
+    },
+    {
+        "q": "What information does HDFS audit log contain?",
+        "type": "mcq",
+        "o": [
+            "User, operation, path, source IP, and result",
+            "Only file names",
+            "Performance metrics",
+            "Block locations"
+        ]
+    },
+    {
+        "q": "Match the audit event with its operation:",
+        "type": "match",
+        "left": [
+            "open",
+            "create",
+            "delete",
+            "setPermission"
+        ],
+        "right": [
+            "Read file",
+            "Create file",
+            "Remove file",
+            "Change permissions"
+        ]
+    },
+    {
+        "q": "Audit logs can be sent to external systems like Elasticsearch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of centralized cache management metrics?",
+        "type": "mcq",
+        "o": [
+            "Monitor cache hit rates and effectiveness",
+            "Cache size configuration",
+            "Cache cleanup",
+            "Cache replication"
+        ]
+    },
+    {
+        "q": "Rearrange the cache effectiveness analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect metrics",
+            "Calculate hit rate",
+            "Identify patterns",
+            "Adjust policy",
+            "Validate improvement"
+        ]
+    },
+    {
+        "q": "What is the purpose of NameNode metrics for capacity planning?",
+        "type": "mcq",
+        "o": [
+            "Predict storage needs and NameNode memory requirements",
+            "Name assignment",
+            "Node capacity limits",
+            "Container sizing"
+        ]
+    },
+    {
+        "q": "The _____ metric indicates pending block replication in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "PendingReplicationBlocks"
+        ],
+        "other_options": [
+            "ReplicationQueue",
+            "PendingBlocks",
+            "BlocksToReplicate"
+        ]
+    },
+    {
+        "q": "High PendingReplicationBlocks may indicate under-replicated data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does UnderReplicatedBlocks metric indicate?",
+        "type": "mcq",
+        "o": [
+            "Blocks with fewer replicas than configured replication factor",
+            "Blocks being replicated",
+            "Small blocks",
+            "Compressed blocks"
+        ]
+    },
+    {
+        "q": "Match the HDFS health metric with its severity:",
+        "type": "match",
+        "left": [
+            "MissingBlocks",
+            "CorruptBlocks",
+            "UnderReplicatedBlocks",
+            "StaleDataNodes"
+        ],
+        "right": [
+            "Critical",
+            "Critical",
+            "Warning",
+            "Warning"
+        ]
+    },
+    {
+        "q": "What is the purpose of JMX exporter in Hadoop monitoring?",
+        "type": "mcq",
+        "o": [
+            "Export Hadoop metrics in Prometheus format",
+            "Java memory export",
+            "Job execution export",
+            "XML export"
+        ]
+    },
+    {
+        "q": "The _____ tool collects comprehensive Hadoop diagnostics.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs debug"
+        ],
+        "other_options": [
+            "hadoop diag",
+            "hdfs collect",
+            "hadoop debug"
+        ]
+    },
+    {
+        "q": "What is the output of this debug command?",
+        "type": "mcq",
+        "c": "hdfs debug recoverLease -path /data/file.txt",
+        "o": [
+            "Forces release of file lease for stuck writes",
+            "Recovers deleted file",
+            "Repairs corrupted block",
+            "Restores file permissions"
+        ]
+    },
+    {
+        "q": "File lease recovery may be needed after client crash during write.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of hdfs debug verify command?",
+        "type": "mcq",
+        "o": [
+            "Verify block metadata consistency",
+            "Verify cluster health",
+            "Check permissions",
+            "Validate configuration"
+        ]
+    },
+    {
+        "q": "Rearrange the stuck file troubleshooting steps:",
+        "type": "rearrange",
+        "words": [
+            "Check lease holder",
+            "Verify client status",
+            "Force lease recovery",
+            "Validate file access"
+        ]
+    },
+    {
+        "q": "What causes NameNode to enter safemode unexpectedly?",
+        "type": "mcq",
+        "o": [
+            "Too many DataNodes unreachable or blocks under-replicated",
+            "High CPU usage",
+            "Network timeout",
+            "Memory pressure only"
+        ]
+    },
+    {
+        "q": "Match the safemode cause with its resolution:",
+        "type": "match",
+        "left": [
+            "Startup",
+            "Missing blocks",
+            "Low disk",
+            "Manual"
+        ],
+        "right": [
+            "Wait for block reports",
+            "Add capacity or reduce replication",
+            "Add storage",
+            "Leave manually"
+        ]
+    },
+    {
+        "q": "The _____ command displays current safemode status with details.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs dfsadmin -safemode get"
+        ],
+        "other_options": [
+            "hdfs safemode status",
+            "hadoop fs -safemode",
+            "hdfs admin -safe"
+        ]
+    },
+    {
+        "q": "What is the minimum percentage of blocks that must be reported before leaving safemode?",
+        "type": "mcq",
+        "o": [
+            "Configurable via dfs.namenode.safemode.threshold-pct",
+            "Always 100%",
+            "Fixed at 99%",
+            "No minimum"
+        ]
+    },
+    {
+        "q": "Force leaving safemode with missing blocks can cause data access errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HDFS maintenance mode?",
+        "type": "mcq",
+        "o": [
+            "Take DataNodes offline without triggering replication",
+            "System maintenance logging",
+            "Maintenance scheduling",
+            "Block maintenance"
+        ]
+    },
+    {
+        "q": "The _____ property sets the number of replicas in maintenance state allowed before triggering replication.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.namenode.maintenance.replication.min"
+        ],
+        "other_options": [
+            "dfs.maintenance.min.rep",
+            "hdfs.maintenance.threshold",
+            "namenode.maintenance.min"
+        ]
+    },
+    {
+        "q": "What is the difference between decommissioning and maintenance mode?",
+        "type": "mcq",
+        "o": [
+            "Decommissioning replicates all data off node, maintenance does not",
+            "No difference",
+            "Maintenance is faster",
+            "Decommissioning is temporary"
+        ]
+    },
+    {
+        "q": "Match the node state with its data handling:",
+        "type": "match",
+        "left": [
+            "Normal",
+            "Decommissioning",
+            "Decommissioned",
+            "In Maintenance"
+        ],
+        "right": [
+            "Accept reads/writes",
+            "Replicate data away",
+            "No data served",
+            "Serve reads only"
+        ]
+    },
+    {
+        "q": "Rearrange the decommissioning process:",
+        "type": "rearrange",
+        "words": [
+            "Add to exclude list",
+            "Initiate decommission",
+            "Replicate blocks",
+            "Monitor progress",
+            "Remove node"
+        ]
+    },
+    {
+        "q": "What is the purpose of block scanner in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Periodically verify block checksums to detect corruption",
+            "Scan for large blocks",
+            "Security scanning",
+            "Block indexing"
+        ]
+    },
+    {
+        "q": "Block scanner runs in the background on DataNodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property controls block scanner interval.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.datanode.scan.period.hours"
+        ],
+        "other_options": [
+            "dfs.block.scan.interval",
+            "datanode.scan.hours",
+            "hdfs.scanner.period"
+        ]
+    },
+    {
+        "q": "What happens when block scanner detects corruption?",
+        "type": "mcq",
+        "o": [
+            "Block is marked corrupt and NameNode schedules re-replication",
+            "Block is deleted immediately",
+            "DataNode restarts",
+            "File is removed"
+        ]
+    },
+    {
+        "q": "Match the block state with its meaning:",
+        "type": "match",
+        "left": [
+            "Healthy",
+            "Corrupt",
+            "Missing",
+            "Stale"
+        ],
+        "right": [
+            "Checksum valid",
+            "Checksum mismatch",
+            "No known locations",
+            "DataNode not reporting"
+        ]
+    },
+    {
+        "q": "What is the purpose of slow DataNode detection?",
+        "type": "mcq",
+        "o": [
+            "Identify nodes with degraded I/O affecting cluster performance",
+            "Find slow network nodes",
+            "Detect slow jobs",
+            "Monitor slow queries"
+        ]
+    },
+    {
+        "q": "The _____ property enables outlier detection for slow DataNodes.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.datanode.slow.io.warning.threshold.ms"
+        ],
+        "other_options": [
+            "dfs.slow.datanode.detect",
+            "datanode.slow.threshold",
+            "hdfs.slow.io.ms"
+        ]
+    },
+    {
+        "q": "Slow DataNodes can be avoided for reads using peer stats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this debugging command?",
+        "type": "mcq",
+        "c": "hdfs dfsadmin -getDatanodeInfo datanode:50020",
+        "o": [
+            "Shows detailed information about specific DataNode",
+            "Gets all DataNode IPs",
+            "Shows DataNode logs",
+            "Returns DataNode configuration"
+        ]
+    },
+    {
+        "q": "Rearrange the slow DataNode troubleshooting:",
+        "type": "rearrange",
+        "words": [
+            "Identify metrics",
+            "Check disk health",
+            "Verify network",
+            "Analyze logs",
+            "Replace hardware"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS block placement policy customization?",
+        "type": "mcq",
+        "o": [
+            "Customize replica placement based on specific requirements",
+            "Block size configuration",
+            "Placement logging",
+            "Block compression"
+        ]
+    },
+    {
+        "q": "Custom BlockPlacementPolicy must extend the base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ property specifies custom block placement policy class.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.block.replicator.classname"
+        ],
+        "other_options": [
+            "dfs.placement.policy",
+            "hdfs.block.policy.class",
+            "namenode.placement.class"
+        ]
+    },
+    {
+        "q": "What factors can custom placement policy consider?",
+        "type": "mcq",
+        "o": [
+            "Node capacity, storage type, rack, and custom attributes",
+            "Only rack location",
+            "File size only",
+            "User preferences"
+        ]
+    },
+    {
+        "q": "Match the placement consideration with its benefit:",
+        "type": "match",
+        "left": [
+            "Rack diversity",
+            "Storage type",
+            "Node capacity",
+            "Network topology"
+        ],
+        "right": [
+            "Fault tolerance",
+            "Performance tier",
+            "Balanced load",
+            "Optimized transfer"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS federation namespace volume?",
+        "type": "mcq",
+        "o": [
+            "Separate namespace managed by individual NameNode in federation",
+            "Volume configuration",
+            "Storage volume",
+            "Container volume"
+        ]
+    },
+    {
+        "q": "Each NameNode in federation is responsible for its own namespace.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the advantage of HDFS federation?",
+        "type": "mcq",
+        "o": [
+            "Scale namespace capacity and NameNode throughput",
+            "Faster replication",
+            "Better compression",
+            "Simpler configuration"
+        ]
+    },
+    {
+        "q": "Rearrange the federation setup steps:",
+        "type": "rearrange",
+        "words": [
+            "Plan namespaces",
+            "Configure NameNodes",
+            "Setup ViewFS",
+            "Balance data",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "The _____ mounts multiple HDFS namespaces as single filesystem.",
+        "type": "fill_blank",
+        "answers": [
+            "ViewFS"
+        ],
+        "other_options": [
+            "FederationFS",
+            "UnionFS",
+            "MountFS"
+        ]
+    },
+    {
+        "q": "What is the purpose of cross-namespace operations in federation?",
+        "type": "mcq",
+        "o": [
+            "Operations spanning multiple namespaces require explicit handling",
+            "Automatic cross-namespace",
+            "Namespace merging",
+            "Unified operations"
+        ]
+    },
+    {
+        "q": "Match the federation component with its role:",
+        "type": "match",
+        "left": [
+            "NameNode",
+            "BlockPool",
+            "ViewFS",
+            "Router"
+        ],
+        "right": [
+            "Namespace management",
+            "Block storage",
+            "Client mount",
+            "Request routing"
+        ]
+    },
+    {
+        "q": "What is BlockPool in HDFS federation?",
+        "type": "mcq",
+        "o": [
+            "Set of blocks belonging to a namespace stored across DataNodes",
+            "Pool of available blocks",
+            "Block cache",
+            "Replication pool"
+        ]
+    },
+    {
+        "q": "DataNodes in federation store blocks from multiple block pools.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of BlockPoolSlice?",
+        "type": "mcq",
+        "o": [
+            "DataNode storage area for blocks from a specific BlockPool",
+            "Slice of block data",
+            "Block partitioning",
+            "Storage quota"
+        ]
+    },
+    {
+        "q": "The _____ uniquely identifies a BlockPool in federation.",
+        "type": "fill_blank",
+        "answers": [
+            "Block Pool ID"
+        ],
+        "other_options": [
+            "Pool Name",
+            "Namespace ID",
+            "Cluster ID"
+        ]
+    },
+    {
+        "q": "What is the output of this federation query?",
+        "type": "mcq",
+        "c": "hdfs dfsadmin -report -live",
+        "o": [
+            "Shows federation-aware cluster report with all namespaces",
+            "Single namespace report",
+            "Dead nodes only",
+            "Block distribution"
+        ]
+    },
+    {
+        "q": "Match the federation challenge with its mitigation:",
+        "type": "match",
+        "left": [
+            "Cross-namespace copy",
+            "Quota management",
+            "Balanced load",
+            "Client complexity"
+        ],
+        "right": [
+            "Use distcp",
+            "Per-namespace quotas",
+            "Router load balancing",
+            "ViewFS abstraction"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS heterogeneous storage?",
+        "type": "mcq",
+        "o": [
+            "Support different storage media types with different performance characteristics",
+            "Mixed file formats",
+            "Heterogeneous data types",
+            "Variable block sizes"
+        ]
+    },
+    {
+        "q": "Storage types can be mixed on the same DataNode.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the storage tiering workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write to fast tier",
+            "Age data",
+            "Move to archive",
+            "Query from cache",
+            "Expire data"
+        ]
+    },
+    {
+        "q": "What is the purpose of LAZY_PERSIST storage type?",
+        "type": "mcq",
+        "o": [
+            "Write to RAM_DISK for performance with eventual persistence",
+            "Lazy file writing",
+            "Delayed persistence",
+            "Slow storage"
+        ]
+    },
+    {
+        "q": "The _____ property marks a directory as using LAZY_PERSIST storage.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.storage.policy.lazyPersist"
+        ],
+        "other_options": [
+            "storage.lazy.persist",
+            "hdfs.lazypersist.dir",
+            "dfs.lazywrite"
+        ]
+    },
+    {
+        "q": "LAZY_PERSIST is suitable for temporary intermediate data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the risk of LAZY_PERSIST storage?",
+        "type": "mcq",
+        "o": [
+            "Data loss if node fails before persistence completes",
+            "Slower access",
+            "Higher cost",
+            "Complex configuration"
+        ]
+    },
+    {
+        "q": "Match the storage characteristic with its type:",
+        "type": "match",
+        "left": [
+            "Fastest but volatile",
+            "Fast and durable",
+            "Standard",
+            "Cheapest"
+        ],
+        "right": [
+            "RAM_DISK",
+            "SSD",
+            "DISK",
+            "ARCHIVE"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS encryption at rest?",
+        "type": "mcq",
+        "o": [
+            "Protect data stored on disk from unauthorized access",
+            "Encrypt network traffic",
+            "Encrypt metadata only",
+            "Application encryption"
+        ]
+    },
+    {
+        "q": "HDFS encryption uses zone-level key management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Data Encryption Key (DEK) in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Key used to actually encrypt file data",
+            "Master encryption key",
+            "Zone encryption key",
+            "User encryption key"
+        ]
+    },
+    {
+        "q": "The _____ encrypts the DEK for secure storage.",
+        "type": "fill_blank",
+        "answers": [
+            "Encryption Zone Key (EZK)"
+        ],
+        "other_options": [
+            "Master Key",
+            "Zone Key",
+            "Storage Key"
+        ]
+    },
+    {
+        "q": "Rearrange the encryption key hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Master Key",
+            "Zone Key",
+            "Data Encryption Key",
+            "Encrypted Data"
+        ]
+    },
+    {
+        "q": "What is the purpose of key versioning in HDFS encryption?",
+        "type": "mcq",
+        "o": [
+            "Support key rotation without re-encrypting all data",
+            "Track key usage",
+            "Key history",
+            "Version control for files"
+        ]
+    },
+    {
+        "q": "Files encrypted with old key version remain accessible after key rotation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this encryption zone command?",
+        "type": "mcq",
+        "c": "hdfs crypto -createZone -keyName mykey -path /secure",
+        "o": [
+            "Creates encryption zone at /secure using key mykey",
+            "Creates encryption key",
+            "Lists encryption zones",
+            "Deletes encryption zone"
+        ]
+    },
+    {
+        "q": "Match the crypto command with its function:",
+        "type": "match",
+        "left": [
+            "-createZone",
+            "-listZones",
+            "-getFileEncryptionInfo",
+            "-reencryptZone"
+        ],
+        "right": [
+            "Create zone",
+            "List zones",
+            "Show file encryption",
+            "Re-encrypt with new key"
+        ]
+    },
+    {
+        "q": "The _____ command triggers re-encryption of zone with latest key version.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs crypto -reencryptZone"
+        ],
+        "other_options": [
+            "hdfs crypto -rotate",
+            "hdfs rekey",
+            "hdfs encrypt -renew"
+        ]
+    },
+    {
+        "q": "Re-encryption can be done while cluster is serving requests.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the impact of encryption on HDFS performance?",
+        "type": "mcq",
+        "o": [
+            "Additional CPU overhead for encryption/decryption operations",
+            "No impact",
+            "Faster reads",
+            "Reduced storage"
+        ]
+    },
+    {
+        "q": "AES-NI hardware acceleration significantly reduces encryption overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of end-to-end encryption in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Data remains encrypted from client through storage",
+            "Encrypt only endpoints",
+            "Network encryption only",
+            "Application-level encryption"
+        ]
+    },
+    {
+        "q": "Rearrange the secure HDFS deployment checklist:",
+        "type": "rearrange",
+        "words": [
+            "Enable Kerberos",
+            "Configure encryption zones",
+            "Setup wire encryption",
+            "Enable audit logging",
+            "Configure ACLs"
+        ]
+    },
+    {
+        "q": "What is the purpose of dfs.encrypt.data.transfer?",
+        "type": "mcq",
+        "o": [
+            "Encrypt data during transfer between DataNodes",
+            "Encrypt stored data",
+            "Transfer encryption keys",
+            "Enable HTTPS"
+        ]
+    },
+    {
+        "q": "The _____ property specifies encryption algorithm for data transfer.",
+        "type": "fill_blank",
+        "answers": [
+            "dfs.encrypt.data.transfer.algorithm"
+        ],
+        "other_options": [
+            "dfs.transfer.cipher",
+            "hdfs.encrypt.algorithm",
+            "dfs.wire.cipher"
+        ]
+    },
+    {
+        "q": "Data transfer encryption adds network latency overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the security layer with what it protects:",
+        "type": "match",
+        "left": [
+            "Kerberos",
+            "Wire encryption",
+            "At-rest encryption",
+            "ACLs"
+        ],
+        "right": [
+            "Authentication",
+            "Data in transit",
+            "Stored data",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "What is comprehensive Hadoop security architecture?",
+        "type": "mcq",
+        "o": [
+            "Defense in depth with multiple security layers",
+            "Single security system",
+            "Perimeter security only",
+            "Application security"
+        ]
+    },
+    {
+        "q": "Zero-trust security model is recommended for Hadoop clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Hadoop proxyuser configuration?",
+        "type": "mcq",
+        "o": [
+            "Allow services to impersonate users for delegated access",
+            "Proxy network traffic",
+            "User account proxying",
+            "Load balancer users"
+        ]
+    },
+    {
+        "q": "The _____ property configures which hosts proxyuser can impersonate from.",
+        "type": "fill_blank",
+        "answers": [
+            "hadoop.proxyuser.*.hosts"
+        ],
+        "other_options": [
+            "hadoop.proxy.hosts",
+            "proxyuser.allowed.hosts",
+            "hadoop.impersonate.hosts"
+        ]
+    },
+    {
+        "q": "What is the best practice for proxyuser configuration?",
+        "type": "mcq",
+        "o": [
+            "Restrict to specific users, groups, and hosts",
+            "Allow all users",
+            "Allow from all hosts",
+            "No restrictions needed"
+        ]
+    },
+    {
+        "q": "Overly permissive proxyuser configuration creates security vulnerabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the impersonation setting with its restriction:",
+        "type": "match",
+        "left": [
+            "hadoop.proxyuser.*.users",
+            "hadoop.proxyuser.*.groups",
+            "hadoop.proxyuser.*.hosts"
+        ],
+        "right": [
+            "Allowed users",
+            "Allowed groups",
+            "Allowed source hosts"
+        ]
+    },
+    {
+        "q": "Rearrange the cluster hardening steps:",
+        "type": "rearrange",
+        "words": [
+            "Network isolation",
+            "Authentication",
+            "Authorization",
+            "Encryption",
+            "Monitoring"
+        ]
+    },
+    {
+        "q": "What is the purpose of Hadoop network topology awareness?",
+        "type": "mcq",
+        "o": [
+            "Optimize data placement and transfer based on network structure",
+            "Network monitoring",
+            "Traffic routing",
+            "Connection pooling"
+        ]
+    },
+    {
+        "q": "The _____ script maps IP addresses to rack IDs in Hadoop.",
+        "type": "fill_blank",
+        "answers": [
+            "topology script"
+        ],
+        "other_options": [
+            "rack mapper",
+            "network mapper",
+            "ip resolver"
+        ]
+    },
+    {
+        "q": "What is the default assumption when no topology script is configured?",
+        "type": "mcq",
+        "o": [
+            "All nodes are on the same default rack",
+            "Each node is on different rack",
+            "Random rack assignment",
+            "IP-based rack mapping"
+        ]
+    },
+    {
+        "q": "Network topology affects replica placement and job scheduling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the network consideration with its impact:",
+        "type": "match",
+        "left": [
+            "Same rack",
+            "Cross rack",
+            "Same datacenter",
+            "Cross datacenter"
+        ],
+        "right": [
+            "Fastest transfer",
+            "Moderate latency",
+            "Higher bandwidth",
+            "WAN overhead"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS Router Cache?",
+        "type": "mcq",
+        "o": [
+            "Cache routing information to reduce StateStore lookups",
+            "Cache file data",
+            "Buffer network traffic",
+            "Store temporary files"
+        ]
+    },
+    {
+        "q": "Router cache improves request latency in federation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of HDFS centralized cache management?",
+        "type": "mcq",
+        "o": [
+            "Explicitly pin files or directories in DataNode memory",
+            "Manage NameNode cache",
+            "Central cache database",
+            "Cache coordination"
+        ]
+    },
+    {
+        "q": "The _____ command adds a cache directive in HDFS.",
+        "type": "fill_blank",
+        "answers": [
+            "hdfs cacheadmin -addDirective"
+        ],
+        "other_options": [
+            "hdfs cache -add",
+            "hadoop cache -create",
+            "hdfs dfs -cache"
+        ]
+    },
+    {
+        "q": "What is a cache pool in HDFS?",
+        "type": "mcq",
+        "o": [
+            "Administrative entity grouping cache directives with resource limits",
+            "Pool of cached files",
+            "Memory pool",
+            "Buffer pool"
+        ]
+    },
+    {
+        "q": "Rearrange the cache setup steps:",
+        "type": "rearrange",
+        "words": [
+            "Create pool",
+            "Set limits",
+            "Add directive",
+            "Monitor usage"
+        ]
+    },
+    {
+        "q": "Match the cache command with its purpose:",
+        "type": "match",
+        "left": [
+            "-addPool",
+            "-addDirective",
+            "-listDirectives",
+            "-removeDirective"
+        ],
+        "right": [
+            "Create pool",
+            "Cache file/dir",
+            "Show cached",
+            "Remove cache"
+        ]
+    },
+    {
+        "q": "What is the benefit of HDFS centralized caching over OS page cache?",
+        "type": "mcq",
+        "o": [
+            "Explicit control and guaranteed caching across cluster",
+            "Better performance",
+            "Less memory usage",
+            "Automatic management"
+        ]
+    },
+    {
+        "q": "Cached data is stored in off-heap memory on DataNodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is HDFS EC striping?",
+        "type": "mcq",
+        "o": [
+            "Distribute data and parity across multiple DataNodes in stripes",
+            "Data striping on single disk",
+            "RAID striping",
+            "Block striping"
+        ]
+    },
+    {
+        "q": "The _____ determines how data is distributed in erasure coding.",
+        "type": "fill_blank",
+        "answers": [
+            "cell size"
+        ],
+        "other_options": [
+            "stripe width",
+            "block size",
+            "chunk size"
+        ]
+    },
+    {
+        "q": "Striped layout improves read parallelism for erasure coded files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the trade-off of smaller cell sizes in EC?",
+        "type": "mcq",
+        "o": [
+            "More parallel I/O but higher metadata overhead",
+            "Better compression",
+            "Less network usage",
+            "Faster recovery"
+        ]
+    },
+    {
+        "q": "Match the EC configuration with its effect:",
+        "type": "match",
+        "left": [
+            "Larger cell",
+            "More parity",
+            "More data blocks",
+            "ISA-L codec"
+        ],
+        "right": [
+            "Less overhead",
+            "More fault tolerance",
+            "Better parallelism",
+            "Hardware acceleration"
+        ]
+    },
+    {
+        "q": "What is Apache Tez?",
+        "type": "mcq",
+        "o": [
+            "DAG-based execution framework for faster data processing",
+            "Testing framework",
+            "Monitoring tool",
+            "Scheduling system"
+        ]
+    },
+    {
+        "q": "Tez eliminates unnecessary disk I/O between stages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the advantage of Tez over MapReduce?",
+        "type": "mcq",
+        "o": [
+            "In-memory data passing and flexible DAG execution",
+            "Simpler programming",
+            "Better compression",
+            "Lower memory usage"
+        ]
+    },
+    {
+        "q": "The _____ in Tez represents a data processing vertex.",
+        "type": "fill_blank",
+        "answers": [
+            "Vertex"
+        ],
+        "other_options": [
+            "Node",
+            "Task",
+            "Stage"
+        ]
+    },
+    {
+        "q": "Rearrange the Tez DAG execution:",
+        "type": "rearrange",
+        "words": [
+            "Submit DAG",
+            "Initialize vertices",
+            "Process data",
+            "Transfer intermediate",
+            "Complete"
+        ]
+    },
+    {
+        "q": "What is container reuse in Tez?",
+        "type": "mcq",
+        "o": [
+            "Reuse YARN containers across tasks to reduce startup overhead",
+            "Container recycling",
+            "Memory reuse",
+            "Task chaining"
+        ]
+    },
+    {
+        "q": "Match the Tez component with its function:",
+        "type": "match",
+        "left": [
+            "DAG",
+            "Vertex",
+            "Edge",
+            "AM"
+        ],
+        "right": [
+            "Execution plan",
+            "Processing step",
+            "Data transfer",
+            "Job coordinator"
+        ]
+    },
+    {
+        "q": "What is session mode in Tez?",
+        "type": "mcq",
+        "o": [
+            "Maintain AM for multiple DAG submissions reducing startup time",
+            "Interactive session",
+            "Debug session",
+            "Batch session"
+        ]
+    },
+    {
+        "q": "Tez sessions provide faster response for iterative queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Tez auto-tuning?",
+        "type": "mcq",
+        "o": [
+            "Automatically optimize task parallelism and resource allocation",
+            "Auto-fix errors",
+            "Tune network",
+            "Balance load"
+        ]
+    },
+    {
+        "q": "The _____ feature in Tez combines small tasks into larger ones.",
+        "type": "fill_blank",
+        "answers": [
+            "task grouping"
+        ],
+        "other_options": [
+            "task merging",
+            "task combining",
+            "task fusion"
+        ]
+    },
+    {
+        "q": "What is broadcast edge in Tez?",
+        "type": "mcq",
+        "o": [
+            "Send output to all downstream tasks for small dataset joins",
+            "Broadcast data to cluster",
+            "Network broadcast",
+            "Message broadcast"
+        ]
+    },
+    {
+        "q": "Match the Tez edge type with its use case:",
+        "type": "match",
+        "left": [
+            "Scatter-Gather",
+            "Broadcast",
+            "One-to-One",
+            "Custom"
+        ],
+        "right": [
+            "Shuffle",
+            "Small table join",
+            "Pipeline",
+            "User-defined"
+        ]
+    },
+    {
+        "q": "What is the purpose of intermediate data serialization in Tez?",
+        "type": "mcq",
+        "o": [
+            "Efficiently transfer data between vertices",
+            "Store data on disk",
+            "Compress output",
+            "Encrypt transfer"
+        ]
+    },
+    {
+        "q": "Tez supports pluggable serialization for custom data types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is speculative execution in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Run duplicate tasks to handle slow outliers",
+            "Execute unverified code",
+            "Predict task outcome",
+            "Pre-compute results"
+        ]
+    },
+    {
+        "q": "The _____ property enables speculative execution for map tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.map.speculative"
+        ],
+        "other_options": [
+            "mapreduce.speculative.map",
+            "yarn.map.speculative",
+            "hadoop.map.spec"
+        ]
+    },
+    {
+        "q": "Speculative execution uses additional cluster resources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "When should speculative execution be disabled?",
+        "type": "mcq",
+        "o": [
+            "When tasks have side effects or write to external systems",
+            "Always enable",
+            "For fast jobs only",
+            "During maintenance"
+        ]
+    },
+    {
+        "q": "Match the speculation setting with its trade-off:",
+        "type": "match",
+        "left": [
+            "Aggressive speculation",
+            "Conservative speculation",
+            "Disabled"
+        ],
+        "right": [
+            "More resource usage",
+            "Balanced",
+            "No overhead"
+        ]
+    },
+    {
+        "q": "What is the purpose of HDFS RPC fairness?",
+        "type": "mcq",
+        "o": [
+            "Ensure fair access to NameNode among users and applications",
+            "Fair file distribution",
+            "Equal storage allocation",
+            "Balanced reads"
+        ]
+    },
+    {
+        "q": "The _____ policy controls user isolation in NameNode RPC.",
+        "type": "fill_blank",
+        "answers": [
+            "FairCallQueue"
+        ],
+        "other_options": [
+            "RpcQueue",
+            "UserQueue",
+            "FairScheduler"
+        ]
+    },
+    {
+        "q": "FairCallQueue prevents single user from monopolizing NameNode.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is DecayRpcScheduler in Hadoop?",
+        "type": "mcq",
+        "o": [
+            "Priority scheduler that decays call counts over time",
+            "Time-based scheduler",
+            "Decay algorithm",
+            "RPC timeout handler"
+        ]
+    },
+    {
+        "q": "Match the RPC scheduler with its behavior:",
+        "type": "match",
+        "left": [
+            "FairCallQueue",
+            "DecayRpcScheduler",
+            "FIFO",
+            "Priority"
+        ],
+        "right": [
+            "User fairness",
+            "Time-weighted priority",
+            "First come first served",
+            "Fixed priority"
+        ]
+    },
+    {
+        "q": "What is the output of this RPC configuration?",
+        "type": "mcq",
+        "c": "ipc.8020.callqueue.impl = org.apache.hadoop.ipc.FairCallQueue\nipc.8020.scheduler.impl = org.apache.hadoop.ipc.DecayRpcScheduler",
+        "o": [
+            "Enables fair call queue with decay-based scheduling for NameNode RPC",
+            "Disables fair scheduling",
+            "Sets RPC timeout",
+            "Configures port binding"
+        ]
+    },
+    {
+        "q": "Rearrange the RPC call handling:",
+        "type": "rearrange",
+        "words": [
+            "Receive call",
+            "Queue assignment",
+            "Priority scheduling",
+            "Handler processing",
+            "Return response"
+        ]
+    }
+]

@@ -1,0 +1,6310 @@
+[
+    {
+        "q": "What is Apache Hive?",
+        "type": "mcq",
+        "o": [
+            "Data warehouse software for querying data on Hadoop",
+            "Database system",
+            "Programming language",
+            "File system"
+        ]
+    },
+    {
+        "q": "Hive was originally developed at Facebook.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is HiveQL?",
+        "type": "mcq",
+        "o": [
+            "SQL-like query language for Hive",
+            "Database language",
+            "Scripting language",
+            "Query format"
+        ]
+    },
+    {
+        "q": "The _____ stores metadata about Hive tables.",
+        "type": "fill_blank",
+        "answers": [
+            "metastore"
+        ],
+        "other_options": [
+            "database",
+            "catalog",
+            "registry"
+        ]
+    },
+    {
+        "q": "Match the Hive component with its function:",
+        "type": "match",
+        "left": [
+            "Metastore",
+            "Driver",
+            "Compiler",
+            "Execution Engine"
+        ],
+        "right": [
+            "Store metadata",
+            "Manage queries",
+            "Parse queries",
+            "Run MapReduce"
+        ]
+    },
+    {
+        "q": "What is a Hive table?",
+        "type": "mcq",
+        "o": [
+            "Logical representation of data stored in HDFS",
+            "Physical storage",
+            "Database table",
+            "Data container"
+        ]
+    },
+    {
+        "q": "Hive translates HiveQL queries into MapReduce jobs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the query execution flow:",
+        "type": "rearrange",
+        "words": [
+            "Parse query",
+            "Compile",
+            "Optimize",
+            "Execute"
+        ]
+    },
+    {
+        "q": "What is the difference between Hive and traditional RDBMS?",
+        "type": "mcq",
+        "o": [
+            "Hive is designed for batch processing of large datasets",
+            "No difference",
+            "Hive is faster",
+            "Hive uses rows only"
+        ]
+    },
+    {
+        "q": "The _____ is Hive's default execution engine.",
+        "type": "fill_blank",
+        "answers": [
+            "MapReduce"
+        ],
+        "other_options": [
+            "Spark",
+            "Tez",
+            "Presto"
+        ]
+    },
+    {
+        "q": "What is a managed table in Hive?",
+        "type": "mcq",
+        "o": [
+            "Table where Hive manages both data and metadata",
+            "External table",
+            "Temporary table",
+            "System table"
+        ]
+    },
+    {
+        "q": "Dropping a managed table deletes the underlying data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is an external table in Hive?",
+        "type": "mcq",
+        "o": [
+            "Table where Hive manages only metadata, not data",
+            "Managed table",
+            "Temporary table",
+            "View"
+        ]
+    },
+    {
+        "q": "Match the table type with its behavior on DROP:",
+        "type": "match",
+        "left": [
+            "Managed table",
+            "External table"
+        ],
+        "right": [
+            "Deletes data and metadata",
+            "Deletes metadata only"
+        ]
+    },
+    {
+        "q": "The _____ keyword creates an external table.",
+        "type": "fill_blank",
+        "answers": [
+            "EXTERNAL"
+        ],
+        "other_options": [
+            "OUTSIDE",
+            "EXTERNAL_TABLE",
+            "LINKED"
+        ]
+    },
+    {
+        "q": "What is the LOCATION clause?",
+        "type": "mcq",
+        "o": [
+            "Specifies HDFS directory for table data",
+            "Database location",
+            "Server address",
+            "File path"
+        ]
+    },
+    {
+        "q": "External tables are preferred when data is shared across tools.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the CREATE TABLE syntax:",
+        "type": "rearrange",
+        "words": [
+            "CREATE TABLE",
+            "table_name",
+            "column definitions",
+            "STORED AS format"
+        ]
+    },
+    {
+        "q": "What is a database in Hive?",
+        "type": "mcq",
+        "o": [
+            "Namespace for organizing tables",
+            "Physical storage",
+            "Table type",
+            "Query type"
+        ]
+    },
+    {
+        "q": "The _____ database is the default in Hive.",
+        "type": "fill_blank",
+        "answers": [
+            "default"
+        ],
+        "other_options": [
+            "system",
+            "main",
+            "public"
+        ]
+    },
+    {
+        "q": "What is the USE command?",
+        "type": "mcq",
+        "o": [
+            "Switches to specified database",
+            "Creates database",
+            "Deletes database",
+            "Lists databases"
+        ]
+    },
+    {
+        "q": "USE sets the current working database.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What are Hive data types?",
+        "type": "mcq",
+        "o": [
+            "Primitive and complex types for columns",
+            "Table types",
+            "Storage types",
+            "Query types"
+        ]
+    },
+    {
+        "q": "Match the Hive data type with its category:",
+        "type": "match",
+        "left": [
+            "INT",
+            "STRING",
+            "ARRAY",
+            "MAP"
+        ],
+        "right": [
+            "Numeric",
+            "Character",
+            "Collection",
+            "Key-value"
+        ]
+    },
+    {
+        "q": "The _____ type stores key-value pairs.",
+        "type": "fill_blank",
+        "answers": [
+            "MAP"
+        ],
+        "other_options": [
+            "ARRAY",
+            "STRUCT",
+            "PAIR"
+        ]
+    },
+    {
+        "q": "What is STRUCT type in Hive?",
+        "type": "mcq",
+        "o": [
+            "Complex type with named fields",
+            "Simple type",
+            "Array type",
+            "Map type"
+        ]
+    },
+    {
+        "q": "STRUCT fields are accessed using dot notation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the complex types by complexity:",
+        "type": "rearrange",
+        "words": [
+            "ARRAY",
+            "MAP",
+            "STRUCT"
+        ]
+    },
+    {
+        "q": "What is ARRAY type in Hive?",
+        "type": "mcq",
+        "o": [
+            "Ordered collection of same-type elements",
+            "Key-value pairs",
+            "Named fields",
+            "Mixed collection"
+        ]
+    },
+    {
+        "q": "The _____ function accesses array elements by index.",
+        "type": "fill_blank",
+        "answers": [
+            "[]"
+        ],
+        "other_options": [
+            "get()",
+            "at()",
+            "element()"
+        ]
+    },
+    {
+        "q": "What is partitioning in Hive?",
+        "type": "mcq",
+        "o": [
+            "Dividing table data into subdirectories by column values",
+            "Data splitting",
+            "Query division",
+            "Table separation"
+        ]
+    },
+    {
+        "q": "Partitioning improves query performance by scanning less data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a partition key?",
+        "type": "mcq",
+        "o": [
+            "Column used to divide table into partitions",
+            "Primary key",
+            "Sort key",
+            "Index key"
+        ]
+    },
+    {
+        "q": "Match the partition concept with its meaning:",
+        "type": "match",
+        "left": [
+            "Partition key",
+            "Partition directory",
+            "Partition pruning"
+        ],
+        "right": [
+            "Division column",
+            "HDFS folder",
+            "Skip irrelevant partitions"
+        ]
+    },
+    {
+        "q": "The _____ clause adds partitioning to a table.",
+        "type": "fill_blank",
+        "answers": [
+            "PARTITIONED BY"
+        ],
+        "other_options": [
+            "PARTITION BY",
+            "DIVIDED BY",
+            "SPLIT BY"
+        ]
+    },
+    {
+        "q": "What is static partitioning?",
+        "type": "mcq",
+        "o": [
+            "Manually specifying partition values during insert",
+            "Automatic partitioning",
+            "Dynamic partitioning",
+            "Default partitioning"
+        ]
+    },
+    {
+        "q": "Static partitioning requires explicit partition values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the partition creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Create table with partition",
+            "Add partition",
+            "Load data into partition"
+        ]
+    },
+    {
+        "q": "What is dynamic partitioning?",
+        "type": "mcq",
+        "o": [
+            "Automatically creating partitions based on query results",
+            "Manual partitioning",
+            "Static partitioning",
+            "Fixed partitioning"
+        ]
+    },
+    {
+        "q": "The _____ setting enables dynamic partitioning.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.exec.dynamic.partition"
+        ],
+        "other_options": [
+            "dynamic.partition.enable",
+            "partition.dynamic",
+            "enable.dynamic"
+        ]
+    },
+    {
+        "q": "What is strict mode for dynamic partitioning?",
+        "type": "mcq",
+        "o": [
+            "Requires at least one static partition column",
+            "Full dynamic mode",
+            "Disabled mode",
+            "Safe mode"
+        ]
+    },
+    {
+        "q": "Match the dynamic partition mode with its requirement:",
+        "type": "match",
+        "left": [
+            "strict",
+            "nonstrict"
+        ],
+        "right": [
+            "One static partition",
+            "All dynamic allowed"
+        ]
+    },
+    {
+        "q": "Dynamic partitioning can create many small files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is bucketing in Hive?",
+        "type": "mcq",
+        "o": [
+            "Dividing data into fixed number of files based on hash",
+            "Partitioning",
+            "Sorting",
+            "Indexing"
+        ]
+    },
+    {
+        "q": "The _____ clause creates buckets in a table.",
+        "type": "fill_blank",
+        "answers": [
+            "CLUSTERED BY"
+        ],
+        "other_options": [
+            "BUCKETED BY",
+            "HASHED BY",
+            "GROUPED BY"
+        ]
+    },
+    {
+        "q": "What is the purpose of bucketing?",
+        "type": "mcq",
+        "o": [
+            "Improve join performance and sampling",
+            "Improve partitioning",
+            "Reduce file size",
+            "Increase storage"
+        ]
+    },
+    {
+        "q": "Bucketing works with hash function on bucket column.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the data organization with its benefit:",
+        "type": "match",
+        "left": [
+            "Partitioning",
+            "Bucketing",
+            "Sorting"
+        ],
+        "right": [
+            "Filter pruning",
+            "Join optimization",
+            "Range queries"
+        ]
+    },
+    {
+        "q": "Rearrange the bucketing syntax:",
+        "type": "rearrange",
+        "words": [
+            "CLUSTERED BY",
+            "(column)",
+            "INTO n BUCKETS"
+        ]
+    },
+    {
+        "q": "What is sorted bucketing?",
+        "type": "mcq",
+        "o": [
+            "Bucketing with sorted data within each bucket",
+            "Bucket sorting",
+            "Sort-only operation",
+            "Indexed buckets"
+        ]
+    },
+    {
+        "q": "The _____ BY clause sorts data within buckets.",
+        "type": "fill_blank",
+        "answers": [
+            "SORTED"
+        ],
+        "other_options": [
+            "ORDER",
+            "ARRANGE",
+            "RANK"
+        ]
+    },
+    {
+        "q": "Bucketing enables sampling of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is TABLESAMPLE?",
+        "type": "mcq",
+        "o": [
+            "Clause for sampling data from table",
+            "Sample table",
+            "Test data",
+            "Example table"
+        ]
+    },
+    {
+        "q": "Match the sampling method with its usage:",
+        "type": "match",
+        "left": [
+            "BUCKET",
+            "PERCENT",
+            "ROWS"
+        ],
+        "right": [
+            "Bucket-based",
+            "Percentage",
+            "Row count"
+        ]
+    },
+    {
+        "q": "What is SerDe in Hive?",
+        "type": "mcq",
+        "o": [
+            "Serializer/Deserializer for reading and writing data",
+            "Data format",
+            "File type",
+            "Compression"
+        ]
+    },
+    {
+        "q": "SerDe defines how Hive interprets row format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ SerDe handles JSON data.",
+        "type": "fill_blank",
+        "answers": [
+            "JsonSerDe"
+        ],
+        "other_options": [
+            "JSONHandler",
+            "JsonFormat",
+            "JsonReader"
+        ]
+    },
+    {
+        "q": "Rearrange the data formats by efficiency:",
+        "type": "rearrange",
+        "words": [
+            "ORC",
+            "Parquet",
+            "Avro",
+            "Text"
+        ]
+    },
+    {
+        "q": "What is ORC file format?",
+        "type": "mcq",
+        "o": [
+            "Optimized Row Columnar format for Hive",
+            "Original file format",
+            "Open row format",
+            "Object format"
+        ]
+    },
+    {
+        "q": "ORC provides better compression than text format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the file format with its characteristic:",
+        "type": "match",
+        "left": [
+            "ORC",
+            "Parquet",
+            "Avro",
+            "Text"
+        ],
+        "right": [
+            "Hive optimized",
+            "Spark optimized",
+            "Schema evolution",
+            "Human readable"
+        ]
+    },
+    {
+        "q": "What is Parquet format?",
+        "type": "mcq",
+        "o": [
+            "Columnar storage format for Hadoop ecosystem",
+            "Row format",
+            "Text format",
+            "Binary format"
+        ]
+    },
+    {
+        "q": "The _____ clause specifies file format.",
+        "type": "fill_blank",
+        "answers": [
+            "STORED AS"
+        ],
+        "other_options": [
+            "FORMAT AS",
+            "FILE TYPE",
+            "STORAGE"
+        ]
+    },
+    {
+        "q": "Columnar formats are efficient for analytical queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is compression in Hive?",
+        "type": "mcq",
+        "o": [
+            "Reducing data size for storage and transfer",
+            "Data expansion",
+            "File format",
+            "Encoding"
+        ]
+    },
+    {
+        "q": "Rearrange the compression codecs by speed:",
+        "type": "rearrange",
+        "words": [
+            "Snappy",
+            "LZO",
+            "GZIP",
+            "BZIP2"
+        ]
+    },
+    {
+        "q": "Match the compression with its trade-off:",
+        "type": "match",
+        "left": [
+            "Snappy",
+            "GZIP",
+            "LZO"
+        ],
+        "right": [
+            "Fast, moderate compression",
+            "Slow, high compression",
+            "Splittable, moderate"
+        ]
+    },
+    {
+        "q": "What is splittable compression?",
+        "type": "mcq",
+        "o": [
+            "Compression that allows parallel processing",
+            "Split files",
+            "Divided compression",
+            "Partial compression"
+        ]
+    },
+    {
+        "q": "The _____ compression is splittable.",
+        "type": "fill_blank",
+        "answers": [
+            "LZO"
+        ],
+        "other_options": [
+            "GZIP",
+            "BZIP2",
+            "Deflate"
+        ]
+    },
+    {
+        "q": "GZIP files are not splittable by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SELECT statement in HiveQL?",
+        "type": "mcq",
+        "o": [
+            "Query to retrieve data from tables",
+            "Insert data",
+            "Create table",
+            "Delete data"
+        ]
+    },
+    {
+        "q": "Match the SELECT clause with its purpose:",
+        "type": "match",
+        "left": [
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY",
+            "LIMIT"
+        ],
+        "right": [
+            "Filter rows",
+            "Aggregate grouping",
+            "Sort results",
+            "Restrict rows"
+        ]
+    },
+    {
+        "q": "The _____ clause filters groups after aggregation.",
+        "type": "fill_blank",
+        "answers": [
+            "HAVING"
+        ],
+        "other_options": [
+            "WHERE",
+            "FILTER",
+            "ONLY"
+        ]
+    },
+    {
+        "q": "Rearrange the SELECT clause order:",
+        "type": "rearrange",
+        "words": [
+            "SELECT",
+            "FROM",
+            "WHERE",
+            "GROUP BY",
+            "HAVING",
+            "ORDER BY"
+        ]
+    },
+    {
+        "q": "What is JOIN in HiveQL?",
+        "type": "mcq",
+        "o": [
+            "Combining rows from two or more tables",
+            "Union tables",
+            "Merge tables",
+            "Split tables"
+        ]
+    },
+    {
+        "q": "Match the join type with its result:",
+        "type": "match",
+        "left": [
+            "INNER",
+            "LEFT",
+            "RIGHT",
+            "FULL"
+        ],
+        "right": [
+            "Matching rows",
+            "All left rows",
+            "All right rows",
+            "All rows"
+        ]
+    },
+    {
+        "q": "The _____ JOIN returns only matching rows.",
+        "type": "fill_blank",
+        "answers": [
+            "INNER"
+        ],
+        "other_options": [
+            "OUTER",
+            "LEFT",
+            "FULL"
+        ]
+    },
+    {
+        "q": "Hive joins are converted to MapReduce jobs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is map-side join?",
+        "type": "mcq",
+        "o": [
+            "Join performed in mapper phase for small tables",
+            "Reduce-side join",
+            "Standard join",
+            "Partition join"
+        ]
+    },
+    {
+        "q": "Map-side join requires small table to fit in memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the join optimization techniques:",
+        "type": "rearrange",
+        "words": [
+            "Map-side join",
+            "Bucket map join",
+            "Sort merge bucket join"
+        ]
+    },
+    {
+        "q": "What is bucket map join?",
+        "type": "mcq",
+        "o": [
+            "Map-side join for bucketed tables",
+            "Bucket sort",
+            "Hash join",
+            "Merge join"
+        ]
+    },
+    {
+        "q": "The _____ hint enables map-side join.",
+        "type": "fill_blank",
+        "answers": [
+            "MAPJOIN"
+        ],
+        "other_options": [
+            "MAPHINT",
+            "SMALLJOIN",
+            "MEMORYJOIN"
+        ]
+    },
+    {
+        "q": "What is SMB join?",
+        "type": "mcq",
+        "o": [
+            "Sort Merge Bucket join for sorted bucketed tables",
+            "Small bucket join",
+            "Simple merge join",
+            "Standard bucket join"
+        ]
+    },
+    {
+        "q": "SMB join requires sorted and bucketed tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the join optimization with its requirement:",
+        "type": "match",
+        "left": [
+            "Map-side join",
+            "Bucket map join",
+            "SMB join"
+        ],
+        "right": [
+            "Small table",
+            "Same bucket count",
+            "Sorted buckets"
+        ]
+    },
+    {
+        "q": "What is subquery in HiveQL?",
+        "type": "mcq",
+        "o": [
+            "Query nested within another query",
+            "Main query",
+            "Outer query",
+            "Simple query"
+        ]
+    },
+    {
+        "q": "The _____ clause supports correlated subqueries.",
+        "type": "fill_blank",
+        "answers": [
+            "WHERE"
+        ],
+        "other_options": [
+            "SELECT",
+            "FROM",
+            "HAVING"
+        ]
+    },
+    {
+        "q": "Rearrange the subquery types:",
+        "type": "rearrange",
+        "words": [
+            "Scalar",
+            "Row",
+            "Table",
+            "Correlated"
+        ]
+    },
+    {
+        "q": "What is Common Table Expression (CTE)?",
+        "type": "mcq",
+        "o": [
+            "Temporary named result set using WITH clause",
+            "Permanent table",
+            "View",
+            "Subquery"
+        ]
+    },
+    {
+        "q": "CTE improves query readability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is UNION in HiveQL?",
+        "type": "mcq",
+        "o": [
+            "Combines result sets from multiple queries",
+            "Joins tables",
+            "Merges columns",
+            "Splits results"
+        ]
+    },
+    {
+        "q": "Match the set operation with its behavior:",
+        "type": "match",
+        "left": [
+            "UNION",
+            "UNION ALL"
+        ],
+        "right": [
+            "Removes duplicates",
+            "Keeps duplicates"
+        ]
+    },
+    {
+        "q": "The _____ is more efficient than UNION.",
+        "type": "fill_blank",
+        "answers": [
+            "UNION ALL"
+        ],
+        "other_options": [
+            "UNION",
+            "INTERSECT",
+            "EXCEPT"
+        ]
+    },
+    {
+        "q": "What are window functions in Hive?",
+        "type": "mcq",
+        "o": [
+            "Functions that operate over a window of rows",
+            "Aggregate functions",
+            "Scalar functions",
+            "Table functions"
+        ]
+    },
+    {
+        "q": "Window functions require OVER clause.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the window function syntax:",
+        "type": "rearrange",
+        "words": [
+            "function_name()",
+            "OVER",
+            "(PARTITION BY col ORDER BY col)"
+        ]
+    },
+    {
+        "q": "Match the window function with its purpose:",
+        "type": "match",
+        "left": [
+            "ROW_NUMBER",
+            "RANK",
+            "LAG",
+            "SUM"
+        ],
+        "right": [
+            "Sequential number",
+            "Rank with gaps",
+            "Previous row",
+            "Running total"
+        ]
+    },
+    {
+        "q": "The _____ function returns value from next row.",
+        "type": "fill_blank",
+        "answers": [
+            "LEAD"
+        ],
+        "other_options": [
+            "LAG",
+            "NEXT",
+            "FORWARD"
+        ]
+    },
+    {
+        "q": "What is RANK vs DENSE_RANK?",
+        "type": "mcq",
+        "o": [
+            "RANK has gaps in sequence, DENSE_RANK does not",
+            "DENSE_RANK has gaps",
+            "Both have gaps",
+            "Neither has gaps"
+        ]
+    },
+    {
+        "q": "ROW_NUMBER produces unique sequential numbers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is INSERT in HiveQL?",
+        "type": "mcq",
+        "o": [
+            "Statement to add data to tables",
+            "Create data",
+            "Update data",
+            "Delete data"
+        ]
+    },
+    {
+        "q": "Match the INSERT type with its behavior:",
+        "type": "match",
+        "left": [
+            "INSERT INTO",
+            "INSERT OVERWRITE"
+        ],
+        "right": [
+            "Append data",
+            "Replace data"
+        ]
+    },
+    {
+        "q": "The _____ keyword replaces existing table data.",
+        "type": "fill_blank",
+        "answers": [
+            "OVERWRITE"
+        ],
+        "other_options": [
+            "REPLACE",
+            "UPDATE",
+            "RESET"
+        ]
+    },
+    {
+        "q": "What is LOAD DATA statement?",
+        "type": "mcq",
+        "o": [
+            "Loads files into Hive table",
+            "Downloads data",
+            "Exports data",
+            "Copies data"
+        ]
+    },
+    {
+        "q": "Rearrange the LOAD DATA syntax:",
+        "type": "rearrange",
+        "words": [
+            "LOAD DATA",
+            "INPATH",
+            "'path'",
+            "INTO TABLE",
+            "table_name"
+        ]
+    },
+    {
+        "q": "LOAD DATA LOCAL loads from local filesystem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ALTER TABLE?",
+        "type": "mcq",
+        "o": [
+            "Modifies table structure or properties",
+            "Creates table",
+            "Drops table",
+            "Queries table"
+        ]
+    },
+    {
+        "q": "Match the ALTER operation with its effect:",
+        "type": "match",
+        "left": [
+            "ADD COLUMNS",
+            "DROP PARTITION",
+            "SET TBLPROPERTIES"
+        ],
+        "right": [
+            "New columns",
+            "Remove partition",
+            "Change settings"
+        ]
+    },
+    {
+        "q": "The _____ adds a new partition to table.",
+        "type": "fill_blank",
+        "answers": [
+            "ADD PARTITION"
+        ],
+        "other_options": [
+            "CREATE PARTITION",
+            "NEW PARTITION",
+            "INSERT PARTITION"
+        ]
+    },
+    {
+        "q": "What is DESCRIBE statement?",
+        "type": "mcq",
+        "o": [
+            "Shows table schema and properties",
+            "Queries table",
+            "Modifies table",
+            "Drops table"
+        ]
+    },
+    {
+        "q": "DESCRIBE FORMATTED shows detailed table information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the metadata commands:",
+        "type": "rearrange",
+        "words": [
+            "SHOW TABLES",
+            "DESCRIBE",
+            "DESCRIBE FORMATTED",
+            "SHOW PARTITIONS"
+        ]
+    },
+    {
+        "q": "What is SHOW command?",
+        "type": "mcq",
+        "o": [
+            "Lists databases, tables, or partitions",
+            "Displays data",
+            "Shows results",
+            "Prints output"
+        ]
+    },
+    {
+        "q": "Match the SHOW command with its output:",
+        "type": "match",
+        "left": [
+            "SHOW DATABASES",
+            "SHOW TABLES",
+            "SHOW PARTITIONS"
+        ],
+        "right": [
+            "List databases",
+            "List tables",
+            "List partitions"
+        ]
+    },
+    {
+        "q": "What is a view in Hive?",
+        "type": "mcq",
+        "o": [
+            "Virtual table based on query result",
+            "Physical table",
+            "Temporary table",
+            "External table"
+        ]
+    },
+    {
+        "q": "Views store query definition, not data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ statement creates a view.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE VIEW"
+        ],
+        "other_options": [
+            "MAKE VIEW",
+            "NEW VIEW",
+            "DEFINE VIEW"
+        ]
+    },
+    {
+        "q": "What is materialized view in Hive?",
+        "type": "mcq",
+        "o": [
+            "Pre-computed view that stores result",
+            "Virtual view",
+            "Temporary view",
+            "Abstract view"
+        ]
+    },
+    {
+        "q": "Materialized views can accelerate queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the view types by storage:",
+        "type": "rearrange",
+        "words": [
+            "View (no storage)",
+            "Materialized view (stored)",
+            "Table (permanent)"
+        ]
+    },
+    {
+        "q": "What is User Defined Function (UDF)?",
+        "type": "mcq",
+        "o": [
+            "Custom function written in Java for Hive",
+            "Built-in function",
+            "System function",
+            "Native function"
+        ]
+    },
+    {
+        "q": "Match the UDF type with its characteristic:",
+        "type": "match",
+        "left": [
+            "UDF",
+            "UDAF",
+            "UDTF"
+        ],
+        "right": [
+            "Single row output",
+            "Aggregate output",
+            "Multiple row output"
+        ]
+    },
+    {
+        "q": "The _____ function type produces multiple output rows.",
+        "type": "fill_blank",
+        "answers": [
+            "UDTF"
+        ],
+        "other_options": [
+            "UDF",
+            "UDAF",
+            "UDTO"
+        ]
+    },
+    {
+        "q": "What is UDAF?",
+        "type": "mcq",
+        "o": [
+            "User Defined Aggregate Function",
+            "User Defined Advanced Function",
+            "User Defined Array Function",
+            "User Defined Analysis Function"
+        ]
+    },
+    {
+        "q": "UDAF is used for custom aggregations like SUM or COUNT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is LATERAL VIEW?",
+        "type": "mcq",
+        "o": [
+            "Applies UDTF to table and joins results",
+            "Side view",
+            "Horizontal view",
+            "Complex view"
+        ]
+    },
+    {
+        "q": "Rearrange the LATERAL VIEW syntax:",
+        "type": "rearrange",
+        "words": [
+            "SELECT",
+            "FROM table",
+            "LATERAL VIEW",
+            "explode(array_col)",
+            "AS alias"
+        ]
+    },
+    {
+        "q": "The _____ function explodes arrays in LATERAL VIEW.",
+        "type": "fill_blank",
+        "answers": [
+            "explode"
+        ],
+        "other_options": [
+            "expand",
+            "flatten",
+            "unroll"
+        ]
+    },
+    {
+        "q": "What is the explode function?",
+        "type": "mcq",
+        "o": [
+            "Converts array elements into separate rows",
+            "Combines rows",
+            "Aggregates values",
+            "Filters data"
+        ]
+    },
+    {
+        "q": "explode with MAP produces key and value columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is posexplode?",
+        "type": "mcq",
+        "o": [
+            "explode with position index",
+            "Position function",
+            "Index explode",
+            "Ordered explode"
+        ]
+    },
+    {
+        "q": "Match the UDTF with its output:",
+        "type": "match",
+        "left": [
+            "explode",
+            "posexplode",
+            "inline"
+        ],
+        "right": [
+            "Array elements",
+            "Elements with position",
+            "Struct array expansion"
+        ]
+    },
+    {
+        "q": "What is the Hive metastore?",
+        "type": "mcq",
+        "o": [
+            "Central repository for Hive metadata",
+            "Data storage",
+            "Query engine",
+            "File system"
+        ]
+    },
+    {
+        "q": "The _____ stores metadata in relational database.",
+        "type": "fill_blank",
+        "answers": [
+            "metastore"
+        ],
+        "other_options": [
+            "datastore",
+            "catalog",
+            "registry"
+        ]
+    },
+    {
+        "q": "Rearrange the metastore modes:",
+        "type": "rearrange",
+        "words": [
+            "Embedded",
+            "Local",
+            "Remote"
+        ]
+    },
+    {
+        "q": "What is embedded metastore?",
+        "type": "mcq",
+        "o": [
+            "Metastore running in same JVM as Hive",
+            "Separate server",
+            "Remote database",
+            "External service"
+        ]
+    },
+    {
+        "q": "Embedded metastore only supports single session.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is remote metastore?",
+        "type": "mcq",
+        "o": [
+            "Metastore running as separate service",
+            "Embedded mode",
+            "Local mode",
+            "File-based"
+        ]
+    },
+    {
+        "q": "Match the metastore mode with its use case:",
+        "type": "match",
+        "left": [
+            "Embedded",
+            "Local",
+            "Remote"
+        ],
+        "right": [
+            "Testing",
+            "Single user",
+            "Production"
+        ]
+    },
+    {
+        "q": "What is HiveServer2?",
+        "type": "mcq",
+        "o": [
+            "Service for JDBC/ODBC client connections",
+            "Metastore server",
+            "Query optimizer",
+            "Execution engine"
+        ]
+    },
+    {
+        "q": "The _____ provides Thrift interface to Hive.",
+        "type": "fill_blank",
+        "answers": [
+            "HiveServer2"
+        ],
+        "other_options": [
+            "HiveServer",
+            "ThriftServer",
+            "HiveService"
+        ]
+    },
+    {
+        "q": "HiveServer2 supports concurrent client connections.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Beeline?",
+        "type": "mcq",
+        "o": [
+            "JDBC-based CLI for HiveServer2",
+            "Old Hive CLI",
+            "SQL editor",
+            "Query tool"
+        ]
+    },
+    {
+        "q": "Rearrange the Hive client options:",
+        "type": "rearrange",
+        "words": [
+            "Beeline",
+            "Hive CLI",
+            "JDBC",
+            "ODBC"
+        ]
+    },
+    {
+        "q": "Match the client with its connection method:",
+        "type": "match",
+        "left": [
+            "Beeline",
+            "JDBC driver",
+            "ODBC driver"
+        ],
+        "right": [
+            "Command line",
+            "Java applications",
+            "BI tools"
+        ]
+    },
+    {
+        "q": "What is Tez execution engine?",
+        "type": "mcq",
+        "o": [
+            "DAG-based execution engine faster than MapReduce",
+            "Map-only engine",
+            "Reduce-only engine",
+            "Spark engine"
+        ]
+    },
+    {
+        "q": "Tez eliminates intermediate HDFS writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ setting changes execution engine.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.execution.engine"
+        ],
+        "other_options": [
+            "engine.type",
+            "execution.mode",
+            "hive.engine"
+        ]
+    },
+    {
+        "q": "What is Spark on Hive?",
+        "type": "mcq",
+        "o": [
+            "Using Spark as Hive execution engine",
+            "Hive on Spark",
+            "SparkSQL",
+            "Spark integration"
+        ]
+    },
+    {
+        "q": "Match the execution engine with its performance:",
+        "type": "match",
+        "left": [
+            "MapReduce",
+            "Tez",
+            "Spark"
+        ],
+        "right": [
+            "Slowest",
+            "Faster",
+            "Fastest for iterative"
+        ]
+    },
+    {
+        "q": "Rearrange the execution engines by introduction:",
+        "type": "rearrange",
+        "words": [
+            "MapReduce",
+            "Tez",
+            "Spark"
+        ]
+    },
+    {
+        "q": "What is LLAP?",
+        "type": "mcq",
+        "o": [
+            "Live Long And Process - in-memory query execution",
+            "Long-lasting process",
+            "Live analytics",
+            "Local processing"
+        ]
+    },
+    {
+        "q": "LLAP provides interactive query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is cost-based optimizer (CBO)?",
+        "type": "mcq",
+        "o": [
+            "Optimizer that uses statistics to choose best plan",
+            "Rule-based optimizer",
+            "Simple optimizer",
+            "Manual optimizer"
+        ]
+    },
+    {
+        "q": "Match the optimization technique with its benefit:",
+        "type": "match",
+        "left": [
+            "CBO",
+            "Vectorization",
+            "Partition pruning"
+        ],
+        "right": [
+            "Best join order",
+            "Batch processing",
+            "Skip data"
+        ]
+    },
+    {
+        "q": "The _____ setting enables cost-based optimization.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.cbo.enable"
+        ],
+        "other_options": [
+            "cbo.enabled",
+            "optimizer.cbo",
+            "enable.cbo"
+        ]
+    },
+    {
+        "q": "What is ANALYZE TABLE?",
+        "type": "mcq",
+        "o": [
+            "Collects statistics for optimizer",
+            "Queries table",
+            "Optimizes table",
+            "Repairs table"
+        ]
+    },
+    {
+        "q": "Statistics help CBO choose optimal query plan.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the statistics collection scope:",
+        "type": "rearrange",
+        "words": [
+            "Table statistics",
+            "Partition statistics",
+            "Column statistics"
+        ]
+    },
+    {
+        "q": "What is vectorization in Hive?",
+        "type": "mcq",
+        "o": [
+            "Processing batches of rows instead of one at a time",
+            "Single row processing",
+            "Parallel processing",
+            "Distributed processing"
+        ]
+    },
+    {
+        "q": "The _____ enables vectorized query execution.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.vectorized.execution.enabled"
+        ],
+        "other_options": [
+            "vectorization.enabled",
+            "vector.mode",
+            "batch.processing"
+        ]
+    },
+    {
+        "q": "Vectorization reduces CPU overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is predicate pushdown?",
+        "type": "mcq",
+        "o": [
+            "Moving filter conditions closer to data source",
+            "Filter optimization",
+            "Query rewrite",
+            "Condition pushdown"
+        ]
+    },
+    {
+        "q": "Match the optimization with its mechanism:",
+        "type": "match",
+        "left": [
+            "Predicate pushdown",
+            "Projection pushdown",
+            "Limit pushdown"
+        ],
+        "right": [
+            "Filter early",
+            "Select columns early",
+            "Limit early"
+        ]
+    },
+    {
+        "q": "Predicate pushdown reduces data scanned.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query result caching?",
+        "type": "mcq",
+        "o": [
+            "Storing query results for reuse",
+            "Table caching",
+            "Metadata caching",
+            "Data caching"
+        ]
+    },
+    {
+        "q": "The _____ caches intermediate query results.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.query.results.cache.enabled"
+        ],
+        "other_options": [
+            "cache.results",
+            "query.cache",
+            "result.cache"
+        ]
+    },
+    {
+        "q": "Rearrange the optimization priority:",
+        "type": "rearrange",
+        "words": [
+            "Partition pruning",
+            "Predicate pushdown",
+            "Vectorization",
+            "Join optimization"
+        ]
+    },
+    {
+        "q": "What is data skew in Hive?",
+        "type": "mcq",
+        "o": [
+            "Uneven distribution of data causing slow reducers",
+            "Data corruption",
+            "Missing data",
+            "Duplicate data"
+        ]
+    },
+    {
+        "q": "Skew join optimization handles skewed data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the skew problem with its solution:",
+        "type": "match",
+        "left": [
+            "Group by skew",
+            "Join skew",
+            "Partition skew"
+        ],
+        "right": [
+            "Skew data optimization",
+            "Skew join",
+            "Balanced partitioning"
+        ]
+    },
+    {
+        "q": "What is hive.groupby.skewindata?",
+        "type": "mcq",
+        "o": [
+            "Setting to handle skewed GROUP BY operations",
+            "Skew detection",
+            "Data balancing",
+            "Group splitting"
+        ]
+    },
+    {
+        "q": "The _____ splits skewed group by into two jobs.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.groupby.skewindata"
+        ],
+        "other_options": [
+            "skew.groupby",
+            "group.skew",
+            "balance.groupby"
+        ]
+    },
+    {
+        "q": "What is small files problem?",
+        "type": "mcq",
+        "o": [
+            "Too many small files reducing HDFS performance",
+            "Large files",
+            "Missing files",
+            "Corrupt files"
+        ]
+    },
+    {
+        "q": "Rearrange the small file solutions:",
+        "type": "rearrange",
+        "words": [
+            "Merge files",
+            "Use sequence files",
+            "Increase block size",
+            "HAR archives"
+        ]
+    },
+    {
+        "q": "Match the setting with its purpose:",
+        "type": "match",
+        "left": [
+            "hive.merge.mapfiles",
+            "hive.merge.mapredfiles",
+            "hive.merge.size.per.task"
+        ],
+        "right": [
+            "Merge map output",
+            "Merge reduce output",
+            "Target file size"
+        ]
+    },
+    {
+        "q": "What is ACID transactions in Hive?",
+        "type": "mcq",
+        "o": [
+            "Atomicity, Consistency, Isolation, Durability support",
+            "Advanced transactions",
+            "Complex transactions",
+            "Insert-only transactions"
+        ]
+    },
+    {
+        "q": "The _____ format is required for ACID tables.",
+        "type": "fill_blank",
+        "answers": [
+            "ORC"
+        ],
+        "other_options": [
+            "Parquet",
+            "Avro",
+            "Text"
+        ]
+    },
+    {
+        "q": "ACID tables support UPDATE and DELETE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is INSERT OVERWRITE vs INSERT INTO?",
+        "type": "mcq",
+        "o": [
+            "OVERWRITE replaces data, INTO appends data",
+            "INTO replaces data",
+            "OVERWRITE appends",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Match the ACID operation with its support:",
+        "type": "match",
+        "left": [
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "MERGE"
+        ],
+        "right": [
+            "All tables",
+            "ACID only",
+            "ACID only",
+            "ACID only"
+        ]
+    },
+    {
+        "q": "Rearrange the ACID requirements:",
+        "type": "rearrange",
+        "words": [
+            "ORC format",
+            "Transactional property",
+            "Bucketed table",
+            "Compaction"
+        ]
+    },
+    {
+        "q": "What is compaction in ACID tables?",
+        "type": "mcq",
+        "o": [
+            "Merging delta files into base files",
+            "Compression",
+            "Deletion",
+            "Archiving"
+        ]
+    },
+    {
+        "q": "The _____ compaction merges delta files.",
+        "type": "fill_blank",
+        "answers": [
+            "minor"
+        ],
+        "other_options": [
+            "major",
+            "full",
+            "incremental"
+        ]
+    },
+    {
+        "q": "Major compaction reads base and all deltas.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is MERGE statement?",
+        "type": "mcq",
+        "o": [
+            "Combines INSERT, UPDATE, DELETE in one operation",
+            "Join operation",
+            "Union operation",
+            "Combine tables"
+        ]
+    },
+    {
+        "q": "Match the compaction type with its scope:",
+        "type": "match",
+        "left": [
+            "Minor",
+            "Major"
+        ],
+        "right": [
+            "Delta files only",
+            "Base and deltas"
+        ]
+    },
+    {
+        "q": "What is Hive security?",
+        "type": "mcq",
+        "o": [
+            "Authentication and authorization in Hive",
+            "Data encryption",
+            "Network security",
+            "File permissions"
+        ]
+    },
+    {
+        "q": "The _____ provides fine-grained access control.",
+        "type": "fill_blank",
+        "answers": [
+            "Apache Ranger"
+        ],
+        "other_options": [
+            "Apache Sentry",
+            "Knox",
+            "HiveAuth"
+        ]
+    },
+    {
+        "q": "Rearrange the security layers:",
+        "type": "rearrange",
+        "words": [
+            "Authentication",
+            "Authorization",
+            "Encryption",
+            "Auditing"
+        ]
+    },
+    {
+        "q": "What is column-level security?",
+        "type": "mcq",
+        "o": [
+            "Restricting access to specific table columns",
+            "Row security",
+            "Table security",
+            "Database security"
+        ]
+    },
+    {
+        "q": "Ranger supports column masking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the security feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Column masking",
+            "Row filtering",
+            "Table grant"
+        ],
+        "right": [
+            "Hide sensitive data",
+            "Filter rows by user",
+            "Control table access"
+        ]
+    },
+    {
+        "q": "What is Hive warehouse directory?",
+        "type": "mcq",
+        "o": [
+            "Default HDFS location for managed table data",
+            "Metadata location",
+            "Log directory",
+            "Temp directory"
+        ]
+    },
+    {
+        "q": "The _____ property sets warehouse location.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.metastore.warehouse.dir"
+        ],
+        "other_options": [
+            "warehouse.dir",
+            "hive.warehouse",
+            "data.dir"
+        ]
+    },
+    {
+        "q": "Default warehouse is /user/hive/warehouse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is HDFS file permission in Hive?",
+        "type": "mcq",
+        "o": [
+            "Unix-style permissions on HDFS data files",
+            "Hive permissions",
+            "Database permissions",
+            "Query permissions"
+        ]
+    },
+    {
+        "q": "Match the permission with its access:",
+        "type": "match",
+        "left": [
+            "Read",
+            "Write",
+            "Execute"
+        ],
+        "right": [
+            "View data",
+            "Modify data",
+            "Access directory"
+        ]
+    },
+    {
+        "q": "What is GRANT statement?",
+        "type": "mcq",
+        "o": [
+            "Gives privileges to users or roles",
+            "Creates users",
+            "Removes access",
+            "Lists permissions"
+        ]
+    },
+    {
+        "q": "The _____ statement removes granted privileges.",
+        "type": "fill_blank",
+        "answers": [
+            "REVOKE"
+        ],
+        "other_options": [
+            "REMOVE",
+            "DELETE",
+            "DROP"
+        ]
+    },
+    {
+        "q": "Rearrange the privilege hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "ALL",
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "What is a role in Hive?",
+        "type": "mcq",
+        "o": [
+            "Named set of privileges that can be assigned to users",
+            "User type",
+            "Permission level",
+            "Access group"
+        ]
+    },
+    {
+        "q": "Roles simplify privilege management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is row-level security?",
+        "type": "mcq",
+        "o": [
+            "Restricting access to specific rows based on conditions",
+            "Column security",
+            "Table security",
+            "Database security"
+        ]
+    },
+    {
+        "q": "Match the security level with its scope:",
+        "type": "match",
+        "left": [
+            "Database",
+            "Table",
+            "Column",
+            "Row"
+        ],
+        "right": [
+            "Widest",
+            "Wide",
+            "Narrow",
+            "Narrowest"
+        ]
+    },
+    {
+        "q": "What is Hive on cloud?",
+        "type": "mcq",
+        "o": [
+            "Running Hive on cloud platforms like AWS, Azure, GCP",
+            "Local Hive",
+            "On-premise Hive",
+            "Hybrid Hive"
+        ]
+    },
+    {
+        "q": "The _____ service provides managed Hive on AWS.",
+        "type": "fill_blank",
+        "answers": [
+            "EMR"
+        ],
+        "other_options": [
+            "EC2",
+            "S3",
+            "Redshift"
+        ]
+    },
+    {
+        "q": "HDInsight provides Hive on Azure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Hive integration with S3?",
+        "type": "mcq",
+        "o": [
+            "Using S3 as storage backend for Hive tables",
+            "S3 database",
+            "S3 query",
+            "S3 compute"
+        ]
+    },
+    {
+        "q": "Rearrange the cloud storage options:",
+        "type": "rearrange",
+        "words": [
+            "S3",
+            "Azure Blob",
+            "GCS",
+            "ADLS"
+        ]
+    },
+    {
+        "q": "Match the cloud platform with its storage:",
+        "type": "match",
+        "left": [
+            "AWS",
+            "Azure",
+            "GCP"
+        ],
+        "right": [
+            "S3",
+            "ADLS",
+            "GCS"
+        ]
+    },
+    {
+        "q": "What is schema evolution in Hive?",
+        "type": "mcq",
+        "o": [
+            "Adding or modifying columns without recreating table",
+            "Schema change",
+            "Table rebuild",
+            "Data migration"
+        ]
+    },
+    {
+        "q": "The _____ format supports schema evolution well.",
+        "type": "fill_blank",
+        "answers": [
+            "Avro"
+        ],
+        "other_options": [
+            "Text",
+            "Sequence",
+            "RC"
+        ]
+    },
+    {
+        "q": "ALTER TABLE ADD COLUMNS supports schema evolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is table repair?",
+        "type": "mcq",
+        "o": [
+            "MSCK REPAIR TABLE to sync partitions with HDFS",
+            "Fix corruption",
+            "Rebuild table",
+            "Data recovery"
+        ]
+    },
+    {
+        "q": "Match the command with its purpose:",
+        "type": "match",
+        "left": [
+            "MSCK REPAIR TABLE",
+            "ALTER TABLE RECOVER PARTITIONS"
+        ],
+        "right": [
+            "Sync partitions",
+            "Same as MSCK"
+        ]
+    },
+    {
+        "q": "Rearrange the partition management commands:",
+        "type": "rearrange",
+        "words": [
+            "ADD PARTITION",
+            "DROP PARTITION",
+            "REPAIR TABLE",
+            "RENAME PARTITION"
+        ]
+    },
+    {
+        "q": "What is TRUNCATE TABLE?",
+        "type": "mcq",
+        "o": [
+            "Removes all rows from table but keeps structure",
+            "Drops table",
+            "Deletes columns",
+            "Empties database"
+        ]
+    },
+    {
+        "q": "TRUNCATE is faster than DELETE for removing all rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is DROP TABLE?",
+        "type": "mcq",
+        "o": [
+            "Removes table definition and optionally data",
+            "Truncates table",
+            "Empties table",
+            "Clears table"
+        ]
+    },
+    {
+        "q": "The _____ keyword prevents error if table does not exist.",
+        "type": "fill_blank",
+        "answers": [
+            "IF EXISTS"
+        ],
+        "other_options": [
+            "IF NOT EXISTS",
+            "OPTIONAL",
+            "SAFE"
+        ]
+    },
+    {
+        "q": "What is RENAME TABLE?",
+        "type": "mcq",
+        "o": [
+            "Changes table name using ALTER TABLE RENAME",
+            "Creates copy",
+            "Moves data",
+            "Duplicates table"
+        ]
+    },
+    {
+        "q": "Match the ALTER operation with its syntax:",
+        "type": "match",
+        "left": [
+            "Rename",
+            "Add columns",
+            "Change column"
+        ],
+        "right": [
+            "RENAME TO",
+            "ADD COLUMNS",
+            "CHANGE COLUMN"
+        ]
+    },
+    {
+        "q": "What is table properties?",
+        "type": "mcq",
+        "o": [
+            "Key-value metadata attached to table",
+            "Column properties",
+            "Data properties",
+            "Storage properties"
+        ]
+    },
+    {
+        "q": "Rearrange the table property operations:",
+        "type": "rearrange",
+        "words": [
+            "SET TBLPROPERTIES",
+            "SHOW TBLPROPERTIES",
+            "UNSET TBLPROPERTIES"
+        ]
+    },
+    {
+        "q": "The _____ clause sets table properties during creation.",
+        "type": "fill_blank",
+        "answers": [
+            "TBLPROPERTIES"
+        ],
+        "other_options": [
+            "PROPERTIES",
+            "SETTINGS",
+            "CONFIG"
+        ]
+    },
+    {
+        "q": "What is date and timestamp in Hive?",
+        "type": "mcq",
+        "o": [
+            "Data types for date and time values",
+            "String types",
+            "Numeric types",
+            "Binary types"
+        ]
+    },
+    {
+        "q": "DATE stores year, month, and day only.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the date function with its output:",
+        "type": "match",
+        "left": [
+            "current_date",
+            "current_timestamp",
+            "to_date"
+        ],
+        "right": [
+            "Current date",
+            "Current datetime",
+            "Extract date from timestamp"
+        ]
+    },
+    {
+        "q": "What is date_format function?",
+        "type": "mcq",
+        "o": [
+            "Formats date/timestamp to specified pattern",
+            "Parse date",
+            "Compare dates",
+            "Add dates"
+        ]
+    },
+    {
+        "q": "The _____ function adds days to a date.",
+        "type": "fill_blank",
+        "answers": [
+            "date_add"
+        ],
+        "other_options": [
+            "add_days",
+            "plus_days",
+            "adddate"
+        ]
+    },
+    {
+        "q": "Rearrange the date operations:",
+        "type": "rearrange",
+        "words": [
+            "Parse",
+            "Calculate",
+            "Format",
+            "Compare"
+        ]
+    },
+    {
+        "q": "What is datediff function?",
+        "type": "mcq",
+        "o": [
+            "Returns number of days between two dates",
+            "Date comparison",
+            "Date addition",
+            "Date format"
+        ]
+    },
+    {
+        "q": "months_between returns fractional months.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is string functions in Hive?",
+        "type": "mcq",
+        "o": [
+            "Functions for string manipulation",
+            "Text types",
+            "Character sets",
+            "Encoding functions"
+        ]
+    },
+    {
+        "q": "Match the string function with its purpose:",
+        "type": "match",
+        "left": [
+            "concat",
+            "substr",
+            "trim",
+            "length"
+        ],
+        "right": [
+            "Join strings",
+            "Extract part",
+            "Remove spaces",
+            "Count characters"
+        ]
+    },
+    {
+        "q": "The _____ function joins multiple strings with separator.",
+        "type": "fill_blank",
+        "answers": [
+            "concat_ws"
+        ],
+        "other_options": [
+            "concat",
+            "join",
+            "merge"
+        ]
+    },
+    {
+        "q": "What is regexp_extract?",
+        "type": "mcq",
+        "o": [
+            "Extracts matching pattern from string",
+            "Replace pattern",
+            "Match pattern",
+            "Split by pattern"
+        ]
+    },
+    {
+        "q": "Rearrange the string functions by complexity:",
+        "type": "rearrange",
+        "words": [
+            "concat",
+            "substr",
+            "regexp_replace",
+            "translate"
+        ]
+    },
+    {
+        "q": "What is split function?",
+        "type": "mcq",
+        "o": [
+            "Splits string by delimiter into array",
+            "Joins strings",
+            "Trims string",
+            "Reverses string"
+        ]
+    },
+    {
+        "q": "split returns an ARRAY type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the function with its return type:",
+        "type": "match",
+        "left": [
+            "split",
+            "size",
+            "collect_list"
+        ],
+        "right": [
+            "Array",
+            "Integer",
+            "Array"
+        ]
+    },
+    {
+        "q": "What is aggregate functions in Hive?",
+        "type": "mcq",
+        "o": [
+            "Functions that compute single result from multiple rows",
+            "Row functions",
+            "Column functions",
+            "Table functions"
+        ]
+    },
+    {
+        "q": "The _____ function counts distinct values.",
+        "type": "fill_blank",
+        "answers": [
+            "count(DISTINCT)"
+        ],
+        "other_options": [
+            "distinct_count",
+            "unique_count",
+            "count_unique"
+        ]
+    },
+    {
+        "q": "What is collect_list?",
+        "type": "mcq",
+        "o": [
+            "Aggregates values into array with duplicates",
+            "Unique collection",
+            "List creation",
+            "Array builder"
+        ]
+    },
+    {
+        "q": "collect_set removes duplicates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the aggregate functions:",
+        "type": "rearrange",
+        "words": [
+            "SUM",
+            "AVG",
+            "MAX",
+            "MIN",
+            "COUNT"
+        ]
+    },
+    {
+        "q": "What is GROUPING SETS?",
+        "type": "mcq",
+        "o": [
+            "Multiple GROUP BY in single query",
+            "Group sorting",
+            "Set grouping",
+            "Collection grouping"
+        ]
+    },
+    {
+        "q": "Match the grouping clause with its result:",
+        "type": "match",
+        "left": [
+            "GROUPING SETS",
+            "CUBE",
+            "ROLLUP"
+        ],
+        "right": [
+            "Specific combinations",
+            "All combinations",
+            "Hierarchical"
+        ]
+    },
+    {
+        "q": "The _____ produces all possible grouping combinations.",
+        "type": "fill_blank",
+        "answers": [
+            "CUBE"
+        ],
+        "other_options": [
+            "ROLLUP",
+            "GROUPING",
+            "ALL"
+        ]
+    },
+    {
+        "q": "What is ROLLUP?",
+        "type": "mcq",
+        "o": [
+            "Hierarchical aggregation from detailed to total",
+            "Reverse aggregation",
+            "Flat grouping",
+            "Simple grouping"
+        ]
+    },
+    {
+        "q": "ROLLUP produces subtotals and grand total.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is conditional functions in Hive?",
+        "type": "mcq",
+        "o": [
+            "Functions for conditional logic like CASE, IF",
+            "Loop functions",
+            "Boolean functions",
+            "Filter functions"
+        ]
+    },
+    {
+        "q": "Rearrange the CASE syntax:",
+        "type": "rearrange",
+        "words": [
+            "CASE",
+            "WHEN condition",
+            "THEN result",
+            "ELSE default",
+            "END"
+        ]
+    },
+    {
+        "q": "Match the conditional function with its usage:",
+        "type": "match",
+        "left": [
+            "CASE",
+            "IF",
+            "COALESCE",
+            "NVL"
+        ],
+        "right": [
+            "Multiple conditions",
+            "Binary condition",
+            "First non-null",
+            "Replace null"
+        ]
+    },
+    {
+        "q": "What is COALESCE?",
+        "type": "mcq",
+        "o": [
+            "Returns first non-null value from arguments",
+            "Combines values",
+            "Checks null",
+            "Replaces value"
+        ]
+    },
+    {
+        "q": "The _____ function replaces null with specified value.",
+        "type": "fill_blank",
+        "answers": [
+            "NVL"
+        ],
+        "other_options": [
+            "IFNULL",
+            "NULLIF",
+            "ISNULL"
+        ]
+    },
+    {
+        "q": "NULLIF returns null if arguments are equal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is math functions in Hive?",
+        "type": "mcq",
+        "o": [
+            "Functions for mathematical operations",
+            "Statistical functions",
+            "Numeric types",
+            "Calculation types"
+        ]
+    },
+    {
+        "q": "Match the math function with its operation:",
+        "type": "match",
+        "left": [
+            "round",
+            "floor",
+            "ceil",
+            "abs"
+        ],
+        "right": [
+            "Round to places",
+            "Round down",
+            "Round up",
+            "Absolute value"
+        ]
+    },
+    {
+        "q": "The _____ function returns random number.",
+        "type": "fill_blank",
+        "answers": [
+            "rand"
+        ],
+        "other_options": [
+            "random",
+            "rnd",
+            "randint"
+        ]
+    },
+    {
+        "q": "What is type conversion in Hive?",
+        "type": "mcq",
+        "o": [
+            "Converting between data types using CAST",
+            "Type check",
+            "Type validation",
+            "Type creation"
+        ]
+    },
+    {
+        "q": "Rearrange the CAST syntax:",
+        "type": "rearrange",
+        "words": [
+            "CAST",
+            "(expression",
+            "AS",
+            "target_type)"
+        ]
+    },
+    {
+        "q": "Implicit type conversion happens automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Hive variable substitution?",
+        "type": "mcq",
+        "o": [
+            "Using variables in Hive queries",
+            "Variable declaration",
+            "Parameter passing",
+            "Constant definition"
+        ]
+    },
+    {
+        "q": "Match the variable type with its prefix:",
+        "type": "match",
+        "left": [
+            "hivevar",
+            "hiveconf",
+            "system",
+            "env"
+        ],
+        "right": [
+            "User variables",
+            "Hive config",
+            "System props",
+            "Environment"
+        ]
+    },
+    {
+        "q": "The _____ command sets Hive configuration.",
+        "type": "fill_blank",
+        "answers": [
+            "SET"
+        ],
+        "other_options": [
+            "CONFIG",
+            "DEFINE",
+            "ASSIGN"
+        ]
+    },
+    {
+        "q": "What is Hive CLI parameters?",
+        "type": "mcq",
+        "o": [
+            "Command line options for Hive shell",
+            "Query parameters",
+            "Function parameters",
+            "Connection parameters"
+        ]
+    },
+    {
+        "q": "-e flag executes query directly from command line.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the CLI options:",
+        "type": "rearrange",
+        "words": [
+            "-e 'query'",
+            "-f script.hql",
+            "-i init.hql",
+            "-S silent"
+        ]
+    },
+    {
+        "q": "What is .hiverc file?",
+        "type": "mcq",
+        "o": [
+            "Initialization script executed on Hive startup",
+            "Configuration file",
+            "Data file",
+            "Log file"
+        ]
+    },
+    {
+        "q": "Match the file with its purpose:",
+        "type": "match",
+        "left": [
+            ".hiverc",
+            "hive-site.xml",
+            "hive-log4j2.properties"
+        ],
+        "right": [
+            "User init",
+            "Server config",
+            "Logging config"
+        ]
+    },
+    {
+        "q": "What is explain plan?",
+        "type": "mcq",
+        "o": [
+            "Shows execution plan for query",
+            "Executes query",
+            "Optimizes query",
+            "Validates query"
+        ]
+    },
+    {
+        "q": "The _____ keyword shows detailed execution plan.",
+        "type": "fill_blank",
+        "answers": [
+            "EXPLAIN"
+        ],
+        "other_options": [
+            "PLAN",
+            "ANALYZE",
+            "DESCRIBE"
+        ]
+    },
+    {
+        "q": "EXPLAIN EXTENDED shows more details.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is EXPLAIN DEPENDENCY?",
+        "type": "mcq",
+        "o": [
+            "Shows input tables and partitions",
+            "Table dependencies",
+            "Query dependencies",
+            "Column dependencies"
+        ]
+    },
+    {
+        "q": "Rearrange the EXPLAIN types:",
+        "type": "rearrange",
+        "words": [
+            "EXPLAIN",
+            "EXPLAIN EXTENDED",
+            "EXPLAIN DEPENDENCY",
+            "EXPLAIN AUTHORIZATION"
+        ]
+    },
+    {
+        "q": "Match the execution plan stage with its function:",
+        "type": "match",
+        "left": [
+            "Map Operator Tree",
+            "Reduce Operator Tree"
+        ],
+        "right": [
+            "Mapper operations",
+            "Reducer operations"
+        ]
+    },
+    {
+        "q": "What is Hive query tuning?",
+        "type": "mcq",
+        "o": [
+            "Optimizing queries for better performance",
+            "Query rewriting",
+            "Query caching",
+            "Query profiling"
+        ]
+    },
+    {
+        "q": "Large joins should put smaller table on left.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is parallel execution?",
+        "type": "mcq",
+        "o": [
+            "Running independent stages concurrently",
+            "Sequential execution",
+            "Batch execution",
+            "Stream execution"
+        ]
+    },
+    {
+        "q": "The _____ enables parallel query execution.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.exec.parallel"
+        ],
+        "other_options": [
+            "parallel.enabled",
+            "concurrent.exec",
+            "multi.thread"
+        ]
+    },
+    {
+        "q": "Match the tuning setting with its effect:",
+        "type": "match",
+        "left": [
+            "hive.exec.parallel",
+            "hive.vectorized.execution.enabled",
+            "hive.cbo.enable"
+        ],
+        "right": [
+            "Concurrent stages",
+            "Batch rows",
+            "Optimizer stats"
+        ]
+    },
+    {
+        "q": "What is reducer optimization?",
+        "type": "mcq",
+        "o": [
+            "Setting optimal number of reducers",
+            "Reduce elimination",
+            "Reduce caching",
+            "Reduce parallelism"
+        ]
+    },
+    {
+        "q": "Rearrange the reducer settings:",
+        "type": "rearrange",
+        "words": [
+            "mapreduce.job.reduces",
+            "hive.exec.reducers.bytes.per.reducer",
+            "hive.exec.reducers.max"
+        ]
+    },
+    {
+        "q": "Too many reducers create small output files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is mapper optimization?",
+        "type": "mcq",
+        "o": [
+            "Controlling number of mappers for efficiency",
+            "Map elimination",
+            "Map caching",
+            "Map splitting"
+        ]
+    },
+    {
+        "q": "The _____ controls input split size.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.input.fileinputformat.split.maxsize"
+        ],
+        "other_options": [
+            "split.size",
+            "mapper.split",
+            "input.split"
+        ]
+    },
+    {
+        "q": "What is speculative execution?",
+        "type": "mcq",
+        "o": [
+            "Running duplicate tasks to handle stragglers",
+            "Predictive execution",
+            "Parallel execution",
+            "Backup execution"
+        ]
+    },
+    {
+        "q": "Match the speculative setting with its scope:",
+        "type": "match",
+        "left": [
+            "mapreduce.map.speculative",
+            "mapreduce.reduce.speculative"
+        ],
+        "right": [
+            "Map tasks",
+            "Reduce tasks"
+        ]
+    },
+    {
+        "q": "Speculative execution helps with slow nodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is index in Hive?",
+        "type": "mcq",
+        "o": [
+            "Data structure to speed up queries (deprecated)",
+            "Primary key",
+            "Foreign key",
+            "Unique constraint"
+        ]
+    },
+    {
+        "q": "Hive indexes are deprecated in favor of materialized views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the optimization alternatives:",
+        "type": "rearrange",
+        "words": [
+            "Partitioning",
+            "Bucketing",
+            "Materialized views",
+            "ORC with bloom filters"
+        ]
+    },
+    {
+        "q": "What is bloom filter in ORC?",
+        "type": "mcq",
+        "o": [
+            "Probabilistic filter for faster predicate evaluation",
+            "Compression filter",
+            "Row filter",
+            "Column filter"
+        ]
+    },
+    {
+        "q": "Match the ORC feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Bloom filter",
+            "Predicate pushdown",
+            "Column pruning"
+        ],
+        "right": [
+            "Skip row groups",
+            "Filter early",
+            "Read fewer columns"
+        ]
+    },
+    {
+        "q": "The _____ property enables bloom filters.",
+        "type": "fill_blank",
+        "answers": [
+            "orc.bloom.filter.columns"
+        ],
+        "other_options": [
+            "bloom.enabled",
+            "filter.columns",
+            "orc.filter"
+        ]
+    },
+    {
+        "q": "What is stripe in ORC?",
+        "type": "mcq",
+        "o": [
+            "Group of rows stored together in ORC file",
+            "Column group",
+            "File section",
+            "Data block"
+        ]
+    },
+    {
+        "q": "Stripes contain index, data, and footer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ORC file structure:",
+        "type": "rearrange",
+        "words": [
+            "File header",
+            "Stripe 1...N",
+            "File footer",
+            "Postscript"
+        ]
+    },
+    {
+        "q": "What is row group in ORC?",
+        "type": "mcq",
+        "o": [
+            "Subset of rows within a stripe",
+            "Column group",
+            "Data group",
+            "Index group"
+        ]
+    },
+    {
+        "q": "Match the ORC component with its content:",
+        "type": "match",
+        "left": [
+            "Row index",
+            "Stripe footer",
+            "File footer"
+        ],
+        "right": [
+            "Min/max values",
+            "Column encoding",
+            "Schema info"
+        ]
+    },
+    {
+        "q": "What is late data arrival?",
+        "type": "mcq",
+        "o": [
+            "Data arriving after partition is closed",
+            "Delayed query",
+            "Slow processing",
+            "Late response"
+        ]
+    },
+    {
+        "q": "The _____ mode handles late arriving data.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic partition"
+        ],
+        "other_options": [
+            "static partition",
+            "late mode",
+            "append mode"
+        ]
+    },
+    {
+        "q": "What is multi-insert?",
+        "type": "mcq",
+        "o": [
+            "Inserting into multiple tables from single scan",
+            "Batch insert",
+            "Bulk insert",
+            "Parallel insert"
+        ]
+    },
+    {
+        "q": "Multi-insert reduces data scans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the multi-insert syntax:",
+        "type": "rearrange",
+        "words": [
+            "FROM source_table",
+            "INSERT INTO table1",
+            "SELECT...",
+            "INSERT INTO table2",
+            "SELECT..."
+        ]
+    },
+    {
+        "q": "What is CTAS?",
+        "type": "mcq",
+        "o": [
+            "Create Table As Select - creates table from query",
+            "Copy table",
+            "Clone table",
+            "Template table"
+        ]
+    },
+    {
+        "q": "Match the table creation with its usage:",
+        "type": "match",
+        "left": [
+            "CREATE TABLE",
+            "CTAS",
+            "CREATE LIKE"
+        ],
+        "right": [
+            "Define schema",
+            "Create from query",
+            "Copy schema only"
+        ]
+    },
+    {
+        "q": "The _____ creates table with same schema as another.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE TABLE LIKE"
+        ],
+        "other_options": [
+            "COPY TABLE",
+            "CLONE TABLE",
+            "TEMPLATE"
+        ]
+    },
+    {
+        "q": "What is temporary table?",
+        "type": "mcq",
+        "o": [
+            "Table visible only in current session",
+            "Permanent table",
+            "Cached table",
+            "Virtual table"
+        ]
+    },
+    {
+        "q": "Temporary tables are automatically dropped on session end.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the table types by visibility:",
+        "type": "rearrange",
+        "words": [
+            "Temporary",
+            "View",
+            "Managed",
+            "External"
+        ]
+    },
+    {
+        "q": "What is transactional table?",
+        "type": "mcq",
+        "o": [
+            "ACID-enabled table supporting transactions",
+            "Normal table",
+            "External table",
+            "Temporary table"
+        ]
+    },
+    {
+        "q": "Match the transactional setting with its requirement:",
+        "type": "match",
+        "left": [
+            "transactional=true",
+            "transactional_properties=insert_only"
+        ],
+        "right": [
+            "Full ACID",
+            "Insert-only ACID"
+        ]
+    },
+    {
+        "q": "The _____ property marks table as transactional.",
+        "type": "fill_blank",
+        "answers": [
+            "transactional"
+        ],
+        "other_options": [
+            "acid",
+            "transaction",
+            "atomicity"
+        ]
+    },
+    {
+        "q": "What is insert-only transactional table?",
+        "type": "mcq",
+        "o": [
+            "ACID table that only supports INSERT",
+            "Read-only table",
+            "Append table",
+            "Write-once table"
+        ]
+    },
+    {
+        "q": "Insert-only tables have lower overhead than full ACID.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is snapshot isolation?",
+        "type": "mcq",
+        "o": [
+            "Readers see consistent snapshot while writers update",
+            "Read lock",
+            "Write lock",
+            "Exclusive lock"
+        ]
+    },
+    {
+        "q": "Rearrange the isolation levels:",
+        "type": "rearrange",
+        "words": [
+            "Read uncommitted",
+            "Read committed",
+            "Repeatable read",
+            "Serializable"
+        ]
+    },
+    {
+        "q": "Match the ACID property with its meaning:",
+        "type": "match",
+        "left": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+        ],
+        "right": [
+            "All or nothing",
+            "Valid state",
+            "Concurrent safety",
+            "Persist after commit"
+        ]
+    },
+    {
+        "q": "What is lock manager in Hive?",
+        "type": "mcq",
+        "o": [
+            "Component managing locks for ACID operations",
+            "Permission manager",
+            "Resource manager",
+            "Transaction manager"
+        ]
+    },
+    {
+        "q": "The _____ command shows current locks.",
+        "type": "fill_blank",
+        "answers": [
+            "SHOW LOCKS"
+        ],
+        "other_options": [
+            "LIST LOCKS",
+            "VIEW LOCKS",
+            "GET LOCKS"
+        ]
+    },
+    {
+        "q": "Shared locks allow concurrent reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is lock types in Hive?",
+        "type": "mcq",
+        "o": [
+            "Shared and exclusive locks for concurrency",
+            "Read and write modes",
+            "Open and closed states",
+            "Active and passive locks"
+        ]
+    },
+    {
+        "q": "Match the lock type with its behavior:",
+        "type": "match",
+        "left": [
+            "Shared",
+            "Exclusive"
+        ],
+        "right": [
+            "Multiple readers",
+            "Single writer"
+        ]
+    },
+    {
+        "q": "Rearrange the lock acquisition order:",
+        "type": "rearrange",
+        "words": [
+            "Request lock",
+            "Wait if conflict",
+            "Acquire lock",
+            "Execute operation",
+            "Release lock"
+        ]
+    },
+    {
+        "q": "What is deadlock in Hive?",
+        "type": "mcq",
+        "o": [
+            "Circular wait between transactions for locks",
+            "Lock failure",
+            "Lock timeout",
+            "Lock error"
+        ]
+    },
+    {
+        "q": "Hive detects and resolves deadlocks automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is write id in ACID?",
+        "type": "mcq",
+        "o": [
+            "Identifier for write transaction in ACID table",
+            "Row id",
+            "Transaction id",
+            "Version id"
+        ]
+    },
+    {
+        "q": "Match the ACID file with its content:",
+        "type": "match",
+        "left": [
+            "Base file",
+            "Delta file",
+            "Delete delta"
+        ],
+        "right": [
+            "Original data",
+            "Inserted/updated rows",
+            "Deleted rows"
+        ]
+    },
+    {
+        "q": "The _____ directory contains base data.",
+        "type": "fill_blank",
+        "answers": [
+            "base_"
+        ],
+        "other_options": [
+            "data_",
+            "original_",
+            "init_"
+        ]
+    },
+    {
+        "q": "What is compaction queue?",
+        "type": "mcq",
+        "o": [
+            "Queue of tables/partitions pending compaction",
+            "Job queue",
+            "Task queue",
+            "Request queue"
+        ]
+    },
+    {
+        "q": "Rearrange the compaction lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Enqueue",
+            "Pick for compaction",
+            "Run compaction",
+            "Mark completed"
+        ]
+    },
+    {
+        "q": "What is compaction initiator?",
+        "type": "mcq",
+        "o": [
+            "Thread that identifies tables needing compaction",
+            "Compaction runner",
+            "Compaction scheduler",
+            "Compaction monitor"
+        ]
+    },
+    {
+        "q": "Match the compaction component with its role:",
+        "type": "match",
+        "left": [
+            "Initiator",
+            "Worker",
+            "Cleaner"
+        ],
+        "right": [
+            "Find candidates",
+            "Run compaction",
+            "Remove old files"
+        ]
+    },
+    {
+        "q": "The _____ removes old delta files after compaction.",
+        "type": "fill_blank",
+        "answers": [
+            "Cleaner"
+        ],
+        "other_options": [
+            "Remover",
+            "Deleter",
+            "Garbage collector"
+        ]
+    },
+    {
+        "q": "What is Hive migration?",
+        "type": "mcq",
+        "o": [
+            "Moving from older Hive version or other systems",
+            "Data movement",
+            "Table copy",
+            "Schema transfer"
+        ]
+    },
+    {
+        "q": "ACID migration requires schema changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the migration steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze current state",
+            "Plan migration",
+            "Execute migration",
+            "Validate results"
+        ]
+    },
+    {
+        "q": "What is cross-platform integration?",
+        "type": "mcq",
+        "o": [
+            "Using Hive with Spark, Presto, Impala",
+            "Cloud migration",
+            "Database connection",
+            "API integration"
+        ]
+    },
+    {
+        "q": "Match the engine with its Hive integration:",
+        "type": "match",
+        "left": [
+            "Spark",
+            "Presto",
+            "Impala"
+        ],
+        "right": [
+            "SparkSQL with Hive metastore",
+            "Hive connector",
+            "Hive metastore"
+        ]
+    },
+    {
+        "q": "The _____ enables Spark to access Hive tables.",
+        "type": "fill_blank",
+        "answers": [
+            "Hive metastore"
+        ],
+        "other_options": [
+            "HiveServer",
+            "Hive connector",
+            "Hive bridge"
+        ]
+    },
+    {
+        "q": "What is Hive vs Impala?",
+        "type": "mcq",
+        "o": [
+            "Hive is batch-oriented, Impala is interactive",
+            "Same performance",
+            "Impala is batch-oriented",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Impala uses MPP architecture for faster queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the query engine with its strength:",
+        "type": "match",
+        "left": [
+            "Hive",
+            "Impala",
+            "Presto"
+        ],
+        "right": [
+            "Complex ETL",
+            "Interactive queries",
+            "Federated queries"
+        ]
+    },
+    {
+        "q": "What is Hive testing?",
+        "type": "mcq",
+        "o": [
+            "Testing Hive queries and scripts",
+            "Performance testing",
+            "Load testing",
+            "Stress testing"
+        ]
+    },
+    {
+        "q": "Rearrange the testing types:",
+        "type": "rearrange",
+        "words": [
+            "Unit testing",
+            "Integration testing",
+            "Performance testing",
+            "Regression testing"
+        ]
+    },
+    {
+        "q": "The _____ framework supports Hive query testing.",
+        "type": "fill_blank",
+        "answers": [
+            "HiveRunner"
+        ],
+        "other_options": [
+            "HiveTest",
+            "QueryTest",
+            "HiveJUnit"
+        ]
+    },
+    {
+        "q": "What is data validation in Hive?",
+        "type": "mcq",
+        "o": [
+            "Verifying data quality and integrity",
+            "Schema validation",
+            "Query validation",
+            "Type validation"
+        ]
+    },
+    {
+        "q": "Data profiling helps understand data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the validation check with its purpose:",
+        "type": "match",
+        "left": [
+            "Null check",
+            "Range check",
+            "Format check"
+        ],
+        "right": [
+            "Missing values",
+            "Value bounds",
+            "Data pattern"
+        ]
+    },
+    {
+        "q": "What is Hive monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking query performance and resource usage",
+            "Data monitoring",
+            "Table monitoring",
+            "Schema monitoring"
+        ]
+    },
+    {
+        "q": "The _____ tracks Hive query execution.",
+        "type": "fill_blank",
+        "answers": [
+            "Tez UI"
+        ],
+        "other_options": [
+            "Hive UI",
+            "Query UI",
+            "Job UI"
+        ]
+    },
+    {
+        "q": "Rearrange the monitoring layers:",
+        "type": "rearrange",
+        "words": [
+            "Query level",
+            "Job level",
+            "Task level",
+            "Resource level"
+        ]
+    },
+    {
+        "q": "What is query logging?",
+        "type": "mcq",
+        "o": [
+            "Recording query execution details for analysis",
+            "Error logging",
+            "System logging",
+            "Event logging"
+        ]
+    },
+    {
+        "q": "Match the log with its content:",
+        "type": "match",
+        "left": [
+            "Hive log",
+            "YARN log",
+            "Tez log"
+        ],
+        "right": [
+            "Query parsing",
+            "Resource allocation",
+            "DAG execution"
+        ]
+    },
+    {
+        "q": "What is resource queue in YARN?",
+        "type": "mcq",
+        "o": [
+            "Pool of resources for job scheduling",
+            "Job queue",
+            "Task queue",
+            "Request queue"
+        ]
+    },
+    {
+        "q": "The _____ property sets YARN queue for Hive job.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.job.queuename"
+        ],
+        "other_options": [
+            "yarn.queue",
+            "job.queue",
+            "resource.queue"
+        ]
+    },
+    {
+        "q": "Capacity scheduler allows queue hierarchies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is memory configuration?",
+        "type": "mcq",
+        "o": [
+            "Setting JVM heap and container memory",
+            "Cache configuration",
+            "Buffer configuration",
+            "Storage configuration"
+        ]
+    },
+    {
+        "q": "Rearrange the memory components:",
+        "type": "rearrange",
+        "words": [
+            "Container memory",
+            "JVM heap",
+            "Metaspace",
+            "Off-heap"
+        ]
+    },
+    {
+        "q": "Match the memory setting with its purpose:",
+        "type": "match",
+        "left": [
+            "mapreduce.map.memory.mb",
+            "mapreduce.reduce.memory.mb"
+        ],
+        "right": [
+            "Mapper container",
+            "Reducer container"
+        ]
+    },
+    {
+        "q": "What is container sizing?",
+        "type": "mcq",
+        "o": [
+            "Determining optimal memory for map/reduce containers",
+            "File sizing",
+            "Partition sizing",
+            "Block sizing"
+        ]
+    },
+    {
+        "q": "The _____ should not exceed node memory.",
+        "type": "fill_blank",
+        "answers": [
+            "container memory"
+        ],
+        "other_options": [
+            "heap memory",
+            "task memory",
+            "process memory"
+        ]
+    },
+    {
+        "q": "What is Hive best practices?",
+        "type": "mcq",
+        "o": [
+            "Recommended approaches for optimal Hive usage",
+            "Rules",
+            "Requirements",
+            "Standards"
+        ]
+    },
+    {
+        "q": "Use ORC format for best performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the best practices priority:",
+        "type": "rearrange",
+        "words": [
+            "Partitioning",
+            "File format",
+            "Compression",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Match the practice with its benefit:",
+        "type": "match",
+        "left": [
+            "Use partitions",
+            "Use ORC",
+            "Enable vectorization",
+            "Collect statistics"
+        ],
+        "right": [
+            "Reduce scan",
+            "Better compression",
+            "Batch processing",
+            "Better plans"
+        ]
+    },
+    {
+        "q": "What is Hive workload management?",
+        "type": "mcq",
+        "o": [
+            "Managing resources across different query types",
+            "Task management",
+            "Job scheduling",
+            "Process control"
+        ]
+    },
+    {
+        "q": "The _____ manages query resources in LLAP.",
+        "type": "fill_blank",
+        "answers": [
+            "workload manager"
+        ],
+        "other_options": [
+            "resource manager",
+            "query manager",
+            "job manager"
+        ]
+    },
+    {
+        "q": "Workload management enables query prioritization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is resource plan in Hive?",
+        "type": "mcq",
+        "o": [
+            "Configuration for workload management policies",
+            "Memory plan",
+            "Execution plan",
+            "Query plan"
+        ]
+    },
+    {
+        "q": "Match the resource concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Resource pool",
+            "Trigger",
+            "Mapping"
+        ],
+        "right": [
+            "Resource allocation",
+            "Automatic action",
+            "User to pool"
+        ]
+    },
+    {
+        "q": "Rearrange the workload management setup:",
+        "type": "rearrange",
+        "words": [
+            "Create resource plan",
+            "Create resource pools",
+            "Create triggers",
+            "Activate plan"
+        ]
+    },
+    {
+        "q": "What is query trigger?",
+        "type": "mcq",
+        "o": [
+            "Automatic action based on query metrics",
+            "Query start",
+            "Query end",
+            "Query event"
+        ]
+    },
+    {
+        "q": "Triggers can kill long-running queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query pool?",
+        "type": "mcq",
+        "o": [
+            "Allocated resources for specific query types",
+            "Connection pool",
+            "Thread pool",
+            "Memory pool"
+        ]
+    },
+    {
+        "q": "The _____ assigns queries to pools based on user.",
+        "type": "fill_blank",
+        "answers": [
+            "mapping"
+        ],
+        "other_options": [
+            "assignment",
+            "routing",
+            "allocation"
+        ]
+    },
+    {
+        "q": "What is Hive replication?",
+        "type": "mcq",
+        "o": [
+            "Copying Hive data and metadata between clusters",
+            "Data backup",
+            "Table copy",
+            "Schema sync"
+        ]
+    },
+    {
+        "q": "Match the replication type with its scope:",
+        "type": "match",
+        "left": [
+            "Bootstrap",
+            "Incremental"
+        ],
+        "right": [
+            "Full copy",
+            "Changes only"
+        ]
+    },
+    {
+        "q": "Rearrange the replication process:",
+        "type": "rearrange",
+        "words": [
+            "Bootstrap replication",
+            "Incremental sync",
+            "Verification",
+            "Switchover"
+        ]
+    },
+    {
+        "q": "What is REPL DUMP?",
+        "type": "mcq",
+        "o": [
+            "Creates replication dump of database",
+            "Deletes dump",
+            "Restores dump",
+            "Lists dumps"
+        ]
+    },
+    {
+        "q": "The _____ command applies replication dump.",
+        "type": "fill_blank",
+        "answers": [
+            "REPL LOAD"
+        ],
+        "other_options": [
+            "REPL APPLY",
+            "REPL RESTORE",
+            "REPL IMPORT"
+        ]
+    },
+    {
+        "q": "REPL STATUS shows replication progress.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is failover in Hive replication?",
+        "type": "mcq",
+        "o": [
+            "Switching to replica after primary failure",
+            "Failback",
+            "Recovery",
+            "Restart"
+        ]
+    },
+    {
+        "q": "Match the replication command with its function:",
+        "type": "match",
+        "left": [
+            "REPL DUMP",
+            "REPL LOAD",
+            "REPL STATUS"
+        ],
+        "right": [
+            "Export data",
+            "Import data",
+            "Check progress"
+        ]
+    },
+    {
+        "q": "What is change notification in Hive?",
+        "type": "mcq",
+        "o": [
+            "Events for table changes",
+            "Data alerts",
+            "Query notifications",
+            "User notifications"
+        ]
+    },
+    {
+        "q": "The _____ enables change tracking for tables.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.metastore.event.db.notification.api.auth"
+        ],
+        "other_options": [
+            "change.notification",
+            "event.tracking",
+            "notify.enabled"
+        ]
+    },
+    {
+        "q": "Rearrange the event types:",
+        "type": "rearrange",
+        "words": [
+            "CREATE",
+            "ALTER",
+            "INSERT",
+            "DROP"
+        ]
+    },
+    {
+        "q": "What is event cleanup?",
+        "type": "mcq",
+        "o": [
+            "Removing old notification events",
+            "Event reset",
+            "Event deletion",
+            "Event archival"
+        ]
+    },
+    {
+        "q": "Events are retained based on TTL setting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Hive catalog?",
+        "type": "mcq",
+        "o": [
+            "Namespace containing databases",
+            "Table collection",
+            "Schema repository",
+            "Data dictionary"
+        ]
+    },
+    {
+        "q": "Match the catalog scope with its content:",
+        "type": "match",
+        "left": [
+            "Catalog",
+            "Database",
+            "Table"
+        ],
+        "right": [
+            "Multiple databases",
+            "Multiple tables",
+            "Data and schema"
+        ]
+    },
+    {
+        "q": "The _____ property sets default catalog.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.metastore.catalog.default"
+        ],
+        "other_options": [
+            "default.catalog",
+            "catalog.name",
+            "hive.catalog"
+        ]
+    },
+    {
+        "q": "What is multi-catalog support?",
+        "type": "mcq",
+        "o": [
+            "Accessing multiple metastore catalogs",
+            "Multiple databases",
+            "Multiple tables",
+            "Multiple schemas"
+        ]
+    },
+    {
+        "q": "Multi-catalog enables federated queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the catalog hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Catalog",
+            "Database",
+            "Table",
+            "Partition"
+        ]
+    },
+    {
+        "q": "What is table constraint in Hive?",
+        "type": "mcq",
+        "o": [
+            "Rules on column values like PRIMARY KEY, FOREIGN KEY",
+            "Data limit",
+            "Schema rule",
+            "Type constraint"
+        ]
+    },
+    {
+        "q": "Hive constraints are informational, not enforced.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the constraint with its purpose:",
+        "type": "match",
+        "left": [
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "NOT NULL",
+            "UNIQUE"
+        ],
+        "right": [
+            "Row identifier",
+            "Reference integrity",
+            "Required value",
+            "No duplicates"
+        ]
+    },
+    {
+        "q": "What is DEFAULT constraint?",
+        "type": "mcq",
+        "o": [
+            "Specifies default value for column",
+            "Primary default",
+            "Null default",
+            "Type default"
+        ]
+    },
+    {
+        "q": "The _____ keyword sets default value.",
+        "type": "fill_blank",
+        "answers": [
+            "DEFAULT"
+        ],
+        "other_options": [
+            "VALUE",
+            "SET",
+            "INIT"
+        ]
+    },
+    {
+        "q": "What is CHECK constraint?",
+        "type": "mcq",
+        "o": [
+            "Validates column values against expression",
+            "Data check",
+            "Type check",
+            "Null check"
+        ]
+    },
+    {
+        "q": "Rearrange the constraint types by strictness:",
+        "type": "rearrange",
+        "words": [
+            "NOT NULL",
+            "DEFAULT",
+            "CHECK",
+            "UNIQUE",
+            "PRIMARY KEY"
+        ]
+    },
+    {
+        "q": "Constraints help query optimizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is column statistics?",
+        "type": "mcq",
+        "o": [
+            "Statistics about column values for optimization",
+            "Row statistics",
+            "Table statistics",
+            "Query statistics"
+        ]
+    },
+    {
+        "q": "Match the statistic with its optimization use:",
+        "type": "match",
+        "left": [
+            "NDV",
+            "Min/Max",
+            "Null count",
+            "Avg length"
+        ],
+        "right": [
+            "Join estimation",
+            "Range filtering",
+            "Null handling",
+            "Memory estimation"
+        ]
+    },
+    {
+        "q": "The _____ collects column statistics.",
+        "type": "fill_blank",
+        "answers": [
+            "ANALYZE TABLE COMPUTE STATISTICS FOR COLUMNS"
+        ],
+        "other_options": [
+            "COLLECT STATS",
+            "GATHER STATISTICS",
+            "UPDATE STATS"
+        ]
+    },
+    {
+        "q": "What is NDV?",
+        "type": "mcq",
+        "o": [
+            "Number of Distinct Values",
+            "Null data value",
+            "Normal distribution value",
+            "New data value"
+        ]
+    },
+    {
+        "q": "High NDV indicates high cardinality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the statistics types by detail:",
+        "type": "rearrange",
+        "words": [
+            "Table stats",
+            "Partition stats",
+            "Column stats"
+        ]
+    },
+    {
+        "q": "What is automatic statistics collection?",
+        "type": "mcq",
+        "o": [
+            "Collecting stats during INSERT operations",
+            "Manual collection",
+            "Scheduled collection",
+            "Triggered collection"
+        ]
+    },
+    {
+        "q": "Match the auto-stats setting with its scope:",
+        "type": "match",
+        "left": [
+            "hive.stats.autogather",
+            "hive.stats.column.autogather"
+        ],
+        "right": [
+            "Table stats",
+            "Column stats"
+        ]
+    },
+    {
+        "q": "The _____ enables automatic column stats.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.stats.column.autogather"
+        ],
+        "other_options": [
+            "auto.column.stats",
+            "stats.auto",
+            "gather.column"
+        ]
+    },
+    {
+        "q": "What is stats aggregator?",
+        "type": "mcq",
+        "o": [
+            "Backend for storing computed statistics",
+            "Stats collector",
+            "Stats processor",
+            "Stats publisher"
+        ]
+    },
+    {
+        "q": "Default stats are stored in metastore.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is invalidate metadata?",
+        "type": "mcq",
+        "o": [
+            "Marking metadata as stale for refresh",
+            "Delete metadata",
+            "Update metadata",
+            "Copy metadata"
+        ]
+    },
+    {
+        "q": "Rearrange the metadata refresh approaches:",
+        "type": "rearrange",
+        "words": [
+            "INVALIDATE METADATA",
+            "REFRESH TABLE",
+            "MSCK REPAIR"
+        ]
+    },
+    {
+        "q": "Match the refresh command with its effect:",
+        "type": "match",
+        "left": [
+            "INVALIDATE METADATA",
+            "REFRESH"
+        ],
+        "right": [
+            "Clear cache",
+            "Update cache"
+        ]
+    },
+    {
+        "q": "What is Hive hooks?",
+        "type": "mcq",
+        "o": [
+            "Custom code executed at query lifecycle events",
+            "Query callbacks",
+            "Event handlers",
+            "Listeners"
+        ]
+    },
+    {
+        "q": "The _____ hook runs before query execution.",
+        "type": "fill_blank",
+        "answers": [
+            "pre-exec"
+        ],
+        "other_options": [
+            "before",
+            "prior",
+            "init"
+        ]
+    },
+    {
+        "q": "Hooks can implement auditing and logging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is semantic hook?",
+        "type": "mcq",
+        "o": [
+            "Hook executed during query semantic analysis",
+            "Parse hook",
+            "Compile hook",
+            "Optimize hook"
+        ]
+    },
+    {
+        "q": "Match the hook type with its execution point:",
+        "type": "match",
+        "left": [
+            "Pre-exec",
+            "Post-exec",
+            "On-failure"
+        ],
+        "right": [
+            "Before run",
+            "After success",
+            "After failure"
+        ]
+    },
+    {
+        "q": "Rearrange the hook execution order:",
+        "type": "rearrange",
+        "words": [
+            "Semantic analysis",
+            "Pre-execution",
+            "Execution",
+            "Post-execution"
+        ]
+    },
+    {
+        "q": "What is query result formatting?",
+        "type": "mcq",
+        "o": [
+            "Controlling output format of query results",
+            "Data formatting",
+            "Display formatting",
+            "Print formatting"
+        ]
+    },
+    {
+        "q": "The _____ sets column separator in output.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.cli.print.header"
+        ],
+        "other_options": [
+            "output.separator",
+            "column.delimiter",
+            "result.format"
+        ]
+    },
+    {
+        "q": "What is output file format?",
+        "type": "mcq",
+        "o": [
+            "Format for INSERT OVERWRITE DIRECTORY results",
+            "Table format",
+            "Query format",
+            "Data format"
+        ]
+    },
+    {
+        "q": "INSERT OVERWRITE DIRECTORY exports query results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the export format with its usage:",
+        "type": "match",
+        "left": [
+            "CSV",
+            "JSON",
+            "Parquet"
+        ],
+        "right": [
+            "Universal",
+            "Structured",
+            "Columnar"
+        ]
+    },
+    {
+        "q": "What is Hive localization?",
+        "type": "mcq",
+        "o": [
+            "Distributing files to task containers",
+            "Language support",
+            "Region support",
+            "Time zone support"
+        ]
+    },
+    {
+        "q": "Rearrange the file distribution path:",
+        "type": "rearrange",
+        "words": [
+            "HDFS",
+            "LocalResources",
+            "Task container",
+            "Task execution"
+        ]
+    },
+    {
+        "q": "The _____ distributes jars to tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "ADD JAR"
+        ],
+        "other_options": [
+            "INCLUDE JAR",
+            "USE JAR",
+            "LOAD JAR"
+        ]
+    },
+    {
+        "q": "What is ADD FILE?",
+        "type": "mcq",
+        "o": [
+            "Distributes file to all task containers",
+            "Uploads file",
+            "Copies file",
+            "Moves file"
+        ]
+    },
+    {
+        "q": "Added files are available in task working directory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ADD command with its content:",
+        "type": "match",
+        "left": [
+            "ADD JAR",
+            "ADD FILE",
+            "ADD ARCHIVE"
+        ],
+        "right": [
+            "Java library",
+            "General file",
+            "Compressed archive"
+        ]
+    },
+    {
+        "q": "What is transform in Hive?",
+        "type": "mcq",
+        "o": [
+            "Calling external scripts for row transformation",
+            "Data conversion",
+            "Type change",
+            "Format change"
+        ]
+    },
+    {
+        "q": "The _____ clause uses external scripts.",
+        "type": "fill_blank",
+        "answers": [
+            "TRANSFORM"
+        ],
+        "other_options": [
+            "EXEC",
+            "CALL",
+            "RUN"
+        ]
+    },
+    {
+        "q": "Rearrange the TRANSFORM syntax:",
+        "type": "rearrange",
+        "words": [
+            "SELECT TRANSFORM",
+            "(columns)",
+            "USING",
+            "'script'",
+            "AS (output_cols)"
+        ]
+    },
+    {
+        "q": "What is streaming in Hive?",
+        "type": "mcq",
+        "o": [
+            "Processing data through external scripts",
+            "Data streaming",
+            "Query streaming",
+            "Result streaming"
+        ]
+    },
+    {
+        "q": "MAP and REDUCE can call external scripts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GenericUDF?",
+        "type": "mcq",
+        "o": [
+            "More flexible UDF supporting multiple input types",
+            "Simple UDF",
+            "Basic UDF",
+            "Standard UDF"
+        ]
+    },
+    {
+        "q": "Match the UDF type with its flexibility:",
+        "type": "match",
+        "left": [
+            "UDF",
+            "GenericUDF"
+        ],
+        "right": [
+            "Type-specific",
+            "Type-generic"
+        ]
+    },
+    {
+        "q": "The _____ method evaluates GenericUDF.",
+        "type": "fill_blank",
+        "answers": [
+            "evaluate"
+        ],
+        "other_options": [
+            "process",
+            "execute",
+            "run"
+        ]
+    },
+    {
+        "q": "What is ObjectInspector?",
+        "type": "mcq",
+        "o": [
+            "Interface for accessing Hive data types in UDFs",
+            "Type checker",
+            "Data inspector",
+            "Schema inspector"
+        ]
+    },
+    {
+        "q": "Rearrange the GenericUDF methods:",
+        "type": "rearrange",
+        "words": [
+            "initialize",
+            "evaluate",
+            "getDisplayString"
+        ]
+    },
+    {
+        "q": "ObjectInspector handles complex types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is permanent function?",
+        "type": "mcq",
+        "o": [
+            "UDF registered in metastore for persistence",
+            "Temporary function",
+            "Session function",
+            "Built-in function"
+        ]
+    },
+    {
+        "q": "Match the function registration with its scope:",
+        "type": "match",
+        "left": [
+            "CREATE FUNCTION",
+            "CREATE TEMPORARY FUNCTION"
+        ],
+        "right": [
+            "Permanent",
+            "Session"
+        ]
+    },
+    {
+        "q": "The _____ keyword registers permanent function.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE FUNCTION"
+        ],
+        "other_options": [
+            "ADD FUNCTION",
+            "REGISTER FUNCTION",
+            "INSTALL FUNCTION"
+        ]
+    },
+    {
+        "q": "What is function overloading?",
+        "type": "mcq",
+        "o": [
+            "Same function name with different argument types",
+            "Function chaining",
+            "Function nesting",
+            "Function composition"
+        ]
+    },
+    {
+        "q": "GenericUDF supports function overloading.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the function creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Write Java code",
+            "Compile JAR",
+            "Add JAR to Hive",
+            "Create function"
+        ]
+    },
+    {
+        "q": "What is macro in Hive?",
+        "type": "mcq",
+        "o": [
+            "Named expression that can be reused in queries",
+            "UDF",
+            "Stored procedure",
+            "Script"
+        ]
+    },
+    {
+        "q": "The _____ creates a macro.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE MACRO"
+        ],
+        "other_options": [
+            "DEFINE MACRO",
+            "ADD MACRO",
+            "MAKE MACRO"
+        ]
+    },
+    {
+        "q": "Match the reusable concept with its type:",
+        "type": "match",
+        "left": [
+            "Macro",
+            "UDF",
+            "View"
+        ],
+        "right": [
+            "Expression reuse",
+            "Function reuse",
+            "Query reuse"
+        ]
+    },
+    {
+        "q": "What is Hive procedural language?",
+        "type": "mcq",
+        "o": [
+            "HPL/SQL for stored procedures and control flow",
+            "HiveQL extension",
+            "Script language",
+            "Programming language"
+        ]
+    },
+    {
+        "q": "HPL/SQL supports IF, WHILE, and FOR loops.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the procedural elements:",
+        "type": "rearrange",
+        "words": [
+            "Variables",
+            "Control flow",
+            "Cursors",
+            "Exception handling"
+        ]
+    },
+    {
+        "q": "What is cursor in HPL/SQL?",
+        "type": "mcq",
+        "o": [
+            "Pointer for traversing query results row by row",
+            "Query pointer",
+            "Result pointer",
+            "Data pointer"
+        ]
+    },
+    {
+        "q": "Match the cursor operation with its action:",
+        "type": "match",
+        "left": [
+            "DECLARE",
+            "OPEN",
+            "FETCH",
+            "CLOSE"
+        ],
+        "right": [
+            "Define cursor",
+            "Execute query",
+            "Get row",
+            "Release resources"
+        ]
+    },
+    {
+        "q": "The _____ gets next row from cursor.",
+        "type": "fill_blank",
+        "answers": [
+            "FETCH"
+        ],
+        "other_options": [
+            "GET",
+            "NEXT",
+            "READ"
+        ]
+    },
+    {
+        "q": "What is exception handling in HPL/SQL?",
+        "type": "mcq",
+        "o": [
+            "Handling errors using EXCEPTION block",
+            "Error logging",
+            "Error prevention",
+            "Error recovery"
+        ]
+    },
+    {
+        "q": "EXCEPTION block catches runtime errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is stored procedure in Hive?",
+        "type": "mcq",
+        "o": [
+            "Named block of HPL/SQL code stored in database",
+            "Query",
+            "Script",
+            "Function"
+        ]
+    },
+    {
+        "q": "Rearrange the procedure lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "CREATE PROCEDURE",
+            "CALL procedure",
+            "DROP PROCEDURE"
+        ]
+    },
+    {
+        "q": "Match the HPL/SQL object with its purpose:",
+        "type": "match",
+        "left": [
+            "Procedure",
+            "Function",
+            "Package"
+        ],
+        "right": [
+            "Execute logic",
+            "Return value",
+            "Group objects"
+        ]
+    },
+    {
+        "q": "What is Hive data format evolution?",
+        "type": "mcq",
+        "o": [
+            "Moving from older formats to ORC/Parquet",
+            "Format change",
+            "Type evolution",
+            "Schema migration"
+        ]
+    },
+    {
+        "q": "The _____ format provides best compression.",
+        "type": "fill_blank",
+        "answers": [
+            "ORC"
+        ],
+        "other_options": [
+            "Text",
+            "Sequence",
+            "RC"
+        ]
+    },
+    {
+        "q": "What is format conversion?",
+        "type": "mcq",
+        "o": [
+            "Changing table storage format using CTAS",
+            "Type conversion",
+            "Data conversion",
+            "Schema conversion"
+        ]
+    },
+    {
+        "q": "CTAS with new format converts data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the format migration steps:",
+        "type": "rearrange",
+        "words": [
+            "Create new table with format",
+            "Insert data from old",
+            "Verify data",
+            "Rename tables"
+        ]
+    },
+    {
+        "q": "Match the conversion with its method:",
+        "type": "match",
+        "left": [
+            "Text to ORC",
+            "CSV to Parquet",
+            "Schema change"
+        ],
+        "right": [
+            "CTAS",
+            "CTAS",
+            "ALTER TABLE"
+        ]
+    },
+    {
+        "q": "What is Hive performance benchmark?",
+        "type": "mcq",
+        "o": [
+            "Measuring Hive query performance",
+            "Speed test",
+            "Load test",
+            "Stress test"
+        ]
+    },
+    {
+        "q": "The _____ is a common Hive benchmark.",
+        "type": "fill_blank",
+        "answers": [
+            "TPC-DS"
+        ],
+        "other_options": [
+            "TPC-H",
+            "TPC-C",
+            "TPC-E"
+        ]
+    },
+    {
+        "q": "Benchmarks help compare configurations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query profiling?",
+        "type": "mcq",
+        "o": [
+            "Analyzing query execution for optimization",
+            "Query logging",
+            "Query tracing",
+            "Query monitoring"
+        ]
+    },
+    {
+        "q": "Match the profiling tool with its scope:",
+        "type": "match",
+        "left": [
+            "EXPLAIN",
+            "Tez UI",
+            "YARN logs"
+        ],
+        "right": [
+            "Plan analysis",
+            "DAG analysis",
+            "Resource analysis"
+        ]
+    },
+    {
+        "q": "Rearrange the optimization workflow:",
+        "type": "rearrange",
+        "words": [
+            "Profile query",
+            "Identify bottleneck",
+            "Apply optimization",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "What is query complexity?",
+        "type": "mcq",
+        "o": [
+            "Amount of work required to execute query",
+            "Query length",
+            "Query size",
+            "Query depth"
+        ]
+    },
+    {
+        "q": "Complex queries may timeout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query decomposition?",
+        "type": "mcq",
+        "o": [
+            "Breaking complex query into simpler parts",
+            "Query splitting",
+            "Query division",
+            "Query parsing"
+        ]
+    },
+    {
+        "q": "The _____ can store intermediate results.",
+        "type": "fill_blank",
+        "answers": [
+            "temporary table"
+        ],
+        "other_options": [
+            "temp view",
+            "cache table",
+            "staging table"
+        ]
+    },
+    {
+        "q": "Match the decomposition benefit with its impact:",
+        "type": "match",
+        "left": [
+            "Readability",
+            "Debugging",
+            "Performance"
+        ],
+        "right": [
+            "Easier to understand",
+            "Easier to fix",
+            "Can optimize parts"
+        ]
+    },
+    {
+        "q": "What is Hive troubleshooting?",
+        "type": "mcq",
+        "o": [
+            "Diagnosing and fixing Hive issues",
+            "Error handling",
+            "Problem solving",
+            "Issue resolution"
+        ]
+    },
+    {
+        "q": "Rearrange the troubleshooting steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify symptoms",
+            "Check logs",
+            "Reproduce issue",
+            "Apply fix",
+            "Verify"
+        ]
+    },
+    {
+        "q": "Match the issue with its likely cause:",
+        "type": "match",
+        "left": [
+            "OOM error",
+            "Slow query",
+            "Wrong results"
+        ],
+        "right": [
+            "Insufficient memory",
+            "Missing statistics",
+            "Data quality"
+        ]
+    },
+    {
+        "q": "What is memory error?",
+        "type": "mcq",
+        "o": [
+            "OutOfMemory when processing large data",
+            "Disk error",
+            "Network error",
+            "CPU error"
+        ]
+    },
+    {
+        "q": "The _____ setting increases container memory.",
+        "type": "fill_blank",
+        "answers": [
+            "mapreduce.map.memory.mb"
+        ],
+        "other_options": [
+            "container.memory",
+            "task.memory",
+            "jvm.heap"
+        ]
+    },
+    {
+        "q": "Increasing reducers can help memory issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GC overhead error?",
+        "type": "mcq",
+        "o": [
+            "Too much time spent in garbage collection",
+            "Memory overflow",
+            "Stack overflow",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "Match the memory setting with its JVM option:",
+        "type": "match",
+        "left": [
+            "-Xmx",
+            "-Xms",
+            "-XX:MaxMetaspaceSize"
+        ],
+        "right": [
+            "Max heap",
+            "Initial heap",
+            "Metaspace limit"
+        ]
+    },
+    {
+        "q": "What is Hive connection timeout?",
+        "type": "mcq",
+        "o": [
+            "Session disconnects due to inactivity",
+            "Query timeout",
+            "Lock timeout",
+            "Network timeout"
+        ]
+    },
+    {
+        "q": "Rearrange the timeout settings by scope:",
+        "type": "rearrange",
+        "words": [
+            "Connection timeout",
+            "Query timeout",
+            "Session timeout"
+        ]
+    },
+    {
+        "q": "The _____ setting controls idle session timeout.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.server2.idle.session.timeout"
+        ],
+        "other_options": [
+            "session.timeout",
+            "idle.timeout",
+            "connection.idle"
+        ]
+    },
+    {
+        "q": "What is permission denied error?",
+        "type": "mcq",
+        "o": [
+            "User lacks access to resource",
+            "Invalid password",
+            "Expired session",
+            "Locked account"
+        ]
+    },
+    {
+        "q": "Check HDFS permissions for access issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the error with its solution:",
+        "type": "match",
+        "left": [
+            "Permission denied",
+            "Table not found",
+            "Column not found"
+        ],
+        "right": [
+            "Grant access",
+            "Check database",
+            "Verify schema"
+        ]
+    },
+    {
+        "q": "What is SerDe exception?",
+        "type": "mcq",
+        "o": [
+            "Error parsing data due to format mismatch",
+            "Schema error",
+            "Type error",
+            "Syntax error"
+        ]
+    },
+    {
+        "q": "The _____ causes SerDe exceptions.",
+        "type": "fill_blank",
+        "answers": [
+            "data format mismatch"
+        ],
+        "other_options": [
+            "schema mismatch",
+            "type error",
+            "parse error"
+        ]
+    },
+    {
+        "q": "What is corrupt data handling?",
+        "type": "mcq",
+        "o": [
+            "Handling malformed records during query",
+            "Data repair",
+            "Data recovery",
+            "Data cleanup"
+        ]
+    },
+    {
+        "q": "Rearrange the data quality checks:",
+        "type": "rearrange",
+        "words": [
+            "Schema validation",
+            "Null checks",
+            "Range checks",
+            "Format checks"
+        ]
+    },
+    {
+        "q": "Match the data issue with its detection:",
+        "type": "match",
+        "left": [
+            "Missing data",
+            "Invalid format",
+            "Outliers"
+        ],
+        "right": [
+            "Null count",
+            "Parse errors",
+            "Range analysis"
+        ]
+    },
+    {
+        "q": "What is Hive roadmap?",
+        "type": "mcq",
+        "o": [
+            "Future development plans for Hive",
+            "Release schedule",
+            "Version history",
+            "Feature list"
+        ]
+    },
+    {
+        "q": "Hive continues evolving with new features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Hive version with its feature:",
+        "type": "match",
+        "left": [
+            "Hive 3.x",
+            "Hive 4.x"
+        ],
+        "right": [
+            "ACID improvements",
+            "Iceberg integration"
+        ]
+    },
+    {
+        "q": "What is Iceberg integration?",
+        "type": "mcq",
+        "o": [
+            "Support for Apache Iceberg table format",
+            "Cold storage",
+            "Archival format",
+            "Compression format"
+        ]
+    },
+    {
+        "q": "The _____ table format provides ACID and time travel.",
+        "type": "fill_blank",
+        "answers": [
+            "Iceberg"
+        ],
+        "other_options": [
+            "Delta",
+            "Hudi",
+            "Snowflake"
+        ]
+    },
+    {
+        "q": "Iceberg supports schema evolution and time travel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Delta Lake integration?",
+        "type": "mcq",
+        "o": [
+            "Support for Delta Lake table format in Hive",
+            "Data lake",
+            "Storage layer",
+            "File format"
+        ]
+    },
+    {
+        "q": "Match the table format with its creator:",
+        "type": "match",
+        "left": [
+            "Iceberg",
+            "Delta Lake",
+            "Hudi"
+        ],
+        "right": [
+            "Netflix",
+            "Databricks",
+            "Uber"
+        ]
+    },
+    {
+        "q": "The _____ pattern handles slowly changing dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "SCD"
+        ],
+        "other_options": [
+            "CDC",
+            "ETL",
+            "ELT"
+        ]
+    },
+    {
+        "q": "What is SCD Type 2?",
+        "type": "mcq",
+        "o": [
+            "Creates new row for each change with history",
+            "Overwrites old value",
+            "No history",
+            "Appends only"
+        ]
+    },
+    {
+        "q": "Rearrange the SCD types by history retention:",
+        "type": "rearrange",
+        "words": [
+            "Type 1 (no history)",
+            "Type 2 (full history)",
+            "Type 3 (limited history)"
+        ]
+    },
+    {
+        "q": "What is data quality in Hive?",
+        "type": "mcq",
+        "o": [
+            "Measuring and ensuring data accuracy",
+            "Data speed",
+            "Data volume",
+            "Data variety"
+        ]
+    },
+    {
+        "q": "Data quality includes completeness and accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the quality dimension with its metric:",
+        "type": "match",
+        "left": [
+            "Completeness",
+            "Accuracy",
+            "Timeliness"
+        ],
+        "right": [
+            "Non-null rate",
+            "Error rate",
+            "Freshness"
+        ]
+    },
+    {
+        "q": "What is data lineage in Hive?",
+        "type": "mcq",
+        "o": [
+            "Tracking data origin and transformation history",
+            "Data path",
+            "Data flow",
+            "Data route"
+        ]
+    },
+    {
+        "q": "The _____ tracks Hive data lineage.",
+        "type": "fill_blank",
+        "answers": [
+            "Apache Atlas"
+        ],
+        "other_options": [
+            "Ranger",
+            "Knox",
+            "Falcon"
+        ]
+    },
+    {
+        "q": "Lineage helps with impact analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data governance in Hive?",
+        "type": "mcq",
+        "o": [
+            "Managing data policies, security, and compliance",
+            "Data control",
+            "Data management",
+            "Data administration"
+        ]
+    },
+    {
+        "q": "Rearrange the governance components:",
+        "type": "rearrange",
+        "words": [
+            "Data catalog",
+            "Access control",
+            "Data lineage",
+            "Data quality"
+        ]
+    },
+    {
+        "q": "Match the governance tool with its function:",
+        "type": "match",
+        "left": [
+            "Atlas",
+            "Ranger",
+            "Knox"
+        ],
+        "right": [
+            "Metadata catalog",
+            "Authorization",
+            "Authentication gateway"
+        ]
+    },
+    {
+        "q": "What is Hive data masking?",
+        "type": "mcq",
+        "o": [
+            "Hiding sensitive data from unauthorized users",
+            "Data encryption",
+            "Data deletion",
+            "Data archival"
+        ]
+    },
+    {
+        "q": "The _____ implements dynamic data masking.",
+        "type": "fill_blank",
+        "answers": [
+            "Ranger"
+        ],
+        "other_options": [
+            "Atlas",
+            "Knox",
+            "Sentry"
+        ]
+    },
+    {
+        "q": "Data masking can show partial values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is tag-based security?",
+        "type": "mcq",
+        "o": [
+            "Access control based on metadata tags",
+            "Role-based security",
+            "Label security",
+            "Attribute security"
+        ]
+    },
+    {
+        "q": "Match the tag type with its usage:",
+        "type": "match",
+        "left": [
+            "PII tag",
+            "Classification tag",
+            "Custom tag"
+        ],
+        "right": [
+            "Personal data",
+            "Sensitivity level",
+            "Business metadata"
+        ]
+    },
+    {
+        "q": "Rearrange the security implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define tags",
+            "Apply tags to data",
+            "Create policies",
+            "Enforce access"
+        ]
+    },
+    {
+        "q": "What is cost management in Hive?",
+        "type": "mcq",
+        "o": [
+            "Controlling resource usage and cloud costs",
+            "Price calculation",
+            "Budget tracking",
+            "Expense management"
+        ]
+    },
+    {
+        "q": "Query cost correlates with scanned data volume.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cost factor with its control:",
+        "type": "match",
+        "left": [
+            "Storage cost",
+            "Compute cost",
+            "Network cost"
+        ],
+        "right": [
+            "Compression",
+            "Query optimization",
+            "Data locality"
+        ]
+    },
+    {
+        "q": "What is capacity planning?",
+        "type": "mcq",
+        "o": [
+            "Estimating resource needs for workload",
+            "Storage planning",
+            "Network planning",
+            "Budget planning"
+        ]
+    },
+    {
+        "q": "The _____ helps estimate capacity needs.",
+        "type": "fill_blank",
+        "answers": [
+            "workload analysis"
+        ],
+        "other_options": [
+            "trend analysis",
+            "forecast",
+            "prediction"
+        ]
+    },
+    {
+        "q": "Rearrange the capacity planning steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze current usage",
+            "Forecast growth",
+            "Calculate resources",
+            "Plan scaling"
+        ]
+    },
+    {
+        "q": "What is Hive high availability?",
+        "type": "mcq",
+        "o": [
+            "Running multiple HiveServer2 instances",
+            "Failover",
+            "Redundancy",
+            "Backup"
+        ]
+    },
+    {
+        "q": "ZooKeeper coordinates HS2 high availability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the HA component with its role:",
+        "type": "match",
+        "left": [
+            "ZooKeeper",
+            "Load balancer",
+            "Failover"
+        ],
+        "right": [
+            "Service discovery",
+            "Request distribution",
+            "Recovery"
+        ]
+    },
+    {
+        "q": "What is connection pooling?",
+        "type": "mcq",
+        "o": [
+            "Reusing database connections for efficiency",
+            "Connection sharing",
+            "Connection caching",
+            "Connection management"
+        ]
+    },
+    {
+        "q": "The _____ provides connection pooling for Hive.",
+        "type": "fill_blank",
+        "answers": [
+            "HikariCP"
+        ],
+        "other_options": [
+            "C3P0",
+            "DBCP",
+            "Tomcat pool"
+        ]
+    },
+    {
+        "q": "Rearrange the connection lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create connection",
+            "Use connection",
+            "Return to pool",
+            "Close if idle"
+        ]
+    },
+    {
+        "q": "What is session management?",
+        "type": "mcq",
+        "o": [
+            "Managing client sessions in HiveServer2",
+            "User management",
+            "Connection management",
+            "Query management"
+        ]
+    },
+    {
+        "q": "Sessions can have different configurations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the session setting with its scope:",
+        "type": "match",
+        "left": [
+            "SET",
+            "SET GLOBAL",
+            "--hiveconf"
+        ],
+        "right": [
+            "Session",
+            "Server",
+            "Connection"
+        ]
+    },
+    {
+        "q": "What is query caching?",
+        "type": "mcq",
+        "o": [
+            "Storing query results for reuse",
+            "Plan caching",
+            "Data caching",
+            "Metadata caching"
+        ]
+    },
+    {
+        "q": "The _____ enables query result caching.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.query.results.cache.enabled"
+        ],
+        "other_options": [
+            "cache.enabled",
+            "result.cache",
+            "query.cache"
+        ]
+    },
+    {
+        "q": "Cached results are invalidated on data change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is table scan optimization?",
+        "type": "mcq",
+        "o": [
+            "Reducing data read during query execution",
+            "Index scan",
+            "Full scan",
+            "Sequential scan"
+        ]
+    },
+    {
+        "q": "Rearrange the scan optimization techniques:",
+        "type": "rearrange",
+        "words": [
+            "Partition pruning",
+            "Column projection",
+            "Predicate pushdown",
+            "Bloom filter"
+        ]
+    },
+    {
+        "q": "Match the optimization with its reduction:",
+        "type": "match",
+        "left": [
+            "Partition pruning",
+            "Column projection",
+            "Row group filtering"
+        ],
+        "right": [
+            "Skip partitions",
+            "Skip columns",
+            "Skip row groups"
+        ]
+    },
+    {
+        "q": "What is late materialization?",
+        "type": "mcq",
+        "o": [
+            "Deferring row construction until needed",
+            "Early materialization",
+            "Lazy evaluation",
+            "Deferred execution"
+        ]
+    },
+    {
+        "q": "Late materialization reduces memory usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is runtime filtering?",
+        "type": "mcq",
+        "o": [
+            "Filtering based on values from join probe side",
+            "Static filtering",
+            "Compile-time filtering",
+            "Plan-time filtering"
+        ]
+    },
+    {
+        "q": "The _____ enables runtime filtering.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.tez.dynamic.partition.pruning"
+        ],
+        "other_options": [
+            "runtime.filter",
+            "dynamic.filter",
+            "probe.filter"
+        ]
+    },
+    {
+        "q": "Match the filter type with its creation time:",
+        "type": "match",
+        "left": [
+            "Static filter",
+            "Runtime filter"
+        ],
+        "right": [
+            "Compile time",
+            "Execution time"
+        ]
+    },
+    {
+        "q": "What is column encryption?",
+        "type": "mcq",
+        "o": [
+            "Encrypting specific columns in table",
+            "Row encryption",
+            "Table encryption",
+            "Database encryption"
+        ]
+    },
+    {
+        "q": "Rearrange the encryption hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Disk encryption",
+            "File encryption",
+            "Column encryption"
+        ]
+    },
+    {
+        "q": "ORC supports column-level encryption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is key management?",
+        "type": "mcq",
+        "o": [
+            "Managing encryption keys lifecycle",
+            "Password management",
+            "Access management",
+            "Identity management"
+        ]
+    },
+    {
+        "q": "Match the key operation with its purpose:",
+        "type": "match",
+        "left": [
+            "Create key",
+            "Rotate key",
+            "Revoke key"
+        ],
+        "right": [
+            "New encryption",
+            "Update encryption",
+            "Disable encryption"
+        ]
+    },
+    {
+        "q": "The _____ stores encryption keys.",
+        "type": "fill_blank",
+        "answers": [
+            "Key Management Server"
+        ],
+        "other_options": [
+            "Key store",
+            "Key vault",
+            "Key manager"
+        ]
+    },
+    {
+        "q": "What is data retention policy?",
+        "type": "mcq",
+        "o": [
+            "Rules for how long data is kept",
+            "Backup policy",
+            "Archive policy",
+            "Delete policy"
+        ]
+    },
+    {
+        "q": "Retention policies help with compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the data lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create",
+            "Use",
+            "Archive",
+            "Delete"
+        ]
+    },
+    {
+        "q": "What is data archival?",
+        "type": "mcq",
+        "o": [
+            "Moving old data to cheaper storage",
+            "Data backup",
+            "Data deletion",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "Match the storage tier with its cost:",
+        "type": "match",
+        "left": [
+            "Hot storage",
+            "Warm storage",
+            "Cold storage"
+        ],
+        "right": [
+            "Highest cost",
+            "Medium cost",
+            "Lowest cost"
+        ]
+    },
+    {
+        "q": "The _____ moves data between storage tiers.",
+        "type": "fill_blank",
+        "answers": [
+            "lifecycle policy"
+        ],
+        "other_options": [
+            "migration policy",
+            "tier policy",
+            "move policy"
+        ]
+    },
+    {
+        "q": "What is data purging?",
+        "type": "mcq",
+        "o": [
+            "Permanently removing data based on policy",
+            "Data archiving",
+            "Data backup",
+            "Data moving"
+        ]
+    },
+    {
+        "q": "Purging should be verified before execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the operation with its reversibility:",
+        "type": "match",
+        "left": [
+            "Archive",
+            "Purge",
+            "Mask"
+        ],
+        "right": [
+            "Reversible",
+            "Irreversible",
+            "Reversible"
+        ]
+    },
+    {
+        "q": "What is Hive automation?",
+        "type": "mcq",
+        "o": [
+            "Scheduling and automating Hive tasks",
+            "Manual execution",
+            "Interactive queries",
+            "Ad-hoc analysis"
+        ]
+    },
+    {
+        "q": "Rearrange the automation tools:",
+        "type": "rearrange",
+        "words": [
+            "Oozie",
+            "Airflow",
+            "Luigi",
+            "Azkaban"
+        ]
+    },
+    {
+        "q": "The _____ is a popular workflow scheduler for Hive.",
+        "type": "fill_blank",
+        "answers": [
+            "Apache Oozie"
+        ],
+        "other_options": [
+            "Cron",
+            "Jenkins",
+            "Rundeck"
+        ]
+    },
+    {
+        "q": "What is Airflow integration?",
+        "type": "mcq",
+        "o": [
+            "Using Apache Airflow to orchestrate Hive jobs",
+            "Data flow",
+            "Stream flow",
+            "Query flow"
+        ]
+    },
+    {
+        "q": "Airflow uses DAGs to define workflows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the scheduler with its strength:",
+        "type": "match",
+        "left": [
+            "Oozie",
+            "Airflow",
+            "Azkaban"
+        ],
+        "right": [
+            "Hadoop native",
+            "Python DAGs",
+            "Simple UI"
+        ]
+    },
+    {
+        "q": "What is CI/CD for Hive?",
+        "type": "mcq",
+        "o": [
+            "Continuous integration and deployment for Hive scripts",
+            "Query deployment",
+            "Schema deployment",
+            "Data deployment"
+        ]
+    },
+    {
+        "q": "The _____ enables version control for HiveQL.",
+        "type": "fill_blank",
+        "answers": [
+            "Git"
+        ],
+        "other_options": [
+            "SVN",
+            "CVS",
+            "Mercurial"
+        ]
+    },
+    {
+        "q": "Rearrange the CI/CD pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Commit code",
+            "Run tests",
+            "Build artifacts",
+            "Deploy to prod"
+        ]
+    },
+    {
+        "q": "What is schema versioning?",
+        "type": "mcq",
+        "o": [
+            "Tracking and managing schema changes over time",
+            "Version control",
+            "Change tracking",
+            "History management"
+        ]
+    },
+    {
+        "q": "Schema migrations should be reversible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the migration tool with its feature:",
+        "type": "match",
+        "left": [
+            "Flyway",
+            "Liquibase",
+            "Hive scripts"
+        ],
+        "right": [
+            "SQL migrations",
+            "XML/YAML support",
+            "Native HiveQL"
+        ]
+    },
+    {
+        "q": "What is documentation in Hive?",
+        "type": "mcq",
+        "o": [
+            "Describing tables, columns, and queries",
+            "Code comments",
+            "User guides",
+            "Technical specs"
+        ]
+    },
+    {
+        "q": "The _____ stores table descriptions.",
+        "type": "fill_blank",
+        "answers": [
+            "COMMENT"
+        ],
+        "other_options": [
+            "DESCRIPTION",
+            "DOC",
+            "NOTE"
+        ]
+    },
+    {
+        "q": "Rearrange the documentation levels:",
+        "type": "rearrange",
+        "words": [
+            "Table comment",
+            "Column comment",
+            "Partition comment"
+        ]
+    },
+    {
+        "q": "What is query optimization checklist?",
+        "type": "mcq",
+        "o": [
+            "Steps to verify query is optimized",
+            "Query validation",
+            "Query review",
+            "Query audit"
+        ]
+    },
+    {
+        "q": "Match the check with its verification:",
+        "type": "match",
+        "left": [
+            "Partitions used",
+            "Format optimized",
+            "Statistics current"
+        ],
+        "right": [
+            "Check EXPLAIN",
+            "Check STORED AS",
+            "Check ANALYZE"
+        ]
+    },
+    {
+        "q": "Always check EXPLAIN before running large queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is production readiness?",
+        "type": "mcq",
+        "o": [
+            "Ensuring system is ready for production workloads",
+            "Development ready",
+            "Test ready",
+            "Stage ready"
+        ]
+    },
+    {
+        "q": "Rearrange the production checklist:",
+        "type": "rearrange",
+        "words": [
+            "Security configured",
+            "HA enabled",
+            "Monitoring setup",
+            "Backup tested"
+        ]
+    },
+    {
+        "q": "Match the production requirement with its config:",
+        "type": "match",
+        "left": [
+            "Security",
+            "Performance",
+            "Reliability"
+        ],
+        "right": [
+            "Ranger policies",
+            "CBO enabled",
+            "HA setup"
+        ]
+    },
+    {
+        "q": "What is cluster sizing?",
+        "type": "mcq",
+        "o": [
+            "Determining number and size of cluster nodes",
+            "Storage sizing",
+            "Memory sizing",
+            "CPU sizing"
+        ]
+    },
+    {
+        "q": "The _____ depends on data volume and query patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "cluster size"
+        ],
+        "other_options": [
+            "node count",
+            "instance type",
+            "capacity"
+        ]
+    },
+    {
+        "q": "Start small and scale based on metrics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Hive future?",
+        "type": "mcq",
+        "o": [
+            "Continued evolution with modern table formats",
+            "End of life",
+            "Maintenance mode",
+            "Feature freeze"
+        ]
+    },
+    {
+        "q": "Match the trend with Hive impact:",
+        "type": "match",
+        "left": [
+            "Lakehouse",
+            "Real-time",
+            "AI/ML"
+        ],
+        "right": [
+            "Iceberg integration",
+            "LLAP improvements",
+            "Feature store"
+        ]
+    },
+    {
+        "q": "Hive remains relevant in modern data stacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is materialized view maintenance?",
+        "type": "mcq",
+        "o": [
+            "Keeping materialized views updated with source data",
+            "View creation",
+            "View deletion",
+            "View backup"
+        ]
+    },
+    {
+        "q": "Match the maintenance mode with its approach:",
+        "type": "match",
+        "left": [
+            "Full rebuild",
+            "Incremental refresh"
+        ],
+        "right": [
+            "Recompute all",
+            "Apply changes only"
+        ]
+    },
+    {
+        "q": "The _____ command refreshes materialized view.",
+        "type": "fill_blank",
+        "answers": [
+            "ALTER MATERIALIZED VIEW REBUILD"
+        ],
+        "other_options": [
+            "REFRESH VIEW",
+            "UPDATE VIEW",
+            "SYNC VIEW"
+        ]
+    },
+    {
+        "q": "What is automatic view rewriting?",
+        "type": "mcq",
+        "o": [
+            "Optimizer uses materialized views automatically",
+            "Manual rewriting",
+            "Query rewrite",
+            "View update"
+        ]
+    },
+    {
+        "q": "Rearrange the view rewriting steps:",
+        "type": "rearrange",
+        "words": [
+            "Create materialized view",
+            "Enable rewriting",
+            "Run query",
+            "Optimizer chooses view"
+        ]
+    },
+    {
+        "q": "The _____ enables automatic view rewriting.",
+        "type": "fill_blank",
+        "answers": [
+            "hive.materializedview.rewriting"
+        ],
+        "other_options": [
+            "view.rewrite",
+            "auto.view",
+            "mv.rewrite"
+        ]
+    },
+    {
+        "q": "What is query federation?",
+        "type": "mcq",
+        "o": [
+            "Querying data from multiple sources in one query",
+            "Data federation",
+            "Source federation",
+            "System federation"
+        ]
+    },
+    {
+        "q": "StorageHandler enables external data access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the connector with its data source:",
+        "type": "match",
+        "left": [
+            "HBase handler",
+            "JDBC handler",
+            "Kafka handler"
+        ],
+        "right": [
+            "NoSQL",
+            "RDBMS",
+            "Streaming"
+        ]
+    },
+    {
+        "q": "What is cross-cluster query?",
+        "type": "mcq",
+        "o": [
+            "Querying data from multiple Hadoop clusters",
+            "Single cluster",
+            "Local query",
+            "Remote query"
+        ]
+    },
+    {
+        "q": "The _____ enables cross-cluster access.",
+        "type": "fill_blank",
+        "answers": [
+            "DistCp"
+        ],
+        "other_options": [
+            "CopyTable",
+            "DataSync",
+            "ClusterCopy"
+        ]
+    },
+    {
+        "q": "What is zero-copy reads?",
+        "type": "mcq",
+        "o": [
+            "Reading data without copying between buffers",
+            "Single copy",
+            "Double copy",
+            "Buffer copy"
+        ]
+    },
+    {
+        "q": "Rearrange the data access optimization:",
+        "type": "rearrange",
+        "words": [
+            "Minimize I/O",
+            "Reduce copies",
+            "Use memory mapping",
+            "Direct access"
+        ]
+    },
+    {
+        "q": "ORC supports zero-copy reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is write amplification?",
+        "type": "mcq",
+        "o": [
+            "Multiple writes for single logical write",
+            "Read amplification",
+            "Storage amplification",
+            "Network amplification"
+        ]
+    },
+    {
+        "q": "Match the storage issue with its impact:",
+        "type": "match",
+        "left": [
+            "Write amplification",
+            "Small files",
+            "Data skew"
+        ],
+        "right": [
+            "Slower writes",
+            "NameNode pressure",
+            "Unbalanced tasks"
+        ]
+    },
+    {
+        "q": "The _____ reduces small file problem.",
+        "type": "fill_blank",
+        "answers": [
+            "file merging"
+        ],
+        "other_options": [
+            "file splitting",
+            "file compression",
+            "file archiving"
+        ]
+    },
+    {
+        "q": "What is data skipping?",
+        "type": "mcq",
+        "o": [
+            "Avoiding reading data that does not match query",
+            "Data filtering",
+            "Data pruning",
+            "Data elimination"
+        ]
+    },
+    {
+        "q": "ORC indexes enable data skipping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the data skipping techniques:",
+        "type": "rearrange",
+        "words": [
+            "Min-max pruning",
+            "Bloom filter",
+            "Partition pruning",
+            "Column pruning"
+        ]
+    },
+    {
+        "q": "What is ACID compliance level?",
+        "type": "mcq",
+        "o": [
+            "Degree of transactional guarantees provided",
+            "Acid strength",
+            "Transaction level",
+            "Isolation level"
+        ]
+    },
+    {
+        "q": "Match the Hive ACID with its guarantee:",
+        "type": "match",
+        "left": [
+            "Full ACID",
+            "Insert-only"
+        ],
+        "right": [
+            "All operations",
+            "Append only"
+        ]
+    },
+    {
+        "q": "The _____ provides stronger isolation than Hive ACID.",
+        "type": "fill_blank",
+        "answers": [
+            "serializable"
+        ],
+        "other_options": [
+            "repeatable read",
+            "read committed",
+            "snapshot"
+        ]
+    },
+    {
+        "q": "What is table format comparison?",
+        "type": "mcq",
+        "o": [
+            "Comparing Iceberg, Delta Lake, and Hudi features",
+            "Format selection",
+            "Storage comparison",
+            "Type comparison"
+        ]
+    },
+    {
+        "q": "All modern table formats support time travel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the format with its unique feature:",
+        "type": "match",
+        "left": [
+            "Iceberg",
+            "Delta",
+            "Hudi"
+        ],
+        "right": [
+            "Hidden partitioning",
+            "Unity Catalog",
+            "Record-level index"
+        ]
+    }
+]

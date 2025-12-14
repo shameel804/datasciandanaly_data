@@ -1,0 +1,6306 @@
+[
+    {
+        "q": "What is Google BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Serverless enterprise data warehouse for analytics",
+            "Traditional database",
+            "File storage",
+            "Computing platform"
+        ]
+    },
+    {
+        "q": "BigQuery is a serverless data warehouse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery's pricing model?",
+        "type": "mcq",
+        "o": [
+            "Pay for storage and queries separately",
+            "Fixed monthly fee",
+            "Free tier only",
+            "Per-user licensing"
+        ]
+    },
+    {
+        "q": "The _____ measures data scanned per query.",
+        "type": "fill_blank",
+        "answers": [
+            "bytes billed"
+        ],
+        "other_options": [
+            "rows read",
+            "time used",
+            "compute units"
+        ]
+    },
+    {
+        "q": "Match the BigQuery concept with its definition:",
+        "type": "match",
+        "left": [
+            "Dataset",
+            "Table",
+            "View",
+            "Job"
+        ],
+        "right": [
+            "Container for tables",
+            "Data storage",
+            "Saved query",
+            "Async operation"
+        ]
+    },
+    {
+        "q": "What is a BigQuery dataset?",
+        "type": "mcq",
+        "o": [
+            "Container that holds tables and views",
+            "Single table",
+            "Query result",
+            "Data file"
+        ]
+    },
+    {
+        "q": "Datasets are scoped to a GCP project.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the BigQuery hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Project",
+            "Dataset",
+            "Table",
+            "Column"
+        ]
+    },
+    {
+        "q": "What is BigQuery SQL?",
+        "type": "mcq",
+        "o": [
+            "ANSI SQL dialect with extensions",
+            "Custom query language",
+            "NoSQL query",
+            "Proprietary format"
+        ]
+    },
+    {
+        "q": "The _____ is the standard SQL dialect in BigQuery.",
+        "type": "fill_blank",
+        "answers": [
+            "Standard SQL"
+        ],
+        "other_options": [
+            "Legacy SQL",
+            "MySQL",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "q": "What is Legacy SQL?",
+        "type": "mcq",
+        "o": [
+            "Original BigQuery SQL dialect (deprecated)",
+            "Current standard",
+            "Extended SQL",
+            "New feature"
+        ]
+    },
+    {
+        "q": "Standard SQL is the recommended dialect.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the SQL feature with its syntax:",
+        "type": "match",
+        "left": [
+            "Table reference",
+            "Comment",
+            "String literal"
+        ],
+        "right": [
+            "`project.dataset.table`",
+            "-- or #",
+            "Single or double quotes"
+        ]
+    },
+    {
+        "q": "What is a BigQuery table?",
+        "type": "mcq",
+        "o": [
+            "Structured data organized in rows and columns",
+            "File storage",
+            "Query result",
+            "Temporary storage"
+        ]
+    },
+    {
+        "q": "The _____ command loads data into a table.",
+        "type": "fill_blank",
+        "answers": [
+            "LOAD DATA"
+        ],
+        "other_options": [
+            "INSERT DATA",
+            "IMPORT DATA",
+            "ADD DATA"
+        ]
+    },
+    {
+        "q": "Rearrange the table creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Choose dataset",
+            "Define schema",
+            "Set options",
+            "Create table"
+        ]
+    },
+    {
+        "q": "What is table schema?",
+        "type": "mcq",
+        "o": [
+            "Column names and data types definition",
+            "Table content",
+            "Data format",
+            "Query plan"
+        ]
+    },
+    {
+        "q": "BigQuery supports schema auto-detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What are BigQuery data types?",
+        "type": "mcq",
+        "o": [
+            "INT64, FLOAT64, STRING, BOOL, TIMESTAMP, etc.",
+            "Only strings",
+            "Only numbers",
+            "Custom types only"
+        ]
+    },
+    {
+        "q": "Match the data type with its usage:",
+        "type": "match",
+        "left": [
+            "INT64",
+            "FLOAT64",
+            "STRING",
+            "TIMESTAMP"
+        ],
+        "right": [
+            "Integer values",
+            "Decimal values",
+            "Text",
+            "Date and time"
+        ]
+    },
+    {
+        "q": "The _____ type stores repeated values.",
+        "type": "fill_blank",
+        "answers": [
+            "ARRAY"
+        ],
+        "other_options": [
+            "LIST",
+            "COLLECTION",
+            "SET"
+        ]
+    },
+    {
+        "q": "What is STRUCT type?",
+        "type": "mcq",
+        "o": [
+            "Container for named fields of different types",
+            "Simple type",
+            "Array type",
+            "Map type"
+        ]
+    },
+    {
+        "q": "STRUCT can contain nested fields.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the data types by complexity:",
+        "type": "rearrange",
+        "words": [
+            "INT64",
+            "STRING",
+            "ARRAY",
+            "STRUCT"
+        ]
+    },
+    {
+        "q": "What is RECORD type?",
+        "type": "mcq",
+        "o": [
+            "Alias for STRUCT in schema definitions",
+            "Array type",
+            "Nested array",
+            "Complex map"
+        ]
+    },
+    {
+        "q": "Match the nested type with its access:",
+        "type": "match",
+        "left": [
+            "STRUCT field",
+            "ARRAY element",
+            "ARRAY of STRUCT"
+        ],
+        "right": [
+            "Dot notation",
+            "UNNEST",
+            "UNNEST with dot"
+        ]
+    },
+    {
+        "q": "What is UNNEST function?",
+        "type": "mcq",
+        "o": [
+            "Flattens ARRAY into rows",
+            "Creates array",
+            "Nests rows",
+            "Groups data"
+        ]
+    },
+    {
+        "q": "The _____ clause joins UNNEST result to parent row.",
+        "type": "fill_blank",
+        "answers": [
+            "CROSS JOIN"
+        ],
+        "other_options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "OUTER JOIN"
+        ]
+    },
+    {
+        "q": "UNNEST is used in FROM clause.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery partitioning?",
+        "type": "mcq",
+        "o": [
+            "Dividing table into segments by column value",
+            "Data splitting",
+            "Table division",
+            "Schema separation"
+        ]
+    },
+    {
+        "q": "Rearrange the partition types:",
+        "type": "rearrange",
+        "words": [
+            "Time-based",
+            "Integer range",
+            "Ingestion time"
+        ]
+    },
+    {
+        "q": "Match the partition type with its column:",
+        "type": "match",
+        "left": [
+            "Time partitioning",
+            "Integer range",
+            "Ingestion time"
+        ],
+        "right": [
+            "DATE/TIMESTAMP column",
+            "INTEGER column",
+            "_PARTITIONTIME"
+        ]
+    },
+    {
+        "q": "What is time partitioning?",
+        "type": "mcq",
+        "o": [
+            "Partitioning by date or timestamp column",
+            "Hourly only",
+            "Manual partitioning",
+            "Row partitioning"
+        ]
+    },
+    {
+        "q": "The _____ pseudocolumn holds partition date.",
+        "type": "fill_blank",
+        "answers": [
+            "_PARTITIONDATE"
+        ],
+        "other_options": [
+            "_PARTITION",
+            "_DATE",
+            "_TIME"
+        ]
+    },
+    {
+        "q": "Partition pruning reduces scanned data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is partition expiration?",
+        "type": "mcq",
+        "o": [
+            "Automatic deletion of old partitions",
+            "Partition creation",
+            "Partition refresh",
+            "Partition archive"
+        ]
+    },
+    {
+        "q": "Match the expiration setting with its scope:",
+        "type": "match",
+        "left": [
+            "partition_expiration_days",
+            "table_expiration"
+        ],
+        "right": [
+            "Partition TTL",
+            "Table TTL"
+        ]
+    },
+    {
+        "q": "What is BigQuery clustering?",
+        "type": "mcq",
+        "o": [
+            "Sorting data within partitions by columns",
+            "Data grouping",
+            "Index creation",
+            "Table linking"
+        ]
+    },
+    {
+        "q": "Rearrange the clustering workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define cluster columns",
+            "Insert data",
+            "Automatic sorting",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "The _____ BY clause specifies cluster columns.",
+        "type": "fill_blank",
+        "answers": [
+            "CLUSTER"
+        ],
+        "other_options": [
+            "ORDER",
+            "SORT",
+            "GROUP"
+        ]
+    },
+    {
+        "q": "Clustering improves filter and aggregate queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is auto-clustering?",
+        "type": "mcq",
+        "o": [
+            "Automatic re-clustering of data on insert",
+            "Manual clustering",
+            "Scheduled clustering",
+            "Forced clustering"
+        ]
+    },
+    {
+        "q": "Match the optimization with its reduction:",
+        "type": "match",
+        "left": [
+            "Partitioning",
+            "Clustering"
+        ],
+        "right": [
+            "Filter by partition column",
+            "Filter by cluster columns"
+        ]
+    },
+    {
+        "q": "What is querying public datasets?",
+        "type": "mcq",
+        "o": [
+            "Accessing Google's free public datasets in BigQuery",
+            "Private data",
+            "Paid datasets",
+            "External data"
+        ]
+    },
+    {
+        "q": "Public datasets are in bigquery-public-data project.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the query syntax parts:",
+        "type": "rearrange",
+        "words": [
+            "SELECT",
+            "FROM",
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY"
+        ]
+    },
+    {
+        "q": "What is SELECT statement in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Query to retrieve data from tables",
+            "Insert data",
+            "Create table",
+            "Delete data"
+        ]
+    },
+    {
+        "q": "Match the SELECT clause with its purpose:",
+        "type": "match",
+        "left": [
+            "SELECT",
+            "FROM",
+            "WHERE",
+            "LIMIT"
+        ],
+        "right": [
+            "Columns",
+            "Tables",
+            "Filter",
+            "Row count"
+        ]
+    },
+    {
+        "q": "The _____ clause limits query results.",
+        "type": "fill_blank",
+        "answers": [
+            "LIMIT"
+        ],
+        "other_options": [
+            "TOP",
+            "MAX",
+            "ROWS"
+        ]
+    },
+    {
+        "q": "What is GROUP BY?",
+        "type": "mcq",
+        "o": [
+            "Groups rows for aggregate functions",
+            "Sorts rows",
+            "Filters rows",
+            "Joins tables"
+        ]
+    },
+    {
+        "q": "Columns in SELECT must be in GROUP BY or aggregated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is HAVING clause?",
+        "type": "mcq",
+        "o": [
+            "Filters groups after aggregation",
+            "Filters rows before grouping",
+            "Sorts groups",
+            "Limits groups"
+        ]
+    },
+    {
+        "q": "Rearrange clause evaluation order:",
+        "type": "rearrange",
+        "words": [
+            "FROM",
+            "WHERE",
+            "GROUP BY",
+            "HAVING",
+            "SELECT",
+            "ORDER BY"
+        ]
+    },
+    {
+        "q": "Match the aggregate with its function:",
+        "type": "match",
+        "left": [
+            "SUM",
+            "AVG",
+            "COUNT",
+            "MAX"
+        ],
+        "right": [
+            "Total",
+            "Average",
+            "Count rows",
+            "Maximum"
+        ]
+    },
+    {
+        "q": "What is JOIN in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Combines rows from multiple tables",
+            "Unions tables",
+            "Splits tables",
+            "Merges columns"
+        ]
+    },
+    {
+        "q": "The _____ JOIN returns all rows when there is a match.",
+        "type": "fill_blank",
+        "answers": [
+            "INNER"
+        ],
+        "other_options": [
+            "OUTER",
+            "CROSS",
+            "FULL"
+        ]
+    },
+    {
+        "q": "What is LEFT JOIN?",
+        "type": "mcq",
+        "o": [
+            "Returns all left table rows and matching right rows",
+            "Only matching rows",
+            "All right rows",
+            "Cross product"
+        ]
+    },
+    {
+        "q": "Match the join type with its result:",
+        "type": "match",
+        "left": [
+            "INNER",
+            "LEFT",
+            "RIGHT",
+            "FULL"
+        ],
+        "right": [
+            "Matching only",
+            "All left",
+            "All right",
+            "All rows"
+        ]
+    },
+    {
+        "q": "CROSS JOIN creates Cartesian product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the join types by cardinality:",
+        "type": "rearrange",
+        "words": [
+            "INNER (smallest)",
+            "LEFT/RIGHT",
+            "FULL",
+            "CROSS (largest)"
+        ]
+    },
+    {
+        "q": "What is window functions in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Functions that operate over a window of rows",
+            "Aggregate functions",
+            "Scalar functions",
+            "Table functions"
+        ]
+    },
+    {
+        "q": "The _____ clause defines the window.",
+        "type": "fill_blank",
+        "answers": [
+            "OVER"
+        ],
+        "other_options": [
+            "WINDOW",
+            "PARTITION",
+            "FRAME"
+        ]
+    },
+    {
+        "q": "What is PARTITION BY in window?",
+        "type": "mcq",
+        "o": [
+            "Divides rows into groups for window function",
+            "Sorts rows",
+            "Filters rows",
+            "Limits rows"
+        ]
+    },
+    {
+        "q": "Match the window function with its result:",
+        "type": "match",
+        "left": [
+            "ROW_NUMBER",
+            "RANK",
+            "LAG",
+            "SUM OVER"
+        ],
+        "right": [
+            "Sequential number",
+            "Ranking with gaps",
+            "Previous row value",
+            "Running total"
+        ]
+    },
+    {
+        "q": "LEAD function returns next row value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the window functions:",
+        "type": "rearrange",
+        "words": [
+            "ROW_NUMBER",
+            "RANK",
+            "DENSE_RANK",
+            "NTILE"
+        ]
+    },
+    {
+        "q": "What is frame specification?",
+        "type": "mcq",
+        "o": [
+            "Defines rows included in window calculation",
+            "Window partition",
+            "Window order",
+            "Window limit"
+        ]
+    },
+    {
+        "q": "The _____ includes all preceding and current row.",
+        "type": "fill_blank",
+        "answers": [
+            "ROWS UNBOUNDED PRECEDING"
+        ],
+        "other_options": [
+            "ROWS CURRENT",
+            "ROWS FOLLOWING",
+            "ROWS ALL"
+        ]
+    },
+    {
+        "q": "What is subquery in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Query nested inside another query",
+            "Main query",
+            "Outer query",
+            "Simple query"
+        ]
+    },
+    {
+        "q": "Match the subquery type with its usage:",
+        "type": "match",
+        "left": [
+            "Scalar",
+            "Table",
+            "Correlated"
+        ],
+        "right": [
+            "Single value",
+            "Multiple rows",
+            "References outer query"
+        ]
+    },
+    {
+        "q": "Correlated subqueries reference outer query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the subquery locations:",
+        "type": "rearrange",
+        "words": [
+            "SELECT (scalar)",
+            "FROM (table)",
+            "WHERE (filter)"
+        ]
+    },
+    {
+        "q": "What is Common Table Expression (CTE)?",
+        "type": "mcq",
+        "o": [
+            "Named temporary result using WITH clause",
+            "Permanent table",
+            "View",
+            "Subquery alias"
+        ]
+    },
+    {
+        "q": "The _____ clause defines CTEs.",
+        "type": "fill_blank",
+        "answers": [
+            "WITH"
+        ],
+        "other_options": [
+            "AS",
+            "CTE",
+            "TEMP"
+        ]
+    },
+    {
+        "q": "CTEs improve query readability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery views?",
+        "type": "mcq",
+        "o": [
+            "Saved query definition that acts like a table",
+            "Physical table copy",
+            "Temporary storage",
+            "Query result"
+        ]
+    },
+    {
+        "q": "Match the view type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Logical view",
+            "Materialized view"
+        ],
+        "right": [
+            "Query on demand",
+            "Precomputed result"
+        ]
+    },
+    {
+        "q": "Rearrange the view benefits:",
+        "type": "rearrange",
+        "words": [
+            "Simplify queries",
+            "Control access",
+            "Maintain consistency"
+        ]
+    },
+    {
+        "q": "What is materialized view?",
+        "type": "mcq",
+        "o": [
+            "Precomputed view that stores result physically",
+            "Logical view",
+            "Temporary view",
+            "Virtual view"
+        ]
+    },
+    {
+        "q": "The _____ updates materialized view automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "auto-refresh"
+        ],
+        "other_options": [
+            "manual refresh",
+            "scheduled refresh",
+            "forced refresh"
+        ]
+    },
+    {
+        "q": "Materialized views reduce query cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery ML?",
+        "type": "mcq",
+        "o": [
+            "Machine learning directly in BigQuery using SQL",
+            "External ML platform",
+            "Separate ML service",
+            "Python ML library"
+        ]
+    },
+    {
+        "q": "Match the BQML model with its use case:",
+        "type": "match",
+        "left": [
+            "LINEAR_REG",
+            "LOGISTIC_REG",
+            "KMEANS",
+            "BOOSTED_TREE_CLASSIFIER"
+        ],
+        "right": [
+            "Regression",
+            "Classification",
+            "Clustering",
+            "Ensemble classification"
+        ]
+    },
+    {
+        "q": "Rearrange the BQML workflow:",
+        "type": "rearrange",
+        "words": [
+            "CREATE MODEL",
+            "EVALUATE",
+            "PREDICT"
+        ]
+    },
+    {
+        "q": "What is CREATE MODEL?",
+        "type": "mcq",
+        "o": [
+            "SQL statement to train ML model",
+            "Create table",
+            "Create view",
+            "Create function"
+        ]
+    },
+    {
+        "q": "The _____ function makes predictions.",
+        "type": "fill_blank",
+        "answers": [
+            "ML.PREDICT"
+        ],
+        "other_options": [
+            "PREDICT",
+            "ML.EVAL",
+            "MODEL.PREDICT"
+        ]
+    },
+    {
+        "q": "ML.EVALUATE shows model performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery Omni?",
+        "type": "mcq",
+        "o": [
+            "Query data on AWS and Azure from BigQuery",
+            "BigQuery on GCP only",
+            "Multi-region GCP",
+            "Batch processing"
+        ]
+    },
+    {
+        "q": "Match the BigQuery edition with its feature:",
+        "type": "match",
+        "left": [
+            "Standard",
+            "Enterprise",
+            "Enterprise Plus"
+        ],
+        "right": [
+            "Basic features",
+            "Advanced security",
+            "Point-in-time recovery"
+        ]
+    },
+    {
+        "q": "What is BigQuery slots?",
+        "type": "mcq",
+        "o": [
+            "Virtual CPUs for query processing",
+            "Storage units",
+            "Memory units",
+            "Network bandwidth"
+        ]
+    },
+    {
+        "q": "Rearrange the pricing models:",
+        "type": "rearrange",
+        "words": [
+            "On-demand",
+            "Flat-rate (slots)",
+            "Edition pricing"
+        ]
+    },
+    {
+        "q": "The _____ pricing charges per bytes scanned.",
+        "type": "fill_blank",
+        "answers": [
+            "on-demand"
+        ],
+        "other_options": [
+            "flat-rate",
+            "reserved",
+            "committed"
+        ]
+    },
+    {
+        "q": "Flat-rate uses slot reservations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is slot reservation?",
+        "type": "mcq",
+        "o": [
+            "Purchasing dedicated processing capacity",
+            "Storage reservation",
+            "Network reservation",
+            "Memory reservation"
+        ]
+    },
+    {
+        "q": "Match the reservation type with its commitment:",
+        "type": "match",
+        "left": [
+            "Flex",
+            "Monthly",
+            "Annual"
+        ],
+        "right": [
+            "60 seconds",
+            "30 days",
+            "365 days"
+        ]
+    },
+    {
+        "q": "What is BigQuery Storage API?",
+        "type": "mcq",
+        "o": [
+            "API for high-speed data access",
+            "Query API",
+            "Streaming API",
+            "Management API"
+        ]
+    },
+    {
+        "q": "Rearrange the data export options:",
+        "type": "rearrange",
+        "words": [
+            "EXPORT DATA",
+            "Storage API",
+            "GCS export",
+            "Spreadsheet"
+        ]
+    },
+    {
+        "q": "The _____ allows direct table reads without SQL.",
+        "type": "fill_blank",
+        "answers": [
+            "Storage Read API"
+        ],
+        "other_options": [
+            "Query API",
+            "Table API",
+            "Data API"
+        ]
+    },
+    {
+        "q": "Storage API is faster than SQL export.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery streaming insert?",
+        "type": "mcq",
+        "o": [
+            "Real-time data ingestion into tables",
+            "Batch insert",
+            "File upload",
+            "Query insert"
+        ]
+    },
+    {
+        "q": "Match the ingestion method with its latency:",
+        "type": "match",
+        "left": [
+            "Streaming insert",
+            "Batch load",
+            "Storage Write API"
+        ],
+        "right": [
+            "Real-time",
+            "Minutes",
+            "Low latency streaming"
+        ]
+    },
+    {
+        "q": "Streaming inserts have per-row cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Storage Write API?",
+        "type": "mcq",
+        "o": [
+            "High-performance streaming with exactly-once semantics",
+            "Legacy streaming",
+            "Batch only",
+            "Query-based insert"
+        ]
+    },
+    {
+        "q": "Rearrange the data loading methods by speed:",
+        "type": "rearrange",
+        "words": [
+            "Inline query",
+            "Streaming",
+            "Batch load",
+            "Transfer service"
+        ]
+    },
+    {
+        "q": "What is BigQuery Data Transfer Service?",
+        "type": "mcq",
+        "o": [
+            "Scheduled data imports from various sources",
+            "Export service",
+            "Query service",
+            "Compute service"
+        ]
+    },
+    {
+        "q": "The _____ transfers data from Google Ads.",
+        "type": "fill_blank",
+        "answers": [
+            "Data Transfer Service"
+        ],
+        "other_options": [
+            "Import Service",
+            "Sync Service",
+            "Load Service"
+        ]
+    },
+    {
+        "q": "Match the transfer source with its type:",
+        "type": "match",
+        "left": [
+            "Google Ads",
+            "S3",
+            "Teradata"
+        ],
+        "right": [
+            "SaaS",
+            "Cloud storage",
+            "On-prem database"
+        ]
+    },
+    {
+        "q": "What is scheduled query?",
+        "type": "mcq",
+        "o": [
+            "Query that runs automatically on schedule",
+            "One-time query",
+            "Adhoc query",
+            "Interactive query"
+        ]
+    },
+    {
+        "q": "Scheduled queries can write to destination table.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the scheduled query setup:",
+        "type": "rearrange",
+        "words": [
+            "Write query",
+            "Set schedule",
+            "Configure destination",
+            "Enable"
+        ]
+    },
+    {
+        "q": "What is BigQuery BI Engine?",
+        "type": "mcq",
+        "o": [
+            "In-memory analysis for fast BI queries",
+            "Storage engine",
+            "Query engine",
+            "ML engine"
+        ]
+    },
+    {
+        "q": "Match the BI Engine benefit with its impact:",
+        "type": "match",
+        "left": [
+            "Memory cache",
+            "Sub-second queries",
+            "Looker integration"
+        ],
+        "right": [
+            "Fast access",
+            "Interactive dashboards",
+            "Native support"
+        ]
+    },
+    {
+        "q": "The _____ GB is free tier for BI Engine.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "5",
+            "10",
+            "0"
+        ]
+    },
+    {
+        "q": "What is datetime functions in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Functions for date and time manipulation",
+            "String functions",
+            "Math functions",
+            "Aggregate functions"
+        ]
+    },
+    {
+        "q": "CURRENT_TIMESTAMP returns current time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the datetime types:",
+        "type": "rearrange",
+        "words": [
+            "DATE",
+            "TIME",
+            "DATETIME",
+            "TIMESTAMP"
+        ]
+    },
+    {
+        "q": "What is DATE_TRUNC?",
+        "type": "mcq",
+        "o": [
+            "Truncates date to specified granularity",
+            "Adds to date",
+            "Subtracts from date",
+            "Formats date"
+        ]
+    },
+    {
+        "q": "Match the function with its operation:",
+        "type": "match",
+        "left": [
+            "DATE_ADD",
+            "DATE_SUB",
+            "DATE_DIFF",
+            "DATE_TRUNC"
+        ],
+        "right": [
+            "Add interval",
+            "Subtract interval",
+            "Calculate difference",
+            "Truncate part"
+        ]
+    },
+    {
+        "q": "The _____ extracts parts from datetime.",
+        "type": "fill_blank",
+        "answers": [
+            "EXTRACT"
+        ],
+        "other_options": [
+            "GET",
+            "PART",
+            "DATEPART"
+        ]
+    },
+    {
+        "q": "What is string functions in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Functions for string manipulation",
+            "Date functions",
+            "Numeric functions",
+            "Array functions"
+        ]
+    },
+    {
+        "q": "Match the string function with its purpose:",
+        "type": "match",
+        "left": [
+            "CONCAT",
+            "SUBSTR",
+            "LENGTH",
+            "UPPER"
+        ],
+        "right": [
+            "Join strings",
+            "Extract part",
+            "Count characters",
+            "Uppercase"
+        ]
+    },
+    {
+        "q": "Rearrange the string processing order:",
+        "type": "rearrange",
+        "words": [
+            "TRIM",
+            "UPPER",
+            "SUBSTR",
+            "CONCAT"
+        ]
+    },
+    {
+        "q": "What is REGEXP functions?",
+        "type": "mcq",
+        "o": [
+            "Regular expression pattern matching",
+            "String matching",
+            "Exact matching",
+            "Fuzzy matching"
+        ]
+    },
+    {
+        "q": "The _____ extracts matching pattern.",
+        "type": "fill_blank",
+        "answers": [
+            "REGEXP_EXTRACT"
+        ],
+        "other_options": [
+            "REGEXP_MATCH",
+            "REGEXP_GET",
+            "REGEXP_FIND"
+        ]
+    },
+    {
+        "q": "REGEXP_CONTAINS returns boolean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is array functions in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Functions for array manipulation",
+            "String functions",
+            "Math functions",
+            "Date functions"
+        ]
+    },
+    {
+        "q": "Match the array function with its result:",
+        "type": "match",
+        "left": [
+            "ARRAY_LENGTH",
+            "ARRAY_CONCAT",
+            "GENERATE_ARRAY",
+            "ARRAY_AGG"
+        ],
+        "right": [
+            "Count elements",
+            "Join arrays",
+            "Create sequence",
+            "Collect values"
+        ]
+    },
+    {
+        "q": "Rearrange the array operations:",
+        "type": "rearrange",
+        "words": [
+            "Create array",
+            "Access element",
+            "Unnest array",
+            "Aggregate back"
+        ]
+    },
+    {
+        "q": "What is ARRAY_AGG?",
+        "type": "mcq",
+        "o": [
+            "Aggregates values into an array",
+            "Creates array",
+            "Flattens array",
+            "Filters array"
+        ]
+    },
+    {
+        "q": "The _____ accesses array element by position.",
+        "type": "fill_blank",
+        "answers": [
+            "OFFSET or ORDINAL"
+        ],
+        "other_options": [
+            "INDEX",
+            "AT",
+            "GET"
+        ]
+    },
+    {
+        "q": "OFFSET uses 0-based indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is JSON functions in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Functions for parsing and extracting JSON",
+            "XML functions",
+            "CSV functions",
+            "Binary functions"
+        ]
+    },
+    {
+        "q": "Match the JSON function with its operation:",
+        "type": "match",
+        "left": [
+            "JSON_EXTRACT",
+            "JSON_VALUE",
+            "JSON_QUERY",
+            "TO_JSON"
+        ],
+        "right": [
+            "Extract any type",
+            "Extract scalar",
+            "Extract object/array",
+            "Convert to JSON"
+        ]
+    },
+    {
+        "q": "Rearrange the JSON processing:",
+        "type": "rearrange",
+        "words": [
+            "Parse JSON string",
+            "Extract values",
+            "Transform data",
+            "Store result"
+        ]
+    },
+    {
+        "q": "What is native JSON type?",
+        "type": "mcq",
+        "o": [
+            "First-class JSON data type in BigQuery",
+            "String storage",
+            "External format",
+            "Legacy type"
+        ]
+    },
+    {
+        "q": "The _____ type stores semi-structured JSON.",
+        "type": "fill_blank",
+        "answers": [
+            "JSON"
+        ],
+        "other_options": [
+            "STRING",
+            "STRUCT",
+            "VARIANT"
+        ]
+    },
+    {
+        "q": "JSON type offers optimized storage and querying.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery security?",
+        "type": "mcq",
+        "o": [
+            "Access control and data protection in BigQuery",
+            "Network security",
+            "Physical security",
+            "Application security"
+        ]
+    },
+    {
+        "q": "Match the security level with its scope:",
+        "type": "match",
+        "left": [
+            "Project",
+            "Dataset",
+            "Table",
+            "Row"
+        ],
+        "right": [
+            "IAM",
+            "Dataset permissions",
+            "Authorized views",
+            "Row-level security"
+        ]
+    },
+    {
+        "q": "Rearrange the security layers:",
+        "type": "rearrange",
+        "words": [
+            "Project IAM",
+            "Dataset access",
+            "Table permissions",
+            "Column/Row security"
+        ]
+    },
+    {
+        "q": "What is IAM in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Identity and Access Management for permissions",
+            "Database roles",
+            "Table permissions",
+            "Query access"
+        ]
+    },
+    {
+        "q": "The _____ role allows read-only access.",
+        "type": "fill_blank",
+        "answers": [
+            "bigquery.dataViewer"
+        ],
+        "other_options": [
+            "bigquery.admin",
+            "bigquery.user",
+            "bigquery.editor"
+        ]
+    },
+    {
+        "q": "Roles can be assigned at project or dataset level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is row-level security?",
+        "type": "mcq",
+        "o": [
+            "Restricting access to specific rows based on user",
+            "Column security",
+            "Table security",
+            "Dataset security"
+        ]
+    },
+    {
+        "q": "Match the security feature with its control:",
+        "type": "match",
+        "left": [
+            "Row access policy",
+            "Column masking",
+            "Authorized view"
+        ],
+        "right": [
+            "Filter rows",
+            "Hide data",
+            "Control column access"
+        ]
+    },
+    {
+        "q": "Rearrange the access policy creation:",
+        "type": "rearrange",
+        "words": [
+            "Define filter expression",
+            "Create policy",
+            "Apply to table",
+            "Test access"
+        ]
+    },
+    {
+        "q": "What is column-level security?",
+        "type": "mcq",
+        "o": [
+            "Restricting access to specific columns",
+            "Row security",
+            "Table security",
+            "Schema security"
+        ]
+    },
+    {
+        "q": "The _____ tags protect sensitive columns.",
+        "type": "fill_blank",
+        "answers": [
+            "policy"
+        ],
+        "other_options": [
+            "security",
+            "access",
+            "permission"
+        ]
+    },
+    {
+        "q": "Data masking can show partial values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is authorized view?",
+        "type": "mcq",
+        "o": [
+            "View with special permissions to access source data",
+            "Normal view",
+            "Materialized view",
+            "External view"
+        ]
+    },
+    {
+        "q": "Match the access control with its method:",
+        "type": "match",
+        "left": [
+            "Direct table access",
+            "Authorized view",
+            "Row policy"
+        ],
+        "right": [
+            "Full access",
+            "Filtered columns",
+            "Filtered rows"
+        ]
+    },
+    {
+        "q": "What is BigQuery encryption?",
+        "type": "mcq",
+        "o": [
+            "Data encryption at rest and in transit",
+            "Key storage",
+            "Password hashing",
+            "Access control"
+        ]
+    },
+    {
+        "q": "Rearrange the encryption layers:",
+        "type": "rearrange",
+        "words": [
+            "Google default encryption",
+            "CMEK",
+            "CSE (client-side)"
+        ]
+    },
+    {
+        "q": "The _____ uses customer-managed keys.",
+        "type": "fill_blank",
+        "answers": [
+            "CMEK"
+        ],
+        "other_options": [
+            "DEK",
+            "KEK",
+            "SSE"
+        ]
+    },
+    {
+        "q": "Data is encrypted by default in BigQuery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is CMEK?",
+        "type": "mcq",
+        "o": [
+            "Customer-Managed Encryption Keys",
+            "Cloud-Managed Encryption",
+            "Centralized Key Management",
+            "Custom Master Key"
+        ]
+    },
+    {
+        "q": "Match the encryption type with its key control:",
+        "type": "match",
+        "left": [
+            "Default",
+            "CMEK",
+            "CSE"
+        ],
+        "right": [
+            "Google manages",
+            "Customer in Cloud KMS",
+            "Customer external"
+        ]
+    },
+    {
+        "q": "What is audit logging?",
+        "type": "mcq",
+        "o": [
+            "Recording BigQuery access and operations",
+            "Query logging",
+            "Error logging",
+            "Debug logging"
+        ]
+    },
+    {
+        "q": "Rearrange the audit log types:",
+        "type": "rearrange",
+        "words": [
+            "Admin Activity",
+            "Data Access",
+            "System Event"
+        ]
+    },
+    {
+        "q": "The _____ logs show query executions.",
+        "type": "fill_blank",
+        "answers": [
+            "Data Access"
+        ],
+        "other_options": [
+            "Admin Activity",
+            "System",
+            "Query"
+        ]
+    },
+    {
+        "q": "Admin Activity logs are always enabled.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query optimization in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Reducing cost and improving query performance",
+            "Query writing",
+            "Query scheduling",
+            "Query formatting"
+        ]
+    },
+    {
+        "q": "Match the optimization with its effect:",
+        "type": "match",
+        "left": [
+            "SELECT *",
+            "Partitioning",
+            "Clustering",
+            "Caching"
+        ],
+        "right": [
+            "Avoid (expensive)",
+            "Reduce scan",
+            "Improve filters",
+            "Reuse results"
+        ]
+    },
+    {
+        "q": "Avoid SELECT * to reduce cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Select only needed columns",
+            "Filter by partition",
+            "Use clustering",
+            "Enable caching"
+        ]
+    },
+    {
+        "q": "What is query caching?",
+        "type": "mcq",
+        "o": [
+            "Reusing results of previous identical queries",
+            "Data caching",
+            "Table caching",
+            "Schema caching"
+        ]
+    },
+    {
+        "q": "The _____ setting controls query caching.",
+        "type": "fill_blank",
+        "answers": [
+            "useQueryCache"
+        ],
+        "other_options": [
+            "enableCache",
+            "cacheResults",
+            "queryCache"
+        ]
+    },
+    {
+        "q": "Cached queries are free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dry run in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Validates query and estimates bytes processed",
+            "Sample run",
+            "Test execution",
+            "Partial run"
+        ]
+    },
+    {
+        "q": "The _____ estimates query cost without running.",
+        "type": "fill_blank",
+        "answers": [
+            "dry run"
+        ],
+        "other_options": [
+            "test run",
+            "preview",
+            "simulate"
+        ]
+    },
+    {
+        "q": "Match the query setting with its purpose:",
+        "type": "match",
+        "left": [
+            "maximumBytesBilled",
+            "useQueryCache",
+            "flattenResults"
+        ],
+        "right": [
+            "Cost limit",
+            "Reuse results",
+            "Flatten nested"
+        ]
+    },
+    {
+        "q": "What is query quota?",
+        "type": "mcq",
+        "o": [
+            "Limit on bytes processed per day or project",
+            "Query count limit",
+            "Table limit",
+            "Storage limit"
+        ]
+    },
+    {
+        "q": "Quotas prevent unexpected costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the cost control methods:",
+        "type": "rearrange",
+        "words": [
+            "Set quotas",
+            "Use dry run",
+            "Monitor usage",
+            "Set alerts"
+        ]
+    },
+    {
+        "q": "What is BigQuery cost analysis?",
+        "type": "mcq",
+        "o": [
+            "Tracking and analyzing BigQuery spending",
+            "Query analysis",
+            "Performance analysis",
+            "Data analysis"
+        ]
+    },
+    {
+        "q": "Match the cost metric with its scope:",
+        "type": "match",
+        "left": [
+            "On-demand",
+            "Flat-rate",
+            "Storage"
+        ],
+        "right": [
+            "Per TB scanned",
+            "Per slot hour",
+            "Per GB per month"
+        ]
+    },
+    {
+        "q": "The _____ view shows query costs.",
+        "type": "fill_blank",
+        "answers": [
+            "INFORMATION_SCHEMA.JOBS"
+        ],
+        "other_options": [
+            "QUERY_HISTORY",
+            "JOB_STATS",
+            "COST_ANALYSIS"
+        ]
+    },
+    {
+        "q": "What is INFORMATION_SCHEMA?",
+        "type": "mcq",
+        "o": [
+            "Metadata views about datasets, tables, and jobs",
+            "System tables",
+            "Configuration store",
+            "Audit tables"
+        ]
+    },
+    {
+        "q": "INFORMATION_SCHEMA is free to query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the metadata views:",
+        "type": "rearrange",
+        "words": [
+            "SCHEMATA",
+            "TABLES",
+            "COLUMNS",
+            "JOBS"
+        ]
+    },
+    {
+        "q": "What is table metadata?",
+        "type": "mcq",
+        "o": [
+            "Information about table structure and properties",
+            "Table data",
+            "Query result",
+            "Schema definition"
+        ]
+    },
+    {
+        "q": "Match the metadata view with its content:",
+        "type": "match",
+        "left": [
+            "TABLES",
+            "COLUMNS",
+            "TABLE_OPTIONS",
+            "PARTITIONS"
+        ],
+        "right": [
+            "Table list",
+            "Column details",
+            "Table properties",
+            "Partition info"
+        ]
+    },
+    {
+        "q": "The _____ view shows column-level metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "INFORMATION_SCHEMA.COLUMNS"
+        ],
+        "other_options": [
+            "COLUMN_INFO",
+            "SCHEMA_COLUMNS",
+            "TABLE_COLUMNS"
+        ]
+    },
+    {
+        "q": "What is external table?",
+        "type": "mcq",
+        "o": [
+            "Table backed by external data source like GCS",
+            "Internal table",
+            "Temporary table",
+            "Replicated table"
+        ]
+    },
+    {
+        "q": "External tables don't store data in BigQuery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the external sources:",
+        "type": "rearrange",
+        "words": [
+            "Cloud Storage",
+            "Google Drive",
+            "Cloud Bigtable",
+            "Cloud SQL"
+        ]
+    },
+    {
+        "q": "What is federated query?",
+        "type": "mcq",
+        "o": [
+            "Query external data sources directly from BigQuery",
+            "Distributed query",
+            "Cross-dataset query",
+            "Multi-table query"
+        ]
+    },
+    {
+        "q": "Match the federated source with its connector:",
+        "type": "match",
+        "left": [
+            "Cloud SQL",
+            "Spanner",
+            "Cloud Storage"
+        ],
+        "right": [
+            "EXTERNAL_QUERY",
+            "EXTERNAL_QUERY",
+            "External table"
+        ]
+    },
+    {
+        "q": "The _____ function queries Cloud SQL from BigQuery.",
+        "type": "fill_blank",
+        "answers": [
+            "EXTERNAL_QUERY"
+        ],
+        "other_options": [
+            "QUERY_EXTERNAL",
+            "REMOTE_QUERY",
+            "SQL_QUERY"
+        ]
+    },
+    {
+        "q": "What is BigQuery connection?",
+        "type": "mcq",
+        "o": [
+            "Managed connection to external data sources",
+            "Network connection",
+            "User session",
+            "API link"
+        ]
+    },
+    {
+        "q": "Connections can be shared across queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the connection setup:",
+        "type": "rearrange",
+        "words": [
+            "Create connection",
+            "Configure credentials",
+            "Grant access",
+            "Use in query"
+        ]
+    },
+    {
+        "q": "What is VPC Service Controls?",
+        "type": "mcq",
+        "o": [
+            "Security perimeter around GCP services",
+            "Network firewall",
+            "Access control",
+            "Data encryption"
+        ]
+    },
+    {
+        "q": "Match the VPC feature with its protection:",
+        "type": "match",
+        "left": [
+            "Service perimeter",
+            "Access levels",
+            "Ingress/Egress rules"
+        ],
+        "right": [
+            "Boundary",
+            "User conditions",
+            "Traffic control"
+        ]
+    },
+    {
+        "q": "The _____ prevents data exfiltration.",
+        "type": "fill_blank",
+        "answers": [
+            "VPC Service Controls"
+        ],
+        "other_options": [
+            "Firewall",
+            "IAM",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "What is BigQuery Reservations?",
+        "type": "mcq",
+        "o": [
+            "Dedicated slot capacity for workloads",
+            "Storage reservation",
+            "Query queue",
+            "Job reservation"
+        ]
+    },
+    {
+        "q": "Reservations provide predictable performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the reservation hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Commitment",
+            "Reservation",
+            "Assignment"
+        ]
+    },
+    {
+        "q": "What is assignment in reservations?",
+        "type": "mcq",
+        "o": [
+            "Links a project or folder to a reservation",
+            "Slot creation",
+            "Capacity increase",
+            "Job placement"
+        ]
+    },
+    {
+        "q": "Match the assignment target with its scope:",
+        "type": "match",
+        "left": [
+            "Project",
+            "Folder",
+            "Organization"
+        ],
+        "right": [
+            "Single project",
+            "All child projects",
+            "All projects"
+        ]
+    },
+    {
+        "q": "The _____ determines which reservation a project uses.",
+        "type": "fill_blank",
+        "answers": [
+            "assignment"
+        ],
+        "other_options": [
+            "binding",
+            "mapping",
+            "allocation"
+        ]
+    },
+    {
+        "q": "What is slot utilization?",
+        "type": "mcq",
+        "o": [
+            "Percentage of reserved slots being used",
+            "Storage used",
+            "Query count",
+            "Data processed"
+        ]
+    },
+    {
+        "q": "Low utilization suggests over-provisioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the utilization metric with its insight:",
+        "type": "match",
+        "left": [
+            "High utilization",
+            "Low utilization",
+            "Spiky utilization"
+        ],
+        "right": [
+            "Need more slots",
+            "Over-provisioned",
+            "Consider autoscaling"
+        ]
+    },
+    {
+        "q": "What is autoscaling in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Automatic slot scaling based on demand",
+            "Manual scaling",
+            "Fixed capacity",
+            "Scheduled scaling"
+        ]
+    },
+    {
+        "q": "Rearrange the autoscaling components:",
+        "type": "rearrange",
+        "words": [
+            "Baseline slots",
+            "Max autoscale slots",
+            "Scale on demand",
+            "Scale down"
+        ]
+    },
+    {
+        "q": "The _____ sets maximum autoscale limit.",
+        "type": "fill_blank",
+        "answers": [
+            "max_autoscale_slots"
+        ],
+        "other_options": [
+            "autoscale_limit",
+            "max_slots",
+            "scale_max"
+        ]
+    },
+    {
+        "q": "What is workload management?",
+        "type": "mcq",
+        "o": [
+            "Managing resources across different query types",
+            "Task scheduling",
+            "Job queue",
+            "Process control"
+        ]
+    },
+    {
+        "q": "Match the workload type with its priority:",
+        "type": "match",
+        "left": [
+            "Interactive",
+            "Batch",
+            "ML training"
+        ],
+        "right": [
+            "High priority",
+            "Lower priority",
+            "Resource intensive"
+        ]
+    },
+    {
+        "q": "Workload management uses reservations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query prioritization?",
+        "type": "mcq",
+        "o": [
+            "Allocating more resources to important queries",
+            "Query ordering",
+            "Query scheduling",
+            "Query limiting"
+        ]
+    },
+    {
+        "q": "Rearrange the priority levels:",
+        "type": "rearrange",
+        "words": [
+            "INTERACTIVE",
+            "BATCH"
+        ]
+    },
+    {
+        "q": "The _____ priority is default for queries.",
+        "type": "fill_blank",
+        "answers": [
+            "INTERACTIVE"
+        ],
+        "other_options": [
+            "BATCH",
+            "HIGH",
+            "NORMAL"
+        ]
+    },
+    {
+        "q": "What is BigQuery Admin?",
+        "type": "mcq",
+        "o": [
+            "Administrative features for BigQuery management",
+            "User interface",
+            "Query editor",
+            "Data explorer"
+        ]
+    },
+    {
+        "q": "Match the admin task with its feature:",
+        "type": "match",
+        "left": [
+            "Monitor jobs",
+            "Manage slots",
+            "Set policies"
+        ],
+        "right": [
+            "Job view",
+            "Reservations",
+            "Organization policies"
+        ]
+    },
+    {
+        "q": "Admin SDK enables programmatic management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is job management?",
+        "type": "mcq",
+        "o": [
+            "Managing query and load jobs in BigQuery",
+            "Task management",
+            "Workflow management",
+            "Process management"
+        ]
+    },
+    {
+        "q": "Rearrange the job lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "PENDING",
+            "RUNNING",
+            "DONE"
+        ]
+    },
+    {
+        "q": "The _____ API cancels running jobs.",
+        "type": "fill_blank",
+        "answers": [
+            "jobs.cancel"
+        ],
+        "other_options": [
+            "jobs.stop",
+            "jobs.abort",
+            "jobs.kill"
+        ]
+    },
+    {
+        "q": "What is BigQuery geospatial?",
+        "type": "mcq",
+        "o": [
+            "Geographic data types and functions",
+            "Map visualization",
+            "Location services",
+            "GPS tracking"
+        ]
+    },
+    {
+        "q": "Match the type with its representation:",
+        "type": "match",
+        "left": [
+            "GEOGRAPHY",
+            "Point",
+            "Polygon"
+        ],
+        "right": [
+            "Geospatial type",
+            "Single location",
+            "Area shape"
+        ]
+    },
+    {
+        "q": "ST_GEOGPOINT creates a point geography.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ST_DISTANCE?",
+        "type": "mcq",
+        "o": [
+            "Calculates distance between geographies",
+            "Creates point",
+            "Creates polygon",
+            "Transforms coordinates"
+        ]
+    },
+    {
+        "q": "Rearrange the geospatial operations:",
+        "type": "rearrange",
+        "words": [
+            "Create point",
+            "Calculate distance",
+            "Check intersection",
+            "Buffer area"
+        ]
+    },
+    {
+        "q": "The _____ function checks if geometries intersect.",
+        "type": "fill_blank",
+        "answers": [
+            "ST_INTERSECTS"
+        ],
+        "other_options": [
+            "ST_OVERLAPS",
+            "ST_TOUCHES",
+            "ST_CROSSES"
+        ]
+    },
+    {
+        "q": "What is BigQuery scripting?",
+        "type": "mcq",
+        "o": [
+            "Procedural SQL with variables and control flow",
+            "Query writing",
+            "Data loading",
+            "Table creation"
+        ]
+    },
+    {
+        "q": "Match the scripting element with its syntax:",
+        "type": "match",
+        "left": [
+            "Variable",
+            "Loop",
+            "Conditional"
+        ],
+        "right": [
+            "DECLARE/SET",
+            "LOOP/WHILE",
+            "IF/CASE"
+        ]
+    },
+    {
+        "q": "Scripts run multiple statements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is DECLARE statement?",
+        "type": "mcq",
+        "o": [
+            "Declares a variable in script",
+            "Defines table",
+            "Creates function",
+            "Sets option"
+        ]
+    },
+    {
+        "q": "Rearrange the script structure:",
+        "type": "rearrange",
+        "words": [
+            "DECLARE variables",
+            "SET values",
+            "Execute logic",
+            "Return results"
+        ]
+    },
+    {
+        "q": "The _____ statement assigns value to variable.",
+        "type": "fill_blank",
+        "answers": [
+            "SET"
+        ],
+        "other_options": [
+            "ASSIGN",
+            "DEFINE",
+            "LET"
+        ]
+    },
+    {
+        "q": "What is control flow in scripts?",
+        "type": "mcq",
+        "o": [
+            "IF, LOOP, WHILE statements for logic",
+            "Query flow",
+            "Data flow",
+            "Execution order"
+        ]
+    },
+    {
+        "q": "Match the statement with its purpose:",
+        "type": "match",
+        "left": [
+            "IF",
+            "LOOP",
+            "BREAK",
+            "CONTINUE"
+        ],
+        "right": [
+            "Conditional",
+            "Iterate",
+            "Exit loop",
+            "Skip iteration"
+        ]
+    },
+    {
+        "q": "FOR loop iterates over result set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is stored procedure?",
+        "type": "mcq",
+        "o": [
+            "Reusable SQL code block stored in dataset",
+            "View",
+            "Table function",
+            "Query template"
+        ]
+    },
+    {
+        "q": "Rearrange the procedure lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "CREATE PROCEDURE",
+            "CALL procedure",
+            "DROP PROCEDURE"
+        ]
+    },
+    {
+        "q": "The _____ keyword calls stored procedure.",
+        "type": "fill_blank",
+        "answers": [
+            "CALL"
+        ],
+        "other_options": [
+            "EXEC",
+            "RUN",
+            "EXECUTE"
+        ]
+    },
+    {
+        "q": "What is user-defined function?",
+        "type": "mcq",
+        "o": [
+            "Custom function created with SQL or JavaScript",
+            "Built-in function",
+            "Stored procedure",
+            "System function"
+        ]
+    },
+    {
+        "q": "Match the UDF type with its language:",
+        "type": "match",
+        "left": [
+            "SQL UDF",
+            "JavaScript UDF"
+        ],
+        "right": [
+            "SQL expressions",
+            "JavaScript code"
+        ]
+    },
+    {
+        "q": "SQL UDFs are faster than JavaScript UDFs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is temporary function?",
+        "type": "mcq",
+        "o": [
+            "UDF that exists only for query duration",
+            "Persistent function",
+            "Shared function",
+            "System function"
+        ]
+    },
+    {
+        "q": "Rearrange the function scopes:",
+        "type": "rearrange",
+        "words": [
+            "Query-scoped (temp)",
+            "Dataset-scoped",
+            "Project-scoped"
+        ]
+    },
+    {
+        "q": "The _____ keyword creates persistent UDF.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE FUNCTION"
+        ],
+        "other_options": [
+            "CREATE UDF",
+            "DEFINE FUNCTION",
+            "ADD FUNCTION"
+        ]
+    },
+    {
+        "q": "What is table-valued function?",
+        "type": "mcq",
+        "o": [
+            "UDF that returns a table",
+            "Scalar UDF",
+            "Aggregate UDF",
+            "Window function"
+        ]
+    },
+    {
+        "q": "TVFs can be used in FROM clause.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the function type with its return:",
+        "type": "match",
+        "left": [
+            "Scalar UDF",
+            "Table function"
+        ],
+        "right": [
+            "Single value",
+            "Table result"
+        ]
+    },
+    {
+        "q": "What is remote function?",
+        "type": "mcq",
+        "o": [
+            "UDF that calls Cloud Functions or Cloud Run",
+            "Local function",
+            "Built-in function",
+            "SQL function"
+        ]
+    },
+    {
+        "q": "Rearrange the remote function setup:",
+        "type": "rearrange",
+        "words": [
+            "Deploy Cloud Function",
+            "Create connection",
+            "Create remote function",
+            "Use in query"
+        ]
+    },
+    {
+        "q": "The _____ enables calling external services.",
+        "type": "fill_blank",
+        "answers": [
+            "remote function"
+        ],
+        "other_options": [
+            "external function",
+            "cloud function",
+            "API function"
+        ]
+    },
+    {
+        "q": "What is BigQuery ML export?",
+        "type": "mcq",
+        "o": [
+            "Exporting trained models for deployment",
+            "Data export",
+            "Table export",
+            "Result export"
+        ]
+    },
+    {
+        "q": "Match the export format with its platform:",
+        "type": "match",
+        "left": [
+            "TensorFlow SavedModel",
+            "ONNX"
+        ],
+        "right": [
+            "TF Serving",
+            "Various platforms"
+        ]
+    },
+    {
+        "q": "ML models can be exported to Cloud Storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is model hyperparameter tuning?",
+        "type": "mcq",
+        "o": [
+            "Optimizing model parameters for better performance",
+            "Feature engineering",
+            "Data preprocessing",
+            "Model selection"
+        ]
+    },
+    {
+        "q": "Rearrange the ML workflow:",
+        "type": "rearrange",
+        "words": [
+            "Prepare data",
+            "Create model",
+            "Evaluate",
+            "Tune hyperparameters",
+            "Deploy"
+        ]
+    },
+    {
+        "q": "The _____ option sets learning rate.",
+        "type": "fill_blank",
+        "answers": [
+            "learn_rate"
+        ],
+        "other_options": [
+            "learning_rate",
+            "rate",
+            "lr"
+        ]
+    },
+    {
+        "q": "What is feature importance?",
+        "type": "mcq",
+        "o": [
+            "Ranking features by their impact on predictions",
+            "Feature selection",
+            "Feature extraction",
+            "Feature engineering"
+        ]
+    },
+    {
+        "q": "Match the BQML function with its purpose:",
+        "type": "match",
+        "left": [
+            "ML.FEATURE_INFO",
+            "ML.WEIGHTS",
+            "ML.FEATURE_IMPORTANCE"
+        ],
+        "right": [
+            "Feature statistics",
+            "Model weights",
+            "Feature ranking"
+        ]
+    },
+    {
+        "q": "ML.EXPLAIN_PREDICT shows feature contributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is model versioning?",
+        "type": "mcq",
+        "o": [
+            "Managing multiple versions of ML models",
+            "Data versioning",
+            "Schema versioning",
+            "Query versioning"
+        ]
+    },
+    {
+        "q": "Rearrange the model management:",
+        "type": "rearrange",
+        "words": [
+            "Train model",
+            "Version model",
+            "Compare versions",
+            "Deploy best"
+        ]
+    },
+    {
+        "q": "The _____ replaces model keeping same name.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE OR REPLACE MODEL"
+        ],
+        "other_options": [
+            "UPDATE MODEL",
+            "ALTER MODEL",
+            "MODIFY MODEL"
+        ]
+    },
+    {
+        "q": "What is BigQuery DataFrames?",
+        "type": "mcq",
+        "o": [
+            "Pandas-compatible API for BigQuery",
+            "Spark DataFrames",
+            "SQL tables",
+            "External library"
+        ]
+    },
+    {
+        "q": "Match the API with its similarity:",
+        "type": "match",
+        "left": [
+            "bigframes.pandas",
+            "bigframes.ml"
+        ],
+        "right": [
+            "Pandas API",
+            "Scikit-learn API"
+        ]
+    },
+    {
+        "q": "BigQuery DataFrames run in BigQuery engine.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Dataform?",
+        "type": "mcq",
+        "o": [
+            "Data transformation and pipeline tool for BigQuery",
+            "Data visualization",
+            "Data ingestion",
+            "Data export"
+        ]
+    },
+    {
+        "q": "Rearrange the Dataform workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define sources",
+            "Create transformations",
+            "Define dependencies",
+            "Execute pipeline"
+        ]
+    },
+    {
+        "q": "The _____ language is used in Dataform.",
+        "type": "fill_blank",
+        "answers": [
+            "SQLX"
+        ],
+        "other_options": [
+            "SQL",
+            "HiveQL",
+            "SparkSQL"
+        ]
+    },
+    {
+        "q": "What is Dataform dependency management?",
+        "type": "mcq",
+        "o": [
+            "Managing execution order of transformations",
+            "Package management",
+            "Library management",
+            "Module management"
+        ]
+    },
+    {
+        "q": "Dataform generates DAG from dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Dataform object with its purpose:",
+        "type": "match",
+        "left": [
+            "definitions",
+            "declarations",
+            "assertions"
+        ],
+        "right": [
+            "Transformations",
+            "Source references",
+            "Data tests"
+        ]
+    },
+    {
+        "q": "What is data pipeline in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Automated data flow from source to destination",
+            "Single query",
+            "Manual load",
+            "One-time transfer"
+        ]
+    },
+    {
+        "q": "Rearrange the pipeline stages:",
+        "type": "rearrange",
+        "words": [
+            "Ingest",
+            "Transform",
+            "Store",
+            "Analyze"
+        ]
+    },
+    {
+        "q": "The _____ orchestrates BigQuery pipelines.",
+        "type": "fill_blank",
+        "answers": [
+            "Cloud Composer"
+        ],
+        "other_options": [
+            "Cloud Scheduler",
+            "Cloud Tasks",
+            "Cloud Run"
+        ]
+    },
+    {
+        "q": "What is data freshness?",
+        "type": "mcq",
+        "o": [
+            "How recent data is in the table",
+            "Data quality",
+            "Data completeness",
+            "Data accuracy"
+        ]
+    },
+    {
+        "q": "Match the ingestion with its freshness:",
+        "type": "match",
+        "left": [
+            "Streaming",
+            "Batch hourly",
+            "Batch daily"
+        ],
+        "right": [
+            "Real-time",
+            "Hourly lag",
+            "Daily lag"
+        ]
+    },
+    {
+        "q": "Streaming provides highest data freshness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data modeling in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Designing table schemas for analytics",
+            "Machine learning",
+            "Data visualization",
+            "Data export"
+        ]
+    },
+    {
+        "q": "Rearrange the modeling steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify entities",
+            "Define relationships",
+            "Choose structure",
+            "Create tables"
+        ]
+    },
+    {
+        "q": "The _____ schema is common in BigQuery.",
+        "type": "fill_blank",
+        "answers": [
+            "denormalized"
+        ],
+        "other_options": [
+            "normalized",
+            "star",
+            "snowflake"
+        ]
+    },
+    {
+        "q": "What is nested and repeated fields?",
+        "type": "mcq",
+        "o": [
+            "STRUCT and ARRAY types for denormalization",
+            "Normalized tables",
+            "Foreign keys",
+            "Join tables"
+        ]
+    },
+    {
+        "q": "Nested fields reduce need for joins.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the structure with its SQL type:",
+        "type": "match",
+        "left": [
+            "Nested",
+            "Repeated",
+            "Nested repeated"
+        ],
+        "right": [
+            "STRUCT",
+            "ARRAY",
+            "ARRAY of STRUCT"
+        ]
+    },
+    {
+        "q": "What is star schema in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Fact table with dimension tables",
+            "Single table",
+            "Normalized schema",
+            "Flat structure"
+        ]
+    },
+    {
+        "q": "Rearrange the star schema components:",
+        "type": "rearrange",
+        "words": [
+            "Fact table",
+            "Dimension tables",
+            "Foreign keys",
+            "Aggregations"
+        ]
+    },
+    {
+        "q": "The _____ table stores metrics and measures.",
+        "type": "fill_blank",
+        "answers": [
+            "fact"
+        ],
+        "other_options": [
+            "dimension",
+            "lookup",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is slowly changing dimension?",
+        "type": "mcq",
+        "o": [
+            "Dimension that changes over time",
+            "Static dimension",
+            "Fact table",
+            "Lookup table"
+        ]
+    },
+    {
+        "q": "Match the SCD type with its approach:",
+        "type": "match",
+        "left": [
+            "Type 1",
+            "Type 2",
+            "Type 3"
+        ],
+        "right": [
+            "Overwrite",
+            "Add row",
+            "Add column"
+        ]
+    },
+    {
+        "q": "SCD Type 2 preserves history.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is snapshot table?",
+        "type": "mcq",
+        "o": [
+            "Table containing point-in-time data copies",
+            "Live table",
+            "Streaming table",
+            "External table"
+        ]
+    },
+    {
+        "q": "Rearrange the snapshot strategies:",
+        "type": "rearrange",
+        "words": [
+            "Full snapshot",
+            "Incremental snapshot",
+            "CDC"
+        ]
+    },
+    {
+        "q": "The _____ captures data at a specific time.",
+        "type": "fill_blank",
+        "answers": [
+            "snapshot"
+        ],
+        "other_options": [
+            "backup",
+            "copy",
+            "clone"
+        ]
+    },
+    {
+        "q": "What is change data capture?",
+        "type": "mcq",
+        "o": [
+            "Tracking and capturing data changes",
+            "Full copy",
+            "Snapshot",
+            "Backup"
+        ]
+    },
+    {
+        "q": "Match the CDC method with its approach:",
+        "type": "match",
+        "left": [
+            "Log-based",
+            "Query-based",
+            "Trigger-based"
+        ],
+        "right": [
+            "Read database logs",
+            "Compare snapshots",
+            "Database triggers"
+        ]
+    },
+    {
+        "q": "Datastream provides CDC to BigQuery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Google Cloud Datastream?",
+        "type": "mcq",
+        "o": [
+            "Serverless CDC service for BigQuery",
+            "Data lake",
+            "File transfer",
+            "Batch processing"
+        ]
+    },
+    {
+        "q": "Rearrange the Datastream flow:",
+        "type": "rearrange",
+        "words": [
+            "Source database",
+            "Stream changes",
+            "Process events",
+            "Load to BigQuery"
+        ]
+    },
+    {
+        "q": "The _____ sources are supported by Datastream.",
+        "type": "fill_blank",
+        "answers": [
+            "MySQL, PostgreSQL, Oracle"
+        ],
+        "other_options": [
+            "Only MySQL",
+            "Only PostgreSQL",
+            "Only Oracle"
+        ]
+    },
+    {
+        "q": "What is BigQuery backup?",
+        "type": "mcq",
+        "o": [
+            "Protecting data through snapshots and exports",
+            "Replication",
+            "Mirroring",
+            "Syncing"
+        ]
+    },
+    {
+        "q": "Time travel provides built-in backup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the backup method with its duration:",
+        "type": "match",
+        "left": [
+            "Time travel",
+            "Table snapshot",
+            "GCS export"
+        ],
+        "right": [
+            "7 days default",
+            "Until deleted",
+            "Permanent"
+        ]
+    },
+    {
+        "q": "What is table snapshot?",
+        "type": "mcq",
+        "o": [
+            "Point-in-time copy of table for backup",
+            "Live copy",
+            "External table",
+            "View"
+        ]
+    },
+    {
+        "q": "Rearrange the snapshot operations:",
+        "type": "rearrange",
+        "words": [
+            "Create snapshot",
+            "Store snapshot",
+            "Restore from snapshot",
+            "Delete snapshot"
+        ]
+    },
+    {
+        "q": "The _____ creates a table snapshot.",
+        "type": "fill_blank",
+        "answers": [
+            "CREATE SNAPSHOT TABLE"
+        ],
+        "other_options": [
+            "CREATE BACKUP",
+            "CREATE COPY",
+            "SNAPSHOT TABLE"
+        ]
+    },
+    {
+        "q": "What is table clone?",
+        "type": "mcq",
+        "o": [
+            "Lightweight copy sharing storage with original",
+            "Full copy",
+            "Deep copy",
+            "External copy"
+        ]
+    },
+    {
+        "q": "Clones don't duplicate storage initially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the copy type with its storage:",
+        "type": "match",
+        "left": [
+            "Clone",
+            "Copy",
+            "Snapshot"
+        ],
+        "right": [
+            "Shared initially",
+            "Full duplicate",
+            "Point-in-time shared"
+        ]
+    },
+    {
+        "q": "What is fail-safe period?",
+        "type": "mcq",
+        "o": [
+            "Additional 7 days for disaster recovery",
+            "Time travel period",
+            "Backup window",
+            "Retention period"
+        ]
+    },
+    {
+        "q": "Rearrange the data recovery options:",
+        "type": "rearrange",
+        "words": [
+            "Time travel (7 days)",
+            "Fail-safe (7 days)",
+            "Table snapshot",
+            "GCS backup"
+        ]
+    },
+    {
+        "q": "The _____ period is for Google support recovery only.",
+        "type": "fill_blank",
+        "answers": [
+            "fail-safe"
+        ],
+        "other_options": [
+            "time-travel",
+            "backup",
+            "retention"
+        ]
+    },
+    {
+        "q": "What is BigQuery monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking BigQuery performance and usage",
+            "Query writing",
+            "Data loading",
+            "Schema management"
+        ]
+    },
+    {
+        "q": "Match the monitoring tool with its scope:",
+        "type": "match",
+        "left": [
+            "Cloud Monitoring",
+            "INFORMATION_SCHEMA",
+            "BigQuery Admin"
+        ],
+        "right": [
+            "Metrics and alerts",
+            "Job metadata",
+            "Resource management"
+        ]
+    },
+    {
+        "q": "Cloud Monitoring provides BigQuery metrics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query performance analysis?",
+        "type": "mcq",
+        "o": [
+            "Analyzing query execution for optimization",
+            "Data analysis",
+            "Schema analysis",
+            "Cost analysis"
+        ]
+    },
+    {
+        "q": "Rearrange the performance analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "View execution details",
+            "Identify bottlenecks",
+            "Optimize query",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "The _____ shows query execution stages.",
+        "type": "fill_blank",
+        "answers": [
+            "Query Plan Explanation"
+        ],
+        "other_options": [
+            "Query Log",
+            "Query History",
+            "Query Stats"
+        ]
+    },
+    {
+        "q": "What is slot usage analysis?",
+        "type": "mcq",
+        "o": [
+            "Analyzing compute resource consumption",
+            "Storage analysis",
+            "Network analysis",
+            "Cost analysis"
+        ]
+    },
+    {
+        "q": "Match the metric with its indication:",
+        "type": "match",
+        "left": [
+            "High slot time",
+            "Low slot usage",
+            "Slot exhaustion"
+        ],
+        "right": [
+            "Complex query",
+            "Efficient query",
+            "Need more slots"
+        ]
+    },
+    {
+        "q": "Query plan shows slot consumption per stage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data skew?",
+        "type": "mcq",
+        "o": [
+            "Uneven distribution of data across workers",
+            "Data imbalance",
+            "Schema mismatch",
+            "Query error"
+        ]
+    },
+    {
+        "q": "Rearrange the skew detection:",
+        "type": "rearrange",
+        "words": [
+            "Check execution plan",
+            "Identify long stages",
+            "Analyze data distribution",
+            "Fix skew"
+        ]
+    },
+    {
+        "q": "The _____ causes some workers to take longer.",
+        "type": "fill_blank",
+        "answers": [
+            "data skew"
+        ],
+        "other_options": [
+            "slow network",
+            "bad query",
+            "schema error"
+        ]
+    },
+    {
+        "q": "What is shuffle in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Redistributing data between workers",
+            "Sorting data",
+            "Filtering data",
+            "Grouping data"
+        ]
+    },
+    {
+        "q": "Match the operation with its shuffle:",
+        "type": "match",
+        "left": [
+            "JOIN",
+            "GROUP BY",
+            "ORDER BY"
+        ],
+        "right": [
+            "May shuffle",
+            "Shuffles",
+            "Shuffles"
+        ]
+    },
+    {
+        "q": "Reducing shuffle improves performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query anti-patterns?",
+        "type": "mcq",
+        "o": [
+            "Common query patterns that hurt performance",
+            "Best practices",
+            "Design patterns",
+            "Optimization techniques"
+        ]
+    },
+    {
+        "q": "Rearrange the anti-patterns by impact:",
+        "type": "rearrange",
+        "words": [
+            "SELECT *",
+            "Cross join",
+            "Non-deterministic functions",
+            "Self-join"
+        ]
+    },
+    {
+        "q": "The _____ anti-pattern scans all columns.",
+        "type": "fill_blank",
+        "answers": [
+            "SELECT *"
+        ],
+        "other_options": [
+            "CROSS JOIN",
+            "UNION ALL",
+            "FULL OUTER JOIN"
+        ]
+    },
+    {
+        "q": "What is approximate aggregation?",
+        "type": "mcq",
+        "o": [
+            "Faster aggregation with slight inaccuracy",
+            "Exact aggregation",
+            "Partial aggregation",
+            "Batch aggregation"
+        ]
+    },
+    {
+        "q": "Match the function with its approximate version:",
+        "type": "match",
+        "left": [
+            "COUNT DISTINCT",
+            "PERCENTILE"
+        ],
+        "right": [
+            "APPROX_COUNT_DISTINCT",
+            "APPROX_QUANTILES"
+        ]
+    },
+    {
+        "q": "Approximate functions are faster and cheaper.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is APPROX_COUNT_DISTINCT?",
+        "type": "mcq",
+        "o": [
+            "Estimates distinct count with HyperLogLog++",
+            "Exact count",
+            "Row count",
+            "Null count"
+        ]
+    },
+    {
+        "q": "Rearrange the aggregation by accuracy:",
+        "type": "rearrange",
+        "words": [
+            "COUNT DISTINCT (exact)",
+            "APPROX_COUNT_DISTINCT (fast)"
+        ]
+    },
+    {
+        "q": "The _____ algorithm powers APPROX_COUNT_DISTINCT.",
+        "type": "fill_blank",
+        "answers": [
+            "HyperLogLog++"
+        ],
+        "other_options": [
+            "Count-Min Sketch",
+            "Bloom Filter",
+            "MinHash"
+        ]
+    },
+    {
+        "q": "What is BigQuery testing?",
+        "type": "mcq",
+        "o": [
+            "Testing queries and data pipelines",
+            "Load testing",
+            "Stress testing",
+            "Performance testing"
+        ]
+    },
+    {
+        "q": "Match the test type with its purpose:",
+        "type": "match",
+        "left": [
+            "Unit test",
+            "Integration test",
+            "Data test"
+        ],
+        "right": [
+            "Query logic",
+            "Pipeline flow",
+            "Data quality"
+        ]
+    },
+    {
+        "q": "Assertions validate data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query validation?",
+        "type": "mcq",
+        "o": [
+            "Checking query syntax and semantics",
+            "Data validation",
+            "Schema validation",
+            "Result validation"
+        ]
+    },
+    {
+        "q": "Rearrange the validation steps:",
+        "type": "rearrange",
+        "words": [
+            "Syntax check",
+            "Semantic check",
+            "Dry run",
+            "Test execution"
+        ]
+    },
+    {
+        "q": "The _____ validates without executing.",
+        "type": "fill_blank",
+        "answers": [
+            "dry run"
+        ],
+        "other_options": [
+            "syntax check",
+            "test run",
+            "preview"
+        ]
+    },
+    {
+        "q": "What is BigQuery organization policy?",
+        "type": "mcq",
+        "o": [
+            "Constraints applied across organization",
+            "Project policy",
+            "Dataset policy",
+            "Table policy"
+        ]
+    },
+    {
+        "q": "Match the policy with its constraint:",
+        "type": "match",
+        "left": [
+            "Disable public datasets",
+            "Require CMEK"
+        ],
+        "right": [
+            "Security",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "Organization policies apply to all projects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery troubleshooting?",
+        "type": "mcq",
+        "o": [
+            "Diagnosing and fixing BigQuery issues",
+            "Query optimization",
+            "Cost management",
+            "Performance tuning"
+        ]
+    },
+    {
+        "q": "Rearrange the troubleshooting steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify error",
+            "Check logs",
+            "Analyze cause",
+            "Apply fix"
+        ]
+    },
+    {
+        "q": "The _____ shows detailed error messages.",
+        "type": "fill_blank",
+        "answers": [
+            "job details"
+        ],
+        "other_options": [
+            "error log",
+            "debug log",
+            "trace log"
+        ]
+    },
+    {
+        "q": "What is quota error?",
+        "type": "mcq",
+        "o": [
+            "Error when exceeding BigQuery limits",
+            "Syntax error",
+            "Schema error",
+            "Permission error"
+        ]
+    },
+    {
+        "q": "Match the error with its cause:",
+        "type": "match",
+        "left": [
+            "rateLimitExceeded",
+            "quotaExceeded",
+            "invalidQuery"
+        ],
+        "right": [
+            "Too many requests",
+            "Over limit",
+            "Bad SQL"
+        ]
+    },
+    {
+        "q": "Quotas can be increased by request.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery best practices?",
+        "type": "mcq",
+        "o": [
+            "Recommended patterns for optimal BigQuery usage",
+            "Required rules",
+            "Mandatory settings",
+            "Default configurations"
+        ]
+    },
+    {
+        "q": "Match the practice with its benefit:",
+        "type": "match",
+        "left": [
+            "Partition tables",
+            "Use nested fields",
+            "Cluster tables",
+            "Enable caching"
+        ],
+        "right": [
+            "Reduce scan",
+            "Avoid joins",
+            "Improve filters",
+            "Reuse results"
+        ]
+    },
+    {
+        "q": "Best practices reduce cost and improve performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery time travel?",
+        "type": "mcq",
+        "o": [
+            "Query historical data at past point in time",
+            "Date functions",
+            "Query scheduling",
+            "Time zone conversion"
+        ]
+    },
+    {
+        "q": "Match the time travel with its duration:",
+        "type": "match",
+        "left": [
+            "Default",
+            "Maximum"
+        ],
+        "right": [
+            "7 days",
+            "7 days"
+        ]
+    },
+    {
+        "q": "The _____ clause enables time travel queries.",
+        "type": "fill_blank",
+        "answers": [
+            "FOR SYSTEM_TIME AS OF"
+        ],
+        "other_options": [
+            "AT TIMESTAMP",
+            "AS OF",
+            "TIME TRAVEL"
+        ]
+    },
+    {
+        "q": "What is table expiration?",
+        "type": "mcq",
+        "o": [
+            "Automatic table deletion after specified time",
+            "Data expiration",
+            "Query expiration",
+            "Session expiration"
+        ]
+    },
+    {
+        "q": "Expiration reduces storage costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the expiration scopes:",
+        "type": "rearrange",
+        "words": [
+            "Dataset default",
+            "Table specific",
+            "Partition specific"
+        ]
+    },
+    {
+        "q": "What is BigQuery labels?",
+        "type": "mcq",
+        "o": [
+            "Key-value pairs for resource organization",
+            "Data tags",
+            "Column names",
+            "Table names"
+        ]
+    },
+    {
+        "q": "Match the label usage with its benefit:",
+        "type": "match",
+        "left": [
+            "Cost tracking",
+            "Resource grouping",
+            "Access filtering"
+        ],
+        "right": [
+            "Per-label costs",
+            "Organize resources",
+            "Filter in console"
+        ]
+    },
+    {
+        "q": "The _____ setting attaches labels to queries.",
+        "type": "fill_blank",
+        "answers": [
+            "query_label"
+        ],
+        "other_options": [
+            "job_label",
+            "labels",
+            "tag"
+        ]
+    },
+    {
+        "q": "What is dataset location?",
+        "type": "mcq",
+        "o": [
+            "Geographic region where data is stored",
+            "Storage path",
+            "File location",
+            "Network location"
+        ]
+    },
+    {
+        "q": "Location cannot be changed after creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the location types:",
+        "type": "rearrange",
+        "words": [
+            "Single region",
+            "Multi-region"
+        ]
+    },
+    {
+        "q": "What is multi-region location?",
+        "type": "mcq",
+        "o": [
+            "Data replicated across regions for availability",
+            "Single region",
+            "Dual region",
+            "Global region"
+        ]
+    },
+    {
+        "q": "Match the region with its type:",
+        "type": "match",
+        "left": [
+            "US",
+            "EU",
+            "us-east1"
+        ],
+        "right": [
+            "Multi-region",
+            "Multi-region",
+            "Single region"
+        ]
+    },
+    {
+        "q": "The _____ multi-region covers United States.",
+        "type": "fill_blank",
+        "answers": [
+            "US"
+        ],
+        "other_options": [
+            "NA",
+            "AMERICA",
+            "USA"
+        ]
+    },
+    {
+        "q": "What is data governance in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Managing data policies and compliance",
+            "Data storage",
+            "Data processing",
+            "Data analysis"
+        ]
+    },
+    {
+        "q": "Dataplex provides data governance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the governance components:",
+        "type": "rearrange",
+        "words": [
+            "Data catalog",
+            "Data lineage",
+            "Data quality",
+            "Access control"
+        ]
+    },
+    {
+        "q": "What is Data Catalog?",
+        "type": "mcq",
+        "o": [
+            "Metadata management service for BigQuery",
+            "Data storage",
+            "Query engine",
+            "ML platform"
+        ]
+    },
+    {
+        "q": "Match the catalog feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Tags",
+            "Search",
+            "Policy tags"
+        ],
+        "right": [
+            "Metadata",
+            "Discovery",
+            "Column security"
+        ]
+    },
+    {
+        "q": "The _____ provides searchable data inventory.",
+        "type": "fill_blank",
+        "answers": [
+            "Data Catalog"
+        ],
+        "other_options": [
+            "Data Lake",
+            "Data Warehouse",
+            "Data Store"
+        ]
+    },
+    {
+        "q": "What is data lineage?",
+        "type": "mcq",
+        "o": [
+            "Tracking data flow from source to destination",
+            "Data history",
+            "Data version",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Lineage shows table dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the lineage view with its scope:",
+        "type": "match",
+        "left": [
+            "Column lineage",
+            "Table lineage",
+            "Job lineage"
+        ],
+        "right": [
+            "Column transformation",
+            "Table relationships",
+            "Processing history"
+        ]
+    },
+    {
+        "q": "What is Dataplex?",
+        "type": "mcq",
+        "o": [
+            "Unified data management across data lakes and warehouses",
+            "Storage service",
+            "Query engine",
+            "ML platform"
+        ]
+    },
+    {
+        "q": "Rearrange the Dataplex components:",
+        "type": "rearrange",
+        "words": [
+            "Data Catalog",
+            "Data Lineage",
+            "Data Quality",
+            "Data Discovery"
+        ]
+    },
+    {
+        "q": "The _____ scan checks data quality.",
+        "type": "fill_blank",
+        "answers": [
+            "data quality"
+        ],
+        "other_options": [
+            "data validation",
+            "data check",
+            "data audit"
+        ]
+    },
+    {
+        "q": "What is BigQuery export?",
+        "type": "mcq",
+        "o": [
+            "Moving data from BigQuery to external storage",
+            "Data import",
+            "Data transfer",
+            "Data copy"
+        ]
+    },
+    {
+        "q": "Match the export format with its use:",
+        "type": "match",
+        "left": [
+            "CSV",
+            "JSON",
+            "Avro",
+            "Parquet"
+        ],
+        "right": [
+            "Universal",
+            "Nested data",
+            "Schema evolution",
+            "Analytics"
+        ]
+    },
+    {
+        "q": "EXPORT DATA saves to Cloud Storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data extraction?",
+        "type": "mcq",
+        "o": [
+            "Exporting table data to files",
+            "Data loading",
+            "Data querying",
+            "Data copying"
+        ]
+    },
+    {
+        "q": "Rearrange the export options:",
+        "type": "rearrange",
+        "words": [
+            "EXPORT DATA",
+            "bq extract",
+            "Storage API",
+            "Sheets connector"
+        ]
+    },
+    {
+        "q": "The _____ format preserves schema for export.",
+        "type": "fill_blank",
+        "answers": [
+            "Avro"
+        ],
+        "other_options": [
+            "CSV",
+            "JSON",
+            "Text"
+        ]
+    },
+    {
+        "q": "What is BigQuery Studio?",
+        "type": "mcq",
+        "o": [
+            "New integrated development environment for BigQuery",
+            "Classic console",
+            "External IDE",
+            "Mobile app"
+        ]
+    },
+    {
+        "q": "Match the Studio feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Code editor",
+            "Notebooks",
+            "Version control"
+        ],
+        "right": [
+            "SQL writing",
+            "Interactive analysis",
+            "Git integration"
+        ]
+    },
+    {
+        "q": "Studio supports Python notebooks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Colab Enterprise?",
+        "type": "mcq",
+        "o": [
+            "Managed Jupyter notebook service in BigQuery",
+            "External notebook",
+            "Desktop app",
+            "CLI tool"
+        ]
+    },
+    {
+        "q": "Rearrange the notebook benefits:",
+        "type": "rearrange",
+        "words": [
+            "Interactive analysis",
+            "Code sharing",
+            "Version control",
+            "Collaboration"
+        ]
+    },
+    {
+        "q": "The _____ enables Python analysis in BigQuery.",
+        "type": "fill_blank",
+        "answers": [
+            "Colab Enterprise"
+        ],
+        "other_options": [
+            "Jupyter Hub",
+            "Databricks",
+            "Zeppelin"
+        ]
+    },
+    {
+        "q": "What is Looker Studio?",
+        "type": "mcq",
+        "o": [
+            "Business intelligence and visualization tool",
+            "Query editor",
+            "Data pipeline",
+            "ML platform"
+        ]
+    },
+    {
+        "q": "Match the BI tool with its strength:",
+        "type": "match",
+        "left": [
+            "Looker Studio",
+            "Looker",
+            "Data Studio"
+        ],
+        "right": [
+            "Free dashboards",
+            "Enterprise BI",
+            "Legacy name"
+        ]
+    },
+    {
+        "q": "Looker Studio connects directly to BigQuery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery connector?",
+        "type": "mcq",
+        "o": [
+            "Integration with external tools and services",
+            "Network connection",
+            "API endpoint",
+            "Database link"
+        ]
+    },
+    {
+        "q": "Rearrange the connector types:",
+        "type": "rearrange",
+        "words": [
+            "BI connectors",
+            "Data integration",
+            "Programming libraries"
+        ]
+    },
+    {
+        "q": "The _____ connector enables Excel integration.",
+        "type": "fill_blank",
+        "answers": [
+            "Connected Sheets"
+        ],
+        "other_options": [
+            "Excel connector",
+            "Office plugin",
+            "Sheets link"
+        ]
+    },
+    {
+        "q": "What is Connected Sheets?",
+        "type": "mcq",
+        "o": [
+            "Query BigQuery directly from Google Sheets",
+            "Export to Sheets",
+            "Import from Sheets",
+            "Sheets connector"
+        ]
+    },
+    {
+        "q": "Match the integration with its tool:",
+        "type": "match",
+        "left": [
+            "Google Sheets",
+            "Excel",
+            "Tableau"
+        ],
+        "right": [
+            "Connected Sheets",
+            "ODBC driver",
+            "Native connector"
+        ]
+    },
+    {
+        "q": "Connected Sheets queries live data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ODBC/JDBC driver?",
+        "type": "mcq",
+        "o": [
+            "Standard database connectivity for BigQuery",
+            "API",
+            "SDK",
+            "CLI"
+        ]
+    },
+    {
+        "q": "Rearrange the connectivity options:",
+        "type": "rearrange",
+        "words": [
+            "REST API",
+            "Client libraries",
+            "ODBC/JDBC",
+            "gcloud CLI"
+        ]
+    },
+    {
+        "q": "The _____ driver enables BI tool connections.",
+        "type": "fill_blank",
+        "answers": [
+            "ODBC"
+        ],
+        "other_options": [
+            "REST",
+            "gRPC",
+            "SDK"
+        ]
+    },
+    {
+        "q": "What is BigQuery Python client?",
+        "type": "mcq",
+        "o": [
+            "Python library for BigQuery operations",
+            "Command line tool",
+            "Web interface",
+            "REST API"
+        ]
+    },
+    {
+        "q": "Match the client method with its operation:",
+        "type": "match",
+        "left": [
+            "query()",
+            "load_table_from_uri()",
+            "extract_table()"
+        ],
+        "right": [
+            "Run query",
+            "Load data",
+            "Export data"
+        ]
+    },
+    {
+        "q": "Client library handles authentication automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery Storage client?",
+        "type": "mcq",
+        "o": [
+            "High-performance client for reading data",
+            "Query client",
+            "Management client",
+            "Admin client"
+        ]
+    },
+    {
+        "q": "Rearrange the client usage:",
+        "type": "rearrange",
+        "words": [
+            "Install library",
+            "Create client",
+            "Execute operation",
+            "Process result"
+        ]
+    },
+    {
+        "q": "The _____ client reads data in Arrow format.",
+        "type": "fill_blank",
+        "answers": [
+            "Storage Read"
+        ],
+        "other_options": [
+            "Query",
+            "Table",
+            "Data"
+        ]
+    },
+    {
+        "q": "What is query parameterization?",
+        "type": "mcq",
+        "o": [
+            "Using parameters instead of literals in queries",
+            "Query optimization",
+            "Query formatting",
+            "Query templating"
+        ]
+    },
+    {
+        "q": "Match the parameter type with its syntax:",
+        "type": "match",
+        "left": [
+            "Named",
+            "Positional"
+        ],
+        "right": [
+            "@param_name",
+            "?"
+        ]
+    },
+    {
+        "q": "Parameters prevent SQL injection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query template?",
+        "type": "mcq",
+        "o": [
+            "Reusable query with placeholders",
+            "Stored procedure",
+            "View",
+            "Function"
+        ]
+    },
+    {
+        "q": "Rearrange the parameterization benefits:",
+        "type": "rearrange",
+        "words": [
+            "Security",
+            "Reusability",
+            "Cache efficiency",
+            "Type safety"
+        ]
+    },
+    {
+        "q": "The _____ character indicates positional parameter.",
+        "type": "fill_blank",
+        "answers": [
+            "?"
+        ],
+        "other_options": [
+            "@",
+            "$",
+            "#"
+        ]
+    },
+    {
+        "q": "What is execution plan?",
+        "type": "mcq",
+        "o": [
+            "How BigQuery executes a query",
+            "Query result",
+            "Query schedule",
+            "Query template"
+        ]
+    },
+    {
+        "q": "Match the plan stage with its operation:",
+        "type": "match",
+        "left": [
+            "Input",
+            "Compute",
+            "Aggregate",
+            "Output"
+        ],
+        "right": [
+            "Read data",
+            "Transform",
+            "Group",
+            "Return results"
+        ]
+    },
+    {
+        "q": "Execution plan shows slot usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query stages?",
+        "type": "mcq",
+        "o": [
+            "Steps in query execution",
+            "Query phases",
+            "Query parts",
+            "Query sections"
+        ]
+    },
+    {
+        "q": "Rearrange the execution stages:",
+        "type": "rearrange",
+        "words": [
+            "Read",
+            "Compute",
+            "Shuffle",
+            "Write"
+        ]
+    },
+    {
+        "q": "The _____ stage redistributes data between workers.",
+        "type": "fill_blank",
+        "answers": [
+            "Shuffle"
+        ],
+        "other_options": [
+            "Read",
+            "Compute",
+            "Write"
+        ]
+    },
+    {
+        "q": "What is query parallelism?",
+        "type": "mcq",
+        "o": [
+            "Running query across multiple workers",
+            "Sequential execution",
+            "Single-threaded",
+            "Batch processing"
+        ]
+    },
+    {
+        "q": "More slots enable higher parallelism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the parallelism factor with its impact:",
+        "type": "match",
+        "left": [
+            "High parallelism",
+            "Low parallelism"
+        ],
+        "right": [
+            "Faster query",
+            "Slower query"
+        ]
+    },
+    {
+        "q": "What is slot time?",
+        "type": "mcq",
+        "o": [
+            "Total compute time across all slots",
+            "Wall clock time",
+            "Queue time",
+            "Wait time"
+        ]
+    },
+    {
+        "q": "Rearrange the time metrics:",
+        "type": "rearrange",
+        "words": [
+            "Queue time",
+            "Execution time",
+            "Slot time"
+        ]
+    },
+    {
+        "q": "The _____ is total slot milliseconds used.",
+        "type": "fill_blank",
+        "answers": [
+            "slot_ms"
+        ],
+        "other_options": [
+            "exec_ms",
+            "query_ms",
+            "total_ms"
+        ]
+    },
+    {
+        "q": "What is bi-temporal data?",
+        "type": "mcq",
+        "o": [
+            "Data with transaction time and valid time",
+            "Single timestamp",
+            "Time travel",
+            "Historical data"
+        ]
+    },
+    {
+        "q": "Match the temporal aspect with its meaning:",
+        "type": "match",
+        "left": [
+            "Transaction time",
+            "Valid time"
+        ],
+        "right": [
+            "When recorded",
+            "When true in reality"
+        ]
+    },
+    {
+        "q": "Bi-temporal enables point-in-time queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is event time processing?",
+        "type": "mcq",
+        "o": [
+            "Processing based on when event occurred",
+            "Processing time",
+            "Ingestion time",
+            "Query time"
+        ]
+    },
+    {
+        "q": "Rearrange the time semantics:",
+        "type": "rearrange",
+        "words": [
+            "Event time",
+            "Processing time",
+            "Ingestion time"
+        ]
+    },
+    {
+        "q": "The _____ time is when the event actually happened.",
+        "type": "fill_blank",
+        "answers": [
+            "event"
+        ],
+        "other_options": [
+            "processing",
+            "ingestion",
+            "query"
+        ]
+    },
+    {
+        "q": "What is late arriving data?",
+        "type": "mcq",
+        "o": [
+            "Data arriving after expected window",
+            "Early data",
+            "On-time data",
+            "Missing data"
+        ]
+    },
+    {
+        "q": "Match the handling with its approach:",
+        "type": "match",
+        "left": [
+            "Reprocess",
+            "Discard",
+            "Buffer"
+        ],
+        "right": [
+            "Update results",
+            "Ignore late",
+            "Hold for window"
+        ]
+    },
+    {
+        "q": "Streaming tables handle late data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery Studio notebooks?",
+        "type": "mcq",
+        "o": [
+            "Interactive Python/SQL notebooks in BigQuery",
+            "External notebooks",
+            "CLI tool",
+            "Desktop app"
+        ]
+    },
+    {
+        "q": "Rearrange the notebook workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create notebook",
+            "Write code",
+            "Execute cells",
+            "Share results"
+        ]
+    },
+    {
+        "q": "The _____ enables notebook version control.",
+        "type": "fill_blank",
+        "answers": [
+            "Git integration"
+        ],
+        "other_options": [
+            "Manual save",
+            "Auto-save",
+            "Export"
+        ]
+    },
+    {
+        "q": "What is BigQuery sandbox?",
+        "type": "mcq",
+        "o": [
+            "Free tier for trying BigQuery without credit card",
+            "Testing environment",
+            "Staging area",
+            "Development zone"
+        ]
+    },
+    {
+        "q": "Sandbox has 10GB storage and 1TB query free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sandbox limit with its value:",
+        "type": "match",
+        "left": [
+            "Storage",
+            "Query",
+            "Streaming"
+        ],
+        "right": [
+            "10 GB",
+            "1 TB/month",
+            "Not available"
+        ]
+    },
+    {
+        "q": "What is free tier?",
+        "type": "mcq",
+        "o": [
+            "Monthly free allowance for BigQuery",
+            "Trial period",
+            "Discount",
+            "Promo"
+        ]
+    },
+    {
+        "q": "Rearrange the free tier components:",
+        "type": "rearrange",
+        "words": [
+            "10 GB storage",
+            "1 TB query",
+            "Shared slots"
+        ]
+    },
+    {
+        "q": "The _____ TB per month is free for queries.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "5",
+            "10",
+            "0.5"
+        ]
+    },
+    {
+        "q": "What is cross-region query?",
+        "type": "mcq",
+        "o": [
+            "Query data in different region than job location",
+            "Local query",
+            "Regional query",
+            "Multi-query"
+        ]
+    },
+    {
+        "q": "Cross-region queries incur data transfer costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the query location with its behavior:",
+        "type": "match",
+        "left": [
+            "Same region",
+            "Cross region"
+        ],
+        "right": [
+            "No transfer cost",
+            "Transfer cost"
+        ]
+    },
+    {
+        "q": "What is BigQuery Analytics Hub?",
+        "type": "mcq",
+        "o": [
+            "Marketplace for sharing data and analytics",
+            "Query hub",
+            "Storage hub",
+            "ML hub"
+        ]
+    },
+    {
+        "q": "Rearrange the Analytics Hub components:",
+        "type": "rearrange",
+        "words": [
+            "Data exchange",
+            "Listings",
+            "Subscribers"
+        ]
+    },
+    {
+        "q": "The _____ enables secure data sharing.",
+        "type": "fill_blank",
+        "answers": [
+            "Analytics Hub"
+        ],
+        "other_options": [
+            "Data Share",
+            "Data Exchange",
+            "Data Market"
+        ]
+    },
+    {
+        "q": "What is data sharing?",
+        "type": "mcq",
+        "o": [
+            "Sharing datasets across organizations",
+            "Copying data",
+            "Moving data",
+            "Exporting data"
+        ]
+    },
+    {
+        "q": "Match the sharing method with its scope:",
+        "type": "match",
+        "left": [
+            "Authorized view",
+            "Analytics Hub",
+            "Dataset sharing"
+        ],
+        "right": [
+            "Single dataset",
+            "Public or private",
+            "Direct access"
+        ]
+    },
+    {
+        "q": "Shared datasets don't incur double storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data clean room?",
+        "type": "mcq",
+        "o": [
+            "Secure environment for cross-org data analysis",
+            "Data storage",
+            "Query engine",
+            "ML platform"
+        ]
+    },
+    {
+        "q": "Rearrange the clean room workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create clean room",
+            "Import data",
+            "Run approved queries",
+            "Export aggregates"
+        ]
+    },
+    {
+        "q": "The _____ prevents raw data exposure.",
+        "type": "fill_blank",
+        "answers": [
+            "clean room"
+        ],
+        "other_options": [
+            "sandbox",
+            "firewall",
+            "encryption"
+        ]
+    },
+    {
+        "q": "What is differential privacy?",
+        "type": "mcq",
+        "o": [
+            "Adding noise to protect individual records",
+            "Data encryption",
+            "Access control",
+            "Data masking"
+        ]
+    },
+    {
+        "q": "Differential privacy protects individual privacy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the privacy technique with its approach:",
+        "type": "match",
+        "left": [
+            "Differential privacy",
+            "K-anonymity",
+            "Masking"
+        ],
+        "right": [
+            "Add noise",
+            "Generalize",
+            "Hide values"
+        ]
+    },
+    {
+        "q": "What is approximate count?",
+        "type": "mcq",
+        "o": [
+            "Fast count with minor error margin",
+            "Exact count",
+            "Partial count",
+            "Sample count"
+        ]
+    },
+    {
+        "q": "Rearrange the count functions by speed:",
+        "type": "rearrange",
+        "words": [
+            "COUNT(*)",
+            "COUNT(DISTINCT)",
+            "APPROX_COUNT_DISTINCT"
+        ]
+    },
+    {
+        "q": "The _____ provides fastest distinct count.",
+        "type": "fill_blank",
+        "answers": [
+            "APPROX_COUNT_DISTINCT"
+        ],
+        "other_options": [
+            "COUNT DISTINCT",
+            "EXACT_COUNT",
+            "FAST_COUNT"
+        ]
+    },
+    {
+        "q": "What is HyperLogLog?",
+        "type": "mcq",
+        "o": [
+            "Algorithm for cardinality estimation",
+            "Sorting algorithm",
+            "Hashing algorithm",
+            "Compression algorithm"
+        ]
+    },
+    {
+        "q": "Match the algorithm with its use:",
+        "type": "match",
+        "left": [
+            "HyperLogLog++",
+            "Count-Min Sketch",
+            "Bloom Filter"
+        ],
+        "right": [
+            "Cardinality",
+            "Frequency",
+            "Membership"
+        ]
+    },
+    {
+        "q": "HyperLogLog uses constant memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery ecosystem?",
+        "type": "mcq",
+        "o": [
+            "Integrated tools and services around BigQuery",
+            "Single product",
+            "Standalone service",
+            "Isolated platform"
+        ]
+    },
+    {
+        "q": "Rearrange the ecosystem components:",
+        "type": "rearrange",
+        "words": [
+            "Storage",
+            "Compute",
+            "ML",
+            "Governance",
+            "Integration"
+        ]
+    },
+    {
+        "q": "The _____ ecosystem includes Dataflow for ETL.",
+        "type": "fill_blank",
+        "answers": [
+            "BigQuery"
+        ],
+        "other_options": [
+            "Analytics",
+            "Data",
+            "Cloud"
+        ]
+    },
+    {
+        "q": "What is Pub/Sub integration?",
+        "type": "mcq",
+        "o": [
+            "Streaming data from Pub/Sub to BigQuery",
+            "Batch loading",
+            "File import",
+            "API call"
+        ]
+    },
+    {
+        "q": "Match the ingestion service with its pattern:",
+        "type": "match",
+        "left": [
+            "Pub/Sub",
+            "Dataflow",
+            "Storage Transfer"
+        ],
+        "right": [
+            "Real-time events",
+            "ETL pipeline",
+            "Scheduled batch"
+        ]
+    },
+    {
+        "q": "Pub/Sub subscriptions can write to BigQuery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Dataflow integration?",
+        "type": "mcq",
+        "o": [
+            "Using Dataflow for ETL into BigQuery",
+            "Query engine",
+            "Storage layer",
+            "ML service"
+        ]
+    },
+    {
+        "q": "Rearrange the Dataflow pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Read source",
+            "Transform data",
+            "Write to BigQuery"
+        ]
+    },
+    {
+        "q": "The _____ enables Apache Beam pipelines.",
+        "type": "fill_blank",
+        "answers": [
+            "Dataflow"
+        ],
+        "other_options": [
+            "Dataproc",
+            "Composer",
+            "Functions"
+        ]
+    },
+    {
+        "q": "What is Vertex AI integration?",
+        "type": "mcq",
+        "o": [
+            "Using BigQuery data for ML in Vertex AI",
+            "Separate product",
+            "Unrelated service",
+            "Legacy platform"
+        ]
+    },
+    {
+        "q": "Match the ML integration with its scope:",
+        "type": "match",
+        "left": [
+            "BQML",
+            "Vertex AI AutoML",
+            "Vertex AI Custom"
+        ],
+        "right": [
+            "SQL ML",
+            "No-code ML",
+            "Full control ML"
+        ]
+    },
+    {
+        "q": "BigQuery can export to Vertex AI datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Cloud Functions trigger?",
+        "type": "mcq",
+        "o": [
+            "Run function on BigQuery events",
+            "Scheduled function",
+            "HTTP function",
+            "Background function"
+        ]
+    },
+    {
+        "q": "Rearrange the event-driven pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Data arrives",
+            "Trigger fires",
+            "Function executes",
+            "Process data"
+        ]
+    },
+    {
+        "q": "The _____ triggers Cloud Functions from BigQuery.",
+        "type": "fill_blank",
+        "answers": [
+            "Eventarc"
+        ],
+        "other_options": [
+            "Pub/Sub",
+            "Cloud Tasks",
+            "Scheduler"
+        ]
+    },
+    {
+        "q": "What is BigQuery future?",
+        "type": "mcq",
+        "o": [
+            "Continued evolution with Lakehouse and AI features",
+            "End of life",
+            "Maintenance mode",
+            "Feature freeze"
+        ]
+    },
+    {
+        "q": "Match the trend with BigQuery feature:",
+        "type": "match",
+        "left": [
+            "Lakehouse",
+            "AI/ML",
+            "Real-time"
+        ],
+        "right": [
+            "BigLake",
+            "Gemini integration",
+            "Streaming tables"
+        ]
+    },
+    {
+        "q": "BigQuery continues adding AI features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigLake?",
+        "type": "mcq",
+        "o": [
+            "Unified storage for data lakes and warehouses",
+            "Data lake only",
+            "Warehouse only",
+            "External storage"
+        ]
+    },
+    {
+        "q": "Rearrange the BigLake capabilities:",
+        "type": "rearrange",
+        "words": [
+            "Unified governance",
+            "Fine-grained security",
+            "Open formats",
+            "Multi-cloud"
+        ]
+    },
+    {
+        "q": "The _____ unifies data lake and warehouse.",
+        "type": "fill_blank",
+        "answers": [
+            "BigLake"
+        ],
+        "other_options": [
+            "DataLake",
+            "BigStore",
+            "LakeHouse"
+        ]
+    },
+    {
+        "q": "What is Gemini in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "AI assistant for query writing and optimization",
+            "ML model",
+            "Storage engine",
+            "Query optimizer"
+        ]
+    },
+    {
+        "q": "Match the Gemini feature with its help:",
+        "type": "match",
+        "left": [
+            "SQL generation",
+            "Explain query",
+            "Optimize query"
+        ],
+        "right": [
+            "Natural language to SQL",
+            "Understand query",
+            "Improve performance"
+        ]
+    },
+    {
+        "q": "Gemini helps write SQL from natural language.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is streaming tables?",
+        "type": "mcq",
+        "o": [
+            "Tables optimized for continuous streaming data",
+            "Batch tables",
+            "External tables",
+            "Temporary tables"
+        ]
+    },
+    {
+        "q": "Rearrange the streaming evolution:",
+        "type": "rearrange",
+        "words": [
+            "Streaming insert (legacy)",
+            "Storage Write API",
+            "Streaming tables"
+        ]
+    },
+    {
+        "q": "The _____ provides native streaming support.",
+        "type": "fill_blank",
+        "answers": [
+            "streaming tables"
+        ],
+        "other_options": [
+            "streaming insert",
+            "write API",
+            "pub/sub"
+        ]
+    },
+    {
+        "q": "What is change capture in streaming tables?",
+        "type": "mcq",
+        "o": [
+            "Tracking changes in streaming data",
+            "Full refresh",
+            "Batch update",
+            "Manual sync"
+        ]
+    },
+    {
+        "q": "Streaming tables support upserts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the streaming feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Low latency",
+            "Exactly-once",
+            "Schema evolution"
+        ],
+        "right": [
+            "Real-time analytics",
+            "Data consistency",
+            "Flexibility"
+        ]
+    },
+    {
+        "q": "What is BigQuery capacity commitment?",
+        "type": "mcq",
+        "o": [
+            "Long-term slot purchase for discount",
+            "Storage commitment",
+            "Query commitment",
+            "Network commitment"
+        ]
+    },
+    {
+        "q": "Match the commitment with its discount:",
+        "type": "match",
+        "left": [
+            "Annual",
+            "3-year"
+        ],
+        "right": [
+            "Moderate discount",
+            "Highest discount"
+        ]
+    },
+    {
+        "q": "Commitments provide cost savings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is slot pooling?",
+        "type": "mcq",
+        "o": [
+            "Sharing slots across multiple reservations",
+            "Slot isolation",
+            "Slot splitting",
+            "Slot merging"
+        ]
+    },
+    {
+        "q": "Rearrange the slot allocation:",
+        "type": "rearrange",
+        "words": [
+            "Buy commitment",
+            "Create reservation",
+            "Assign project",
+            "Use slots"
+        ]
+    },
+    {
+        "q": "The _____ allows unused slots to be borrowed.",
+        "type": "fill_blank",
+        "answers": [
+            "idle slots"
+        ],
+        "other_options": [
+            "extra slots",
+            "spare slots",
+            "free slots"
+        ]
+    },
+    {
+        "q": "What is query priority?",
+        "type": "mcq",
+        "o": [
+            "Importance level for resource allocation",
+            "Query order",
+            "Query timing",
+            "Query cost"
+        ]
+    },
+    {
+        "q": "Match the priority with its use case:",
+        "type": "match",
+        "left": [
+            "INTERACTIVE",
+            "BATCH"
+        ],
+        "right": [
+            "Dashboard queries",
+            "ETL jobs"
+        ]
+    },
+    {
+        "q": "BATCH queries wait for available slots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery concurrency?",
+        "type": "mcq",
+        "o": [
+            "Number of queries running simultaneously",
+            "Query speed",
+            "Query cost",
+            "Query size"
+        ]
+    },
+    {
+        "q": "Rearrange the concurrency factors:",
+        "type": "rearrange",
+        "words": [
+            "Available slots",
+            "Query complexity",
+            "Priority",
+            "Queue time"
+        ]
+    },
+    {
+        "q": "The _____ limits concurrent interactive queries.",
+        "type": "fill_blank",
+        "answers": [
+            "100"
+        ],
+        "other_options": [
+            "50",
+            "200",
+            "500"
+        ]
+    },
+    {
+        "q": "What is query queue?",
+        "type": "mcq",
+        "o": [
+            "Waiting area for queries when slots are busy",
+            "Query history",
+            "Query cache",
+            "Query log"
+        ]
+    },
+    {
+        "q": "Queries queue when slots are exhausted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the queue behavior with its cause:",
+        "type": "match",
+        "left": [
+            "Long queue",
+            "No queue"
+        ],
+        "right": [
+            "Insufficient slots",
+            "Adequate slots"
+        ]
+    },
+    {
+        "q": "What is query timeout?",
+        "type": "mcq",
+        "o": [
+            "Maximum time a query can run",
+            "Network timeout",
+            "Connection timeout",
+            "Session timeout"
+        ]
+    },
+    {
+        "q": "Rearrange the timeout defaults:",
+        "type": "rearrange",
+        "words": [
+            "Interactive: 6 hours",
+            "Batch: 24 hours"
+        ]
+    },
+    {
+        "q": "The _____ hours is default interactive timeout.",
+        "type": "fill_blank",
+        "answers": [
+            "6"
+        ],
+        "other_options": [
+            "1",
+            "12",
+            "24"
+        ]
+    },
+    {
+        "q": "What is query failure?",
+        "type": "mcq",
+        "o": [
+            "Query that does not complete successfully",
+            "Slow query",
+            "Expensive query",
+            "Long query"
+        ]
+    },
+    {
+        "q": "Match the failure with its resolution:",
+        "type": "match",
+        "left": [
+            "Syntax error",
+            "Resource exceeded",
+            "Timeout"
+        ],
+        "right": [
+            "Fix SQL",
+            "Optimize query",
+            "Simplify or increase timeout"
+        ]
+    },
+    {
+        "q": "Failed queries don't charge for bytes scanned.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery retry?",
+        "type": "mcq",
+        "o": [
+            "Automatic re-execution of failed operations",
+            "Manual retry",
+            "Query cache",
+            "Query replay"
+        ]
+    },
+    {
+        "q": "Rearrange the retry strategy:",
+        "type": "rearrange",
+        "words": [
+            "Detect failure",
+            "Wait with backoff",
+            "Retry operation",
+            "Check success"
+        ]
+    },
+    {
+        "q": "The _____ errors are not retryable.",
+        "type": "fill_blank",
+        "answers": [
+            "syntax"
+        ],
+        "other_options": [
+            "timeout",
+            "resource",
+            "network"
+        ]
+    },
+    {
+        "q": "What is idempotent operation?",
+        "type": "mcq",
+        "o": [
+            "Operation that can be safely retried",
+            "One-time operation",
+            "Irreversible operation",
+            "Quick operation"
+        ]
+    },
+    {
+        "q": "Streaming Write API supports idempotent writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the operation with its idempotency:",
+        "type": "match",
+        "left": [
+            "SELECT",
+            "INSERT",
+            "MERGE"
+        ],
+        "right": [
+            "Always idempotent",
+            "Not idempotent",
+            "Depends"
+        ]
+    },
+    {
+        "q": "What is MERGE statement?",
+        "type": "mcq",
+        "o": [
+            "Combines INSERT, UPDATE, and DELETE in one",
+            "Only INSERT",
+            "Only UPDATE",
+            "Only DELETE"
+        ]
+    },
+    {
+        "q": "Rearrange the MERGE clauses:",
+        "type": "rearrange",
+        "words": [
+            "MERGE INTO",
+            "USING",
+            "ON",
+            "WHEN MATCHED",
+            "WHEN NOT MATCHED"
+        ]
+    },
+    {
+        "q": "The _____ clause handles new rows.",
+        "type": "fill_blank",
+        "answers": [
+            "WHEN NOT MATCHED"
+        ],
+        "other_options": [
+            "WHEN MATCHED",
+            "INSERT",
+            "DEFAULT"
+        ]
+    },
+    {
+        "q": "What is UPDATE statement?",
+        "type": "mcq",
+        "o": [
+            "Modifies existing rows in a table",
+            "Adds rows",
+            "Deletes rows",
+            "Creates table"
+        ]
+    },
+    {
+        "q": "UPDATE requires WHERE clause for safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the DML with its effect:",
+        "type": "match",
+        "left": [
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+        ],
+        "right": [
+            "Add rows",
+            "Modify rows",
+            "Remove rows"
+        ]
+    },
+    {
+        "q": "What is DELETE statement?",
+        "type": "mcq",
+        "o": [
+            "Removes rows from a table",
+            "Adds rows",
+            "Updates rows",
+            "Truncates table"
+        ]
+    },
+    {
+        "q": "Rearrange the DML operations:",
+        "type": "rearrange",
+        "words": [
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "MERGE"
+        ]
+    },
+    {
+        "q": "The _____ removes all rows without condition.",
+        "type": "fill_blank",
+        "answers": [
+            "TRUNCATE TABLE"
+        ],
+        "other_options": [
+            "DELETE ALL",
+            "DROP TABLE",
+            "CLEAR TABLE"
+        ]
+    },
+    {
+        "q": "What is TRUNCATE TABLE?",
+        "type": "mcq",
+        "o": [
+            "Removes all rows while keeping table schema",
+            "Drops table",
+            "Deletes table",
+            "Clears schema"
+        ]
+    },
+    {
+        "q": "TRUNCATE is faster than DELETE for all rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the removal method with its scope:",
+        "type": "match",
+        "left": [
+            "DELETE",
+            "TRUNCATE",
+            "DROP"
+        ],
+        "right": [
+            "Rows with condition",
+            "All rows",
+            "Entire table"
+        ]
+    },
+    {
+        "q": "What is INSERT INTO SELECT?",
+        "type": "mcq",
+        "o": [
+            "Insert query results into a table",
+            "Direct insert",
+            "File insert",
+            "Stream insert"
+        ]
+    },
+    {
+        "q": "Rearrange the INSERT syntax:",
+        "type": "rearrange",
+        "words": [
+            "INSERT INTO table",
+            "Column list",
+            "SELECT statement"
+        ]
+    },
+    {
+        "q": "The _____ enables transformation during insert.",
+        "type": "fill_blank",
+        "answers": [
+            "INSERT INTO SELECT"
+        ],
+        "other_options": [
+            "INSERT VALUES",
+            "LOAD DATA",
+            "IMPORT"
+        ]
+    },
+    {
+        "q": "What is CREATE TABLE AS SELECT?",
+        "type": "mcq",
+        "o": [
+            "Creates new table from query result",
+            "Creates empty table",
+            "Creates external table",
+            "Creates view"
+        ]
+    },
+    {
+        "q": "CTAS infers schema from query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the creation method with its use:",
+        "type": "match",
+        "left": [
+            "CREATE TABLE",
+            "CTAS",
+            "CREATE TABLE LIKE"
+        ],
+        "right": [
+            "Define schema",
+            "Query-based",
+            "Copy schema"
+        ]
+    },
+    {
+        "q": "What is DDL in BigQuery?",
+        "type": "mcq",
+        "o": [
+            "Data Definition Language for schema changes",
+            "Data Manipulation",
+            "Data Query",
+            "Data Control"
+        ]
+    },
+    {
+        "q": "Rearrange the DDL statements:",
+        "type": "rearrange",
+        "words": [
+            "CREATE",
+            "ALTER",
+            "DROP",
+            "TRUNCATE"
+        ]
+    },
+    {
+        "q": "The _____ DDL modifies table schema.",
+        "type": "fill_blank",
+        "answers": [
+            "ALTER TABLE"
+        ],
+        "other_options": [
+            "MODIFY TABLE",
+            "CHANGE TABLE",
+            "UPDATE TABLE"
+        ]
+    },
+    {
+        "q": "What is ALTER TABLE?",
+        "type": "mcq",
+        "o": [
+            "Modifies table structure or options",
+            "Modifies data",
+            "Creates table",
+            "Drops table"
+        ]
+    },
+    {
+        "q": "Match the ALTER with its operation:",
+        "type": "match",
+        "left": [
+            "ADD COLUMN",
+            "DROP COLUMN",
+            "SET OPTIONS"
+        ],
+        "right": [
+            "Add column",
+            "Remove column",
+            "Change settings"
+        ]
+    },
+    {
+        "q": "ALTER TABLE can add columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is DML quota?",
+        "type": "mcq",
+        "o": [
+            "Limit on data modification operations",
+            "Query quota",
+            "Storage quota",
+            "API quota"
+        ]
+    },
+    {
+        "q": "Rearrange the DML limits:",
+        "type": "rearrange",
+        "words": [
+            "Statements per day",
+            "Rows per statement",
+            "Tables per statement"
+        ]
+    },
+    {
+        "q": "The _____ limits DML statements per table per day.",
+        "type": "fill_blank",
+        "answers": [
+            "1,500"
+        ],
+        "other_options": [
+            "100",
+            "500",
+            "10,000"
+        ]
+    },
+    {
+        "q": "What is streaming buffer?",
+        "type": "mcq",
+        "o": [
+            "Temporary storage for streaming data",
+            "Query buffer",
+            "Network buffer",
+            "Cache buffer"
+        ]
+    },
+    {
+        "q": "Streaming buffer data becomes queryable immediately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the buffer status with its meaning:",
+        "type": "match",
+        "left": [
+            "Buffer present",
+            "Buffer flushed"
+        ],
+        "right": [
+            "Recent streaming data",
+            "Committed to storage"
+        ]
+    },
+    {
+        "q": "What is table decorators?",
+        "type": "mcq",
+        "o": [
+            "Suffix syntax for time-based table access",
+            "Table prefix",
+            "Table alias",
+            "Table property"
+        ]
+    },
+    {
+        "q": "Rearrange the decorator types:",
+        "type": "rearrange",
+        "words": [
+            "Snapshot decorator",
+            "Range decorator"
+        ]
+    },
+    {
+        "q": "The _____ accesses table at specific time.",
+        "type": "fill_blank",
+        "answers": [
+            "FOR SYSTEM_TIME AS OF"
+        ],
+        "other_options": [
+            "@timestamp",
+            "AT TIME",
+            "AS OF"
+        ]
+    },
+    {
+        "q": "What is table wildcard?",
+        "type": "mcq",
+        "o": [
+            "Query multiple tables with pattern matching",
+            "Single table",
+            "Table alias",
+            "Table view"
+        ]
+    },
+    {
+        "q": "Wildcard tables use * suffix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the wildcard with its example:",
+        "type": "match",
+        "left": [
+            "Table prefix",
+            "_TABLE_SUFFIX"
+        ],
+        "right": [
+            "table_*",
+            "Filter tables"
+        ]
+    },
+    {
+        "q": "What is _TABLE_SUFFIX?",
+        "type": "mcq",
+        "o": [
+            "Pseudo-column for filtering wildcard tables",
+            "Table name",
+            "Column name",
+            "Index"
+        ]
+    },
+    {
+        "q": "Rearrange the wildcard query:",
+        "type": "rearrange",
+        "words": [
+            "Select from table_*",
+            "Filter _TABLE_SUFFIX",
+            "Get results"
+        ]
+    },
+    {
+        "q": "The _____ pseudo-column identifies table in wildcard.",
+        "type": "fill_blank",
+        "answers": [
+            "_TABLE_SUFFIX"
+        ],
+        "other_options": [
+            "_TABLE_NAME",
+            "_TABLE_ID",
+            "_SOURCE"
+        ]
+    },
+    {
+        "q": "What is sharded tables?",
+        "type": "mcq",
+        "o": [
+            "Tables split by date suffix like table_20231214",
+            "Partitioned tables",
+            "Clustered tables",
+            "External tables"
+        ]
+    },
+    {
+        "q": "Match the approach with its recommendation:",
+        "type": "match",
+        "left": [
+            "Sharded tables",
+            "Partitioned tables"
+        ],
+        "right": [
+            "Legacy",
+            "Recommended"
+        ]
+    },
+    {
+        "q": "Partitioning is preferred over sharding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is table decoration?",
+        "type": "mcq",
+        "o": [
+            "Adding metadata to tables like description and labels",
+            "Table styling",
+            "Table formatting",
+            "Table coloring"
+        ]
+    },
+    {
+        "q": "Rearrange the table metadata:",
+        "type": "rearrange",
+        "words": [
+            "Description",
+            "Labels",
+            "Tags",
+            "Comments"
+        ]
+    },
+    {
+        "q": "The _____ helps document table purpose.",
+        "type": "fill_blank",
+        "answers": [
+            "description"
+        ],
+        "other_options": [
+            "label",
+            "tag",
+            "comment"
+        ]
+    },
+    {
+        "q": "What is column description?",
+        "type": "mcq",
+        "o": [
+            "Documentation for individual columns",
+            "Column type",
+            "Column mode",
+            "Column name"
+        ]
+    },
+    {
+        "q": "Column descriptions appear in schema.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the documentation with its scope:",
+        "type": "match",
+        "left": [
+            "Table description",
+            "Column description"
+        ],
+        "right": [
+            "Table-level",
+            "Column-level"
+        ]
+    },
+    {
+        "q": "What is default value?",
+        "type": "mcq",
+        "o": [
+            "Value used when column not specified in INSERT",
+            "Null value",
+            "Zero value",
+            "Empty value"
+        ]
+    },
+    {
+        "q": "Rearrange the column properties:",
+        "type": "rearrange",
+        "words": [
+            "Name",
+            "Type",
+            "Mode",
+            "Description",
+            "Default"
+        ]
+    },
+    {
+        "q": "The _____ clause sets column default.",
+        "type": "fill_blank",
+        "answers": [
+            "DEFAULT"
+        ],
+        "other_options": [
+            "SET",
+            "VALUE",
+            "INIT"
+        ]
+    },
+    {
+        "q": "What is column mode?",
+        "type": "mcq",
+        "o": [
+            "NULLABLE, REQUIRED, or REPEATED",
+            "Data type",
+            "Default value",
+            "Description"
+        ]
+    },
+    {
+        "q": "Match the mode with its meaning:",
+        "type": "match",
+        "left": [
+            "NULLABLE",
+            "REQUIRED",
+            "REPEATED"
+        ],
+        "right": [
+            "Optional",
+            "Mandatory",
+            "Array"
+        ]
+    },
+    {
+        "q": "REQUIRED columns cannot have nulls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is schema evolution?",
+        "type": "mcq",
+        "o": [
+            "Changing table schema over time",
+            "Schema creation",
+            "Schema deletion",
+            "Schema copying"
+        ]
+    },
+    {
+        "q": "Rearrange the safe schema changes:",
+        "type": "rearrange",
+        "words": [
+            "Add column",
+            "Relax mode",
+            "Add to nested field"
+        ]
+    },
+    {
+        "q": "The _____ schema change is always safe.",
+        "type": "fill_blank",
+        "answers": [
+            "adding columns"
+        ],
+        "other_options": [
+            "removing columns",
+            "renaming columns",
+            "changing types"
+        ]
+    },
+    {
+        "q": "What is backward compatibility?",
+        "type": "mcq",
+        "o": [
+            "New schema can read old data",
+            "Old schema reads new data",
+            "Both directions",
+            "No compatibility"
+        ]
+    },
+    {
+        "q": "Adding optional columns is backward compatible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the compatibility with its direction:",
+        "type": "match",
+        "left": [
+            "Backward",
+            "Forward",
+            "Full"
+        ],
+        "right": [
+            "New reads old",
+            "Old reads new",
+            "Both"
+        ]
+    },
+    {
+        "q": "What is BigQuery cost optimization?",
+        "type": "mcq",
+        "o": [
+            "Reducing BigQuery spending",
+            "Query optimization",
+            "Performance tuning",
+            "Storage management"
+        ]
+    },
+    {
+        "q": "Rearrange the cost factors:",
+        "type": "rearrange",
+        "words": [
+            "Query cost",
+            "Storage cost",
+            "Streaming cost",
+            "Network cost"
+        ]
+    },
+    {
+        "q": "The _____ is the primary cost in on-demand pricing.",
+        "type": "fill_blank",
+        "answers": [
+            "query cost"
+        ],
+        "other_options": [
+            "storage cost",
+            "streaming cost",
+            "network cost"
+        ]
+    },
+    {
+        "q": "What is active storage pricing?",
+        "type": "mcq",
+        "o": [
+            "Cost for recently accessed data",
+            "Free storage",
+            "Archive storage",
+            "Backup storage"
+        ]
+    },
+    {
+        "q": "Match the storage type with its cost:",
+        "type": "match",
+        "left": [
+            "Active storage",
+            "Long-term storage"
+        ],
+        "right": [
+            "Higher cost",
+            "50% lower cost"
+        ]
+    },
+    {
+        "q": "Data over 90 days old is long-term storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery migration?",
+        "type": "mcq",
+        "o": [
+            "Moving data to BigQuery from other systems",
+            "Query migration",
+            "Schema migration",
+            "User migration"
+        ]
+    },
+    {
+        "q": "Rearrange the migration phases:",
+        "type": "rearrange",
+        "words": [
+            "Assess",
+            "Plan",
+            "Migrate",
+            "Validate",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "The _____ Service helps migrate data warehouses.",
+        "type": "fill_blank",
+        "answers": [
+            "BigQuery Migration"
+        ],
+        "other_options": [
+            "Data Transfer",
+            "Import",
+            "Load"
+        ]
+    },
+    {
+        "q": "What is SQL translation?",
+        "type": "mcq",
+        "o": [
+            "Converting SQL from other databases to BigQuery",
+            "Query optimization",
+            "Query parsing",
+            "Query execution"
+        ]
+    },
+    {
+        "q": "Match the source with its translation:",
+        "type": "match",
+        "left": [
+            "Teradata",
+            "Snowflake",
+            "Redshift"
+        ],
+        "right": [
+            "Teradata SQL",
+            "Snowflake SQL",
+            "Redshift SQL"
+        ]
+    },
+    {
+        "q": "BigQuery Migration Service translates SQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is schema mapping?",
+        "type": "mcq",
+        "o": [
+            "Mapping source schema to BigQuery schema",
+            "Creating schema",
+            "Copying schema",
+            "Deleting schema"
+        ]
+    },
+    {
+        "q": "Rearrange the migration steps:",
+        "type": "rearrange",
+        "words": [
+            "Extract schema",
+            "Translate schema",
+            "Create tables",
+            "Load data"
+        ]
+    },
+    {
+        "q": "The _____ phase validates migrated data.",
+        "type": "fill_blank",
+        "answers": [
+            "validation"
+        ],
+        "other_options": [
+            "migration",
+            "extraction",
+            "loading"
+        ]
+    },
+    {
+        "q": "What is data validation?",
+        "type": "mcq",
+        "o": [
+            "Verifying migrated data matches source",
+            "Data loading",
+            "Data transformation",
+            "Data extraction"
+        ]
+    },
+    {
+        "q": "Match the validation type with its check:",
+        "type": "match",
+        "left": [
+            "Row count",
+            "Checksum",
+            "Sample comparison"
+        ],
+        "right": [
+            "Count match",
+            "Hash match",
+            "Data match"
+        ]
+    },
+    {
+        "q": "Validation ensures data integrity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query translation validation?",
+        "type": "mcq",
+        "o": [
+            "Verifying translated queries produce same results",
+            "Syntax check",
+            "Performance check",
+            "Cost check"
+        ]
+    },
+    {
+        "q": "Rearrange the translation validation:",
+        "type": "rearrange",
+        "words": [
+            "Translate query",
+            "Run on both systems",
+            "Compare results",
+            "Fix differences"
+        ]
+    },
+    {
+        "q": "The _____ ensures query equivalence.",
+        "type": "fill_blank",
+        "answers": [
+            "result comparison"
+        ],
+        "other_options": [
+            "syntax check",
+            "plan comparison",
+            "cost comparison"
+        ]
+    },
+    {
+        "q": "What is BigQuery performance baseline?",
+        "type": "mcq",
+        "o": [
+            "Established query performance metrics",
+            "Minimum performance",
+            "Maximum performance",
+            "Average performance"
+        ]
+    },
+    {
+        "q": "Match the metric with its measurement:",
+        "type": "match",
+        "left": [
+            "Query time",
+            "Slot usage",
+            "Bytes scanned"
+        ],
+        "right": [
+            "Seconds",
+            "Slot-ms",
+            "Bytes"
+        ]
+    },
+    {
+        "q": "Baselines help identify performance regressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query tuning?",
+        "type": "mcq",
+        "o": [
+            "Optimizing query for better performance",
+            "Query writing",
+            "Query scheduling",
+            "Query validation"
+        ]
+    },
+    {
+        "q": "Rearrange the tuning process:",
+        "type": "rearrange",
+        "words": [
+            "Identify slow query",
+            "Analyze plan",
+            "Apply optimization",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "The _____ reveals query bottlenecks.",
+        "type": "fill_blank",
+        "answers": [
+            "execution plan"
+        ],
+        "other_options": [
+            "query log",
+            "job history",
+            "error log"
+        ]
+    },
+    {
+        "q": "What is BigQuery workload insights?",
+        "type": "mcq",
+        "o": [
+            "Analysis of query patterns and resource usage",
+            "Query results",
+            "Data insights",
+            "ML insights"
+        ]
+    },
+    {
+        "q": "Workload insights show usage patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the insight with its benefit:",
+        "type": "match",
+        "left": [
+            "Usage patterns",
+            "Cost attribution",
+            "Performance trends"
+        ],
+        "right": [
+            "Understand workload",
+            "Track spending",
+            "Identify issues"
+        ]
+    },
+    {
+        "q": "What is BigQuery enterprise features?",
+        "type": "mcq",
+        "o": [
+            "Advanced features for enterprise workloads",
+            "Basic features",
+            "Free features",
+            "Beta features"
+        ]
+    },
+    {
+        "q": "Rearrange the enterprise tiers:",
+        "type": "rearrange",
+        "words": [
+            "Standard",
+            "Enterprise",
+            "Enterprise Plus"
+        ]
+    },
+    {
+        "q": "The _____ tier includes point-in-time recovery.",
+        "type": "fill_blank",
+        "answers": [
+            "Enterprise Plus"
+        ],
+        "other_options": [
+            "Standard",
+            "Enterprise",
+            "Basic"
+        ]
+    },
+    {
+        "q": "What is BigQuery SLA?",
+        "type": "mcq",
+        "o": [
+            "Service Level Agreement for uptime guarantee",
+            "Performance guarantee",
+            "Cost guarantee",
+            "Support agreement"
+        ]
+    },
+    {
+        "q": "Match the SLA with its guarantee:",
+        "type": "match",
+        "left": [
+            "Standard",
+            "Enterprise"
+        ],
+        "right": [
+            "99.9%",
+            "99.99%"
+        ]
+    },
+    {
+        "q": "Higher tiers have better SLAs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BigQuery support?",
+        "type": "mcq",
+        "o": [
+            "Google Cloud support options for BigQuery",
+            "Community only",
+            "Self-service only",
+            "No support"
+        ]
+    },
+    {
+        "q": "Rearrange the support tiers:",
+        "type": "rearrange",
+        "words": [
+            "Basic",
+            "Standard",
+            "Enhanced",
+            "Premium"
+        ]
+    },
+    {
+        "q": "The _____ support has fastest response time.",
+        "type": "fill_blank",
+        "answers": [
+            "Premium"
+        ],
+        "other_options": [
+            "Basic",
+            "Standard",
+            "Enhanced"
+        ]
+    },
+    {
+        "q": "What is BigQuery documentation?",
+        "type": "mcq",
+        "o": [
+            "Official guides and references for BigQuery",
+            "User forums",
+            "Stack Overflow",
+            "Blog posts"
+        ]
+    },
+    {
+        "q": "Documentation is free and comprehensive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the resource with its purpose:",
+        "type": "match",
+        "left": [
+            "Documentation",
+            "Console",
+            "Quickstarts"
+        ],
+        "right": [
+            "Reference",
+            "Interactive",
+            "Getting started"
+        ]
+    },
+    {
+        "q": "BigQuery combines power with serverless simplicity.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]
