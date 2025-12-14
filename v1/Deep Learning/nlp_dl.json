@@ -1,0 +1,3154 @@
+[
+    {
+        "q": "What is the primary goal of Tokenization in NLP?",
+        "type": "mcq",
+        "o": [
+            "Splitting text into smaller units",
+            "Removing stop words",
+            "Converting text to vectors",
+            "Predicting the next word"
+        ]
+    },
+    {
+        "q": "Stemming reduces words to their root form by truncating the end of the word.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lemmatization uses a dictionary and morphological analysis to return the base form (lemma) of a word.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is more computationally expensive: Stemming or Lemmatization?",
+        "type": "mcq",
+        "o": [
+            "Lemmatization",
+            "Stemming",
+            "Both are equal",
+            "Neither (O(1))"
+        ]
+    },
+    {
+        "q": "Stop words (e.g., 'the', 'is') are always removed in Deep Learning NLP models.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "N-grams are contiguous sequences of n items from a given sample of text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A 'unigram' model assumes that the probability of a word depends on its history.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "One-hot encoding of words leads to sparse and high-dimensional vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-hot encoding captures semantic similarity between words.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "TF-IDF stands for Term Frequency - _____ Document Frequency.",
+        "type": "fill_blank",
+        "answers": [
+            "Inverse"
+        ],
+        "other_options": [
+            "Inner",
+            "Inter",
+            "Inside"
+        ]
+    },
+    {
+        "q": "TF-IDF increases the weight of words that appear frequently in a document but rarely in the corpus.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Word2Vec learns distributed representations of words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CBOW (Continuous Bag of Words) predicts the _____ word based on the context.",
+        "type": "fill_blank",
+        "answers": [
+            "center",
+            "target"
+        ],
+        "other_options": [
+            "next",
+            "previous",
+            "context"
+        ]
+    },
+    {
+        "q": "Skip-gram predicts the context words given the center word.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Skip-gram works better for infrequent words than CBOW.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Negative Sampling is an optimization to approximate the Softmax denominator in Word2Vec.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subsampling of frequent words in Word2Vec randomly discards words like 'the' to improve training speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GloVe (Global Vectors) is a count-based model that factorizes the word co-occurrence matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GloVe objective focuses on the ratio of co-occurrence probabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FastText operates on character n-grams rather than whole words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FastText can generate embeddings for out-of-vocabulary (OOV) words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Byte Pair Encoding (BPE) is a subword tokenization algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BPE iteratively merges the most frequent pair of adjacent characters/tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WordPiece tokenization is used in BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SentencePiece can handle raw text directly without pre-tokenization (like splitting by space).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the NLP preprocessing step:",
+        "type": "match",
+        "left": [
+            "Lowercasing",
+            "Stopword Removal",
+            "Stemming",
+            "Tokenization"
+        ],
+        "right": [
+            "Normalization",
+            "Noise Reduction",
+            "Root Extraction",
+            "Segmentation"
+        ]
+    },
+    {
+        "q": "Rearrange the typical NLP pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Text Cleaning",
+            "Tokenization",
+            "Vectorization",
+            "Model Training"
+        ]
+    },
+    {
+        "q": "The 'Distributional Hypothesis' states that words that appear in similar contexts have similar meanings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cosine Similarity is the standard metric to measure similarity between word vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Analogy task (e.g., King - Man + Woman = Queen) is used to evaluate word embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SVD (Singular Value Decomposition) can be used to create word embeddings from count matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PPMI stands for Positive _____ Mutual Information.",
+        "type": "fill_blank",
+        "answers": [
+            "Pointwise"
+        ],
+        "other_options": [
+            "Pairwise",
+            "Partial",
+            "Probabilistic"
+        ]
+    },
+    {
+        "q": "PPMI replaces negative PMI values with zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which library is the de-facto standard for classic NLP (stemming, tagging) in Python?",
+        "type": "mcq",
+        "o": [
+            "NLTK",
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+        ]
+    },
+    {
+        "q": "Spacy is designed for production-grade NLP with fast implementation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NLTK is primarily designed for teaching and research.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A 'Corpus' is a large collection of text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zipf's Law states that the frequency of a word is inversely proportional to its rank.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Heaps' Law relates the number of expected distinct words to the document size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Regular Expressions (Regex) are often used for pattern matching in text cleaning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: Regex to find emails.",
+        "type": "mcq",
+        "c": "r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}'",
+        "o": [
+            "Matches emails",
+            "Matches URLs",
+            "Matches Dates",
+            "Matches IP addresses"
+        ]
+    },
+    {
+        "q": "Language Modeling calculates the probability of a sequence of words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A generic N-gram language model approximates probability using the Markov Assumption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Smoothing is used in N-gram models to handle zero-probability events (unseen n-grams).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Laplace Smoothing adds _____ to all counts.",
+        "type": "fill_blank",
+        "answers": [
+            "1",
+            "one"
+        ],
+        "other_options": [
+            "0",
+            "10",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Backoff models use lower-order n-grams if higher-order n-grams are missing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perplexity is a measure of how well a probability model predicts a sample.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower perplexity indicates a better model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Part-of-Speech (POS) Tagging assigns a grammatical category (noun, verb, etc.) to each word.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the POS tag (Penn Treebank):",
+        "type": "match",
+        "left": [
+            "NN",
+            "VB",
+            "JJ",
+            "DT"
+        ],
+        "right": [
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Determiner"
+        ]
+    },
+    {
+        "q": "Hidden Markov Models (HMMs) were traditionally used for POS tagging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Viterbi Algorithm is used to find the most likely sequence of hidden states in HMM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Named Entity Recognition (NER) identifies entities like Person, Organization, Location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In NER, the 'O' tag roughly stands for 'Outside' of any entity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does BIO stand for in tagging schemes?",
+        "type": "mcq",
+        "o": [
+            "Begin, Inside, Outside",
+            "Binary, Input, Output",
+            "Basic, Intermediate, Other",
+            "Big, In, Out"
+        ]
+    },
+    {
+        "q": "Constituency Parsing breaks a sentence into sub-phrases (NP, VP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dependency Parsing identifies grammatical relationships (subject, object, modifier) between words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Syntactic Parsing is concerned with the structure of sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Semantic Analysis is concerned with the meaning of sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Word Sense Disambiguation (WSD) determines which meaning of a word is used in context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lesk Algorithm is a classic dictionary-based method for WSD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Coreference Resolution finds all expressions that refer to the same entity in a text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anaphora is a term referring to a previous term.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cataphora is a term referring to a future term.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bag of Words (BoW) disregards grammar and word order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Learning approaches generally outperform n-grams for large-vocabulary tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which activation function is most common for the output of a multi-class NLP classifier?",
+        "type": "mcq",
+        "o": [
+            "Softmax",
+            "Sigmoid",
+            "ReLU",
+            "Tanh"
+        ]
+    },
+    {
+        "q": "Text Classification can be treated as Sentiment Analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which algorithm is a strong non-neural baseline for text classification?",
+        "type": "mcq",
+        "o": [
+            "Naive Bayes",
+            "K-Means",
+            "Linear Regression",
+            "DBSCAN"
+        ]
+    },
+    {
+        "q": "Embedding Layer in Keras acts as a lookup table.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pre-trained embeddings (like GloVe) can be loaded into an Embedding Layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fine-tuning embeddings allows them to adapt to the specific corpus.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static embeddings (Word2Vec) give the same vector for 'bank' (river) and 'bank' (finance).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contextual embeddings (ELMo, BERT) give different vectors for the same word in different contexts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELMo uses bidirectional LSTMs to generate contextual embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Character-level Regularizing allows models to be robust to misspellings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hierarchical Softmax makes training Word2Vec faster by organizing the vocabulary into a binary tree.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Noise Contrastive Estimation (NCE) is used to approximate the softmax normalization factor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the typical dimension size for Word2Vec vectors?",
+        "type": "mcq",
+        "o": [
+            "100-300",
+            "1-10",
+            "10000+",
+            "Millions"
+        ]
+    },
+    {
+        "q": "Visualizing embeddings is often done using t-SNE or PCA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: NLTK Tokenize.",
+        "type": "mcq",
+        "c": "nltk.word_tokenize('Hello world.')",
+        "o": [
+            "['Hello', 'world', '.']",
+            "['Hello', 'world']",
+            "['H', 'e', 'l', 'l', 'o']",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange a text classification model:",
+        "type": "rearrange",
+        "words": [
+            "Embedding",
+            "Encoder (RNN/CNN)",
+            "Pooling",
+            "Softmax"
+        ]
+    },
+    {
+        "q": "A 'UNK' token is used to represent words not in the vocabulary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Padding is used to make all sequences in a batch the same length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Masking tells the model to ignore padding tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Truncating is the process of cutting off sequences that are too long.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which format is common for storing pre-trained word vectors?",
+        "type": "mcq",
+        "o": [
+            ".txt or .bin",
+            ".jpg",
+            ".mp3",
+            ".exe"
+        ]
+    },
+    {
+        "q": "Gensim is a popular library for training Word2Vec and FastText models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KeyedVectors in Gensim stores the word vectors and vocabulary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A 'Vocabulary' is the set of unique words in the corpus.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Out-of-Vocabulary (OOV) rate is a metric to check coverage of embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Morphology is the study of the structure of words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Agglutinative languages (like Turkish) concatenate morphemes to form words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subword tokenization helps significantly with agglutinative languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chomsky Hierarchy classifies formal grammars.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Regular Languages can be recognized by Finite Automata.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Context-Free Grammars (CFG) are used to describe the syntax of programming languages and natural languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sentiment Analysis determines the emotional tone behind a body of text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polarity refers to the degree of positivity or negativity (e.g., -1 to +1).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subjectivity refers to whether the text expresses an opinion/feeling or a fact.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aspect-Based Sentiment Analysis (ABSA) identifies sentiment towards specific attributes of an entity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lexicon-based sentiment analysis relies on a dictionary of words with pre-assigned sentiment scores.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VADER (Valence Aware Dictionary and sEntiment Reasoner) is a rule-based sentiment analysis tool.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VADER is specifically attuned to sentiments expressed in social media.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Naive Bayes classifier assumes that features (words) are independent given the class label.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multinomial Naive Bayes is suitable for word counts or term frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bernoulli Naive Bayes is suitable for binary word presence/absence features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Support Vector Machines (SVM) are effective for text classification in high-dimensional spaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which kernel is most commonly used for text classification with SVM?",
+        "type": "mcq",
+        "o": [
+            "Linear",
+            "RBF",
+            "Polynomial",
+            "Sigmoid"
+        ]
+    },
+    {
+        "q": "Feature Selection methods like Chi-Squared test filter out irrelevant words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mutual Information measures how much information the presence/absence of a word contributes to the class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Latent Dirichlet Allocation (LDA) is a generative probabilistic model for topic modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LDA assumes each document is a mixture of topics, and each topic is a mixture of words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In LDA, the Dirichlet distribution is used as a prior for the topic and word distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Latent Semantic Analysis (LSA) uses SVD on the Document-Term Matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-Negative Matrix Factorization (NMF) enforces non-negativity constraints, making topics more interpretable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Topic Coherence scores measure the semantic similarity between high-scoring words in a topic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "UMap is often used to visualize document clusters in 2D.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERTopic leverages BERT embeddings and c-TF-IDF for topic modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shift-Reduce Parsing is a common algorithm for transition-based dependency parsing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Shift-Reduce, 'Shift' moves a word from the buffer to the stack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Shift-Reduce, 'Reduce' (or Arc) creates a dependency link between items on the stack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Projective dependency trees have no crossing dependency arcs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-projective dependency trees typically require more complex graph-based parsers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Universal Dependencies (UD) is a framework for consistent annotation of grammar across languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Information Retrieval (IR) is the science of searching for information in a document.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inverted Index maps each word to the list of documents it appears in.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BM25 is a ranking function used by search engines to estimate relevance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BM25 improves upon TF-IDF by saturating term frequency and normalizing for document length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Precision is the fraction of retrieved documents that are relevant.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recall is the fraction of relevant documents that are retrieved.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "F1 Score is the harmonic mean of Precision and Recall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mean Average Precision (MAP) averages the precision at k for each relevant document.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NDCG (Normalized Discounted Cumulative Gain) accounts for the position of relevant results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the LDA process:",
+        "type": "rearrange",
+        "words": [
+            "Initialize topics",
+            "Calculate probs",
+            "Sample new topic",
+            "Update counts"
+        ]
+    },
+    {
+        "q": "CRF (Conditional Random Fields) is a discriminative model often used for sequence labeling (NER, POS).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRF considers the correlation between neighboring labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BiLSTM-CRF is a popular deep learning architecture for NER.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In BiLSTM-CRF, the BiLSTM provides features for each word, and the CRF models label transitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Question Answering (QA) systems can be Open-Domain or Closed-Domain.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Extractive QA selects a span of text from the document as the answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generative (Abstractive) QA generates a new sentence as the answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Text Summarization can be Extractive or Abstractive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is the standard metric for summarization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROUGE-N measures overlap of N-grams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROUGE-L measures the Longest Common Subsequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLEU (Bilingual Evaluation Understudy) is the standard metric for Machine Translation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLEU is precision-oriented (looks for overlap of generated n-grams in reference).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Brevity Penalty in BLEU penalizes translations that are too short.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "METEOR metric includes Stemming and Synonym matching to improve upon BLEU.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TER (Translation Edit Rate) measures the number of edits to change output to reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the NLP metric:",
+        "type": "match",
+        "left": [
+            "BLEU",
+            "ROUGE",
+            "Perplexity",
+            "F1-Score"
+        ],
+        "right": [
+            "Translation",
+            "Summarization",
+            "Language Modeling",
+            "Classification"
+        ]
+    },
+    {
+        "q": "Data Augmentation in NLP is harder than Image Processing due to discrete nature of text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Back-Translation generates synthetic data by translating text to another language and back.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Easy Data Augmentation (EDA) includes synonym replacement and random deletion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixup for text involves interpolating word embeddings or sentence embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial Training involves training on adversarial examples to improve robustness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Domain Adaptation aims to perform well on a target domain (e.g., medical) given source domain (e.g., news) data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Active Learning selects the most informative samples for human annotation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Uncertainty Sampling is a common query strategy in Active Learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot Learning uses semantic attributes or descriptions to recognize unseen classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hierarchichal Attention Networks (HAN) have two levels of attention: word-level and sentence-level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Siamese Networks (or Bi-Encoders) are used to measure semantic similarity between two sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Triplet Loss is often used to train Siamese Networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-Encoder feeds both sentences into the model at once (e.g., BERT pair input).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-Encoders are generally more accurate but slower than Bi-Encoders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SBERT (Sentence-BERT) modifies BERT to derive semantically meaningful sentence embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SBERT uses pooling (e.g., Mean Pooling) on the token embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which pooling strategy is default for creating sentence embeddings in SBERT?",
+        "type": "mcq",
+        "o": [
+            "Mean Pooling",
+            "Max Pooling",
+            "CLS Token",
+            "Last Token"
+        ]
+    },
+    {
+        "q": "Universal Sentence Encoder (USE) is a model by Google for sentence embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Laser (Language-Agnostic SEntence Representations) by Facebook covers 90+ languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stance Detection determines if the author is in favor of, against, or neutral towards a target.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Irony and Sarcasm Detection are considered difficult NLP tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fake News Detection typically combines textual features with social network features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stylometry is the statistical analysis of literary style (e.g., for authorship attribution).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reading Comprehension tests a system's ability to answer questions about a passage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SQuAD (Stanford Question Answering Dataset) is a popular reading comprehension benchmark.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Natural Language Inference (NLI) determines if a premise entails, contradicts, or is neutral to a hypothesis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SNLI and MNLI are large datasets for NLI.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which task is also known as Recognizing Textual Entailment (RTE)?",
+        "type": "mcq",
+        "o": [
+            "NLI",
+            "NER",
+            "POS",
+            "SRL"
+        ]
+    },
+    {
+        "q": "Semantic Role Labeling (SRL) identifies the predicate and its arguments (Agent, Patient, Instrument).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SRL answers 'Who did what to whom, where, when, and how?'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PropBank and FrameNet are lexical databases used for SRL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Collocation is a sequence of words that co-occur more often than expected by chance (e.g., 'strong tea').",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pointwise Mutual Information (PMI) is used to find collocations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Text Normalization converts text to a standard format (e.g., 'u' to 'you', '$5' to '5 dollars').",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grapheme-to-Phoneme (G2P) conversion is essential for TTS (Text-to-Speech).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Phonemes are the distinct units of sound in a specified language.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Homonyms are words that share the same spelling and pronunciation but different meanings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polysemy refers to a word having multiple related meanings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Good-Turing Smoothing adjusts the probability estimates based on the frequency of events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Good-Turing is particularly useful for estimating the probability of unseen (zero-count) events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kneser-Ney Smoothing is often considered the state-of-the-art for n-gram language models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kneser-Ney uses the continuation probability of a word rather than its raw frequency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Witten-Bell Smoothing is based on the probability of seeing a new word for the first time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stupid Backoff is a simple smoothing method often used in large-scale web models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stupid Backoff does not produce normalized probabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CoVe (Context Vectors) uses an encoder from a pre-trained Machine Translation model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CoVe showed that transfer learning from other NLP tasks (like MT) is beneficial.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELMo (Embeddings from Language Models) extracts representations from a bidirectional LSTM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELMo combines layers using a weighted sum, where weights are learned for the specific task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELMo is feature-based transfer learning (frozen features), unlike fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ULMFiT (Universal Language Model Fine-tuning) introduced Discriminative Fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Discriminative Fine-tuning allows different layers to be tuned at different learning rates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Slanted Triangular Learning Rates (STLR) warm up linearly and then decay linearly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ULMFiT uses an AWD-LSTM (ASGD Weight-Dropped LSTM) as its base architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-Entropy Loss is the standard loss function for Language Modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Label Smoothing prevents the model from becoming over-confident by softening target labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Label Smoothing, hard '1' target is replaced by (1 - epsilon).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Softmax Temperature controls the 'sharpness' of the output distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "High Temperature (>1) makes the distribution flatter (more random).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Low Temperature (<1) makes the distribution sharper (more greedy).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beam Search explores multiple paths (beams) simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beam Width determines how many candidate sequences are kept at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Length Normalization is needed in Beam Search because simpler product-probs punish long sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Greedy Decoding is equivalent to Beam Search with beam width = 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Log-Likelihood is typically maximized in training (equivalent to minimizing NLL).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Teacher Forcing feeds the ground truth previous token during training, not the model's own prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scheduled Sampling gradually transitions from Teacher Forcing to using model predictions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Exposure Bias refers to the mismatch between training (with teacher forcing) and inference (generative).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Decoding strategy:",
+        "type": "match",
+        "left": [
+            "Greedy",
+            "Beam",
+            "Top-k",
+            "Top-p"
+        ],
+        "right": [
+            "Best single",
+            "Multiple paths",
+            "Fixed count",
+            "Cumulative prob"
+        ]
+    },
+    {
+        "q": "Top-p Sampling (Nucleus Sampling) selects from the smallest set of tokens whose cumulative probability exceeds p.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-k Sampling selects from the top k most probable tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric evaluates the quality of word analogies (A is to B as C is to D)?",
+        "type": "mcq",
+        "o": [
+            "Analogy Accuracy",
+            "Perplexity",
+            "BLEU",
+            "F1"
+        ]
+    },
+    {
+        "q": "Intrinsic Evaluation measures the quality of representations directly (e.g., similarity correlation).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Extrinsic Evaluation measures the performance on downstream tasks (e.g., sentiment accuracy).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cohen's Kappa measures inter-annotator agreement for categorical items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fleiss' Kappa generalizes Cohen's Kappa to more than two raters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Krippendorff's Alpha is a versatile agreement metric handling missing data and various data types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Class Imbalance is a common problem in NLP datasets (e.g., rare named entities).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Oversampling minority class or Undersampling majority class are techniques to handle imbalance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SMOTE (Synthetic Minority Over-sampling Technique) creates synthetic data points in feature space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Focal Loss down-weights well-classified examples to focus on hard examples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cost-sensitive Learning assigns higher penalties for misclassifying minority classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-label classification allows an instance to have more than one label.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-class classification means there are >2 classes, but only one is correct.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sigmoid activation is used for the output layer in multi-label classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Binary Cross-Entropy is used for multi-label classification (treated as n independent binary problems).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Macro-F1 calculates F1 for each class and then averages them (giving equal weight to each class).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Micro-F1 aggregates contributions from all classes to calculate the average metric (biased by frequency).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weighted-F1 calculates F1 for each class and averages them weighted by support (frequency).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ELMo components:",
+        "type": "rearrange",
+        "words": [
+            "Char CNN",
+            "BiLSTM Layer 1",
+            "BiLSTM Layer 2",
+            "Weighted Sum"
+        ]
+    },
+    {
+        "q": "A 'Character CTE' in ELMo stands for Character Token Embedding.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Highway Networks are used in ELMo to allow information to flow unimpeded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scalar Mixing Parameters (Gamma) in ELMo allow the model to scale the specific task contribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is NOT a type of Recurrent Neural Network?",
+        "type": "mcq",
+        "o": [
+            "CNN",
+            "LSTM",
+            "GRU",
+            "BiRNN"
+        ]
+    },
+    {
+        "q": "1D Convolutional Neural Networks can be used for text classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Text CNNs, the filter width typically corresponds to the n-gram size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global Max Pooling in Text CNNs extracts the most prominent feature from the entire document.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Character-level CNNs (CharCNN) operate on one-hot encoded characters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recursive Neural Networks (Socher et al.) operate on tree structures (parse trees).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tree-LSTMs generalize LSTMs to tree-structured network topologies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: PyTorch Embedding.",
+        "type": "mcq",
+        "c": "nn.Embedding(num_embeddings=1000, embedding_dim=64)",
+        "o": [
+            "Vocab=1000, Vector=64",
+            "Vocab=64, Vector=1000",
+            "Batch=1000, Seq=64",
+            "In=1000, Out=64"
+        ]
+    },
+    {
+        "q": "PackedSequence in PyTorch handles variable length sequences efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`pack_padded_sequence` removes padding tokens before RNN processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`pad_packed_sequence` restores the padding after RNN processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bidirectional RNNs process the sequence from left-to-right and right-to-left.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BiRNNs can be used for real-time streaming language modeling.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Stacked RNNs (Multi-layer RNNs) increase the depth and representation power.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Skip-connections (Residual connections) help train very deep RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Layer Normalization is preferred over Batch Normalization for RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Layer Normalization computes statistics per sample, independent of batch size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weight Normalization reparameterizes weights into magnitude and direction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Clipping by Norm scales down the gradient vector if its L2 norm exceeds a threshold.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Clipping by Value clips individual gradients to a range [-c, c].",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which helps with the 'Exploding Gradient' problem?",
+        "type": "mcq",
+        "o": [
+            "Gradient Clipping",
+            "ReLU",
+            "Larger Learning Rate",
+            "Deeper Network"
+        ]
+    },
+    {
+        "q": "Truncated Backpropagation Through Time (TBPTT) limits the number of timesteps for backprop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TBPTT is an approximation that sacrifices long-term dependency learning for efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stateful RNNs preserve the hidden state across batches for the same sample sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stateless RNNs reset the hidden state to zero at the start of each batch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Word Mover's Distance (WMD) measures the distance between two documents using word embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WMD is based on the Earth Mover's Distance (or Wasserstein metric).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Topic Models (DTM) allow topics to evolve over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Correlated Topic Models (CTM) allow correlations between topics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pachinko Allocation Machine (PAM) uses a Directed Acyclic Graph (DAG) for topic structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange hierarchical clustering:",
+        "type": "rearrange",
+        "words": [
+            "Calculate distance",
+            "Link closest",
+            "Update distance",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "Dendrogram is a tree diagram used to illustrate the arrangement of clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Agglomerative Clustering is a 'bottom-up' approach.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Divisive Clustering is a 'top-down' approach.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Training is a semi-supervised method where a model labels unlabeled data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Co-Training uses two models on two different views (feature sets) of the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bahdanau Attention is also known as Additive Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Luong Attention is also known as Multiplicative (Dot-Product) Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Bahdanau Attention, the alignment score is computed using a feed-forward neural network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Luong Attention, the alignment score is computed using the dot product of encoder and decoder states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local Attention focuses on a small window of context rather than the entire source sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard Attention selects a single hidden state to attend to (stochastic).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which type of attention is differentiable?",
+        "type": "mcq",
+        "o": [
+            "Soft Attention",
+            "Hard Attention",
+            "Stochastic Attention",
+            "Discrete Attention"
+        ]
+    },
+    {
+        "q": "Pointer-Generator Networks allow the model to copy words from the source text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pointer-Generators solve the Out-of-Vocabulary (OOV) problem for source words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The generation probability 'p_gen' determines whether to generate a word from vocab or copy from source.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Coverage Mechanism is used to prevent repetition in Seq2Seq summarization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Coverage Loss penalizes attending to the same location multiple times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Attention relates different positions of a single sequence to compute a representation of the sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scaled Dot-Product Attention divides the dot product by the square root of the dimension dk.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Why do we scale the dot product in Attention?",
+        "type": "mcq",
+        "o": [
+            "Prevent vanishing gradients in Softmax",
+            "Increase calculation speed",
+            "Reduce memory adaptation",
+            "Make it invertible"
+        ]
+    },
+    {
+        "q": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Multi-Head Attention, the outputs of heads are concatenated and projected.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Positional Encoding is necessary in Transformers because they lack recurrence and convolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sinusoidal Positional Encoding uses sine and cosine functions of different frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Learned Positional Embeddings are parameters trained along with the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Relative Positional Encoding considers the pairwise distance between tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformer Encoder uses masked self-attention.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Transformer Decoder uses masked self-attention to prevent peeking at future tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-Attention in Transformer Decoder attends to the Encoder's output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Position-wise Feed-Forward Networks in Transformers are applied to each position separately and identically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Feed-Forward Network usually consists of two linear transformations with a ReLU activation in between.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SentencePiece model treats the text as a sequence of raw Unicode characters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SentencePiece does not require pre-tokenization into words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Unigram Language Model tokenization iteratively removes the symbol that least increases the perplexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BPE is a greedy algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WordPiece is similar to BPE but selects merges based on likelihood rather than frequency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subword Regularization improves robustness by sampling different subword segmentations during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Character-Aware Neural Language Models use CNNs over character embeddings to form word embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Attention calculation:",
+        "type": "rearrange",
+        "words": [
+            "MatMul Q and K",
+            "Scale",
+            "Softmax",
+            "MatMul with V"
+        ]
+    },
+    {
+        "q": "BERT stands for Bidirectional Encoder Representations from Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT is trained on Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MLM, what percentage of tokens are typically masked?",
+        "type": "mcq",
+        "o": [
+            "15%",
+            "50%",
+            "100%",
+            "1%"
+        ]
+    },
+    {
+        "q": "Of the 15% masked tokens in BERT, 80% are replaced with [MASK], 10% with random word, 10% original.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Next Sentence Prediction (NSP) is a binary classification task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoBERTa removes the NSP task from BERT training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoBERTa uses dynamic masking instead of static masking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT uses Knowledge Distillation to compress BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT retains 97% of performance with 40% fewer parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALBERT reduces parameters using factorized embedding parameterization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALBERT also uses Cross-layer parameter sharing (all layers share weights).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT (Generative Pre-trained Transformer) is a Unidirectional (strictly left-to-right) model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT is trained on the Causal Language Modeling (CLM) objective.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot transfer means the model performs a task without any gradient updates or examples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Few-shot learning involves providing a few examples in the prompt (in-context), without weight updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T5 (Text-to-Text Transfer Transformer) reframes all NLP tasks as text-to-text problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T5 uses a span-corruption objective (masking spans of text).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "XLM (Cross-lingual Language Model) introduces Translation Language Modeling (TLM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In TLM, random tokens are masked in concatenated parallel sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "mBERT (Multilingual BERT) is simply BERT trained on Wikipedia of 104 languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "mBERT does not use explicit cross-lingual objectives but learns alignment implicitly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BART (Bidirectional and Auto-Regressive Transformers) is a Denoising Autoencoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BART uses an encoder-decoder architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELECTRA uses a Generator and a Discriminator (Replaced Token Detection).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELECTRA is more sample-efficient than mask-based BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Why is ELECTRA more efficient?",
+        "type": "mcq",
+        "o": [
+            "Computes loss on all tokens",
+            "Has fewer parameters",
+            "Does not use Attention",
+            "Uses CNNs"
+        ]
+    },
+    {
+        "q": "SpanBERT is optimized for span-based tasks like Question Answering and Coreference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SpanBERT introduces a Span Boundary Objective (SBO).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Evaluating Generation: What is 'Hallucination'?",
+        "type": "mcq",
+        "o": [
+            "Generating factually incorrect content",
+            "Generating repetitive text",
+            "Generating grammatical errors",
+            "Generating blank text"
+        ]
+    },
+    {
+        "q": "Fact Verification (Fact Checking) assesses if a claim is supported by evidence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FEVER is a large dataset for Fact Extraction and VERification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Knowledge Graph Embeddings map entities and relations to vector space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TransE models relationships as translations: h + r = t.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RotatE models relationships as rotations in complex space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Distant Supervision generates training data by aligning a knowledge base with text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Coreference Resolution involves identifying 'Mentions' and clustering them into 'Chains'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mention Detection is the first step of Coreference Resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Question Answering: 'Passage Retrieval' finds relevant documents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Question Answering: 'Reader' extracts the answer from the retrieved documents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dense Passage Retrieval (DPR) uses dual-encoders to retrieve relevant passages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Retrieval-Augmented Generation (RAG) combines a retriever (DPR) with a generator (Seq2Seq).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RAG reduces hallucinations by grounding generation in retrieved documents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text metric is based on n-gram precision?",
+        "type": "mcq",
+        "o": [
+            "BLEU",
+            "ROUGE",
+            "F1",
+            "Accuracy"
+        ]
+    },
+    {
+        "q": "Which text metric is based on n-gram recall?",
+        "type": "mcq",
+        "o": [
+            "ROUGE",
+            "BLEU",
+            "Precision",
+            "Kappa"
+        ]
+    },
+    {
+        "q": "Perplexity is exp(Cross Entropy).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subgradient methods are used when the objective function is non-differentiable (e.g., L1 reg).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gumbel-Softmax allows backpropagation through categorical samples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gumbel-Softmax uses the reparameterization trick.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Variational Autoencoders (VAE) for text often suffer from 'posterior collapse'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Posterior collapse happens when the decoder ignores the latent variable z.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KL Annealing is a technique to mitigate posterior collapse in VAEs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sequence GANs are hard to train because gradients cannot pass through discrete token generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reinforcement Learning (Policy Gradient) is often used to train Sequence GANs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "REINFORCE algorithm is a Monte-Carlo policy gradient method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Baseline subtraction in REINFORCE reduces variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Critical Sequence Training (SCST) uses the model's own inference as a baseline.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Minimum Risk Training (MRT) optimizes the expected loss directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Transformer variant:",
+        "type": "match",
+        "left": [
+            "BERT",
+            "GPT",
+            "T5",
+            "BART"
+        ],
+        "right": [
+            "Encoder-only",
+            "Decoder-only",
+            "Encoder-Decoder",
+            "Denoising Autoencoder"
+        ]
+    },
+    {
+        "q": "XLNet uses Permutation Language Modeling to capture bidirectional context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "XLNet is an autoregressive model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Two-stream attention in XLNet distinguishes between content and query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CTRL (Conditional Transformer Language Model) uses control codes to govern style.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PPLM (Plug and Play Language Models) guides generation without fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: Hugging Face Transformers.",
+        "type": "mcq",
+        "c": "AutoModel.from_pretrained('bert-base-uncased')",
+        "o": [
+            "Loads weights",
+            "Trains model",
+            "Clears memory",
+            "Saves model"
+        ]
+    },
+    {
+        "q": "Adversarial Examples in NLP are easier to generate than in Computer Vision because text is discrete.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Prompt Injection aims to hijack a language model's output by injecting malicious instructions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jailbreaking refers to bypassing the safety and ethical filters of an LLM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Red Teaming involves simulating attacks on a model to find vulnerabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sycophancy in LLMs refers to the model agreeing with the user's bias rather than being truthful.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data Leakage (Memorization) occurs when an LLM outputs sensitive training data verbatim.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Watermarking text involves embedding a hidden signal in the generated text distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Machine Unlearning aims to remove the influence of specific training data points from a trained model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Catastrophic Forgetting occurs when fine-tuning on a new task drastically degrades performance on old tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Elastic Weight Consolidation (EWC) mitigates catastrophic forgetting by penalizing changes to important weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EWC uses the Fisher Information Matrix to estimate weight importance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Experience Replay stores a subset of old data to mix with new data during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Episodic Memory (GEM) projects gradients to avoid increasing loss on previous tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Engineering is the practice of designing inputs to guide LLM generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Thought (CoT) prompting encourages the model to generate intermediate reasoning steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot CoT uses the magic phrase 'Let's think step by step'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Consistency runs multiple CoT paths and selects the most consistent answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Least-to-Most Prompting breaks down a complex problem into simpler sub-problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ReAct (Reasoning + Acting) combines CoT with the ability to take actions (use tools).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tree of Thoughts (ToT) allows the model to explore multiple reasoning paths and backtrack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In-Context Learning does not update model weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Instruction Tuning fine-tunes the model on a dataset of (instruction, output) pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FLAN (Finetuned Language Models are Zero-Shot Learners) is an instruction-tuned model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RLHF stands for Reinforcement Learning from Human Feedback.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RLHF typically involves training a Reward Model (RM) using human preference rankings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PPO (Proximal Policy Optimization) is standardly used to optimize the policy in RLHF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Direct Preference Optimization (DPO) optimizes the policy directly from preferences without an explicit reward model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parameter-Efficient Fine-Tuning (PEFT) updates only a small subset of parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LoRA (Low-Rank Adaptation) injects trainable low-rank decomposition matrices into Transformer layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adapter layers are small bottleneck layers inserted between pre-trained layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prefix Tuning prepends trainable continuous vectors to each layer's keys and values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Tuning prepends trainable vectors only to the input embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "QLoRA combines Quantization (4-bit) with LoRA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Double Quantization quantizes the quantization constants to save even more memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PagedAttention optimizes memory usage for the Key-Value (KV) cache.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vLLM uses PagedAttention to achieve high throughput.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the 'KV Cache' used for?",
+        "type": "mcq",
+        "o": [
+            "Store past key/values to avoid recomputation",
+            "Store gradients",
+            "Store input embeddings",
+            "Store dataset"
+        ]
+    },
+    {
+        "q": "Continuous Batching (Orca) allows processing requests at iteration-level granularity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Speculative Decoding uses a small draft model to generate tokens that are verified by the large model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention reduces memory access (HBM reads/writes) to speed up attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention scales quadratically with sequence length.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Mixture of Experts (MoE) uses a gating network to route inputs to specific experts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparse MoE activates only a subset of experts (e.g., top-2) for each token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Switch Transformer works by routing to a single expert (Top-1).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Load balancing loss in MoE prevents the router from collapsing to a few experts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rotary Positional Embedding (RoPE) encodes position by rotating the Key and Query vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoPE has better extrapolation properties than absolute positional encoding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALiBi (Attention with Linear Biases) adds a static bias to attention scores based on distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grouped Query Attention (GQA) is an interpolation between Multi-Head and Multi-Query Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Query Attention (MQA) shares a single key-value head across all query heads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Longformer uses a sliding window attention combined with global attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BigBird relies on sparse attention, random attention, and global attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reformer uses Locality Sensitive Hashing (LSH) to approximate attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linformer approximates the attention matrix to be low-rank to achieve linear complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Search is a decoding strategy to improve coherence and diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the RLHF pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Pretraining",
+            "SFT",
+            "Reward Modeling",
+            "PPO"
+        ]
+    },
+    {
+        "q": "Constitutional AI (Anthropic) trains models to be helpful and harmless using a set of principles (constitution).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Toolformer learns to use tools by self-supervised API calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: LangChain prompt.",
+        "type": "mcq",
+        "c": "PromptTemplate.from_template('Tell me a joke about {topic}')",
+        "o": [
+            "Template for LLM",
+            "Runs model",
+            "Saves data",
+            "Parses JSON"
+        ]
+    },
+    {
+        "q": "AutoGPT tries to achieve a goal by autonomously running a loop of thoughts and actions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BabyAGI is another autonomous agent framework.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vector Databases store embeddings for efficient similarity search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HNSW (Hierarchical Navigable Small World) is a popular graph-based index for vector search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FAISS (Facebook AI Similarity Search) is a library for efficient dense vector clustering/search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IVF (Inverted File) index partitions the vector space into Voronoi cells.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Product Quantization (PQ) compresses vectors to speed up search and save RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLIP (Contrastive Language-Image Pre-training) aligns text and image embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLIP (Bootstrapping Language-Image Pre-training) generates synthetic captions to filter noisy web data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flamingo is a visual language model capable of few-shot learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LLaVA (Large Language and Vision Assistant) connects a vision encoder (CLIP) to LLaMA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visual Question Answering (VQA) requires understanding both image content and natural language query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViLT (Vision-and-Language Transformer) is an architecture that minimizes convolution usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LXMERT uses a dual-stream encoder for vision and language.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VideoBERT learns video representations using VQ-VAE derived visual words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perceiver AR handles very long contexts by using a cross-attention mechanism with a small latent array.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gato is a generalist agent that can play games, caption images, and control robots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trajectory Transformer models Reinforcement Learning as a sequence modeling problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Decision Transformer outputs actions given states and desired returns (return-to-go).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DreamerV3 learns a world model from pixels to master diverse tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural ODEs model the hidden state dynamics as a continuous differential equation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Liquid Time-Constant (LTC) networks have time constants that depend on the input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RWKV (Receptance Weighted Key Value) combines RNN efficiency with Transformer parallelization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba is a state space model (SSM) based architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba introduces a Selection Mechanism to the SSM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RetNet (Retentive Network) supports parallel, recurrent, and chunkwise recurrent training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyena Hierarchy uses implicit long convolutions to match attention quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Monarch Mixer replaces Attention and FFNs with Monarch matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LanguageBind aligns video, audio, depth, and thermal data to language.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ImageBind aligns six modalities to a shared embedding space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Nougat interprets academic documents (PDFs) into Markdown math.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kosmos-1 is a Multimodal LLM that can solve Raven's Progressive Matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which model is known for 'Everything to Everything' generation?",
+        "type": "mcq",
+        "o": [
+            "CoDi",
+            "BERT",
+            "ResNet",
+            "Word2Vec"
+        ]
+    },
+    {
+        "q": "AnyMAL aligns multiple modalities (IMU, Audio, etc.) to LLMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RT-2 (Robotic Transformer 2) transfers web knowledge to robotic control.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Soups averages the weights of multiple fine-tuned models achieving SOTA accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spherical Linear Interpolation (SLERP) is preferred for merging models in high-dimensional space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weight Averaging usually requires the models to share the same initialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Git Re-Basin attempts to permute the weights of one model to match another for merging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VeRA (Vector-based Random Matrix Adaptation) reduces trainable parameters by freezing random matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "(IA)^3 scales the key and value vectors with learned vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AdaLoRA adaptively allocates rank budget across layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HELM (Holistic Evaluation of Language Models) evaluates models across metrics like fairness, bias, and toxicity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chatbot Arena calculates an Elo rating based on pairwise human preference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MT-Bench uses a strong LLM (like GPT-4) as a judge to evaluate multi-turn conversation quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LLM-as-a-Judge suffers from 'Position Bias' (preferring the first or second response).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which bias refers to LLMs preferring longer responses regardless of quality?",
+        "type": "mcq",
+        "o": [
+            "Verbosity Bias",
+            "Self-Reference Bias",
+            "Majority Bias",
+            "Sentiment Bias"
+        ]
+    },
+    {
+        "q": "Inverse Scaling Prize highlights tasks where larger models perform worse than smaller ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An example of Inverse Scaling is the 'Hindsight Neglect' task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Arithmetic (e.g., Task Vector) allows modifying model behavior by subtracting task vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Activation Steering (or Activation Engineering) modifies activations at runtime to steer behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Representation Engineering extracts a 'reading vector' to detect lies or truth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ablation Studies involve removing components to measure their contribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Causal Abstractions (Interchange Intervention) test if a neural circuit maps to a high-level algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear Probing trains a linear classifier on top of frozen representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If a feature can be recovered by a linear probe, it is 'linearly decodable'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Minimum Description Length (MDL) principle is used to probe linguistic structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Discovering Latent Knowledge (DLK) finds a direction in activation space that corresponds to truth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constituency Parsing with Chart Parser (CKY algorithm) has cubic time complexity O(n^3).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dependency Parsing with Graph-based MST (Maximum Spanning Tree) has O(n^2) complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Eisner's Algorithm is O(n^3) for projective dependency parsing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arc-Eager is a transition system for dependency parsing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Oracle allows a transition-based parser to recover from mistakes during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph-based parsers generally have higher accuracy than transition-based parsers for long dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transition-based parsers are generally faster (linear time).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Copy-Attention allows the model to copy tokens from the input to the output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pointer Networks use the attention distribution as the output probability distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sentence Compression is a form of summarization that removes words but keeps the sentence grammatical.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flux is a text-to-image model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stable Diffusion uses a U-Net architecture with Cross-Attention for conditioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ControlNet adds conditional control to text-to-image diffusion models (e.g., edges, pose).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GLIGEN (Grounded-Language-to-Image Generation) enables bounding box control.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "InstructPix2Pix edits images based on natural language instructions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DreamBooth fine-tunes a diffusion model on a specific subject (few-shot).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Textual Inversion optimizes a new token embedding to represent a concept.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Voyager uses an LLM as a lifelong learning agent in Minecraft.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generative Agents simulate believable human behavior (Sims style).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reflexion gives the agent verbal reinforcement to learn from mistakes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HuggingGPT uses ChatGPT to act as a controller for Hugging Face models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chameleon is a plug-and-play compositional reasoning framework.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Program-of-Thought (PoT) prompting outsources computation to a Python interpreter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PAL (Program-Aided Language Models) generates code to solve reasoning problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Describe 'Step-Back Prompting'.",
+        "type": "mcq",
+        "o": [
+            "Asking a higher-level abstraction question first",
+            "Reversing the input order",
+            "Steps back in time",
+            "Removes the last prompt"
+        ]
+    },
+    {
+        "q": "Chain-of-Verification (CoVe) generates verification questions to check its own answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Skeleton-of-Thought (SoT) parallelizes generation by outlining the answer first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph of Thoughts (GoT) models thoughts as a DAG.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Med-PaLM achieves expert-level performance on medical licensing exams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BioGPT is a domain-specific generative transformer for biomedical text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Galactica is trained on scientific knowledge.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CodeLlama is specialized for code generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StarCoder uses Multi-Query Attention for faster inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gorilla is fine-tuned to use APIs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Silent-Errors in Chain-of-Thought are reasoning errors that still lead to the correct answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Faithfulness in CoT refers to whether the model actually followed the stated reasoning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Correction is the ability of a model to fix its output given feedback/criticism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constitutional AI involves a 'Critique' and 'Revision' phase.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weak-to-Strong Generalization aims to supervise a strong model using a weak supervisor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scalable Oversight is the problem of supervising models that are smarter than humans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sandbagging is when a model strategically underperforms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the standard Transformer block:",
+        "type": "rearrange",
+        "words": [
+            "LayerNorm",
+            "Multi-Head Attention",
+            "LayerNorm",
+            "Feed Forward"
+        ]
+    },
+    {
+        "q": "Pre-Norm (LayerNorm before sublayer) improves training stability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Post-Norm (LayerNorm after sublayer) was used in the original Transformer paper.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which normalization is preferred for very deep Transformers?",
+        "type": "mcq",
+        "o": [
+            "Pre-Norm",
+            "Post-Norm",
+            "Batch Norm",
+            "No Norm"
+        ]
+    },
+    {
+        "q": "SwiGLU activation function is commonly used in modern LLMs (PaLM, LLaMA).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RMSNorm (Root Mean Square Layer Normalization) is faster than LayerNorm as it removes the mean centering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parallel Attention places the Attention and FFN layers in parallel rather than series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scaling Laws suggest that compute should differ for training vs inference.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Chinchilla Scaling Laws state that model size and training tokens should scale equally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kaplan Scaling Laws overemphasized model size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Compute-Optimal training means training a model to the lowest loss for a given compute budget.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grokking is sensitive to weight initialization magnitude.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Double Descent shows test error increasing then decreasing as model size increases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Epoch-wise Double Descent occurs during prolonged training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Double Descent occurs when increasing model width.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Tangent Kernel (NTK) regime describes the behavior of infinite-width networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature Learning regime is distinct from the NTK regime (Lazy training).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MuP (Maximal Update Parametrization) allows transferring hyperparameters from small to large models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamical Isometry ensures singular values of the Jacobian are close to 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Edge of Chaos initialization allows for very deep signal propagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: LLaMA 2 context length.",
+        "type": "mcq",
+        "c": "Context Length = 4096",
+        "o": [
+            "Tokens input+output",
+            "Words input",
+            "Hidden dimension",
+            "Batch size"
+        ]
+    },
+    {
+        "q": "Code snippet: GPT-4 Turbo context.",
+        "type": "mcq",
+        "c": "128k context window",
+        "o": [
+            "~300 pages of text",
+            "~10 pages",
+            "~1000 pages",
+            "~1 million pages"
+        ]
+    },
+    {
+        "q": "Needle In A Haystack test measures retrieval accuracy from long context windows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lost in the Middle phenomenon states LLMs recall the start and end better than the middle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StreamingLLM allows infinite length generation with finite KV cache by keeping 'attention sinks'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention Sinks are the initial tokens (like <s>) that accumulate high attention scores.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ring Attention allows training on context lengths larger than a single device's memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YaRN (Yet another RoPE for Transformers) extends context window via interpolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NTK-Aware Scaled RoPE allows extending context length without fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LongLoRA enables efficient fine-tuning for long contexts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recurrent Memory Transformer adds memory tokens to standard Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Burstiness is a property of human text (variable sentence complexity) not typically found in AI text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perplexity of AI generated text usually has lower variance than human text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DetectGPT perturbs text and uses probability curvature to detect AI generation.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

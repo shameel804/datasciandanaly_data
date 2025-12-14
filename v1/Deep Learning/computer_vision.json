@@ -1,0 +1,3167 @@
+[
+    {
+        "q": "What is the fundamental building block of a digital image?",
+        "type": "mcq",
+        "o": [
+            "Pixel",
+            "Voxel",
+            "Tensor",
+            "Neuron"
+        ]
+    },
+    {
+        "q": "A grayscale image essentially represents a 2D matrix of pixel intensities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An RGB color image consists of _____ color channels.",
+        "type": "fill_blank",
+        "answers": [
+            "3",
+            "three"
+        ],
+        "other_options": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "In an 8-bit image, pixel values range from 0 to 255.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does '0' typically represent in an 8-bit grayscale image?",
+        "type": "mcq",
+        "o": [
+            "Black",
+            "White",
+            "Grey",
+            "Transparent"
+        ]
+    },
+    {
+        "q": "Computer Vision aims to enable computers to 'see' and interpret visual information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Convolution is a mathematical operation on two functions to produce a third function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In CNNs, the 'Filter' (or Kernel) slides over the input image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The output of a convolution operation is often called a Feature Map or Activation Map.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stride refers to the number of pixels the filter moves at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Padding involves adding extra pixels (usually zeros) around the border of an image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Valid Padding means no padding is applied, and the output size shrinks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Same Padding ensures the output size is the same as the input size (for stride 1).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Calculate output width: Input W=32, Filter F=3, Stride S=1, Padding P=0.",
+        "type": "mcq",
+        "o": [
+            "30",
+            "32",
+            "29",
+            "31"
+        ]
+    },
+    {
+        "q": "Formula for output size: ((W - F + 2P) / S) + 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pooling layers are used to reduce the spatial dimensions of the feature map.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Max Pooling selects the maximum value in each window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Average Pooling calculates the mean of values in each window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pooling layers usually train parameters (weights).",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Pooling helps to make the representation invariant to small translations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flattening converts a 3D feature map into a 1D vector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fully Connected layers are typically used at the end of a CNN for classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ReLU (Rectified Linear Unit) is the most common activation function in CNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ReLU introduces non-linearity to the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does a vertical edge detection filter look like?",
+        "type": "mcq",
+        "o": [
+            "Columns of differing weights (e.g., -1, 0, 1)",
+            "Rows of differing weights",
+            "All zeros",
+            "Random noise"
+        ]
+    },
+    {
+        "q": "Sobel Filter is used for edge detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gaussian Blur is used to reduce image noise and detail.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Convolutional Layer learns the values of the filters through backpropagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parameter Sharing in CNNs allows detecting the same feature anywhere in the image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CNNs have significantly fewer parameters than Fully Connected Networks for image tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LeNet-5 was one of the first successful CNNs, designed for handwritten digit recognition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Who is the primary creator of LeNet?",
+        "type": "mcq",
+        "o": [
+            "Yann LeCun",
+            "Geoffrey Hinton",
+            "Andrew Ng",
+            "Yoshua Bengio"
+        ]
+    },
+    {
+        "q": "AlexNet (2012) popularized Deep Convolutional Neural Networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AlexNet used the ImageNet dataset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AlexNet was the first to successfully use ReLU activation at scale.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AlexNet used Dropout to prevent overfitting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local Response Normalization (LRN) was used in AlexNet but is largely replaced by Batch Norm today.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Receptive Field is the region in the input image that a particular neuron is looking at.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deeper layers typically have smaller receptive fields than earlier layers.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "1x1 Convolution can be used to reduce the number of channels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange a simple CNN standard block:",
+        "type": "rearrange",
+        "words": [
+            "Convolution",
+            "Activation (ReLU)",
+            "Pooling"
+        ]
+    },
+    {
+        "q": "Match the term:",
+        "type": "match",
+        "left": [
+            "Filter",
+            "Stride",
+            "Padding",
+            "Pooling"
+        ],
+        "right": [
+            "Weights",
+            "Step Size",
+            "Border",
+            "Downsample"
+        ]
+    },
+    {
+        "q": "Image Classification assigns a single label to an entire image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Object Detection identifies and localizes multiple objects in an image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Semantic Segmentation classifies every pixel in an image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data Augmentation is critical to prevent overfitting in CV tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is a common Data Augmentation technique?",
+        "type": "mcq",
+        "o": [
+            "Horizontal Flip",
+            "Matrix Inversion",
+            "Bit Shifting",
+            "Hashing"
+        ]
+    },
+    {
+        "q": "Normalization of pixel values (e.g., /255) helps the model converge faster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An image with shape (H, W, C) usually represents (Height, Width, Channels).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In PyTorch, images are typically represented as (N, C, H, W).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In TensorFlow/Keras, images are typically represented as (N, H, W, C).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "N usually stands for Batch Size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A color histogram represents the frequency of pixel intensities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Histogram Equalization is used to improve image contrast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Thresholding converts a grayscale image into a binary image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Otsu's Method automatically determines the optimal threshold value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Morphological operations (Erosion, Dilation) work on image shapes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Erosion erodes away the boundaries of foreground objects (makes them smaller).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dilation enlarges the boundaries of foreground objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Opening is Erosion followed by Dilation (removes small noise).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Closing is Dilation followed by Erosion (fills small holes).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Canny Edge Detector is a multi-stage algorithm to detect edges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-Maximum Suppression (NMS) thins out edges in Canny detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hough Transform is used to detect simple shapes like lines and circles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SIFT (Scale-Invariant Feature Transform) extracts keypoints and descriptors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SIFT features are invariant to rotation and scale.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SURF (Speeded-Up Robust Features) is a faster alternative to SIFT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ORB (Oriented FAST and Rotated BRIEF) is a fast, open-source alternative to SIFT/SURF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HOG (Histogram of Oriented Gradients) features are commonly used for pedestrian detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Learning has largely replaced hand-crafted features like SIFT and HOG.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transfer Learning involves using a pre-trained model on a new task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fine-tuning involves unfreezing some top layers of a pre-trained model and training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature Extraction involves using a pre-trained model as a fixed feature extractor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Top-1 Accuracy'?",
+        "type": "mcq",
+        "o": [
+            "Correct class is the highest prob",
+            "Correct class is in top 5",
+            "Best accuracy",
+            "Best precision"
+        ]
+    },
+    {
+        "q": "What is 'Top-5 Accuracy'?",
+        "type": "mcq",
+        "o": [
+            "Correct class is in top 5",
+            "Correct class is 5th",
+            "Accuracy of 5 best models",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "ImageNet holds over 14 million images.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CIFAR-10 contains 60,000 32x32 color images in 10 classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MNIST contains 70,000 handwritten digits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which library is NOT a Computer Vision library?",
+        "type": "mcq",
+        "o": [
+            "Pandas",
+            "OpenCV",
+            "scikit-image",
+            "Pillow"
+        ]
+    },
+    {
+        "q": "OpenCV reads images in BGR format by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pillow (PIL) reads images in RGB format by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: OpenCV read image.",
+        "type": "mcq",
+        "c": "img = cv2.imread('image.jpg')",
+        "o": [
+            "Reads image to NumPy array",
+            "Displays image",
+            "Saves image",
+            "Deletes image"
+        ]
+    },
+    {
+        "q": "Code snippet: Pillow open image.",
+        "type": "mcq",
+        "c": "img = Image.open('image.jpg')",
+        "o": [
+            "Opens image object",
+            "Returns pixel array",
+            "Shows image",
+            "Converts to grey"
+        ]
+    },
+    {
+        "q": "Nearest Neighbor interpolation is the simplest resizing method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bilinear interpolation usually gives smoother results than Nearest Neighbor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bicubic interpolation is often better but slower than Bilinear.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anti-aliasing reduces the jagged look of pixelated lines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which color space separates Luma (Brightness) from Chroma (Color)?",
+        "type": "mcq",
+        "o": [
+            "YUV / YCbCr",
+            "RGB",
+            "CMYK",
+            "Grayscale"
+        ]
+    },
+    {
+        "q": "HSV stands for Hue, Saturation, Value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HSV is often more useful for color based segmentation than RGB.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In HSV, Hue represents the pure color type (e.g., Red, Blue).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In HSV, Saturation represents the intensity or purity of the color.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Channel Shuffle is a technique used in ShuffleNet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Depthwise Convolution applies a single filter per input channel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pointwise Convolution is essentially a 1x1 convolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Depthwise Separable Convolution combines Depthwise and Pointwise Convolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Depthwise Separable Convolutions drastically reduce parameters and computation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dilated Convolution (Atrous Convolution) allows for expanding the receptive field without losing resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dilation Rate determines the spacing between the kernel points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deconvolution (Transposed Convolution) uses learnable upsampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deconvolution is often used in segmentation and GANs to increase spatial dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VGGNet is characterized by its use of very small (3x3) convolution filters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VGG-16 has 13 convolutional layers and 3 fully connected layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Does VGGNet use Skip Connections?",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "GoogLeNet (Inception v1) introduced the Inception Module.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Inception Module applies multiple filter sizes (1x1, 3x3, 5x5) in parallel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GoogLeNet used Auxiliary Classifiers to combat the vanishing gradient problem during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "1x1 convolutions in Inception modules are used primarily for dimensionality reduction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ResNet (Residual Networks) allows training of very deep networks (e.g., 1000 layers).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The core component of ResNet is the Residual Block (or Skip Connection).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Residual Block learns the mapping F(x) = H(x) - x, rather than H(x) directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Skip connections help gradients flow more easily during backpropagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ResNet-50 uses a 'Bottleneck' design for its residual blocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Bottleneck block consists of 1x1, 3x3, and 1x1 convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which architecture introduced 'Dense Blocks' where each layer is connected to every other layer?",
+        "type": "mcq",
+        "o": [
+            "DenseNet",
+            "ResNet",
+            "VGG",
+            "AlexNet"
+        ]
+    },
+    {
+        "q": "DenseNet concatenates feature maps from previous layers, whereas ResNet sums them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DenseNet is parameter efficient due to feature reuse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MobileNet is designed for efficient inference on mobile and embedded devices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MobileNet uses Depthwise Separable Convolutions to reduce computation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MobileNetV2 introduces the Inverted Residual Block.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In an Inverted Residual Block, the network expands dimensions -> convolves -> compresses dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Squeeze-and-Excitation (SE) Networks explicitly model channel interdependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SE blocks re-calibrate channel-wise feature responses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EfficientNet scales depth, width, and resolution uniformly using a compound coefficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NAS (Neural Architecture Search) automates the design of neural network architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MnasNet uses NAS to optimize for latency on mobile devices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ShuffleNet uses Pointwise Group Convolution and Channel Shuffle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Xception is an extreme version of Inception based entirely on depthwise separable convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global Average Pooling (GAP) replaces the fully connected layers at the end of many modern CNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GAP reduces overfitting and the total number of parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spatial Pyramid Pooling (SPP) allows feeding images of arbitrary sizes to a CNN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the architecture to its key feature:",
+        "type": "match",
+        "left": [
+            "ResNet",
+            "Inception",
+            "MobileNet",
+            "DenseNet"
+        ],
+        "right": [
+            "Skip Connections (Sum)",
+            "Parallel Branches",
+            "Depthwise Separable",
+            "Skip Connections (Concat)"
+        ]
+    },
+    {
+        "q": "Rearrange ResNet Bottleneck block layers:",
+        "type": "rearrange",
+        "words": [
+            "1x1 Conv (Reduce)",
+            "3x3 Conv",
+            "1x1 Conv (Expand)"
+        ]
+    },
+    {
+        "q": "When fine-tuning, it is common to use a lower learning rate than when training from scratch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Catastrophic Forgetting is less of an issue in standard Transfer Learning as we freeze earlier layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In PyTorch, `model.eval()` disables Dropout and switches Batch Norm to evaluation mode.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In PyTorch, `torch.no_grad()` is used during inference to reduce memory usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Confusion Matrix shows the breakdown of predictions into TP, TN, FP, FN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Precision = TP / (TP + FP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recall (Sensitivity) = TP / (TP + FN).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "F1 Score is the harmonic mean of Precision and Recall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IoU (Intersection over Union) is a common metric for Object Detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Calculate IoU: Area of Overlap = 10, Area of Union = 30.",
+        "type": "mcq",
+        "o": [
+            "0.33",
+            "0.10",
+            "3.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "For Object Detection, a prediction is often considered correct if IoU > 0.5.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "mAP stands for Mean Average Precision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "mAP is calculated by averaging the AP over all classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AP (Average Precision) is the area under the Precision-Recall curve.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Non-Maximum Suppression' (NMS) used for in Object Detection?",
+        "type": "mcq",
+        "o": [
+            "Eliminating duplicate detections",
+            "Suppressing weak edges",
+            "Removing background",
+            "Normalizing image"
+        ]
+    },
+    {
+        "q": "Anchor Boxes (or Priors) are pre-defined bounding box shapes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Single Shot Detectors (SSD) predict bounding boxes and classes in one pass.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Two-Stage Detectors (like Faster R-CNN) first generate region proposals, then classify them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Two-Stage Detectors are generally slower but more accurate than Single-Stage Detectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Region Proposal Network (RPN) is a key component of Faster R-CNN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoI Pooling (or RoI Align) extracts features for each region proposal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoI Align is more precise than RoI Pooling for pixel-level tasks like segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YOLO stands for You Only Look Once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YOLO divides the image into a SxS grid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YOLO treats detection as a regression problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YOLOv3 uses Darknet-53 as its backbone.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature Pyramid Networks (FPN) improve detection of objects at different scales.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FPN combines low-resolution, semantically strong features with high-resolution, semantically weak features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RetinaNet introduced Focal Loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Focal Loss addresses the class imbalance problem (too many background samples).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which loss function reduces the weight of easy-to-classify examples?",
+        "type": "mcq",
+        "o": [
+            "Focal Loss",
+            "Cross Entropy",
+            "MSE",
+            "L1 Loss"
+        ]
+    },
+    {
+        "q": "Semantic Segmentation assigns a class label to each pixel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The output of Semantic Segmentation has the same spatial resolution as the input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Instance Segmentation distinguishes between different instances of the same class (e.g., car 1 vs car 2).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Panoptic Segmentation combines Semantic and Instance Segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mask R-CNN extends Faster R-CNN by adding a branch for predicting segmentation masks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fully Convolutional Networks (FCN) replace dense layers with 1x1 convolutions to handle arbitrary image sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "U-Net uses skip connections between the encoder (contracting path) and decoder (expanding path).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "U-Net was originally developed for biomedical image segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepLab uses Atrous (Dilated) Convolution to capture multi-scale context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: PyTorch Conv2d.",
+        "type": "mcq",
+        "c": "nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3)",
+        "o": [
+            "Convolves RGB input",
+            "Convolves B&W input",
+            "Pooling layer",
+            "Dense layer"
+        ]
+    },
+    {
+        "q": "Code snippet: MaxPool2d.",
+        "type": "mcq",
+        "c": "nn.MaxPool2d(kernel_size=2, stride=2)",
+        "o": [
+            "Halves H and W",
+            "Doubles H and W",
+            "Changes channels",
+            "Flattens input"
+        ]
+    },
+    {
+        "q": "Heatmaps are often used to visualize which parts of the image the model focuses on (e.g., Grad-CAM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Saliency Maps highlight the most salient pixels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial Attacks can fool CNNs by adding imperceptible noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FGSM (Fast Gradient Sign Method) is a simple adversarial attack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Pixel Attack can change the prediction by modifying just one pixel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Image Registration aligns multiple images into a common coordinate system.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Homography is a transformation that maps points in one image to another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RANSAC (Random Sample Consensus) is used to fit models in the presence of outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Optical Flow estimates the motion of objects between consecutive frames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lucas-Kanade method is a technique for Optical Flow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stereo Vision uses two cameras to estimate depth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Disparity Map represents the difference in horizontal position of objects in stereo images.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structure from Motion (SfM) reconstructs 3D structure from 2D image sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SLAM (Simultaneous Localization and Mapping) builds a map while tracking position.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NeRF (Neural Radiance Fields) represents a 3D scene as a neural network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NeRF uses Volumetric Rendering to synthesize novel views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gaussian Splatting is a faster alternative to NeRF for 3D view synthesis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Super-Resolution creates high-resolution images from low-resolution inputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SRGAN (Super-Resolution GAN) produces more photorealistic textures than MSE-based methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inpainting fills in missing or damaged parts of an image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Colorization adds color to grayscale images.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pose Estimation localizes body keypoints (e.g., elbows, knees).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OpenPose is a popular library for real-time multi-person pose estimation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YOLOv4 introduced 'Bag of Freebies' which refers to training methods that improve accuracy without increasing inference cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is a 'Bag of Freebies' technique?",
+        "type": "mcq",
+        "o": [
+            "CutMix",
+            "Mish Activation",
+            "SPP Block",
+            "Panet"
+        ]
+    },
+    {
+        "q": "YOLOv4 'Bag of Specials' includes plugin modules that slightly increase inference cost but significantly boost accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mish activation is a non-monotonic self-regularized activation function used in YOLOv4.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mosaic Augmentation combines 4 training images into one.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary advantage of Mosaic Augmentation?",
+        "type": "mcq",
+        "o": [
+            "Detects small objects significantly better",
+            "Reduces batch size requirement",
+            "Speeds up training",
+            "Removes background noise"
+        ]
+    },
+    {
+        "q": "YOLOv5 is built using PyTorch, unlike previous versions which used Darknet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "YOLOv8 introduced a new anchor-free detection head.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CenterNet models an object as a single point (the center of its bounding box).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CenterNet eliminates the need for Non-Maximum Suppression (NMS).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CornerNet detects an object as a pair of keypoints: top-left and bottom-right corners.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DETR (Detection Transformer) views object detection as a direct set prediction problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DETR uses Bipartite Matching Loss to assign predictions to ground truth objects uniquely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DETR requires manual anchor box design.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Deformable DETR converges faster than the original DETR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ASPP (Atrous Spatial Pyramid Pooling) is a key module in DeepLab.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ASPP captures contextual information at multiple scales using different dilation rates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepLabv3+ adds a decoder module to refine segmentation boundaries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PSPNet (Pyramid Scene Parsing Network) uses a pyramid pooling module to aggregate global context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Panoptic Quality (PQ) is the standard metric for Panoptic Segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PQ combines Segmentation Quality (SQ) and Recognition Quality (RQ).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mask2Former uses Masked Attention to extract localized features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PointNet processes point clouds directly without voxelization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PointNet is invariant to input permutation (order of points doesn't matter).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PointNet++ handles local structures better than PointNet by applying PointNet recursively.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Voxels are the 3D equivalent of pixels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Voxel-based methods are often memory intensive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OctTree hierarchies can optimize voxel storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "3D CNNs (e.g., C3D) use 3D convolution kernels to process video (Space + Time).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "I3D (Inflated 3D ConvNets) inflates 2D pre-trained weights into 3D.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SlowFast networks use two pathways with different frame rates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Slow' pathway has high spatial resolution but low temporal resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Fast' pathway captures motion with high temporal resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlowNet estimates Optical Flow using CNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Teacher-Student models are common in Knowledge Distillation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard Distillation uses the teacher's predicted class label.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Soft Distillation uses the teacher's softmax probability distribution (soft targets).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temperature scaling softens the probability distribution in Knowledge Distillation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Domain Adaptation aims to mitigate the Domain Shift problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Domain Shift'?",
+        "type": "mcq",
+        "o": [
+            "Training and test data come from different distributions",
+            "Model weights shift during training",
+            "Image rotation",
+            "Changing class labels"
+        ]
+    },
+    {
+        "q": "DANN (Domain-Adversarial Neural Network) uses a gradient reversal layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CycleGAN enables unpaired image-to-image translation (e.g., Horse <-> Zebra).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cycle Consistency Loss implies F(G(x)) should be close to x.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pix2Pix requires paired training data (e.g., Map -> Aerial Photo).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Describe 'Mode Collapse' in GANs.",
+        "type": "mcq",
+        "o": [
+            "Generator produces limited variety of outputs",
+            "Discriminator becomes too strong",
+            "Generator stops training",
+            "Loss becomes zero"
+        ]
+    },
+    {
+        "q": "Wasserstein GAN (WGAN) improves training stability using Earth Mover's Distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WGAN requires 1-Lipschitz continuity constraint on the critic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weight Clipping is one way to enforce 1-Lipschitz constraint.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Penalty is a better alternative to Weight Clipping in WGAN-GP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Conditional GAN (cGAN) generates images conditioned on a class label or data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StyleGAN generates high-resolution faces with controllable styles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StyleGAN uses Adaptive Instance Normalization (AdaIN).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StyleGAN injects noise at each layer to generate stochastic variations (hair, pores).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BigGAN scaled up GAN training with large batches and truncation trick.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepDream maximizes the activation of specific layers to generate hallucinogenic patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Style Transfer separates Content and Style.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Style Transfer, content is captured by high-level feature maps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Style Transfer, style is captured by Gram Matrices (correlations) of feature maps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Siamese Networks are used for One-Shot Learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Siamese Networks use Contrastive Loss or Triplet Loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Triplet Loss minimizes distance between Anchor and Positive, maximizes distance to Negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FaceNet uses Triplet Loss for face recognition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Metric Learning aims to learn a distance function over objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard Negative Mining selects the most difficult negative examples for training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Semi-hard negatives are negatives that are further than positive but inside the margin.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoencoders are unsupervised neural networks used for dimensionality reduction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Denoising Autoencoders are trained to reconstruct clean input from noisy input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparse Autoencoders enforce sparsity in the hidden layer activations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Variational Autoencoders (VAE) learn a probabilistic latent space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VAEs optimize the Evidence Lower Bound (ELBO).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Reparameterization Trick z = mu + sigma * epsilon is crucial for VAEs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does the Reparameterization Trick allow?",
+        "type": "mcq",
+        "o": [
+            "Backpropagation through stochastic nodes",
+            "Faster sampling",
+            "Higher resolution output",
+            "Zero loss"
+        ]
+    },
+    {
+        "q": "Beta-VAE disentangles latent factors by increasing the weight of the KL divergence term.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VQ-VAE uses a discrete latent space with a codebook.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VQ-VAE avoids 'posterior collapse' common in VAEs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PixelCNN generates images pixel-by-pixel (autoregressive).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gated PixelCNN uses gated activation units to model complex dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PixelCNN uses Masked Convolutions to prevent seeing future pixels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EfficientDet uses BiFPN (Bidirectional Feature Pyramid Network).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BiFPN allows top-down and bottom-up feature fusion repeatedly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HRNet (High-Resolution Network) maintains high-resolution representations throughout the network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the GAN training loop:",
+        "type": "rearrange",
+        "words": [
+            "Sample Noise",
+            "Generate Fake",
+            "Train Discriminator",
+            "Train Generator"
+        ]
+    },
+    {
+        "q": "Match the generative model type:",
+        "type": "match",
+        "left": [
+            "GAN",
+            "VAE",
+            "Flow-based",
+            "Diffusion"
+        ],
+        "right": [
+            "Adversarial",
+            "ELBO",
+            "Invertible",
+            "Denoising"
+        ]
+    },
+    {
+        "q": "Instance Normalization is preferred over Batch Normalization for Style Transfer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Group Normalization is useful when batch size is very small.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Layer Normalization is commonly used in RNNs and Transformers, but less in CNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spectral Normalization constrains the Lipschitz constant of the discriminator in GANs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Attention (non-local blocks) can be used in CNNs to capture long-range dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CBAM (Convolutional Block Attention Module) infers attention maps along channel and spatial dimensions sequentially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric is best for imbalanced segmentation datasets?",
+        "type": "mcq",
+        "o": [
+            "Dice Coefficient",
+            "Pixel Accuracy",
+            "MSE",
+            "MAE"
+        ]
+    },
+    {
+        "q": "Dice Coefficient is equivalent to F1 Score.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tversky Loss is a generalization of Dice Loss that allows weighting False Positives and False Negatives differently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dropout is typically NOT used in modern CNNs with Batch Normalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DropBlock drops contiguous regions of the feature map instead of random units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stochastic Depth drops entire layers (residual blocks) during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vision Transformer (ViT) treats an image as a sequence of patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViT uses a standard Transformer Encoder architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ViT, 'Class Token' (CLS) is added to the sequence to aggregate global information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Position Embeddings in ViT are learnable parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViT generally requires more training data (or strong regularization) than ResNet to perform well.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Why does ViT need more data?",
+        "type": "mcq",
+        "o": [
+            "It lacks inductive biases like translation invariance",
+            "It has fewer parameters",
+            "It uses lower resolution images",
+            "It has no activation functions"
+        ]
+    },
+    {
+        "q": "Swin Transformer introduces hierarchical feature maps using Shifted Windows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swin Transformer has linear computational complexity with respect to image size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Shifted Window' mechanism allows cross-window connection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeiT (Data-efficient Image Transformers) uses Knowledge Distillation to train ViT with less data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeiT introduces a 'Distillation Token' alongside the Class Token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MLP-Mixer replaces Self-Attention with MLP layers applied across patches and channels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Supervised Learning (SSL) learns representations from unlabeled data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Learning pulls positive pairs together and pushes negative pairs apart.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimCLR uses data augmentation to create positive pairs from the same image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which loss function is commonly used in SimCLR?",
+        "type": "mcq",
+        "o": [
+            "NT-Xent Loss",
+            "Cross Entropy",
+            "Focal Loss",
+            "Hinge Loss"
+        ]
+    },
+    {
+        "q": "SimCLR requires very large batch sizes (e.g., 4096) for stable training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MoCo (Momentum Contrast) separates the encoder into a Query Encoder and a Momentum Encoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MoCo uses a queue (dictionary) to store negative samples, decoupling batch size from negative sample count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BYOL (Bootstrap Your Own Latent) does not use negative pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BYOL relies on an exponential moving average target network to prevent collapse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimSiam shows that neither negative pairs nor momentum encoders are strictly necessary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimSiam prevents collapse using a stop-gradient operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAE (Masked Autoencoders) masks a high percentage (e.g., 75%) of input patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAE encoder only processes the visible (unmasked) patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAE decoder reconstructs the pixels of the masked patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DINO (Self-Distillation with no labels) uses a Teacher-Student setup with extensive centering and sharpening.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DINO features often contain explicit semantic segmentation information (e.g., object boundaries) without supervision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLIP (Contrastive Language-Image Pre-training) learns joint embeddings for images and text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLIP is trained on 400 million (image, text) pairs from the internet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-Shot Classification with CLIP involves matching image embeddings to text embeddings of class names.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ArcFace uses an Additive Angular Margin Loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ArcFace projects features onto a hypersphere.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CosFace uses an Additive Cosine Margin.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SphereFace uses a Multiplicative Angular Margin.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Center Loss minimizes the intra-class variations while Cross-Entropy separates classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temporal Shift Module (TSM) shifts a part of the channels along the temporal dimension.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TSM achieves temporal modeling with zero computation overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-local Neural Networks use self-attention to capture long-range temporal dependencies in video.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Action Recognition often involves identifying 'Kinetic' classes (verbs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Video Swin Transformer extends Swin Transformer to 3D patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mesh R-CNN adds a mesh prediction branch to Mask R-CNN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Occupancy Networks represent 3D geometry as a continuous decision boundary function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepSDF represents shapes using a Signed Distance Function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Convolutional Networks (GCNs) can operate on non-Euclidean data like 3D meshes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PointPillars converts point clouds into pseudo-images (pillars) for 2D CNN methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-View Stereo (MVS) reconstructs 3D shape from multiple overlapping images.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Colmap is a standard Structure-from-Motion and Multi-View Stereo pipeline.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ViT steps:",
+        "type": "rearrange",
+        "words": [
+            "Patchify Image",
+            "Linear Projection",
+            "Add Pos Embed",
+            "Transformer Encoder"
+        ]
+    },
+    {
+        "q": "Match the SSL method:",
+        "type": "match",
+        "left": [
+            "SimCLR",
+            "MoCo",
+            "BYOL",
+            "MAE"
+        ],
+        "right": [
+            "Contrastive (Large Batch)",
+            "Contrastive (Queue)",
+            "Non-Contrastive",
+            "Masked Reconstruction"
+        ]
+    },
+    {
+        "q": "Domain Generalization aims to learn a model that performs well on unseen domains without adaptation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Test-Time Adaptation (TTA) updates the model using test data during inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tent is a TTA method that minimizes entropy of predictions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grad-CAM uses gradients flowing into the final convolutional layer to produce a localization map.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Integrated Gradients averages gradients computed at interpolated points between input and baseline.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial Training involves training on adversarial examples to improve robustness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Clean Acc vs Robust Acc tradeoff is a common phenomenon in Adversarial Training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepImagePrior shows that CNN structure itself acts as a strong prior for natural images.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepImagePrior can perform denoising and inpainting without any training data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bag of Visual Words (BoVW) creates a histogram of visual features (e.g., SIFT clusters).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VLAD (Vector of Locally Aggregated Descriptors) aggregates residuals of features to cluster centers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fisher Vector encodes higher-order statistics (covariance) of features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NetVLAD is a differentiable Neural Network module inspired by VLAD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is best for changing night images to day images?",
+        "type": "mcq",
+        "o": [
+            "CycleGAN",
+            "ResNet",
+            "AlexNet",
+            "Faster R-CNN"
+        ]
+    },
+    {
+        "q": "Code snippet: PyTorch ImageFolder.",
+        "type": "mcq",
+        "c": "datasets.ImageFolder(root='data/train')",
+        "o": [
+            "Loads images from directory structure",
+            "Downloads ImageNet",
+            "Creates empty folder",
+            "Deletes folder"
+        ]
+    },
+    {
+        "q": "What is 'mixup' augmentation?",
+        "type": "mcq",
+        "o": [
+            "Linear interpolation of two images and labels",
+            "Reshuffling pixels",
+            "Inverting colors",
+            "Mixing channels randomly"
+        ]
+    },
+    {
+        "q": "CutMix replaces a patch of an image with a patch from another image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RandAugment automatically learns augmentation policies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoAugment uses Reinforcement Learning to search for optimal augmentation policies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Label Smoothing prevents the model from predicting 1.0 probability for the correct class (overconfidence).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Curriculum Learning involves training on easy examples first, then hard ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Active Learning involves selecting the most informative samples for a human to label.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Few-Shot Learning aims to learn from very few labeled examples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prototypical Networks learn a metric space where classes are represented by a single prototype (mean).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAML (Model-Agnostic Meta-Learning) learns an initialization that can be quickly adapted to new tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reptile is a first-order approximation of MAML.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Open-Set Recognition aims to detect 'unknown' classes during inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Out-of-Distribution (OOD) Detection identifies samples that don't belong to the training distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Energy-based OOD detection uses the energy score (log-sum-exp) to distinguish in-distribution vs OOD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ODIN (Out-of-Distribution detector for Neural networks) uses temperature scaling and input perturbation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diffusion Models generate data by reversing a gradual noising process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DDPM uses a Markov Chain to gradually add Gaussian noise to the image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The reverse process in DDPM is trained to predict the noise added at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DDIM (Denoising Diffusion Implicit Models) allows for faster sampling (skipping steps) compared to DDPM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DDIM makes the reverse process deterministic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Latent Diffusion Models (like Stable Diffusion) perform diffusion in the latent space of a VAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Why perform diffusion in latent space?",
+        "type": "mcq",
+        "o": [
+            "Computationally efficient",
+            "Higher resolution",
+            "More colors",
+            "Simpler architecture"
+        ]
+    },
+    {
+        "q": "Stable Diffusion uses a U-Net architecture to predict noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stable Diffusion uses CLIP's text encoder for conditioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Classifier-Free Guidance improves sample quality without needing a separate classifier model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Increasing the Guidance Scale typically increases adherence to the prompt but decreases diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ControlNet conditions diffusion models on additional inputs like Canny edges or Depth maps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ControlNet freezes the original model weights and trains a trainable copy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-convolution layers in ControlNet are initialized to zero to preserve original model behavior at start.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DreamBooth fine-tunes the entire model to learn a new subject identifier (e.g., [V] dog).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LoRA (Low-Rank Adaptation) can be applied to Stable Diffusion to reduce fine-tuning memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visual Question Answering (VQA) requires fusing visual and textual modalities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FiLM (Feature-wise Linear Modulation) layers condition a CNN on text input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Automatic Image Captioning typically uses an Encoder-Decoder architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Show, Attend and Tell introduces an Attention mechanism to Image Captioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does the model 'attend' to in Image Captioning?",
+        "type": "mcq",
+        "o": [
+            "Specific regions of the image",
+            "Previous words",
+            "Future words",
+            "Image metadata"
+        ]
+    },
+    {
+        "q": "GLIP (Grounded Language-Image Pre-training) unifies object detection and phrase grounding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GLIP formulates object detection as a phrase grounding task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Medical images like CT scans measure radiodensity in Hounsfield Units (HU).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In CT scans, bone usually has high HU values (white) and air has low HU values (black).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MRI images have different modalities (e.g., T1-weighted, T2-weighted, FLAIR).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DICOM is the standard file format for medical imaging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NIfTI is a common file format for neuroimaging (MRI).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "V-Net is a 3D extension of U-Net used for volumetric segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "nnU-Net (No-New-Net) automatically configures U-Net based on dataset properties.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Federated Learning is crucial in medical AI to preserve patient privacy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weakly Supervised Segmentation uses image-level labels (e.g., 'cancer present') to generate segmentation masks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiple Instance Learning (MIL) is used in Whole Slide Imaging (Pathology).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Quantization reduces the precision of weights (e.g., FP32 to INT8).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantization-Aware Training (QAT) simulates quantization during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Post-Training Quantization (PTQ) quantizes a pre-trained model without retraining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pruning involves removing less important weights (connections).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Unstructured Pruning removes individual weights, leading to sparse matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structured Pruning removes entire channels or filters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structured Pruning is easier to accelerate on standard hardware than Unstructured Pruning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Lottery Ticket Hypothesis suggests that dense networks contain sparse subnetworks that can train in isolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MobileViT combines CNNs and Transformers for efficient mobile vision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GhostNet generates more feature maps from cheap operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hypercolumn refers to concatenating features from multiple layers for pixel-wise tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deformable Convolutions learn offsets for the grid sampling locations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Capsule Networks (CapsNet) use dynamic routing instead of pooling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Capsules encode instantiation parameters (pose, orientation).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spatial Transformer Networks (STN) learn to perform affine transformations on the input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "STN typically consists of a Localization Network, a Grid Generator, and a Sampler.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vision-Language Models (VLMs) can perform tasks like open-vocabulary detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visual Prompting allows adapting frozen visual models to new tasks using pixel-level prompts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Segment Anything Model (SAM) is a promptable segmentation foundation model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SAM uses an Image Encoder (ViT-based) and a lightweight Prompt Encoder/Mask Decoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SAM can be prompted with points, boxes, or text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot Segmentation means segmenting objects not seen during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Crowd Counting estimates the number of people in a dense crowd image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Density Map estimation is a common approach for Crowd Counting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Person Re-Identification (ReID) matches individuals across non-overlapping camera views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rank-1 Accuracy and mAP are standard metrics for ReID.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomaly Detection in vision often relies on reconstruction error (Autoencoders).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Class SVM is a classic method for Anomaly Detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PaDiM (Patch Distribution Modeling) uses pre-trained feature embeddings for defect detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Synthetic Data Generation helps train CV models when real data is scarce or privacy-sensitive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the medical format:",
+        "type": "match",
+        "left": [
+            "DICOM",
+            "NIfTI",
+            "WSI",
+            "MHA"
+        ],
+        "right": [
+            "Standard Medical",
+            "Neuroimaging",
+            "Pathology",
+            "MetaImage"
+        ]
+    },
+    {
+        "q": "Rearrange the Diffusion process:",
+        "type": "rearrange",
+        "words": [
+            "Forward (Add Noise)",
+            "Reverse (Denoise)",
+            "Sample Noise",
+            "Predict Noise"
+        ]
+    },
+    {
+        "q": "Knowledge Distillation Loss usually combines Soft Target Loss (KL Divergence) and Hard Target Loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature-based Distillation tries to match intermediate feature maps of Teacher and Student.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Relation-based Distillation matches the relationship between samples (e.g., distance matrix) in Teacher and Student.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: Stable Diffusion pipeline.",
+        "type": "mcq",
+        "c": "pipe = StableDiffusionPipeline.from_pretrained('runwayml/stable-diffusion-v1-5')",
+        "o": [
+            "Loads SD model",
+            "Trains SD",
+            "Deletes SD weights",
+            "Generates text"
+        ]
+    },
+    {
+        "q": "Code snippet: PyTorch AMP (Automatic Mixed Precision).",
+        "type": "mcq",
+        "c": "scaler.scale(loss).backward()",
+        "o": [
+            "Backward pass with scaling",
+            "Forward pass",
+            "Optimizer step",
+            "Data loading"
+        ]
+    },
+    {
+        "q": "Mixed Precision training uses both FP16 and FP32 to speed up training and save memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Scaling is needed in Mixed Precision to prevent gradient underflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TensorRT is an SDK for high-performance deep learning inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ONNX (Open Neural Network Exchange) acts as a standard format for interoperability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OpenVINO is Intel's toolkit for optimizing models on Intel hardware.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CoreML is Apple's framework for on-device machine learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TFLite is Google's framework for mobile and edge devices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an edge device accelerator?",
+        "type": "mcq",
+        "o": [
+            "Google Coral TPU",
+            "NVIDIA H100",
+            "AWS Graviton",
+            "AMD EPYC"
+        ]
+    },
+    {
+        "q": "Jetson Nano is a small computer from NVIDIA for embedded AI.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Federated Averaging (FedAvg) aggregates model updates from clients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Differential Privacy adds noise to updates to prevent reconstructing user data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FID (Fréchet Inception Distance) measures the similarity between generated and real image distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower FID score indicates better image quality and diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inception Score (IS) favors images that are distinct (low entropy conditional prob) and diverse (high entropy marginal prob).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LPIPS (Learned Perceptual Image Patch Similarity) aligns better with human perception than MSE or SSIM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sora (OpenAI) treats video as a sequence of space-time patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sora is a Diffusion Transformer (DiT) scaling to video data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lumiere uses a Space-Time U-Net architecture to generate video in a single pass.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Video Diffusion Models often struggle with temporal consistency (flickering).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "3D Gaussian Splatting uses anisotropic 3D Gaussians to represent a scene.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "3D Gaussian Splatting offers real-time rendering speeds unlike standard NeRF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Point-E generates 3D point clouds from text prompts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shap-E generates implicit functions (SDFs) or neural fields directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RT-2 (Robotic Transformer 2) is a Vision-Language-Action (VLA) model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RT-2 outputs robot actions as text tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PaLM-E is an embodied multimodal language model injecting sensor data into LLMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Florence-2 is a unified vision foundation model capable of dense captioning and grounding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PaliGemma is an open VLM based on SigLIP and Gemma.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SigLIP (Sigmoid Loss for Language Image Pre-training) is more memory efficient than CLIP's Softmax.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CogVLM achieves high performance by adding a trainable visual expert module to the LLM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LLaVA (Large Language and Vision Assistant) connects a visual encoder (CLIP) to Llama via a simple projection layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TCAV (Testing with Concept Activation Vectors) quantifies the sensitivity of a prediction to a high-level concept (e.g., 'striped').",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Certified Robustness guarantees that a model's prediction won't change within a certain radius of perturbation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Randomized Smoothing is a scalable technique to achieve certified robustness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ISP (Image Signal Processor) converts raw sensor data into a viewable image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Demosaicing is the process of reconstructing a full color image from a Bayer filter pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "White Balance adjusts colors to make white objects appear white under different lighting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Burst Denoising aligns and averages multiple frames from a burst to reduce noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HDR (High Dynamic Range) imaging merges multiple exposures to capture a wider range of light.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Event Cameras (Neuromorphic) measure changes in brightness asynchronously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Event Cameras have extremely high temporal resolution and low power consumption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polarization Imaging captures the polarization state of light, revealing surface textures and transparency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyperspectral Imaging captures a wide spectrum of light per pixel, beyond RGB.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which color pattern is most common in image sensors?",
+        "type": "mcq",
+        "o": [
+            "Bayer Filter",
+            "Foveon",
+            "X-Trans",
+            "Monochrome"
+        ]
+    },
+    {
+        "q": "Deep Priors for Inverse Problems allow solving ill-posed problems like super-resolution without large datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Radiance Cache helps accelerate real-time path tracing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "World Models aim to learn a compact representation of the environment's dynamics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Video Prediction involves generating future frames based on past frames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NUWA (NÜWA) is a multimodal generative model for various visual synthesis tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Make-A-Video (Meta) generates video from text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is a key challenge in 3D Object Detection from LiDAR?",
+        "type": "mcq",
+        "o": [
+            "Sparsity of points",
+            "Too much color info",
+            "Fixed perspective",
+            "Low frame rate"
+        ]
+    },
+    {
+        "q": "Frustum PointNets leverage 2D detection to narrow down the 3D search space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VoxelNet uses 3D convolutions on voxelized point clouds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SECOND (Sparsely Embedded Convolutional Detection) optimizes 3D convolution for sparse data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CenterPoint represents objects as points in 3D space, similar to CenterNet in 2D.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Object Tracking (MOT) associates detections across frames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SORT (Simple Online and Realtime Tracking) uses Kalman Filters and Hungarian Algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepSORT adds appearance descriptors (ReID) to SORT to handle occlusions better.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TrackFormer uses a Transformer for joint detection and tracking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FairMOT achieves state-of-the-art tracking by balancing detection and re-id tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ego-Motion Estimation is estimating the camera's own motion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visual Odometry (VO) estimates trajectory incrementally from camera images.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Loop Closure detection identifies when a robot returns to a previously visited location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bundle Adjustment refines 3D structure and camera parameters by minimizing reprojection error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Implicit Neural Representations (INR) encode signals (images, 3D scenes) in MLP weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SIREN (Sinusoidal Representation Networks) uses sine activation functions for INRs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fourier Feature Mapping enables MLPs to learn high-frequency functions in low dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Universal Approximation Theorem implies neural networks can approximate any continuous function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Tangent Kernel (NTK) describes the evolution of wide neural networks during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Double Descent phenomenon observes test error decreasing, increasing, then decreasing again as model size grows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Linear Networks (stacked linear layers) reduce to a single linear transformation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Why study Deep Linear Networks?",
+        "type": "mcq",
+        "o": [
+            "To understand optimization dynamics",
+            "To get state-of-the-art results",
+            "To save memory",
+            "To process video"
+        ]
+    },
+    {
+        "q": "Saddle Points are a bigger problem than Local Minima in high-dimensional optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sharp Minima generally generalize worse than Flat Minima.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SAM (Sharpness-Aware Minimization) optimizes for flat minima to improve generalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Checkpointing trades compute for memory by recomputing activations during backward pass.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero Redundancy Optimizer (ZeRO) partitions optimizer states across GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Parallelism splits a single model across multiple GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pipeline Parallelism splits layers across GPUs and pipelines execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data Parallelism replicates the model on each GPU and splits the batch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Synchronous SGD waits for gradients from all workers before updating.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Asynchronous SGD updates weights as soon as one worker finishes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Staling effect in Async SGD refers to gradients being computed on old weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ring All-Reduce is an efficient algorithm to aggregate gradients in Data Parallelism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NVLink provides high-bandwidth interconnect between GPUs compared to PCIe.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPipe uses micro-batches to enable Pipeline Parallelism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Megatron-LM popularized Tensor Parallelism for large Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the 3D Gaussian Splatting steps:",
+        "type": "rearrange",
+        "words": [
+            "SfM Points Init",
+            "Optimize Gaussians",
+            "Project to 2D",
+            "Rasterize"
+        ]
+    },
+    {
+        "q": "Match the Advanced VLM:",
+        "type": "match",
+        "left": [
+            "LLaVA",
+            "PaliGemma",
+            "Florence-2",
+            "Flamingo"
+        ],
+        "right": [
+            "Llama + CLIP",
+            "SigLIP + Gemma",
+            "Unified VLM",
+            "Interleaved I/T"
+        ]
+    },
+    {
+        "q": "Code snippet: PyTorch Distributed.",
+        "type": "mcq",
+        "c": "dist.init_process_group(backend='nccl')",
+        "o": [
+            "Initializes distributed training",
+            "Downloads dataset",
+            "Starts TensorBoard",
+            "Clears GPU cache"
+        ]
+    },
+    {
+        "q": "NCCL (NVIDIA Collective Communications Library) is optimized for NVIDIA GPU communication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Horovod is a distributed deep learning framework for TensorFlow, Keras, PyTorch, and Apache MXNet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ray Train simplifies distributed training on a Ray cluster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TorchElastic allows distributed training jobs to change size dynamically (fault tolerance).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fully Sharded Data Parallel (FSDP) shards parameters, gradients, and optimizer states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FSDP allows training trillion-parameter models on standard clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Activation Offloading (CPU Offloading) moves activations to CPU RAM to save GPU memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NVMe Offloading uses fast SSDs to extend GPU memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention uses tiling to reduce memory IO and speed up attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PagedAttention (vLLM) manages KV cache memory efficiently like an OS manages RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continuous Batching improves throughput by filling gaps in batches with new requests.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Speculative Decoding generates drafting tokens with a small model and verifies with a large model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SmoothQuant allows INT8 quantization of both weights and activations without accuracy loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AWQ (Activation-aware Weight Quantization) protects salient weights based on activation magnitude.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPTQ (Generalized Post-Training Quantization) is a highly efficient one-shot quantization method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SpQR (Sparse Quantized Representations) isolates sensitive weights in high precision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Safety Gym is a benchmark for Safe Reinforcement Learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reward Hacking occurs when the agent finds a loophole to maximize reward without solving the task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inverse Reinforcement Learning (IRL) learns the reward function from expert demonstrations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Behavioral Cloning (BC) frames imitation learning as supervised learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Distribution Shift is a major challenge in Behavioral Cloning (covariate shift).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DAGGER (Dataset Aggregation) iteratively collects expert labels for agent's visited states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GAIL (Generative Adversarial Imitation Learning) uses a discriminator to distinguish agent vs expert behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Explainable AI (XAI) aims to make model decisions interpretable by humans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LIME (Local Interpretable Model-agnostic Explanations) fits a simple local model around a prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SHAP (SHapley Additive exPlanations) is based on game theory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactual Explanations involve asking 'What is the smallest change to inputs to change the prediction?'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Influence Functions estimate the effect of removing a training point on the model parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bias in Computer Vision datasets can lead to unfair or discriminatory outcomes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Cards provide standardized documentation for model performance, limitations, and usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Datasheets for Datasets document the motivation, composition, and collection process of datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Privacy-Preserving Machine Learning includes techniques like Homomorphic Encryption and MPC.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Homomorphic Encryption allows computing on encrypted data without decrypting it.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Secure Multi-Party Computation (MPC) allows parties to compute a function jointly while keeping inputs private.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trusted Execution Environments (TEE) (e.g., Intel SGX) provide hardware-level isolation for code and data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deepfakes are synthetic media generated by AI, often used for impersonation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deepfake Detection is an ongoing arms race between generators and detectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Digital Watermarking embeds invisible signals into media to track provenance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "C2PA (Coalition for Content Provenance and Authenticity) is an open standard for media provenance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AI Regulation (e.g., EU AI Act) categorizes AI systems by risk level.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

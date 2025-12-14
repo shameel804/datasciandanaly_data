@@ -1,0 +1,2824 @@
+[
+    {
+        "q": "The Transformer model is based entirely on ____ mechanisms.",
+        "type": "fill_blank",
+        "answers": [
+            "attention"
+        ],
+        "other_options": [
+            "convolution",
+            "recurrence",
+            "pooling"
+        ]
+    },
+    {
+        "q": "Transformers were introduced in the paper titled 'Attention Is All You Need'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Transformer architecture allows for significantly more parallelization than RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What are the three vectors derived from the input embedding in Self-Attention?",
+        "type": "mcq",
+        "o": [
+            "Query, Key, Value",
+            "Input, Output, Hidden",
+            "Update, Reset, Gate",
+            "Mean, Variance, Bias"
+        ]
+    },
+    {
+        "q": "In Self-Attention, the score is calculated by taking the dot product of Query and Key.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The scores in Self-Attention are scaled by dividing by the square root of the dimension of the keys (d_k).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Softmax is applied to the scores to obtain attention weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The final output of a Self-Attention head is a weighted sum of the Values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Head Attention runs multiple self-attention mechanisms in parallel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers process the entire sequence at once, rather than step-by-step like RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Positional Encodings are added to input embeddings to give the model information about token order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The original Transformer uses fixed sinusoidal positional encodings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Learned positional embeddings are also commonly used (e.g., in BERT, GPT).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Standard Transformer consists of an Encoder stack and a Decoder stack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Encoder stack processes the input sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Decoder stack generates the output sequence one token at a time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Masked Multi-Head Attention in the Decoder prevents positions from attending to subsequent positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "This masking ensures that the prediction for position 'i' depends only on known outputs at positions less than 'i'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-Attention (Encoder-Decoder Attention) allows the Decoder to attend to the Encoder's output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Cross-Attention, Queries come from the Decoder, while Keys and Values come from the Encoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Each sub-layer in a Transformer (Attention, Feed-Forward) is followed by Layer Normalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Each sub-layer also employs a Residual Connection (Add & Norm).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Feed-Forward Network in a Transformer is applied to each position separately and identically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The FFN typically consists of two linear transformations with a ReLU activation in between.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Layer Normalization normalizes the inputs across the features dimension for each sample.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Batch Normalization normalizes across the batch dimension.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers generally use Layer Norm instead of Batch Norm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the complexity of Self-Attention with respect to sequence length L?",
+        "type": "mcq",
+        "o": [
+            "O(L^2)",
+            "O(L)",
+            "O(L log L)",
+            "O(1)"
+        ]
+    },
+    {
+        "q": "The quadratic complexity O(L^2) makes Transformers slow for very long sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT stands for Bidirectional Encoder Representations from Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT is an Encoder-only model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT stands for Generative Pre-trained Transformer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT is a Decoder-only model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T5 (Text-to-Text Transfer Transformer) is an Encoder-Decoder model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which framework is NOT typically associated with Transformer training?",
+        "type": "mcq",
+        "o": [
+            "Sklearn",
+            "PyTorch",
+            "TensorFlow",
+            "JAX"
+        ]
+    },
+    {
+        "q": "Hugging Face 'Transformers' is a popular library for using Pre-trained Transformer models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tokenization converts text into a sequence of integers (tokens).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vocabulary Size determines the number of unique tokens the model can represent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OOV stands for Out-Of-Vocabulary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subword Tokenization (like BPE, WordPiece) helps handle OOV words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In BPE (Byte Pair Encoding), frequent characters or character sequences are merged.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WordPiece is used by BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SentencePiece treats the input as a raw input stream/sentence, including spaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: Attention calculation.",
+        "type": "mcq",
+        "c": "softmax(Q @ K.T / sqrt(d_k)) @ V",
+        "o": [
+            "Scaled Dot-Product Attention",
+            "Additive Attention",
+            "Convolution",
+            "Linear Layer"
+        ]
+    },
+    {
+        "q": "Rearrange the components of a Transformer Encoder Layer:",
+        "type": "rearrange",
+        "words": [
+            "Self-Attention",
+            "Add & Norm",
+            "Feed Forward",
+            "Add & Norm"
+        ]
+    },
+    {
+        "q": "Match the mechanism:",
+        "type": "match",
+        "left": [
+            "Self-Attention",
+            "Cross-Attention",
+            "Masked Attention",
+            "FFN"
+        ],
+        "right": [
+            "Within sequence",
+            "Encoder to Decoder",
+            "Causal lookahead",
+            "Position-wise"
+        ]
+    },
+    {
+        "q": "Pre-Layer Norm (putting normalization before attention/FFN) generally improves training stability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Post-Layer Norm was used in the original Transformer paper.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Warmup steps increase the learning rate linearly from 0 at the start of training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers are very sensitive to Learning Rate schedule.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cosine Decay is a popular learning rate schedule for Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AdamW is the most common optimizer for training Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AdamW adds Weight Decay decoupling to the Adam optimizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Embeddings map tokens to dense vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contextual Embeddings (like BERT) change based on the surrounding words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static Embeddings (like Word2Vec) are fixed for each word regardless of context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The CLS token in BERT is used for classification tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The SEP token in BERT separates two sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT is trained using Masked Language Modeling (MLM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MLM involves predicting masked tokens from the input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT is also trained using Next Sentence Prediction (NSP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT is trained using Causal Language Modeling (CLM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLM involves predicting the next token given previous tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fine-tuning involves updating the pre-trained weights on a downstream task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature-based approach (feature extraction) freezes the pre-trained model and trains a classifier on top.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GLUE benchmark evaluates functional performance of NLU models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SuperGLUE is a harder benchmark than GLUE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SQuAD is a dataset for Question Answering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beam Search is a decoding strategy that keeps track of the top-k most likely sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Greedy Search selects the token with the highest probability at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which decoding method introduces randomness?",
+        "type": "mcq",
+        "o": [
+            "Top-k Sampling",
+            "Greedy Search",
+            "Beam Search (Deterministic)",
+            "None"
+        ]
+    },
+    {
+        "q": "Temperature affects the sharpness of the probability distribution during sampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Low temperature (<1) makes the model more confident/conservative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "High temperature (>1) makes the model more random/creative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-p (Nucleus) Sampling samples from the smallest set of tokens whose cumulative probability exceeds p.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-k Sampling restricts sampling to the k most likely next tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-Shot Learning means the model performs a task without seeing explicit examples of that task during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Few-Shot Learning provides the model with a few examples (prompts) at inference time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Engineering is the art of crafting inputs to guide the model's output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Thought (CoT) prompting encourages the model to generate intermediate reasoning steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which model is associated with 'Let's think step by step'?",
+        "type": "mcq",
+        "o": [
+            "Any large LLM (e.g., GPT-3)",
+            "ResNet",
+            "Linear Regression",
+            "SVM"
+        ]
+    },
+    {
+        "q": "Hallucination refers to the model generating factually incorrect or nonsensical information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention visualization helped researchers understand what words the model focuses on.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformer models are typically very large, often having billions of parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scaling Laws suggests that performance improves predictably with model size, dataset size, and compute.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Distillation involves training a smaller student model to mimic a larger teacher model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT is a distilled version of BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantization reduces the precision of model weights (e.g., FP32 -> INT8) to speed up inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pruning removes unnecessary connections or neurons from the network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Transformer' outperformed LSTM based models in translation tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNs have a long gradient path which leads to vanishing/exploding gradients; Transformers reduce this path length to O(1).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swish and GeLU are activation functions often used in Transformers instead of ReLU.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GeLU stands for Gaussian Error Linear Unit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: HuggingFace pipeline.",
+        "type": "mcq",
+        "c": "pipeline('sentiment-analysis')",
+        "o": [
+            "Creates a classifier",
+            "Trains a model",
+            "Deletes a model",
+            "Plots data"
+        ]
+    },
+    {
+        "q": "BERT uses a bidirectional encoder, allowing it to see the entire sentence at once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Masked Language Modeling (MLM), what percentage of tokens are typically masked in BERT?",
+        "type": "mcq",
+        "o": [
+            "15%",
+            "50%",
+            "5%",
+            "100%"
+        ]
+    },
+    {
+        "q": "Of the masked tokens, 80% are replaced with [MASK], 10% with a random word, and 10% kept unchanged.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Next Sentence Prediction (NSP) is a binary classification task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoBERTa (Robustly Optimized BERT) removed the NSP task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoBERTa uses Dynamic Masking, meaning the mask changes every epoch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoBERTa was trained on much more data and for longer than BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT reduces the number of layers by half compared to BERT-base.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT uses a triple loss: Distillation Loss + Masked Language Modeling Loss + Cosine Embedding Loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT retains approximately 97% of BERT's performance while being 40% smaller.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALBERT (A Lite BERT) uses Cross-layer Parameter Sharing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ALBERT, the embedding size E is usually smaller than the hidden size H.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parameter sharing in ALBERT significantly reduces memory usage but not necessarily inference time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELECTRA uses a Generator and a Discriminator trained jointly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELECTRA's objective is Replaced Token Detection (RTD).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RTD is more sample-efficient than MLM because the model learns from all tokens, not just masked ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "XLNet is an autoregressive model that uses Permutation Language Modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "XLNet captures bidirectional contexts by permuting the factorization order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformer-XL introduces segment-level recurrence to handle longer contexts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SpanBERT is designed to predict contiguous spans of text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SpanBERT masks random contiguous spans instead of individual tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SpanBERT uses a Span Boundary Objective (SBO) to predict masked tokens using boundary tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TinyBERT uses Two-Stage Distillation (General and Task-specific).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MobileBERT is optimized for mobile devices using bottleneck structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT-base has 12 layers, 768 hidden size, and 12 attention heads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT-large has 24 layers, 1024 hidden size, and 16 attention heads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The [CLS] token embedding aggregate sequence representation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pooling Strategy refers to how we extract a fixed-size vector from the sequence of hidden states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which pooling strategy is default for classification in BERT?",
+        "type": "mcq",
+        "o": [
+            "Use [CLS] token",
+            "Max Pooling",
+            "Mean Pooling",
+            "Last token"
+        ]
+    },
+    {
+        "q": "Sentence-BERT (SBERT) uses Siamese networks to derive meaningful sentence embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SBERT is trained using specific objectives like classification or triplet loss on sentence pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Standard BERT embeddings often yield poor performance for cosine similarity tasks without fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which tokenization does BERT use?",
+        "type": "mcq",
+        "o": [
+            "WordPiece",
+            "BPE",
+            "Unigram",
+            "SentencePiece"
+        ]
+    },
+    {
+        "q": "Which tokenization does RoBERTa use?",
+        "type": "mcq",
+        "o": [
+            "Byte-Level BPE",
+            "WordPiece",
+            "Characters",
+            "Words"
+        ]
+    },
+    {
+        "q": "Byte-Level BPE can handle any string without needing 'UNK' tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "How many tokens can BERT process at maximum?",
+        "type": "mcq",
+        "o": [
+            "512",
+            "1024",
+            "2048",
+            "128"
+        ]
+    },
+    {
+        "q": "Longformer uses sliding window attention to handle longer sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BigBird uses sparse attention (random + window + global) to scale to long sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear Transformers approximate the attention mechanism to achieve O(L) complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Performer uses Kernel Approximation for efficient attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reformer uses Locality Sensitive Hashing (LSH) for attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the BERT training steps:",
+        "type": "rearrange",
+        "words": [
+            "Tokenize Text",
+            "Mask Tokens",
+            "Forward Pass",
+            "Calc Loss"
+        ]
+    },
+    {
+        "q": "Match the BERT variant:",
+        "type": "match",
+        "left": [
+            "RoBERTa",
+            "DistilBERT",
+            "ALBERT",
+            "SpanBERT"
+        ],
+        "right": [
+            "Dynamic Masking",
+            "Knowledge Distillation",
+            "Parameter Sharing",
+            "Contiguous Masking"
+        ]
+    },
+    {
+        "q": "Code snippet: Load BERT Tokenizer.",
+        "type": "mcq",
+        "c": "BertTokenizer.from_pretrained('bert-base-uncased')",
+        "o": [
+            "Loads tokenizer vocab",
+            "Loads model weights",
+            "Downloads dataset",
+            "Trains tokenizer"
+        ]
+    },
+    {
+        "q": "Uncased BERT converts all text to lowercase before tokenization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cased BERT preserves case information (important for NER).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In BERT, segment embeddings usually distinguish Sentence A from Sentence B.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Position embeddings in BERT are learned.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Freezing lower layers during fine-tuning can speed up training and prevent catastrophic forgetting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Discriminative Learning Rates involve using different learning rates for different layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Typically, lower layers (general features) need smaller learning rates than top layers (task specific).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adapters are small trainable modules inserted between frozen transformer layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adapters allow fine-tuning with very few parameters (Parameter-Efficient Fine-Tuning).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LoRA (Low-Rank Adaptation) injects trainable low-rank matrices into attention layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LoRA weights are merged into the main weights during inference, adding no latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prefix Tuning prepends learnable vectors (prefixes) to the keys and values at every layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Tuning typically learns a soft prompt only at the input layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BitFit fine-tunes only the bias terms of the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Catastrophic Forgetting'?",
+        "type": "mcq",
+        "o": [
+            "Model forgets old tasks when learning new ones",
+            "Model runs out of memory",
+            "Model gradients vanish",
+            "Model overfits"
+        ]
+    },
+    {
+        "q": "Multilingual BERT (mBERT) is trained on Wikipedia in 104 languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "mBERT uses a shared vocabulary across all languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "XLM (Cross-lingual Language Model) introduces Translation Language Modeling (TLM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TLM involves concatenating parallel sentences and masking tokens in both languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "XLM-R (XLM-RoBERTa) is a scaled-up version of XLM trained on CommonCrawl data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot Cross-lingual Transfer: Fine-tune on English, evaluate on Swahili.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Hugging Face Hub' hosts thousands of community-contributed models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoModelForSequenceClassification automatically loads the correct architecture for classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data Collators handle dynamic padding and masking during batch creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Padding pads each batch to the length of the longest sequence in that batch, not the max model length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Padding speeds up training significantly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Accumulation simulates a larger batch size by accumulating gradients over multiple steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixed Precision Training (FP16) uses half-precision floats to save memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a 'warmup_ratio'?",
+        "type": "mcq",
+        "o": [
+            "Percentage of steps for linear warmup",
+            "Temperature of device",
+            "Ratio of train/test data",
+            "Dropout rate"
+        ]
+    },
+    {
+        "q": "GPT-2 demonstrated that Language Models could perform downstream tasks in a zero-shot setting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT-3 introduced the concept of In-Context Learning (Few-Shot).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In-Context Learning does not involve updating the model's weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The core objective of GPT models is Causal Language Modeling (Predicting next token).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BART (Bidirectional and Auto-Regressive Transformers) is a Denoising Autoencoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BART uses a standard Transformer architecture (Encoder-Decoder) like the original Transformer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BART is trained by corrupting text with an arbitrary noising function and learning to reconstruct the original text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T5 (Text-to-Text Transfer Transformer) reframes every NLP task as a text-generation problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T5 uses 'Span Corruption' (replacing spans with sentinel tokens) as its pre-training objective.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In T5, classification labels are generated as text strings (e.g., 'positive', 'negative').",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PEGASUS uses Gap Sentence Generation (masking whole sentences) specifically for Abstractive Summarization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which model is best suited for Text Summarization?",
+        "type": "mcq",
+        "o": [
+            "BART / PEGASUS",
+            "BERT",
+            "ResNet",
+            "Word2Vec"
+        ]
+    },
+    {
+        "q": "ProphetNet attempts to predict multiple future tokens (n-gram prediction) simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "UniLM (Unified Language Model) uses different attention masks to switch between Encoder, Decoder, and Seq2Seq modes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perplexity (PPL) is a common metric for evaluating Language Models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower Perplexity indicates a better model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perplexity is the exponentiated average negative log-likelihood per token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLEU Score is mainly used for evaluating Machine Translation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLEU focuses on Precision (n-gram overlap).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROUGE Score is mainly used for evaluating Text Summarization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROUGE focuses on Recall (how much of the reference is covered).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "METEOR is another metric that considers synonyms and stemming, aiming for better correlation with human judgment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERTScore computes similarity using contextual embeddings rather than exact token matching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which problem does 'Exposure Bias' refers to?",
+        "type": "mcq",
+        "o": [
+            "Training with ground truth vs Inference with own predictions",
+            "Bias in training data",
+            "Overfitting to validation set",
+            "High learning rate"
+        ]
+    },
+    {
+        "q": "Scheduled Sampling gradually introduces model predictions during training to mitigate Exposure Bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Teacher Forcing means using the ground truth previous token as input for the next step during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Search is a decoding method that penalizes repetition while maintaining high probability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Typical Sampling samples tokens that have probability close to the expected entropy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diversity Penalty in Beam Search subtracts a score for using the same token in different beams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Repetition Penalty divides the logits of already generated tokens to discourage repetition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Switch Transformer uses a Mixture of Experts (MoE) architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MoE, only a subset of experts (FFNs) is activated for each token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MoE allows scaling to trillions of parameters with constant computational cost per token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Auxiliary Loss is often added in MoE training to ensure load balancing across experts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GLaM (Generalist Language Model) is a sparsity-activated MoE model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PaLM (Pathways Language Model) uses SwiGLU activation and Parallel Layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SwiGLU is a variant of GLU using the Swish activation function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Rotary Positional Embedding' (RoPE)?",
+        "type": "mcq",
+        "o": [
+            "Encodes position by rotating the query/key vectors",
+            "Adds sine waves to input",
+            "Learns a position matrix",
+            "Unwinds the rope"
+        ]
+    },
+    {
+        "q": "RoPE allows for better generalization to sequence lengths longer than seen during training (extrapolation).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALiBi (Attention with Linear Biases) adds a static bias to attention scores based on distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention significantly speeds up attention by tiling memory blocks to minimize HBM access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Key-Value Caching (KV Cache) is essential for efficient autoregressive generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KV Cache avoids recomputing attention keys/values for past tokens at every step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Query Attention (MQA) shares the same Key and Value heads across all Query heads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MQA significantly reduces the memory bandwidth required for loading keys/values (faster inference).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grouped-Query Attention (GQA) is an interpolation between MHA and MQA (used in Llama 2/3).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sliding Window Attention restricts attention to a local neighborhood of tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global Attention allows specific tokens (like [CLS]) to attend to all other tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Retro (Retrieval-Enhanced Transformer) retrieves related text chunks from a database to augment generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RAG (Retrieval-Augmented Generation) combines a retriever (sparse/dense) with a generator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DPR (Dense Passage Retrieval) uses dual encoders to encode queries and passages into the same space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange RAG steps:",
+        "type": "rearrange",
+        "words": [
+            "Embed Query",
+            "Retrieve Docs",
+            "Concat Context",
+            "Generate Answer"
+        ]
+    },
+    {
+        "q": "Match the Decoding Strategy:",
+        "type": "match",
+        "left": [
+            "Greedy",
+            "Beam Search",
+            "Top-k",
+            "Nucleus"
+        ],
+        "right": [
+            "Max Prob",
+            "Multiple Paths",
+            "Hard Cutoff",
+            "Prob Sum"
+        ]
+    },
+    {
+        "q": "Code snippet: Generating text with HuggingFace.",
+        "type": "mcq",
+        "c": "model.generate(input_ids, max_length=50, num_beams=5)",
+        "o": [
+            "Uses Beam Search",
+            "Uses Greedy Search",
+            "Uses Random Sampling",
+            "Uses Gradient Descent"
+        ]
+    },
+    {
+        "q": "Chinchilla Scaling Laws suggest that many large models are under-trained.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "According to Chinchilla, for optimal compute efficiency, model size and dataset size should scale equally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Llama (Large Language Model Meta AI) focuses on training smaller models on more tokens (training longer).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Llama uses RMSNorm (Root Mean Square Normalization) instead of LayerNorm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RMSNorm is computationally simpler than LayerNorm because it doesn't enforce zero mean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mistral 7B uses Sliding Window Attention and Grouped-Query Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixtral 8x7B is a sparse Mixture-of-Experts model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Falcon uses Multi-Query Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bloom is a large multilingual open-access language model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which license allows commercial use?",
+        "type": "mcq",
+        "o": [
+            "Apache 2.0 / MIT",
+            "GPL (Copyleft)",
+            "CC-BY-NC",
+            "Proprietary"
+        ]
+    },
+    {
+        "q": "Instruction Tuning fine-tunes a base model on a set of tasks described via natural language instructions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FLAN (Finetuned Language Net) showed that instruction tuning improves zero-shot performance on unseen tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RLHF (Reinforcement Learning from Human Feedback) aligns models with human intent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RLHF typically involves training a Reward Model (RM) on human preference data (A > B).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PPO (Proximal Policy Optimization) is the standard RL algorithm used in RLHF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DPO (Direct Preference Optimization) optimizes the policy directly on preference data without an explicit Reward Model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DPO is generally more stable and computationally efficient than PPO.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constitutional AI (RLAIF) uses AI feedback instead of human feedback for alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Instruct involves using a model to generate its own instruction tuning data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Alpaca was efficiently fine-tuned using data generated by GPT-3.5 (Self-Instruct).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vicuna evaluates chatbot quality using GPT-4 as a judge.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Mode Collapse' in RLHF?",
+        "type": "mcq",
+        "o": [
+            "Model outputs become repetitive or generic",
+            "Model crashes",
+            "Model forgets English",
+            "Model becomes sentient"
+        ]
+    },
+    {
+        "q": "KL Divergence penalty in RLHF prevents the model from drifting too far from the base model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Verification (CoVe) involves the model generating verification questions to check its own facts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tree of Thoughts (ToT) allows the model to explore multiple reasoning paths.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ReAct (Reasoning + Acting) interleaves reasoning and executing external tools.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Toolformer learns to use tools by self-supervised API calls during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gorilla is fine-tuned specifically for API calling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LongContext models (e.g., 100k+ tokens) suffer from 'Lost in the Middle' phenomenon.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lost in the Middle means models are better at retrieving info at the start/end of context than the middle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StreamingLLM allows infinite length generation by keeping only initial (sink) tokens and recent tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention Sink hypothesis suggests models dump unnecessary attention on the first few tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: T5 prefix.",
+        "type": "mcq",
+        "c": "input_text = 'translate English to German: How are you?'",
+        "o": [
+            "Task prefix for T5",
+            "Prompt engineering for GPT",
+            "Regular expression",
+            "Python comment"
+        ]
+    },
+    {
+        "q": "Summarization evaluation often uses the CNN/DailyMail dataset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear Transformers approximate the attention mechanism to achieve O(L) complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Performer uses Kernel Approximation for efficient attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reformer uses Locality Sensitive Hashing (LSH) for attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Longformer uses sliding window attention to handle longer sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BigBird uses sparse attention (random + window + global) to scale to long sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention significantly speeds up attention by tiling memory blocks to minimize HBM access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention computes exact attention, not an approximation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention is IO-aware, focusing on reducing memory bandwidth usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the primary bottleneck in Transformer inference for long sequences?",
+        "type": "mcq",
+        "o": [
+            "Memory Bandwidth (HBM)",
+            "Compute (FLOPS)",
+            "Disk I/O",
+            "Network Latency"
+        ]
+    },
+    {
+        "q": "Key-Value Caching (KV Cache) is essential for efficient autoregressive generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KV Cache avoids recomputing attention keys/values for past tokens at every step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The size of the KV Cache grows linearly with the sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Query Attention (MQA) shares the same Key and Value heads across all Query heads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MQA significantly reduces the memory bandwidth required for loading keys/values (faster inference).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grouped-Query Attention (GQA) is an interpolation between MHA and MQA (used in Llama 2/3).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sliding Window Attention restricts attention to a local neighborhood of tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global Attention allows specific tokens (like [CLS]) to attend to all other tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALiBi (Attention with Linear Biases) adds a static bias to attention scores based on distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALiBi allows models to extrapolate to longer sequences than seen during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rotary Positional Embedding (RoPE) encodes absolute position with a rotation matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoPE has the property that the relative position dependency is encoded in the dot product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chinchilla Scaling Laws suggest that many large models are under-trained.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "According to Chinchilla, for optimal compute efficiency, model size and dataset size should scale equally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kaplan Scaling Laws (older) overestimated the importance of model size compared to data size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantization reduces the bit-width of model parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "INT8 Quantization maps floating point values to 8-bit integers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-Point and Scale factor are key parameters in affine quantization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Quantization determines scale factors at runtime based on activation range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static Quantization (Post-Training Quantization) determines scale factors using a calibration dataset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantization-Aware Training (QAT) simulates quantization errors during the forward pass of training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixed Precision Training (FP16) uses half-precision floats to save memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BF16 (Bfloat16) has the same dynamic range as FP32 but lower precision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BF16 is generally more stable for training huge Transformers than FP16.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Knowledge Distillation uses a Temperature parameter 'T' to soften the teacher's probability distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Higher temperature 'T' reveals more information about the negative classes (dark knowledge).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Pruning'?",
+        "type": "mcq",
+        "o": [
+            "Removing weights",
+            "Adding layers",
+            "Increasing data",
+            "Changing optimizer"
+        ]
+    },
+    {
+        "q": "Unstructured Pruning removes individual weights, making weight matrices sparse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structured Pruning removes entire neurons or heads, making the model smaller and faster on standard hardware.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lottery Ticket Hypothesis states that dense networks contain sparse subnetworks that can train to similar accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Movement Pruning is effective for fine-tuning, pruning weights that move towards zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Early Exiting allows the model to output a prediction from an intermediate layer if confidence is high.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeeBERT adds classifiers to intermediate layers for Early Exiting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Universal Transformers use the same layer weights recurrensively for multiple steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Switch Transformer uses a Mixture of Experts (MoE) architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MoE, only a subset of experts (FFNs) is activated for each token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MoE allows scaling to trillions of parameters with constant computational cost per token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GLaM (Generalist Language Model) is a sparsity-activated MoE model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PaLM (Pathways Language Model) uses SwiGLU activation and Parallel Layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AdapterFusion combines multiple adapters learned from different tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Compacting involves decomposing weight matrices into smaller matrices (like LoRA).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Checkpointing trades compute for memory by recomputing activations during backward pass.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ZeRO (Zero Redundancy Optimizer) partitions optimizer states across GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ZeRO-Offload offloads optimizer states and gradients to CPU memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fully Sharded Data Parallel (FSDP) shards parameters, gradients, and optimizer states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pipeline Parallelism splits layers across GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tensor Parallelism splits individual tensors (e.g., Attention Heads) across GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Megatron-LM popularized Tensor Parallelism for large Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PagedAttention involves splitting the KV cache into blocks that can be stored in non-contiguous memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PagedAttention is the core innovation of vLLM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continuous Batching improves throughput by filling gaps in batches with new requests.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Speculative Decoding generates drafting tokens with a small model and verifies with a large model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the MQA benefit:",
+        "type": "rearrange",
+        "words": [
+            "Share KV Heads",
+            "Reduce Memory Load",
+            "Faster Inference",
+            "Lower Quality"
+        ]
+    },
+    {
+        "q": "Match the Efficient Attention:",
+        "type": "match",
+        "left": [
+            "FlashAttention",
+            "Reformer",
+            "Linear Attn",
+            "BigBird"
+        ],
+        "right": [
+            "IO-Aware Tiling",
+            "LSH Hashing",
+            "Kernel approx",
+            "Sparse + Global"
+        ]
+    },
+    {
+        "q": "Code snippet: LoRA configuration.",
+        "type": "mcq",
+        "c": "LoraConfig(r=16, lora_alpha=32, target_modules=['q_proj', 'v_proj'])",
+        "o": [
+            "Config for PEFT",
+            "Config for Pre-training",
+            "Config for Quantization",
+            "Config for Dataset"
+        ]
+    },
+    {
+        "q": "StreamingLLM uses 'Attention Sinks' to maintain stability over infinite contexts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Retrieval-Augmented Generation (RAG) reduces hallucinations by grounding generation in external documents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HyDE (Hypothetical Document Embeddings) improves retrieval by generating a mock answer and retrieving docs similar to it.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ColBERT uses late interaction (token-level matching) for more precise retrieval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Splade (Sparse Lexical and Expansion) learns sparse representations for efficient retrieval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Lost in the Middle'?",
+        "type": "mcq",
+        "o": [
+            "Model ignores middle context",
+            "Model gets lost in maze",
+            "Gradient vanishes",
+            "Attention breaks"
+        ]
+    },
+    {
+        "q": "LongContext models (e.g., 100k+ tokens) are rapidly replacing complex RAG pipelines for some tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Needle in a Haystack test evaluates a model's ability to retrieve a specific fact from a long context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Yarn (Yet another RoPE extension) improves length extrapolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ring Attention allows training on sequences longer than single GPU memory by passing blocks between GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Blockwise Parallel Transformer allows processing extremely long sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Memory-Augmented Transformers (like Transformer-XL) use a recurrent memory state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Compressive Transformer compresses old memories instead of discarding them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RMT (Recurrent Memory Transformer) adds special memory tokens to the input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RecurrentGPT simulates a recurrence mechanism using a fixed-size context window and prompting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RWKV (Receptance Weighted Key Value) combines RNN efficiency with Transformer performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RWKV can be trained in parallel like a Transformer but inferred serially like an RNN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba is a State Space Model (SSM) based architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba achieves linear scaling with sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Selective State Spaces allow Mamba to filter out irrelevant information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "S4 (Structured State Spaces) was a precursor to Mamba.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba does not maintain a KV Cache.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which model architecture challenges the Transformer dominance?",
+        "type": "mcq",
+        "o": [
+            "Mamba / SSMs",
+            "ConvNets",
+            "Perceptrons",
+            "Decision Trees"
+        ]
+    },
+    {
+        "q": "Vision Transformer (ViT) treats an image as 16x16 words (patches).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViT adds a learnable [CLASS] token to the sequence of patch embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViT has much less image-specific inductive bias (like translation invariance) than CNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViT generally requires more data to train than ResNet of comparable size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeiT (Data-efficient Image Transformers) introduces a Distillation Token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swin Transformer uses Shifted Windows to compute attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swin Transformer produces hierarchical feature maps (like a CNN pyramid).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAE (Masked Autoencoders) masks a very high percentage (e.g., 75%) of image patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAE encodes only the visible patches, making it very efficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which model connects text and images?",
+        "type": "mcq",
+        "o": [
+            "CLIP",
+            "BERT",
+            "ResNet",
+            "Word2Vec"
+        ]
+    },
+    {
+        "q": "CLIP (Contrastive Language-Image Pre-training) learns to match images to their corresponding captions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLIP enables Zero-Shot Image Classification by comparing image embeddings to text embeddings of class names.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ImageBind aligns embeddings from six modalities (image, text, audio, depth, thermal, IMU) into a joint space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flamingo is a Visual Language Model that can perform few-shot learning on multimodal tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flamingo keeps the pre-trained LLM frozen and adds cross-attention layers to attend to visual features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLIP (Bootstrapping Language-Image Pre-training) effectively utilizes noisy web data by filtering captions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Q-Former (in BLIP-2) is a lightweight transformer that bridges the gap between frozen image encoders and frozen LLMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LLaVA (Large Language and Vision Assistant) fine-tunes Llama on visual instruction data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LayoutLM incorporates visual and layout information (bounding boxes) for Document Understanding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LayoutLM uses 2D Positional Embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Donut (Document Understanding Transformer) is an OCR-free end-to-end model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Donut maps the input image directly to the structured JSON output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TrOCR uses a Transformer Encoder for the image and a Transformer Decoder for the text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Wav2Vec 2.0 learns speech representations from raw audio using contrastive learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Wav2Vec 2.0 masks latent speech representations similar to BERT masking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Whisper is a weakly supervised model trained on 680k hours of labeled audio data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Whisper is an Encoder-Decoder Transformer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WER stands for Word Error Rate.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower WER indicates better performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HuBERT (Hidden Unit BERT) learns from clustering MFCC features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Audio Spectrogram Transformer (AST) applies ViT to audio spectrograms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Decision Transformer treats Reinforcement Learning as a sequence modeling problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Decision Transformer, the input sequence includes (State, Action, Reward).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trajectory Transformer models the distribution over trajectories.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Transformers generalize Transformers to graph-structured data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Transformers often need structural encodings (like Laplacian eigenvectors) to distinguish nodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Protein Language Models (like ESM) learn representations of protein sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AlphaFold 2 exploits the evolutionary history (MSA) and geometric constraints using Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EvoFormer is the core building block of AlphaFold 2.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Invariant Point Attention (IPA) is used in AlphaFold to reason about 3D coordinates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CodeLLMs (like StarCoder, CodeLlama) are trained on massive datasets of code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fill-in-the-Middle (FIM) training allows CodeLLMs to complete code given a prefix and suffix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CodeLlama supports large context windows (up to 100k).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Copilot uses a version of OpenAI's Codex model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is 'Hallucination' in VLM?",
+        "type": "mcq",
+        "o": [
+            "Model sees objects not in image",
+            "Model sleeps",
+            "Model crashes",
+            "Model deletes image"
+        ]
+    },
+    {
+        "q": "Object Hallucination involves generating descriptions of objects consistent with the text context but absent in the image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visual Grounding aims to link text concepts to specific image regions (bounding boxes).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Referring Expression Comprehension (REC) locates an object described by a natural language expression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dense Captioning generates captions for multiple regions in an image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Video Transformers (like TimeSformer) apply space-time attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Divided Space-Time Attention computes temporal attention and spatial attention separately to save compute.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VideoMAE extends MAE to video by using tube masking (masking same patch across time).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ViT steps:",
+        "type": "rearrange",
+        "words": [
+            "Patchify Image",
+            "Linear Projection",
+            "Add Pos Embed",
+            "Transformer Enc"
+        ]
+    },
+    {
+        "q": "Match the Multimodal Model:",
+        "type": "match",
+        "left": [
+            "CLIP",
+            "Flamingo",
+            "LayoutLM",
+            "Whisper"
+        ],
+        "right": [
+            "Contrastive Pair",
+            "Interleaved V/L",
+            "Document AI",
+            "Audio ASR"
+        ]
+    },
+    {
+        "q": "Code snippet: Loading ViT feature extractor.",
+        "type": "mcq",
+        "c": "ViTFeatureExtractor.from_pretrained('google/vit-base-patch16-224')",
+        "o": [
+            "Preprocesses images",
+            "Loads weights",
+            "Trains model",
+            "Plots attention"
+        ]
+    },
+    {
+        "q": "Feature Extractor resizes and normalizes images for the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-Shot Video Classification can be done by averaging frame embeddings from a ViT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Action Recognition typically requires modeling temporal dynamics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Optical Flow is often used as an additional input modality for video transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimVLM uses a prefix language modeling objective on massive image-text data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CoCa (Contrastive Captioners) combines contrastive loss (like CLIP) and captioning loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GIT (Generative Image-to-text) Transformer simply treats image tokens as a prefix to the text decoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Frozen LLMs can be used for multimodal tasks by training only a small adapter network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gato is a generalist agent that can play games, caption images, and control robots with the same weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Unified-IO supports a wide range of IO modalities including bounding boxes, masks, and text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Next-Vit is a hybrid architecture combining CNN and Transformer blocks for speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LeViT is a Vision Transformer optimized for fast inference on CPU.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EfficientFormer proves that pure transformer models can run fast on mobile.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scaling ViT to billions of parameters requires masked image modeling (like MAE).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DINO (Self-distillation with no labels) learns standard ViT features that contain explicit object segmentation information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DINO features are excellent for k-NN classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EsViT (Efficient Self-supervised Vision Transformers) uses multi-stage architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SiT (Self-supervised Vision Transformer) combines reconstruction and contrastive losses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BEiT (BERT Pre-Training of Image Transformers) uses a discrete VQ-VAE tokenizer for image patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "This mimics BERT's discrete token prediction objective in the visual domain.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "iBOT (Image BERT Pre-training with Online Tokenizer) learns the tokenizer online.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mask2Former treats semantic segmentation as a mask classification problem using transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SegFormer attempts to design a simple and efficient transformer for semantic segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SETR (Segmentation Transformer) uses a pure transformer encoder and a simple decoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TransUNet combines Transformer and U-Net for medical image segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Medical Image Transformers usually work with 3D volumetric data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "UNETR uses a ViT as the encoder in a U-Net like structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swin UNETR uses a hierarchical Swin Transformer encoder for better multi-scale features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Med-PaLM is an LLM fine-tuned for medical question answering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BioBERT is a pre-trained biomedical language representation model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ClinicalBERT is pre-trained on clinical notes (MIMIC-III).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GatorTron is a large clinical language model trained on electronic health records.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DNABERT is pre-trained on human DNA sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Is it possible to interpret Attention Weights directly as 'importance'?",
+        "type": "mcq",
+        "o": [
+            "Debated/Not always",
+            "Yes always",
+            "Never",
+            "Only in CNNs"
+        ]
+    },
+    {
+        "q": "Attention Rollout aggregates attention weights across layers to visualize flow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Integrated Gradients is a more reliable attribution method than raw attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: CLIP processor.",
+        "type": "mcq",
+        "c": "inputs = processor(text=['a dog', 'a cat'], images=image, return_tensors='pt', padding=True)",
+        "o": [
+            "Prepares multi-modal inputs",
+            "Trains CLIP",
+            "Saves image",
+            "Runs OCR"
+        ]
+    },
+    {
+        "q": "Grokking refers to the phenomenon where generalization happens long after the model has overfitted the training set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grokking typically occurs on small algorithmic datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Double Descent phenomenon observes test error decreasing, increasing, then decreasing again as model size grows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Induction Heads are a specific circuit in Transformers responsible for in-context copying.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Induction Heads develop abruptly during training, often coinciding with a drop in loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Emergent Abilities are capabilities that appear suddenly only in large-scale models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Thought reasoning is considered an emergent ability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Some researchers argue that observability of 'Emergent Abilities' depends on the choice of metric (e.g., accuracy vs log-loss).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mechanistic Interpretability aims to reverse-engineer neural networks into human-understandable algorithms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polysemantic Neurons respond to multiple unrelated concepts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Superposition hypothesis explains polysemanticity as models packing more features than dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparse Autoencoders (SAE) are used to disentangle polysemantic neurons into interpretable features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Residual Stream is the primary communication channel in the Transformer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention Heads read from and write to the Residual Stream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Privileged Basis refers to the idea that the standard basis directions in the activation space are meaningful.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Activation Steering (or Activation Engineering) involves adding a vector to activations to steer model behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Representation Engineering extracts a 'truth direction' or 'honesty vector' from model activations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jailbreaking refers to bypassing a model's safety guardrails.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DAN (Do Anything Now) is a famous jailbreak prompt.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial Suffixes are meaningless character strings optimized to break safety alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Red Teaming involves humans or AI attempting to find flaws and vulnerabilities in a model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Specification Gaming occurs when an agent satisfies the literal reward function but violates the intended goal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scalable Oversight refers to the challenge of supervising AI systems that are smarter than humans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weak-to-Strong Generalization investigates if weak supervisors can train strong models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constitutional AI aims to align models using a set of high-level principles (constitution) and self-critique.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sleeper Agents are backdoors inserted into models that only trigger under specific conditions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Editing (e.g., ROME, MEMIT) allows directly updating facts in a model without full fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROME (Rank-One Model Editing) locates knowledge in MLP layers and modifies it.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Reversal Curse' refers to LLMs knowing 'A is B' but failing to answer 'Who is B?'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Curriculum Learning involves training on easy examples first, then harder ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Is Curriculum Learning strictly necessary for training LLMs?",
+        "type": "mcq",
+        "o": [
+            "Generally No, random is fine",
+            "Yes always",
+            "Only for small models",
+            "Only for code"
+        ]
+    },
+    {
+        "q": "Data Deduplication significantly improves model performance and reduces memorization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MinHash LSH is a common technique for fuzzy deduplication of large text corpora.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perplexity is not always a good proxy for generation quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MMLU (Massive Multitask Language Understanding) is a popular benchmark for general knowledge.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HumanEval is a benchmark for code generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GSM8K (Grade School Math 8K) evaluates multi-step mathematical reasoning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HELM (Holistic Evaluation of Language Models) evaluates models across many metrics (bias, toxicity, etc.).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chatbot Arena uses ELO ratings based on human pairwise comparisons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Injection involves manipulating the input to override system instructions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Indirect Prompt Injection occurs when the model processes untrusted data (e.g., a webpage) containing instructions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "System Prompts are high-level instructions given to the model to define its persona and constraints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Negative Constraints (e.g., 'Do not use the word X') are often harder for LLMs to follow than positive ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Logit Bias allows users to manually increase or decrease the probability of specific tokens generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-k sampling with k=1 is equivalent to Greedy Search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-p sampling with p=1.0 is equivalent to random sampling from the full distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Min-p sampling (sets threshold relative to max prob) is an alternative to Top-p and Top-k.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mirostat sampling actively adjusts sampling parameters to maintain constant perplexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dry Sampling penalizes tokens that have appeared recently to prevent repetition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "X-Risk (Existential Risk) refers to the potential for AI to cause human extinction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Instrumental Convergence suggests that agents will pursue subgoals like self-preservation and resource acquisition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Orthogonality Thesis states that intelligence and goals are independent axes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Paperclip Maximizer is a thought experiment illustrating Specification Gaming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cooperative Inverse Reinforcement Learning (CIRL) involves a human and AI agent cooperating to maximize the human's reward.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the RLHF steps:",
+        "type": "rearrange",
+        "words": [
+            "SFT Base Model",
+            "Collect Preferences",
+            "Train Reward Model",
+            "Optimize Policy (PPO)"
+        ]
+    },
+    {
+        "q": "Match the Interpretability concept:",
+        "type": "match",
+        "left": [
+            "Polysemanticity",
+            "Superposition",
+            "Induction Head",
+            "SAE"
+        ],
+        "right": [
+            "One neuron, many meanings",
+            "Features > Dimensions",
+            "Recall mechanism",
+            "Sparse Autoencoder"
+        ]
+    },
+    {
+        "q": "Code snippet: Accelerate launch.",
+        "type": "mcq",
+        "c": "accelerate launch --multi_gpu train.py",
+        "o": [
+            "Runs distributed training",
+            "Installs accelerate",
+            "Compiles code",
+            "Debugging"
+        ]
+    },
+    {
+        "q": "DeepSpeed is a deep learning optimization library mainly used for training large models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vLLM is a high-throughput and memory-efficient inference and serving engine.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TGI (Text Generation Inference) is a serving toolkit by Hugging Face.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GGML/GGUF is a tensor library for machine learning to enable large models on consumer hardware (CPU/Apple Silicon).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "llama.cpp is a popular inference engine for running quantized models locally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ExLlamaV2 is a fast inference library for modern NVIDIA GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AWQ (Activation-aware Weight Quantization) is often faster than GPTQ.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HQQ (Half-Quadratic Quantization) is a training-free quantization method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "QuIP# uses incoherence processing to achieve high-quality 2-bit quantization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "S-LoRA enables serving thousands of LoRA adapters concurrently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Block-Diagonal Masks can be used to pack multiple examples into a single sequence without cross-contamination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reasoning Traces allows debugging where the model's logic failed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Consistency (CoT-SC) samples multiple reasoning paths and picks the majority answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Least-to-Most Prompting decomposes a complex problem into simpler sub-problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generated Knowledge Prompting asks the model to generate relevant knowledge before answering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scratchpad involves the model writing intermediate complications to a scratchpad buffer.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

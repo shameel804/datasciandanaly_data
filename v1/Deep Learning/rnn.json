@@ -1,0 +1,3520 @@
+[
+    {
+        "q": "RNNs are designed to process _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "sequential"
+        ],
+        "other_options": [
+            "tabular",
+            "image",
+            "random"
+        ]
+    },
+    {
+        "q": "In an RNN, the output depends on the current input and the previous _____.",
+        "type": "fill_blank",
+        "answers": [
+            "hidden state"
+        ],
+        "other_options": [
+            "output",
+            "weight",
+            "bias"
+        ]
+    },
+    {
+        "q": "The process of training RNNs is called Backpropagation Through _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Time"
+        ],
+        "other_options": [
+            "Layers",
+            "Space",
+            "Data"
+        ]
+    },
+    {
+        "q": "BPTT unrolls the RNN over time steps to calculate gradients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which problem makes training standard RNNs difficult on long sequences?",
+        "type": "mcq",
+        "o": [
+            "Vanishing Gradient",
+            "Overfitting",
+            "High bias",
+            "Low variance"
+        ]
+    },
+    {
+        "q": "The vanishing gradient problem occurs because gradients _____ exponentially as they propagate back through time.",
+        "type": "fill_blank",
+        "answers": [
+            "decay"
+        ],
+        "other_options": [
+            "explode",
+            "stabilize",
+            "increase"
+        ]
+    },
+    {
+        "q": "Exploding gradients can be handled by Gradient _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Clipping"
+        ],
+        "other_options": [
+            "Boosting",
+            "Scaling",
+            "Dropping"
+        ]
+    },
+    {
+        "q": "LSTM stands for Long Short-Term _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Memory"
+        ],
+        "other_options": [
+            "Model",
+            "Machine",
+            "Map"
+        ]
+    },
+    {
+        "q": "LSTMs were designed specifically to solve the vanishing gradient problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which LSTM gate decides what information to discard from the cell state?",
+        "type": "mcq",
+        "o": [
+            "Forget Gate",
+            "Input Gate",
+            "Output Gate",
+            "Update Gate"
+        ]
+    },
+    {
+        "q": "The Input Gate decides which new information to store in the cell state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Output Gate determines the next hidden state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the LSTM flow:",
+        "type": "rearrange",
+        "words": [
+            "Forget Gate",
+            "Input Gate",
+            "Cell Update",
+            "Output Gate"
+        ]
+    },
+    {
+        "q": "GRU stands for Gated Recurrent _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Unit"
+        ],
+        "other_options": [
+            "Usage",
+            "Uniform",
+            "Update"
+        ]
+    },
+    {
+        "q": "GRUs are generally computationally cheaper than LSTMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GRUs have fewer gates than LSTMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which gate is NOT present in a standard GRU?",
+        "type": "mcq",
+        "o": [
+            "Output Gate",
+            "Reset Gate",
+            "Update Gate",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "Match the architecture to its gates:",
+        "type": "match",
+        "left": [
+            "RNN",
+            "LSTM",
+            "GRU"
+        ],
+        "right": [
+            "No gates",
+            "Forget, Input, Output",
+            "Reset, Update"
+        ]
+    },
+    {
+        "q": "A bidirectional RNN processes the sequence in both forward and backward directions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Keras, `return_sequences=True` returns the output for _____ time step(s).",
+        "type": "fill_blank",
+        "answers": [
+            "all"
+        ],
+        "other_options": [
+            "last",
+            "first",
+            "random"
+        ]
+    },
+    {
+        "q": "To stack multiple RNN layers in Keras, intermediate layers must have `return_sequences=True`.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sequence-to-Sequence (Seq2Seq) models are commonly used for Machine Translation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Seq2Seq model typically consists of an Encoder and a _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Decoder"
+        ],
+        "other_options": [
+            "Generator",
+            "Classifier",
+            "Regressor"
+        ]
+    },
+    {
+        "q": "The Encoder compresses the input sequence into a context vector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Teacher Forcing involves using the _____ output as input for the next step during training.",
+        "type": "fill_blank",
+        "answers": [
+            "ground truth"
+        ],
+        "other_options": [
+            "predicted",
+            "random",
+            "zero"
+        ]
+    },
+    {
+        "q": "Teacher Forcing speeds up convergence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Word embeddings map words to dense vectors of real numbers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In a One-Hot encoding, all elements are 0 except for one.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Hot encoding leads to very high-dimensional sparse vectors for large vocabularies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which Keras layer learns word embeddings?",
+        "type": "mcq",
+        "o": [
+            "Embedding",
+            "Dense",
+            "LSTM",
+            "Conv1D"
+        ]
+    },
+    {
+        "q": "Padding is used to ensure all sequences in a batch have the same length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Truncating is used when a sequence exceeds a maximum length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`pad_sequences` typically pads with _____.",
+        "type": "fill_blank",
+        "answers": [
+            "zeros"
+        ],
+        "other_options": [
+            "ones",
+            "nans",
+            "max value"
+        ]
+    },
+    {
+        "q": "Many-to-One architecture is suitable for Sentiment Analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Many-to-Many architecture is suitable for Named Entity Recognition (NER).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-to-Many architecture is suitable for Image Captioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the application to RNN type:",
+        "type": "match",
+        "left": [
+            "Sentiment Analysis",
+            "Machine Translation",
+            "Image Captioning",
+            "Video Classification"
+        ],
+        "right": [
+            "Many-to-One",
+            "Many-to-Many (Encoder-Decoder)",
+            "One-to-Many",
+            "Many-to-One"
+        ]
+    },
+    {
+        "q": "Time Distributed layer applies a layer to every temporal slice of an input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text preprocessing step removes common words like 'the', 'is', 'and'?",
+        "type": "mcq",
+        "o": [
+            "Stopword Removal",
+            "Stemming",
+            "Lemmatization",
+            "Tokenization"
+        ]
+    },
+    {
+        "q": "Tokenization splits text into individual words or subwords.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stemming reduces words to their root form (e.g., 'running' -> 'run').",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lemmatization reduces words to their base form using a dictionary (e.g., 'better' -> 'good').",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the NLP preprocessing pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Clean Text",
+            "Tokenize",
+            "Remove Stopwords",
+            "Vectorize"
+        ]
+    },
+    {
+        "q": "RNNs can handle inputs of variable length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stateful RNNs maintain state across batches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "By default, Keras RNNs are stateless (reset state after each batch).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which activation function is typically used for the gates in LSTM/GRU?",
+        "type": "mcq",
+        "o": [
+            "Sigmoid",
+            "ReLU",
+            "Tanh",
+            "Linear"
+        ]
+    },
+    {
+        "q": "The sigmoid function outputs values between 0 and 1, suitable for gating (open/close).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which activation is typically used for the cell state update in LSTM?",
+        "type": "mcq",
+        "o": [
+            "Tanh",
+            "Sigmoid",
+            "ReLU",
+            "Softmax"
+        ]
+    },
+    {
+        "q": "Tanh outputs values between -1 and 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A language model predicts the _____ word in a sequence.",
+        "type": "fill_blank",
+        "answers": [
+            "next"
+        ],
+        "other_options": [
+            "previous",
+            "middle",
+            "random"
+        ]
+    },
+    {
+        "q": "Perplexity is a common metric for evaluating language models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower perplexity indicates a better language model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Character-level RNNs predict one character at a time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Masking allows the layer to ignore padded values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In TF/Keras, `Masking` layer propagates a mask tensor downstream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient clipping by value clips gradients to a range [-v, v].",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient clipping by norm scales gradients so their norm does not exceed a threshold.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Clipping by norm preserves the direction of the gradient vector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimpleRNN layer in Keras implements a fully-connected RNN where output is fed back.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dropout produces better results when applied to the recurrent connections as well (Recurrent Dropout).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adding Gaussian noise to inputs can improve RNN robustness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CudnnLSTM is a faster implementation of LSTM backed by CuDNN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "To use CudnnLSTM, you must assume `tanh` activation and default recurrent activation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Categorical Cross-Entropy is used for multi-class classification (e.g., word prediction).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: Creating an LSTM layer in Keras.",
+        "type": "mcq",
+        "c": "model.add(LSTM(64))",
+        "o": [
+            "Correct",
+            "Incorrect"
+        ]
+    },
+    {
+        "q": "Code snippet: LSTM returning sequences.",
+        "type": "mcq",
+        "c": "LSTM(64, return_sequences=True)",
+        "o": [
+            "Returns (batch, time, units)",
+            "Returns (batch, units)",
+            "Returns (time, units)",
+            "Returns (batch, time)"
+        ]
+    },
+    {
+        "q": "Code snippet: Masking layer.",
+        "type": "mcq",
+        "c": "Masking(mask_value=0.0)",
+        "o": [
+            "Ignores 0.0 inputs",
+            "Replaces 0.0 with 1.0",
+            "Removes 0.0 inputs",
+            "Adds 0.0 noise"
+        ]
+    },
+    {
+        "q": "Attention mechanisms allow the model to focus on different parts of the input sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention solves the bottleneck problem of the fixed-size context vector in Seq2Seq.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global Attention considers all encoder hidden states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local Attention focuses on a subset of encoder hidden states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the attention score function:",
+        "type": "match",
+        "left": [
+            "Dot Product",
+            "General",
+            "Concat"
+        ],
+        "right": [
+            "h_t^T h_s",
+            "h_t^T W h_s",
+            "v^T tanh(W[h_t; h_s])"
+        ]
+    },
+    {
+        "q": "Self-attention relates different positions of a single sequence to compute a representation of the sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLEU score is a metric for evaluating machine-translated text against reference translations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BLEU measures n-gram overlap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROUGE score is commonly used for text summarization evaluation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beam Search explores multiple likely output sequences simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Greedy decoding selects the most probable word at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beam Search with width 1 is equivalent to Greedy Search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Eager Execution in TensorFlow allows immediate evaluation of operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which callback reduces learning rate when a metric has stopped improving?",
+        "type": "mcq",
+        "o": [
+            "ReduceLROnPlateau",
+            "EarlyStopping",
+            "ModelCheckpoint",
+            "CSVLogger"
+        ]
+    },
+    {
+        "q": "1D Convolutions can be used for sequence processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Conv1D is often faster than RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Time Series Forecasting can be framed as a supervised learning problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Univariate time series has a single variable varying over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multivariate time series has multiple variables varying over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sliding Window method creates (input, target) pairs from time series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autocorrelation measures the relationship between a variable's current value and its past values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stationarity means the statistical properties (mean, variance) do not change over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Differencing is a technique to make a time series stationary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the time series components:",
+        "type": "rearrange",
+        "words": [
+            "Trend",
+            "Seasonality",
+            "Cyclic",
+            "Residual/Noise"
+        ]
+    },
+    {
+        "q": "ARIMA is a non-deep learning model for time series forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet is a forecasting tool open-sourced by _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Facebook"
+        ],
+        "other_options": [
+            "Google",
+            "Amazon",
+            "Microsoft"
+        ]
+    },
+    {
+        "q": "N-BEATS is a pure deep learning architecture for time series forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepAR produces probabilistic forecasts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Word2Vec learns word associations from a large corpus of text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which Word2Vec model predicts the target word from context words?",
+        "type": "mcq",
+        "o": [
+            "CBOW (Continuous Bag of Words)",
+            "Skip-gram",
+            "GloVe",
+            "FastText"
+        ]
+    },
+    {
+        "q": "Skip-gram predicts _____ words given a target word.",
+        "type": "fill_blank",
+        "answers": [
+            "context"
+        ],
+        "other_options": [
+            "target",
+            "next",
+            "previous"
+        ]
+    },
+    {
+        "q": "GloVe (Global Vectors) is a count-based model unlike Word2Vec which is predictive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FastText improves upon Word2Vec by using _____ information.",
+        "type": "fill_blank",
+        "answers": [
+            "subword"
+        ],
+        "other_options": [
+            "sentence",
+            "document",
+            "grammar"
+        ]
+    },
+    {
+        "q": "FastText can generate embeddings for out-of-vocabulary (OOV) words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELMo (Embeddings from Language Models) provides context-dependent embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ELMo uses a bidirectional _____ to generate embeddings.",
+        "type": "fill_blank",
+        "answers": [
+            "LSTM"
+        ],
+        "other_options": [
+            "Transformer",
+            "CNN",
+            "MLP"
+        ]
+    },
+    {
+        "q": "BERT stands for Bidirectional Encoder Representations from _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Transformers"
+        ],
+        "other_options": [
+            "Text",
+            "Tokens",
+            "Tensors"
+        ]
+    },
+    {
+        "q": "ULMFiT introduced the idea of transfer learning for NLP using LSTM language models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the embedding type:",
+        "type": "match",
+        "left": [
+            "Word2Vec",
+            "GloVe",
+            "FastText",
+            "BERT"
+        ],
+        "right": [
+            "Predictive (static)",
+            "Count-based (static)",
+            "Subword (static)",
+            "Contextual (dynamic)"
+        ]
+    },
+    {
+        "q": "Cosine Similarity is commonly used to measure the distance between word vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TF-IDF stands for Term Frequency-Inverse _____ Frequency.",
+        "type": "fill_blank",
+        "answers": [
+            "Document"
+        ],
+        "other_options": [
+            "Data",
+            "Dictionary",
+            "Density"
+        ]
+    },
+    {
+        "q": "n-grams are contiguous sequences of n items (words/chars) from a text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Bag-of-Words model ignores grammar and word order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which RNN variant uses a 'peephole connection'?",
+        "type": "mcq",
+        "o": [
+            "LSTM",
+            "GRU",
+            "SimpleRNN",
+            "Echo State Network"
+        ]
+    },
+    {
+        "q": "Peephole connections allow the gates to look at the _____ state.",
+        "type": "fill_blank",
+        "answers": [
+            "cell"
+        ],
+        "other_options": [
+            "hidden",
+            "input",
+            "output"
+        ]
+    },
+    {
+        "q": "In a stacked RNN, the output of layer L at time t is the input to layer L+1 at time t.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep RNNs are harder to train than shallow RNNs due to gradient propagation paths.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Residual connections (skip connections) can be used between stacked RNN layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Layer Normalization is preferred over Batch Normalization for RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Layer Norm computes statistics across the _____ dimension.",
+        "type": "fill_blank",
+        "answers": [
+            "feature"
+        ],
+        "other_options": [
+            "batch",
+            "time",
+            "spatial"
+        ]
+    },
+    {
+        "q": "Rearrange the components of a GRU update:",
+        "type": "rearrange",
+        "words": [
+            "Reset Gate",
+            "Update Gate",
+            "Candidate State",
+            "Final Hidden State"
+        ]
+    },
+    {
+        "q": "Greedy Search in sequence generation is optimal.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Beam Search maintains k most likely sequences at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A larger beam width in Beam Search increases computational cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temperature sampling allows controlling the _____ of the generated text.",
+        "type": "fill_blank",
+        "answers": [
+            "randomness"
+        ],
+        "other_options": [
+            "length",
+            "grammar",
+            "meaning"
+        ]
+    },
+    {
+        "q": "Higher temperature leads to more diverse (risky) outputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-k sampling samples from the k most likely next words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-p (Nucleus) sampling samples from the smallest set of words whose cumulative probability exceeds p.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sampling strategy:",
+        "type": "match",
+        "left": [
+            "Greedy",
+            "Beam Search",
+            "Temperature",
+            "Nucleus (Top-p)"
+        ],
+        "right": [
+            "Argmax always",
+            "Keep k best paths",
+            "Scale logits",
+            "Cumulative prob threshold"
+        ]
+    },
+    {
+        "q": "Visual Attention applies attention maps to _____ features.",
+        "type": "fill_blank",
+        "answers": [
+            "image"
+        ],
+        "other_options": [
+            "text",
+            "audio",
+            "graph"
+        ]
+    },
+    {
+        "q": "In Image Captioning, the context vector is dynamic for each generated word.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Show, Attend and Tell is a paper introducing attention for image captioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard Attention selects a specific region (non-differentiable).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Soft Attention computes a weighted sum of all regions (differentiable).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which attention mechanism allows attending to specific time steps in the input sequence?",
+        "type": "mcq",
+        "o": [
+            "Bahdanau (Additive)",
+            "Luong (Multiplicative)",
+            "Both",
+            "None"
+        ]
+    },
+    {
+        "q": "In Bahdanau Attention, the alignment score is computed using a feed-forward network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Luong Attention, the alignment score is computed using a dot product (or similar).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hierarchical Attention Networks (HAN) use attention at both word and _____ levels.",
+        "type": "fill_blank",
+        "answers": [
+            "sentence"
+        ],
+        "other_options": [
+            "document",
+            "character",
+            "paragraph"
+        ]
+    },
+    {
+        "q": "Pointer Networks use attention to select an element from the input sequence as output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Copy Mechanism allows a Seq2Seq model to copy words from the input to the output (handling OOV).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scheduled Sampling gradually transitions from Teacher Forcing to using model predictions during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Exposure Bias refers to the mismatch between training (ground truth inputs) and inference (predicted inputs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Professor Forcing uses a discriminator to distinguish between free-running and teacher-forced hidden states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: Bi-directional LSTM.",
+        "type": "mcq",
+        "c": "Bidirectional(LSTM(64))",
+        "o": [
+            "Produces 128 units output",
+            "Produces 64 units output",
+            "Doubles time steps",
+            "Halves parameters"
+        ]
+    },
+    {
+        "q": "In Keras, the `merge_mode` for Bidirectional can be 'concat', 'sum', 'mul', or 'ave'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Default merge_mode for Bidirectional is _____.",
+        "type": "fill_blank",
+        "answers": [
+            "concat"
+        ],
+        "other_options": [
+            "sum",
+            "mul",
+            "ave"
+        ]
+    },
+    {
+        "q": "CuDNNGRU is optimized for NVIDIA GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Using `stateful=True` in Keras requires manual state resetting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which optimizer is generally preferred for RNNs?",
+        "type": "mcq",
+        "o": [
+            "Adam / RMSprop",
+            "SGD",
+            "Adadelta",
+            "Ftrl"
+        ]
+    },
+    {
+        "q": "RNNs can be regularized using _____ dropout.",
+        "type": "fill_blank",
+        "answers": [
+            "variational"
+        ],
+        "other_options": [
+            "standard",
+            "gaussian",
+            "spatial"
+        ]
+    },
+    {
+        "q": "Variational Dropout applies the same dropout mask at every time step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zoneout is a regularization technique for RNNs where activations are stochastically preserved.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IndRNN (Independently Recurrent Neural Network) solves gradient problems by making neurons independent in a layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SRU (Simple Recurrent Unit) is designed to be highly parallelizable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quasi-RNN (QRNN) alternates between convolutional layers and pooling layers to emulate RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RNN variation:",
+        "type": "match",
+        "left": [
+            "IndRNN",
+            "SRU",
+            "QRNN",
+            "Bi-RNN"
+        ],
+        "right": [
+            "Independent neurons",
+            "Parallelizable",
+            "Conv-pooling mix",
+            "Two directions"
+        ]
+    },
+    {
+        "q": "Neural Turing Machines (NTM) couple a neural network controller with external _____.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "storage",
+            "disk",
+            "network"
+        ]
+    },
+    {
+        "q": "Differentiable Neural Computer (DNC) is an improved version of NTM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Memory Networks use an explicit memory component that can be read and written to.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "End-to-End Memory Networks are differentiable and trainable via backpropagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Memory Networks (DMN) process input sequences into episodic memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Character-Level Language Models can generate novel words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subword tokenization (like BPE) finds a balance between character and word level modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BPE stands for Byte Pair _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Encoding"
+        ],
+        "other_options": [
+            "Expansion",
+            "Extraction",
+            "Embedding"
+        ]
+    },
+    {
+        "q": "SentencePiece is a language-independent subword tokenizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WordPiece is used by BERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the BPE process:",
+        "type": "rearrange",
+        "words": [
+            "Initialize vocabulary",
+            "Count pairs",
+            "Merge frequent pair",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "Doc2Vec (Paragraph Vector) extends Word2Vec to learn document embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PV-DM (Distributed Memory) in Doc2Vec is analogous to CBOW.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PV-DBOW (Distributed Bag of Words) in Doc2Vec is analogous to Skip-gram.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Siamese RNNs are used to measure similarity between two sentences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Manhattan LSTM uses the Manhattan distance instead of Euclidean or Cosine for similarity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recursive Neural Networks operate on structured data like _____.",
+        "type": "fill_blank",
+        "answers": [
+            "trees"
+        ],
+        "other_options": [
+            "graphs",
+            "sequences",
+            "images"
+        ]
+    },
+    {
+        "q": "Tree-LSTMs generalize LSTMs to tree-structured network topologies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which task often uses Recursive Neural Networks?",
+        "type": "mcq",
+        "o": [
+            "Sentiment Analysis on Parse Trees",
+            "Image Classification",
+            "Speech Recognition",
+            "Video Tracking"
+        ]
+    },
+    {
+        "q": "Echo State Networks (ESN) have a fixed, randomly connected recurrent reservoir.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ESNs, only the _____ weights are trained.",
+        "type": "fill_blank",
+        "answers": [
+            "output"
+        ],
+        "other_options": [
+            "input",
+            "recurrent",
+            "all"
+        ]
+    },
+    {
+        "q": "Liquid State Machines are similar to ESNs but use spiking neurons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Clockwork RNNs partition hidden units into modules running at different speeds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Phased LSTM adds a time gate to update units only at specific intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-dimensional RNNs (MDRNN) replace the single time dimension with multiple spatial dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A common metric for evaluating NER (Named Entity Recognition) is F1-score.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CoNLL-2003 is a standard dataset for NER.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SQuAD is a dataset for Question Answering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SNLI is a dataset for Natural Language Inference (Entailment).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IMDb dataset is commonly used for binary movie review sentiment analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PTB (Penn Treebank) is a classic dataset for language modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WMT (Workshop on Machine Translation) provides datasets for translation tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dataset to task:",
+        "type": "match",
+        "left": [
+            "SQuAD",
+            "IMDb",
+            "CoNLL",
+            "WMT"
+        ],
+        "right": [
+            "QA",
+            "Sentiment",
+            "NER",
+            "Translation"
+        ]
+    },
+    {
+        "q": "Cross-lingual embeddings map words from different languages to a shared vector space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MUSE (Multilingual Unsupervised or Supervised Embeddings) is a library by Facebook.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers rely entirely on _____ to draw global dependencies between input and output.",
+        "type": "fill_blank",
+        "answers": [
+            "attention"
+        ],
+        "other_options": [
+            "recurrence",
+            "convolution",
+            "pooling"
+        ]
+    },
+    {
+        "q": "The core component of the Transformer is Multi-Head Self-Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers allow significantly more parallelization than RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Positional Encoding is added to the word embeddings in Transformers to inject order information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Transformer component:",
+        "type": "match",
+        "left": [
+            "Encoder",
+            "Decoder",
+            "Self-Attention",
+            "Feed-Forward"
+        ],
+        "right": [
+            "Processes input",
+            "Generates output",
+            "Relates tokens",
+            "Point-wise MLP"
+        ]
+    },
+    {
+        "q": "Scaled Dot-Product Attention divides the dot product by the square root of the dimension d_k.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which prevents the decoder from attending to future tokens during training?",
+        "type": "mcq",
+        "o": [
+            "Masked Attention",
+            "Self Attention",
+            "Cross Attention",
+            "Global Attention"
+        ]
+    },
+    {
+        "q": "GPT (Generative Pre-trained Transformer) is a decoder-only architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GPT is trained using a Causal Language Modeling (CLM) objective.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT is an encoder-only architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERT is trained using Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Transformer Encoder layer:",
+        "type": "rearrange",
+        "words": [
+            "Self-Attention",
+            "Add & Norm",
+            "Feed-Forward",
+            "Add & Norm"
+        ]
+    },
+    {
+        "q": "XLNet uses Permutation Language Modeling to capture bidirectional context without masking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoBERTa robustly optimizes BERT by removing the Next Sentence Prediction task and training longer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DistilBERT creates a smaller, faster BERT via knowledge distillation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALBERT (A Lite BERT) uses parameter sharing across layers to reduce model size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T5 (Text-to-Text Transfer Transformer) frames every NLP task as a text-to-text problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Using a Transformer for Time Series often requires specialized positional encodings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Informer is an efficient Transformer for long sequence time-series forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Informer uses ProbSparse attention to reduce complexity from O(L^2) to O(L log L).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoformer introduces a decomposition architecture with an Auto-Correlation mechanism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temporal Fusion Transformer (TFT) combines LSTM and Attention for interpretable forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which feature is crucial for handling static covariates in TFT?",
+        "type": "mcq",
+        "o": [
+            "Static Enrichment",
+            "Dynamic Decoding",
+            "Masked Attention",
+            "Self-Attention"
+        ]
+    },
+    {
+        "q": "WaveNet is an autoregressive generative model for raw audio.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WaveNet uses dilated causal convolutions to increase the receptive field exponentially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Wav2Vec 2.0 learns speech representations from raw audio data using self-supervision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Wav2Vec 2.0 uses a contrastive loss to identify the correct quantized latent speech representation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepSpeech is an end-to-end ASR system based on RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepSpeech typically uses the CTC loss function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the components of DeepSpeech:",
+        "type": "rearrange",
+        "words": [
+            "Conv Layers",
+            "Recurrent Layers",
+            "Fully Connected",
+            "Softmax / CTC"
+        ]
+    },
+    {
+        "q": "Jasper (Just Another Speech Recognizer) is a deep convolutional ASR model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "QuartzNet is a lighter version of Jasper using time-channel separable convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Conformer combines CNNs and Transformers for speech recognition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Conformer, convolution captures local interaction and transformer captures global interaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Speaker Diarization answers the question 'who spoke when?'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "x-vectors are fixed-dimensional embeddings for speaker recognition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "x-vectors use a statistical pooling layer to aggregate frame-level features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the speech task:",
+        "type": "match",
+        "left": [
+            "ASR",
+            "TTS",
+            "VAD",
+            "KWS"
+        ],
+        "right": [
+            "Speech to Text",
+            "Text to Speech",
+            "Voice Activity",
+            "Keyword Spotting"
+        ]
+    },
+    {
+        "q": "Keyword Spotting (KWS) models are designed to be small and low-power (always-on).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tacotron 2 generates mel-spectrograms from text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FastSpeech is a non-autoregressive TTS model for faster inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FastSpeech uses a duration predictor to determine the length of each phoneme.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HiFi-GAN is a high-fidelity GAN-based vocoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MelGAN is a non-autoregressive GAN-based vocoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Time Warping (DTW) calculates the similarity between two temporal sequences which may vary in speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Soft-DTW is a differentiable loss function based on DTW.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which data augmentation is specific to audio?",
+        "type": "mcq",
+        "o": [
+            "SpecAugment",
+            "Mixup",
+            "Cutout",
+            "Rotation"
+        ]
+    },
+    {
+        "q": "SpecAugment masks blocks of frequency channels and time steps in the spectrogram.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Listen, Attend and Spell (LAS) is an encoder-decoder ASR model with attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LAS uses a Pyramidal Bi-LSTM encoder to reduce the time resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNT (Recurrent Neural Network Transducer) is suitable for streaming ASR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNT calculates the probability of output tokens given the history of inputs and outputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ASR loss/model:",
+        "type": "match",
+        "left": [
+            "CTC",
+            "LAS",
+            "RNNT",
+            "Hybrid"
+        ],
+        "right": [
+            "Conditional independence",
+            "Attention-based",
+            "Streaming capable",
+            "HMM-DNN"
+        ]
+    },
+    {
+        "q": "HMM-DNN hybrid systems use DNNs to estimate emission probabilities for HMM states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beam Search decoding in ASR often incorporates a Language Model score.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Word Error Rate (WER) is the standard metric for ASR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WER = (Insertions + Deletions + Substitutions) / Number of Words in Reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Character Error Rate (CER) is often used for languages without clear word boundaries (e.g., Chinese).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mean Opinion Score (MOS) is a subjective metric for evaluating TTS quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Voice Conversion changes the speaker identity while collecting the linguistic content.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StarGAN-VC allows non-parallel many-to-many voice conversion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoVC uses a bottleneck autoencoder to separate content from speaker information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Music Generation often involves generating symbolic (MIDI) or raw audio.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Music Transformer uses relative attention to better model musical timing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jukebox by OpenAI generates raw audio music with singing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jukebox uses VQ-VAE to compress audio into discrete codes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Jukebox levels:",
+        "type": "rearrange",
+        "words": [
+            "Top-level Prior",
+            "Middle-level Prior",
+            "Bottom-level Prior",
+            "Upsampler"
+        ]
+    },
+    {
+        "q": "SepFormer is a Transformer-based model for speech separation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Conv-TasNet is a time-domain audio separation network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SI-SNR (Scale-Invariant Signal-to-Noise Ratio) is a metric for source separation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Embedding Layer in Keras requires `input_dim` (vocab size) and `output_dim` (vector size).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`Tokenizer.texts_to_sequences` converts text to lists of integers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visual Transformers (ViT) divide an image into fixed-size patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ViT, patches are linearly embedded and treated as tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Class Token (CLS) is prepended to the input sequence in BERT and ViT for classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data Efficient Image Transformers (DeiT) use distillation to train ViTs efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perceiver handles high-dimensional inputs (like video/audio) using a small set of latent units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gated Linear Units (GLU) are often used in modern Transformer feed-forward networks (e.g., PaLM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swish activation is defined as x * sigmoid(x).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GELU (Gaussian Error Linear Unit) is the activation used in BERT and GPT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which Keras layer adds a learnable position embedding?",
+        "type": "mcq",
+        "o": [
+            "Custom Layer needed",
+            "Embedding",
+            "Dense",
+            "Add"
+        ]
+    },
+    {
+        "q": "Hugging Face `transformers` library provides pre-trained models for NLP, Vision, and Audio.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`AutoModel.from_pretrained('bert-base-uncased')` loads the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`AutoTokenizer.from_pretrained` loads the corresponding tokenizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'uncased' in BERT models means text is lowercased before processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot text classification entails predicting labels not seen during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Few-shot learning provides a few examples (k-shots) in the prompt.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Engineering involves designing inputs to guide the language model's output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Thought prompting encourages the model to generate reasoning steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RLHF stands for Reinforcement Learning from _____ Feedback.",
+        "type": "fill_blank",
+        "answers": [
+            "Human"
+        ],
+        "other_options": [
+            "Hard",
+            "Hidden",
+            "Hybrid"
+        ]
+    },
+    {
+        "q": "Instruction Tuning fine-tunes models on datasets of instructions and responses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parameter-Efficient Fine-Tuning (PEFT) updates only a small subset of parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LoRA (Low-Rank Adaptation) is a popular PEFT method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantization (e.g., 4-bit, 8-bit) reduces memory usage of Large Language Models (LLMs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which problem does Self-Attention scale quadratically with?",
+        "type": "mcq",
+        "o": [
+            "Sequence Length",
+            "Batch Size",
+            "Hidden Dimension",
+            "Vocab Size"
+        ]
+    },
+    {
+        "q": "Sparse Transformers reduce loop complexity by only attending to a subset of tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Longformer uses a combination of local sliding window attention and global attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BigBird performs attention on random keys, window keys, and _____ keys.",
+        "type": "fill_blank",
+        "answers": [
+            "global"
+        ],
+        "other_options": [
+            "local",
+            "sparse",
+            "dense"
+        ]
+    },
+    {
+        "q": "Reformer uses Locality Sensitive Hashing (LSH) to group similar keys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which efficient attention mechanism approximates the Softmax matrix using kernel methods?",
+        "type": "mcq",
+        "o": [
+            "Performer",
+            "Reformer",
+            "Longformer",
+            "BigBird"
+        ]
+    },
+    {
+        "q": "Linformer proves effectively that the self-attention matrix is low-_____.",
+        "type": "fill_blank",
+        "answers": [
+            "rank"
+        ],
+        "other_options": [
+            "dimensional",
+            "sparse",
+            "noise"
+        ]
+    },
+    {
+        "q": "FlashAttention speeds up attention by tiling and minimizing memory IO access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention is an exact attention mechanism, not an approximation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rotary Positional Embedding (RoPE) encodes absolute position with a rotation matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RoPE allows the model to naturally capture relative positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALiBi (Attention with Linear Biases) adds a static bias to attention scores based on distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ALiBi allows extrapolation to sequence lengths longer than seen during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-Query Attention (MQA) shares the _____ and _____ heads across all attention heads.",
+        "type": "fill_blank",
+        "answers": [
+            "Key, Value"
+        ],
+        "other_options": [
+            "Query, Key",
+            "Query, Value",
+            "Input, Output"
+        ]
+    },
+    {
+        "q": "Grouped Query Attention (GQA) is a middle ground between MHA and MQA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixture of Experts (MoE) models activate only a subset of parameters per token.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Switch Transformer uses a routing mechanism to select _____ expert(s) per token.",
+        "type": "fill_blank",
+        "answers": [
+            "one"
+        ],
+        "other_options": [
+            "two",
+            "all",
+            "zero"
+        ]
+    },
+    {
+        "q": "MoE models scale model capacity (parameters) without proportionally increasing inference cost (FLOPs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gumbel-Softmax allows backpropagation through categorical samples (like expert selection).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Search is a decoding method that penalizes repetition effectively.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric measures the diversity of generated text?",
+        "type": "mcq",
+        "o": [
+            "Self-BLEU",
+            "BLEU",
+            "ROUGE",
+            "Perplexity"
+        ]
+    },
+    {
+        "q": "Distinct-n metric counts the ratio of unique n-grams to total n-grams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BERTScore computes similarity using contextual embeddings rather than exact n-gram matching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perplexity is the exponentiation of the cross-entropy loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SeqGAN uses a Generator (RNN) and a Discriminator (CNN/RNN).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In SeqGAN, the Generator is trained using Policy Gradient (Reinforcement Learning).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LeakGAN allows the discriminator to leak information to the generator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MaliGAN uses the discriminator to estimate the ratio between true and generated distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Audio Spectrogram Transformer (AST) applies a standard ViT to audio spectrograms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HuBERT (Hidden Unit BERT) uses K-means clustering on MFCCs/features to create pseudo-labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SoundStorm is a parallel decoding model for audio generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AudioLM treats audio generation as a language modeling task on discrete codes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Whisper is a weakly supervised speech recognition model trained on 680k hours of audio.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Whisper uses a Transformer encoder-decoder architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Universal Speech Model (USM) aims to cover hundreds of languages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Variational Document Models (NVDM) combine VAEs with Bag-of-Words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GSM8K is a dataset of grade school math word problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MMLU (Massive Multitask Language Understanding) covers 57 subjects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BIG-bench is a collaborative benchmark for probing LLM capabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the LLM size/parameter count (approx):",
+        "type": "match",
+        "left": [
+            "BERT-Base",
+            "GPT-3",
+            "LLaMA-1",
+            "PaLM"
+        ],
+        "right": [
+            "110M",
+            "175B",
+            "65B",
+            "540B"
+        ]
+    },
+    {
+        "q": "Chinchilla Scaling Laws suggest that many LLMs are undertrained.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chinchilla suggests the optimal training data size is roughly _____ times the parameter count.",
+        "type": "fill_blank",
+        "answers": [
+            "20"
+        ],
+        "other_options": [
+            "10",
+            "100",
+            "200"
+        ]
+    },
+    {
+        "q": "The 'Curse of Recursion' refers to model collapse when models are trained on generated data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constitutional AI trains models to be helpful and harmless using a set of principles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DPO (Direct Preference Optimization) optimizes the policy directly without training a reward model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KTO (Kahneman-Tversky Optimization) works with binary good/bad feedback instead of pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ring Attention allows training on sequences longer than the memory of a single device.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "StreamingLLM enables infinite length generation by keeping 'attention sinks' (initial tokens).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Retrieval-Augmented Generation (RAG) combines a retriever and a generator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In RAG, the retriever finds relevant documents to condition the generation on.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "REALM (Retrieval-Augmented Language Model) backpropagates through the retrieval step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the RAG process:",
+        "type": "rearrange",
+        "words": [
+            "Query Embedding",
+            "Document Retrieval",
+            "Context Concatenation",
+            "Answer Generation"
+        ]
+    },
+    {
+        "q": "Retro (Retrieval-Enhanced Transformer) retrieves chunks and attends to them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Toolformer learns to use external tools (like calculators) via API calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gorilla is fine-tuned to write API calls correctly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Voyager is an LLM-powered embodied agent for Minecraft.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoGPT tries to perform autonomous tasks by chaining thought and action.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tree of Thoughts (ToT) extends Chain of Thought by exploring multiple reasoning paths.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ReAct (Reasoning and Acting) combines reasoning traces with action execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reflexion adds a self-reflection step to the agent loop to improve future performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an open-weights model?",
+        "type": "mcq",
+        "o": [
+            "Llama 2 / Llama 3",
+            "GPT-4",
+            "Claude 3",
+            "Gemini"
+        ]
+    },
+    {
+        "q": "Mistral 7B uses Rolling Window Attention and Grouped Query Attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixtral 8x7B is a Sparse Mixture of Experts model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Q-LoRA combines 4-bit quantization with LoRA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Normally, LoRA adapters are small, less than _____% of original parameter count.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "10",
+            "20",
+            "50"
+        ]
+    },
+    {
+        "q": "Prefix Tuning prepends learnable vectors to keys and values at every layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "P-Tuning trains a continuous prompt embedding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the PEFT method:",
+        "type": "match",
+        "left": [
+            "Adapter",
+            "LoRA",
+            "Prefix Tuning",
+            "BitFit"
+        ],
+        "right": [
+            "Bottleneck layers",
+            "Low-rank matrices",
+            "Virtual tokens",
+            "Bias only"
+        ]
+    },
+    {
+        "q": "Code snippet: Hugging Face Pipeline.",
+        "type": "mcq",
+        "c": "pipeline('sentiment-analysis')",
+        "o": [
+            "Returns sentiment label/score",
+            "Returns logits",
+            "Returns embeddings",
+            "Returns tokens"
+        ]
+    },
+    {
+        "q": "In Hugging Face, `pad_token_id` is required for batched inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which decoding strategy typically produces the most creative (but potentially incoherent) text?",
+        "type": "mcq",
+        "o": [
+            "Top-k (high k)",
+            "Greedy",
+            "Beam Search",
+            "Contrastive Search"
+        ]
+    },
+    {
+        "q": "State Space Models (SSM) like S4 scale linearly with sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba is a selective state space model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba avoids the quadratic complexity of attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RWKV (Receptance Weighted Key Value) combines RNN efficiency with Transformer trainability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RWKV can be parallelized during training like a Transformer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RWKV runs as an RNN during inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyena Hierarchy replaces attention with long convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recurrent Memory Transformer (RMT) adds memory tokens to pass context between segments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear Recurrent Unit (LRU) is a core component of S4.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Neural Networks (GNNs) can process sequence data by treating it as a line graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Attention Networks (GAT) apply attention mechanisms to graph neighborhoods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gated Graph Neural Networks (GGNN) use GRUs to update node states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sequence-to-Graph tasks include Semantic Parsing (e.g., text to SQL/AMR).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph-to-Sequence tasks include Text Generation from Knowledge Graphs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CopyNet is often used in Graph-to-Sequence to copy entity names from the graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GNNs suffer from 'Oversmoothing' when piled too deep.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Message Passing is the core operation in MPNNs (Message Passing Neural Networks).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the MPNN phases:",
+        "type": "rearrange",
+        "words": [
+            "Message Computation",
+            "Message Aggregation",
+            "State Update",
+            "Readout"
+        ]
+    },
+    {
+        "q": "Hugging Face `datasets` library uses Arrow for memory-efficient data handling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "`load_dataset('squad')` downloads the SQuAD dataset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dynamic Padding pads each batch to the longest sequence in that batch, not the max model length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DataCollatorWithPadding handles dynamic padding automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Accumulation simulates a larger batch size by accumulating gradients over multiple steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixed Precision Training uses fp16 and fp32.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Scaling is used in Mixed Precision to prevent underflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural ODEs model the hidden state evolution as a continuous-time differential equation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural ODEs can naturally handle irregularly sampled time-series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Adjoint Method allows backpropagating through ODE solvers with constant memory cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continuous Time RNNs (CTRNNs) use differential equations to update neuron states.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Liquid Time-Constant (LTC) networks are biologically inspired continuous-time RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Controlled Differential Equations (Neural CDEs) generalize RNNs and Neural ODEs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNs are theoretically Turing Complete.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Universal Approximation Theorem for RNNs states they can approximate any open dynamical system.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text generation decoding method reduces latency by verifying multiple tokens at once?",
+        "type": "mcq",
+        "o": [
+            "Speculative Decoding",
+            "Beam Search",
+            "Greedy Search",
+            "Nucleus Sampling"
+        ]
+    },
+    {
+        "q": "Speculative Decoding uses a small 'draft' model and a large 'target' model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PagedAttention manages Key-Value (KV) cache memory using blocks (like OS virtual memory).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PagedAttention significantly reduces memory fragmentation in LLM serving.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vLLM is a high-throughput LLM serving library that uses PagedAttention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continuous Batching (or Cellular Batching) allows requests to join/leave the batch at any step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KV Cache avoids recomputing attention for past tokens during generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Speculative Decoding steps:",
+        "type": "rearrange",
+        "words": [
+            "Draft Model Generation",
+            "Target Model Verification",
+            "Accept/Reject Tokens",
+            "Correct Generation"
+        ]
+    },
+    {
+        "q": "Medusa adds extra heads to the LLM to predict multiple future tokens in parallel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tensor Parallelism splits individual layers (matrices) across multiple GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pipeline Parallelism splits layers (stages) across GPUs and passes data between them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero Redundancy Optimizer (ZeRO) partitions optimizer states, gradients, and parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the parallelism technique:",
+        "type": "match",
+        "left": [
+            "Data Parallelism",
+            "Tensor Parallelism",
+            "Pipeline Parallelism",
+            "ZeRO"
+        ],
+        "right": [
+            "Split batch",
+            "Split matrix ops",
+            "Split layers",
+            "Split memory states"
+        ]
+    },
+    {
+        "q": "Visual Question Answering (VQA) requires reasoning over both image and text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ViLT (Vision-and-Language Transformer) is an architecture that is convolution-free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LXMERT (Learning Cross-Modality Encoder Representations) uses a two-stream encoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLIP uses a single-stream architecture for fusion.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "BLIP (Bootstrapping Language-Image Pre-training) trains on both understanding and generation tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flamingo weaves new 'gated cross-attention-dense' layers into a frozen LLM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VideoBERT learns video representations by treating video tokens (clusters) like words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TimeSformer applies space-time attention (divided or joint) to video frames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vector Databases are optimized for searching approximate nearest neighbors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HNSW (Hierarchical Navigable Small World) is a graph-based indexing algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IVF (Inverted File Index) partitions the vector space into Voronoi cells.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Product Quantization (PQ) compresses vectors by splitting them into sub-vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which distance metric is most common for normalized embeddings?",
+        "type": "mcq",
+        "o": [
+            "Cosine Similarity",
+            "Euclidean Distance",
+            "Hamming Distance",
+            "Jaccard Index"
+        ]
+    },
+    {
+        "q": "Maximum Inner Product Search (MIPS) is equivalent to Cosine Similarity for normalized vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Code snippet: LangChain PromptTemplate.",
+        "type": "mcq",
+        "c": "PromptTemplate.from_template('Tell me a joke about {topic}')",
+        "o": [
+            "Creates a template",
+            "Runs the prompt",
+            "Compiles code",
+            "Loads a model"
+        ]
+    },
+    {
+        "q": "LangChain Chains allow sequencing multiple LLM calls or actions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LangChain Agents use an LLM to decide what actions to take and in what order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Consistency in CoT generates multiple reasoning paths and takes the majority vote.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Least-to-Most Prompting breaks a complex problem into sub-problems sequentially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Skeleton-of-Thought generates a skeleton of the answer first, then fills in details in parallel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Program-Aided Language Models (PAL) offset computation to an external Python interpreter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ReAct loop:",
+        "type": "rearrange",
+        "words": [
+            "Thought",
+            "Action",
+            "Observation",
+            "Thought"
+        ]
+    },
+    {
+        "q": "Plan-and-Solve Prompting generates an entire plan before executing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which ensures the model output follows a specific JSON schema?",
+        "type": "mcq",
+        "o": [
+            "Constrained Decoding (Grammar-based)",
+            "Temperature=0",
+            "Top-k=1",
+            "Beam Search"
+        ]
+    },
+    {
+        "q": "Grammar-based sampling restricts the next token to those valid in a Context-Free Grammar (CFG).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Guided Generation (like in Outlines or Guidance libraries) interleaves generation with fixed strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Symbolic AI aims to combine the learning capability of NN with the reasoning of symbolic logic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Logic Tensor Networks (LTN) integrate fuzzy logic into deep learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neuro-Symbolic Concept Learner (NS-CL) learns visual concepts and grammar without explicit supervision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dreamer (v1/v2/v3) learns a world model from image observations to plan in latent space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "World Models (Ha & Schmidhuber) consist of a VAE (Vision) and an MDN-RNN (Memory).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Decision Transformer treats Reinforcement Learning as a sequence modeling problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trajectory Transformer also models RL as sequence prediction using Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gato is a generalist agent that can play games, caption images, and control robots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gato processes all modalities (images, text, actions) as a sequence of tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perceiver AR is an autoregressive version of Perceiver for modality-agnostic generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the multimodal model:",
+        "type": "match",
+        "left": [
+            "CLIP",
+            "Flamingo",
+            "Gato",
+            "ViLT"
+        ],
+        "right": [
+            "Contrastive Image-Text",
+            "Few-shot VLM",
+            "Generalist Agent",
+            "Transformer fusion"
+        ]
+    },
+    {
+        "q": "Which technique allows LLMs to 'see' images by projecting image features into token space?",
+        "type": "mcq",
+        "o": [
+            "Visual Projection / Adapter",
+            "Image Captioning",
+            "OCR",
+            "Pixel RNN"
+        ]
+    },
+    {
+        "q": "LLaVA (Large Language and Vision Assistant) connects a vision encoder to Vicuna.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MiniGPT-4 aligns a frozen visual encoder with a frozen LLM using a projection layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Qwen-VL is a multimodal version of the Qwen LLM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Nougat (Neural Optical Understanding for Academic Documents) is a Transformer model for PDF parsing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kosmos-1 is a Multimodal LLM that can perceive general modalities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fuyu-8B is a multimodal model that operates directly on image patches without a separate encoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Directly inputting image patches allows handling arbitrary aspect ratios naturally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PaLI (Pathways Language and Image) scales both vision and language components jointly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parti uses an autoregressive model to generate image tokens from text tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CM3leon is a retrieval-augmented, token-based multimodal model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Emu helps in image generation and editing using multimodal context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Video-LLaMA is an instruction-tuned audio-visual language model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LanguageBind binds video, audio, depth, and thermal to language embedding space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ImageBind aligns six modalities into a common embedding space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AnyMAL aligns diverse modalities (including IMU data) to LLMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RT-2 (Robotic Transformer 2) is a Vision-Language-Action (VLA) model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is a common failure mode of LLMs?",
+        "type": "mcq",
+        "o": [
+            "Hallucination",
+            "Overfitting to 1 epoch",
+            "Underfitting training",
+            "Convergence failure"
+        ]
+    },
+    {
+        "q": "Hallucination refers to generating content that is nonsensical or unfaithful to the source.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sycophancy in LLMs refers to the model agreeing with the user's incorrect premise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt Injection attacks aim to override the system instructions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jailbreaking attempts to bypass safety filters of the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Red Teaming involves testing the model to find vulnerabilities and harmful outputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Watermarking text allows detection of AI-generated content.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "bias in LLMs typically reflects bias present in the pre-training data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Toxicity detection models are often used to filter training data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Privacy attacks on LLMs include extracting PII (Personally Identifiable Information).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Machine Unlearning aims to remove specific knowledge from a trained model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Catastrophic Forgetting occurs when a model loses old knowledge while learning new tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continual Learning methods aim to mitigate catastrophic forgetting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EWC (Elastic Weight Consolidation) protects important parameters from changing too much.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Experience Replay stores examples from past tasks to rehearse them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GEM (Gradient Episodic Memory) constrains gradients to not increase loss on past tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Using a fixed seed ensures reproducibility of initial weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deterministic algorithms in cuDNN (`torch.backends.cudnn.deterministic = True`) ensure reproducible results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange a Continual Learning loop:",
+        "type": "rearrange",
+        "words": [
+            "Task A Train",
+            "Task A Test",
+            "Task B Train",
+            "Task A+B Test"
+        ]
+    },
+    {
+        "q": "HiPPO (High-order Polynomial Projection Operators) provides a framework for optimal function approximation online.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "S4 (Structured State Space) uses the HiPPO matrix to initialize the state transition matrix A.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "S4 can be computed efficiently using the Fast Fourier Transform (FFT) during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which property of the state matrix A is critical for S4's efficiency?",
+        "type": "mcq",
+        "o": [
+            "Diagonal plus Low-Rank (DPLR)",
+            "Sparsity",
+            "Orthogonality",
+            "Symmetry"
+        ]
+    },
+    {
+        "q": "Liquid Neural Networks (LNNs) are a type of continuous-time RNN where hidden states are dynamic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LNNs have demonstrated remarkable causality and robustness capabilities in robotics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformer-XL introduces segment-level recurrence to enable learning longer range dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformer-XL stops gradients from flowing between segments.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Relative Positional Encoding in Transformer-XL is injected at each attention layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Standard RNNs are recognized by Automata Theory to be equivalent to Finite State Automata.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rational Recurrences are shown to be equivalent to Weighted Finite Automata.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LSTMs with infinite precision are theoretically Turing Complete.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers with hard attention are Turing Complete.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Thought prompting expands the expressivity of Transformers (simulating a Turing Machine tape).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grokking refers to the phenomenon where valid generalization occurs long after training error has converged.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grokking is typically observed on datasets involving algorithmic or symbolic reasoning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Lottery Ticket Hypothesis states that dense networks contain sparse subnetworks that can match the accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Iterative Magnitude Pruning (IMP) is the standard method to find lottery tickets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Winning tickets are often 'stable' to SGD noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model Editing methods like ROME (Rank-One Model Editing) locate factual knowledge in MLP layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROME modifies a specific key-value pair in the MLP weights to update a fact.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MEMIT (Mass-Editing Memory in a Transformer) scales model editing to thousands of facts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mechanistic Interpretability aims to reverse engineer the algorithms implemented by neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Induction Heads are a circuit found in Transformers that implements copy-and-paste behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Induction Heads significantly contribute to In-Context Learning capabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polysemantic Neurons are neurons that activate for multiple unrelated features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Superposition Hypothesis explains why models can represent more features than they have neurons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which benchmark evaluates LLMs on massive multitasking capabilities?",
+        "type": "mcq",
+        "o": [
+            "MMLU",
+            "ImageNet",
+            "GLUE",
+            "SQuAD"
+        ]
+    },
+    {
+        "q": "HellaSwag is a dataset for commonsense reasoning that is hard for state-of-the-art models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TruthfulQA benchmarks whether language models generate falsehoods from learnt imitative falsehoods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RealToxicityPrompts evaluates the risk of generating toxic continuations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Winogrande is a benchmark for commonsense reasoning using pronoun resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adaptive Computation Time (ACT) allows RNNs to ponder for a variable number of steps per input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PonderNet is a probationary architecture for adaptive computation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Universal Transformers combine the parallelizability of Transformers with the recurrence of RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kanerva Machines use a sparse distributed memory addressing scheme.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hypernetworks generate the weights of another network (the primary network).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HyperRNN uses a hypernetwork to dynamically generate the recurrent weights at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fast Weights (as proposed by Hinton/Ba) act as a short-term memory overlay on slow weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear Transformers relates to Fast Weight Programmers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the components of a Hypernetwork:",
+        "type": "rearrange",
+        "words": [
+            "Context Vector",
+            "Hypernetwork",
+            "Generated Weights",
+            "Main Network"
+        ]
+    },
+    {
+        "q": "Energy-Based Models (EBMs) learn an energy function that assigns low energy to correct data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Divergence is a method to train EBMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hopfield Networks are a form of recurrent EBM with binary threshold units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Modern Hopfield Networks (Dense Associative Memory) have exponentially large storage capacity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The attention mechanism in Transformers is mathematically equivalent to the update rule of Modern Hopfield Networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Boltzmann Machines are stochastic recurrent neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Restricted Boltzmann Machines (RBM) have no intra-layer connections.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Belief Networks (DBN) are stacked RBMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Helmholtz Machines learn a generative model and an inference model (wake-sleep algorithm).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Predictive Coding suggests the brain is constantly generating predictions of sensory input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PredNet is a deep learning architecture inspired by predictive coding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Capsule Networks for text aims to preserve hierarchical relationships in sentence structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text adversarial attack flips characters to break the model?",
+        "type": "mcq",
+        "o": [
+            "TextBugger",
+            "FGSM",
+            "PGD",
+            "DeepFool"
+        ]
+    },
+    {
+        "q": "HotFlip uses gradient information to find optimal character swaps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Universal Adversarial Triggers are phrases that cause a model to output a specific target prediction when appended to any input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Certified Robustness for NLP often uses Interval Bound Propagation (IBP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Differential Privacy (DP) adds noise to gradients to protect training data privacy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DP-SGD is the standard algorithm for differentially private deep learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PATE (Private Aggregation of Teacher Ensembles) uses an ensemble of teachers trained on disjoint data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Federated Learning on mobile keyboards (like Gboard) uses on-device learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Secure Multi-Party Computation allow computing on shared secret data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Architecture Search (NAS) for RNNs searches for optimal cell structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Measuring Massive Multitask Language Understanding (MMLU) tests models on _____",
+        "type": "fill_blank",
+        "answers": [
+            "STEM",
+            "Humanities",
+            "Social Sciences"
+        ],
+        "other_options": [
+            "ImageNet",
+            "COCO",
+            "CIFAR"
+        ]
+    },
+    {
+        "q": "Language Models as Probabilistic Databases suggests LMs store relational facts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LAMA probe tests factual knowledge retrieval from PLMs (Pre-trained Language Models).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scaling laws indicate that model performance has a power-law relationship with compute, dataset size, and parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Emergent Abilities of Large Language Models appear only at certain scales.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "U-shaped performance curves (Inverse Scaling) occur when larger models perform worse on specific tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hindsight Experience Replay (HER) allows learning from failed attempts by treating the achieved goal as the intended goal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Curiosity-driven exploration augments rewards with a prediction error term.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diversity Is All You Need (DIAYN) learns diverse skills without a reward function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Predictive Coding (CPC) learns representations by predicting the future in latent space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the advanced concept:",
+        "type": "match",
+        "left": [
+            "Grokking",
+            "Double Descent",
+            "Lottery Ticket",
+            "Superposition"
+        ],
+        "right": [
+            "Delayed generalization",
+            "Test error dip",
+            "Sparse subnetwork",
+            "More features than neurons"
+        ]
+    },
+    {
+        "q": "Which RNN variant is explicitly designed to solve the vanishing gradient problem using a second-order connection?",
+        "type": "mcq",
+        "o": [
+            "Hessian-Free Optimization",
+            "Unitary RNN",
+            "Gated Orthogonal RNN",
+            "Vanilla RNN"
+        ]
+    },
+    {
+        "q": "Unitary RNNs constrain the recurrent weight matrix to be unitary to preserve gradient norm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lipschitz RNNs constrain the Lipschitz constant to ensure stability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stable Diffusion for Text? Improbable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diffusion-LM generates text by iteratively denoising continuous embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BitNet replaces linear layers with 1-bit weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BitNet b1.58 uses ternary weights {-1, 0, 1}.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Matryoshka Representation Learning learns embeddings that are useful at multiple dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MRL allows for adaptive retrieval costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer is critical for Mamba's selectivity?",
+        "type": "mcq",
+        "o": [
+            "Selective Scan",
+            "Self-Attention",
+            "Convolution",
+            "Pooling"
+        ]
+    },
+    {
+        "q": "What is the key advantage of RWKV over Transformers?",
+        "type": "mcq",
+        "o": [
+            "Linear complexity inference",
+            "Better accuracy",
+            "Simpler training",
+            "More parameters"
+        ]
+    },
+    {
+        "q": "Linear complexity inference means constant memory and time per step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNs are theoretically capable of representing any Turing Machine.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Siegelmann and Sontag (1995) proved the Turing Completeness of RNNs with rational weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Turing Machines differ from standard RNNs by having an external addressable memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DNC (Differentiable Neural Computer) uses dynamic memory allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparse Priming Representation (SPR) compresses reasoning traces into concise prompts.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]
