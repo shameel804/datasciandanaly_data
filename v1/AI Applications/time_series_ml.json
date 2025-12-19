@@ -1,0 +1,3215 @@
+[
+    {
+        "q": "A time series is a sequence of data points indexed in time order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Time series analysis aims to understand the underlying causes of trends or systemic patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Time series forecasting uses historical data to predict future values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Univariate time series consists of a single variable observed over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multivariate time series involves multiple variables changing over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-sectional data is collected at a single point in time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the time series component:",
+        "type": "match",
+        "left": [
+            "Trend",
+            "Seasonality",
+            "Cyclical",
+            "Noise"
+        ],
+        "right": [
+            "Long-term direction",
+            "Periodic fluctuations",
+            "Economic swings",
+            "Random variation"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.to_datetime(['2023-01-01'])\nprint(dates.year[0])",
+        "o": [
+            "2023",
+            "01",
+            "23",
+            "Error"
+        ]
+    },
+    {
+        "q": "Seasonality repeats at fixed intervals (e.g., daily, weekly, yearly).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cyclical patterns have a fixed, known period.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Noise is the random, unpredictable part of the time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In an additive model, the observed value is the Sum of components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In a multiplicative model, the observed value is the Product of components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiplicative models are useful when the magnitude of seasonality increases with the trend.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stationarity means the statistical properties (mean, variance) do not change over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Strict stationarity requires the joint distribution to be invariant to time shifts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weak stationarity (Covariance Stationarity) requires constant mean and autocovariance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-stationary data is often easier to model than stationary data.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the non-stationary cause:",
+        "type": "match",
+        "left": [
+            "Trend",
+            "Seasonality",
+            "Heteroscedasticity"
+        ],
+        "right": [
+            "Mean changes",
+            "Periodic changes",
+            "Variance changes"
+        ]
+    },
+    {
+        "q": "White Noise has a constant mean of 0 and constant finite variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "White Noise is uncorrelated over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Random Walk is the cumulative sum of white noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A Random Walk is stationary.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Naive forecasting predicts the next value to be the same as the last observed value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Seasonal Naive forecasting uses the value from the same season in the previous cycle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Drift method allows the forecast to increase or decrease over time based on average change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "ts = [1, 2, 3]\nprint(ts[-1])",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Lag refers to a fixed time displacement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lag 1 of a time series represents values from the previous time step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autocorrelation measures the linear relationship between the time series and a lagged version of itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange basic forecasting process:",
+        "type": "rearrange",
+        "words": [
+            "Visualize",
+            "Clean",
+            "Split",
+            "Model",
+            "Evaluate"
+        ]
+    },
+    {
+        "q": "Moving Average smooths a time series by averaging neighboring data points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Simple Moving Average (SMA) gives equal weight to all points in the window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weighted Moving Average (WMA) assigns different weights to data points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Exponential Moving Average (EMA) gives more weight to recent observations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Simple Exponential Smoothing (SES) is suitable for data with no trend or seasonality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In SES, alpha is the _____ parameter.",
+        "type": "fill_blank",
+        "answers": [
+            "smoothing"
+        ],
+        "other_options": [
+            "learning",
+            "decay",
+            "lag"
+        ]
+    },
+    {
+        "q": "If alpha is close to 1 in SES, the forecast relies heavily on the most recent observation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If alpha is close to 0 in SES, the forecast relies more on historical history (is smoother).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(abs(-5))",
+        "o": [
+            "5",
+            "-5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "MAE stands for Mean Absolute Error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MSE stands for Mean Squared Error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RMSE is the square root of MSE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RMSE is in the same units as the original data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAPE stands for Mean Absolute Percentage Error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAPE is scale-independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAPE can be undefined if actual values are zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the metric:",
+        "type": "match",
+        "left": [
+            "MAE",
+            "MSE",
+            "RMSE",
+            "MAPE"
+        ],
+        "right": [
+            "Absolute diff",
+            "Squared diff",
+            "Root squared diff",
+            "Percentage diff"
+        ]
+    },
+    {
+        "q": "SMAPE is Symmetric Mean Absolute Percentage Error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MASE (Mean Absolute Scaled Error) compares forecast error to naive forecast error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Resampling involves changing the frequency of the time series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Downsampling reduces frequency (e.g., daily to monthly) and requires aggregation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Upsampling increases frequency (e.g., monthly to daily) and requires filling/interpolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Forward filling propagates the last valid observation forward.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Backward filling uses the next valid observation to fill gaps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Interpolation estimates missing values based on surrounding points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear interpolation connects points with straight lines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, np.nan, 3]\nprint(len(l))",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "A time series with a constant trend is stationary.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Detrending removes the trend component to help achieve stationarity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Differencing is a common method to remove trend.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "First-order differencing computes the difference between observation t and t-1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Seasonal differencing computes the difference between observation t and t-period.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Log transformation can help stabilize increasing variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Box-Cox transformation helps in normalizing the data and stabilizing variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Correlation does not imply causation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spurious correlation occurs when two unrelated variables appear correlated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange steps for stationarity:",
+        "type": "rearrange",
+        "words": [
+            "Plot",
+            "Check Test",
+            "Difference",
+            "Re-check"
+        ]
+    },
+    {
+        "q": "Pandas is a popular library for time series manipulation in Python.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DatetimeIndex in Pandas allows indexing data by time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rolling window calculations move a window over the data to compute statistics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Expanding window calculations include all prior data up to the current point.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shift operation shifts the index of the time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import pandas as pd\nd = pd.Timestamp('2023-01-01') + pd.Timedelta(days=1)\nprint(d.day)",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "ValueError"
+        ]
+    },
+    {
+        "q": "Time series decomposition separates a series into Trend, Seasonality, and Noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "STL decomposition (Seasonal-Trend decomposition using Loess) is a robust method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "STL handles any type of seasonality, not just constant.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Classical decomposition assumes seasonality is constant over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prediction intervals provide a range where future values are likely to fall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A point forecast is a single value prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Outliers are data points that differ significantly from other observations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Outliers in time series can distort model parameters and forecasts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(min([1, 2, 3]))",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Forecast horizon is the number of time steps to predict into the future.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Short-term forecasting is generally more accurate than long-term.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Residuals are the differences between observed and predicted values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Good model residuals should resemble white noise (uncorrelated, zero mean).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If residuals have a pattern, potential information is missing from the model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the term:",
+        "type": "match",
+        "left": [
+            "Horizon",
+            "Residual",
+            "Forecast",
+            "History"
+        ],
+        "right": [
+            "Future steps",
+            "Prediction Error",
+            "Predicted value",
+            "Past data"
+        ]
+    },
+    {
+        "q": "Train-test split in time series must respect temporal order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Random splitting (shuffling) is appropriate for time series data.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Time series cross-validation usually involves a rolling or expanding window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Walk-forward validation simulates the real-world forecasting process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(round(3.14159, 2))",
+        "o": [
+            "3.14",
+            "3.15",
+            "3.1",
+            "3.2"
+        ]
+    },
+    {
+        "q": "Autoregression (AR) models predict future values based on past values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In an AR(p) model, 'p' represents the number of _____ observations included.",
+        "type": "fill_blank",
+        "answers": [
+            "lagged",
+            "past"
+        ],
+        "other_options": [
+            "future",
+            "error",
+            "random"
+        ]
+    },
+    {
+        "q": "An AR(1) model uses only the immediately preceding value to predict the current one.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Moving Average (MA) models predict future values based on past forecast errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In an MA(q) model, 'q' represents the size of the moving average window of errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ACF stands for Autocorrelation Function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PACF stands for Partial Autocorrelation Function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "For an AR(p) process, the PACF cuts off after lag p.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "For an MA(q) process, the ACF cuts off after lag q.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the plot behavior:",
+        "type": "match",
+        "left": [
+            "AR(p) PACF",
+            "MA(q) ACF",
+            "AR(p) ACF",
+            "MA(q) PACF"
+        ],
+        "right": [
+            "Cuts off at p",
+            "Cuts off at q",
+            "Decays gradually",
+            "Decays gradually"
+        ]
+    },
+    {
+        "q": "ARMA models combine both AutoRegressive and Moving Average components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ARMA models require the time series to be stationary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ARIMA stands for AutoRegressive Integrated Moving Average.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'I' in ARIMA refers to Integration, which involves differencing the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ARIMA(p, d, q), 'd' represents the degree of _____.",
+        "type": "fill_blank",
+        "answers": [
+            "differencing"
+        ],
+        "other_options": [
+            "diffusion",
+            "dependence",
+            "distribution"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(pow(2, 3))",
+        "o": [
+            "8",
+            "6",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Over-differencing can introduce artificial dependence in the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A random walk model can be represented as ARIMA(0, 1, 0).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "White noise can be represented as ARIMA(0, 0, 0).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Information Criteria are used for model selection in ARIMA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AIC estimates the relative quality of statistical models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A lower AIC value generally indicates a better model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BIC penalizes model complexity more strongly than AIC.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the criteria:",
+        "type": "match",
+        "left": [
+            "AIC",
+            "BIC",
+            "MSE",
+            "Log-Likelihood"
+        ],
+        "right": [
+            "Akaike Info Criteria",
+            "Bayesian Info Criteria",
+            "Prediction Error",
+            "Model Fit"
+        ]
+    },
+    {
+        "q": "Simple Exponential Smoothing (SES) has a flat forecast function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Holt's Linear Trend method extends SES to handle data with trend.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Holt's method has two smoothing equations: one for level and one for _____.",
+        "type": "fill_blank",
+        "answers": [
+            "trend"
+        ],
+        "other_options": [
+            "seasonality",
+            "noise",
+            "cycle"
+        ]
+    },
+    {
+        "q": "Double Exponential Smoothing is another name for Holt's Linear Trend method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(int(3.9))",
+        "o": [
+            "3",
+            "4",
+            "3.9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Damped trend methods prevent the forecast trend from continuing indefinitely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Holt-Winters method introduces a third equation for _____.",
+        "type": "fill_blank",
+        "answers": [
+            "seasonality"
+        ],
+        "other_options": [
+            "trend",
+            "level",
+            "error"
+        ]
+    },
+    {
+        "q": "Triple Exponential Smoothing is another name for Holt-Winters method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange ARIMA selection steps:",
+        "type": "rearrange",
+        "words": [
+            "Check Stationarity",
+            "Difference if needed",
+            "Identify p and q",
+            "Estimate Model",
+            "Check Residuals"
+        ]
+    },
+    {
+        "q": "The Ljung-Box test checks if residuals are independently distributed (white noise).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If p-value > 0.05 in Ljung-Box test, we fail to reject the null hypothesis (residuals are white noise).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Heteroscedasticity refers to changing variance over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ARCH checks for autoregressive conditional heteroscedasticity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import math\nprint(math.floor(3.9))",
+        "o": [
+            "3",
+            "4",
+            "3.9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Seasonal decomposition by moving averages is a common technique.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "X-11 is a seasonal adjustment method developed by the US Census Bureau.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SEATS stands for Seasonal Extraction in ARIMA Time Series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Granger Causality tests if one time series is useful in forecasting another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Granger Causality implies true physical causation.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Cointegration occurs when a linear combination of non-stationary series is stationary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spurious regression can happen when regressing two non-stationary series that are not cointegrated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the test:",
+        "type": "match",
+        "left": [
+            "ADF",
+            "KPSS",
+            "Ljung-Box",
+            "Granger"
+        ],
+        "right": [
+            "Unit Root",
+            "Stationarity",
+            "Autocorrelation",
+            "Predictive Causality"
+        ]
+    },
+    {
+        "q": "Augmented Dickey-Fuller (ADF) tests for the presence of a unit root.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The null hypothesis of ADF is that the series is non-stationary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KPSS test null hypothesis is that the series is stationary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If ADF p-value < 0.05, we reject the null hypothesis (series is stationary).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(abs(3+4j))",
+        "o": [
+            "5.0",
+            "7.0",
+            "3.0",
+            "4.0"
+        ]
+    },
+    {
+        "q": "Dynamic Regression models allow including external predictor variables (exogenous variables).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ARIMAX is ARIMA with eXogenous variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ARIMAX, the error term is modeled as an ARIMA process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Intervention Analysis models the effect of specific events (e.g., strikes, promotions).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Step functions and pulse functions are used to model interventions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Auto-ARIMA algorithms automate the search for optimal p, d, q parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "pmdarima is a Python library that implements Auto-ARIMA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(bin(10))",
+        "o": [
+            "0b1010",
+            "1010",
+            "0x10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Backtesting in time series assesses model performance on historical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Backtesting with refitting updates model parameters at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bias in forecasting refers to consistent over-prediction or under-prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mean Forecast Error (MFE) is a measure of bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tracking signal monitors if the forecast bias is staying within limits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3])\nprint(x.mean())",
+        "o": [
+            "2.0",
+            "1.5",
+            "3.0",
+            "6.0"
+        ]
+    },
+    {
+        "q": "Ensemble forecasting combines predictions from multiple models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ensembling often improves forecast accuracy and robustness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Simple average of forecasts is a basic ensemble method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weighted average ensemble assigns weights based on model performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stacking involves training a meta-model to combine base model forecasts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ETS models focus on Error, Trend, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Seasonality"
+        ],
+        "other_options": [
+            "Stationarity",
+            "Smoothing",
+            "Signal"
+        ]
+    },
+    {
+        "q": "ETS models can be additive or multiplicative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "State Space Models provide a unified framework for ETS and ARIMA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kalman Filter is a recursive algorithm for estimating state variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(np.sum([1, 2, 3]))",
+        "o": [
+            "6",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Hierarchical time series forecasting ensures consistency across different aggregation levels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bottom-up approach sums lower-level forecasts to get higher-level ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-down approach distributes high-level forecasts to lower levels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Middle-out approach combines top-down and bottom-up.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Optimal reconciliation minimizes the reconciliation error across the hierarchy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange hierarchy levels:",
+        "type": "rearrange",
+        "words": [
+            "Total",
+            "Region",
+            "Store",
+            "Product"
+        ]
+    },
+    {
+        "q": "SARIMA stands for Seasonal AutoRegressive Integrated Moving Average.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SARIMA is denoted as ARIMA(p,d,q)(P,D,Q)m.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In SARIMA notation, 'm' represents the number of periods in a season.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ideally, residuals of a good SARIMA model should differ significantly from white noise.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Seasonal differencing (D=1) involves subtracting the observation from the same season in the previous cycle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(abs(-10))",
+        "o": [
+            "10",
+            "-10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The Holt-Winters method is suitable for data with both trend and seasonality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Holt-Winters has additive and multiplicative versions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Holt-Winters additive method, the seasonal component is expressed in absolute terms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Holt-Winters multiplicative method, the seasonal component is expressed as a percentage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the smoothing parameter:",
+        "type": "match",
+        "left": [
+            "Alpha",
+            "Beta",
+            "Gamma"
+        ],
+        "right": [
+            "Level",
+            "Trend",
+            "Seasonality"
+        ]
+    },
+    {
+        "q": "Rolling window cross-validation uses a fixed-size training window that slides forward.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Expanding window cross-validation keeps the start point fixed and grows the training set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Standard k-fold cross-validation is suitable for time series data.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Time Series Split in scikit-learn implements an expanding window approach.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data leakage in time series occurs when future information is used to predict the past.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import math\nprint(math.ceil(4.1))",
+        "o": [
+            "5",
+            "4",
+            "4.1",
+            "Error"
+        ]
+    },
+    {
+        "q": "A Q-Q plot compares the distribution of residuals to a theoretical normal distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If residuals are normally distributed, points in a Q-Q plot fall largely on the 45-degree line.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Ljung-Box test statistic increases as autocorrelation in residuals increases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Forecast error variance should be constant over time (homoscedasticity).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet is an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet handles missing data and outliers well.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet detects change points in the _____ automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "trend"
+        ],
+        "other_options": [
+            "seasonality",
+            "noise",
+            "bias"
+        ]
+    },
+    {
+        "q": "Prophet includes a component for modeling holiday effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet uses Fourier series to model seasonality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange Prophet components:",
+        "type": "rearrange",
+        "words": [
+            "Trend",
+            "Seasonality",
+            "Holidays",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(min(5, 1, 3))",
+        "o": [
+            "1",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Vector Autoregression (VAR) is a multivariate forecasting algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In VAR, each variable is a linear function of past lags of itself and past lags of other variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VAR models require all variables to be stationary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Impulse Response Function (IRF) traces the effect of a shock to one variable on others in VAR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Forecast Error Variance Decomposition (FEVD) attributes error variance to different variable shocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GARCH models are used to model _____ volatility.",
+        "type": "fill_blank",
+        "answers": [
+            "time-varying"
+        ],
+        "other_options": [
+            "constant",
+            "zero",
+            "linear"
+        ]
+    },
+    {
+        "q": "ARCH models assume variance of current error depends on magnitude of previous errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GARCH(p,q) stands for Generalized Autoregressive Conditional Heteroscedasticity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Volatility clustering is common in financial time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the volatility model:",
+        "type": "match",
+        "left": [
+            "ARCH",
+            "GARCH",
+            "EGARCH",
+            "GJR-GARCH"
+        ],
+        "right": [
+            "Past errors",
+            "Past variance",
+            "Asymmetric (Log)",
+            "Asymmetric (Threshold)"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(max(1, 5, 2))",
+        "o": [
+            "5",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Recurrent Neural Networks (RNNs) are designed for sequence data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vanishing gradient problem hinders standard RNNs in learning long-term dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LSTM stands for Long Short-Term Memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LSTM introduces a _____ state to carry information across many time steps.",
+        "type": "fill_blank",
+        "answers": [
+            "cell"
+        ],
+        "other_options": [
+            "hidden",
+            "output",
+            "input"
+        ]
+    },
+    {
+        "q": "GRU (Gated Recurrent Unit) is a simplified version of LSTM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GRU combines the forget and input gates into a single update gate.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNs can process input sequences of variable length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(len({'a':1, 'b':2}))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "1D Convolutional Neural Networks (CNNs) can be used for time series classification and forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dilated convolutions allow the network to have a large receptive field with fewer layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WaveNet uses causal dilated convolutions for raw audio generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temporal Convolutional Networks (TCNs) are a generic architecture for sequence modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TCNs often outperform canonical RNNs in efficiency and accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange Deep Learning TS steps:",
+        "type": "rearrange",
+        "words": [
+            "Windowing",
+            "Normalization",
+            "Model Training",
+            "Forecasting"
+        ]
+    },
+    {
+        "q": "Sequence-to-Sequence (Seq2Seq) models map an input sequence to an output sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Encoder-Decoder architecture is the backbone of Seq2Seq models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The encoder compresses the input sequence into a fixed-length vector (context vector).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The decoder generates the output sequence from the context vector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention mechanisms allow the decoder to focus on different parts of the input sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('hello'.replace('l', ''))",
+        "o": [
+            "heo",
+            "helo",
+            "hlo",
+            "Error"
+        ]
+    },
+    {
+        "q": "Temporal Fusion Transformer (TFT) is an attention-based architecture for interpretable forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TFT supports static covariates (metadata) and dynamic covariates (time-varying inputs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TFT uses a mechanism called _____ Selection to identify relevant inputs.",
+        "type": "fill_blank",
+        "answers": [
+            "Variable"
+        ],
+        "other_options": [
+            "Feature",
+            "Input",
+            "Time"
+        ]
+    },
+    {
+        "q": "N-BEATS is a pure deep learning architecture based on backward and forward residual links.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "N-BEATS is interpretable through its trend and seasonality blocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepAR is a probabilistic forecasting model based on auto-regressive RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepAR produces a probability distribution for the forecast, not just a point estimate.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the DL Model:",
+        "type": "match",
+        "left": [
+            "DeepAR",
+            "N-BEATS",
+            "TFT",
+            "WaveNet"
+        ],
+        "right": [
+            "Probabilistic RNN",
+            "Residual Stacks",
+            "Attention + selection",
+            "Dilated Conv"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\nx.pop()\nprint(x)",
+        "o": [
+            "['1', '2']",
+            "['1', '3']",
+            "['2', '3']",
+            "Error"
+        ]
+    },
+    {
+        "q": "Neural ODEs model time series data as a continuous function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural ODEs are particularly useful for irregularly sampled time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomaly detection in time series identifies points that deviate from expected patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Isolation Forest is an unsupervised anomaly detection algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Point anomalies affects a single instance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contextual anomalies are abnormal only in a specific context (e.g., temperature in winter).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Collective anomalies are a collection of related data points that is anomalous.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('a' in 'apple')",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic Time Warping (DTW) measures similarity between two temporal sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DTW allows for non-linear alignment of sequences (e.g., different speeds).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Euclidean distance is sensitive to shifts in time, unlike DTW.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Time series clustering groups similar time series together.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature-based clustering extracts features (mean, std, etc.) to cluster series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Symbolic Aggregate approXimation (SAX) converts time series to symbolic strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Matrix Profile is a data structure for finding motifs and discords (anomalies) in time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange general TS projects:",
+        "type": "rearrange",
+        "words": [
+            "EDA",
+            "Feature Eng",
+            "Model Selection",
+            "Tuning",
+            "Deployment"
+        ]
+    },
+    {
+        "q": "Time series feature engineering involves creating new features from the raw time series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lag features are simply shifted values of the target variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rolling window statistics capture local behavior of the time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Expanding window statistics capture summary information from the _____ of the series.",
+        "type": "fill_blank",
+        "answers": [
+            "beginning"
+        ],
+        "other_options": [
+            "end",
+            "middle",
+            "window"
+        ]
+    },
+    {
+        "q": "Date-time features include attributes like day of week, month, and hour.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cyclical encoding transforms periodic features (like month) into sine and cosine pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Without cyclical encoding, a model might incorrectly interpret 'Hour 23' and 'Hour 0' as far apart.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the feature type:",
+        "type": "match",
+        "left": [
+            "Lag",
+            "Rolling Mean",
+            "Day of Week",
+            "Fourier Term"
+        ],
+        "right": [
+            "Past value",
+            "Recent average",
+            "Calendar info",
+            "Seasonality"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(range(3)))",
+        "o": [
+            "[0, 1, 2]",
+            "[1, 2, 3]",
+            "[0, 1, 2, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Stationarity is not strictly required for non-linear models like Random Forest or Neural Networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tree-based models (like XGBoost) cannot extrapolate trends outside the training range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "To handle trend with tree models, one can detrend the data first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hybrid models often combine a linear model for trend and a non-linear model for residuals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Direct forecasting trains a separate model for each step in the forecast horizon.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recursive forecasting uses the model's own predictions as inputs for future steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recursive forecasting involves a risk of error _____.",
+        "type": "fill_blank",
+        "answers": [
+            "accumulation"
+        ],
+        "other_options": [
+            "reduction",
+            "cancellation",
+            "stability"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(sum([10, 20]))",
+        "o": [
+            "30",
+            "1020",
+            "200",
+            "Error"
+        ]
+    },
+    {
+        "q": "The Diebold-Mariano test compares the forecast accuracy of two models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The null hypothesis of the DM test is that the two forecasts have equal predictive accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SMAPE is preferred over MAPE when actual values are close to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MASE < 1 implies the model is better than the naive forecast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pinball loss is used for evaluating quantile forecasts (probabilistic forecasting).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRPS (Continuous Ranked Probability Score) measures the accuracy of probabilistic forecasts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange model evaluation:",
+        "type": "rearrange",
+        "words": [
+            "Train/Test Split",
+            "Fit Model",
+            "Predict",
+            "Compute Metric"
+        ]
+    },
+    {
+        "q": "sktime is a unified framework for machine learning with time series in Python.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Darts is a Python library for easy manipulation and forecasting of time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Statsmodels provides classes and functions for the estimation of many different statistical models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PyTorch Forecasting aims to ease state-of-the-art time series forecasting with neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet was developed by _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Facebook",
+            "Meta"
+        ],
+        "other_options": [
+            "Google",
+            "Amazon",
+            "Microsoft"
+        ]
+    },
+    {
+        "q": "NeuralProphet is a neural network based successor to Prophet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(bool(0))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "K-Nearest Neighbors (KNN) works for time series by searching for similar historical patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Support Vector Regression (SVR) can be applied to time series prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gaussian Processes (GP) provide a probabilistic approach to regression and forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Symbolic Regression searches for mathematical expressions that fit the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Genetic Algorithms can be used to optimize time series model parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the algorithm class:",
+        "type": "match",
+        "left": [
+            "KNN",
+            "SVR",
+            "Random Forest",
+            "ARIMA"
+        ],
+        "right": [
+            "Instance-based",
+            "Kernel method",
+            "Ensemble",
+            "Statistical"
+        ]
+    },
+    {
+        "q": "Grid Search exhaustively searches a specified parameter grid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Random Search samples parameter settings a fixed number of times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bayesian Optimization builds a probabilistic model of the objective function to guide the search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Overfitting in time series results in good training error but poor forecast error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Regularization (L1/L2) helps prevent overfitting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(round(2.5))",
+        "o": [
+            "2",
+            "3",
+            "2.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Event detection aims to identify specific occurrences in the time series (e.g., system failure).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Change point detection identifies times when the probability distribution of a time series changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Online changepoint detection processes data points one by one.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Offline changepoint detection analyzes the entire sequence at once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CUSUM (Cumulative Sum) is a common algorithm for change detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bayesian Online Changepoint Detection (BOCPD) calculates the probability of the current run length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange CP detection types:",
+        "type": "rearrange",
+        "words": [
+            "Mean Shift",
+            "Variance Shift",
+            "Trend Shift",
+            "Seasonal Shift"
+        ]
+    },
+    {
+        "q": "Imputation is the process of replacing missing data with substituted values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mean imputation reduces the variance of the dataset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Common forms of interpolation include linear, polynomial, and spline.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KNN imputation fills missing values based on the 'k' nearest neighbors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2]\nb = a\nb.append(3)\nprint(len(a))",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Spectral analysis analyzes the frequency domain representation of a time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fourier Transform decomposes a function into a sum of sine and cosine waves.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Power Spectral Density (PSD) shows the strength of the variations at frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Periodogram is an estimate of the spectral density.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fast Fourier Transform (FFT) is an efficient algorithm to compute the DFT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A high peak in the periodogram indicates a strong _____ component.",
+        "type": "fill_blank",
+        "answers": [
+            "periodic",
+            "seasonal"
+        ],
+        "other_options": [
+            "random",
+            "trend",
+            "noise"
+        ]
+    },
+    {
+        "q": "Match the frequency concept:",
+        "type": "match",
+        "left": [
+            "Frequency",
+            "Period",
+            "Amplitude",
+            "Phase"
+        ],
+        "right": [
+            "Cycles per unit time",
+            "Time per cycle",
+            "Height of wave",
+            "Offset of wave"
+        ]
+    },
+    {
+        "q": "Wavelet Transform provides both time and frequency information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Short-Time Fourier Transform (STFT) uses a sliding window to analyze frequency changes over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Empirical Mode Decomposition (EMD) decomposes signals into Intrinsic Mode Functions (IMFs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hilbert-Huang Transform combines EMD and Hilbert spectral analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(3 // 2)",
+        "o": [
+            "1",
+            "1.5",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Global Forecasting Models are trained on many time series simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global models can learn cross-series patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local models are trained on a single time series at a time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cold start problem refers to forecasting for new items with little history.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Global models generally handle the cold start problem better than local models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange model scope:",
+        "type": "rearrange",
+        "words": [
+            "Single Series",
+            "Multiple Series",
+            "Global Model",
+            "Zero-Shot"
+        ]
+    },
+    {
+        "q": "Intermittent demand involves patterns with many zero values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Croston's method is designed for intermittent demand forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Croston's method predicts demand size and demand interval separately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SBA (Syntetos-Boylan Approximation) is a bias-corrected version of Croston's.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {1, 2}\nx.add(2)\nprint(len(x))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Probabilistic forecasting provides a distribution of possible future values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantile regression estimates the conditional median or other quantiles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bootstrap aggregating (Bagging) reduces the variance of the forecast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Boosting sequentially trains models to correct previous errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Boosting (e.g., XGBoost, LightGBM) is highly effective for tabular time series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transformers in time series adapted the self-attention mechanism for temporal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The core cost of standard self-attention is quadratic with respect to sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Informer addresses the quadratic complexity using ProbSparse attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Informer uses a distilling operation to reduce the sequence length in deeper layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoformer replaces standard self-attention with an Auto-Correlation mechanism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoformer uses a decomposition architecture to handle trend and seasonality separately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fedformer uses frequency-enhanced averaging in the frequency domain.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fedformer performs attention in the _____ domain using Fourier Analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "frequency"
+        ],
+        "other_options": [
+            "time",
+            "spatial",
+            "wavelet"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(zip([1,2], [3,4])))",
+        "o": [
+            "[(1, 3), (2, 4)]",
+            "[(1, 2), (3, 4)]",
+            "[1, 2, 3, 4]",
+            "Error"
+        ]
+    },
+    {
+        "q": "PatchTST splits the time series into sub-sequences or patches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Channel Independence in PatchTST treats each variable in a multivariate series independently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Patching reduces the computational cost by reducing the effective sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "iTransformer inverts the dimensions, applying attention and feed-forward networks across features/channels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Crossformer utilizes a two-stage attention to capture both time and cross-dimension dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Transformer:",
+        "type": "match",
+        "left": [
+            "Informer",
+            "Autoformer",
+            "PatchTST",
+            "iTransformer"
+        ],
+        "right": [
+            "ProbSparse",
+            "Auto-Correlation",
+            "Patching",
+            "Inverted Dims"
+        ]
+    },
+    {
+        "q": "Foundation models for time series are pre-trained on large diverse datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-shot forecasting allows a model to predict on new data without fine-tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TimeGPT is a generative pre-trained transformer for time series forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lag-Llama adapts the Llama architecture for univariate probabilistic forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chronos treats time series forecasting as a language modeling task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chronos quantizes time series values into tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Moirai is a universal time series forecasting model designed to handle masked multi-variate data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange foundation models:",
+        "type": "rearrange",
+        "words": [
+            "Collect Data",
+            "Pre-train",
+            "Fine-tune",
+            "Zero-Shot"
+        ]
+    },
+    {
+        "q": "Spatial-Temporal Graph Neural Networks (ST-GNNs) model dependencies in both space and time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In ST-GNNs for traffic forecasting, graph nodes typically represent _____.",
+        "type": "fill_blank",
+        "answers": [
+            "sensors",
+            "locations"
+        ],
+        "other_options": [
+            "times",
+            "cars",
+            "speeds"
+        ]
+    },
+    {
+        "q": "Graph Convolutional Networks (GCNs) capture spatial dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph WaveNet combines GCNs with Dilated Casual Convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An adjacency matrix defines the structure of the graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adaptive adjacency matrices can be learned from data during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {'a': 1, 'b': 2}\nprint('a' in d)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "State Space Models (SSMs) map 1D function or sequence through an implicit latent state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structured State Space (S4) models can handle very long sequences efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba is a selective state space model that achieves linear scaling with sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba allows the model to selectively remember or ignore information based on current input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "S4 and Mamba are often used as alternatives to RNNs and Transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contrastive Learning aims to learn representations where similar pairs are close and dissimilar pairs are far.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TS2Vec is a universal framework for learning time series representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TS2Vec uses hierarchical contrastive learning across different time scales.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Positive pairs in time series contrastive learning are often generated by data augmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jittering adds random noise to the time series as an augmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Permutation involves randomly rearranging segments of the time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list('abc'))",
+        "o": [
+            "['a', 'b', 'c']",
+            "['abc']",
+            "('a', 'b', 'c')",
+            "Error"
+        ]
+    },
+    {
+        "q": "Domain Adaptation allows a model trained on a source domain to perform well on a target domain.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariate shift occurs when the distribution of input variables changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concept drift occurs when the relationship between inputs and output changes over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Online learning updates the model incrementally as new data arrives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Forgetting factor in online learning determines how quickly old information is discarded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Catastrophic forgetting is a problem where Neural Networks forget old knowledge when learning new tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the drift type:",
+        "type": "match",
+        "left": [
+            "Concept Drift",
+            "Covariate Shift",
+            "Prior Probability Shift"
+        ],
+        "right": [
+            "Diff P(Y|X)",
+            "Diff P(X)",
+            "Diff P(Y)"
+        ]
+    },
+    {
+        "q": "SHAP (SHapley Additive exPlanations) can be applied to time series to explain feature importance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LIME (Local Interpretable Model-agnostic Explanations) explains predictions by approximating locally with a linear model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Saliency maps highlight which time steps contributed most to the prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactual explanations ask 'how would the prediction change if the input was x?'",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = set([1, 2, 2])\nprint(len(s))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Recurrent Graph Neural Networks (RGNNs) combine RNNs and GCNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RGNNs evolve the graph state over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diffusion Convolutional Recurrent Neural Network (DCRNN) models traffic flow as a diffusion process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temporal Graph Convolutional Network (TGCN) treats spatial and temporal dependencies separately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Low-rank adaptation (LoRA) can be applied to fine-tune Foundation Models for specific time series tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-step ahead prediction predicts only the immediate next time step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-step ahead prediction predicts a sequence of future values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Direct multi-step strategy trains 'H' different models for 'H' future steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MIMO (Multi-Input Multi-Output) strategy predicts all future steps simultaneously with one model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DirRec (Direct Recursive) strategy combines direct and recursive approaches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ranking loss is used in recommender systems but rarely in time series forecasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantile Loss is asymmetric.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Huber Loss is less sensitive to outliers than MSE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(10 % 3)",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "10"
+        ]
+    },
+    {
+        "q": "Time series data augmentation is less straightforward than image augmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scaling augmentation multiplies the time series by a random scalar.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Time warping augmentation distorts the time intervals between points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Magnitude warping distorts the magnitude of values by a smooth curve.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange augmentation steps:",
+        "type": "rearrange",
+        "words": [
+            "Select method",
+            "Generate samples",
+            "Add to train",
+            "Retrain"
+        ]
+    },
+    {
+        "q": "Self-attention has O(L^2) complexity with respect to sequence length L.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear attention approximations aim to reduce complexity to O(L).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LogSparse attention allows attention to attend to exponentially distant positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pyraformer explores multi-resolution attention using a pyramidal graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-Former uses dimension-segmentation to process multivariate series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('word'.find('z'))",
+        "o": [
+            "-1",
+            "0",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Continuous-Time Recurrent Neural Networks (CTRNNs) map time to a continuous variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Liquid Time-Constant (LTC) networks are a type of continuous-time RNN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LTCs are inspired by the nervous system of the C. elegans worm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Circuit Policies (NCPs) are sparse, interpretable RNN architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NCPs have shown robustness to distribution shifts in time series driving tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Class SVM is a supervised learning algorithm for anomaly detection.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "One-Class SVM learns a decision boundary that encompasses the majority of the normal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoencoders detect anomalies by measuring the _____ error.",
+        "type": "fill_blank",
+        "answers": [
+            "reconstruction"
+        ],
+        "other_options": [
+            "classification",
+            "regression",
+            "prediction"
+        ]
+    },
+    {
+        "q": "In Autoencoder-based anomaly detection, anomalies typically have higher reconstruction error than normal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Variational Autoencoders (VAEs) learn a probabilistic latent space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GANs (Generative Adversarial Networks) can be used for time series anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TadGAN is a GAN-based framework specifically designed for time series anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(all([True, True, False]))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "BRITS stands for Bidirectional Recurrent Imputation for Time Series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BRITS imputes missing values by considering the correlation between different time steps and features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SAITS (Self-Attention Imputation for Time Series) uses a joint optimization of imputation and reconstruction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Missing data mechanisms include MCAR, MAR, and MNAR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MCAR stands for Missing Completely At Random.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MNAR (Missing Not At Random) means the missingness depends on the value of the missing data itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the missing data type:",
+        "type": "match",
+        "left": [
+            "MCAR",
+            "MAR",
+            "MNAR"
+        ],
+        "right": [
+            "Truly random",
+            "Depends on observed",
+            "Depends on missing"
+        ]
+    },
+    {
+        "q": "WAPE stands for Weighted Absolute Percentage Error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WAPE is defined as sum(|Actual - Forecast|) / sum(|Actual|).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Normalized Deviation (ND) is another name for WAPE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RMSE is more sensitive to outliers than MAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Geometric Mean Relative Absolute Error (GMRAE) is less sensitive to outliers than arithmetic means.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(any([False, False, True]))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "MinT (Minimum Trace) reconciliation minimizes the trace of the forecast error covariance matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MinT provides the optimal linear unbiased combination of forecasts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OLS reconciliation assumes errors are uncorrelated and have equal variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "WLS (Weighted Least Squares) reconciliation accounts for differences in forecast variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shrinkage estimators can improve the estimation of the covariance matrix in MinT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange reconciliation complexity:",
+        "type": "rearrange",
+        "words": [
+            "Bottom-Up",
+            "OLS",
+            "WLS",
+            "MinT"
+        ]
+    },
+    {
+        "q": "TimeGAN is a framework for generating realistic synthetic time series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TimeGAN preserves temporal dynamics by combining supervised and adversarial loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Privacy-preserving synthetic data aims to generate data that does not leak sensitive information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Differential Privacy can be integrated into GAN training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fidelity measures how closely synthetic data resembles real data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Utility measures how well models trained on synthetic data perform on real data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(map(lambda x: x*2, [1, 2])))",
+        "o": [
+            "[2, 4]",
+            "[1, 2, 1, 2]",
+            "[1, 4]",
+            "Error"
+        ]
+    },
+    {
+        "q": "A Feature Store automates the management and serving of features for ML models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Point-in-time correctness is crucial for time series feature stores to avoid data leakage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Backfilling involves computing feature values for historical timestamps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Online feature store serves low-latency features for real-time inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Offline feature store is used for training and batch inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Drift monitoring compares the statistical properties of training data vs production data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Population Stability Index (PSI) is a metric to measure distributional shift.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kullback-Leibler (KL) divergence measures the difference between two probability distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange MLOps pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Feature Store",
+            "Model Registry",
+            "Serving",
+            "Monitoring"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(sorted([3, 1, 2]))",
+        "o": [
+            "[1, 2, 3]",
+            "[3, 2, 1]",
+            "[2, 1, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Hippo (High-order Polynomial Projection Operators) provides a mathematical framework for state space memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linear State Space Layers (LSSL) combine the strengths of RNNs, CNNs, and ODEs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "S4 efficiently computes the state matrix power using the diagonal plus low-rank structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mamba's selection mechanism makes the parameters functions of the input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hardware-aware algorithms optimize model execution for specific hardware (e.g., GPU kernel fusion).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FlashAttention uses tiling to reduce memory IO.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the efficiency technique:",
+        "type": "match",
+        "left": [
+            "Quantization",
+            "Pruning",
+            "Distillation",
+            "Kernel Fusion"
+        ],
+        "right": [
+            "Reduced precision",
+            "Sparse weights",
+            "Smaller model",
+            "Fused ops"
+        ]
+    },
+    {
+        "q": "Causal effects in time series can be estimated using Structural Causal Models (SCM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Do-calculus is a set of rules for manipulating probability expressions with causal interventions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactual estimation involves predicting what would have happened under a different treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Synthetic Control Method constructs a synthetic version of the treatment unit from a weighted combination of control units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(round(0.5))",
+        "o": [
+            "0",
+            "1",
+            "0.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic Factor models reduce high-dimensional data to a few underlying latent factors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PCA (Principal Component Analysis) can be used for dimensionality reduction in time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ICA (Independent Component Analysis) separates a multivariate signal into additive independent subcomponents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Blind Source Separation aims to recover source signals from a mixture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cocktail party problem is a classic example of blind source separation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Singular Spectrum Analysis (SSA) decomposes a time series into sum of interpretable components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SSA uses Single Value Decomposition (SVD) of the trajectory matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the decomposition:",
+        "type": "match",
+        "left": [
+            "PCA",
+            "ICA",
+            "SSA",
+            "STL"
+        ],
+        "right": [
+            "Variance max",
+            "Independence",
+            "SVD based",
+            "Loess based"
+        ]
+    },
+    {
+        "q": "Reservoir Computing uses a fixed, random recurrent network (reservoir) and trains only the output layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Echo State Networks (ESN) are a type of reservoir computing for RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Extreme Learning Machines (ELM) are feedforward networks with random hidden nodes and trained output weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Conceptually, Reservoir Computing avoids backpropagation through time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\ndel x[1]\nprint(x)",
+        "o": [
+            "[1, 3]",
+            "[1, 2]",
+            "[2, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Topological Data Analysis (TDA) analyzes the shape of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Persistent Homology computes topological features at different spatial resolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TDA can be used to detect phase transitions in time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Takens' Theorem relates time series reconstruction to the underlying dynamical system attractor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Phase space reconstruction involves embedding the time series into a higher-dimensional space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lyapunov exponent measures the rate of separation of infinitesimally close trajectories.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A positive Lyapunov exponent indicates chaos.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fractal dimension measures the complexity of the time series geometry.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hurst exponent relates to the long-term memory of a time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hurst exponent H=0.5 implies a random walk.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hurst exponent 0.5 < H < 1 implies a persistent (trending) series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hurst exponent 0 < H < 0.5 implies an anti-persistent (mean-reverting) series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange chaos concepts:",
+        "type": "rearrange",
+        "words": [
+            "Attractor",
+            "Embedding",
+            "Lyapunov",
+            "Fractal"
+        ]
+    },
+    {
+        "q": "Approximate Entropy measures the regularity and unpredictability of fluctuations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sample Entropy is a modification of Approximate Entropy that is independent of data length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Permutation Entropy measures the complexity based on the order relations of values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recurrence Plots visualize the recurrence of states in phase space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recurrence Quantification Analysis (RQA) quantifies features of recurrence plots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(min(max(1, 2), 3))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    }
+]

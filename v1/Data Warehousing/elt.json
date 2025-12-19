@@ -1,0 +1,6656 @@
+[
+    {
+        "q": "ELT stands for Extract, Load, Transform.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the main difference between ETL and ELT?",
+        "type": "mcq",
+        "o": [
+            "ELT transforms data after loading into the target system",
+            "ELT transforms before loading",
+            "ELT doesn't transform data",
+            "ETL loads data faster"
+        ]
+    },
+    {
+        "q": "In ELT, transformation happens in the _____ system.",
+        "type": "fill_blank",
+        "answers": [
+            "target"
+        ],
+        "other_options": [
+            "source",
+            "staging",
+            "external"
+        ]
+    },
+    {
+        "q": "Which cloud technology enabled the rise of ELT?",
+        "type": "mcq",
+        "o": [
+            "Cloud data warehouses with scalable compute",
+            "On-premise servers",
+            "Mainframes",
+            "Local databases"
+        ]
+    },
+    {
+        "q": "Match the data integration approach with its characteristic:",
+        "type": "match",
+        "left": [
+            "ETL",
+            "ELT",
+            "Data replication",
+            "CDC"
+        ],
+        "right": [
+            "Transform before load",
+            "Transform after load",
+            "Copy data",
+            "Capture changes"
+        ]
+    },
+    {
+        "q": "Rearrange the ELT process steps:",
+        "type": "rearrange",
+        "words": [
+            "Extract from Sources",
+            "Load to Warehouse",
+            "Transform in Warehouse",
+            "Serve to Consumers"
+        ]
+    },
+    {
+        "q": "ELT leverages the processing power of modern data warehouses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Extract phase in ELT?",
+        "type": "mcq",
+        "o": [
+            "Pulling data from source systems",
+            "Transforming data",
+            "Loading data",
+            "Serving data"
+        ]
+    },
+    {
+        "q": "The Extract phase retrieves data from _____ systems.",
+        "type": "fill_blank",
+        "answers": [
+            "source"
+        ],
+        "other_options": [
+            "target",
+            "warehouse",
+            "reporting"
+        ]
+    },
+    {
+        "q": "Which source types can ELT extract from?",
+        "type": "mcq",
+        "o": [
+            "Databases, APIs, files, SaaS applications",
+            "Only databases",
+            "Only files",
+            "Only APIs"
+        ]
+    },
+    {
+        "q": "Match the source type with an example:",
+        "type": "match",
+        "left": [
+            "RDBMS",
+            "NoSQL",
+            "SaaS",
+            "File"
+        ],
+        "right": [
+            "PostgreSQL",
+            "MongoDB",
+            "Salesforce",
+            "CSV"
+        ]
+    },
+    {
+        "q": "The Extract phase should minimize impact on source systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Load phase in ELT?",
+        "type": "mcq",
+        "o": [
+            "Moving extracted data into the target data warehouse",
+            "Extracting data",
+            "Transforming data",
+            "Cleaning data"
+        ]
+    },
+    {
+        "q": "Loading typically uses _____ operations for large datasets.",
+        "type": "fill_blank",
+        "answers": [
+            "bulk"
+        ],
+        "other_options": [
+            "single-row",
+            "slow",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which loading pattern is most efficient for initial loads?",
+        "type": "mcq",
+        "o": [
+            "Bulk batch loading",
+            "Row-by-row inserts",
+            "Manual data entry",
+            "Copy and paste"
+        ]
+    },
+    {
+        "q": "Match the load type with its use case:",
+        "type": "match",
+        "left": [
+            "Full load",
+            "Incremental load",
+            "Streaming load",
+            "Micro-batch"
+        ],
+        "right": [
+            "Initial data",
+            "Only changes",
+            "Real-time",
+            "Near real-time"
+        ]
+    },
+    {
+        "q": "Rearrange the loading best practices:",
+        "type": "rearrange",
+        "words": [
+            "Prepare Data",
+            "Use Bulk Operations",
+            "Validate Load",
+            "Log Results"
+        ]
+    },
+    {
+        "q": "Raw data is typically loaded without transformation initially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Transform phase in ELT?",
+        "type": "mcq",
+        "o": [
+            "Processing and shaping data within the target warehouse",
+            "Extracting data from sources",
+            "Loading data to storage",
+            "Deleting old data"
+        ]
+    },
+    {
+        "q": "Transformations in ELT use _____ queries in the warehouse.",
+        "type": "fill_blank",
+        "answers": [
+            "SQL"
+        ],
+        "other_options": [
+            "external",
+            "manual",
+            "batch"
+        ]
+    },
+    {
+        "q": "Which transformation is commonly used in ELT?",
+        "type": "mcq",
+        "o": [
+            "Data cleaning, aggregation, joins, and calculations",
+            "Only format changes",
+            "Only deletions",
+            "No transformations"
+        ]
+    },
+    {
+        "q": "Match the transformation type with its purpose:",
+        "type": "match",
+        "left": [
+            "Cleaning",
+            "Enrichment",
+            "Aggregation",
+            "Deduplication"
+        ],
+        "right": [
+            "Fix data quality",
+            "Add context",
+            "Summarize data",
+            "Remove duplicates"
+        ]
+    },
+    {
+        "q": "Transformations in ELT benefit from warehouse scalability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Modern Data Stack?",
+        "type": "mcq",
+        "o": [
+            "A collection of cloud-native tools for data management",
+            "Legacy data systems",
+            "On-premise solutions",
+            "Mainframe systems"
+        ]
+    },
+    {
+        "q": "The Modern Data Stack emphasizes _____ and modularity.",
+        "type": "fill_blank",
+        "answers": [
+            "cloud-native"
+        ],
+        "other_options": [
+            "on-premise",
+            "legacy",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which characteristic defines Modern Data Stack tools?",
+        "type": "mcq",
+        "o": [
+            "SaaS-based, API-first, and interchangeable components",
+            "Monolithic architecture",
+            "Vendor lock-in",
+            "Manual configuration"
+        ]
+    },
+    {
+        "q": "Match the MDS component with its function:",
+        "type": "match",
+        "left": [
+            "Ingestion",
+            "Warehouse",
+            "Transformation",
+            "BI"
+        ],
+        "right": [
+            "Fivetran/Airbyte",
+            "Snowflake/BigQuery",
+            "dbt",
+            "Looker/Tableau"
+        ]
+    },
+    {
+        "q": "Rearrange the Modern Data Stack layers:",
+        "type": "rearrange",
+        "words": [
+            "Data Sources",
+            "Data Ingestion",
+            "Data Warehouse",
+            "Transformation",
+            "Business Intelligence"
+        ]
+    },
+    {
+        "q": "The Modern Data Stack promotes best-of-breed tool selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data ingestion?",
+        "type": "mcq",
+        "o": [
+            "The process of collecting and importing data from sources",
+            "Data transformation",
+            "Data visualization",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "Ingestion tools connect to sources and move data to _____.",
+        "type": "fill_blank",
+        "answers": [
+            "destinations"
+        ],
+        "other_options": [
+            "sources",
+            "archives",
+            "backups"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for managed data ingestion?",
+        "type": "mcq",
+        "o": [
+            "Fivetran, Airbyte, or Stitch",
+            "Excel",
+            "Word",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Match the ingestion tool with its type:",
+        "type": "match",
+        "left": [
+            "Fivetran",
+            "Airbyte",
+            "Stitch",
+            "Custom scripts"
+        ],
+        "right": [
+            "Managed SaaS",
+            "Open-source",
+            "Managed SaaS",
+            "Self-built"
+        ]
+    },
+    {
+        "q": "Managed ingestion tools reduce maintenance overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt (data build tool)?",
+        "type": "mcq",
+        "o": [
+            "A transformation tool that uses SQL for data modeling",
+            "A visualization tool",
+            "An ingestion tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "dbt transforms data using _____ in the warehouse.",
+        "type": "fill_blank",
+        "answers": [
+            "SQL"
+        ],
+        "other_options": [
+            "Python",
+            "Java",
+            "C++"
+        ]
+    },
+    {
+        "q": "Which dbt feature enables modular transformations?",
+        "type": "mcq",
+        "o": [
+            "Models that reference other models",
+            "Flat files",
+            "Manual scripts",
+            "External tools"
+        ]
+    },
+    {
+        "q": "Match the dbt concept with its function:",
+        "type": "match",
+        "left": [
+            "Models",
+            "Sources",
+            "Tests",
+            "Documentation"
+        ],
+        "right": [
+            "Transform SQL",
+            "Define raw tables",
+            "Data quality",
+            "Describe data"
+        ]
+    },
+    {
+        "q": "Rearrange the dbt workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define Sources",
+            "Write Models",
+            "Run Tests",
+            "Build Documentation"
+        ]
+    },
+    {
+        "q": "dbt applies software engineering practices to analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a data lake?",
+        "type": "mcq",
+        "o": [
+            "A central repository for raw data at any scale",
+            "A relational database",
+            "A visualization tool",
+            "A spreadsheet"
+        ]
+    },
+    {
+        "q": "Data lakes store data in its _____ format.",
+        "type": "fill_blank",
+        "answers": [
+            "raw"
+        ],
+        "other_options": [
+            "transformed",
+            "cleaned",
+            "aggregated"
+        ]
+    },
+    {
+        "q": "Which storage type is commonly used for data lakes?",
+        "type": "mcq",
+        "o": [
+            "Object storage like S3, Azure Blob, or GCS",
+            "Local hard drives",
+            "Tape backup",
+            "Floppy disks"
+        ]
+    },
+    {
+        "q": "Match the data storage type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Data lake",
+            "Data warehouse",
+            "Data mart",
+            "Database"
+        ],
+        "right": [
+            "Raw storage",
+            "Schema-on-write",
+            "Department focus",
+            "Transactional"
+        ]
+    },
+    {
+        "q": "Data lakes support schema-on-read for flexibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a lakehouse architecture?",
+        "type": "mcq",
+        "o": [
+            "Combines data lake flexibility with warehouse reliability",
+            "Only a data lake",
+            "Only a warehouse",
+            "A backup system"
+        ]
+    },
+    {
+        "q": "Lakehouses enable _____ processing on lake storage.",
+        "type": "fill_blank",
+        "answers": [
+            "ACID"
+        ],
+        "other_options": [
+            "batch-only",
+            "manual",
+            "slow"
+        ]
+    },
+    {
+        "q": "Which technology enables lakehouse capabilities?",
+        "type": "mcq",
+        "o": [
+            "Delta Lake, Apache Iceberg, or Apache Hudi",
+            "Excel",
+            "Word",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Match the table format with its origin:",
+        "type": "match",
+        "left": [
+            "Delta Lake",
+            "Apache Iceberg",
+            "Apache Hudi",
+            "Parquet"
+        ],
+        "right": [
+            "Databricks",
+            "Netflix/Apple",
+            "Uber",
+            "Apache Foundation"
+        ]
+    },
+    {
+        "q": "Rearrange the lakehouse benefits:",
+        "type": "rearrange",
+        "words": [
+            "Raw Data Storage",
+            "ACID Transactions",
+            "Schema Evolution",
+            "BI Analytics"
+        ]
+    },
+    {
+        "q": "Lakehouses unify batch and streaming on one platform.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a data pipeline?",
+        "type": "mcq",
+        "o": [
+            "An automated workflow for moving and processing data",
+            "A physical pipe",
+            "A visualization",
+            "A manual process"
+        ]
+    },
+    {
+        "q": "Data pipelines automate the flow from _____ to target.",
+        "type": "fill_blank",
+        "answers": [
+            "source"
+        ],
+        "other_options": [
+            "target",
+            "archive",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which characteristic is essential for data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Reliability, scalability, and monitoring",
+            "Manual intervention",
+            "Single-use",
+            "No error handling"
+        ]
+    },
+    {
+        "q": "Match the pipeline type with its schedule:",
+        "type": "match",
+        "left": [
+            "Batch",
+            "Micro-batch",
+            "Streaming",
+            "Event-driven"
+        ],
+        "right": [
+            "Hourly/daily",
+            "Minutes",
+            "Continuous",
+            "On trigger"
+        ]
+    },
+    {
+        "q": "Data pipelines should be idempotent for reliability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is orchestration in data engineering?",
+        "type": "mcq",
+        "o": [
+            "Coordinating and scheduling data pipeline tasks",
+            "Playing music",
+            "Storing data",
+            "Visualizing data"
+        ]
+    },
+    {
+        "q": "Orchestration tools manage task _____ and scheduling.",
+        "type": "fill_blank",
+        "answers": [
+            "dependencies"
+        ],
+        "other_options": [
+            "storage",
+            "visualization",
+            "deletion"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for data orchestration?",
+        "type": "mcq",
+        "o": [
+            "Apache Airflow, Dagster, or Prefect",
+            "Excel",
+            "Word",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Match the orchestration tool with its characteristic:",
+        "type": "match",
+        "left": [
+            "Apache Airflow",
+            "Dagster",
+            "Prefect",
+            "Luigi"
+        ],
+        "right": [
+            "Industry standard",
+            "Software-defined assets",
+            "Modern Python",
+            "Spotify origin"
+        ]
+    },
+    {
+        "q": "Rearrange the orchestration workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define DAG",
+            "Schedule Tasks",
+            "Monitor Execution",
+            "Handle Failures"
+        ]
+    },
+    {
+        "q": "Orchestration ensures tasks run in the correct order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a DAG in data orchestration?",
+        "type": "mcq",
+        "o": [
+            "Directed Acyclic Graph of task dependencies",
+            "Data Analysis Group",
+            "Database Access Gateway",
+            "Dynamic Allocation Grid"
+        ]
+    },
+    {
+        "q": "DAGs represent pipeline tasks and their _____.",
+        "type": "fill_blank",
+        "answers": [
+            "dependencies"
+        ],
+        "other_options": [
+            "storage",
+            "visualization",
+            "backups"
+        ]
+    },
+    {
+        "q": "Which property makes a graph 'acyclic'?",
+        "type": "mcq",
+        "o": [
+            "No task can loop back to create a cycle",
+            "Tasks run in circles",
+            "Tasks have no direction",
+            "Tasks are unordered"
+        ]
+    },
+    {
+        "q": "Match the DAG concept with its meaning:",
+        "type": "match",
+        "left": [
+            "Node",
+            "Edge",
+            "Directed",
+            "Acyclic"
+        ],
+        "right": [
+            "Task",
+            "Dependency",
+            "Order matters",
+            "No cycles"
+        ]
+    },
+    {
+        "q": "DAGs enable parallel execution of independent tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Apache Airflow?",
+        "type": "mcq",
+        "o": [
+            "An open-source workflow orchestration platform",
+            "A database",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Airflow DAGs are written in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Python"
+        ],
+        "other_options": [
+            "SQL",
+            "Java",
+            "C++"
+        ]
+    },
+    {
+        "q": "Which Airflow component executes tasks?",
+        "type": "mcq",
+        "o": [
+            "Worker processes",
+            "Scheduler only",
+            "Webserver only",
+            "Database only"
+        ]
+    },
+    {
+        "q": "Match the Airflow component with its role:",
+        "type": "match",
+        "left": [
+            "Scheduler",
+            "Webserver",
+            "Worker",
+            "Metadata DB"
+        ],
+        "right": [
+            "Trigger DAGs",
+            "UI interface",
+            "Run tasks",
+            "Store state"
+        ]
+    },
+    {
+        "q": "Rearrange the Airflow execution flow:",
+        "type": "rearrange",
+        "words": [
+            "Scheduler Parses DAG",
+            "Task Queued",
+            "Worker Executes",
+            "Results Stored"
+        ]
+    },
+    {
+        "q": "Airflow supports various executors for different scales.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is incremental loading?",
+        "type": "mcq",
+        "o": [
+            "Loading only new or changed data since the last run",
+            "Loading all data every time",
+            "Loading random data",
+            "Loading data once"
+        ]
+    },
+    {
+        "q": "Incremental loads use _____ values to identify new data.",
+        "type": "fill_blank",
+        "answers": [
+            "watermark"
+        ],
+        "other_options": [
+            "random",
+            "fixed",
+            "static"
+        ]
+    },
+    {
+        "q": "Which column is commonly used for incremental loads?",
+        "type": "mcq",
+        "o": [
+            "Timestamp or auto-incrementing ID columns",
+            "Name columns",
+            "Description columns",
+            "Random columns"
+        ]
+    },
+    {
+        "q": "Match the load type with its data volume:",
+        "type": "match",
+        "left": [
+            "Full load",
+            "Incremental",
+            "CDC",
+            "Merge"
+        ],
+        "right": [
+            "All data",
+            "Only new",
+            "Only changes",
+            "Insert/update"
+        ]
+    },
+    {
+        "q": "Incremental loading reduces processing time and costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Change Data Capture (CDC)?",
+        "type": "mcq",
+        "o": [
+            "Capturing row-level changes from source databases",
+            "Full data replication",
+            "Data visualization",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "CDC tracks INSERT, UPDATE, and _____ operations.",
+        "type": "fill_blank",
+        "answers": [
+            "DELETE"
+        ],
+        "other_options": [
+            "SELECT",
+            "CREATE",
+            "DROP"
+        ]
+    },
+    {
+        "q": "Which CDC method reads database transaction logs?",
+        "type": "mcq",
+        "o": [
+            "Log-based CDC",
+            "Trigger-based CDC",
+            "Timestamp-based",
+            "Full refresh"
+        ]
+    },
+    {
+        "q": "Match the CDC method with its approach:",
+        "type": "match",
+        "left": [
+            "Log-based",
+            "Trigger-based",
+            "Timestamp-based",
+            "Diff-based"
+        ],
+        "right": [
+            "Read WAL",
+            "Database triggers",
+            "Modified column",
+            "Compare snapshots"
+        ]
+    },
+    {
+        "q": "Rearrange the CDC pipeline steps:",
+        "type": "rearrange",
+        "words": [
+            "Capture Changes",
+            "Stream to Target",
+            "Apply Changes",
+            "Verify Consistency"
+        ]
+    },
+    {
+        "q": "Log-based CDC has minimal impact on source systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data quality?",
+        "type": "mcq",
+        "o": [
+            "The accuracy, completeness, and reliability of data",
+            "Data storage capacity",
+            "Data visualization style",
+            "Data deletion speed"
+        ]
+    },
+    {
+        "q": "Data quality ensures data is fit for its intended _____.",
+        "type": "fill_blank",
+        "answers": [
+            "purpose"
+        ],
+        "other_options": [
+            "storage",
+            "deletion",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which dimension measures data quality?",
+        "type": "mcq",
+        "o": [
+            "Accuracy, completeness, timeliness, and consistency",
+            "Only accuracy",
+            "Only completeness",
+            "Only timeliness"
+        ]
+    },
+    {
+        "q": "Match the data quality dimension with its meaning:",
+        "type": "match",
+        "left": [
+            "Accuracy",
+            "Completeness",
+            "Timeliness",
+            "Consistency"
+        ],
+        "right": [
+            "Correct values",
+            "No missing data",
+            "Current data",
+            "Same across systems"
+        ]
+    },
+    {
+        "q": "Poor data quality leads to incorrect business decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data validation?",
+        "type": "mcq",
+        "o": [
+            "Checking data against defined rules and constraints",
+            "Deleting data",
+            "Visualizing data",
+            "Storing data"
+        ]
+    },
+    {
+        "q": "Validation checks ensure data meets _____ requirements.",
+        "type": "fill_blank",
+        "answers": [
+            "business"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "temporary"
+        ]
+    },
+    {
+        "q": "Which validation type checks data types?",
+        "type": "mcq",
+        "o": [
+            "Schema validation",
+            "Business validation",
+            "Random validation",
+            "No validation"
+        ]
+    },
+    {
+        "q": "Match the validation type with its check:",
+        "type": "match",
+        "left": [
+            "Null check",
+            "Range check",
+            "Pattern check",
+            "Referential check"
+        ],
+        "right": [
+            "Missing values",
+            "Value bounds",
+            "Format match",
+            "Key exists"
+        ]
+    },
+    {
+        "q": "Rearrange the data validation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define Rules",
+            "Apply to Data",
+            "Identify Failures",
+            "Handle Exceptions"
+        ]
+    },
+    {
+        "q": "Data validation should happen at multiple pipeline stages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data testing in dbt?",
+        "type": "mcq",
+        "o": [
+            "Automated assertions to validate data models",
+            "Manual data review",
+            "Data visualization",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "dbt tests check data _____ and relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "quality"
+        ],
+        "other_options": [
+            "storage",
+            "backup",
+            "speed"
+        ]
+    },
+    {
+        "q": "Which dbt test checks for unique values?",
+        "type": "mcq",
+        "o": [
+            "unique test",
+            "not_null test",
+            "accepted_values test",
+            "relationships test"
+        ]
+    },
+    {
+        "q": "Match the dbt test with its assertion:",
+        "type": "match",
+        "left": [
+            "unique",
+            "not_null",
+            "accepted_values",
+            "relationships"
+        ],
+        "right": [
+            "No duplicates",
+            "No nulls",
+            "Valid values",
+            "Foreign key exists"
+        ]
+    },
+    {
+        "q": "dbt tests run automatically during builds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data observability?",
+        "type": "mcq",
+        "o": [
+            "End-to-end visibility into data pipeline health and quality",
+            "Data visualization",
+            "Data storage",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "Observability tools monitor data _____ and freshness.",
+        "type": "fill_blank",
+        "answers": [
+            "quality"
+        ],
+        "other_options": [
+            "size",
+            "color",
+            "speed"
+        ]
+    },
+    {
+        "q": "Which tool provides data observability?",
+        "type": "mcq",
+        "o": [
+            "Monte Carlo, Great Expectations, or Metaplane",
+            "Excel",
+            "Word",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Match the observability pillar with its focus:",
+        "type": "match",
+        "left": [
+            "Freshness",
+            "Volume",
+            "Schema",
+            "Distribution"
+        ],
+        "right": [
+            "Data recency",
+            "Row counts",
+            "Structure changes",
+            "Value patterns"
+        ]
+    },
+    {
+        "q": "Rearrange the observability maturity:",
+        "type": "rearrange",
+        "words": [
+            "Manual Checks",
+            "Basic Alerts",
+            "Automated Testing",
+            "Full Observability"
+        ]
+    },
+    {
+        "q": "Data observability reduces data incident resolution time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is schema drift?",
+        "type": "mcq",
+        "o": [
+            "Unexpected changes to source data structures",
+            "Data movement",
+            "Query changes",
+            "User changes"
+        ]
+    },
+    {
+        "q": "Schema drift can break downstream _____.",
+        "type": "fill_blank",
+        "answers": [
+            "pipelines"
+        ],
+        "other_options": [
+            "users",
+            "servers",
+            "networks"
+        ]
+    },
+    {
+        "q": "Which approach handles schema drift?",
+        "type": "mcq",
+        "o": [
+            "Schema evolution policies and automated detection",
+            "Ignore changes",
+            "Manual monitoring only",
+            "No handling needed"
+        ]
+    },
+    {
+        "q": "Match the schema change with its impact:",
+        "type": "match",
+        "left": [
+            "Column added",
+            "Column removed",
+            "Type changed",
+            "Column renamed"
+        ],
+        "right": [
+            "Usually safe",
+            "Breaks queries",
+            "May cause errors",
+            "Breaks references"
+        ]
+    },
+    {
+        "q": "Proactive schema change detection prevents pipeline failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data lineage?",
+        "type": "mcq",
+        "o": [
+            "Tracking data origin, transformations, and consumers",
+            "Data storage location",
+            "Data visualization",
+            "Data deletion history"
+        ]
+    },
+    {
+        "q": "Lineage shows how data _____ through systems.",
+        "type": "fill_blank",
+        "answers": [
+            "flows"
+        ],
+        "other_options": [
+            "stops",
+            "hides",
+            "deletes"
+        ]
+    },
+    {
+        "q": "Which benefit does data lineage provide?",
+        "type": "mcq",
+        "o": [
+            "Impact analysis, debugging, and compliance",
+            "Faster storage",
+            "Better visualization",
+            "No benefits"
+        ]
+    },
+    {
+        "q": "Match the lineage type with its scope:",
+        "type": "match",
+        "left": [
+            "Column-level",
+            "Table-level",
+            "Pipeline-level",
+            "Business-level"
+        ],
+        "right": [
+            "Field tracking",
+            "Object tracking",
+            "Job tracking",
+            "Process tracking"
+        ]
+    },
+    {
+        "q": "Rearrange the lineage documentation process:",
+        "type": "rearrange",
+        "words": [
+            "Identify Sources",
+            "Map Transformations",
+            "Track Consumers",
+            "Document Dependencies"
+        ]
+    },
+    {
+        "q": "Data lineage is essential for regulatory compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a data catalog?",
+        "type": "mcq",
+        "o": [
+            "An inventory of data assets with metadata",
+            "A product catalog",
+            "A file system",
+            "A database"
+        ]
+    },
+    {
+        "q": "Data catalogs enable data _____ and governance.",
+        "type": "fill_blank",
+        "answers": [
+            "discovery"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "corruption"
+        ]
+    },
+    {
+        "q": "Which tool provides data cataloging?",
+        "type": "mcq",
+        "o": [
+            "Atlan, Alation, or DataHub",
+            "Excel",
+            "Word",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Match the catalog feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Search",
+            "Tags",
+            "Glossary",
+            "Lineage"
+        ],
+        "right": [
+            "Find data",
+            "Classify data",
+            "Define terms",
+            "Track flow"
+        ]
+    },
+    {
+        "q": "Data catalogs improve data democratization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is reverse ETL?",
+        "type": "mcq",
+        "o": [
+            "Syncing data from warehouse back to operational systems",
+            "Standard ETL",
+            "Data deletion",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Reverse ETL pushes data from warehouse to _____ tools.",
+        "type": "fill_blank",
+        "answers": [
+            "SaaS"
+        ],
+        "other_options": [
+            "archive",
+            "backup",
+            "source"
+        ]
+    },
+    {
+        "q": "Which tool enables reverse ETL?",
+        "type": "mcq",
+        "o": [
+            "Census, Hightouch, or Polytomic",
+            "Fivetran",
+            "Airbyte",
+            "Stitch"
+        ]
+    },
+    {
+        "q": "Match the reverse ETL use case with its target:",
+        "type": "match",
+        "left": [
+            "CRM sync",
+            "Marketing",
+            "Sales tools",
+            "Support"
+        ],
+        "right": [
+            "Salesforce",
+            "Facebook",
+            "Outreach",
+            "Zendesk"
+        ]
+    },
+    {
+        "q": "Rearrange the reverse ETL flow:",
+        "type": "rearrange",
+        "words": [
+            "Query Warehouse",
+            "Transform Data",
+            "Sync to SaaS",
+            "Verify in Target"
+        ]
+    },
+    {
+        "q": "Reverse ETL activates warehouse data in operational tools.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a semantic layer?",
+        "type": "mcq",
+        "o": [
+            "A business-friendly abstraction over raw data",
+            "A storage layer",
+            "A network layer",
+            "A security layer"
+        ]
+    },
+    {
+        "q": "Semantic layers define _____ and dimensions consistently.",
+        "type": "fill_blank",
+        "answers": [
+            "metrics"
+        ],
+        "other_options": [
+            "tables",
+            "files",
+            "users"
+        ]
+    },
+    {
+        "q": "Which benefit does a semantic layer provide?",
+        "type": "mcq",
+        "o": [
+            "Consistent metrics across all tools and users",
+            "Faster storage",
+            "Better compression",
+            "No benefits"
+        ]
+    },
+    {
+        "q": "Match the semantic layer tool with its type:",
+        "type": "match",
+        "left": [
+            "dbt Semantic Layer",
+            "Looker",
+            "AtScale",
+            "Cube"
+        ],
+        "right": [
+            "dbt integration",
+            "BI platform",
+            "Enterprise OLAP",
+            "Headless BI"
+        ]
+    },
+    {
+        "q": "Semantic layers eliminate metric definition conflicts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Fivetran?",
+        "type": "mcq",
+        "o": [
+            "A managed ELT data pipeline platform",
+            "A database",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Fivetran provides pre-built _____ for popular sources.",
+        "type": "fill_blank",
+        "answers": [
+            "connectors"
+        ],
+        "other_options": [
+            "databases",
+            "servers",
+            "networks"
+        ]
+    },
+    {
+        "q": "Which Fivetran feature automates data pipeline maintenance?",
+        "type": "mcq",
+        "o": [
+            "Automatic schema migrations and sync management",
+            "Manual configuration",
+            "No automation",
+            "Only initial setup"
+        ]
+    },
+    {
+        "q": "Match the ingestion platform with its model:",
+        "type": "match",
+        "left": [
+            "Fivetran",
+            "Airbyte",
+            "Stitch",
+            "Matillion"
+        ],
+        "right": [
+            "Managed SaaS",
+            "Open-source",
+            "Managed SaaS",
+            "Warehouse-native"
+        ]
+    },
+    {
+        "q": "Fivetran reduces time to data by automating ingestion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Airbyte?",
+        "type": "mcq",
+        "o": [
+            "An open-source data integration platform",
+            "A closed-source database",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Airbyte supports _____ and cloud deployment options.",
+        "type": "fill_blank",
+        "answers": [
+            "self-hosted"
+        ],
+        "other_options": [
+            "proprietary",
+            "licensed",
+            "paid"
+        ]
+    },
+    {
+        "q": "Which Airbyte feature enables custom integrations?",
+        "type": "mcq",
+        "o": [
+            "Connector Development Kit (CDK)",
+            "Closed API",
+            "No customization",
+            "Vendor-only connectors"
+        ]
+    },
+    {
+        "q": "Match the Airbyte component with its role:",
+        "type": "match",
+        "left": [
+            "Source",
+            "Destination",
+            "Connection",
+            "Sync"
+        ],
+        "right": [
+            "Extract from",
+            "Load to",
+            "Configuration",
+            "Data movement"
+        ]
+    },
+    {
+        "q": "Rearrange the Airbyte setup workflow:",
+        "type": "rearrange",
+        "words": [
+            "Configure Source",
+            "Configure Destination",
+            "Create Connection",
+            "Run Sync"
+        ]
+    },
+    {
+        "q": "Airbyte's open-source model enables community contributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt Cloud?",
+        "type": "mcq",
+        "o": [
+            "A managed platform for running dbt transformations",
+            "A storage service",
+            "A visualization tool",
+            "A database"
+        ]
+    },
+    {
+        "q": "dbt Cloud provides built-in _____ and scheduling.",
+        "type": "fill_blank",
+        "answers": [
+            "IDE"
+        ],
+        "other_options": [
+            "storage",
+            "backup",
+            "network"
+        ]
+    },
+    {
+        "q": "Which dbt Cloud feature supports team collaboration?",
+        "type": "mcq",
+        "o": [
+            "Project environments, version control, and access controls",
+            "Single-user mode only",
+            "No collaboration",
+            "Local only"
+        ]
+    },
+    {
+        "q": "Match the dbt deployment with its characteristic:",
+        "type": "match",
+        "left": [
+            "dbt Core",
+            "dbt Cloud",
+            "dbt Community",
+            "dbt Enterprise"
+        ],
+        "right": [
+            "Open-source",
+            "Managed SaaS",
+            "Free tier",
+            "Enterprise features"
+        ]
+    },
+    {
+        "q": "dbt Cloud handles infrastructure so teams focus on SQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a dbt model?",
+        "type": "mcq",
+        "o": [
+            "A SQL SELECT statement that defines a transformation",
+            "A database table",
+            "A visualization",
+            "A user account"
+        ]
+    },
+    {
+        "q": "dbt models create tables or _____ in the warehouse.",
+        "type": "fill_blank",
+        "answers": [
+            "views"
+        ],
+        "other_options": [
+            "files",
+            "backups",
+            "users"
+        ]
+    },
+    {
+        "q": "Which materialization creates a temporary model?",
+        "type": "mcq",
+        "o": [
+            "Ephemeral materialization",
+            "Table materialization",
+            "View materialization",
+            "Incremental materialization"
+        ]
+    },
+    {
+        "q": "Match the dbt materialization with its behavior:",
+        "type": "match",
+        "left": [
+            "Table",
+            "View",
+            "Incremental",
+            "Ephemeral"
+        ],
+        "right": [
+            "Full rebuild",
+            "Virtual query",
+            "Append new only",
+            "CTE reference"
+        ]
+    },
+    {
+        "q": "Rearrange dbt model dependencies:",
+        "type": "rearrange",
+        "words": [
+            "Source Tables",
+            "Staging Models",
+            "Intermediate Models",
+            "Mart Models"
+        ]
+    },
+    {
+        "q": "dbt models enable modular and maintainable transformations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt's ref function?",
+        "type": "mcq",
+        "o": [
+            "A function to reference other models and build dependencies",
+            "A storage function",
+            "A delete function",
+            "A backup function"
+        ]
+    },
+    {
+        "q": "ref() creates automatic _____ between models.",
+        "type": "fill_blank",
+        "answers": [
+            "dependencies"
+        ],
+        "other_options": [
+            "copies",
+            "deletes",
+            "backups"
+        ]
+    },
+    {
+        "q": "Which benefit does ref() provide?",
+        "type": "mcq",
+        "o": [
+            "Automatic dependency management and documentation",
+            "Faster queries",
+            "Better storage",
+            "No benefits"
+        ]
+    },
+    {
+        "q": "Match the dbt function with its purpose:",
+        "type": "match",
+        "left": [
+            "ref()",
+            "source()",
+            "config()",
+            "var()"
+        ],
+        "right": [
+            "Reference model",
+            "Reference raw",
+            "Set options",
+            "Use variable"
+        ]
+    },
+    {
+        "q": "ref() enables DAG-based execution ordering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt's source function?",
+        "type": "mcq",
+        "o": [
+            "A function to reference raw tables from source systems",
+            "A model reference",
+            "A storage function",
+            "A delete function"
+        ]
+    },
+    {
+        "q": "source() helps dbt understand _____ table origins.",
+        "type": "fill_blank",
+        "answers": [
+            "raw"
+        ],
+        "other_options": [
+            "processed",
+            "final",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which feature uses source definitions?",
+        "type": "mcq",
+        "o": [
+            "Freshness checks and documentation",
+            "Only visualization",
+            "Only deletion",
+            "No features"
+        ]
+    },
+    {
+        "q": "Match the source property with its meaning:",
+        "type": "match",
+        "left": [
+            "database",
+            "schema",
+            "tables",
+            "freshness"
+        ],
+        "right": [
+            "Database name",
+            "Schema name",
+            "Table list",
+            "Data recency"
+        ]
+    },
+    {
+        "q": "Rearrange the source freshness workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define Sources",
+            "Set Freshness Rules",
+            "Run Freshness Check",
+            "Alert on Staleness"
+        ]
+    },
+    {
+        "q": "Sources provide a single place to configure raw data references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is incremental modeling in dbt?",
+        "type": "mcq",
+        "o": [
+            "Processing only new or changed data since the last run",
+            "Full table rebuilds",
+            "Deleting all data",
+            "Manual processing"
+        ]
+    },
+    {
+        "q": "Incremental models use is_incremental() to _____ runs.",
+        "type": "fill_blank",
+        "answers": [
+            "filter"
+        ],
+        "other_options": [
+            "delete",
+            "backup",
+            "copy"
+        ]
+    },
+    {
+        "q": "Which config enables incremental processing?",
+        "type": "mcq",
+        "o": [
+            "materialized='incremental'",
+            "materialized='table'",
+            "materialized='view'",
+            "materialized='ephemeral'"
+        ]
+    },
+    {
+        "q": "Match the incremental strategy with its behavior:",
+        "type": "match",
+        "left": [
+            "append",
+            "delete+insert",
+            "merge",
+            "insert_overwrite"
+        ],
+        "right": [
+            "Add new rows",
+            "Replace matching",
+            "Upsert logic",
+            "Partition replacement"
+        ]
+    },
+    {
+        "q": "Incremental models reduce processing time for large tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt snapshots?",
+        "type": "mcq",
+        "o": [
+            "A feature for tracking historical changes in source data",
+            "Image captures",
+            "Backup copies",
+            "File snapshots"
+        ]
+    },
+    {
+        "q": "Snapshots implement _____ tracking for dimension tables.",
+        "type": "fill_blank",
+        "answers": [
+            "SCD"
+        ],
+        "other_options": [
+            "backup",
+            "copy",
+            "delete"
+        ]
+    },
+    {
+        "q": "Which snapshot strategy tracks changes by timestamp?",
+        "type": "mcq",
+        "o": [
+            "timestamp strategy",
+            "check strategy",
+            "none strategy",
+            "manual strategy"
+        ]
+    },
+    {
+        "q": "Match the snapshot column with its purpose:",
+        "type": "match",
+        "left": [
+            "dbt_valid_from",
+            "dbt_valid_to",
+            "dbt_scd_id",
+            "dbt_updated_at"
+        ],
+        "right": [
+            "Start validity",
+            "End validity",
+            "Row identifier",
+            "Change timestamp"
+        ]
+    },
+    {
+        "q": "Rearrange snapshot lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Define Snapshot",
+            "Run Initial Load",
+            "Detect Changes",
+            "Create History"
+        ]
+    },
+    {
+        "q": "Snapshots enable point-in-time analysis of dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt seeds?",
+        "type": "mcq",
+        "o": [
+            "CSV files version-controlled in the dbt project",
+            "Database seeds",
+            "Random data",
+            "Test data only"
+        ]
+    },
+    {
+        "q": "Seeds load _____ data from the project to the warehouse.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "dynamic",
+            "streaming",
+            "random"
+        ]
+    },
+    {
+        "q": "Which use case is appropriate for seeds?",
+        "type": "mcq",
+        "o": [
+            "Small lookup tables and mapping files",
+            "Large fact tables",
+            "Streaming data",
+            "User data"
+        ]
+    },
+    {
+        "q": "Match the dbt artifact with its source:",
+        "type": "match",
+        "left": [
+            "Models",
+            "Sources",
+            "Seeds",
+            "Snapshots"
+        ],
+        "right": [
+            "SQL files",
+            "YAML config",
+            "CSV files",
+            "SQL snapshots"
+        ]
+    },
+    {
+        "q": "Seeds enable version-controlled reference data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt macros?",
+        "type": "mcq",
+        "o": [
+            "Reusable Jinja code blocks for SQL generation",
+            "Database macros",
+            "Python functions",
+            "Shell scripts"
+        ]
+    },
+    {
+        "q": "Macros use _____ templating language.",
+        "type": "fill_blank",
+        "answers": [
+            "Jinja"
+        ],
+        "other_options": [
+            "Python",
+            "SQL",
+            "Java"
+        ]
+    },
+    {
+        "q": "Which macro technique generates dynamic SQL?",
+        "type": "mcq",
+        "o": [
+            "Loops and conditionals in Jinja",
+            "Static SQL only",
+            "No dynamic SQL",
+            "Manual generation"
+        ]
+    },
+    {
+        "q": "Match the macro type with its scope:",
+        "type": "match",
+        "left": [
+            "Project macro",
+            "Package macro",
+            "Built-in macro",
+            "Adapter macro"
+        ],
+        "right": [
+            "Local project",
+            "External package",
+            "dbt core",
+            "Database-specific"
+        ]
+    },
+    {
+        "q": "Rearrange macro development workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify Pattern",
+            "Create Macro",
+            "Test Macro",
+            "Use in Models"
+        ]
+    },
+    {
+        "q": "Macros reduce code duplication across models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt packages?",
+        "type": "mcq",
+        "o": [
+            "Reusable dbt code shared via package managers",
+            "Python packages",
+            "Database packages",
+            "File packages"
+        ]
+    },
+    {
+        "q": "Packages are defined in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "packages.yml"
+        ],
+        "other_options": [
+            "models.yml",
+            "sources.yml",
+            "config.yml"
+        ]
+    },
+    {
+        "q": "Which popular dbt package provides utility macros?",
+        "type": "mcq",
+        "o": [
+            "dbt-utils",
+            "dbt-models",
+            "dbt-sources",
+            "dbt-tables"
+        ]
+    },
+    {
+        "q": "Match the dbt package with its function:",
+        "type": "match",
+        "left": [
+            "dbt-utils",
+            "dbt-codegen",
+            "dbt-expectations",
+            "dbt-audit-helper"
+        ],
+        "right": [
+            "Utility macros",
+            "Code generation",
+            "Data testing",
+            "Audit comparison"
+        ]
+    },
+    {
+        "q": "Packages accelerate dbt development with pre-built code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt documentation?",
+        "type": "mcq",
+        "o": [
+            "Auto-generated docs from YAML descriptions and lineage",
+            "Manual documentation",
+            "External docs only",
+            "No documentation"
+        ]
+    },
+    {
+        "q": "dbt docs generate creates a _____ documentation site.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "dynamic",
+            "streaming",
+            "video"
+        ]
+    },
+    {
+        "q": "Which documentation feature shows model relationships?",
+        "type": "mcq",
+        "o": [
+            "DAG visualization",
+            "Only text descriptions",
+            "Only code",
+            "No relationships"
+        ]
+    },
+    {
+        "q": "Match the doc component with its source:",
+        "type": "match",
+        "left": [
+            "Column descriptions",
+            "Model descriptions",
+            "Lineage graph",
+            "Test results"
+        ],
+        "right": [
+            "schema.yml",
+            "schema.yml",
+            "ref() calls",
+            "dbt test runs"
+        ]
+    },
+    {
+        "q": "Rearrange documentation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Add Descriptions",
+            "Run dbt docs generate",
+            "Serve Documentation",
+            "Share with Team"
+        ]
+    },
+    {
+        "q": "dbt documentation is always up-to-date with code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Great Expectations?",
+        "type": "mcq",
+        "o": [
+            "An open-source data quality framework",
+            "A visualization tool",
+            "A database",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Great Expectations defines data _____ as tests.",
+        "type": "fill_blank",
+        "answers": [
+            "expectations"
+        ],
+        "other_options": [
+            "tables",
+            "files",
+            "users"
+        ]
+    },
+    {
+        "q": "Which Great Expectations feature validates data?",
+        "type": "mcq",
+        "o": [
+            "Checkpoints and validation operators",
+            "Only manual checks",
+            "No validation",
+            "External tools only"
+        ]
+    },
+    {
+        "q": "Match the GE concept with its role:",
+        "type": "match",
+        "left": [
+            "Expectation",
+            "Suite",
+            "Checkpoint",
+            "Data Docs"
+        ],
+        "right": [
+            "Single test",
+            "Test collection",
+            "Run validation",
+            "Documentation"
+        ]
+    },
+    {
+        "q": "Great Expectations enables declarative data testing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a medallion architecture?",
+        "type": "mcq",
+        "o": [
+            "A data organization pattern with bronze, silver, and gold layers",
+            "A database design",
+            "A network pattern",
+            "A file system"
+        ]
+    },
+    {
+        "q": "The bronze layer contains _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "raw"
+        ],
+        "other_options": [
+            "processed",
+            "aggregated",
+            "final"
+        ]
+    },
+    {
+        "q": "Which layer contains curated, business-ready data?",
+        "type": "mcq",
+        "o": [
+            "Gold layer",
+            "Bronze layer",
+            "Silver layer",
+            "Raw layer"
+        ]
+    },
+    {
+        "q": "Match the medallion layer with its purpose:",
+        "type": "match",
+        "left": [
+            "Bronze",
+            "Silver",
+            "Gold",
+            "Platinum"
+        ],
+        "right": [
+            "Raw ingestion",
+            "Cleaned data",
+            "Business metrics",
+            "Custom analytics"
+        ]
+    },
+    {
+        "q": "Rearrange the medallion data flow:",
+        "type": "rearrange",
+        "words": [
+            "Ingest to Bronze",
+            "Clean to Silver",
+            "Aggregate to Gold",
+            "Serve to BI"
+        ]
+    },
+    {
+        "q": "Medallion architecture provides clear data quality progression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Apache Kafka?",
+        "type": "mcq",
+        "o": [
+            "A distributed event streaming platform",
+            "A batch processing tool",
+            "A database",
+            "A visualization tool"
+        ]
+    },
+    {
+        "q": "Kafka enables real-time _____ streaming.",
+        "type": "fill_blank",
+        "answers": [
+            "event"
+        ],
+        "other_options": [
+            "batch",
+            "monthly",
+            "yearly"
+        ]
+    },
+    {
+        "q": "Which component produces events in Kafka?",
+        "type": "mcq",
+        "o": [
+            "Producers",
+            "Consumers only",
+            "Brokers only",
+            "Topics only"
+        ]
+    },
+    {
+        "q": "Match the Kafka component with its function:",
+        "type": "match",
+        "left": [
+            "Producer",
+            "Consumer",
+            "Topic",
+            "Broker"
+        ],
+        "right": [
+            "Sends events",
+            "Reads events",
+            "Event category",
+            "Server node"
+        ]
+    },
+    {
+        "q": "Kafka provides durable event storage and replay.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is streaming vs batch processing?",
+        "type": "mcq",
+        "o": [
+            "Real-time continuous processing vs periodic bulk processing",
+            "Same approach",
+            "Batch is faster",
+            "Streaming is slower"
+        ]
+    },
+    {
+        "q": "Streaming processes data as it _____.",
+        "type": "fill_blank",
+        "answers": [
+            "arrives"
+        ],
+        "other_options": [
+            "accumulates",
+            "ages",
+            "deletes"
+        ]
+    },
+    {
+        "q": "Which use case requires streaming?",
+        "type": "mcq",
+        "o": [
+            "Real-time fraud detection and monitoring",
+            "Monthly reports",
+            "Annual analysis",
+            "Historical research"
+        ]
+    },
+    {
+        "q": "Match the processing type with its latency:",
+        "type": "match",
+        "left": [
+            "Batch",
+            "Micro-batch",
+            "Near real-time",
+            "Real-time"
+        ],
+        "right": [
+            "Hours",
+            "Minutes",
+            "Seconds",
+            "Milliseconds"
+        ]
+    },
+    {
+        "q": "Rearrange from highest to lowest latency:",
+        "type": "rearrange",
+        "words": [
+            "Weekly Batch",
+            "Daily Batch",
+            "Hourly Batch",
+            "Streaming"
+        ]
+    },
+    {
+        "q": "Modern architectures often combine batch and streaming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Apache Spark?",
+        "type": "mcq",
+        "o": [
+            "A unified analytics engine for big data processing",
+            "A database only",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Spark processes data in _____ for performance.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "disk only",
+            "network",
+            "tape"
+        ]
+    },
+    {
+        "q": "Which Spark API enables SQL-like queries?",
+        "type": "mcq",
+        "o": [
+            "Spark SQL and DataFrames",
+            "Only RDDs",
+            "Only MapReduce",
+            "No SQL support"
+        ]
+    },
+    {
+        "q": "Match the Spark component with its use:",
+        "type": "match",
+        "left": [
+            "Spark SQL",
+            "Spark Streaming",
+            "MLlib",
+            "GraphX"
+        ],
+        "right": [
+            "SQL queries",
+            "Stream processing",
+            "Machine learning",
+            "Graph processing"
+        ]
+    },
+    {
+        "q": "Spark is up to 100x faster than Hadoop MapReduce.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Databricks?",
+        "type": "mcq",
+        "o": [
+            "A unified data analytics platform built on Spark",
+            "A visualization tool only",
+            "A database only",
+            "A storage system only"
+        ]
+    },
+    {
+        "q": "Databricks provides managed _____ clusters.",
+        "type": "fill_blank",
+        "answers": [
+            "Spark"
+        ],
+        "other_options": [
+            "Hadoop",
+            "MySQL",
+            "Oracle"
+        ]
+    },
+    {
+        "q": "Which Databricks feature enables collaborative notebooks?",
+        "type": "mcq",
+        "o": [
+            "Databricks Notebooks with multi-user support",
+            "Command line only",
+            "No collaboration",
+            "Single-user only"
+        ]
+    },
+    {
+        "q": "Match the Databricks component with its role:",
+        "type": "match",
+        "left": [
+            "Workspace",
+            "Clusters",
+            "Delta Lake",
+            "Jobs"
+        ],
+        "right": [
+            "Collaboration",
+            "Compute",
+            "Storage",
+            "Scheduling"
+        ]
+    },
+    {
+        "q": "Rearrange the Databricks data workflow:",
+        "type": "rearrange",
+        "words": [
+            "Ingest Data",
+            "Process with Spark",
+            "Store in Delta Lake",
+            "Visualize Results"
+        ]
+    },
+    {
+        "q": "Databricks unifies data engineering and data science.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "An open-source storage layer with ACID transactions",
+            "A database",
+            "A visualization tool",
+            "A network protocol"
+        ]
+    },
+    {
+        "q": "Delta Lake adds _____ capabilities to data lakes.",
+        "type": "fill_blank",
+        "answers": [
+            "ACID"
+        ],
+        "other_options": [
+            "visualization",
+            "networking",
+            "security"
+        ]
+    },
+    {
+        "q": "Which Delta Lake feature enables data versioning?",
+        "type": "mcq",
+        "o": [
+            "Time travel with version history",
+            "No versioning",
+            "Manual backups",
+            "External versioning"
+        ]
+    },
+    {
+        "q": "Match the Delta Lake feature with its benefit:",
+        "type": "match",
+        "left": [
+            "ACID",
+            "Schema enforcement",
+            "Time travel",
+            "Merge"
+        ],
+        "right": [
+            "Reliability",
+            "Data quality",
+            "History",
+            "Upserts"
+        ]
+    },
+    {
+        "q": "Delta Lake uses Parquet format with transaction logs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Apache Iceberg?",
+        "type": "mcq",
+        "o": [
+            "An open table format for huge analytic datasets",
+            "A database",
+            "A visualization tool",
+            "A network protocol"
+        ]
+    },
+    {
+        "q": "Iceberg supports _____ evolution without rewrites.",
+        "type": "fill_blank",
+        "answers": [
+            "schema"
+        ],
+        "other_options": [
+            "file",
+            "network",
+            "user"
+        ]
+    },
+    {
+        "q": "Which query engine supports Apache Iceberg?",
+        "type": "mcq",
+        "o": [
+            "Spark, Trino, Flink, and many others",
+            "Only Spark",
+            "Only Trino",
+            "No engines"
+        ]
+    },
+    {
+        "q": "Match the Iceberg feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Hidden partitioning",
+            "Schema evolution",
+            "Time travel",
+            "Snapshot isolation"
+        ],
+        "right": [
+            "User-friendly partitions",
+            "Backward compatible",
+            "Historical queries",
+            "Concurrent reads"
+        ]
+    },
+    {
+        "q": "Rearrange Iceberg table lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create Table",
+            "Write Data",
+            "Create Snapshot",
+            "Query Any Version"
+        ]
+    },
+    {
+        "q": "Iceberg enables engine interoperability on lake storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Apache Hudi?",
+        "type": "mcq",
+        "o": [
+            "A data lake platform for incremental data processing",
+            "A database",
+            "A visualization tool",
+            "A network protocol"
+        ]
+    },
+    {
+        "q": "Hudi enables _____ processing on data lakes.",
+        "type": "fill_blank",
+        "answers": [
+            "incremental"
+        ],
+        "other_options": [
+            "batch-only",
+            "manual",
+            "slow"
+        ]
+    },
+    {
+        "q": "Which Hudi table type supports streaming?",
+        "type": "mcq",
+        "o": [
+            "Merge On Read (MOR) tables",
+            "Copy On Write only",
+            "No streaming support",
+            "External tables"
+        ]
+    },
+    {
+        "q": "Match the Hudi table type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Copy On Write",
+            "Merge On Read",
+            "Bootstrap",
+            "Metadata"
+        ],
+        "right": [
+            "Batch writes",
+            "Stream writes",
+            "Migration",
+            "Table info"
+        ]
+    },
+    {
+        "q": "Hudi originated at Uber for incremental data pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Parquet format?",
+        "type": "mcq",
+        "o": [
+            "A columnar storage format optimized for analytics",
+            "A row-based format",
+            "A text format",
+            "A binary blob"
+        ]
+    },
+    {
+        "q": "Parquet stores data in _____ format for efficient scans.",
+        "type": "fill_blank",
+        "answers": [
+            "columnar"
+        ],
+        "other_options": [
+            "row",
+            "text",
+            "random"
+        ]
+    },
+    {
+        "q": "Which benefit does Parquet provide?",
+        "type": "mcq",
+        "o": [
+            "Efficient compression and column pruning",
+            "Only for small data",
+            "No compression",
+            "Row-based access only"
+        ]
+    },
+    {
+        "q": "Match the file format with its type:",
+        "type": "match",
+        "left": [
+            "Parquet",
+            "Avro",
+            "ORC",
+            "JSON"
+        ],
+        "right": [
+            "Columnar",
+            "Row-based",
+            "Columnar",
+            "Text-based"
+        ]
+    },
+    {
+        "q": "Rearrange file formats by compression efficiency:",
+        "type": "rearrange",
+        "words": [
+            "CSV",
+            "JSON",
+            "Avro",
+            "Parquet/ORC"
+        ]
+    },
+    {
+        "q": "Parquet is the standard format for modern data lakes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data partitioning?",
+        "type": "mcq",
+        "o": [
+            "Dividing data into segments for efficient access",
+            "Deleting data",
+            "Compressing data",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "Partitioning often uses _____ columns like date.",
+        "type": "fill_blank",
+        "answers": [
+            "time-based"
+        ],
+        "other_options": [
+            "random",
+            "alphabetic",
+            "numeric"
+        ]
+    },
+    {
+        "q": "Which query benefits most from partitioning?",
+        "type": "mcq",
+        "o": [
+            "Queries filtering on partition columns",
+            "Full table scans",
+            "Random access",
+            "No queries benefit"
+        ]
+    },
+    {
+        "q": "Match the partition strategy with its use:",
+        "type": "match",
+        "left": [
+            "Date",
+            "Region",
+            "Customer ID",
+            "Product category"
+        ],
+        "right": [
+            "Time-series",
+            "Geographic",
+            "User segmentation",
+            "Product analytics"
+        ]
+    },
+    {
+        "q": "Good partitioning significantly reduces query costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data compaction?",
+        "type": "mcq",
+        "o": [
+            "Merging small files into larger ones for efficiency",
+            "Deleting data",
+            "Splitting files",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "Compaction reduces the _____ file problem.",
+        "type": "fill_blank",
+        "answers": [
+            "small"
+        ],
+        "other_options": [
+            "large",
+            "medium",
+            "random"
+        ]
+    },
+    {
+        "q": "Which table format handles automatic compaction?",
+        "type": "mcq",
+        "o": [
+            "Delta Lake, Iceberg, and Hudi with OPTIMIZE",
+            "Plain Parquet",
+            "CSV files",
+            "JSON files"
+        ]
+    },
+    {
+        "q": "Match the file operation with its outcome:",
+        "type": "match",
+        "left": [
+            "Compaction",
+            "Vacuum",
+            "Z-order",
+            "Optimize"
+        ],
+        "right": [
+            "Merge files",
+            "Remove old",
+            "Cluster data",
+            "Improve performance"
+        ]
+    },
+    {
+        "q": "Rearrange the data maintenance workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write Data",
+            "Compact Files",
+            "Z-Order Clusters",
+            "Vacuum Old Versions"
+        ]
+    },
+    {
+        "q": "Regular compaction improves query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Z-ordering?",
+        "type": "mcq",
+        "o": [
+            "A technique for co-locating related data for efficient access",
+            "Alphabetic sorting",
+            "Random ordering",
+            "No ordering"
+        ]
+    },
+    {
+        "q": "Z-ordering clusters data by multiple _____ columns.",
+        "type": "fill_blank",
+        "answers": [
+            "filter"
+        ],
+        "other_options": [
+            "random",
+            "auto",
+            "system"
+        ]
+    },
+    {
+        "q": "Which query pattern benefits from Z-ordering?",
+        "type": "mcq",
+        "o": [
+            "Multi-column filters on Z-ordered columns",
+            "Full table scans",
+            "No filters",
+            "Random access"
+        ]
+    },
+    {
+        "q": "Match the optimization with its mechanism:",
+        "type": "match",
+        "left": [
+            "Partitioning",
+            "Z-ordering",
+            "Clustering",
+            "Bucketing"
+        ],
+        "right": [
+            "Directory per value",
+            "Interleaved index",
+            "Sort within partition",
+            "Hash distribution"
+        ]
+    },
+    {
+        "q": "Z-ordering improves data skipping for complex filters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a data contract?",
+        "type": "mcq",
+        "o": [
+            "A formal agreement on data schema and quality",
+            "A legal document",
+            "A database feature",
+            "A visualization setting"
+        ]
+    },
+    {
+        "q": "Data contracts define _____ guarantees between teams.",
+        "type": "fill_blank",
+        "answers": [
+            "SLA"
+        ],
+        "other_options": [
+            "random",
+            "manual",
+            "optional"
+        ]
+    },
+    {
+        "q": "Which data contract element specifies expected columns?",
+        "type": "mcq",
+        "o": [
+            "Schema definition",
+            "Performance metrics",
+            "User permissions",
+            "Storage settings"
+        ]
+    },
+    {
+        "q": "Match the contract component with its purpose:",
+        "type": "match",
+        "left": [
+            "Schema",
+            "SLAs",
+            "Owners",
+            "Semantics"
+        ],
+        "right": [
+            "Structure",
+            "Uptime/quality",
+            "Accountability",
+            "Meaning"
+        ]
+    },
+    {
+        "q": "Rearrange the data contract lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Define Contract",
+            "Implement Validation",
+            "Monitor Compliance",
+            "Handle Violations"
+        ]
+    },
+    {
+        "q": "Data contracts reduce data quality issues across teams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is DataOps?",
+        "type": "mcq",
+        "o": [
+            "Applying DevOps practices to data analytics",
+            "Data operations only",
+            "A database type",
+            "A visualization method"
+        ]
+    },
+    {
+        "q": "DataOps emphasizes _____ and automation.",
+        "type": "fill_blank",
+        "answers": [
+            "collaboration"
+        ],
+        "other_options": [
+            "isolation",
+            "manual work",
+            "silos"
+        ]
+    },
+    {
+        "q": "Which DevOps practice applies to DataOps?",
+        "type": "mcq",
+        "o": [
+            "CI/CD, version control, and automated testing",
+            "Manual deployments",
+            "No testing",
+            "No version control"
+        ]
+    },
+    {
+        "q": "Match the DataOps practice with its benefit:",
+        "type": "match",
+        "left": [
+            "CI/CD",
+            "Version control",
+            "Automated testing",
+            "Monitoring"
+        ],
+        "right": [
+            "Faster deployment",
+            "Change tracking",
+            "Quality assurance",
+            "Issue detection"
+        ]
+    },
+    {
+        "q": "DataOps reduces data pipeline failures and delivery time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Infrastructure as Code (IaC) for data?",
+        "type": "mcq",
+        "o": [
+            "Managing data infrastructure through code definitions",
+            "Manual infrastructure",
+            "Physical servers",
+            "No automation"
+        ]
+    },
+    {
+        "q": "IaC enables _____ and reproducible infrastructure.",
+        "type": "fill_blank",
+        "answers": [
+            "consistent"
+        ],
+        "other_options": [
+            "random",
+            "manual",
+            "unique"
+        ]
+    },
+    {
+        "q": "Which tool provides IaC for cloud data resources?",
+        "type": "mcq",
+        "o": [
+            "Terraform, Pulumi, or CloudFormation",
+            "Excel",
+            "Word",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Match the IaC tool with its cloud:",
+        "type": "match",
+        "left": [
+            "Terraform",
+            "CloudFormation",
+            "ARM",
+            "Deployment Manager"
+        ],
+        "right": [
+            "Multi-cloud",
+            "AWS",
+            "Azure",
+            "GCP"
+        ]
+    },
+    {
+        "q": "Rearrange the IaC workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write Infrastructure Code",
+            "Review Changes",
+            "Apply Changes",
+            "Verify Deployment"
+        ]
+    },
+    {
+        "q": "IaC enables version-controlled infrastructure changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a feature store?",
+        "type": "mcq",
+        "o": [
+            "A central repository for ML features",
+            "A database only",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Feature stores enable feature _____ across ML models.",
+        "type": "fill_blank",
+        "answers": [
+            "reuse"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "duplication"
+        ]
+    },
+    {
+        "q": "Which feature store capability supports real-time?",
+        "type": "mcq",
+        "o": [
+            "Online serving with low latency",
+            "Batch only",
+            "No real-time",
+            "Manual serving"
+        ]
+    },
+    {
+        "q": "Match the feature store component with its role:",
+        "type": "match",
+        "left": [
+            "Offline store",
+            "Online store",
+            "Feature registry",
+            "Feature pipeline"
+        ],
+        "right": [
+            "Batch features",
+            "Real-time features",
+            "Metadata",
+            "Feature computation"
+        ]
+    },
+    {
+        "q": "Feature stores prevent training/serving skew.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data mesh?",
+        "type": "mcq",
+        "o": [
+            "A decentralized data architecture with domain ownership",
+            "A centralized data lake",
+            "A network topology",
+            "A database type"
+        ]
+    },
+    {
+        "q": "Data mesh promotes _____ data product ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "domain"
+        ],
+        "other_options": [
+            "central",
+            "IT",
+            "external"
+        ]
+    },
+    {
+        "q": "Which data mesh principle ensures data accessibility?",
+        "type": "mcq",
+        "o": [
+            "Self-serve data infrastructure",
+            "Central team control",
+            "Manual provisioning",
+            "No infrastructure"
+        ]
+    },
+    {
+        "q": "Match the data mesh principle with its focus:",
+        "type": "match",
+        "left": [
+            "Domain ownership",
+            "Data as product",
+            "Self-serve",
+            "Federated governance"
+        ],
+        "right": [
+            "Team responsibility",
+            "Quality standards",
+            "Platform capability",
+            "Interoperability"
+        ]
+    },
+    {
+        "q": "Rearrange data mesh adoption stages:",
+        "type": "rearrange",
+        "words": [
+            "Define Domains",
+            "Build Platform",
+            "Create Data Products",
+            "Federate Governance"
+        ]
+    },
+    {
+        "q": "Data mesh addresses data team scaling challenges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is metadata management?",
+        "type": "mcq",
+        "o": [
+            "Managing data about data",
+            "Managing user data",
+            "Managing storage",
+            "Managing networks"
+        ]
+    },
+    {
+        "q": "Metadata includes technical, business, and _____ metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "operational"
+        ],
+        "other_options": [
+            "random",
+            "user",
+            "network"
+        ]
+    },
+    {
+        "q": "Which metadata type includes column data types?",
+        "type": "mcq",
+        "o": [
+            "Technical metadata",
+            "Business metadata",
+            "Operational metadata",
+            "No metadata type"
+        ]
+    },
+    {
+        "q": "Match the metadata type with its example:",
+        "type": "match",
+        "left": [
+            "Technical",
+            "Business",
+            "Operational",
+            "Social"
+        ],
+        "right": [
+            "Schema",
+            "Definitions",
+            "Lineage",
+            "Ratings/usage"
+        ]
+    },
+    {
+        "q": "Good metadata management enables data governance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data governance in ELT?",
+        "type": "mcq",
+        "o": [
+            "Policies and processes for data quality and compliance",
+            "Data storage only",
+            "Data visualization",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "Governance ensures data is accurate, secure, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "compliant"
+        ],
+        "other_options": [
+            "deleted",
+            "hidden",
+            "random"
+        ]
+    },
+    {
+        "q": "Which governance aspect addresses data privacy?",
+        "type": "mcq",
+        "o": [
+            "Access controls and data masking",
+            "Only storage",
+            "Only visualization",
+            "No privacy controls"
+        ]
+    },
+    {
+        "q": "Match the governance element with its focus:",
+        "type": "match",
+        "left": [
+            "Quality",
+            "Security",
+            "Compliance",
+            "Privacy"
+        ],
+        "right": [
+            "Accuracy",
+            "Protection",
+            "Regulations",
+            "PII handling"
+        ]
+    },
+    {
+        "q": "Rearrange governance implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define Policies",
+            "Implement Controls",
+            "Monitor Compliance",
+            "Report Metrics"
+        ]
+    },
+    {
+        "q": "Data governance is essential for regulated industries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data masking?",
+        "type": "mcq",
+        "o": [
+            "Hiding sensitive data while preserving format",
+            "Deleting data",
+            "Encrypting data completely",
+            "Compressing data"
+        ]
+    },
+    {
+        "q": "Masking replaces sensitive values with _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "fictitious"
+        ],
+        "other_options": [
+            "random",
+            "null",
+            "empty"
+        ]
+    },
+    {
+        "q": "Which use case requires data masking?",
+        "type": "mcq",
+        "o": [
+            "Non-production environments with PII",
+            "Production reporting",
+            "No use cases",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "Match the masking technique with its method:",
+        "type": "match",
+        "left": [
+            "Substitution",
+            "Shuffling",
+            "Nulling",
+            "Encryption"
+        ],
+        "right": [
+            "Replace values",
+            "Swap rows",
+            "Remove values",
+            "Encode values"
+        ]
+    },
+    {
+        "q": "Data masking enables safe data sharing for development.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GDPR compliance in data engineering?",
+        "type": "mcq",
+        "o": [
+            "Following EU data protection regulations",
+            "A US-only regulation",
+            "Optional guidelines",
+            "A database feature"
+        ]
+    },
+    {
+        "q": "GDPR requires _____ to request data deletion.",
+        "type": "fill_blank",
+        "answers": [
+            "ability"
+        ],
+        "other_options": [
+            "denial",
+            "payment",
+            "contract"
+        ]
+    },
+    {
+        "q": "Which GDPR right requires data portability?",
+        "type": "mcq",
+        "o": [
+            "Right to data portability",
+            "Right to deletion only",
+            "No portability required",
+            "Only for EU citizens"
+        ]
+    },
+    {
+        "q": "Match the GDPR right with its requirement:",
+        "type": "match",
+        "left": [
+            "Right to access",
+            "Right to erasure",
+            "Right to portability",
+            "Right to rectification"
+        ],
+        "right": [
+            "View data",
+            "Delete data",
+            "Export data",
+            "Correct data"
+        ]
+    },
+    {
+        "q": "Rearrange GDPR compliance implementation:",
+        "type": "rearrange",
+        "words": [
+            "Identify PII",
+            "Implement Controls",
+            "Document Processing",
+            "Enable Rights Requests"
+        ]
+    },
+    {
+        "q": "GDPR violations can result in significant fines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is PII in data engineering?",
+        "type": "mcq",
+        "o": [
+            "Personally Identifiable Information",
+            "Pipeline Integration Interface",
+            "Processing Input Index",
+            "Primary Instance Identifier"
+        ]
+    },
+    {
+        "q": "PII includes names, emails, and _____ numbers.",
+        "type": "fill_blank",
+        "answers": [
+            "social security"
+        ],
+        "other_options": [
+            "random",
+            "auto-generated",
+            "sequence"
+        ]
+    },
+    {
+        "q": "Which data handling applies to PII?",
+        "type": "mcq",
+        "o": [
+            "Encryption, masking, and access controls",
+            "No special handling",
+            "Public sharing",
+            "No encryption needed"
+        ]
+    },
+    {
+        "q": "Match the PII type with its sensitivity:",
+        "type": "match",
+        "left": [
+            "Name",
+            "SSN",
+            "Email",
+            "Medical records"
+        ],
+        "right": [
+            "Medium",
+            "High",
+            "Low-Medium",
+            "High"
+        ]
+    },
+    {
+        "q": "PII detection should be automated in data pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data encryption at rest?",
+        "type": "mcq",
+        "o": [
+            "Encrypting stored data",
+            "Encrypting data in transit",
+            "Compressing data",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "Encryption at rest protects data in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "storage"
+        ],
+        "other_options": [
+            "motion",
+            "transit",
+            "network"
+        ]
+    },
+    {
+        "q": "Which key type is managed by the cloud provider?",
+        "type": "mcq",
+        "o": [
+            "Provider-managed keys (default encryption)",
+            "Customer-managed only",
+            "No encryption available",
+            "Manual encryption only"
+        ]
+    },
+    {
+        "q": "Match the encryption scope with its protection:",
+        "type": "match",
+        "left": [
+            "At rest",
+            "In transit",
+            "In use",
+            "End-to-end"
+        ],
+        "right": [
+            "Stored data",
+            "Moving data",
+            "Processing data",
+            "Complete protection"
+        ]
+    },
+    {
+        "q": "Most cloud data warehouses encrypt data at rest by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is role-based access control (RBAC) in data platforms?",
+        "type": "mcq",
+        "o": [
+            "Granting permissions based on user roles",
+            "Individual user permissions only",
+            "No access control",
+            "Public access only"
+        ]
+    },
+    {
+        "q": "RBAC simplifies permission management through _____.",
+        "type": "fill_blank",
+        "answers": [
+            "roles"
+        ],
+        "other_options": [
+            "users",
+            "tables",
+            "queries"
+        ]
+    },
+    {
+        "q": "Which principle should guide RBAC design?",
+        "type": "mcq",
+        "o": [
+            "Least privilege - minimum necessary permissions",
+            "Maximum access for everyone",
+            "No restrictions",
+            "Full access by default"
+        ]
+    },
+    {
+        "q": "Match the access control model with its granularity:",
+        "type": "match",
+        "left": [
+            "RBAC",
+            "ABAC",
+            "DAC",
+            "MAC"
+        ],
+        "right": [
+            "Role-based",
+            "Attribute-based",
+            "Discretionary",
+            "Mandatory"
+        ]
+    },
+    {
+        "q": "Rearrange RBAC implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define Roles",
+            "Assign Permissions",
+            "Assign Users to Roles",
+            "Audit Access"
+        ]
+    },
+    {
+        "q": "RBAC reduces security administration overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data warehouse automation?",
+        "type": "mcq",
+        "o": [
+            "Automating data warehouse development and maintenance",
+            "Manual development only",
+            "No automation possible",
+            "Visualization automation"
+        ]
+    },
+    {
+        "q": "Automation tools generate _____ from metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "code"
+        ],
+        "other_options": [
+            "users",
+            "storage",
+            "networks"
+        ]
+    },
+    {
+        "q": "Which task can be automated in data warehousing?",
+        "type": "mcq",
+        "o": [
+            "ETL code generation, testing, and documentation",
+            "Only storage management",
+            "Nothing can be automated",
+            "Manual tasks only"
+        ]
+    },
+    {
+        "q": "Match the automation tool with its capability:",
+        "type": "match",
+        "left": [
+            "WhereScape",
+            "Matillion",
+            "Coalesce",
+            "DataOps.live"
+        ],
+        "right": [
+            "Warehouse automation",
+            "Cloud ETL",
+            "dbt automation",
+            "Full DataOps"
+        ]
+    },
+    {
+        "q": "Automation accelerates data warehouse delivery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a slowly changing dimension (SCD) in ELT?",
+        "type": "mcq",
+        "o": [
+            "A dimension that tracks historical changes",
+            "A fast-changing table",
+            "A static table",
+            "A temporary table"
+        ]
+    },
+    {
+        "q": "SCD Type 2 maintains _____ of all changes.",
+        "type": "fill_blank",
+        "answers": [
+            "history"
+        ],
+        "other_options": [
+            "copies",
+            "backups",
+            "snapshots"
+        ]
+    },
+    {
+        "q": "Which dbt feature implements SCD tracking?",
+        "type": "mcq",
+        "o": [
+            "Snapshots",
+            "Models only",
+            "Sources only",
+            "Tests only"
+        ]
+    },
+    {
+        "q": "Match the SCD type with its behavior:",
+        "type": "match",
+        "left": [
+            "Type 0",
+            "Type 1",
+            "Type 2",
+            "Type 3"
+        ],
+        "right": [
+            "No change",
+            "Overwrite",
+            "Add row",
+            "Add column"
+        ]
+    },
+    {
+        "q": "Rearrange SCD Type 2 processing:",
+        "type": "rearrange",
+        "words": [
+            "Detect Change",
+            "Close Current Row",
+            "Insert New Row",
+            "Update Validity Dates"
+        ]
+    },
+    {
+        "q": "SCD enables historical analysis of dimension changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is deduplication in ELT pipelines?",
+        "type": "mcq",
+        "o": [
+            "Removing duplicate records from data",
+            "Adding duplicates",
+            "Compressing data",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "Deduplication uses _____ constraints or logic.",
+        "type": "fill_blank",
+        "answers": [
+            "uniqueness"
+        ],
+        "other_options": [
+            "random",
+            "manual",
+            "optional"
+        ]
+    },
+    {
+        "q": "Which SQL technique handles deduplication?",
+        "type": "mcq",
+        "o": [
+            "ROW_NUMBER with PARTITION BY and QUALIFY",
+            "Simple SELECT",
+            "DELETE all",
+            "No technique"
+        ]
+    },
+    {
+        "q": "Match the deduplication approach with its method:",
+        "type": "match",
+        "left": [
+            "ROW_NUMBER",
+            "DISTINCT",
+            "GROUP BY",
+            "QUALIFY"
+        ],
+        "right": [
+            "Ranked selection",
+            "Unique rows",
+            "Aggregation",
+            "Filter condition"
+        ]
+    },
+    {
+        "q": "Deduplication is essential for data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is late-arriving data handling?",
+        "type": "mcq",
+        "o": [
+            "Processing data that arrives after initial pipeline run",
+            "Early data rejection",
+            "Data deletion",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "Late data requires _____ of historical partitions.",
+        "type": "fill_blank",
+        "answers": [
+            "reprocessing"
+        ],
+        "other_options": [
+            "deletion",
+            "ignoring",
+            "copying"
+        ]
+    },
+    {
+        "q": "Which strategy handles late-arriving fact data?",
+        "type": "mcq",
+        "o": [
+            "Insert with historical date or update existing",
+            "Always reject",
+            "Delete old data",
+            "No handling needed"
+        ]
+    },
+    {
+        "q": "Match the late data scenario with its handling:",
+        "type": "match",
+        "left": [
+            "Late fact",
+            "Late dimension",
+            "Late correction",
+            "Late addition"
+        ],
+        "right": [
+            "Insert to past",
+            "SCD update",
+            "Adjustment record",
+            "Append"
+        ]
+    },
+    {
+        "q": "Rearrange late data processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify Late Records",
+            "Determine Target Partition",
+            "Apply to History",
+            "Reconcile Aggregates"
+        ]
+    },
+    {
+        "q": "Proper late data handling ensures accurate historical reporting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data versioning in ELT?",
+        "type": "mcq",
+        "o": [
+            "Tracking different versions of datasets over time",
+            "File renaming",
+            "Data deletion",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "Versioning enables _____ to previous data states.",
+        "type": "fill_blank",
+        "answers": [
+            "rollback"
+        ],
+        "other_options": [
+            "deletion",
+            "compression",
+            "encryption"
+        ]
+    },
+    {
+        "q": "Which technology provides automatic versioning?",
+        "type": "mcq",
+        "o": [
+            "Delta Lake, Iceberg, and Hudi table formats",
+            "Plain CSV",
+            "Plain JSON",
+            "No versioning available"
+        ]
+    },
+    {
+        "q": "Match the versioning benefit with its use case:",
+        "type": "match",
+        "left": [
+            "Rollback",
+            "Audit",
+            "Compare",
+            "Reproduce"
+        ],
+        "right": [
+            "Undo changes",
+            "Track history",
+            "Diff versions",
+            "Recreate analysis"
+        ]
+    },
+    {
+        "q": "Data versioning supports ML experiment reproducibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data freshness?",
+        "type": "mcq",
+        "o": [
+            "How recently data was updated or refreshed",
+            "Data size",
+            "Data format",
+            "Data location"
+        ]
+    },
+    {
+        "q": "Freshness SLAs define acceptable _____ for data updates.",
+        "type": "fill_blank",
+        "answers": [
+            "latency"
+        ],
+        "other_options": [
+            "size",
+            "format",
+            "location"
+        ]
+    },
+    {
+        "q": "Which tool monitors data freshness?",
+        "type": "mcq",
+        "o": [
+            "dbt source freshness, Monte Carlo, or Soda",
+            "Only manual checks",
+            "No monitoring possible",
+            "Visualization tools only"
+        ]
+    },
+    {
+        "q": "Match the freshness level with its latency:",
+        "type": "match",
+        "left": [
+            "Real-time",
+            "Near real-time",
+            "Hourly",
+            "Daily"
+        ],
+        "right": [
+            "Seconds",
+            "Minutes",
+            "1 hour",
+            "24 hours"
+        ]
+    },
+    {
+        "q": "Rearrange freshness monitoring setup:",
+        "type": "rearrange",
+        "words": [
+            "Define SLAs",
+            "Configure Checks",
+            "Schedule Monitoring",
+            "Alert on Staleness"
+        ]
+    },
+    {
+        "q": "Data freshness directly impacts business decision quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data reconciliation?",
+        "type": "mcq",
+        "o": [
+            "Verifying data consistency between source and target systems",
+            "Data deletion",
+            "Data compression",
+            "Data encryption"
+        ]
+    },
+    {
+        "q": "Reconciliation compares row _____ and checksums.",
+        "type": "fill_blank",
+        "answers": [
+            "counts"
+        ],
+        "other_options": [
+            "names",
+            "formats",
+            "locations"
+        ]
+    },
+    {
+        "q": "Which reconciliation type verifies all data matches?",
+        "type": "mcq",
+        "o": [
+            "Full reconciliation with hash comparison",
+            "Count only",
+            "No verification",
+            "Random sampling only"
+        ]
+    },
+    {
+        "q": "Match the reconciliation level with its thoroughness:",
+        "type": "match",
+        "left": [
+            "Count",
+            "Sum",
+            "Hash",
+            "Full"
+        ],
+        "right": [
+            "Row count",
+            "Numeric totals",
+            "Data fingerprint",
+            "Bit comparison"
+        ]
+    },
+    {
+        "q": "Regular reconciliation catches data pipeline issues early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is pipeline idempotency?",
+        "type": "mcq",
+        "o": [
+            "Producing the same result regardless of re-runs",
+            "Running once only",
+            "Deleting on re-run",
+            "Random results"
+        ]
+    },
+    {
+        "q": "Idempotent pipelines can safely be _____ without side effects.",
+        "type": "fill_blank",
+        "answers": [
+            "re-run"
+        ],
+        "other_options": [
+            "deleted",
+            "compressed",
+            "encrypted"
+        ]
+    },
+    {
+        "q": "Which pattern ensures idempotency?",
+        "type": "mcq",
+        "o": [
+            "MERGE operations with proper keys",
+            "INSERT only",
+            "DELETE only",
+            "Random inserts"
+        ]
+    },
+    {
+        "q": "Match the idempotency technique with its approach:",
+        "type": "match",
+        "left": [
+            "MERGE",
+            "DELETE-INSERT",
+            "Upsert",
+            "Partition overwrite"
+        ],
+        "right": [
+            "Update or insert",
+            "Replace matching",
+            "Key-based update",
+            "Replace partition"
+        ]
+    },
+    {
+        "q": "Rearrange idempotent pipeline design:",
+        "type": "rearrange",
+        "words": [
+            "Define Primary Keys",
+            "Implement MERGE Logic",
+            "Handle Conflicts",
+            "Verify Idempotency"
+        ]
+    },
+    {
+        "q": "Idempotency simplifies pipeline failure recovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is backfilling in data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Processing historical data for past time periods",
+            "Deleting old data",
+            "Real-time processing",
+            "Forward processing only"
+        ]
+    },
+    {
+        "q": "Backfills populate data for _____ time ranges.",
+        "type": "fill_blank",
+        "answers": [
+            "historical"
+        ],
+        "other_options": [
+            "future",
+            "random",
+            "current"
+        ]
+    },
+    {
+        "q": "Which scenario requires backfilling?",
+        "type": "mcq",
+        "o": [
+            "New pipeline, schema changes, or bug fixes",
+            "Normal daily runs",
+            "Real-time streaming",
+            "No scenarios"
+        ]
+    },
+    {
+        "q": "Match the backfill type with its duration:",
+        "type": "match",
+        "left": [
+            "Full",
+            "Partial",
+            "Incremental",
+            "Point-in-time"
+        ],
+        "right": [
+            "All history",
+            "Date range",
+            "Since last run",
+            "Specific time"
+        ]
+    },
+    {
+        "q": "Backfilling requires careful resource management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is schema evolution?",
+        "type": "mcq",
+        "o": [
+            "Managing changes to data schemas over time",
+            "Static schemas",
+            "Schema deletion",
+            "No schema changes"
+        ]
+    },
+    {
+        "q": "Schema evolution allows _____ compatible changes.",
+        "type": "fill_blank",
+        "answers": [
+            "backward"
+        ],
+        "other_options": [
+            "breaking",
+            "random",
+            "incompatible"
+        ]
+    },
+    {
+        "q": "Which change is typically backward compatible?",
+        "type": "mcq",
+        "o": [
+            "Adding optional columns with defaults",
+            "Removing required columns",
+            "Changing column types",
+            "Renaming columns"
+        ]
+    },
+    {
+        "q": "Match the schema change with its compatibility:",
+        "type": "match",
+        "left": [
+            "Add column",
+            "Remove column",
+            "Change type",
+            "Add default"
+        ],
+        "right": [
+            "Usually safe",
+            "Breaking",
+            "Often breaking",
+            "Safe"
+        ]
+    },
+    {
+        "q": "Rearrange schema evolution workflow:",
+        "type": "rearrange",
+        "words": [
+            "Propose Change",
+            "Assess Impact",
+            "Apply Migration",
+            "Update Consumers"
+        ]
+    },
+    {
+        "q": "Schema evolution enables continuous data platform improvement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a data pipeline testing strategy?",
+        "type": "mcq",
+        "o": [
+            "Systematic approach to validating data transformations",
+            "No testing needed",
+            "Manual review only",
+            "Production testing only"
+        ]
+    },
+    {
+        "q": "Testing includes unit, integration, and _____ tests.",
+        "type": "fill_blank",
+        "answers": [
+            "end-to-end"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which testing level validates individual transformations?",
+        "type": "mcq",
+        "o": [
+            "Unit testing",
+            "Integration testing",
+            "End-to-end testing",
+            "No testing"
+        ]
+    },
+    {
+        "q": "Match the test type with its scope:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "E2E",
+            "Contract"
+        ],
+        "right": [
+            "Single transform",
+            "Component interaction",
+            "Full pipeline",
+            "Interface agreement"
+        ]
+    },
+    {
+        "q": "Comprehensive testing reduces production incidents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is circuit breaker pattern in data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Stopping pipeline execution when errors exceed threshold",
+            "Always continuing",
+            "No error handling",
+            "Random stopping"
+        ]
+    },
+    {
+        "q": "Circuit breakers prevent _____ of bad data.",
+        "type": "fill_blank",
+        "answers": [
+            "propagation"
+        ],
+        "other_options": [
+            "creation",
+            "storage",
+            "deletion"
+        ]
+    },
+    {
+        "q": "Which condition triggers a circuit breaker?",
+        "type": "mcq",
+        "o": [
+            "Error rate exceeding configured threshold",
+            "Any single error",
+            "No errors ever",
+            "Random triggering"
+        ]
+    },
+    {
+        "q": "Match the circuit state with its behavior:",
+        "type": "match",
+        "left": [
+            "Closed",
+            "Open",
+            "Half-open",
+            "Tripped"
+        ],
+        "right": [
+            "Normal flow",
+            "Blocked",
+            "Testing recovery",
+            "Error threshold met"
+        ]
+    },
+    {
+        "q": "Rearrange circuit breaker workflow:",
+        "type": "rearrange",
+        "words": [
+            "Monitor Errors",
+            "Detect Threshold",
+            "Open Circuit",
+            "Notify Team",
+            "Attempt Reset"
+        ]
+    },
+    {
+        "q": "Circuit breakers protect downstream systems from bad data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data pipeline observability?",
+        "type": "mcq",
+        "o": [
+            "Comprehensive monitoring of pipeline health and performance",
+            "Only error logging",
+            "No monitoring",
+            "Manual observation only"
+        ]
+    },
+    {
+        "q": "Observability includes metrics, logs, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "traces"
+        ],
+        "other_options": [
+            "files",
+            "users",
+            "storage"
+        ]
+    },
+    {
+        "q": "Which metric indicates pipeline performance?",
+        "type": "mcq",
+        "o": [
+            "Execution time, data volume, and error rate",
+            "Only file size",
+            "Only user count",
+            "No metrics needed"
+        ]
+    },
+    {
+        "q": "Match the observability pillar with its data:",
+        "type": "match",
+        "left": [
+            "Metrics",
+            "Logs",
+            "Traces",
+            "Events"
+        ],
+        "right": [
+            "Numeric values",
+            "Text records",
+            "Request flow",
+            "State changes"
+        ]
+    },
+    {
+        "q": "Good observability enables proactive issue detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data pipeline alerting?",
+        "type": "mcq",
+        "o": [
+            "Automated notifications when issues are detected",
+            "Manual checking only",
+            "No notifications",
+            "Email only"
+        ]
+    },
+    {
+        "q": "Alerts should be _____ to avoid overwhelming teams.",
+        "type": "fill_blank",
+        "answers": [
+            "actionable"
+        ],
+        "other_options": [
+            "frequent",
+            "random",
+            "optional"
+        ]
+    },
+    {
+        "q": "Which severity level requires immediate action?",
+        "type": "mcq",
+        "o": [
+            "Critical alerts for production outages",
+            "All alerts equally",
+            "Only info level",
+            "No immediate action"
+        ]
+    },
+    {
+        "q": "Match the alert severity with its response:",
+        "type": "match",
+        "left": [
+            "Critical",
+            "Warning",
+            "Info",
+            "Debug"
+        ],
+        "right": [
+            "Immediate",
+            "Soon",
+            "Review later",
+            "Development only"
+        ]
+    },
+    {
+        "q": "Rearrange alert handling workflow:",
+        "type": "rearrange",
+        "words": [
+            "Detect Issue",
+            "Send Alert",
+            "Acknowledge",
+            "Investigate",
+            "Resolve"
+        ]
+    },
+    {
+        "q": "Well-designed alerting reduces mean time to recovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is cost optimization in cloud ELT?",
+        "type": "mcq",
+        "o": [
+            "Minimizing compute and storage costs while maintaining performance",
+            "Unlimited spending",
+            "Cost is not a concern",
+            "Only free tiers"
+        ]
+    },
+    {
+        "q": "Cost optimization balances _____ and expenses.",
+        "type": "fill_blank",
+        "answers": [
+            "performance"
+        ],
+        "other_options": [
+            "complexity",
+            "users",
+            "files"
+        ]
+    },
+    {
+        "q": "Which technique reduces warehouse compute costs?",
+        "type": "mcq",
+        "o": [
+            "Auto-suspend, right-sizing, and query optimization",
+            "Running 24/7",
+            "Maximum size always",
+            "No optimization"
+        ]
+    },
+    {
+        "q": "Match the cost factor with its optimization:",
+        "type": "match",
+        "left": [
+            "Compute",
+            "Storage",
+            "Network",
+            "Operations"
+        ],
+        "right": [
+            "Auto-suspend",
+            "Compression",
+            "Data locality",
+            "Automation"
+        ]
+    },
+    {
+        "q": "Cost visibility enables informed resource allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data pipeline documentation?",
+        "type": "mcq",
+        "o": [
+            "Recording how pipelines work for maintenance and onboarding",
+            "No documentation needed",
+            "Code comments only",
+            "Mental notes only"
+        ]
+    },
+    {
+        "q": "Documentation includes pipeline _____, dependencies, and SLAs.",
+        "type": "fill_blank",
+        "answers": [
+            "purpose"
+        ],
+        "other_options": [
+            "size",
+            "color",
+            "age"
+        ]
+    },
+    {
+        "q": "Which documentation tool integrates with dbt?",
+        "type": "mcq",
+        "o": [
+            "dbt docs with auto-generated documentation",
+            "External wiki only",
+            "No documentation tools",
+            "Manual only"
+        ]
+    },
+    {
+        "q": "Match the documentation type with its content:",
+        "type": "match",
+        "left": [
+            "Technical",
+            "Business",
+            "Operational",
+            "User"
+        ],
+        "right": [
+            "How it works",
+            "Why it exists",
+            "How to run",
+            "How to use"
+        ]
+    },
+    {
+        "q": "Rearrange documentation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Document During Development",
+            "Generate Auto-docs",
+            "Review Accuracy",
+            "Publish to Team"
+        ]
+    },
+    {
+        "q": "Good documentation reduces tribal knowledge dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is GitOps for data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Using Git as the source of truth for pipeline configuration",
+            "No version control",
+            "Manual deployments",
+            "Binary storage only"
+        ]
+    },
+    {
+        "q": "GitOps enables _____ and automated deployments.",
+        "type": "fill_blank",
+        "answers": [
+            "audit trails"
+        ],
+        "other_options": [
+            "random changes",
+            "manual work",
+            "no reviews"
+        ]
+    },
+    {
+        "q": "Which GitOps practice ensures code review?",
+        "type": "mcq",
+        "o": [
+            "Pull requests with required approvals",
+            "Direct commits to main",
+            "No review needed",
+            "Email approvals"
+        ]
+    },
+    {
+        "q": "Match the GitOps component with its role:",
+        "type": "match",
+        "left": [
+            "Repository",
+            "Pull request",
+            "CI/CD",
+            "Deployment"
+        ],
+        "right": [
+            "Source of truth",
+            "Change proposal",
+            "Automation",
+            "Release"
+        ]
+    },
+    {
+        "q": "GitOps provides reproducibility and accountability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is environment management in data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Managing separate dev, staging, and production environments",
+            "Single environment only",
+            "No separate environments",
+            "Production only"
+        ]
+    },
+    {
+        "q": "Environment separation prevents _____ changes in production.",
+        "type": "fill_blank",
+        "answers": [
+            "untested"
+        ],
+        "other_options": [
+            "all",
+            "any",
+            "random"
+        ]
+    },
+    {
+        "q": "Which environment is for final testing before production?",
+        "type": "mcq",
+        "o": [
+            "Staging or pre-production environment",
+            "Development only",
+            "Production directly",
+            "No testing environment"
+        ]
+    },
+    {
+        "q": "Match the environment with its purpose:",
+        "type": "match",
+        "left": [
+            "Development",
+            "Testing",
+            "Staging",
+            "Production"
+        ],
+        "right": [
+            "Build features",
+            "Run tests",
+            "Final validation",
+            "Live data"
+        ]
+    },
+    {
+        "q": "Rearrange promotion workflow:",
+        "type": "rearrange",
+        "words": [
+            "Develop in Dev",
+            "Test in Test",
+            "Validate in Staging",
+            "Deploy to Production"
+        ]
+    },
+    {
+        "q": "Environment parity reduces deployment surprises.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Dagster?",
+        "type": "mcq",
+        "o": [
+            "A data orchestrator with software-defined assets",
+            "A database",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Dagster treats data as first-class _____.",
+        "type": "fill_blank",
+        "answers": [
+            "assets"
+        ],
+        "other_options": [
+            "files",
+            "users",
+            "queries"
+        ]
+    },
+    {
+        "q": "Which Dagster concept defines a data artifact?",
+        "type": "mcq",
+        "o": [
+            "Software-defined asset",
+            "DAG only",
+            "Task only",
+            "No concept"
+        ]
+    },
+    {
+        "q": "Match the Dagster concept with its meaning:",
+        "type": "match",
+        "left": [
+            "Asset",
+            "Op",
+            "Job",
+            "Resource"
+        ],
+        "right": [
+            "Data artifact",
+            "Computation",
+            "Workflow",
+            "External system"
+        ]
+    },
+    {
+        "q": "Dagster provides built-in data quality observability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Prefect?",
+        "type": "mcq",
+        "o": [
+            "A modern Python workflow orchestration platform",
+            "A database",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Prefect uses Python _____ for defining flows.",
+        "type": "fill_blank",
+        "answers": [
+            "decorators"
+        ],
+        "other_options": [
+            "files",
+            "classes",
+            "strings"
+        ]
+    },
+    {
+        "q": "Which Prefect version introduced a simpler API?",
+        "type": "mcq",
+        "o": [
+            "Prefect 2.0 (Orion)",
+            "Prefect 0.x",
+            "Prefect 1.0",
+            "No version"
+        ]
+    },
+    {
+        "q": "Match the Prefect concept with its function:",
+        "type": "match",
+        "left": [
+            "Flow",
+            "Task",
+            "Deployment",
+            "Block"
+        ],
+        "right": [
+            "Workflow",
+            "Work unit",
+            "Scheduled run",
+            "Configuration"
+        ]
+    },
+    {
+        "q": "Rearrange Prefect development workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define Tasks",
+            "Compose Flow",
+            "Create Deployment",
+            "Schedule Runs"
+        ]
+    },
+    {
+        "q": "Prefect simplifies Python workflow development.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Apache Flink?",
+        "type": "mcq",
+        "o": [
+            "A stream processing framework for real-time analytics",
+            "A batch-only tool",
+            "A database",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Flink provides exactly-once _____ for streaming.",
+        "type": "fill_blank",
+        "answers": [
+            "semantics"
+        ],
+        "other_options": [
+            "storage",
+            "deletion",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which Flink feature handles late-arriving events?",
+        "type": "mcq",
+        "o": [
+            "Watermarks and event-time processing",
+            "Ignore late data",
+            "Delete late data",
+            "No handling"
+        ]
+    },
+    {
+        "q": "Match the Flink concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Watermark",
+            "Checkpoint",
+            "Savepoint",
+            "State"
+        ],
+        "right": [
+            "Event time progress",
+            "Fault tolerance",
+            "Upgrade snapshot",
+            "Computation memory"
+        ]
+    },
+    {
+        "q": "Flink unifies batch and streaming processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Trino (formerly PrestoSQL)?",
+        "type": "mcq",
+        "o": [
+            "A distributed SQL query engine for federated queries",
+            "A database",
+            "A visualization tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Trino queries data across _____ data sources.",
+        "type": "fill_blank",
+        "answers": [
+            "multiple"
+        ],
+        "other_options": [
+            "single",
+            "no",
+            "local"
+        ]
+    },
+    {
+        "q": "Which feature enables cross-source joins in Trino?",
+        "type": "mcq",
+        "o": [
+            "Connectors and federated query engine",
+            "No cross-source support",
+            "Data copy only",
+            "Manual joining"
+        ]
+    },
+    {
+        "q": "Match the Trino connector with its data source:",
+        "type": "match",
+        "left": [
+            "Hive",
+            "MySQL",
+            "PostgreSQL",
+            "Iceberg"
+        ],
+        "right": [
+            "Data lake",
+            "MySQL DB",
+            "PostgreSQL DB",
+            "Lake tables"
+        ]
+    },
+    {
+        "q": "Rearrange Trino query execution:",
+        "type": "rearrange",
+        "words": [
+            "Parse Query",
+            "Create Plan",
+            "Distribute Work",
+            "Aggregate Results"
+        ]
+    },
+    {
+        "q": "Trino enables SQL queries without data movement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt Mesh?",
+        "type": "mcq",
+        "o": [
+            "Multi-project dbt architecture for large organizations",
+            "Single project only",
+            "No multi-project",
+            "Different tool"
+        ]
+    },
+    {
+        "q": "dbt Mesh enables _____ reference between projects.",
+        "type": "fill_blank",
+        "answers": [
+            "cross-project"
+        ],
+        "other_options": [
+            "no",
+            "local",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which dbt feature supports project interconnection?",
+        "type": "mcq",
+        "o": [
+            "Public models and cross-project ref",
+            "No interconnection",
+            "File copy only",
+            "Manual sync"
+        ]
+    },
+    {
+        "q": "Match the dbt Mesh concept with its meaning:",
+        "type": "match",
+        "left": [
+            "Public model",
+            "Private model",
+            "Group",
+            "Access control"
+        ],
+        "right": [
+            "External access",
+            "Project-only",
+            "Model collection",
+            "Permission management"
+        ]
+    },
+    {
+        "q": "dbt Mesh supports federated data modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is contract testing in data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Verifying data meets agreed schema and quality standards",
+            "Legal contracts",
+            "No testing",
+            "Manual review only"
+        ]
+    },
+    {
+        "q": "Contract tests validate _____ expectations.",
+        "type": "fill_blank",
+        "answers": [
+            "consumer"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which dbt feature enables contract testing?",
+        "type": "mcq",
+        "o": [
+            "dbt contracts with model contracts",
+            "No contract support",
+            "External tools only",
+            "Manual validation"
+        ]
+    },
+    {
+        "q": "Match the contract element with its validation:",
+        "type": "match",
+        "left": [
+            "Schema",
+            "Column types",
+            "Constraints",
+            "Freshness"
+        ],
+        "right": [
+            "Structure match",
+            "Type validation",
+            "Rule check",
+            "Recency check"
+        ]
+    },
+    {
+        "q": "Rearrange contract testing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define Contract",
+            "Implement Validation",
+            "Run on Build",
+            "Alert on Failure"
+        ]
+    },
+    {
+        "q": "Contract testing prevents breaking changes to downstream consumers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is unit testing for SQL?",
+        "type": "mcq",
+        "o": [
+            "Testing individual SQL transformations with known inputs",
+            "Only production testing",
+            "No SQL testing",
+            "Manual review only"
+        ]
+    },
+    {
+        "q": "SQL unit tests use _____ data for predictable assertions.",
+        "type": "fill_blank",
+        "answers": [
+            "mock"
+        ],
+        "other_options": [
+            "random",
+            "production",
+            "live"
+        ]
+    },
+    {
+        "q": "Which tool enables dbt SQL unit testing?",
+        "type": "mcq",
+        "o": [
+            "dbt-unit-testing or dbt built-in unit tests",
+            "No testing tools",
+            "Only production",
+            "Manual only"
+        ]
+    },
+    {
+        "q": "Match the test type with its focus:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "E2E",
+            "Smoke"
+        ],
+        "right": [
+            "Single model",
+            "Model interactions",
+            "Full pipeline",
+            "Basic functionality"
+        ]
+    },
+    {
+        "q": "Unit tests catch logic errors before deployment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data team organization?",
+        "type": "mcq",
+        "o": [
+            "Structuring data roles and responsibilities",
+            "Random assignment",
+            "No structure",
+            "One person does everything"
+        ]
+    },
+    {
+        "q": "Modern data teams include engineers, analysts, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "scientists"
+        ],
+        "other_options": [
+            "managers only",
+            "developers only",
+            "admins only"
+        ]
+    },
+    {
+        "q": "Which team model embeds data people in business units?",
+        "type": "mcq",
+        "o": [
+            "Hub-and-spoke or embedded model",
+            "Completely centralized",
+            "No embedding",
+            "External contractors only"
+        ]
+    },
+    {
+        "q": "Match the data role with its focus:",
+        "type": "match",
+        "left": [
+            "Data engineer",
+            "Analytics engineer",
+            "Data analyst",
+            "Data scientist"
+        ],
+        "right": [
+            "Pipelines",
+            "Transformations",
+            "Insights",
+            "ML models"
+        ]
+    },
+    {
+        "q": "Rearrange data team maturity:",
+        "type": "rearrange",
+        "words": [
+            "Ad-hoc Analysis",
+            "Defined Pipelines",
+            "Self-service Analytics",
+            "Data Products"
+        ]
+    },
+    {
+        "q": "Clear role definitions improve data team effectiveness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is analytics engineering?",
+        "type": "mcq",
+        "o": [
+            "The practice of bringing software engineering to analytics",
+            "Only reporting",
+            "Only ETL",
+            "Only visualization"
+        ]
+    },
+    {
+        "q": "Analytics engineers focus on data _____ and quality.",
+        "type": "fill_blank",
+        "answers": [
+            "modeling"
+        ],
+        "other_options": [
+            "storage",
+            "deletion",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which tool is central to analytics engineering?",
+        "type": "mcq",
+        "o": [
+            "dbt (data build tool)",
+            "Only SQL",
+            "Only Python",
+            "Only Excel"
+        ]
+    },
+    {
+        "q": "Match the data role with its primary tool:",
+        "type": "match",
+        "left": [
+            "Data engineer",
+            "Analytics engineer",
+            "Data analyst",
+            "Data scientist"
+        ],
+        "right": [
+            "Airflow/Spark",
+            "dbt",
+            "BI tools",
+            "Python/notebooks"
+        ]
+    },
+    {
+        "q": "Analytics engineering bridges engineering and analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is self-service analytics?",
+        "type": "mcq",
+        "o": [
+            "Enabling business users to access and analyze data independently",
+            "All analysis by data team",
+            "No user access",
+            "External consultants only"
+        ]
+    },
+    {
+        "q": "Self-service reduces _____ on data team for ad-hoc requests.",
+        "type": "fill_blank",
+        "answers": [
+            "dependency"
+        ],
+        "other_options": [
+            "efficiency",
+            "quality",
+            "speed"
+        ]
+    },
+    {
+        "q": "Which tool enables self-service analytics?",
+        "type": "mcq",
+        "o": [
+            "BI tools like Looker, Tableau, or Metabase",
+            "Only command line",
+            "Only SQL IDE",
+            "No tools available"
+        ]
+    },
+    {
+        "q": "Match the self-service component with its benefit:",
+        "type": "match",
+        "left": [
+            "Semantic layer",
+            "Data catalog",
+            "BI dashboards",
+            "Documentation"
+        ],
+        "right": [
+            "Consistent metrics",
+            "Data discovery",
+            "Visual analysis",
+            "Understanding"
+        ]
+    },
+    {
+        "q": "Rearrange self-service maturity:",
+        "type": "rearrange",
+        "words": [
+            "Request-based",
+            "Curated Datasets",
+            "Self-serve BI",
+            "Data Products"
+        ]
+    },
+    {
+        "q": "Self-service analytics increases data-driven decision making.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is BI (Business Intelligence)?",
+        "type": "mcq",
+        "o": [
+            "Tools and practices for analyzing business data",
+            "Only databases",
+            "Only storage",
+            "Only ETL"
+        ]
+    },
+    {
+        "q": "BI transforms data into actionable _____.",
+        "type": "fill_blank",
+        "answers": [
+            "insights"
+        ],
+        "other_options": [
+            "files",
+            "storage",
+            "backups"
+        ]
+    },
+    {
+        "q": "Which BI tool is commonly used for dashboards?",
+        "type": "mcq",
+        "o": [
+            "Tableau, Power BI, or Looker",
+            "Only Excel",
+            "Only command line",
+            "No BI tools"
+        ]
+    },
+    {
+        "q": "Match the BI capability with its output:",
+        "type": "match",
+        "left": [
+            "Dashboards",
+            "Reports",
+            "Ad-hoc queries",
+            "Alerts"
+        ],
+        "right": [
+            "Visual monitoring",
+            "Scheduled documents",
+            "Exploration",
+            "Notifications"
+        ]
+    },
+    {
+        "q": "Modern BI emphasizes embedded and real-time analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Looker?",
+        "type": "mcq",
+        "o": [
+            "A BI platform with a semantic layer (LookML)",
+            "A database",
+            "An ETL tool",
+            "A storage system"
+        ]
+    },
+    {
+        "q": "Looker uses LookML for _____ definition.",
+        "type": "fill_blank",
+        "answers": [
+            "semantic layer"
+        ],
+        "other_options": [
+            "file storage",
+            "user management",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which Looker feature enables consistent metrics?",
+        "type": "mcq",
+        "o": [
+            "LookML models with centralized definitions",
+            "No metric management",
+            "Local definitions only",
+            "Manual consistency"
+        ]
+    },
+    {
+        "q": "Match the Looker concept with its role:",
+        "type": "match",
+        "left": [
+            "LookML",
+            "Explore",
+            "Look",
+            "Dashboard"
+        ],
+        "right": [
+            "Semantic model",
+            "Data exploration",
+            "Saved query",
+            "Visualization collection"
+        ]
+    },
+    {
+        "q": "Rearrange Looker development workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define LookML Model",
+            "Create Explores",
+            "Build Looks",
+            "Assemble Dashboard"
+        ]
+    },
+    {
+        "q": "Looker is now part of Google Cloud.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data product thinking?",
+        "type": "mcq",
+        "o": [
+            "Treating data as products with defined consumers and SLAs",
+            "Data as side effect",
+            "No product thinking",
+            "Random data delivery"
+        ]
+    },
+    {
+        "q": "Data products have _____, documentation, and support.",
+        "type": "fill_blank",
+        "answers": [
+            "ownership"
+        ],
+        "other_options": [
+            "no ownership",
+            "random",
+            "optional"
+        ]
+    },
+    {
+        "q": "Which data product attribute ensures reliability?",
+        "type": "mcq",
+        "o": [
+            "SLAs with defined availability and freshness",
+            "No guarantees",
+            "Best effort only",
+            "Random availability"
+        ]
+    },
+    {
+        "q": "Match the product attribute with its definition:",
+        "type": "match",
+        "left": [
+            "Discoverable",
+            "Addressable",
+            "Trustworthy",
+            "Self-describing"
+        ],
+        "right": [
+            "Easy to find",
+            "Easy to access",
+            "High quality",
+            "Well documented"
+        ]
+    },
+    {
+        "q": "Data product thinking improves data consumption experience.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data warehouse performance tuning?",
+        "type": "mcq",
+        "o": [
+            "Optimizing queries and infrastructure for faster results",
+            "Slowing down queries",
+            "No optimization needed",
+            "Random performance"
+        ]
+    },
+    {
+        "q": "Performance tuning involves query optimization and _____ sizing.",
+        "type": "fill_blank",
+        "answers": [
+            "warehouse"
+        ],
+        "other_options": [
+            "file",
+            "user",
+            "random"
+        ]
+    },
+    {
+        "q": "Which technique improves query performance?",
+        "type": "mcq",
+        "o": [
+            "Proper indexing, partitioning, and clustering",
+            "No indexing",
+            "Random data placement",
+            "Larger tables always"
+        ]
+    },
+    {
+        "q": "Match the performance factor with its optimization:",
+        "type": "match",
+        "left": [
+            "Query design",
+            "Data distribution",
+            "Warehouse size",
+            "Caching"
+        ],
+        "right": [
+            "SQL optimization",
+            "Partitioning",
+            "Right-sizing",
+            "Repeated queries"
+        ]
+    },
+    {
+        "q": "Rearrange performance tuning workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify Slow Queries",
+            "Analyze Execution Plan",
+            "Apply Optimization",
+            "Measure Improvement"
+        ]
+    },
+    {
+        "q": "Query profiling is essential for performance optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is table materialization strategy?",
+        "type": "mcq",
+        "o": [
+            "Choosing how to persist transformation results",
+            "Deleting tables",
+            "Only views",
+            "No strategy needed"
+        ]
+    },
+    {
+        "q": "Views trade storage for _____ compute.",
+        "type": "fill_blank",
+        "answers": [
+            "query-time"
+        ],
+        "other_options": [
+            "no",
+            "less",
+            "random"
+        ]
+    },
+    {
+        "q": "Which materialization is best for large aggregations?",
+        "type": "mcq",
+        "o": [
+            "Table materialization for pre-computed results",
+            "View always",
+            "Ephemeral always",
+            "No materialization"
+        ]
+    },
+    {
+        "q": "Match the materialization with its trade-off:",
+        "type": "match",
+        "left": [
+            "Table",
+            "View",
+            "Incremental",
+            "Ephemeral"
+        ],
+        "right": [
+            "Storage + fast reads",
+            "No storage + compute",
+            "Balance",
+            "No persistence"
+        ]
+    },
+    {
+        "q": "Materialization strategy significantly impacts costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt exposures?",
+        "type": "mcq",
+        "o": [
+            "Documenting downstream consumers of dbt models",
+            "Security vulnerabilities",
+            "Data deletion",
+            "No purpose"
+        ]
+    },
+    {
+        "q": "Exposures track _____ that consume dbt models.",
+        "type": "fill_blank",
+        "answers": [
+            "dashboards"
+        ],
+        "other_options": [
+            "files",
+            "backups",
+            "users"
+        ]
+    },
+    {
+        "q": "Which benefit do exposures provide?",
+        "type": "mcq",
+        "o": [
+            "Impact analysis when changing models",
+            "No benefits",
+            "Faster queries",
+            "More storage"
+        ]
+    },
+    {
+        "q": "Match the exposure type with its example:",
+        "type": "match",
+        "left": [
+            "Dashboard",
+            "Application",
+            "ML model",
+            "Report"
+        ],
+        "right": [
+            "Looker dashboard",
+            "Production app",
+            "Prediction service",
+            "Scheduled email"
+        ]
+    },
+    {
+        "q": "Rearrange exposure documentation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify Consumers",
+            "Create Exposure",
+            "Link to Models",
+            "Document Dependencies"
+        ]
+    },
+    {
+        "q": "Exposures improve data platform documentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt metrics layer?",
+        "type": "mcq",
+        "o": [
+            "Centralized metric definitions in dbt",
+            "No metrics support",
+            "External tools only",
+            "Manual calculations"
+        ]
+    },
+    {
+        "q": "Metrics layer provides _____ metric calculations.",
+        "type": "fill_blank",
+        "answers": [
+            "consistent"
+        ],
+        "other_options": [
+            "random",
+            "varying",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which component defines metrics in dbt?",
+        "type": "mcq",
+        "o": [
+            "Semantic layer with metric specifications",
+            "Only SQL",
+            "Only models",
+            "No component"
+        ]
+    },
+    {
+        "q": "Match the metric property with its purpose:",
+        "type": "match",
+        "left": [
+            "Measure",
+            "Dimension",
+            "Filter",
+            "Time grain"
+        ],
+        "right": [
+            "Aggregation",
+            "Grouping",
+            "Subset",
+            "Time period"
+        ]
+    },
+    {
+        "q": "Metrics layer eliminates metric inconsistencies across tools.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data warehouse migration?",
+        "type": "mcq",
+        "o": [
+            "Moving data and workloads to a new platform",
+            "Keeping same platform",
+            "Deleting all data",
+            "No migration possible"
+        ]
+    },
+    {
+        "q": "Migration involves schema, data, and _____ migration.",
+        "type": "fill_blank",
+        "answers": [
+            "query"
+        ],
+        "other_options": [
+            "user",
+            "file",
+            "random"
+        ]
+    },
+    {
+        "q": "Which challenge is common in migrations?",
+        "type": "mcq",
+        "o": [
+            "SQL dialect differences and performance tuning",
+            "No challenges",
+            "Easy always",
+            "Automatic migration"
+        ]
+    },
+    {
+        "q": "Match the migration phase with its focus:",
+        "type": "match",
+        "left": [
+            "Assessment",
+            "Design",
+            "Migration",
+            "Optimization"
+        ],
+        "right": [
+            "Current state",
+            "Target architecture",
+            "Data movement",
+            "Performance tuning"
+        ]
+    },
+    {
+        "q": "Rearrange migration project phases:",
+        "type": "rearrange",
+        "words": [
+            "Assess Current State",
+            "Design Target",
+            "Migrate Data",
+            "Validate Results",
+            "Optimize Performance"
+        ]
+    },
+    {
+        "q": "Migration projects require thorough testing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SQL dialect translation?",
+        "type": "mcq",
+        "o": [
+            "Converting SQL between different database syntaxes",
+            "No translation needed",
+            "Same SQL everywhere",
+            "Manual rewrite only"
+        ]
+    },
+    {
+        "q": "Different databases have _____ SQL implementations.",
+        "type": "fill_blank",
+        "answers": [
+            "varying"
+        ],
+        "other_options": [
+            "identical",
+            "same",
+            "no"
+        ]
+    },
+    {
+        "q": "Which tool helps with SQL translation?",
+        "type": "mcq",
+        "o": [
+            "SQLGlot, BigQuery Migration, or manual translation",
+            "No tools exist",
+            "Automatic always",
+            "No translation possible"
+        ]
+    },
+    {
+        "q": "Match the SQL feature with its dialect variation:",
+        "type": "match",
+        "left": [
+            "Date functions",
+            "String functions",
+            "Window functions",
+            "Array handling"
+        ],
+        "right": [
+            "DATEDIFF vs DATE_DIFF",
+            "CONCAT vs ||",
+            "Similar syntax",
+            "Platform-specific"
+        ]
+    },
+    {
+        "q": "Thorough testing catches SQL translation issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake vs BigQuery comparison?",
+        "type": "mcq",
+        "o": [
+            "Comparing two leading cloud data warehouses",
+            "Same platform",
+            "No differences",
+            "Not comparable"
+        ]
+    },
+    {
+        "q": "Snowflake uses _____ pricing while BigQuery uses slot-based.",
+        "type": "fill_blank",
+        "answers": [
+            "credit-based"
+        ],
+        "other_options": [
+            "free",
+            "flat",
+            "random"
+        ]
+    },
+    {
+        "q": "Which architecture does Snowflake use?",
+        "type": "mcq",
+        "o": [
+            "Multi-cluster shared data architecture",
+            "Single cluster only",
+            "No clustering",
+            "Same as BigQuery"
+        ]
+    },
+    {
+        "q": "Match the platform with its differentiator:",
+        "type": "match",
+        "left": [
+            "Snowflake Time Travel",
+            "BigQuery ML",
+            "Snowflake cloning",
+            "BigQuery nested data"
+        ],
+        "right": [
+            "Query history",
+            "In-warehouse ML",
+            "Zero-copy",
+            "Native JSON support"
+        ]
+    },
+    {
+        "q": "Both platforms support SQL-based transformations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Databricks vs Snowflake comparison?",
+        "type": "mcq",
+        "o": [
+            "Comparing lakehouse vs cloud data warehouse",
+            "Same platform",
+            "No differences",
+            "Not comparable"
+        ]
+    },
+    {
+        "q": "Databricks uses Spark engine while Snowflake uses _____ engine.",
+        "type": "fill_blank",
+        "answers": [
+            "SQL"
+        ],
+        "other_options": [
+            "same",
+            "Spark",
+            "no"
+        ]
+    },
+    {
+        "q": "Which use case favors Databricks?",
+        "type": "mcq",
+        "o": [
+            "ML/AI workloads with unified analytics",
+            "Pure SQL analytics only",
+            "Simple reporting",
+            "No use cases"
+        ]
+    },
+    {
+        "q": "Match the platform with its strength:",
+        "type": "match",
+        "left": [
+            "Databricks ML",
+            "Snowflake sharing",
+            "Databricks notebooks",
+            "Snowflake Snowpark"
+        ],
+        "right": [
+            "Built-in ML",
+            "Zero-copy share",
+            "Collaborative code",
+            "Python in warehouse"
+        ]
+    },
+    {
+        "q": "Rearrange factors in platform selection:",
+        "type": "rearrange",
+        "words": [
+            "Define Requirements",
+            "Evaluate Platforms",
+            "POC Testing",
+            "Make Decision"
+        ]
+    },
+    {
+        "q": "Platform choice depends on specific use case requirements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is cloud cost management for data?",
+        "type": "mcq",
+        "o": [
+            "Monitoring and optimizing cloud data platform spending",
+            "Unlimited spending",
+            "No cost tracking",
+            "Fixed costs only"
+        ]
+    },
+    {
+        "q": "Cost management requires _____ into resource usage.",
+        "type": "fill_blank",
+        "answers": [
+            "visibility"
+        ],
+        "other_options": [
+            "hiding",
+            "ignoring",
+            "random"
+        ]
+    },
+    {
+        "q": "Which practice reduces unexpected costs?",
+        "type": "mcq",
+        "o": [
+            "Setting budgets and alerts with resource tagging",
+            "No monitoring",
+            "Unlimited budgets",
+            "Ignoring costs"
+        ]
+    },
+    {
+        "q": "Match the cost component with its control:",
+        "type": "match",
+        "left": [
+            "Compute",
+            "Storage",
+            "Egress",
+            "Operations"
+        ],
+        "right": [
+            "Right-sizing",
+            "Lifecycle policies",
+            "Data locality",
+            "Automation"
+        ]
+    },
+    {
+        "q": "Regular cost reviews identify optimization opportunities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is dbt project structure best practice?",
+        "type": "mcq",
+        "o": [
+            "Organizing models in staging, intermediate, and marts layers",
+            "Flat structure only",
+            "No organization needed",
+            "Random placement"
+        ]
+    },
+    {
+        "q": "Staging models typically start with stg_ _____.",
+        "type": "fill_blank",
+        "answers": [
+            "prefix"
+        ],
+        "other_options": [
+            "suffix",
+            "random",
+            "none"
+        ]
+    },
+    {
+        "q": "Which layer contains business logic transformations?",
+        "type": "mcq",
+        "o": [
+            "Intermediate layer between staging and marts",
+            "Only staging",
+            "Only marts",
+            "No intermediate"
+        ]
+    },
+    {
+        "q": "Match the layer with its purpose:",
+        "type": "match",
+        "left": [
+            "Staging",
+            "Intermediate",
+            "Marts",
+            "Utils"
+        ],
+        "right": [
+            "Clean raw data",
+            "Business logic",
+            "Final models",
+            "Helper macros"
+        ]
+    },
+    {
+        "q": "Rearrange dbt project layers:",
+        "type": "rearrange",
+        "words": [
+            "Sources",
+            "Staging",
+            "Intermediate",
+            "Marts"
+        ]
+    },
+    {
+        "q": "Good project structure improves maintainability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is CI/CD for dbt projects?",
+        "type": "mcq",
+        "o": [
+            "Automated testing and deployment of dbt models",
+            "Manual deployments only",
+            "No automation possible",
+            "Production changes directly"
+        ]
+    },
+    {
+        "q": "CI runs dbt _____ on pull requests.",
+        "type": "fill_blank",
+        "answers": [
+            "tests"
+        ],
+        "other_options": [
+            "production",
+            "random",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which CI check validates dbt syntax?",
+        "type": "mcq",
+        "o": [
+            "dbt compile to check for errors",
+            "No syntax check",
+            "Only production",
+            "Manual review only"
+        ]
+    },
+    {
+        "q": "Match the CI stage with its check:",
+        "type": "match",
+        "left": [
+            "Compile",
+            "Run",
+            "Test",
+            "Docs"
+        ],
+        "right": [
+            "Syntax check",
+            "Build models",
+            "Data quality",
+            "Documentation"
+        ]
+    },
+    {
+        "q": "CI/CD catches issues before production deployment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is slim CI in dbt?",
+        "type": "mcq",
+        "o": [
+            "Running only modified models and their downstream",
+            "Running all models always",
+            "No CI optimization",
+            "Random model selection"
+        ]
+    },
+    {
+        "q": "Slim CI reduces _____ time by selecting affected models.",
+        "type": "fill_blank",
+        "answers": [
+            "build"
+        ],
+        "other_options": [
+            "storage",
+            "random",
+            "user"
+        ]
+    },
+    {
+        "q": "Which dbt command enables state comparison?",
+        "type": "mcq",
+        "o": [
+            "dbt run --select state:modified+ with manifest",
+            "dbt run all",
+            "dbt run random",
+            "No command"
+        ]
+    },
+    {
+        "q": "Match the selection modifier with its scope:",
+        "type": "match",
+        "left": [
+            "state:modified",
+            "state:modified+",
+            "state:new",
+            "state:modified+,1"
+        ],
+        "right": [
+            "Changed only",
+            "Changed + downstream",
+            "New models",
+            "1 downstream level"
+        ]
+    },
+    {
+        "q": "Slim CI significantly reduces PR build times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data platform team topology?",
+        "type": "mcq",
+        "o": [
+            "Organizational structure for data platform teams",
+            "Network topology",
+            "Database topology",
+            "No structure"
+        ]
+    },
+    {
+        "q": "Platform teams enable _____ teams through infrastructure.",
+        "type": "fill_blank",
+        "answers": [
+            "product"
+        ],
+        "other_options": [
+            "random",
+            "no",
+            "external"
+        ]
+    },
+    {
+        "q": "Which team interaction mode reduces dependencies?",
+        "type": "mcq",
+        "o": [
+            "X-as-a-Service with well-defined APIs",
+            "Close collaboration always",
+            "No interaction",
+            "Random mode"
+        ]
+    },
+    {
+        "q": "Match the team type with its focus:",
+        "type": "match",
+        "left": [
+            "Platform",
+            "Stream-aligned",
+            "Enabling",
+            "Complicated-subsystem"
+        ],
+        "right": [
+            "Infrastructure",
+            "Business value",
+            "Capability building",
+            "Deep expertise"
+        ]
+    },
+    {
+        "q": "Rearrange platform team evolution:",
+        "type": "rearrange",
+        "words": [
+            "Central Team",
+            "Platform Definition",
+            "Self-Service",
+            "Full Autonomy"
+        ]
+    },
+    {
+        "q": "Good team topology reduces cognitive load.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data reliability engineering?",
+        "type": "mcq",
+        "o": [
+            "Applying SRE principles to data systems",
+            "Only software reliability",
+            "No data reliability",
+            "Random reliability"
+        ]
+    },
+    {
+        "q": "Data reliability focuses on _____ and quality SLOs.",
+        "type": "fill_blank",
+        "answers": [
+            "freshness"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which SLO is specific to data systems?",
+        "type": "mcq",
+        "o": [
+            "Data freshness, completeness, and accuracy SLOs",
+            "Only uptime",
+            "Only latency",
+            "No SLOs needed"
+        ]
+    },
+    {
+        "q": "Match the reliability metric with its measure:",
+        "type": "match",
+        "left": [
+            "Freshness SLO",
+            "Completeness SLO",
+            "Accuracy SLO",
+            "Availability SLO"
+        ],
+        "right": [
+            "Data age",
+            "Missing data",
+            "Incorrect data",
+            "System uptime"
+        ]
+    },
+    {
+        "q": "Data reliability engineering reduces data incidents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is event-driven data architecture?",
+        "type": "mcq",
+        "o": [
+            "Architecture where data flows through events",
+            "Batch-only architecture",
+            "No events",
+            "Request-response only"
+        ]
+    },
+    {
+        "q": "Event-driven systems use _____ for decoupling.",
+        "type": "fill_blank",
+        "answers": [
+            "message queues"
+        ],
+        "other_options": [
+            "direct calls",
+            "no queues",
+            "random"
+        ]
+    },
+    {
+        "q": "Which technology supports event-driven data?",
+        "type": "mcq",
+        "o": [
+            "Apache Kafka, Pulsar, or cloud pub/sub",
+            "Only databases",
+            "Only files",
+            "No technology"
+        ]
+    },
+    {
+        "q": "Match the event pattern with its use case:",
+        "type": "match",
+        "left": [
+            "Event sourcing",
+            "CQRS",
+            "Pub/sub",
+            "Event streaming"
+        ],
+        "right": [
+            "Audit history",
+            "Read/write separation",
+            "Broadcasting",
+            "Real-time processing"
+        ]
+    },
+    {
+        "q": "Rearrange event-driven data flow:",
+        "type": "rearrange",
+        "words": [
+            "Produce Event",
+            "Publish to Topic",
+            "Consume Event",
+            "Process and Store"
+        ]
+    },
+    {
+        "q": "Event-driven architecture enables real-time data processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ELT testing best practices?",
+        "type": "mcq",
+        "o": [
+            "Comprehensive validation of data transformations",
+            "No testing needed",
+            "Production testing only",
+            "Manual review only"
+        ]
+    },
+    {
+        "q": "Testing should cover schema, data quality, and _____ logic.",
+        "type": "fill_blank",
+        "answers": [
+            "business"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which test type verifies transformation correctness?",
+        "type": "mcq",
+        "o": [
+            "Unit tests with expected outputs",
+            "No unit tests",
+            "Only production",
+            "Random testing"
+        ]
+    },
+    {
+        "q": "Match the test category with its focus:",
+        "type": "match",
+        "left": [
+            "Schema tests",
+            "Data tests",
+            "Logic tests",
+            "Performance tests"
+        ],
+        "right": [
+            "Structure",
+            "Quality",
+            "Correctness",
+            "Speed"
+        ]
+    },
+    {
+        "q": "Comprehensive testing prevents production data issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data pipeline optimization?",
+        "type": "mcq",
+        "o": [
+            "Improving pipeline efficiency and reducing costs",
+            "Slowing pipelines",
+            "No optimization possible",
+            "Random changes"
+        ]
+    },
+    {
+        "q": "Optimization balances _____, cost, and complexity.",
+        "type": "fill_blank",
+        "answers": [
+            "speed"
+        ],
+        "other_options": [
+            "random",
+            "manual",
+            "optional"
+        ]
+    },
+    {
+        "q": "Which optimization reduces processing time?",
+        "type": "mcq",
+        "o": [
+            "Parallelization, incremental processing, and caching",
+            "Sequential processing",
+            "Full refreshes always",
+            "No caching"
+        ]
+    },
+    {
+        "q": "Match the optimization with its benefit:",
+        "type": "match",
+        "left": [
+            "Parallelization",
+            "Incremental",
+            "Caching",
+            "Partitioning"
+        ],
+        "right": [
+            "Concurrent work",
+            "Less data",
+            "Reuse results",
+            "Data skipping"
+        ]
+    },
+    {
+        "q": "Rearrange optimization priority:",
+        "type": "rearrange",
+        "words": [
+            "Profile Performance",
+            "Identify Bottlenecks",
+            "Apply Optimizations",
+            "Measure Results"
+        ]
+    },
+    {
+        "q": "Regular optimization review maintains pipeline efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is modern ELT monitoring?",
+        "type": "mcq",
+        "o": [
+            "Comprehensive visibility into ELT pipeline health",
+            "No monitoring",
+            "Manual checks only",
+            "Random sampling"
+        ]
+    },
+    {
+        "q": "Modern monitoring covers pipeline runs, data quality, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "costs"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which monitoring layer tracks data freshness?",
+        "type": "mcq",
+        "o": [
+            "Data observability with freshness SLOs",
+            "Only infrastructure",
+            "Only application",
+            "No freshness monitoring"
+        ]
+    },
+    {
+        "q": "Match the monitoring aspect with its tool:",
+        "type": "match",
+        "left": [
+            "Infrastructure",
+            "Pipeline",
+            "Data quality",
+            "Cost"
+        ],
+        "right": [
+            "CloudWatch/Datadog",
+            "Airflow UI",
+            "Monte Carlo/Soda",
+            "Cloud cost tools"
+        ]
+    },
+    {
+        "q": "Comprehensive monitoring enables proactive issue detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data SLA management?",
+        "type": "mcq",
+        "o": [
+            "Defining and tracking service level agreements for data",
+            "No SLAs for data",
+            "Random agreements",
+            "Verbal agreements only"
+        ]
+    },
+    {
+        "q": "Data SLAs define _____, quality, and availability guarantees.",
+        "type": "fill_blank",
+        "answers": [
+            "freshness"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which metric is commonly included in data SLAs?",
+        "type": "mcq",
+        "o": [
+            "Data freshness, completeness, and accuracy targets",
+            "Only uptime",
+            "Only speed",
+            "No metrics needed"
+        ]
+    },
+    {
+        "q": "Match the SLA component with its definition:",
+        "type": "match",
+        "left": [
+            "Target",
+            "Threshold",
+            "Alert",
+            "Report"
+        ],
+        "right": [
+            "Goal level",
+            "Minimum acceptable",
+            "Violation notice",
+            "Status summary"
+        ]
+    },
+    {
+        "q": "Clear SLAs improve data consumer trust.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data democratization?",
+        "type": "mcq",
+        "o": [
+            "Making data accessible to all relevant users",
+            "Restricting data access",
+            "Deleting data",
+            "No data sharing"
+        ]
+    },
+    {
+        "q": "Democratization requires _____ and self-service tools.",
+        "type": "fill_blank",
+        "answers": [
+            "governance"
+        ],
+        "other_options": [
+            "no controls",
+            "random",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which tool enables data democratization?",
+        "type": "mcq",
+        "o": [
+            "Data catalogs, BI tools, and semantic layers",
+            "Only command line",
+            "Only SQL IDE",
+            "No tools needed"
+        ]
+    },
+    {
+        "q": "Match the democratization component with its benefit:",
+        "type": "match",
+        "left": [
+            "Catalog",
+            "BI tools",
+            "Documentation",
+            "Training"
+        ],
+        "right": [
+            "Data discovery",
+            "Visual analysis",
+            "Understanding",
+            "Skill building"
+        ]
+    },
+    {
+        "q": "Rearrange democratization maturity:",
+        "type": "rearrange",
+        "words": [
+            "Centralized Data Team",
+            "Self-service Tools",
+            "Data Literacy",
+            "Data-driven Culture"
+        ]
+    },
+    {
+        "q": "Data democratization enables faster decision making.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data product lifecycle?",
+        "type": "mcq",
+        "o": [
+            "Managing data products from creation to retirement",
+            "No lifecycle management",
+            "Static products",
+            "Random management"
+        ]
+    },
+    {
+        "q": "Lifecycle includes discovery, development, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "maintenance"
+        ],
+        "other_options": [
+            "random",
+            "optional",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which phase ensures data product remains valuable?",
+        "type": "mcq",
+        "o": [
+            "Continuous improvement and iteration",
+            "One-time development",
+            "No updates",
+            "Random changes"
+        ]
+    },
+    {
+        "q": "Match the lifecycle phase with its activity:",
+        "type": "match",
+        "left": [
+            "Discovery",
+            "Development",
+            "Operations",
+            "Retirement"
+        ],
+        "right": [
+            "Requirements",
+            "Build",
+            "Run and monitor",
+            "Deprecate"
+        ]
+    },
+    {
+        "q": "Active lifecycle management extends data product value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data engineering career path?",
+        "type": "mcq",
+        "o": [
+            "Progression from junior to senior data engineering roles",
+            "No career growth",
+            "Single role only",
+            "Random progression"
+        ]
+    },
+    {
+        "q": "Senior roles require technical depth and _____ skills.",
+        "type": "fill_blank",
+        "answers": [
+            "leadership"
+        ],
+        "other_options": [
+            "none",
+            "random",
+            "optional"
+        ]
+    },
+    {
+        "q": "Which skill is essential for data engineering?",
+        "type": "mcq",
+        "o": [
+            "SQL, Python, and distributed systems knowledge",
+            "Only Excel",
+            "Only presentations",
+            "No technical skills"
+        ]
+    },
+    {
+        "q": "Match the role level with its focus:",
+        "type": "match",
+        "left": [
+            "Junior",
+            "Mid-level",
+            "Senior",
+            "Staff"
+        ],
+        "right": [
+            "Learning",
+            "Execution",
+            "Ownership",
+            "Cross-team impact"
+        ]
+    },
+    {
+        "q": "Rearrange data engineering career progression:",
+        "type": "rearrange",
+        "words": [
+            "Junior Engineer",
+            "Mid-level Engineer",
+            "Senior Engineer",
+            "Staff/Principal Engineer"
+        ]
+    },
+    {
+        "q": "Continuous learning is essential in data engineering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the future of ELT?",
+        "type": "mcq",
+        "o": [
+            "More automation, AI integration, and real-time capabilities",
+            "Less automation",
+            "Only batch processing",
+            "No changes"
+        ]
+    },
+    {
+        "q": "Future ELT will leverage _____ for intelligent automation.",
+        "type": "fill_blank",
+        "answers": [
+            "AI/ML"
+        ],
+        "other_options": [
+            "manual work",
+            "no technology",
+            "random"
+        ]
+    },
+    {
+        "q": "Which trend is shaping ELT evolution?",
+        "type": "mcq",
+        "o": [
+            "Streaming-first, semantic layers, and data products",
+            "Batch-only always",
+            "No evolution",
+            "Simpler tools"
+        ]
+    },
+    {
+        "q": "Match the trend with its impact:",
+        "type": "match",
+        "left": [
+            "Real-time",
+            "Semantic layer",
+            "Data mesh",
+            "AI automation"
+        ],
+        "right": [
+            "Lower latency",
+            "Consistent metrics",
+            "Decentralization",
+            "Less manual work"
+        ]
+    },
+    {
+        "q": "The data engineering field continues to evolve rapidly.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

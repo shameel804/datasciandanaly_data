@@ -1,0 +1,6372 @@
+[
+    {
+        "q": "Which library is scikit-learn built on?",
+        "type": "mcq",
+        "o": [
+            "NumPy and SciPy",
+            "Pandas only",
+            "TensorFlow",
+            "PyTorch"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of scikit-learn?",
+        "type": "mcq",
+        "o": [
+            "Machine learning",
+            "Deep learning",
+            "Data visualization",
+            "Web development"
+        ]
+    },
+    {
+        "q": "The ______ function splits data into training and test sets.",
+        "type": "fill_blank",
+        "answers": [
+            "train_test_split"
+        ],
+        "other_options": [
+            "data_split",
+            "split_data",
+            "divide_data"
+        ]
+    },
+    {
+        "q": "scikit-learn uses a consistent API with fit() and predict() methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import train_test_split\nX = [[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]]\ny = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nprint(len(X_test))",
+        "o": [
+            "2",
+            "8",
+            "10",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the scikit-learn modules:",
+        "type": "match",
+        "left": [
+            "preprocessing",
+            "model_selection",
+            "metrics",
+            "ensemble"
+        ],
+        "right": [
+            "Data transformation",
+            "Cross-validation",
+            "Evaluation",
+            "Combined models"
+        ]
+    },
+    {
+        "q": "Which module contains StandardScaler?",
+        "type": "mcq",
+        "o": [
+            "sklearn.preprocessing",
+            "sklearn.transform",
+            "sklearn.scale",
+            "sklearn.normalize"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import StandardScaler\nimport numpy as np\nscaler = StandardScaler()\ndata = np.array([[0], [1], [2]])\nscaler.fit(data)\nprint(round(scaler.mean_[0], 1))",
+        "o": [
+            "1.0",
+            "0.0",
+            "2.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "The ______ method fits and transforms data in one step.",
+        "type": "fill_blank",
+        "answers": [
+            "fit_transform"
+        ],
+        "other_options": [
+            "fit_and_transform",
+            "transform_fit",
+            "apply"
+        ]
+    },
+    {
+        "q": "Rearrange the preprocessing workflow:",
+        "type": "rearrange",
+        "words": [
+            "import scaler",
+            "fit on training",
+            "transform training",
+            "transform test"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import StandardScaler\nimport numpy as np\nscaler = StandardScaler()\ndata = np.array([[0], [0], [0]])\nscaled = scaler.fit_transform(data)\nprint(scaled[0, 0])",
+        "o": [
+            "0.0",
+            "1.0",
+            "-1.0",
+            "nan"
+        ]
+    },
+    {
+        "q": "StandardScaler normalizes to zero mean and unit variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which scaler scales to range [0, 1]?",
+        "type": "mcq",
+        "o": [
+            "MinMaxScaler",
+            "StandardScaler",
+            "RobustScaler",
+            "MaxAbsScaler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import MinMaxScaler\nimport numpy as np\nscaler = MinMaxScaler()\ndata = np.array([[0], [10], [20]])\nscaled = scaler.fit_transform(data)\nprint(scaled[1, 0])",
+        "o": [
+            "0.5",
+            "0.0",
+            "1.0",
+            "10.0"
+        ]
+    },
+    {
+        "q": "Match the scalers:",
+        "type": "match",
+        "left": [
+            "StandardScaler",
+            "MinMaxScaler",
+            "RobustScaler",
+            "MaxAbsScaler"
+        ],
+        "right": [
+            "Zero mean, unit variance",
+            "Range [0,1]",
+            "Median-based",
+            "Max absolute"
+        ]
+    },
+    {
+        "q": "The ______ scaler is robust to outliers.",
+        "type": "fill_blank",
+        "answers": [
+            "RobustScaler"
+        ],
+        "other_options": [
+            "StandardScaler",
+            "MinMaxScaler",
+            "OutlierScaler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import MaxAbsScaler\nimport numpy as np\nscaler = MaxAbsScaler()\ndata = np.array([[-10], [5], [10]])\nscaled = scaler.fit_transform(data)\nprint(scaled[0, 0])",
+        "o": [
+            "-1.0",
+            "0.0",
+            "1.0",
+            "-0.5"
+        ]
+    },
+    {
+        "q": "MaxAbsScaler scales each feature by its maximum absolute value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which encoder creates binary columns for categories?",
+        "type": "mcq",
+        "o": [
+            "OneHotEncoder",
+            "LabelEncoder",
+            "OrdinalEncoder",
+            "BinaryEncoder"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import LabelEncoder\nle = LabelEncoder()\nlabels = ['cat', 'dog', 'cat', 'bird']\nencoded = le.fit_transform(labels)\nprint(encoded[0])",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "cat"
+        ]
+    },
+    {
+        "q": "Match the encoders:",
+        "type": "match",
+        "left": [
+            "LabelEncoder",
+            "OneHotEncoder",
+            "OrdinalEncoder"
+        ],
+        "right": [
+            "Target labels",
+            "Sparse columns",
+            "Integer order"
+        ]
+    },
+    {
+        "q": "The ______ encoder preserves ordinal relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "OrdinalEncoder"
+        ],
+        "other_options": [
+            "LabelEncoder",
+            "OneHotEncoder",
+            "CategoryEncoder"
+        ]
+    },
+    {
+        "q": "Rearrange the encoding workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify categories",
+            "choose encoder",
+            "fit encoder",
+            "transform data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import OneHotEncoder\nimport numpy as np\nenc = OneHotEncoder(sparse_output=False)\ndata = np.array([['a'], ['b'], ['a']])\nresult = enc.fit_transform(data)\nprint(result.shape[1])",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "OneHotEncoder can handle unknown categories with handle_unknown parameter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function fills missing values?",
+        "type": "mcq",
+        "o": [
+            "SimpleImputer",
+            "FillNaN",
+            "MissingHandler",
+            "NullFiller"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.impute import SimpleImputer\nimport numpy as np\nimp = SimpleImputer(strategy='mean')\ndata = np.array([[1], [np.nan], [3]])\nresult = imp.fit_transform(data)\nprint(result[1, 0])",
+        "o": [
+            "2.0",
+            "1.0",
+            "3.0",
+            "nan"
+        ]
+    },
+    {
+        "q": "Match the imputation strategies:",
+        "type": "match",
+        "left": [
+            "mean",
+            "median",
+            "most_frequent",
+            "constant"
+        ],
+        "right": [
+            "Average value",
+            "Middle value",
+            "Mode",
+            "Fixed value"
+        ]
+    },
+    {
+        "q": "The ______ strategy replaces missing with most common value.",
+        "type": "fill_blank",
+        "answers": [
+            "most_frequent"
+        ],
+        "other_options": [
+            "mode",
+            "common",
+            "frequent"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.impute import SimpleImputer\nimport numpy as np\nimp = SimpleImputer(strategy='constant', fill_value=0)\ndata = np.array([[1], [np.nan], [3]])\nresult = imp.fit_transform(data)\nprint(result[1, 0])",
+        "o": [
+            "0.0",
+            "2.0",
+            "1.0",
+            "nan"
+        ]
+    },
+    {
+        "q": "SimpleImputer works with both numerical and categorical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which algorithm is a simple classifier?",
+        "type": "mcq",
+        "o": [
+            "LogisticRegression",
+            "LinearRegression",
+            "KMeans",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\nmodel.fit(X, y)\nprint(len(model.coef_[0]))",
+        "o": [
+            "2",
+            "1",
+            "100",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the model types:",
+        "type": "match",
+        "left": [
+            "LogisticRegression",
+            "LinearRegression",
+            "KMeans",
+            "PCA"
+        ],
+        "right": [
+            "Classification",
+            "Regression",
+            "Clustering",
+            "Dimensionality reduction"
+        ]
+    },
+    {
+        "q": "The ______ attribute stores model coefficients.",
+        "type": "fill_blank",
+        "answers": [
+            "coef_"
+        ],
+        "other_options": [
+            "weights_",
+            "params_",
+            "coefficients_"
+        ]
+    },
+    {
+        "q": "Rearrange the model training workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare data",
+            "create model",
+            "fit model",
+            "make predictions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LinearRegression\nimport numpy as np\nmodel = LinearRegression()\nX = np.array([[1], [2], [3]])\ny = np.array([2, 4, 6])\nmodel.fit(X, y)\nprint(round(model.coef_[0], 1))",
+        "o": [
+            "2.0",
+            "1.0",
+            "0.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "LinearRegression minimizes mean squared error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method makes predictions?",
+        "type": "mcq",
+        "o": [
+            "predict()",
+            "output()",
+            "result()",
+            "calculate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LinearRegression\nimport numpy as np\nmodel = LinearRegression()\nX = np.array([[1], [2], [3]])\ny = np.array([2, 4, 6])\nmodel.fit(X, y)\nprint(model.predict([[4]])[0])",
+        "o": [
+            "8.0",
+            "4.0",
+            "6.0",
+            "10.0"
+        ]
+    },
+    {
+        "q": "Match the prediction methods:",
+        "type": "match",
+        "left": [
+            "predict()",
+            "predict_proba()",
+            "score()"
+        ],
+        "right": [
+            "Class labels",
+            "Probabilities",
+            "Accuracy"
+        ]
+    },
+    {
+        "q": "The ______ method returns prediction probabilities.",
+        "type": "fill_blank",
+        "answers": [
+            "predict_proba"
+        ],
+        "other_options": [
+            "probability",
+            "proba",
+            "get_proba"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\nmodel.fit(X, y)\nproba = model.predict_proba([[0, 0]])\nprint(proba.shape[1])",
+        "o": [
+            "2",
+            "1",
+            "100",
+            "0"
+        ]
+    },
+    {
+        "q": "predict_proba returns probabilities for each class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric measures classification accuracy?",
+        "type": "mcq",
+        "o": [
+            "accuracy_score",
+            "r2_score",
+            "mean_squared_error",
+            "silhouette_score"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import accuracy_score\ny_true = [0, 1, 1, 0]\ny_pred = [0, 1, 0, 0]\nprint(accuracy_score(y_true, y_pred))",
+        "o": [
+            "0.75",
+            "1.0",
+            "0.5",
+            "0.25"
+        ]
+    },
+    {
+        "q": "Match the metrics:",
+        "type": "match",
+        "left": [
+            "accuracy_score",
+            "precision_score",
+            "recall_score",
+            "f1_score"
+        ],
+        "right": [
+            "Correct ratio",
+            "True positives / predicted positives",
+            "True positives / actual positives",
+            "Harmonic mean"
+        ]
+    },
+    {
+        "q": "The ______ is the harmonic mean of precision and recall.",
+        "type": "fill_blank",
+        "answers": [
+            "f1_score"
+        ],
+        "other_options": [
+            "accuracy",
+            "precision",
+            "recall"
+        ]
+    },
+    {
+        "q": "Rearrange the evaluation workflow:",
+        "type": "rearrange",
+        "words": [
+            "make predictions",
+            "compare to true",
+            "calculate metric",
+            "interpret result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import precision_score\ny_true = [0, 1, 1, 0, 1]\ny_pred = [0, 1, 1, 1, 1]\nprint(precision_score(y_true, y_pred))",
+        "o": [
+            "0.75",
+            "1.0",
+            "0.5",
+            "0.8"
+        ]
+    },
+    {
+        "q": "Precision measures the fraction of correct positive predictions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which score measures regression performance?",
+        "type": "mcq",
+        "o": [
+            "r2_score",
+            "accuracy_score",
+            "f1_score",
+            "roc_auc_score"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import r2_score\ny_true = [1, 2, 3, 4]\ny_pred = [1, 2, 3, 4]\nprint(r2_score(y_true, y_pred))",
+        "o": [
+            "1.0",
+            "0.0",
+            "0.5",
+            "4.0"
+        ]
+    },
+    {
+        "q": "Match the regression metrics:",
+        "type": "match",
+        "left": [
+            "r2_score",
+            "mean_squared_error",
+            "mean_absolute_error"
+        ],
+        "right": [
+            "Explained variance",
+            "Squared differences",
+            "Absolute differences"
+        ]
+    },
+    {
+        "q": "The ______ computes mean squared error.",
+        "type": "fill_blank",
+        "answers": [
+            "mean_squared_error"
+        ],
+        "other_options": [
+            "mse",
+            "squared_error",
+            "error_squared"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import mean_squared_error\ny_true = [1, 2, 3]\ny_pred = [1, 2, 4]\nprint(round(mean_squared_error(y_true, y_pred), 2))",
+        "o": [
+            "0.33",
+            "1.0",
+            "0.5",
+            "0.0"
+        ]
+    },
+    {
+        "q": "R2 score of 1.0 indicates perfect prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class implements k-fold cross-validation?",
+        "type": "mcq",
+        "o": [
+            "KFold",
+            "CrossValidation",
+            "Fold",
+            "SplitKFold"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import KFold\nimport numpy as np\nkf = KFold(n_splits=5)\nX = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nfolds = list(kf.split(X))\nprint(len(folds))",
+        "o": [
+            "5",
+            "10",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the cross-validation types:",
+        "type": "match",
+        "left": [
+            "KFold",
+            "StratifiedKFold",
+            "LeaveOneOut",
+            "ShuffleSplit"
+        ],
+        "right": [
+            "Basic k-fold",
+            "Preserves class ratio",
+            "N-1 training",
+            "Random splits"
+        ]
+    },
+    {
+        "q": "The ______ function runs cross-validation and returns scores.",
+        "type": "fill_blank",
+        "answers": [
+            "cross_val_score"
+        ],
+        "other_options": [
+            "cv_score",
+            "validate",
+            "cross_score"
+        ]
+    },
+    {
+        "q": "Rearrange the cross-validation workflow:",
+        "type": "rearrange",
+        "words": [
+            "choose CV strategy",
+            "run cross_val_score",
+            "collect scores",
+            "compute average"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import cross_val_score\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\nscores = cross_val_score(model, X, y, cv=5)\nprint(len(scores))",
+        "o": [
+            "5",
+            "100",
+            "1",
+            "20"
+        ]
+    },
+    {
+        "q": "StratifiedKFold preserves class distribution in folds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which classifier uses nearest neighbors?",
+        "type": "mcq",
+        "o": [
+            "KNeighborsClassifier",
+            "KMeans",
+            "DecisionTreeClassifier",
+            "SVC"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.neighbors import KNeighborsClassifier\nimport numpy as np\nknn = KNeighborsClassifier(n_neighbors=3)\nX = np.array([[0], [1], [2], [3]])\ny = np.array([0, 0, 1, 1])\nknn.fit(X, y)\nprint(knn.predict([[1.5]])[0])",
+        "o": [
+            "0",
+            "1",
+            "0.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the classifiers:",
+        "type": "match",
+        "left": [
+            "KNeighborsClassifier",
+            "DecisionTreeClassifier",
+            "SVC",
+            "GaussianNB"
+        ],
+        "right": [
+            "Distance-based",
+            "Tree splits",
+            "Hyperplane",
+            "Probability"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets number of neighbors in KNN.",
+        "type": "fill_blank",
+        "answers": [
+            "n_neighbors"
+        ],
+        "other_options": [
+            "k",
+            "neighbors",
+            "num_neighbors"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.tree import DecisionTreeClassifier\nimport numpy as np\ntree = DecisionTreeClassifier(max_depth=1, random_state=42)\nX = np.array([[0], [1], [2], [3]])\ny = np.array([0, 0, 1, 1])\ntree.fit(X, y)\nprint(tree.get_depth())",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "DecisionTreeClassifier can handle both numerical and categorical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which parameter limits tree depth?",
+        "type": "mcq",
+        "o": [
+            "max_depth",
+            "depth",
+            "tree_depth",
+            "limit_depth"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.svm import SVC\nimport numpy as np\nsvm = SVC(kernel='linear')\nX = np.array([[0, 0], [1, 1], [0, 1], [1, 0]])\ny = np.array([0, 0, 1, 1])\nsvm.fit(X, y)\nprint(svm.predict([[0.5, 0.5]])[0])",
+        "o": [
+            "0",
+            "1",
+            "0.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the SVM kernels:",
+        "type": "match",
+        "left": [
+            "linear",
+            "rbf",
+            "poly"
+        ],
+        "right": [
+            "Straight line",
+            "Radial basis",
+            "Polynomial"
+        ]
+    },
+    {
+        "q": "The ______ kernel is default for SVC.",
+        "type": "fill_blank",
+        "answers": [
+            "rbf"
+        ],
+        "other_options": [
+            "linear",
+            "poly",
+            "sigmoid"
+        ]
+    },
+    {
+        "q": "Rearrange the model complexity levels:",
+        "type": "rearrange",
+        "words": [
+            "simple linear",
+            "decision tree",
+            "ensemble",
+            "neural network"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.naive_bayes import GaussianNB\nimport numpy as np\nnb = GaussianNB()\nX = np.array([[0], [1], [2], [3]])\ny = np.array([0, 0, 1, 1])\nnb.fit(X, y)\nprint(len(nb.classes_))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "GaussianNB assumes features follow normal distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which algorithm reduces dimensionality?",
+        "type": "mcq",
+        "o": [
+            "PCA",
+            "KMeans",
+            "RandomForest",
+            "LogisticRegression"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import PCA\nimport numpy as np\npca = PCA(n_components=2)\nX = np.array([[0, 0, 0], [1, 1, 1], [2, 2, 2]])\nX_reduced = pca.fit_transform(X)\nprint(X_reduced.shape[1])",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the dimensionality reduction:",
+        "type": "match",
+        "left": [
+            "PCA",
+            "LDA",
+            "t-SNE"
+        ],
+        "right": [
+            "Principal components",
+            "Class separation",
+            "Visualization"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets number of components in PCA.",
+        "type": "fill_blank",
+        "answers": [
+            "n_components"
+        ],
+        "other_options": [
+            "components",
+            "num_components",
+            "n"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import PCA\nimport numpy as np\npca = PCA(n_components=2)\nX = np.random.randn(100, 5)\npca.fit(X)\nprint(len(pca.explained_variance_ratio_))",
+        "o": [
+            "2",
+            "5",
+            "100",
+            "1"
+        ]
+    },
+    {
+        "q": "PCA finds directions of maximum variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which algorithm clusters data?",
+        "type": "mcq",
+        "o": [
+            "KMeans",
+            "LogisticRegression",
+            "PCA",
+            "LinearRegression"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import KMeans\nimport numpy as np\nkmeans = KMeans(n_clusters=2, random_state=42, n_init=10)\nX = np.array([[0, 0], [1, 1], [10, 10], [11, 11]])\nkmeans.fit(X)\nprint(len(set(kmeans.labels_)))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the clustering algorithms:",
+        "type": "match",
+        "left": [
+            "KMeans",
+            "DBSCAN",
+            "AgglomerativeClustering"
+        ],
+        "right": [
+            "Centroid-based",
+            "Density-based",
+            "Hierarchical"
+        ]
+    },
+    {
+        "q": "The ______ attribute contains cluster assignments.",
+        "type": "fill_blank",
+        "answers": [
+            "labels_"
+        ],
+        "other_options": [
+            "clusters_",
+            "assignments_",
+            "groups_"
+        ]
+    },
+    {
+        "q": "Rearrange the clustering workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare data",
+            "choose n_clusters",
+            "fit model",
+            "get labels"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import KMeans\nimport numpy as np\nkmeans = KMeans(n_clusters=2, random_state=42, n_init=10)\nX = np.array([[0, 0], [1, 1], [10, 10], [11, 11]])\nkmeans.fit(X)\nprint(kmeans.cluster_centers_.shape)",
+        "o": [
+            "(2, 2)",
+            "(4, 2)",
+            "(2,)",
+            "(4,)"
+        ]
+    },
+    {
+        "q": "KMeans requires specifying number of clusters beforehand.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class chains preprocessing and model?",
+        "type": "mcq",
+        "o": [
+            "Pipeline",
+            "Chain",
+            "Workflow",
+            "Sequence"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\npipe = Pipeline([('scaler', StandardScaler()), ('clf', LogisticRegression())])\nprint(len(pipe.steps))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the pipeline concepts:",
+        "type": "match",
+        "left": [
+            "Pipeline",
+            "FeatureUnion",
+            "ColumnTransformer"
+        ],
+        "right": [
+            "Sequential steps",
+            "Parallel features",
+            "Column processing"
+        ]
+    },
+    {
+        "q": "The ______ combines multiple feature extractors.",
+        "type": "fill_blank",
+        "answers": [
+            "FeatureUnion"
+        ],
+        "other_options": [
+            "FeatureCombine",
+            "FeatureMerge",
+            "FeatureJoin"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.pipeline import make_pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\npipe = make_pipeline(StandardScaler(), LogisticRegression())\nprint(type(pipe).__name__)",
+        "o": [
+            "Pipeline",
+            "list",
+            "tuple",
+            "dict"
+        ]
+    },
+    {
+        "q": "Pipelines prevent data leakage by fitting on training data only.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs grid search?",
+        "type": "mcq",
+        "o": [
+            "GridSearchCV",
+            "GridSearch",
+            "ParameterGrid",
+            "SearchGrid"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import GridSearchCV\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\nparams = {'C': [0.1, 1, 10]}\ngrid = GridSearchCV(model, params, cv=3)\ngrid.fit(X, y)\nprint(len(grid.cv_results_['mean_test_score']))",
+        "o": [
+            "3",
+            "1",
+            "9",
+            "100"
+        ]
+    },
+    {
+        "q": "Match the search methods:",
+        "type": "match",
+        "left": [
+            "GridSearchCV",
+            "RandomizedSearchCV",
+            "HalvingGridSearchCV"
+        ],
+        "right": [
+            "Exhaustive",
+            "Random sampling",
+            "Successive halving"
+        ]
+    },
+    {
+        "q": "The ______ attribute contains the best parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "best_params_"
+        ],
+        "other_options": [
+            "optimal_params_",
+            "params_",
+            "best_parameters_"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import GridSearchCV\nfrom sklearn.svm import SVC\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = SVC()\nparams = {'kernel': ['linear', 'rbf'], 'C': [1, 10]}\ngrid = GridSearchCV(model, params, cv=3)\ngrid.fit(X, y)\nprint('kernel' in grid.best_params_)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "GridSearchCV performs cross-validation for each parameter combination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which ensemble combines multiple classifiers by voting?",
+        "type": "mcq",
+        "o": [
+            "VotingClassifier",
+            "BaggingClassifier",
+            "StackingClassifier",
+            "AdaBoostClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nrf = RandomForestClassifier(n_estimators=10, random_state=42)\nrf.fit(X, y)\nprint(len(rf.estimators_))",
+        "o": [
+            "10",
+            "100",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the ensemble methods:",
+        "type": "match",
+        "left": [
+            "RandomForest",
+            "GradientBoosting",
+            "AdaBoost",
+            "Bagging"
+        ],
+        "right": [
+            "Random subsets",
+            "Sequential correction",
+            "Weighted samples",
+            "Bootstrap"
+        ]
+    },
+    {
+        "q": "The ______ attribute shows feature importances.",
+        "type": "fill_blank",
+        "answers": [
+            "feature_importances_"
+        ],
+        "other_options": [
+            "importances_",
+            "features_",
+            "importance_"
+        ]
+    },
+    {
+        "q": "Rearrange the ensemble methods by type:",
+        "type": "rearrange",
+        "words": [
+            "bagging",
+            "boosting",
+            "stacking",
+            "voting"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import GradientBoostingClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\ngb = GradientBoostingClassifier(n_estimators=10, random_state=42)\ngb.fit(X, y)\nprint(len(gb.feature_importances_))",
+        "o": [
+            "2",
+            "10",
+            "100",
+            "1"
+        ]
+    },
+    {
+        "q": "Random Forest uses bootstrap sampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric creates a confusion matrix?",
+        "type": "mcq",
+        "o": [
+            "confusion_matrix",
+            "classification_matrix",
+            "error_matrix",
+            "result_matrix"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import confusion_matrix\ny_true = [0, 0, 1, 1]\ny_pred = [0, 1, 1, 1]\ncm = confusion_matrix(y_true, y_pred)\nprint(cm.shape)",
+        "o": [
+            "(2, 2)",
+            "(4,)",
+            "(1, 4)",
+            "(4, 4)"
+        ]
+    },
+    {
+        "q": "Match the confusion matrix positions:",
+        "type": "match",
+        "left": [
+            "TN",
+            "FP",
+            "FN",
+            "TP"
+        ],
+        "right": [
+            "Top-left",
+            "Top-right",
+            "Bottom-left",
+            "Bottom-right"
+        ]
+    },
+    {
+        "q": "The ______ function prints a detailed classification report.",
+        "type": "fill_blank",
+        "answers": [
+            "classification_report"
+        ],
+        "other_options": [
+            "class_report",
+            "report",
+            "metrics_report"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import confusion_matrix\ny_true = [0, 0, 1, 1]\ny_pred = [0, 0, 1, 1]\ncm = confusion_matrix(y_true, y_pred)\nprint(cm[0, 0])",
+        "o": [
+            "2",
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "True positives are on the diagonal of confusion matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric measures area under ROC curve?",
+        "type": "mcq",
+        "o": [
+            "roc_auc_score",
+            "roc_score",
+            "auc_score",
+            "area_score"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import roc_auc_score\ny_true = [0, 0, 1, 1]\ny_scores = [0.1, 0.4, 0.6, 0.9]\nprint(round(roc_auc_score(y_true, y_scores), 1))",
+        "o": [
+            "1.0",
+            "0.5",
+            "0.0",
+            "0.75"
+        ]
+    },
+    {
+        "q": "Match the ROC concepts:",
+        "type": "match",
+        "left": [
+            "roc_curve()",
+            "roc_auc_score()",
+            "precision_recall_curve()"
+        ],
+        "right": [
+            "TPR vs FPR",
+            "Area under ROC",
+            "Precision vs Recall"
+        ]
+    },
+    {
+        "q": "The ______ function returns false positive rate and true positive rate.",
+        "type": "fill_blank",
+        "answers": [
+            "roc_curve"
+        ],
+        "other_options": [
+            "roc",
+            "curve",
+            "fpr_tpr"
+        ]
+    },
+    {
+        "q": "Rearrange the ROC analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "get probabilities",
+            "compute ROC curve",
+            "calculate AUC",
+            "plot curve"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import roc_curve\ny_true = [0, 0, 1, 1]\ny_scores = [0.1, 0.4, 0.6, 0.9]\nfpr, tpr, thresholds = roc_curve(y_true, y_scores)\nprint(len(thresholds) >= 3)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "AUC of 0.5 indicates random classifier.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function selects best features?",
+        "type": "mcq",
+        "o": [
+            "SelectKBest",
+            "BestFeatures",
+            "FeatureSelect",
+            "TopK"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_selection import SelectKBest, f_classif\nimport numpy as np\nX = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])\ny = np.array([0, 0, 1, 1])\nselector = SelectKBest(f_classif, k=2)\nX_new = selector.fit_transform(X, y)\nprint(X_new.shape[1])",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the feature selection methods:",
+        "type": "match",
+        "left": [
+            "SelectKBest",
+            "RFE",
+            "SelectFromModel",
+            "VarianceThreshold"
+        ],
+        "right": [
+            "Top k scores",
+            "Recursive elimination",
+            "Model-based",
+            "Variance filter"
+        ]
+    },
+    {
+        "q": "The ______ removes features with low variance.",
+        "type": "fill_blank",
+        "answers": [
+            "VarianceThreshold"
+        ],
+        "other_options": [
+            "LowVariance",
+            "VarianceFilter",
+            "RemoveLowVariance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_selection import VarianceThreshold\nimport numpy as np\nX = np.array([[0, 0, 1], [0, 0, 2], [0, 0, 3], [0, 0, 4]])\nselector = VarianceThreshold(threshold=0)\nX_new = selector.fit_transform(X)\nprint(X_new.shape[1])",
+        "o": [
+            "1",
+            "3",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "RFE recursively removes least important features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class normalizes rows to unit norm?",
+        "type": "mcq",
+        "o": [
+            "Normalizer",
+            "StandardScaler",
+            "MinMaxScaler",
+            "UnitScaler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import Normalizer\nimport numpy as np\nnorm = Normalizer(norm='l2')\ndata = np.array([[3, 4]])\nresult = norm.fit_transform(data)\nprint(round(result[0, 0], 1))",
+        "o": [
+            "0.6",
+            "3.0",
+            "0.5",
+            "1.0"
+        ]
+    },
+    {
+        "q": "Match the normalization types:",
+        "type": "match",
+        "left": [
+            "l1",
+            "l2",
+            "max"
+        ],
+        "right": [
+            "Sum of abs = 1",
+            "Sum of squares = 1",
+            "Max = 1"
+        ]
+    },
+    {
+        "q": "The ______ norm makes sum of absolute values equal 1.",
+        "type": "fill_blank",
+        "answers": [
+            "l1"
+        ],
+        "other_options": [
+            "l2",
+            "max",
+            "unit"
+        ]
+    },
+    {
+        "q": "Rearrange the preprocessing options by operation:",
+        "type": "rearrange",
+        "words": [
+            "scaling",
+            "normalization",
+            "encoding",
+            "imputation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import normalize\nimport numpy as np\ndata = np.array([[1, 1]])\nresult = normalize(data, norm='l2')\nprint(round(result[0, 0], 2))",
+        "o": [
+            "0.71",
+            "1.0",
+            "0.5",
+            "0.0"
+        ]
+    },
+    {
+        "q": "Normalizer operates on samples (rows), not features (columns).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class transforms to polynomial features?",
+        "type": "mcq",
+        "o": [
+            "PolynomialFeatures",
+            "PolyTransform",
+            "FeaturePoly",
+            "Polynomial"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import PolynomialFeatures\nimport numpy as np\npoly = PolynomialFeatures(degree=2, include_bias=False)\nX = np.array([[1, 2]])\nX_poly = poly.fit_transform(X)\nprint(X_poly.shape[1])",
+        "o": [
+            "5",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the polynomial parameters:",
+        "type": "match",
+        "left": [
+            "degree",
+            "include_bias",
+            "interaction_only"
+        ],
+        "right": [
+            "Max power",
+            "Include 1",
+            "Only cross terms"
+        ]
+    },
+    {
+        "q": "The ______ parameter excludes powers of single features.",
+        "type": "fill_blank",
+        "answers": [
+            "interaction_only"
+        ],
+        "other_options": [
+            "no_powers",
+            "cross_only",
+            "interactions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import PolynomialFeatures\nimport numpy as np\npoly = PolynomialFeatures(degree=2, include_bias=True)\nX = np.array([[2]])\nX_poly = poly.fit_transform(X)\nprint(X_poly.shape[1])",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "PolynomialFeatures creates interaction terms between features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class applies function to features?",
+        "type": "mcq",
+        "o": [
+            "FunctionTransformer",
+            "ApplyFunction",
+            "TransformFunction",
+            "FeatureFunction"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import FunctionTransformer\nimport numpy as np\ntransformer = FunctionTransformer(np.log1p)\nX = np.array([[0, 1], [2, 3]])\nX_transformed = transformer.fit_transform(X)\nprint(round(X_transformed[0, 1], 2))",
+        "o": [
+            "0.69",
+            "1.0",
+            "0.0",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Match the transformer types:",
+        "type": "match",
+        "left": [
+            "FunctionTransformer",
+            "PowerTransformer",
+            "QuantileTransformer"
+        ],
+        "right": [
+            "Custom function",
+            "Power transformation",
+            "Quantile mapping"
+        ]
+    },
+    {
+        "q": "The ______ applies Box-Cox or Yeo-Johnson transformation.",
+        "type": "fill_blank",
+        "answers": [
+            "PowerTransformer"
+        ],
+        "other_options": [
+            "BoxCox",
+            "YeoJohnson",
+            "PowerScale"
+        ]
+    },
+    {
+        "q": "FunctionTransformer allows custom transformation functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the learning rate effects:",
+        "type": "rearrange",
+        "words": [
+            "too small: slow",
+            "optimal: fast",
+            "too large: diverge"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import QuantileTransformer\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 1)\nqt = QuantileTransformer(n_quantiles=10, output_distribution='uniform')\nX_transformed = qt.fit_transform(X)\nprint(round(X_transformed.min(), 1))",
+        "o": [
+            "0.0",
+            "-1.0",
+            "1.0",
+            "-3.0"
+        ]
+    },
+    {
+        "q": "Which algorithm detects anomalies?",
+        "type": "mcq",
+        "o": [
+            "IsolationForest",
+            "RandomForest",
+            "DecisionTree",
+            "KMeans"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import IsolationForest\nimport numpy as np\nif_model = IsolationForest(random_state=42)\nX = np.array([[1], [1], [1], [100]])\npreds = if_model.fit_predict(X)\nprint(-1 in preds)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the anomaly detection methods:",
+        "type": "match",
+        "left": [
+            "IsolationForest",
+            "LocalOutlierFactor",
+            "OneClassSVM"
+        ],
+        "right": [
+            "Tree-based",
+            "Density-based",
+            "Boundary-based"
+        ]
+    },
+    {
+        "q": "The ______ returns -1 for outliers.",
+        "type": "fill_blank",
+        "answers": [
+            "IsolationForest"
+        ],
+        "other_options": [
+            "OutlierDetector",
+            "AnomalyFinder",
+            "Outlier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.neighbors import LocalOutlierFactor\nimport numpy as np\nlof = LocalOutlierFactor(n_neighbors=2)\nX = np.array([[1], [1], [1], [100]])\npreds = lof.fit_predict(X)\nprint(preds[-1])",
+        "o": [
+            "-1",
+            "1",
+            "0",
+            "100"
+        ]
+    },
+    {
+        "q": "IsolationForest uses shorter paths to isolate anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which algorithm clusters with unknown number of clusters?",
+        "type": "mcq",
+        "o": [
+            "DBSCAN",
+            "KMeans",
+            "MiniBatchKMeans",
+            "Birch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import DBSCAN\nimport numpy as np\ndb = DBSCAN(eps=1, min_samples=2)\nX = np.array([[0, 0], [0.5, 0.5], [10, 10], [10.5, 10.5]])\nlabels = db.fit_predict(X)\nprint(len(set(labels)))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the DBSCAN parameters:",
+        "type": "match",
+        "left": [
+            "eps",
+            "min_samples"
+        ],
+        "right": [
+            "Neighborhood radius",
+            "Minimum points in neighborhood"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets maximum distance between points.",
+        "type": "fill_blank",
+        "answers": [
+            "eps"
+        ],
+        "other_options": [
+            "epsilon",
+            "radius",
+            "distance"
+        ]
+    },
+    {
+        "q": "Rearrange the clustering evaluation metrics:",
+        "type": "rearrange",
+        "words": [
+            "silhouette",
+            "calinski-harabasz",
+            "davies-bouldin"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import DBSCAN\nimport numpy as np\ndb = DBSCAN(eps=0.1, min_samples=2)\nX = np.array([[0, 0], [10, 10], [20, 20], [30, 30]])\nlabels = db.fit_predict(X)\nprint(-1 in labels)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "DBSCAN labels noise points as -1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric evaluates clustering quality?",
+        "type": "mcq",
+        "o": [
+            "silhouette_score",
+            "accuracy_score",
+            "r2_score",
+            "f1_score"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import silhouette_score\nfrom sklearn.cluster import KMeans\nimport numpy as np\nX = np.array([[0, 0], [0.1, 0.1], [10, 10], [10.1, 10.1]])\nkmeans = KMeans(n_clusters=2, random_state=42, n_init=10)\nkmeans.fit(X)\nscore = silhouette_score(X, kmeans.labels_)\nprint(score > 0.9)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the clustering metrics:",
+        "type": "match",
+        "left": [
+            "silhouette_score",
+            "calinski_harabasz_score",
+            "davies_bouldin_score"
+        ],
+        "right": [
+            "Higher is better",
+            "Higher is better",
+            "Lower is better"
+        ]
+    },
+    {
+        "q": "The ______ ranges from -1 to 1.",
+        "type": "fill_blank",
+        "answers": [
+            "silhouette_score"
+        ],
+        "other_options": [
+            "davies_bouldin",
+            "calinski",
+            "cluster_score"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import davies_bouldin_score\nfrom sklearn.cluster import KMeans\nimport numpy as np\nX = np.array([[0, 0], [0, 0.1], [10, 10], [10, 10.1]])\nkmeans = KMeans(n_clusters=2, random_state=42, n_init=10)\nkmeans.fit(X)\nscore = davies_bouldin_score(X, kmeans.labels_)\nprint(score < 0.5)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Davies-Bouldin index of 0 indicates perfect clustering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which module provides sample datasets?",
+        "type": "mcq",
+        "o": [
+            "sklearn.datasets",
+            "sklearn.data",
+            "sklearn.samples",
+            "sklearn.examples"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.datasets import load_iris\niris = load_iris()\nprint(len(iris.target_names))",
+        "o": [
+            "3",
+            "4",
+            "150",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the datasets:",
+        "type": "match",
+        "left": [
+            "load_iris",
+            "load_digits",
+            "load_boston",
+            "load_wine"
+        ],
+        "right": [
+            "Flowers",
+            "Handwritten",
+            "Housing",
+            "Wine quality"
+        ]
+    },
+    {
+        "q": "The ______ function creates classification data.",
+        "type": "fill_blank",
+        "answers": [
+            "make_classification"
+        ],
+        "other_options": [
+            "create_classification",
+            "gen_classification",
+            "generate_class"
+        ]
+    },
+    {
+        "q": "Rearrange the data generation functions:",
+        "type": "rearrange",
+        "words": [
+            "make_classification",
+            "make_regression",
+            "make_blobs",
+            "make_moons"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.datasets import make_blobs\nX, y = make_blobs(n_samples=100, centers=3, random_state=42)\nprint(len(set(y)))",
+        "o": [
+            "3",
+            "100",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "make_blobs creates isotropic Gaussian blobs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which regressor adds L2 penalty?",
+        "type": "mcq",
+        "o": [
+            "Ridge",
+            "Lasso",
+            "ElasticNet",
+            "LinearRegression"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import Ridge\nimport numpy as np\nmodel = Ridge(alpha=1.0)\nX = np.array([[1], [2], [3]])\ny = np.array([2, 4, 6])\nmodel.fit(X, y)\nprint(round(model.coef_[0], 1))",
+        "o": [
+            "1.7",
+            "2.0",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "Match the regularization types:",
+        "type": "match",
+        "left": [
+            "Ridge",
+            "Lasso",
+            "ElasticNet"
+        ],
+        "right": [
+            "L2 penalty",
+            "L1 penalty",
+            "L1 + L2 penalty"
+        ]
+    },
+    {
+        "q": "The ______ regressor can produce sparse coefficients.",
+        "type": "fill_blank",
+        "answers": [
+            "Lasso"
+        ],
+        "other_options": [
+            "Ridge",
+            "LinearRegression",
+            "ElasticNet"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import Lasso\nimport numpy as np\nmodel = Lasso(alpha=10.0)\nX = np.array([[1, 0], [2, 0], [3, 0]])\ny = np.array([2, 4, 6])\nmodel.fit(X, y)\nprint(model.coef_[1])",
+        "o": [
+            "0.0",
+            "2.0",
+            "1.0",
+            "-1.0"
+        ]
+    },
+    {
+        "q": "Lasso can set coefficients exactly to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class handles multiclass classification?",
+        "type": "mcq",
+        "o": [
+            "OneVsRestClassifier",
+            "MultiClassifier",
+            "AllVsAll",
+            "MultiLabel"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.multiclass import OneVsRestClassifier\nfrom sklearn.svm import SVC\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_informative=2, n_redundant=0, n_classes=3, n_clusters_per_class=1, random_state=42)\novr = OneVsRestClassifier(SVC())\novr.fit(X, y)\nprint(len(ovr.estimators_))",
+        "o": [
+            "3",
+            "1",
+            "100",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the multiclass strategies:",
+        "type": "match",
+        "left": [
+            "OneVsRest",
+            "OneVsOne",
+            "OutputCodeClassifier"
+        ],
+        "right": [
+            "One vs all",
+            "Pairwise",
+            "Error-correcting"
+        ]
+    },
+    {
+        "q": "The ______ trains one classifier per class.",
+        "type": "fill_blank",
+        "answers": [
+            "OneVsRestClassifier"
+        ],
+        "other_options": [
+            "MultiClass",
+            "OneVsAll",
+            "RestClassifier"
+        ]
+    },
+    {
+        "q": "OneVsOne trains n*(n-1)/2 classifiers for n classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs recursive feature elimination with CV?",
+        "type": "mcq",
+        "o": [
+            "RFECV",
+            "RFE",
+            "SelectKBest",
+            "FeatureElimination"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_selection import RFE\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=5, n_redundant=0, random_state=42)\nmodel = LogisticRegression(max_iter=1000)\nrfe = RFE(model, n_features_to_select=3)\nrfe.fit(X, y)\nprint(sum(rfe.support_))",
+        "o": [
+            "3",
+            "5",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the RFE attributes:",
+        "type": "match",
+        "left": [
+            "support_",
+            "ranking_",
+            "n_features_"
+        ],
+        "right": [
+            "Boolean mask",
+            "Feature ranks",
+            "Selected count"
+        ]
+    },
+    {
+        "q": "The ______ attribute shows the rank of each feature.",
+        "type": "fill_blank",
+        "answers": [
+            "ranking_"
+        ],
+        "other_options": [
+            "ranks_",
+            "order_",
+            "position_"
+        ]
+    },
+    {
+        "q": "RFECV automatically determines optimal number of features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class creates text features?",
+        "type": "mcq",
+        "o": [
+            "CountVectorizer",
+            "TextTransformer",
+            "WordCounter",
+            "TextFeaturizer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_extraction.text import CountVectorizer\ncorpus = ['hello world', 'hello python']\nvec = CountVectorizer()\nX = vec.fit_transform(corpus)\nprint(X.shape[1])",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the text vectorizers:",
+        "type": "match",
+        "left": [
+            "CountVectorizer",
+            "TfidfVectorizer",
+            "HashingVectorizer"
+        ],
+        "right": [
+            "Word counts",
+            "TF-IDF weights",
+            "Hashing trick"
+        ]
+    },
+    {
+        "q": "The ______ combines count and TF-IDF in one step.",
+        "type": "fill_blank",
+        "answers": [
+            "TfidfVectorizer"
+        ],
+        "other_options": [
+            "TfidfTransformer",
+            "CountTfidf",
+            "TfidfCounter"
+        ]
+    },
+    {
+        "q": "Rearrange the text processing pipeline:",
+        "type": "rearrange",
+        "words": [
+            "tokenize",
+            "count words",
+            "apply TF-IDF",
+            "train model"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_extraction.text import TfidfVectorizer\ncorpus = ['hello', 'world']\nvec = TfidfVectorizer()\nX = vec.fit_transform(corpus)\nprint(round(X[0, 0], 1))",
+        "o": [
+            "1.0",
+            "0.0",
+            "0.5",
+            "2.0"
+        ]
+    },
+    {
+        "q": "TF-IDF gives lower weight to common words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class balances classes via oversampling?",
+        "type": "mcq",
+        "o": [
+            "RandomOverSampler (imblearn)",
+            "ClassBalancer",
+            "OverSample",
+            "BalanceClasses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.utils import class_weight\nimport numpy as np\ny = np.array([0, 0, 0, 0, 1])\nweights = class_weight.compute_class_weight('balanced', classes=[0, 1], y=y)\nprint(weights[1] > weights[0])",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the class imbalance strategies:",
+        "type": "match",
+        "left": [
+            "class_weight",
+            "oversampling",
+            "undersampling",
+            "SMOTE"
+        ],
+        "right": [
+            "Weight adjustment",
+            "Duplicate minority",
+            "Remove majority",
+            "Synthetic samples"
+        ]
+    },
+    {
+        "q": "The ______ parameter in classifiers handles imbalanced classes.",
+        "type": "fill_blank",
+        "answers": [
+            "class_weight"
+        ],
+        "other_options": [
+            "weight",
+            "balance",
+            "sample_weight"
+        ]
+    },
+    {
+        "q": "class_weight='balanced' computes weights inversely proportional to frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which model uses boosted trees?",
+        "type": "mcq",
+        "o": [
+            "GradientBoostingClassifier",
+            "RandomForestClassifier",
+            "DecisionTreeClassifier",
+            "ExtraTreesClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import AdaBoostClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nada = AdaBoostClassifier(n_estimators=50, random_state=42)\nada.fit(X, y)\nprint(len(ada.estimator_weights_))",
+        "o": [
+            "50",
+            "100",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the boosting algorithms:",
+        "type": "match",
+        "left": [
+            "AdaBoost",
+            "GradientBoosting",
+            "HistGradient"
+        ],
+        "right": [
+            "Sample weights",
+            "Residual fitting",
+            "Histogram-based"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets number of boosting iterations.",
+        "type": "fill_blank",
+        "answers": [
+            "n_estimators"
+        ],
+        "other_options": [
+            "n_iterations",
+            "rounds",
+            "stages"
+        ]
+    },
+    {
+        "q": "Rearrange the boosting steps:",
+        "type": "rearrange",
+        "words": [
+            "fit weak learner",
+            "compute errors",
+            "update weights",
+            "combine predictions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import GradientBoostingClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\ngb = GradientBoostingClassifier(n_estimators=10, learning_rate=0.1, random_state=42)\ngb.fit(X, y)\nprint(len(gb.train_score_))",
+        "o": [
+            "10",
+            "100",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Lower learning rate requires more estimators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class stacks multiple estimators?",
+        "type": "mcq",
+        "o": [
+            "StackingClassifier",
+            "VotingClassifier",
+            "BaggingClassifier",
+            "EnsembleClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import VotingClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nvoting = VotingClassifier(estimators=[('lr', LogisticRegression()), ('dt', DecisionTreeClassifier())])\nvoting.fit(X, y)\nprint(len(voting.estimators_))",
+        "o": [
+            "2",
+            "1",
+            "100",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the voting types:",
+        "type": "match",
+        "left": [
+            "hard",
+            "soft"
+        ],
+        "right": [
+            "Majority vote",
+            "Probability average"
+        ]
+    },
+    {
+        "q": "The ______ parameter chooses voting strategy.",
+        "type": "fill_blank",
+        "answers": [
+            "voting"
+        ],
+        "other_options": [
+            "method",
+            "strategy",
+            "type"
+        ]
+    },
+    {
+        "q": "Soft voting requires predict_proba from all estimators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import BaggingClassifier\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nbagging = BaggingClassifier(estimator=DecisionTreeClassifier(), n_estimators=10, random_state=42)\nbagging.fit(X, y)\nprint(len(bagging.estimators_))",
+        "o": [
+            "10",
+            "1",
+            "100",
+            "2"
+        ]
+    },
+    {
+        "q": "Which module handles model persistence?",
+        "type": "mcq",
+        "o": [
+            "joblib",
+            "pickle",
+            "Both work",
+            "sklearn.save"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LogisticRegression\nimport joblib\nimport tempfile\nimport os\nmodel = LogisticRegression()\nwith tempfile.TemporaryDirectory() as tmpdir:\n    path = os.path.join(tmpdir, 'model.joblib')\n    joblib.dump(model, path)\n    loaded = joblib.load(path)\n    print(type(loaded).__name__)",
+        "o": [
+            "LogisticRegression",
+            "dict",
+            "bytes",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the persistence methods:",
+        "type": "match",
+        "left": [
+            "joblib.dump()",
+            "joblib.load()"
+        ],
+        "right": [
+            "Save model",
+            "Load model"
+        ]
+    },
+    {
+        "q": "The ______ module is preferred for sklearn models with arrays.",
+        "type": "fill_blank",
+        "answers": [
+            "joblib"
+        ],
+        "other_options": [
+            "pickle",
+            "save",
+            "serialize"
+        ]
+    },
+    {
+        "q": "Rearrange the model deployment workflow:",
+        "type": "rearrange",
+        "words": [
+            "train model",
+            "save with joblib",
+            "load in production",
+            "make predictions"
+        ]
+    },
+    {
+        "q": "joblib is more efficient than pickle for large numpy arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which validation uses time-series splits?",
+        "type": "mcq",
+        "o": [
+            "TimeSeriesSplit",
+            "KFold",
+            "StratifiedKFold",
+            "ShuffleSplit"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import TimeSeriesSplit\nimport numpy as np\ntss = TimeSeriesSplit(n_splits=3)\nX = np.arange(10)\nfolds = list(tss.split(X))\nprint(len(folds))",
+        "o": [
+            "3",
+            "10",
+            "5",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the time-series concepts:",
+        "type": "match",
+        "left": [
+            "TimeSeriesSplit",
+            "walk-forward",
+            "expanding window"
+        ],
+        "right": [
+            "Fixed test size",
+            "Rolling validation",
+            "Growing training"
+        ]
+    },
+    {
+        "q": "The ______ ensures training data comes before test data.",
+        "type": "fill_blank",
+        "answers": [
+            "TimeSeriesSplit"
+        ],
+        "other_options": [
+            "OrderedSplit",
+            "SequentialSplit",
+            "ChronologicalSplit"
+        ]
+    },
+    {
+        "q": "TimeSeriesSplit prevents data leakage in time-series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import TimeSeriesSplit\nimport numpy as np\ntss = TimeSeriesSplit(n_splits=3)\nX = np.arange(10)\ntrain_idx, test_idx = list(tss.split(X))[0]\nprint(len(train_idx))",
+        "o": [
+            "2",
+            "3",
+            "5",
+            "7"
+        ]
+    },
+    {
+        "q": "Which class handles multilabel classification?",
+        "type": "mcq",
+        "o": [
+            "MultiOutputClassifier",
+            "MultiLabelClassifier",
+            "MultitaskClassifier",
+            "MultiClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.multioutput import MultiOutputClassifier\nfrom sklearn.linear_model import LogisticRegression\nimport numpy as np\nX = np.array([[1], [2], [3], [4]])\ny = np.array([[0, 1], [1, 0], [0, 0], [1, 1]])\nmodel = MultiOutputClassifier(LogisticRegression())\nmodel.fit(X, y)\nprint(len(model.estimators_))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the multi-output types:",
+        "type": "match",
+        "left": [
+            "MultiOutputClassifier",
+            "MultiOutputRegressor",
+            "ClassifierChain"
+        ],
+        "right": [
+            "Independent outputs",
+            "Independent regression",
+            "Chained dependencies"
+        ]
+    },
+    {
+        "q": "The ______ considers dependencies between labels.",
+        "type": "fill_blank",
+        "answers": [
+            "ClassifierChain"
+        ],
+        "other_options": [
+            "MultiLabel",
+            "ChainedClassifier",
+            "DependentClassifier"
+        ]
+    },
+    {
+        "q": "Rearrange the multilabel evaluation metrics:",
+        "type": "rearrange",
+        "words": [
+            "hamming loss",
+            "exact match",
+            "f1 micro",
+            "f1 macro"
+        ]
+    },
+    {
+        "q": "MultiOutputClassifier fits one classifier per output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which transformer handles missing indicator?",
+        "type": "mcq",
+        "o": [
+            "MissingIndicator",
+            "NaNIndicator",
+            "NullFlag",
+            "MissingFlag"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.impute import MissingIndicator\nimport numpy as np\nX = np.array([[1, np.nan], [2, 3], [np.nan, 4]])\nindicator = MissingIndicator()\nmask = indicator.fit_transform(X)\nprint(mask.shape[1])",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the imputation strategies:",
+        "type": "match",
+        "left": [
+            "SimpleImputer",
+            "KNNImputer",
+            "IterativeImputer"
+        ],
+        "right": [
+            "Statistical",
+            "Neighbor-based",
+            "Model-based"
+        ]
+    },
+    {
+        "q": "The ______ uses k-nearest neighbors for imputation.",
+        "type": "fill_blank",
+        "answers": [
+            "KNNImputer"
+        ],
+        "other_options": [
+            "NearestImputer",
+            "NeighborImputer",
+            "KNeighborImputer"
+        ]
+    },
+    {
+        "q": "MissingIndicator creates binary features for missing values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.impute import KNNImputer\nimport numpy as np\nX = np.array([[1, 2], [3, 4], [5, np.nan]])\nimp = KNNImputer(n_neighbors=2)\nX_imputed = imp.fit_transform(X)\nprint(X_imputed[2, 1])",
+        "o": [
+            "3.0",
+            "4.0",
+            "2.0",
+            "nan"
+        ]
+    },
+    {
+        "q": "Which class applies different transformers to columns?",
+        "type": "mcq",
+        "o": [
+            "ColumnTransformer",
+            "FeatureUnion",
+            "Pipeline",
+            "TransformerMixin"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import StandardScaler, OneHotEncoder\nimport numpy as np\nX = np.array([[1, 'a'], [2, 'b'], [3, 'a']])\nct = ColumnTransformer([('num', StandardScaler(), [0]), ('cat', OneHotEncoder(sparse_output=False), [1])])\nX_transformed = ct.fit_transform(X)\nprint(X_transformed.shape[1])",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the compose module classes:",
+        "type": "match",
+        "left": [
+            "ColumnTransformer",
+            "make_column_transformer",
+            "make_column_selector"
+        ],
+        "right": [
+            "Named columns",
+            "Quick creation",
+            "Type-based selection"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies how to handle remaining columns.",
+        "type": "fill_blank",
+        "answers": [
+            "remainder"
+        ],
+        "other_options": [
+            "rest",
+            "other",
+            "remaining"
+        ]
+    },
+    {
+        "q": "Rearrange the ColumnTransformer workflow:",
+        "type": "rearrange",
+        "words": [
+            "define transformers",
+            "specify columns",
+            "create ColumnTransformer",
+            "fit transform"
+        ]
+    },
+    {
+        "q": "ColumnTransformer can drop unspecified columns with remainder='drop'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method returns predictions and scores?",
+        "type": "mcq",
+        "o": [
+            "cross_val_predict",
+            "cross_val_score",
+            "cross_validate",
+            "predict_cross"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import cross_validate\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\nresults = cross_validate(model, X, y, cv=3, return_train_score=True)\nprint('train_score' in results)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the cross-validation functions:",
+        "type": "match",
+        "left": [
+            "cross_val_score",
+            "cross_val_predict",
+            "cross_validate"
+        ],
+        "right": [
+            "Scores only",
+            "Predictions",
+            "Full results"
+        ]
+    },
+    {
+        "q": "The ______ parameter enables returning training scores.",
+        "type": "fill_blank",
+        "answers": [
+            "return_train_score"
+        ],
+        "other_options": [
+            "train_score",
+            "include_train",
+            "with_train"
+        ]
+    },
+    {
+        "q": "cross_validate can return fit and score times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import cross_val_predict\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\npreds = cross_val_predict(model, X, y, cv=5)\nprint(len(preds))",
+        "o": [
+            "100",
+            "5",
+            "20",
+            "1"
+        ]
+    },
+    {
+        "q": "Which class generates learning curves?",
+        "type": "mcq",
+        "o": [
+            "learning_curve (function)",
+            "LearningCurve",
+            "TrainingCurve",
+            "CurveGenerator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import learning_curve\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\ntrain_sizes, train_scores, test_scores = learning_curve(model, X, y, cv=3, train_sizes=[0.5, 1.0])\nprint(len(train_sizes))",
+        "o": [
+            "2",
+            "100",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the diagnostic curves:",
+        "type": "match",
+        "left": [
+            "learning_curve",
+            "validation_curve"
+        ],
+        "right": [
+            "Training size effect",
+            "Hyperparameter effect"
+        ]
+    },
+    {
+        "q": "The ______ function shows effect of a hyperparameter.",
+        "type": "fill_blank",
+        "answers": [
+            "validation_curve"
+        ],
+        "other_options": [
+            "param_curve",
+            "hyper_curve",
+            "tuning_curve"
+        ]
+    },
+    {
+        "q": "Learning curves help diagnose bias vs variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the model diagnosis workflow:",
+        "type": "rearrange",
+        "words": [
+            "generate learning curve",
+            "check training score",
+            "check test score",
+            "diagnose issue"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import validation_curve\nfrom sklearn.svm import SVC\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\ntrain_scores, test_scores = validation_curve(SVC(), X, y, param_name='C', param_range=[0.1, 1, 10], cv=3)\nprint(train_scores.shape)",
+        "o": [
+            "(3, 3)",
+            "(3,)",
+            "(9,)",
+            "(1, 9)"
+        ]
+    },
+    {
+        "q": "Which class calibrates classifier probabilities?",
+        "type": "mcq",
+        "o": [
+            "CalibratedClassifierCV",
+            "ProbabilityCalibrator",
+            "ClassifierCalibration",
+            "CalibrateProbabilities"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.calibration import CalibratedClassifierCV\nfrom sklearn.svm import SVC\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=200, n_features=2, n_redundant=0, random_state=42)\nsvc = SVC()\ncalibrated = CalibratedClassifierCV(svc, cv=3)\ncalibrated.fit(X, y)\nprint(hasattr(calibrated, 'predict_proba'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the calibration methods:",
+        "type": "match",
+        "left": [
+            "sigmoid",
+            "isotonic"
+        ],
+        "right": [
+            "Platt scaling",
+            "Non-parametric"
+        ]
+    },
+    {
+        "q": "The ______ calibration method uses isotonic regression.",
+        "type": "fill_blank",
+        "answers": [
+            "isotonic"
+        ],
+        "other_options": [
+            "iso",
+            "nonparametric",
+            "regression"
+        ]
+    },
+    {
+        "q": "SVC without probability=True needs calibration for probabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which reducer uses truncated SVD?",
+        "type": "mcq",
+        "o": [
+            "TruncatedSVD",
+            "PCA",
+            "NMF",
+            "LDA"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import TruncatedSVD\nfrom scipy.sparse import csr_matrix\nimport numpy as np\nX = csr_matrix(np.array([[1, 0, 0], [0, 1, 0], [1, 1, 0]]))\nsvd = TruncatedSVD(n_components=2)\nX_reduced = svd.fit_transform(X)\nprint(X_reduced.shape[1])",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the decomposition methods:",
+        "type": "match",
+        "left": [
+            "PCA",
+            "TruncatedSVD",
+            "NMF",
+            "FactorAnalysis"
+        ],
+        "right": [
+            "Dense data",
+            "Sparse data",
+            "Non-negative",
+            "Latent factors"
+        ]
+    },
+    {
+        "q": "The ______ is suitable for sparse matrices.",
+        "type": "fill_blank",
+        "answers": [
+            "TruncatedSVD"
+        ],
+        "other_options": [
+            "SparsePCA",
+            "SparseSVD",
+            "SparseReduce"
+        ]
+    },
+    {
+        "q": "Rearrange the dimensionality reduction by data type:",
+        "type": "rearrange",
+        "words": [
+            "dense: PCA",
+            "sparse: TruncatedSVD",
+            "non-negative: NMF"
+        ]
+    },
+    {
+        "q": "TruncatedSVD does not center data unlike PCA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which manifold method reduces to 2D for visualization?",
+        "type": "mcq",
+        "o": [
+            "TSNE",
+            "PCA",
+            "LDA",
+            "TruncatedSVD"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.manifold import TSNE\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(50, 10)\ntsne = TSNE(n_components=2, random_state=42)\nX_embedded = tsne.fit_transform(X)\nprint(X_embedded.shape[1])",
+        "o": [
+            "2",
+            "10",
+            "50",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the manifold methods:",
+        "type": "match",
+        "left": [
+            "TSNE",
+            "Isomap",
+            "LocallyLinearEmbedding"
+        ],
+        "right": [
+            "Stochastic neighbor",
+            "Geodesic",
+            "Local linear"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls neighborhood size in t-SNE.",
+        "type": "fill_blank",
+        "answers": [
+            "perplexity"
+        ],
+        "other_options": [
+            "neighbors",
+            "n_neighbors",
+            "neighborhood"
+        ]
+    },
+    {
+        "q": "t-SNE is mainly used for visualization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which kernel approximation method is used for RBF?",
+        "type": "mcq",
+        "o": [
+            "RBFSampler",
+            "Nystroem",
+            "Both work",
+            "None"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.kernel_approximation import RBFSampler\nimport numpy as np\nX = np.random.randn(100, 5)\nrbf = RBFSampler(n_components=10, random_state=42)\nX_transformed = rbf.fit_transform(X)\nprint(X_transformed.shape[1])",
+        "o": [
+            "10",
+            "5",
+            "100",
+            "15"
+        ]
+    },
+    {
+        "q": "Match the kernel approximations:",
+        "type": "match",
+        "left": [
+            "RBFSampler",
+            "Nystroem",
+            "AdditiveChi2Sampler"
+        ],
+        "right": [
+            "Random Fourier",
+            "Subset approx",
+            "Chi-squared"
+        ]
+    },
+    {
+        "q": "The ______ uses random Fourier features.",
+        "type": "fill_blank",
+        "answers": [
+            "RBFSampler"
+        ],
+        "other_options": [
+            "Nystroem",
+            "KernelApprox",
+            "FourierSampler"
+        ]
+    },
+    {
+        "q": "Kernel approximation enables linear methods on non-linear data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class creates custom estimators?",
+        "type": "mcq",
+        "o": [
+            "BaseEstimator",
+            "CustomEstimator",
+            "EstimatorBase",
+            "ModelBase"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.base import BaseEstimator, ClassifierMixin\nclass MyClassifier(BaseEstimator, ClassifierMixin):\n    def fit(self, X, y): return self\n    def predict(self, X): return [0] * len(X)\nmodel = MyClassifier()\nprint(hasattr(model, 'get_params'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the base mixins:",
+        "type": "match",
+        "left": [
+            "ClassifierMixin",
+            "RegressorMixin",
+            "TransformerMixin",
+            "ClusterMixin"
+        ],
+        "right": [
+            "Classification",
+            "Regression",
+            "Transform",
+            "Clustering"
+        ]
+    },
+    {
+        "q": "The ______ mixin adds score() method.",
+        "type": "fill_blank",
+        "answers": [
+            "ClassifierMixin"
+        ],
+        "other_options": [
+            "ScoreMixin",
+            "EvaluatorMixin",
+            "MetricMixin"
+        ]
+    },
+    {
+        "q": "Rearrange the custom estimator requirements:",
+        "type": "rearrange",
+        "words": [
+            "inherit BaseEstimator",
+            "define __init__",
+            "implement fit",
+            "implement predict"
+        ]
+    },
+    {
+        "q": "BaseEstimator provides get_params and set_params.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function checks if estimator follows API?",
+        "type": "mcq",
+        "o": [
+            "check_estimator",
+            "validate_estimator",
+            "test_estimator",
+            "verify_api"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.utils.estimator_checks import check_estimator\nfrom sklearn.linear_model import LogisticRegression\ntry:\n    check_estimator(LogisticRegression())\n    result = 'passed'\nexcept:\n    result = 'failed'\nprint(result)",
+        "o": [
+            "passed",
+            "failed",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the sklearn utilities:",
+        "type": "match",
+        "left": [
+            "check_estimator",
+            "check_array",
+            "check_X_y"
+        ],
+        "right": [
+            "Validate estimator",
+            "Validate array",
+            "Validate X and y"
+        ]
+    },
+    {
+        "q": "The ______ function validates input arrays.",
+        "type": "fill_blank",
+        "answers": [
+            "check_array"
+        ],
+        "other_options": [
+            "validate_array",
+            "verify_array",
+            "test_array"
+        ]
+    },
+    {
+        "q": "check_estimator runs a series of tests on estimator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates custom scorer?",
+        "type": "mcq",
+        "o": [
+            "make_scorer",
+            "create_scorer",
+            "Scorer",
+            "custom_score"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import make_scorer, mean_squared_error\nscorer = make_scorer(mean_squared_error, greater_is_better=False)\nprint(callable(scorer))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the scorer parameters:",
+        "type": "match",
+        "left": [
+            "greater_is_better",
+            "needs_proba",
+            "needs_threshold"
+        ],
+        "right": [
+            "Direction",
+            "Use probabilities",
+            "Use decision function"
+        ]
+    },
+    {
+        "q": "The ______ parameter negates metric for minimization.",
+        "type": "fill_blank",
+        "answers": [
+            "greater_is_better"
+        ],
+        "other_options": [
+            "minimize",
+            "negate",
+            "reverse"
+        ]
+    },
+    {
+        "q": "Rearrange the scorer creation workflow:",
+        "type": "rearrange",
+        "words": [
+            "define metric function",
+            "call make_scorer",
+            "use in cross_val_score",
+            "interpret results"
+        ]
+    },
+    {
+        "q": "make_scorer can wrap custom metric functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class parallelizes hyperparameter search?",
+        "type": "mcq",
+        "o": [
+            "n_jobs parameter",
+            "ParallelSearch",
+            "MultiJobSearch",
+            "ConcurrentSearch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import GridSearchCV\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\ngrid = GridSearchCV(LogisticRegression(), {'C': [1, 10]}, cv=2, n_jobs=-1)\ngrid.fit(X, y)\nprint(grid.n_jobs)",
+        "o": [
+            "-1",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the n_jobs values:",
+        "type": "match",
+        "left": [
+            "-1",
+            "1",
+            "2"
+        ],
+        "right": [
+            "All cores",
+            "No parallelism",
+            "Two cores"
+        ]
+    },
+    {
+        "q": "The ______ value uses all available CPU cores.",
+        "type": "fill_blank",
+        "answers": [
+            "-1"
+        ],
+        "other_options": [
+            "0",
+            "all",
+            "max"
+        ]
+    },
+    {
+        "q": "n_jobs=-1 may not always speed up small datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function checks is_regressor?",
+        "type": "mcq",
+        "o": [
+            "sklearn.base.is_regressor",
+            "is_regression",
+            "check_regressor",
+            "validate_regressor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.base import is_classifier, is_regressor\nfrom sklearn.linear_model import LogisticRegression\nmodel = LogisticRegression()\nprint(is_classifier(model))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the type checking functions:",
+        "type": "match",
+        "left": [
+            "is_classifier",
+            "is_regressor",
+            "is_outlier_detector"
+        ],
+        "right": [
+            "Check classifier",
+            "Check regressor",
+            "Check outlier"
+        ]
+    },
+    {
+        "q": "The ______ returns True for classification models.",
+        "type": "fill_blank",
+        "answers": [
+            "is_classifier"
+        ],
+        "other_options": [
+            "check_classifier",
+            "is_classification",
+            "validate_classifier"
+        ]
+    },
+    {
+        "q": "is_classifier uses _estimator_type attribute.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function clones an estimator?",
+        "type": "mcq",
+        "o": [
+            "sklearn.base.clone",
+            "copy_estimator",
+            "estimator.copy",
+            "duplicate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.base import clone\nfrom sklearn.linear_model import LogisticRegression\nmodel = LogisticRegression(C=10)\ncloned = clone(model)\nprint(cloned.C == model.C)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the cloning concepts:",
+        "type": "match",
+        "left": [
+            "clone()",
+            "copy.deepcopy()"
+        ],
+        "right": [
+            "New unfitted estimator",
+            "Exact copy including state"
+        ]
+    },
+    {
+        "q": "The ______ function creates unfitted copy of estimator.",
+        "type": "fill_blank",
+        "answers": [
+            "clone"
+        ],
+        "other_options": [
+            "copy",
+            "duplicate",
+            "new"
+        ]
+    },
+    {
+        "q": "clone() preserves hyperparameters but not fitted state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs iterative imputation?",
+        "type": "mcq",
+        "o": [
+            "IterativeImputer",
+            "ModelImputer",
+            "ChainedImputer",
+            "RegressionImputer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.experimental import enable_iterative_imputer\nfrom sklearn.impute import IterativeImputer\nimport numpy as np\nX = np.array([[1, 2], [np.nan, 3], [7, np.nan]])\nimp = IterativeImputer(max_iter=10, random_state=42)\nX_imputed = imp.fit_transform(X)\nprint(X_imputed.shape)",
+        "o": [
+            "(3, 2)",
+            "(2, 2)",
+            "(3, 3)",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the imputer types:",
+        "type": "match",
+        "left": [
+            "SimpleImputer",
+            "KNNImputer",
+            "IterativeImputer"
+        ],
+        "right": [
+            "Statistics",
+            "Neighbors",
+            "Model-based"
+        ]
+    },
+    {
+        "q": "The ______ uses estimator predictions for imputation.",
+        "type": "fill_blank",
+        "answers": [
+            "IterativeImputer"
+        ],
+        "other_options": [
+            "ModelImputer",
+            "PredictImputer",
+            "EstimatorImputer"
+        ]
+    },
+    {
+        "q": "IterativeImputer requires experimental import.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the IterativeImputer steps:",
+        "type": "rearrange",
+        "words": [
+            "initial imputation",
+            "model training",
+            "prediction",
+            "iteration"
+        ]
+    },
+    {
+        "q": "Which method performs repeated CV?",
+        "type": "mcq",
+        "o": [
+            "RepeatedKFold",
+            "MultiKFold",
+            "IteratedKFold",
+            "LoopKFold"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import RepeatedKFold\nimport numpy as np\nrkf = RepeatedKFold(n_splits=2, n_repeats=3, random_state=42)\nX = np.arange(10)\nfolds = list(rkf.split(X))\nprint(len(folds))",
+        "o": [
+            "6",
+            "2",
+            "3",
+            "10"
+        ]
+    },
+    {
+        "q": "Match the repeated CV types:",
+        "type": "match",
+        "left": [
+            "RepeatedKFold",
+            "RepeatedStratifiedKFold"
+        ],
+        "right": [
+            "Basic repeated",
+            "Stratified repeated"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls repetition count.",
+        "type": "fill_blank",
+        "answers": [
+            "n_repeats"
+        ],
+        "other_options": [
+            "repeats",
+            "iterations",
+            "n_iterations"
+        ]
+    },
+    {
+        "q": "RepeatedKFold reduces variance in CV estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method performs nested CV?",
+        "type": "mcq",
+        "o": [
+            "GridSearchCV inside cross_val_score",
+            "NestedCV",
+            "DoubleCV",
+            "HierarchicalCV"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import cross_val_score, GridSearchCV\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\ninner_cv = GridSearchCV(LogisticRegression(), {'C': [0.1, 1]}, cv=2)\nscores = cross_val_score(inner_cv, X, y, cv=3)\nprint(len(scores))",
+        "o": [
+            "3",
+            "2",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "Nested CV prevents overfitting to hyperparameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the CV nesting levels:",
+        "type": "match",
+        "left": [
+            "Inner CV",
+            "Outer CV"
+        ],
+        "right": [
+            "Hyperparameter tuning",
+            "Model evaluation"
+        ]
+    },
+    {
+        "q": "Which class performs probability calibration analysis?",
+        "type": "mcq",
+        "o": [
+            "calibration_curve",
+            "CalibrationCurve",
+            "ProbabilityAnalysis",
+            "CalibrationAnalyzer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.calibration import calibration_curve\nimport numpy as np\ny_true = np.array([0, 0, 1, 1])\ny_prob = np.array([0.1, 0.4, 0.6, 0.9])\nfraction_of_positives, mean_predicted = calibration_curve(y_true, y_prob, n_bins=2)\nprint(len(fraction_of_positives))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the calibration analysis:",
+        "type": "match",
+        "left": [
+            "calibration_curve",
+            "brier_score_loss"
+        ],
+        "right": [
+            "Reliability curve",
+            "MSE of probabilities"
+        ]
+    },
+    {
+        "q": "The ______ measures probability prediction error.",
+        "type": "fill_blank",
+        "answers": [
+            "brier_score_loss"
+        ],
+        "other_options": [
+            "calibration_score",
+            "prob_error",
+            "prediction_error"
+        ]
+    },
+    {
+        "q": "Lower Brier score indicates better calibration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric handles multiclass average?",
+        "type": "mcq",
+        "o": [
+            "average parameter",
+            "MultiMetric",
+            "ClassAverage",
+            "AverageMetric"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import f1_score\ny_true = [0, 1, 2, 0, 1, 2]\ny_pred = [0, 2, 1, 0, 0, 1]\nprint(round(f1_score(y_true, y_pred, average='macro'), 2))",
+        "o": [
+            "0.27",
+            "0.5",
+            "1.0",
+            "0.0"
+        ]
+    },
+    {
+        "q": "Match the averaging methods:",
+        "type": "match",
+        "left": [
+            "micro",
+            "macro",
+            "weighted",
+            "None"
+        ],
+        "right": [
+            "Global average",
+            "Per-class unweighted",
+            "Per-class weighted",
+            "Per-class scores"
+        ]
+    },
+    {
+        "q": "The ______ average weights by class support.",
+        "type": "fill_blank",
+        "answers": [
+            "weighted"
+        ],
+        "other_options": [
+            "support",
+            "balanced",
+            "proportional"
+        ]
+    },
+    {
+        "q": "Rearrange the averaging by sensitivity to imbalance:",
+        "type": "rearrange",
+        "words": [
+            "micro: less sensitive",
+            "weighted: moderate",
+            "macro: more sensitive"
+        ]
+    },
+    {
+        "q": "average='micro' gives same result for precision, recall, f1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which parameter handles sparse output?",
+        "type": "mcq",
+        "o": [
+            "sparse_output",
+            "sparse",
+            "return_sparse",
+            "use_sparse"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import OneHotEncoder\nimport numpy as np\nenc = OneHotEncoder(sparse_output=True)\ndata = np.array([['a'], ['b'], ['a']])\nresult = enc.fit_transform(data)\nprint(type(result).__name__)",
+        "o": [
+            "csr_matrix",
+            "ndarray",
+            "csc_matrix",
+            "list"
+        ]
+    },
+    {
+        "q": "Match the sparse matrix types:",
+        "type": "match",
+        "left": [
+            "csr_matrix",
+            "csc_matrix",
+            "coo_matrix"
+        ],
+        "right": [
+            "Row-wise",
+            "Column-wise",
+            "Coordinate"
+        ]
+    },
+    {
+        "q": "The ______ format is efficient for row slicing.",
+        "type": "fill_blank",
+        "answers": [
+            "csr_matrix"
+        ],
+        "other_options": [
+            "csc",
+            "coo",
+            "sparse"
+        ]
+    },
+    {
+        "q": "Sparse output saves memory for high-cardinality categorical.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs semi-supervised learning?",
+        "type": "mcq",
+        "o": [
+            "LabelSpreading",
+            "SemiSupervised",
+            "PartialLabels",
+            "MixedLearning"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.semi_supervised import LabelPropagation\nimport numpy as np\nX = np.array([[1], [2], [3], [4], [5]])\ny = np.array([0, -1, -1, -1, 1])\nmodel = LabelPropagation()\nmodel.fit(X, y)\nprint(-1 in model.transduction_)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the semi-supervised methods:",
+        "type": "match",
+        "left": [
+            "LabelPropagation",
+            "LabelSpreading",
+            "SelfTrainingClassifier"
+        ],
+        "right": [
+            "Hard labels",
+            "Soft labels",
+            "Self-training"
+        ]
+    },
+    {
+        "q": "The ______ value marks unlabeled samples.",
+        "type": "fill_blank",
+        "answers": [
+            "-1"
+        ],
+        "other_options": [
+            "0",
+            "nan",
+            "None"
+        ]
+    },
+    {
+        "q": "Semi-supervised learning uses both labeled and unlabeled data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which clusterer uses mean shift?",
+        "type": "mcq",
+        "o": [
+            "MeanShift",
+            "ShiftCluster",
+            "DensityShift",
+            "CentroidShift"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import MeanShift\nimport numpy as np\nX = np.array([[1], [1.1], [5], [5.1]])\nms = MeanShift(bandwidth=1)\nms.fit(X)\nprint(len(set(ms.labels_)))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the clustering characteristics:",
+        "type": "match",
+        "left": [
+            "MeanShift",
+            "DBSCAN",
+            "KMeans"
+        ],
+        "right": [
+            "Mode seeking",
+            "Density-based",
+            "Centroid-based"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls kernel width.",
+        "type": "fill_blank",
+        "answers": [
+            "bandwidth"
+        ],
+        "other_options": [
+            "width",
+            "scale",
+            "radius"
+        ]
+    },
+    {
+        "q": "MeanShift does not require specifying number of clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the clustering by scalability:",
+        "type": "rearrange",
+        "words": [
+            "KMeans: large data",
+            "DBSCAN: medium",
+            "MeanShift: small"
+        ]
+    },
+    {
+        "q": "Which function estimates bandwidth?",
+        "type": "mcq",
+        "o": [
+            "estimate_bandwidth",
+            "get_bandwidth",
+            "compute_bandwidth",
+            "find_bandwidth"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import estimate_bandwidth\nimport numpy as np\nX = np.random.randn(100, 2)\nbandwidth = estimate_bandwidth(X, quantile=0.3)\nprint(bandwidth > 0)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "estimate_bandwidth uses quantile of distances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs hierarchical clustering?",
+        "type": "mcq",
+        "o": [
+            "AgglomerativeClustering",
+            "HierarchicalCluster",
+            "TreeCluster",
+            "DendrogramCluster"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import AgglomerativeClustering\nimport numpy as np\nX = np.array([[1], [2], [10], [11]])\nagg = AgglomerativeClustering(n_clusters=2, linkage='ward')\nlabels = agg.fit_predict(X)\nprint(len(set(labels)))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the linkage methods:",
+        "type": "match",
+        "left": [
+            "ward",
+            "complete",
+            "average",
+            "single"
+        ],
+        "right": [
+            "Minimize variance",
+            "Maximum distance",
+            "Mean distance",
+            "Minimum distance"
+        ]
+    },
+    {
+        "q": "The ______ linkage minimizes within-cluster variance.",
+        "type": "fill_blank",
+        "answers": [
+            "ward"
+        ],
+        "other_options": [
+            "variance",
+            "min_variance",
+            "optimal"
+        ]
+    },
+    {
+        "q": "AgglomerativeClustering builds hierarchy bottom-up.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class uses spectral clustering?",
+        "type": "mcq",
+        "o": [
+            "SpectralClustering",
+            "EigenCluster",
+            "GraphCluster",
+            "LaplacianCluster"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import SpectralClustering\nimport numpy as np\nnp.random.seed(42)\nX = np.vstack([np.random.randn(20, 2) + [0, 0], np.random.randn(20, 2) + [10, 10]])\nsc = SpectralClustering(n_clusters=2, random_state=42, affinity='nearest_neighbors')\nlabels = sc.fit_predict(X)\nprint(len(set(labels)))",
+        "o": [
+            "2",
+            "40",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the spectral affinity types:",
+        "type": "match",
+        "left": [
+            "rbf",
+            "nearest_neighbors",
+            "precomputed"
+        ],
+        "right": [
+            "Gaussian kernel",
+            "KNN graph",
+            "Given similarity"
+        ]
+    },
+    {
+        "q": "Rearrange the spectral clustering steps:",
+        "type": "rearrange",
+        "words": [
+            "build similarity",
+            "compute Laplacian",
+            "find eigenvectors",
+            "cluster embeddings"
+        ]
+    },
+    {
+        "q": "Spectral clustering works well for non-convex clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs Gaussian Mixture clustering?",
+        "type": "mcq",
+        "o": [
+            "GaussianMixture",
+            "GMM",
+            "MixtureModel",
+            "GaussianCluster"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.mixture import GaussianMixture\nimport numpy as np\nnp.random.seed(42)\nX = np.vstack([np.random.randn(50, 2), np.random.randn(50, 2) + 5])\ngm = GaussianMixture(n_components=2, random_state=42)\ngm.fit(X)\nprint(gm.weights_.shape)",
+        "o": [
+            "(2,)",
+            "(100, 2)",
+            "(2, 2)",
+            "()"
+        ]
+    },
+    {
+        "q": "Match the GMM attributes:",
+        "type": "match",
+        "left": [
+            "weights_",
+            "means_",
+            "covariances_"
+        ],
+        "right": [
+            "Mixing weights",
+            "Component means",
+            "Component covariances"
+        ]
+    },
+    {
+        "q": "The ______ method returns probability of each component.",
+        "type": "fill_blank",
+        "answers": [
+            "predict_proba"
+        ],
+        "other_options": [
+            "probabilities",
+            "component_proba",
+            "mixture_proba"
+        ]
+    },
+    {
+        "q": "GaussianMixture uses EM algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which criteria selects optimal GMM components?",
+        "type": "mcq",
+        "o": [
+            "BIC and AIC",
+            "Silhouette only",
+            "Elbow method",
+            "Gap statistic"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.mixture import GaussianMixture\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 2)\ngm = GaussianMixture(n_components=2, random_state=42)\ngm.fit(X)\nprint(gm.bic(X) > 0)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the model selection criteria:",
+        "type": "match",
+        "left": [
+            "BIC",
+            "AIC"
+        ],
+        "right": [
+            "Bayesian",
+            "Akaike"
+        ]
+    },
+    {
+        "q": "Lower BIC indicates better model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class uses neural network for classification?",
+        "type": "mcq",
+        "o": [
+            "MLPClassifier",
+            "NeuralNetwork",
+            "DeepClassifier",
+            "ANNClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.neural_network import MLPClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmlp = MLPClassifier(hidden_layer_sizes=(10,), max_iter=1000, random_state=42)\nmlp.fit(X, y)\nprint(len(mlp.coefs_))",
+        "o": [
+            "2",
+            "1",
+            "10",
+            "100"
+        ]
+    },
+    {
+        "q": "Match the MLP parameters:",
+        "type": "match",
+        "left": [
+            "hidden_layer_sizes",
+            "activation",
+            "solver"
+        ],
+        "right": [
+            "Layer neurons",
+            "Activation function",
+            "Optimization"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies hidden layer architecture.",
+        "type": "fill_blank",
+        "answers": [
+            "hidden_layer_sizes"
+        ],
+        "other_options": [
+            "layers",
+            "architecture",
+            "neurons"
+        ]
+    },
+    {
+        "q": "Rearrange the MLP training process:",
+        "type": "rearrange",
+        "words": [
+            "initialize weights",
+            "forward pass",
+            "compute loss",
+            "backpropagate"
+        ]
+    },
+    {
+        "q": "MLPClassifier uses backpropagation for training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which solver is default for MLPClassifier?",
+        "type": "mcq",
+        "o": [
+            "adam",
+            "sgd",
+            "lbfgs",
+            "gradient"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.neural_network import MLPRegressor\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 2)\ny = X[:, 0] + X[:, 1]\nmlp = MLPRegressor(hidden_layer_sizes=(5,), max_iter=1000, random_state=42)\nmlp.fit(X, y)\nprint(mlp.out_activation_)",
+        "o": [
+            "identity",
+            "relu",
+            "logistic",
+            "tanh"
+        ]
+    },
+    {
+        "q": "Match the activation functions:",
+        "type": "match",
+        "left": [
+            "relu",
+            "logistic",
+            "tanh",
+            "identity"
+        ],
+        "right": [
+            "Max(0, x)",
+            "Sigmoid",
+            "Hyperbolic tangent",
+            "Linear"
+        ]
+    },
+    {
+        "q": "The ______ activation is commonly used for hidden layers.",
+        "type": "fill_blank",
+        "answers": [
+            "relu"
+        ],
+        "other_options": [
+            "sigmoid",
+            "linear",
+            "tanh"
+        ]
+    },
+    {
+        "q": "MLPRegressor uses identity activation for output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which preprocessing handles discrete features?",
+        "type": "mcq",
+        "o": [
+            "KBinsDiscretizer",
+            "DiscreteEncoder",
+            "BinEncoder",
+            "DiscreteBins"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import KBinsDiscretizer\nimport numpy as np\nX = np.array([[1], [2], [3], [4], [5], [6]])\nkbd = KBinsDiscretizer(n_bins=3, encode='ordinal', strategy='uniform')\nX_binned = kbd.fit_transform(X)\nprint(len(set(X_binned.flatten())))",
+        "o": [
+            "3",
+            "6",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the binning strategies:",
+        "type": "match",
+        "left": [
+            "uniform",
+            "quantile",
+            "kmeans"
+        ],
+        "right": [
+            "Equal width",
+            "Equal frequency",
+            "Cluster-based"
+        ]
+    },
+    {
+        "q": "The ______ strategy creates equal-frequency bins.",
+        "type": "fill_blank",
+        "answers": [
+            "quantile"
+        ],
+        "other_options": [
+            "frequency",
+            "equal",
+            "balanced"
+        ]
+    },
+    {
+        "q": "KBinsDiscretizer can output ordinal or one-hot encoding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function generates synthetic samples?",
+        "type": "mcq",
+        "o": [
+            "make_circles",
+            "create_circles",
+            "generate_circles",
+            "synthetic_circles"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.datasets import make_moons\nX, y = make_moons(n_samples=100, noise=0.1, random_state=42)\nprint(len(set(y)))",
+        "o": [
+            "2",
+            "100",
+            "1",
+            "50"
+        ]
+    },
+    {
+        "q": "Match the synthetic datasets:",
+        "type": "match",
+        "left": [
+            "make_moons",
+            "make_circles",
+            "make_classification"
+        ],
+        "right": [
+            "Two moons",
+            "Concentric circles",
+            "Gaussian blobs"
+        ]
+    },
+    {
+        "q": "Rearrange the synthetic data complexity:",
+        "type": "rearrange",
+        "words": [
+            "linearly separable",
+            "moons/circles",
+            "overlapping clusters"
+        ]
+    },
+    {
+        "q": "make_moons creates two interleaving half circles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method gets pipeline step by name?",
+        "type": "mcq",
+        "o": [
+            "named_steps",
+            "get_step",
+            "steps_dict",
+            "step_by_name"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\npipe = Pipeline([('scaler', StandardScaler()), ('clf', LogisticRegression())])\nprint('scaler' in pipe.named_steps)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the pipeline access methods:",
+        "type": "match",
+        "left": [
+            "named_steps",
+            "steps",
+            "[index]"
+        ],
+        "right": [
+            "Dict access",
+            "List of tuples",
+            "Position access"
+        ]
+    },
+    {
+        "q": "The ______ attribute provides dict-like step access.",
+        "type": "fill_blank",
+        "answers": [
+            "named_steps"
+        ],
+        "other_options": [
+            "step_dict",
+            "steps_by_name",
+            "named"
+        ]
+    },
+    {
+        "q": "Pipeline steps can be accessed by name or index.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method sets nested parameters?",
+        "type": "mcq",
+        "o": [
+            "set_params with __ notation",
+            "nested_params",
+            "deep_params",
+            "sub_params"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\npipe = Pipeline([('scaler', StandardScaler()), ('clf', LogisticRegression())])\npipe.set_params(clf__C=10)\nprint(pipe.named_steps['clf'].C)",
+        "o": [
+            "10",
+            "1",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Double underscore separates step name and parameter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the parameter setting patterns:",
+        "type": "match",
+        "left": [
+            "clf__C",
+            "scaler__with_mean"
+        ],
+        "right": [
+            "Classifier C",
+            "Scaler centering"
+        ]
+    },
+    {
+        "q": "Which utility shuffles data consistently?",
+        "type": "mcq",
+        "o": [
+            "shuffle",
+            "random_shuffle",
+            "randomize",
+            "mix_data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.utils import shuffle\nimport numpy as np\nnp.random.seed(42)\nX = np.array([1, 2, 3, 4, 5])\ny = np.array([1, 2, 3, 4, 5])\nX_s, y_s = shuffle(X, y, random_state=42)\nprint((X_s == y_s).all())",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "shuffle keeps X and y correspondences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method samples with replacement?",
+        "type": "mcq",
+        "o": [
+            "resample",
+            "bootstrap",
+            "sample",
+            "random_sample"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.utils import resample\nimport numpy as np\nX = np.array([1, 2, 3, 4, 5])\nX_resampled = resample(X, n_samples=3, random_state=42, replace=True)\nprint(len(X_resampled))",
+        "o": [
+            "3",
+            "5",
+            "1",
+            "10"
+        ]
+    },
+    {
+        "q": "Match the sampling parameters:",
+        "type": "match",
+        "left": [
+            "n_samples",
+            "replace",
+            "random_state"
+        ],
+        "right": [
+            "Sample count",
+            "With replacement",
+            "Reproducibility"
+        ]
+    },
+    {
+        "q": "resample is commonly used for bootstrapping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the bootstrap confidence interval steps:",
+        "type": "rearrange",
+        "words": [
+            "resample data",
+            "compute statistic",
+            "repeat many times",
+            "compute percentiles"
+        ]
+    },
+    {
+        "q": "Which class provides early stopping?",
+        "type": "mcq",
+        "o": [
+            "early_stopping parameter",
+            "EarlyStopping",
+            "StopEarly",
+            "EarlyTermination"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.neural_network import MLPClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=1000, n_features=10, n_redundant=0, random_state=42)\nmlp = MLPClassifier(hidden_layer_sizes=(50,), max_iter=1000, early_stopping=True, random_state=42)\nmlp.fit(X, y)\nprint(mlp.n_iter_ < mlp.max_iter)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "early_stopping uses validation set for monitoring.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the early stopping concepts:",
+        "type": "match",
+        "left": [
+            "n_iter_no_change",
+            "validation_fraction"
+        ],
+        "right": [
+            "Patience",
+            "Holdout size"
+        ]
+    },
+    {
+        "q": "Which attribute shows convergence status?",
+        "type": "mcq",
+        "o": [
+            "n_iter_",
+            "converged_",
+            "iterations_",
+            "stopped_"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import SGDClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nsgd = SGDClassifier(max_iter=1000, tol=1e-3, random_state=42)\nsgd.fit(X, y)\nprint(hasattr(sgd, 'n_iter_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The ______ shows actual iterations run.",
+        "type": "fill_blank",
+        "answers": [
+            "n_iter_"
+        ],
+        "other_options": [
+            "iterations",
+            "n_iterations_",
+            "iter_count_"
+        ]
+    },
+    {
+        "q": "n_iter_ may be less than max_iter if model converges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method extracts target encoder?",
+        "type": "mcq",
+        "o": [
+            "TargetEncoder",
+            "TargetEncoding",
+            "EncodeTarget",
+            "LabelTarget"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import TargetEncoder\nimport numpy as np\nX = np.array([['a'], ['b'], ['a'], ['b'], ['a']])\ny = np.array([1, 0, 1, 0, 1])\nte = TargetEncoder()\nX_encoded = te.fit_transform(X, y)\nprint(X_encoded.shape[1])",
+        "o": [
+            "1",
+            "2",
+            "5",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the target encoding concepts:",
+        "type": "match",
+        "left": [
+            "TargetEncoder",
+            "smooth"
+        ],
+        "right": [
+            "Mean target encoding",
+            "Regularization"
+        ]
+    },
+    {
+        "q": "TargetEncoder uses target mean for categories.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter prevents overfitting in TargetEncoder.",
+        "type": "fill_blank",
+        "answers": [
+            "smooth"
+        ],
+        "other_options": [
+            "regularization",
+            "prior",
+            "alpha"
+        ]
+    },
+    {
+        "q": "Which class performs histogram gradient boosting?",
+        "type": "mcq",
+        "o": [
+            "HistGradientBoostingClassifier",
+            "FastGradientBoosting",
+            "LightGBMClassifier",
+            "QuickBoost"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import HistGradientBoostingClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=1000, n_features=10, n_redundant=0, random_state=42)\nhgb = HistGradientBoostingClassifier(max_iter=100, random_state=42)\nhgb.fit(X, y)\nprint(hasattr(hgb, 'n_iter_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the histogram boosting features:",
+        "type": "match",
+        "left": [
+            "max_bins",
+            "early_stopping",
+            "categorical_features"
+        ],
+        "right": [
+            "Discretization bins",
+            "Stop early",
+            "Native categorical"
+        ]
+    },
+    {
+        "q": "The ______ determines histogram resolution.",
+        "type": "fill_blank",
+        "answers": [
+            "max_bins"
+        ],
+        "other_options": [
+            "n_bins",
+            "bins",
+            "bin_count"
+        ]
+    },
+    {
+        "q": "HistGradientBoosting supports native missing value handling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class performs extra trees?",
+        "type": "mcq",
+        "o": [
+            "ExtraTreesClassifier",
+            "RandomizedTrees",
+            "ExtremeTrees",
+            "FastTrees"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import ExtraTreesClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=4, n_redundant=0, random_state=42)\net = ExtraTreesClassifier(n_estimators=10, random_state=42)\net.fit(X, y)\nprint(len(et.feature_importances_))",
+        "o": [
+            "4",
+            "10",
+            "100",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the tree ensemble differences:",
+        "type": "match",
+        "left": [
+            "RandomForest",
+            "ExtraTrees"
+        ],
+        "right": [
+            "Best split",
+            "Random split"
+        ]
+    },
+    {
+        "q": "ExtraTrees uses random thresholds for splits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the ensemble randomness levels:",
+        "type": "rearrange",
+        "words": [
+            "DecisionTree: none",
+            "RandomForest: moderate",
+            "ExtraTrees: high"
+        ]
+    },
+    {
+        "q": "Which method inspects feature names?",
+        "type": "mcq",
+        "o": [
+            "get_feature_names_out",
+            "feature_names",
+            "get_names",
+            "output_names"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import StandardScaler\nimport numpy as np\nX = np.array([[1, 2], [3, 4], [5, 6]])\nscaler = StandardScaler()\nscaler.fit(X)\nprint(len(scaler.get_feature_names_out()))",
+        "o": [
+            "2",
+            "3",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the feature name methods:",
+        "type": "match",
+        "left": [
+            "get_feature_names_out",
+            "feature_names_in_"
+        ],
+        "right": [
+            "Output names",
+            "Input names"
+        ]
+    },
+    {
+        "q": "The ______ stores input feature names.",
+        "type": "fill_blank",
+        "answers": [
+            "feature_names_in_"
+        ],
+        "other_options": [
+            "input_features_",
+            "feature_inputs_",
+            "names_in_"
+        ]
+    },
+    {
+        "q": "get_feature_names_out returns output column names.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which metric computes log loss?",
+        "type": "mcq",
+        "o": [
+            "log_loss",
+            "logloss",
+            "cross_entropy",
+            "entropy_loss"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import log_loss\nimport numpy as np\ny_true = [0, 1, 1, 0]\ny_pred = [[0.9, 0.1], [0.1, 0.9], [0.2, 0.8], [0.8, 0.2]]\nprint(round(log_loss(y_true, y_pred), 2))",
+        "o": [
+            "0.16",
+            "1.0",
+            "0.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the loss functions:",
+        "type": "match",
+        "left": [
+            "log_loss",
+            "hinge_loss",
+            "zero_one_loss"
+        ],
+        "right": [
+            "Cross-entropy",
+            "SVM margin",
+            "Error count"
+        ]
+    },
+    {
+        "q": "Lower log loss indicates better probability estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ computes misclassification fraction.",
+        "type": "fill_blank",
+        "answers": [
+            "zero_one_loss"
+        ],
+        "other_options": [
+            "error_rate",
+            "misclass_loss",
+            "classification_error"
+        ]
+    },
+    {
+        "q": "Which method generates permutation importance?",
+        "type": "mcq",
+        "o": [
+            "permutation_importance",
+            "feature_importance",
+            "shuffle_importance",
+            "random_importance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.inspection import permutation_importance\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=4, n_redundant=0, random_state=42)\nrf = RandomForestClassifier(n_estimators=10, random_state=42)\nrf.fit(X, y)\nresult = permutation_importance(rf, X, y, n_repeats=5, random_state=42)\nprint(result.importances_mean.shape)",
+        "o": [
+            "(4,)",
+            "(10,)",
+            "(100,)",
+            "(5,)"
+        ]
+    },
+    {
+        "q": "Match the importance methods:",
+        "type": "match",
+        "left": [
+            "feature_importances_",
+            "permutation_importance"
+        ],
+        "right": [
+            "Impurity-based",
+            "Performance-based"
+        ]
+    },
+    {
+        "q": "The ______ measures importance by permuting features.",
+        "type": "fill_blank",
+        "answers": [
+            "permutation_importance"
+        ],
+        "other_options": [
+            "shuffle_importance",
+            "random_importance",
+            "feature_shuffle"
+        ]
+    },
+    {
+        "q": "Rearrange the importance computation steps:",
+        "type": "rearrange",
+        "words": [
+            "fit model",
+            "permute feature",
+            "measure score drop",
+            "repeat for all features"
+        ]
+    },
+    {
+        "q": "Permutation importance works with any model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method generates partial dependence plots?",
+        "type": "mcq",
+        "o": [
+            "partial_dependence",
+            "feature_dependence",
+            "marginal_effect",
+            "feature_effect"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.inspection import partial_dependence\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=4, n_redundant=0, random_state=42)\nrf = RandomForestClassifier(n_estimators=10, random_state=42)\nrf.fit(X, y)\npdp = partial_dependence(rf, X, features=[0])\nprint(len(pdp.keys()))",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the inspection methods:",
+        "type": "match",
+        "left": [
+            "partial_dependence",
+            "PartialDependenceDisplay"
+        ],
+        "right": [
+            "Compute values",
+            "Visualization"
+        ]
+    },
+    {
+        "q": "Partial dependence shows marginal effect of features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method uses SHAP-like explanations?",
+        "type": "mcq",
+        "o": [
+            "TreeExplainer integration",
+            "SHAPExplainer",
+            "ModelExplainer",
+            "FeatureExplainer"
+        ]
+    },
+    {
+        "q": "Which class handles ordinal regression?",
+        "type": "mcq",
+        "o": [
+            "LogisticRegression with ordinal target",
+            "OrdinalRegressor",
+            "RankedRegression",
+            "OrderedRegression"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import SplineTransformer\nimport numpy as np\nX = np.linspace(0, 1, 10).reshape(-1, 1)\nst = SplineTransformer(n_knots=3, degree=3)\nX_spline = st.fit_transform(X)\nprint(X_spline.shape[1])",
+        "o": [
+            "5",
+            "3",
+            "10",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the spline parameters:",
+        "type": "match",
+        "left": [
+            "n_knots",
+            "degree",
+            "extrapolation"
+        ],
+        "right": [
+            "Number of breakpoints",
+            "Polynomial degree",
+            "Outside behavior"
+        ]
+    },
+    {
+        "q": "The ______ generates spline basis features.",
+        "type": "fill_blank",
+        "answers": [
+            "SplineTransformer"
+        ],
+        "other_options": [
+            "SplineFeatures",
+            "BSpline",
+            "SplineExpand"
+        ]
+    },
+    {
+        "q": "SplineTransformer creates non-linear features from linear inputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the spline complexity:",
+        "type": "rearrange",
+        "words": [
+            "degree 1: linear",
+            "degree 2: quadratic",
+            "degree 3: cubic"
+        ]
+    },
+    {
+        "q": "Which class implements Gaussian Process?",
+        "type": "mcq",
+        "o": [
+            "GaussianProcessClassifier",
+            "GPClassifier",
+            "BayesianGP",
+            "ProcessClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.gaussian_process import GaussianProcessRegressor\nfrom sklearn.gaussian_process.kernels import RBF\nimport numpy as np\nX = np.array([[1], [2], [3]])\ny = np.array([1, 2, 3])\ngpr = GaussianProcessRegressor(kernel=RBF())\ngpr.fit(X, y)\ny_pred, std = gpr.predict([[1.5]], return_std=True)\nprint(len(std))",
+        "o": [
+            "1",
+            "3",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the GP kernel types:",
+        "type": "match",
+        "left": [
+            "RBF",
+            "Matern",
+            "RationalQuadratic"
+        ],
+        "right": [
+            "Gaussian",
+            "Differentiability control",
+            "Scale mixture"
+        ]
+    },
+    {
+        "q": "Gaussian Process provides uncertainty estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ kernel is also called squared exponential.",
+        "type": "fill_blank",
+        "answers": [
+            "RBF"
+        ],
+        "other_options": [
+            "Gaussian",
+            "SE",
+            "Squared"
+        ]
+    },
+    {
+        "q": "Which method handles isotonic regression?",
+        "type": "mcq",
+        "o": [
+            "IsotonicRegression",
+            "MonotonicRegression",
+            "OrderedRegression",
+            "ConstrainedRegression"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.isotonic import IsotonicRegression\nimport numpy as np\nX = np.array([1, 2, 3, 4])\ny = np.array([1, 4, 3, 6])\nir = IsotonicRegression()\nir.fit(X, y)\nprint(ir.predict([2.5]))",
+        "o": [
+            "[3.5]",
+            "[4.0]",
+            "[3.0]",
+            "[2.5]"
+        ]
+    },
+    {
+        "q": "Match the isotonic constraints:",
+        "type": "match",
+        "left": [
+            "increasing",
+            "decreasing"
+        ],
+        "right": [
+            "Non-decreasing fit",
+            "Non-increasing fit"
+        ]
+    },
+    {
+        "q": "IsotonicRegression fits monotonic function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which data transformer uses Nystroem approximation?",
+        "type": "mcq",
+        "o": [
+            "Nystroem",
+            "NystromApprox",
+            "SubsetKernel",
+            "ApproxKernel"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.kernel_approximation import Nystroem\nimport numpy as np\nX = np.random.randn(100, 5)\nnys = Nystroem(n_components=20, random_state=42)\nX_transformed = nys.fit_transform(X)\nprint(X_transformed.shape[1])",
+        "o": [
+            "20",
+            "5",
+            "100",
+            "25"
+        ]
+    },
+    {
+        "q": "Match the kernel approximation methods:",
+        "type": "match",
+        "left": [
+            "RBFSampler",
+            "Nystroem"
+        ],
+        "right": [
+            "Random features",
+            "Subset-based"
+        ]
+    },
+    {
+        "q": "Nystroem uses landmark points for approximation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the kernel approximation complexity:",
+        "type": "rearrange",
+        "words": [
+            "RBFSampler: O(d*D)",
+            "Nystroem: O(n*D*D)"
+        ]
+    },
+    {
+        "q": "Which class does random projection?",
+        "type": "mcq",
+        "o": [
+            "GaussianRandomProjection",
+            "RandomProjector",
+            "DimensionReduce",
+            "GaussianReduce"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.random_projection import GaussianRandomProjection\nimport numpy as np\nX = np.random.randn(100, 50)\nrp = GaussianRandomProjection(n_components=10, random_state=42)\nX_projected = rp.fit_transform(X)\nprint(X_projected.shape[1])",
+        "o": [
+            "10",
+            "50",
+            "100",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the random projection types:",
+        "type": "match",
+        "left": [
+            "GaussianRandomProjection",
+            "SparseRandomProjection"
+        ],
+        "right": [
+            "Dense matrix",
+            "Sparse matrix"
+        ]
+    },
+    {
+        "q": "Random projection preserves approximate distances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ uses Johnson-Lindenstrauss lemma.",
+        "type": "fill_blank",
+        "answers": [
+            "GaussianRandomProjection"
+        ],
+        "other_options": [
+            "JLProjection",
+            "RandomProject",
+            "DimensionProject"
+        ]
+    },
+    {
+        "q": "Which ensembler uses output averaging?",
+        "type": "mcq",
+        "o": [
+            "BaggingRegressor",
+            "StackingRegressor",
+            "VotingRegressor",
+            "All of these"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.ensemble import VotingRegressor\nfrom sklearn.linear_model import LinearRegression, Ridge\nimport numpy as np\nX = np.array([[1], [2], [3]])\ny = np.array([1, 2, 3])\nvr = VotingRegressor([('lr', LinearRegression()), ('ridge', Ridge())])\nvr.fit(X, y)\nprint(len(vr.named_estimators_))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "VotingRegressor averages predictions by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the regressor ensembles:",
+        "type": "match",
+        "left": [
+            "VotingRegressor",
+            "StackingRegressor"
+        ],
+        "right": [
+            "Simple average",
+            "Meta-learner"
+        ]
+    },
+    {
+        "q": "Which class handles Bayesian model selection?",
+        "type": "mcq",
+        "o": [
+            "BayesSearchCV (external)",
+            "BayesianGridSearch",
+            "HPOBayes",
+            "OptimalSearch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import ParameterGrid\nparams = {'a': [1, 2], 'b': [3, 4]}\ngrid = list(ParameterGrid(params))\nprint(len(grid))",
+        "o": [
+            "4",
+            "2",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the parameter utilities:",
+        "type": "match",
+        "left": [
+            "ParameterGrid",
+            "ParameterSampler"
+        ],
+        "right": [
+            "Exhaustive",
+            "Random sampling"
+        ]
+    },
+    {
+        "q": "ParameterGrid generates all combinations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the search strategies by efficiency:",
+        "type": "rearrange",
+        "words": [
+            "GridSearch: exhaustive",
+            "RandomSearch: random",
+            "Halving: successive"
+        ]
+    },
+    {
+        "q": "Which class handles successive halving?",
+        "type": "mcq",
+        "o": [
+            "HalvingGridSearchCV",
+            "SuccessiveSearch",
+            "IterativeSearch",
+            "EliminationSearch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.experimental import enable_halving_search_cv\nfrom sklearn.model_selection import HalvingGridSearchCV\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=1000, n_features=2, n_redundant=0, random_state=42)\nhgsc = HalvingGridSearchCV(LogisticRegression(), {'C': [0.1, 1, 10]}, cv=3, random_state=42)\nhgsc.fit(X, y)\nprint(hasattr(hgsc, 'best_params_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "HalvingGridSearchCV progressively increases data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the halving concepts:",
+        "type": "match",
+        "left": [
+            "factor",
+            "min_resources"
+        ],
+        "right": [
+            "Elimination rate",
+            "Starting resources"
+        ]
+    },
+    {
+        "q": "Which function creates scorer dict?",
+        "type": "mcq",
+        "o": [
+            "dict of scorers",
+            "ScorerDict",
+            "MultiScorer",
+            "ScoreCollection"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import cross_validate\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nmodel = LogisticRegression()\nscoring = {'acc': 'accuracy', 'prec': 'precision'}\nresults = cross_validate(model, X, y, cv=3, scoring=scoring)\nprint(len(results.keys()) >= 4)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "cross_validate supports multiple scorers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class handles multiclass binarization?",
+        "type": "mcq",
+        "o": [
+            "LabelBinarizer",
+            "MultiLabelBinarizer",
+            "ClassBinarizer",
+            "BinaryEncoder"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.preprocessing import LabelBinarizer\nlb = LabelBinarizer()\ny = [0, 1, 2, 1, 0]\ny_bin = lb.fit_transform(y)\nprint(y_bin.shape[1])",
+        "o": [
+            "3",
+            "5",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the label utilities:",
+        "type": "match",
+        "left": [
+            "LabelBinarizer",
+            "MultiLabelBinarizer"
+        ],
+        "right": [
+            "Single label",
+            "Multiple labels"
+        ]
+    },
+    {
+        "q": "LabelBinarizer creates one-hot for multiclass labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the label encoding options:",
+        "type": "rearrange",
+        "words": [
+            "LabelEncoder: ordinal",
+            "LabelBinarizer: one-hot",
+            "MultiLabelBinarizer: multilabel"
+        ]
+    },
+    {
+        "q": "Which method validates cross-validation indices?",
+        "type": "mcq",
+        "o": [
+            "check_cv",
+            "validate_cv",
+            "verify_cv",
+            "test_cv"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import check_cv\ncv = check_cv(5)\nprint(cv.get_n_splits())",
+        "o": [
+            "5",
+            "1",
+            "10",
+            "None"
+        ]
+    },
+    {
+        "q": "check_cv converts integer to KFold.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles sample weights?",
+        "type": "mcq",
+        "o": [
+            "sample_weight parameter",
+            "weighted_fit",
+            "fit_weighted",
+            "SampleWeighter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LogisticRegression\nfrom sklearn.datasets import make_classification\nimport numpy as np\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nweights = np.ones(100)\nweights[:50] = 2.0\nmodel = LogisticRegression()\nmodel.fit(X, y, sample_weight=weights)\nprint(hasattr(model, 'coef_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the weighting strategies:",
+        "type": "match",
+        "left": [
+            "sample_weight",
+            "class_weight"
+        ],
+        "right": [
+            "Per-sample",
+            "Per-class"
+        ]
+    },
+    {
+        "q": "Not all estimators support sample_weight.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ gives higher importance to specific samples.",
+        "type": "fill_blank",
+        "answers": [
+            "sample_weight"
+        ],
+        "other_options": [
+            "importance",
+            "weight",
+            "sample_importance"
+        ]
+    },
+    {
+        "q": "Which class handles passthrough in pipelines?",
+        "type": "mcq",
+        "o": [
+            "'passthrough' string",
+            "Passthrough",
+            "IdentityTransformer",
+            "NoTransform"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import StandardScaler\nimport numpy as np\nX = np.array([[1, 2], [3, 4], [5, 6]])\nct = ColumnTransformer([('scale', StandardScaler(), [0])], remainder='passthrough')\nX_transformed = ct.fit_transform(X)\nprint(X_transformed.shape[1])",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "remainder='passthrough' keeps unspecified columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the remainder options:",
+        "type": "rearrange",
+        "words": [
+            "drop: remove",
+            "passthrough: keep",
+            "transformer: apply"
+        ]
+    },
+    {
+        "q": "Which method inspects pipeline memory?",
+        "type": "mcq",
+        "o": [
+            "memory parameter",
+            "cache",
+            "memoize",
+            "store"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\nimport tempfile\nwith tempfile.TemporaryDirectory() as tmpdir:\n    pipe = Pipeline([('scaler', StandardScaler()), ('clf', LogisticRegression())], memory=tmpdir)\n    print(pipe.memory is not None)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Pipeline memory caches intermediate transforms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which scorer handles multilabel?",
+        "type": "mcq",
+        "o": [
+            "average parameter",
+            "MultiLabelScorer",
+            "LabelScorer",
+            "ArrayScorer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import accuracy_score\nimport numpy as np\ny_true = np.array([[1, 0], [0, 1], [1, 1]])\ny_pred = np.array([[1, 0], [0, 1], [1, 0]])\nprint(round(accuracy_score(y_true, y_pred), 2))",
+        "o": [
+            "0.67",
+            "1.0",
+            "0.5",
+            "0.33"
+        ]
+    },
+    {
+        "q": "Multilabel accuracy requires exact row match.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the multilabel metrics:",
+        "type": "match",
+        "left": [
+            "hamming_loss",
+            "jaccard_score"
+        ],
+        "right": [
+            "Label-wise error",
+            "Set similarity"
+        ]
+    },
+    {
+        "q": "Which function computes pairwise distances?",
+        "type": "mcq",
+        "o": [
+            "pairwise_distances",
+            "distances",
+            "compute_distances",
+            "dist_matrix"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import pairwise_distances\nimport numpy as np\nX = np.array([[0, 0], [1, 1], [2, 2]])\nD = pairwise_distances(X, metric='euclidean')\nprint(D.shape)",
+        "o": [
+            "(3, 3)",
+            "(3,)",
+            "(2, 2)",
+            "(6,)"
+        ]
+    },
+    {
+        "q": "Match the distance metrics:",
+        "type": "match",
+        "left": [
+            "euclidean",
+            "manhattan",
+            "cosine"
+        ],
+        "right": [
+            "L2",
+            "L1",
+            "Angle"
+        ]
+    },
+    {
+        "q": "The ______ measures city-block distance.",
+        "type": "fill_blank",
+        "answers": [
+            "manhattan"
+        ],
+        "other_options": [
+            "cityblock",
+            "l1",
+            "taxicab"
+        ]
+    },
+    {
+        "q": "pairwise_distances returns distance matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the distance metrics by sensitivity to scale:",
+        "type": "rearrange",
+        "words": [
+            "cosine: scale-invariant",
+            "euclidean: scale-sensitive",
+            "manhattan: scale-sensitive"
+        ]
+    },
+    {
+        "q": "Which method creates reproducible results?",
+        "type": "mcq",
+        "o": [
+            "random_state parameter",
+            "seed()",
+            "reproducible=True",
+            "fixedrandom"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.model_selection import train_test_split\nimport numpy as np\nX = np.arange(10)\ny = np.arange(10)\nX1, _, y1, _ = train_test_split(X, y, random_state=42)\nX2, _, y2, _ = train_test_split(X, y, random_state=42)\nprint((X1 == X2).all())",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "random_state ensures reproducibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the randomness controls:",
+        "type": "match",
+        "left": [
+            "random_state=int",
+            "random_state=None"
+        ],
+        "right": [
+            "Fixed seed",
+            "Random seed"
+        ]
+    },
+    {
+        "q": "Which method sets global random state?",
+        "type": "mcq",
+        "o": [
+            "np.random.seed()",
+            "set_random_state()",
+            "global_seed()",
+            "random_init()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.utils import check_random_state\nrng = check_random_state(42)\nprint(type(rng).__name__)",
+        "o": [
+            "RandomState",
+            "int",
+            "Generator",
+            "Random"
+        ]
+    },
+    {
+        "q": "check_random_state normalizes random state input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class provides label spreading?",
+        "type": "mcq",
+        "o": [
+            "LabelSpreading",
+            "LabelPropagation",
+            "Both work",
+            "LabelTransfer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.semi_supervised import LabelSpreading\nimport numpy as np\nX = np.array([[1], [2], [3], [4], [5]])\ny = np.array([0, -1, -1, -1, 1])\nmodel = LabelSpreading()\nmodel.fit(X, y)\nprint(len(model.classes_))",
+        "o": [
+            "2",
+            "5",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the label propagation differences:",
+        "type": "match",
+        "left": [
+            "LabelPropagation",
+            "LabelSpreading"
+        ],
+        "right": [
+            "Hard clamping",
+            "Soft clamping"
+        ]
+    },
+    {
+        "q": "LabelSpreading uses soft labels during propagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method verifies estimator tags?",
+        "type": "mcq",
+        "o": [
+            "_more_tags()",
+            "get_tags()",
+            "estimator_tags()",
+            "list_tags()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import LogisticRegression\nmodel = LogisticRegression()\ntags = model._more_tags() if hasattr(model, '_more_tags') else {}\nprint(isinstance(tags, dict))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Estimator tags indicate capabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the sklearn version compatibility:",
+        "type": "rearrange",
+        "words": []
+    },
+    {
+        "q": "Which class implements decision tree visualization?",
+        "type": "mcq",
+        "o": [
+            "export_graphviz",
+            "TreeVisualizer",
+            "PlotTree",
+            "TreeGraph"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.tree import DecisionTreeClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=4, n_redundant=0, random_state=42)\ntree = DecisionTreeClassifier(max_depth=3, random_state=42)\ntree.fit(X, y)\nprint(tree.get_n_leaves())",
+        "o": [
+            "8",
+            "3",
+            "4",
+            "7"
+        ]
+    },
+    {
+        "q": "Match the tree attributes:",
+        "type": "match",
+        "left": [
+            "get_n_leaves",
+            "get_depth",
+            "feature_importances_"
+        ],
+        "right": [
+            "Leaf count",
+            "Tree depth",
+            "Feature importance"
+        ]
+    },
+    {
+        "q": "The ______ exports tree to Graphviz format.",
+        "type": "fill_blank",
+        "answers": [
+            "export_graphviz"
+        ],
+        "other_options": [
+            "tree_to_graph",
+            "plot_tree",
+            "graphviz_tree"
+        ]
+    },
+    {
+        "q": "plot_tree provides matplotlib-based tree visualization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class handles self-training?",
+        "type": "mcq",
+        "o": [
+            "SelfTrainingClassifier",
+            "SelfLearner",
+            "AutoTrainer",
+            "IterativeClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.semi_supervised import SelfTrainingClassifier\nfrom sklearn.naive_bayes import GaussianNB\nimport numpy as np\nX = np.array([[1], [2], [3], [4], [5]])\ny = np.array([0, -1, -1, -1, 1])\nmodel = SelfTrainingClassifier(GaussianNB())\nmodel.fit(X, y)\nprint(hasattr(model, 'transduction_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the self-training parameters:",
+        "type": "match",
+        "left": [
+            "threshold",
+            "criterion",
+            "max_iter"
+        ],
+        "right": [
+            "Confidence cutoff",
+            "Selection method",
+            "Iterations"
+        ]
+    },
+    {
+        "q": "SelfTrainingClassifier iteratively labels data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the self-training steps:",
+        "type": "rearrange",
+        "words": [
+            "train on labeled",
+            "predict unlabeled",
+            "add confident",
+            "repeat"
+        ]
+    },
+    {
+        "q": "Which method calculates explained variance?",
+        "type": "mcq",
+        "o": [
+            "explained_variance_ratio_",
+            "variance_explained_",
+            "ratio_variance_",
+            "explained_ratio_"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import PCA\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 5)\npca = PCA(n_components=3)\npca.fit(X)\nprint(round(sum(pca.explained_variance_ratio_), 2))",
+        "o": [
+            "0.62",
+            "1.0",
+            "0.5",
+            "0.0"
+        ]
+    },
+    {
+        "q": "Match the PCA attributes:",
+        "type": "match",
+        "left": [
+            "components_",
+            "explained_variance_",
+            "singular_values_"
+        ],
+        "right": [
+            "Principal components",
+            "Variance per component",
+            "SVD values"
+        ]
+    },
+    {
+        "q": "The ______ shows proportion of variance explained.",
+        "type": "fill_blank",
+        "answers": [
+            "explained_variance_ratio_"
+        ],
+        "other_options": [
+            "variance_ratio_",
+            "explained_",
+            "ratio_"
+        ]
+    },
+    {
+        "q": "Sum of explained_variance_ratio_ equals 1 for full PCA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method performs incremental PCA?",
+        "type": "mcq",
+        "o": [
+            "IncrementalPCA",
+            "StreamPCA",
+            "OnlinePCA",
+            "BatchPCA"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import IncrementalPCA\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 5)\nipca = IncrementalPCA(n_components=2, batch_size=10)\nipca.fit(X)\nprint(ipca.n_components_)",
+        "o": [
+            "2",
+            "5",
+            "10",
+            "100"
+        ]
+    },
+    {
+        "q": "Match the incremental methods:",
+        "type": "match",
+        "left": [
+            "partial_fit",
+            "fit"
+        ],
+        "right": [
+            "Incremental training",
+            "Full training"
+        ]
+    },
+    {
+        "q": "IncrementalPCA handles large datasets via batches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ method trains incrementally.",
+        "type": "fill_blank",
+        "answers": [
+            "partial_fit"
+        ],
+        "other_options": [
+            "incremental_fit",
+            "batch_fit",
+            "update_fit"
+        ]
+    },
+    {
+        "q": "Which method computes NMF decomposition?",
+        "type": "mcq",
+        "o": [
+            "NMF",
+            "NonNegative",
+            "PositiveMatrix",
+            "NNDecomposition"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import NMF\nimport numpy as np\nnp.random.seed(42)\nX = np.abs(np.random.randn(10, 5))\nnmf = NMF(n_components=3, random_state=42)\nW = nmf.fit_transform(X)\nprint(W.shape[1])",
+        "o": [
+            "3",
+            "5",
+            "10",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the NMF output:",
+        "type": "match",
+        "left": [
+            "W matrix",
+            "H matrix",
+            "reconstruction_err_"
+        ],
+        "right": [
+            "Transformed data",
+            "Components",
+            "Error"
+        ]
+    },
+    {
+        "q": "NMF requires non-negative input data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the decomposition by data constraints:",
+        "type": "rearrange",
+        "words": [
+            "PCA: any",
+            "NMF: non-negative",
+            "SparsePCA: sparse"
+        ]
+    },
+    {
+        "q": "Which class implements factor analysis?",
+        "type": "mcq",
+        "o": [
+            "FactorAnalysis",
+            "FactorModel",
+            "LatentFactor",
+            "AnalysisFactor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import FactorAnalysis\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 5)\nfa = FactorAnalysis(n_components=2, random_state=42)\nfa.fit(X)\nprint(fa.components_.shape)",
+        "o": [
+            "(2, 5)",
+            "(5, 2)",
+            "(100, 2)",
+            "(2, 2)"
+        ]
+    },
+    {
+        "q": "FactorAnalysis assumes Gaussian factors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the factor analysis attributes:",
+        "type": "match",
+        "left": [
+            "components_",
+            "noise_variance_"
+        ],
+        "right": [
+            "Factor loadings",
+            "Unique variances"
+        ]
+    },
+    {
+        "q": "Which class uses dictionary learning?",
+        "type": "mcq",
+        "o": [
+            "DictionaryLearning",
+            "SparseCoding",
+            "AtomLearning",
+            "BasisLearning"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import DictionaryLearning\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(10, 8)\ndl = DictionaryLearning(n_components=5, random_state=42, max_iter=100)\ndl.fit(X)\nprint(dl.components_.shape[0])",
+        "o": [
+            "5",
+            "8",
+            "10",
+            "1"
+        ]
+    },
+    {
+        "q": "DictionaryLearning learns sparse representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method implements sparse PCA?",
+        "type": "mcq",
+        "o": [
+            "SparsePCA",
+            "L1PCA",
+            "PrunedPCA",
+            "RegularizedPCA"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import SparsePCA\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(10, 5)\nspca = SparsePCA(n_components=2, random_state=42)\nspca.fit(X)\nprint(spca.components_.shape)",
+        "o": [
+            "(2, 5)",
+            "(5, 2)",
+            "(10, 2)",
+            "(2, 2)"
+        ]
+    },
+    {
+        "q": "SparsePCA produces sparse components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sparse decomposition parameters:",
+        "type": "match",
+        "left": [
+            "alpha",
+            "ridge_alpha"
+        ],
+        "right": [
+            "Sparsity penalty",
+            "Ridge regularization"
+        ]
+    },
+    {
+        "q": "Which method implements kernel PCA?",
+        "type": "mcq",
+        "o": [
+            "KernelPCA",
+            "NonlinearPCA",
+            "KPCA",
+            "TransformPCA"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.decomposition import KernelPCA\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(50, 5)\nkpca = KernelPCA(n_components=2, kernel='rbf')\nX_kpca = kpca.fit_transform(X)\nprint(X_kpca.shape[1])",
+        "o": [
+            "2",
+            "5",
+            "50",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the kernel PCA kernels:",
+        "type": "match",
+        "left": [
+            "linear",
+            "rbf",
+            "poly",
+            "sigmoid"
+        ],
+        "right": [
+            "Standard PCA",
+            "Gaussian",
+            "Polynomial",
+            "Hyperbolic"
+        ]
+    },
+    {
+        "q": "KernelPCA can find non-linear structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter controls kernel choice.",
+        "type": "fill_blank",
+        "answers": [
+            "kernel"
+        ],
+        "other_options": [
+            "method",
+            "type",
+            "function"
+        ]
+    },
+    {
+        "q": "Which method implements LDA for dimensionality reduction?",
+        "type": "mcq",
+        "o": [
+            "LinearDiscriminantAnalysis",
+            "LDA",
+            "DiscriminantReduction",
+            "ClassSeparation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.discriminant_analysis import LinearDiscriminantAnalysis\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 5)\ny = np.array([0]*50 + [1]*50)\nlda = LinearDiscriminantAnalysis(n_components=1)\nX_lda = lda.fit_transform(X, y)\nprint(X_lda.shape[1])",
+        "o": [
+            "1",
+            "5",
+            "100",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the discriminant analysis types:",
+        "type": "match",
+        "left": [
+            "LDA",
+            "QDA"
+        ],
+        "right": [
+            "Linear boundaries",
+            "Quadratic boundaries"
+        ]
+    },
+    {
+        "q": "LDA finds directions maximizing class separation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the dimensionality reduction by supervision:",
+        "type": "rearrange",
+        "words": [
+            "PCA: unsupervised",
+            "LDA: supervised",
+            "NMF: unsupervised"
+        ]
+    },
+    {
+        "q": "Which scorer computes Matthews correlation?",
+        "type": "mcq",
+        "o": [
+            "matthews_corrcoef",
+            "mcc_score",
+            "matthews_score",
+            "correlation_coef"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import matthews_corrcoef\ny_true = [1, 1, 1, 0]\ny_pred = [1, 0, 1, 0]\nprint(round(matthews_corrcoef(y_true, y_pred), 2))",
+        "o": [
+            "0.58",
+            "1.0",
+            "0.0",
+            "-1.0"
+        ]
+    },
+    {
+        "q": "Match the correlation metrics:",
+        "type": "match",
+        "left": [
+            "matthews_corrcoef",
+            "cohen_kappa_score"
+        ],
+        "right": [
+            "Binary correlation",
+            "Inter-rater agreement"
+        ]
+    },
+    {
+        "q": "MCC ranges from -1 to 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ measures agreement adjusted for chance.",
+        "type": "fill_blank",
+        "answers": [
+            "cohen_kappa_score"
+        ],
+        "other_options": [
+            "kappa",
+            "agreement_score",
+            "inter_rater"
+        ]
+    },
+    {
+        "q": "Which metric computes balanced accuracy?",
+        "type": "mcq",
+        "o": [
+            "balanced_accuracy_score",
+            "weighted_accuracy",
+            "mean_accuracy",
+            "class_balanced"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.metrics import balanced_accuracy_score\ny_true = [0, 0, 0, 0, 1, 1]\ny_pred = [0, 0, 0, 0, 1, 0]\nprint(round(balanced_accuracy_score(y_true, y_pred), 2))",
+        "o": [
+            "0.75",
+            "0.83",
+            "0.5",
+            "1.0"
+        ]
+    },
+    {
+        "q": "balanced_accuracy averages per-class recall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the accuracy variants:",
+        "type": "match",
+        "left": [
+            "accuracy_score",
+            "balanced_accuracy_score",
+            "top_k_accuracy_score"
+        ],
+        "right": [
+            "Overall",
+            "Class-balanced",
+            "Top-k prediction"
+        ]
+    },
+    {
+        "q": "Which class implements BIRCH clustering?",
+        "type": "mcq",
+        "o": [
+            "Birch",
+            "BIRCHCluster",
+            "TreeCluster",
+            "HierarchicalBirch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import Birch\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 2)\nbirch = Birch(n_clusters=3)\nbirch.fit(X)\nprint(len(set(birch.labels_)))",
+        "o": [
+            "3",
+            "100",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the BIRCH parameters:",
+        "type": "match",
+        "left": [
+            "threshold",
+            "branching_factor"
+        ],
+        "right": [
+            "Merge radius",
+            "Tree width"
+        ]
+    },
+    {
+        "q": "BIRCH is memory-efficient for large datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ builds CF tree for clustering.",
+        "type": "fill_blank",
+        "answers": [
+            "Birch"
+        ],
+        "other_options": [
+            "CFTree",
+            "TreeCluster",
+            "BIRCHTree"
+        ]
+    },
+    {
+        "q": "Which method performs OPTICS clustering?",
+        "type": "mcq",
+        "o": [
+            "OPTICS",
+            "DensityOrder",
+            "ReachabilityCluster",
+            "OrderedDBSCAN"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.cluster import OPTICS\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(50, 2)\noptics = OPTICS(min_samples=5)\noptics.fit(X)\nprint(hasattr(optics, 'reachability_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "OPTICS produces reachability ordering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the OPTICS outputs:",
+        "type": "match",
+        "left": [
+            "reachability_",
+            "ordering_",
+            "labels_"
+        ],
+        "right": [
+            "Distances",
+            "Point order",
+            "Clusters"
+        ]
+    },
+    {
+        "q": "Rearrange the clustering methods by auto-cluster detection:",
+        "type": "rearrange",
+        "words": [
+            "DBSCAN: auto",
+            "OPTICS: variable",
+            "KMeans: manual"
+        ]
+    },
+    {
+        "q": "Which feature selector uses trees?",
+        "type": "mcq",
+        "o": [
+            "SelectFromModel",
+            "TreeSelector",
+            "ForestSelection",
+            "ImportanceFilter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_selection import SelectFromModel\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=10, n_informative=3, n_redundant=0, random_state=42)\nrf = RandomForestClassifier(n_estimators=10, random_state=42)\nrf.fit(X, y)\nsfm = SelectFromModel(rf, prefit=True)\nX_new = sfm.transform(X)\nprint(X_new.shape[1] <= 10)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "SelectFromModel uses estimator feature importances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the selection thresholds:",
+        "type": "match",
+        "left": [
+            "mean",
+            "median",
+            "0.1*mean"
+        ],
+        "right": [
+            "Average importance",
+            "Middle importance",
+            "10% of mean"
+        ]
+    },
+    {
+        "q": "Which method implements mutual information?",
+        "type": "mcq",
+        "o": [
+            "mutual_info_classif",
+            "info_gain",
+            "mutual_score",
+            "information_metric"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.feature_selection import mutual_info_classif\nimport numpy as np\nnp.random.seed(42)\nX = np.random.randn(100, 3)\ny = np.random.randint(0, 2, 100)\nmi = mutual_info_classif(X, y, random_state=42)\nprint(len(mi))",
+        "o": [
+            "3",
+            "100",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the mutual information variants:",
+        "type": "match",
+        "left": [
+            "mutual_info_classif",
+            "mutual_info_regression"
+        ],
+        "right": [
+            "Classification",
+            "Regression"
+        ]
+    },
+    {
+        "q": "Mutual information captures non-linear dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ measures information shared between variables.",
+        "type": "fill_blank",
+        "answers": [
+            "mutual_info_classif"
+        ],
+        "other_options": [
+            "info_gain",
+            "shared_info",
+            "dependency_score"
+        ]
+    },
+    {
+        "q": "Which class implements stochastic gradient descent?",
+        "type": "mcq",
+        "o": [
+            "SGDClassifier",
+            "GradientDescent",
+            "StochasticLearner",
+            "BatchGD"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import SGDClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\nsgd = SGDClassifier(max_iter=1000, random_state=42)\nsgd.fit(X, y)\nprint(len(sgd.coef_[0]))",
+        "o": [
+            "2",
+            "100",
+            "1",
+            "1000"
+        ]
+    },
+    {
+        "q": "Match the SGD loss functions:",
+        "type": "match",
+        "left": [
+            "hinge",
+            "log_loss",
+            "squared_error"
+        ],
+        "right": [
+            "SVM",
+            "Logistic",
+            "Regression"
+        ]
+    },
+    {
+        "q": "SGDClassifier supports online learning via partial_fit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ loss creates a linear SVM.",
+        "type": "fill_blank",
+        "answers": [
+            "hinge"
+        ],
+        "other_options": [
+            "svm",
+            "margin",
+            "linear"
+        ]
+    },
+    {
+        "q": "Which class implements Passive Aggressive algorithms?",
+        "type": "mcq",
+        "o": [
+            "PassiveAggressiveClassifier",
+            "AggressiveLearner",
+            "OnlineClassifier",
+            "AdaptiveClassifier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from sklearn.linear_model import PassiveAggressiveClassifier\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=2, n_redundant=0, random_state=42)\npa = PassiveAggressiveClassifier(max_iter=1000, random_state=42)\npa.fit(X, y)\nprint(hasattr(pa, 'coef_'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "PassiveAggressiveClassifier is suitable for online learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the online learning algorithms:",
+        "type": "match",
+        "left": [
+            "SGDClassifier",
+            "PassiveAggressiveClassifier",
+            "Perceptron"
+        ],
+        "right": [
+            "Gradient descent",
+            "Margin-based",
+            "Simple linear"
+        ]
+    },
+    {
+        "q": "Rearrange the linear models by regularization:",
+        "type": "rearrange",
+        "words": [
+            "LinearRegression: none",
+            "Ridge: L2",
+            "Lasso: L1",
+            "ElasticNet: both"
+        ]
+    }
+]

@@ -1,0 +1,6989 @@
+[
+    {
+        "q": "Which clause is used for window functions?",
+        "type": "mcq",
+        "o": [
+            "OVER",
+            "PARTITION",
+            "WINDOW",
+            "FRAME"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT ROW_NUMBER() OVER (ORDER BY id) FROM t LIMIT 1;",
+        "o": [
+            "1",
+            "0",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "ROW_NUMBER() assigns sequential integers to rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function divides rows into groups.",
+        "type": "fill_blank",
+        "answers": [
+            "NTILE"
+        ],
+        "other_options": [
+            "PARTITION",
+            "BUCKET",
+            "DIVIDE"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT RANK() OVER (ORDER BY score DESC) FROM (SELECT 100 as score UNION ALL SELECT 100) t LIMIT 1;",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the window functions:",
+        "type": "match",
+        "left": [
+            "ROW_NUMBER()",
+            "RANK()",
+            "DENSE_RANK()",
+            "NTILE()"
+        ],
+        "right": [
+            "Sequential numbers",
+            "Rank with gaps",
+            "Rank no gaps",
+            "Equal groups"
+        ]
+    },
+    {
+        "q": "Which function accesses previous row?",
+        "type": "mcq",
+        "o": [
+            "LAG()",
+            "LEAD()",
+            "PREV()",
+            "BEFORE()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT LEAD(val) OVER (ORDER BY id) FROM (SELECT 1 as id, 10 as val UNION ALL SELECT 2, 20) t LIMIT 1;",
+        "o": [
+            "20",
+            "10",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ keyword groups window partitions.",
+        "type": "fill_blank",
+        "answers": [
+            "PARTITION BY"
+        ],
+        "other_options": [
+            "GROUP BY",
+            "SORT BY",
+            "CLUSTER BY"
+        ]
+    },
+    {
+        "q": "PARTITION BY is similar to GROUP BY for windows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT SUM(val) OVER () FROM (SELECT 10 as val UNION ALL SELECT 20) t LIMIT 1;",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the aggregate window functions:",
+        "type": "match",
+        "left": [
+            "SUM() OVER",
+            "AVG() OVER",
+            "COUNT() OVER",
+            "MAX() OVER"
+        ],
+        "right": [
+            "Running sum",
+            "Running average",
+            "Running count",
+            "Running maximum"
+        ]
+    },
+    {
+        "q": "Which function returns first value in partition?",
+        "type": "mcq",
+        "o": [
+            "FIRST_VALUE()",
+            "FIRST()",
+            "TOP()",
+            "HEAD()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT LAST_VALUE(val) OVER (ORDER BY id ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) FROM (SELECT 1 as id, 10 as val UNION ALL SELECT 2, 20) t LIMIT 1;",
+        "o": [
+            "20",
+            "10",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ clause defines window frame.",
+        "type": "fill_blank",
+        "answers": [
+            "ROWS"
+        ],
+        "other_options": [
+            "FRAME",
+            "RANGE",
+            "WINDOW"
+        ]
+    },
+    {
+        "q": "Rearrange the window function syntax:",
+        "type": "rearrange",
+        "words": [
+            "function()",
+            "OVER",
+            "(",
+            "PARTITION BY",
+            "ORDER BY",
+            ")"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT PERCENT_RANK() OVER (ORDER BY val) FROM (SELECT 10 as val UNION ALL SELECT 20 UNION ALL SELECT 30) t LIMIT 1;",
+        "o": [
+            "0",
+            "0.5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which function returns cumulative distribution?",
+        "type": "mcq",
+        "o": [
+            "CUME_DIST()",
+            "PERCENT_RANK()",
+            "PERCENTILE()",
+            "CUMULATIVE()"
+        ]
+    },
+    {
+        "q": "UNBOUNDED PRECEDING means from first row.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT NTH_VALUE(val, 2) OVER (ORDER BY id) FROM (SELECT 1 as id, 10 as val UNION ALL SELECT 2, 20) t WHERE id = 2;",
+        "o": [
+            "20",
+            "10",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the frame specifications:",
+        "type": "match",
+        "left": [
+            "UNBOUNDED PRECEDING",
+            "CURRENT ROW",
+            "1 PRECEDING",
+            "UNBOUNDED FOLLOWING"
+        ],
+        "right": [
+            "First row",
+            "Current row",
+            "Previous row",
+            "Last row"
+        ]
+    },
+    {
+        "q": "The ______ frame type uses logical ranges.",
+        "type": "fill_blank",
+        "answers": [
+            "RANGE"
+        ],
+        "other_options": [
+            "ROWS",
+            "GROUPS",
+            "LOGICAL"
+        ]
+    },
+    {
+        "q": "Which keyword starts a CTE?",
+        "type": "mcq",
+        "o": [
+            "WITH",
+            "AS",
+            "CTE",
+            "DEFINE"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "WITH t AS (SELECT 1 as n) SELECT n FROM t;",
+        "o": [
+            "1",
+            "NULL",
+            "Error",
+            "t"
+        ]
+    },
+    {
+        "q": "CTE stands for Common Table Expression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword makes CTEs recursive.",
+        "type": "fill_blank",
+        "answers": [
+            "RECURSIVE"
+        ],
+        "other_options": [
+            "LOOP",
+            "ITERATE",
+            "REPEAT"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "WITH RECURSIVE cnt(n) AS (SELECT 1 UNION ALL SELECT n+1 FROM cnt WHERE n < 3) SELECT MAX(n) FROM cnt;",
+        "o": [
+            "3",
+            "1",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match the CTE components:",
+        "type": "match",
+        "left": [
+            "WITH",
+            "AS",
+            "RECURSIVE",
+            "UNION ALL"
+        ],
+        "right": [
+            "Start CTE",
+            "Define query",
+            "Enable recursion",
+            "Combine results"
+        ]
+    },
+    {
+        "q": "Which clause terminates recursion?",
+        "type": "mcq",
+        "o": [
+            "WHERE condition",
+            "LIMIT",
+            "BREAK",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "CTEs improve query readability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "WITH a AS (SELECT 1 as x), b AS (SELECT 2 as y) SELECT x + y FROM a, b;",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange recursive CTE structure:",
+        "type": "rearrange",
+        "words": [
+            "WITH RECURSIVE",
+            "cte_name AS",
+            "( anchor query",
+            "UNION ALL",
+            "recursive query",
+            ")"
+        ]
+    },
+    {
+        "q": "The ______ query is the base case in recursion.",
+        "type": "fill_blank",
+        "answers": [
+            "anchor"
+        ],
+        "other_options": [
+            "base",
+            "initial",
+            "seed"
+        ]
+    },
+    {
+        "q": "Which operator combines sets without duplicates?",
+        "type": "mcq",
+        "o": [
+            "UNION",
+            "UNION ALL",
+            "INTERSECT",
+            "EXCEPT"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT 1 UNION ALL SELECT 1;",
+        "o": [
+            "1 and 1",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "UNION removes duplicate rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the set operators:",
+        "type": "match",
+        "left": [
+            "UNION",
+            "INTERSECT",
+            "EXCEPT",
+            "UNION ALL"
+        ],
+        "right": [
+            "Combine unique",
+            "Common rows",
+            "Difference",
+            "Combine all"
+        ]
+    },
+    {
+        "q": "The ______ operator returns common rows.",
+        "type": "fill_blank",
+        "answers": [
+            "INTERSECT"
+        ],
+        "other_options": [
+            "COMMON",
+            "JOIN",
+            "MATCH"
+        ]
+    },
+    {
+        "q": "Which operator returns rows not in second set?",
+        "type": "mcq",
+        "o": [
+            "EXCEPT",
+            "MINUS",
+            "DIFF",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT 1 INTERSECT SELECT 1;",
+        "o": [
+            "1",
+            "0",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange set operation query:",
+        "type": "rearrange",
+        "words": [
+            "SELECT columns",
+            "FROM table1",
+            "UNION/INTERSECT/EXCEPT",
+            "SELECT columns",
+            "FROM table2"
+        ]
+    },
+    {
+        "q": "Which function generates hierarchical paths?",
+        "type": "mcq",
+        "o": [
+            "String concatenation",
+            "ARRAY_AGG()",
+            "CONNECT_BY_ROOT",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "PIVOT transforms rows to columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT CASE WHEN 1=1 THEN 'yes' ELSE 'no' END;",
+        "o": [
+            "yes",
+            "no",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ statement handles conditional logic.",
+        "type": "fill_blank",
+        "answers": [
+            "CASE"
+        ],
+        "other_options": [
+            "IF",
+            "WHEN",
+            "SWITCH"
+        ]
+    },
+    {
+        "q": "Match the CASE syntax types:",
+        "type": "match",
+        "left": [
+            "Simple CASE",
+            "Searched CASE",
+            "COALESCE",
+            "NULLIF"
+        ],
+        "right": [
+            "Compare values",
+            "Evaluate conditions",
+            "First non-null",
+            "Return null if equal"
+        ]
+    },
+    {
+        "q": "Which function returns first non-null value?",
+        "type": "mcq",
+        "o": [
+            "COALESCE()",
+            "NVL()",
+            "IFNULL()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT COALESCE(NULL, NULL, 'default');",
+        "o": [
+            "default",
+            "NULL",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "NULLIF returns NULL if values are equal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function replaces NULL with a value.",
+        "type": "fill_blank",
+        "answers": [
+            "IFNULL"
+        ],
+        "other_options": [
+            "ISNULL",
+            "NVL",
+            "COALESCE"
+        ]
+    },
+    {
+        "q": "Which clause filters aggregated results?",
+        "type": "mcq",
+        "o": [
+            "HAVING",
+            "WHERE",
+            "FILTER",
+            "CHECK"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT COUNT(*) FROM (SELECT 1 UNION ALL SELECT 2) t HAVING COUNT(*) > 1;",
+        "o": [
+            "2",
+            "1",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the aggregate functions:",
+        "type": "match",
+        "left": [
+            "COUNT()",
+            "SUM()",
+            "GROUP_CONCAT()",
+            "STRING_AGG()"
+        ],
+        "right": [
+            "Count rows",
+            "Sum values",
+            "Concatenate strings",
+            "Aggregate strings"
+        ]
+    },
+    {
+        "q": "Rearrange GROUP BY query order:",
+        "type": "rearrange",
+        "words": [
+            "SELECT",
+            "FROM",
+            "WHERE",
+            "GROUP BY",
+            "HAVING",
+            "ORDER BY"
+        ]
+    },
+    {
+        "q": "The ______ clause groups rows for aggregation.",
+        "type": "fill_blank",
+        "answers": [
+            "GROUP BY"
+        ],
+        "other_options": [
+            "PARTITION BY",
+            "CLUSTER BY",
+            "ORGANIZE BY"
+        ]
+    },
+    {
+        "q": "Which function counts distinct values?",
+        "type": "mcq",
+        "o": [
+            "COUNT(DISTINCT)",
+            "DISTINCT_COUNT()",
+            "COUNTD()",
+            "UNIQUE_COUNT()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT COUNT(DISTINCT val) FROM (SELECT 1 as val UNION ALL SELECT 1 UNION ALL SELECT 2) t;",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "ROLLUP generates subtotals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the grouping extensions:",
+        "type": "match",
+        "left": [
+            "ROLLUP",
+            "CUBE",
+            "GROUPING SETS",
+            "GROUPING()"
+        ],
+        "right": [
+            "Hierarchical subtotals",
+            "All combinations",
+            "Specific groups",
+            "Identify subtotal rows"
+        ]
+    },
+    {
+        "q": "The ______ function generates all group combinations.",
+        "type": "fill_blank",
+        "answers": [
+            "CUBE"
+        ],
+        "other_options": [
+            "ROLLUP",
+            "CROSS",
+            "FULL"
+        ]
+    },
+    {
+        "q": "Which function identifies subtotal rows?",
+        "type": "mcq",
+        "o": [
+            "GROUPING()",
+            "IS_SUBTOTAL()",
+            "SUBTOTAL()",
+            "ISGROUPED()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT GROUPING(a) FROM (SELECT 1 as a) t GROUP BY ROLLUP(a) LIMIT 1;",
+        "o": [
+            "0",
+            "1",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange query optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze query",
+            "Check indexes",
+            "Review execution plan",
+            "Optimize joins",
+            "Test performance"
+        ]
+    },
+    {
+        "q": "The ______ statement shows query execution plan.",
+        "type": "fill_blank",
+        "answers": [
+            "EXPLAIN"
+        ],
+        "other_options": [
+            "ANALYZE",
+            "DESCRIBE",
+            "PLAN"
+        ]
+    },
+    {
+        "q": "Which index type is best for equality searches?",
+        "type": "mcq",
+        "o": [
+            "B-tree",
+            "Hash",
+            "Bitmap",
+            "Full-text"
+        ]
+    },
+    {
+        "q": "Indexes speed up SELECT but slow INSERT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the index types:",
+        "type": "match",
+        "left": [
+            "B-tree",
+            "Hash",
+            "GIN",
+            "GiST"
+        ],
+        "right": [
+            "Range queries",
+            "Exact match",
+            "Array/JSON",
+            "Geometric data"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx ON t(col); SELECT 'done';",
+        "o": [
+            "done",
+            "idx",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "The ______ index covers all query columns.",
+        "type": "fill_blank",
+        "answers": [
+            "covering"
+        ],
+        "other_options": [
+            "complete",
+            "full",
+            "spanning"
+        ]
+    },
+    {
+        "q": "Which join type returns all rows from both tables?",
+        "type": "mcq",
+        "o": [
+            "FULL OUTER JOIN",
+            "CROSS JOIN",
+            "INNER JOIN",
+            "LEFT JOIN"
+        ]
+    },
+    {
+        "q": "CROSS JOIN produces Cartesian product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT COUNT(*) FROM (SELECT 1 as a) x CROSS JOIN (SELECT 1 as b UNION ALL SELECT 2) y;",
+        "o": [
+            "2",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the join types with behavior:",
+        "type": "match",
+        "left": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL JOIN"
+        ],
+        "right": [
+            "Matching only",
+            "All left + matching",
+            "All right + matching",
+            "All from both"
+        ]
+    },
+    {
+        "q": "The ______ join returns only matching rows.",
+        "type": "fill_blank",
+        "answers": [
+            "INNER"
+        ],
+        "other_options": [
+            "EXCLUSIVE",
+            "CORE",
+            "MATCHED"
+        ]
+    },
+    {
+        "q": "Which clause optimizes join order?",
+        "type": "mcq",
+        "o": [
+            "Query optimizer",
+            "ORDER BY",
+            "JOIN HINT",
+            "Both A and C"
+        ]
+    },
+    {
+        "q": "Rearrange JOIN syntax:",
+        "type": "rearrange",
+        "words": [
+            "SELECT columns",
+            "FROM table1",
+            "JOIN table2",
+            "ON condition",
+            "WHERE filter"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT * FROM (SELECT 1 as id) a NATURAL JOIN (SELECT 1 as id) b;",
+        "o": [
+            "1",
+            "1, 1",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "NATURAL JOIN matches columns by name.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ join uses USING clause.",
+        "type": "fill_blank",
+        "answers": [
+            "named column"
+        ],
+        "other_options": [
+            "natural",
+            "inner",
+            "equi"
+        ]
+    },
+    {
+        "q": "Which subquery type runs once?",
+        "type": "mcq",
+        "o": [
+            "Scalar subquery",
+            "Correlated subquery",
+            "Lateral subquery",
+            "Derived table"
+        ]
+    },
+    {
+        "q": "Match the subquery types:",
+        "type": "match",
+        "left": [
+            "Scalar",
+            "Row",
+            "Table",
+            "Correlated"
+        ],
+        "right": [
+            "Single value",
+            "Single row",
+            "Multiple rows",
+            "References outer query"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT (SELECT MAX(1));",
+        "o": [
+            "1",
+            "NULL",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Correlated subqueries run once per outer row.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword checks for subquery results.",
+        "type": "fill_blank",
+        "answers": [
+            "EXISTS"
+        ],
+        "other_options": [
+            "IN",
+            "ANY",
+            "SOME"
+        ]
+    },
+    {
+        "q": "Which operator compares to any subquery value?",
+        "type": "mcq",
+        "o": [
+            "ANY",
+            "ALL",
+            "SOME",
+            "Both A and C"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT 1 WHERE EXISTS (SELECT 1);",
+        "o": [
+            "1",
+            "NULL",
+            "Error",
+            "TRUE"
+        ]
+    },
+    {
+        "q": "Rearrange subquery execution:",
+        "type": "rearrange",
+        "words": [
+            "Parse outer query",
+            "Identify subquery",
+            "Execute subquery",
+            "Return results",
+            "Complete outer query"
+        ]
+    },
+    {
+        "q": "Match the comparison operators:",
+        "type": "match",
+        "left": [
+            "= ANY",
+            "= ALL",
+            "<> ANY",
+            "<> ALL"
+        ],
+        "right": [
+            "Equals some",
+            "Equals all",
+            "Not equals some",
+            "Not equals all"
+        ]
+    },
+    {
+        "q": "The ______ keyword specifies all values must match.",
+        "type": "fill_blank",
+        "answers": [
+            "ALL"
+        ],
+        "other_options": [
+            "EVERY",
+            "EACH",
+            "FULL"
+        ]
+    },
+    {
+        "q": "Which clause creates a derived table?",
+        "type": "mcq",
+        "o": [
+            "Subquery in FROM",
+            "CTE",
+            "Temporary table",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Derived tables require an alias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT * FROM (SELECT 1 as n) derived;",
+        "o": [
+            "1",
+            "Error",
+            "NULL",
+            "derived"
+        ]
+    },
+    {
+        "q": "The ______ join references the outer query.",
+        "type": "fill_blank",
+        "answers": [
+            "LATERAL"
+        ],
+        "other_options": [
+            "CROSS APPLY",
+            "OUTER APPLY",
+            "CORRELATED"
+        ]
+    },
+    {
+        "q": "Which function converts data types?",
+        "type": "mcq",
+        "o": [
+            "CAST()",
+            "CONVERT()",
+            "TYPE()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Match the type conversion functions:",
+        "type": "match",
+        "left": [
+            "CAST()",
+            "CONVERT()",
+            "TO_CHAR()",
+            "TO_DATE()"
+        ],
+        "right": [
+            "Standard cast",
+            "Database specific",
+            "To string",
+            "To date"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT CAST('123' AS INTEGER);",
+        "o": [
+            "123",
+            "'123'",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "The ______ operator concatenates strings.",
+        "type": "fill_blank",
+        "answers": [
+            "||"
+        ],
+        "other_options": [
+            "+",
+            "CONCAT",
+            "&"
+        ]
+    },
+    {
+        "q": "Which function concatenates strings?",
+        "type": "mcq",
+        "o": [
+            "CONCAT()",
+            "||",
+            "STRING_AGG()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT CONCAT('Hello', ' ', 'World');",
+        "o": [
+            "Hello World",
+            "HelloWorld",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "SUBSTRING extracts part of a string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function removes whitespace.",
+        "type": "fill_blank",
+        "answers": [
+            "TRIM"
+        ],
+        "other_options": [
+            "STRIP",
+            "CLEAN",
+            "REMOVE"
+        ]
+    },
+    {
+        "q": "Match the string functions:",
+        "type": "match",
+        "left": [
+            "UPPER()",
+            "LOWER()",
+            "LENGTH()",
+            "REPLACE()"
+        ],
+        "right": [
+            "Uppercase",
+            "Lowercase",
+            "String length",
+            "Replace text"
+        ]
+    },
+    {
+        "q": "Which function finds pattern position?",
+        "type": "mcq",
+        "o": [
+            "POSITION()",
+            "LOCATE()",
+            "INSTR()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT LEFT('Hello', 3);",
+        "o": [
+            "Hel",
+            "llo",
+            "Hello",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange string manipulation:",
+        "type": "rearrange",
+        "words": [
+            "Extract",
+            "Transform",
+            "Combine",
+            "Format",
+            "Return"
+        ]
+    },
+    {
+        "q": "The ______ function adds padding.",
+        "type": "fill_blank",
+        "answers": [
+            "LPAD"
+        ],
+        "other_options": [
+            "PAD",
+            "LEFTPAD",
+            "ADDPAD"
+        ]
+    },
+    {
+        "q": "Which function reverses a string?",
+        "type": "mcq",
+        "o": [
+            "REVERSE()",
+            "FLIP()",
+            "INVERT()",
+            "MIRROR()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT REVERSE('abc');",
+        "o": [
+            "cba",
+            "abc",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "REGEXP_LIKE supports regular expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the date functions:",
+        "type": "match",
+        "left": [
+            "CURRENT_DATE",
+            "CURRENT_TIMESTAMP",
+            "DATE_ADD()",
+            "DATEDIFF()"
+        ],
+        "right": [
+            "Today's date",
+            "Now with time",
+            "Add to date",
+            "Date difference"
+        ]
+    },
+    {
+        "q": "The ______ function extracts date parts.",
+        "type": "fill_blank",
+        "answers": [
+            "EXTRACT"
+        ],
+        "other_options": [
+            "DATEPART",
+            "GET",
+            "PART"
+        ]
+    },
+    {
+        "q": "Which function formats dates?",
+        "type": "mcq",
+        "o": [
+            "DATE_FORMAT()",
+            "TO_CHAR()",
+            "FORMAT()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT EXTRACT(YEAR FROM DATE '2023-06-15');",
+        "o": [
+            "2023",
+            "06",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "DATE_TRUNC truncates to specified precision.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange date processing:",
+        "type": "rearrange",
+        "words": [
+            "Parse input",
+            "Extract components",
+            "Calculate",
+            "Format output"
+        ]
+    },
+    {
+        "q": "The ______ function calculates age.",
+        "type": "fill_blank",
+        "answers": [
+            "AGE"
+        ],
+        "other_options": [
+            "YEARS",
+            "INTERVAL",
+            "DIFF"
+        ]
+    },
+    {
+        "q": "Which data type stores date and time?",
+        "type": "mcq",
+        "o": [
+            "TIMESTAMP",
+            "DATETIME",
+            "DATE",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Match the timezone functions:",
+        "type": "match",
+        "left": [
+            "AT TIME ZONE",
+            "CONVERT_TZ()",
+            "TIMEZONE()",
+            "UTC_TIMESTAMP()"
+        ],
+        "right": [
+            "Convert timezone",
+            "MySQL convert",
+            "Set timezone",
+            "Current UTC"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT INTERVAL '1' DAY + DATE '2023-01-01';",
+        "o": [
+            "2023-01-02",
+            "2023-01-01",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "INTERVAL represents time duration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword creates stored procedures.",
+        "type": "fill_blank",
+        "answers": [
+            "PROCEDURE"
+        ],
+        "other_options": [
+            "PROC",
+            "FUNCTION",
+            "ROUTINE"
+        ]
+    },
+    {
+        "q": "Which statement creates a procedure?",
+        "type": "mcq",
+        "o": [
+            "CREATE PROCEDURE",
+            "CREATE PROC",
+            "DEFINE PROCEDURE",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Stored procedures improve performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the procedure components:",
+        "type": "match",
+        "left": [
+            "IN",
+            "OUT",
+            "INOUT",
+            "RETURN"
+        ],
+        "right": [
+            "Input parameter",
+            "Output parameter",
+            "Both directions",
+            "Return value"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE PROCEDURE p() BEGIN SELECT 1; END; CALL p();",
+        "o": [
+            "1",
+            "p",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "The ______ statement invokes procedures.",
+        "type": "fill_blank",
+        "answers": [
+            "CALL"
+        ],
+        "other_options": [
+            "EXEC",
+            "RUN",
+            "EXECUTE"
+        ]
+    },
+    {
+        "q": "Which statement declares variables?",
+        "type": "mcq",
+        "o": [
+            "DECLARE",
+            "VAR",
+            "SET",
+            "DEFINE"
+        ]
+    },
+    {
+        "q": "Rearrange procedure creation:",
+        "type": "rearrange",
+        "words": [
+            "CREATE",
+            "PROCEDURE",
+            "name",
+            "parameters",
+            "BEGIN",
+            "statements",
+            "END"
+        ]
+    },
+    {
+        "q": "The ______ statement assigns values.",
+        "type": "fill_blank",
+        "answers": [
+            "SET"
+        ],
+        "other_options": [
+            "ASSIGN",
+            "LET",
+            "VALUE"
+        ]
+    },
+    {
+        "q": "Which block handles exceptions?",
+        "type": "mcq",
+        "o": [
+            "EXCEPTION",
+            "CATCH",
+            "HANDLER",
+            "ERROR"
+        ]
+    },
+    {
+        "q": "Match the control flow statements:",
+        "type": "match",
+        "left": [
+            "IF-THEN",
+            "CASE",
+            "LOOP",
+            "WHILE"
+        ],
+        "right": [
+            "Conditional",
+            "Multiple conditions",
+            "Repeat",
+            "Conditional repeat"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "DECLARE @x INT = 5; SELECT @x;",
+        "o": [
+            "5",
+            "@x",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "LOOP repeats until EXIT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ statement exits a loop.",
+        "type": "fill_blank",
+        "answers": [
+            "EXIT"
+        ],
+        "other_options": [
+            "BREAK",
+            "LEAVE",
+            "STOP"
+        ]
+    },
+    {
+        "q": "Which statement skips iteration?",
+        "type": "mcq",
+        "o": [
+            "CONTINUE",
+            "SKIP",
+            "ITERATE",
+            "NEXT"
+        ]
+    },
+    {
+        "q": "Rearrange loop structure:",
+        "type": "rearrange",
+        "words": [
+            "LOOP",
+            "statement",
+            "EXIT WHEN",
+            "condition",
+            "END LOOP"
+        ]
+    },
+    {
+        "q": "Match the loop types:",
+        "type": "match",
+        "left": [
+            "LOOP",
+            "WHILE",
+            "FOR",
+            "CURSOR FOR"
+        ],
+        "right": [
+            "Infinite",
+            "Condition first",
+            "Counter based",
+            "Row iteration"
+        ]
+    },
+    {
+        "q": "The ______ loop iterates over results.",
+        "type": "fill_blank",
+        "answers": [
+            "CURSOR"
+        ],
+        "other_options": [
+            "RESULT",
+            "ROW",
+            "RECORD"
+        ]
+    },
+    {
+        "q": "Which statement opens a cursor?",
+        "type": "mcq",
+        "o": [
+            "OPEN",
+            "DECLARE",
+            "FETCH",
+            "START"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "DECLARE cur CURSOR FOR SELECT 1; OPEN cur; FETCH cur INTO @v; SELECT @v;",
+        "o": [
+            "1",
+            "cur",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "FETCH retrieves cursor rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ statement releases cursor.",
+        "type": "fill_blank",
+        "answers": [
+            "CLOSE"
+        ],
+        "other_options": [
+            "FREE",
+            "END",
+            "RELEASE"
+        ]
+    },
+    {
+        "q": "Match the cursor operations:",
+        "type": "match",
+        "left": [
+            "DECLARE",
+            "OPEN",
+            "FETCH",
+            "CLOSE"
+        ],
+        "right": [
+            "Define cursor",
+            "Start cursor",
+            "Get row",
+            "End cursor"
+        ]
+    },
+    {
+        "q": "Which cursor type allows updates?",
+        "type": "mcq",
+        "o": [
+            "FOR UPDATE",
+            "UPDATABLE",
+            "SCROLL",
+            "DYNAMIC"
+        ]
+    },
+    {
+        "q": "Rearrange cursor workflow:",
+        "type": "rearrange",
+        "words": [
+            "Declare",
+            "Open",
+            "Fetch",
+            "Process",
+            "Close",
+            "Deallocate"
+        ]
+    },
+    {
+        "q": "The ______ event fires triggers.",
+        "type": "fill_blank",
+        "answers": [
+            "INSERT"
+        ],
+        "other_options": [
+            "CREATE",
+            "FIRE",
+            "RUN"
+        ]
+    },
+    {
+        "q": "Which statement creates triggers?",
+        "type": "mcq",
+        "o": [
+            "CREATE TRIGGER",
+            "DEFINE TRIGGER",
+            "ADD TRIGGER",
+            "SET TRIGGER"
+        ]
+    },
+    {
+        "q": "Triggers execute automatically on events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the trigger timing:",
+        "type": "match",
+        "left": [
+            "BEFORE",
+            "AFTER",
+            "INSTEAD OF",
+            "FOR EACH ROW"
+        ],
+        "right": [
+            "Pre-operation",
+            "Post-operation",
+            "Replace operation",
+            "Row-level"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE TRIGGER t BEFORE INSERT ON tbl FOR EACH ROW SET NEW.col = 1; SELECT 'done';",
+        "o": [
+            "done",
+            "1",
+            "Error",
+            "t"
+        ]
+    },
+    {
+        "q": "The ______ keyword references new values.",
+        "type": "fill_blank",
+        "answers": [
+            "NEW"
+        ],
+        "other_options": [
+            "INSERTED",
+            "CURRENT",
+            "AFTER"
+        ]
+    },
+    {
+        "q": "Which keyword references old values?",
+        "type": "mcq",
+        "o": [
+            "OLD",
+            "DELETED",
+            "BEFORE",
+            "PREVIOUS"
+        ]
+    },
+    {
+        "q": "Rearrange trigger creation:",
+        "type": "rearrange",
+        "words": [
+            "CREATE TRIGGER",
+            "name",
+            "BEFORE/AFTER",
+            "event",
+            "ON table",
+            "FOR EACH ROW",
+            "action"
+        ]
+    },
+    {
+        "q": "The ______ trigger fires on delete.",
+        "type": "fill_blank",
+        "answers": [
+            "DELETE"
+        ],
+        "other_options": [
+            "REMOVE",
+            "DROP",
+            "ERASE"
+        ]
+    },
+    {
+        "q": "Which trigger type is statement-level?",
+        "type": "mcq",
+        "o": [
+            "FOR EACH STATEMENT",
+            "STATEMENT",
+            "TABLE",
+            "BULK"
+        ]
+    },
+    {
+        "q": "Match the trigger events:",
+        "type": "match",
+        "left": [
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "TRUNCATE"
+        ],
+        "right": [
+            "Add row",
+            "Modify row",
+            "Remove row",
+            "Clear table"
+        ]
+    },
+    {
+        "q": "Triggers can cascade to other triggers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function generates sequences.",
+        "type": "fill_blank",
+        "answers": [
+            "NEXTVAL"
+        ],
+        "other_options": [
+            "NEXT",
+            "INCREMENT",
+            "SEQUENCE"
+        ]
+    },
+    {
+        "q": "Which statement creates sequences?",
+        "type": "mcq",
+        "o": [
+            "CREATE SEQUENCE",
+            "CREATE SERIAL",
+            "CREATE AUTO",
+            "CREATE COUNTER"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE SEQUENCE seq START 1; SELECT NEXTVAL('seq');",
+        "o": [
+            "1",
+            "0",
+            "seq",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sequence functions:",
+        "type": "match",
+        "left": [
+            "NEXTVAL",
+            "CURRVAL",
+            "SETVAL",
+            "LASTVAL"
+        ],
+        "right": [
+            "Get and increment",
+            "Current value",
+            "Set value",
+            "Last generated"
+        ]
+    },
+    {
+        "q": "Rearrange sequence usage:",
+        "type": "rearrange",
+        "words": [
+            "Create sequence",
+            "Configure options",
+            "Call NEXTVAL",
+            "Use in INSERT"
+        ]
+    },
+    {
+        "q": "The ______ constraint ensures uniqueness.",
+        "type": "fill_blank",
+        "answers": [
+            "UNIQUE"
+        ],
+        "other_options": [
+            "DISTINCT",
+            "SINGLE",
+            "EXCLUSIVE"
+        ]
+    },
+    {
+        "q": "Which constraint references other tables?",
+        "type": "mcq",
+        "o": [
+            "FOREIGN KEY",
+            "REFERENCE",
+            "LINK",
+            "RELATION"
+        ]
+    },
+    {
+        "q": "PRIMARY KEY combines UNIQUE and NOT NULL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the constraints:",
+        "type": "match",
+        "left": [
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "CHECK",
+            "DEFAULT"
+        ],
+        "right": [
+            "Unique identifier",
+            "Table reference",
+            "Value validation",
+            "Default value"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE TABLE t(id INT PRIMARY KEY, val INT CHECK(val > 0)); SELECT 'done';",
+        "o": [
+            "done",
+            "t",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "The ______ action cascades deletes.",
+        "type": "fill_blank",
+        "answers": [
+            "CASCADE"
+        ],
+        "other_options": [
+            "PROPAGATE",
+            "DELETE",
+            "FOLLOW"
+        ]
+    },
+    {
+        "q": "Which action sets null on delete?",
+        "type": "mcq",
+        "o": [
+            "SET NULL",
+            "NULLIFY",
+            "CLEAR",
+            "RESET"
+        ]
+    },
+    {
+        "q": "Rearrange constraint definition:",
+        "type": "rearrange",
+        "words": [
+            "CONSTRAINT",
+            "name",
+            "type",
+            "columns",
+            "references",
+            "actions"
+        ]
+    },
+    {
+        "q": "The ______ constraint restricts column values.",
+        "type": "fill_blank",
+        "answers": [
+            "CHECK"
+        ],
+        "other_options": [
+            "VALIDATE",
+            "VERIFY",
+            "LIMIT"
+        ]
+    },
+    {
+        "q": "Which statement modifies constraints?",
+        "type": "mcq",
+        "o": [
+            "ALTER TABLE",
+            "MODIFY TABLE",
+            "UPDATE TABLE",
+            "CHANGE TABLE"
+        ]
+    },
+    {
+        "q": "Match the referential actions:",
+        "type": "match",
+        "left": [
+            "CASCADE",
+            "SET NULL",
+            "SET DEFAULT",
+            "RESTRICT"
+        ],
+        "right": [
+            "Propagate",
+            "Nullify",
+            "Use default",
+            "Prevent"
+        ]
+    },
+    {
+        "q": "Deferred constraints check at commit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword creates views.",
+        "type": "fill_blank",
+        "answers": [
+            "VIEW"
+        ],
+        "other_options": [
+            "VIRTUAL",
+            "QUERY",
+            "SELECT"
+        ]
+    },
+    {
+        "q": "Which statement creates views?",
+        "type": "mcq",
+        "o": [
+            "CREATE VIEW",
+            "DEFINE VIEW",
+            "CREATE VIRTUAL",
+            "CREATE QUERY"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE VIEW v AS SELECT 1 as n; SELECT n FROM v;",
+        "o": [
+            "1",
+            "v",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match the view types:",
+        "type": "match",
+        "left": [
+            "Simple view",
+            "Complex view",
+            "Materialized view",
+            "Updatable view"
+        ],
+        "right": [
+            "Single table",
+            "Joins/aggregates",
+            "Stored results",
+            "Allows DML"
+        ]
+    },
+    {
+        "q": "Rearrange view creation:",
+        "type": "rearrange",
+        "words": [
+            "CREATE",
+            "OR REPLACE",
+            "VIEW",
+            "name",
+            "AS",
+            "SELECT query"
+        ]
+    },
+    {
+        "q": "The ______ view stores computed results.",
+        "type": "fill_blank",
+        "answers": [
+            "MATERIALIZED"
+        ],
+        "other_options": [
+            "CACHED",
+            "STORED",
+            "PERSISTENT"
+        ]
+    },
+    {
+        "q": "Which clause prevents view updates?",
+        "type": "mcq",
+        "o": [
+            "WITH CHECK OPTION",
+            "READ ONLY",
+            "NO UPDATE",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Views provide data abstraction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the materialized view operations:",
+        "type": "match",
+        "left": [
+            "CREATE",
+            "REFRESH",
+            "DROP",
+            "REBUILD"
+        ],
+        "right": [
+            "Define view",
+            "Update data",
+            "Remove view",
+            "Recreate"
+        ]
+    },
+    {
+        "q": "The ______ refreshes materialized views.",
+        "type": "fill_blank",
+        "answers": [
+            "REFRESH"
+        ],
+        "other_options": [
+            "UPDATE",
+            "RELOAD",
+            "SYNC"
+        ]
+    },
+    {
+        "q": "Which index type is best for text search?",
+        "type": "mcq",
+        "o": [
+            "Full-text",
+            "B-tree",
+            "Hash",
+            "Bitmap"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx ON t(col); DROP INDEX idx; SELECT 'done';",
+        "o": [
+            "done",
+            "idx",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Composite indexes cover multiple columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the index properties:",
+        "type": "match",
+        "left": [
+            "UNIQUE",
+            "CLUSTERED",
+            "COVERING",
+            "PARTIAL"
+        ],
+        "right": [
+            "No duplicates",
+            "Data order",
+            "All columns",
+            "Filtered rows"
+        ]
+    },
+    {
+        "q": "Rearrange index optimization:",
+        "type": "rearrange",
+        "words": [
+            "Analyze queries",
+            "Identify columns",
+            "Choose type",
+            "Create index",
+            "Monitor performance"
+        ]
+    },
+    {
+        "q": "The ______ index stores data in sorted order.",
+        "type": "fill_blank",
+        "answers": [
+            "CLUSTERED"
+        ],
+        "other_options": [
+            "SORTED",
+            "ORDERED",
+            "PRIMARY"
+        ]
+    },
+    {
+        "q": "Which statement analyzes table statistics?",
+        "type": "mcq",
+        "o": [
+            "ANALYZE",
+            "STATISTICS",
+            "UPDATE STATISTICS",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Query optimizer uses statistics for planning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the optimization techniques:",
+        "type": "match",
+        "left": [
+            "Indexing",
+            "Partitioning",
+            "Caching",
+            "Query rewrite"
+        ],
+        "right": [
+            "Fast lookup",
+            "Data division",
+            "Memory storage",
+            "Optimize SQL"
+        ]
+    },
+    {
+        "q": "The ______ divides large tables.",
+        "type": "fill_blank",
+        "answers": [
+            "PARTITION"
+        ],
+        "other_options": [
+            "DIVIDE",
+            "SPLIT",
+            "SEGMENT"
+        ]
+    },
+    {
+        "q": "Which partition type uses ranges?",
+        "type": "mcq",
+        "o": [
+            "RANGE",
+            "LIST",
+            "HASH",
+            "KEY"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE TABLE t(id INT) PARTITION BY RANGE(id) (PARTITION p0 VALUES LESS THAN (100)); SELECT 'done';",
+        "o": [
+            "done",
+            "t",
+            "Error",
+            "p0"
+        ]
+    },
+    {
+        "q": "Rearrange partitioning setup:",
+        "type": "rearrange",
+        "words": [
+            "Choose column",
+            "Select type",
+            "Define ranges",
+            "Create partitions",
+            "Distribute data"
+        ]
+    },
+    {
+        "q": "Match the partition types:",
+        "type": "match",
+        "left": [
+            "RANGE",
+            "LIST",
+            "HASH",
+            "COMPOSITE"
+        ],
+        "right": [
+            "Value ranges",
+            "Value list",
+            "Hash function",
+            "Multiple methods"
+        ]
+    },
+    {
+        "q": "The ______ keyword defines partition bounds.",
+        "type": "fill_blank",
+        "answers": [
+            "VALUES"
+        ],
+        "other_options": [
+            "BOUNDS",
+            "RANGE",
+            "LIMITS"
+        ]
+    },
+    {
+        "q": "Which feature enables parallel queries?",
+        "type": "mcq",
+        "o": [
+            "Parallel execution",
+            "Multi-threading",
+            "Distributed query",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Partitioning improves query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the performance features:",
+        "type": "match",
+        "left": [
+            "Parallel scan",
+            "Index scan",
+            "Seq scan",
+            "Bitmap scan"
+        ],
+        "right": [
+            "Multiple threads",
+            "Use index",
+            "Full table",
+            "Multiple indexes"
+        ]
+    },
+    {
+        "q": "The ______ shows query execution plan.",
+        "type": "fill_blank",
+        "answers": [
+            "EXPLAIN"
+        ],
+        "other_options": [
+            "SHOW",
+            "DESCRIBE",
+            "PLAN"
+        ]
+    },
+    {
+        "q": "Which join algorithm uses hash tables?",
+        "type": "mcq",
+        "o": [
+            "Hash join",
+            "Merge join",
+            "Nested loop",
+            "Index join"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "EXPLAIN SELECT * FROM t; SELECT 'done';",
+        "o": [
+            "done",
+            "Query plan",
+            "Error",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Rearrange query tuning steps:",
+        "type": "rearrange",
+        "words": [
+            "Get execution plan",
+            "Identify bottlenecks",
+            "Add indexes",
+            "Rewrite query",
+            "Test performance"
+        ]
+    },
+    {
+        "q": "Match the join methods:",
+        "type": "match",
+        "left": [
+            "Nested loop",
+            "Hash join",
+            "Merge join",
+            "Index join"
+        ],
+        "right": [
+            "For each row",
+            "Build hash",
+            "Sorted merge",
+            "Use index"
+        ]
+    },
+    {
+        "q": "The ______ records database changes.",
+        "type": "fill_blank",
+        "answers": [
+            "LOG"
+        ],
+        "other_options": [
+            "JOURNAL",
+            "HISTORY",
+            "AUDIT"
+        ]
+    },
+    {
+        "q": "Which isolation level prevents dirty reads?",
+        "type": "mcq",
+        "o": [
+            "READ COMMITTED",
+            "READ UNCOMMITTED",
+            "SERIALIZABLE",
+            "REPEATABLE READ"
+        ]
+    },
+    {
+        "q": "ACID ensures transaction reliability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ACID properties:",
+        "type": "match",
+        "left": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+        ],
+        "right": [
+            "All or nothing",
+            "Valid state",
+            "No interference",
+            "Permanent changes"
+        ]
+    },
+    {
+        "q": "The ______ statement starts transactions.",
+        "type": "fill_blank",
+        "answers": [
+            "BEGIN"
+        ],
+        "other_options": [
+            "START",
+            "OPEN",
+            "INIT"
+        ]
+    },
+    {
+        "q": "Which statement saves transaction?",
+        "type": "mcq",
+        "o": [
+            "COMMIT",
+            "SAVE",
+            "APPLY",
+            "PERSIST"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "BEGIN; INSERT INTO t VALUES(1); ROLLBACK; SELECT COUNT(*) FROM t;",
+        "o": [
+            "0",
+            "1",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange transaction flow:",
+        "type": "rearrange",
+        "words": [
+            "BEGIN",
+            "Execute statements",
+            "Check results",
+            "COMMIT or ROLLBACK"
+        ]
+    },
+    {
+        "q": "Match the isolation levels:",
+        "type": "match",
+        "left": [
+            "READ UNCOMMITTED",
+            "READ COMMITTED",
+            "REPEATABLE READ",
+            "SERIALIZABLE"
+        ],
+        "right": [
+            "Dirty reads",
+            "No dirty reads",
+            "Consistent reads",
+            "Full isolation"
+        ]
+    },
+    {
+        "q": "The ______ statement undoes changes.",
+        "type": "fill_blank",
+        "answers": [
+            "ROLLBACK"
+        ],
+        "other_options": [
+            "UNDO",
+            "REVERT",
+            "CANCEL"
+        ]
+    },
+    {
+        "q": "Which feature allows partial rollback?",
+        "type": "mcq",
+        "o": [
+            "SAVEPOINT",
+            "CHECKPOINT",
+            "MARKER",
+            "BOOKMARK"
+        ]
+    },
+    {
+        "q": "Deadlocks occur with circular waits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the locking modes:",
+        "type": "match",
+        "left": [
+            "SHARE",
+            "EXCLUSIVE",
+            "UPDATE",
+            "ACCESS"
+        ],
+        "right": [
+            "Read lock",
+            "Write lock",
+            "Intent update",
+            "Prevent DDL"
+        ]
+    },
+    {
+        "q": "The ______ lock allows concurrent reads.",
+        "type": "fill_blank",
+        "answers": [
+            "SHARE"
+        ],
+        "other_options": [
+            "READ",
+            "CONCURRENT",
+            "MULTI"
+        ]
+    },
+    {
+        "q": "Which statement creates users?",
+        "type": "mcq",
+        "o": [
+            "CREATE USER",
+            "ADD USER",
+            "NEW USER",
+            "DEFINE USER"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "CREATE USER u WITH PASSWORD 'pass'; SELECT 'done';",
+        "o": [
+            "done",
+            "u",
+            "Error",
+            "pass"
+        ]
+    },
+    {
+        "q": "Rearrange user management:",
+        "type": "rearrange",
+        "words": [
+            "Create user",
+            "Set password",
+            "Grant privileges",
+            "Assign role"
+        ]
+    },
+    {
+        "q": "Match the privilege types:",
+        "type": "match",
+        "left": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "ALL"
+        ],
+        "right": [
+            "Read data",
+            "Add data",
+            "Modify data",
+            "Full access"
+        ]
+    },
+    {
+        "q": "The ______ statement assigns permissions.",
+        "type": "fill_blank",
+        "answers": [
+            "GRANT"
+        ],
+        "other_options": [
+            "ALLOW",
+            "PERMIT",
+            "ENABLE"
+        ]
+    },
+    {
+        "q": "Which statement removes privileges?",
+        "type": "mcq",
+        "o": [
+            "REVOKE",
+            "REMOVE",
+            "DELETE",
+            "DROP"
+        ]
+    },
+    {
+        "q": "Roles group multiple privileges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the security features:",
+        "type": "match",
+        "left": [
+            "GRANT",
+            "REVOKE",
+            "ROLE",
+            "ROW SECURITY"
+        ],
+        "right": [
+            "Give access",
+            "Remove access",
+            "Group privileges",
+            "Row-level"
+        ]
+    },
+    {
+        "q": "The ______ enables row-level security.",
+        "type": "fill_blank",
+        "answers": [
+            "POLICY"
+        ],
+        "other_options": [
+            "RULE",
+            "FILTER",
+            "GUARD"
+        ]
+    },
+    {
+        "q": "Which SQL type injects dynamic values?",
+        "type": "mcq",
+        "o": [
+            "Prepared statement",
+            "Dynamic SQL",
+            "Parameterized query",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "PREPARE stmt FROM 'SELECT ?'; EXECUTE stmt USING @val;",
+        "o": [
+            "Value of @val",
+            "stmt",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange prepared statement flow:",
+        "type": "rearrange",
+        "words": [
+            "PREPARE",
+            "Set parameters",
+            "EXECUTE",
+            "DEALLOCATE"
+        ]
+    },
+    {
+        "q": "The ______ compiles SQL for reuse.",
+        "type": "fill_blank",
+        "answers": [
+            "PREPARE"
+        ],
+        "other_options": [
+            "COMPILE",
+            "CACHE",
+            "STORE"
+        ]
+    },
+    {
+        "q": "Which function builds dynamic SQL?",
+        "type": "mcq",
+        "o": [
+            "EXECUTE IMMEDIATE",
+            "EXEC()",
+            "EVAL()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Prepared statements prevent SQL injection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dynamic SQL methods:",
+        "type": "match",
+        "left": [
+            "PREPARE",
+            "EXECUTE",
+            "DEALLOCATE",
+            "USING"
+        ],
+        "right": [
+            "Parse SQL",
+            "Run SQL",
+            "Free resources",
+            "Pass parameters"
+        ]
+    },
+    {
+        "q": "Which function parses JSON data?",
+        "type": "mcq",
+        "o": [
+            "JSON_EXTRACT()",
+            "JSON_VALUE()",
+            "JSON_QUERY()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT JSON_EXTRACT('{\"name\":\"John\"}', '$.name');",
+        "o": [
+            "John",
+            "{\"name\":\"John\"}",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "JSON data type stores structured data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator accesses JSON keys.",
+        "type": "fill_blank",
+        "answers": [
+            "->"
+        ],
+        "other_options": [
+            ".",
+            "::",
+            "[]"
+        ]
+    },
+    {
+        "q": "Match the JSON functions:",
+        "type": "match",
+        "left": [
+            "JSON_OBJECT()",
+            "JSON_ARRAY()",
+            "JSON_KEYS()",
+            "JSON_LENGTH()"
+        ],
+        "right": [
+            "Create object",
+            "Create array",
+            "Get keys",
+            "Get size"
+        ]
+    },
+    {
+        "q": "Which function modifies JSON?",
+        "type": "mcq",
+        "o": [
+            "JSON_SET()",
+            "JSON_INSERT()",
+            "JSON_REPLACE()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT JSON_ARRAY(1, 2, 3);",
+        "o": [
+            "[1, 2, 3]",
+            "1, 2, 3",
+            "{1, 2, 3}",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange JSON processing:",
+        "type": "rearrange",
+        "words": [
+            "Parse JSON",
+            "Navigate path",
+            "Extract value",
+            "Transform",
+            "Return result"
+        ]
+    },
+    {
+        "q": "The ______ path targets JSON root.",
+        "type": "fill_blank",
+        "answers": [
+            "$"
+        ],
+        "other_options": [
+            "/",
+            ".",
+            "#"
+        ]
+    },
+    {
+        "q": "Which function flattens JSON arrays?",
+        "type": "mcq",
+        "o": [
+            "JSON_TABLE()",
+            "UNNEST()",
+            "OPENJSON()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "JSONB is binary JSON format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JSON path expressions:",
+        "type": "match",
+        "left": [
+            "$.key",
+            "$[0]",
+            "$.key[*]",
+            "$..key"
+        ],
+        "right": [
+            "Object key",
+            "Array index",
+            "All elements",
+            "Recursive search"
+        ]
+    },
+    {
+        "q": "The ______ validates JSON schema.",
+        "type": "fill_blank",
+        "answers": [
+            "JSON_VALID()"
+        ],
+        "other_options": [
+            "IS_JSON()",
+            "VALIDATE_JSON()",
+            "CHECK_JSON()"
+        ]
+    },
+    {
+        "q": "Which function aggregates to JSON?",
+        "type": "mcq",
+        "o": [
+            "JSON_AGG()",
+            "JSON_ARRAYAGG()",
+            "JSON_OBJECTAGG()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT JSON_OBJECT('key', 'value');",
+        "o": [
+            "{\"key\":\"value\"}",
+            "key:value",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange JSON aggregation:",
+        "type": "rearrange",
+        "words": [
+            "SELECT rows",
+            "Transform values",
+            "Aggregate to JSON",
+            "Return structure"
+        ]
+    },
+    {
+        "q": "The ______ searches text within JSON.",
+        "type": "fill_blank",
+        "answers": [
+            "CONTAINS"
+        ],
+        "other_options": [
+            "SEARCH",
+            "FIND",
+            "LIKE"
+        ]
+    },
+    {
+        "q": "Which operator checks JSON containment?",
+        "type": "mcq",
+        "o": [
+            "@>",
+            "<@",
+            "?",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "GIN indexes optimize JSON queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JSON operators:",
+        "type": "match",
+        "left": [
+            "->",
+            "->>",
+            "#>",
+            "@>"
+        ],
+        "right": [
+            "Get JSON",
+            "Get text",
+            "Path access",
+            "Contains"
+        ]
+    },
+    {
+        "q": "The ______ function removes JSON keys.",
+        "type": "fill_blank",
+        "answers": [
+            "JSON_REMOVE()"
+        ],
+        "other_options": [
+            "JSON_DELETE()",
+            "JSON_DROP()",
+            "JSON_UNSET()"
+        ]
+    },
+    {
+        "q": "Which function converts to JSON?",
+        "type": "mcq",
+        "o": [
+            "TO_JSON()",
+            "CAST AS JSON",
+            "JSON()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT JSON_TYPEOF('{\"a\":1}');",
+        "o": [
+            "object",
+            "json",
+            "string",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange JSON indexing:",
+        "type": "rearrange",
+        "words": [
+            "Identify frequent paths",
+            "Create GIN index",
+            "Test queries",
+            "Monitor performance"
+        ]
+    },
+    {
+        "q": "The ______ merges JSON objects.",
+        "type": "fill_blank",
+        "answers": [
+            "JSON_MERGE()"
+        ],
+        "other_options": [
+            "JSON_CONCAT()",
+            "JSON_COMBINE()",
+            "JSON_UNION()"
+        ]
+    },
+    {
+        "q": "Which function returns JSON type?",
+        "type": "mcq",
+        "o": [
+            "JSON_TYPE()",
+            "JSON_TYPEOF()",
+            "TYPEOF()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "JSON supports nested structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JSON data types:",
+        "type": "match",
+        "left": [
+            "object",
+            "array",
+            "string",
+            "number"
+        ],
+        "right": [
+            "Key-value pairs",
+            "Ordered list",
+            "Text value",
+            "Numeric value"
+        ]
+    },
+    {
+        "q": "The ______ defines XML namespaces.",
+        "type": "fill_blank",
+        "answers": [
+            "XMLNAMESPACES"
+        ],
+        "other_options": [
+            "NAMESPACE",
+            "XMLNS",
+            "XMLNS"
+        ]
+    },
+    {
+        "q": "Which function parses XML?",
+        "type": "mcq",
+        "o": [
+            "XMLPARSE()",
+            "XML()",
+            "PARSE_XML()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT XMLELEMENT(NAME test, 'value');",
+        "o": [
+            "<test>value</test>",
+            "test:value",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "XPath navigates XML documents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the XML functions:",
+        "type": "match",
+        "left": [
+            "XMLELEMENT()",
+            "XMLATTRIBUTES()",
+            "XMLFOREST()",
+            "XMLAGG()"
+        ],
+        "right": [
+            "Create element",
+            "Add attributes",
+            "Multiple elements",
+            "Aggregate XML"
+        ]
+    },
+    {
+        "q": "The ______ evaluates XPath expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "XMLQUERY"
+        ],
+        "other_options": [
+            "XPATH",
+            "QUERY",
+            "XEVAL"
+        ]
+    },
+    {
+        "q": "Which function extracts XML values?",
+        "type": "mcq",
+        "o": [
+            "EXTRACTVALUE()",
+            "XMLVALUE()",
+            "XML_VALUE()",
+            "GET_XML()"
+        ]
+    },
+    {
+        "q": "Rearrange XML processing:",
+        "type": "rearrange",
+        "words": [
+            "Parse XML",
+            "Define XPath",
+            "Extract nodes",
+            "Transform data"
+        ]
+    },
+    {
+        "q": "The ______ stores hierarchical data.",
+        "type": "fill_blank",
+        "answers": [
+            "XMLTYPE"
+        ],
+        "other_options": [
+            "XML",
+            "HIERARCHY",
+            "TREE"
+        ]
+    },
+    {
+        "q": "Which feature tracks row modifications?",
+        "type": "mcq",
+        "o": [
+            "Change Data Capture",
+            "Audit trail",
+            "Version control",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Temporal tables store historical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the temporal concepts:",
+        "type": "match",
+        "left": [
+            "System time",
+            "Application time",
+            "Bitemporal",
+            "AS OF"
+        ],
+        "right": [
+            "Database tracks",
+            "App tracks",
+            "Both times",
+            "Point in time"
+        ]
+    },
+    {
+        "q": "The ______ keyword queries historical data.",
+        "type": "fill_blank",
+        "answers": [
+            "AS OF"
+        ],
+        "other_options": [
+            "AT TIME",
+            "WHEN",
+            "DURING"
+        ]
+    },
+    {
+        "q": "Which clause defines system versioning?",
+        "type": "mcq",
+        "o": [
+            "WITH SYSTEM VERSIONING",
+            "TEMPORAL",
+            "HISTORY",
+            "VERSIONED"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT * FROM t FOR SYSTEM_TIME AS OF '2023-01-01' LIMIT 1;",
+        "o": [
+            "Historical row",
+            "Current row",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange temporal table setup:",
+        "type": "rearrange",
+        "words": [
+            "Create table",
+            "Add period columns",
+            "Enable versioning",
+            "Configure history"
+        ]
+    },
+    {
+        "q": "Match the temporal queries:",
+        "type": "match",
+        "left": [
+            "AS OF",
+            "FROM...TO",
+            "BETWEEN...AND",
+            "CONTAINED IN"
+        ],
+        "right": [
+            "Point in time",
+            "Range exclusive",
+            "Range inclusive",
+            "Within range"
+        ]
+    },
+    {
+        "q": "The ______ stores old row versions.",
+        "type": "fill_blank",
+        "answers": [
+            "history table"
+        ],
+        "other_options": [
+            "archive",
+            "backup",
+            "log"
+        ]
+    },
+    {
+        "q": "Which function calculates mode?",
+        "type": "mcq",
+        "o": [
+            "MODE()",
+            "MOST_FREQUENT()",
+            "COMMON()",
+            "Statistics package"
+        ]
+    },
+    {
+        "q": "MEDIAN returns middle value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the statistical functions:",
+        "type": "match",
+        "left": [
+            "AVG()",
+            "STDDEV()",
+            "VARIANCE()",
+            "CORR()"
+        ],
+        "right": [
+            "Mean",
+            "Standard deviation",
+            "Variance",
+            "Correlation"
+        ]
+    },
+    {
+        "q": "The ______ calculates percentiles.",
+        "type": "fill_blank",
+        "answers": [
+            "PERCENTILE_CONT"
+        ],
+        "other_options": [
+            "PERCENTILE",
+            "QUANTILE",
+            "PCT"
+        ]
+    },
+    {
+        "q": "Which function returns discrete percentile?",
+        "type": "mcq",
+        "o": [
+            "PERCENTILE_DISC()",
+            "PERCENTILE_CONT()",
+            "QUANTILE()",
+            "PCT()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT STDDEV(val) FROM (SELECT 10 as val UNION ALL SELECT 20) t;",
+        "o": [
+            "7.07 approximately",
+            "15",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange statistical analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect data",
+            "Calculate mean",
+            "Compute variance",
+            "Find percentiles",
+            "Report results"
+        ]
+    },
+    {
+        "q": "Match the regression functions:",
+        "type": "match",
+        "left": [
+            "REGR_SLOPE()",
+            "REGR_INTERCEPT()",
+            "REGR_R2()",
+            "REGR_COUNT()"
+        ],
+        "right": [
+            "Line slope",
+            "Y-intercept",
+            "R-squared",
+            "Point count"
+        ]
+    },
+    {
+        "q": "The ______ measures linear correlation.",
+        "type": "fill_blank",
+        "answers": [
+            "CORR"
+        ],
+        "other_options": [
+            "CORRELATION",
+            "R",
+            "COEF"
+        ]
+    },
+    {
+        "q": "Which function calculates covariance?",
+        "type": "mcq",
+        "o": [
+            "COVAR_POP()",
+            "COVAR_SAMP()",
+            "COVARIANCE()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "LISTAGG concatenates grouped values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the aggregation functions:",
+        "type": "match",
+        "left": [
+            "LISTAGG()",
+            "STRING_AGG()",
+            "ARRAY_AGG()",
+            "XMLAGG()"
+        ],
+        "right": [
+            "Oracle string",
+            "Standard string",
+            "Array result",
+            "XML result"
+        ]
+    },
+    {
+        "q": "The ______ clause orders within groups.",
+        "type": "fill_blank",
+        "answers": [
+            "WITHIN GROUP"
+        ],
+        "other_options": [
+            "ORDER BY",
+            "SORT BY",
+            "GROUP ORDER"
+        ]
+    },
+    {
+        "q": "Which function creates hierarchical data?",
+        "type": "mcq",
+        "o": [
+            "CONNECT BY",
+            "RECURSIVE CTE",
+            "HIERARCHICAL",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT LISTAGG(val, ',') WITHIN GROUP (ORDER BY val) FROM (SELECT 'a' as val UNION ALL SELECT 'b') t;",
+        "o": [
+            "a,b",
+            "b,a",
+            "[a,b]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange hierarchical query:",
+        "type": "rearrange",
+        "words": [
+            "Define root",
+            "Connect parent-child",
+            "Set level",
+            "Order siblings"
+        ]
+    },
+    {
+        "q": "Match the Oracle hierarchy keywords:",
+        "type": "match",
+        "left": [
+            "START WITH",
+            "CONNECT BY",
+            "PRIOR",
+            "LEVEL"
+        ],
+        "right": [
+            "Root condition",
+            "Relationship",
+            "Parent reference",
+            "Depth"
+        ]
+    },
+    {
+        "q": "The ______ returns hierarchy depth.",
+        "type": "fill_blank",
+        "answers": [
+            "LEVEL"
+        ],
+        "other_options": [
+            "DEPTH",
+            "HEIGHT",
+            "TIER"
+        ]
+    },
+    {
+        "q": "Which pseudo-column orders siblings?",
+        "type": "mcq",
+        "o": [
+            "ORDER SIBLINGS BY",
+            "SIBLINGS ORDER",
+            "SIBLING_ORDER",
+            "ORDER BY SIBLING"
+        ]
+    },
+    {
+        "q": "SYS_CONNECT_BY_PATH builds path strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the path functions:",
+        "type": "match",
+        "left": [
+            "SYS_CONNECT_BY_PATH",
+            "CONNECT_BY_ROOT",
+            "CONNECT_BY_ISCYCLE",
+            "CONNECT_BY_ISLEAF"
+        ],
+        "right": [
+            "Full path",
+            "Root value",
+            "Cycle detection",
+            "Leaf check"
+        ]
+    },
+    {
+        "q": "The ______ prevents infinite loops in hierarchies.",
+        "type": "fill_blank",
+        "answers": [
+            "NOCYCLE"
+        ],
+        "other_options": [
+            "CYCLE",
+            "BREAK",
+            "STOP"
+        ]
+    },
+    {
+        "q": "Which clause handles cycles in recursion?",
+        "type": "mcq",
+        "o": [
+            "CYCLE",
+            "NOCYCLE",
+            "MAXRECURSION",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "WITH RECURSIVE t AS (SELECT 1 n UNION ALL SELECT n+1 FROM t WHERE n<3) SELECT MAX(n) FROM t;",
+        "o": [
+            "3",
+            "1",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange recursive CTE optimization:",
+        "type": "rearrange",
+        "words": [
+            "Define base case",
+            "Set recursion limit",
+            "Optimize join",
+            "Add termination"
+        ]
+    },
+    {
+        "q": "Match the recursion controls:",
+        "type": "match",
+        "left": [
+            "MAXRECURSION",
+            "CYCLE",
+            "USING",
+            "SEARCH"
+        ],
+        "right": [
+            "Limit depth",
+            "Handle loops",
+            "Tracking column",
+            "Order traversal"
+        ]
+    },
+    {
+        "q": "The ______ specifies traversal order.",
+        "type": "fill_blank",
+        "answers": [
+            "SEARCH"
+        ],
+        "other_options": [
+            "ORDER",
+            "TRAVERSE",
+            "WALK"
+        ]
+    },
+    {
+        "q": "Which search type visits depth-first?",
+        "type": "mcq",
+        "o": [
+            "DEPTH FIRST",
+            "BREADTH FIRST",
+            "DFS",
+            "BFS"
+        ]
+    },
+    {
+        "q": "BREADTH FIRST visits level by level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the traversal strategies:",
+        "type": "match",
+        "left": [
+            "DEPTH FIRST",
+            "BREADTH FIRST",
+            "PRE-ORDER",
+            "POST-ORDER"
+        ],
+        "right": [
+            "Go deep",
+            "Go wide",
+            "Parent first",
+            "Children first"
+        ]
+    },
+    {
+        "q": "The ______ hint forces index usage.",
+        "type": "fill_blank",
+        "answers": [
+            "INDEX"
+        ],
+        "other_options": [
+            "USE_INDEX",
+            "FORCE_INDEX",
+            "WITH_INDEX"
+        ]
+    },
+    {
+        "q": "Which hint prevents index usage?",
+        "type": "mcq",
+        "o": [
+            "NO_INDEX",
+            "IGNORE INDEX",
+            "FULL",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT /*+ INDEX(t idx) */ * FROM t WHERE col = 1;",
+        "o": [
+            "Uses index idx",
+            "Error",
+            "Ignores hint",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Optimizer hints override defaults.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the optimizer hints:",
+        "type": "match",
+        "left": [
+            "FULL",
+            "INDEX",
+            "PARALLEL",
+            "LEADING"
+        ],
+        "right": [
+            "Table scan",
+            "Use index",
+            "Multi-thread",
+            "Join order"
+        ]
+    },
+    {
+        "q": "Rearrange query tuning:",
+        "type": "rearrange",
+        "words": [
+            "Analyze query",
+            "Check plan",
+            "Add hints",
+            "Test performance",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "The ______ hint specifies join order.",
+        "type": "fill_blank",
+        "answers": [
+            "LEADING"
+        ],
+        "other_options": [
+            "ORDERED",
+            "FIRST",
+            "ORDER"
+        ]
+    },
+    {
+        "q": "Which hint forces hash join?",
+        "type": "mcq",
+        "o": [
+            "USE_HASH",
+            "HASH_JOIN",
+            "HASH",
+            "FORCE_HASH"
+        ]
+    },
+    {
+        "q": "ORDERED processes tables in order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the join hints:",
+        "type": "match",
+        "left": [
+            "USE_HASH",
+            "USE_NL",
+            "USE_MERGE",
+            "USE_SEMI"
+        ],
+        "right": [
+            "Hash join",
+            "Nested loop",
+            "Sort merge",
+            "Semi join"
+        ]
+    },
+    {
+        "q": "The ______ hint enables parallelism.",
+        "type": "fill_blank",
+        "answers": [
+            "PARALLEL"
+        ],
+        "other_options": [
+            "MULTI",
+            "THREAD",
+            "CONCURRENT"
+        ]
+    },
+    {
+        "q": "Which feature caches query results?",
+        "type": "mcq",
+        "o": [
+            "Result cache",
+            "Query cache",
+            "Plan cache",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT /*+ PARALLEL(4) */ COUNT(*) FROM t;",
+        "o": [
+            "Count with 4 threads",
+            "Error",
+            "4",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange parallel query execution:",
+        "type": "rearrange",
+        "words": [
+            "Parse query",
+            "Create slaves",
+            "Distribute work",
+            "Gather results",
+            "Return"
+        ]
+    },
+    {
+        "q": "Match the caching mechanisms:",
+        "type": "match",
+        "left": [
+            "Buffer pool",
+            "Query cache",
+            "Plan cache",
+            "Result cache"
+        ],
+        "right": [
+            "Data pages",
+            "Query results",
+            "Execution plans",
+            "Computed results"
+        ]
+    },
+    {
+        "q": "The ______ stores execution plans.",
+        "type": "fill_blank",
+        "answers": [
+            "plan cache"
+        ],
+        "other_options": [
+            "query cache",
+            "statement cache",
+            "SQL cache"
+        ]
+    },
+    {
+        "q": "Which statement clears plan cache?",
+        "type": "mcq",
+        "o": [
+            "DBCC FREEPROCCACHE",
+            "FLUSH QUERY CACHE",
+            "ALTER SYSTEM",
+            "Database specific"
+        ]
+    },
+    {
+        "q": "Bind variables improve plan reuse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the memory areas:",
+        "type": "match",
+        "left": [
+            "SGA",
+            "PGA",
+            "Buffer cache",
+            "Shared pool"
+        ],
+        "right": [
+            "Shared memory",
+            "Process memory",
+            "Data blocks",
+            "SQL/Plans"
+        ]
+    },
+    {
+        "q": "The ______ monitors session memory.",
+        "type": "fill_blank",
+        "answers": [
+            "PGA"
+        ],
+        "other_options": [
+            "SGA",
+            "UGA",
+            "CGA"
+        ]
+    },
+    {
+        "q": "Which operation is memory-intensive?",
+        "type": "mcq",
+        "o": [
+            "Sort",
+            "Hash join",
+            "Bitmap operations",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT pg_size_pretty(pg_database_size(current_database()));",
+        "o": [
+            "Database size",
+            "Error",
+            "current_database()",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange memory tuning:",
+        "type": "rearrange",
+        "words": [
+            "Monitor usage",
+            "Identify issues",
+            "Adjust parameters",
+            "Test impact",
+            "Verify"
+        ]
+    },
+    {
+        "q": "Match the size functions:",
+        "type": "match",
+        "left": [
+            "pg_table_size",
+            "pg_index_size",
+            "pg_total_relation_size",
+            "pg_database_size"
+        ],
+        "right": [
+            "Table only",
+            "Indexes only",
+            "Table + indexes",
+            "Whole database"
+        ]
+    },
+    {
+        "q": "The ______ tracks I/O statistics.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_stat_io"
+        ],
+        "other_options": [
+            "pg_io_stats",
+            "v$iostat",
+            "sys.io_stats"
+        ]
+    },
+    {
+        "q": "Which view shows index usage?",
+        "type": "mcq",
+        "o": [
+            "pg_stat_user_indexes",
+            "v$index_usage",
+            "sys.dm_db_index_usage_stats",
+            "Database specific"
+        ]
+    },
+    {
+        "q": "Unused indexes waste storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the statistics views:",
+        "type": "match",
+        "left": [
+            "pg_stat_user_tables",
+            "pg_stat_activity",
+            "pg_stat_bgwriter",
+            "pg_stat_database"
+        ],
+        "right": [
+            "Table stats",
+            "Current queries",
+            "Background writer",
+            "Database stats"
+        ]
+    },
+    {
+        "q": "The ______ shows long running queries.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_stat_activity"
+        ],
+        "other_options": [
+            "pg_stat_statements",
+            "pg_locks",
+            "pg_processes"
+        ]
+    },
+    {
+        "q": "Which function terminates queries?",
+        "type": "mcq",
+        "o": [
+            "pg_cancel_backend()",
+            "pg_terminate_backend()",
+            "KILL",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT count(*) FROM pg_stat_activity WHERE state = 'active';",
+        "o": [
+            "Active query count",
+            "Error",
+            "0",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange performance monitoring:",
+        "type": "rearrange",
+        "words": [
+            "Enable statistics",
+            "Collect data",
+            "Analyze patterns",
+            "Identify issues",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "Match the lock types:",
+        "type": "match",
+        "left": [
+            "AccessShare",
+            "RowShare",
+            "RowExclusive",
+            "AccessExclusive"
+        ],
+        "right": [
+            "SELECT",
+            "SELECT FOR",
+            "UPDATE/DELETE",
+            "ALTER/DROP"
+        ]
+    },
+    {
+        "q": "The ______ view shows current locks.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_locks"
+        ],
+        "other_options": [
+            "pg_stat_locks",
+            "v$lock",
+            "sys.locks"
+        ]
+    },
+    {
+        "q": "Which function detects deadlocks?",
+        "type": "mcq",
+        "o": [
+            "pg_blocking_pids()",
+            "DEADLOCK_CHECK()",
+            "DETECT_DEADLOCK()",
+            "Automatic detection"
+        ]
+    },
+    {
+        "q": "Lock timeouts prevent indefinite waits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the timeout settings:",
+        "type": "match",
+        "left": [
+            "lock_timeout",
+            "statement_timeout",
+            "idle_in_transaction_timeout",
+            "deadlock_timeout"
+        ],
+        "right": [
+            "Lock wait",
+            "Query limit",
+            "Idle limit",
+            "Deadlock check"
+        ]
+    },
+    {
+        "q": "The ______ detects blocking relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_blocking_pids"
+        ],
+        "other_options": [
+            "pg_locks",
+            "pg_blocked",
+            "pg_waiters"
+        ]
+    },
+    {
+        "q": "Which setting controls query timeout?",
+        "type": "mcq",
+        "o": [
+            "statement_timeout",
+            "query_timeout",
+            "max_execution_time",
+            "Database specific"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SET lock_timeout = '5s'; SELECT 'done';",
+        "o": [
+            "done",
+            "5s",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange lock troubleshooting:",
+        "type": "rearrange",
+        "words": [
+            "Identify blocked",
+            "Find blocker",
+            "Analyze cause",
+            "Resolve",
+            "Prevent"
+        ]
+    },
+    {
+        "q": "Match the advisory locks:",
+        "type": "match",
+        "left": [
+            "pg_advisory_lock",
+            "pg_advisory_xact_lock",
+            "pg_try_advisory_lock",
+            "pg_advisory_unlock"
+        ],
+        "right": [
+            "Session lock",
+            "Transaction lock",
+            "Non-blocking lock",
+            "Release lock"
+        ]
+    },
+    {
+        "q": "The ______ provides application-level locking.",
+        "type": "fill_blank",
+        "answers": [
+            "advisory lock"
+        ],
+        "other_options": [
+            "app lock",
+            "user lock",
+            "custom lock"
+        ]
+    },
+    {
+        "q": "Which feature enables full-text search?",
+        "type": "mcq",
+        "o": [
+            "tsvector",
+            "FULLTEXT INDEX",
+            "TEXT INDEX",
+            "Database specific"
+        ]
+    },
+    {
+        "q": "tsvector stores searchable tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the text search types:",
+        "type": "match",
+        "left": [
+            "tsvector",
+            "tsquery",
+            "ts_rank",
+            "ts_headline"
+        ],
+        "right": [
+            "Document tokens",
+            "Search query",
+            "Result ranking",
+            "Highlighted matches"
+        ]
+    },
+    {
+        "q": "The ______ converts text to tokens.",
+        "type": "fill_blank",
+        "answers": [
+            "to_tsvector"
+        ],
+        "other_options": [
+            "tokenize",
+            "parse_text",
+            "text_to_vector"
+        ]
+    },
+    {
+        "q": "Which operator performs text search?",
+        "type": "mcq",
+        "o": [
+            "@@",
+            "MATCH",
+            "CONTAINS",
+            "Database specific"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT to_tsvector('simple', 'Hello World') @@ to_tsquery('simple', 'hello');",
+        "o": [
+            "true",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange text search setup:",
+        "type": "rearrange",
+        "words": [
+            "Create column",
+            "Add GIN index",
+            "Configure dictionary",
+            "Build queries"
+        ]
+    },
+    {
+        "q": "Match the search configurations:",
+        "type": "match",
+        "left": [
+            "simple",
+            "english",
+            "pg_catalog.simple",
+            "custom"
+        ],
+        "right": [
+            "No stemming",
+            "English stemmer",
+            "System simple",
+            "User defined"
+        ]
+    },
+    {
+        "q": "The ______ ranks search results.",
+        "type": "fill_blank",
+        "answers": [
+            "ts_rank"
+        ],
+        "other_options": [
+            "rank",
+            "score",
+            "relevance"
+        ]
+    },
+    {
+        "q": "Which function highlights matches?",
+        "type": "mcq",
+        "o": [
+            "ts_headline()",
+            "highlight()",
+            "mark()",
+            "snippet()"
+        ]
+    },
+    {
+        "q": "GIN indexes speed up text search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the search operators:",
+        "type": "match",
+        "left": [
+            "&",
+            "|",
+            "!",
+            "<->"
+        ],
+        "right": [
+            "AND",
+            "OR",
+            "NOT",
+            "Followed by"
+        ]
+    },
+    {
+        "q": "The ______ finds nearby words.",
+        "type": "fill_blank",
+        "answers": [
+            "<->"
+        ],
+        "other_options": [
+            "NEAR",
+            "ADJACENT",
+            "FOLLOW"
+        ]
+    },
+    {
+        "q": "Which function generates query?",
+        "type": "mcq",
+        "o": [
+            "to_tsquery()",
+            "plainto_tsquery()",
+            "phraseto_tsquery()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT phraseto_tsquery('english', 'quick brown fox');",
+        "o": [
+            "'quick' <-> 'brown' <-> 'fox'",
+            "'quick' & 'brown' & 'fox'",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange search optimization:",
+        "type": "rearrange",
+        "words": [
+            "Analyze queries",
+            "Create indexes",
+            "Tune configuration",
+            "Test performance"
+        ]
+    },
+    {
+        "q": "Match the query functions:",
+        "type": "match",
+        "left": [
+            "to_tsquery",
+            "plainto_tsquery",
+            "phraseto_tsquery",
+            "websearch_to_tsquery"
+        ],
+        "right": [
+            "Manual operators",
+            "Simple words",
+            "Phrase match",
+            "Web-style"
+        ]
+    },
+    {
+        "q": "The ______ supports web-style queries.",
+        "type": "fill_blank",
+        "answers": [
+            "websearch_to_tsquery"
+        ],
+        "other_options": [
+            "web_query",
+            "google_query",
+            "search_query"
+        ]
+    },
+    {
+        "q": "Which extension provides trigrams?",
+        "type": "mcq",
+        "o": [
+            "pg_trgm",
+            "trigram",
+            "fuzzy_match",
+            "similarity"
+        ]
+    },
+    {
+        "q": "Trigrams enable fuzzy matching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the similarity functions:",
+        "type": "match",
+        "left": [
+            "similarity()",
+            "word_similarity()",
+            "strict_word_similarity()",
+            "show_trgm()"
+        ],
+        "right": [
+            "String match",
+            "Word match",
+            "Strict match",
+            "Show trigrams"
+        ]
+    },
+    {
+        "q": "The ______ shows string similarity.",
+        "type": "fill_blank",
+        "answers": [
+            "similarity"
+        ],
+        "other_options": [
+            "match",
+            "compare",
+            "distance"
+        ]
+    },
+    {
+        "q": "Which operator uses similarity threshold?",
+        "type": "mcq",
+        "o": [
+            "%",
+            "~",
+            "LIKE",
+            "ILIKE"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT similarity('hello', 'helo');",
+        "o": [
+            "High value (close to 1)",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange fuzzy search setup:",
+        "type": "rearrange",
+        "words": [
+            "Create extension",
+            "Add GIN index",
+            "Set threshold",
+            "Query with operator"
+        ]
+    },
+    {
+        "q": "Match the distance functions:",
+        "type": "match",
+        "left": [
+            "levenshtein()",
+            "soundex()",
+            "metaphone()",
+            "difference()"
+        ],
+        "right": [
+            "Edit distance",
+            "Sound code",
+            "Phonetic code",
+            "Soundex compare"
+        ]
+    },
+    {
+        "q": "Which replication type is synchronous?",
+        "type": "mcq",
+        "o": [
+            "Synchronous replication",
+            "Asynchronous replication",
+            "Streaming replication",
+            "Logical replication"
+        ]
+    },
+    {
+        "q": "Master-slave replication provides read scaling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the replication types:",
+        "type": "match",
+        "left": [
+            "Synchronous",
+            "Asynchronous",
+            "Streaming",
+            "Logical"
+        ],
+        "right": [
+            "Wait for commit",
+            "No wait",
+            "WAL streaming",
+            "Row-level changes"
+        ]
+    },
+    {
+        "q": "The ______ records all database changes.",
+        "type": "fill_blank",
+        "answers": [
+            "WAL"
+        ],
+        "other_options": [
+            "LOG",
+            "REDO",
+            "JOURNAL"
+        ]
+    },
+    {
+        "q": "Which component manages failover?",
+        "type": "mcq",
+        "o": [
+            "Connection pooler",
+            "Load balancer",
+            "Failover manager",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT pg_is_in_recovery();",
+        "o": [
+            "true/false",
+            "Error",
+            "recovery",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange replication setup:",
+        "type": "rearrange",
+        "words": [
+            "Configure primary",
+            "Create replica",
+            "Start streaming",
+            "Verify sync"
+        ]
+    },
+    {
+        "q": "Match the PostgreSQL replication settings:",
+        "type": "match",
+        "left": [
+            "wal_level",
+            "max_wal_senders",
+            "hot_standby",
+            "primary_conninfo"
+        ],
+        "right": [
+            "WAL detail",
+            "Connection limit",
+            "Read queries",
+            "Connection string"
+        ]
+    },
+    {
+        "q": "The ______ enables read queries on replicas.",
+        "type": "fill_blank",
+        "answers": [
+            "hot_standby"
+        ],
+        "other_options": [
+            "read_replica",
+            "standby",
+            "secondary"
+        ]
+    },
+    {
+        "q": "Which slot prevents WAL removal?",
+        "type": "mcq",
+        "o": [
+            "Replication slot",
+            "WAL slot",
+            "Log slot",
+            "Archive slot"
+        ]
+    },
+    {
+        "q": "Logical replication supports selective tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sharding strategies:",
+        "type": "match",
+        "left": [
+            "Range",
+            "Hash",
+            "List",
+            "Composite"
+        ],
+        "right": [
+            "Value ranges",
+            "Hash function",
+            "Value list",
+            "Multiple keys"
+        ]
+    },
+    {
+        "q": "The ______ distributes data across nodes.",
+        "type": "fill_blank",
+        "answers": [
+            "sharding"
+        ],
+        "other_options": [
+            "partitioning",
+            "clustering",
+            "splitting"
+        ]
+    },
+    {
+        "q": "Which key determines shard location?",
+        "type": "mcq",
+        "o": [
+            "Shard key",
+            "Partition key",
+            "Distribution key",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT citus_version();",
+        "o": [
+            "Citus version",
+            "Error if not Citus",
+            "citus",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange sharding implementation:",
+        "type": "rearrange",
+        "words": [
+            "Choose shard key",
+            "Configure nodes",
+            "Distribute data",
+            "Route queries"
+        ]
+    },
+    {
+        "q": "Match the distributed database features:",
+        "type": "match",
+        "left": [
+            "Coordinator",
+            "Worker",
+            "Shard",
+            "Colocation"
+        ],
+        "right": [
+            "Query routing",
+            "Data storage",
+            "Data partition",
+            "Join optimization"
+        ]
+    },
+    {
+        "q": "The ______ handles query routing.",
+        "type": "fill_blank",
+        "answers": [
+            "coordinator"
+        ],
+        "other_options": [
+            "router",
+            "proxy",
+            "dispatcher"
+        ]
+    },
+    {
+        "q": "Which query type is efficient in sharding?",
+        "type": "mcq",
+        "o": [
+            "Point query on shard key",
+            "Cross-shard join",
+            "Global aggregation",
+            "Full scan"
+        ]
+    },
+    {
+        "q": "Cross-shard queries need coordination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the connection pooling modes:",
+        "type": "match",
+        "left": [
+            "Session",
+            "Transaction",
+            "Statement",
+            "Direct"
+        ],
+        "right": [
+            "Per connection",
+            "Per transaction",
+            "Per statement",
+            "No pooling"
+        ]
+    },
+    {
+        "q": "The ______ reduces connection overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "connection pooling"
+        ],
+        "other_options": [
+            "caching",
+            "multiplexing",
+            "batching"
+        ]
+    },
+    {
+        "q": "Which pooler is commonly used?",
+        "type": "mcq",
+        "o": [
+            "PgBouncer",
+            "pgpool-II",
+            "Odyssey",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SHOW pool_mode;",
+        "o": [
+            "Pool mode setting",
+            "Error",
+            "mode",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange connection optimization:",
+        "type": "rearrange",
+        "words": [
+            "Analyze connections",
+            "Configure pooler",
+            "Set limits",
+            "Monitor usage"
+        ]
+    },
+    {
+        "q": "Match the data warehouse concepts:",
+        "type": "match",
+        "left": [
+            "Fact table",
+            "Dimension table",
+            "Star schema",
+            "Snowflake schema"
+        ],
+        "right": [
+            "Measures",
+            "Descriptors",
+            "Single join",
+            "Normalized dims"
+        ]
+    },
+    {
+        "q": "The ______ contains measurable data.",
+        "type": "fill_blank",
+        "answers": [
+            "fact table"
+        ],
+        "other_options": [
+            "measure table",
+            "metric table",
+            "data table"
+        ]
+    },
+    {
+        "q": "Which schema is denormalized?",
+        "type": "mcq",
+        "o": [
+            "Star schema",
+            "Snowflake schema",
+            "Galaxy schema",
+            "Both A and C"
+        ]
+    },
+    {
+        "q": "Dimension tables describe attributes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ETL components:",
+        "type": "match",
+        "left": [
+            "Extract",
+            "Transform",
+            "Load",
+            "Orchestrate"
+        ],
+        "right": [
+            "Read data",
+            "Process data",
+            "Write data",
+            "Schedule jobs"
+        ]
+    },
+    {
+        "q": "The ______ merges dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "SCD"
+        ],
+        "other_options": [
+            "CDC",
+            "DWH",
+            "ETL"
+        ]
+    },
+    {
+        "q": "Which SCD type overwrites history?",
+        "type": "mcq",
+        "o": [
+            "Type 1",
+            "Type 2",
+            "Type 3",
+            "Type 4"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT DATE_TRUNC('month', CURRENT_DATE);",
+        "o": [
+            "First day of month",
+            "CURRENT_DATE",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange data warehouse loading:",
+        "type": "rearrange",
+        "words": [
+            "Extract sources",
+            "Stage data",
+            "Transform",
+            "Load facts",
+            "Load dimensions"
+        ]
+    },
+    {
+        "q": "Match the OLAP operations:",
+        "type": "match",
+        "left": [
+            "Roll-up",
+            "Drill-down",
+            "Slice",
+            "Dice"
+        ],
+        "right": [
+            "Aggregate",
+            "Detail view",
+            "One dimension",
+            "Multiple dimensions"
+        ]
+    },
+    {
+        "q": "The ______ analyzes data cubes.",
+        "type": "fill_blank",
+        "answers": [
+            "OLAP"
+        ],
+        "other_options": [
+            "OLTP",
+            "ANALYSIS",
+            "CUBE"
+        ]
+    },
+    {
+        "q": "Which operation adds detail?",
+        "type": "mcq",
+        "o": [
+            "Drill-down",
+            "Roll-up",
+            "Slice",
+            "Pivot"
+        ]
+    },
+    {
+        "q": "OLTP optimizes transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the data modeling approaches:",
+        "type": "match",
+        "left": [
+            "Inmon",
+            "Kimball",
+            "Data Vault",
+            "Anchor"
+        ],
+        "right": [
+            "Enterprise first",
+            "Dimensional",
+            "Hub-link-satellite",
+            "Anchor entities"
+        ]
+    },
+    {
+        "q": "The ______ methodology uses hubs.",
+        "type": "fill_blank",
+        "answers": [
+            "Data Vault"
+        ],
+        "other_options": [
+            "Inmon",
+            "Kimball",
+            "Star"
+        ]
+    },
+    {
+        "q": "Which component stores relationships?",
+        "type": "mcq",
+        "o": [
+            "Link",
+            "Hub",
+            "Satellite",
+            "Bridge"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT GENERATE_SERIES(1, 5);",
+        "o": [
+            "1,2,3,4,5",
+            "5",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange data vault modeling:",
+        "type": "rearrange",
+        "words": [
+            "Identify hubs",
+            "Create links",
+            "Add satellites",
+            "Load data"
+        ]
+    },
+    {
+        "q": "Match the data lake components:",
+        "type": "match",
+        "left": [
+            "Raw zone",
+            "Curated zone",
+            "Consumption zone",
+            "Sandbox"
+        ],
+        "right": [
+            "Original data",
+            "Cleaned data",
+            "Analytics ready",
+            "Experimentation"
+        ]
+    },
+    {
+        "q": "The ______ stores raw data.",
+        "type": "fill_blank",
+        "answers": [
+            "data lake"
+        ],
+        "other_options": [
+            "warehouse",
+            "mart",
+            "pond"
+        ]
+    },
+    {
+        "q": "Which format is columnar?",
+        "type": "mcq",
+        "o": [
+            "Parquet",
+            "ORC",
+            "Avro",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Parquet supports predicate pushdown.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the file formats:",
+        "type": "match",
+        "left": [
+            "Parquet",
+            "ORC",
+            "Avro",
+            "JSON"
+        ],
+        "right": [
+            "Columnar Apache",
+            "Columnar Hive",
+            "Row-based schema",
+            "Human readable"
+        ]
+    },
+    {
+        "q": "The ______ combineswarehouse and lake.",
+        "type": "fill_blank",
+        "answers": [
+            "lakehouse"
+        ],
+        "other_options": [
+            "hybrid",
+            "combined",
+            "unified"
+        ]
+    },
+    {
+        "q": "Which technology enables lakehouse?",
+        "type": "mcq",
+        "o": [
+            "Delta Lake",
+            "Apache Iceberg",
+            "Apache Hudi",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT version() LIKE '%PostgreSQL%';",
+        "o": [
+            "true for PostgreSQL",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange lakehouse architecture:",
+        "type": "rearrange",
+        "words": [
+            "Ingest data",
+            "Store in lake",
+            "Apply structure",
+            "Enable queries"
+        ]
+    },
+    {
+        "q": "Match the transaction features:",
+        "type": "match",
+        "left": [
+            "ACID",
+            "Time travel",
+            "Schema evolution",
+            "Upsert"
+        ],
+        "right": [
+            "Reliability",
+            "Historical queries",
+            "Schema changes",
+            "Insert or update"
+        ]
+    },
+    {
+        "q": "The ______ supports versioned data.",
+        "type": "fill_blank",
+        "answers": [
+            "time travel"
+        ],
+        "other_options": [
+            "versioning",
+            "history",
+            "snapshot"
+        ]
+    },
+    {
+        "q": "Which feature handles updates?",
+        "type": "mcq",
+        "o": [
+            "MERGE",
+            "UPSERT",
+            "Delta operations",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Iceberg supports hidden partitioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the query acceleration:",
+        "type": "match",
+        "left": [
+            "Materialized view",
+            "Result cache",
+            "Index",
+            "Aggregation cache"
+        ],
+        "right": [
+            "Precomputed query",
+            "Stored result",
+            "Fast lookup",
+            "Cached aggregates"
+        ]
+    },
+    {
+        "q": "The ______ precomputes query results.",
+        "type": "fill_blank",
+        "answers": [
+            "materialized view"
+        ],
+        "other_options": [
+            "cache",
+            "index",
+            "view"
+        ]
+    },
+    {
+        "q": "Which refresh type is incremental?",
+        "type": "mcq",
+        "o": [
+            "Incremental refresh",
+            "Complete refresh",
+            "Fast refresh",
+            "Both A and C"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "REFRESH MATERIALIZED VIEW CONCURRENTLY mv;",
+        "o": [
+            "Refreshes without lock",
+            "Error",
+            "view",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange materialized view strategy:",
+        "type": "rearrange",
+        "words": [
+            "Identify slow queries",
+            "Create materialized view",
+            "Schedule refresh",
+            "Monitor performance"
+        ]
+    },
+    {
+        "q": "Match the backup strategies:",
+        "type": "match",
+        "left": [
+            "Full backup",
+            "Incremental",
+            "Differential",
+            "Point-in-time"
+        ],
+        "right": [
+            "Complete copy",
+            "Changes since last",
+            "Changes since full",
+            "Any point recovery"
+        ]
+    },
+    {
+        "q": "The ______ enables point-in-time recovery.",
+        "type": "fill_blank",
+        "answers": [
+            "PITR"
+        ],
+        "other_options": [
+            "WAL",
+            "BACKUP",
+            "RESTORE"
+        ]
+    },
+    {
+        "q": "Which tool performs PostgreSQL backup?",
+        "type": "mcq",
+        "o": [
+            "pg_dump",
+            "pg_basebackup",
+            "pgBackRest",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "WAL archiving supports PITR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the recovery options:",
+        "type": "match",
+        "left": [
+            "recovery_target_time",
+            "recovery_target_xid",
+            "recovery_target_name",
+            "recovery_target_lsn"
+        ],
+        "right": [
+            "Time point",
+            "Transaction ID",
+            "Named restore point",
+            "Log position"
+        ]
+    },
+    {
+        "q": "The ______ creates restore points.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_create_restore_point"
+        ],
+        "other_options": [
+            "create_restore",
+            "savepoint",
+            "checkpoint"
+        ]
+    },
+    {
+        "q": "Which setting archives WAL?",
+        "type": "mcq",
+        "o": [
+            "archive_command",
+            "archive_mode",
+            "wal_level",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT pg_create_restore_point('before_migration');",
+        "o": [
+            "LSN value",
+            "before_migration",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange backup strategy:",
+        "type": "rearrange",
+        "words": [
+            "Configure archiving",
+            "Schedule backups",
+            "Test recovery",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "Match the security features:",
+        "type": "match",
+        "left": [
+            "SSL/TLS",
+            "Encryption at rest",
+            "Row-level security",
+            "Column-level"
+        ],
+        "right": [
+            "Transit security",
+            "Storage security",
+            "Row access",
+            "Column access"
+        ]
+    },
+    {
+        "q": "The ______ encrypts data in transit.",
+        "type": "fill_blank",
+        "answers": [
+            "SSL"
+        ],
+        "other_options": [
+            "TLS",
+            "HTTPS",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "Which feature masks sensitive data?",
+        "type": "mcq",
+        "o": [
+            "Dynamic data masking",
+            "Column encryption",
+            "Row filtering",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "TDE encrypts at storage level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the authentication methods:",
+        "type": "match",
+        "left": [
+            "md5",
+            "scram-sha-256",
+            "ldap",
+            "certificate"
+        ],
+        "right": [
+            "MD5 hash",
+            "Modern SCRAM",
+            "Directory service",
+            "Client cert"
+        ]
+    },
+    {
+        "q": "The ______ controls client authentication.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_hba.conf"
+        ],
+        "other_options": [
+            "postgresql.conf",
+            "auth.conf",
+            "access.conf"
+        ]
+    },
+    {
+        "q": "Which extension provides auditing?",
+        "type": "mcq",
+        "o": [
+            "pgAudit",
+            "pg_stat_statements",
+            "log_statement",
+            "Both A and C"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT ssl_is_used();",
+        "o": [
+            "true/false",
+            "Error",
+            "ssl",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange security hardening:",
+        "type": "rearrange",
+        "words": [
+            "Enable SSL",
+            "Configure auth",
+            "Set permissions",
+            "Enable audit",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "Match the monitoring tools:",
+        "type": "match",
+        "left": [
+            "pg_stat_statements",
+            "auto_explain",
+            "pg_stat_monitor",
+            "pgBadger"
+        ],
+        "right": [
+            "Query stats",
+            "Auto plans",
+            "Extended stats",
+            "Log analyzer"
+        ]
+    },
+    {
+        "q": "The ______ tracks slow queries.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_stat_statements"
+        ],
+        "other_options": [
+            "slow_query_log",
+            "query_monitor",
+            "stat_queries"
+        ]
+    },
+    {
+        "q": "Which tool analyzes log files?",
+        "type": "mcq",
+        "o": [
+            "pgBadger",
+            "pg_stat_statements",
+            "auto_explain",
+            "EXPLAIN ANALYZE"
+        ]
+    },
+    {
+        "q": "auto_explain logs execution plans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the log settings:",
+        "type": "match",
+        "left": [
+            "log_min_duration_statement",
+            "log_statement",
+            "log_line_prefix",
+            "log_connections"
+        ],
+        "right": [
+            "Slow query threshold",
+            "Statement types",
+            "Log format",
+            "Connection logging"
+        ]
+    },
+    {
+        "q": "The ______ sets slow query threshold.",
+        "type": "fill_blank",
+        "answers": [
+            "log_min_duration_statement"
+        ],
+        "other_options": [
+            "slow_query_log",
+            "query_timeout",
+            "min_query_time"
+        ]
+    },
+    {
+        "q": "Which metric indicates bloat?",
+        "type": "mcq",
+        "o": [
+            "Dead tuples",
+            "Table size growth",
+            "Index bloat",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT n_dead_tup FROM pg_stat_user_tables WHERE relname = 't';",
+        "o": [
+            "Dead tuple count",
+            "Error",
+            "t",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange performance analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect metrics",
+            "Identify issues",
+            "Analyze queries",
+            "Optimize",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "Match the maintenance operations:",
+        "type": "match",
+        "left": [
+            "VACUUM",
+            "ANALYZE",
+            "REINDEX",
+            "CLUSTER"
+        ],
+        "right": [
+            "Reclaim space",
+            "Update stats",
+            "Rebuild index",
+            "Reorganize table"
+        ]
+    },
+    {
+        "q": "The ______ reclaims dead tuple space.",
+        "type": "fill_blank",
+        "answers": [
+            "VACUUM"
+        ],
+        "other_options": [
+            "CLEAN",
+            "RECLAIM",
+            "PURGE"
+        ]
+    },
+    {
+        "q": "Which operation rebuilds indexes?",
+        "type": "mcq",
+        "o": [
+            "REINDEX",
+            "REBUILD",
+            "RECREATE",
+            "REFRESH"
+        ]
+    },
+    {
+        "q": "Autovacuum runs automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the vacuum types:",
+        "type": "match",
+        "left": [
+            "VACUUM",
+            "VACUUM FULL",
+            "VACUUM ANALYZE",
+            "VACUUM FREEZE"
+        ],
+        "right": [
+            "Mark dead",
+            "Reclaim space",
+            "With stats",
+            "Freeze old txns"
+        ]
+    },
+    {
+        "q": "The ______ compacts table storage.",
+        "type": "fill_blank",
+        "answers": [
+            "VACUUM FULL"
+        ],
+        "other_options": [
+            "VACUUM",
+            "COMPACT",
+            "SHRINK"
+        ]
+    },
+    {
+        "q": "Which parameter tunes autovacuum?",
+        "type": "mcq",
+        "o": [
+            "autovacuum_vacuum_threshold",
+            "autovacuum_naptime",
+            "autovacuum_scale_factor",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "VACUUM ANALYZE t; SELECT 'done';",
+        "o": [
+            "done",
+            "VACUUM",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange maintenance schedule:",
+        "type": "rearrange",
+        "words": [
+            "Monitor bloat",
+            "Schedule VACUUM",
+            "Update statistics",
+            "Reindex",
+            "Verify"
+        ]
+    },
+    {
+        "q": "Match the extension categories:",
+        "type": "match",
+        "left": [
+            "PostGIS",
+            "TimescaleDB",
+            "pg_partman",
+            "Citus"
+        ],
+        "right": [
+            "Spatial",
+            "Time-series",
+            "Partitioning",
+            "Distributed"
+        ]
+    },
+    {
+        "q": "The ______ adds spatial support.",
+        "type": "fill_blank",
+        "answers": [
+            "PostGIS"
+        ],
+        "other_options": [
+            "GIS",
+            "spatial",
+            "geography"
+        ]
+    },
+    {
+        "q": "Which extension handles time-series?",
+        "type": "mcq",
+        "o": [
+            "TimescaleDB",
+            "pg_timeseries",
+            "temporal",
+            "timedb"
+        ]
+    },
+    {
+        "q": "Extensions require installation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the geometry types:",
+        "type": "match",
+        "left": [
+            "POINT",
+            "LINESTRING",
+            "POLYGON",
+            "MULTIPOLYGON"
+        ],
+        "right": [
+            "Single location",
+            "Path",
+            "Area",
+            "Multiple areas"
+        ]
+    },
+    {
+        "q": "The ______ calculates distance.",
+        "type": "fill_blank",
+        "answers": [
+            "ST_Distance"
+        ],
+        "other_options": [
+            "DISTANCE",
+            "CALC_DIST",
+            "GEO_DIST"
+        ]
+    },
+    {
+        "q": "Which function checks containment?",
+        "type": "mcq",
+        "o": [
+            "ST_Contains()",
+            "ST_Within()",
+            "ST_Intersects()",
+            "All can check containment"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT ST_Distance(ST_Point(0,0), ST_Point(1,1));",
+        "o": [
+            "1.414 approximately",
+            "2",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange spatial query:",
+        "type": "rearrange",
+        "words": [
+            "Create geometry",
+            "Build spatial index",
+            "Query relationships",
+            "Return results"
+        ]
+    },
+    {
+        "q": "Match the spatial operations:",
+        "type": "match",
+        "left": [
+            "ST_Buffer",
+            "ST_Union",
+            "ST_Intersection",
+            "ST_Difference"
+        ],
+        "right": [
+            "Create buffer",
+            "Combine",
+            "Common area",
+            "Subtract"
+        ]
+    },
+    {
+        "q": "The ______ creates buffer zones.",
+        "type": "fill_blank",
+        "answers": [
+            "ST_Buffer"
+        ],
+        "other_options": [
+            "BUFFER",
+            "ZONE",
+            "EXPAND"
+        ]
+    },
+    {
+        "q": "Which index type suits spatial?",
+        "type": "mcq",
+        "o": [
+            "GiST",
+            "SP-GiST",
+            "BRIN",
+            "All can work"
+        ]
+    },
+    {
+        "q": "BRIN works for sorted spatial data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the time-series features:",
+        "type": "match",
+        "left": [
+            "Hypertable",
+            "Chunk",
+            "Compression",
+            "Retention"
+        ],
+        "right": [
+            "Time-series table",
+            "Data partition",
+            "Size reduction",
+            "Data cleanup"
+        ]
+    },
+    {
+        "q": "The ______ partitions by time.",
+        "type": "fill_blank",
+        "answers": [
+            "hypertable"
+        ],
+        "other_options": [
+            "timetable",
+            "timeseries",
+            "temporal"
+        ]
+    },
+    {
+        "q": "Which function aggregates time buckets?",
+        "type": "mcq",
+        "o": [
+            "time_bucket()",
+            "date_trunc()",
+            "bucket()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT time_bucket('1 hour', now());",
+        "o": [
+            "Hour-truncated timestamp",
+            "now()",
+            "Error",
+            "1 hour"
+        ]
+    },
+    {
+        "q": "Rearrange time-series setup:",
+        "type": "rearrange",
+        "words": [
+            "Create table",
+            "Convert to hypertable",
+            "Configure chunks",
+            "Enable compression"
+        ]
+    },
+    {
+        "q": "Match the continuous aggregates:",
+        "type": "match",
+        "left": [
+            "Continuous aggregate",
+            "Real-time",
+            "Materialized",
+            "Refresh policy"
+        ],
+        "right": [
+            "Auto-updating",
+            "Include new data",
+            "Stored results",
+            "Update schedule"
+        ]
+    },
+    {
+        "q": "The ______ schedules aggregate refresh.",
+        "type": "fill_blank",
+        "answers": [
+            "refresh policy"
+        ],
+        "other_options": [
+            "schedule",
+            "cron",
+            "job"
+        ]
+    },
+    {
+        "q": "Which feature removes old data?",
+        "type": "mcq",
+        "o": [
+            "Retention policy",
+            "TTL",
+            "Auto-expire",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Compression reduces storage cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the data lifecycle:",
+        "type": "match",
+        "left": [
+            "Hot",
+            "Warm",
+            "Cold",
+            "Archive"
+        ],
+        "right": [
+            "Recent data",
+            "Aging data",
+            "Old data",
+            "Long-term"
+        ]
+    },
+    {
+        "q": "The ______ moves data between tiers.",
+        "type": "fill_blank",
+        "answers": [
+            "tiering"
+        ],
+        "other_options": [
+            "migration",
+            "movement",
+            "transfer"
+        ]
+    },
+    {
+        "q": "Which approach handles large objects?",
+        "type": "mcq",
+        "o": [
+            "TOAST",
+            "LOB",
+            "External storage",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT pg_column_size(repeat('x', 1000));",
+        "o": [
+            "Column size in bytes",
+            "1000",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange storage optimization:",
+        "type": "rearrange",
+        "words": [
+            "Analyze usage",
+            "Configure compression",
+            "Set retention",
+            "Monitor growth"
+        ]
+    },
+    {
+        "q": "Match the pg_ functions:",
+        "type": "match",
+        "left": [
+            "pg_size_pretty",
+            "pg_relation_size",
+            "pg_indexes_size",
+            "pg_tablespace_size"
+        ],
+        "right": [
+            "Human readable",
+            "Table size",
+            "Index size",
+            "Tablespace size"
+        ]
+    },
+    {
+        "q": "The ______ formats byte sizes.",
+        "type": "fill_blank",
+        "answers": [
+            "pg_size_pretty"
+        ],
+        "other_options": [
+            "format_bytes",
+            "pretty_size",
+            "human_size"
+        ]
+    },
+    {
+        "q": "Which function returns table size?",
+        "type": "mcq",
+        "o": [
+            "pg_table_size()",
+            "pg_relation_size()",
+            "pg_total_relation_size()",
+            "All measure size"
+        ]
+    },
+    {
+        "q": "Tablespaces organize storage location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the configuration contexts:",
+        "type": "match",
+        "left": [
+            "internal",
+            "postmaster",
+            "sighup",
+            "user"
+        ],
+        "right": [
+            "Cannot change",
+            "Restart needed",
+            "Reload needed",
+            "Per session"
+        ]
+    },
+    {
+        "q": "The ______ requires server restart.",
+        "type": "fill_blank",
+        "answers": [
+            "postmaster"
+        ],
+        "other_options": [
+            "restart",
+            "system",
+            "global"
+        ]
+    },
+    {
+        "q": "Which command reloads config?",
+        "type": "mcq",
+        "o": [
+            "pg_reload_conf()",
+            "SELECT pg_reload_conf()",
+            "SIGHUP signal",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT name, setting FROM pg_settings WHERE name = 'work_mem';",
+        "o": [
+            "work_mem setting",
+            "Error",
+            "work_mem",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange configuration tuning:",
+        "type": "rearrange",
+        "words": [
+            "Identify parameter",
+            "Check context",
+            "Modify setting",
+            "Apply change",
+            "Verify"
+        ]
+    },
+    {
+        "q": "Match the memory parameters:",
+        "type": "match",
+        "left": [
+            "shared_buffers",
+            "work_mem",
+            "maintenance_work_mem",
+            "effective_cache_size"
+        ],
+        "right": [
+            "Shared cache",
+            "Query memory",
+            "Maintenance memory",
+            "Planner estimate"
+        ]
+    },
+    {
+        "q": "The ______ sets per-operation memory.",
+        "type": "fill_blank",
+        "answers": [
+            "work_mem"
+        ],
+        "other_options": [
+            "memory",
+            "query_mem",
+            "op_mem"
+        ]
+    },
+    {
+        "q": "Which parameter affects planner?",
+        "type": "mcq",
+        "o": [
+            "effective_cache_size",
+            "random_page_cost",
+            "cpu_tuple_cost",
+            "All affect planner"
+        ]
+    },
+    {
+        "q": "Higher shared_buffers needs more RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the WAL parameters:",
+        "type": "match",
+        "left": [
+            "wal_level",
+            "max_wal_size",
+            "checkpoint_timeout",
+            "wal_compression"
+        ],
+        "right": [
+            "Detail level",
+            "Size limit",
+            "Time limit",
+            "Compress WAL"
+        ]
+    },
+    {
+        "q": "The ______ controls checkpoint frequency.",
+        "type": "fill_blank",
+        "answers": [
+            "checkpoint_timeout"
+        ],
+        "other_options": [
+            "wal_timeout",
+            "checkpoint_time",
+            "wal_checkpoint"
+        ]
+    },
+    {
+        "q": "Which level enables replication?",
+        "type": "mcq",
+        "o": [
+            "replica",
+            "logical",
+            "minimal",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT current_setting('wal_level');",
+        "o": [
+            "Current WAL level",
+            "Error",
+            "wal_level",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange WAL configuration:",
+        "type": "rearrange",
+        "words": [
+            "Set wal_level",
+            "Configure size",
+            "Set checkpoint",
+            "Enable archiving"
+        ]
+    },
+    {
+        "q": "Which function generates UUIDs?",
+        "type": "mcq",
+        "o": [
+            "gen_random_uuid()",
+            "uuid_generate_v4()",
+            "NEWID()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "UUID provides unique identifiers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the UUID versions:",
+        "type": "match",
+        "left": [
+            "v1",
+            "v4",
+            "v5",
+            "v7"
+        ],
+        "right": [
+            "Time-based",
+            "Random",
+            "Name-based",
+            "Time-ordered"
+        ]
+    },
+    {
+        "q": "The ______ type stores UUIDs.",
+        "type": "fill_blank",
+        "answers": [
+            "uuid"
+        ],
+        "other_options": [
+            "guid",
+            "uniqueid",
+            "id"
+        ]
+    },
+    {
+        "q": "Which extension provides UUIDs?",
+        "type": "mcq",
+        "o": [
+            "uuid-ossp",
+            "pgcrypto",
+            "Built-in",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT gen_random_uuid()::text LIKE '%-%';",
+        "o": [
+            "true",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange UUID usage:",
+        "type": "rearrange",
+        "words": [
+            "Create extension",
+            "Generate UUID",
+            "Store in column",
+            "Use as key"
+        ]
+    },
+    {
+        "q": "Match the data types:",
+        "type": "match",
+        "left": [
+            "UUID",
+            "SERIAL",
+            "BIGSERIAL",
+            "IDENTITY"
+        ],
+        "right": [
+            "Universal ID",
+            "Auto integer",
+            "Auto big int",
+            "SQL standard"
+        ]
+    },
+    {
+        "q": "The ______ creates auto-increment columns.",
+        "type": "fill_blank",
+        "answers": [
+            "SERIAL"
+        ],
+        "other_options": [
+            "AUTO",
+            "IDENTITY",
+            "SEQUENCE"
+        ]
+    },
+    {
+        "q": "Which aggregate ignores NULLs?",
+        "type": "mcq",
+        "o": [
+            "Most aggregates",
+            "COUNT(*)",
+            "Neither",
+            "Depends on setting"
+        ]
+    },
+    {
+        "q": "COUNT(*) includes NULL rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the NULL handling:",
+        "type": "match",
+        "left": [
+            "IS NULL",
+            "IS NOT NULL",
+            "COALESCE",
+            "NULLIF"
+        ],
+        "right": [
+            "Check null",
+            "Check not null",
+            "Replace null",
+            "Return null if equal"
+        ]
+    },
+    {
+        "q": "The ______ checks for NULL.",
+        "type": "fill_blank",
+        "answers": [
+            "IS NULL"
+        ],
+        "other_options": [
+            "= NULL",
+            "NULL()",
+            "ISNULL"
+        ]
+    },
+    {
+        "q": "Which operator compares with NULL?",
+        "type": "mcq",
+        "o": [
+            "IS DISTINCT FROM",
+            "=",
+            "<>",
+            "!="
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT NULL = NULL;",
+        "o": [
+            "NULL",
+            "TRUE",
+            "FALSE",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange NULL-safe comparison:",
+        "type": "rearrange",
+        "words": [
+            "Check column",
+            "Use IS DISTINCT FROM",
+            "Compare values",
+            "Handle result"
+        ]
+    },
+    {
+        "q": "Match the boolean operators:",
+        "type": "match",
+        "left": [
+            "AND",
+            "OR",
+            "NOT",
+            "XOR"
+        ],
+        "right": [
+            "Both true",
+            "Either true",
+            "Negate",
+            "Exclusive or"
+        ]
+    },
+    {
+        "q": "The ______ returns true if different.",
+        "type": "fill_blank",
+        "answers": [
+            "IS DISTINCT FROM"
+        ],
+        "other_options": [
+            "<>",
+            "!=",
+            "NOT EQUALS"
+        ]
+    },
+    {
+        "q": "Which clause filters rows?",
+        "type": "mcq",
+        "o": [
+            "WHERE",
+            "HAVING",
+            "FILTER",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "WHERE filters before grouping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the clause order:",
+        "type": "match",
+        "left": [
+            "FROM",
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY"
+        ],
+        "right": [
+            "Source tables",
+            "Row filter",
+            "Grouping",
+            "Result order"
+        ]
+    },
+    {
+        "q": "The ______ limits result rows.",
+        "type": "fill_blank",
+        "answers": [
+            "LIMIT"
+        ],
+        "other_options": [
+            "TOP",
+            "ROWNUM",
+            "FETCH"
+        ]
+    },
+    {
+        "q": "Which keyword skips rows?",
+        "type": "mcq",
+        "o": [
+            "OFFSET",
+            "SKIP",
+            "BYPASS",
+            "IGNORE"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT 1 LIMIT 1 OFFSET 1;",
+        "o": [
+            "No rows",
+            "1",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange pagination query:",
+        "type": "rearrange",
+        "words": [
+            "SELECT columns",
+            "FROM table",
+            "ORDER BY key",
+            "LIMIT count",
+            "OFFSET skip"
+        ]
+    },
+    {
+        "q": "Match the pagination methods:",
+        "type": "match",
+        "left": [
+            "OFFSET",
+            "Keyset",
+            "Cursor",
+            "Scrollable"
+        ],
+        "right": [
+            "Simple skip",
+            "Where clause",
+            "Server state",
+            "Two-way cursor"
+        ]
+    },
+    {
+        "q": "The ______ pagination avoids offset.",
+        "type": "fill_blank",
+        "answers": [
+            "keyset"
+        ],
+        "other_options": [
+            "cursor",
+            "seek",
+            "window"
+        ]
+    },
+    {
+        "q": "Which pagination is most efficient?",
+        "type": "mcq",
+        "o": [
+            "Keyset",
+            "Offset",
+            "Subquery",
+            "Temporary table"
+        ]
+    },
+    {
+        "q": "OFFSET performance degrades with large values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ordering options:",
+        "type": "match",
+        "left": [
+            "ASC",
+            "DESC",
+            "NULLS FIRST",
+            "NULLS LAST"
+        ],
+        "right": [
+            "Ascending",
+            "Descending",
+            "Nulls before",
+            "Nulls after"
+        ]
+    },
+    {
+        "q": "The ______ places NULLs at end.",
+        "type": "fill_blank",
+        "answers": [
+            "NULLS LAST"
+        ],
+        "other_options": [
+            "ORDER NULLS",
+            "NULL_LAST",
+            "END_NULLS"
+        ]
+    },
+    {
+        "q": "Which expression enables conditional ordering?",
+        "type": "mcq",
+        "o": [
+            "CASE in ORDER BY",
+            "ORDER BY IF",
+            "CONDITIONAL ORDER",
+            "DYNAMIC ORDER"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT * FROM (SELECT 1 as n UNION ALL SELECT 2) t ORDER BY n DESC LIMIT 1;",
+        "o": [
+            "2",
+            "1",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange complex ordering:",
+        "type": "rearrange",
+        "words": [
+            "Define columns",
+            "Add expressions",
+            "Set NULL handling",
+            "Specify direction"
+        ]
+    },
+    {
+        "q": "Match the comparison operators:",
+        "type": "match",
+        "left": [
+            "=",
+            "<>",
+            "BETWEEN",
+            "IN"
+        ],
+        "right": [
+            "Equal",
+            "Not equal",
+            "Range",
+            "List match"
+        ]
+    },
+    {
+        "q": "The ______ operator matches patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "LIKE"
+        ],
+        "other_options": [
+            "MATCH",
+            "PATTERN",
+            "REGEX"
+        ]
+    },
+    {
+        "q": "Which wildcard matches any characters?",
+        "type": "mcq",
+        "o": [
+            "%",
+            "_",
+            "*",
+            "?"
+        ]
+    },
+    {
+        "q": "ILIKE is case-insensitive LIKE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pattern wildcards:",
+        "type": "match",
+        "left": [
+            "%",
+            "_",
+            "[abc]",
+            "[^abc]"
+        ],
+        "right": [
+            "Any chars",
+            "Single char",
+            "Character class",
+            "Not in class"
+        ]
+    },
+    {
+        "q": "The ______ escapes special characters.",
+        "type": "fill_blank",
+        "answers": [
+            "ESCAPE"
+        ],
+        "other_options": [
+            "QUOTE",
+            "LITERAL",
+            "RAW"
+        ]
+    },
+    {
+        "q": "Which operator performs regex match?",
+        "type": "mcq",
+        "o": [
+            "~",
+            "REGEXP",
+            "RLIKE",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT 'hello' ~ '^h.*o$';",
+        "o": [
+            "true",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange LIKE optimization:",
+        "type": "rearrange",
+        "words": [
+            "Check pattern",
+            "Use prefix index",
+            "Anchor pattern",
+            "Test performance"
+        ]
+    },
+    {
+        "q": "Match the regex operators:",
+        "type": "match",
+        "left": [
+            "~",
+            "~*",
+            "!~",
+            "!~*"
+        ],
+        "right": [
+            "Case match",
+            "Case insensitive",
+            "Not match",
+            "Not match CI"
+        ]
+    },
+    {
+        "q": "The ______ extracts regex groups.",
+        "type": "fill_blank",
+        "answers": [
+            "REGEXP_MATCHES"
+        ],
+        "other_options": [
+            "REGEX_EXTRACT",
+            "MATCH_GROUPS",
+            "CAPTURE"
+        ]
+    },
+    {
+        "q": "Which function replaces regex?",
+        "type": "mcq",
+        "o": [
+            "REGEXP_REPLACE()",
+            "REPLACE()",
+            "REGEX_SUB()",
+            "SUB()"
+        ]
+    },
+    {
+        "q": "POSIX regex is more powerful than LIKE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the regex functions:",
+        "type": "match",
+        "left": [
+            "REGEXP_REPLACE",
+            "REGEXP_MATCHES",
+            "REGEXP_SPLIT_TO_ARRAY",
+            "REGEXP_SPLIT_TO_TABLE"
+        ],
+        "right": [
+            "Replace",
+            "Extract",
+            "Split to array",
+            "Split to rows"
+        ]
+    },
+    {
+        "q": "The ______ splits string by regex.",
+        "type": "fill_blank",
+        "answers": [
+            "REGEXP_SPLIT_TO_ARRAY"
+        ],
+        "other_options": [
+            "SPLIT",
+            "REGEX_SPLIT",
+            "STRING_SPLIT"
+        ]
+    },
+    {
+        "q": "Which function returns array element?",
+        "type": "mcq",
+        "o": [
+            "Subscript notation",
+            "ARRAY_GET()",
+            "GET_ELEMENT()",
+            "ELEMENT()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT ARRAY[1,2,3][2];",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrays are 1-indexed in PostgreSQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the array functions:",
+        "type": "match",
+        "left": [
+            "ARRAY_AGG",
+            "ARRAY_APPEND",
+            "ARRAY_CAT",
+            "ARRAY_LENGTH"
+        ],
+        "right": [
+            "Aggregate to array",
+            "Add element",
+            "Concatenate",
+            "Get length"
+        ]
+    },
+    {
+        "q": "The ______ checks array containment.",
+        "type": "fill_blank",
+        "answers": [
+            "@>"
+        ],
+        "other_options": [
+            "CONTAINS",
+            "HAS",
+            "IN"
+        ]
+    },
+    {
+        "q": "Which operator checks overlap?",
+        "type": "mcq",
+        "o": [
+            "&&",
+            "&",
+            "||",
+            "OVERLAPS"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT ARRAY[1,2] && ARRAY[2,3];",
+        "o": [
+            "true",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange array processing:",
+        "type": "rearrange",
+        "words": [
+            "Create array",
+            "Access elements",
+            "Transform",
+            "Aggregate result"
+        ]
+    },
+    {
+        "q": "Match the array operators:",
+        "type": "match",
+        "left": [
+            "||",
+            "@>",
+            "<@",
+            "&&"
+        ],
+        "right": [
+            "Concatenate",
+            "Contains",
+            "Contained by",
+            "Overlaps"
+        ]
+    },
+    {
+        "q": "The ______ unnests arrays to rows.",
+        "type": "fill_blank",
+        "answers": [
+            "UNNEST"
+        ],
+        "other_options": [
+            "EXPLODE",
+            "EXPAND",
+            "FLATTEN"
+        ]
+    },
+    {
+        "q": "Which function creates ranges?",
+        "type": "mcq",
+        "o": [
+            "int4range()",
+            "numrange()",
+            "daterange()",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Ranges support inclusive/exclusive bounds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the range notations:",
+        "type": "match",
+        "left": [
+            "[1,5]",
+            "(1,5)",
+            "[1,5)",
+            "(1,5]"
+        ],
+        "right": [
+            "Both inclusive",
+            "Both exclusive",
+            "Lower inc",
+            "Upper inc"
+        ]
+    },
+    {
+        "q": "The ______ checks range containment.",
+        "type": "fill_blank",
+        "answers": [
+            "@>"
+        ],
+        "other_options": [
+            "CONTAINS",
+            "HAS",
+            "INCLUDES"
+        ]
+    },
+    {
+        "q": "Which function gets range bounds?",
+        "type": "mcq",
+        "o": [
+            "lower()",
+            "upper()",
+            "range_bounds()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT '[1,5)'::int4range @> 3;",
+        "o": [
+            "true",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange range query:",
+        "type": "rearrange",
+        "words": [
+            "Define range",
+            "Create index",
+            "Query with operator",
+            "Return matches"
+        ]
+    },
+    {
+        "q": "Match the range operators:",
+        "type": "match",
+        "left": [
+            "<<",
+            ">>",
+            "&<",
+            "&>"
+        ],
+        "right": [
+            "Strictly left",
+            "Strictly right",
+            "Not extends right",
+            "Not extends left"
+        ]
+    },
+    {
+        "q": "The ______ combines overlapping ranges.",
+        "type": "fill_blank",
+        "answers": [
+            "range_merge"
+        ],
+        "other_options": [
+            "MERGE",
+            "COMBINE",
+            "UNION"
+        ]
+    },
+    {
+        "q": "Which type represents IP addresses?",
+        "type": "mcq",
+        "o": [
+            "inet",
+            "cidr",
+            "macaddr",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "inet stores IP with optional subnet.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the network types:",
+        "type": "match",
+        "left": [
+            "inet",
+            "cidr",
+            "macaddr",
+            "macaddr8"
+        ],
+        "right": [
+            "IP address",
+            "Network block",
+            "MAC 6 bytes",
+            "MAC 8 bytes"
+        ]
+    },
+    {
+        "q": "The ______ checks network containment.",
+        "type": "fill_blank",
+        "answers": [
+            "<<"
+        ],
+        "other_options": [
+            "CONTAINS",
+            "@>",
+            "IN"
+        ]
+    },
+    {
+        "q": "Which function extracts network address?",
+        "type": "mcq",
+        "o": [
+            "host()",
+            "network()",
+            "masklen()",
+            "All extract info"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT '192.168.1.0/24'::inet >> '192.168.1.5'::inet;",
+        "o": [
+            "true",
+            "false",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange network query:",
+        "type": "rearrange",
+        "words": [
+            "Store addresses",
+            "Create GiST index",
+            "Query containment",
+            "Filter results"
+        ]
+    },
+    {
+        "q": "Match the network functions:",
+        "type": "match",
+        "left": [
+            "host()",
+            "broadcast()",
+            "netmask()",
+            "set_masklen()"
+        ],
+        "right": [
+            "Address only",
+            "Broadcast address",
+            "Subnet mask",
+            "Set prefix length"
+        ]
+    },
+    {
+        "q": "The ______ stores binary data.",
+        "type": "fill_blank",
+        "answers": [
+            "bytea"
+        ],
+        "other_options": [
+            "binary",
+            "blob",
+            "raw"
+        ]
+    },
+    {
+        "q": "Which function encodes to base64?",
+        "type": "mcq",
+        "o": [
+            "encode()",
+            "base64()",
+            "TO_BASE64()",
+            "ENCODE_BASE64()"
+        ]
+    },
+    {
+        "q": "bytea stores variable-length binary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the encoding formats:",
+        "type": "match",
+        "left": [
+            "hex",
+            "escape",
+            "base64",
+            "binary"
+        ],
+        "right": [
+            "Hexadecimal",
+            "Escape sequences",
+            "Base64",
+            "Raw binary"
+        ]
+    },
+    {
+        "q": "The ______ decodes binary data.",
+        "type": "fill_blank",
+        "answers": [
+            "decode"
+        ],
+        "other_options": [
+            "UNHEX",
+            "FROM_BASE64",
+            "UNESCAPE"
+        ]
+    },
+    {
+        "q": "Which function generates random bytes?",
+        "type": "mcq",
+        "o": [
+            "gen_random_bytes()",
+            "random_bytes()",
+            "crypto_random()",
+            "RANDOM_BINARY()"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT length(gen_random_bytes(16));",
+        "o": [
+            "16",
+            "32",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Rearrange binary storage:",
+        "type": "rearrange",
+        "words": [
+            "Encode data",
+            "Store in bytea",
+            "Retrieve data",
+            "Decode as needed"
+        ]
+    },
+    {
+        "q": "Match the hash functions:",
+        "type": "match",
+        "left": [
+            "md5()",
+            "sha224()",
+            "sha256()",
+            "sha512()"
+        ],
+        "right": [
+            "128-bit",
+            "224-bit",
+            "256-bit",
+            "512-bit"
+        ]
+    },
+    {
+        "q": "The ______ computes message digest.",
+        "type": "fill_blank",
+        "answers": [
+            "digest"
+        ],
+        "other_options": [
+            "hash",
+            "md5",
+            "sha"
+        ]
+    },
+    {
+        "q": "Which function creates HMAC?",
+        "type": "mcq",
+        "o": [
+            "hmac()",
+            "hash_hmac()",
+            "create_hmac()",
+            "HMAC_SHA()"
+        ]
+    },
+    {
+        "q": "pgcrypto provides cryptographic functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the crypto operations:",
+        "type": "match",
+        "left": [
+            "encrypt()",
+            "decrypt()",
+            "crypt()",
+            "gen_salt()"
+        ],
+        "right": [
+            "Symmetric encrypt",
+            "Symmetric decrypt",
+            "Password hash",
+            "Generate salt"
+        ]
+    },
+    {
+        "q": "The ______ encrypts with password.",
+        "type": "fill_blank",
+        "answers": [
+            "pgp_sym_encrypt"
+        ],
+        "other_options": [
+            "encrypt",
+            "AES",
+            "ENCRYPT_AES"
+        ]
+    },
+    {
+        "q": "Which algorithm is recommended for passwords?",
+        "type": "mcq",
+        "o": [
+            "bcrypt",
+            "md5",
+            "sha1",
+            "des"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT length(md5('test'));",
+        "o": [
+            "32",
+            "16",
+            "64",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange password storage:",
+        "type": "rearrange",
+        "words": [
+            "Generate salt",
+            "Hash password",
+            "Store hash",
+            "Verify on login"
+        ]
+    },
+    {
+        "q": "Which extension provides fuzzy string matching?",
+        "type": "mcq",
+        "o": [
+            "fuzzystrmatch",
+            "pg_trgm",
+            "text_search",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "Levenshtein distance measures edit operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the string distance functions:",
+        "type": "match",
+        "left": [
+            "levenshtein",
+            "soundex",
+            "metaphone",
+            "dmetaphone"
+        ],
+        "right": [
+            "Edit distance",
+            "Sound code",
+            "Phonetic",
+            "Double metaphone"
+        ]
+    },
+    {
+        "q": "The ______ function computes sound similarity.",
+        "type": "fill_blank",
+        "answers": [
+            "soundex"
+        ],
+        "other_options": [
+            "phonetic",
+            "sound",
+            "audio"
+        ]
+    },
+    {
+        "q": "Which function returns phonetic code?",
+        "type": "mcq",
+        "o": [
+            "metaphone()",
+            "soundex()",
+            "phonex()",
+            "Both A and B"
+        ]
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "SELECT levenshtein('hello', 'hallo');",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange fuzzy matching:",
+        "type": "rearrange",
+        "words": [
+            "Enable extension",
+            "Choose function",
+            "Set threshold",
+            "Query matches"
+        ]
+    },
+    {
+        "q": "Match the similarity metrics:",
+        "type": "match",
+        "left": [
+            "Levenshtein",
+            "Jaro",
+            "Jaccard",
+            "Cosine"
+        ],
+        "right": [
+            "Edit operations",
+            "Character transposition",
+            "Set overlap",
+            "Vector angle"
+        ]
+    },
+    {
+        "q": "The ______ compares phonetic similarity.",
+        "type": "fill_blank",
+        "answers": [
+            "difference"
+        ],
+        "other_options": [
+            "compare",
+            "match",
+            "equals"
+        ]
+    },
+    {
+        "q": "Higher difference value means more similar.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

@@ -1,0 +1,6809 @@
+[
+    {
+        "q": "What is a database transaction?",
+        "type": "mcq",
+        "o": [
+            "A unit of work that is atomic and isolated",
+            "A SQL query",
+            "A database table",
+            "A connection string"
+        ]
+    },
+    {
+        "q": "Transactions ensure data _____ and consistency.",
+        "type": "fill_blank",
+        "answers": [
+            "integrity"
+        ],
+        "other_options": [
+            "speed",
+            "size",
+            "format"
+        ]
+    },
+    {
+        "q": "A transaction can contain multiple SQL statements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of BEGIN TRANSACTION?",
+        "type": "mcq",
+        "c": "BEGIN TRANSACTION;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+        "o": [
+            "Two updates treated as a single unit",
+            "Independent updates",
+            "Error",
+            "No change"
+        ]
+    },
+    {
+        "q": "Match transaction command with its function:",
+        "type": "match",
+        "left": [
+            "BEGIN",
+            "COMMIT",
+            "ROLLBACK",
+            "SAVEPOINT"
+        ],
+        "right": [
+            "Start transaction",
+            "Save changes",
+            "Undo changes",
+            "Partial rollback point"
+        ]
+    },
+    {
+        "q": "Rearrange transaction steps:",
+        "type": "rearrange",
+        "words": [
+            "BEGIN",
+            "Execute statements",
+            "Check for errors",
+            "COMMIT or ROLLBACK",
+            "End transaction"
+        ]
+    },
+    {
+        "q": "What is ACID?",
+        "type": "mcq",
+        "o": [
+            "Properties ensuring reliable transactions",
+            "A data type",
+            "A query language",
+            "A database engine"
+        ]
+    },
+    {
+        "q": "ACID stands for Atomicity, Consistency, Isolation, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Durability"
+        ],
+        "other_options": [
+            "Data",
+            "Dependency",
+            "Distribution"
+        ]
+    },
+    {
+        "q": "ACID guarantees are essential for financial applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of atomicity?",
+        "type": "mcq",
+        "c": "-- Transaction:\n-- 1. Debit $100 from A\n-- 2. Credit $100 to B (fails)\n-- Result:",
+        "o": [
+            "Both operations rolled back, no partial state",
+            "Only first completes",
+            "Both complete",
+            "Random state"
+        ]
+    },
+    {
+        "q": "Match ACID property with its guarantee:",
+        "type": "match",
+        "left": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+        ],
+        "right": [
+            "All or nothing",
+            "Valid state",
+            "No interference",
+            "Persisted"
+        ]
+    },
+    {
+        "q": "Rearrange ACID properties by name:",
+        "type": "rearrange",
+        "words": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+        ]
+    },
+    {
+        "q": "What is atomicity?",
+        "type": "mcq",
+        "o": [
+            "Transaction completes entirely or not at all",
+            "Fast execution",
+            "Small transaction",
+            "Simple query"
+        ]
+    },
+    {
+        "q": "Atomicity prevents _____ states.",
+        "type": "fill_blank",
+        "answers": [
+            "partial"
+        ],
+        "other_options": [
+            "complete",
+            "committed",
+            "isolated"
+        ]
+    },
+    {
+        "q": "If any part of an atomic transaction fails, all parts roll back.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of atomic failure?",
+        "type": "mcq",
+        "c": "BEGIN;\nINSERT INTO orders (id) VALUES (1);\nINSERT INTO items (order_id) VALUES (2); -- FK violation\n-- Result:",
+        "o": [
+            "Both inserts rolled back, nothing saved",
+            "First insert saved",
+            "Second insert saved",
+            "Error only"
+        ]
+    },
+    {
+        "q": "Match atomicity term with its meaning:",
+        "type": "match",
+        "left": [
+            "Commit",
+            "Rollback",
+            "Abort",
+            "Complete"
+        ],
+        "right": [
+            "Save all",
+            "Undo all",
+            "Cancel",
+            "Finish successfully"
+        ]
+    },
+    {
+        "q": "Rearrange atomic transaction:",
+        "type": "rearrange",
+        "words": [
+            "Start transaction",
+            "Execute all statements",
+            "Check results",
+            "Commit if all succeed",
+            "Rollback if any fails"
+        ]
+    },
+    {
+        "q": "What is consistency in ACID?",
+        "type": "mcq",
+        "o": [
+            "Database moves from one valid state to another",
+            "Same data everywhere",
+            "Fast queries",
+            "Data replication"
+        ]
+    },
+    {
+        "q": "Consistency ensures all _____ are satisfied.",
+        "type": "fill_blank",
+        "answers": [
+            "constraints"
+        ],
+        "other_options": [
+            "queries",
+            "users",
+            "indexes"
+        ]
+    },
+    {
+        "q": "A transaction cannot leave the database in an invalid state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of consistency check?",
+        "type": "mcq",
+        "c": "-- Constraint: balance >= 0\n-- Transaction: SET balance = -100\n-- Result:",
+        "o": [
+            "Transaction rejected, constraint violated",
+            "Transaction succeeds",
+            "Balance becomes -100",
+            "No check"
+        ]
+    },
+    {
+        "q": "Match consistency component with its role:",
+        "type": "match",
+        "left": [
+            "Constraints",
+            "Triggers",
+            "Rules",
+            "Validation"
+        ],
+        "right": [
+            "Enforce limits",
+            "Run on change",
+            "Business logic",
+            "Check data"
+        ]
+    },
+    {
+        "q": "Rearrange consistency checks:",
+        "type": "rearrange",
+        "words": [
+            "Start transaction",
+            "Apply changes",
+            "Check constraints",
+            "Validate rules",
+            "Commit if valid"
+        ]
+    },
+    {
+        "q": "What is isolation in ACID?",
+        "type": "mcq",
+        "o": [
+            "Transactions don't see each other's uncommitted changes",
+            "Separate databases",
+            "Different servers",
+            "No connections"
+        ]
+    },
+    {
+        "q": "Isolation prevents _____ reads.",
+        "type": "fill_blank",
+        "answers": [
+            "dirty"
+        ],
+        "other_options": [
+            "fast",
+            "slow",
+            "large"
+        ]
+    },
+    {
+        "q": "Higher isolation levels provide more protection but may reduce concurrency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of isolation?",
+        "type": "mcq",
+        "c": "-- Transaction A: UPDATE balance = 500 (not committed)\n-- Transaction B: SELECT balance\n-- With proper isolation:",
+        "o": [
+            "Transaction B sees original balance, not 500",
+            "Transaction B sees 500",
+            "Error",
+            "Random value"
+        ]
+    },
+    {
+        "q": "Match isolation level with its protection:",
+        "type": "match",
+        "left": [
+            "Read Uncommitted",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable"
+        ],
+        "right": [
+            "No protection",
+            "No dirty reads",
+            "No non-repeatable",
+            "Full isolation"
+        ]
+    },
+    {
+        "q": "Rearrange isolation levels by strictness:",
+        "type": "rearrange",
+        "words": [
+            "Read Uncommitted",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable"
+        ]
+    },
+    {
+        "q": "What is durability in ACID?",
+        "type": "mcq",
+        "o": [
+            "Committed changes survive system failures",
+            "Long-running queries",
+            "Persistent connections",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Durability is ensured by writing to _____ storage.",
+        "type": "fill_blank",
+        "answers": [
+            "persistent"
+        ],
+        "other_options": [
+            "temporary",
+            "cache",
+            "memory"
+        ]
+    },
+    {
+        "q": "Once committed, data survives power failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of durability?",
+        "type": "mcq",
+        "c": "-- COMMIT successful\n-- Power failure occurs\n-- After restart:",
+        "o": [
+            "Committed data is still present",
+            "Data lost",
+            "Partial data",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match durability mechanism with its role:",
+        "type": "match",
+        "left": [
+            "Write-ahead log",
+            "Checkpoints",
+            "Disk flush",
+            "Replication"
+        ],
+        "right": [
+            "Log before apply",
+            "Periodic save",
+            "Force to disk",
+            "Copy to other nodes"
+        ]
+    },
+    {
+        "q": "Rearrange durability flow:",
+        "type": "rearrange",
+        "words": [
+            "Write to log",
+            "Acknowledge commit",
+            "Apply changes",
+            "Checkpoint",
+            "Recovery on restart"
+        ]
+    },
+    {
+        "q": "What is COMMIT?",
+        "type": "mcq",
+        "o": [
+            "Save all changes in current transaction",
+            "Start transaction",
+            "Undo changes",
+            "Create savepoint"
+        ]
+    },
+    {
+        "q": "COMMIT makes changes _____.",
+        "type": "fill_blank",
+        "answers": [
+            "permanent"
+        ],
+        "other_options": [
+            "temporary",
+            "visible",
+            "hidden"
+        ]
+    },
+    {
+        "q": "After COMMIT, changes cannot be rolled back.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of COMMIT?",
+        "type": "mcq",
+        "c": "BEGIN;\nINSERT INTO users (name) VALUES ('Alice');\nCOMMIT;\n-- After system crash:",
+        "o": [
+            "Alice record persists",
+            "Alice record lost",
+            "Error",
+            "Unknown"
+        ]
+    },
+    {
+        "q": "Match commit behavior with its effect:",
+        "type": "match",
+        "left": [
+            "Explicit COMMIT",
+            "Auto-commit ON",
+            "Auto-commit OFF",
+            "Implicit commit"
+        ],
+        "right": [
+            "Manual save",
+            "Each statement commits",
+            "Must manually commit",
+            "DDL commits"
+        ]
+    },
+    {
+        "q": "Rearrange commit workflow:",
+        "type": "rearrange",
+        "words": [
+            "Make changes",
+            "Verify correctness",
+            "Issue COMMIT",
+            "Confirm success",
+            "Release locks"
+        ]
+    },
+    {
+        "q": "What is ROLLBACK?",
+        "type": "mcq",
+        "o": [
+            "Undo all changes in current transaction",
+            "Save changes",
+            "Start transaction",
+            "End connection"
+        ]
+    },
+    {
+        "q": "ROLLBACK restores to _____ state.",
+        "type": "fill_blank",
+        "answers": [
+            "previous"
+        ],
+        "other_options": [
+            "new",
+            "modified",
+            "committed"
+        ]
+    },
+    {
+        "q": "ROLLBACK can undo uncommitted changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of ROLLBACK?",
+        "type": "mcq",
+        "c": "BEGIN;\nDELETE FROM users;\nROLLBACK;\nSELECT COUNT(*) FROM users;",
+        "o": [
+            "Original count, all users still exist",
+            "0 users",
+            "Error",
+            "Unknown"
+        ]
+    },
+    {
+        "q": "Match rollback scenario with its use:",
+        "type": "match",
+        "left": [
+            "Error occurred",
+            "User cancelled",
+            "Validation failed",
+            "Timeout"
+        ],
+        "right": [
+            "Undo on exception",
+            "Abort user action",
+            "Business rule failed",
+            "Too long operation"
+        ]
+    },
+    {
+        "q": "Rearrange rollback handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect error",
+            "Log error",
+            "Issue ROLLBACK",
+            "Report to user",
+            "Clean up"
+        ]
+    },
+    {
+        "q": "What is a SAVEPOINT?",
+        "type": "mcq",
+        "o": [
+            "Named point within transaction for partial rollback",
+            "Backup point",
+            "Checkpoint",
+            "Transaction start"
+        ]
+    },
+    {
+        "q": "You can roll back to a _____ without undoing entire transaction.",
+        "type": "fill_blank",
+        "answers": [
+            "SAVEPOINT"
+        ],
+        "other_options": [
+            "COMMIT",
+            "BEGIN",
+            "END"
+        ]
+    },
+    {
+        "q": "SAVEPOINTs allow nested transaction-like behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of SAVEPOINT?",
+        "type": "mcq",
+        "c": "BEGIN;\nINSERT INTO t (v) VALUES (1);\nSAVEPOINT sp1;\nINSERT INTO t (v) VALUES (2);\nROLLBACK TO sp1;\nCOMMIT;",
+        "o": [
+            "Only value 1 is saved",
+            "Both 1 and 2 saved",
+            "Nothing saved",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match savepoint command with its action:",
+        "type": "match",
+        "left": [
+            "SAVEPOINT name",
+            "ROLLBACK TO name",
+            "RELEASE name",
+            "Nested savepoints"
+        ],
+        "right": [
+            "Create marker",
+            "Undo to marker",
+            "Remove marker",
+            "Multiple levels"
+        ]
+    },
+    {
+        "q": "Rearrange savepoint usage:",
+        "type": "rearrange",
+        "words": [
+            "Begin transaction",
+            "Make initial changes",
+            "Create savepoint",
+            "Try risky operation",
+            "Rollback to savepoint if failed"
+        ]
+    },
+    {
+        "q": "What is concurrency control?",
+        "type": "mcq",
+        "o": [
+            "Managing simultaneous data access by multiple transactions",
+            "Connection pooling",
+            "Query optimization",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Concurrency control prevents _____ anomalies.",
+        "type": "fill_blank",
+        "answers": [
+            "data"
+        ],
+        "other_options": [
+            "query",
+            "connection",
+            "index"
+        ]
+    },
+    {
+        "q": "Without concurrency control, data corruption can occur.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of poor concurrency?",
+        "type": "mcq",
+        "c": "-- T1: Read balance=100, add 50, write 150\n-- T2: Read balance=100, add 30, write 130\n-- Both run concurrently\n-- Final balance:",
+        "o": [
+            "130 or 150 (lost update), should be 180",
+            "180",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match concurrency issue with its cause:",
+        "type": "match",
+        "left": [
+            "Lost update",
+            "Dirty read",
+            "Non-repeatable read",
+            "Phantom"
+        ],
+        "right": [
+            "Overwritten write",
+            "Read uncommitted",
+            "Changed between reads",
+            "New rows appear"
+        ]
+    },
+    {
+        "q": "Rearrange by concurrency safety:",
+        "type": "rearrange",
+        "words": [
+            "No control (unsafe)",
+            "Pessimistic locking",
+            "Optimistic locking",
+            "Serializable (safest)"
+        ]
+    },
+    {
+        "q": "What is a lock?",
+        "type": "mcq",
+        "o": [
+            "Mechanism to prevent concurrent access conflicts",
+            "Security feature",
+            "Password protection",
+            "Connection limit"
+        ]
+    },
+    {
+        "q": "Locks are used to _____ data access.",
+        "type": "fill_blank",
+        "answers": [
+            "control"
+        ],
+        "other_options": [
+            "prevent",
+            "speed",
+            "cache"
+        ]
+    },
+    {
+        "q": "Exclusive locks prevent all other access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lock?",
+        "type": "mcq",
+        "c": "-- T1: SELECT ... FOR UPDATE (acquires lock)\n-- T2: Tries to UPDATE same row\n-- Result for T2:",
+        "o": [
+            "T2 waits for T1 to release lock",
+            "T2 proceeds immediately",
+            "T2 error",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match lock type with its behavior:",
+        "type": "match",
+        "left": [
+            "Shared",
+            "Exclusive",
+            "Update",
+            "Intent"
+        ],
+        "right": [
+            "Multiple readers",
+            "Single writer",
+            "Will-be-exclusive",
+            "Hierarchy hint"
+        ]
+    },
+    {
+        "q": "Rearrange lock acquisition:",
+        "type": "rearrange",
+        "words": [
+            "Request lock",
+            "Wait if unavailable",
+            "Acquire lock",
+            "Access data",
+            "Release lock"
+        ]
+    },
+    {
+        "q": "What is a shared lock?",
+        "type": "mcq",
+        "o": [
+            "Lock allowing multiple readers simultaneously",
+            "Lock for single user",
+            "Lock for writes",
+            "Lock for deletes"
+        ]
+    },
+    {
+        "q": "Shared locks are also called _____ locks.",
+        "type": "fill_blank",
+        "answers": [
+            "read"
+        ],
+        "other_options": [
+            "write",
+            "update",
+            "delete"
+        ]
+    },
+    {
+        "q": "Multiple transactions can hold shared locks on the same data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of shared lock?",
+        "type": "mcq",
+        "c": "-- T1: Holds shared lock on row\n-- T2: Requests shared lock on same row\n-- Result:",
+        "o": [
+            "T2 gets lock immediately, both can read",
+            "T2 waits",
+            "T1 lock released",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match lock compatibility:",
+        "type": "match",
+        "left": [
+            "Shared + Shared",
+            "Shared + Exclusive",
+            "Exclusive + Shared",
+            "Exclusive + Exclusive"
+        ],
+        "right": [
+            "Compatible",
+            "Incompatible",
+            "Incompatible",
+            "Incompatible"
+        ]
+    },
+    {
+        "q": "Rearrange lock modes by restrictiveness:",
+        "type": "rearrange",
+        "words": [
+            "No lock",
+            "Shared",
+            "Update",
+            "Exclusive"
+        ]
+    },
+    {
+        "q": "What is an exclusive lock?",
+        "type": "mcq",
+        "o": [
+            "Lock preventing all other access",
+            "Lock for reading",
+            "Shared access lock",
+            "Optional lock"
+        ]
+    },
+    {
+        "q": "Exclusive locks are also called _____ locks.",
+        "type": "fill_blank",
+        "answers": [
+            "write"
+        ],
+        "other_options": [
+            "read",
+            "share",
+            "open"
+        ]
+    },
+    {
+        "q": "Only one transaction can hold an exclusive lock on data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of exclusive lock?",
+        "type": "mcq",
+        "c": "-- T1: UPDATE row (exclusive lock)\n-- T2: SELECT same row\n-- Depending on isolation:",
+        "o": [
+            "T2 may wait for T1's lock to be released",
+            "T2 reads immediately",
+            "Error",
+            "Data corruption"
+        ]
+    },
+    {
+        "q": "Match write operation with its lock:",
+        "type": "match",
+        "left": [
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "SELECT FOR UPDATE"
+        ],
+        "right": [
+            "Exclusive",
+            "Exclusive",
+            "Exclusive",
+            "Exclusive"
+        ]
+    },
+    {
+        "q": "Rearrange exclusive lock lifetime:",
+        "type": "rearrange",
+        "words": [
+            "Request exclusive lock",
+            "Wait for all locks released",
+            "Acquire lock",
+            "Perform write",
+            "Commit/Rollback releases lock"
+        ]
+    },
+    {
+        "q": "What is a deadlock?",
+        "type": "mcq",
+        "o": [
+            "Two or more transactions waiting for each other's locks",
+            "Slow transaction",
+            "Failed transaction",
+            "Missing lock"
+        ]
+    },
+    {
+        "q": "Deadlocks create a _____ wait situation.",
+        "type": "fill_blank",
+        "answers": [
+            "circular"
+        ],
+        "other_options": [
+            "linear",
+            "fast",
+            "slow"
+        ]
+    },
+    {
+        "q": "Databases can automatically detect and resolve deadlocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of deadlock?",
+        "type": "mcq",
+        "c": "-- T1: Lock A, wait for B\n-- T2: Lock B, wait for A\n-- Result:",
+        "o": [
+            "One transaction is rolled back to break deadlock",
+            "Both complete",
+            "Both wait forever",
+            "Error on both"
+        ]
+    },
+    {
+        "q": "Match deadlock term with its meaning:",
+        "type": "match",
+        "left": [
+            "Victim",
+            "Detection",
+            "Prevention",
+            "Timeout"
+        ],
+        "right": [
+            "Transaction to abort",
+            "Find cycles",
+            "Avoid conditions",
+            "Force abort"
+        ]
+    },
+    {
+        "q": "Rearrange deadlock handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect deadlock",
+            "Choose victim",
+            "Roll back victim",
+            "Log incident",
+            "Retry transaction"
+        ]
+    },
+    {
+        "q": "What is isolation level?",
+        "type": "mcq",
+        "o": [
+            "Degree of protection from concurrent transaction effects",
+            "Security level",
+            "Performance level",
+            "Access level"
+        ]
+    },
+    {
+        "q": "Higher isolation means more _____ but less concurrency.",
+        "type": "fill_blank",
+        "answers": [
+            "protection"
+        ],
+        "other_options": [
+            "speed",
+            "storage",
+            "connections"
+        ]
+    },
+    {
+        "q": "SQL standard defines four isolation levels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of isolation level choice?",
+        "type": "mcq",
+        "c": "SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;",
+        "o": [
+            "Highest isolation, transactions appear sequential",
+            "No isolation",
+            "Fastest performance",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match isolation level with anomalies prevented:",
+        "type": "match",
+        "left": [
+            "Read Uncommitted",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable"
+        ],
+        "right": [
+            "None",
+            "Dirty reads",
+            "Dirty + non-repeatable",
+            "All anomalies"
+        ]
+    },
+    {
+        "q": "Rearrange by protection level:",
+        "type": "rearrange",
+        "words": [
+            "Read Uncommitted (lowest)",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable (highest)"
+        ]
+    },
+    {
+        "q": "What is Read Uncommitted?",
+        "type": "mcq",
+        "o": [
+            "Lowest isolation allowing dirty reads",
+            "Highest isolation",
+            "Default level",
+            "No transactions"
+        ]
+    },
+    {
+        "q": "Read Uncommitted can see _____ changes.",
+        "type": "fill_blank",
+        "answers": [
+            "uncommitted"
+        ],
+        "other_options": [
+            "committed",
+            "old",
+            "new"
+        ]
+    },
+    {
+        "q": "Read Uncommitted has the best performance but worst consistency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of Read Uncommitted?",
+        "type": "mcq",
+        "c": "-- T1: UPDATE balance = 500 (not committed)\n-- T2 (Read Uncommitted): SELECT balance\n-- T2 sees:",
+        "o": [
+            "500 (dirty read)",
+            "Original balance",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match Read Uncommitted with its risk:",
+        "type": "match",
+        "left": [
+            "Dirty read",
+            "Non-repeatable read",
+            "Phantom read",
+            "Lost update"
+        ],
+        "right": [
+            "Yes, possible",
+            "Yes, possible",
+            "Yes, possible",
+            "Yes, possible"
+        ]
+    },
+    {
+        "q": "Rearrange isolation anomalies by severity:",
+        "type": "rearrange",
+        "words": [
+            "Dirty read (worst)",
+            "Non-repeatable read",
+            "Phantom read",
+            "Lost update"
+        ]
+    },
+    {
+        "q": "What is Read Committed?",
+        "type": "mcq",
+        "o": [
+            "Only read data committed before query start",
+            "Read any data",
+            "No reading allowed",
+            "Always sees latest"
+        ]
+    },
+    {
+        "q": "Read Committed prevents _____ reads.",
+        "type": "fill_blank",
+        "answers": [
+            "dirty"
+        ],
+        "other_options": [
+            "all",
+            "fast",
+            "slow"
+        ]
+    },
+    {
+        "q": "Read Committed is the default in many databases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of Read Committed?",
+        "type": "mcq",
+        "c": "-- T1: UPDATE x = 10 (committed)\n-- T2 (Read Committed): SELECT x\n-- T2 sees:",
+        "o": [
+            "10 (sees committed changes)",
+            "Original value",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match Read Committed with its behavior:",
+        "type": "match",
+        "left": [
+            "See committed",
+            "Wait for uncommitted",
+            "Snapshot start",
+            "Lock behavior"
+        ],
+        "right": [
+            "Yes",
+            "No, skip",
+            "Each statement",
+            "Release early"
+        ]
+    },
+    {
+        "q": "Rearrange Read Committed timeline:",
+        "type": "rearrange",
+        "words": [
+            "Start query",
+            "Get snapshot of committed data",
+            "Execute query",
+            "Return results",
+            "Snapshot released"
+        ]
+    },
+    {
+        "q": "What is Repeatable Read?",
+        "type": "mcq",
+        "o": [
+            "Same read returns same result within transaction",
+            "Non-repeatable read",
+            "Single read only",
+            "Random reads"
+        ]
+    },
+    {
+        "q": "Repeatable Read prevents non-_____ reads.",
+        "type": "fill_blank",
+        "answers": [
+            "repeatable"
+        ],
+        "other_options": [
+            "dirty",
+            "clean",
+            "fast"
+        ]
+    },
+    {
+        "q": "Repeatable Read may still allow phantom reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of Repeatable Read?",
+        "type": "mcq",
+        "c": "-- T1: SELECT balance (returns 100)\n-- T2: UPDATE balance = 200: COMMIT\n-- T1: SELECT balance again\n-- With Repeatable Read:",
+        "o": [
+            "100 (same as first read)",
+            "200 (sees update)",
+            "Error",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match Repeatable Read with its guarantee:",
+        "type": "match",
+        "left": [
+            "Same rows",
+            "Same values",
+            "New rows",
+            "Locks held"
+        ],
+        "right": [
+            "Guaranteed same",
+            "Guaranteed same",
+            "May appear (phantoms)",
+            "Until commit"
+        ]
+    },
+    {
+        "q": "Rearrange Repeatable Read behavior:",
+        "type": "rearrange",
+        "words": [
+            "Start transaction",
+            "Take snapshot",
+            "All reads from snapshot",
+            "Updates blocked",
+            "Commit releases"
+        ]
+    },
+    {
+        "q": "What is Serializable?",
+        "type": "mcq",
+        "o": [
+            "Transactions appear to run one after another",
+            "Parallel execution",
+            "No isolation",
+            "Fast mode"
+        ]
+    },
+    {
+        "q": "Serializable provides the _____ isolation.",
+        "type": "fill_blank",
+        "answers": [
+            "strongest"
+        ],
+        "other_options": [
+            "weakest",
+            "fastest",
+            "simplest"
+        ]
+    },
+    {
+        "q": "Serializable prevents all read phenomena.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of Serializable?",
+        "type": "mcq",
+        "c": "-- T1: SELECT SUM(balance)\n-- T2: INSERT new account\n-- With Serializable:",
+        "o": [
+            "T2 blocks or T1 sees consistent snapshot",
+            "T2 runs immediately, phantom possible",
+            "Error",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match Serializable with its mechanism:",
+        "type": "match",
+        "left": [
+            "Range locks",
+            "Predicate locks",
+            "Snapshot",
+            "Conflicts detected"
+        ],
+        "right": [
+            "Lock ranges",
+            "Lock conditions",
+            "MVCC",
+            "SSI"
+        ]
+    },
+    {
+        "q": "Rearrange by concurrency vs safety:",
+        "type": "rearrange",
+        "words": [
+            "Read Uncommitted (high concurrency)",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable (high safety)"
+        ]
+    },
+    {
+        "q": "What is a dirty read?",
+        "type": "mcq",
+        "o": [
+            "Reading uncommitted data from another transaction",
+            "Reading old data",
+            "Reading corrupted data",
+            "Reading cached data"
+        ]
+    },
+    {
+        "q": "Dirty reads can see data that gets _____ back.",
+        "type": "fill_blank",
+        "answers": [
+            "rolled"
+        ],
+        "other_options": [
+            "committed",
+            "saved",
+            "cached"
+        ]
+    },
+    {
+        "q": "Dirty reads are prevented at Read Committed and higher.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of dirty read?",
+        "type": "mcq",
+        "c": "-- T1: UPDATE balance = 0 (not committed)\n-- T2: SELECT balance (dirty read)\n-- T1: ROLLBACK\n-- T2 made decisions based on:",
+        "o": [
+            "Data that never existed (balance = 0)",
+            "Correct data",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match dirty read with its risk:",
+        "type": "match",
+        "left": [
+            "Incorrect decisions",
+            "Inconsistent state",
+            "Wasted work",
+            "Cash overdraft"
+        ],
+        "right": [
+            "Based on phantom data",
+            "Partial updates",
+            "Processing invalid data",
+            "Financial example"
+        ]
+    },
+    {
+        "q": "Rearrange dirty read scenario:",
+        "type": "rearrange",
+        "words": [
+            "T1 starts update",
+            "T2 reads uncommitted",
+            "T1 rolls back",
+            "T2 has invalid data",
+            "Incorrect result"
+        ]
+    },
+    {
+        "q": "What is a non-repeatable read?",
+        "type": "mcq",
+        "o": [
+            "Same query returns different values within one transaction",
+            "Query fails",
+            "Query timeout",
+            "Query cached"
+        ]
+    },
+    {
+        "q": "Non-repeatable reads occur when another transaction _____ between reads.",
+        "type": "fill_blank",
+        "answers": [
+            "commits"
+        ],
+        "other_options": [
+            "starts",
+            "fails",
+            "waits"
+        ]
+    },
+    {
+        "q": "Repeatable Read prevents non-repeatable reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of non-repeatable read?",
+        "type": "mcq",
+        "c": "-- T1: SELECT salary (returns 50000)\n-- T2: UPDATE salary = 60000: COMMIT\n-- T1: SELECT salary again\n-- At Read Committed:",
+        "o": [
+            "60000 (different from first read)",
+            "50000 (same)",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match non-repeatable read with its prevention:",
+        "type": "match",
+        "left": [
+            "Read Uncommitted",
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable"
+        ],
+        "right": [
+            "Not prevented",
+            "Not prevented",
+            "Prevented",
+            "Prevented"
+        ]
+    },
+    {
+        "q": "Rearrange non-repeatable read scenario:",
+        "type": "rearrange",
+        "words": [
+            "T1 reads value",
+            "T2 modifies value",
+            "T2 commits",
+            "T1 reads again",
+            "Different value returned"
+        ]
+    },
+    {
+        "q": "What is a phantom read?",
+        "type": "mcq",
+        "o": [
+            "New rows appear in repeated queries within transaction",
+            "Missing rows",
+            "Corrupted rows",
+            "Cached rows"
+        ]
+    },
+    {
+        "q": "Phantom reads involve _____ or deletions by other transactions.",
+        "type": "fill_blank",
+        "answers": [
+            "insertions"
+        ],
+        "other_options": [
+            "updates",
+            "selections",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Only Serializable fully prevents phantom reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of phantom read?",
+        "type": "mcq",
+        "c": "-- T1: SELECT COUNT(*) WHERE dept='Sales' (returns 10)\n-- T2: INSERT INTO employees (dept='Sales'): COMMIT\n-- T1: SELECT COUNT(*) WHERE dept='Sales'\n-- At Repeatable Read in some DBs:",
+        "o": [
+            "11 (phantom row appeared)",
+            "10 (same count)",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match phantom read with its effect:",
+        "type": "match",
+        "left": [
+            "New row appears",
+            "Row disappears",
+            "Count changes",
+            "Aggregate changes"
+        ],
+        "right": [
+            "Insert phantom",
+            "Delete phantom",
+            "Set size varies",
+            "Sum/avg affected"
+        ]
+    },
+    {
+        "q": "Rearrange phantom read scenario:",
+        "type": "rearrange",
+        "words": [
+            "T1 queries range",
+            "T2 inserts matching row",
+            "T2 commits",
+            "T1 queries same range",
+            "New row in results"
+        ]
+    },
+    {
+        "q": "What is a lost update?",
+        "type": "mcq",
+        "o": [
+            "One transaction's changes overwritten by another",
+            "Failed update",
+            "Slow update",
+            "Deleted update"
+        ]
+    },
+    {
+        "q": "Lost updates occur in read-modify-_____ cycles without proper locking.",
+        "type": "fill_blank",
+        "answers": [
+            "write"
+        ],
+        "other_options": [
+            "delete",
+            "select",
+            "merge"
+        ]
+    },
+    {
+        "q": "Lost updates can cause data inconsistency and financial loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lost update?",
+        "type": "mcq",
+        "c": "-- Balance = 100\n-- T1: Read 100, add 50, write 150\n-- T2: Read 100, add 30, write 130 (commits after T1)\n-- Final:",
+        "o": [
+            "130 (T1's +50 is lost)",
+            "180",
+            "150",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match lost update prevention with its method:",
+        "type": "match",
+        "left": [
+            "Pessimistic lock",
+            "Optimistic lock",
+            "Atomic operation",
+            "Serializable"
+        ],
+        "right": [
+            "Lock before read",
+            "Check at write",
+            "Single statement",
+            "Full isolation"
+        ]
+    },
+    {
+        "q": "Rearrange lost update scenario:",
+        "type": "rearrange",
+        "words": [
+            "T1 reads value",
+            "T2 reads same value",
+            "T1 writes update",
+            "T2 writes update",
+            "T1's change lost"
+        ]
+    },
+    {
+        "q": "What is MVCC?",
+        "type": "mcq",
+        "o": [
+            "Multi-Version Concurrency Control",
+            "Multiple Variable Control",
+            "Memory Version Cache",
+            "Managed Version Control"
+        ]
+    },
+    {
+        "q": "MVCC keeps multiple _____ of data.",
+        "type": "fill_blank",
+        "answers": [
+            "versions"
+        ],
+        "other_options": [
+            "copies",
+            "caches",
+            "indexes"
+        ]
+    },
+    {
+        "q": "MVCC allows readers not to block writers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of MVCC?",
+        "type": "mcq",
+        "c": "-- T1 (long read): Sees snapshot at start\n-- T2: Updates same data, commits\n-- T1 sees:",
+        "o": [
+            "Original version from snapshot, not T2's changes",
+            "T2's changes",
+            "Error",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match MVCC benefit with its effect:",
+        "type": "match",
+        "left": [
+            "No read locks",
+            "Consistent reads",
+            "No dirty reads",
+            "Version garbage collection"
+        ],
+        "right": [
+            "Readers don't wait",
+            "Snapshot data",
+            "Only committed seen",
+            "Cleanup old versions"
+        ]
+    },
+    {
+        "q": "Rearrange MVCC flow:",
+        "type": "rearrange",
+        "words": [
+            "Transaction starts",
+            "Gets snapshot",
+            "Reads from snapshot",
+            "Writes create new versions",
+            "Commit makes visible"
+        ]
+    },
+    {
+        "q": "What is pessimistic locking?",
+        "type": "mcq",
+        "o": [
+            "Lock data before reading to prevent conflicts",
+            "No locking",
+            "Lock after commit",
+            "Optional locking"
+        ]
+    },
+    {
+        "q": "Pessimistic locking assumes conflicts are _____.",
+        "type": "fill_blank",
+        "answers": [
+            "likely"
+        ],
+        "other_options": [
+            "rare",
+            "impossible",
+            "optional"
+        ]
+    },
+    {
+        "q": "SELECT FOR UPDATE is pessimistic locking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of pessimistic lock?",
+        "type": "mcq",
+        "c": "SELECT * FROM accounts WHERE id = 1 FOR UPDATE;\n-- Lock acquired",
+        "o": [
+            "Other transactions block on this row until commit",
+            "No blocking",
+            "Error",
+            "Shared access"
+        ]
+    },
+    {
+        "q": "Match pessimistic scenario with its use:",
+        "type": "match",
+        "left": [
+            "High contention",
+            "Critical updates",
+            "Banking",
+            "Inventory"
+        ],
+        "right": [
+            "Many conflicts expected",
+            "No concurrent changes",
+            "Financial transactions",
+            "Stock updates"
+        ]
+    },
+    {
+        "q": "Rearrange pessimistic locking:",
+        "type": "rearrange",
+        "words": [
+            "SELECT FOR UPDATE",
+            "Lock acquired",
+            "Modify data",
+            "Commit transaction",
+            "Lock released"
+        ]
+    },
+    {
+        "q": "What is optimistic locking?",
+        "type": "mcq",
+        "o": [
+            "Check for conflicts at commit time without early locks",
+            "Always lock",
+            "No checking",
+            "Lock permanently"
+        ]
+    },
+    {
+        "q": "Optimistic locking uses _____ columns or timestamps.",
+        "type": "fill_blank",
+        "answers": [
+            "version"
+        ],
+        "other_options": [
+            "id",
+            "name",
+            "type"
+        ]
+    },
+    {
+        "q": "Optimistic locking works well when conflicts are rare.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of optimistic lock?",
+        "type": "mcq",
+        "c": "-- Read: version=1\n-- Modify locally\n-- Update: WHERE version=1, set version=2\n-- If 0 rows affected:",
+        "o": [
+            "Conflict detected, retry or fail",
+            "Update succeeds",
+            "No check needed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match optimistic approach with its mechanism:",
+        "type": "match",
+        "left": [
+            "Version number",
+            "Timestamp",
+            "Hash",
+            "Etag"
+        ],
+        "right": [
+            "Increment on update",
+            "Last modified",
+            "Content hash",
+            "HTTP caching"
+        ]
+    },
+    {
+        "q": "Rearrange optimistic locking:",
+        "type": "rearrange",
+        "words": [
+            "Read with version",
+            "Modify locally",
+            "Update WHERE version=original",
+            "Check rows affected",
+            "Retry if conflict"
+        ]
+    },
+    {
+        "q": "What is two-phase locking (2PL)?",
+        "type": "mcq",
+        "o": [
+            "Protocol with growing and shrinking lock phases",
+            "Two types of locks",
+            "Two transactions",
+            "Two databases"
+        ]
+    },
+    {
+        "q": "In 2PL, no new locks after any lock is _____.",
+        "type": "fill_blank",
+        "answers": [
+            "released"
+        ],
+        "other_options": [
+            "acquired",
+            "requested",
+            "created"
+        ]
+    },
+    {
+        "q": "2PL guarantees serializability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of 2PL?",
+        "type": "mcq",
+        "c": "-- Growing phase: Acquire all needed locks\n-- Shrinking phase: Release locks\n-- Result:",
+        "o": [
+            "Serializable execution order guaranteed",
+            "Faster execution",
+            "No locks needed",
+            "Random order"
+        ]
+    },
+    {
+        "q": "Match 2PL phase with its rule:",
+        "type": "match",
+        "left": [
+            "Growing",
+            "Shrinking",
+            "Lock point",
+            "Strict 2PL"
+        ],
+        "right": [
+            "Acquire only",
+            "Release only",
+            "All locks held",
+            "Hold until commit"
+        ]
+    },
+    {
+        "q": "Rearrange 2PL timeline:",
+        "type": "rearrange",
+        "words": [
+            "Transaction starts",
+            "Growing: acquire locks",
+            "Lock point reached",
+            "Shrinking: release locks",
+            "Transaction ends"
+        ]
+    },
+    {
+        "q": "What is write-ahead logging (WAL)?",
+        "type": "mcq",
+        "o": [
+            "Log changes before applying to database",
+            "Write to database first",
+            "Log after commit",
+            "No logging"
+        ]
+    },
+    {
+        "q": "WAL ensures _____ by logging before data changes.",
+        "type": "fill_blank",
+        "answers": [
+            "durability"
+        ],
+        "other_options": [
+            "speed",
+            "isolation",
+            "concurrency"
+        ]
+    },
+    {
+        "q": "WAL allows recovery after crashes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of WAL?",
+        "type": "mcq",
+        "c": "-- Change written to WAL\n-- Commit acknowledged\n-- Crash before data page flush\n-- After recovery:",
+        "o": [
+            "Change restored from WAL, durability maintained",
+            "Change lost",
+            "Database corrupted",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match WAL component with its role:",
+        "type": "match",
+        "left": [
+            "Log record",
+            "Log buffer",
+            "Log flush",
+            "Checkpoint"
+        ],
+        "right": [
+            "Change description",
+            "Memory staging",
+            "Write to disk",
+            "Sync data pages"
+        ]
+    },
+    {
+        "q": "Rearrange WAL flow:",
+        "type": "rearrange",
+        "words": [
+            "Generate log record",
+            "Write to log buffer",
+            "Flush log to disk",
+            "Update data page",
+            "Commit acknowledged"
+        ]
+    },
+    {
+        "q": "What is a checkpoint?",
+        "type": "mcq",
+        "o": [
+            "Point where dirty pages are flushed to disk",
+            "Transaction start",
+            "Lock acquisition",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Checkpoints reduce _____ time after crashes.",
+        "type": "fill_blank",
+        "answers": [
+            "recovery"
+        ],
+        "other_options": [
+            "query",
+            "connection",
+            "lock"
+        ]
+    },
+    {
+        "q": "More frequent checkpoints mean faster recovery but more I/O.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of checkpoint?",
+        "type": "mcq",
+        "c": "-- Checkpoint completed at LSN 1000\n-- Crash occurs\n-- Recovery starts from:",
+        "o": [
+            "LSN 1000, not beginning of log",
+            "Beginning of log",
+            "LSN 0",
+            "Random point"
+        ]
+    },
+    {
+        "q": "Match checkpoint type with its behavior:",
+        "type": "match",
+        "left": [
+            "Sharp checkpoint",
+            "Fuzzy checkpoint",
+            "Incremental",
+            "Forced"
+        ],
+        "right": [
+            "Stop and flush all",
+            "Background flush",
+            "Only changed pages",
+            "On command"
+        ]
+    },
+    {
+        "q": "Rearrange checkpoint process:",
+        "type": "rearrange",
+        "words": [
+            "Mark checkpoint start",
+            "Flush dirty pages",
+            "Write checkpoint record",
+            "Mark checkpoint complete",
+            "Truncate old log"
+        ]
+    },
+    {
+        "q": "What is REDO recovery?",
+        "type": "mcq",
+        "o": [
+            "Replaying committed changes after crash",
+            "Undoing changes",
+            "Skipping recovery",
+            "Deleting log"
+        ]
+    },
+    {
+        "q": "REDO applies _____ transactions from the log.",
+        "type": "fill_blank",
+        "answers": [
+            "committed"
+        ],
+        "other_options": [
+            "aborted",
+            "all",
+            "none"
+        ]
+    },
+    {
+        "q": "REDO ensures durability of committed transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of REDO?",
+        "type": "mcq",
+        "c": "-- Log: T1 committed, page not flushed\n-- Crash occurs\n-- REDO phase:",
+        "o": [
+            "Replays T1's changes to pages",
+            "Skips T1",
+            "Aborts T1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match REDO with its characteristics:",
+        "type": "match",
+        "left": [
+            "Forward",
+            "Committed txns",
+            "From checkpoint",
+            "Restore state"
+        ],
+        "right": [
+            "Move forward in log",
+            "Already finished",
+            "Start there",
+            "Make durable"
+        ]
+    },
+    {
+        "q": "Rearrange REDO process:",
+        "type": "rearrange",
+        "words": [
+            "Find checkpoint",
+            "Read log forward",
+            "Find committed txns",
+            "Apply changes",
+            "Update pages"
+        ]
+    },
+    {
+        "q": "What is UNDO recovery?",
+        "type": "mcq",
+        "o": [
+            "Reversing uncommitted changes after crash",
+            "Redoing changes",
+            "Saving changes",
+            "Logging changes"
+        ]
+    },
+    {
+        "q": "UNDO reverses _____ transactions.",
+        "type": "fill_blank",
+        "answers": [
+            "uncommitted"
+        ],
+        "other_options": [
+            "committed",
+            "all",
+            "none"
+        ]
+    },
+    {
+        "q": "UNDO ensures atomicity of crashed transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of UNDO?",
+        "type": "mcq",
+        "c": "-- Log: T2 active (no commit/abort)\n-- Crash occurs\n-- UNDO phase:",
+        "o": [
+            "Reverses T2's changes",
+            "Applies T2's changes",
+            "Ignores T2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match UNDO with its characteristics:",
+        "type": "match",
+        "left": [
+            "Backward",
+            "Active txns",
+            "Compensation",
+            "Restore state"
+        ],
+        "right": [
+            "Move backward",
+            "Not finished",
+            "Undo records",
+            "Remove partial"
+        ]
+    },
+    {
+        "q": "Rearrange UNDO process:",
+        "type": "rearrange",
+        "words": [
+            "Find active txns",
+            "Read log backward",
+            "Generate undo",
+            "Apply compensation",
+            "Mark aborted"
+        ]
+    },
+    {
+        "q": "What is ARIES recovery?",
+        "type": "mcq",
+        "o": [
+            "Algorithm for Recovery and Isolation Exploiting Semantics",
+            "A database type",
+            "A lock protocol",
+            "A query optimizer"
+        ]
+    },
+    {
+        "q": "ARIES has three phases: Analysis, _____, and Undo.",
+        "type": "fill_blank",
+        "answers": [
+            "Redo"
+        ],
+        "other_options": [
+            "Backup",
+            "Start",
+            "Check"
+        ]
+    },
+    {
+        "q": "ARIES is the most widely used recovery algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of ARIES?",
+        "type": "mcq",
+        "c": "-- Analysis: Find active txns, dirty pages\n-- Redo: Replay all logged actions\n-- Undo: Abort losers\n-- Result:",
+        "o": [
+            "Database consistent with committed state",
+            "Database unchanged",
+            "Log deleted",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match ARIES phase with its purpose:",
+        "type": "match",
+        "left": [
+            "Analysis",
+            "Redo",
+            "Undo",
+            "Log"
+        ],
+        "right": [
+            "Find work",
+            "Apply changes",
+            "Reverse losers",
+            "Record history"
+        ]
+    },
+    {
+        "q": "Rearrange ARIES phases:",
+        "type": "rearrange",
+        "words": [
+            "Start from checkpoint",
+            "Analysis pass",
+            "Redo pass",
+            "Undo pass",
+            "Recovery complete"
+        ]
+    },
+    {
+        "q": "What is two-phase commit (2PC)?",
+        "type": "mcq",
+        "o": [
+            "Protocol for distributed transaction commit",
+            "Two-phase locking",
+            "Double commit",
+            "Backup protocol"
+        ]
+    },
+    {
+        "q": "2PC has prepare and _____ phases.",
+        "type": "fill_blank",
+        "answers": [
+            "commit"
+        ],
+        "other_options": [
+            "rollback",
+            "lock",
+            "wait"
+        ]
+    },
+    {
+        "q": "2PC ensures atomicity across multiple databases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of 2PC?",
+        "type": "mcq",
+        "c": "-- Coordinator sends PREPARE\n-- All participants vote YES\n-- Coordinator sends COMMIT\n-- Result:",
+        "o": [
+            "All participants commit atomically",
+            "Only coordinator commits",
+            "Random commits",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match 2PC role with its responsibility:",
+        "type": "match",
+        "left": [
+            "Coordinator",
+            "Participant",
+            "Vote",
+            "Decision"
+        ],
+        "right": [
+            "Lead commit",
+            "Execute locally",
+            "Yes/No",
+            "Commit/Abort"
+        ]
+    },
+    {
+        "q": "Rearrange 2PC flow:",
+        "type": "rearrange",
+        "words": [
+            "Coordinator sends PREPARE",
+            "Participants vote",
+            "Collect votes",
+            "Send decision",
+            "Complete transaction"
+        ]
+    },
+    {
+        "q": "What is three-phase commit (3PC)?",
+        "type": "mcq",
+        "o": [
+            "Non-blocking version of 2PC",
+            "Three transactions",
+            "Triple backup",
+            "Three databases"
+        ]
+    },
+    {
+        "q": "3PC adds a _____ phase before commit.",
+        "type": "fill_blank",
+        "answers": [
+            "pre-commit"
+        ],
+        "other_options": [
+            "post-commit",
+            "double",
+            "triple"
+        ]
+    },
+    {
+        "q": "3PC avoids blocking on coordinator failure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of 3PC?",
+        "type": "mcq",
+        "c": "-- Prepare: Can commit?\n-- Pre-commit: Yes, will commit\n-- Commit: Do commit\n-- Benefit:",
+        "o": [
+            "Non-blocking, can recover without coordinator",
+            "Faster than 2PC",
+            "No difference",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match 3PC phase with its purpose:",
+        "type": "match",
+        "left": [
+            "Prepare",
+            "Pre-commit",
+            "Commit",
+            "Timeout"
+        ],
+        "right": [
+            "Get votes",
+            "Ensure agreement",
+            "Finalize",
+            "Handle failure"
+        ]
+    },
+    {
+        "q": "Rearrange 3PC phases:",
+        "type": "rearrange",
+        "words": [
+            "Prepare vote",
+            "Pre-commit ack",
+            "Commit decision",
+            "Global commit"
+        ]
+    },
+    {
+        "q": "What is saga pattern?",
+        "type": "mcq",
+        "o": [
+            "Long-running transaction with compensating actions",
+            "Short transaction",
+            "Lock pattern",
+            "Query pattern"
+        ]
+    },
+    {
+        "q": "Sagas use _____ actions instead of rollback.",
+        "type": "fill_blank",
+        "answers": [
+            "compensating"
+        ],
+        "other_options": [
+            "locking",
+            "waiting",
+            "caching"
+        ]
+    },
+    {
+        "q": "Sagas provide eventual consistency in distributed systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of saga?",
+        "type": "mcq",
+        "c": "-- T1: Create order (compensate: cancel)\n-- T2: Reserve stock (compensate: release)\n-- T3: Charge payment (fails)\n-- Result:",
+        "o": [
+            "Run compensations: release stock, cancel order",
+            "Leave partial state",
+            "Error",
+            "Continue"
+        ]
+    },
+    {
+        "q": "Match saga component with its role:",
+        "type": "match",
+        "left": [
+            "Step",
+            "Compensation",
+            "Orchestrator",
+            "Choreography"
+        ],
+        "right": [
+            "Transaction part",
+            "Undo action",
+            "Central control",
+            "Event-driven"
+        ]
+    },
+    {
+        "q": "Rearrange saga flow:",
+        "type": "rearrange",
+        "words": [
+            "Execute step",
+            "Check success",
+            "If fail, compensate backwards",
+            "If succeed, continue",
+            "Complete or compensated"
+        ]
+    },
+    {
+        "q": "What is XA transaction?",
+        "type": "mcq",
+        "o": [
+            "Standard for distributed transaction processing",
+            "A database type",
+            "An index type",
+            "A lock type"
+        ]
+    },
+    {
+        "q": "XA defines interface between TM and _____ managers.",
+        "type": "fill_blank",
+        "answers": [
+            "resource"
+        ],
+        "other_options": [
+            "query",
+            "user",
+            "connection"
+        ]
+    },
+    {
+        "q": "XA supports heterogeneous resource managers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of XA?",
+        "type": "mcq",
+        "c": "-- XA transaction:\n-- Update DB1 (MySQL)\n-- Update DB2 (PostgreSQL)\n-- XA commit:",
+        "o": [
+            "Both databases commit atomically",
+            "Only DB1 commits",
+            "Neither commits",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match XA component with its role:",
+        "type": "match",
+        "left": [
+            "TM",
+            "RM",
+            "XA Interface",
+            "XID"
+        ],
+        "right": [
+            "Transaction manager",
+            "Resource manager",
+            "API",
+            "Transaction ID"
+        ]
+    },
+    {
+        "q": "Rearrange XA 2PC:",
+        "type": "rearrange",
+        "words": [
+            "xa_start",
+            "Operations",
+            "xa_end",
+            "xa_prepare",
+            "xa_commit"
+        ]
+    },
+    {
+        "q": "What is transaction timeout?",
+        "type": "mcq",
+        "o": [
+            "Maximum time allowed for transaction completion",
+            "Connection timeout",
+            "Query timeout",
+            "Lock timeout"
+        ]
+    },
+    {
+        "q": "Timeouts prevent _____ transactions from holding resources.",
+        "type": "fill_blank",
+        "answers": [
+            "long-running"
+        ],
+        "other_options": [
+            "short",
+            "fast",
+            "simple"
+        ]
+    },
+    {
+        "q": "Transaction timeouts can cause automatic rollback.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of timeout?",
+        "type": "mcq",
+        "c": "-- Transaction started\n-- SET TRANSACTION TIMEOUT = 30 seconds\n-- After 30 seconds with no commit:",
+        "o": [
+            "Transaction automatically rolled back",
+            "Transaction continues",
+            "Commit forced",
+            "Error only"
+        ]
+    },
+    {
+        "q": "Match timeout type with its scope:",
+        "type": "match",
+        "left": [
+            "Transaction timeout",
+            "Statement timeout",
+            "Idle timeout",
+            "Lock wait timeout"
+        ],
+        "right": [
+            "Whole txn",
+            "Single query",
+            "No activity",
+            "Lock acquisition"
+        ]
+    },
+    {
+        "q": "Rearrange timeout handling:",
+        "type": "rearrange",
+        "words": [
+            "Set timeout",
+            "Start transaction",
+            "Monitor elapsed",
+            "Timeout reached",
+            "Rollback and notify"
+        ]
+    },
+    {
+        "q": "What is lock wait timeout?",
+        "type": "mcq",
+        "o": [
+            "Maximum time to wait for a lock",
+            "Lock duration",
+            "Lock type",
+            "Lock count"
+        ]
+    },
+    {
+        "q": "Lock wait timeout prevents _____ waits.",
+        "type": "fill_blank",
+        "answers": [
+            "indefinite"
+        ],
+        "other_options": [
+            "quick",
+            "short",
+            "fast"
+        ]
+    },
+    {
+        "q": "Lock timeout returns an error, not a lock.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lock timeout?",
+        "type": "mcq",
+        "c": "-- innodb_lock_wait_timeout = 5\n-- Transaction waits for lock > 5 seconds\n-- Result:",
+        "o": [
+            "ERROR: Lock wait timeout exceeded",
+            "Lock acquired",
+            "Deadlock detected",
+            "No error"
+        ]
+    },
+    {
+        "q": "Match lock timeout config with its database:",
+        "type": "match",
+        "left": [
+            "innodb_lock_wait_timeout",
+            "lock_timeout",
+            "wait_timeout",
+            "statement_timeout"
+        ],
+        "right": [
+            "MySQL InnoDB",
+            "PostgreSQL",
+            "General",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "q": "Rearrange lock timeout flow:",
+        "type": "rearrange",
+        "words": [
+            "Request lock",
+            "Lock unavailable",
+            "Start wait",
+            "Timeout reached",
+            "Return error"
+        ]
+    },
+    {
+        "q": "What is retry logic?",
+        "type": "mcq",
+        "o": [
+            "Automatically retrying failed transactions",
+            "Backup logic",
+            "Query optimization",
+            "Lock logic"
+        ]
+    },
+    {
+        "q": "Retry logic uses _____ backoff to avoid thundering herd.",
+        "type": "fill_blank",
+        "answers": [
+            "exponential"
+        ],
+        "other_options": [
+            "linear",
+            "constant",
+            "random"
+        ]
+    },
+    {
+        "q": "Not all transaction failures should be retried.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of retry?",
+        "type": "mcq",
+        "c": "-- Attempt 1: Deadlock error, retry\n-- Attempt 2: Lock timeout, retry\n-- Attempt 3: Success\n-- Result:",
+        "o": [
+            "Transaction eventually succeeds",
+            "All attempts fail",
+            "Immediate success",
+            "No retry"
+        ]
+    },
+    {
+        "q": "Match retryable error with its action:",
+        "type": "match",
+        "left": [
+            "Deadlock",
+            "Lock timeout",
+            "Connection lost",
+            "Constraint violation"
+        ],
+        "right": [
+            "Retry",
+            "Retry",
+            "Reconnect and retry",
+            "Don't retry"
+        ]
+    },
+    {
+        "q": "Rearrange retry pattern:",
+        "type": "rearrange",
+        "words": [
+            "Try transaction",
+            "Catch retryable error",
+            "Wait with backoff",
+            "Increment retry count",
+            "Retry or fail"
+        ]
+    },
+    {
+        "q": "What is idempotency?",
+        "type": "mcq",
+        "o": [
+            "Same operation produces same result on repeated executions",
+            "Single execution",
+            "Parallel execution",
+            "Fast execution"
+        ]
+    },
+    {
+        "q": "Idempotent operations are safe to _____.",
+        "type": "fill_blank",
+        "answers": [
+            "retry"
+        ],
+        "other_options": [
+            "skip",
+            "cache",
+            "lock"
+        ]
+    },
+    {
+        "q": "Idempotency is crucial for reliable retry logic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of idempotent operation?",
+        "type": "mcq",
+        "c": "-- Create order with ID 123\n-- First call: creates order\n-- Retry (same ID 123):\n-- If idempotent:",
+        "o": [
+            "Returns existing order, no duplicate",
+            "Creates duplicate order",
+            "Error",
+            "Random result"
+        ]
+    },
+    {
+        "q": "Match idempotency technique with its method:",
+        "type": "match",
+        "left": [
+            "Request ID",
+            "Upsert",
+            "Check before write",
+            "Exactly-once"
+        ],
+        "right": [
+            "Track processed",
+            "Insert or update",
+            "Read then decide",
+            "Guarantee single"
+        ]
+    },
+    {
+        "q": "Rearrange idempotency implementation:",
+        "type": "rearrange",
+        "words": [
+            "Generate request ID",
+            "Send with request",
+            "Check if processed",
+            "Process if new",
+            "Store result"
+        ]
+    },
+    {
+        "q": "What is connection pooling?",
+        "type": "mcq",
+        "o": [
+            "Reusing database connections across requests",
+            "Single connection",
+            "Multiple databases",
+            "Connection backup"
+        ]
+    },
+    {
+        "q": "Pooling avoids expensive connection _____ overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "creation"
+        ],
+        "other_options": [
+            "usage",
+            "closing",
+            "querying"
+        ]
+    },
+    {
+        "q": "Connection pools have minimum and maximum size limits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of pool?",
+        "type": "mcq",
+        "c": "-- Pool size: 10\n-- 11th request needs connection\n-- If all busy:",
+        "o": [
+            "Request waits for available connection",
+            "Creates 11th connection",
+            "Error immediately",
+            "Skips request"
+        ]
+    },
+    {
+        "q": "Match pool config with its purpose:",
+        "type": "match",
+        "left": [
+            "Min size",
+            "Max size",
+            "Idle timeout",
+            "Validation query"
+        ],
+        "right": [
+            "Always ready",
+            "Limit resources",
+            "Close unused",
+            "Check health"
+        ]
+    },
+    {
+        "q": "Rearrange pool lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Initialize pool",
+            "Borrow connection",
+            "Execute query",
+            "Return connection",
+            "Clean up"
+        ]
+    },
+    {
+        "q": "What is transaction scope?",
+        "type": "mcq",
+        "o": [
+            "Boundary defining what's included in transaction",
+            "Transaction size",
+            "Lock scope",
+            "Query scope"
+        ]
+    },
+    {
+        "q": "Transaction scope should be as _____ as possible.",
+        "type": "fill_blank",
+        "answers": [
+            "short"
+        ],
+        "other_options": [
+            "long",
+            "wide",
+            "deep"
+        ]
+    },
+    {
+        "q": "Long transaction scopes increase lock contention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of wide scope?",
+        "type": "mcq",
+        "c": "-- Transaction starts\n-- External API call (slow)\n-- Database update\n-- Commit\n-- Problem:",
+        "o": [
+            "Locks held during slow API call",
+            "No problem",
+            "Faster execution",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match scope pattern with its approach:",
+        "type": "match",
+        "left": [
+            "Database only",
+            "With external calls",
+            "Batched",
+            "Single statement"
+        ],
+        "right": [
+            "Short locks",
+            "Long locks (avoid)",
+            "Chunked work",
+            "Auto-commit"
+        ]
+    },
+    {
+        "q": "Rearrange scope optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify work",
+            "Move non-DB work outside",
+            "Start transaction",
+            "Execute DB ops only",
+            "Commit quickly"
+        ]
+    },
+    {
+        "q": "What is read-only transaction?",
+        "type": "mcq",
+        "o": [
+            "Transaction that only reads, never writes",
+            "Write transaction",
+            "Mixed transaction",
+            "No transaction"
+        ]
+    },
+    {
+        "q": "Read-only transactions can use _____ isolation.",
+        "type": "fill_blank",
+        "answers": [
+            "snapshot"
+        ],
+        "other_options": [
+            "full",
+            "no",
+            "lock"
+        ]
+    },
+    {
+        "q": "Read-only transactions can avoid write locks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of read-only?",
+        "type": "mcq",
+        "c": "SET TRANSACTION READ ONLY;\nSELECT * FROM accounts;\nUPDATE accounts SET balance = 0;",
+        "o": [
+            "Error: cannot execute UPDATE in read-only transaction",
+            "Update succeeds",
+            "Nothing happens",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match read-only benefit with its effect:",
+        "type": "match",
+        "left": [
+            "No write overhead",
+            "Replica routing",
+            "Consistent reads",
+            "Less contention"
+        ],
+        "right": [
+            "Skip undo",
+            "Use replica",
+            "Snapshot",
+            "No write locks"
+        ]
+    },
+    {
+        "q": "Rearrange read-only optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify read-only work",
+            "Mark transaction read-only",
+            "Route to replica",
+            "Execute reads",
+            "No commit needed"
+        ]
+    },
+    {
+        "q": "What is transaction batching?",
+        "type": "mcq",
+        "o": [
+            "Combining multiple operations into single transaction",
+            "Single operation",
+            "Parallel transactions",
+            "No batching"
+        ]
+    },
+    {
+        "q": "Batching reduces transaction _____ overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "commit"
+        ],
+        "other_options": [
+            "query",
+            "lock",
+            "read"
+        ]
+    },
+    {
+        "q": "Batching can significantly improve bulk insert performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of batching?",
+        "type": "mcq",
+        "c": "-- Without batching: 1000 inserts = 1000 commits\n-- With batching: 1000 inserts = 1 commit\n-- Performance:",
+        "o": [
+            "Much faster with batching",
+            "Same speed",
+            "Slower",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Match batch size with its trade-off:",
+        "type": "match",
+        "left": [
+            "Too small",
+            "Too large",
+            "Optimal",
+            "Dynamic"
+        ],
+        "right": [
+            "High overhead",
+            "Long locks",
+            "Balanced",
+            "Adaptive"
+        ]
+    },
+    {
+        "q": "Rearrange batch processing:",
+        "type": "rearrange",
+        "words": [
+            "Collect items",
+            "Start transaction",
+            "Process batch",
+            "Commit",
+            "Move to next batch"
+        ]
+    },
+    {
+        "q": "What is nested transaction?",
+        "type": "mcq",
+        "o": [
+            "Transaction within another transaction",
+            "Multiple databases",
+            "Parallel transactions",
+            "No transaction"
+        ]
+    },
+    {
+        "q": "True nested transactions are _____ in most databases.",
+        "type": "fill_blank",
+        "answers": [
+            "unsupported"
+        ],
+        "other_options": [
+            "common",
+            "required",
+            "fast"
+        ]
+    },
+    {
+        "q": "SAVEPOINTs simulate nested transaction behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of savepoint nesting?",
+        "type": "mcq",
+        "c": "BEGIN;\n  SAVEPOINT level1;\n    INSERT INTO t VALUES (1);\n    ROLLBACK TO level1;\nCOMMIT;",
+        "o": [
+            "Outer commits, inner changes rolled back",
+            "Everything commits",
+            "Everything rolls back",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match nesting pattern with its support:",
+        "type": "match",
+        "left": [
+            "PostgreSQL",
+            "MySQL",
+            "SQL Server",
+            "Oracle"
+        ],
+        "right": [
+            "SAVEPOINTs only",
+            "SAVEPOINTs only",
+            "Named transactions",
+            "Autonomous"
+        ]
+    },
+    {
+        "q": "Rearrange savepoint simulation:",
+        "type": "rearrange",
+        "words": [
+            "Start outer txn",
+            "Create savepoint",
+            "Try inner work",
+            "Rollback to savepoint if fail",
+            "Commit outer"
+        ]
+    },
+    {
+        "q": "What is auto-commit?",
+        "type": "mcq",
+        "o": [
+            "Each statement is its own transaction",
+            "Manual commit only",
+            "No commits",
+            "Batch commit"
+        ]
+    },
+    {
+        "q": "Auto-commit is _____ by default in many databases.",
+        "type": "fill_blank",
+        "answers": [
+            "enabled"
+        ],
+        "other_options": [
+            "disabled",
+            "hidden",
+            "optional"
+        ]
+    },
+    {
+        "q": "Auto-commit should be disabled for multi-statement transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of auto-commit?",
+        "type": "mcq",
+        "c": "-- Auto-commit ON\nINSERT INTO t VALUES (1);\n-- Power failure\n-- After recovery:",
+        "o": [
+            "Value 1 is persisted (auto-committed)",
+            "Value 1 is lost",
+            "Error",
+            "Unknown"
+        ]
+    },
+    {
+        "q": "Match auto-commit setting with its behavior:",
+        "type": "match",
+        "left": [
+            "ON",
+            "OFF",
+            "IMPLICIT_TRANSACTIONS",
+            "BEGIN"
+        ],
+        "right": [
+            "Each statement commits",
+            "Must commit manually",
+            "Auto-start txn",
+            "Explicit start"
+        ]
+    },
+    {
+        "q": "Rearrange auto-commit handling:",
+        "type": "rearrange",
+        "words": [
+            "Check auto-commit setting",
+            "Disable if multi-statement",
+            "Execute statements",
+            "Explicit COMMIT",
+            "Re-enable if needed"
+        ]
+    },
+    {
+        "q": "What is eventual consistency?",
+        "type": "mcq",
+        "o": [
+            "System will become consistent over time",
+            "Immediate consistency",
+            "Never consistent",
+            "Random consistency"
+        ]
+    },
+    {
+        "q": "Eventual consistency trades _____ for availability.",
+        "type": "fill_blank",
+        "answers": [
+            "consistency"
+        ],
+        "other_options": [
+            "speed",
+            "storage",
+            "memory"
+        ]
+    },
+    {
+        "q": "BASE is the alternative to ACID for some systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of eventual consistency?",
+        "type": "mcq",
+        "c": "-- Write to node A\n-- Read from node B (before replication)\n-- Result:",
+        "o": [
+            "May see stale data temporarily",
+            "Always sees new data",
+            "Error",
+            "No read allowed"
+        ]
+    },
+    {
+        "q": "Match BASE with its meaning:",
+        "type": "match",
+        "left": [
+            "BA",
+            "S",
+            "E",
+            "Trade-off"
+        ],
+        "right": [
+            "Basically Available",
+            "Soft state",
+            "Eventually consistent",
+            "Availability over consistency"
+        ]
+    },
+    {
+        "q": "Rearrange consistency spectrum:",
+        "type": "rearrange",
+        "words": [
+            "Strong (ACID)",
+            "Linearizable",
+            "Sequential",
+            "Causal",
+            "Eventually consistent"
+        ]
+    },
+    {
+        "q": "What is quorum?",
+        "type": "mcq",
+        "o": [
+            "Minimum nodes needed for distributed agreement",
+            "Single node",
+            "All nodes",
+            "No nodes"
+        ]
+    },
+    {
+        "q": "A quorum typically requires majority of _____ nodes.",
+        "type": "fill_blank",
+        "answers": [
+            "total"
+        ],
+        "other_options": [
+            "active",
+            "primary",
+            "backup"
+        ]
+    },
+    {
+        "q": "Quorum ensures overlap between read and write sets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of quorum write?",
+        "type": "mcq",
+        "c": "-- 5 nodes, quorum = 3\n-- Write reaches 3 nodes\n-- Result:",
+        "o": [
+            "Write succeeds (quorum achieved)",
+            "Write fails",
+            "Write to all 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match quorum formula with its property:",
+        "type": "match",
+        "left": [
+            "W + R > N",
+            "W > N/2",
+            "R = 1",
+            "W = 1"
+        ],
+        "right": [
+            "Read sees write",
+            "No conflicts",
+            "Fast reads",
+            "Fast writes"
+        ]
+    },
+    {
+        "q": "Rearrange quorum levels:",
+        "type": "rearrange",
+        "words": [
+            "ONE (fast, weak)",
+            "QUORUM (balanced)",
+            "ALL (slow, strong)"
+        ]
+    },
+    {
+        "q": "What is snapshot isolation?",
+        "type": "mcq",
+        "o": [
+            "Transaction sees consistent snapshot from start",
+            "Lock-based isolation",
+            "No isolation",
+            "Always latest data"
+        ]
+    },
+    {
+        "q": "Snapshot isolation uses _____ for reads.",
+        "type": "fill_blank",
+        "answers": [
+            "MVCC"
+        ],
+        "other_options": [
+            "locks",
+            "waits",
+            "retries"
+        ]
+    },
+    {
+        "q": "Snapshot isolation can suffer from write skew.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of snapshot isolation?",
+        "type": "mcq",
+        "c": "-- T1 starts, snapshot at time 100\n-- T2 updates row, commits at time 110\n-- T1 reads row at time 120:",
+        "o": [
+            "T1 sees data as of time 100",
+            "T1 sees T2's update",
+            "Error",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match snapshot issue with its description:",
+        "type": "match",
+        "left": [
+            "Write skew",
+            "First-committer wins",
+            "Phantom",
+            "Version chain"
+        ],
+        "right": [
+            "Constraint violation",
+            "Conflict resolution",
+            "May occur",
+            "Storage overhead"
+        ]
+    },
+    {
+        "q": "Rearrange snapshot timeline:",
+        "type": "rearrange",
+        "words": [
+            "Start transaction",
+            "Get snapshot timestamp",
+            "All reads from snapshot",
+            "Writes check conflicts",
+            "Commit if no conflicts"
+        ]
+    },
+    {
+        "q": "What is write skew?",
+        "type": "mcq",
+        "o": [
+            "Two transactions update different rows but violate constraint",
+            "Same row updated",
+            "Read problem",
+            "Lock failure"
+        ]
+    },
+    {
+        "q": "Write skew occurs when constraint checks different rows but constraint spans _____.",
+        "type": "fill_blank",
+        "answers": [
+            "multiple"
+        ],
+        "other_options": [
+            "single",
+            "no",
+            "locked"
+        ]
+    },
+    {
+        "q": "Serializable isolation prevents write skew.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of write skew?",
+        "type": "mcq",
+        "c": "-- Constraint: SUM(balance) >= 0\n-- T1 reads balances, removes from A\n-- T2 reads balances, removes from B\n-- Both commit:",
+        "o": [
+            "Constraint may be violated",
+            "Constraint always holds",
+            "Deadlock",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match write skew prevention with its method:",
+        "type": "match",
+        "left": [
+            "Serializable",
+            "Explicit locking",
+            "Materialize conflict",
+            "Application check"
+        ],
+        "right": [
+            "Detect all conflicts",
+            "Lock related rows",
+            "Create shared row",
+            "Re-validate"
+        ]
+    },
+    {
+        "q": "Rearrange write skew scenario:",
+        "type": "rearrange",
+        "words": [
+            "Both txns read state",
+            "Constraint checks pass",
+            "Both modify different rows",
+            "Both commit",
+            "Constraint violated"
+        ]
+    },
+    {
+        "q": "What is lock escalation?",
+        "type": "mcq",
+        "o": [
+            "Converting many row locks to table lock",
+            "Lock timeout",
+            "Lock deadlock",
+            "Lock release"
+        ]
+    },
+    {
+        "q": "Lock escalation reduces memory usage for _____.",
+        "type": "fill_blank",
+        "answers": [
+            "lock management"
+        ],
+        "other_options": [
+            "queries",
+            "data",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Lock escalation can reduce concurrency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of escalation?",
+        "type": "mcq",
+        "c": "-- 5000 row locks on table\n-- Escalation threshold: 5000\n-- After escalation:",
+        "o": [
+            "Single table lock replaces row locks",
+            "5000 row locks remain",
+            "Error",
+            "Deadlock"
+        ]
+    },
+    {
+        "q": "Match escalation setting with its effect:",
+        "type": "match",
+        "left": [
+            "High threshold",
+            "Low threshold",
+            "Disabled",
+            "Dynamic"
+        ],
+        "right": [
+            "More row locks",
+            "Earlier escalation",
+            "Never escalate",
+            "Adaptive"
+        ]
+    },
+    {
+        "q": "Rearrange escalation process:",
+        "type": "rearrange",
+        "words": [
+            "Acquire row locks",
+            "Reach threshold",
+            "Request table lock",
+            "Wait for existing locks",
+            "Replace with table lock"
+        ]
+    },
+    {
+        "q": "What is intent lock?",
+        "type": "mcq",
+        "o": [
+            "Lock indicating intention to acquire lower-level locks",
+            "Full lock",
+            "No lock",
+            "Read lock"
+        ]
+    },
+    {
+        "q": "Intent locks prevent _____ between row and table locks.",
+        "type": "fill_blank",
+        "answers": [
+            "conflicts"
+        ],
+        "other_options": [
+            "transfers",
+            "copies",
+            "delays"
+        ]
+    },
+    {
+        "q": "IS (Intent Shared) is compatible with IS.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of intent lock?",
+        "type": "mcq",
+        "c": "-- T1: Wants table lock X\n-- T2: Has IS lock on table (row shared)\n-- Result:",
+        "o": [
+            "T1 blocked without checking each row",
+            "T1 gets lock immediately",
+            "T2 upgraded",
+            "Deadlock"
+        ]
+    },
+    {
+        "q": "Match intent lock with its meaning:",
+        "type": "match",
+        "left": [
+            "IS",
+            "IX",
+            "SIX",
+            "S"
+        ],
+        "right": [
+            "Intent shared",
+            "Intent exclusive",
+            "Shared+IX",
+            "Full shared"
+        ]
+    },
+    {
+        "q": "Rearrange intent lock hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Request intent on table",
+            "Acquire intent lock",
+            "Request row lock",
+            "Access row",
+            "Release in reverse"
+        ]
+    },
+    {
+        "q": "What is deadlock detection?",
+        "type": "mcq",
+        "o": [
+            "Finding circular wait conditions in lock graph",
+            "Preventing locks",
+            "Timeout handling",
+            "Lock release"
+        ]
+    },
+    {
+        "q": "Detection uses wait-for _____ analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "graph"
+        ],
+        "other_options": [
+            "table",
+            "list",
+            "queue"
+        ]
+    },
+    {
+        "q": "Deadlock detection runs periodically in most databases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of detection?",
+        "type": "mcq",
+        "c": "-- Wait-for graph:\n-- T1 -> T2 -> T3 -> T1\n-- Cycle found:",
+        "o": [
+            "Deadlock detected, one transaction chosen as victim",
+            "All continue",
+            "All abort",
+            "Error only"
+        ]
+    },
+    {
+        "q": "Match detection method with its approach:",
+        "type": "match",
+        "left": [
+            "Graph cycle",
+            "Timeout",
+            "Wait-die",
+            "Wound-wait"
+        ],
+        "right": [
+            "Find cycles",
+            "Abort after time",
+            "Young waits or dies",
+            "Old wounds young"
+        ]
+    },
+    {
+        "q": "Rearrange detection flow:",
+        "type": "rearrange",
+        "words": [
+            "Build wait-for graph",
+            "Look for cycles",
+            "Choose victim",
+            "Rollback victim",
+            "Continue others"
+        ]
+    },
+    {
+        "q": "What is deadlock prevention?",
+        "type": "mcq",
+        "o": [
+            "Techniques to avoid deadlock occurrence",
+            "Detection",
+            "Recovery",
+            "Timeout only"
+        ]
+    },
+    {
+        "q": "Prevention can use lock _____ to avoid cycles.",
+        "type": "fill_blank",
+        "answers": [
+            "ordering"
+        ],
+        "other_options": [
+            "releasing",
+            "escaping",
+            "sharing"
+        ]
+    },
+    {
+        "q": "Acquiring locks in consistent order prevents deadlocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of prevention?",
+        "type": "mcq",
+        "c": "-- Rule: Always lock tables alphabetically\n-- T1: Lock A then B\n-- T2: Lock A then B (same order)\n-- Result:",
+        "o": [
+            "No deadlock possible with consistent ordering",
+            "Deadlock still possible",
+            "Slower execution",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match prevention strategy with its mechanism:",
+        "type": "match",
+        "left": [
+            "Lock ordering",
+            "Lock all at once",
+            "Timeout",
+            "No wait"
+        ],
+        "right": [
+            "Consistent sequence",
+            "Atomic acquisition",
+            "Abort after time",
+            "Abort if unavailable"
+        ]
+    },
+    {
+        "q": "Rearrange prevention techniques:",
+        "type": "rearrange",
+        "words": [
+            "Determine lock order",
+            "Request in order",
+            "Hold until complete",
+            "Release in reverse",
+            "Avoid out-of-order"
+        ]
+    },
+    {
+        "q": "What is transaction log?",
+        "type": "mcq",
+        "o": [
+            "Sequential record of all database changes",
+            "Error log",
+            "Query log",
+            "Access log"
+        ]
+    },
+    {
+        "q": "Transaction log enables _____ after failures.",
+        "type": "fill_blank",
+        "answers": [
+            "recovery"
+        ],
+        "other_options": [
+            "backup",
+            "query",
+            "index"
+        ]
+    },
+    {
+        "q": "Transaction logs are append-only.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of log?",
+        "type": "mcq",
+        "c": "-- Log contains:\n-- LSN, TxnID, PageID, Before, After\n-- Purpose:",
+        "o": [
+            "Full history for redo and undo operations",
+            "Query optimization",
+            "Index maintenance",
+            "Error reporting"
+        ]
+    },
+    {
+        "q": "Match log component with its content:",
+        "type": "match",
+        "left": [
+            "LSN",
+            "TxnID",
+            "Before image",
+            "After image"
+        ],
+        "right": [
+            "Sequence number",
+            "Transaction identifier",
+            "Old value",
+            "New value"
+        ]
+    },
+    {
+        "q": "Rearrange log processing:",
+        "type": "rearrange",
+        "words": [
+            "Generate log record",
+            "Write to buffer",
+            "Flush to disk",
+            "Update data page",
+            "Advance LSN"
+        ]
+    },
+    {
+        "q": "What is log sequence number (LSN)?",
+        "type": "mcq",
+        "o": [
+            "Unique identifier for each log record",
+            "Transaction ID",
+            "Page number",
+            "Block number"
+        ]
+    },
+    {
+        "q": "LSN increases _____ with each log record.",
+        "type": "fill_blank",
+        "answers": [
+            "monotonically"
+        ],
+        "other_options": [
+            "randomly",
+            "periodically",
+            "optionally"
+        ]
+    },
+    {
+        "q": "LSN helps determine which log records to apply during recovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of LSN comparison?",
+        "type": "mcq",
+        "c": "-- Page LSN: 1000\n-- Log record LSN: 1005\n-- During REDO:",
+        "o": [
+            "Apply record (1005 > 1000)",
+            "Skip record",
+            "Error",
+            "Revert page"
+        ]
+    },
+    {
+        "q": "Match LSN usage with its context:",
+        "type": "match",
+        "left": [
+            "Page LSN",
+            "Flushed LSN",
+            "Checkpoint LSN",
+            "Recovery LSN"
+        ],
+        "right": [
+            "Last applied",
+            "Last written to disk",
+            "Restart point",
+            "Start recovery from"
+        ]
+    },
+    {
+        "q": "Rearrange LSN timeline:",
+        "type": "rearrange",
+        "words": [
+            "Initial LSN",
+            "Log records generated",
+            "Checkpoint taken",
+            "Crash occurs",
+            "Recovery uses LSNs"
+        ]
+    },
+    {
+        "q": "What is group commit?",
+        "type": "mcq",
+        "o": [
+            "Batching multiple commits into single I/O",
+            "Single commit",
+            "Sequential commits",
+            "No commit"
+        ]
+    },
+    {
+        "q": "Group commit reduces _____ overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "I/O"
+        ],
+        "other_options": [
+            "memory",
+            "CPU",
+            "network"
+        ]
+    },
+    {
+        "q": "Group commit improves throughput at slight latency cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of group commit?",
+        "type": "mcq",
+        "c": "-- 10 transactions ready to commit\n-- Group commit waits briefly\n-- Single log flush:",
+        "o": [
+            "All 10 commits with one disk write",
+            "10 separate writes",
+            "No commits",
+            "Random commits"
+        ]
+    },
+    {
+        "q": "Match group commit setting with its effect:",
+        "type": "match",
+        "left": [
+            "Small delay",
+            "Large delay",
+            "Disabled",
+            "Sync threshold"
+        ],
+        "right": [
+            "Less batching",
+            "More batching",
+            "Each commit flushes",
+            "Batch size limit"
+        ]
+    },
+    {
+        "q": "Rearrange group commit:",
+        "type": "rearrange",
+        "words": [
+            "Transactions queue for commit",
+            "Wait for group",
+            "Collect commits",
+            "Single flush",
+            "All acknowledged"
+        ]
+    },
+    {
+        "q": "What is crash recovery?",
+        "type": "mcq",
+        "o": [
+            "Restoring database consistency after failure",
+            "Backup restore",
+            "Query retry",
+            "Connection reset"
+        ]
+    },
+    {
+        "q": "Recovery ensures ACID _____ survive crashes.",
+        "type": "fill_blank",
+        "answers": [
+            "guarantees"
+        ],
+        "other_options": [
+            "queries",
+            "connections",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Crash recovery is automatic on database restart.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of crash recovery?",
+        "type": "mcq",
+        "c": "-- Before crash: Committed T1, Active T2\n-- After recovery:\n-- T1 changes:",
+        "o": [
+            "Preserved (redo), T2 changes rolled back (undo)",
+            "Both lost",
+            "Both preserved",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match recovery type with its scenario:",
+        "type": "match",
+        "left": [
+            "Crash",
+            "Media",
+            "Instance",
+            "Point-in-time"
+        ],
+        "right": [
+            "Power failure",
+            "Disk failure",
+            "Process crash",
+            "Restore to timestamp"
+        ]
+    },
+    {
+        "q": "Rearrange recovery phases:",
+        "type": "rearrange",
+        "words": [
+            "Start database",
+            "Read checkpoint",
+            "Analysis phase",
+            "Redo phase",
+            "Undo phase"
+        ]
+    },
+    {
+        "q": "What is transaction monitor?",
+        "type": "mcq",
+        "o": [
+            "Tool for observing transaction behavior",
+            "Lock monitor",
+            "Query optimizer",
+            "Index analyzer"
+        ]
+    },
+    {
+        "q": "Monitors help identify _____ transactions.",
+        "type": "fill_blank",
+        "answers": [
+            "problematic"
+        ],
+        "other_options": [
+            "successful",
+            "fast",
+            "small"
+        ]
+    },
+    {
+        "q": "Transaction monitoring can track lock waits and deadlocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of monitoring?",
+        "type": "mcq",
+        "c": "-- Monitor shows:\n-- TxnID: 123, Duration: 5min, Locks: 1000\n-- Action:",
+        "o": [
+            "Investigate long-running, high-lock transaction",
+            "Normal behavior",
+            "Stop database",
+            "No action"
+        ]
+    },
+    {
+        "q": "Match monitor metric with its concern:",
+        "type": "match",
+        "left": [
+            "Long duration",
+            "Many locks",
+            "High waits",
+            "Frequent rollbacks"
+        ],
+        "right": [
+            "Resource holding",
+            "Potential escalation",
+            "Contention",
+            "Application issue"
+        ]
+    },
+    {
+        "q": "Rearrange monitoring process:",
+        "type": "rearrange",
+        "words": [
+            "Enable monitoring",
+            "Collect metrics",
+            "Set thresholds",
+            "Alert on violation",
+            "Investigate issues"
+        ]
+    },
+    {
+        "q": "What is blocking?",
+        "type": "mcq",
+        "o": [
+            "One transaction waiting for another's lock",
+            "Query failure",
+            "Connection issue",
+            "Disk full"
+        ]
+    },
+    {
+        "q": "Blocking queries _____ performance issues.",
+        "type": "fill_blank",
+        "answers": [
+            "cause"
+        ],
+        "other_options": [
+            "solve",
+            "prevent",
+            "hide"
+        ]
+    },
+    {
+        "q": "Blocking is normal but prolonged blocking is a problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of blocking query?",
+        "type": "mcq",
+        "c": "-- Show blocked processes\n-- Blocker: Session 10, Query: UPDATE...\n-- Waiters: Sessions 20,21,22\n-- Impact:",
+        "o": [
+            "Multiple sessions waiting, potential cascade",
+            "No impact",
+            "Faster queries",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match blocking resolution with its action:",
+        "type": "match",
+        "left": [
+            "Kill blocker",
+            "Wait",
+            "Optimize blocker",
+            "Change isolation"
+        ],
+        "right": [
+            "Immediate but disruptive",
+            "May resolve",
+            "Long-term fix",
+            "Reduce contention"
+        ]
+    },
+    {
+        "q": "Rearrange blocking analysis:",
+        "type": "rearrange",
+        "words": [
+            "Find blocking chain",
+            "Identify root blocker",
+            "Analyze blocker query",
+            "Choose resolution",
+            "Prevent recurrence"
+        ]
+    },
+    {
+        "q": "What is row versioning?",
+        "type": "mcq",
+        "o": [
+            "Keeping multiple versions of rows for readers",
+            "Row locking",
+            "Row counting",
+            "Row deletion"
+        ]
+    },
+    {
+        "q": "Row versioning enables _____ without blocking.",
+        "type": "fill_blank",
+        "answers": [
+            "reads"
+        ],
+        "other_options": [
+            "writes",
+            "deletes",
+            "locks"
+        ]
+    },
+    {
+        "q": "SQL Server uses tempdb for version store.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of row versioning?",
+        "type": "mcq",
+        "c": "-- T1 updating row\n-- T2 reading same row (Read Committed Snapshot)\n-- T2 sees:",
+        "o": [
+            "Previous version from before T1's update",
+            "T1's uncommitted update",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Match versioning feature with its database:",
+        "type": "match",
+        "left": [
+            "MVCC",
+            "tempdb versions",
+            "Undo segments",
+            "Heap storage"
+        ],
+        "right": [
+            "PostgreSQL",
+            "SQL Server",
+            "Oracle",
+            "MySQL InnoDB"
+        ]
+    },
+    {
+        "q": "Rearrange versioning flow:",
+        "type": "rearrange",
+        "words": [
+            "Write new version",
+            "Keep old version",
+            "Readers see old",
+            "Writer sees new",
+            "Clean old after commit"
+        ]
+    },
+    {
+        "q": "What is transaction isolation in PostgreSQL?",
+        "type": "mcq",
+        "o": [
+            "READ COMMITTED, REPEATABLE READ, SERIALIZABLE",
+            "Only READ COMMITTED",
+            "Only SERIALIZABLE",
+            "No isolation"
+        ]
+    },
+    {
+        "q": "PostgreSQL default is _____ committed.",
+        "type": "fill_blank",
+        "answers": [
+            "read"
+        ],
+        "other_options": [
+            "serializable",
+            "repeatable",
+            "uncommitted"
+        ]
+    },
+    {
+        "q": "PostgreSQL REPEATABLE READ prevents phantoms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output in PostgreSQL?",
+        "type": "mcq",
+        "c": "SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;\nSELECT COUNT(*) FROM t; -- Returns 10\n-- Another session inserts\nSELECT COUNT(*) FROM t;",
+        "o": [
+            "Still 10 (snapshot isolation)",
+            "11 (sees insert)",
+            "Error",
+            "Random"
+        ]
+    },
+    {
+        "q": "Match PostgreSQL level with its feature:",
+        "type": "match",
+        "left": [
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable",
+            "SSI"
+        ],
+        "right": [
+            "Statement snapshot",
+            "Transaction snapshot",
+            "Serialization check",
+            "Serializable Snapshot Isolation"
+        ]
+    },
+    {
+        "q": "Rearrange PostgreSQL isolation by strictness:",
+        "type": "rearrange",
+        "words": [
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable"
+        ]
+    },
+    {
+        "q": "What is transaction isolation in MySQL?",
+        "type": "mcq",
+        "o": [
+            "All four SQL standard levels",
+            "Only two levels",
+            "One level",
+            "No isolation"
+        ]
+    },
+    {
+        "q": "MySQL InnoDB default is _____ read.",
+        "type": "fill_blank",
+        "answers": [
+            "repeatable"
+        ],
+        "other_options": [
+            "committed",
+            "uncommitted",
+            "serializable"
+        ]
+    },
+    {
+        "q": "MySQL REPEATABLE READ may still have phantom issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output in MySQL?",
+        "type": "mcq",
+        "c": "SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;\nSELECT * FROM accounts;\n-- Implicit:",
+        "o": [
+            "Shared locks acquired, other writes blocked",
+            "No locks",
+            "Exclusive locks",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match MySQL feature with its lock type:",
+        "type": "match",
+        "left": [
+            "SELECT",
+            "SELECT FOR UPDATE",
+            "SELECT FOR SHARE",
+            "UPDATE"
+        ],
+        "right": [
+            "Snapshot read",
+            "Exclusive lock",
+            "Shared lock",
+            "Exclusive lock"
+        ]
+    },
+    {
+        "q": "Rearrange MySQL locking reads:",
+        "type": "rearrange",
+        "words": [
+            "Plain SELECT (no lock)",
+            "FOR SHARE (shared)",
+            "FOR UPDATE (exclusive)",
+            "UPDATE (exclusive)"
+        ]
+    },
+    {
+        "q": "What is transaction in Oracle?",
+        "type": "mcq",
+        "o": [
+            "Implicit start on first DML, explicit COMMIT needed",
+            "Explicit start required",
+            "Auto-commit always",
+            "No transactions"
+        ]
+    },
+    {
+        "q": "Oracle uses _____ segments for rollback.",
+        "type": "fill_blank",
+        "answers": [
+            "undo"
+        ],
+        "other_options": [
+            "redo",
+            "temp",
+            "data"
+        ]
+    },
+    {
+        "q": "Oracle reads never block writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output in Oracle?",
+        "type": "mcq",
+        "c": "-- No BEGIN needed\nUPDATE accounts SET balance = 0;\n-- Without COMMIT:",
+        "o": [
+            "Changes visible only to this session",
+            "Changes visible to all",
+            "Changes auto-saved",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Oracle feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Undo",
+            "Redo",
+            "SCN",
+            "Flashback"
+        ],
+        "right": [
+            "Read consistency",
+            "Recovery",
+            "System Change Number",
+            "Point-in-time query"
+        ]
+    },
+    {
+        "q": "Rearrange Oracle commit flow:",
+        "type": "rearrange",
+        "words": [
+            "Execute DML",
+            "Generate redo",
+            "Update data blocks",
+            "COMMIT issued",
+            "Redo flushed"
+        ]
+    },
+    {
+        "q": "What is transaction in SQL Server?",
+        "type": "mcq",
+        "o": [
+            "BEGIN TRANSACTION, COMMIT, ROLLBACK",
+            "Implicit only",
+            "No syntax",
+            "Auto-commit only"
+        ]
+    },
+    {
+        "q": "SQL Server uses _____ locking by default.",
+        "type": "fill_blank",
+        "answers": [
+            "pessimistic"
+        ],
+        "other_options": [
+            "optimistic",
+            "no",
+            "partial"
+        ]
+    },
+    {
+        "q": "SQL Server supports snapshot isolation if enabled.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output in SQL Server?",
+        "type": "mcq",
+        "c": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED SNAPSHOT;\n-- When enabled:",
+        "o": [
+            "Readers don't block writers using version store",
+            "Readers block writers",
+            "No difference",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match SQL Server feature with its setting:",
+        "type": "match",
+        "left": [
+            "READ_COMMITTED_SNAPSHOT",
+            "ALLOW_SNAPSHOT_ISOLATION",
+            "LOCK_TIMEOUT",
+            "DEADLOCK_PRIORITY"
+        ],
+        "right": [
+            "Row versioning for RC",
+            "Enable SI",
+            "Wait limit",
+            "Victim choice"
+        ]
+    },
+    {
+        "q": "Rearrange SQL Server isolation evolution:",
+        "type": "rearrange",
+        "words": [
+            "Locking only",
+            "Row versioning added",
+            "Snapshot isolation",
+            "Read committed snapshot"
+        ]
+    },
+    {
+        "q": "What is advisory lock?",
+        "type": "mcq",
+        "o": [
+            "Application-controlled lock not tied to data",
+            "Automatic lock",
+            "Row lock",
+            "Table lock"
+        ]
+    },
+    {
+        "q": "Advisory locks are controlled by _____ code.",
+        "type": "fill_blank",
+        "answers": [
+            "application"
+        ],
+        "other_options": [
+            "database",
+            "system",
+            "kernel"
+        ]
+    },
+    {
+        "q": "PostgreSQL supports advisory locks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of advisory lock?",
+        "type": "mcq",
+        "c": "SELECT pg_advisory_lock(123);\n-- Application-defined key 123\n-- Other sessions requesting 123:",
+        "o": [
+            "Block until first session releases",
+            "Proceed immediately",
+            "Error",
+            "Shared access"
+        ]
+    },
+    {
+        "q": "Match advisory lock with its use:",
+        "type": "match",
+        "left": [
+            "Session level",
+            "Transaction level",
+            "Try lock",
+            "Unlock"
+        ],
+        "right": [
+            "Until disconnect",
+            "Until commit",
+            "Non-blocking",
+            "Release"
+        ]
+    },
+    {
+        "q": "Rearrange advisory lock usage:",
+        "type": "rearrange",
+        "words": [
+            "Define lock key",
+            "Acquire advisory lock",
+            "Do critical work",
+            "Release advisory lock",
+            "Others proceed"
+        ]
+    },
+    {
+        "q": "What is SELECT FOR UPDATE SKIP LOCKED?",
+        "type": "mcq",
+        "o": [
+            "Skip rows that are locked by other transactions",
+            "Wait for all locks",
+            "Error on lock",
+            "No locking"
+        ]
+    },
+    {
+        "q": "SKIP LOCKED is useful for _____ processing.",
+        "type": "fill_blank",
+        "answers": [
+            "parallel"
+        ],
+        "other_options": [
+            "sequential",
+            "slow",
+            "cached"
+        ]
+    },
+    {
+        "q": "SKIP LOCKED is available in PostgreSQL and Oracle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of SKIP LOCKED?",
+        "type": "mcq",
+        "c": "-- Worker 1: SELECT * FOR UPDATE (gets rows 1-5)\n-- Worker 2: SELECT * FOR UPDATE SKIP LOCKED\n-- Worker 2 gets:",
+        "o": [
+            "Rows 6-10 (skips locked 1-5)",
+            "Waits for 1-5",
+            "Rows 1-5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match SKIP LOCKED with its benefit:",
+        "type": "match",
+        "left": [
+            "No waiting",
+            "Equal distribution",
+            "Progress guarantee",
+            "Work stealing"
+        ],
+        "right": [
+            "Never blocks",
+            "Each gets different rows",
+            "Always proceeds",
+            "Get available work"
+        ]
+    },
+    {
+        "q": "Rearrange SKIP LOCKED queue pattern:",
+        "type": "rearrange",
+        "words": [
+            "Select pending items",
+            "SKIP LOCKED",
+            "Process selected",
+            "Mark complete",
+            "Other workers get rest"
+        ]
+    },
+    {
+        "q": "What is SELECT FOR UPDATE NOWAIT?",
+        "type": "mcq",
+        "o": [
+            "Error immediately if rows are locked",
+            "Wait indefinitely",
+            "Skip locked rows",
+            "No locking"
+        ]
+    },
+    {
+        "q": "NOWAIT fails fast instead of _____.",
+        "type": "fill_blank",
+        "answers": [
+            "waiting"
+        ],
+        "other_options": [
+            "succeeding",
+            "retrying",
+            "skipping"
+        ]
+    },
+    {
+        "q": "NOWAIT is useful for responsive applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of NOWAIT?",
+        "type": "mcq",
+        "c": "-- Row locked by another transaction\nSELECT * FROM t WHERE id=1 FOR UPDATE NOWAIT;\n-- Result:",
+        "o": [
+            "ERROR: could not obtain lock",
+            "Waits for lock",
+            "Returns row anyway",
+            "Returns NULL"
+        ]
+    },
+    {
+        "q": "Match NOWAIT behavior with its use case:",
+        "type": "match",
+        "left": [
+            "Fail fast",
+            "Retry logic",
+            "Alternative action",
+            "Inform user"
+        ],
+        "right": [
+            "Don't block UI",
+            "Application retry",
+            "Try different resource",
+            "Show busy message"
+        ]
+    },
+    {
+        "q": "Rearrange NOWAIT pattern:",
+        "type": "rearrange",
+        "words": [
+            "Try FOR UPDATE NOWAIT",
+            "Catch lock error",
+            "Decide retry or alternative",
+            "Handle success",
+            "Respond to user"
+        ]
+    },
+    {
+        "q": "What is database session?",
+        "type": "mcq",
+        "o": [
+            "Connection with state between client and database",
+            "Single query",
+            "Transaction",
+            "Lock"
+        ]
+    },
+    {
+        "q": "Session state includes current _____ and settings.",
+        "type": "fill_blank",
+        "answers": [
+            "transaction"
+        ],
+        "other_options": [
+            "query",
+            "index",
+            "table"
+        ]
+    },
+    {
+        "q": "Sessions can span multiple transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of session variable?",
+        "type": "mcq",
+        "c": "SET work_mem = '1GB';  -- Session setting\n-- Next query:",
+        "o": [
+            "Uses 1GB work memory until session ends",
+            "Uses 1GB for this query only",
+            "Affects all sessions",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match session concept with its scope:",
+        "type": "match",
+        "left": [
+            "Connection",
+            "Transaction",
+            "Statement",
+            "Global"
+        ],
+        "right": [
+            "Until disconnect",
+            "Until commit/rollback",
+            "Single query",
+            "All sessions"
+        ]
+    },
+    {
+        "q": "Rearrange session lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Connect",
+            "Set session variables",
+            "Execute transactions",
+            "Reset or keep state",
+            "Disconnect"
+        ]
+    },
+    {
+        "q": "What is autonomous transaction?",
+        "type": "mcq",
+        "o": [
+            "Independent transaction that commits separately",
+            "Dependent transaction",
+            "Nested transaction",
+            "Sub-transaction"
+        ]
+    },
+    {
+        "q": "Autonomous transactions can _____ regardless of parent.",
+        "type": "fill_blank",
+        "answers": [
+            "commit"
+        ],
+        "other_options": [
+            "rollback",
+            "wait",
+            "abort"
+        ]
+    },
+    {
+        "q": "Oracle PL/SQL supports autonomous transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of autonomous?",
+        "type": "mcq",
+        "c": "-- Main transaction active\n-- Autonomous: Logs action, commits\n-- Main rolls back\n-- Log entry:",
+        "o": [
+            "Still exists (autonomous committed independently)",
+            "Rolled back with main",
+            "Error",
+            "Pending"
+        ]
+    },
+    {
+        "q": "Match autonomous use with its purpose:",
+        "type": "match",
+        "left": [
+            "Audit logging",
+            "Error logging",
+            "Sequence generation",
+            "Usage tracking"
+        ],
+        "right": [
+            "Must persist",
+            "Capture failures",
+            "Independent numbers",
+            "Metrics collection"
+        ]
+    },
+    {
+        "q": "Rearrange autonomous transaction:",
+        "type": "rearrange",
+        "words": [
+            "Main starts",
+            "Call autonomous procedure",
+            "Autonomous commits",
+            "Main continues",
+            "Main commits or rolls back"
+        ]
+    },
+    {
+        "q": "What is transaction attribute propagation?",
+        "type": "mcq",
+        "o": [
+            "How transaction context flows between components",
+            "Lock propagation",
+            "Data propagation",
+            "Query propagation"
+        ]
+    },
+    {
+        "q": "REQUIRED propagation joins existing or creates _____.",
+        "type": "fill_blank",
+        "answers": [
+            "new"
+        ],
+        "other_options": [
+            "none",
+            "error",
+            "wait"
+        ]
+    },
+    {
+        "q": "Spring Framework supports transaction propagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of REQUIRES_NEW?",
+        "type": "mcq",
+        "c": "-- Outer transaction running\n-- Call method with REQUIRES_NEW\n-- Result:",
+        "o": [
+            "New independent transaction started (outer suspended)",
+            "Joins outer",
+            "Error",
+            "No transaction"
+        ]
+    },
+    {
+        "q": "Match propagation type with its behavior:",
+        "type": "match",
+        "left": [
+            "REQUIRED",
+            "REQUIRES_NEW",
+            "MANDATORY",
+            "NOT_SUPPORTED"
+        ],
+        "right": [
+            "Join or create",
+            "Always new",
+            "Require existing",
+            "Run without txn"
+        ]
+    },
+    {
+        "q": "Rearrange propagation options:",
+        "type": "rearrange",
+        "words": [
+            "REQUIRED (default)",
+            "REQUIRES_NEW (independent)",
+            "MANDATORY (require existing)",
+            "NEVER (prohibit txn)"
+        ]
+    },
+    {
+        "q": "What is compensating transaction?",
+        "type": "mcq",
+        "o": [
+            "Transaction that undoes effects of another",
+            "Fast transaction",
+            "Backup transaction",
+            "Recovery transaction"
+        ]
+    },
+    {
+        "q": "Compensating transactions are _____ of original.",
+        "type": "fill_blank",
+        "answers": [
+            "semantic inverse"
+        ],
+        "other_options": [
+            "exact copy",
+            "rollback",
+            "backup"
+        ]
+    },
+    {
+        "q": "Compensations cannot always perfectly undo original effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of compensation?",
+        "type": "mcq",
+        "c": "-- Original: Reserve inventory\n-- Compensation: Release inventory\n-- After compensation:",
+        "o": [
+            "Inventory available again, but reservation was logged",
+            "Inventory never changed",
+            "Nothing happens",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match compensation design with its challenge:",
+        "type": "match",
+        "left": [
+            "Email sent",
+            "Payment made",
+            "Record created",
+            "External call"
+        ],
+        "right": [
+            "Cannot unsend",
+            "Refund needed",
+            "Delete record",
+            "Cannot guarantee undo"
+        ]
+    },
+    {
+        "q": "Rearrange compensation pattern:",
+        "type": "rearrange",
+        "words": [
+            "Execute action",
+            "Record for undo",
+            "On failure, compensate",
+            "Run compensation",
+            "Verify result"
+        ]
+    },
+    {
+        "q": "What is transaction boundary?",
+        "type": "mcq",
+        "o": [
+            "Start and end points of a transaction",
+            "Transaction limit",
+            "Lock boundary",
+            "Data boundary"
+        ]
+    },
+    {
+        "q": "Clear boundaries ensure proper _____ management.",
+        "type": "fill_blank",
+        "answers": [
+            "resource"
+        ],
+        "other_options": [
+            "query",
+            "data",
+            "index"
+        ]
+    },
+    {
+        "q": "Poorly defined boundaries cause resource leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of unclear boundary?",
+        "type": "mcq",
+        "c": "-- Begin transaction\n-- Exception thrown before commit/rollback\n-- Result:",
+        "o": [
+            "Transaction may hold locks until connection timeout",
+            "Auto-committed",
+            "Auto-rolled back",
+            "No issue"
+        ]
+    },
+    {
+        "q": "Match boundary pattern with its approach:",
+        "type": "match",
+        "left": [
+            "Programmatic",
+            "Declarative",
+            "Template",
+            "Aspect"
+        ],
+        "right": [
+            "Explicit begin/commit",
+            "Annotation",
+            "Callback pattern",
+            "AOP wrapper"
+        ]
+    },
+    {
+        "q": "Rearrange boundary best practices:",
+        "type": "rearrange",
+        "words": [
+            "Define boundary clearly",
+            "Use try-finally",
+            "Commit on success",
+            "Rollback on failure",
+            "Always close"
+        ]
+    },
+    {
+        "q": "What is transaction isolation testing?",
+        "type": "mcq",
+        "o": [
+            "Verifying correct behavior under concurrent access",
+            "Performance testing",
+            "Load testing",
+            "Unit testing"
+        ]
+    },
+    {
+        "q": "Isolation testing detects _____ race conditions.",
+        "type": "fill_blank",
+        "answers": [
+            "concurrency"
+        ],
+        "other_options": [
+            "query",
+            "data",
+            "index"
+        ]
+    },
+    {
+        "q": "Isolation bugs may not appear in single-threaded tests.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of isolation test?",
+        "type": "mcq",
+        "c": "-- Test case: Two threads transfer money\n-- Without proper isolation:\n-- Result:",
+        "o": [
+            "May detect lost updates or dirty reads",
+            "Always passes",
+            "No concurrent issues",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match test technique with its purpose:",
+        "type": "match",
+        "left": [
+            "Stress test",
+            "Fuzzing",
+            "Model checking",
+            "Static analysis"
+        ],
+        "right": [
+            "High load",
+            "Random inputs",
+            "Formal verification",
+            "Code review"
+        ]
+    },
+    {
+        "q": "Rearrange isolation test design:",
+        "type": "rearrange",
+        "words": [
+            "Define invariant",
+            "Create concurrent scenario",
+            "Run many iterations",
+            "Check invariant",
+            "Report violations"
+        ]
+    },
+    {
+        "q": "What is transaction tracing?",
+        "type": "mcq",
+        "o": [
+            "Following transaction through entire system",
+            "Lock tracing",
+            "Query tracing",
+            "Index tracing"
+        ]
+    },
+    {
+        "q": "Tracing helps debug _____ issues.",
+        "type": "fill_blank",
+        "answers": [
+            "distributed"
+        ],
+        "other_options": [
+            "simple",
+            "obvious",
+            "common"
+        ]
+    },
+    {
+        "q": "Distributed tracing tools like Jaeger support transaction traces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of tracing?",
+        "type": "mcq",
+        "c": "-- Trace ID: abc123\n-- Service 1: 50ms, Service 2: 200ms, DB: 30ms\n-- Insight:",
+        "o": [
+            "Service 2 is the bottleneck",
+            "DB is slowest",
+            "Service 1 is slowest",
+            "No bottleneck"
+        ]
+    },
+    {
+        "q": "Match tracing concept with its use:",
+        "type": "match",
+        "left": [
+            "Trace ID",
+            "Span",
+            "Parent-child",
+            "Tags"
+        ],
+        "right": [
+            "Correlate requests",
+            "Single operation",
+            "Call hierarchy",
+            "Metadata"
+        ]
+    },
+    {
+        "q": "Rearrange tracing flow:",
+        "type": "rearrange",
+        "words": [
+            "Generate trace ID",
+            "Pass through services",
+            "Record spans",
+            "Collect to backend",
+            "Visualize timeline"
+        ]
+    },
+    {
+        "q": "What is long transaction?",
+        "type": "mcq",
+        "o": [
+            "Transaction held open for extended time",
+            "Large data transaction",
+            "Complex query",
+            "Backup operation"
+        ]
+    },
+    {
+        "q": "Long transactions can cause _____ issues.",
+        "type": "fill_blank",
+        "answers": [
+            "blocking"
+        ],
+        "other_options": [
+            "query",
+            "storage",
+            "backup"
+        ]
+    },
+    {
+        "q": "Long transactions prevent MVCC version cleanup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of long transaction?",
+        "type": "mcq",
+        "c": "-- Transaction open for 1 hour\n-- Other transactions blocked\n-- Vacuum cannot proceed\n-- Problem:",
+        "o": [
+            "Table bloat, lock contention, poor performance",
+            "Faster processing",
+            "No issue",
+            "Better cleanup"
+        ]
+    },
+    {
+        "q": "Match long transaction cause with its fix:",
+        "type": "match",
+        "left": [
+            "User delay",
+            "Batch too large",
+            "Network issue",
+            "Application bug"
+        ],
+        "right": [
+            "Timeout",
+            "Chunk processing",
+            "Connection pooling",
+            "Fix code"
+        ]
+    },
+    {
+        "q": "Rearrange long transaction handling:",
+        "type": "rearrange",
+        "words": [
+            "Monitor duration",
+            "Alert on threshold",
+            "Kill if necessary",
+            "Investigate root cause",
+            "Prevent recurrence"
+        ]
+    },
+    {
+        "q": "What is transaction throughput?",
+        "type": "mcq",
+        "o": [
+            "Number of transactions completed per unit time",
+            "Transaction size",
+            "Query speed",
+            "Lock count"
+        ]
+    },
+    {
+        "q": "TPS means transactions per _____.",
+        "type": "fill_blank",
+        "answers": [
+            "second"
+        ],
+        "other_options": [
+            "minute",
+            "hour",
+            "day"
+        ]
+    },
+    {
+        "q": "Higher throughput requires careful isolation level selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of throughput measurement?",
+        "type": "mcq",
+        "c": "-- Test: 10,000 TPS target\n-- Result: 8,000 TPS achieved\n-- Analysis:",
+        "o": [
+            "Bottleneck investigation needed",
+            "Target exceeded",
+            "No issue",
+            "Stop testing"
+        ]
+    },
+    {
+        "q": "Match throughput factor with its optimization:",
+        "type": "match",
+        "left": [
+            "Disk I/O",
+            "CPU",
+            "Network",
+            "Locks"
+        ],
+        "right": [
+            "SSD, caching",
+            "Faster processor",
+            "Better connectivity",
+            "Reduce contention"
+        ]
+    },
+    {
+        "q": "Rearrange throughput optimization:",
+        "type": "rearrange",
+        "words": [
+            "Measure baseline",
+            "Identify bottleneck",
+            "Apply optimization",
+            "Measure improvement",
+            "Iterate"
+        ]
+    },
+    {
+        "q": "What is transaction latency?",
+        "type": "mcq",
+        "o": [
+            "Time from start to completion of transaction",
+            "Transaction count",
+            "Data size",
+            "Lock time"
+        ]
+    },
+    {
+        "q": "Latency is often measured in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "milliseconds"
+        ],
+        "other_options": [
+            "bytes",
+            "rows",
+            "pages"
+        ]
+    },
+    {
+        "q": "P99 latency shows worst 1% of transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of latency analysis?",
+        "type": "mcq",
+        "c": "-- P50: 10ms, P99: 500ms\n-- Interpretation:",
+        "o": [
+            "Most fast, but some very slow outliers",
+            "All transactions similar",
+            "All slow",
+            "All fast"
+        ]
+    },
+    {
+        "q": "Match latency percentile with its meaning:",
+        "type": "match",
+        "left": [
+            "P50",
+            "P90",
+            "P99",
+            "P99.9"
+        ],
+        "right": [
+            "Median",
+            "90% faster than",
+            "99% faster than",
+            "Tail latency"
+        ]
+    },
+    {
+        "q": "Rearrange latency investigation:",
+        "type": "rearrange",
+        "words": [
+            "Collect latency metrics",
+            "Identify slow percentiles",
+            "Profile slow transactions",
+            "Find root cause",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is transaction contention?",
+        "type": "mcq",
+        "o": [
+            "Multiple transactions competing for same resource",
+            "Transaction failure",
+            "Query error",
+            "Data corruption"
+        ]
+    },
+    {
+        "q": "High contention reduces _____ parallelism.",
+        "type": "fill_blank",
+        "answers": [
+            "effective"
+        ],
+        "other_options": [
+            "total",
+            "maximum",
+            "minimum"
+        ]
+    },
+    {
+        "q": "Hot rows cause high contention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of high contention?",
+        "type": "mcq",
+        "c": "-- 100 concurrent updates to same row\n-- Lock wait graph:",
+        "o": [
+            "99 waiting, 1 active at any time",
+            "All active",
+            "None waiting",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match contention fix with its technique:",
+        "type": "match",
+        "left": [
+            "Sharding",
+            "Batching",
+            "Async processing",
+            "Caching"
+        ],
+        "right": [
+            "Distribute load",
+            "Reduce round trips",
+            "Queue for later",
+            "Reduce DB access"
+        ]
+    },
+    {
+        "q": "Rearrange contention reduction:",
+        "type": "rearrange",
+        "words": [
+            "Identify hot spots",
+            "Analyze access patterns",
+            "Choose strategy",
+            "Implement change",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "What is transaction queue?",
+        "type": "mcq",
+        "o": [
+            "Pending transactions waiting for resources",
+            "Completed transactions",
+            "Failed transactions",
+            "Cached transactions"
+        ]
+    },
+    {
+        "q": "Queue depth indicates system _____.",
+        "type": "fill_blank",
+        "answers": [
+            "load"
+        ],
+        "other_options": [
+            "speed",
+            "size",
+            "age"
+        ]
+    },
+    {
+        "q": "Growing queue depth may indicate capacity issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of long queue?",
+        "type": "mcq",
+        "c": "-- 1000 transactions queued\n-- Processing rate: 100/sec\n-- Wait time:",
+        "o": [
+            "10 seconds before new transaction starts",
+            "Immediate start",
+            "1 second",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match queue management with its action:",
+        "type": "match",
+        "left": [
+            "Increase capacity",
+            "Reject overflow",
+            "Priority queue",
+            "Load shedding"
+        ],
+        "right": [
+            "Add resources",
+            "Fail fast",
+            "Important first",
+            "Drop low priority"
+        ]
+    },
+    {
+        "q": "Rearrange queue handling:",
+        "type": "rearrange",
+        "words": [
+            "Set queue limit",
+            "Monitor depth",
+            "Alert on threshold",
+            "Scale if needed",
+            "Reject if overloaded"
+        ]
+    },
+    {
+        "q": "What is lock-free programming?",
+        "type": "mcq",
+        "o": [
+            "Avoiding locks using atomic operations",
+            "No concurrency control",
+            "Single-threaded",
+            "Lock everything"
+        ]
+    },
+    {
+        "q": "Lock-free uses _____ hardware instructions.",
+        "type": "fill_blank",
+        "answers": [
+            "atomic"
+        ],
+        "other_options": [
+            "regular",
+            "slow",
+            "complex"
+        ]
+    },
+    {
+        "q": "CAS (Compare-And-Swap) is fundamental to lock-free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of CAS?",
+        "type": "mcq",
+        "c": "-- Expected: 10, New: 11\n-- Actual value: 10\n-- CAS result:",
+        "o": [
+            "Success: value changed to 11",
+            "Failure: value unchanged",
+            "Error",
+            "Both values stored"
+        ]
+    },
+    {
+        "q": "Match lock-free structure with its use:",
+        "type": "match",
+        "left": [
+            "Atomic counter",
+            "Lock-free queue",
+            "RCU",
+            "Optimistic read"
+        ],
+        "right": [
+            "Simple increment",
+            "Thread-safe queue",
+            "Read-Copy-Update",
+            "Check-then-write"
+        ]
+    },
+    {
+        "q": "Rearrange CAS loop:",
+        "type": "rearrange",
+        "words": [
+            "Read current value",
+            "Compute new value",
+            "CAS old to new",
+            "If fail, retry",
+            "If success, done"
+        ]
+    },
+    {
+        "q": "What is transactional memory?",
+        "type": "mcq",
+        "o": [
+            "Hardware/software support for atomic memory operations",
+            "Persistent memory",
+            "Cache memory",
+            "Virtual memory"
+        ]
+    },
+    {
+        "q": "STM stands for Software _____ Memory.",
+        "type": "fill_blank",
+        "answers": [
+            "Transactional"
+        ],
+        "other_options": [
+            "Transaction",
+            "Transfer",
+            "Temporary"
+        ]
+    },
+    {
+        "q": "Transactional memory simplifies concurrent programming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of STM?",
+        "type": "mcq",
+        "c": "atomic {\n  x = x + 1;\n  y = y + 1;\n}",
+        "o": [
+            "Both updates atomic, all or nothing",
+            "Updates may be partial",
+            "Only x updated",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match memory type with its support:",
+        "type": "match",
+        "left": [
+            "Intel TSX",
+            "Haskell STM",
+            "Clojure refs",
+            "Database"
+        ],
+        "right": [
+            "Hardware",
+            "Pure functional",
+            "Managed refs",
+            "SQL transactions"
+        ]
+    },
+    {
+        "q": "Rearrange STM execution:",
+        "type": "rearrange",
+        "words": [
+            "Start atomic block",
+            "Track reads and writes",
+            "Execute optimistically",
+            "Validate on commit",
+            "Retry if conflict"
+        ]
+    },
+    {
+        "q": "What is transaction anti-pattern?",
+        "type": "mcq",
+        "o": [
+            "Common mistake in transaction design",
+            "Best practice",
+            "Standard pattern",
+            "Database feature"
+        ]
+    },
+    {
+        "q": "Transaction within _____ is a common anti-pattern.",
+        "type": "fill_blank",
+        "answers": [
+            "loop"
+        ],
+        "other_options": [
+            "function",
+            "class",
+            "module"
+        ]
+    },
+    {
+        "q": "Long transactions holding locks are an anti-pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of anti-pattern?",
+        "type": "mcq",
+        "c": "for item in items:\n    begin_transaction()\n    process(item)\n    commit()\n-- Problem:",
+        "o": [
+            "High overhead from many commits",
+            "Efficient processing",
+            "No commits needed",
+            "Single transaction"
+        ]
+    },
+    {
+        "q": "Match anti-pattern with its fix:",
+        "type": "match",
+        "left": [
+            "Txn in loop",
+            "Too wide scope",
+            "Wrong isolation",
+            "No error handling"
+        ],
+        "right": [
+            "Batch commits",
+            "Narrow scope",
+            "Choose appropriate",
+            "Try-catch-rollback"
+        ]
+    },
+    {
+        "q": "Rearrange anti-pattern detection:",
+        "type": "rearrange",
+        "words": [
+            "Review code",
+            "Identify patterns",
+            "Measure impact",
+            "Refactor",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "What is connection leak?",
+        "type": "mcq",
+        "o": [
+            "Connections not returned to pool",
+            "Slow connection",
+            "Fast connection",
+            "Too many pools"
+        ]
+    },
+    {
+        "q": "Connection leaks cause pool _____.",
+        "type": "fill_blank",
+        "answers": [
+            "exhaustion"
+        ],
+        "other_options": [
+            "growth",
+            "speed",
+            "cache"
+        ]
+    },
+    {
+        "q": "Try-finally or context managers prevent connection leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of leak?",
+        "type": "mcq",
+        "c": "-- Pool size: 10\n-- Leaked: 10 connections\n-- New request:",
+        "o": [
+            "Blocks forever waiting for connection",
+            "Creates new connection",
+            "Succeeds immediately",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match leak prevention with its technique:",
+        "type": "match",
+        "left": [
+            "Try-finally",
+            "Context manager",
+            "Connection timeout",
+            "Abandon detection"
+        ],
+        "right": [
+            "Always close",
+            "with statement",
+            "Reclaim after time",
+            "Find orphans"
+        ]
+    },
+    {
+        "q": "Rearrange leak debugging:",
+        "type": "rearrange",
+        "words": [
+            "Monitor pool usage",
+            "Detect growing active",
+            "Find leak source",
+            "Add cleanup code",
+            "Verify fixed"
+        ]
+    },
+    {
+        "q": "What is transaction retry storm?",
+        "type": "mcq",
+        "o": [
+            "Many transactions retrying simultaneously",
+            "Single retry",
+            "No retries",
+            "Fast retries"
+        ]
+    },
+    {
+        "q": "Retry storms cause _____ amplification.",
+        "type": "fill_blank",
+        "answers": [
+            "load"
+        ],
+        "other_options": [
+            "data",
+            "query",
+            "index"
+        ]
+    },
+    {
+        "q": "Jitter in backoff prevents retry storms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of retry storm?",
+        "type": "mcq",
+        "c": "-- 1000 transactions fail\n-- All retry in 1 second\n-- Result:",
+        "o": [
+            "1000 simultaneous retries overwhelm system",
+            "Orderly recovery",
+            "No impact",
+            "Success"
+        ]
+    },
+    {
+        "q": "Match retry strategy with its benefit:",
+        "type": "match",
+        "left": [
+            "Exponential backoff",
+            "Jitter",
+            "Max retries",
+            "Circuit breaker"
+        ],
+        "right": [
+            "Spread retries",
+            "Random delay",
+            "Limit attempts",
+            "Stop trying"
+        ]
+    },
+    {
+        "q": "Rearrange retry storm prevention:",
+        "type": "rearrange",
+        "words": [
+            "Set max retries",
+            "Use exponential backoff",
+            "Add random jitter",
+            "Implement circuit breaker",
+            "Monitor retry rate"
+        ]
+    },
+    {
+        "q": "What is transaction split?",
+        "type": "mcq",
+        "o": [
+            "Breaking large transaction into smaller ones",
+            "Merging transactions",
+            "Canceling transaction",
+            "Duplicating transaction"
+        ]
+    },
+    {
+        "q": "Transaction split reduces _____ duration.",
+        "type": "fill_blank",
+        "answers": [
+            "lock"
+        ],
+        "other_options": [
+            "query",
+            "data",
+            "index"
+        ]
+    },
+    {
+        "q": "Splitting may sacrifice atomic guarantee.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of split?",
+        "type": "mcq",
+        "c": "-- Original: Update 10000 rows in one txn\n-- Split: 100 rows per txn, 100 txns\n-- Trade-off:",
+        "o": [
+            "Less blocking but partial failure possible",
+            "Same behavior",
+            "More blocking",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Match split strategy with its application:",
+        "type": "match",
+        "left": [
+            "Batch processing",
+            "Event sourcing",
+            "Saga",
+            "Queue-based"
+        ],
+        "right": [
+            "Bulk operations",
+            "Capture intent",
+            "Compensate on failure",
+            "Async processing"
+        ]
+    },
+    {
+        "q": "Rearrange split implementation:",
+        "type": "rearrange",
+        "words": [
+            "Analyze transaction",
+            "Identify boundaries",
+            "Implement batches",
+            "Handle partial failures",
+            "Monitor consistency"
+        ]
+    },
+    {
+        "q": "What is transaction serialization?",
+        "type": "mcq",
+        "o": [
+            "Converting transaction to serializable format",
+            "Serial execution",
+            "Lock ordering",
+            "Query ordering"
+        ]
+    },
+    {
+        "q": "Serialization enables transaction _____ across systems.",
+        "type": "fill_blank",
+        "answers": [
+            "replication"
+        ],
+        "other_options": [
+            "deletion",
+            "caching",
+            "indexing"
+        ]
+    },
+    {
+        "q": "Binlog uses serialization for replication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of serialization?",
+        "type": "mcq",
+        "c": "-- Primary: COMMIT transaction\n-- Replica receives:",
+        "o": [
+            "Serialized transaction log entries",
+            "Raw data",
+            "Original queries only",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Match serialization format with its use:",
+        "type": "match",
+        "left": [
+            "Binlog",
+            "WAL",
+            "Transaction log",
+            "CDC events"
+        ],
+        "right": [
+            "MySQL",
+            "PostgreSQL",
+            "SQL Server",
+            "Change Data Capture"
+        ]
+    },
+    {
+        "q": "Rearrange serialization flow:",
+        "type": "rearrange",
+        "words": [
+            "Execute transaction",
+            "Generate log",
+            "Serialize changes",
+            "Send to replica",
+            "Apply remotely"
+        ]
+    },
+    {
+        "q": "What is transaction conflict resolution?",
+        "type": "mcq",
+        "o": [
+            "Deciding outcome when transactions conflict",
+            "Avoiding conflicts",
+            "Ignoring conflicts",
+            "Logging conflicts"
+        ]
+    },
+    {
+        "q": "Last-writer-wins is a conflict _____ strategy.",
+        "type": "fill_blank",
+        "answers": [
+            "resolution"
+        ],
+        "other_options": [
+            "creation",
+            "detection",
+            "prevention"
+        ]
+    },
+    {
+        "q": "Multi-master replication needs conflict resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of conflict?",
+        "type": "mcq",
+        "c": "-- Node A: Set x = 1\n-- Node B: Set x = 2\n-- Synchronized:",
+        "o": [
+            "Conflict detected, resolution needed",
+            "Both values kept",
+            "No conflict",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match conflict strategy with its method:",
+        "type": "match",
+        "left": [
+            "Last writer wins",
+            "Merge",
+            "Custom logic",
+            "Ask user"
+        ],
+        "right": [
+            "Timestamp decides",
+            "Combine values",
+            "Application code",
+            "Manual resolution"
+        ]
+    },
+    {
+        "q": "Rearrange conflict handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect conflict",
+            "Log conflict",
+            "Apply resolution",
+            "Verify consistency",
+            "Notify if needed"
+        ]
+    },
+    {
+        "q": "What is lock hierarchy?",
+        "type": "mcq",
+        "o": [
+            "Ordered levels of lock granularity",
+            "Lock count",
+            "Lock time",
+            "Lock type"
+        ]
+    },
+    {
+        "q": "Database, table, page, row form a lock _____.",
+        "type": "fill_blank",
+        "answers": [
+            "hierarchy"
+        ],
+        "other_options": [
+            "list",
+            "queue",
+            "stack"
+        ]
+    },
+    {
+        "q": "Acquiring locks in hierarchy order prevents deadlocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of hierarchy?",
+        "type": "mcq",
+        "c": "-- To lock row: Get intent on database, table, page\n-- Then row lock\n-- Benefit:",
+        "o": [
+            "Conflicts detected at correct level",
+            "More overhead",
+            "No benefit",
+            "Slower"
+        ]
+    },
+    {
+        "q": "Match lock level with granularity:",
+        "type": "match",
+        "left": [
+            "Database",
+            "Table",
+            "Page",
+            "Row"
+        ],
+        "right": [
+            "Coarsest",
+            "Object level",
+            "Block level",
+            "Finest"
+        ]
+    },
+    {
+        "q": "Rearrange lock hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Database lock",
+            "Schema lock",
+            "Table lock",
+            "Page lock",
+            "Row lock"
+        ]
+    },
+    {
+        "q": "What is lock compatibility matrix?",
+        "type": "mcq",
+        "o": [
+            "Table showing which lock modes can coexist",
+            "Lock count",
+            "Lock order",
+            "Lock time"
+        ]
+    },
+    {
+        "q": "Compatible locks can be held _____.",
+        "type": "fill_blank",
+        "answers": [
+            "simultaneously"
+        ],
+        "other_options": [
+            "never",
+            "sequentially",
+            "randomly"
+        ]
+    },
+    {
+        "q": "Shared locks are compatible with other shared locks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of compatibility check?",
+        "type": "mcq",
+        "c": "-- T1 holds: Shared lock\n-- T2 requests: Shared lock\n-- Matrix says:",
+        "o": [
+            "Compatible, T2 gets lock immediately",
+            "Incompatible, T2 waits",
+            "Error",
+            "Deadlock"
+        ]
+    },
+    {
+        "q": "Match lock pair with compatibility:",
+        "type": "match",
+        "left": [
+            "S + S",
+            "S + X",
+            "X + S",
+            "X + X"
+        ],
+        "right": [
+            "Compatible",
+            "Incompatible",
+            "Incompatible",
+            "Incompatible"
+        ]
+    },
+    {
+        "q": "Rearrange by compatibility:",
+        "type": "rearrange",
+        "words": [
+            "IS (most compatible)",
+            "S",
+            "IX",
+            "SIX",
+            "X (least compatible)"
+        ]
+    },
+    {
+        "q": "What is transaction state diagram?",
+        "type": "mcq",
+        "o": [
+            "Visual representation of transaction lifecycle states",
+            "Data flow",
+            "Query plan",
+            "Lock diagram"
+        ]
+    },
+    {
+        "q": "Transaction states include active, partially committed, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "committed"
+        ],
+        "other_options": [
+            "running",
+            "waiting",
+            "pending"
+        ]
+    },
+    {
+        "q": "Failed transactions can still reach aborted state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of state diagram?",
+        "type": "mcq",
+        "c": "-- Active -> Partially Committed -> Committed\n-- Active -> Failed -> Aborted\n-- Shows:",
+        "o": [
+            "All possible transaction state transitions",
+            "Only success path",
+            "Only failure path",
+            "No transitions"
+        ]
+    },
+    {
+        "q": "Match state with its meaning:",
+        "type": "match",
+        "left": [
+            "Active",
+            "Partially committed",
+            "Committed",
+            "Aborted"
+        ],
+        "right": [
+            "Executing",
+            "Waiting for flush",
+            "Complete success",
+            "Rolled back"
+        ]
+    },
+    {
+        "q": "Rearrange transaction states:",
+        "type": "rearrange",
+        "words": [
+            "Active",
+            "Partially committed or Failed",
+            "Committed or Aborted",
+            "Terminated"
+        ]
+    },
+    {
+        "q": "What is concurrency anomaly?",
+        "type": "mcq",
+        "o": [
+            "Incorrect behavior due to concurrent execution",
+            "Normal behavior",
+            "Performance issue",
+            "Hardware failure"
+        ]
+    },
+    {
+        "q": "Anomalies include dirty reads, non-repeatable reads, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "phantoms"
+        ],
+        "other_options": [
+            "updates",
+            "inserts",
+            "deletes"
+        ]
+    },
+    {
+        "q": "Serializability prevents all concurrency anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of anomaly?",
+        "type": "mcq",
+        "c": "-- T1 reads balance twice\n-- T2 modifies between reads\n-- T1 sees different values\n-- Anomaly:",
+        "o": [
+            "Non-repeatable read",
+            "Dirty read",
+            "Phantom",
+            "Lost update"
+        ]
+    },
+    {
+        "q": "Match anomaly with its isolation level prevention:",
+        "type": "match",
+        "left": [
+            "Dirty read",
+            "Non-repeatable",
+            "Phantom",
+            "Write skew"
+        ],
+        "right": [
+            "Read Committed",
+            "Repeatable Read",
+            "Serializable",
+            "Serializable"
+        ]
+    },
+    {
+        "q": "Rearrange anomalies by severity:",
+        "type": "rearrange",
+        "words": [
+            "Dirty read (worst)",
+            "Lost update",
+            "Non-repeatable read",
+            "Phantom read",
+            "Write skew"
+        ]
+    },
+    {
+        "q": "What is serializability graph?",
+        "type": "mcq",
+        "o": [
+            "Graph showing transaction dependencies for equivalence",
+            "Lock graph",
+            "Query graph",
+            "Data graph"
+        ]
+    },
+    {
+        "q": "Acyclic precedence graph means _____ serializable.",
+        "type": "fill_blank",
+        "answers": [
+            "conflict"
+        ],
+        "other_options": [
+            "view",
+            "strict",
+            "cascade"
+        ]
+    },
+    {
+        "q": "A cycle in precedence graph indicates non-serializable schedule.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of graph analysis?",
+        "type": "mcq",
+        "c": "-- T1 -> T2 (conflict on A)\n-- T2 -> T1 (conflict on B)\n-- Cycle:",
+        "o": [
+            "Non-serializable, no equivalent serial order",
+            "Serializable",
+            "No conflict",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match graph type with its check:",
+        "type": "match",
+        "left": [
+            "Precedence",
+            "Wait-for",
+            "Dependency",
+            "Call"
+        ],
+        "right": [
+            "Serializability",
+            "Deadlock",
+            "References",
+            "Execution"
+        ]
+    },
+    {
+        "q": "Rearrange serializability check:",
+        "type": "rearrange",
+        "words": [
+            "Identify conflicts",
+            "Build precedence graph",
+            "Check for cycles",
+            "If no cycle, serializable",
+            "Find equivalent serial"
+        ]
+    },
+    {
+        "q": "What is schedule?",
+        "type": "mcq",
+        "o": [
+            "Sequence of operations from concurrent transactions",
+            "Query plan",
+            "Lock plan",
+            "Index plan"
+        ]
+    },
+    {
+        "q": "A schedule interleaves operations from _____ transactions.",
+        "type": "fill_blank",
+        "answers": [
+            "multiple"
+        ],
+        "other_options": [
+            "single",
+            "no",
+            "backup"
+        ]
+    },
+    {
+        "q": "Serial schedule executes transactions one after another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of schedule?",
+        "type": "mcq",
+        "c": "-- T1: R(A), W(A)\n-- T2: R(A), W(A)\n-- Schedule: R1(A), R2(A), W1(A), W2(A)\n-- Type:",
+        "o": [
+            "Concurrent schedule with interleaved ops",
+            "Serial schedule",
+            "No schedule",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match schedule type with its property:",
+        "type": "match",
+        "left": [
+            "Serial",
+            "Serializable",
+            "Conflict equiv",
+            "View equiv"
+        ],
+        "right": [
+            "No interleaving",
+            "Equivalent to serial",
+            "Same conflicts",
+            "Same reads"
+        ]
+    },
+    {
+        "q": "Rearrange schedule analysis:",
+        "type": "rearrange",
+        "words": [
+            "List operations",
+            "Note order",
+            "Identify conflicts",
+            "Test equivalence",
+            "Determine type"
+        ]
+    },
+    {
+        "q": "What is cascading abort?",
+        "type": "mcq",
+        "o": [
+            "Rollback causing other dependent transactions to rollback",
+            "Single abort",
+            "No abort",
+            "Partial abort"
+        ]
+    },
+    {
+        "q": "Cascading aborts are _____ for performance.",
+        "type": "fill_blank",
+        "answers": [
+            "expensive"
+        ],
+        "other_options": [
+            "good",
+            "neutral",
+            "required"
+        ]
+    },
+    {
+        "q": "Strict 2PL prevents cascading aborts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of cascade?",
+        "type": "mcq",
+        "c": "-- T1 writes A (uncommitted)\n-- T2 reads T1's A\n-- T1 aborts\n-- T2:",
+        "o": [
+            "Must also abort (read dirty data)",
+            "Can continue",
+            "Commits successfully",
+            "No effect"
+        ]
+    },
+    {
+        "q": "Match cascade prevention with its method:",
+        "type": "match",
+        "left": [
+            "Read only committed",
+            "Hold locks till commit",
+            "No dirty reads",
+            "Validate at commit"
+        ],
+        "right": [
+            "Isolation",
+            "Strict 2PL",
+            "Blocking",
+            "Optimistic"
+        ]
+    },
+    {
+        "q": "Rearrange cascading abort:",
+        "type": "rearrange",
+        "words": [
+            "T1 writes uncommitted",
+            "T2 reads T1's data",
+            "T1 aborts",
+            "T2 must abort",
+            "Chain continues"
+        ]
+    },
+    {
+        "q": "What is recoverability?",
+        "type": "mcq",
+        "o": [
+            "Ability to undo effects of aborted transactions",
+            "Performance",
+            "Speed",
+            "Capacity"
+        ]
+    },
+    {
+        "q": "Recoverable schedules commit only after _____ complete.",
+        "type": "fill_blank",
+        "answers": [
+            "dependencies"
+        ],
+        "other_options": [
+            "queries",
+            "indexes",
+            "locks"
+        ]
+    },
+    {
+        "q": "Non-recoverable schedules should be avoided.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of non-recoverable?",
+        "type": "mcq",
+        "c": "-- T1 writes A\n-- T2 reads A, commits\n-- T1 aborts\n-- Problem:",
+        "o": [
+            "T2 committed with dirty data, cannot undo",
+            "T2 can be undone",
+            "No problem",
+            "Both abort"
+        ]
+    },
+    {
+        "q": "Match recoverability level with its guarantee:",
+        "type": "match",
+        "left": [
+            "Recoverable",
+            "Cascadeless",
+            "Strict",
+            "Serializable"
+        ],
+        "right": [
+            "Can undo aborts",
+            "No cascade",
+            "Hold locks",
+            "Equivalent serial"
+        ]
+    },
+    {
+        "q": "Rearrange recoverability levels:",
+        "type": "rearrange",
+        "words": [
+            "Recoverable (weakest)",
+            "Cascadeless",
+            "Strict",
+            "All prevent issues"
+        ]
+    },
+    {
+        "q": "What is transaction timestamp?",
+        "type": "mcq",
+        "o": [
+            "Time when transaction started for ordering",
+            "Completion time",
+            "Duration",
+            "Lock time"
+        ]
+    },
+    {
+        "q": "Timestamp ordering uses start time for _____ control.",
+        "type": "fill_blank",
+        "answers": [
+            "concurrency"
+        ],
+        "other_options": [
+            "query",
+            "lock",
+            "index"
+        ]
+    },
+    {
+        "q": "Older transactions have smaller timestamps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of timestamp check?",
+        "type": "mcq",
+        "c": "-- T1 (ts=100) reads A\n-- T2 (ts=50) writes A\n-- Timestamp rule:",
+        "o": [
+            "T2 must come before T1, conflict detected",
+            "No conflict",
+            "T1 rejects",
+            "Both proceed"
+        ]
+    },
+    {
+        "q": "Match timestamp protocol with its rule:",
+        "type": "match",
+        "left": [
+            "Write rule",
+            "Read rule",
+            "Thomas write",
+            "Multiversion"
+        ],
+        "right": [
+            "Check write timestamps",
+            "Check read timestamps",
+            "Ignore outdated writes",
+            "Keep versions"
+        ]
+    },
+    {
+        "q": "Rearrange timestamp protocol:",
+        "type": "rearrange",
+        "words": [
+            "Assign timestamp at start",
+            "Check on each operation",
+            "Reject if violates order",
+            "Abort if conflict",
+            "Restart with new timestamp"
+        ]
+    },
+    {
+        "q": "What is recovery manager?",
+        "type": "mcq",
+        "o": [
+            "Component handling undo/redo after failures",
+            "Query optimizer",
+            "Lock manager",
+            "Buffer manager"
+        ]
+    },
+    {
+        "q": "Recovery manager reads _____ to restore state.",
+        "type": "fill_blank",
+        "answers": [
+            "log"
+        ],
+        "other_options": [
+            "data",
+            "index",
+            "cache"
+        ]
+    },
+    {
+        "q": "Recovery manager runs automatically on restart.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of recovery?",
+        "type": "mcq",
+        "c": "-- Crash during transaction\n-- Log shows: T1 begin, T1 update, no commit\n-- Recovery:",
+        "o": [
+            "Undo T1's changes to restore consistency",
+            "Apply T1's changes",
+            "Ignore log",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match recovery component with its role:",
+        "type": "match",
+        "left": [
+            "Log manager",
+            "Buffer manager",
+            "Lock manager",
+            "Checkpoint manager"
+        ],
+        "right": [
+            "Record changes",
+            "Page caching",
+            "Concurrency",
+            "Reduce recovery work"
+        ]
+    },
+    {
+        "q": "Rearrange recovery process:",
+        "type": "rearrange",
+        "words": [
+            "Start recovery",
+            "Read log",
+            "Redo committed",
+            "Undo uncommitted",
+            "Resume normal"
+        ]
+    },
+    {
+        "q": "What is database buffer?",
+        "type": "mcq",
+        "o": [
+            "Memory cache for disk pages",
+            "Log buffer",
+            "Query cache",
+            "Result buffer"
+        ]
+    },
+    {
+        "q": "Buffers reduce _____ I/O operations.",
+        "type": "fill_blank",
+        "answers": [
+            "disk"
+        ],
+        "other_options": [
+            "memory",
+            "network",
+            "CPU"
+        ]
+    },
+    {
+        "q": "Dirty buffers contain modified but not-yet-written data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of buffer issue?",
+        "type": "mcq",
+        "c": "-- Buffer modified\n-- Crash before flush\n-- After restart:",
+        "o": [
+            "WAL used to recover changes",
+            "Changes lost",
+            "Buffer recovered",
+            "No issue"
+        ]
+    },
+    {
+        "q": "Match buffer policy with its effect:",
+        "type": "match",
+        "left": [
+            "Steal",
+            "No-steal",
+            "Force",
+            "No-force"
+        ],
+        "right": [
+            "Flush uncommitted OK",
+            "Don't flush uncommitted",
+            "Flush on commit",
+            "Don't require flush"
+        ]
+    },
+    {
+        "q": "Rearrange buffer management:",
+        "type": "rearrange",
+        "words": [
+            "Read page to buffer",
+            "Modify in memory",
+            "Mark dirty",
+            "Write to disk",
+            "Log protects"
+        ]
+    },
+    {
+        "q": "What is logical logging?",
+        "type": "mcq",
+        "o": [
+            "Log containing operation description not raw data",
+            "Physical logging",
+            "Binary logging",
+            "No logging"
+        ]
+    },
+    {
+        "q": "Logical logs store _____ not byte changes.",
+        "type": "fill_blank",
+        "answers": [
+            "operations"
+        ],
+        "other_options": [
+            "bytes",
+            "pages",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Statement-based replication uses logical logging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of logical log?",
+        "type": "mcq",
+        "c": "-- Logical: UPDATE users SET status='active' WHERE id=1\n-- Physical: Page 10, offset 50, old='pending', new='active'\n-- Difference:",
+        "o": [
+            "Logical is operation, physical is byte change",
+            "Same content",
+            "No difference",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match log type with its use:",
+        "type": "match",
+        "left": [
+            "Logical",
+            "Physical",
+            "Physiological",
+            "Hybrid"
+        ],
+        "right": [
+            "Replication",
+            "Crash recovery",
+            "WAL",
+            "Combined"
+        ]
+    },
+    {
+        "q": "Rearrange logging approaches:",
+        "type": "rearrange",
+        "words": [
+            "Physical (byte level)",
+            "Logical (operation level)",
+            "Physiological (page level)",
+            "Choose based on need"
+        ]
+    },
+    {
+        "q": "What is hot standby?",
+        "type": "mcq",
+        "o": [
+            "Replica that can serve read queries",
+            "Cold backup",
+            "No standby",
+            "Primary only"
+        ]
+    },
+    {
+        "q": "Hot standby receives _____ from primary.",
+        "type": "fill_blank",
+        "answers": [
+            "WAL"
+        ],
+        "other_options": [
+            "data",
+            "indexes",
+            "schema"
+        ]
+    },
+    {
+        "q": "Hot standby can take over if primary fails.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of hot standby?",
+        "type": "mcq",
+        "c": "-- Primary: Writes\n-- Hot Standby: Receives WAL, applies, serves reads\n-- Benefit:",
+        "o": [
+            "Read scaling and failover ready",
+            "Write scaling",
+            "No benefit",
+            "Slower"
+        ]
+    },
+    {
+        "q": "Match standby type with its capability:",
+        "type": "match",
+        "left": [
+            "Hot",
+            "Warm",
+            "Cold",
+            "Synchronous"
+        ],
+        "right": [
+            "Read queries",
+            "Ready but no queries",
+            "Start from backup",
+            "Zero data loss"
+        ]
+    },
+    {
+        "q": "Rearrange standby setup:",
+        "type": "rearrange",
+        "words": [
+            "Create base backup",
+            "Start standby",
+            "Stream WAL",
+            "Apply continuously",
+            "Ready for failover"
+        ]
+    },
+    {
+        "q": "What is replication lag?",
+        "type": "mcq",
+        "o": [
+            "Delay between primary and replica",
+            "Query delay",
+            "Lock delay",
+            "Network delay"
+        ]
+    },
+    {
+        "q": "Replication lag means replica is _____ primary.",
+        "type": "fill_blank",
+        "answers": [
+            "behind"
+        ],
+        "other_options": [
+            "ahead",
+            "same",
+            "faster"
+        ]
+    },
+    {
+        "q": "Zero lag is achievable with synchronous replication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lag monitoring?",
+        "type": "mcq",
+        "c": "-- Lag: 5 seconds\n-- Read from replica:\n-- Result:",
+        "o": [
+            "May see stale data up to 5 seconds old",
+            "Always fresh data",
+            "Error",
+            "No data"
+        ]
+    },
+    {
+        "q": "Match lag impact with its domain:",
+        "type": "match",
+        "left": [
+            "Financial",
+            "Social media",
+            "Analytics",
+            "Real-time"
+        ],
+        "right": [
+            "Critical, zero lag",
+            "Tolerable",
+            "Often acceptable",
+            "Low lag required"
+        ]
+    },
+    {
+        "q": "Rearrange lag handling:",
+        "type": "rearrange",
+        "words": [
+            "Monitor lag",
+            "Set thresholds",
+            "Alert on high lag",
+            "Route reads appropriately",
+            "Fix root cause"
+        ]
+    },
+    {
+        "q": "What is synchronous replication?",
+        "type": "mcq",
+        "o": [
+            "Replica confirmed before commit acknowledged",
+            "Async replication",
+            "No replication",
+            "Delayed replication"
+        ]
+    },
+    {
+        "q": "Synchronous replication ensures zero data _____.",
+        "type": "fill_blank",
+        "answers": [
+            "loss"
+        ],
+        "other_options": [
+            "gain",
+            "copy",
+            "transfer"
+        ]
+    },
+    {
+        "q": "Synchronous replication increases commit latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of sync replication?",
+        "type": "mcq",
+        "c": "-- Primary: Commit\n-- Replica: Acknowledges write\n-- Then: Primary returns success\n-- Guarantee:",
+        "o": [
+            "Data exists on at least 2 nodes before success",
+            "Data only on primary",
+            "No guarantee",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match replication mode with its trade-off:",
+        "type": "match",
+        "left": [
+            "Synchronous",
+            "Asynchronous",
+            "Semi-sync",
+            "Cascading"
+        ],
+        "right": [
+            "Durability, slow",
+            "Fast, may lose",
+            "Compromise",
+            "Chain replicas"
+        ]
+    },
+    {
+        "q": "Rearrange sync replication commit:",
+        "type": "rearrange",
+        "words": [
+            "Write to primary",
+            "Send to replica",
+            "Wait for replica ack",
+            "Commit on primary",
+            "Return success"
+        ]
+    },
+    {
+        "q": "What is streaming replication?",
+        "type": "mcq",
+        "o": [
+            "Continuous WAL transmission to replicas",
+            "Batch replication",
+            "One-time replication",
+            "No replication"
+        ]
+    },
+    {
+        "q": "Streaming sends WAL records in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "real-time"
+        ],
+        "other_options": [
+            "batches",
+            "daily",
+            "weekly"
+        ]
+    },
+    {
+        "q": "Streaming replication is default in PostgreSQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of streaming?",
+        "type": "mcq",
+        "c": "-- Primary generates WAL\n-- WAL streamed to standby\n-- Standby applies continuously\n-- Result:",
+        "o": [
+            "Standby stays nearly current with primary",
+            "Large lag",
+            "No synchronization",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match streaming component with its role:",
+        "type": "match",
+        "left": [
+            "WAL sender",
+            "WAL receiver",
+            "pg_wal",
+            "pg_stat_replication"
+        ],
+        "right": [
+            "Primary process",
+            "Standby process",
+            "Log files",
+            "Monitoring"
+        ]
+    },
+    {
+        "q": "Rearrange streaming setup:",
+        "type": "rearrange",
+        "words": [
+            "Configure primary",
+            "Create replica",
+            "Set replication slot",
+            "Start streaming",
+            "Monitor lag"
+        ]
+    },
+    {
+        "q": "What is failover?",
+        "type": "mcq",
+        "o": [
+            "Promoting standby to primary on failure",
+            "Backup restore",
+            "Replication start",
+            "Connection retry"
+        ]
+    },
+    {
+        "q": "Failover makes standby the new _____.",
+        "type": "fill_blank",
+        "answers": [
+            "primary"
+        ],
+        "other_options": [
+            "backup",
+            "replica",
+            "standby"
+        ]
+    },
+    {
+        "q": "Automatic failover requires monitoring and orchestration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of failover?",
+        "type": "mcq",
+        "c": "-- Primary fails\n-- Standby detects failure\n-- Standby promoted\n-- Clients:",
+        "o": [
+            "Redirect to new primary (former standby)",
+            "Lose connection permanently",
+            "Wait for old primary",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match failover step with its action:",
+        "type": "match",
+        "left": [
+            "Detect failure",
+            "Promote standby",
+            "Update DNS",
+            "Rejoin old primary"
+        ],
+        "right": [
+            "Health check",
+            "Make writable",
+            "Redirect clients",
+            "As replica"
+        ]
+    },
+    {
+        "q": "Rearrange failover process:",
+        "type": "rearrange",
+        "words": [
+            "Detect primary failure",
+            "Verify false positive",
+            "Promote standby",
+            "Update client connections",
+            "Monitor new primary"
+        ]
+    }
+]

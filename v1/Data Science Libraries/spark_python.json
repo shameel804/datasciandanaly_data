@@ -1,0 +1,6035 @@
+[
+    {
+        "q": "Which framework is PySpark built on?",
+        "type": "mcq",
+        "o": [
+            "Apache Spark",
+            "Apache Hadoop",
+            "Apache Kafka",
+            "Apache Flink"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nprint(SparkSession.__name__)",
+        "o": [
+            "SparkSession",
+            "Session",
+            "Spark",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the PySpark concepts:",
+        "type": "match",
+        "left": [
+            "SparkSession",
+            "RDD",
+            "DataFrame"
+        ],
+        "right": [
+            "Entry point",
+            "Low-level API",
+            "High-level API"
+        ]
+    },
+    {
+        "q": "The ______ is the entry point for PySpark.",
+        "type": "fill_blank",
+        "answers": [
+            "SparkSession"
+        ],
+        "other_options": [
+            "SparkContext",
+            "SparkConf",
+            "SparkCore"
+        ]
+    },
+    {
+        "q": "PySpark enables distributed computing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates SparkSession?",
+        "type": "mcq",
+        "o": [
+            "SparkSession.builder.getOrCreate()",
+            "SparkSession.create()",
+            "SparkSession.new()",
+            "SparkSession.start()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.appName('test').getOrCreate()\nprint(type(spark).__name__)",
+        "o": [
+            "SparkSession",
+            "Session",
+            "Spark",
+            "Builder"
+        ]
+    },
+    {
+        "q": "Match the SparkSession builder methods:",
+        "type": "match",
+        "left": [
+            "appName",
+            "master",
+            "config"
+        ],
+        "right": [
+            "Set app name",
+            "Set cluster",
+            "Set options"
+        ]
+    },
+    {
+        "q": "The ______ method sets the application name.",
+        "type": "fill_blank",
+        "answers": [
+            "appName"
+        ],
+        "other_options": [
+            "name",
+            "setName",
+            "app"
+        ]
+    },
+    {
+        "q": "Rearrange the SparkSession creation:",
+        "type": "rearrange",
+        "words": [
+            "import SparkSession",
+            "use builder",
+            "call getOrCreate"
+        ]
+    },
+    {
+        "q": "getOrCreate() returns existing or new session.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is the main data structure in Spark SQL?",
+        "type": "mcq",
+        "o": [
+            "DataFrame",
+            "RDD",
+            "Dataset",
+            "Table"
+        ]
+    },
+    {
+        "q": "DataFrame is distributed collection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the data structures:",
+        "type": "match",
+        "left": [
+            "RDD",
+            "DataFrame",
+            "Dataset"
+        ],
+        "right": [
+            "Untyped distributed",
+            "Typed distributed",
+            "Typed with schema"
+        ]
+    },
+    {
+        "q": "Which method creates DataFrame from list?",
+        "type": "mcq",
+        "o": [
+            "spark.createDataFrame()",
+            "spark.DataFrame()",
+            "spark.toDF()",
+            "spark.makeDF()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.getOrCreate()\ndf = spark.createDataFrame([(1, 'a'), (2, 'b')])\nprint(type(df).__name__)",
+        "o": [
+            "DataFrame",
+            "RDD",
+            "List",
+            "Table"
+        ]
+    },
+    {
+        "q": "createDataFrame() accepts lists and pandas DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the DataFrame creation methods:",
+        "type": "match",
+        "left": [
+            "createDataFrame",
+            "read.csv",
+            "read.json"
+        ],
+        "right": [
+            "From data",
+            "From CSV",
+            "From JSON"
+        ]
+    },
+    {
+        "q": "The ______ method reads CSV files.",
+        "type": "fill_blank",
+        "answers": [
+            "spark.read.csv"
+        ],
+        "other_options": [
+            "spark.csv",
+            "spark.load.csv",
+            "spark.readCSV"
+        ]
+    },
+    {
+        "q": "Rearrange the DataFrame creation:",
+        "type": "rearrange",
+        "words": [
+            "get SparkSession",
+            "prepare data",
+            "call createDataFrame"
+        ]
+    },
+    {
+        "q": "Which method shows DataFrame contents?",
+        "type": "mcq",
+        "o": [
+            "df.show()",
+            "df.display()",
+            "df.print()",
+            "df.view()"
+        ]
+    },
+    {
+        "q": "show() displays first 20 rows by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the DataFrame display methods:",
+        "type": "match",
+        "left": [
+            "show()",
+            "printSchema()",
+            "count()"
+        ],
+        "right": [
+            "Show rows",
+            "Show schema",
+            "Row count"
+        ]
+    },
+    {
+        "q": "The ______ method prints the schema.",
+        "type": "fill_blank",
+        "answers": [
+            "printSchema"
+        ],
+        "other_options": [
+            "schema",
+            "showSchema",
+            "describe"
+        ]
+    },
+    {
+        "q": "Which method shows DataFrame schema?",
+        "type": "mcq",
+        "o": [
+            "df.printSchema()",
+            "df.schema()",
+            "df.describe()",
+            "df.info()"
+        ]
+    },
+    {
+        "q": "Rearrange the DataFrame exploration:",
+        "type": "rearrange",
+        "words": [
+            "show() for data",
+            "printSchema() for schema",
+            "count() for size"
+        ]
+    },
+    {
+        "q": "Which method selects columns?",
+        "type": "mcq",
+        "o": [
+            "df.select()",
+            "df.choose()",
+            "df.pick()",
+            "df.get()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.getOrCreate()\ndf = spark.createDataFrame([(1, 'a'), (2, 'b')], ['id', 'name'])\nprint(df.select('id').columns)",
+        "o": [
+            "['id']",
+            "['name']",
+            "['id', 'name']",
+            "Error"
+        ]
+    },
+    {
+        "q": "select() returns a new DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the column operations:",
+        "type": "match",
+        "left": [
+            "select()",
+            "drop()",
+            "withColumn()"
+        ],
+        "right": [
+            "Choose columns",
+            "Remove columns",
+            "Add/modify column"
+        ]
+    },
+    {
+        "q": "The ______ method removes columns.",
+        "type": "fill_blank",
+        "answers": [
+            "drop"
+        ],
+        "other_options": [
+            "remove",
+            "delete",
+            "exclude"
+        ]
+    },
+    {
+        "q": "Which method filters rows?",
+        "type": "mcq",
+        "o": [
+            "df.filter() or df.where()",
+            "df.subset()",
+            "df.query()",
+            "df.select_rows()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.getOrCreate()\ndf = spark.createDataFrame([(1, 'a'), (2, 'b'), (3, 'c')], ['id', 'name'])\nprint(df.filter('id > 1').count())",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "filter() and where() are equivalent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the filtering methods:",
+        "type": "match",
+        "left": [
+            "filter()",
+            "where()",
+            "limit()"
+        ],
+        "right": [
+            "Filter rows",
+            "Filter rows",
+            "Limit rows"
+        ]
+    },
+    {
+        "q": "Rearrange the filtering syntax:",
+        "type": "rearrange",
+        "words": [
+            "DataFrame",
+            ".filter()",
+            "condition"
+        ]
+    },
+    {
+        "q": "Which method groups data?",
+        "type": "mcq",
+        "o": [
+            "df.groupBy()",
+            "df.group()",
+            "df.aggregate()",
+            "df.cluster()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.getOrCreate()\ndf = spark.createDataFrame([(1, 'a'), (1, 'b'), (2, 'c')], ['id', 'name'])\nprint(df.groupBy('id').count().count())",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "groupBy() returns a GroupedData object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the aggregation methods:",
+        "type": "match",
+        "left": [
+            "count()",
+            "sum()",
+            "avg()"
+        ],
+        "right": [
+            "Count rows",
+            "Sum values",
+            "Average values"
+        ]
+    },
+    {
+        "q": "The ______ method calculates average.",
+        "type": "fill_blank",
+        "answers": [
+            "avg"
+        ],
+        "other_options": [
+            "mean",
+            "average",
+            "av"
+        ]
+    },
+    {
+        "q": "Which method sorts data?",
+        "type": "mcq",
+        "o": [
+            "df.orderBy() or df.sort()",
+            "df.arrange()",
+            "df.order()",
+            "df.rank()"
+        ]
+    },
+    {
+        "q": "orderBy() and sort() are equivalent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sort methods:",
+        "type": "match",
+        "left": [
+            "orderBy()",
+            "sort()",
+            "sortWithinPartitions()"
+        ],
+        "right": [
+            "Global sort",
+            "Global sort",
+            "Partition sort"
+        ]
+    },
+    {
+        "q": "Rearrange the sorting workflow:",
+        "type": "rearrange",
+        "words": [
+            "DataFrame",
+            ".orderBy()",
+            "column name"
+        ]
+    },
+    {
+        "q": "Which method joins DataFrames?",
+        "type": "mcq",
+        "o": [
+            "df.join()",
+            "df.merge()",
+            "df.combine()",
+            "df.union()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.getOrCreate()\ndf1 = spark.createDataFrame([(1, 'a')], ['id', 'name'])\ndf2 = spark.createDataFrame([(1, 100)], ['id', 'value'])\nprint(df1.join(df2, 'id').columns)",
+        "o": [
+            "['id', 'name', 'value']",
+            "['id', 'name']",
+            "['id', 'value']",
+            "Error"
+        ]
+    },
+    {
+        "q": "join() combines DataFrames on keys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the join types:",
+        "type": "match",
+        "left": [
+            "inner",
+            "left",
+            "outer"
+        ],
+        "right": [
+            "Matching only",
+            "All from left",
+            "All rows"
+        ]
+    },
+    {
+        "q": "The ______ join keeps all matching rows.",
+        "type": "fill_blank",
+        "answers": [
+            "inner"
+        ],
+        "other_options": [
+            "outer",
+            "left",
+            "right"
+        ]
+    },
+    {
+        "q": "Rearrange the join workflow:",
+        "type": "rearrange",
+        "words": [
+            "first DataFrame",
+            ".join()",
+            "second DataFrame",
+            "key"
+        ]
+    },
+    {
+        "q": "Which method unions DataFrames?",
+        "type": "mcq",
+        "o": [
+            "df.union() or df.unionAll()",
+            "df.append()",
+            "df.concat()",
+            "df.merge()"
+        ]
+    },
+    {
+        "q": "union() stacks DataFrames vertically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the combine methods:",
+        "type": "match",
+        "left": [
+            "join()",
+            "union()",
+            "crossJoin()"
+        ],
+        "right": [
+            "Horizontal",
+            "Vertical",
+            "Cartesian"
+        ]
+    },
+    {
+        "q": "Which method adds new column?",
+        "type": "mcq",
+        "o": [
+            "df.withColumn()",
+            "df.addColumn()",
+            "df.newColumn()",
+            "df.insert()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import SparkSession\nfrom pyspark.sql.functions import lit\nspark = SparkSession.builder.getOrCreate()\ndf = spark.createDataFrame([(1,)], ['id'])\ndf2 = df.withColumn('new', lit(10))\nprint(len(df2.columns))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "withColumn() can add or replace columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the column operations:",
+        "type": "match",
+        "left": [
+            "withColumn()",
+            "withColumnRenamed()",
+            "drop()"
+        ],
+        "right": [
+            "Add/replace",
+            "Rename",
+            "Remove"
+        ]
+    },
+    {
+        "q": "The ______ method renames columns.",
+        "type": "fill_blank",
+        "answers": [
+            "withColumnRenamed"
+        ],
+        "other_options": [
+            "rename",
+            "renameColumn",
+            "setColumn"
+        ]
+    },
+    {
+        "q": "Which module has SQL functions?",
+        "type": "mcq",
+        "o": [
+            "pyspark.sql.functions",
+            "pyspark.functions",
+            "pyspark.sql.ops",
+            "pyspark.operations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import functions as F\nprint(hasattr(F, 'col'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "F is common alias for pyspark.sql.functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the function types:",
+        "type": "match",
+        "left": [
+            "col()",
+            "lit()",
+            "when()"
+        ],
+        "right": [
+            "Column reference",
+            "Literal value",
+            "Conditional"
+        ]
+    },
+    {
+        "q": "The ______ function refers to a column.",
+        "type": "fill_blank",
+        "answers": [
+            "col"
+        ],
+        "other_options": [
+            "column",
+            "ref",
+            "get"
+        ]
+    },
+    {
+        "q": "Rearrange the function usage:",
+        "type": "rearrange",
+        "words": [
+            "import functions as F",
+            "use F.col()",
+            "in DataFrame operations"
+        ]
+    },
+    {
+        "q": "Which function creates literal values?",
+        "type": "mcq",
+        "o": [
+            "lit()",
+            "literal()",
+            "const()",
+            "value()"
+        ]
+    },
+    {
+        "q": "lit() creates column with constant value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the value functions:",
+        "type": "match",
+        "left": [
+            "lit()",
+            "col()",
+            "expr()"
+        ],
+        "right": [
+            "Constant",
+            "Column ref",
+            "SQL expression"
+        ]
+    },
+    {
+        "q": "Which function creates conditional logic?",
+        "type": "mcq",
+        "o": [
+            "when().otherwise()",
+            "if().else()",
+            "case().when()",
+            "cond()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from pyspark.sql import functions as F\nprint(hasattr(F, 'when'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "when() and otherwise() create CASE WHEN logic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the conditional functions:",
+        "type": "match",
+        "left": [
+            "when()",
+            "otherwise()",
+            "coalesce()"
+        ],
+        "right": [
+            "Condition",
+            "Default",
+            "First non-null"
+        ]
+    },
+    {
+        "q": "Rearrange the when/otherwise:",
+        "type": "rearrange",
+        "words": [
+            "when(condition)",
+            ".then(value)",
+            ".otherwise(default)"
+        ]
+    },
+    {
+        "q": "Which method runs SQL queries?",
+        "type": "mcq",
+        "o": [
+            "spark.sql()",
+            "spark.query()",
+            "spark.execute()",
+            "spark.run()"
+        ]
+    },
+    {
+        "q": "spark.sql() returns a DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the SQL methods:",
+        "type": "match",
+        "left": [
+            "spark.sql()",
+            "df.createOrReplaceTempView()"
+        ],
+        "right": [
+            "Run query",
+            "Register table"
+        ]
+    },
+    {
+        "q": "The ______ registers DataFrame as temp view.",
+        "type": "fill_blank",
+        "answers": [
+            "createOrReplaceTempView"
+        ],
+        "other_options": [
+            "createView",
+            "registerView",
+            "tempView"
+        ]
+    },
+    {
+        "q": "Which method writes DataFrame?",
+        "type": "mcq",
+        "o": [
+            "df.write",
+            "df.save",
+            "df.export",
+            "df.output"
+        ]
+    },
+    {
+        "q": "df.write is a DataFrameWriter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the write methods:",
+        "type": "match",
+        "left": [
+            "write.csv()",
+            "write.parquet()",
+            "write.json()"
+        ],
+        "right": [
+            "Write CSV",
+            "Write Parquet",
+            "Write JSON"
+        ]
+    },
+    {
+        "q": "Rearrange the write workflow:",
+        "type": "rearrange",
+        "words": [
+            "df",
+            ".write",
+            ".mode()",
+            ".parquet()"
+        ]
+    },
+    {
+        "q": "Which write mode overwrites data?",
+        "type": "mcq",
+        "o": [
+            "overwrite",
+            "replace",
+            "truncate",
+            "delete"
+        ]
+    },
+    {
+        "q": "append mode adds to existing data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the write modes:",
+        "type": "match",
+        "left": [
+            "overwrite",
+            "append",
+            "ignore"
+        ],
+        "right": [
+            "Replace all",
+            "Add data",
+            "Skip if exists"
+        ]
+    },
+    {
+        "q": "The ______ mode fails if data exists.",
+        "type": "fill_blank",
+        "answers": [
+            "error"
+        ],
+        "other_options": [
+            "fail",
+            "stop",
+            "abort"
+        ]
+    },
+    {
+        "q": "Which format is columnar?",
+        "type": "mcq",
+        "o": [
+            "Parquet",
+            "CSV",
+            "JSON",
+            "Text"
+        ]
+    },
+    {
+        "q": "Parquet is optimized for analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the file formats:",
+        "type": "match",
+        "left": [
+            "Parquet",
+            "CSV",
+            "JSON"
+        ],
+        "right": [
+            "Columnar",
+            "Row-based",
+            "Semi-structured"
+        ]
+    },
+    {
+        "q": "Rearrange the format efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Parquet: best",
+            "ORC: good",
+            "CSV: basic"
+        ]
+    },
+    {
+        "q": "Which function handles null values?",
+        "type": "mcq",
+        "o": [
+            "df.na.drop() or df.na.fill()",
+            "df.dropNull()",
+            "df.removeNull()",
+            "df.cleanNull()"
+        ]
+    },
+    {
+        "q": "df.na provides null handling methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the null handling:",
+        "type": "match",
+        "left": [
+            "na.drop()",
+            "na.fill()",
+            "na.replace()"
+        ],
+        "right": [
+            "Remove nulls",
+            "Replace nulls",
+            "Replace values"
+        ]
+    },
+    {
+        "q": "The ______ method removes null rows.",
+        "type": "fill_blank",
+        "answers": [
+            "na.drop"
+        ],
+        "other_options": [
+            "dropna",
+            "removeNull",
+            "clean"
+        ]
+    },
+    {
+        "q": "Which function checks for null?",
+        "type": "mcq",
+        "o": [
+            "F.isnull() or F.isnan()",
+            "F.checkNull()",
+            "F.nullCheck()",
+            "F.isNone()"
+        ]
+    },
+    {
+        "q": "isnull() returns boolean column.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the null checks:",
+        "type": "match",
+        "left": [
+            "isnull()",
+            "isnan()",
+            "isnotnull()"
+        ],
+        "right": [
+            "Check null",
+            "Check NaN",
+            "Check not null"
+        ]
+    },
+    {
+        "q": "Rearrange the null handling:",
+        "type": "rearrange",
+        "words": [
+            "check nulls",
+            "decide action",
+            "drop or fill"
+        ]
+    },
+    {
+        "q": "Which function handles duplicates?",
+        "type": "mcq",
+        "o": [
+            "df.dropDuplicates()",
+            "df.removeDuplicates()",
+            "df.dedupe()",
+            "df.unique()"
+        ]
+    },
+    {
+        "q": "dropDuplicates() removes duplicate rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dedup methods:",
+        "type": "match",
+        "left": [
+            "dropDuplicates()",
+            "distinct()"
+        ],
+        "right": [
+            "Remove by columns",
+            "All columns"
+        ]
+    },
+    {
+        "q": "Which function casts data types?",
+        "type": "mcq",
+        "o": [
+            "col.cast()",
+            "col.asType()",
+            "col.convert()",
+            "col.change()"
+        ]
+    },
+    {
+        "q": "cast() changes column data type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the data types:",
+        "type": "match",
+        "left": [
+            "IntegerType",
+            "StringType",
+            "DoubleType"
+        ],
+        "right": [
+            "Integers",
+            "Strings",
+            "Decimals"
+        ]
+    },
+    {
+        "q": "The ______ type stores text.",
+        "type": "fill_blank",
+        "answers": [
+            "StringType"
+        ],
+        "other_options": [
+            "TextType",
+            "VarcharType",
+            "CharType"
+        ]
+    },
+    {
+        "q": "Rearrange the type casting:",
+        "type": "rearrange",
+        "words": [
+            "select column",
+            ".cast()",
+            "target type"
+        ]
+    },
+    {
+        "q": "Which module defines data types?",
+        "type": "mcq",
+        "o": [
+            "pyspark.sql.types",
+            "pyspark.types",
+            "pyspark.sql.datatypes",
+            "pyspark.data"
+        ]
+    },
+    {
+        "q": "StructType defines schema.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the schema types:",
+        "type": "match",
+        "left": [
+            "StructType",
+            "StructField",
+            "ArrayType"
+        ],
+        "right": [
+            "Schema",
+            "Column def",
+            "Array"
+        ]
+    },
+    {
+        "q": "Which function handles string operations?",
+        "type": "mcq",
+        "o": [
+            "F.upper(), F.lower(), F.trim()",
+            "str.upper()",
+            "col.upper()",
+            "s.upper()"
+        ]
+    },
+    {
+        "q": "F.upper() converts to uppercase.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the string functions:",
+        "type": "match",
+        "left": [
+            "upper()",
+            "lower()",
+            "length()"
+        ],
+        "right": [
+            "Uppercase",
+            "Lowercase",
+            "String length"
+        ]
+    },
+    {
+        "q": "The ______ function trims whitespace.",
+        "type": "fill_blank",
+        "answers": [
+            "trim"
+        ],
+        "other_options": [
+            "strip",
+            "clean",
+            "remove"
+        ]
+    },
+    {
+        "q": "Rearrange the string processing:",
+        "type": "rearrange",
+        "words": [
+            "select column",
+            "apply F.trim()",
+            "get result"
+        ]
+    },
+    {
+        "q": "Which function handles regex?",
+        "type": "mcq",
+        "o": [
+            "F.regexp_extract() or F.regexp_replace()",
+            "F.regex()",
+            "F.match()",
+            "F.pattern()"
+        ]
+    },
+    {
+        "q": "regexp_extract() extracts matching text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the regex functions:",
+        "type": "match",
+        "left": [
+            "regexp_extract",
+            "regexp_replace",
+            "rlike"
+        ],
+        "right": [
+            "Extract",
+            "Replace",
+            "Filter"
+        ]
+    },
+    {
+        "q": "Which function handles date operations?",
+        "type": "mcq",
+        "o": [
+            "F.year(), F.month(), F.day()",
+            "date.year()",
+            "col.year()",
+            "d.year()"
+        ]
+    },
+    {
+        "q": "F.year() extracts year from date.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the date functions:",
+        "type": "match",
+        "left": [
+            "year()",
+            "month()",
+            "dayofmonth()"
+        ],
+        "right": [
+            "Year",
+            "Month",
+            "Day"
+        ]
+    },
+    {
+        "q": "The ______ function gets current date.",
+        "type": "fill_blank",
+        "answers": [
+            "current_date"
+        ],
+        "other_options": [
+            "today",
+            "now",
+            "getDate"
+        ]
+    },
+    {
+        "q": "Rearrange the date extraction:",
+        "type": "rearrange",
+        "words": [
+            "select date column",
+            "apply F.year()",
+            "get year"
+        ]
+    },
+    {
+        "q": "Which function handles timestamp?",
+        "type": "mcq",
+        "o": [
+            "F.hour(), F.minute(), F.second()",
+            "time.hour()",
+            "col.hour()",
+            "t.hour()"
+        ]
+    },
+    {
+        "q": "current_timestamp() gets current datetime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the timestamp functions:",
+        "type": "match",
+        "left": [
+            "hour()",
+            "minute()",
+            "second()"
+        ],
+        "right": [
+            "Hour",
+            "Minute",
+            "Second"
+        ]
+    },
+    {
+        "q": "Which function handles date arithmetic?",
+        "type": "mcq",
+        "o": [
+            "F.date_add() or F.date_sub()",
+            "F.addDays()",
+            "col + days",
+            "F.plusDays()"
+        ]
+    },
+    {
+        "q": "date_add() adds days to date.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the date arithmetic:",
+        "type": "match",
+        "left": [
+            "date_add()",
+            "date_sub()",
+            "datediff()"
+        ],
+        "right": [
+            "Add days",
+            "Subtract days",
+            "Days between"
+        ]
+    },
+    {
+        "q": "Which function handles aggregation?",
+        "type": "mcq",
+        "o": [
+            "F.sum(), F.avg(), F.max(), F.min()",
+            "agg.sum()",
+            "col.sum()",
+            "groupBy.sum()"
+        ]
+    },
+    {
+        "q": "Aggregation functions require groupBy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the aggregate functions:",
+        "type": "match",
+        "left": [
+            "sum()",
+            "count()",
+            "collect_list()"
+        ],
+        "right": [
+            "Total",
+            "Count",
+            "List values"
+        ]
+    },
+    {
+        "q": "The ______ function counts distinct.",
+        "type": "fill_blank",
+        "answers": [
+            "countDistinct"
+        ],
+        "other_options": [
+            "distinctCount",
+            "unique",
+            "nunique"
+        ]
+    },
+    {
+        "q": "Rearrange the aggregation:",
+        "type": "rearrange",
+        "words": [
+            "groupBy()",
+            ".agg()",
+            "F.sum()"
+        ]
+    },
+    {
+        "q": "Which function handles window operations?",
+        "type": "mcq",
+        "o": [
+            "Window.partitionBy().orderBy()",
+            "df.window()",
+            "df.partition()",
+            "F.window()"
+        ]
+    },
+    {
+        "q": "Window enables row-level aggregations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the window components:",
+        "type": "match",
+        "left": [
+            "partitionBy()",
+            "orderBy()",
+            "rowsBetween()"
+        ],
+        "right": [
+            "Partition",
+            "Sort",
+            "Frame"
+        ]
+    },
+    {
+        "q": "Which class defines window spec?",
+        "type": "mcq",
+        "o": [
+            "Window from pyspark.sql.window",
+            "WindowSpec",
+            "pyspark.Window",
+            "F.Window"
+        ]
+    },
+    {
+        "q": "Window.partitionBy() groups data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the window functions:",
+        "type": "match",
+        "left": [
+            "row_number()",
+            "rank()",
+            "lead()"
+        ],
+        "right": [
+            "Sequential number",
+            "Rank with gaps",
+            "Next row"
+        ]
+    },
+    {
+        "q": "The ______ function gets previous row.",
+        "type": "fill_blank",
+        "answers": [
+            "lag"
+        ],
+        "other_options": [
+            "previous",
+            "before",
+            "prior"
+        ]
+    },
+    {
+        "q": "Rearrange the window workflow:",
+        "type": "rearrange",
+        "words": [
+            "define Window spec",
+            "apply window function",
+            "select result"
+        ]
+    },
+    {
+        "q": "Which function handles RDD operations?",
+        "type": "mcq",
+        "o": [
+            "df.rdd",
+            "df.toRDD()",
+            "df.asRDD()",
+            "rdd(df)"
+        ]
+    },
+    {
+        "q": "df.rdd converts DataFrame to RDD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RDD methods:",
+        "type": "match",
+        "left": [
+            "map()",
+            "filter()",
+            "reduce()"
+        ],
+        "right": [
+            "Transform",
+            "Filter",
+            "Aggregate"
+        ]
+    },
+    {
+        "q": "Which method creates RDD?",
+        "type": "mcq",
+        "o": [
+            "sc.parallelize()",
+            "sc.createRDD()",
+            "sc.make()",
+            "spark.rdd()"
+        ]
+    },
+    {
+        "q": "parallelize() creates RDD from list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RDD creation:",
+        "type": "match",
+        "left": [
+            "parallelize()",
+            "textFile()"
+        ],
+        "right": [
+            "From collection",
+            "From file"
+        ]
+    },
+    {
+        "q": "The ______ method collects RDD to driver.",
+        "type": "fill_blank",
+        "answers": [
+            "collect"
+        ],
+        "other_options": [
+            "get",
+            "fetch",
+            "gather"
+        ]
+    },
+    {
+        "q": "Rearrange the RDD workflow:",
+        "type": "rearrange",
+        "words": [
+            "create RDD",
+            "transform",
+            "action"
+        ]
+    },
+    {
+        "q": "Which are RDD transformations?",
+        "type": "mcq",
+        "o": [
+            "map, filter, flatMap",
+            "collect, count, take",
+            "save, show, print",
+            "load, read, import"
+        ]
+    },
+    {
+        "q": "Transformations are lazy evaluated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RDD operations:",
+        "type": "match",
+        "left": [
+            "map()",
+            "collect()",
+            "persist()"
+        ],
+        "right": [
+            "Transformation",
+            "Action",
+            "Caching"
+        ]
+    },
+    {
+        "q": "Which are RDD actions?",
+        "type": "mcq",
+        "o": [
+            "collect, count, take, reduce",
+            "map, filter, join",
+            "cache, persist",
+            "parallelize, textFile"
+        ]
+    },
+    {
+        "q": "Actions trigger computation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the lazy evaluation:",
+        "type": "match",
+        "left": [
+            "Transformation",
+            "Action"
+        ],
+        "right": [
+            "Builds plan",
+            "Executes"
+        ]
+    },
+    {
+        "q": "Rearrange the evaluation:",
+        "type": "rearrange",
+        "words": [
+            "define transformations",
+            "call action",
+            "execute DAG"
+        ]
+    },
+    {
+        "q": "Which method caches data?",
+        "type": "mcq",
+        "o": [
+            "df.cache() or df.persist()",
+            "df.store()",
+            "df.save()",
+            "df.keep()"
+        ]
+    },
+    {
+        "q": "cache() stores in memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the storage methods:",
+        "type": "match",
+        "left": [
+            "cache()",
+            "persist()",
+            "unpersist()"
+        ],
+        "right": [
+            "Memory",
+            "Configurable",
+            "Remove"
+        ]
+    },
+    {
+        "q": "The ______ removes cached data.",
+        "type": "fill_blank",
+        "answers": [
+            "unpersist"
+        ],
+        "other_options": [
+            "uncache",
+            "remove",
+            "clear"
+        ]
+    },
+    {
+        "q": "Which storage level uses disk?",
+        "type": "mcq",
+        "o": [
+            "DISK_ONLY or MEMORY_AND_DISK",
+            "MEMORY_ONLY",
+            "OFF_HEAP",
+            "NONE"
+        ]
+    },
+    {
+        "q": "MEMORY_ONLY is default storage level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the storage levels:",
+        "type": "match",
+        "left": [
+            "MEMORY_ONLY",
+            "DISK_ONLY",
+            "MEMORY_AND_DISK"
+        ],
+        "right": [
+            "RAM",
+            "Disk",
+            "Both"
+        ]
+    },
+    {
+        "q": "Rearrange the caching workflow:",
+        "type": "rearrange",
+        "words": [
+            "cache DataFrame",
+            "use multiple times",
+            "unpersist when done"
+        ]
+    },
+    {
+        "q": "Which method controls partitions?",
+        "type": "mcq",
+        "o": [
+            "repartition() or coalesce()",
+            "partition()",
+            "split()",
+            "divide()"
+        ]
+    },
+    {
+        "q": "repartition() can increase partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the partition methods:",
+        "type": "match",
+        "left": [
+            "repartition()",
+            "coalesce()"
+        ],
+        "right": [
+            "Full shuffle",
+            "No full shuffle"
+        ]
+    },
+    {
+        "q": "The ______ reduces partitions efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "coalesce"
+        ],
+        "other_options": [
+            "repartition",
+            "compact",
+            "merge"
+        ]
+    },
+    {
+        "q": "Which method shows partitions?",
+        "type": "mcq",
+        "o": [
+            "df.rdd.getNumPartitions()",
+            "df.partitions()",
+            "df.numPartitions",
+            "df.count_partitions()"
+        ]
+    },
+    {
+        "q": "getNumPartitions() returns partition count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the partition operations:",
+        "type": "match",
+        "left": [
+            "getNumPartitions()",
+            "repartition(n)"
+        ],
+        "right": [
+            "Count",
+            "Set count"
+        ]
+    },
+    {
+        "q": "Rearrange the partition tuning:",
+        "type": "rearrange",
+        "words": [
+            "check partitions",
+            "decide optimal count",
+            "repartition or coalesce"
+        ]
+    },
+    {
+        "q": "Which method broadcasts data?",
+        "type": "mcq",
+        "o": [
+            "spark.sparkContext.broadcast()",
+            "spark.broadcast()",
+            "df.broadcast()",
+            "F.broadcast()"
+        ]
+    },
+    {
+        "q": "Broadcast sends data to all nodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the broadcast usage:",
+        "type": "match",
+        "left": [
+            "broadcast()",
+            ".value"
+        ],
+        "right": [
+            "Create broadcast",
+            "Access value"
+        ]
+    },
+    {
+        "q": "Which hint optimizes joins?",
+        "type": "mcq",
+        "o": [
+            "F.broadcast() hint",
+            "F.optimize()",
+            "F.hint()",
+            "F.fast()"
+        ]
+    },
+    {
+        "q": "Broadcast join avoids shuffle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the join strategies:",
+        "type": "match",
+        "left": [
+            "Broadcast",
+            "Sort-Merge",
+            "Shuffle Hash"
+        ],
+        "right": [
+            "Small table",
+            "Large sorted",
+            "Hash partitioned"
+        ]
+    },
+    {
+        "q": "The ______ join is for small tables.",
+        "type": "fill_blank",
+        "answers": [
+            "broadcast"
+        ],
+        "other_options": [
+            "sort-merge",
+            "shuffle",
+            "hash"
+        ]
+    },
+    {
+        "q": "Rearrange the join optimization:",
+        "type": "rearrange",
+        "words": [
+            "check table sizes",
+            "use broadcast if small",
+            "monitor shuffle"
+        ]
+    },
+    {
+        "q": "Which module has MLlib?",
+        "type": "mcq",
+        "o": [
+            "pyspark.ml",
+            "pyspark.mllib",
+            "pyspark.machine_learning",
+            "pyspark.learn"
+        ]
+    },
+    {
+        "q": "pyspark.ml uses DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ML modules:",
+        "type": "match",
+        "left": [
+            "pyspark.ml",
+            "pyspark.mllib"
+        ],
+        "right": [
+            "DataFrame API",
+            "RDD API (legacy)"
+        ]
+    },
+    {
+        "q": "Which class handles features?",
+        "type": "mcq",
+        "o": [
+            "VectorAssembler",
+            "FeatureCombiner",
+            "Assembler",
+            "FeatureVector"
+        ]
+    },
+    {
+        "q": "VectorAssembler combines features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the feature transformers:",
+        "type": "match",
+        "left": [
+            "VectorAssembler",
+            "StandardScaler",
+            "StringIndexer"
+        ],
+        "right": [
+            "Combine",
+            "Scale",
+            "Encode"
+        ]
+    },
+    {
+        "q": "The ______ encodes strings to indices.",
+        "type": "fill_blank",
+        "answers": [
+            "StringIndexer"
+        ],
+        "other_options": [
+            "LabelEncoder",
+            "Indexer",
+            "StringEncoder"
+        ]
+    },
+    {
+        "q": "Rearrange the feature pipeline:",
+        "type": "rearrange",
+        "words": [
+            "encode categoricals",
+            "assemble features",
+            "scale if needed"
+        ]
+    },
+    {
+        "q": "Which class handles classification?",
+        "type": "mcq",
+        "o": [
+            "LogisticRegression, RandomForestClassifier",
+            "Classifier",
+            "ClassModel",
+            "Classification"
+        ]
+    },
+    {
+        "q": "LogisticRegression is for binary classification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the classifiers:",
+        "type": "match",
+        "left": [
+            "LogisticRegression",
+            "RandomForestClassifier",
+            "GBTClassifier"
+        ],
+        "right": [
+            "Linear",
+            "Ensemble trees",
+            "Gradient boosting"
+        ]
+    },
+    {
+        "q": "Which class handles regression?",
+        "type": "mcq",
+        "o": [
+            "LinearRegression, RandomForestRegressor",
+            "Regressor",
+            "RegressionModel",
+            "Regression"
+        ]
+    },
+    {
+        "q": "LinearRegression predicts continuous values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the regressors:",
+        "type": "match",
+        "left": [
+            "LinearRegression",
+            "RandomForestRegressor",
+            "GBTRegressor"
+        ],
+        "right": [
+            "Linear",
+            "Ensemble trees",
+            "Gradient boosting"
+        ]
+    },
+    {
+        "q": "The ______ regressor uses decision trees.",
+        "type": "fill_blank",
+        "answers": [
+            "RandomForestRegressor"
+        ],
+        "other_options": [
+            "LinearRegression",
+            "TreeRegressor",
+            "ForestModel"
+        ]
+    },
+    {
+        "q": "Rearrange the ML workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare features",
+            "fit model",
+            "transform predictions"
+        ]
+    },
+    {
+        "q": "Which class handles clustering?",
+        "type": "mcq",
+        "o": [
+            "KMeans, BisectingKMeans",
+            "Cluster",
+            "Clustering",
+            "ClusterModel"
+        ]
+    },
+    {
+        "q": "KMeans partitions data into clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the clustering algorithms:",
+        "type": "match",
+        "left": [
+            "KMeans",
+            "GaussianMixture",
+            "LDA"
+        ],
+        "right": [
+            "Centroid-based",
+            "Probabilistic",
+            "Topic modeling"
+        ]
+    },
+    {
+        "q": "Which class handles pipeline?",
+        "type": "mcq",
+        "o": [
+            "Pipeline from pyspark.ml",
+            "Workflow",
+            "Chain",
+            "Sequence"
+        ]
+    },
+    {
+        "q": "Pipeline chains transformers and estimators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pipeline components:",
+        "type": "match",
+        "left": [
+            "Transformer",
+            "Estimator",
+            "Pipeline"
+        ],
+        "right": [
+            "Transform data",
+            "Fit model",
+            "Chain stages"
+        ]
+    },
+    {
+        "q": "The ______ method fits pipeline.",
+        "type": "fill_blank",
+        "answers": [
+            "fit"
+        ],
+        "other_options": [
+            "train",
+            "build",
+            "create"
+        ]
+    },
+    {
+        "q": "Rearrange the pipeline creation:",
+        "type": "rearrange",
+        "words": [
+            "define stages",
+            "create Pipeline",
+            "fit on data"
+        ]
+    },
+    {
+        "q": "Which class handles cross-validation?",
+        "type": "mcq",
+        "o": [
+            "CrossValidator",
+            "KFold",
+            "CrossValidation",
+            "Validator"
+        ]
+    },
+    {
+        "q": "CrossValidator performs hyperparameter tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the validation classes:",
+        "type": "match",
+        "left": [
+            "CrossValidator",
+            "TrainValidationSplit"
+        ],
+        "right": [
+            "K-fold CV",
+            "Train/val split"
+        ]
+    },
+    {
+        "q": "Which class evaluates models?",
+        "type": "mcq",
+        "o": [
+            "BinaryClassificationEvaluator, RegressionEvaluator",
+            "Evaluator",
+            "Metrics",
+            "Score"
+        ]
+    },
+    {
+        "q": "Evaluators compute model metrics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the evaluators:",
+        "type": "match",
+        "left": [
+            "BinaryClassificationEvaluator",
+            "RegressionEvaluator",
+            "MulticlassClassificationEvaluator"
+        ],
+        "right": [
+            "Binary",
+            "Continuous",
+            "Multiclass"
+        ]
+    },
+    {
+        "q": "The ______ metric is for regression.",
+        "type": "fill_blank",
+        "answers": [
+            "rmse"
+        ],
+        "other_options": [
+            "accuracy",
+            "auc",
+            "f1"
+        ]
+    },
+    {
+        "q": "Rearrange the model evaluation:",
+        "type": "rearrange",
+        "words": [
+            "get predictions",
+            "create evaluator",
+            "compute metric"
+        ]
+    },
+    {
+        "q": "Which module handles streaming?",
+        "type": "mcq",
+        "o": [
+            "pyspark.sql.streaming",
+            "pyspark.streaming",
+            "pyspark.stream",
+            "pyspark.realtime"
+        ]
+    },
+    {
+        "q": "Structured Streaming uses DataFrame API.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the streaming types:",
+        "type": "match",
+        "left": [
+            "Structured Streaming",
+            "DStream"
+        ],
+        "right": [
+            "DataFrame-based",
+            "RDD-based (legacy)"
+        ]
+    },
+    {
+        "q": "Which method reads streaming data?",
+        "type": "mcq",
+        "o": [
+            "spark.readStream",
+            "spark.stream",
+            "spark.read.stream",
+            "spark.streaming"
+        ]
+    },
+    {
+        "q": "readStream creates streaming DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the streaming sources:",
+        "type": "match",
+        "left": [
+            "kafka",
+            "socket",
+            "file"
+        ],
+        "right": [
+            "Message queue",
+            "Network",
+            "HDFS/S3"
+        ]
+    },
+    {
+        "q": "The ______ method starts streaming query.",
+        "type": "fill_blank",
+        "answers": [
+            "start"
+        ],
+        "other_options": [
+            "run",
+            "execute",
+            "begin"
+        ]
+    },
+    {
+        "q": "Rearrange the streaming workflow:",
+        "type": "rearrange",
+        "words": [
+            "readStream",
+            "transform",
+            "writeStream.start"
+        ]
+    },
+    {
+        "q": "Which method writes streaming data?",
+        "type": "mcq",
+        "o": [
+            "df.writeStream",
+            "df.streamWrite",
+            "df.write.stream",
+            "df.output"
+        ]
+    },
+    {
+        "q": "writeStream defines output sink.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the streaming sinks:",
+        "type": "match",
+        "left": [
+            "console",
+            "kafka",
+            "parquet"
+        ],
+        "right": [
+            "Debug",
+            "Message queue",
+            "File"
+        ]
+    },
+    {
+        "q": "Which output mode appends only?",
+        "type": "mcq",
+        "o": [
+            "append",
+            "complete",
+            "update",
+            "incremental"
+        ]
+    },
+    {
+        "q": "Complete mode outputs all rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the output modes:",
+        "type": "match",
+        "left": [
+            "append",
+            "complete",
+            "update"
+        ],
+        "right": [
+            "New rows only",
+            "Full result",
+            "Changed rows"
+        ]
+    },
+    {
+        "q": "The ______ mode is for aggregations.",
+        "type": "fill_blank",
+        "answers": [
+            "complete"
+        ],
+        "other_options": [
+            "append",
+            "update",
+            "all"
+        ]
+    },
+    {
+        "q": "Rearrange the streaming modes:",
+        "type": "rearrange",
+        "words": [
+            "append: no aggregation",
+            "update: with agg",
+            "complete: full output"
+        ]
+    },
+    {
+        "q": "Which handles streaming watermarks?",
+        "type": "mcq",
+        "o": [
+            "withWatermark()",
+            "setWatermark()",
+            "watermark()",
+            "addWatermark()"
+        ]
+    },
+    {
+        "q": "Watermarks handle late data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the streaming concepts:",
+        "type": "match",
+        "left": [
+            "Watermark",
+            "Trigger",
+            "Checkpoint"
+        ],
+        "right": [
+            "Late data",
+            "Execution interval",
+            "State recovery"
+        ]
+    },
+    {
+        "q": "Which sets trigger interval?",
+        "type": "mcq",
+        "o": [
+            "trigger()",
+            "interval()",
+            "schedule()",
+            "rate()"
+        ]
+    },
+    {
+        "q": "Trigger controls processing timing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which handles checkpointing?",
+        "type": "mcq",
+        "o": [
+            "option('checkpointLocation', path)",
+            "checkpoint(path)",
+            "saveState(path)",
+            "persist(path)"
+        ]
+    },
+    {
+        "q": "Checkpoints enable fault tolerance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the reliability features:",
+        "type": "match",
+        "left": [
+            "Checkpoint",
+            "Exactly-once"
+        ],
+        "right": [
+            "State save",
+            "Processing guarantee"
+        ]
+    },
+    {
+        "q": "Rearrange the fault tolerance:",
+        "type": "rearrange",
+        "words": [
+            "set checkpoint location",
+            "define watermark",
+            "handle failures"
+        ]
+    },
+    {
+        "q": "Which UDF type is faster?",
+        "type": "mcq",
+        "o": [
+            "Pandas UDF (vectorized)",
+            "Python UDF",
+            "Scala UDF",
+            "SQL UDF"
+        ]
+    },
+    {
+        "q": "Pandas UDF uses Apache Arrow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the UDF types:",
+        "type": "match",
+        "left": [
+            "Python UDF",
+            "Pandas UDF",
+            "Scala UDF"
+        ],
+        "right": [
+            "Row-by-row",
+            "Vectorized",
+            "Native"
+        ]
+    },
+    {
+        "q": "The ______ decorator creates UDF.",
+        "type": "fill_blank",
+        "answers": [
+            "@udf"
+        ],
+        "other_options": [
+            "@func",
+            "@function",
+            "@spark"
+        ]
+    },
+    {
+        "q": "Rearrange the UDF creation:",
+        "type": "rearrange",
+        "words": [
+            "define function",
+            "register as UDF",
+            "use in DataFrame"
+        ]
+    },
+    {
+        "q": "Which creates Pandas UDF?",
+        "type": "mcq",
+        "o": [
+            "@pandas_udf decorator",
+            "@vectorized",
+            "@pandas",
+            "@fast_udf"
+        ]
+    },
+    {
+        "q": "Pandas UDF processes batches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Pandas UDF types:",
+        "type": "match",
+        "left": [
+            "SCALAR",
+            "GROUPED_MAP",
+            "GROUPED_AGG"
+        ],
+        "right": [
+            "Row operation",
+            "Group transform",
+            "Group aggregate"
+        ]
+    },
+    {
+        "q": "Which handles Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "delta table from delta package",
+            "spark.delta",
+            "pyspark.delta",
+            "DeltaFrame"
+        ]
+    },
+    {
+        "q": "Delta Lake provides ACID transactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Delta Lake features:",
+        "type": "match",
+        "left": [
+            "ACID",
+            "Time travel",
+            "Schema enforcement"
+        ],
+        "right": [
+            "Transactions",
+            "Version history",
+            "Data quality"
+        ]
+    },
+    {
+        "q": "The ______ format supports time travel.",
+        "type": "fill_blank",
+        "answers": [
+            "delta"
+        ],
+        "other_options": [
+            "parquet",
+            "orc",
+            "avro"
+        ]
+    },
+    {
+        "q": "Rearrange the Delta Lake operations:",
+        "type": "rearrange",
+        "words": [
+            "write delta table",
+            "update/merge",
+            "time travel query"
+        ]
+    },
+    {
+        "q": "Which config sets Spark memory?",
+        "type": "mcq",
+        "o": [
+            "spark.executor.memory",
+            "spark.memory",
+            "spark.ram",
+            "executor.ram"
+        ]
+    },
+    {
+        "q": "executor.memory controls per-executor RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the memory configs:",
+        "type": "match",
+        "left": [
+            "executor.memory",
+            "driver.memory",
+            "executor.memoryOverhead"
+        ],
+        "right": [
+            "Executor heap",
+            "Driver heap",
+            "Non-heap"
+        ]
+    },
+    {
+        "q": "Which config sets executor cores?",
+        "type": "mcq",
+        "o": [
+            "spark.executor.cores",
+            "spark.cores",
+            "executor.cpu",
+            "spark.cpu"
+        ]
+    },
+    {
+        "q": "More cores means more parallelism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the resource configs:",
+        "type": "match",
+        "left": [
+            "executor.cores",
+            "executor.instances",
+            "dynamicAllocation"
+        ],
+        "right": [
+            "CPU per executor",
+            "Executor count",
+            "Auto scaling"
+        ]
+    },
+    {
+        "q": "The ______ enables auto scaling.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamicAllocation.enabled"
+        ],
+        "other_options": [
+            "autoScale",
+            "autoAlloc",
+            "scaling"
+        ]
+    },
+    {
+        "q": "Rearrange the resource tuning:",
+        "type": "rearrange",
+        "words": [
+            "set memory",
+            "set cores",
+            "set executor count"
+        ]
+    },
+    {
+        "q": "Which shows execution plan?",
+        "type": "mcq",
+        "o": [
+            "df.explain()",
+            "df.plan()",
+            "df.query()",
+            "df.execution()"
+        ]
+    },
+    {
+        "q": "explain() shows physical plan.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the explain levels:",
+        "type": "match",
+        "left": [
+            "simple",
+            "extended",
+            "cost"
+        ],
+        "right": [
+            "Basic plan",
+            "All plans",
+            "With cost"
+        ]
+    },
+    {
+        "q": "Which shows Spark UI?",
+        "type": "mcq",
+        "o": [
+            "Port 4040 by default",
+            "Port 8080",
+            "Port 8888",
+            "Port 3000"
+        ]
+    },
+    {
+        "q": "Spark UI shows job progress.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the UI tabs:",
+        "type": "match",
+        "left": [
+            "Jobs",
+            "Stages",
+            "Storage"
+        ],
+        "right": [
+            "Job list",
+            "Stage details",
+            "Cached data"
+        ]
+    },
+    {
+        "q": "Rearrange the debugging workflow:",
+        "type": "rearrange",
+        "words": [
+            "check explain",
+            "view Spark UI",
+            "identify bottleneck"
+        ]
+    },
+    {
+        "q": "Which causes data skew?",
+        "type": "mcq",
+        "o": [
+            "Uneven key distribution",
+            "Too many partitions",
+            "High memory",
+            "Fast network"
+        ]
+    },
+    {
+        "q": "Data skew slows processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the skew solutions:",
+        "type": "match",
+        "left": [
+            "Salting",
+            "Broadcast join",
+            "Repartition"
+        ],
+        "right": [
+            "Add random prefix",
+            "Avoid shuffle",
+            "Redistribute"
+        ]
+    },
+    {
+        "q": "The ______ technique adds random suffix.",
+        "type": "fill_blank",
+        "answers": [
+            "salting"
+        ],
+        "other_options": [
+            "hashing",
+            "partitioning",
+            "bucketing"
+        ]
+    },
+    {
+        "q": "Which handles shuffle optimization?",
+        "type": "mcq",
+        "o": [
+            "spark.shuffle configs",
+            "shuffle.optimize",
+            "df.shuffle()",
+            "reduceByKey"
+        ]
+    },
+    {
+        "q": "Shuffle is expensive operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the shuffle configs:",
+        "type": "match",
+        "left": [
+            "shuffle.partitions",
+            "shuffle.compress"
+        ],
+        "right": [
+            "Partition count",
+            "Compression"
+        ]
+    },
+    {
+        "q": "Rearrange the shuffle optimization:",
+        "type": "rearrange",
+        "words": [
+            "reduce shuffles",
+            "tune partitions",
+            "use broadcast"
+        ]
+    },
+    {
+        "q": "Which handles bucketing?",
+        "type": "mcq",
+        "o": [
+            "df.write.bucketBy()",
+            "df.bucket()",
+            "df.partitionBy()",
+            "df.hash()"
+        ]
+    },
+    {
+        "q": "Bucketing pre-partitions by key.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the partitioning strategies:",
+        "type": "match",
+        "left": [
+            "partitionBy",
+            "bucketBy"
+        ],
+        "right": [
+            "File partition",
+            "Hash bucket"
+        ]
+    },
+    {
+        "q": "Which handles adaptive execution?",
+        "type": "mcq",
+        "o": [
+            "spark.sql.adaptive.enabled",
+            "spark.adaptive",
+            "adaptive.query",
+            "dynamic.execution"
+        ]
+    },
+    {
+        "q": "AQE optimizes at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the AQE features:",
+        "type": "match",
+        "left": [
+            "Coalesce shuffle",
+            "Local partition sort",
+            "Skew join"
+        ],
+        "right": [
+            "Reduce partitions",
+            "Sort optimization",
+            "Handle skew"
+        ]
+    },
+    {
+        "q": "The ______ dynamically adjusts partitions.",
+        "type": "fill_blank",
+        "answers": [
+            "AQE"
+        ],
+        "other_options": [
+            "DAG",
+            "Catalyst",
+            "Tungsten"
+        ]
+    },
+    {
+        "q": "Rearrange the optimization layers:",
+        "type": "rearrange",
+        "words": [
+            "Catalyst: logical plan",
+            "Tungsten: execution",
+            "AQE: runtime"
+        ]
+    },
+    {
+        "q": "Which is Spark's optimizer?",
+        "type": "mcq",
+        "o": [
+            "Catalyst",
+            "Tungsten",
+            "AQE",
+            "DAG"
+        ]
+    },
+    {
+        "q": "Catalyst optimizes query plans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Spark components:",
+        "type": "match",
+        "left": [
+            "Catalyst",
+            "Tungsten",
+            "Scheduler"
+        ],
+        "right": [
+            "Optimizer",
+            "Execution engine",
+            "Task scheduling"
+        ]
+    },
+    {
+        "q": "Which is Spark's execution engine?",
+        "type": "mcq",
+        "o": [
+            "Tungsten",
+            "Catalyst",
+            "DAG",
+            "Scheduler"
+        ]
+    },
+    {
+        "q": "Tungsten uses memory management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Tungsten features:",
+        "type": "match",
+        "left": [
+            "Binary processing",
+            "Whole-stage codegen"
+        ],
+        "right": [
+            "Avoid Java objects",
+            "Generate JVM bytecode"
+        ]
+    },
+    {
+        "q": "Which handles predicate pushdown?",
+        "type": "mcq",
+        "o": [
+            "Automatic optimization",
+            "df.pushdown()",
+            "filter.push()",
+            "spark.pushdown"
+        ]
+    },
+    {
+        "q": "Predicate pushdown reduces data read.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pushdown types:",
+        "type": "match",
+        "left": [
+            "Predicate",
+            "Projection"
+        ],
+        "right": [
+            "Filter push",
+            "Column push"
+        ]
+    },
+    {
+        "q": "Rearrange the read optimization:",
+        "type": "rearrange",
+        "words": [
+            "select needed columns",
+            "filter early",
+            "use partitioning"
+        ]
+    },
+    {
+        "q": "Which handles Hive integration?",
+        "type": "mcq",
+        "o": [
+            "spark.enableHiveSupport()",
+            "spark.hive()",
+            "spark.connectHive()",
+            "hive.enable()"
+        ]
+    },
+    {
+        "q": "enableHiveSupport() enables Hive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Hive operations:",
+        "type": "match",
+        "left": [
+            "spark.sql('SELECT')",
+            "spark.table()"
+        ],
+        "right": [
+            "Run query",
+            "Get table"
+        ]
+    },
+    {
+        "q": "Which handles catalog operations?",
+        "type": "mcq",
+        "o": [
+            "spark.catalog",
+            "spark.tables",
+            "spark.meta",
+            "spark.database"
+        ]
+    },
+    {
+        "q": "catalog.listTables() shows tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the catalog methods:",
+        "type": "match",
+        "left": [
+            "listDatabases",
+            "listTables",
+            "listColumns"
+        ],
+        "right": [
+            "DBs",
+            "Tables",
+            "Columns"
+        ]
+    },
+    {
+        "q": "The ______ lists table columns.",
+        "type": "fill_blank",
+        "answers": [
+            "listColumns"
+        ],
+        "other_options": [
+            "columns",
+            "getColumns",
+            "showColumns"
+        ]
+    },
+    {
+        "q": "Rearrange the catalog exploration:",
+        "type": "rearrange",
+        "words": [
+            "list databases",
+            "list tables",
+            "list columns"
+        ]
+    },
+    {
+        "q": "Which handles array functions?",
+        "type": "mcq",
+        "o": [
+            "F.explode(), F.array_contains()",
+            "array.explode()",
+            "col.explode()",
+            "F.flatten()"
+        ]
+    },
+    {
+        "q": "explode() flattens arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the array functions:",
+        "type": "match",
+        "left": [
+            "explode()",
+            "collect_list()",
+            "array_contains()"
+        ],
+        "right": [
+            "Flatten",
+            "Aggregate to array",
+            "Check element"
+        ]
+    },
+    {
+        "q": "Which handles map functions?",
+        "type": "mcq",
+        "o": [
+            "F.map_keys(), F.map_values()",
+            "map.keys()",
+            "col.keys()",
+            "F.dict()"
+        ]
+    },
+    {
+        "q": "map_keys() extracts map keys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the map functions:",
+        "type": "match",
+        "left": [
+            "map_keys()",
+            "map_values()",
+            "create_map()"
+        ],
+        "right": [
+            "Get keys",
+            "Get values",
+            "Create map"
+        ]
+    },
+    {
+        "q": "Rearrange the complex type handling:",
+        "type": "rearrange",
+        "words": [
+            "explode arrays",
+            "extract map keys",
+            "flatten structs"
+        ]
+    },
+    {
+        "q": "Which handles struct functions?",
+        "type": "mcq",
+        "o": [
+            "col.getField() or col.field_name",
+            "struct.get()",
+            "col.extract()",
+            "F.getField()"
+        ]
+    },
+    {
+        "q": "getField() accesses struct fields.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the struct operations:",
+        "type": "match",
+        "left": [
+            "getField()",
+            "struct()",
+            "schema_of_json()"
+        ],
+        "right": [
+            "Access field",
+            "Create struct",
+            "Infer schema"
+        ]
+    },
+    {
+        "q": "Which handles JSON functions?",
+        "type": "mcq",
+        "o": [
+            "F.from_json(), F.to_json()",
+            "json.parse()",
+            "col.json()",
+            "F.parse_json()"
+        ]
+    },
+    {
+        "q": "from_json() parses JSON strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JSON functions:",
+        "type": "match",
+        "left": [
+            "from_json()",
+            "to_json()",
+            "get_json_object()"
+        ],
+        "right": [
+            "Parse JSON",
+            "Create JSON",
+            "Extract field"
+        ]
+    },
+    {
+        "q": "The ______ converts to JSON string.",
+        "type": "fill_blank",
+        "answers": [
+            "to_json"
+        ],
+        "other_options": [
+            "json",
+            "toJSON",
+            "stringify"
+        ]
+    },
+    {
+        "q": "Rearrange the JSON processing:",
+        "type": "rearrange",
+        "words": [
+            "define schema",
+            "from_json to parse",
+            "access fields"
+        ]
+    },
+    {
+        "q": "Which handles higher-order functions?",
+        "type": "mcq",
+        "o": [
+            "F.transform(), F.filter(), F.aggregate()",
+            "hof.transform()",
+            "col.transform()",
+            "F.apply()"
+        ]
+    },
+    {
+        "q": "transform() applies function to arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the higher-order functions:",
+        "type": "match",
+        "left": [
+            "transform()",
+            "filter()",
+            "aggregate()"
+        ],
+        "right": [
+            "Map array",
+            "Filter array",
+            "Reduce array"
+        ]
+    },
+    {
+        "q": "Which handles pivot?",
+        "type": "mcq",
+        "o": [
+            "df.groupBy().pivot()",
+            "df.pivot()",
+            "F.pivot()",
+            "groupBy.pivot()"
+        ]
+    },
+    {
+        "q": "pivot() rotates data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the reshaping operations:",
+        "type": "match",
+        "left": [
+            "pivot()",
+            "unpivot (stack)"
+        ],
+        "right": [
+            "Rows to columns",
+            "Columns to rows"
+        ]
+    },
+    {
+        "q": "Rearrange the pivot workflow:",
+        "type": "rearrange",
+        "words": [
+            "groupBy dimension",
+            "pivot category",
+            "aggregate values"
+        ]
+    },
+    {
+        "q": "Which handles cube operations?",
+        "type": "mcq",
+        "o": [
+            "df.cube()",
+            "df.multidim()",
+            "F.cube()",
+            "groupBy.cube()"
+        ]
+    },
+    {
+        "q": "cube() creates all aggregation combos.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the OLAP operations:",
+        "type": "match",
+        "left": [
+            "cube()",
+            "rollup()"
+        ],
+        "right": [
+            "All combinations",
+            "Hierarchical"
+        ]
+    },
+    {
+        "q": "Which handles anti-join?",
+        "type": "mcq",
+        "o": [
+            "join with how='anti'",
+            "df.antiJoin()",
+            "df.except()",
+            "F.anti()"
+        ]
+    },
+    {
+        "q": "Anti-join returns non-matching rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the join types:",
+        "type": "match",
+        "left": [
+            "anti",
+            "semi",
+            "cross"
+        ],
+        "right": [
+            "No match",
+            "Match exists",
+            "Cartesian"
+        ]
+    },
+    {
+        "q": "The ______ join returns matching rows only.",
+        "type": "fill_blank",
+        "answers": [
+            "semi"
+        ],
+        "other_options": [
+            "anti",
+            "inner",
+            "left"
+        ]
+    },
+    {
+        "q": "Rearrange the join efficiency:",
+        "type": "rearrange",
+        "words": [
+            "broadcast small",
+            "bucket large",
+            "filter early"
+        ]
+    },
+    {
+        "q": "Which handles sampling?",
+        "type": "mcq",
+        "o": [
+            "df.sample()",
+            "df.random()",
+            "df.subset()",
+            "F.sample()"
+        ]
+    },
+    {
+        "q": "sample() returns random subset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sampling methods:",
+        "type": "match",
+        "left": [
+            "sample()",
+            "sampleBy()"
+        ],
+        "right": [
+            "Random fraction",
+            "Stratified"
+        ]
+    },
+    {
+        "q": "Which handles monotonically increasing ID?",
+        "type": "mcq",
+        "o": [
+            "F.monotonically_increasing_id()",
+            "F.row_id()",
+            "F.autoincrement()",
+            "F.sequence()"
+        ]
+    },
+    {
+        "q": "monotonically_increasing_id is unique per partition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ID functions:",
+        "type": "match",
+        "left": [
+            "monotonically_increasing_id()",
+            "row_number()"
+        ],
+        "right": [
+            "Unique ID",
+            "Sequential in window"
+        ]
+    },
+    {
+        "q": "Rearrange the ID generation:",
+        "type": "rearrange",
+        "words": [
+            "add ID column",
+            "sort if needed",
+            "use for joins"
+        ]
+    },
+    {
+        "q": "Which handles first/last in group?",
+        "type": "mcq",
+        "o": [
+            "F.first(), F.last()",
+            "F.head(), F.tail()",
+            "F.top(), F.bottom()",
+            "groupBy.first()"
+        ]
+    },
+    {
+        "q": "first() gets first value in group.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the positional functions:",
+        "type": "match",
+        "left": [
+            "first()",
+            "last()",
+            "nth_value()"
+        ],
+        "right": [
+            "First row",
+            "Last row",
+            "Nth row"
+        ]
+    },
+    {
+        "q": "Which handles ranking?",
+        "type": "mcq",
+        "o": [
+            "F.rank(), F.dense_rank(), F.percent_rank()",
+            "F.order()",
+            "F.position()",
+            "rank()"
+        ]
+    },
+    {
+        "q": "rank() assigns rank with gaps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ranking functions:",
+        "type": "match",
+        "left": [
+            "rank()",
+            "dense_rank()",
+            "row_number()"
+        ],
+        "right": [
+            "With gaps",
+            "No gaps",
+            "Sequential"
+        ]
+    },
+    {
+        "q": "The ______ has no gaps in ranking.",
+        "type": "fill_blank",
+        "answers": [
+            "dense_rank"
+        ],
+        "other_options": [
+            "rank",
+            "row_number",
+            "position"
+        ]
+    },
+    {
+        "q": "Rearrange the window ranking:",
+        "type": "rearrange",
+        "words": [
+            "define partition",
+            "define order",
+            "apply rank function"
+        ]
+    },
+    {
+        "q": "Which handles cumulative functions?",
+        "type": "mcq",
+        "o": [
+            "F.sum().over(Window) with rowsBetween",
+            "F.cumsum()",
+            "F.running_sum()",
+            "cumulative()"
+        ]
+    },
+    {
+        "q": "Cumulative sum uses unbounded preceding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the window frames:",
+        "type": "match",
+        "left": [
+            "unboundedPreceding",
+            "currentRow",
+            "unboundedFollowing"
+        ],
+        "right": [
+            "All before",
+            "Current",
+            "All after"
+        ]
+    },
+    {
+        "q": "Which handles moving average?",
+        "type": "mcq",
+        "o": [
+            "F.avg().over(Window with rowsBetween)",
+            "F.moving_avg()",
+            "F.rolling()",
+            "avg.moving()"
+        ]
+    },
+    {
+        "q": "Moving average uses fixed window frame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the frame specifications:",
+        "type": "match",
+        "left": [
+            "rowsBetween",
+            "rangeBetween"
+        ],
+        "right": [
+            "Row offset",
+            "Value offset"
+        ]
+    },
+    {
+        "q": "Rearrange the window calculation:",
+        "type": "rearrange",
+        "words": [
+            "partition data",
+            "order rows",
+            "define frame",
+            "apply function"
+        ]
+    },
+    {
+        "q": "Which handles recommendation?",
+        "type": "mcq",
+        "o": [
+            "ALS from pyspark.ml.recommendation",
+            "Recommender",
+            "CollaborativeFiltering",
+            "MatrixFactorization"
+        ]
+    },
+    {
+        "q": "ALS is for collaborative filtering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the recommendation components:",
+        "type": "match",
+        "left": [
+            "userCol",
+            "itemCol",
+            "ratingCol"
+        ],
+        "right": [
+            "User ID",
+            "Item ID",
+            "Rating value"
+        ]
+    },
+    {
+        "q": "Which handles text processing?",
+        "type": "mcq",
+        "o": [
+            "Tokenizer, CountVectorizer, TF-IDF",
+            "TextProcessor",
+            "NLP",
+            "TextFeature"
+        ]
+    },
+    {
+        "q": "Tokenizer splits text to words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the text transformers:",
+        "type": "match",
+        "left": [
+            "Tokenizer",
+            "CountVectorizer",
+            "IDF"
+        ],
+        "right": [
+            "Split text",
+            "Term counts",
+            "Inverse doc freq"
+        ]
+    },
+    {
+        "q": "The ______ removes stop words.",
+        "type": "fill_blank",
+        "answers": [
+            "StopWordsRemover"
+        ],
+        "other_options": [
+            "Tokenizer",
+            "Filter",
+            "Cleaner"
+        ]
+    },
+    {
+        "q": "Rearrange the text pipeline:",
+        "type": "rearrange",
+        "words": [
+            "tokenize",
+            "remove stops",
+            "vectorize"
+        ]
+    },
+    {
+        "q": "Which handles dimensionality reduction?",
+        "type": "mcq",
+        "o": [
+            "PCA from pyspark.ml.feature",
+            "DimensionReducer",
+            "Feature.reduce",
+            "Reduce"
+        ]
+    },
+    {
+        "q": "PCA reduces feature dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dimension reducers:",
+        "type": "match",
+        "left": [
+            "PCA",
+            "SVD"
+        ],
+        "right": [
+            "Principal components",
+            "Singular values"
+        ]
+    },
+    {
+        "q": "Which handles one-hot encoding?",
+        "type": "mcq",
+        "o": [
+            "OneHotEncoder",
+            "OneHot",
+            "HotEncoder",
+            "CategoryEncoder"
+        ]
+    },
+    {
+        "q": "OneHotEncoder creates binary vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the encoding classes:",
+        "type": "match",
+        "left": [
+            "StringIndexer",
+            "OneHotEncoder",
+            "IndexToString"
+        ],
+        "right": [
+            "String to int",
+            "Int to vector",
+            "Int to string"
+        ]
+    },
+    {
+        "q": "The ______ reverses StringIndexer.",
+        "type": "fill_blank",
+        "answers": [
+            "IndexToString"
+        ],
+        "other_options": [
+            "StringDecoder",
+            "Reverse",
+            "Decoder"
+        ]
+    },
+    {
+        "q": "Rearrange the encoding pipeline:",
+        "type": "rearrange",
+        "words": [
+            "StringIndexer",
+            "OneHotEncoder",
+            "VectorAssembler"
+        ]
+    },
+    {
+        "q": "Which handles train/test split?",
+        "type": "mcq",
+        "o": [
+            "df.randomSplit([0.8, 0.2])",
+            "df.split()",
+            "train_test_split(df)",
+            "df.partition([0.8, 0.2])"
+        ]
+    },
+    {
+        "q": "randomSplit() creates train/test sets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the split parameters:",
+        "type": "match",
+        "left": [
+            "weights",
+            "seed"
+        ],
+        "right": [
+            "Proportions",
+            "Reproducibility"
+        ]
+    },
+    {
+        "q": "Which handles model saving?",
+        "type": "mcq",
+        "o": [
+            "model.write().save() or model.save()",
+            "model.export()",
+            "model.persist()",
+            "save(model)"
+        ]
+    },
+    {
+        "q": "Model can be saved and loaded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the model IO:",
+        "type": "match",
+        "left": [
+            "model.save()",
+            "Model.load()"
+        ],
+        "right": [
+            "Save model",
+            "Load model"
+        ]
+    },
+    {
+        "q": "Rearrange the model persistence:",
+        "type": "rearrange",
+        "words": [
+            "train model",
+            "save to path",
+            "load when needed"
+        ]
+    },
+    {
+        "q": "Which handles feature importance?",
+        "type": "mcq",
+        "o": [
+            "model.featureImportances",
+            "model.importance()",
+            "model.getFeatureImportance()",
+            "feature.importance"
+        ]
+    },
+    {
+        "q": "Tree models have feature importances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the model attributes:",
+        "type": "match",
+        "left": [
+            "featureImportances",
+            "coefficients",
+            "intercept"
+        ],
+        "right": [
+            "Tree models",
+            "Linear models",
+            "Linear bias"
+        ]
+    },
+    {
+        "q": "Which handles hyperparameter tuning?",
+        "type": "mcq",
+        "o": [
+            "ParamGridBuilder",
+            "GridSearch",
+            "Hyperparameters",
+            "TuningGrid"
+        ]
+    },
+    {
+        "q": "ParamGridBuilder creates parameter grid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the tuning classes:",
+        "type": "match",
+        "left": [
+            "ParamGridBuilder",
+            "CrossValidator",
+            "TrainValidationSplit"
+        ],
+        "right": [
+            "Grid",
+            "K-fold",
+            "Hold-out"
+        ]
+    },
+    {
+        "q": "The ______ adds parameter to grid.",
+        "type": "fill_blank",
+        "answers": [
+            "addGrid"
+        ],
+        "other_options": [
+            "add",
+            "param",
+            "grid"
+        ]
+    },
+    {
+        "q": "Rearrange the tuning workflow:",
+        "type": "rearrange",
+        "words": [
+            "build param grid",
+            "create validator",
+            "fit and select best"
+        ]
+    },
+    {
+        "q": "Which handles graph processing?",
+        "type": "mcq",
+        "o": [
+            "GraphFrames (external package)",
+            "pyspark.graph",
+            "spark.graph",
+            "GraphX"
+        ]
+    },
+    {
+        "q": "GraphFrames uses DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the graph components:",
+        "type": "match",
+        "left": [
+            "vertices",
+            "edges"
+        ],
+        "right": [
+            "Nodes",
+            "Connections"
+        ]
+    },
+    {
+        "q": "Which handles connected components?",
+        "type": "mcq",
+        "o": [
+            "g.connectedComponents()",
+            "g.components()",
+            "g.connected()",
+            "graph.cc()"
+        ]
+    },
+    {
+        "q": "connectedComponents finds groups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the graph algorithms:",
+        "type": "match",
+        "left": [
+            "PageRank",
+            "Shortest paths",
+            "Connected components"
+        ],
+        "right": [
+            "Importance",
+            "Distance",
+            "Clusters"
+        ]
+    },
+    {
+        "q": "Rearrange the graph workflow:",
+        "type": "rearrange",
+        "words": [
+            "create vertices DF",
+            "create edges DF",
+            "create GraphFrame",
+            "run algorithm"
+        ]
+    },
+    {
+        "q": "Which handles Kafka integration?",
+        "type": "mcq",
+        "o": [
+            "spark.readStream.format('kafka')",
+            "spark.kafka",
+            "kafka.read",
+            "pyspark.kafka"
+        ]
+    },
+    {
+        "q": "Kafka is message streaming source.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Kafka options:",
+        "type": "match",
+        "left": [
+            "subscribe",
+            "kafka.bootstrap.servers"
+        ],
+        "right": [
+            "Topic",
+            "Broker address"
+        ]
+    },
+    {
+        "q": "Which handles S3 integration?",
+        "type": "mcq",
+        "o": [
+            "spark.read.format('parquet').load('s3://...')",
+            "spark.s3.read()",
+            "s3.load()",
+            "read_s3()"
+        ]
+    },
+    {
+        "q": "S3 paths start with s3:// or s3a://.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cloud storage:",
+        "type": "match",
+        "left": [
+            "s3://",
+            "gs://",
+            "wasbs://"
+        ],
+        "right": [
+            "AWS S3",
+            "Google Cloud",
+            "Azure Blob"
+        ]
+    },
+    {
+        "q": "The ______ prefix is for S3A connector.",
+        "type": "fill_blank",
+        "answers": [
+            "s3a"
+        ],
+        "other_options": [
+            "s3",
+            "s3n",
+            "aws"
+        ]
+    },
+    {
+        "q": "Rearrange the cloud integration:",
+        "type": "rearrange",
+        "words": [
+            "configure credentials",
+            "specify path",
+            "read/write data"
+        ]
+    },
+    {
+        "q": "Which handles JDBC access?",
+        "type": "mcq",
+        "o": [
+            "spark.read.format('jdbc')",
+            "spark.jdbc()",
+            "jdbc.read()",
+            "database.read()"
+        ]
+    },
+    {
+        "q": "JDBC connects to databases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JDBC options:",
+        "type": "match",
+        "left": [
+            "url",
+            "dbtable",
+            "driver"
+        ],
+        "right": [
+            "Connection URL",
+            "Table name",
+            "Driver class"
+        ]
+    },
+    {
+        "q": "Which handles parallel JDBC reads?",
+        "type": "mcq",
+        "o": [
+            "numPartitions, partitionColumn, bounds",
+            "parallel=True",
+            "splitRead",
+            "multiRead"
+        ]
+    },
+    {
+        "q": "Parallel JDBC improves performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JDBC partition options:",
+        "type": "match",
+        "left": [
+            "lowerBound",
+            "upperBound",
+            "numPartitions"
+        ],
+        "right": [
+            "Min value",
+            "Max value",
+            "Partition count"
+        ]
+    },
+    {
+        "q": "Rearrange the JDBC optimization:",
+        "type": "rearrange",
+        "words": [
+            "choose partition column",
+            "set bounds",
+            "set numPartitions"
+        ]
+    },
+    {
+        "q": "Which handles Spark on Kubernetes?",
+        "type": "mcq",
+        "o": [
+            "spark-submit with --master k8s://",
+            "spark.kubernetes",
+            "k8s.submit()",
+            "kubernetes.spark"
+        ]
+    },
+    {
+        "q": "Kubernetes is container orchestrator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deployment modes:",
+        "type": "match",
+        "left": [
+            "local",
+            "standalone",
+            "YARN"
+        ],
+        "right": [
+            "Single machine",
+            "Spark cluster",
+            "Hadoop"
+        ]
+    },
+    {
+        "q": "Which handles Spark on EMR?",
+        "type": "mcq",
+        "o": [
+            "AWS EMR with Spark",
+            "spark.emr",
+            "emr.spark",
+            "aws.spark"
+        ]
+    },
+    {
+        "q": "EMR is AWS managed Spark.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the managed Spark services:",
+        "type": "match",
+        "left": [
+            "EMR",
+            "Databricks",
+            "Dataproc"
+        ],
+        "right": [
+            "AWS",
+            "Multi-cloud",
+            "GCP"
+        ]
+    },
+    {
+        "q": "The ______ is Google's managed Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "Dataproc"
+        ],
+        "other_options": [
+            "BigQuery",
+            "GKE",
+            "CloudRun"
+        ]
+    },
+    {
+        "q": "Rearrange the deployment options:",
+        "type": "rearrange",
+        "words": [
+            "local: development",
+            "cluster: production",
+            "managed: cloud"
+        ]
+    },
+    {
+        "q": "Which handles speculative execution?",
+        "type": "mcq",
+        "o": [
+            "spark.speculation",
+            "spark.speculate",
+            "spark.retry",
+            "spark.backup"
+        ]
+    },
+    {
+        "q": "Speculation retries slow tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the execution configs:",
+        "type": "match",
+        "left": [
+            "speculation",
+            "task.maxFailures"
+        ],
+        "right": [
+            "Retry slow",
+            "Max retries"
+        ]
+    },
+    {
+        "q": "Which handles accumulator?",
+        "type": "mcq",
+        "o": [
+            "sc.accumulator()",
+            "spark.accumulator()",
+            "Accumulator()",
+            "acc()"
+        ]
+    },
+    {
+        "q": "Accumulators aggregate values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the shared variables:",
+        "type": "match",
+        "left": [
+            "accumulator",
+            "broadcast"
+        ],
+        "right": [
+            "Write-only",
+            "Read-only"
+        ]
+    },
+    {
+        "q": "The ______ is writable shared variable.",
+        "type": "fill_blank",
+        "answers": [
+            "accumulator"
+        ],
+        "other_options": [
+            "broadcast",
+            "variable",
+            "shared"
+        ]
+    },
+    {
+        "q": "Rearrange the accumulator usage:",
+        "type": "rearrange",
+        "words": [
+            "create accumulator",
+            "add in tasks",
+            "read final value"
+        ]
+    },
+    {
+        "q": "Which handles custom partitioner?",
+        "type": "mcq",
+        "o": [
+            "rdd.partitionBy(n, partitioner)",
+            "df.partition()",
+            "customPartition()",
+            "Partitioner()"
+        ]
+    },
+    {
+        "q": "Custom partitioner controls data distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the partitioner types:",
+        "type": "match",
+        "left": [
+            "HashPartitioner",
+            "RangePartitioner"
+        ],
+        "right": [
+            "Hash keys",
+            "Sorted ranges"
+        ]
+    },
+    {
+        "q": "Which handles mapPartitions?",
+        "type": "mcq",
+        "o": [
+            "rdd.mapPartitions()",
+            "df.mapPartitions()",
+            "partition.map()",
+            "mapAll()"
+        ]
+    },
+    {
+        "q": "mapPartitions processes entire partition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the partition operations:",
+        "type": "match",
+        "left": [
+            "map()",
+            "mapPartitions()"
+        ],
+        "right": [
+            "Per element",
+            "Per partition"
+        ]
+    },
+    {
+        "q": "The ______ is more efficient for batch init.",
+        "type": "fill_blank",
+        "answers": [
+            "mapPartitions"
+        ],
+        "other_options": [
+            "map",
+            "flatMap",
+            "foreach"
+        ]
+    },
+    {
+        "q": "Rearrange the partition efficiency:",
+        "type": "rearrange",
+        "words": [
+            "map: per element",
+            "mapPartitions: per batch",
+            "foreach: side effects"
+        ]
+    },
+    {
+        "q": "Which handles foreachPartition?",
+        "type": "mcq",
+        "o": [
+            "rdd.foreachPartition()",
+            "df.foreachPartition()",
+            "partition.foreach()",
+            "forAll()"
+        ]
+    },
+    {
+        "q": "foreachPartition is for side effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the action types:",
+        "type": "match",
+        "left": [
+            "collect()",
+            "foreach()",
+            "foreachPartition()"
+        ],
+        "right": [
+            "Return data",
+            "Per element",
+            "Per partition"
+        ]
+    },
+    {
+        "q": "Which handles reduce?",
+        "type": "mcq",
+        "o": [
+            "rdd.reduce()",
+            "df.reduce()",
+            "F.reduce()",
+            "aggregate()"
+        ]
+    },
+    {
+        "q": "reduce() combines all elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the aggregation actions:",
+        "type": "match",
+        "left": [
+            "reduce()",
+            "fold()",
+            "aggregate()"
+        ],
+        "right": [
+            "Simple combine",
+            "With initial",
+            "Complex combine"
+        ]
+    },
+    {
+        "q": "The ______ uses zero value.",
+        "type": "fill_blank",
+        "answers": [
+            "fold"
+        ],
+        "other_options": [
+            "reduce",
+            "aggregate",
+            "combine"
+        ]
+    },
+    {
+        "q": "Rearrange the aggregation complexity:",
+        "type": "rearrange",
+        "words": [
+            "reduce: simple",
+            "fold: with zero",
+            "aggregate: different types"
+        ]
+    },
+    {
+        "q": "Which handles treeReduce?",
+        "type": "mcq",
+        "o": [
+            "rdd.treeReduce()",
+            "df.treeReduce()",
+            "tree.reduce()",
+            "distributeReduce()"
+        ]
+    },
+    {
+        "q": "treeReduce reduces driver load.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the tree operations:",
+        "type": "match",
+        "left": [
+            "treeReduce",
+            "treeAggregate"
+        ],
+        "right": [
+            "Distributed reduce",
+            "Distributed aggregate"
+        ]
+    },
+    {
+        "q": "Which handles keyBy?",
+        "type": "mcq",
+        "o": [
+            "rdd.keyBy()",
+            "df.keyBy()",
+            "F.keyBy()",
+            "key()"
+        ]
+    },
+    {
+        "q": "keyBy creates key-value pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the key operations:",
+        "type": "match",
+        "left": [
+            "keyBy()",
+            "keys()",
+            "values()"
+        ],
+        "right": [
+            "Create pairs",
+            "Get keys",
+            "Get values"
+        ]
+    },
+    {
+        "q": "Rearrange the pair RDD workflow:",
+        "type": "rearrange",
+        "words": [
+            "create pairs",
+            "group by key",
+            "aggregate"
+        ]
+    },
+    {
+        "q": "Which handles groupByKey?",
+        "type": "mcq",
+        "o": [
+            "rdd.groupByKey()",
+            "df.groupByKey()",
+            "group.byKey()",
+            "keyGroup()"
+        ]
+    },
+    {
+        "q": "groupByKey shuffles all data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the group methods:",
+        "type": "match",
+        "left": [
+            "groupByKey",
+            "reduceByKey"
+        ],
+        "right": [
+            "Full shuffle",
+            "Combiner first"
+        ]
+    },
+    {
+        "q": "The ______ is more efficient.",
+        "type": "fill_blank",
+        "answers": [
+            "reduceByKey"
+        ],
+        "other_options": [
+            "groupByKey",
+            "group",
+            "combine"
+        ]
+    },
+    {
+        "q": "Which handles combineByKey?",
+        "type": "mcq",
+        "o": [
+            "rdd.combineByKey()",
+            "df.combineByKey()",
+            "combine.byKey()",
+            "keyCombiber()"
+        ]
+    },
+    {
+        "q": "combineByKey is most flexible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the combineByKey params:",
+        "type": "match",
+        "left": [
+            "createCombiner",
+            "mergeValue",
+            "mergeCombiners"
+        ],
+        "right": [
+            "Initialize",
+            "Add value",
+            "Merge partitions"
+        ]
+    },
+    {
+        "q": "Rearrange the combine workflow:",
+        "type": "rearrange",
+        "words": [
+            "create combiner",
+            "merge values",
+            "merge combiners"
+        ]
+    },
+    {
+        "q": "Which handles sortByKey?",
+        "type": "mcq",
+        "o": [
+            "rdd.sortByKey()",
+            "df.sortByKey()",
+            "sort.byKey()",
+            "keySort()"
+        ]
+    },
+    {
+        "q": "sortByKey sorts by key globally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sort methods:",
+        "type": "match",
+        "left": [
+            "sortByKey()",
+            "sortBy()"
+        ],
+        "right": [
+            "By key",
+            "By function"
+        ]
+    },
+    {
+        "q": "Which handles join on RDDs?",
+        "type": "mcq",
+        "o": [
+            "rdd.join(other_rdd)",
+            "rdd.merge()",
+            "rdd.combine()",
+            "join(rdd1, rdd2)"
+        ]
+    },
+    {
+        "q": "RDD join requires key-value pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RDD joins:",
+        "type": "match",
+        "left": [
+            "join()",
+            "leftOuterJoin()",
+            "cogroup()"
+        ],
+        "right": [
+            "Inner",
+            "Left outer",
+            "Group by key"
+        ]
+    },
+    {
+        "q": "The ______ groups both RDDs by key.",
+        "type": "fill_blank",
+        "answers": [
+            "cogroup"
+        ],
+        "other_options": [
+            "join",
+            "group",
+            "combine"
+        ]
+    },
+    {
+        "q": "Rearrange the RDD join types:",
+        "type": "rearrange",
+        "words": [
+            "join: matching",
+            "leftOuter: all left",
+            "full: all rows"
+        ]
+    },
+    {
+        "q": "Which handles zip?",
+        "type": "mcq",
+        "o": [
+            "rdd.zip(other_rdd)",
+            "df.zip()",
+            "F.zip()",
+            "combine()"
+        ]
+    },
+    {
+        "q": "zip pairs elements by position.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the zip operations:",
+        "type": "match",
+        "left": [
+            "zip()",
+            "zipWithIndex()"
+        ],
+        "right": [
+            "Pair RDDs",
+            "Add indices"
+        ]
+    },
+    {
+        "q": "Which handles flatMap?",
+        "type": "mcq",
+        "o": [
+            "rdd.flatMap()",
+            "df.flatMap()",
+            "F.flatMap()",
+            "flat()"
+        ]
+    },
+    {
+        "q": "flatMap flattens output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the map variations:",
+        "type": "match",
+        "left": [
+            "map()",
+            "flatMap()"
+        ],
+        "right": [
+            "One to one",
+            "One to many"
+        ]
+    },
+    {
+        "q": "Rearrange the transformation types:",
+        "type": "rearrange",
+        "words": [
+            "map: transform",
+            "filter: select",
+            "flatMap: expand"
+        ]
+    },
+    {
+        "q": "Which handles distinct?",
+        "type": "mcq",
+        "o": [
+            "rdd.distinct() or df.distinct()",
+            "unique()",
+            "dedupe()",
+            "F.distinct()"
+        ]
+    },
+    {
+        "q": "distinct() removes duplicates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dedup methods:",
+        "type": "match",
+        "left": [
+            "distinct()",
+            "dropDuplicates()"
+        ],
+        "right": [
+            "RDD/full row",
+            "By columns"
+        ]
+    },
+    {
+        "q": "Which handles intersection?",
+        "type": "mcq",
+        "o": [
+            "rdd.intersection(other)",
+            "df.intersection()",
+            "F.intersect()",
+            "common()"
+        ]
+    },
+    {
+        "q": "intersection returns common elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the set operations:",
+        "type": "match",
+        "left": [
+            "union()",
+            "intersection()",
+            "subtract()"
+        ],
+        "right": [
+            "Combine",
+            "Common",
+            "Difference"
+        ]
+    },
+    {
+        "q": "The ______ returns non-common elements.",
+        "type": "fill_blank",
+        "answers": [
+            "subtract"
+        ],
+        "other_options": [
+            "difference",
+            "except",
+            "minus"
+        ]
+    },
+    {
+        "q": "Rearrange the set operations:",
+        "type": "rearrange",
+        "words": [
+            "union: combine all",
+            "intersect: common",
+            "subtract: difference"
+        ]
+    },
+    {
+        "q": "Which handles cartesian?",
+        "type": "mcq",
+        "o": [
+            "rdd.cartesian(other)",
+            "df.cross()",
+            "product()",
+            "F.cartesian()"
+        ]
+    },
+    {
+        "q": "cartesian creates all pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the product operations:",
+        "type": "match",
+        "left": [
+            "cartesian()",
+            "crossJoin()"
+        ],
+        "right": [
+            "RDD pairs",
+            "DataFrame cross"
+        ]
+    },
+    {
+        "q": "Which handles take?",
+        "type": "mcq",
+        "o": [
+            "rdd.take(n) or df.take(n)",
+            "first(n)",
+            "head(n)",
+            "top(n)"
+        ]
+    },
+    {
+        "q": "take() returns first n elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sampling actions:",
+        "type": "match",
+        "left": [
+            "take()",
+            "first()",
+            "top()"
+        ],
+        "right": [
+            "First n",
+            "First one",
+            "Top n sorted"
+        ]
+    },
+    {
+        "q": "Rearrange the data retrieval:",
+        "type": "rearrange",
+        "words": [
+            "take: first n",
+            "takeSample: random n",
+            "collect: all"
+        ]
+    },
+    {
+        "q": "Which handles saveAsTextFile?",
+        "type": "mcq",
+        "o": [
+            "rdd.saveAsTextFile(path)",
+            "rdd.save(path)",
+            "rdd.write(path)",
+            "save(rdd, path)"
+        ]
+    },
+    {
+        "q": "saveAsTextFile writes text output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RDD save methods:",
+        "type": "match",
+        "left": [
+            "saveAsTextFile",
+            "saveAsObjectFile"
+        ],
+        "right": [
+            "Text format",
+            "Serialized"
+        ]
+    },
+    {
+        "q": "Which handles checkpoint RDD?",
+        "type": "mcq",
+        "o": [
+            "rdd.checkpoint()",
+            "rdd.save()",
+            "rdd.persist()",
+            "checkpoint(rdd)"
+        ]
+    },
+    {
+        "q": "checkpoint saves to reliable storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the persistence types:",
+        "type": "match",
+        "left": [
+            "cache()",
+            "persist()",
+            "checkpoint()"
+        ],
+        "right": [
+            "Memory",
+            "Configurable",
+            "Disk reliable"
+        ]
+    },
+    {
+        "q": "The ______ breaks lineage.",
+        "type": "fill_blank",
+        "answers": [
+            "checkpoint"
+        ],
+        "other_options": [
+            "cache",
+            "persist",
+            "save"
+        ]
+    },
+    {
+        "q": "Rearrange the RDD recovery:",
+        "type": "rearrange",
+        "words": [
+            "set checkpoint dir",
+            "call checkpoint()",
+            "action to materialize"
+        ]
+    },
+    {
+        "q": "Which handles getCheckpointFile?",
+        "type": "mcq",
+        "o": [
+            "rdd.getCheckpointFile()",
+            "rdd.checkpointPath()",
+            "checkpoint.path()",
+            "getPath()"
+        ]
+    },
+    {
+        "q": "getCheckpointFile returns checkpoint path.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which handles local checkpoint?",
+        "type": "mcq",
+        "o": [
+            "rdd.localCheckpoint()",
+            "rdd.checkpoint(local=True)",
+            "checkpoint.local()",
+            "localSave()"
+        ]
+    },
+    {
+        "q": "localCheckpoint uses executor storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the checkpoint types:",
+        "type": "match",
+        "left": [
+            "checkpoint()",
+            "localCheckpoint()"
+        ],
+        "right": [
+            "Reliable storage",
+            "Executor storage"
+        ]
+    },
+    {
+        "q": "Which handles toLocalIterator?",
+        "type": "mcq",
+        "o": [
+            "rdd.toLocalIterator()",
+            "rdd.toIterator()",
+            "rdd.iterate()",
+            "localIterator()"
+        ]
+    },
+    {
+        "q": "toLocalIterator returns iterator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the collection methods:",
+        "type": "match",
+        "left": [
+            "collect()",
+            "toLocalIterator()"
+        ],
+        "right": [
+            "All at once",
+            "One partition at time"
+        ]
+    },
+    {
+        "q": "Rearrange the memory efficiency:",
+        "type": "rearrange",
+        "words": [
+            "collect: all memory",
+            "take: partial",
+            "toLocalIterator: streaming"
+        ]
+    },
+    {
+        "q": "Which handles context manager?",
+        "type": "mcq",
+        "o": [
+            "with SparkSession.builder... as spark:",
+            "SparkSession.context()",
+            "spark.context()",
+            "context(spark)"
+        ]
+    },
+    {
+        "q": "Context manager auto-closes session.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which handles stop session?",
+        "type": "mcq",
+        "o": [
+            "spark.stop()",
+            "spark.close()",
+            "spark.end()",
+            "stop(spark)"
+        ]
+    },
+    {
+        "q": "stop() releases resources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the session lifecycle:",
+        "type": "match",
+        "left": [
+            "getOrCreate()",
+            "stop()"
+        ],
+        "right": [
+            "Start/get",
+            "End"
+        ]
+    },
+    {
+        "q": "The ______ method closes SparkSession.",
+        "type": "fill_blank",
+        "answers": [
+            "stop"
+        ],
+        "other_options": [
+            "close",
+            "end",
+            "shutdown"
+        ]
+    },
+    {
+        "q": "Rearrange the session lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "create session",
+            "run operations",
+            "stop session"
+        ]
+    },
+    {
+        "q": "Which handles conf settings?",
+        "type": "mcq",
+        "o": [
+            "spark.conf.set() or spark.conf.get()",
+            "spark.config()",
+            "spark.settings()",
+            "conf()"
+        ]
+    },
+    {
+        "q": "spark.conf manages runtime config.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the config methods:",
+        "type": "match",
+        "left": [
+            "conf.set()",
+            "conf.get()",
+            "conf.getAll()"
+        ],
+        "right": [
+            "Set value",
+            "Get value",
+            "Get all"
+        ]
+    },
+    {
+        "q": "Which handles version info?",
+        "type": "mcq",
+        "o": [
+            "spark.version",
+            "spark.getVersion()",
+            "version(spark)",
+            "spark.info()"
+        ]
+    },
+    {
+        "q": "spark.version shows Spark version.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the info attributes:",
+        "type": "match",
+        "left": [
+            "version",
+            "sparkContext"
+        ],
+        "right": [
+            "Version string",
+            "Underlying context"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark stack:",
+        "type": "rearrange",
+        "words": [
+            "SparkSession: entry",
+            "SparkContext: core",
+            "RDD: data"
+        ]
+    },
+    {
+        "q": "Which handles SparkContext?",
+        "type": "mcq",
+        "o": [
+            "spark.sparkContext or sc",
+            "spark.context",
+            "SparkContext()",
+            "getContext()"
+        ]
+    },
+    {
+        "q": "SparkContext is underlying context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the context components:",
+        "type": "match",
+        "left": [
+            "SparkSession",
+            "SparkContext",
+            "SQLContext"
+        ],
+        "right": [
+            "Unified entry",
+            "Core API",
+            "SQL (legacy)"
+        ]
+    },
+    {
+        "q": "Which handles uiWebUrl?",
+        "type": "mcq",
+        "o": [
+            "sc.uiWebUrl",
+            "spark.webUrl",
+            "getWebUrl()",
+            "ui.url"
+        ]
+    },
+    {
+        "q": "uiWebUrl returns Spark UI URL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which handles applicationId?",
+        "type": "mcq",
+        "o": [
+            "sc.applicationId",
+            "spark.appId",
+            "getAppId()",
+            "app.id"
+        ]
+    },
+    {
+        "q": "applicationId uniquely identifies app.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the app identifiers:",
+        "type": "match",
+        "left": [
+            "applicationId",
+            "appName"
+        ],
+        "right": [
+            "Unique ID",
+            "Display name"
+        ]
+    },
+    {
+        "q": "Rearrange the app metadata:",
+        "type": "rearrange",
+        "words": [
+            "appName: human readable",
+            "appId: unique",
+            "uiWebUrl: monitoring"
+        ]
+    },
+    {
+        "q": "Which handles setJobGroup?",
+        "type": "mcq",
+        "o": [
+            "sc.setJobGroup()",
+            "spark.jobGroup()",
+            "setGroup()",
+            "jobGroup()"
+        ]
+    },
+    {
+        "q": "setJobGroup groups jobs for cancellation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the job control:",
+        "type": "match",
+        "left": [
+            "setJobGroup()",
+            "cancelJobGroup()"
+        ],
+        "right": [
+            "Set group",
+            "Cancel group"
+        ]
+    },
+    {
+        "q": "Which handles setLocalProperty?",
+        "type": "mcq",
+        "o": [
+            "sc.setLocalProperty()",
+            "spark.property()",
+            "setProperty()",
+            "localProp()"
+        ]
+    },
+    {
+        "q": "setLocalProperty sets thread-local config.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the property scope:",
+        "type": "match",
+        "left": [
+            "setLocalProperty()",
+            "conf.set()"
+        ],
+        "right": [
+            "Thread local",
+            "Session global"
+        ]
+    },
+    {
+        "q": "The ______ is per-thread setting.",
+        "type": "fill_blank",
+        "answers": [
+            "setLocalProperty"
+        ],
+        "other_options": [
+            "conf.set",
+            "config",
+            "property"
+        ]
+    },
+    {
+        "q": "Rearrange the config scope:",
+        "type": "rearrange",
+        "words": [
+            "SparkConf: app-wide",
+            "conf.set: session",
+            "setLocalProperty: thread"
+        ]
+    },
+    {
+        "q": "Which handles getConf?",
+        "type": "mcq",
+        "o": [
+            "spark.sparkContext.getConf()",
+            "spark.getConf()",
+            "getConfig()",
+            "conf()"
+        ]
+    },
+    {
+        "q": "getConf returns SparkConf.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which handles listenerBus?",
+        "type": "mcq",
+        "o": [
+            "sc.addSparkListener()",
+            "spark.addListener()",
+            "addListener()",
+            "listen()"
+        ]
+    },
+    {
+        "q": "SparkListener receives events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the listener events:",
+        "type": "match",
+        "left": [
+            "onJobStart",
+            "onJobEnd",
+            "onTaskEnd"
+        ],
+        "right": [
+            "Job started",
+            "Job finished",
+            "Task finished"
+        ]
+    },
+    {
+        "q": "Rearrange the listener workflow:",
+        "type": "rearrange",
+        "words": [
+            "create listener",
+            "register listener",
+            "receive events"
+        ]
+    },
+    {
+        "q": "Which handles statusTracker?",
+        "type": "mcq",
+        "o": [
+            "sc.statusTracker",
+            "spark.status()",
+            "getStatus()",
+            "tracker()"
+        ]
+    },
+    {
+        "q": "statusTracker monitors jobs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the tracking methods:",
+        "type": "match",
+        "left": [
+            "getActiveJobIds",
+            "getActiveStageIds"
+        ],
+        "right": [
+            "Active jobs",
+            "Active stages"
+        ]
+    },
+    {
+        "q": "Which handles cancelJob?",
+        "type": "mcq",
+        "o": [
+            "sc.cancelJob(jobId)",
+            "spark.cancel()",
+            "job.cancel()",
+            "cancel()"
+        ]
+    },
+    {
+        "q": "cancelJob terminates running job.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cancellation methods:",
+        "type": "match",
+        "left": [
+            "cancelJob()",
+            "cancelAllJobs()"
+        ],
+        "right": [
+            "Single job",
+            "All jobs"
+        ]
+    },
+    {
+        "q": "The ______ cancels all running jobs.",
+        "type": "fill_blank",
+        "answers": [
+            "cancelAllJobs"
+        ],
+        "other_options": [
+            "cancelJob",
+            "stopAll",
+            "killAll"
+        ]
+    },
+    {
+        "q": "Rearrange the job control:",
+        "type": "rearrange",
+        "words": [
+            "submit job",
+            "track progress",
+            "cancel if needed"
+        ]
+    },
+    {
+        "q": "Which handles runJob?",
+        "type": "mcq",
+        "o": [
+            "sc.runJob(rdd, func)",
+            "spark.run()",
+            "job.run()",
+            "execute()"
+        ]
+    },
+    {
+        "q": "runJob executes on partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which handles defaultParallelism?",
+        "type": "mcq",
+        "o": [
+            "sc.defaultParallelism",
+            "spark.parallelism",
+            "getParallelism()",
+            "parallel()"
+        ]
+    },
+    {
+        "q": "defaultParallelism is default partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the parallelism settings:",
+        "type": "match",
+        "left": [
+            "defaultParallelism",
+            "defaultMinPartitions"
+        ],
+        "right": [
+            "Default partitions",
+            "Min partitions"
+        ]
+    },
+    {
+        "q": "Rearrange the parallelism factors:",
+        "type": "rearrange",
+        "words": [
+            "cores: CPU",
+            "partitions: data split",
+            "executors: nodes"
+        ]
+    },
+    {
+        "q": "Which handles hadoopFile?",
+        "type": "mcq",
+        "o": [
+            "sc.hadoopFile()",
+            "spark.hadoop()",
+            "hadoop.read()",
+            "readHadoop()"
+        ]
+    },
+    {
+        "q": "hadoopFile reads Hadoop formats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Hadoop integration:",
+        "type": "match",
+        "left": [
+            "hadoopFile()",
+            "newAPIHadoopFile()"
+        ],
+        "right": [
+            "Old API",
+            "New API"
+        ]
+    },
+    {
+        "q": "Which handles sequenceFile?",
+        "type": "mcq",
+        "o": [
+            "sc.sequenceFile()",
+            "spark.sequence()",
+            "sequence.read()",
+            "readSequence()"
+        ]
+    },
+    {
+        "q": "sequenceFile reads key-value format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the file types:",
+        "type": "match",
+        "left": [
+            "textFile",
+            "sequenceFile",
+            "objectFile"
+        ],
+        "right": [
+            "Text lines",
+            "Key-value",
+            "Serialized"
+        ]
+    },
+    {
+        "q": "The ______ format stores binary pairs.",
+        "type": "fill_blank",
+        "answers": [
+            "sequence"
+        ],
+        "other_options": [
+            "text",
+            "object",
+            "binary"
+        ]
+    },
+    {
+        "q": "Rearrange the file formats:",
+        "type": "rearrange",
+        "words": [
+            "text: human readable",
+            "sequence: binary pairs",
+            "parquet: columnar"
+        ]
+    },
+    {
+        "q": "Which handles wholeTextFiles?",
+        "type": "mcq",
+        "o": [
+            "sc.wholeTextFiles()",
+            "spark.readAll()",
+            "readWhole()",
+            "fullFile()"
+        ]
+    },
+    {
+        "q": "wholeTextFiles returns file as single record.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the text reading:",
+        "type": "match",
+        "left": [
+            "textFile()",
+            "wholeTextFiles()"
+        ],
+        "right": [
+            "Line per record",
+            "File per record"
+        ]
+    },
+    {
+        "q": "Which handles binaryFiles?",
+        "type": "mcq",
+        "o": [
+            "sc.binaryFiles()",
+            "spark.binary()",
+            "readBinary()",
+            "binary()"
+        ]
+    },
+    {
+        "q": "binaryFiles reads binary content.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the binary operations:",
+        "type": "match",
+        "left": [
+            "binaryFiles()",
+            "binaryRecords()"
+        ],
+        "right": [
+            "Full files",
+            "Fixed-size records"
+        ]
+    },
+    {
+        "q": "Rearrange the input formats:",
+        "type": "rearrange",
+        "words": [
+            "text: strings",
+            "binary: bytes",
+            "sequence: pairs"
+        ]
+    },
+    {
+        "q": "Which handles emptyRDD?",
+        "type": "mcq",
+        "o": [
+            "sc.emptyRDD()",
+            "spark.empty()",
+            "RDD.empty()",
+            "empty()"
+        ]
+    },
+    {
+        "q": "emptyRDD creates empty collection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RDD creation:",
+        "type": "match",
+        "left": [
+            "parallelize()",
+            "emptyRDD()"
+        ],
+        "right": [
+            "From data",
+            "Empty"
+        ]
+    },
+    {
+        "q": "Which handles range?",
+        "type": "mcq",
+        "o": [
+            "spark.range()",
+            "sc.range()",
+            "range()",
+            "createRange()"
+        ]
+    },
+    {
+        "q": "range() creates sequential DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the range parameters:",
+        "type": "match",
+        "left": [
+            "start",
+            "end",
+            "step"
+        ],
+        "right": [
+            "Begin value",
+            "End value",
+            "Increment"
+        ]
+    },
+    {
+        "q": "The ______ creates sequential IDs.",
+        "type": "fill_blank",
+        "answers": [
+            "range"
+        ],
+        "other_options": [
+            "sequence",
+            "series",
+            "generate"
+        ]
+    },
+    {
+        "q": "Rearrange the DataFrame creation:",
+        "type": "rearrange",
+        "words": [
+            "range: sequences",
+            "createDataFrame: from data",
+            "read: from files"
+        ]
+    },
+    {
+        "q": "Which handles schema inference?",
+        "type": "mcq",
+        "o": [
+            "inferSchema=True option",
+            "autoSchema",
+            "detectSchema",
+            "schemaInfer"
+        ]
+    },
+    {
+        "q": "inferSchema reads sample to detect types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the schema options:",
+        "type": "match",
+        "left": [
+            "inferSchema",
+            "schema"
+        ],
+        "right": [
+            "Auto detect",
+            "Explicit define"
+        ]
+    },
+    {
+        "q": "Which handles samplingRatio?",
+        "type": "mcq",
+        "o": [
+            "samplingRatio option",
+            "sampleSize",
+            "inferRatio",
+            "schemaRatio"
+        ]
+    },
+    {
+        "q": "samplingRatio controls inference sample.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the inference options:",
+        "type": "match",
+        "left": [
+            "samplingRatio",
+            "enforceSchema"
+        ],
+        "right": [
+            "Sample size",
+            "Strict validation"
+        ]
+    },
+    {
+        "q": "Rearrange the schema workflow:",
+        "type": "rearrange",
+        "words": [
+            "define schema",
+            "read with schema",
+            "validate data"
+        ]
+    },
+    {
+        "q": "Which handles multiLine JSON?",
+        "type": "mcq",
+        "o": [
+            "multiLine=True option",
+            "fullJson",
+            "wholeJson",
+            "completeJson"
+        ]
+    },
+    {
+        "q": "multiLine reads multi-line JSON records.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the JSON options:",
+        "type": "match",
+        "left": [
+            "multiLine",
+            "dropMalformed"
+        ],
+        "right": [
+            "Multi-line records",
+            "Skip bad records"
+        ]
+    },
+    {
+        "q": "Which handles corrupt records?",
+        "type": "mcq",
+        "o": [
+            "mode option: PERMISSIVE, DROPMALFORMED, FAILFAST",
+            "errorHandling",
+            "onError",
+            "corruptMode"
+        ]
+    },
+    {
+        "q": "PERMISSIVE mode saves corrupt records.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the parse modes:",
+        "type": "match",
+        "left": [
+            "PERMISSIVE",
+            "DROPMALFORMED",
+            "FAILFAST"
+        ],
+        "right": [
+            "Keep nulls",
+            "Skip bad",
+            "Error on bad"
+        ]
+    },
+    {
+        "q": "The ______ mode throws exception.",
+        "type": "fill_blank",
+        "answers": [
+            "FAILFAST"
+        ],
+        "other_options": [
+            "PERMISSIVE",
+            "DROPMALFORMED",
+            "STRICT"
+        ]
+    },
+    {
+        "q": "Rearrange the parse strictness:",
+        "type": "rearrange",
+        "words": [
+            "PERMISSIVE: lenient",
+            "DROPMALFORMED: skip",
+            "FAILFAST: strict"
+        ]
+    },
+    {
+        "q": "Which handles encoding?",
+        "type": "mcq",
+        "o": [
+            "encoding option",
+            "charset",
+            "textFormat",
+            "decode"
+        ]
+    },
+    {
+        "q": "encoding defaults to UTF-8.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the encoding options:",
+        "type": "match",
+        "left": [
+            "UTF-8",
+            "ISO-8859-1"
+        ],
+        "right": [
+            "Unicode",
+            "Latin-1"
+        ]
+    },
+    {
+        "q": "Which handles CSV header?",
+        "type": "mcq",
+        "o": [
+            "header=True option",
+            "hasHeader",
+            "firstRow",
+            "columnNames"
+        ]
+    },
+    {
+        "q": "header=True uses first row as columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the CSV options:",
+        "type": "match",
+        "left": [
+            "header",
+            "sep",
+            "quote"
+        ],
+        "right": [
+            "First row names",
+            "Delimiter",
+            "Quote char"
+        ]
+    },
+    {
+        "q": "The ______ option sets delimiter.",
+        "type": "fill_blank",
+        "answers": [
+            "sep"
+        ],
+        "other_options": [
+            "delimiter",
+            "separator",
+            "split"
+        ]
+    },
+    {
+        "q": "Rearrange the CSV parsing:",
+        "type": "rearrange",
+        "words": [
+            "set header",
+            "set separator",
+            "handle quotes"
+        ]
+    },
+    {
+        "q": "Which handles nullValue?",
+        "type": "mcq",
+        "o": [
+            "nullValue option",
+            "naValue",
+            "emptyValue",
+            "missing"
+        ]
+    },
+    {
+        "q": "nullValue defines null representation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the null options:",
+        "type": "match",
+        "left": [
+            "nullValue",
+            "nanValue",
+            "emptyValue"
+        ],
+        "right": [
+            "Null string",
+            "NaN string",
+            "Empty string"
+        ]
+    },
+    {
+        "q": "Which handles dateFormat?",
+        "type": "mcq",
+        "o": [
+            "dateFormat option",
+            "datePattern",
+            "dateParse",
+            "dateStyle"
+        ]
+    },
+    {
+        "q": "dateFormat parses date strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the format options:",
+        "type": "match",
+        "left": [
+            "dateFormat",
+            "timestampFormat"
+        ],
+        "right": [
+            "Date parsing",
+            "Timestamp parsing"
+        ]
+    },
+    {
+        "q": "Rearrange the date handling:",
+        "type": "rearrange",
+        "words": [
+            "set dateFormat",
+            "parse dates",
+            "use date functions"
+        ]
+    },
+    {
+        "q": "Which handles compression?",
+        "type": "mcq",
+        "o": [
+            "compression option",
+            "compress",
+            "codec",
+            "zip"
+        ]
+    },
+    {
+        "q": "Spark auto-detects compression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the compression codecs:",
+        "type": "match",
+        "left": [
+            "gzip",
+            "snappy",
+            "lz4"
+        ],
+        "right": [
+            "High ratio",
+            "Fast",
+            "Very fast"
+        ]
+    },
+    {
+        "q": "The ______ codec balances speed and ratio.",
+        "type": "fill_blank",
+        "answers": [
+            "snappy"
+        ],
+        "other_options": [
+            "gzip",
+            "lz4",
+            "bzip2"
+        ]
+    },
+    {
+        "q": "Rearrange the compression trade-offs:",
+        "type": "rearrange",
+        "words": [
+            "gzip: best ratio",
+            "snappy: balanced",
+            "lz4: fastest"
+        ]
+    },
+    {
+        "q": "Which handles partitionBy write?",
+        "type": "mcq",
+        "o": [
+            "df.write.partitionBy()",
+            "df.partition()",
+            "write.partition()",
+            "partitionWrite()"
+        ]
+    },
+    {
+        "q": "partitionBy creates folder per value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the write partitioning:",
+        "type": "match",
+        "left": [
+            "partitionBy()",
+            "bucketBy()"
+        ],
+        "right": [
+            "Directory partition",
+            "Hash bucket"
+        ]
+    },
+    {
+        "q": "Which handles sortBy write?",
+        "type": "mcq",
+        "o": [
+            "df.write.sortBy()",
+            "df.sort().write",
+            "write.sort()",
+            "sortWrite()"
+        ]
+    },
+    {
+        "q": "sortBy orders within buckets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the write ordering:",
+        "type": "match",
+        "left": [
+            "sortBy()",
+            "bucketBy()"
+        ],
+        "right": [
+            "In-bucket order",
+            "Hash distribution"
+        ]
+    },
+    {
+        "q": "Rearrange the optimized write:",
+        "type": "rearrange",
+        "words": [
+            "partition by date",
+            "bucket by key",
+            "sort by timestamp"
+        ]
+    },
+    {
+        "q": "Which handles maxRecordsPerFile?",
+        "type": "mcq",
+        "o": [
+            "maxRecordsPerFile option",
+            "recordsPerFile",
+            "fileSize",
+            "splitSize"
+        ]
+    },
+    {
+        "q": "maxRecordsPerFile limits file size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the file control options:",
+        "type": "match",
+        "left": [
+            "maxRecordsPerFile",
+            "compression"
+        ],
+        "right": [
+            "Record limit",
+            "Encoding"
+        ]
+    },
+    {
+        "q": "Which handles mergeSchema?",
+        "type": "mcq",
+        "o": [
+            "mergeSchema=True option",
+            "schemaUnion",
+            "combineSchema",
+            "unionSchema"
+        ]
+    },
+    {
+        "q": "mergeSchema combines evolving schemas.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the schema evolution:",
+        "type": "match",
+        "left": [
+            "mergeSchema",
+            "schema enforcement"
+        ],
+        "right": [
+            "Combine schemas",
+            "Strict validation"
+        ]
+    },
+    {
+        "q": "The ______ handles schema changes.",
+        "type": "fill_blank",
+        "answers": [
+            "mergeSchema"
+        ],
+        "other_options": [
+            "unionSchema",
+            "evolveSchema",
+            "autoSchema"
+        ]
+    },
+    {
+        "q": "Rearrange the schema evolution:",
+        "type": "rearrange",
+        "words": [
+            "add columns",
+            "merge schemas",
+            "maintain compatibility"
+        ]
+    },
+    {
+        "q": "Which handles pathGlobFilter?",
+        "type": "mcq",
+        "o": [
+            "pathGlobFilter option",
+            "filePattern",
+            "globFilter",
+            "pathPattern"
+        ]
+    },
+    {
+        "q": "pathGlobFilter filters files by pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the path options:",
+        "type": "match",
+        "left": [
+            "pathGlobFilter",
+            "recursiveFileLookup"
+        ],
+        "right": [
+            "File filter",
+            "Subdirectories"
+        ]
+    },
+    {
+        "q": "Which handles recursiveFileLookup?",
+        "type": "mcq",
+        "o": [
+            "recursiveFileLookup=True option",
+            "recursive",
+            "includeSubdirs",
+            "walkDirs"
+        ]
+    },
+    {
+        "q": "recursiveFileLookup reads subdirectories.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the directory options:",
+        "type": "match",
+        "left": [
+            "recursiveFileLookup",
+            "basePath"
+        ],
+        "right": [
+            "Read subdirs",
+            "Partition root"
+        ]
+    },
+    {
+        "q": "The ______ enables subdirectory reading.",
+        "type": "fill_blank",
+        "answers": [
+            "recursiveFileLookup"
+        ],
+        "other_options": [
+            "recursive",
+            "walkDirs",
+            "includeAll"
+        ]
+    },
+    {
+        "q": "Rearrange the file discovery:",
+        "type": "rearrange",
+        "words": [
+            "set base path",
+            "enable recursive",
+            "filter by pattern"
+        ]
+    },
+    {
+        "q": "PySpark enables distributed data processing.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

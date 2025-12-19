@@ -1,0 +1,6779 @@
+[
+    {
+        "q": "What is data quality?",
+        "type": "mcq",
+        "o": [
+            "Measure of data fitness for intended use",
+            "Amount of data stored",
+            "Speed of data processing",
+            "Cost of data storage"
+        ]
+    },
+    {
+        "q": "The _____ dimension measures if data is correct.",
+        "type": "fill_blank",
+        "answers": [
+            "accuracy"
+        ],
+        "other_options": [
+            "speed",
+            "cost",
+            "size"
+        ]
+    },
+    {
+        "q": "Data quality impacts business decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this quality score?",
+        "type": "mcq",
+        "c": "valid_records = 95\ntotal_records = 100\nquality = valid_records / total_records\nprint(f'{quality * 100}%')",
+        "o": [
+            "95.0%",
+            "100%",
+            "5%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the quality dimension with its meaning:",
+        "type": "match",
+        "left": [
+            "Accuracy",
+            "Completeness",
+            "Consistency",
+            "Timeliness"
+        ],
+        "right": [
+            "Correctness",
+            "No missing values",
+            "Same across systems",
+            "Up to date"
+        ]
+    },
+    {
+        "q": "Rearrange the data quality process:",
+        "type": "rearrange",
+        "words": [
+            "Define requirements",
+            "Profile data",
+            "Validate",
+            "Report issues",
+            "Remediate"
+        ]
+    },
+    {
+        "q": "What is data profiling?",
+        "type": "mcq",
+        "o": [
+            "Analyzing data characteristics",
+            "Deleting data",
+            "Encrypting data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ identifies patterns and anomalies.",
+        "type": "fill_blank",
+        "answers": [
+            "profiler"
+        ],
+        "other_options": [
+            "deleter",
+            "hider",
+            "encryptor"
+        ]
+    },
+    {
+        "q": "Data profiling reveals hidden quality issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this null count?",
+        "type": "mcq",
+        "c": "data = [1, None, 3, None, 5]\nnull_count = data.count(None)\nprint(null_count)",
+        "o": [
+            "2",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the profiling metric with its purpose:",
+        "type": "match",
+        "left": [
+            "Null count",
+            "Distinct count",
+            "Min/Max",
+            "Pattern"
+        ],
+        "right": [
+            "Missing data",
+            "Uniqueness",
+            "Range",
+            "Format"
+        ]
+    },
+    {
+        "q": "Rearrange the profiling steps:",
+        "type": "rearrange",
+        "words": [
+            "Connect source",
+            "Scan columns",
+            "Calculate statistics",
+            "Identify issues",
+            "Generate report"
+        ]
+    },
+    {
+        "q": "What is data cleansing?",
+        "type": "mcq",
+        "o": [
+            "Fixing or removing incorrect data",
+            "Adding more data",
+            "Hiding data",
+            "Compressing data"
+        ]
+    },
+    {
+        "q": "The _____ removes duplicate records.",
+        "type": "fill_blank",
+        "answers": [
+            "deduplication"
+        ],
+        "other_options": [
+            "duplication",
+            "replication",
+            "multiplication"
+        ]
+    },
+    {
+        "q": "Data cleansing improves data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cleaning?",
+        "type": "mcq",
+        "c": "names = ['John', 'john', 'JOHN']\ncleaned = [n.title() for n in names]\nprint(len(set(cleaned)))",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cleaning task with its action:",
+        "type": "match",
+        "left": [
+            "Deduplication",
+            "Standardization",
+            "Imputation",
+            "Trimming"
+        ],
+        "right": [
+            "Remove duplicates",
+            "Consistent format",
+            "Fill missing",
+            "Remove whitespace"
+        ]
+    },
+    {
+        "q": "Rearrange the cleaning workflow:",
+        "type": "rearrange",
+        "words": [
+            "Profile data",
+            "Define rules",
+            "Apply transformations",
+            "Validate results",
+            "Document changes"
+        ]
+    },
+    {
+        "q": "What is data completeness?",
+        "type": "mcq",
+        "o": [
+            "Degree to which required data is present",
+            "Speed of data access",
+            "Cost of storage",
+            "Size of database"
+        ]
+    },
+    {
+        "q": "The _____ measures percentage of non-null values.",
+        "type": "fill_blank",
+        "answers": [
+            "completeness"
+        ],
+        "other_options": [
+            "accuracy",
+            "speed",
+            "cost"
+        ]
+    },
+    {
+        "q": "100% completeness means no missing values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this completeness check?",
+        "type": "mcq",
+        "c": "values = [1, 2, None, 4, 5]\nnon_null = len([v for v in values if v is not None])\ncompleteness = non_null / len(values) * 100\nprint(f'{completeness}%')",
+        "o": [
+            "80.0%",
+            "100%",
+            "60%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the completeness type with its scope:",
+        "type": "match",
+        "left": [
+            "Column",
+            "Row",
+            "Table",
+            "Dataset"
+        ],
+        "right": [
+            "Single field",
+            "Single record",
+            "All records",
+            "All tables"
+        ]
+    },
+    {
+        "q": "Rearrange the completeness analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify required fields",
+            "Count null values",
+            "Calculate percentage",
+            "Report gaps",
+            "Prioritize fixes"
+        ]
+    },
+    {
+        "q": "What is data accuracy?",
+        "type": "mcq",
+        "o": [
+            "Correctness of data values",
+            "Speed of processing",
+            "Amount of storage",
+            "Number of records"
+        ]
+    },
+    {
+        "q": "The _____ validates data against trusted sources.",
+        "type": "fill_blank",
+        "answers": [
+            "accuracy check"
+        ],
+        "other_options": [
+            "speed test",
+            "cost analysis",
+            "size calculation"
+        ]
+    },
+    {
+        "q": "Inaccurate data leads to wrong decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this accuracy validation?",
+        "type": "mcq",
+        "c": "expected = {'email': 'john@test.com'}\nactual = {'email': 'john@test.com'}\nis_accurate = expected['email'] == actual['email']\nprint(is_accurate)",
+        "o": [
+            "True",
+            "False",
+            "john@test.com",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the accuracy check with its method:",
+        "type": "match",
+        "left": [
+            "Format",
+            "Range",
+            "Lookup",
+            "Calculation"
+        ],
+        "right": [
+            "Pattern match",
+            "Value bounds",
+            "Reference data",
+            "Formula verify"
+        ]
+    },
+    {
+        "q": "Rearrange the accuracy validation:",
+        "type": "rearrange",
+        "words": [
+            "Define expected",
+            "Compare actual",
+            "Identify mismatches",
+            "Log errors",
+            "Correct data"
+        ]
+    },
+    {
+        "q": "What is data consistency?",
+        "type": "mcq",
+        "o": [
+            "Same data values across systems",
+            "Different values everywhere",
+            "Random data",
+            "No data"
+        ]
+    },
+    {
+        "q": "The _____ ensures data matches across databases.",
+        "type": "fill_blank",
+        "answers": [
+            "consistency check"
+        ],
+        "other_options": [
+            "random test",
+            "delete operation",
+            "hide function"
+        ]
+    },
+    {
+        "q": "Inconsistent data causes confusion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this consistency check?",
+        "type": "mcq",
+        "c": "db1_total = 1000\ndb2_total = 1000\nis_consistent = db1_total == db2_total\nprint(is_consistent)",
+        "o": [
+            "True",
+            "False",
+            "1000",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the consistency type with its scope:",
+        "type": "match",
+        "left": [
+            "Referential",
+            "Cross-system",
+            "Temporal",
+            "Format"
+        ],
+        "right": [
+            "Foreign keys",
+            "Multiple databases",
+            "Over time",
+            "Same representation"
+        ]
+    },
+    {
+        "q": "Rearrange the consistency verification:",
+        "type": "rearrange",
+        "words": [
+            "Identify systems",
+            "Define rules",
+            "Compare values",
+            "Document differences",
+            "Reconcile data"
+        ]
+    },
+    {
+        "q": "What is data timeliness?",
+        "type": "mcq",
+        "o": [
+            "Data availability when needed",
+            "Data deleted on time",
+            "Data hidden quickly",
+            "Data ignored fast"
+        ]
+    },
+    {
+        "q": "The _____ measures how current data is.",
+        "type": "fill_blank",
+        "answers": [
+            "freshness"
+        ],
+        "other_options": [
+            "oldness",
+            "staleness",
+            "delay"
+        ]
+    },
+    {
+        "q": "Stale data may lead to outdated decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this freshness check?",
+        "type": "mcq",
+        "c": "from datetime import datetime, timedelta\nlast_update = datetime.now() - timedelta(hours=2)\nmax_age_hours = 4\nis_fresh = (datetime.now() - last_update).seconds / 3600 < max_age_hours\nprint(is_fresh)",
+        "o": [
+            "True",
+            "False",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the timeliness metric with its measure:",
+        "type": "match",
+        "left": [
+            "Latency",
+            "Freshness",
+            "Currency",
+            "Volatility"
+        ],
+        "right": [
+            "Delay",
+            "Age",
+            "Update status",
+            "Change rate"
+        ]
+    },
+    {
+        "q": "Rearrange the timeliness monitoring:",
+        "type": "rearrange",
+        "words": [
+            "Define SLA",
+            "Track updates",
+            "Measure latency",
+            "Alert on delays",
+            "Investigate issues"
+        ]
+    },
+    {
+        "q": "What is data validity?",
+        "type": "mcq",
+        "o": [
+            "Data conforms to defined rules",
+            "Data is deleted",
+            "Data is random",
+            "Data is hidden"
+        ]
+    },
+    {
+        "q": "The _____ checks if values match expected patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "validation rule"
+        ],
+        "other_options": [
+            "deletion rule",
+            "hiding rule",
+            "random rule"
+        ]
+    },
+    {
+        "q": "Invalid data fails validation checks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this email validation?",
+        "type": "mcq",
+        "c": "import re\nemail = 'test@example.com'\npattern = r'^[\\w.-]+@[\\w.-]+\\.\\w+$'\nis_valid = bool(re.match(pattern, email))\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "test@example.com",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the validation type with its check:",
+        "type": "match",
+        "left": [
+            "Format",
+            "Range",
+            "Type",
+            "Enum"
+        ],
+        "right": [
+            "Pattern",
+            "Min/Max",
+            "Data type",
+            "Allowed values"
+        ]
+    },
+    {
+        "q": "Rearrange the validation process:",
+        "type": "rearrange",
+        "words": [
+            "Define rules",
+            "Apply to data",
+            "Catch errors",
+            "Log failures",
+            "Handle exceptions"
+        ]
+    },
+    {
+        "q": "What is data uniqueness?",
+        "type": "mcq",
+        "o": [
+            "No duplicate values where expected",
+            "All values are same",
+            "Random values",
+            "No values"
+        ]
+    },
+    {
+        "q": "The _____ key ensures unique records.",
+        "type": "fill_blank",
+        "answers": [
+            "primary"
+        ],
+        "other_options": [
+            "foreign",
+            "random",
+            "temporary"
+        ]
+    },
+    {
+        "q": "Duplicate records violate uniqueness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this uniqueness check?",
+        "type": "mcq",
+        "c": "ids = [1, 2, 3, 2, 4]\nunique = len(set(ids))\ntotal = len(ids)\nprint(f'{unique} unique of {total}')",
+        "o": [
+            "4 unique of 5",
+            "5 unique of 5",
+            "3 unique of 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the uniqueness constraint with its scope:",
+        "type": "match",
+        "left": [
+            "Primary key",
+            "Composite key",
+            "Natural key",
+            "Surrogate key"
+        ],
+        "right": [
+            "Single column",
+            "Multiple columns",
+            "Business meaning",
+            "System generated"
+        ]
+    },
+    {
+        "q": "Rearrange the uniqueness verification:",
+        "type": "rearrange",
+        "words": [
+            "Identify key columns",
+            "Find duplicates",
+            "Analyze causes",
+            "Remove duplicates",
+            "Verify uniqueness"
+        ]
+    },
+    {
+        "q": "What is data integrity?",
+        "type": "mcq",
+        "o": [
+            "Maintaining data accuracy over lifecycle",
+            "Deleting data",
+            "Hiding data",
+            "Ignoring data"
+        ]
+    },
+    {
+        "q": "The _____ integrity ensures valid relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "referential"
+        ],
+        "other_options": [
+            "random",
+            "temporary",
+            "deleted"
+        ]
+    },
+    {
+        "q": "Data integrity prevents corruption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this integrity check?",
+        "type": "mcq",
+        "c": "orders = [{'id': 1, 'customer_id': 101}]\ncustomers = [{'id': 101}, {'id': 102}]\nvalid = all(o['customer_id'] in [c['id'] for c in customers] for o in orders)\nprint(valid)",
+        "o": [
+            "True",
+            "False",
+            "101",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the integrity type with its constraint:",
+        "type": "match",
+        "left": [
+            "Entity",
+            "Referential",
+            "Domain",
+            "User-defined"
+        ],
+        "right": [
+            "Primary key",
+            "Foreign key",
+            "Data type",
+            "Business rules"
+        ]
+    },
+    {
+        "q": "Rearrange the integrity checks:",
+        "type": "rearrange",
+        "words": [
+            "Define constraints",
+            "Validate relationships",
+            "Check boundaries",
+            "Enforce rules",
+            "Log violations"
+        ]
+    },
+    {
+        "q": "What is a data quality rule?",
+        "type": "mcq",
+        "o": [
+            "Criteria data must meet",
+            "Random guideline",
+            "Optional suggestion",
+            "Ignored requirement"
+        ]
+    },
+    {
+        "q": "The _____ defines expected data behavior.",
+        "type": "fill_blank",
+        "answers": [
+            "rule"
+        ],
+        "other_options": [
+            "random",
+            "unknown",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Rules can be automated for continuous validation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this rule check?",
+        "type": "mcq",
+        "c": "age = 25\nrule = {'min': 0, 'max': 120}\nis_valid = rule['min'] <= age <= rule['max']\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the rule type with its validation:",
+        "type": "match",
+        "left": [
+            "Null check",
+            "Range check",
+            "Format check",
+            "Cross-field"
+        ],
+        "right": [
+            "Missing values",
+            "Value bounds",
+            "Pattern match",
+            "Field relationships"
+        ]
+    },
+    {
+        "q": "Rearrange the rule implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define rule",
+            "Apply to data",
+            "Capture failures",
+            "Alert on issues",
+            "Track metrics"
+        ]
+    },
+    {
+        "q": "What is a data quality metric?",
+        "type": "mcq",
+        "o": [
+            "Quantifiable measure of data quality",
+            "Random number",
+            "Ignored value",
+            "Hidden score"
+        ]
+    },
+    {
+        "q": "The _____ measures percentage of valid records.",
+        "type": "fill_blank",
+        "answers": [
+            "quality score"
+        ],
+        "other_options": [
+            "random score",
+            "hidden score",
+            "deleted score"
+        ]
+    },
+    {
+        "q": "Metrics enable quality trend analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this metric calculation?",
+        "type": "mcq",
+        "c": "total = 1000\nerrors = 50\nquality = (total - errors) / total * 100\nprint(f'{quality}%')",
+        "o": [
+            "95.0%",
+            "50%",
+            "100%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the metric with its dimension:",
+        "type": "match",
+        "left": [
+            "Error rate",
+            "Fill rate",
+            "Match rate",
+            "Decay rate"
+        ],
+        "right": [
+            "Accuracy",
+            "Completeness",
+            "Consistency",
+            "Timeliness"
+        ]
+    },
+    {
+        "q": "Rearrange the metrics workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define metrics",
+            "Collect data",
+            "Calculate scores",
+            "Visualize trends",
+            "Set alerts"
+        ]
+    },
+    {
+        "q": "What is data quality monitoring?",
+        "type": "mcq",
+        "o": [
+            "Continuous tracking of data health",
+            "One-time check",
+            "Ignoring issues",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "The _____ detects quality degradation.",
+        "type": "fill_blank",
+        "answers": [
+            "monitoring"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Proactive monitoring prevents issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this alert trigger?",
+        "type": "mcq",
+        "c": "quality_score = 90\nthreshold = 95\nalert = quality_score < threshold\nprint(f'Alert: {alert}')",
+        "o": [
+            "Alert: True",
+            "Alert: False",
+            "90",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the monitoring component with its role:",
+        "type": "match",
+        "left": [
+            "Dashboard",
+            "Alert",
+            "Report",
+            "SLA"
+        ],
+        "right": [
+            "Visualization",
+            "Notification",
+            "Analysis",
+            "Target"
+        ]
+    },
+    {
+        "q": "Rearrange the monitoring setup:",
+        "type": "rearrange",
+        "words": [
+            "Define thresholds",
+            "Instrument checks",
+            "Build dashboards",
+            "Configure alerts",
+            "Review regularly"
+        ]
+    },
+    {
+        "q": "What is data standardization?",
+        "type": "mcq",
+        "o": [
+            "Converting data to consistent format",
+            "Random transformation",
+            "Deleting data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ ensures consistent date formats.",
+        "type": "fill_blank",
+        "answers": [
+            "standardization"
+        ],
+        "other_options": [
+            "randomization",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Standardization improves data comparability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this standardization?",
+        "type": "mcq",
+        "c": "date_str = '01/15/2024'\nfrom datetime import datetime\nstd = datetime.strptime(date_str, '%m/%d/%Y').strftime('%Y-%m-%d')\nprint(std)",
+        "o": [
+            "2024-01-15",
+            "01/15/2024",
+            "15-01-2024",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the standardization type with its example:",
+        "type": "match",
+        "left": [
+            "Date",
+            "Phone",
+            "Address",
+            "Name"
+        ],
+        "right": [
+            "YYYY-MM-DD",
+            "+1-XXX-XXX",
+            "Street, City, ZIP",
+            "Last, First"
+        ]
+    },
+    {
+        "q": "Rearrange the standardization process:",
+        "type": "rearrange",
+        "words": [
+            "Identify variations",
+            "Define standard",
+            "Map conversions",
+            "Apply rules",
+            "Validate output"
+        ]
+    },
+    {
+        "q": "What is data enrichment?",
+        "type": "mcq",
+        "o": [
+            "Enhancing data with additional information",
+            "Removing data",
+            "Hiding data",
+            "Ignoring data"
+        ]
+    },
+    {
+        "q": "The _____ adds context to existing data.",
+        "type": "fill_blank",
+        "answers": [
+            "enrichment"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "removal"
+        ]
+    },
+    {
+        "q": "Enrichment increases data value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this enrichment?",
+        "type": "mcq",
+        "c": "record = {'zip': '10001'}\nzip_data = {'10001': {'city': 'New York', 'state': 'NY'}}\nrecord.update(zip_data.get(record['zip'], {}))\nprint(record.get('city'))",
+        "o": [
+            "New York",
+            "10001",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the enrichment source with its data:",
+        "type": "match",
+        "left": [
+            "Geocoding",
+            "Demographics",
+            "Firmographics",
+            "Psychographics"
+        ],
+        "right": [
+            "Location",
+            "Population",
+            "Company info",
+            "Preferences"
+        ]
+    },
+    {
+        "q": "Rearrange the enrichment workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify gaps",
+            "Find sources",
+            "Match records",
+            "Append data",
+            "Validate quality"
+        ]
+    },
+    {
+        "q": "What is null value handling?",
+        "type": "mcq",
+        "o": [
+            "Managing missing data values",
+            "Ignoring missing data",
+            "Deleting all data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ replaces nulls with estimated values.",
+        "type": "fill_blank",
+        "answers": [
+            "imputation"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Null values can cause processing errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this null handling?",
+        "type": "mcq",
+        "c": "values = [1, None, 3, None, 5]\ndefault = 0\nfilled = [v if v is not None else default for v in values]\nprint(sum(filled))",
+        "o": [
+            "9",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the null strategy with its approach:",
+        "type": "match",
+        "left": [
+            "Drop",
+            "Fill constant",
+            "Fill mean",
+            "Forward fill"
+        ],
+        "right": [
+            "Remove row",
+            "Default value",
+            "Average",
+            "Previous value"
+        ]
+    },
+    {
+        "q": "Rearrange the null handling steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify nulls",
+            "Analyze pattern",
+            "Choose strategy",
+            "Apply fix",
+            "Validate result"
+        ]
+    },
+    {
+        "q": "What is outlier detection?",
+        "type": "mcq",
+        "o": [
+            "Finding anomalous data values",
+            "Finding normal values",
+            "Deleting all data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ identifies values outside expected range.",
+        "type": "fill_blank",
+        "answers": [
+            "outlier detection"
+        ],
+        "other_options": [
+            "normal detection",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Outliers may indicate data quality issues or fraud.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this outlier check?",
+        "type": "mcq",
+        "c": "values = [10, 12, 11, 100, 13]\nmean = sum(values) / len(values)\noutliers = [v for v in values if abs(v - mean) > 30]\nprint(len(outliers))",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the outlier method with its approach:",
+        "type": "match",
+        "left": [
+            "Z-score",
+            "IQR",
+            "Isolation Forest",
+            "DBSCAN"
+        ],
+        "right": [
+            "Standard deviations",
+            "Quartile range",
+            "Tree ensemble",
+            "Clustering"
+        ]
+    },
+    {
+        "q": "Rearrange the outlier handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect outliers",
+            "Investigate cause",
+            "Decide action",
+            "Remove or keep",
+            "Document decision"
+        ]
+    },
+    {
+        "q": "What is data reconciliation?",
+        "type": "mcq",
+        "o": [
+            "Ensuring data matches across sources",
+            "Deleting mismatches",
+            "Ignoring differences",
+            "Hiding discrepancies"
+        ]
+    },
+    {
+        "q": "The _____ compares data between systems.",
+        "type": "fill_blank",
+        "answers": [
+            "reconciliation"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Reconciliation identifies data discrepancies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this reconciliation?",
+        "type": "mcq",
+        "c": "source_count = 1000\ntarget_count = 998\ndiff = source_count - target_count\nprint(f'{diff} records missing')",
+        "o": [
+            "2 records missing",
+            "0 records missing",
+            "1000 records missing",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the reconciliation type with its scope:",
+        "type": "match",
+        "left": [
+            "Count",
+            "Sum",
+            "Hash",
+            "Sample"
+        ],
+        "right": [
+            "Row count",
+            "Numeric total",
+            "Byte comparison",
+            "Random check"
+        ]
+    },
+    {
+        "q": "Rearrange the reconciliation process:",
+        "type": "rearrange",
+        "words": [
+            "Define sources",
+            "Extract data",
+            "Compare values",
+            "Identify differences",
+            "Resolve discrepancies"
+        ]
+    },
+    {
+        "q": "What is data anomaly?",
+        "type": "mcq",
+        "o": [
+            "Unexpected pattern in data",
+            "Expected pattern",
+            "Normal behavior",
+            "Deleted data"
+        ]
+    },
+    {
+        "q": "The _____ indicates potential quality issues.",
+        "type": "fill_blank",
+        "answers": [
+            "anomaly"
+        ],
+        "other_options": [
+            "normal",
+            "expected",
+            "standard"
+        ]
+    },
+    {
+        "q": "Anomalies require investigation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this anomaly detection?",
+        "type": "mcq",
+        "c": "daily_sales = [100, 110, 105, 500, 108]\navg = sum(daily_sales) / len(daily_sales)\nanomalies = [s for s in daily_sales if s > avg * 2]\nprint(len(anomalies))",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the anomaly type with its example:",
+        "type": "match",
+        "left": [
+            "Point",
+            "Contextual",
+            "Collective",
+            "Seasonal"
+        ],
+        "right": [
+            "Single outlier",
+            "Time-based",
+            "Group pattern",
+            "Periodic deviation"
+        ]
+    },
+    {
+        "q": "Rearrange the anomaly investigation:",
+        "type": "rearrange",
+        "words": [
+            "Detect anomaly",
+            "Gather context",
+            "Analyze root cause",
+            "Take action",
+            "Document findings"
+        ]
+    },
+    {
+        "q": "What is data governance framework?",
+        "type": "mcq",
+        "o": [
+            "Policies and procedures for data management",
+            "Random guidelines",
+            "Ignored rules",
+            "Deleted policies"
+        ]
+    },
+    {
+        "q": "The _____ defines data ownership and accountability.",
+        "type": "fill_blank",
+        "answers": [
+            "governance framework"
+        ],
+        "other_options": [
+            "random framework",
+            "deleted framework",
+            "ignored framework"
+        ]
+    },
+    {
+        "q": "Governance ensures consistent data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this policy check?",
+        "type": "mcq",
+        "c": "policies = ['retention', 'access', 'quality', 'privacy']\ncount = len(policies)\nprint(f'{count} policies defined')",
+        "o": [
+            "4 policies defined",
+            "0 policies defined",
+            "1 policies defined",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the governance role with its responsibility:",
+        "type": "match",
+        "left": [
+            "Data owner",
+            "Data steward",
+            "Data custodian",
+            "Data user"
+        ],
+        "right": [
+            "Accountability",
+            "Quality",
+            "Technical",
+            "Consumption"
+        ]
+    },
+    {
+        "q": "Rearrange the governance implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define policies",
+            "Assign roles",
+            "Implement controls",
+            "Monitor compliance",
+            "Review and update"
+        ]
+    },
+    {
+        "q": "What is data quality SLA?",
+        "type": "mcq",
+        "o": [
+            "Service Level Agreement for data quality",
+            "Random target",
+            "Ignored goal",
+            "Deleted threshold"
+        ]
+    },
+    {
+        "q": "The _____ defines acceptable quality levels.",
+        "type": "fill_blank",
+        "answers": [
+            "SLA"
+        ],
+        "other_options": [
+            "random",
+            "ignored",
+            "deleted"
+        ]
+    },
+    {
+        "q": "SLAs ensure accountability for data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this SLA check?",
+        "type": "mcq",
+        "c": "sla_target = 99.0\nactual = 99.5\nmet = actual >= sla_target\nprint(f'SLA met: {met}')",
+        "o": [
+            "SLA met: True",
+            "SLA met: False",
+            "99.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the SLA metric with its focus:",
+        "type": "match",
+        "left": [
+            "Accuracy SLA",
+            "Completeness SLA",
+            "Timeliness SLA",
+            "Availability SLA"
+        ],
+        "right": [
+            "Correctness",
+            "No missing",
+            "Freshness",
+            "Uptime"
+        ]
+    },
+    {
+        "q": "Rearrange the SLA management:",
+        "type": "rearrange",
+        "words": [
+            "Define targets",
+            "Measure actuals",
+            "Track trends",
+            "Address gaps",
+            "Report status"
+        ]
+    },
+    {
+        "q": "What is root cause analysis for quality?",
+        "type": "mcq",
+        "o": [
+            "Finding underlying cause of issues",
+            "Ignoring problems",
+            "Deleting issues",
+            "Hiding problems"
+        ]
+    },
+    {
+        "q": "The _____ identifies why quality issues occur.",
+        "type": "fill_blank",
+        "answers": [
+            "root cause analysis"
+        ],
+        "other_options": [
+            "random analysis",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "RCA prevents recurring quality issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cause count?",
+        "type": "mcq",
+        "c": "causes = ['human error', 'system bug', 'integration issue']\nprint(len(causes))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the RCA technique with its approach:",
+        "type": "match",
+        "left": [
+            "5 Why",
+            "Fishbone",
+            "Pareto",
+            "Timeline"
+        ],
+        "right": [
+            "Repeated questioning",
+            "Cause categories",
+            "80/20 rule",
+            "Event sequence"
+        ]
+    },
+    {
+        "q": "Rearrange the RCA process:",
+        "type": "rearrange",
+        "words": [
+            "Define problem",
+            "Collect data",
+            "Identify causes",
+            "Propose solutions",
+            "Implement fixes"
+        ]
+    },
+    {
+        "q": "What is data quality remediation?",
+        "type": "mcq",
+        "o": [
+            "Fixing identified data issues",
+            "Ignoring issues",
+            "Deleting all data",
+            "Hiding problems"
+        ]
+    },
+    {
+        "q": "The _____ corrects data quality problems.",
+        "type": "fill_blank",
+        "answers": [
+            "remediation"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Remediation improves overall data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this fix count?",
+        "type": "mcq",
+        "c": "issues = [{'status': 'fixed'}, {'status': 'pending'}, {'status': 'fixed'}]\nfixed = len([i for i in issues if i['status'] == 'fixed'])\nprint(fixed)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the remediation action with its scope:",
+        "type": "match",
+        "left": [
+            "Manual fix",
+            "Automated rule",
+            "Batch correction",
+            "Prevention"
+        ],
+        "right": [
+            "Individual records",
+            "Ongoing processing",
+            "Historical data",
+            "Future data"
+        ]
+    },
+    {
+        "q": "Rearrange the remediation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify issues",
+            "Prioritize fixes",
+            "Apply corrections",
+            "Validate results",
+            "Document changes"
+        ]
+    },
+    {
+        "q": "What is data quality testing?",
+        "type": "mcq",
+        "o": [
+            "Validating data meets requirements",
+            "Ignoring requirements",
+            "Deleting tests",
+            "Hiding results"
+        ]
+    },
+    {
+        "q": "The _____ verifies data quality before release.",
+        "type": "fill_blank",
+        "answers": [
+            "testing"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Testing catches quality issues early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this test result?",
+        "type": "mcq",
+        "c": "tests = [{'name': 'null_check', 'passed': True}, {'name': 'range', 'passed': False}]\npassed = len([t for t in tests if t['passed']])\nprint(f'{passed} of {len(tests)} passed')",
+        "o": [
+            "1 of 2 passed",
+            "2 of 2 passed",
+            "0 of 2 passed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the test type with its focus:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "Regression",
+            "Performance"
+        ],
+        "right": [
+            "Single rule",
+            "System connection",
+            "Previous issues",
+            "Speed"
+        ]
+    },
+    {
+        "q": "Rearrange the testing cycle:",
+        "type": "rearrange",
+        "words": [
+            "Define tests",
+            "Execute tests",
+            "Review results",
+            "Fix failures",
+            "Retest"
+        ]
+    },
+    {
+        "q": "What is data quality dashboard?",
+        "type": "mcq",
+        "o": [
+            "Visual display of quality metrics",
+            "Hidden metrics",
+            "Deleted reports",
+            "Ignored data"
+        ]
+    },
+    {
+        "q": "The _____ provides real-time quality visibility.",
+        "type": "fill_blank",
+        "answers": [
+            "dashboard"
+        ],
+        "other_options": [
+            "hidden page",
+            "deleted report",
+            "ignored screen"
+        ]
+    },
+    {
+        "q": "Dashboards enable quick quality assessment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this dashboard metric?",
+        "type": "mcq",
+        "c": "metrics = {'accuracy': 99.5, 'completeness': 98.0, 'timeliness': 100.0}\navg = sum(metrics.values()) / len(metrics)\nprint(f'{avg:.1f}%')",
+        "o": [
+            "99.2%",
+            "100%",
+            "98%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the dashboard element with its purpose:",
+        "type": "match",
+        "left": [
+            "KPI card",
+            "Trend chart",
+            "Alert banner",
+            "Drill-down"
+        ],
+        "right": [
+            "Summary metric",
+            "Change over time",
+            "Urgent issue",
+            "Details"
+        ]
+    },
+    {
+        "q": "Rearrange the dashboard design:",
+        "type": "rearrange",
+        "words": [
+            "Identify KPIs",
+            "Design layout",
+            "Connect data",
+            "Build visualizations",
+            "Enable interactions"
+        ]
+    },
+    {
+        "q": "What is data quality certification?",
+        "type": "mcq",
+        "o": [
+            "Formal approval of data quality",
+            "Ignoring quality",
+            "Deleting data",
+            "Hiding issues"
+        ]
+    },
+    {
+        "q": "The _____ confirms data meets quality standards.",
+        "type": "fill_blank",
+        "answers": [
+            "certification"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Certified data is trusted for critical decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this certification status?",
+        "type": "mcq",
+        "c": "requirements = ['accuracy', 'completeness', 'timeliness']\nmet = ['accuracy', 'completeness', 'timeliness']\ncertified = set(requirements) == set(met)\nprint(certified)",
+        "o": [
+            "True",
+            "False",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the certification level with its rigor:",
+        "type": "match",
+        "left": [
+            "Bronze",
+            "Silver",
+            "Gold",
+            "Platinum"
+        ],
+        "right": [
+            "Basic",
+            "Standard",
+            "High",
+            "Highest"
+        ]
+    },
+    {
+        "q": "Rearrange the certification process:",
+        "type": "rearrange",
+        "words": [
+            "Define criteria",
+            "Assess data",
+            "Review results",
+            "Grant certification",
+            "Monitor ongoing"
+        ]
+    },
+    {
+        "q": "What is master data management?",
+        "type": "mcq",
+        "o": [
+            "Managing core business data",
+            "Deleting master data",
+            "Ignoring key data",
+            "Hiding reference data"
+        ]
+    },
+    {
+        "q": "The _____ provides single source of truth.",
+        "type": "fill_blank",
+        "answers": [
+            "MDM"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "MDM ensures consistent reference data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this master record?",
+        "type": "mcq",
+        "c": "master = {'id': 101, 'name': 'ACME Corp', 'status': 'active'}\nprint(master['name'])",
+        "o": [
+            "ACME Corp",
+            "101",
+            "active",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the MDM domain with its example:",
+        "type": "match",
+        "left": [
+            "Customer",
+            "Product",
+            "Supplier",
+            "Location"
+        ],
+        "right": [
+            "Company info",
+            "SKU details",
+            "Vendor data",
+            "Address"
+        ]
+    },
+    {
+        "q": "Rearrange the MDM implementation:",
+        "type": "rearrange",
+        "words": [
+            "Identify domains",
+            "Define structure",
+            "Build golden record",
+            "Sync systems",
+            "Maintain quality"
+        ]
+    },
+    {
+        "q": "What is reference data management?",
+        "type": "mcq",
+        "o": [
+            "Managing lookup and classification data",
+            "Deleting reference data",
+            "Ignoring codes",
+            "Hiding mappings"
+        ]
+    },
+    {
+        "q": "The _____ standardizes codes and classifications.",
+        "type": "fill_blank",
+        "answers": [
+            "RDM"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Reference data enables consistent categorization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lookup?",
+        "type": "mcq",
+        "c": "country_codes = {'US': 'United States', 'UK': 'United Kingdom'}\ncode = 'US'\nprint(country_codes.get(code))",
+        "o": [
+            "United States",
+            "US",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the reference type with its example:",
+        "type": "match",
+        "left": [
+            "Country",
+            "Currency",
+            "Industry",
+            "Status"
+        ],
+        "right": [
+            "ISO codes",
+            "USD, EUR",
+            "SIC codes",
+            "Active, Inactive"
+        ]
+    },
+    {
+        "q": "Rearrange the RDM workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify reference data",
+            "Define standards",
+            "Build repository",
+            "Distribute",
+            "Maintain currency"
+        ]
+    },
+    {
+        "q": "What is data matching?",
+        "type": "mcq",
+        "o": [
+            "Finding related records across datasets",
+            "Deleting matches",
+            "Ignoring relationships",
+            "Hiding connections"
+        ]
+    },
+    {
+        "q": "The _____ identifies duplicate or related records.",
+        "type": "fill_blank",
+        "answers": [
+            "matching algorithm"
+        ],
+        "other_options": [
+            "deletion algorithm",
+            "hiding algorithm",
+            "ignoring algorithm"
+        ]
+    },
+    {
+        "q": "Matching enables data consolidation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this match score?",
+        "type": "mcq",
+        "c": "record1 = 'John Smith'\nrecord2 = 'Jon Smith'\nmatch = 1 - len(set(record1) ^ set(record2)) / len(set(record1) | set(record2))\nprint(f'{match:.0%}')",
+        "o": [
+            "89%",
+            "100%",
+            "0%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the matching technique with its approach:",
+        "type": "match",
+        "left": [
+            "Exact",
+            "Fuzzy",
+            "Phonetic",
+            "Machine learning"
+        ],
+        "right": [
+            "Identical values",
+            "Similarity score",
+            "Sound-alike",
+            "Trained model"
+        ]
+    },
+    {
+        "q": "Rearrange the matching process:",
+        "type": "rearrange",
+        "words": [
+            "Define criteria",
+            "Block candidates",
+            "Score pairs",
+            "Apply threshold",
+            "Review matches"
+        ]
+    },
+    {
+        "q": "What is data merging?",
+        "type": "mcq",
+        "o": [
+            "Combining matched records into one",
+            "Splitting records",
+            "Deleting records",
+            "Hiding duplicates"
+        ]
+    },
+    {
+        "q": "The _____ creates a single consolidated record.",
+        "type": "fill_blank",
+        "answers": [
+            "merge"
+        ],
+        "other_options": [
+            "split",
+            "delete",
+            "hide"
+        ]
+    },
+    {
+        "q": "Merging reduces data duplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this merge?",
+        "type": "mcq",
+        "c": "rec1 = {'name': 'John', 'email': None}\nrec2 = {'name': 'John', 'email': 'john@test.com'}\nmerged = {k: rec1[k] or rec2[k] for k in rec1}\nprint(merged['email'])",
+        "o": [
+            "john@test.com",
+            "None",
+            "John",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the merge strategy with its rule:",
+        "type": "match",
+        "left": [
+            "Most recent",
+            "Most complete",
+            "Source priority",
+            "Aggregation"
+        ],
+        "right": [
+            "Latest update",
+            "Fewest nulls",
+            "Trusted source",
+            "Combine values"
+        ]
+    },
+    {
+        "q": "Rearrange the merge workflow:",
+        "type": "rearrange",
+        "words": [
+            "Match records",
+            "Define survivorship",
+            "Merge attributes",
+            "Create golden record",
+            "Link sources"
+        ]
+    },
+    {
+        "q": "What is data parsing?",
+        "type": "mcq",
+        "o": [
+            "Breaking data into components",
+            "Combining data",
+            "Deleting data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ extracts structured fields from text.",
+        "type": "fill_blank",
+        "answers": [
+            "parser"
+        ],
+        "other_options": [
+            "combiner",
+            "deleter",
+            "hider"
+        ]
+    },
+    {
+        "q": "Parsing enables data standardization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this name parsing?",
+        "type": "mcq",
+        "c": "full_name = 'John Smith'\nparts = full_name.split()\nprint(parts[0])",
+        "o": [
+            "John",
+            "Smith",
+            "John Smith",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the parsing type with its input:",
+        "type": "match",
+        "left": [
+            "Name",
+            "Address",
+            "Phone",
+            "Date"
+        ],
+        "right": [
+            "First/Last",
+            "Street/City/ZIP",
+            "Area/Number",
+            "Day/Month/Year"
+        ]
+    },
+    {
+        "q": "Rearrange the parsing process:",
+        "type": "rearrange",
+        "words": [
+            "Define patterns",
+            "Extract components",
+            "Validate parts",
+            "Standardize format",
+            "Store structured"
+        ]
+    },
+    {
+        "q": "What is data validation framework?",
+        "type": "mcq",
+        "o": [
+            "Systematic approach to validating data",
+            "Random validation",
+            "No validation",
+            "Deleted checks"
+        ]
+    },
+    {
+        "q": "The _____ provides reusable validation components.",
+        "type": "fill_blank",
+        "answers": [
+            "framework"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Frameworks enable consistent validation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this framework check?",
+        "type": "mcq",
+        "c": "rules = ['not_null', 'in_range', 'valid_format']\ndata = 25\nresults = {'not_null': True, 'in_range': True, 'valid_format': True}\nall_passed = all(results.values())\nprint(all_passed)",
+        "o": [
+            "True",
+            "False",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the framework component with its role:",
+        "type": "match",
+        "left": [
+            "Rule engine",
+            "Schema",
+            "Report",
+            "Alert"
+        ],
+        "right": [
+            "Execute checks",
+            "Define structure",
+            "Show results",
+            "Notify issues"
+        ]
+    },
+    {
+        "q": "Rearrange the framework implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define rules",
+            "Configure engine",
+            "Connect data",
+            "Execute checks",
+            "Generate reports"
+        ]
+    },
+    {
+        "q": "What is schema validation?",
+        "type": "mcq",
+        "o": [
+            "Verifying data structure matches expected",
+            "Ignoring structure",
+            "Deleting schema",
+            "Hiding fields"
+        ]
+    },
+    {
+        "q": "The _____ ensures correct data types and fields.",
+        "type": "fill_blank",
+        "answers": [
+            "schema validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Schema changes can break downstream systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this schema check?",
+        "type": "mcq",
+        "c": "expected_fields = {'id', 'name', 'email'}\nactual_fields = {'id', 'name', 'email', 'phone'}\nmissing = expected_fields - actual_fields\nprint(len(missing))",
+        "o": [
+            "0",
+            "3",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the schema element with its validation:",
+        "type": "match",
+        "left": [
+            "Field name",
+            "Data type",
+            "Nullable",
+            "Length"
+        ],
+        "right": [
+            "Column exists",
+            "Correct type",
+            "Allows null",
+            "Max size"
+        ]
+    },
+    {
+        "q": "Rearrange the schema validation:",
+        "type": "rearrange",
+        "words": [
+            "Define schema",
+            "Read data",
+            "Compare structure",
+            "Report differences",
+            "Handle mismatches"
+        ]
+    },
+    {
+        "q": "What is constraint validation?",
+        "type": "mcq",
+        "o": [
+            "Checking data meets defined constraints",
+            "Ignoring constraints",
+            "Deleting constraints",
+            "Hiding violations"
+        ]
+    },
+    {
+        "q": "The _____ enforces business rules on data.",
+        "type": "fill_blank",
+        "answers": [
+            "constraint"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Constraints prevent invalid data entry.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this constraint check?",
+        "type": "mcq",
+        "c": "quantity = -5\nconstraint = quantity >= 0\nprint(f'Valid: {constraint}')",
+        "o": [
+            "Valid: False",
+            "Valid: True",
+            "-5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the constraint type with its rule:",
+        "type": "match",
+        "left": [
+            "Not null",
+            "Unique",
+            "Check",
+            "Foreign key"
+        ],
+        "right": [
+            "Required",
+            "No duplicates",
+            "Custom rule",
+            "Reference"
+        ]
+    },
+    {
+        "q": "Rearrange the constraint enforcement:",
+        "type": "rearrange",
+        "words": [
+            "Define constraints",
+            "Apply to table",
+            "Validate inputs",
+            "Reject violations",
+            "Log errors"
+        ]
+    },
+    {
+        "q": "What is business rule validation?",
+        "type": "mcq",
+        "o": [
+            "Verifying data against business logic",
+            "Ignoring business rules",
+            "Deleting rules",
+            "Hiding violations"
+        ]
+    },
+    {
+        "q": "The _____ implements domain-specific logic.",
+        "type": "fill_blank",
+        "answers": [
+            "business rule"
+        ],
+        "other_options": [
+            "random rule",
+            "deleted rule",
+            "hidden rule"
+        ]
+    },
+    {
+        "q": "Business rules reflect real-world constraints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this business rule?",
+        "type": "mcq",
+        "c": "order = {'total': 100, 'discount': 20}\nmax_discount = 0.15\nis_valid = order['discount'] / order['total'] <= max_discount\nprint(is_valid)",
+        "o": [
+            "False",
+            "True",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the business rule with its domain:",
+        "type": "match",
+        "left": [
+            "Age verification",
+            "Credit limit",
+            "Inventory check",
+            "Date range"
+        ],
+        "right": [
+            "Legal",
+            "Finance",
+            "Supply chain",
+            "Operations"
+        ]
+    },
+    {
+        "q": "Rearrange the business rule implementation:",
+        "type": "rearrange",
+        "words": [
+            "Gather requirements",
+            "Define logic",
+            "Implement rule",
+            "Test scenarios",
+            "Deploy to production"
+        ]
+    },
+    {
+        "q": "What is cross-field validation?",
+        "type": "mcq",
+        "o": [
+            "Checking relationships between fields",
+            "Single field check",
+            "Deleting fields",
+            "Hiding fields"
+        ]
+    },
+    {
+        "q": "The _____ validates multiple related fields together.",
+        "type": "fill_blank",
+        "answers": [
+            "cross-field"
+        ],
+        "other_options": [
+            "single-field",
+            "no-field",
+            "deleted-field"
+        ]
+    },
+    {
+        "q": "Cross-field rules catch complex errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cross-field check?",
+        "type": "mcq",
+        "c": "record = {'start': '2024-01-01', 'end': '2024-01-15'}\nvalid = record['start'] < record['end']\nprint(valid)",
+        "o": [
+            "True",
+            "False",
+            "2024-01-01",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cross-field rule with its example:",
+        "type": "match",
+        "left": [
+            "Date range",
+            "Sum check",
+            "Conditional",
+            "Dependency"
+        ],
+        "right": [
+            "Start < End",
+            "Part = Total",
+            "If A then B",
+            "Field requires other"
+        ]
+    },
+    {
+        "q": "Rearrange the cross-field validation:",
+        "type": "rearrange",
+        "words": [
+            "Identify related fields",
+            "Define relationship",
+            "Implement check",
+            "Test combinations",
+            "Handle violations"
+        ]
+    },
+    {
+        "q": "What is format validation?",
+        "type": "mcq",
+        "o": [
+            "Checking data matches expected pattern",
+            "Ignoring format",
+            "Deleting format",
+            "Hiding pattern"
+        ]
+    },
+    {
+        "q": "The _____ validates data against regex patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "format validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Format validation ensures data consistency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this format check?",
+        "type": "mcq",
+        "c": "import re\nphone = '123-456-7890'\npattern = r'^\\d{3}-\\d{3}-\\d{4}$'\nis_valid = bool(re.match(pattern, phone))\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "123-456-7890",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the format with its pattern:",
+        "type": "match",
+        "left": [
+            "SSN",
+            "Phone",
+            "Email",
+            "ZIP"
+        ],
+        "right": [
+            "XXX-XX-XXXX",
+            "XXX-XXX-XXXX",
+            "user@domain.com",
+            "XXXXX-XXXX"
+        ]
+    },
+    {
+        "q": "Rearrange the format validation:",
+        "type": "rearrange",
+        "words": [
+            "Define pattern",
+            "Apply regex",
+            "Test matches",
+            "Handle failures",
+            "Report results"
+        ]
+    },
+    {
+        "q": "What is range validation?",
+        "type": "mcq",
+        "o": [
+            "Checking values within expected bounds",
+            "Ignoring bounds",
+            "Deleting limits",
+            "Hiding ranges"
+        ]
+    },
+    {
+        "q": "The _____ ensures values fall within limits.",
+        "type": "fill_blank",
+        "answers": [
+            "range check"
+        ],
+        "other_options": [
+            "random check",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Out-of-range values indicate potential errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this range check?",
+        "type": "mcq",
+        "c": "age = 150\nmin_age, max_age = 0, 120\nin_range = min_age <= age <= max_age\nprint(in_range)",
+        "o": [
+            "False",
+            "True",
+            "150",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the range type with its check:",
+        "type": "match",
+        "left": [
+            "Numeric",
+            "Date",
+            "String length",
+            "Count"
+        ],
+        "right": [
+            "Min/Max value",
+            "Before/After",
+            "Min/Max chars",
+            "Min/Max items"
+        ]
+    },
+    {
+        "q": "Rearrange the range validation:",
+        "type": "rearrange",
+        "words": [
+            "Define bounds",
+            "Compare value",
+            "Check limits",
+            "Flag violations",
+            "Report results"
+        ]
+    },
+    {
+        "q": "What is lookup validation?",
+        "type": "mcq",
+        "o": [
+            "Verifying values exist in reference list",
+            "Ignoring references",
+            "Deleting lookups",
+            "Hiding lists"
+        ]
+    },
+    {
+        "q": "The _____ confirms values are in allowed set.",
+        "type": "fill_blank",
+        "answers": [
+            "lookup validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Lookup validation ensures referential integrity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lookup check?",
+        "type": "mcq",
+        "c": "valid_countries = ['US', 'UK', 'CA', 'AU']\ncountry = 'US'\nexists = country in valid_countries\nprint(exists)",
+        "o": [
+            "True",
+            "False",
+            "US",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the lookup source with its data:",
+        "type": "match",
+        "left": [
+            "Country codes",
+            "State codes",
+            "Currency",
+            "Status"
+        ],
+        "right": [
+            "ISO 3166",
+            "US states",
+            "ISO 4217",
+            "Active/Inactive"
+        ]
+    },
+    {
+        "q": "Rearrange the lookup validation:",
+        "type": "rearrange",
+        "words": [
+            "Load reference data",
+            "Get input value",
+            "Check existence",
+            "Return result",
+            "Handle missing"
+        ]
+    },
+    {
+        "q": "What is conditional validation?",
+        "type": "mcq",
+        "o": [
+            "Rules that apply based on conditions",
+            "Unconditional checks",
+            "Random validation",
+            "No validation"
+        ]
+    },
+    {
+        "q": "The _____ applies rules when conditions are met.",
+        "type": "fill_blank",
+        "answers": [
+            "conditional validation"
+        ],
+        "other_options": [
+            "unconditional validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Conditional rules handle complex scenarios.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this conditional check?",
+        "type": "mcq",
+        "c": "order = {'type': 'express', 'shipping_date': None}\nif order['type'] == 'express':\n    valid = order['shipping_date'] is not None\nelse:\n    valid = True\nprint(valid)",
+        "o": [
+            "False",
+            "True",
+            "express",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the condition with its rule:",
+        "type": "match",
+        "left": [
+            "If A then B",
+            "If not A then B",
+            "Either A or B",
+            "A implies B"
+        ],
+        "right": [
+            "Require B",
+            "Default B",
+            "One required",
+            "B when A"
+        ]
+    },
+    {
+        "q": "Rearrange the conditional rule:",
+        "type": "rearrange",
+        "words": [
+            "Evaluate condition",
+            "Check if true",
+            "Apply rule",
+            "Skip if false",
+            "Return result"
+        ]
+    },
+    {
+        "q": "What is aggregate validation?",
+        "type": "mcq",
+        "o": [
+            "Validating summarized data values",
+            "Single value check",
+            "Random aggregation",
+            "Deleted totals"
+        ]
+    },
+    {
+        "q": "The _____ verifies sums, counts, and averages.",
+        "type": "fill_blank",
+        "answers": [
+            "aggregate validation"
+        ],
+        "other_options": [
+            "single validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Aggregate checks catch systematic errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this aggregate check?",
+        "type": "mcq",
+        "c": "line_items = [100, 200, 300]\nstated_total = 600\ncalculated = sum(line_items)\nis_valid = stated_total == calculated\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "600",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the aggregate with its calculation:",
+        "type": "match",
+        "left": [
+            "Sum",
+            "Count",
+            "Average",
+            "Min/Max"
+        ],
+        "right": [
+            "Total value",
+            "Number of items",
+            "Mean value",
+            "Extremes"
+        ]
+    },
+    {
+        "q": "Rearrange the aggregate validation:",
+        "type": "rearrange",
+        "words": [
+            "Calculate expected",
+            "Get stated value",
+            "Compare values",
+            "Flag differences",
+            "Report results"
+        ]
+    },
+    {
+        "q": "What is temporal validation?",
+        "type": "mcq",
+        "o": [
+            "Validating time-based data rules",
+            "Ignoring time",
+            "Deleting dates",
+            "Hiding timestamps"
+        ]
+    },
+    {
+        "q": "The _____ checks date and time constraints.",
+        "type": "fill_blank",
+        "answers": [
+            "temporal validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Temporal rules ensure logical date sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this date check?",
+        "type": "mcq",
+        "c": "from datetime import datetime\norder_date = datetime(2024, 1, 15)\nship_date = datetime(2024, 1, 10)\nvalid = ship_date >= order_date\nprint(valid)",
+        "o": [
+            "False",
+            "True",
+            "2024-01-15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the temporal rule with its check:",
+        "type": "match",
+        "left": [
+            "Sequence",
+            "Currency",
+            "Range",
+            "Business day"
+        ],
+        "right": [
+            "Order of events",
+            "Not future",
+            "Within period",
+            "Working day"
+        ]
+    },
+    {
+        "q": "Rearrange the temporal validation:",
+        "type": "rearrange",
+        "words": [
+            "Extract dates",
+            "Parse format",
+            "Compare sequence",
+            "Check ranges",
+            "Report violations"
+        ]
+    },
+    {
+        "q": "What is statistical validation?",
+        "type": "mcq",
+        "o": [
+            "Using statistics to detect anomalies",
+            "Ignoring statistics",
+            "Random numbers",
+            "Deleted metrics"
+        ]
+    },
+    {
+        "q": "The _____ identifies unusual patterns statistically.",
+        "type": "fill_blank",
+        "answers": [
+            "statistical analysis"
+        ],
+        "other_options": [
+            "random analysis",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Statistical methods detect subtle quality issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this statistical check?",
+        "type": "mcq",
+        "c": "import statistics\nvalues = [10, 12, 11, 13, 100]\nmean = statistics.mean(values)\nstd = statistics.stdev(values)\noutliers = [v for v in values if abs(v - mean) > 2 * std]\nprint(len(outliers))",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the statistical method with its use:",
+        "type": "match",
+        "left": [
+            "Mean",
+            "Standard deviation",
+            "Percentile",
+            "Correlation"
+        ],
+        "right": [
+            "Central tendency",
+            "Spread",
+            "Distribution",
+            "Relationship"
+        ]
+    },
+    {
+        "q": "Rearrange the statistical analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect data",
+            "Calculate statistics",
+            "Define thresholds",
+            "Identify anomalies",
+            "Investigate causes"
+        ]
+    },
+    {
+        "q": "What is data quality automation?",
+        "type": "mcq",
+        "o": [
+            "Automated quality checks and fixes",
+            "Manual quality only",
+            "No automation",
+            "Deleted processes"
+        ]
+    },
+    {
+        "q": "The _____ enables continuous quality validation.",
+        "type": "fill_blank",
+        "answers": [
+            "automation"
+        ],
+        "other_options": [
+            "manual process",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Automation scales quality processes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this automation run?",
+        "type": "mcq",
+        "c": "jobs = ['profile', 'validate', 'cleanse', 'report']\ncompleted = 4\nprint(f'{completed} of {len(jobs)} completed')",
+        "o": [
+            "4 of 4 completed",
+            "0 of 4 completed",
+            "1 of 4 completed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the automation component with its function:",
+        "type": "match",
+        "left": [
+            "Scheduler",
+            "Executor",
+            "Monitor",
+            "Alerter"
+        ],
+        "right": [
+            "Timing",
+            "Run jobs",
+            "Track status",
+            "Notify issues"
+        ]
+    },
+    {
+        "q": "Rearrange the automation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define jobs",
+            "Schedule runs",
+            "Execute tasks",
+            "Monitor results",
+            "Alert on failures"
+        ]
+    },
+    {
+        "q": "What is data quality score card?",
+        "type": "mcq",
+        "o": [
+            "Summary of quality metrics and status",
+            "Random scores",
+            "Deleted metrics",
+            "Hidden results"
+        ]
+    },
+    {
+        "q": "The _____ provides quality overview for stakeholders.",
+        "type": "fill_blank",
+        "answers": [
+            "score card"
+        ],
+        "other_options": [
+            "random card",
+            "deleted card",
+            "hidden card"
+        ]
+    },
+    {
+        "q": "Score cards enable quality progress tracking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this score card?",
+        "type": "mcq",
+        "c": "scores = {'accuracy': 98, 'completeness': 95, 'timeliness': 100}\noverall = sum(scores.values()) / len(scores)\nprint(f'Overall: {overall:.0f}%')",
+        "o": [
+            "Overall: 98%",
+            "Overall: 100%",
+            "Overall: 95%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the score card element with its content:",
+        "type": "match",
+        "left": [
+            "KPI",
+            "Trend",
+            "Target",
+            "Action"
+        ],
+        "right": [
+            "Current score",
+            "History",
+            "Goal",
+            "Improvement"
+        ]
+    },
+    {
+        "q": "Rearrange the score card creation:",
+        "type": "rearrange",
+        "words": [
+            "Define KPIs",
+            "Collect metrics",
+            "Calculate scores",
+            "Visualize results",
+            "Distribute to stakeholders"
+        ]
+    },
+    {
+        "q": "What is data quality culture?",
+        "type": "mcq",
+        "o": [
+            "Organization commitment to quality",
+            "Ignoring quality",
+            "Random culture",
+            "Deleted values"
+        ]
+    },
+    {
+        "q": "The _____ promotes quality as everyone's responsibility.",
+        "type": "fill_blank",
+        "answers": [
+            "culture"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Strong culture improves data quality outcomes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this culture assessment?",
+        "type": "mcq",
+        "c": "practices = ['ownership', 'accountability', 'continuous improvement']\nadopted = 3\nprint(f'{adopted} practices adopted')",
+        "o": [
+            "3 practices adopted",
+            "0 practices adopted",
+            "1 practices adopted",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the culture element with its practice:",
+        "type": "match",
+        "left": [
+            "Leadership",
+            "Training",
+            "Incentives",
+            "Communication"
+        ],
+        "right": [
+            "Commitment",
+            "Skills",
+            "Motivation",
+            "Awareness"
+        ]
+    },
+    {
+        "q": "Rearrange the culture building:",
+        "type": "rearrange",
+        "words": [
+            "Get leadership buy-in",
+            "Train teams",
+            "Define accountability",
+            "Celebrate success",
+            "Continuously improve"
+        ]
+    },
+    {
+        "q": "What is data quality tools?",
+        "type": "mcq",
+        "o": [
+            "Software for managing data quality",
+            "Hardware devices",
+            "Network equipment",
+            "Storage systems"
+        ]
+    },
+    {
+        "q": "The _____ automates quality processes.",
+        "type": "fill_blank",
+        "answers": [
+            "quality tool"
+        ],
+        "other_options": [
+            "random tool",
+            "deleted tool",
+            "hidden tool"
+        ]
+    },
+    {
+        "q": "Quality tools scale data management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this tool selection?",
+        "type": "mcq",
+        "c": "tools = ['Informatica', 'Talend', 'Ataccama', 'Great Expectations']\nprint(len(tools))",
+        "o": [
+            "4",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the tool with its focus:",
+        "type": "match",
+        "left": [
+            "Informatica",
+            "Talend",
+            "Great Expectations",
+            "dbt"
+        ],
+        "right": [
+            "Enterprise",
+            "Open source",
+            "Testing",
+            "Transform"
+        ]
+    },
+    {
+        "q": "Rearrange the tool implementation:",
+        "type": "rearrange",
+        "words": [
+            "Evaluate tools",
+            "Select vendor",
+            "Deploy",
+            "Configure",
+            "Train users"
+        ]
+    },
+    {
+        "q": "What is Great Expectations?",
+        "type": "mcq",
+        "o": [
+            "Python library for data quality testing",
+            "Database system",
+            "Storage platform",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "The _____ defines expected data behavior.",
+        "type": "fill_blank",
+        "answers": [
+            "expectation"
+        ],
+        "other_options": [
+            "deletion",
+            "random",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Great Expectations integrates with pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this expectation?",
+        "type": "mcq",
+        "c": "results = {'success': True, 'evaluated_expectations': 10, 'successful_expectations': 10}\nprint(results['success'])",
+        "o": [
+            "True",
+            "False",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the GE concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Expectation",
+            "Checkpoint",
+            "Data docs",
+            "Batch"
+        ],
+        "right": [
+            "Test definition",
+            "Validation run",
+            "Documentation",
+            "Data group"
+        ]
+    },
+    {
+        "q": "Rearrange the GE workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create expectations",
+            "Configure checkpoint",
+            "Run validation",
+            "Generate docs",
+            "Review results"
+        ]
+    },
+    {
+        "q": "What is Soda Core?",
+        "type": "mcq",
+        "o": [
+            "Open source data quality framework",
+            "Database engine",
+            "Storage system",
+            "Network protocol"
+        ]
+    },
+    {
+        "q": "The _____ defines quality checks in YAML.",
+        "type": "fill_blank",
+        "answers": [
+            "Soda"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Soda supports multiple data sources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Soda check?",
+        "type": "mcq",
+        "c": "checks = {'passed': 5, 'failed': 1, 'warnings': 2}\nprint(f'{checks[\"passed\"]} passed')",
+        "o": [
+            "5 passed",
+            "0 passed",
+            "1 passed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Soda feature with its function:",
+        "type": "match",
+        "left": [
+            "Checks",
+            "Scan",
+            "Cloud",
+            "Metrics"
+        ],
+        "right": [
+            "Validations",
+            "Execution",
+            "Dashboard",
+            "Measurements"
+        ]
+    },
+    {
+        "q": "Rearrange the Soda workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write checks",
+            "Configure scan",
+            "Run scan",
+            "View results",
+            "Address issues"
+        ]
+    },
+    {
+        "q": "What is dbt tests?",
+        "type": "mcq",
+        "o": [
+            "Data quality tests in dbt",
+            "Unit tests for code",
+            "Performance tests",
+            "Security tests"
+        ]
+    },
+    {
+        "q": "The _____ tests validate model outputs.",
+        "type": "fill_blank",
+        "answers": [
+            "dbt"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "dbt tests run during builds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this dbt test?",
+        "type": "mcq",
+        "c": "test_results = {'unique': 'pass', 'not_null': 'pass', 'accepted_values': 'fail'}\nfailed = [k for k, v in test_results.items() if v == 'fail']\nprint(len(failed))",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the dbt test with its check:",
+        "type": "match",
+        "left": [
+            "unique",
+            "not_null",
+            "accepted_values",
+            "relationships"
+        ],
+        "right": [
+            "No duplicates",
+            "No nulls",
+            "Valid set",
+            "Foreign key"
+        ]
+    },
+    {
+        "q": "Rearrange the dbt testing:",
+        "type": "rearrange",
+        "words": [
+            "Define tests",
+            "Build models",
+            "Run tests",
+            "Review failures",
+            "Fix issues"
+        ]
+    },
+    {
+        "q": "What is Apache Griffin?",
+        "type": "mcq",
+        "o": [
+            "Big data quality framework",
+            "Database engine",
+            "Storage system",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "The _____ measures quality for big data.",
+        "type": "fill_blank",
+        "answers": [
+            "Griffin"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Griffin integrates with Hadoop ecosystem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Griffin measure?",
+        "type": "mcq",
+        "c": "measures = {'accuracy': 0.98, 'completeness': 0.95, 'timeliness': 0.99}\navg = sum(measures.values()) / len(measures)\nprint(f'{avg:.2f}')",
+        "o": [
+            "0.97",
+            "1.00",
+            "0.95",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Griffin component with its role:",
+        "type": "match",
+        "left": [
+            "Measure",
+            "Job",
+            "Alert",
+            "Dashboard"
+        ],
+        "right": [
+            "Definition",
+            "Execution",
+            "Notification",
+            "Visualization"
+        ]
+    },
+    {
+        "q": "Rearrange the Griffin workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define measures",
+            "Schedule jobs",
+            "Run calculations",
+            "View dashboard",
+            "Set alerts"
+        ]
+    },
+    {
+        "q": "What is data quality assessment?",
+        "type": "mcq",
+        "o": [
+            "Systematic evaluation of data quality",
+            "Random guessing",
+            "Ignoring quality",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "The _____ identifies quality baseline.",
+        "type": "fill_blank",
+        "answers": [
+            "assessment"
+        ],
+        "other_options": [
+            "random",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Assessments guide improvement priorities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this assessment?",
+        "type": "mcq",
+        "c": "dimensions = {'accuracy': 85, 'completeness': 90, 'consistency': 80}\nlowest = min(dimensions, key=dimensions.get)\nprint(lowest)",
+        "o": [
+            "consistency",
+            "accuracy",
+            "completeness",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the assessment phase with its activity:",
+        "type": "match",
+        "left": [
+            "Scope",
+            "Measure",
+            "Analyze",
+            "Report"
+        ],
+        "right": [
+            "Define areas",
+            "Collect metrics",
+            "Find causes",
+            "Share findings"
+        ]
+    },
+    {
+        "q": "Rearrange the assessment process:",
+        "type": "rearrange",
+        "words": [
+            "Define scope",
+            "Profile data",
+            "Measure dimensions",
+            "Analyze issues",
+            "Create roadmap"
+        ]
+    },
+    {
+        "q": "What is data quality improvement?",
+        "type": "mcq",
+        "o": [
+            "Enhancing data quality over time",
+            "Ignoring issues",
+            "Deleting data",
+            "Hiding problems"
+        ]
+    },
+    {
+        "q": "The _____ increases quality scores.",
+        "type": "fill_blank",
+        "answers": [
+            "improvement"
+        ],
+        "other_options": [
+            "degradation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Continuous improvement sustains quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this improvement?",
+        "type": "mcq",
+        "c": "before = 80\nafter = 95\nimprovement = after - before\nprint(f'{improvement} points improved')",
+        "o": [
+            "15 points improved",
+            "0 points improved",
+            "80 points improved",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the improvement method with its approach:",
+        "type": "match",
+        "left": [
+            "Prevention",
+            "Detection",
+            "Correction",
+            "Monitoring"
+        ],
+        "right": [
+            "Stop at source",
+            "Find issues",
+            "Fix problems",
+            "Track ongoing"
+        ]
+    },
+    {
+        "q": "Rearrange the improvement cycle:",
+        "type": "rearrange",
+        "words": [
+            "Measure current",
+            "Identify gaps",
+            "Plan improvements",
+            "Implement changes",
+            "Verify results"
+        ]
+    },
+    {
+        "q": "What is data quality issue tracking?",
+        "type": "mcq",
+        "o": [
+            "Recording and managing quality problems",
+            "Ignoring issues",
+            "Deleting records",
+            "Hiding problems"
+        ]
+    },
+    {
+        "q": "The _____ logs all quality issues.",
+        "type": "fill_blank",
+        "answers": [
+            "issue tracker"
+        ],
+        "other_options": [
+            "random log",
+            "deleted log",
+            "hidden log"
+        ]
+    },
+    {
+        "q": "Tracking enables issue resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this issue count?",
+        "type": "mcq",
+        "c": "issues = [{'status': 'open'}, {'status': 'closed'}, {'status': 'open'}]\nopen_issues = len([i for i in issues if i['status'] == 'open'])\nprint(open_issues)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the issue field with its purpose:",
+        "type": "match",
+        "left": [
+            "Severity",
+            "Owner",
+            "Status",
+            "Due date"
+        ],
+        "right": [
+            "Impact",
+            "Responsibility",
+            "Progress",
+            "Timeline"
+        ]
+    },
+    {
+        "q": "Rearrange the issue lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Log issue",
+            "Assign owner",
+            "Investigate",
+            "Resolve",
+            "Close"
+        ]
+    },
+    {
+        "q": "What is metadata quality?",
+        "type": "mcq",
+        "o": [
+            "Quality of data about data",
+            "Ignoring metadata",
+            "Deleting metadata",
+            "Hiding metadata"
+        ]
+    },
+    {
+        "q": "The _____ quality ensures accurate data definitions.",
+        "type": "fill_blank",
+        "answers": [
+            "metadata"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Poor metadata quality impacts data usability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this metadata check?",
+        "type": "mcq",
+        "c": "metadata = {'description': 'Customer orders', 'owner': 'sales', 'tags': ['revenue']}\nis_complete = all(metadata.values())\nprint(is_complete)",
+        "o": [
+            "True",
+            "False",
+            "sales",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the metadata attribute with its content:",
+        "type": "match",
+        "left": [
+            "Technical",
+            "Business",
+            "Operational",
+            "Usage"
+        ],
+        "right": [
+            "Schema",
+            "Meaning",
+            "Processes",
+            "Analytics"
+        ]
+    },
+    {
+        "q": "Rearrange the metadata management:",
+        "type": "rearrange",
+        "words": [
+            "Capture metadata",
+            "Store in catalog",
+            "Maintain accuracy",
+            "Enable discovery",
+            "Track lineage"
+        ]
+    },
+    {
+        "q": "What is data quality reporting?",
+        "type": "mcq",
+        "o": [
+            "Communicating quality status",
+            "Hiding quality issues",
+            "Deleting reports",
+            "Ignoring metrics"
+        ]
+    },
+    {
+        "q": "The _____ shares quality insights.",
+        "type": "fill_blank",
+        "answers": [
+            "report"
+        ],
+        "other_options": [
+            "hidden",
+            "deleted",
+            "random"
+        ]
+    },
+    {
+        "q": "Reporting drives accountability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this report summary?",
+        "type": "mcq",
+        "c": "report = {'passed': 95, 'failed': 5, 'total': 100}\npass_rate = report['passed'] / report['total'] * 100\nprint(f'{pass_rate}%')",
+        "o": [
+            "95.0%",
+            "100%",
+            "5%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the report type with its audience:",
+        "type": "match",
+        "left": [
+            "Executive",
+            "Operational",
+            "Technical",
+            "Detailed"
+        ],
+        "right": [
+            "Leadership",
+            "Managers",
+            "Engineers",
+            "Analysts"
+        ]
+    },
+    {
+        "q": "Rearrange the reporting workflow:",
+        "type": "rearrange",
+        "words": [
+            "Collect metrics",
+            "Calculate scores",
+            "Generate report",
+            "Distribute",
+            "Gather feedback"
+        ]
+    },
+    {
+        "q": "What is data quality training?",
+        "type": "mcq",
+        "o": [
+            "Educating teams on quality practices",
+            "Ignoring training",
+            "Random learning",
+            "Deleted courses"
+        ]
+    },
+    {
+        "q": "The _____ improves quality awareness.",
+        "type": "fill_blank",
+        "answers": [
+            "training"
+        ],
+        "other_options": [
+            "random",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Training reduces quality errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this training status?",
+        "type": "mcq",
+        "c": "employees = 100\ntrained = 85\ncoverage = trained / employees * 100\nprint(f'{coverage}% trained')",
+        "o": [
+            "85.0% trained",
+            "100% trained",
+            "0% trained",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the training topic with its focus:",
+        "type": "match",
+        "left": [
+            "Concepts",
+            "Tools",
+            "Processes",
+            "Best practices"
+        ],
+        "right": [
+            "Fundamentals",
+            "Technology",
+            "Workflows",
+            "Guidelines"
+        ]
+    },
+    {
+        "q": "Rearrange the training program:",
+        "type": "rearrange",
+        "words": [
+            "Assess needs",
+            "Design curriculum",
+            "Deliver training",
+            "Assess learning",
+            "Reinforce practices"
+        ]
+    },
+    {
+        "q": "What is data entry validation?",
+        "type": "mcq",
+        "o": [
+            "Validating data at input time",
+            "Validating after storage",
+            "Ignoring input",
+            "Deleting entries"
+        ]
+    },
+    {
+        "q": "The _____ prevents bad data from entering.",
+        "type": "fill_blank",
+        "answers": [
+            "entry validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Entry validation is most cost-effective.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this entry check?",
+        "type": "mcq",
+        "c": "field = 'email'\nvalue = 'test@example.com'\nimport re\nis_valid = bool(re.match(r'^[\\w.-]+@[\\w.-]+\\.\\w+$', value))\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "email",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the entry control with its method:",
+        "type": "match",
+        "left": [
+            "Dropdown",
+            "Mask",
+            "Auto-complete",
+            "Lookup"
+        ],
+        "right": [
+            "Select list",
+            "Format template",
+            "Suggest values",
+            "Reference check"
+        ]
+    },
+    {
+        "q": "Rearrange the entry validation:",
+        "type": "rearrange",
+        "words": [
+            "Capture input",
+            "Validate format",
+            "Check rules",
+            "Accept or reject",
+            "Provide feedback"
+        ]
+    },
+    {
+        "q": "What is data quality cost?",
+        "type": "mcq",
+        "o": [
+            "Cost impact of poor quality data",
+            "Free data",
+            "No cost",
+            "Random expense"
+        ]
+    },
+    {
+        "q": "The _____ quantifies quality impact.",
+        "type": "fill_blank",
+        "answers": [
+            "cost analysis"
+        ],
+        "other_options": [
+            "random analysis",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Poor data quality costs organizations money.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cost calculation?",
+        "type": "mcq",
+        "c": "error_rate = 0.05\ntransactions = 100000\ncost_per_error = 10\ntotal_cost = error_rate * transactions * cost_per_error\nprint(f'${total_cost:,.0f}')",
+        "o": [
+            "$50,000",
+            "$0",
+            "$10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cost type with its example:",
+        "type": "match",
+        "left": [
+            "Direct",
+            "Indirect",
+            "Opportunity",
+            "Recovery"
+        ],
+        "right": [
+            "Rework",
+            "Lost productivity",
+            "Missed revenue",
+            "Cleanup"
+        ]
+    },
+    {
+        "q": "Rearrange the cost analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify issues",
+            "Quantify impact",
+            "Calculate cost",
+            "Present findings",
+            "Justify investment"
+        ]
+    },
+    {
+        "q": "What is data quality ROI?",
+        "type": "mcq",
+        "o": [
+            "Return on quality investment",
+            "Random metric",
+            "Ignored value",
+            "Deleted score"
+        ]
+    },
+    {
+        "q": "The _____ justifies quality investments.",
+        "type": "fill_blank",
+        "answers": [
+            "ROI"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Quality investments should have positive ROI.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this ROI calculation?",
+        "type": "mcq",
+        "c": "benefits = 100000\ncosts = 25000\nroi = (benefits - costs) / costs * 100\nprint(f'{roi}% ROI')",
+        "o": [
+            "300.0% ROI",
+            "100% ROI",
+            "0% ROI",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the benefit area with its saving:",
+        "type": "match",
+        "left": [
+            "Operations",
+            "Customer",
+            "Compliance",
+            "Analytics"
+        ],
+        "right": [
+            "Efficiency",
+            "Satisfaction",
+            "Fines avoided",
+            "Better decisions"
+        ]
+    },
+    {
+        "q": "Rearrange the ROI analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify benefits",
+            "Quantify savings",
+            "Calculate costs",
+            "Compute ROI",
+            "Present case"
+        ]
+    },
+    {
+        "q": "What is data quality benchmark?",
+        "type": "mcq",
+        "o": [
+            "Comparison against standards",
+            "Random comparison",
+            "Ignoring standards",
+            "Deleting baselines"
+        ]
+    },
+    {
+        "q": "The _____ compares quality against industry.",
+        "type": "fill_blank",
+        "answers": [
+            "benchmark"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Benchmarks identify improvement opportunities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this benchmark?",
+        "type": "mcq",
+        "c": "current = 92\nindustry_avg = 95\ngap = industry_avg - current\nprint(f'{gap} points below benchmark')",
+        "o": [
+            "3 points below benchmark",
+            "0 points below benchmark",
+            "92 points below benchmark",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the benchmark type with its source:",
+        "type": "match",
+        "left": [
+            "Internal",
+            "Industry",
+            "Best practice",
+            "Regulatory"
+        ],
+        "right": [
+            "Historical",
+            "Peers",
+            "Leaders",
+            "Compliance"
+        ]
+    },
+    {
+        "q": "Rearrange the benchmarking process:",
+        "type": "rearrange",
+        "words": [
+            "Identify metrics",
+            "Gather benchmarks",
+            "Compare performance",
+            "Analyze gaps",
+            "Set targets"
+        ]
+    },
+    {
+        "q": "What is data quality maturity model?",
+        "type": "mcq",
+        "o": [
+            "Framework for quality capability levels",
+            "Random levels",
+            "Ignoring maturity",
+            "Deleted stages"
+        ]
+    },
+    {
+        "q": "The _____ guides quality program evolution.",
+        "type": "fill_blank",
+        "answers": [
+            "maturity model"
+        ],
+        "other_options": [
+            "random model",
+            "deleted model",
+            "hidden model"
+        ]
+    },
+    {
+        "q": "Higher maturity means better quality management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this maturity level?",
+        "type": "mcq",
+        "c": "levels = ['Initial', 'Managed', 'Defined', 'Quantified', 'Optimizing']\ncurrent = 3\nprint(levels[current - 1])",
+        "o": [
+            "Defined",
+            "Initial",
+            "Optimizing",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the maturity level with its characteristic:",
+        "type": "match",
+        "left": [
+            "Level 1",
+            "Level 2",
+            "Level 3",
+            "Level 5"
+        ],
+        "right": [
+            "Ad hoc",
+            "Repeatable",
+            "Standardized",
+            "Continuous improvement"
+        ]
+    },
+    {
+        "q": "Rearrange the maturity progression:",
+        "type": "rearrange",
+        "words": [
+            "Initial",
+            "Managed",
+            "Defined",
+            "Quantified",
+            "Optimizing"
+        ]
+    },
+    {
+        "q": "What is data quality strategy?",
+        "type": "mcq",
+        "o": [
+            "Long-term plan for quality management",
+            "Random approach",
+            "No planning",
+            "Deleted strategy"
+        ]
+    },
+    {
+        "q": "The _____ aligns quality with business goals.",
+        "type": "fill_blank",
+        "answers": [
+            "strategy"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Strategy provides direction for quality efforts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this strategy component?",
+        "type": "mcq",
+        "c": "components = ['vision', 'goals', 'initiatives', 'metrics', 'roadmap']\nprint(len(components))",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the strategy element with its content:",
+        "type": "match",
+        "left": [
+            "Vision",
+            "Goals",
+            "Initiatives",
+            "Metrics"
+        ],
+        "right": [
+            "Future state",
+            "Objectives",
+            "Projects",
+            "Measures"
+        ]
+    },
+    {
+        "q": "Rearrange the strategy development:",
+        "type": "rearrange",
+        "words": [
+            "Define vision",
+            "Set goals",
+            "Plan initiatives",
+            "Define metrics",
+            "Create roadmap"
+        ]
+    },
+    {
+        "q": "What is data quality project management?",
+        "type": "mcq",
+        "o": [
+            "Managing quality improvement projects",
+            "Random management",
+            "No management",
+            "Deleted projects"
+        ]
+    },
+    {
+        "q": "The _____ delivers quality improvements.",
+        "type": "fill_blank",
+        "answers": [
+            "project management"
+        ],
+        "other_options": [
+            "random management",
+            "deleted management",
+            "hidden management"
+        ]
+    },
+    {
+        "q": "Projects have defined scope and timelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this project status?",
+        "type": "mcq",
+        "c": "project = {'name': 'Quality Improvement', 'phase': 'execution', 'progress': 75}\nprint(f'{project[\"progress\"]}% complete')",
+        "o": [
+            "75% complete",
+            "0% complete",
+            "100% complete",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the project phase with its activity:",
+        "type": "match",
+        "left": [
+            "Initiation",
+            "Planning",
+            "Execution",
+            "Closure"
+        ],
+        "right": [
+            "Charter",
+            "Schedule",
+            "Delivery",
+            "Review"
+        ]
+    },
+    {
+        "q": "Rearrange the project lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Initiate",
+            "Plan",
+            "Execute",
+            "Monitor",
+            "Close"
+        ]
+    },
+    {
+        "q": "What is data quality stakeholder management?",
+        "type": "mcq",
+        "o": [
+            "Engaging people in quality efforts",
+            "Ignoring stakeholders",
+            "Random engagement",
+            "Deleted contacts"
+        ]
+    },
+    {
+        "q": "The _____ gains support for quality initiatives.",
+        "type": "fill_blank",
+        "answers": [
+            "stakeholder engagement"
+        ],
+        "other_options": [
+            "random engagement",
+            "deleted engagement",
+            "hidden engagement"
+        ]
+    },
+    {
+        "q": "Stakeholder buy-in enables success.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this stakeholder map?",
+        "type": "mcq",
+        "c": "stakeholders = {'sponsor': 'high', 'data team': 'high', 'users': 'medium'}\nhigh_priority = len([v for v in stakeholders.values() if v == 'high'])\nprint(high_priority)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the stakeholder with their interest:",
+        "type": "match",
+        "left": [
+            "Executive",
+            "Data team",
+            "Business user",
+            "IT"
+        ],
+        "right": [
+            "ROI",
+            "Standards",
+            "Usability",
+            "Systems"
+        ]
+    },
+    {
+        "q": "Rearrange the stakeholder management:",
+        "type": "rearrange",
+        "words": [
+            "Identify stakeholders",
+            "Assess needs",
+            "Plan engagement",
+            "Communicate",
+            "Manage expectations"
+        ]
+    },
+    {
+        "q": "What is data quality change management?",
+        "type": "mcq",
+        "o": [
+            "Managing quality process changes",
+            "Ignoring changes",
+            "Random changes",
+            "Deleted processes"
+        ]
+    },
+    {
+        "q": "The _____ ensures smooth quality transitions.",
+        "type": "fill_blank",
+        "answers": [
+            "change management"
+        ],
+        "other_options": [
+            "random management",
+            "deleted management",
+            "hidden management"
+        ]
+    },
+    {
+        "q": "Change management reduces resistance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this change status?",
+        "type": "mcq",
+        "c": "change = {'status': 'approved', 'impact': 'medium', 'risk': 'low'}\nprint(change['status'])",
+        "o": [
+            "approved",
+            "pending",
+            "rejected",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the change phase with its focus:",
+        "type": "match",
+        "left": [
+            "Prepare",
+            "Manage",
+            "Reinforce",
+            "Sustain"
+        ],
+        "right": [
+            "Readiness",
+            "Implementation",
+            "Adoption",
+            "Maintenance"
+        ]
+    },
+    {
+        "q": "Rearrange the change process:",
+        "type": "rearrange",
+        "words": [
+            "Plan change",
+            "Communicate",
+            "Train users",
+            "Implement",
+            "Reinforce"
+        ]
+    },
+    {
+        "q": "What is duplicate detection?",
+        "type": "mcq",
+        "o": [
+            "Finding duplicate records",
+            "Creating duplicates",
+            "Ignoring duplicates",
+            "Deleting all data"
+        ]
+    },
+    {
+        "q": "The _____ identifies potential duplicates.",
+        "type": "fill_blank",
+        "answers": [
+            "duplicate detection"
+        ],
+        "other_options": [
+            "random detection",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Duplicates waste storage and cause confusion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this duplicate check?",
+        "type": "mcq",
+        "c": "records = ['john@test.com', 'jane@test.com', 'john@test.com']\nduplicates = len(records) - len(set(records))\nprint(f'{duplicates} duplicates')",
+        "o": [
+            "1 duplicates",
+            "0 duplicates",
+            "3 duplicates",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the duplicate type with its cause:",
+        "type": "match",
+        "left": [
+            "Exact",
+            "Fuzzy",
+            "Cross-system",
+            "Temporal"
+        ],
+        "right": [
+            "Identical entry",
+            "Similar values",
+            "Multiple sources",
+            "Over time"
+        ]
+    },
+    {
+        "q": "Rearrange the duplicate handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect duplicates",
+            "Review matches",
+            "Decide action",
+            "Merge or delete",
+            "Verify results"
+        ]
+    },
+    {
+        "q": "What is data survivorship?",
+        "type": "mcq",
+        "o": [
+            "Selecting best values when merging",
+            "Random selection",
+            "Ignoring conflicts",
+            "Deleting all"
+        ]
+    },
+    {
+        "q": "The _____ rules determine winning values.",
+        "type": "fill_blank",
+        "answers": [
+            "survivorship"
+        ],
+        "other_options": [
+            "random",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Survivorship creates golden records.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this survivorship?",
+        "type": "mcq",
+        "c": "records = [{'source': 'crm', 'email': 'john@test.com'}, {'source': 'erp', 'email': None}]\npriority = ['crm', 'erp']\nwinner = next((r['email'] for r in records if r['source'] == priority[0] and r['email']), None)\nprint(winner)",
+        "o": [
+            "john@test.com",
+            "None",
+            "crm",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the survivorship rule with its approach:",
+        "type": "match",
+        "left": [
+            "Source priority",
+            "Most recent",
+            "Most complete",
+            "Aggregation"
+        ],
+        "right": [
+            "Trusted source",
+            "Latest update",
+            "Fewest nulls",
+            "Combine values"
+        ]
+    },
+    {
+        "q": "Rearrange the survivorship process:",
+        "type": "rearrange",
+        "words": [
+            "Identify candidates",
+            "Apply rules",
+            "Select winners",
+            "Create merged",
+            "Link sources"
+        ]
+    },
+    {
+        "q": "What is data hierarchy management?",
+        "type": "mcq",
+        "o": [
+            "Managing parent-child relationships",
+            "Random structures",
+            "Ignoring hierarchies",
+            "Deleting levels"
+        ]
+    },
+    {
+        "q": "The _____ maintains organizational structures.",
+        "type": "fill_blank",
+        "answers": [
+            "hierarchy management"
+        ],
+        "other_options": [
+            "random management",
+            "deleted management",
+            "hidden management"
+        ]
+    },
+    {
+        "q": "Hierarchies enable roll-up reporting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hierarchy?",
+        "type": "mcq",
+        "c": "org = {'CEO': {'CTO': ['Dev', 'QA'], 'CFO': ['Finance', 'Accounting']}}\nlevels = 3\nprint(f'{levels} levels')",
+        "o": [
+            "3 levels",
+            "1 levels",
+            "0 levels",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the hierarchy type with its example:",
+        "type": "match",
+        "left": [
+            "Geographic",
+            "Organizational",
+            "Product",
+            "Time"
+        ],
+        "right": [
+            "Region/Country/City",
+            "Company/Dept/Team",
+            "Category/SubCat/Item",
+            "Year/Quarter/Month"
+        ]
+    },
+    {
+        "q": "Rearrange the hierarchy building:",
+        "type": "rearrange",
+        "words": [
+            "Define levels",
+            "Map relationships",
+            "Validate structure",
+            "Load data",
+            "Maintain updates"
+        ]
+    },
+    {
+        "q": "What is data relationship validation?",
+        "type": "mcq",
+        "o": [
+            "Checking links between data entities",
+            "Ignoring relationships",
+            "Random links",
+            "Deleting connections"
+        ]
+    },
+    {
+        "q": "The _____ ensures valid entity connections.",
+        "type": "fill_blank",
+        "answers": [
+            "relationship validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deleted validation",
+            "hidden validation"
+        ]
+    },
+    {
+        "q": "Invalid relationships cause data integrity issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this relationship check?",
+        "type": "mcq",
+        "c": "orders = [{'customer_id': 1}, {'customer_id': 2}]\ncustomers = [{'id': 1}, {'id': 2}, {'id': 3}]\norphans = [o for o in orders if o['customer_id'] not in [c['id'] for c in customers]]\nprint(len(orphans))",
+        "o": [
+            "0",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the relationship type with its constraint:",
+        "type": "match",
+        "left": [
+            "One-to-one",
+            "One-to-many",
+            "Many-to-many",
+            "Self-referential"
+        ],
+        "right": [
+            "Unique FK",
+            "Multiple children",
+            "Junction table",
+            "Same table"
+        ]
+    },
+    {
+        "q": "Rearrange the relationship validation:",
+        "type": "rearrange",
+        "words": [
+            "Define relationships",
+            "Check references",
+            "Identify orphans",
+            "Report issues",
+            "Fix violations"
+        ]
+    },
+    {
+        "q": "What is data type validation?",
+        "type": "mcq",
+        "o": [
+            "Checking values match expected types",
+            "Ignoring types",
+            "Random types",
+            "Deleted types"
+        ]
+    },
+    {
+        "q": "The _____ ensures correct data formats.",
+        "type": "fill_blank",
+        "answers": [
+            "type validation"
+        ],
+        "other_options": [
+            "random validation",
+            "deleted validation",
+            "hidden validation"
+        ]
+    },
+    {
+        "q": "Type mismatches cause processing errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this type check?",
+        "type": "mcq",
+        "c": "value = '123'\nexpected_type = int\ntry:\n    result = expected_type(value)\n    is_valid = True\nexcept:\n    is_valid = False\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "123",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the data type with its example:",
+        "type": "match",
+        "left": [
+            "String",
+            "Integer",
+            "Float",
+            "Boolean"
+        ],
+        "right": [
+            "'hello'",
+            "42",
+            "3.14",
+            "True"
+        ]
+    },
+    {
+        "q": "Rearrange the type validation:",
+        "type": "rearrange",
+        "words": [
+            "Get value",
+            "Check type",
+            "Attempt conversion",
+            "Handle errors",
+            "Return result"
+        ]
+    },
+    {
+        "q": "What is pattern matching validation?",
+        "type": "mcq",
+        "o": [
+            "Validating against regex patterns",
+            "Random matching",
+            "Ignoring patterns",
+            "Deleting patterns"
+        ]
+    },
+    {
+        "q": "The _____ validates format patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "regex"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Patterns enforce consistent formats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this pattern check?",
+        "type": "mcq",
+        "c": "import re\nssn = '123-45-6789'\npattern = r'^\\d{3}-\\d{2}-\\d{4}$'\nis_valid = bool(re.match(pattern, ssn))\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "123-45-6789",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pattern with its format:",
+        "type": "match",
+        "left": [
+            "Date",
+            "Email",
+            "Phone",
+            "Zip"
+        ],
+        "right": [
+            "YYYY-MM-DD",
+            "user@domain",
+            "XXX-XXX-XXXX",
+            "XXXXX"
+        ]
+    },
+    {
+        "q": "Rearrange the pattern validation:",
+        "type": "rearrange",
+        "words": [
+            "Define pattern",
+            "Compile regex",
+            "Match value",
+            "Return result",
+            "Handle failure"
+        ]
+    },
+    {
+        "q": "What is data profiling automation?",
+        "type": "mcq",
+        "o": [
+            "Automated data analysis",
+            "Manual profiling",
+            "Ignoring profiles",
+            "Deleting analysis"
+        ]
+    },
+    {
+        "q": "The _____ runs profiling automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "automation"
+        ],
+        "other_options": [
+            "manual",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Automated profiling scales data discovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this profile schedule?",
+        "type": "mcq",
+        "c": "schedule = {'frequency': 'daily', 'tables': 50, 'last_run': '2024-01-15'}\nprint(f'{schedule[\"tables\"]} tables profiled')",
+        "o": [
+            "50 tables profiled",
+            "0 tables profiled",
+            "1 tables profiled",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the automation feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Scheduling",
+            "Alerts",
+            "Reports",
+            "Integration"
+        ],
+        "right": [
+            "Consistency",
+            "Issues",
+            "Insights",
+            "Pipelines"
+        ]
+    },
+    {
+        "q": "Rearrange the automation setup:",
+        "type": "rearrange",
+        "words": [
+            "Configure sources",
+            "Define schedule",
+            "Set thresholds",
+            "Enable alerts",
+            "Monitor runs"
+        ]
+    },
+    {
+        "q": "What is data observability?",
+        "type": "mcq",
+        "o": [
+            "Monitoring data health across pipeline",
+            "Ignoring data state",
+            "Random monitoring",
+            "Deleting observations"
+        ]
+    },
+    {
+        "q": "The _____ provides visibility into data health.",
+        "type": "fill_blank",
+        "answers": [
+            "observability"
+        ],
+        "other_options": [
+            "hiding",
+            "deletion",
+            "random"
+        ]
+    },
+    {
+        "q": "Observability detects data issues proactively.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this observability check?",
+        "type": "mcq",
+        "c": "metrics = {'freshness': 'OK', 'volume': 'OK', 'schema': 'ALERT'}\nalerts = [k for k, v in metrics.items() if v == 'ALERT']\nprint(len(alerts))",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the observability pillar with its focus:",
+        "type": "match",
+        "left": [
+            "Freshness",
+            "Volume",
+            "Schema",
+            "Distribution"
+        ],
+        "right": [
+            "Timeliness",
+            "Row count",
+            "Structure",
+            "Value patterns"
+        ]
+    },
+    {
+        "q": "Rearrange the observability setup:",
+        "type": "rearrange",
+        "words": [
+            "Connect sources",
+            "Define monitors",
+            "Set thresholds",
+            "Enable alerts",
+            "Build dashboards"
+        ]
+    },
+    {
+        "q": "What is Monte Carlo observability?",
+        "type": "mcq",
+        "o": [
+            "Data observability platform",
+            "Random sampling",
+            "Database engine",
+            "Storage system"
+        ]
+    },
+    {
+        "q": "The _____ provides automated data quality alerts.",
+        "type": "fill_blank",
+        "answers": [
+            "Monte Carlo"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Monte Carlo uses ML for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this incident count?",
+        "type": "mcq",
+        "c": "incidents = [{'severity': 'high'}, {'severity': 'low'}, {'severity': 'high'}]\nhigh = len([i for i in incidents if i['severity'] == 'high'])\nprint(high)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the MC feature with its function:",
+        "type": "match",
+        "left": [
+            "Monitors",
+            "Lineage",
+            "Incidents",
+            "Catalog"
+        ],
+        "right": [
+            "Track health",
+            "Data flow",
+            "Alert issues",
+            "Discover data"
+        ]
+    },
+    {
+        "q": "Rearrange the incident response:",
+        "type": "rearrange",
+        "words": [
+            "Detect incident",
+            "Assess impact",
+            "Identify root cause",
+            "Resolve issue",
+            "Document findings"
+        ]
+    },
+    {
+        "q": "What is Bigeye observability?",
+        "type": "mcq",
+        "o": [
+            "Data quality monitoring platform",
+            "Random tool",
+            "Database engine",
+            "Storage system"
+        ]
+    },
+    {
+        "q": "The _____ provides autothreshold detection.",
+        "type": "fill_blank",
+        "answers": [
+            "Bigeye"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Bigeye monitors data freshness automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this metric check?",
+        "type": "mcq",
+        "c": "thresholds = {'min': 100, 'max': 1000}\nactual = 500\nin_range = thresholds['min'] <= actual <= thresholds['max']\nprint(in_range)",
+        "o": [
+            "True",
+            "False",
+            "500",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Bigeye feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Metrics",
+            "Autothresholds",
+            "Alerting",
+            "Virtual tables"
+        ],
+        "right": [
+            "Measurements",
+            "Dynamic bounds",
+            "Notifications",
+            "Query results"
+        ]
+    },
+    {
+        "q": "Rearrange the Bigeye deployment:",
+        "type": "rearrange",
+        "words": [
+            "Connect warehouse",
+            "Discover tables",
+            "Create metrics",
+            "Set alerts",
+            "Monitor health"
+        ]
+    },
+    {
+        "q": "What is Ataccama ONE?",
+        "type": "mcq",
+        "o": [
+            "Enterprise data quality platform",
+            "Random tool",
+            "Database engine",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "The _____ provides unified data management.",
+        "type": "fill_blank",
+        "answers": [
+            "Ataccama"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Ataccama supports master data management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this rule execution?",
+        "type": "mcq",
+        "c": "rules = [{'name': 'null_check', 'status': 'pass'}, {'name': 'range', 'status': 'pass'}]\npassed = all(r['status'] == 'pass' for r in rules)\nprint(passed)",
+        "o": [
+            "True",
+            "False",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Ataccama component with its role:",
+        "type": "match",
+        "left": [
+            "DQ engine",
+            "MDM",
+            "Catalog",
+            "Governance"
+        ],
+        "right": [
+            "Quality rules",
+            "Master data",
+            "Discovery",
+            "Policies"
+        ]
+    },
+    {
+        "q": "Rearrange the Ataccama workflow:",
+        "type": "rearrange",
+        "words": [
+            "Connect sources",
+            "Profile data",
+            "Create rules",
+            "Execute checks",
+            "Monitor quality"
+        ]
+    },
+    {
+        "q": "What is Informatica Data Quality?",
+        "type": "mcq",
+        "o": [
+            "Enterprise data quality tool",
+            "Random software",
+            "Database engine",
+            "Storage platform"
+        ]
+    },
+    {
+        "q": "The _____ provides comprehensive DQ capabilities.",
+        "type": "fill_blank",
+        "answers": [
+            "Informatica"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Informatica integrates with cloud platforms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this mapping run?",
+        "type": "mcq",
+        "c": "mapping = {'input_rows': 1000, 'output_rows': 995, 'errors': 5}\nsuccess_rate = mapping['output_rows'] / mapping['input_rows'] * 100\nprint(f'{success_rate}%')",
+        "o": [
+            "99.5%",
+            "100%",
+            "5%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Informatica component with its function:",
+        "type": "match",
+        "left": [
+            "PowerCenter",
+            "IDQ",
+            "Axon",
+            "EDC"
+        ],
+        "right": [
+            "ETL",
+            "Quality",
+            "Governance",
+            "Catalog"
+        ]
+    },
+    {
+        "q": "Rearrange the Informatica deployment:",
+        "type": "rearrange",
+        "words": [
+            "Install platform",
+            "Configure domains",
+            "Create mappings",
+            "Deploy workflows",
+            "Monitor execution"
+        ]
+    },
+    {
+        "q": "What is Talend Data Quality?",
+        "type": "mcq",
+        "o": [
+            "Open source data quality tool",
+            "Random software",
+            "Database engine",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "The _____ provides visual data quality design.",
+        "type": "fill_blank",
+        "answers": [
+            "Talend"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Talend offers both open source and enterprise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this job metrics?",
+        "type": "mcq",
+        "c": "job = {'name': 'DQ_Check', 'duration': 120, 'status': 'success'}\nprint(job['status'])",
+        "o": [
+            "success",
+            "failed",
+            "120",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Talend component with its role:",
+        "type": "match",
+        "left": [
+            "Studio",
+            "Server",
+            "Cloud",
+            "Stitch"
+        ],
+        "right": [
+            "Design",
+            "Execute",
+            "SaaS",
+            "ELT"
+        ]
+    },
+    {
+        "q": "Rearrange the Talend workflow:",
+        "type": "rearrange",
+        "words": [
+            "Design job",
+            "Configure components",
+            "Test locally",
+            "Deploy to server",
+            "Schedule execution"
+        ]
+    },
+    {
+        "q": "What is data quality contract?",
+        "type": "mcq",
+        "o": [
+            "Agreement on data expectations",
+            "Random agreement",
+            "Ignoring requirements",
+            "Deleted contract"
+        ]
+    },
+    {
+        "q": "The _____ defines producer-consumer expectations.",
+        "type": "fill_blank",
+        "answers": [
+            "contract"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Contracts ensure shared data understanding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this contract check?",
+        "type": "mcq",
+        "c": "contract = {'schema': {'columns': 5}, 'sla': {'freshness': '1h'}}\ncompliant = 'schema' in contract and 'sla' in contract\nprint(compliant)",
+        "o": [
+            "True",
+            "False",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the contract element with its content:",
+        "type": "match",
+        "left": [
+            "Schema",
+            "SLA",
+            "Ownership",
+            "Quality"
+        ],
+        "right": [
+            "Structure",
+            "Targets",
+            "Responsibility",
+            "Rules"
+        ]
+    },
+    {
+        "q": "Rearrange the contract creation:",
+        "type": "rearrange",
+        "words": [
+            "Define expectations",
+            "Document requirements",
+            "Get agreement",
+            "Implement checks",
+            "Monitor compliance"
+        ]
+    },
+    {
+        "q": "What is data contract testing?",
+        "type": "mcq",
+        "o": [
+            "Validating data against contracts",
+            "Ignoring contracts",
+            "Random testing",
+            "Deleting tests"
+        ]
+    },
+    {
+        "q": "The _____ verifies contract compliance.",
+        "type": "fill_blank",
+        "answers": [
+            "contract test"
+        ],
+        "other_options": [
+            "random test",
+            "deleted test",
+            "hidden test"
+        ]
+    },
+    {
+        "q": "Contract testing prevents breaking changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this contract test?",
+        "type": "mcq",
+        "c": "expected_columns = ['id', 'name', 'email']\nactual_columns = ['id', 'name', 'email']\nis_valid = set(expected_columns) == set(actual_columns)\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the test type with its check:",
+        "type": "match",
+        "left": [
+            "Schema",
+            "Freshness",
+            "Volume",
+            "Quality"
+        ],
+        "right": [
+            "Column match",
+            "Update time",
+            "Row count",
+            "Rule pass"
+        ]
+    },
+    {
+        "q": "Rearrange the contract testing:",
+        "type": "rearrange",
+        "words": [
+            "Load contract",
+            "Get actual data",
+            "Compare expectations",
+            "Report violations",
+            "Block on failure"
+        ]
+    },
+    {
+        "q": "What is semantic validation?",
+        "type": "mcq",
+        "o": [
+            "Validating data meaning and context",
+            "Syntax validation only",
+            "Random validation",
+            "Deleted checks"
+        ]
+    },
+    {
+        "q": "The _____ checks data makes business sense.",
+        "type": "fill_blank",
+        "answers": [
+            "semantic validation"
+        ],
+        "other_options": [
+            "syntax validation",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Semantic validation catches logical errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this semantic check?",
+        "type": "mcq",
+        "c": "order = {'date': '2024-01-15', 'delivery_date': '2024-01-10'}\nvalid = order['delivery_date'] >= order['date']\nprint(f'Logical: {valid}')",
+        "o": [
+            "Logical: False",
+            "Logical: True",
+            "2024-01-15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the semantic rule with its example:",
+        "type": "match",
+        "left": [
+            "Date logic",
+            "Price logic",
+            "Age logic",
+            "Status logic"
+        ],
+        "right": [
+            "End > Start",
+            "Total > 0",
+            "0-120",
+            "Valid transition"
+        ]
+    },
+    {
+        "q": "Rearrange the semantic validation:",
+        "type": "rearrange",
+        "words": [
+            "Define business rules",
+            "Implement checks",
+            "Validate data",
+            "Flag violations",
+            "Report issues"
+        ]
+    },
+    {
+        "q": "What is data drift detection?",
+        "type": "mcq",
+        "o": [
+            "Detecting changes in data patterns",
+            "Ignoring changes",
+            "Random detection",
+            "Deleted monitoring"
+        ]
+    },
+    {
+        "q": "The _____ identifies distribution changes.",
+        "type": "fill_blank",
+        "answers": [
+            "drift detection"
+        ],
+        "other_options": [
+            "random detection",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Drift can indicate data quality issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this drift check?",
+        "type": "mcq",
+        "c": "baseline_mean = 100\ncurrent_mean = 150\ndrift = abs(current_mean - baseline_mean) / baseline_mean * 100\nprint(f'{drift}% drift')",
+        "o": [
+            "50.0% drift",
+            "0% drift",
+            "100% drift",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the drift type with its measurement:",
+        "type": "match",
+        "left": [
+            "Mean drift",
+            "Distribution",
+            "Schema",
+            "Volume"
+        ],
+        "right": [
+            "Average change",
+            "Shape change",
+            "Column change",
+            "Count change"
+        ]
+    },
+    {
+        "q": "Rearrange the drift monitoring:",
+        "type": "rearrange",
+        "words": [
+            "Establish baseline",
+            "Collect metrics",
+            "Compare to baseline",
+            "Calculate drift",
+            "Alert on threshold"
+        ]
+    },
+    {
+        "q": "What is schema drift detection?",
+        "type": "mcq",
+        "o": [
+            "Detecting schema changes over time",
+            "Ignoring schema changes",
+            "Random schema",
+            "Deleted schema"
+        ]
+    },
+    {
+        "q": "The _____ identifies column changes.",
+        "type": "fill_blank",
+        "answers": [
+            "schema drift"
+        ],
+        "other_options": [
+            "random drift",
+            "deleted drift",
+            "hidden drift"
+        ]
+    },
+    {
+        "q": "Schema drift can break downstream systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this schema comparison?",
+        "type": "mcq",
+        "c": "old_schema = {'id', 'name', 'email'}\nnew_schema = {'id', 'name', 'email', 'phone'}\nadded = new_schema - old_schema\nprint(f'{len(added)} columns added')",
+        "o": [
+            "1 columns added",
+            "0 columns added",
+            "4 columns added",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the schema change with its impact:",
+        "type": "match",
+        "left": [
+            "Add column",
+            "Remove column",
+            "Rename",
+            "Type change"
+        ],
+        "right": [
+            "Backward compatible",
+            "Breaking",
+            "Breaking",
+            "Potentially breaking"
+        ]
+    },
+    {
+        "q": "Rearrange the schema evolution:",
+        "type": "rearrange",
+        "words": [
+            "Detect change",
+            "Assess impact",
+            "Notify consumers",
+            "Update contracts",
+            "Apply migration"
+        ]
+    },
+    {
+        "q": "What is data freshness monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking data currency and updates",
+            "Ignoring freshness",
+            "Random monitoring",
+            "Deleted tracking"
+        ]
+    },
+    {
+        "q": "The _____ tracks last update time.",
+        "type": "fill_blank",
+        "answers": [
+            "freshness monitor"
+        ],
+        "other_options": [
+            "random monitor",
+            "deleted monitor",
+            "hidden monitor"
+        ]
+    },
+    {
+        "q": "Stale data indicates pipeline issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this freshness check?",
+        "type": "mcq",
+        "c": "from datetime import datetime, timedelta\nlast_update = datetime.now() - timedelta(hours=3)\nmax_age = timedelta(hours=2)\nis_fresh = (datetime.now() - last_update) <= max_age\nprint(is_fresh)",
+        "o": [
+            "False",
+            "True",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the freshness metric with its measure:",
+        "type": "match",
+        "left": [
+            "Age",
+            "Update frequency",
+            "Latency",
+            "SLA"
+        ],
+        "right": [
+            "Time since update",
+            "Updates per period",
+            "Processing delay",
+            "Target freshness"
+        ]
+    },
+    {
+        "q": "Rearrange the freshness monitoring:",
+        "type": "rearrange",
+        "words": [
+            "Track last update",
+            "Calculate age",
+            "Compare to SLA",
+            "Alert on breach",
+            "Investigate cause"
+        ]
+    },
+    {
+        "q": "What is data volume monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking data size and row counts",
+            "Ignoring volume",
+            "Random counting",
+            "Deleted tracking"
+        ]
+    },
+    {
+        "q": "The _____ detects unexpected volume changes.",
+        "type": "fill_blank",
+        "answers": [
+            "volume monitor"
+        ],
+        "other_options": [
+            "random monitor",
+            "deleted monitor",
+            "hidden monitor"
+        ]
+    },
+    {
+        "q": "Volume anomalies indicate data issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this volume check?",
+        "type": "mcq",
+        "c": "expected_range = (900, 1100)\nactual = 500\nis_normal = expected_range[0] <= actual <= expected_range[1]\nprint(is_normal)",
+        "o": [
+            "False",
+            "True",
+            "500",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the volume metric with its focus:",
+        "type": "match",
+        "left": [
+            "Row count",
+            "Byte size",
+            "Growth rate",
+            "Baseline"
+        ],
+        "right": [
+            "Records",
+            "Storage",
+            "Change rate",
+            "Expected"
+        ]
+    },
+    {
+        "q": "Rearrange the volume monitoring:",
+        "type": "rearrange",
+        "words": [
+            "Establish baseline",
+            "Track daily volume",
+            "Calculate variance",
+            "Detect anomalies",
+            "Alert on deviation"
+        ]
+    },
+    {
+        "q": "What is distribution monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking value distribution patterns",
+            "Ignoring patterns",
+            "Random distribution",
+            "Deleted tracking"
+        ]
+    },
+    {
+        "q": "The _____ detects distribution shifts.",
+        "type": "fill_blank",
+        "answers": [
+            "distribution monitor"
+        ],
+        "other_options": [
+            "random monitor",
+            "deleted monitor",
+            "hidden monitor"
+        ]
+    },
+    {
+        "q": "Distribution changes may indicate quality issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this distribution check?",
+        "type": "mcq",
+        "c": "baseline_nulls = 0.02\ncurrent_nulls = 0.15\ndrift = abs(current_nulls - baseline_nulls)\nprint(f'{drift:.0%} increase')",
+        "o": [
+            "13% increase",
+            "0% increase",
+            "15% increase",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the distribution metric with its measure:",
+        "type": "match",
+        "left": [
+            "Null rate",
+            "Cardinality",
+            "Skewness",
+            "Percentiles"
+        ],
+        "right": [
+            "Missing values",
+            "Distinct count",
+            "Asymmetry",
+            "Value ranges"
+        ]
+    },
+    {
+        "q": "Rearrange the distribution analysis:",
+        "type": "rearrange",
+        "words": [
+            "Calculate baseline",
+            "Collect current stats",
+            "Compare distributions",
+            "Measure divergence",
+            "Alert on drift"
+        ]
+    },
+    {
+        "q": "What is data lineage tracking?",
+        "type": "mcq",
+        "o": [
+            "Tracking data origin and transformations",
+            "Ignoring history",
+            "Random tracking",
+            "Deleted history"
+        ]
+    },
+    {
+        "q": "The _____ shows data flow through systems.",
+        "type": "fill_blank",
+        "answers": [
+            "lineage"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Lineage helps impact analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lineage query?",
+        "type": "mcq",
+        "c": "lineage = {'source': 'raw_orders', 'transforms': ['clean', 'aggregate'], 'target': 'daily_sales'}\nprint(len(lineage['transforms']))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the lineage type with its scope:",
+        "type": "match",
+        "left": [
+            "Column",
+            "Table",
+            "Pipeline",
+            "Cross-system"
+        ],
+        "right": [
+            "Field flow",
+            "Dataset flow",
+            "Job flow",
+            "Platform flow"
+        ]
+    },
+    {
+        "q": "Rearrange the lineage tracking:",
+        "type": "rearrange",
+        "words": [
+            "Capture metadata",
+            "Map transformations",
+            "Build graph",
+            "Query lineage",
+            "Analyze impact"
+        ]
+    },
+    {
+        "q": "What is impact analysis?",
+        "type": "mcq",
+        "o": [
+            "Understanding downstream effects of changes",
+            "Ignoring effects",
+            "Random analysis",
+            "Deleted analysis"
+        ]
+    },
+    {
+        "q": "The _____ identifies affected systems.",
+        "type": "fill_blank",
+        "answers": [
+            "impact analysis"
+        ],
+        "other_options": [
+            "random analysis",
+            "deleted analysis",
+            "hidden analysis"
+        ]
+    },
+    {
+        "q": "Impact analysis prevents unexpected breaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this impact query?",
+        "type": "mcq",
+        "c": "dependents = ['report_a', 'report_b', 'dashboard', 'ml_model']\nprint(f'{len(dependents)} downstream consumers')",
+        "o": [
+            "4 downstream consumers",
+            "1 downstream consumers",
+            "0 downstream consumers",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the impact scope with its analysis:",
+        "type": "match",
+        "left": [
+            "Schema change",
+            "Data delay",
+            "Quality issue",
+            "Pipeline failure"
+        ],
+        "right": [
+            "Column dependents",
+            "Freshness SLAs",
+            "Affected reports",
+            "Downstream jobs"
+        ]
+    },
+    {
+        "q": "Rearrange the impact assessment:",
+        "type": "rearrange",
+        "words": [
+            "Identify change",
+            "Query lineage",
+            "List dependents",
+            "Assess impact",
+            "Notify stakeholders"
+        ]
+    },
+    {
+        "q": "What is data catalog quality?",
+        "type": "mcq",
+        "o": [
+            "Quality of catalog metadata",
+            "Ignoring catalog",
+            "Random metadata",
+            "Deleted catalog"
+        ]
+    },
+    {
+        "q": "The _____ ensures accurate data discovery.",
+        "type": "fill_blank",
+        "answers": [
+            "catalog quality"
+        ],
+        "other_options": [
+            "random quality",
+            "deleted quality",
+            "hidden quality"
+        ]
+    },
+    {
+        "q": "Poor catalog quality hinders data discovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this catalog completeness?",
+        "type": "mcq",
+        "c": "tables = 100\ndocumented = 85\ncompleteness = documented / tables * 100\nprint(f'{completeness}% documented')",
+        "o": [
+            "85.0% documented",
+            "100% documented",
+            "0% documented",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the catalog attribute with its content:",
+        "type": "match",
+        "left": [
+            "Description",
+            "Owner",
+            "Tags",
+            "Lineage"
+        ],
+        "right": [
+            "What it contains",
+            "Who maintains",
+            "Classification",
+            "Data flow"
+        ]
+    },
+    {
+        "q": "Rearrange the catalog enrichment:",
+        "type": "rearrange",
+        "words": [
+            "Crawl sources",
+            "Extract metadata",
+            "Add descriptions",
+            "Assign owners",
+            "Tag assets"
+        ]
+    },
+    {
+        "q": "What is data classification?",
+        "type": "mcq",
+        "o": [
+            "Categorizing data by sensitivity",
+            "Ignoring classification",
+            "Random categorization",
+            "Deleted labels"
+        ]
+    },
+    {
+        "q": "The _____ labels data for governance.",
+        "type": "fill_blank",
+        "answers": [
+            "classification"
+        ],
+        "other_options": [
+            "random",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Classification enables security controls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this classification?",
+        "type": "mcq",
+        "c": "columns = {'ssn': 'PII', 'name': 'PII', 'product': 'Business'}\npii_count = len([v for v in columns.values() if v == 'PII'])\nprint(pii_count)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the classification level with its example:",
+        "type": "match",
+        "left": [
+            "Public",
+            "Internal",
+            "Confidential",
+            "Restricted"
+        ],
+        "right": [
+            "Website content",
+            "Employee data",
+            "Financials",
+            "SSN, medical"
+        ]
+    },
+    {
+        "q": "Rearrange the classification process:",
+        "type": "rearrange",
+        "words": [
+            "Define levels",
+            "Scan data",
+            "Identify patterns",
+            "Apply labels",
+            "Enforce policies"
+        ]
+    },
+    {
+        "q": "What is PII detection?",
+        "type": "mcq",
+        "o": [
+            "Finding personally identifiable information",
+            "Ignoring PII",
+            "Random detection",
+            "Deleting PII"
+        ]
+    },
+    {
+        "q": "The _____ identifies sensitive personal data.",
+        "type": "fill_blank",
+        "answers": [
+            "PII detection"
+        ],
+        "other_options": [
+            "random detection",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "PII detection enables privacy compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this PII scan?",
+        "type": "mcq",
+        "c": "columns = ['id', 'name', 'email', 'ssn', 'address']\npii_patterns = ['email', 'ssn', 'address']\nfound = [c for c in columns if c in pii_patterns]\nprint(len(found))",
+        "o": [
+            "3",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the PII type with its example:",
+        "type": "match",
+        "left": [
+            "Direct",
+            "Quasi",
+            "Sensitive",
+            "Derived"
+        ],
+        "right": [
+            "SSN",
+            "ZIP + DOB",
+            "Medical",
+            "Predictions"
+        ]
+    },
+    {
+        "q": "Rearrange the PII handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect PII",
+            "Classify sensitivity",
+            "Apply protection",
+            "Monitor access",
+            "Audit usage"
+        ]
+    },
+    {
+        "q": "What is data masking?",
+        "type": "mcq",
+        "o": [
+            "Hiding sensitive data values",
+            "Showing all data",
+            "Random values",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "The _____ protects data while preserving format.",
+        "type": "fill_blank",
+        "answers": [
+            "masking"
+        ],
+        "other_options": [
+            "showing",
+            "deletion",
+            "random"
+        ]
+    },
+    {
+        "q": "Masking enables safe data sharing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this masking?",
+        "type": "mcq",
+        "c": "ssn = '123-45-6789'\nmasked = 'XXX-XX-' + ssn[-4:]\nprint(masked)",
+        "o": [
+            "XXX-XX-6789",
+            "123-45-6789",
+            "XXXXXXXXX",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the masking technique with its approach:",
+        "type": "match",
+        "left": [
+            "Substitution",
+            "Shuffling",
+            "Nulling",
+            "Encryption"
+        ],
+        "right": [
+            "Replace values",
+            "Rearrange values",
+            "Remove values",
+            "Encode values"
+        ]
+    },
+    {
+        "q": "Rearrange the masking implementation:",
+        "type": "rearrange",
+        "words": [
+            "Identify sensitive",
+            "Choose technique",
+            "Apply masking",
+            "Validate format",
+            "Deploy to environments"
+        ]
+    },
+    {
+        "q": "What is data tokenization?",
+        "type": "mcq",
+        "o": [
+            "Replacing sensitive data with tokens",
+            "Showing original data",
+            "Random replacement",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "The _____ enables reversible data protection.",
+        "type": "fill_blank",
+        "answers": [
+            "tokenization"
+        ],
+        "other_options": [
+            "showing",
+            "deletion",
+            "random"
+        ]
+    },
+    {
+        "q": "Tokenization maintains referential integrity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this tokenization?",
+        "type": "mcq",
+        "c": "vault = {'tok_123': 'john@test.com'}\ntoken = 'tok_123'\noriginal = vault.get(token)\nprint(original)",
+        "o": [
+            "john@test.com",
+            "tok_123",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the tokenization type with its feature:",
+        "type": "match",
+        "left": [
+            "Format-preserving",
+            "Random",
+            "Deterministic",
+            "Vault-based"
+        ],
+        "right": [
+            "Same format",
+            "Random token",
+            "Same input = same token",
+            "Secure storage"
+        ]
+    },
+    {
+        "q": "Rearrange the tokenization process:",
+        "type": "rearrange",
+        "words": [
+            "Identify data",
+            "Generate tokens",
+            "Store mapping",
+            "Replace values",
+            "Enable detokenization"
+        ]
+    },
+    {
+        "q": "What is data quality firewall?",
+        "type": "mcq",
+        "o": [
+            "Blocking bad data at ingestion",
+            "Allowing all data",
+            "Random filtering",
+            "Deleted filter"
+        ]
+    },
+    {
+        "q": "The _____ prevents bad data from entering.",
+        "type": "fill_blank",
+        "answers": [
+            "firewall"
+        ],
+        "other_options": [
+            "open gate",
+            "deletion",
+            "random"
+        ]
+    },
+    {
+        "q": "Quality firewalls enforce data contracts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this firewall check?",
+        "type": "mcq",
+        "c": "record = {'email': 'invalid', 'age': 150}\nrules = {'email': lambda x: '@' in x, 'age': lambda x: 0 <= x <= 120}\nblocked = not all(rules[k](v) for k, v in record.items())\nprint(f'Blocked: {blocked}')",
+        "o": [
+            "Blocked: True",
+            "Blocked: False",
+            "150",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the firewall action with its handling:",
+        "type": "match",
+        "left": [
+            "Block",
+            "Quarantine",
+            "Fix",
+            "Alert"
+        ],
+        "right": [
+            "Reject record",
+            "Hold for review",
+            "Auto-correct",
+            "Notify team"
+        ]
+    },
+    {
+        "q": "Rearrange the firewall enforcement:",
+        "type": "rearrange",
+        "words": [
+            "Define rules",
+            "Intercept data",
+            "Validate against rules",
+            "Take action",
+            "Log decision"
+        ]
+    },
+    {
+        "q": "What is data quality as code?",
+        "type": "mcq",
+        "o": [
+            "Defining quality rules in code",
+            "Manual quality checks",
+            "Random validation",
+            "Deleted code"
+        ]
+    },
+    {
+        "q": "The _____ enables version-controlled quality rules.",
+        "type": "fill_blank",
+        "answers": [
+            "DQC"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "DQ as code enables CI/CD for quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this DQ test?",
+        "type": "mcq",
+        "c": "def test_no_nulls(df):\n    return df['id'].isnull().sum() == 0\ntest_passed = True  # Simulated\nprint(f'Test: {test_passed}')",
+        "o": [
+            "Test: True",
+            "Test: False",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DQC benefit with its impact:",
+        "type": "match",
+        "left": [
+            "Version control",
+            "Automation",
+            "Reusability",
+            "Testing"
+        ],
+        "right": [
+            "History tracking",
+            "CI/CD integration",
+            "Shared rules",
+            "Quality assurance"
+        ]
+    },
+    {
+        "q": "Rearrange the DQC workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write rules in code",
+            "Commit to repo",
+            "Run in pipeline",
+            "Fail on violations",
+            "Report results"
+        ]
+    },
+    {
+        "q": "What is data quality KPI?",
+        "type": "mcq",
+        "o": [
+            "Key performance indicators for quality",
+            "Random metrics",
+            "Ignored measures",
+            "Deleted scores"
+        ]
+    },
+    {
+        "q": "The _____ measures quality performance.",
+        "type": "fill_blank",
+        "answers": [
+            "KPI"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "KPIs track quality progress over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this KPI calculation?",
+        "type": "mcq",
+        "c": "kpis = {'accuracy': 98, 'completeness': 95, 'timeliness': 99}\navg = sum(kpis.values()) / len(kpis)\nprint(f'{avg:.1f}%')",
+        "o": [
+            "97.3%",
+            "100%",
+            "95%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the KPI with its dimension:",
+        "type": "match",
+        "left": [
+            "Error rate",
+            "Fill rate",
+            "Age",
+            "Match rate"
+        ],
+        "right": [
+            "Accuracy",
+            "Completeness",
+            "Timeliness",
+            "Consistency"
+        ]
+    },
+    {
+        "q": "Rearrange the KPI management:",
+        "type": "rearrange",
+        "words": [
+            "Define KPIs",
+            "Set targets",
+            "Measure actuals",
+            "Track progress",
+            "Report status"
+        ]
+    },
+    {
+        "q": "What is data quality incident management?",
+        "type": "mcq",
+        "o": [
+            "Managing quality-related issues",
+            "Ignoring incidents",
+            "Random management",
+            "Deleted incidents"
+        ]
+    },
+    {
+        "q": "The _____ handles quality failures.",
+        "type": "fill_blank",
+        "answers": [
+            "incident management"
+        ],
+        "other_options": [
+            "random management",
+            "deleted management",
+            "hidden management"
+        ]
+    },
+    {
+        "q": "Quick incident response minimizes impact.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this incident priority?",
+        "type": "mcq",
+        "c": "incident = {'severity': 'high', 'affected_users': 1000, 'priority': 'P1'}\nprint(incident['priority'])",
+        "o": [
+            "P1",
+            "P3",
+            "Low",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the incident phase with its activity:",
+        "type": "match",
+        "left": [
+            "Detection",
+            "Triage",
+            "Resolution",
+            "Postmortem"
+        ],
+        "right": [
+            "Find issue",
+            "Assess impact",
+            "Fix problem",
+            "Learn lessons"
+        ]
+    },
+    {
+        "q": "Rearrange the incident response:",
+        "type": "rearrange",
+        "words": [
+            "Detect incident",
+            "Assess severity",
+            "Assign owner",
+            "Resolve issue",
+            "Document findings"
+        ]
+    },
+    {
+        "q": "What is data quality exception handling?",
+        "type": "mcq",
+        "o": [
+            "Managing data that fails rules",
+            "Ignoring exceptions",
+            "Random handling",
+            "Deleted exceptions"
+        ]
+    },
+    {
+        "q": "The _____ processes rule failures.",
+        "type": "fill_blank",
+        "answers": [
+            "exception handler"
+        ],
+        "other_options": [
+            "random handler",
+            "deleted handler",
+            "hidden handler"
+        ]
+    },
+    {
+        "q": "Exceptions require review before acceptance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this exception count?",
+        "type": "mcq",
+        "c": "records = 1000\nfailed = 25\nexception_rate = failed / records * 100\nprint(f'{exception_rate}%')",
+        "o": [
+            "2.5%",
+            "25%",
+            "0%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the exception action with its handling:",
+        "type": "match",
+        "left": [
+            "Approve",
+            "Reject",
+            "Escalate",
+            "Auto-fix"
+        ],
+        "right": [
+            "Accept with override",
+            "Block entry",
+            "Send to reviewer",
+            "Apply correction"
+        ]
+    },
+    {
+        "q": "Rearrange the exception workflow:",
+        "type": "rearrange",
+        "words": [
+            "Capture failure",
+            "Log exception",
+            "Route for review",
+            "Make decision",
+            "Apply action"
+        ]
+    },
+    {
+        "q": "What is data quality sampling?",
+        "type": "mcq",
+        "o": [
+            "Checking quality on data subset",
+            "Checking all data",
+            "Random selection",
+            "Deleted samples"
+        ]
+    },
+    {
+        "q": "The _____ validates representative subset.",
+        "type": "fill_blank",
+        "answers": [
+            "sampling"
+        ],
+        "other_options": [
+            "full scan",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Sampling reduces validation time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sample size?",
+        "type": "mcq",
+        "c": "population = 100000\nconfidence = 0.95\nsample_size = 384  # Pre-calculated\nprint(f'{sample_size} records')",
+        "o": [
+            "384 records",
+            "100000 records",
+            "0 records",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sampling method with its approach:",
+        "type": "match",
+        "left": [
+            "Random",
+            "Stratified",
+            "Systematic",
+            "Cluster"
+        ],
+        "right": [
+            "Any record",
+            "By segment",
+            "Every Nth",
+            "By group"
+        ]
+    },
+    {
+        "q": "Rearrange the sampling process:",
+        "type": "rearrange",
+        "words": [
+            "Define population",
+            "Calculate sample size",
+            "Select records",
+            "Validate sample",
+            "Extrapolate results"
+        ]
+    },
+    {
+        "q": "What is data quality auditing?",
+        "type": "mcq",
+        "o": [
+            "Formal review of quality processes",
+            "Ignoring processes",
+            "Random review",
+            "Deleted audits"
+        ]
+    },
+    {
+        "q": "The _____ verifies quality compliance.",
+        "type": "fill_blank",
+        "answers": [
+            "audit"
+        ],
+        "other_options": [
+            "random",
+            "deletion",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Audits ensure governance adherence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this audit result?",
+        "type": "mcq",
+        "c": "findings = {'passed': 15, 'failed': 2, 'observations': 5}\nprint(f'{findings[\"failed\"]} findings')",
+        "o": [
+            "2 findings",
+            "15 findings",
+            "0 findings",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the audit type with its scope:",
+        "type": "match",
+        "left": [
+            "Process",
+            "Data",
+            "Compliance",
+            "Security"
+        ],
+        "right": [
+            "Workflow review",
+            "Content review",
+            "Regulatory",
+            "Access controls"
+        ]
+    },
+    {
+        "q": "Rearrange the audit lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Plan audit",
+            "Collect evidence",
+            "Assess findings",
+            "Report results",
+            "Track remediation"
+        ]
+    },
+    {
+        "q": "What is data quality control chart?",
+        "type": "mcq",
+        "o": [
+            "Statistical chart for quality monitoring",
+            "Random chart",
+            "Ignored chart",
+            "Deleted chart"
+        ]
+    },
+    {
+        "q": "The _____ shows quality variation over time.",
+        "type": "fill_blank",
+        "answers": [
+            "control chart"
+        ],
+        "other_options": [
+            "random chart",
+            "deleted chart",
+            "hidden chart"
+        ]
+    },
+    {
+        "q": "Control charts identify out-of-control processes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this control limit?",
+        "type": "mcq",
+        "c": "mean = 100\nstd = 5\nucl = mean + 3 * std\nprint(f'UCL: {ucl}')",
+        "o": [
+            "UCL: 115",
+            "UCL: 100",
+            "UCL: 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the control line with its purpose:",
+        "type": "match",
+        "left": [
+            "Center line",
+            "UCL",
+            "LCL",
+            "Spec limit"
+        ],
+        "right": [
+            "Average",
+            "Upper limit",
+            "Lower limit",
+            "Requirement"
+        ]
+    },
+    {
+        "q": "Rearrange the control chart creation:",
+        "type": "rearrange",
+        "words": [
+            "Collect data",
+            "Calculate mean",
+            "Calculate limits",
+            "Plot values",
+            "Analyze patterns"
+        ]
+    },
+    {
+        "q": "What is data quality process improvement?",
+        "type": "mcq",
+        "o": [
+            "Enhancing quality processes",
+            "Ignoring processes",
+            "Random changes",
+            "Deleted improvements"
+        ]
+    },
+    {
+        "q": "The _____ continuously improves quality workflows.",
+        "type": "fill_blank",
+        "answers": [
+            "process improvement"
+        ],
+        "other_options": [
+            "random improvement",
+            "deleted improvement",
+            "hidden improvement"
+        ]
+    },
+    {
+        "q": "PDCA cycle enables continuous improvement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this improvement cycle?",
+        "type": "mcq",
+        "c": "phases = ['Plan', 'Do', 'Check', 'Act']\nprint(len(phases))",
+        "o": [
+            "4",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the PDCA phase with its action:",
+        "type": "match",
+        "left": [
+            "Plan",
+            "Do",
+            "Check",
+            "Act"
+        ],
+        "right": [
+            "Design",
+            "Implement",
+            "Measure",
+            "Adjust"
+        ]
+    },
+    {
+        "q": "Rearrange the PDCA cycle:",
+        "type": "rearrange",
+        "words": [
+            "Plan improvement",
+            "Do implementation",
+            "Check results",
+            "Act on learnings",
+            "Repeat cycle"
+        ]
+    },
+    {
+        "q": "What is Six Sigma for data quality?",
+        "type": "mcq",
+        "o": [
+            "Statistical approach to quality improvement",
+            "Random approach",
+            "Ignoring statistics",
+            "Deleted methodology"
+        ]
+    },
+    {
+        "q": "The _____ methodology reduces defects.",
+        "type": "fill_blank",
+        "answers": [
+            "Six Sigma"
+        ],
+        "other_options": [
+            "random",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "DMAIC is core Six Sigma framework.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sigma level?",
+        "type": "mcq",
+        "c": "defects_per_million = 3.4\nprint(f'{defects_per_million} DPMO')",
+        "o": [
+            "3.4 DPMO",
+            "0 DPMO",
+            "1000 DPMO",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DMAIC phase with its focus:",
+        "type": "match",
+        "left": [
+            "Define",
+            "Measure",
+            "Analyze",
+            "Improve"
+        ],
+        "right": [
+            "Problem",
+            "Baseline",
+            "Root cause",
+            "Solution"
+        ]
+    },
+    {
+        "q": "Rearrange the DMAIC phases:",
+        "type": "rearrange",
+        "words": [
+            "Define problem",
+            "Measure current",
+            "Analyze causes",
+            "Improve process",
+            "Control results"
+        ]
+    },
+    {
+        "q": "Data quality is essential for business success.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ ensures data meets business requirements.",
+        "type": "fill_blank",
+        "answers": [
+            "data quality management"
+        ],
+        "other_options": [
+            "random management",
+            "no management",
+            "ignored management"
+        ]
+    }
+]

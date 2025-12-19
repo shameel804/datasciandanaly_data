@@ -1,0 +1,6235 @@
+[
+    {
+        "q": "Which library is used for basic plotting in Python?",
+        "type": "mcq",
+        "o": [
+            "matplotlib",
+            "plotly",
+            "bokeh",
+            "altair"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "Figure",
+            "Plot",
+            "Canvas"
+        ]
+    },
+    {
+        "q": "Match the matplotlib objects:",
+        "type": "match",
+        "left": [
+            "Figure",
+            "Axes",
+            "Artist"
+        ],
+        "right": [
+            "Container",
+            "Plotting area",
+            "Visual element"
+        ]
+    },
+    {
+        "q": "The ______ module is commonly imported as plt.",
+        "type": "fill_blank",
+        "answers": [
+            "pyplot"
+        ],
+        "other_options": [
+            "plot",
+            "plotting",
+            "graphics"
+        ]
+    },
+    {
+        "q": "plt.show() displays the figure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a line plot?",
+        "type": "mcq",
+        "o": [
+            "plt.plot()",
+            "plt.line()",
+            "plt.draw()",
+            "plt.graph()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nx = [1, 2, 3]\ny = [4, 5, 6]\nline, = plt.plot(x, y)\nprint(type(line).__name__)",
+        "o": [
+            "Line2D",
+            "Line",
+            "Plot",
+            "Artist"
+        ]
+    },
+    {
+        "q": "Match the plot types:",
+        "type": "match",
+        "left": [
+            "plt.plot()",
+            "plt.bar()",
+            "plt.scatter()"
+        ],
+        "right": [
+            "Line plot",
+            "Bar chart",
+            "Scatter plot"
+        ]
+    },
+    {
+        "q": "The ______ function creates a scatter plot.",
+        "type": "fill_blank",
+        "answers": [
+            "scatter"
+        ],
+        "other_options": [
+            "plot",
+            "points",
+            "dots"
+        ]
+    },
+    {
+        "q": "Rearrange the basic plotting steps:",
+        "type": "rearrange",
+        "words": [
+            "import matplotlib",
+            "prepare data",
+            "create plot",
+            "show figure"
+        ]
+    },
+    {
+        "q": "plt.plot() connects points with lines by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a bar chart?",
+        "type": "mcq",
+        "o": [
+            "plt.bar()",
+            "plt.barplot()",
+            "plt.bars()",
+            "plt.barchart()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nx = ['A', 'B', 'C']\ny = [1, 2, 3]\nbars = plt.bar(x, y)\nprint(len(bars))",
+        "o": [
+            "3",
+            "1",
+            "6",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the bar chart parameters:",
+        "type": "match",
+        "left": [
+            "width",
+            "color",
+            "edgecolor"
+        ],
+        "right": [
+            "Bar width",
+            "Fill color",
+            "Border color"
+        ]
+    },
+    {
+        "q": "The ______ function creates horizontal bars.",
+        "type": "fill_blank",
+        "answers": [
+            "barh"
+        ],
+        "other_options": [
+            "hbar",
+            "horizontal_bar",
+            "bar_horizontal"
+        ]
+    },
+    {
+        "q": "plt.barh() creates horizontal bar charts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a histogram?",
+        "type": "mcq",
+        "o": [
+            "plt.hist()",
+            "plt.histogram()",
+            "plt.histo()",
+            "plt.distribution()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\ndata = np.random.randn(100)\nn, bins, patches = plt.hist(data, bins=10)\nprint(len(bins))",
+        "o": [
+            "11",
+            "10",
+            "100",
+            "9"
+        ]
+    },
+    {
+        "q": "Match the histogram parameters:",
+        "type": "match",
+        "left": [
+            "bins",
+            "density",
+            "alpha"
+        ],
+        "right": [
+            "Number of bars",
+            "Normalize",
+            "Transparency"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls number of bins.",
+        "type": "fill_blank",
+        "answers": [
+            "bins"
+        ],
+        "other_options": [
+            "n_bins",
+            "nbins",
+            "num_bins"
+        ]
+    },
+    {
+        "q": "Rearrange the histogram interpretation:",
+        "type": "rearrange",
+        "words": [
+            "bin edges",
+            "count per bin",
+            "display bars"
+        ]
+    },
+    {
+        "q": "Histogram shows frequency distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a pie chart?",
+        "type": "mcq",
+        "o": [
+            "plt.pie()",
+            "plt.piechart()",
+            "plt.circle()",
+            "plt.donut()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nsizes = [30, 20, 50]\nwedges, texts = plt.pie(sizes)\nprint(len(wedges))",
+        "o": [
+            "3",
+            "100",
+            "1",
+            "50"
+        ]
+    },
+    {
+        "q": "Match the pie chart parameters:",
+        "type": "match",
+        "left": [
+            "labels",
+            "explode",
+            "autopct"
+        ],
+        "right": [
+            "Slice names",
+            "Offset slices",
+            "Show percentages"
+        ]
+    },
+    {
+        "q": "The ______ parameter adds labels to pie slices.",
+        "type": "fill_blank",
+        "answers": [
+            "labels"
+        ],
+        "other_options": [
+            "names",
+            "text",
+            "titles"
+        ]
+    },
+    {
+        "q": "autopct='%1.1f%%' displays percentages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sets the plot title?",
+        "type": "mcq",
+        "o": [
+            "plt.title()",
+            "plt.set_title()",
+            "plt.header()",
+            "plt.name()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_title('My Plot')\nprint(ax.get_title())",
+        "o": [
+            "My Plot",
+            "None",
+            "Title",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the labeling functions:",
+        "type": "match",
+        "left": [
+            "plt.title()",
+            "plt.xlabel()",
+            "plt.ylabel()"
+        ],
+        "right": [
+            "Plot title",
+            "X-axis label",
+            "Y-axis label"
+        ]
+    },
+    {
+        "q": "The ______ function sets the x-axis label.",
+        "type": "fill_blank",
+        "answers": [
+            "xlabel"
+        ],
+        "other_options": [
+            "x_label",
+            "set_xlabel",
+            "xaxis_label"
+        ]
+    },
+    {
+        "q": "plt.legend() displays the plot legend.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the plot customization order:",
+        "type": "rearrange",
+        "words": [
+            "create plot",
+            "add title",
+            "add labels",
+            "show legend"
+        ]
+    },
+    {
+        "q": "Which parameter sets line color?",
+        "type": "mcq",
+        "o": [
+            "color or c",
+            "linecolor",
+            "col",
+            "fill"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nline, = plt.plot([1, 2, 3], color='red')\nprint(line.get_color())",
+        "o": [
+            "red",
+            "r",
+            "#FF0000",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the color specifications:",
+        "type": "match",
+        "left": [
+            "'r'",
+            "'blue'",
+            "'#FF0000'"
+        ],
+        "right": [
+            "Short form",
+            "Name",
+            "Hex code"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets line width.",
+        "type": "fill_blank",
+        "answers": [
+            "linewidth"
+        ],
+        "other_options": [
+            "width",
+            "lw",
+            "line_size"
+        ]
+    },
+    {
+        "q": "lw is shorthand for linewidth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which parameter sets line style?",
+        "type": "mcq",
+        "o": [
+            "linestyle or ls",
+            "style",
+            "line_type",
+            "pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nline, = plt.plot([1, 2, 3], linestyle='--')\nprint(line.get_linestyle())",
+        "o": [
+            "--",
+            "dashed",
+            "-",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the line styles:",
+        "type": "match",
+        "left": [
+            "'-'",
+            "'--'",
+            "':'",
+            "'-.'"
+        ],
+        "right": [
+            "Solid",
+            "Dashed",
+            "Dotted",
+            "Dash-dot"
+        ]
+    },
+    {
+        "q": "The ______ style creates a dotted line.",
+        "type": "fill_blank",
+        "answers": [
+            ":"
+        ],
+        "other_options": [
+            "dotted",
+            ".",
+            "dots"
+        ]
+    },
+    {
+        "q": "'--' creates a dashed line.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the line style formats:",
+        "type": "rearrange",
+        "words": [
+            "'-' solid",
+            "'--' dashed",
+            "':' dotted"
+        ]
+    },
+    {
+        "q": "Which parameter sets marker style?",
+        "type": "mcq",
+        "o": [
+            "marker",
+            "point",
+            "symbol",
+            "mark"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nline, = plt.plot([1, 2, 3], marker='o')\nprint(line.get_marker())",
+        "o": [
+            "o",
+            "circle",
+            "point",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the marker styles:",
+        "type": "match",
+        "left": [
+            "'o'",
+            "'s'",
+            "'^'",
+            "'*'"
+        ],
+        "right": [
+            "Circle",
+            "Square",
+            "Triangle",
+            "Star"
+        ]
+    },
+    {
+        "q": "The ______ marker creates circles.",
+        "type": "fill_blank",
+        "answers": [
+            "o"
+        ],
+        "other_options": [
+            "circle",
+            "c",
+            "dot"
+        ]
+    },
+    {
+        "q": "'s' creates square markers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates subplots?",
+        "type": "mcq",
+        "o": [
+            "plt.subplots()",
+            "plt.subplot()",
+            "plt.grid()",
+            "plt.multipanel()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, axes = plt.subplots(2, 3)\nprint(axes.shape)",
+        "o": [
+            "(2, 3)",
+            "(3, 2)",
+            "(6,)",
+            "(1, 6)"
+        ]
+    },
+    {
+        "q": "Match the subplots parameters:",
+        "type": "match",
+        "left": [
+            "nrows",
+            "ncols",
+            "figsize"
+        ],
+        "right": [
+            "Number of rows",
+            "Number of columns",
+            "Figure size"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets figure dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "figsize"
+        ],
+        "other_options": [
+            "size",
+            "dimensions",
+            "fig_size"
+        ]
+    },
+    {
+        "q": "plt.subplots() returns (figure, axes).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the subplot creation:",
+        "type": "rearrange",
+        "words": [
+            "call subplots()",
+            "unpack figure and axes",
+            "plot on axes"
+        ]
+    },
+    {
+        "q": "Which function saves a figure?",
+        "type": "mcq",
+        "o": [
+            "plt.savefig()",
+            "plt.save()",
+            "plt.export()",
+            "plt.write()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.plot([1, 2, 3])\nformats = ['png', 'pdf', 'svg']\nprint(len(formats))",
+        "o": [
+            "3",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the save parameters:",
+        "type": "match",
+        "left": [
+            "dpi",
+            "format",
+            "bbox_inches"
+        ],
+        "right": [
+            "Resolution",
+            "File type",
+            "Cropping"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets image resolution.",
+        "type": "fill_blank",
+        "answers": [
+            "dpi"
+        ],
+        "other_options": [
+            "resolution",
+            "quality",
+            "pixels"
+        ]
+    },
+    {
+        "q": "bbox_inches='tight' removes extra whitespace.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sets axis limits?",
+        "type": "mcq",
+        "o": [
+            "plt.xlim() and plt.ylim()",
+            "plt.limits()",
+            "plt.bounds()",
+            "plt.range()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_xlim(0, 10)\nprint(ax.get_xlim())",
+        "o": [
+            "(0.0, 10.0)",
+            "[0, 10]",
+            "(0, 10)",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the axis methods:",
+        "type": "match",
+        "left": [
+            "set_xlim",
+            "set_ylim",
+            "set_aspect"
+        ],
+        "right": [
+            "X range",
+            "Y range",
+            "Aspect ratio"
+        ]
+    },
+    {
+        "q": "The ______ method sets y-axis range.",
+        "type": "fill_blank",
+        "answers": [
+            "set_ylim"
+        ],
+        "other_options": [
+            "ylim",
+            "y_range",
+            "set_y"
+        ]
+    },
+    {
+        "q": "plt.axis('equal') sets equal aspect ratio.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the axis customization:",
+        "type": "rearrange",
+        "words": [
+            "set limits",
+            "set ticks",
+            "set labels"
+        ]
+    },
+    {
+        "q": "Which function adds a grid?",
+        "type": "mcq",
+        "o": [
+            "plt.grid()",
+            "plt.gridlines()",
+            "plt.lines()",
+            "plt.background()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.grid(True)\nprint(ax.xaxis.get_gridlines()[0].get_visible())",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the grid parameters:",
+        "type": "match",
+        "left": [
+            "visible",
+            "which",
+            "axis"
+        ],
+        "right": [
+            "Show/hide",
+            "Major/minor",
+            "X/Y/both"
+        ]
+    },
+    {
+        "q": "The ______ parameter shows major or minor gridlines.",
+        "type": "fill_blank",
+        "answers": [
+            "which"
+        ],
+        "other_options": [
+            "type",
+            "grid_type",
+            "lines"
+        ]
+    },
+    {
+        "q": "plt.grid(True) enables the grid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which library provides statistical plots?",
+        "type": "mcq",
+        "o": [
+            "seaborn",
+            "plotly",
+            "bokeh",
+            "altair"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nprint(sns.__name__)",
+        "o": [
+            "seaborn",
+            "sns",
+            "seaborn.seaborn",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the seaborn features:",
+        "type": "match",
+        "left": [
+            "Statistical plots",
+            "Built-in themes",
+            "Pandas integration"
+        ],
+        "right": [
+            "Visualization types",
+            "Styling",
+            "Data handling"
+        ]
+    },
+    {
+        "q": "The ______ alias is commonly used for seaborn.",
+        "type": "fill_blank",
+        "answers": [
+            "sns"
+        ],
+        "other_options": [
+            "sb",
+            "sea",
+            "sn"
+        ]
+    },
+    {
+        "q": "Seaborn is built on top of matplotlib.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the seaborn advantages:",
+        "type": "rearrange",
+        "words": [
+            "better defaults",
+            "statistical plots",
+            "DataFrame integration"
+        ]
+    },
+    {
+        "q": "Which function creates a seaborn scatter plot?",
+        "type": "mcq",
+        "o": [
+            "sns.scatterplot()",
+            "sns.scatter()",
+            "sns.points()",
+            "sns.dots()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2, 3], 'y': [4, 5, 6]})\nax = sns.scatterplot(data=df, x='x', y='y')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "ScatterPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the seaborn plot types:",
+        "type": "match",
+        "left": [
+            "scatterplot",
+            "lineplot",
+            "barplot"
+        ],
+        "right": [
+            "Points",
+            "Lines",
+            "Bars"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies the DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "data"
+        ],
+        "other_options": [
+            "df",
+            "source",
+            "dataset"
+        ]
+    },
+    {
+        "q": "sns.scatterplot() supports hue for coloring.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a seaborn histogram?",
+        "type": "mcq",
+        "o": [
+            "sns.histplot()",
+            "sns.hist()",
+            "sns.histogram()",
+            "sns.distribution()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(100)\nax = sns.histplot(data, bins=20)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "Histogram",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the histogram options:",
+        "type": "match",
+        "left": [
+            "kde",
+            "stat",
+            "element"
+        ],
+        "right": [
+            "Density curve",
+            "Y-axis type",
+            "Bar type"
+        ]
+    },
+    {
+        "q": "The ______ parameter adds kernel density.",
+        "type": "fill_blank",
+        "answers": [
+            "kde"
+        ],
+        "other_options": [
+            "density",
+            "kernel",
+            "smooth"
+        ]
+    },
+    {
+        "q": "kde=True overlays a density curve.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the distribution plot types:",
+        "type": "rearrange",
+        "words": [
+            "histplot: histogram",
+            "kdeplot: density",
+            "ecdfplot: cumulative"
+        ]
+    },
+    {
+        "q": "Which function creates a box plot?",
+        "type": "mcq",
+        "o": [
+            "sns.boxplot()",
+            "sns.box()",
+            "sns.whisker()",
+            "sns.quartile()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'category': ['A', 'A', 'B', 'B'], 'value': [1, 2, 3, 4]})\nax = sns.boxplot(data=df, x='category', y='value')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "BoxPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the box plot elements:",
+        "type": "match",
+        "left": [
+            "Box",
+            "Whiskers",
+            "Outliers"
+        ],
+        "right": [
+            "IQR",
+            "Range",
+            "Extreme values"
+        ]
+    },
+    {
+        "q": "The ______ shows the interquartile range.",
+        "type": "fill_blank",
+        "answers": [
+            "box"
+        ],
+        "other_options": [
+            "whiskers",
+            "median",
+            "quartiles"
+        ]
+    },
+    {
+        "q": "Box plots show median and quartiles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a violin plot?",
+        "type": "mcq",
+        "o": [
+            "sns.violinplot()",
+            "sns.violin()",
+            "sns.density()",
+            "sns.distribution()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'category': ['A', 'A', 'B', 'B'], 'value': [1, 2, 3, 4]})\nax = sns.violinplot(data=df, x='category', y='value')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "ViolinPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the distribution plots:",
+        "type": "match",
+        "left": [
+            "boxplot",
+            "violinplot",
+            "stripplot"
+        ],
+        "right": [
+            "Summary stats",
+            "Full distribution",
+            "Individual points"
+        ]
+    },
+    {
+        "q": "Violin plots show full distribution shape.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a swarm plot?",
+        "type": "mcq",
+        "o": [
+            "sns.swarmplot()",
+            "sns.swarm()",
+            "sns.scatter_swarm()",
+            "sns.beeswarm()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'cat': ['A', 'A', 'B', 'B'], 'val': [1, 2, 3, 4]})\nax = sns.swarmplot(data=df, x='cat', y='val')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "SwarmPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Swarm plots show individual data points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a count plot?",
+        "type": "mcq",
+        "o": [
+            "sns.countplot()",
+            "sns.count()",
+            "sns.barcount()",
+            "sns.frequency()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'category': ['A', 'A', 'B', 'B', 'B']})\nax = sns.countplot(data=df, x='category')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "CountPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the categorical plots:",
+        "type": "match",
+        "left": [
+            "countplot",
+            "barplot",
+            "pointplot"
+        ],
+        "right": [
+            "Count bars",
+            "Mean bars",
+            "Points with CI"
+        ]
+    },
+    {
+        "q": "The ______ shows category frequency.",
+        "type": "fill_blank",
+        "answers": [
+            "countplot"
+        ],
+        "other_options": [
+            "barplot",
+            "freqplot",
+            "histogram"
+        ]
+    },
+    {
+        "q": "countplot() shows category frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a heatmap?",
+        "type": "mcq",
+        "o": [
+            "sns.heatmap()",
+            "sns.heat()",
+            "sns.colormap()",
+            "sns.matrix()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(3, 3)\nax = sns.heatmap(data)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "Heatmap",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the heatmap parameters:",
+        "type": "match",
+        "left": [
+            "annot",
+            "cmap",
+            "vmin/vmax"
+        ],
+        "right": [
+            "Show values",
+            "Color scheme",
+            "Color range"
+        ]
+    },
+    {
+        "q": "The ______ parameter adds value annotations.",
+        "type": "fill_blank",
+        "answers": [
+            "annot"
+        ],
+        "other_options": [
+            "labels",
+            "values",
+            "text"
+        ]
+    },
+    {
+        "q": "Rearrange the heatmap customization:",
+        "type": "rearrange",
+        "words": [
+            "pass data matrix",
+            "set colormap",
+            "add annotations"
+        ]
+    },
+    {
+        "q": "annot=True displays values in cells.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a pairplot?",
+        "type": "mcq",
+        "o": [
+            "sns.pairplot()",
+            "sns.pair()",
+            "sns.pairs()",
+            "sns.scatter_matrix()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'a': [1, 2, 3], 'b': [4, 5, 6]})\ng = sns.pairplot(df)\nprint(type(g).__name__)",
+        "o": [
+            "PairGrid",
+            "Axes",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the pairplot parameters:",
+        "type": "match",
+        "left": [
+            "hue",
+            "diag_kind",
+            "kind"
+        ],
+        "right": [
+            "Color by category",
+            "Diagonal plot type",
+            "Off-diagonal plot type"
+        ]
+    },
+    {
+        "q": "The ______ parameter colors by category.",
+        "type": "fill_blank",
+        "answers": [
+            "hue"
+        ],
+        "other_options": [
+            "color",
+            "group",
+            "category"
+        ]
+    },
+    {
+        "q": "pairplot creates scatter matrix of all pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a joint plot?",
+        "type": "mcq",
+        "o": [
+            "sns.jointplot()",
+            "sns.joint()",
+            "sns.bivariate()",
+            "sns.paired()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2, 3], 'y': [4, 5, 6]})\ng = sns.jointplot(data=df, x='x', y='y')\nprint(type(g).__name__)",
+        "o": [
+            "JointGrid",
+            "Axes",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the jointplot kinds:",
+        "type": "match",
+        "left": [
+            "scatter",
+            "kde",
+            "hex",
+            "reg"
+        ],
+        "right": [
+            "Points",
+            "Density",
+            "Hexbins",
+            "Regression"
+        ]
+    },
+    {
+        "q": "jointplot() shows bivariate distribution with marginals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the jointplot elements:",
+        "type": "rearrange",
+        "words": [
+            "central plot",
+            "x marginal",
+            "y marginal"
+        ]
+    },
+    {
+        "q": "Which function creates a regression plot?",
+        "type": "mcq",
+        "o": [
+            "sns.regplot()",
+            "sns.regression()",
+            "sns.linreg()",
+            "sns.fit()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2, 3], 'y': [2, 4, 6]})\nax = sns.regplot(data=df, x='x', y='y')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "RegPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the regression parameters:",
+        "type": "match",
+        "left": [
+            "ci",
+            "order",
+            "robust"
+        ],
+        "right": [
+            "Confidence interval",
+            "Polynomial degree",
+            "Robust regression"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets confidence interval.",
+        "type": "fill_blank",
+        "answers": [
+            "ci"
+        ],
+        "other_options": [
+            "confidence",
+            "interval",
+            "band"
+        ]
+    },
+    {
+        "q": "regplot() fits and displays regression line.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a facet grid?",
+        "type": "mcq",
+        "o": [
+            "sns.FacetGrid()",
+            "sns.facet()",
+            "sns.grid()",
+            "sns.multipanel()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2], 'y': [3, 4], 'cat': ['A', 'B']})\ng = sns.FacetGrid(df, col='cat')\nprint(type(g).__name__)",
+        "o": [
+            "FacetGrid",
+            "Axes",
+            "Figure",
+            "Grid"
+        ]
+    },
+    {
+        "q": "Match the FacetGrid parameters:",
+        "type": "match",
+        "left": [
+            "row",
+            "col",
+            "hue"
+        ],
+        "right": [
+            "Row facets",
+            "Column facets",
+            "Color facets"
+        ]
+    },
+    {
+        "q": "The ______ creates column-wise facets.",
+        "type": "fill_blank",
+        "answers": [
+            "col"
+        ],
+        "other_options": [
+            "column",
+            "cols",
+            "facet_col"
+        ]
+    },
+    {
+        "q": "FacetGrid creates multi-panel figures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the FacetGrid workflow:",
+        "type": "rearrange",
+        "words": [
+            "create FacetGrid",
+            "map plot function",
+            "customize"
+        ]
+    },
+    {
+        "q": "Which function sets seaborn style?",
+        "type": "mcq",
+        "o": [
+            "sns.set_style()",
+            "sns.style()",
+            "sns.theme()",
+            "sns.set_theme()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nstyles = ['white', 'dark', 'whitegrid', 'darkgrid', 'ticks']\nprint(len(styles))",
+        "o": [
+            "5",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the seaborn styles:",
+        "type": "match",
+        "left": [
+            "white",
+            "darkgrid",
+            "ticks"
+        ],
+        "right": [
+            "Clean background",
+            "Dark with grid",
+            "With axis ticks"
+        ]
+    },
+    {
+        "q": "The ______ style has a white background with grid.",
+        "type": "fill_blank",
+        "answers": [
+            "whitegrid"
+        ],
+        "other_options": [
+            "white",
+            "gridwhite",
+            "white_grid"
+        ]
+    },
+    {
+        "q": "set_style() changes plot aesthetics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sets color palette?",
+        "type": "mcq",
+        "o": [
+            "sns.set_palette()",
+            "sns.palette()",
+            "sns.colors()",
+            "sns.colormap()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\npalette = sns.color_palette('deep', 5)\nprint(len(palette))",
+        "o": [
+            "5",
+            "10",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the color palettes:",
+        "type": "match",
+        "left": [
+            "deep",
+            "muted",
+            "pastel"
+        ],
+        "right": [
+            "Bold colors",
+            "Subdued colors",
+            "Light colors"
+        ]
+    },
+    {
+        "q": "The ______ palette has pastel colors.",
+        "type": "fill_blank",
+        "answers": [
+            "pastel"
+        ],
+        "other_options": [
+            "light",
+            "soft",
+            "pale"
+        ]
+    },
+    {
+        "q": "Rearrange the palette types:",
+        "type": "rearrange",
+        "words": [
+            "qualitative: categories",
+            "sequential: ordered",
+            "diverging: bipolar"
+        ]
+    },
+    {
+        "q": "color_palette() returns list of colors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a clustermap?",
+        "type": "mcq",
+        "o": [
+            "sns.clustermap()",
+            "sns.cluster()",
+            "sns.dendrogram()",
+            "sns.hierarchical()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(5, 5)\ng = sns.clustermap(data)\nprint(type(g).__name__)",
+        "o": [
+            "ClusterGrid",
+            "Axes",
+            "Figure",
+            "Heatmap"
+        ]
+    },
+    {
+        "q": "Match the clustermap parameters:",
+        "type": "match",
+        "left": [
+            "row_cluster",
+            "col_cluster",
+            "method"
+        ],
+        "right": [
+            "Cluster rows",
+            "Cluster columns",
+            "Linkage method"
+        ]
+    },
+    {
+        "q": "clustermap() creates hierarchically-clustered heatmap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which axes method sets tick labels?",
+        "type": "mcq",
+        "o": [
+            "set_xticklabels()",
+            "xtick_labels()",
+            "set_xlabels()",
+            "xticklabels()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_xticks([0, 1, 2])\nax.set_xticklabels(['A', 'B', 'C'])\nprint(len(ax.get_xticklabels()))",
+        "o": [
+            "3",
+            "0",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the tick methods:",
+        "type": "match",
+        "left": [
+            "set_xticks",
+            "set_xticklabels",
+            "tick_params"
+        ],
+        "right": [
+            "Set positions",
+            "Set labels",
+            "Style ticks"
+        ]
+    },
+    {
+        "q": "The ______ method rotates tick labels.",
+        "type": "fill_blank",
+        "answers": [
+            "tick_params"
+        ],
+        "other_options": [
+            "rotate_ticks",
+            "set_rotation",
+            "label_rotation"
+        ]
+    },
+    {
+        "q": "tick_params() can change tick appearance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the tick customization:",
+        "type": "rearrange",
+        "words": [
+            "set tick positions",
+            "set tick labels",
+            "rotate if needed"
+        ]
+    },
+    {
+        "q": "Which function creates text annotations?",
+        "type": "mcq",
+        "o": [
+            "ax.annotate()",
+            "ax.text()",
+            "Both work",
+            "ax.label()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, 'Hello')\nprint(type(text).__name__)",
+        "o": [
+            "Text",
+            "Annotation",
+            "Label",
+            "Artist"
+        ]
+    },
+    {
+        "q": "Match the text parameters:",
+        "type": "match",
+        "left": [
+            "fontsize",
+            "fontweight",
+            "ha"
+        ],
+        "right": [
+            "Size",
+            "Bold/normal",
+            "Horizontal alignment"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets horizontal alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "ha"
+        ],
+        "other_options": [
+            "halign",
+            "horizontal",
+            "align"
+        ]
+    },
+    {
+        "q": "ha='center' centers text horizontally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function adds arrows to annotations?",
+        "type": "mcq",
+        "o": [
+            "arrowprops parameter",
+            "arrow()",
+            "add_arrow()",
+            "arrow_annotation()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.annotate('Point', xy=(1, 1), xytext=(2, 2), arrowprops=dict(arrowstyle='->'))\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Point"
+        ]
+    },
+    {
+        "q": "arrowprops adds arrow to annotation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the arrow styles:",
+        "type": "match",
+        "left": [
+            "'->'",
+            "'<->'",
+            "'fancy'"
+        ],
+        "right": [
+            "Simple arrow",
+            "Bidirectional",
+            "Fancy arrow"
+        ]
+    },
+    {
+        "q": "Which colormap is good for sequential data?",
+        "type": "mcq",
+        "o": [
+            "viridis",
+            "RdBu",
+            "Set1",
+            "Paired"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\ncmaps = ['viridis', 'plasma', 'inferno', 'magma']\nprint(len(cmaps))",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the colormap types:",
+        "type": "match",
+        "left": [
+            "viridis",
+            "RdBu",
+            "Set1"
+        ],
+        "right": [
+            "Sequential",
+            "Diverging",
+            "Qualitative"
+        ]
+    },
+    {
+        "q": "The ______ colormap is perceptually uniform.",
+        "type": "fill_blank",
+        "answers": [
+            "viridis"
+        ],
+        "other_options": [
+            "jet",
+            "rainbow",
+            "spectral"
+        ]
+    },
+    {
+        "q": "Rearrange the colormap selection by data type:",
+        "type": "rearrange",
+        "words": [
+            "sequential: ordered values",
+            "diverging: bipolar",
+            "qualitative: categories"
+        ]
+    },
+    {
+        "q": "viridis is the default colormap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function adds a colorbar?",
+        "type": "mcq",
+        "o": [
+            "plt.colorbar()",
+            "plt.bar_color()",
+            "plt.legend_color()",
+            "plt.scale()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\ndata = np.random.randn(10, 10)\nim = plt.imshow(data)\ncbar = plt.colorbar(im)\nprint(type(cbar).__name__)",
+        "o": [
+            "Colorbar",
+            "ColorBar",
+            "Legend",
+            "Scale"
+        ]
+    },
+    {
+        "q": "Match the colorbar parameters:",
+        "type": "match",
+        "left": [
+            "orientation",
+            "shrink",
+            "label"
+        ],
+        "right": [
+            "Vertical/horizontal",
+            "Size fraction",
+            "Title"
+        ]
+    },
+    {
+        "q": "plt.colorbar() adds color scale.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates an image plot?",
+        "type": "mcq",
+        "o": [
+            "plt.imshow()",
+            "plt.image()",
+            "plt.show_image()",
+            "plt.display()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\ndata = np.random.randn(5, 5)\nim = plt.imshow(data)\nprint(type(im).__name__)",
+        "o": [
+            "AxesImage",
+            "Image",
+            "Plot",
+            "Array"
+        ]
+    },
+    {
+        "q": "Match the imshow parameters:",
+        "type": "match",
+        "left": [
+            "cmap",
+            "aspect",
+            "interpolation"
+        ],
+        "right": [
+            "Colormap",
+            "Aspect ratio",
+            "Smoothing"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets pixel interpolation.",
+        "type": "fill_blank",
+        "answers": [
+            "interpolation"
+        ],
+        "other_options": [
+            "smooth",
+            "filter",
+            "interp"
+        ]
+    },
+    {
+        "q": "imshow() displays 2D data as image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the imshow workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare 2D array",
+            "call imshow()",
+            "add colorbar"
+        ]
+    },
+    {
+        "q": "Which function creates contour plots?",
+        "type": "mcq",
+        "o": [
+            "plt.contour()",
+            "plt.levels()",
+            "plt.isolines()",
+            "plt.surface()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = y = np.linspace(-1, 1, 10)\nX, Y = np.meshgrid(x, y)\nZ = X**2 + Y**2\ncs = plt.contour(X, Y, Z)\nprint(type(cs).__name__)",
+        "o": [
+            "QuadContourSet",
+            "Contour",
+            "ContourPlot",
+            "Axes"
+        ]
+    },
+    {
+        "q": "Match the contour functions:",
+        "type": "match",
+        "left": [
+            "contour",
+            "contourf",
+            "clabel"
+        ],
+        "right": [
+            "Line contours",
+            "Filled contours",
+            "Contour labels"
+        ]
+    },
+    {
+        "q": "The ______ function creates filled contours.",
+        "type": "fill_blank",
+        "answers": [
+            "contourf"
+        ],
+        "other_options": [
+            "fillcontour",
+            "filled_contour",
+            "contour_fill"
+        ]
+    },
+    {
+        "q": "contourf() creates filled contour plots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates 3D axes?",
+        "type": "mcq",
+        "o": [
+            "fig.add_subplot(projection='3d')",
+            "plt.3d()",
+            "plt.axes3d()",
+            "plt.subplot_3d()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes3D",
+            "Axes",
+            "Figure",
+            "3DAxes"
+        ]
+    },
+    {
+        "q": "Match the 3D plot types:",
+        "type": "match",
+        "left": [
+            "plot3D",
+            "scatter3D",
+            "plot_surface"
+        ],
+        "right": [
+            "3D line",
+            "3D scatter",
+            "Surface plot"
+        ]
+    },
+    {
+        "q": "The ______ creates 3D surface plots.",
+        "type": "fill_blank",
+        "answers": [
+            "plot_surface"
+        ],
+        "other_options": [
+            "surface",
+            "surf",
+            "surface3d"
+        ]
+    },
+    {
+        "q": "3D plots require Axes3D toolkit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the 3D plot creation:",
+        "type": "rearrange",
+        "words": [
+            "create figure",
+            "add 3D axes",
+            "call 3D plot method"
+        ]
+    },
+    {
+        "q": "Which function creates error bars?",
+        "type": "mcq",
+        "o": [
+            "plt.errorbar()",
+            "plt.error()",
+            "plt.bars_error()",
+            "plt.uncertainty()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nx = [1, 2, 3]\ny = [4, 5, 6]\nerr = [0.5, 0.3, 0.4]\ncontainer = plt.errorbar(x, y, yerr=err)\nprint(type(container).__name__)",
+        "o": [
+            "ErrorbarContainer",
+            "Line2D",
+            "ErrorBars",
+            "Container"
+        ]
+    },
+    {
+        "q": "Match the errorbar parameters:",
+        "type": "match",
+        "left": [
+            "xerr",
+            "yerr",
+            "capsize"
+        ],
+        "right": [
+            "X error",
+            "Y error",
+            "Cap width"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets error bar cap size.",
+        "type": "fill_blank",
+        "answers": [
+            "capsize"
+        ],
+        "other_options": [
+            "cap",
+            "cap_width",
+            "caps"
+        ]
+    },
+    {
+        "q": "errorbar() shows uncertainty ranges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function fills area between curves?",
+        "type": "mcq",
+        "o": [
+            "plt.fill_between()",
+            "plt.fill()",
+            "plt.area()",
+            "plt.shade()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.arange(5)\ny1 = np.array([1, 2, 3, 4, 5])\ny2 = np.array([0, 1, 2, 3, 4])\npoly = plt.fill_between(x, y1, y2)\nprint(type(poly).__name__)",
+        "o": [
+            "PolyCollection",
+            "Polygon",
+            "Fill",
+            "Area"
+        ]
+    },
+    {
+        "q": "Match the fill functions:",
+        "type": "match",
+        "left": [
+            "fill_between",
+            "fill_betweenx",
+            "fill"
+        ],
+        "right": [
+            "Vertical fill",
+            "Horizontal fill",
+            "Polygon fill"
+        ]
+    },
+    {
+        "q": "fill_between() creates shaded regions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the fill_between usage:",
+        "type": "rearrange",
+        "words": [
+            "define x values",
+            "define y1 and y2",
+            "call fill_between"
+        ]
+    },
+    {
+        "q": "Which function creates step plots?",
+        "type": "mcq",
+        "o": [
+            "plt.step()",
+            "plt.stairs()",
+            "plt.steps()",
+            "plt.stair()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nx = [1, 2, 3, 4]\ny = [1, 4, 2, 3]\nlines = plt.step(x, y)\nprint(len(lines))",
+        "o": [
+            "1",
+            "4",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the step parameters:",
+        "type": "match",
+        "left": [
+            "pre",
+            "post",
+            "mid"
+        ],
+        "right": [
+            "Step before",
+            "Step after",
+            "Step at midpoint"
+        ]
+    },
+    {
+        "q": "step() creates staircase-like plots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates stem plots?",
+        "type": "mcq",
+        "o": [
+            "plt.stem()",
+            "plt.lollipop()",
+            "plt.pin()",
+            "plt.stick()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nx = [1, 2, 3]\ny = [4, 5, 6]\nmarkers, stems, baseline = plt.stem(x, y)\nprint(type(markers).__name__)",
+        "o": [
+            "Line2D",
+            "Stem",
+            "Markers",
+            "Collection"
+        ]
+    },
+    {
+        "q": "stem() creates lollipop-style plots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the stem elements:",
+        "type": "match",
+        "left": [
+            "markerline",
+            "stemlines",
+            "baseline"
+        ],
+        "right": [
+            "Top markers",
+            "Vertical lines",
+            "Bottom line"
+        ]
+    },
+    {
+        "q": "Which function sets figure size?",
+        "type": "mcq",
+        "o": [
+            "plt.figure(figsize=())",
+            "plt.size()",
+            "plt.set_size()",
+            "plt.dimensions()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig = plt.figure(figsize=(10, 6))\nprint(fig.get_size_inches())",
+        "o": [
+            "array([10.,  6.])",
+            "(10, 6)",
+            "[10, 6]",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the figure methods:",
+        "type": "match",
+        "left": [
+            "set_size_inches",
+            "tight_layout",
+            "savefig"
+        ],
+        "right": [
+            "Change size",
+            "Adjust spacing",
+            "Save to file"
+        ]
+    },
+    {
+        "q": "The ______ method adjusts subplot spacing.",
+        "type": "fill_blank",
+        "answers": [
+            "tight_layout"
+        ],
+        "other_options": [
+            "auto_layout",
+            "fix_layout",
+            "adjust_layout"
+        ]
+    },
+    {
+        "q": "Rearrange the figure finalization:",
+        "type": "rearrange",
+        "words": [
+            "create plots",
+            "call tight_layout",
+            "save or show"
+        ]
+    },
+    {
+        "q": "tight_layout() prevents overlapping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates twin axes?",
+        "type": "mcq",
+        "o": [
+            "ax.twinx()",
+            "ax.secondary()",
+            "ax.dual()",
+            "ax.second_axis()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax1 = plt.subplots()\nax2 = ax1.twinx()\nprint(type(ax2).__name__)",
+        "o": [
+            "Axes",
+            "TwinAxes",
+            "SecondaryAxes",
+            "Figure"
+        ]
+    },
+    {
+        "q": "Match the twin axes methods:",
+        "type": "match",
+        "left": [
+            "twinx",
+            "twiny"
+        ],
+        "right": [
+            "Shared x-axis",
+            "Shared y-axis"
+        ]
+    },
+    {
+        "q": "twinx() creates secondary y-axis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ method creates shared x-axis.",
+        "type": "fill_blank",
+        "answers": [
+            "twinx"
+        ],
+        "other_options": [
+            "twin_x",
+            "secondary_y",
+            "dual_axis"
+        ]
+    },
+    {
+        "q": "Which function creates polar plots?",
+        "type": "mcq",
+        "o": [
+            "plt.subplot(projection='polar')",
+            "plt.polar()",
+            "Both work",
+            "plt.radial()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\ntheta = np.linspace(0, 2*np.pi, 100)\nr = np.sin(theta)\nax = plt.subplot(projection='polar')\nax.plot(theta, r)\nprint(type(ax).__name__)",
+        "o": [
+            "PolarAxes",
+            "Axes",
+            "Polar",
+            "RadialAxes"
+        ]
+    },
+    {
+        "q": "Match the polar parameters:",
+        "type": "match",
+        "left": [
+            "theta",
+            "r",
+            "theta_direction"
+        ],
+        "right": [
+            "Angle",
+            "Radius",
+            "Rotation direction"
+        ]
+    },
+    {
+        "q": "Polar plots use angle and radius coordinates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the polar plot creation:",
+        "type": "rearrange",
+        "words": [
+            "define theta values",
+            "define r values",
+            "plot on polar axes"
+        ]
+    },
+    {
+        "q": "Which seaborn function creates kde plots?",
+        "type": "mcq",
+        "o": [
+            "sns.kdeplot()",
+            "sns.kde()",
+            "sns.density()",
+            "sns.kernel()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(100)\nax = sns.kdeplot(data)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "KDEPlot",
+            "Figure",
+            "Density"
+        ]
+    },
+    {
+        "q": "Match the kde parameters:",
+        "type": "match",
+        "left": [
+            "bw_method",
+            "fill",
+            "cumulative"
+        ],
+        "right": [
+            "Bandwidth",
+            "Fill under curve",
+            "CDF plot"
+        ]
+    },
+    {
+        "q": "The ______ parameter fills under the curve.",
+        "type": "fill_blank",
+        "answers": [
+            "fill"
+        ],
+        "other_options": [
+            "shade",
+            "filled",
+            "area"
+        ]
+    },
+    {
+        "q": "kdeplot() estimates probability density.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates rugplots?",
+        "type": "mcq",
+        "o": [
+            "sns.rugplot()",
+            "sns.rug()",
+            "sns.ticks()",
+            "sns.marginal()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(50)\nax = sns.rugplot(data)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "RugPlot",
+            "Figure",
+            "Lines"
+        ]
+    },
+    {
+        "q": "rugplot() shows individual data points as ticks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the marginal plot types:",
+        "type": "match",
+        "left": [
+            "rugplot",
+            "kdeplot",
+            "histplot"
+        ],
+        "right": [
+            "Tick marks",
+            "Smooth curve",
+            "Bars"
+        ]
+    },
+    {
+        "q": "Which function creates ecdf plots?",
+        "type": "mcq",
+        "o": [
+            "sns.ecdfplot()",
+            "sns.cdf()",
+            "sns.cumulative()",
+            "sns.empirical()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(100)\nax = sns.ecdfplot(data)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "ECDFPlot",
+            "Figure",
+            "CDF"
+        ]
+    },
+    {
+        "q": "ecdfplot() shows cumulative distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the distribution plot complexity:",
+        "type": "rearrange",
+        "words": [
+            "rugplot: simplest",
+            "histplot: binned",
+            "kdeplot: smoothed"
+        ]
+    },
+    {
+        "q": "Which function creates point plots?",
+        "type": "mcq",
+        "o": [
+            "sns.pointplot()",
+            "sns.point()",
+            "sns.dots()",
+            "sns.catpoint()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'cat': ['A', 'A', 'B', 'B'], 'val': [1, 2, 3, 4]})\nax = sns.pointplot(data=df, x='cat', y='val')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "PointPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the categorical estimate plots:",
+        "type": "match",
+        "left": [
+            "barplot",
+            "pointplot"
+        ],
+        "right": [
+            "Bars with CI",
+            "Points with CI"
+        ]
+    },
+    {
+        "q": "pointplot() shows point estimates with confidence intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter sets estimate function.",
+        "type": "fill_blank",
+        "answers": [
+            "estimator"
+        ],
+        "other_options": [
+            "stat",
+            "func",
+            "aggregate"
+        ]
+    },
+    {
+        "q": "Which function creates strip plots?",
+        "type": "mcq",
+        "o": [
+            "sns.stripplot()",
+            "sns.strip()",
+            "sns.jitter()",
+            "sns.scatter_cat()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'cat': ['A', 'A', 'B', 'B'], 'val': [1, 2, 3, 4]})\nax = sns.stripplot(data=df, x='cat', y='val')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "StripPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "Match the jitter parameter effects:",
+        "type": "match",
+        "left": [
+            "jitter=True",
+            "jitter=0.2",
+            "jitter=False"
+        ],
+        "right": [
+            "Default jitter",
+            "Custom jitter",
+            "No jitter"
+        ]
+    },
+    {
+        "q": "stripplot() shows individual points with jitter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the categorical point plots by overlap handling:",
+        "type": "rearrange",
+        "words": [
+            "stripplot: jitter",
+            "swarmplot: no overlap",
+            "boxplot: summary"
+        ]
+    },
+    {
+        "q": "Which function creates lmplot?",
+        "type": "mcq",
+        "o": [
+            "sns.lmplot()",
+            "sns.linearmodel()",
+            "sns.regmodel()",
+            "sns.fitplot()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2, 3], 'y': [2, 4, 6], 'cat': ['A', 'A', 'B']})\ng = sns.lmplot(data=df, x='x', y='y', hue='cat')\nprint(type(g).__name__)",
+        "o": [
+            "FacetGrid",
+            "Axes",
+            "Figure",
+            "LMPlot"
+        ]
+    },
+    {
+        "q": "Match the lmplot parameters:",
+        "type": "match",
+        "left": [
+            "hue",
+            "col",
+            "row"
+        ],
+        "right": [
+            "Color groups",
+            "Column facets",
+            "Row facets"
+        ]
+    },
+    {
+        "q": "lmplot() combines regplot with FacetGrid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter creates faceted regression plots.",
+        "type": "fill_blank",
+        "answers": [
+            "col"
+        ],
+        "other_options": [
+            "facet",
+            "panel",
+            "subplot"
+        ]
+    },
+    {
+        "q": "Which function creates catplot?",
+        "type": "mcq",
+        "o": [
+            "sns.catplot()",
+            "sns.categorical()",
+            "sns.cat()",
+            "sns.category_plot()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'cat': ['A', 'B'], 'val': [1, 2]})\ng = sns.catplot(data=df, x='cat', y='val', kind='bar')\nprint(type(g).__name__)",
+        "o": [
+            "FacetGrid",
+            "Axes",
+            "Figure",
+            "CatPlot"
+        ]
+    },
+    {
+        "q": "Match the catplot kinds:",
+        "type": "match",
+        "left": [
+            "strip",
+            "box",
+            "violin",
+            "bar"
+        ],
+        "right": [
+            "Individual points",
+            "Box summary",
+            "Distribution shape",
+            "Mean bars"
+        ]
+    },
+    {
+        "q": "catplot() is a figure-level categorical plot.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the plot levels:",
+        "type": "rearrange",
+        "words": [
+            "axes-level: single axes",
+            "figure-level: FacetGrid"
+        ]
+    },
+    {
+        "q": "Which function creates relplot?",
+        "type": "mcq",
+        "o": [
+            "sns.relplot()",
+            "sns.relational()",
+            "sns.relationship()",
+            "sns.rel()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2, 3], 'y': [4, 5, 6]})\ng = sns.relplot(data=df, x='x', y='y', kind='scatter')\nprint(type(g).__name__)",
+        "o": [
+            "FacetGrid",
+            "Axes",
+            "Figure",
+            "RelPlot"
+        ]
+    },
+    {
+        "q": "Match the relplot kinds:",
+        "type": "match",
+        "left": [
+            "scatter",
+            "line"
+        ],
+        "right": [
+            "Scatter plot",
+            "Line plot"
+        ]
+    },
+    {
+        "q": "relplot() is figure-level relational plot.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates displot?",
+        "type": "mcq",
+        "o": [
+            "sns.displot()",
+            "sns.distplot()",
+            "sns.distribution()",
+            "sns.dist()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\ndata = np.random.randn(100)\ng = sns.displot(data, kind='hist')\nprint(type(g).__name__)",
+        "o": [
+            "FacetGrid",
+            "Axes",
+            "Figure",
+            "DisPlot"
+        ]
+    },
+    {
+        "q": "Match the displot kinds:",
+        "type": "match",
+        "left": [
+            "hist",
+            "kde",
+            "ecdf"
+        ],
+        "right": [
+            "Histogram",
+            "Density",
+            "Cumulative"
+        ]
+    },
+    {
+        "q": "displot() is figure-level distribution plot.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the figure-level functions:",
+        "type": "rearrange",
+        "words": [
+            "relplot: relational",
+            "catplot: categorical",
+            "displot: distribution"
+        ]
+    },
+    {
+        "q": "Which method sets axes spine visibility?",
+        "type": "mcq",
+        "o": [
+            "ax.spines['left'].set_visible()",
+            "ax.hide_spine()",
+            "ax.spine_visible()",
+            "ax.set_spines()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nspines = list(ax.spines.keys())\nprint(len(spines))",
+        "o": [
+            "4",
+            "2",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the spine positions:",
+        "type": "match",
+        "left": [
+            "left",
+            "right",
+            "top",
+            "bottom"
+        ],
+        "right": [
+            "Y-axis left",
+            "Y-axis right",
+            "X-axis top",
+            "X-axis bottom"
+        ]
+    },
+    {
+        "q": "The ______ controls axis borders.",
+        "type": "fill_blank",
+        "answers": [
+            "spines"
+        ],
+        "other_options": [
+            "borders",
+            "edges",
+            "frames"
+        ]
+    },
+    {
+        "q": "Spines can be moved to data coordinates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sets axis scale?",
+        "type": "mcq",
+        "o": [
+            "ax.set_xscale()",
+            "ax.scale()",
+            "ax.xscale()",
+            "ax.set_scale()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_yscale('log')\nprint(ax.get_yscale())",
+        "o": [
+            "log",
+            "logarithmic",
+            "linear",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the scale types:",
+        "type": "match",
+        "left": [
+            "linear",
+            "log",
+            "symlog"
+        ],
+        "right": [
+            "Normal",
+            "Logarithmic",
+            "Symmetric log"
+        ]
+    },
+    {
+        "q": "The ______ scale handles zero and negatives.",
+        "type": "fill_blank",
+        "answers": [
+            "symlog"
+        ],
+        "other_options": [
+            "log",
+            "logit",
+            "asinh"
+        ]
+    },
+    {
+        "q": "Rearrange the scale selection:",
+        "type": "rearrange",
+        "words": [
+            "linear: uniform",
+            "log: exponential",
+            "symlog: signed"
+        ]
+    },
+    {
+        "q": "Log scale is useful for exponential data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates animations?",
+        "type": "mcq",
+        "o": [
+            "FuncAnimation",
+            "animate()",
+            "plt.animate()",
+            "Animation()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from matplotlib.animation import FuncAnimation\nprint(FuncAnimation.__module__)",
+        "o": [
+            "matplotlib.animation",
+            "matplotlib",
+            "animation",
+            "funcanimation"
+        ]
+    },
+    {
+        "q": "Match the animation parameters:",
+        "type": "match",
+        "left": [
+            "frames",
+            "interval",
+            "blit"
+        ],
+        "right": [
+            "Number of frames",
+            "Delay (ms)",
+            "Performance optimization"
+        ]
+    },
+    {
+        "q": "The ______ parameter optimizes rendering.",
+        "type": "fill_blank",
+        "answers": [
+            "blit"
+        ],
+        "other_options": [
+            "cache",
+            "optimize",
+            "fast"
+        ]
+    },
+    {
+        "q": "FuncAnimation updates plot dynamically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which format saves animations?",
+        "type": "mcq",
+        "o": [
+            "anim.save() with mp4/gif",
+            "plt.save_anim()",
+            "anim.export()",
+            "anim.write()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfig, ax = plt.subplots()\nprint(type(fig).__name__)",
+        "o": [
+            "Figure",
+            "Animation",
+            "Axes",
+            "Canvas"
+        ]
+    },
+    {
+        "q": "Match the animation writers:",
+        "type": "match",
+        "left": [
+            "ffmpeg",
+            "pillow",
+            "imagemagick"
+        ],
+        "right": [
+            "MP4 video",
+            "GIF",
+            "GIF/images"
+        ]
+    },
+    {
+        "q": "Rearrange the animation creation:",
+        "type": "rearrange",
+        "words": [
+            "create figure",
+            "define update function",
+            "create FuncAnimation"
+        ]
+    },
+    {
+        "q": "Animations require a writer for saving.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which tool enables interactive widgets?",
+        "type": "mcq",
+        "o": [
+            "matplotlib.widgets",
+            "plt.interactive()",
+            "plt.gui()",
+            "matplotlib.interact"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from matplotlib.widgets import Slider\nprint(Slider.__module__)",
+        "o": [
+            "matplotlib.widgets",
+            "matplotlib",
+            "widgets",
+            "slider"
+        ]
+    },
+    {
+        "q": "Match the widget types:",
+        "type": "match",
+        "left": [
+            "Slider",
+            "Button",
+            "RadioButtons"
+        ],
+        "right": [
+            "Continuous value",
+            "Click action",
+            "Option selection"
+        ]
+    },
+    {
+        "q": "The ______ widget allows value adjustment.",
+        "type": "fill_blank",
+        "answers": [
+            "Slider"
+        ],
+        "other_options": [
+            "RangeSlider",
+            "ValueBox",
+            "Scroll"
+        ]
+    },
+    {
+        "q": "Widgets enable interactive visualization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which backend supports interactivity?",
+        "type": "mcq",
+        "o": [
+            "TkAgg, Qt5Agg, notebook",
+            "Agg",
+            "SVG",
+            "PDF"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib\nprint('backend' in dir(matplotlib))",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the backends:",
+        "type": "match",
+        "left": [
+            "Agg",
+            "TkAgg",
+            "%matplotlib inline"
+        ],
+        "right": [
+            "File output",
+            "GUI window",
+            "Jupyter inline"
+        ]
+    },
+    {
+        "q": "Rearrange the backend selection:",
+        "type": "rearrange",
+        "words": [
+            "set backend",
+            "import pyplot",
+            "create figure"
+        ]
+    },
+    {
+        "q": "Agg backend is for non-interactive rendering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates logarithmic axes?",
+        "type": "mcq",
+        "o": [
+            "plt.semilogy() or plt.semilogx()",
+            "plt.log()",
+            "plt.logplot()",
+            "plt.logaxis()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.linspace(1, 10, 10)\ny = np.exp(x)\nax = plt.gca()\nplt.semilogy(x, y)\nprint(ax.get_yscale())",
+        "o": [
+            "log",
+            "linear",
+            "semilog",
+            "exponential"
+        ]
+    },
+    {
+        "q": "Match the log plot functions:",
+        "type": "match",
+        "left": [
+            "semilogy",
+            "semilogx",
+            "loglog"
+        ],
+        "right": [
+            "Log y-axis",
+            "Log x-axis",
+            "Both log"
+        ]
+    },
+    {
+        "q": "The ______ function logs both axes.",
+        "type": "fill_blank",
+        "answers": [
+            "loglog"
+        ],
+        "other_options": [
+            "log2",
+            "logxy",
+            "double_log"
+        ]
+    },
+    {
+        "q": "semilogy() creates semi-logarithmic plot.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates hexbin plots?",
+        "type": "mcq",
+        "o": [
+            "plt.hexbin()",
+            "plt.hex()",
+            "plt.hexagonal()",
+            "plt.honeycomb()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.random.randn(1000)\ny = np.random.randn(1000)\nhb = plt.hexbin(x, y, gridsize=20)\nprint(type(hb).__name__)",
+        "o": [
+            "PolyCollection",
+            "Hexbin",
+            "Collection",
+            "Axes"
+        ]
+    },
+    {
+        "q": "Match the hexbin parameters:",
+        "type": "match",
+        "left": [
+            "gridsize",
+            "cmap",
+            "reduce_C_function"
+        ],
+        "right": [
+            "Hex resolution",
+            "Colors",
+            "Aggregation"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets hexagon count.",
+        "type": "fill_blank",
+        "answers": [
+            "gridsize"
+        ],
+        "other_options": [
+            "resolution",
+            "size",
+            "bins"
+        ]
+    },
+    {
+        "q": "Hexbin is useful for large datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the density plot types:",
+        "type": "rearrange",
+        "words": [
+            "scatter: individual points",
+            "hexbin: aggregated",
+            "contour: smooth"
+        ]
+    },
+    {
+        "q": "Which function creates streamplots?",
+        "type": "mcq",
+        "o": [
+            "plt.streamplot()",
+            "plt.stream()",
+            "plt.flow()",
+            "plt.vector()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = y = np.linspace(-2, 2, 10)\nX, Y = np.meshgrid(x, y)\nU, V = -Y, X\nstream = plt.streamplot(X, Y, U, V)\nprint(type(stream).__name__)",
+        "o": [
+            "StreamplotSet",
+            "Stream",
+            "Axes",
+            "Lines"
+        ]
+    },
+    {
+        "q": "Match the streamplot parameters:",
+        "type": "match",
+        "left": [
+            "density",
+            "linewidth",
+            "arrowsize"
+        ],
+        "right": [
+            "Stream spacing",
+            "Line thickness",
+            "Arrow scale"
+        ]
+    },
+    {
+        "q": "Streamplots visualize vector fields.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates quiver plots?",
+        "type": "mcq",
+        "o": [
+            "plt.quiver()",
+            "plt.arrows()",
+            "plt.vectors()",
+            "plt.field()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = y = np.arange(0, 3)\nX, Y = np.meshgrid(x, y)\nU, V = X, Y\nquiv = plt.quiver(X, Y, U, V)\nprint(type(quiv).__name__)",
+        "o": [
+            "Quiver",
+            "QuiverPlot",
+            "Arrows",
+            "Collection"
+        ]
+    },
+    {
+        "q": "Match the vector plot types:",
+        "type": "match",
+        "left": [
+            "quiver",
+            "streamplot",
+            "barbs"
+        ],
+        "right": [
+            "Arrow vectors",
+            "Flow lines",
+            "Wind barbs"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls arrow scaling.",
+        "type": "fill_blank",
+        "answers": [
+            "scale"
+        ],
+        "other_options": [
+            "size",
+            "length",
+            "magnitude"
+        ]
+    },
+    {
+        "q": "Quiver plots show vector directions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the vector field visualization:",
+        "type": "rearrange",
+        "words": [
+            "create meshgrid",
+            "compute U and V",
+            "plot vectors"
+        ]
+    },
+    {
+        "q": "Which function creates spy plots?",
+        "type": "mcq",
+        "o": [
+            "plt.spy()",
+            "plt.sparse()",
+            "plt.matrix()",
+            "plt.dense()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nA = np.eye(5)\nax = plt.spy(A)\nprint(type(ax).__name__)",
+        "o": [
+            "AxesImage",
+            "SpyPlot",
+            "Axes",
+            "Matrix"
+        ]
+    },
+    {
+        "q": "spy() visualizes matrix sparsity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the matrix visualization:",
+        "type": "match",
+        "left": [
+            "spy",
+            "matshow",
+            "imshow"
+        ],
+        "right": [
+            "Sparsity",
+            "Matrix values",
+            "Image/array"
+        ]
+    },
+    {
+        "q": "Which function creates stackplots?",
+        "type": "mcq",
+        "o": [
+            "plt.stackplot()",
+            "plt.stack()",
+            "plt.stacked()",
+            "plt.area()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.arange(5)\ny1 = np.array([1, 2, 3, 4, 5])\ny2 = np.array([2, 3, 4, 5, 6])\nstacks = plt.stackplot(x, y1, y2)\nprint(len(stacks))",
+        "o": [
+            "2",
+            "5",
+            "1",
+            "10"
+        ]
+    },
+    {
+        "q": "Match the stackplot parameters:",
+        "type": "match",
+        "left": [
+            "labels",
+            "colors",
+            "baseline"
+        ],
+        "right": [
+            "Legend labels",
+            "Fill colors",
+            "Stack origin"
+        ]
+    },
+    {
+        "q": "stackplot() creates stacked area charts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter sets stack baseline.",
+        "type": "fill_blank",
+        "answers": [
+            "baseline"
+        ],
+        "other_options": [
+            "base",
+            "origin",
+            "bottom"
+        ]
+    },
+    {
+        "q": "Which function creates broken bar charts?",
+        "type": "mcq",
+        "o": [
+            "ax.broken_barh()",
+            "plt.broken_bar()",
+            "plt.gantt()",
+            "ax.hbar_breaks()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.broken_barh([(10, 5), (20, 3)], (5, 2))\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "BrokenBarHPlot",
+            "Figure",
+            "Collection"
+        ]
+    },
+    {
+        "q": "broken_barh() creates Gantt-style charts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the timeline visualization:",
+        "type": "rearrange",
+        "words": [
+            "define segments",
+            "set y-position",
+            "call broken_barh"
+        ]
+    },
+    {
+        "q": "Which function creates table plots?",
+        "type": "mcq",
+        "o": [
+            "plt.table()",
+            "plt.tabular()",
+            "ax.add_table()",
+            "plt.data_table()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\ntable = ax.table(cellText=[['A', 'B'], ['C', 'D']], loc='center')\nprint(type(table).__name__)",
+        "o": [
+            "Table",
+            "TablePlot",
+            "Axes",
+            "Cell"
+        ]
+    },
+    {
+        "q": "Match the table parameters:",
+        "type": "match",
+        "left": [
+            "cellText",
+            "cellColours",
+            "loc"
+        ],
+        "right": [
+            "Cell content",
+            "Cell colors",
+            "Position"
+        ]
+    },
+    {
+        "q": "Tables can be added to plot axes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates event plots?",
+        "type": "mcq",
+        "o": [
+            "plt.eventplot()",
+            "plt.events()",
+            "plt.timeline()",
+            "plt.triggers()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nevents = [np.array([1, 2, 3]), np.array([2, 4, 6])]\ncollections = plt.eventplot(events)\nprint(len(collections))",
+        "o": [
+            "2",
+            "6",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "eventplot() visualizes event sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the eventplot parameters:",
+        "type": "match",
+        "left": [
+            "positions",
+            "orientation",
+            "lineoffsets"
+        ],
+        "right": [
+            "Event times",
+            "Vertical/horizontal",
+            "Row spacing"
+        ]
+    },
+    {
+        "q": "Which seaborn function loads datasets?",
+        "type": "mcq",
+        "o": [
+            "sns.load_dataset()",
+            "sns.data()",
+            "sns.get_data()",
+            "sns.dataset()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\ntips = sns.load_dataset('tips')\nprint(type(tips).__name__)",
+        "o": [
+            "DataFrame",
+            "Dataset",
+            "Array",
+            "Series"
+        ]
+    },
+    {
+        "q": "Match the built-in datasets:",
+        "type": "match",
+        "left": [
+            "tips",
+            "iris",
+            "titanic"
+        ],
+        "right": [
+            "Restaurant tips",
+            "Flower measurements",
+            "Survival data"
+        ]
+    },
+    {
+        "q": "The ______ dataset contains flower measurements.",
+        "type": "fill_blank",
+        "answers": [
+            "iris"
+        ],
+        "other_options": [
+            "flowers",
+            "plants",
+            "petals"
+        ]
+    },
+    {
+        "q": "Rearrange the dataset loading:",
+        "type": "rearrange",
+        "words": [
+            "import seaborn",
+            "call load_dataset",
+            "use DataFrame"
+        ]
+    },
+    {
+        "q": "Seaborn includes example datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which seaborn function sets context?",
+        "type": "mcq",
+        "o": [
+            "sns.set_context()",
+            "sns.context()",
+            "sns.scale()",
+            "sns.set_size()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\ncontexts = ['paper', 'notebook', 'talk', 'poster']\nprint(len(contexts))",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the contexts:",
+        "type": "match",
+        "left": [
+            "paper",
+            "notebook",
+            "talk",
+            "poster"
+        ],
+        "right": [
+            "Smallest",
+            "Default",
+            "Larger",
+            "Largest"
+        ]
+    },
+    {
+        "q": "The ______ context is for presentations.",
+        "type": "fill_blank",
+        "answers": [
+            "talk"
+        ],
+        "other_options": [
+            "presentation",
+            "slide",
+            "large"
+        ]
+    },
+    {
+        "q": "set_context() scales plot elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sets the whole theme?",
+        "type": "mcq",
+        "o": [
+            "sns.set_theme()",
+            "sns.theme()",
+            "sns.set()",
+            "Both set_theme() and set()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nsns.set_theme(style='darkgrid', palette='deep')\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "darkgrid"
+        ]
+    },
+    {
+        "q": "Match the theme components:",
+        "type": "match",
+        "left": [
+            "style",
+            "palette",
+            "context"
+        ],
+        "right": [
+            "Background",
+            "Colors",
+            "Scale"
+        ]
+    },
+    {
+        "q": "set_theme() configures multiple aspects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the theme hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "context: sizing",
+            "style: background",
+            "palette: colors"
+        ]
+    },
+    {
+        "q": "Which function creates residplot?",
+        "type": "mcq",
+        "o": [
+            "sns.residplot()",
+            "sns.resid()",
+            "sns.residuals()",
+            "sns.error_plot()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\nx = np.array([1, 2, 3, 4, 5])\ny = np.array([2, 4, 5, 4, 5])\nax = sns.residplot(x=x, y=y)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "ResidPlot",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "residplot() shows regression residuals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the regression diagnostics:",
+        "type": "match",
+        "left": [
+            "regplot",
+            "residplot"
+        ],
+        "right": [
+            "Fit line",
+            "Residuals"
+        ]
+    },
+    {
+        "q": "Which function customizes despine?",
+        "type": "mcq",
+        "o": [
+            "sns.despine()",
+            "sns.remove_spines()",
+            "sns.hide_axes()",
+            "sns.clean()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nsns.despine()\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "False"
+        ]
+    },
+    {
+        "q": "Match the despine parameters:",
+        "type": "match",
+        "left": [
+            "left",
+            "bottom",
+            "offset"
+        ],
+        "right": [
+            "Remove left",
+            "Remove bottom",
+            "Move spines"
+        ]
+    },
+    {
+        "q": "The ______ removes plot borders.",
+        "type": "fill_blank",
+        "answers": [
+            "despine"
+        ],
+        "other_options": [
+            "remove_spines",
+            "clean",
+            "strip"
+        ]
+    },
+    {
+        "q": "despine() removes top and right spines by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the plot cleanup:",
+        "type": "rearrange",
+        "words": [
+            "create plot",
+            "call despine",
+            "show figure"
+        ]
+    },
+    {
+        "q": "Which function creates objects array?",
+        "type": "mcq",
+        "o": [
+            "sns.objects.Plot()",
+            "sns.plot()",
+            "sns.Object()",
+            "sns.graph()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn.objects as so\nprint(so.__name__)",
+        "o": [
+            "seaborn.objects",
+            "objects",
+            "seaborn",
+            "so"
+        ]
+    },
+    {
+        "q": "Seaborn objects API uses declarative syntax.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the objects components:",
+        "type": "match",
+        "left": [
+            "Plot",
+            "Mark",
+            "Stat"
+        ],
+        "right": [
+            "Container",
+            "Visual",
+            "Transform"
+        ]
+    },
+    {
+        "q": "Which GridSpec creates flexible layouts?",
+        "type": "mcq",
+        "o": [
+            "plt.GridSpec()",
+            "plt.grid_layout()",
+            "plt.layout()",
+            "plt.flexible()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec\ngs = GridSpec(3, 3)\nprint(type(gs).__name__)",
+        "o": [
+            "GridSpec",
+            "Grid",
+            "Layout",
+            "Axes"
+        ]
+    },
+    {
+        "q": "Match the GridSpec features:",
+        "type": "match",
+        "left": [
+            "nrows",
+            "ncols",
+            "width_ratios"
+        ],
+        "right": [
+            "Row count",
+            "Column count",
+            "Relative widths"
+        ]
+    },
+    {
+        "q": "The ______ allows spanning multiple cells.",
+        "type": "fill_blank",
+        "answers": [
+            "GridSpec"
+        ],
+        "other_options": [
+            "SubplotSpec",
+            "GridLayout",
+            "CellSpan"
+        ]
+    },
+    {
+        "q": "GridSpec enables complex subplot arrangements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the GridSpec workflow:",
+        "type": "rearrange",
+        "words": [
+            "create GridSpec",
+            "slice for positions",
+            "add subplots"
+        ]
+    },
+    {
+        "q": "Which function creates inset axes?",
+        "type": "mcq",
+        "o": [
+            "ax.inset_axes()",
+            "plt.inset()",
+            "ax.add_inset()",
+            "plt.zoom()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\naxins = ax.inset_axes([0.5, 0.5, 0.4, 0.4])\nprint(type(axins).__name__)",
+        "o": [
+            "Axes",
+            "InsetAxes",
+            "Figure",
+            "Subplot"
+        ]
+    },
+    {
+        "q": "inset_axes() creates axes within axes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the inset parameters:",
+        "type": "match",
+        "left": [
+            "[x, y, w, h]",
+            "zoom",
+            "mark_inset"
+        ],
+        "right": [
+            "Position and size",
+            "Zoom factor",
+            "Connect lines"
+        ]
+    },
+    {
+        "q": "Which function adds subplot mosaic?",
+        "type": "mcq",
+        "o": [
+            "plt.subplot_mosaic()",
+            "plt.mosaic()",
+            "plt.grid_mosaic()",
+            "plt.named_subplots()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, axd = plt.subplot_mosaic([['A', 'B'], ['C', 'C']])\nprint(len(axd))",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the mosaic features:",
+        "type": "match",
+        "left": [
+            "String layout",
+            "Named axes",
+            "Spanning"
+        ],
+        "right": [
+            "Visual arrangement",
+            "Dictionary access",
+            "Multi-cell"
+        ]
+    },
+    {
+        "q": "subplot_mosaic() uses string layouts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ enables named subplot access.",
+        "type": "fill_blank",
+        "answers": [
+            "subplot_mosaic"
+        ],
+        "other_options": [
+            "subplot_dict",
+            "named_subplots",
+            "labeled_axes"
+        ]
+    },
+    {
+        "q": "Rearrange the mosaic benefits:",
+        "type": "rearrange",
+        "words": [
+            "visual layout",
+            "named access",
+            "easy spanning"
+        ]
+    },
+    {
+        "q": "Which function constrains layout?",
+        "type": "mcq",
+        "o": [
+            "plt.figure(constrained_layout=True)",
+            "plt.tight_layout()",
+            "plt.auto_layout()",
+            "plt.fix_layout()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots(constrained_layout=True)\nprint(fig.get_constrained_layout())",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "constrained_layout prevents overlapping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the layout methods:",
+        "type": "match",
+        "left": [
+            "tight_layout",
+            "constrained_layout"
+        ],
+        "right": [
+            "Post-hoc adjustment",
+            "Continuous adjustment"
+        ]
+    },
+    {
+        "q": "Which method normalizes colors?",
+        "type": "mcq",
+        "o": [
+            "mpl.colors.Normalize()",
+            "plt.normalize()",
+            "plt.scale_colors()",
+            "mpl.norm()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.colors as mcolors\nnorm = mcolors.Normalize(vmin=0, vmax=10)\nprint(norm(5))",
+        "o": [
+            "0.5",
+            "5",
+            "0.05",
+            "1.0"
+        ]
+    },
+    {
+        "q": "Match the normalizations:",
+        "type": "match",
+        "left": [
+            "Normalize",
+            "LogNorm",
+            "SymLogNorm"
+        ],
+        "right": [
+            "Linear",
+            "Logarithmic",
+            "Symmetric log"
+        ]
+    },
+    {
+        "q": "The ______ maps data to 0-1 range.",
+        "type": "fill_blank",
+        "answers": [
+            "Normalize"
+        ],
+        "other_options": [
+            "Scale",
+            "Map",
+            "Range"
+        ]
+    },
+    {
+        "q": "Normalizers map data to color range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the color mapping:",
+        "type": "rearrange",
+        "words": [
+            "data values",
+            "normalize",
+            "colormap"
+        ]
+    },
+    {
+        "q": "Which function creates custom colormaps?",
+        "type": "mcq",
+        "o": [
+            "LinearSegmentedColormap.from_list()",
+            "plt.create_cmap()",
+            "plt.colormap()",
+            "mpl.new_cmap()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.colors as mcolors\ncmap = mcolors.LinearSegmentedColormap.from_list('custom', ['red', 'blue'])\nprint(type(cmap).__name__)",
+        "o": [
+            "LinearSegmentedColormap",
+            "Colormap",
+            "Colors",
+            "List"
+        ]
+    },
+    {
+        "q": "Match the colormap types:",
+        "type": "match",
+        "left": [
+            "LinearSegmentedColormap",
+            "ListedColormap"
+        ],
+        "right": [
+            "Smooth gradient",
+            "Discrete colors"
+        ]
+    },
+    {
+        "q": "Custom colormaps can be created from lists.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates reversed colormap?",
+        "type": "mcq",
+        "o": [
+            "cmap.reversed()",
+            "cmap.reverse()",
+            "cmap[::-1]",
+            "plt.reverse_cmap()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\ncmap = plt.cm.viridis\nreversed_cmap = cmap.reversed()\nprint(type(reversed_cmap).__name__)",
+        "o": [
+            "ListedColormap",
+            "LinearSegmentedColormap",
+            "Colormap",
+            "Reversed"
+        ]
+    },
+    {
+        "q": "_r suffix reverses colormap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the colormap operations:",
+        "type": "match",
+        "left": [
+            "reversed()",
+            "_r suffix"
+        ],
+        "right": [
+            "Method",
+            "Name suffix"
+        ]
+    },
+    {
+        "q": "Which function formats tick labels?",
+        "type": "mcq",
+        "o": [
+            "ax.xaxis.set_major_formatter()",
+            "ax.format_ticks()",
+            "ax.set_tick_format()",
+            "plt.tick_format()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom matplotlib.ticker import PercentFormatter\nfig, ax = plt.subplots()\nax.yaxis.set_major_formatter(PercentFormatter())\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Formatter"
+        ]
+    },
+    {
+        "q": "Match the formatters:",
+        "type": "match",
+        "left": [
+            "PercentFormatter",
+            "FuncFormatter",
+            "ScalarFormatter"
+        ],
+        "right": [
+            "Percentages",
+            "Custom function",
+            "Scientific"
+        ]
+    },
+    {
+        "q": "The ______ allows custom tick formatting.",
+        "type": "fill_blank",
+        "answers": [
+            "FuncFormatter"
+        ],
+        "other_options": [
+            "CustomFormatter",
+            "LambdaFormatter",
+            "CallableFormatter"
+        ]
+    },
+    {
+        "q": "Formatters control tick label display.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the formatter setup:",
+        "type": "rearrange",
+        "words": [
+            "create formatter",
+            "get axis",
+            "set_major_formatter"
+        ]
+    },
+    {
+        "q": "Which function sets tick locators?",
+        "type": "mcq",
+        "o": [
+            "ax.xaxis.set_major_locator()",
+            "ax.locate_ticks()",
+            "ax.set_tick_positions()",
+            "plt.tick_positions()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom matplotlib.ticker import MultipleLocator\nfig, ax = plt.subplots()\nax.xaxis.set_major_locator(MultipleLocator(2))\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Locator"
+        ]
+    },
+    {
+        "q": "Match the locators:",
+        "type": "match",
+        "left": [
+            "MultipleLocator",
+            "MaxNLocator",
+            "LogLocator"
+        ],
+        "right": [
+            "Fixed intervals",
+            "Max tick count",
+            "Log scale"
+        ]
+    },
+    {
+        "q": "Locators determine tick positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ places ticks at multiples.",
+        "type": "fill_blank",
+        "answers": [
+            "MultipleLocator"
+        ],
+        "other_options": [
+            "IntervalLocator",
+            "StepLocator",
+            "FixedLocator"
+        ]
+    },
+    {
+        "q": "Which function adds secondary axes?",
+        "type": "mcq",
+        "o": [
+            "ax.secondary_xaxis()",
+            "ax.add_secondary()",
+            "plt.secondary()",
+            "ax.second_axis()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nsecax = ax.secondary_xaxis('top')\nprint(type(secax).__name__)",
+        "o": [
+            "SecondaryAxis",
+            "Axes",
+            "Secondary",
+            "TwinAxes"
+        ]
+    },
+    {
+        "q": "secondary_xaxis() creates coordinated axis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the secondary axis uses:",
+        "type": "match",
+        "left": [
+            "Temperature F/C",
+            "Distance km/miles"
+        ],
+        "right": [
+            "Unit conversion",
+            "Unit conversion"
+        ]
+    },
+    {
+        "q": "Which class creates path patches?",
+        "type": "mcq",
+        "o": [
+            "matplotlib.patches.Path",
+            "plt.Path()",
+            "mpl.path()",
+            "patches.Line()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from matplotlib.patches import Circle\ncircle = Circle((0.5, 0.5), 0.2)\nprint(type(circle).__name__)",
+        "o": [
+            "Circle",
+            "Patch",
+            "Shape",
+            "Artist"
+        ]
+    },
+    {
+        "q": "Match the patch types:",
+        "type": "match",
+        "left": [
+            "Circle",
+            "Rectangle",
+            "Polygon"
+        ],
+        "right": [
+            "Round",
+            "Box",
+            "Custom shape"
+        ]
+    },
+    {
+        "q": "The ______ creates rectangular patches.",
+        "type": "fill_blank",
+        "answers": [
+            "Rectangle"
+        ],
+        "other_options": [
+            "Box",
+            "Rect",
+            "Square"
+        ]
+    },
+    {
+        "q": "Patches are added with ax.add_patch().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the patch creation:",
+        "type": "rearrange",
+        "words": [
+            "create patch",
+            "set properties",
+            "add to axes"
+        ]
+    },
+    {
+        "q": "Which function creates path effects?",
+        "type": "mcq",
+        "o": [
+            "patheffects.withStroke()",
+            "plt.stroke()",
+            "effects.border()",
+            "mpl.outline()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.patheffects as path_effects\nprint(path_effects.__name__)",
+        "o": [
+            "matplotlib.patheffects",
+            "patheffects",
+            "effects",
+            "path"
+        ]
+    },
+    {
+        "q": "Match the path effects:",
+        "type": "match",
+        "left": [
+            "withStroke",
+            "withSimplePatchShadow"
+        ],
+        "right": [
+            "Text outline",
+            "Shadow"
+        ]
+    },
+    {
+        "q": "Path effects add visual enhancements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates transforms?",
+        "type": "mcq",
+        "o": [
+            "ax.transData, ax.transAxes",
+            "plt.transform()",
+            "ax.get_transform()",
+            "mpl.Transform()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nprint(type(ax.transData).__name__)",
+        "o": [
+            "CompositeGenericTransform",
+            "Transform",
+            "DataTransform",
+            "Axes"
+        ]
+    },
+    {
+        "q": "Match the transform types:",
+        "type": "match",
+        "left": [
+            "transData",
+            "transAxes",
+            "transFigure"
+        ],
+        "right": [
+            "Data coordinates",
+            "Axes fraction",
+            "Figure fraction"
+        ]
+    },
+    {
+        "q": "The ______ uses axes 0-1 coordinates.",
+        "type": "fill_blank",
+        "answers": [
+            "transAxes"
+        ],
+        "other_options": [
+            "transData",
+            "axesCoord",
+            "normalizedAxes"
+        ]
+    },
+    {
+        "q": "Transforms convert between coordinate systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the coordinate systems:",
+        "type": "rearrange",
+        "words": [
+            "data: actual values",
+            "axes: 0-1 fraction",
+            "figure: page fraction"
+        ]
+    },
+    {
+        "q": "Which function adds legend handles?",
+        "type": "mcq",
+        "o": [
+            "ax.legend(handles=[])",
+            "plt.add_legend()",
+            "ax.create_legend()",
+            "plt.legend_handles()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nhandle = Line2D([0], [0], color='red', marker='o')\nprint(type(handle).__name__)",
+        "o": [
+            "Line2D",
+            "Handle",
+            "Legend",
+            "Artist"
+        ]
+    },
+    {
+        "q": "Custom legend handles can be created.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the legend parameters:",
+        "type": "match",
+        "left": [
+            "loc",
+            "ncol",
+            "frameon"
+        ],
+        "right": [
+            "Position",
+            "Columns",
+            "Frame visibility"
+        ]
+    },
+    {
+        "q": "Which function sets legend outside axes?",
+        "type": "mcq",
+        "o": [
+            "bbox_to_anchor parameter",
+            "loc='outside'",
+            "ax.legend_outside()",
+            "external=True"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.plot([1, 2, 3], label='data')\nax.legend(bbox_to_anchor=(1.05, 1))\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Legend"
+        ]
+    },
+    {
+        "q": "bbox_to_anchor positions legend externally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ controls legend position anchor.",
+        "type": "fill_blank",
+        "answers": [
+            "bbox_to_anchor"
+        ],
+        "other_options": [
+            "anchor",
+            "position",
+            "outside"
+        ]
+    },
+    {
+        "q": "Rearrange the legend customization:",
+        "type": "rearrange",
+        "words": [
+            "add labels to plots",
+            "call legend",
+            "position with bbox"
+        ]
+    },
+    {
+        "q": "Which seaborn method moves legend?",
+        "type": "mcq",
+        "o": [
+            "sns.move_legend()",
+            "g.legend_outside()",
+            "sns.relocate_legend()",
+            "g.move_legend()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nprint(hasattr(sns, 'move_legend'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "move_legend() repositions seaborn legends.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the legend positions:",
+        "type": "match",
+        "left": [
+            "upper right",
+            "center left",
+            "lower center"
+        ],
+        "right": [
+            "Top-right",
+            "Middle-left",
+            "Bottom-center"
+        ]
+    },
+    {
+        "q": "Which axes method adds horizontal lines?",
+        "type": "mcq",
+        "o": [
+            "ax.axhline()",
+            "ax.hline()",
+            "plt.horizontal()",
+            "ax.add_hline()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nline = ax.axhline(y=0.5, color='red')\nprint(type(line).__name__)",
+        "o": [
+            "Line2D",
+            "HLine",
+            "Axes",
+            "Line"
+        ]
+    },
+    {
+        "q": "Match the reference line methods:",
+        "type": "match",
+        "left": [
+            "axhline",
+            "axvline",
+            "axhspan"
+        ],
+        "right": [
+            "Horizontal line",
+            "Vertical line",
+            "Horizontal span"
+        ]
+    },
+    {
+        "q": "The ______ creates vertical reference lines.",
+        "type": "fill_blank",
+        "answers": [
+            "axvline"
+        ],
+        "other_options": [
+            "vline",
+            "vertical",
+            "xline"
+        ]
+    },
+    {
+        "q": "axhline() spans the entire axes width.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the reference line types:",
+        "type": "rearrange",
+        "words": [
+            "axhline: full width",
+            "axvline: full height",
+            "plot: partial"
+        ]
+    },
+    {
+        "q": "Which function creates box annotations?",
+        "type": "mcq",
+        "o": [
+            "ax.annotate() with bbox",
+            "ax.box_text()",
+            "plt.textbox()",
+            "ax.add_textbox()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.annotate('Note', xy=(0.5, 0.5), bbox=dict(boxstyle='round'))\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Note"
+        ]
+    },
+    {
+        "q": "Match the boxstyles:",
+        "type": "match",
+        "left": [
+            "round",
+            "square",
+            "rarrow"
+        ],
+        "right": [
+            "Rounded corners",
+            "Sharp corners",
+            "Right arrow"
+        ]
+    },
+    {
+        "q": "bbox parameter adds box around text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sets aspect ratio?",
+        "type": "mcq",
+        "o": [
+            "ax.set_aspect()",
+            "ax.aspect()",
+            "plt.aspect()",
+            "ax.ratio()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_aspect('equal')\nprint(ax.get_aspect())",
+        "o": [
+            "1.0",
+            "equal",
+            "auto",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the aspect values:",
+        "type": "match",
+        "left": [
+            "equal",
+            "auto",
+            "number"
+        ],
+        "right": [
+            "1:1 ratio",
+            "Fill axes",
+            "Custom ratio"
+        ]
+    },
+    {
+        "q": "The ______ ensures equal x and y scaling.",
+        "type": "fill_blank",
+        "answers": [
+            "equal"
+        ],
+        "other_options": [
+            "1",
+            "same",
+            "uniform"
+        ]
+    },
+    {
+        "q": "Equal aspect preserves shape.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the plot finalization:",
+        "type": "rearrange",
+        "words": [
+            "create plot",
+            "adjust aspect",
+            "save or show"
+        ]
+    },
+    {
+        "q": "Which function sets figure background?",
+        "type": "mcq",
+        "o": [
+            "fig.set_facecolor()",
+            "fig.background()",
+            "plt.bgcolor()",
+            "fig.set_bg()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nfig.set_facecolor('lightgray')\nprint(fig.get_facecolor())",
+        "o": [
+            "(0.827, 0.827, 0.827, 1.0)",
+            "lightgray",
+            "gray",
+            "None"
+        ]
+    },
+    {
+        "q": "set_facecolor() changes background color.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the background options:",
+        "type": "match",
+        "left": [
+            "fig.set_facecolor()",
+            "ax.set_facecolor()"
+        ],
+        "right": [
+            "Figure background",
+            "Axes background"
+        ]
+    },
+    {
+        "q": "Which parameter sets figure DPI?",
+        "type": "mcq",
+        "o": [
+            "fig.dpi or plt.figure(dpi=)",
+            "plt.resolution()",
+            "fig.set_resolution()",
+            "plt.set_dpi()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig = plt.figure(dpi=150)\nprint(fig.get_dpi())",
+        "o": [
+            "150.0",
+            "100.0",
+            "72.0",
+            "None"
+        ]
+    },
+    {
+        "q": "Higher DPI produces higher resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter controls image quality.",
+        "type": "fill_blank",
+        "answers": [
+            "dpi"
+        ],
+        "other_options": [
+            "quality",
+            "resolution",
+            "scale"
+        ]
+    },
+    {
+        "q": "Rearrange the publication workflow:",
+        "type": "rearrange",
+        "words": [
+            "set high DPI",
+            "create plot",
+            "save as PDF/SVG"
+        ]
+    },
+    {
+        "q": "Which format is best for publications?",
+        "type": "mcq",
+        "o": [
+            "PDF or SVG",
+            "PNG",
+            "JPEG",
+            "GIF"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nvector_formats = ['pdf', 'svg', 'eps']\nprint(len(vector_formats))",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "Vector formats scale without pixelation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the format types:",
+        "type": "match",
+        "left": [
+            "PDF/SVG",
+            "PNG",
+            "JPEG"
+        ],
+        "right": [
+            "Vector",
+            "Lossless raster",
+            "Lossy raster"
+        ]
+    },
+    {
+        "q": "Which function clears the current figure?",
+        "type": "mcq",
+        "o": [
+            "plt.clf()",
+            "plt.clear()",
+            "fig.clear()",
+            "Both clf() and fig.clear()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.plot([1, 2, 3])\nplt.clf()\nprint(len(fig.axes))",
+        "o": [
+            "0",
+            "1",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "plt.clf() clears the figure contents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the clearing functions:",
+        "type": "match",
+        "left": [
+            "clf()",
+            "cla()",
+            "close()"
+        ],
+        "right": [
+            "Clear figure",
+            "Clear axes",
+            "Close figure"
+        ]
+    },
+    {
+        "q": "Which function closes all figures?",
+        "type": "mcq",
+        "o": [
+            "plt.close('all')",
+            "plt.closeall()",
+            "plt.clear_all()",
+            "fig.closeall()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig1 = plt.figure()\nfig2 = plt.figure()\nplt.close('all')\nprint(len(plt.get_fignums()))",
+        "o": [
+            "0",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Closing figures releases memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the figure management:",
+        "type": "rearrange",
+        "words": [
+            "create figures",
+            "process plots",
+            "close figures"
+        ]
+    },
+    {
+        "q": "Which method gets current axes?",
+        "type": "mcq",
+        "o": [
+            "plt.gca()",
+            "plt.current_ax()",
+            "plt.axes()",
+            "plt.get_axes()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\ncurrent = plt.gca()\nprint(ax == current)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "gca() returns get current axes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the current element getters:",
+        "type": "match",
+        "left": [
+            "gca()",
+            "gcf()"
+        ],
+        "right": [
+            "Get current axes",
+            "Get current figure"
+        ]
+    },
+    {
+        "q": "Which function creates figure with axes?",
+        "type": "mcq",
+        "o": [
+            "plt.subplots()",
+            "plt.figure() + add_subplot()",
+            "Both work",
+            "plt.axes()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, axs = plt.subplots(2, 2, sharex=True)\nprint(axs.shape)",
+        "o": [
+            "(2, 2)",
+            "(4,)",
+            "(2,)",
+            "(1, 4)"
+        ]
+    },
+    {
+        "q": "sharex shares x-axis across subplots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter shares y-axis.",
+        "type": "fill_blank",
+        "answers": [
+            "sharey"
+        ],
+        "other_options": [
+            "share_y",
+            "yshare",
+            "common_y"
+        ]
+    },
+    {
+        "q": "Which function adds text to figure?",
+        "type": "mcq",
+        "o": [
+            "fig.suptitle()",
+            "fig.title()",
+            "plt.figtitle()",
+            "fig.set_title()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, axs = plt.subplots(2, 2)\nfig.suptitle('Main Title')\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Main Title"
+        ]
+    },
+    {
+        "q": "suptitle() adds super title above subplots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the multi-plot titling:",
+        "type": "rearrange",
+        "words": [
+            "create subplots",
+            "add suptitle",
+            "add individual titles"
+        ]
+    },
+    {
+        "q": "Which function adjusts subplot spacing manually?",
+        "type": "mcq",
+        "o": [
+            "plt.subplots_adjust()",
+            "plt.spacing()",
+            "fig.set_spacing()",
+            "plt.margins()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, axs = plt.subplots(2, 2)\nplt.subplots_adjust(hspace=0.5, wspace=0.5)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the spacing parameters:",
+        "type": "match",
+        "left": [
+            "hspace",
+            "wspace",
+            "left/right"
+        ],
+        "right": [
+            "Height space",
+            "Width space",
+            "Margins"
+        ]
+    },
+    {
+        "q": "hspace controls vertical subplot spacing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter sets horizontal spacing.",
+        "type": "fill_blank",
+        "answers": [
+            "wspace"
+        ],
+        "other_options": [
+            "hspace",
+            "width",
+            "horizontal"
+        ]
+    },
+    {
+        "q": "Which method rotates tick labels?",
+        "type": "mcq",
+        "o": [
+            "plt.xticks(rotation=)",
+            "ax.rotate_xticks()",
+            "ax.set_rotation()",
+            "plt.tick_rotation()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_xticks([0, 1, 2])\nax.set_xticklabels(['A', 'B', 'C'], rotation=45)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "45",
+            "None"
+        ]
+    },
+    {
+        "q": "rotation parameter rotates labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the rotation options:",
+        "type": "match",
+        "left": [
+            "rotation=45",
+            "rotation=90",
+            "ha='right'"
+        ],
+        "right": [
+            "Diagonal",
+            "Vertical",
+            "Right align"
+        ]
+    },
+    {
+        "q": "Which seaborn function adds context?",
+        "type": "mcq",
+        "o": [
+            "sns.plotting_context()",
+            "sns.get_context()",
+            "sns.context_params()",
+            "sns.style_context()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nwith sns.plotting_context('talk'):\n    print('inside context')\nprint('outside context')",
+        "o": [
+            "Both print",
+            "inside context only",
+            "outside context only",
+            "Error"
+        ]
+    },
+    {
+        "q": "plotting_context() works as context manager.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the context managers:",
+        "type": "match",
+        "left": [
+            "plotting_context",
+            "axes_style"
+        ],
+        "right": [
+            "Size context",
+            "Style context"
+        ]
+    },
+    {
+        "q": "Rearrange the context usage:",
+        "type": "rearrange",
+        "words": [
+            "with context",
+            "create plot",
+            "automatic reset"
+        ]
+    },
+    {
+        "q": "Which function resets seaborn defaults?",
+        "type": "mcq",
+        "o": [
+            "sns.reset_defaults()",
+            "sns.reset()",
+            "sns.default()",
+            "sns.clear_style()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nsns.set_style('darkgrid')\nsns.reset_defaults()\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "darkgrid"
+        ]
+    },
+    {
+        "q": "reset_defaults() restores original settings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function gets available datasets?",
+        "type": "mcq",
+        "o": [
+            "sns.get_dataset_names()",
+            "sns.list_datasets()",
+            "sns.datasets()",
+            "sns.available_data()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nnames = sns.get_dataset_names()\nprint('tips' in names)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the example datasets:",
+        "type": "match",
+        "left": [
+            "tips",
+            "diamonds",
+            "penguins"
+        ],
+        "right": [
+            "Restaurant data",
+            "Gem prices",
+            "Bird measurements"
+        ]
+    },
+    {
+        "q": "get_dataset_names() lists available datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates bivariate kde?",
+        "type": "mcq",
+        "o": [
+            "sns.kdeplot(x=, y=)",
+            "sns.kde2d()",
+            "sns.bivariate_kde()",
+            "sns.joint_kde()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport numpy as np\nx = np.random.randn(100)\ny = np.random.randn(100)\nax = sns.kdeplot(x=x, y=y)\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "KDE",
+            "Figure",
+            "Contour"
+        ]
+    },
+    {
+        "q": "Bivariate kde shows 2D density.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter adds filled contours.",
+        "type": "fill_blank",
+        "answers": [
+            "fill"
+        ],
+        "other_options": [
+            "filled",
+            "shade",
+            "color"
+        ]
+    },
+    {
+        "q": "Rearrange the kde plot types:",
+        "type": "rearrange",
+        "words": [
+            "univariate: single variable",
+            "bivariate: two variables"
+        ]
+    },
+    {
+        "q": "Which function sets color cycle?",
+        "type": "mcq",
+        "o": [
+            "ax.set_prop_cycle()",
+            "plt.color_cycle()",
+            "ax.set_colors()",
+            "plt.set_cycle()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom cycler import cycler\ncolors = cycler(color=['red', 'green', 'blue'])\nprint(type(colors).__name__)",
+        "o": [
+            "cycler",
+            "Cycler",
+            "list",
+            "Colors"
+        ]
+    },
+    {
+        "q": "set_prop_cycle() customizes default colors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cycler features:",
+        "type": "match",
+        "left": [
+            "color",
+            "linestyle",
+            "marker"
+        ],
+        "right": [
+            "Line colors",
+            "Line patterns",
+            "Point shapes"
+        ]
+    },
+    {
+        "q": "Which class creates blended transforms?",
+        "type": "mcq",
+        "o": [
+            "blended_transform_factory()",
+            "plt.blend_transform()",
+            "mpl.combined_transform()",
+            "ax.mixed_coords()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfrom matplotlib.transforms import blended_transform_factory\nfig, ax = plt.subplots()\nblended = blended_transform_factory(ax.transData, ax.transAxes)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "Transform"
+        ]
+    },
+    {
+        "q": "Blended transforms mix coordinate systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the transform combination:",
+        "type": "rearrange",
+        "words": [
+            "x from data",
+            "y from axes",
+            "blended_transform"
+        ]
+    },
+    {
+        "q": "Which function creates offset transforms?",
+        "type": "mcq",
+        "o": [
+            "ScaledTranslation()",
+            "OffsetTransform()",
+            "ShiftedTransform()",
+            "MoveTransform()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from matplotlib.transforms import ScaledTranslation\nimport matplotlib.pyplot as plt\nfig = plt.figure()\ndx, dy = ScaledTranslation(10, 0, fig.dpi_scale_trans).get_matrix()[:2, 2]\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "10"
+        ]
+    },
+    {
+        "q": "ScaledTranslation offsets by physical units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which module provides color utilities?",
+        "type": "mcq",
+        "o": [
+            "matplotlib.colors",
+            "matplotlib.color",
+            "plt.colors",
+            "mpl.palette"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.colors as mcolors\nrgb = mcolors.to_rgb('red')\nprint(len(rgb))",
+        "o": [
+            "3",
+            "4",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "q": "to_rgb() converts color to RGB tuple.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the color conversions:",
+        "type": "match",
+        "left": [
+            "to_rgb()",
+            "to_rgba()",
+            "to_hex()"
+        ],
+        "right": [
+            "RGB tuple",
+            "RGBA tuple",
+            "Hex string"
+        ]
+    },
+    {
+        "q": "The ______ adds alpha to RGB.",
+        "type": "fill_blank",
+        "answers": [
+            "to_rgba"
+        ],
+        "other_options": [
+            "to_rgb",
+            "add_alpha",
+            "rgba"
+        ]
+    },
+    {
+        "q": "Which function creates color lists?",
+        "type": "mcq",
+        "o": [
+            "sns.color_palette()",
+            "sns.colors()",
+            "sns.get_colors()",
+            "sns.palette_list()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\npalette = sns.color_palette('husl', 8)\nprint(len(palette))",
+        "o": [
+            "8",
+            "6",
+            "10",
+            "3"
+        ]
+    },
+    {
+        "q": "color_palette() creates list of colors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the palette creation:",
+        "type": "rearrange",
+        "words": [
+            "choose palette name",
+            "set number of colors",
+            "apply to plots"
+        ]
+    },
+    {
+        "q": "Which palette is colorblind-friendly?",
+        "type": "mcq",
+        "o": [
+            "colorblind",
+            "deep",
+            "bright",
+            "pastel"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\npalette = sns.color_palette('colorblind')\nprint(len(palette))",
+        "o": [
+            "10",
+            "6",
+            "8",
+            "12"
+        ]
+    },
+    {
+        "q": "colorblind palette aids accessibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the palette purposes:",
+        "type": "match",
+        "left": [
+            "colorblind",
+            "husl",
+            "cubehelix"
+        ],
+        "right": [
+            "Accessibility",
+            "Perceptually uniform",
+            "Continuous"
+        ]
+    },
+    {
+        "q": "Which function creates light palette?",
+        "type": "mcq",
+        "o": [
+            "sns.light_palette()",
+            "sns.pale_palette()",
+            "sns.faded_palette()",
+            "sns.soft_palette()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\npalette = sns.light_palette('seagreen', 5)\nprint(len(palette))",
+        "o": [
+            "5",
+            "3",
+            "10",
+            "1"
+        ]
+    },
+    {
+        "q": "light_palette() creates gradient from light.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ creates dark-based gradient.",
+        "type": "fill_blank",
+        "answers": [
+            "dark_palette"
+        ],
+        "other_options": [
+            "black_palette",
+            "dim_palette",
+            "shadow_palette"
+        ]
+    },
+    {
+        "q": "Which function creates diverging palette?",
+        "type": "mcq",
+        "o": [
+            "sns.diverging_palette()",
+            "sns.bipolar_palette()",
+            "sns.two_color()",
+            "sns.split_palette()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\npalette = sns.diverging_palette(220, 20, n=7)\nprint(len(palette))",
+        "o": [
+            "7",
+            "2",
+            "14",
+            "3"
+        ]
+    },
+    {
+        "q": "Diverging palettes have neutral center.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the palette types:",
+        "type": "rearrange",
+        "words": [
+            "sequential: ordered",
+            "diverging: bipolar",
+            "qualitative: categorical"
+        ]
+    },
+    {
+        "q": "Which function shows palette?",
+        "type": "mcq",
+        "o": [
+            "sns.palplot()",
+            "sns.show_palette()",
+            "sns.display_colors()",
+            "sns.plot_palette()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\npalette = sns.color_palette('deep')\nprint(hasattr(sns, 'palplot'))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "palplot() displays palette colors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which seaborn function shows correlation?",
+        "type": "mcq",
+        "o": [
+            "sns.heatmap() with df.corr()",
+            "sns.corrplot()",
+            "sns.correlation()",
+            "sns.corr_matrix()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'a': [1, 2, 3], 'b': [2, 4, 6]})\ncorr = df.corr()\nprint(corr.shape)",
+        "o": [
+            "(2, 2)",
+            "(3, 3)",
+            "(2,)",
+            "(1, 2)"
+        ]
+    },
+    {
+        "q": "Correlation matrices show relationships.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the heatmap annotations:",
+        "type": "match",
+        "left": [
+            "annot=True",
+            "fmt='.2f'"
+        ],
+        "right": [
+            "Show values",
+            "Number format"
+        ]
+    },
+    {
+        "q": "The ______ parameter limits color range.",
+        "type": "fill_blank",
+        "answers": [
+            "vmin/vmax"
+        ],
+        "other_options": [
+            "range",
+            "limits",
+            "bounds"
+        ]
+    },
+    {
+        "q": "Which mask hides upper triangle?",
+        "type": "mcq",
+        "o": [
+            "np.triu(np.ones_like(corr))",
+            "np.upper(corr)",
+            "mask_upper(corr)",
+            "corr.mask_upper()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nmask = np.triu(np.ones((3, 3)))\nprint(mask[0, 2])",
+        "o": [
+            "1.0",
+            "0.0",
+            "True",
+            "None"
+        ]
+    },
+    {
+        "q": "np.triu() creates upper triangle mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the correlation heatmap:",
+        "type": "rearrange",
+        "words": [
+            "compute correlation",
+            "create mask",
+            "plot heatmap"
+        ]
+    },
+    {
+        "q": "Which function adds confidence bands?",
+        "type": "mcq",
+        "o": [
+            "fill_between with percentiles",
+            "plt.confidence()",
+            "ax.error_band()",
+            "plt.ci_band()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.arange(10)\ny = np.random.randn(10).cumsum()\nplt.fill_between(x, y-1, y+1, alpha=0.3)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "1"
+        ]
+    },
+    {
+        "q": "fill_between creates shaded regions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter sets transparency.",
+        "type": "fill_blank",
+        "answers": [
+            "alpha"
+        ],
+        "other_options": [
+            "opacity",
+            "transparent",
+            "fade"
+        ]
+    },
+    {
+        "q": "Which parameter sets bar edge color?",
+        "type": "mcq",
+        "o": [
+            "edgecolor",
+            "bordercolor",
+            "linecolor",
+            "outline"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nbars = plt.bar([1, 2, 3], [4, 5, 6], edgecolor='black')\nprint(bars[0].get_edgecolor())",
+        "o": [
+            "(0.0, 0.0, 0.0, 1.0)",
+            "black",
+            "(1.0, 1.0, 1.0, 1.0)",
+            "None"
+        ]
+    },
+    {
+        "q": "edgecolor sets bar border color.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bar parameters:",
+        "type": "match",
+        "left": [
+            "color",
+            "edgecolor",
+            "linewidth"
+        ],
+        "right": [
+            "Fill",
+            "Border",
+            "Border thickness"
+        ]
+    },
+    {
+        "q": "Which function creates grouped bars?",
+        "type": "mcq",
+        "o": [
+            "Multiple plt.bar() with offset",
+            "plt.grouped_bar()",
+            "plt.bar_groups()",
+            "plt.bargroup()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.arange(3)\nwidth = 0.35\nbars1 = plt.bar(x - width/2, [1, 2, 3], width)\nbars2 = plt.bar(x + width/2, [3, 2, 1], width)\nprint(len(bars1) + len(bars2))",
+        "o": [
+            "6",
+            "3",
+            "2",
+            "9"
+        ]
+    },
+    {
+        "q": "Grouped bars require position offset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the grouped bar creation:",
+        "type": "rearrange",
+        "words": [
+            "calculate positions",
+            "set bar width",
+            "plot with offset"
+        ]
+    },
+    {
+        "q": "Which function creates stacked bars?",
+        "type": "mcq",
+        "o": [
+            "plt.bar() with bottom parameter",
+            "plt.stackbar()",
+            "plt.bar_stacked()",
+            "plt.cumbar()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\ny1 = [1, 2, 3]\ny2 = [2, 3, 4]\nplt.bar([1, 2, 3], y1)\nplt.bar([1, 2, 3], y2, bottom=y1)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "7"
+        ]
+    },
+    {
+        "q": "bottom parameter stacks bars.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter sets bar base.",
+        "type": "fill_blank",
+        "answers": [
+            "bottom"
+        ],
+        "other_options": [
+            "base",
+            "start",
+            "origin"
+        ]
+    },
+    {
+        "q": "Which function creates waterfall charts?",
+        "type": "mcq",
+        "o": [
+            "Custom bar plot with cumsum",
+            "plt.waterfall()",
+            "plt.cascade()",
+            "plt.flow()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nvalues = [10, -5, 15, -3]\ncumulative = np.cumsum(values)\nprint(cumulative[-1])",
+        "o": [
+            "17",
+            "10",
+            "33",
+            "0"
+        ]
+    },
+    {
+        "q": "Waterfall charts show cumulative effect.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates area plots?",
+        "type": "mcq",
+        "o": [
+            "plt.stackplot() or fill_between()",
+            "plt.area()",
+            "plt.areaplot()",
+            "plt.filled_line()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.arange(5)\ny = [1, 2, 3, 4, 5]\nplt.fill_between(x, y)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "5"
+        ]
+    },
+    {
+        "q": "Area plots fill under curves.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the fill functions:",
+        "type": "match",
+        "left": [
+            "fill_between",
+            "stackplot"
+        ],
+        "right": [
+            "Single area",
+            "Stacked areas"
+        ]
+    },
+    {
+        "q": "Rearrange the area plot creation:",
+        "type": "rearrange",
+        "words": [
+            "prepare x and y data",
+            "call fill_between",
+            "set transparency"
+        ]
+    },
+    {
+        "q": "Which parameter adds percentage to pie?",
+        "type": "mcq",
+        "o": [
+            "autopct",
+            "percentage",
+            "pct",
+            "show_pct"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nsizes = [30, 70]\nplt.pie(sizes, autopct='%1.1f%%')\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "30"
+        ]
+    },
+    {
+        "q": "autopct shows slice percentages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ offsets pie slices.",
+        "type": "fill_blank",
+        "answers": [
+            "explode"
+        ],
+        "other_options": [
+            "offset",
+            "separate",
+            "detach"
+        ]
+    },
+    {
+        "q": "Which function creates donut charts?",
+        "type": "mcq",
+        "o": [
+            "plt.pie() with wedgeprops",
+            "plt.donut()",
+            "plt.ring()",
+            "plt.hollow_pie()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nsizes = [40, 60]\nplt.pie(sizes, wedgeprops=dict(width=0.5))\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "0.5"
+        ]
+    },
+    {
+        "q": "wedgeprops with width creates donut.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pie parameters:",
+        "type": "match",
+        "left": [
+            "startangle",
+            "counterclock",
+            "wedgeprops"
+        ],
+        "right": [
+            "Starting position",
+            "Direction",
+            "Slice properties"
+        ]
+    },
+    {
+        "q": "Which function creates radar charts?",
+        "type": "mcq",
+        "o": [
+            "Custom polar plot",
+            "plt.radar()",
+            "plt.spider()",
+            "plt.radial()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\ntheta = np.linspace(0, 2*np.pi, 6, endpoint=False)\nax = plt.subplot(projection='polar')\nax.plot(theta, [1, 2, 3, 4, 5, 6])\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "6"
+        ]
+    },
+    {
+        "q": "Radar charts use polar projection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the chart types:",
+        "type": "match",
+        "left": [
+            "radar",
+            "polar",
+            "pie"
+        ],
+        "right": [
+            "Multi-variable",
+            "Angular",
+            "Proportional"
+        ]
+    },
+    {
+        "q": "Which function creates waterfall from bars?",
+        "type": "mcq",
+        "o": [
+            "plt.bar with cumulative calc",
+            "plt.waterfall()",
+            "plt.cascade()",
+            "plt.flow_bar()"
+        ]
+    },
+    {
+        "q": "Waterfall charts need manual calculation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates treemaps?",
+        "type": "mcq",
+        "o": [
+            "squarify library",
+            "plt.treemap()",
+            "plt.tree()",
+            "plt.hierarchy()"
+        ]
+    },
+    {
+        "q": "Treemaps visualize hierarchical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the specialized charts:",
+        "type": "match",
+        "left": [
+            "treemap",
+            "sunburst",
+            "sankey"
+        ],
+        "right": [
+            "Nested rectangles",
+            "Radial hierarchy",
+            "Flow diagram"
+        ]
+    },
+    {
+        "q": "Which function creates bubble charts?",
+        "type": "mcq",
+        "o": [
+            "plt.scatter with s parameter",
+            "plt.bubble()",
+            "plt.circles()",
+            "plt.sized_points()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nimport numpy as np\nx = [1, 2, 3]\ny = [4, 5, 6]\nsize = [100, 200, 300]\nplt.scatter(x, y, s=size)\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "300"
+        ]
+    },
+    {
+        "q": "The s parameter controls point size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter maps size to data.",
+        "type": "fill_blank",
+        "answers": [
+            "s"
+        ],
+        "other_options": [
+            "size",
+            "markersize",
+            "scale"
+        ]
+    },
+    {
+        "q": "Rearrange bubble chart dimensions:",
+        "type": "rearrange",
+        "words": [
+            "x position",
+            "y position",
+            "size",
+            "color"
+        ]
+    },
+    {
+        "q": "Which seaborn parameter adds size?",
+        "type": "mcq",
+        "o": [
+            "size parameter",
+            "s parameter",
+            "markersize",
+            "scale"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import seaborn as sns\nimport pandas as pd\ndf = pd.DataFrame({'x': [1, 2, 3], 'y': [4, 5, 6], 's': [10, 20, 30]})\nax = sns.scatterplot(data=df, x='x', y='y', size='s')\nprint(type(ax).__name__)",
+        "o": [
+            "Axes",
+            "Scatter",
+            "Figure",
+            "Plot"
+        ]
+    },
+    {
+        "q": "size parameter encodes data dimension.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the encoding aesthetic:",
+        "type": "match",
+        "left": [
+            "x/y",
+            "hue",
+            "size",
+            "style"
+        ],
+        "right": [
+            "Position",
+            "Color",
+            "Area",
+            "Shape"
+        ]
+    },
+    {
+        "q": "Which function adds minor ticks?",
+        "type": "mcq",
+        "o": [
+            "ax.minorticks_on()",
+            "ax.minor_ticks()",
+            "ax.add_minor()",
+            "plt.minor_ticks()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.minorticks_on()\nprint('success')",
+        "o": [
+            "success",
+            "Error",
+            "None",
+            "True"
+        ]
+    },
+    {
+        "q": "minorticks_on() enables minor ticks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the tick visibility:",
+        "type": "match",
+        "left": [
+            "minorticks_on",
+            "minorticks_off"
+        ],
+        "right": [
+            "Show minor",
+            "Hide minor"
+        ]
+    },
+    {
+        "q": "Which function saves multiple figures?",
+        "type": "mcq",
+        "o": [
+            "PdfPages context manager",
+            "plt.save_multiple()",
+            "plt.multipage()",
+            "fig.save_all()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from matplotlib.backends.backend_pdf import PdfPages\nprint(PdfPages.__module__)",
+        "o": [
+            "matplotlib.backends.backend_pdf",
+            "matplotlib",
+            "PdfPages",
+            "None"
+        ]
+    },
+    {
+        "q": "PdfPages creates multi-page PDFs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the multi-page workflow:",
+        "type": "rearrange",
+        "words": [
+            "create PdfPages",
+            "save figures",
+            "close PdfPages"
+        ]
+    },
+    {
+        "q": "Which function sets rcParams?",
+        "type": "mcq",
+        "o": [
+            "plt.rcParams['key'] = value",
+            "plt.set_params()",
+            "mpl.params()",
+            "plt.config()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import matplotlib.pyplot as plt\nplt.rcParams['figure.figsize'] = [10, 6]\nprint(plt.rcParams['figure.figsize'])",
+        "o": [
+            "[10.0, 6.0]",
+            "[10, 6]",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "rcParams stores matplotlib configuration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ controls default figure size.",
+        "type": "fill_blank",
+        "answers": [
+            "figure.figsize"
+        ],
+        "other_options": [
+            "figsize",
+            "default_size",
+            "canvas_size"
+        ]
+    }
+]

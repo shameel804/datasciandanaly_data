@@ -1,0 +1,3826 @@
+[
+    {
+        "q": "What is an anomaly?",
+        "type": "mcq",
+        "o": [
+            "A pattern that deviates from expected behavior",
+            "A normal data point",
+            "The average value",
+            "A missing value"
+        ]
+    },
+    {
+        "q": "Which is a synonym for 'anomaly detection'?",
+        "type": "mcq",
+        "o": [
+            "Outlier detection",
+            "Inlier detection",
+            "Pattern matching",
+            "Regression"
+        ]
+    },
+    {
+        "q": "In a normal distribution, most data points lie within 3 _____ of the mean.",
+        "type": "fill_blank",
+        "answers": [
+            "standard deviations"
+        ],
+        "other_options": [
+            "variances",
+            "medians",
+            "ranges"
+        ]
+    },
+    {
+        "q": "Point anomalies are individual data points that are anomalous.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Contextual anomalies are anomalous only in a specific context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Collective anomalies are a collection of data points that are anomalous together.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "vals = [10, 12, 11, 100, 11]\nprint(max(vals))",
+        "o": [
+            "100",
+            "12",
+            "11",
+            "10"
+        ]
+    },
+    {
+        "q": "Match the anomaly type:",
+        "type": "match",
+        "left": [
+            "Point",
+            "Contextual",
+            "Collective"
+        ],
+        "right": [
+            "Single outlier",
+            "Outlier in context",
+            "Group outlier"
+        ]
+    },
+    {
+        "q": "Supervised anomaly detection requires labeled data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Unsupervised anomaly detection requires no labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which algorithm is commonly used for anomaly detection?",
+        "type": "mcq",
+        "o": [
+            "Isolation Forest",
+            "Linear Regression",
+            "K-Means (standard)",
+            "Bubble Sort"
+        ]
+    },
+    {
+        "q": "Isolation Forest detects anomalies by isolating them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomalies are easier to isolate than normal points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3, 100]\nmean = sum(x) / len(x)\nprint(mean > 10)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Z-score measures how many standard deviations a point is from the _____.",
+        "type": "fill_blank",
+        "answers": [
+            "mean"
+        ],
+        "other_options": [
+            "median",
+            "mode",
+            "max"
+        ]
+    },
+    {
+        "q": "A Z-score of +3.5 is typically considered an anomaly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps for Z-score method:",
+        "type": "rearrange",
+        "words": [
+            "Calculate Mean",
+            "Calculate Std Dev",
+            "Compute Z-score",
+            "Threshold"
+        ]
+    },
+    {
+        "q": "Box plots use IQR to detect outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IQR stands for Inter-_____ Range.",
+        "type": "fill_blank",
+        "answers": [
+            "Quartile"
+        ],
+        "other_options": [
+            "Quality",
+            "Quantity",
+            "Question"
+        ]
+    },
+    {
+        "q": "In a box plot, points beyond the whiskers are outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DBSCAN is a density-based clustering algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In DBSCAN, noise points are considered anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 100])\nprint(np.std(a) > 0)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "One-Class SVM detects anomalies by learning a decision boundary around normal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Class SVM is a supervised learning method.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Mahalanobis distance accounts for correlation between variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Euclidean distance assumes variables are independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange to form a distance metric:",
+        "type": "rearrange",
+        "words": [
+            "Mahalanobis",
+            "Distance",
+            "Metric"
+        ]
+    },
+    {
+        "q": "Autoencoders can be used for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoencoders detect anomalies based on high _____ error.",
+        "type": "fill_blank",
+        "answers": [
+            "reconstruction"
+        ],
+        "other_options": [
+            "classification",
+            "regression",
+            "training"
+        ]
+    },
+    {
+        "q": "Anomalies are hard to reconstruct by an autoencoder trained on normal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nif 10 in l:\n    print('Found')\nelse:\n    print('Not Found')",
+        "o": [
+            "Not Found",
+            "Found",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Fraud detection is a common application of anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Intrusion detection systems use anomaly detection for network security.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Predictive maintenance uses anomaly detection to predict equipment failure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "False Positive means reporting an anomaly when it is normal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "False Negative means missing an actual anomaly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the outcome:",
+        "type": "match",
+        "left": [
+            "True Positive",
+            "False Positive",
+            "True Negative",
+            "False Negative"
+        ],
+        "right": [
+            "Correctly detected anomaly",
+            "False alarm",
+            "Correctly ignored normal",
+            "Missed anomaly"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(abs(-5))",
+        "o": [
+            "5",
+            "-5",
+            "5.0",
+            "0"
+        ]
+    },
+    {
+        "q": "Benford's Law helps detect fraud in financial data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Benford's Law states the leading digit 1 appears most frequently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local Outlier Factor (LOF) compares local density of a point to neighbors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LOF is good for detecting anomalies in datasets with varying densities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which value of LOF indicates an anomaly?",
+        "type": "mcq",
+        "o": [
+            "Much greater than 1",
+            "Equal to 1",
+            "Less than 1",
+            "Zero"
+        ]
+    },
+    {
+        "q": "Rearrange the LOF steps:",
+        "type": "rearrange",
+        "words": [
+            "Find Neighbors",
+            "Compute Density",
+            "Compare Neighbors",
+            "Calculate LOF"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = set([1, 2, 2, 3])\nprint(len(s))",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Supervised learning builds a binary classifier for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Class imbalance is a major issue in supervised anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SMOTE is a technique to handle class imbalance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SMOTE stands for Synthetic Minority Over-sampling _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Technique"
+        ],
+        "other_options": [
+            "Technology",
+            "Tool",
+            "Test"
+        ]
+    },
+    {
+        "q": "Undersampling reduces the majority class size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PCA can be used for anomaly detection by checking reconstruction error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = 10\nprint(x % 3)",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "10"
+        ]
+    },
+    {
+        "q": "Time series anomalies can be changes in trend or seasonality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Change Point Detection finds when the underlying model changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CUSUM is a method for change point detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CUSUM stands for Cumulative _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Sum"
+        ],
+        "other_options": [
+            "Summary",
+            "System",
+            "Score"
+        ]
+    },
+    {
+        "q": "Visual inspection is a valid way to find anomalies in small datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the acronym:",
+        "type": "match",
+        "left": [
+            "PCA",
+            "SVM",
+            "LOF",
+            "GMM"
+        ],
+        "right": [
+            "Principal Component Analysis",
+            "Support Vector Machine",
+            "Local Outlier Factor",
+            "Gaussian Mixture Model"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {'a': 1}\nprint('b' in d)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Gaussian Mixture Models (GMM) use probability density for detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Points with low probability density in GMM are anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rule-based systems use manually defined thresholds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rule-based systems are easy to maintain as data changes.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Statistical methods assume a data distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-parametric methods do not assume a fixed distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Histogram-based methods check if points fall in low-frequency bins.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange to form a detection method:",
+        "type": "rearrange",
+        "words": [
+            "Isolation",
+            "Forest",
+            "Algorithm"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(min([1, 5, -2, 10]))",
+        "o": [
+            "-2",
+            "1",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "Root Cause Analysis aims to identify why an anomaly occurred.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Correlation always implies causation.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Granger Causality tests if one time series predicts another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which plot is useful for checking normality?",
+        "type": "mcq",
+        "o": [
+            "Q-Q Plot",
+            "Pie Chart",
+            "Bar Chart",
+            "Venn Diagram"
+        ]
+    },
+    {
+        "q": "In a Q-Q plot, normal data follows a straight line.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(3 ** 2)",
+        "o": [
+            "9",
+            "6",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Shapiro-Wilk test checks for normality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kolmogorov-Smirnov test compares two distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Percentile rank indicates the percentage of scores below a value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Winsorization involves capping extreme values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trimming involves removing extreme values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the words:",
+        "type": "rearrange",
+        "words": [
+            "Root",
+            "Cause",
+            "Analysis"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "points = [1, 100]\nfor p in points:\n    if p > 50: print(p)",
+        "o": [
+            "100",
+            "1",
+            "1 100",
+            "None"
+        ]
+    },
+    {
+        "q": "Simple Moving Average (SMA) can be used to set dynamic thresholds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Exponential Moving Average (EMA) gives more weight to recent data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bollinger Bands use Moving Average and standard deviation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Points outside Bollinger Bands are potential anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the tool:",
+        "type": "match",
+        "left": [
+            "PyOD",
+            "Scikit-learn",
+            "Pandas",
+            "Matplotlib"
+        ],
+        "right": [
+            "Anomaly Detection Lib",
+            "ML Library",
+            "Data Frame Lib",
+            "Plotting Lib"
+        ]
+    },
+    {
+        "q": "PyOD is a Python toolkit for detecting outlying objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'contamination' parameter defines the expected proportion of outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature scaling is important for distance-based anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [10, 20, 30]\nprint(l.index(20))",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Curse of Dimensionality makes distance metric less meaningful in high dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dimensionality reduction helps improve anomaly detection in high-dim data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparsity means most values are zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dense means most values are non-zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Real-time detection requires low latency algorithms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multivariate anomaly detection considers multiple features simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Univariate anomaly detection considers one feature at a time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariance matrix is essential for detecting _____ anomalies.",
+        "type": "fill_blank",
+        "answers": [
+            "multivariate"
+        ],
+        "other_options": [
+            "univariate",
+            "null",
+            "linear"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 2], [3, 4]])\nprint(np.mean(a))",
+        "o": [
+            "2.5",
+            "2.0",
+            "3.0",
+            "10"
+        ]
+    },
+    {
+        "q": "Precision checks what proportion of predicted anomalies are actual anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recall checks what proportion of actual anomalies were detected.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "F1-score is the harmonic mean of Precision and Recall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the metric:",
+        "type": "match",
+        "left": [
+            "Precision",
+            "Recall",
+            "F1",
+            "Accuracy"
+        ],
+        "right": [
+            "TP / (TP + FP)",
+            "TP / (TP + FN)",
+            "2*P*R / (P+R)",
+            "(TP+TN) / Total"
+        ]
+    },
+    {
+        "q": "Accuracy is a good metric for highly imbalanced anomaly detection datasets.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Receiver Operating Characteristic (ROC) curve plots TPR vs FPR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AUC stands for Area Under the _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Curve"
+        ],
+        "other_options": [
+            "Circle",
+            "Chart",
+            "Case"
+        ]
+    },
+    {
+        "q": "Higher AUC indicates better model performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [False, False, True]\nprint(any(l))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "An autoencoder with a bottleneck layer forces it to learn compressed representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reconstruction error is |input - output|.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "K-Nearest Neighbors (KNN) can use distance to k-th neighbor as anomaly score.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Points with large average distance to k neighbors are likely outlying.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the KNN steps:",
+        "type": "rearrange",
+        "words": [
+            "Calculate Distances",
+            "Find k Neighbors",
+            "Compute Score",
+            "Rank Points"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = 'hello'\nprint(s[1:4])",
+        "o": [
+            "ell",
+            "hel",
+            "llo",
+            "ello"
+        ]
+    },
+    {
+        "q": "HBOS (Histogram-based Outlier Score) assumes feature independence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HBOS is faster than KNN for large datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cluster-based Local Outlier Factor (CBLOF) uses cluster size and distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Small clusters far from large clusters are often anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the algorithm:",
+        "type": "match",
+        "left": [
+            "KNN",
+            "DBSCAN",
+            "PCA",
+            "Autoencoder"
+        ],
+        "right": [
+            "Distance-based",
+            "Density-based",
+            "Projection-based",
+            "Neural Network"
+        ]
+    },
+    {
+        "q": "Minimum Covariance Determinant (MCD) is a robust estimator of covariance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MCD is resistant to outliers compared to standard covariance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The breakdown point is the smallest fraction of contamination that can ruin an estimator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {1: 'a', 2: 'b'}\nprint(len(x))",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Seasonal decomposition splits time series into Trend, Seasonality, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Residual"
+        ],
+        "other_options": [
+            "Noise",
+            "Error",
+            "Mean"
+        ]
+    },
+    {
+        "q": "Anomalies in residuals are easier to detect.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "STL decomposition handles Seasonality and Trend using Loess.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ARIMA models can be used to forecast and find anomalies in prediction errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ARIMA stands for AutoRegressive Integrated Moving _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Average"
+        ],
+        "other_options": [
+            "Algorithm",
+            "Area",
+            "Agent"
+        ]
+    },
+    {
+        "q": "Rearrange the ARIMA components:",
+        "type": "rearrange",
+        "words": [
+            "AR",
+            "I",
+            "MA"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "for i in range(2, 5):\n    print(i, end=' ')",
+        "o": [
+            "2 3 4",
+            "2 3 4 5",
+            "3 4 5",
+            "1 2 3"
+        ]
+    },
+    {
+        "q": "Angle-based Outlier Detection (ABOD) performs well in high dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ABOD uses the variance of angles between points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Small variance in angles indicates a point is inside a cluster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Large variance in angles indicates a point is an outlier.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Sparse coding assumes data can be represented by a few active coefficients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "High reconstruction error in sparse coding implies an anomaly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(bool(0))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ensemble methods combine multiple anomaly detectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature bagging trains models on random subsets of features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LODA stands for Lightweight On-line Detector of Anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LODA uses projections to estimate density.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ensemble method:",
+        "type": "match",
+        "left": [
+            "Bagging",
+            "Boosting",
+            "Stacking",
+            "Average"
+        ],
+        "right": [
+            "Bootstrap Aggregating",
+            "Sequential improvement",
+            "Learn to combine",
+            "Simple Mean"
+        ]
+    },
+    {
+        "q": "Isolation Forest is an ensemble of trees.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Points with short path lengths in Isolation Forest are anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Extended Isolation Forest handles slope anomalies better.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nl.append(4)\nprint(l)",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[4, 1, 2, 3]",
+            "[1, 2, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Statistical process control (SPC) charts monitor process stability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Upper Control Limit (UCL) is usually Mean + 3*Sigma.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower Control Limit (LCL) is usually Mean - 3*Sigma.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Western Electric Rules are used to detect non-random patterns in SPC.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the SPC components:",
+        "type": "rearrange",
+        "words": [
+            "Center Line",
+            "UCL",
+            "LCL",
+            "Data Points"
+        ]
+    },
+    {
+        "q": "Drift detection identifies when data distribution changes over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Page-Hinkley test detects changes in the average.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ADWIN stands for Adaptive Windowing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ADWIN dynamically adjusts window size based on change detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "g = (x for x in range(3))\nprint(next(g))",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Kernel Density Estimation (KDE) is a non-parametric density estimator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bandwidth parameter in KDE controls smoothness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Small bandwidth leads to overfitting (spiky density).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Large bandwidth leads to underfitting (oversmoothed).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the term:",
+        "type": "match",
+        "left": [
+            "Parametric",
+            "Non-parametric",
+            "Density",
+            "Distribution"
+        ],
+        "right": [
+            "Fixed parameters",
+            "Flexible form",
+            "Mass per volume",
+            "Probability spread"
+        ]
+    },
+    {
+        "q": "Robust statistics are not easily affected by outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Median is more robust than Mean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAD stands for Median Absolute _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Deviation"
+        ],
+        "other_options": [
+            "Difference",
+            "Distance",
+            "Divider"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(round(2.5))",
+        "o": [
+            "2",
+            "3",
+            "2.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Hypothesis testing can be used for outlier detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grubbs' test assumes univariate normality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grubbs' test detects exactly one outlier at a time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dixon's Q test is for small sample sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chi-square test checks independence of categorical variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\nprint(x * 2)",
+        "o": [
+            "[1, 2, 3, 1, 2, 3]",
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Missing values can sometimes be considered anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Imputation replaces missing values with estimated ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mean imputation reduces variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KNN imputation finds similar samples to fill gaps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Log transformation helps handling skewed data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Class SVM attempts to separate data from the _____.",
+        "type": "fill_blank",
+        "answers": [
+            "origin"
+        ],
+        "other_options": [
+            "mean",
+            "cluster",
+            "axis"
+        ]
+    },
+    {
+        "q": "Nu parameter in One-Class SVM controls the proportion of support vectors and outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Support Vector Data Description (SVDD) fits a sphere around the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\nprint(x.index(4))",
+        "o": [
+            "Error",
+            "-1",
+            "None",
+            "0"
+        ]
+    },
+    {
+        "q": "Local Correlation Integral (LOCI) is effective for detecting outliers in varying densities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LOCI computes a Multi-granularity Deviation Factor (MDEF).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the LOCI steps:",
+        "type": "rearrange",
+        "words": [
+            "Count Neighbors",
+            "Estimate Density",
+            "Compare Scales",
+            "Compute MDEF"
+        ]
+    },
+    {
+        "q": "In high-dimensional spaces, data becomes sparse, making density estimation hard.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Subspace outlier detection finds anomalies in low-dimensional projections.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feature selection can improve anomaly detection by removing noisy features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "def func(a, b=2):\n    return a * b\nprint(func(b=3, a=2))",
+        "o": [
+            "6",
+            "4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "PCA-based detection uses the reconstruction error of the _____ principal components.",
+        "type": "fill_blank",
+        "answers": [
+            "last"
+        ],
+        "other_options": [
+            "first",
+            "random",
+            "middle"
+        ]
+    },
+    {
+        "q": "The first few principal components capture normal variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The last few principal components capture noise and anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Robust PCA decomposes a matrix into a low-rank matrix and a _____ matrix.",
+        "type": "fill_blank",
+        "answers": [
+            "sparse"
+        ],
+        "other_options": [
+            "dense",
+            "diagonal",
+            "identity"
+        ]
+    },
+    {
+        "q": "Autoencoders are unsupervised neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Denoising Autoencoders are trained to reconstruct clean input from noisy input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Variational Autoencoders (VAEs) learn a probabilistic latent space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(int('10', 2))",
+        "o": [
+            "2",
+            "10",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Restricted Boltzmann Machines (RBM) are energy-based models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Low energy states in RBMs correspond to normal patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Belief Networks are stacked RBMs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Long Short-Term Memory (LSTM) networks are recurrent neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LSTMs are effective for time-series anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LSTMs predict the next time step; large prediction errors indicate anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the LSTM gates:",
+        "type": "rearrange",
+        "words": [
+            "Forget Gate",
+            "Input Gate",
+            "Output Gate"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nprint(l[-1])",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Convolutional Neural Networks (CNNs) are primarily used for image data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CNNs can also be applied to time-series data using 1D convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In image anomaly detection, anomalies are often deviations from learned textures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generative Adversarial Networks (GANs) can be used for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AnoGAN uses a GAN trained on normal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In AnoGAN, anomalies are detected by searching for a latent vector that generates a similar image.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deep learning model:",
+        "type": "match",
+        "left": [
+            "LSTM",
+            "CNN",
+            "Autoencoder",
+            "GAN"
+        ],
+        "right": [
+            "Sequential data",
+            "Spatial data",
+            "Reconstruction",
+            "Generative"
+        ]
+    },
+    {
+        "q": "Transfer learning uses pre-trained models on new tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transfer learning is useful when labeled anomaly data is scarce.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Active learning queries the user to label the most uncertain points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Active learning helps improve model performance with fewer labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = 'Apple'\nprint(x.lower())",
+        "o": [
+            "apple",
+            "Apple",
+            "APPLE",
+            "Error"
+        ]
+    },
+    {
+        "q": "Matrix Profile is a data structure for analyzing time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Matrix Profile computes the distance to the nearest neighbor for every subsequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A high value in Matrix Profile indicates a _____ (anomaly).",
+        "type": "fill_blank",
+        "answers": [
+            "discord"
+        ],
+        "other_options": [
+            "motif",
+            "trend",
+            "season"
+        ]
+    },
+    {
+        "q": "A low value in Matrix Profile indicates a motif (repeated pattern).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange Matrix Profile concepts:",
+        "type": "rearrange",
+        "words": [
+            "Subsequence",
+            "Euclidean Distance",
+            "Nearest Neighbor",
+            "Profile"
+        ]
+    },
+    {
+        "q": "SAX (Symbolic Aggregate approXimation) discretizes time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SAX converts time series into strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomalies in SAX representation are unusual substrings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {1: 'a'}\nprint(d.get(2))",
+        "o": [
+            "None",
+            "Error",
+            "a",
+            "2"
+        ]
+    },
+    {
+        "q": "Graph-based anomaly detection finds anomalous nodes or edges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Oddball algorithm detects anomalies in weighted graphs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Egonet features describe the neighborhood of a node.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dense blocks in adjacency matrices can indicate fraud rings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Scan statistics search for clusters of events in time/space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kulldorff's scan statistic is used for spatial epidemiology.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(range(5, 2, -1)))",
+        "o": [
+            "[5, 4, 3]",
+            "[5, 4, 3, 2]",
+            "[2, 3, 4, 5]",
+            "[]"
+        ]
+    },
+    {
+        "q": "Spectral clustering uses eigenvalues of the similarity matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet is a forecasting tool by Facebook.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet handles missing data and outliers well.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prophet decomposes time series into Trend, Seasonality, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Holidays"
+        ],
+        "other_options": [
+            "Weekends",
+            "Weather",
+            "Events"
+        ]
+    },
+    {
+        "q": "Match the time series component:",
+        "type": "match",
+        "left": [
+            "Trend",
+            "Seasonality",
+            "Cyclic",
+            "Noise"
+        ],
+        "right": [
+            "Long-term direction",
+            "Fixed frequency pattern",
+            "Non-fixed pattern",
+            "Random variation"
+        ]
+    },
+    {
+        "q": "Feature engineering is crucial for supervised anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lag features use previous values as predictors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rolling window statistics include mean, std, min, max over a window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fourier Transform decomposes a signal into frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "High-frequency components often correspond to noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(2 | 3)",
+        "o": [
+            "3",
+            "1",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "q": "Evaluation of unsupervised anomaly detection relies on ground truth or domain expert.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lift at K measures how much better the model is than random guessing at top K.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-N accuracy focuses on the first N predictions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Precision at K is the proportion of anomalies in the top K scores.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the evaluation steps:",
+        "type": "rearrange",
+        "words": [
+            "Score Points",
+            "Sort Scores",
+            "Select Top K",
+            "Calculate Precision"
+        ]
+    },
+    {
+        "q": "Cost-sensitive learning assigns different costs to FP and FN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In fraud detection, False Negative (missed fraud) is usually more costly than False Positive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Zero-day attacks are previously unknown anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Signature-based detection cannot detect zero-day attacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomaly-based detection has the potential to detect zero-day attacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = {1, 2}\na.add(2)\nprint(len(a))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Entropy measures the uncertainty or impurity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomalies often increase the entropy of a system.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Relative entropy is also known as _____ Divergence.",
+        "type": "fill_blank",
+        "answers": [
+            "KL"
+        ],
+        "other_options": [
+            "JS",
+            "Wasserstein",
+            "Euclidean"
+        ]
+    },
+    {
+        "q": "Information Gain measures reduction in entropy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Genetic Algorithms can be used to optimize anomaly detection parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Particle Swarm Optimization (PSO) is another heuristic optimization method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Simulated Annealing mimics the cooling process of metals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import math\nprint(math.ceil(2.1))",
+        "o": [
+            "3",
+            "2",
+            "2.1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Concept drift is when the statistical properties of the target variable change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual drift is when the input data distribution changes but deciding boundary remains same.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariate shift is a change in the distribution of input variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prior probability shift is a change in the distribution of class labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the drift type:",
+        "type": "match",
+        "left": [
+            "Concept Drift",
+            "Covariate Shift",
+            "Prior Shift"
+        ],
+        "right": [
+            "P(y|x) changes",
+            "P(x) changes",
+            "P(y) changes"
+        ]
+    },
+    {
+        "q": "Online learning updates the model incrementally as new data arrives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Forgetting mechanisms allow online models to adapt to changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Window-based forgetting involves training on a sliding window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weight decay assigns lower weights to older samples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('a' * 3)",
+        "o": [
+            "aaa",
+            "a",
+            "3a",
+            "Error"
+        ]
+    },
+    {
+        "q": "Explainable AI (XAI) helps understand why an anomaly was flagged.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SHAP values attribute the prediction to individual features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LIME approximates the local decision boundary with an interpretable model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Integrated Gradients is an attribution method for deep networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which VAE loss term ensures the latent space is close to a standard normal distribution?",
+        "type": "mcq",
+        "o": [
+            "KL Divergence",
+            "Reconstruction Loss",
+            "L1 Loss",
+            "Binary Cross Entropy"
+        ]
+    },
+    {
+        "q": "In VAEs, high KL divergence indicates the posterior deviates from the prior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beta-VAE adjusts the weight of the reconstruction loss.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The reparameterization trick allows backpropagation through _____ nodes.",
+        "type": "fill_blank",
+        "answers": [
+            "stochastic"
+        ],
+        "other_options": [
+            "deterministic",
+            "linear",
+            "input"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = 3.14159\nprint('{:.2f}'.format(x))",
+        "o": [
+            "3.14",
+            "3.14159",
+            "3.1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bidirectional GANs (BiGAN) learn an inverse mapping from data to latent space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In BiGAN, anomaly detection uses both reconstruction error and discriminator feature matching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CycleGAN is typically used for unpaired image-to-image translation anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange GAN training steps:",
+        "type": "rearrange",
+        "words": [
+            "Train Discriminator",
+            "Fix Discriminator",
+            "Train Generator"
+        ]
+    },
+    {
+        "q": "Mode collapse in GANs implies the generator produces limited variety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2, 3]\nb = a\nb[0] = 0\nprint(a[0])",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Deep SVDD trains a network to map normal data inside a hypersphere.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The center of the hypersphere in Deep SVDD is learned.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Soft-boundary Deep SVDD allows some normal points outside the sphere.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Class Neural Networks (OC-NN) combine autoencoders and support vector methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the paper to the concept:",
+        "type": "match",
+        "left": [
+            "Deep SVDD",
+            "AnoGAN",
+            "DAGMM",
+            "OmniAnomaly"
+        ],
+        "right": [
+            "Hypersphere Loss",
+            "GAN-based detection",
+            "GMM + Autoencoder",
+            "Stochastic RNN"
+        ]
+    },
+    {
+        "q": "DAGMM (Deep Autoencoding Gaussian Mixture Model) jointly learns dimension reduction and density estimation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DAGMM overcomes the issue of decoupled training in two-stage approaches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OmniAnomaly uses stochastic recurrent neural networks for multivariate time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OmniAnomaly captures robust local dependencies using planar _____.",
+        "type": "fill_blank",
+        "answers": [
+            "flows"
+        ],
+        "other_options": [
+            "graphs",
+            "trees",
+            "lines"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(sum(range(3)))",
+        "o": [
+            "3",
+            "6",
+            "0",
+            "1"
+        ]
+    },
+    {
+        "q": "Streaming anomaly detection must handle concept drift and unlimited data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reservoir sampling maintains a representative sample of a stream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hoeffding Trees are decision trees for streaming data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hoeffding bound guarantees performance close to a batch learner.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange Hoeffding Tree growth:",
+        "type": "rearrange",
+        "words": [
+            "Leaf Data Accumulate",
+            "Check Bound",
+            "Split Node"
+        ]
+    },
+    {
+        "q": "Half-Space Trees are an ensemble method for fast anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Half-Space Trees require no model updating, only mass updating.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Exact Storm is a sliding window storm algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MCOD (Micro-cluster based Continuous Outlier Detection) uses micro-clusters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import copy\na = [1, [2]]\nb = copy.copy(a)\nb[1][0] = 3\nprint(a[1][0])",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Log anomaly detection involves parsing unstructured logs into structured events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepLog models log sequences as a natural language problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DeepLog uses _____ to predict the next log template.",
+        "type": "fill_blank",
+        "answers": [
+            "LSTM"
+        ],
+        "other_options": [
+            "CNN",
+            "SVM",
+            "PCA"
+        ]
+    },
+    {
+        "q": "LogRobust uses attention to handle unstable log sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the log analysis step:",
+        "type": "match",
+        "left": [
+            "Parsing",
+            "Feature Extraction",
+            "Anomaly Detection",
+            "Diagnosis"
+        ],
+        "right": [
+            "Log to Template",
+            "Count/Sequence vectors",
+            "Identify issues",
+            "Root cause"
+        ]
+    },
+    {
+        "q": "Video anomaly detection often learns normal motion patterns (optical flow).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "3D-CNNs capture spatiotemporal features in video.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Future frame prediction is a common self-supervised task for video anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "High prediction error in a frame indicates an event.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('1' + '2')",
+        "o": [
+            "12",
+            "3",
+            "Error",
+            "NaN"
+        ]
+    },
+    {
+        "q": "Graph Convolutional Networks (GCN) can detect anomalies in social networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomalous nodes often have different attribute distributions than neighbors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DOMINANT (Deep Anomaly Detection on Attributed Networks) uses a GCN autoencoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DOMINANT minimizes both structure reconstruction error and _____ reconstruction error.",
+        "type": "fill_blank",
+        "answers": [
+            "attribute"
+        ],
+        "other_options": [
+            "label",
+            "class",
+            "weight"
+        ]
+    },
+    {
+        "q": "Structural anomalies involve unusual connectivity patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Crowdsourcing can be used to verify anomalies in active learning loops.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Strategies for querying in active learning include Uncertainty and Diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange active learning cycle:",
+        "type": "rearrange",
+        "words": [
+            "Train Model",
+            "Query Oracle",
+            "Update Labeled Set",
+            "Retrain"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = lambda a : a + 10\nprint(x(5))",
+        "o": [
+            "15",
+            "510",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sensitivity Analysis determines how input changes affect output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Robustness testing checks model performance under noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial attacks aim to fool the anomaly detector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Poisoning attacks inject malicious data during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Evasion attacks try to bypass detection during inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the attack:",
+        "type": "match",
+        "left": [
+            "Poisoning",
+            "Evasion",
+            "Model Extraction",
+            "Inversion"
+        ],
+        "right": [
+            "Corrupt training",
+            "Fool inference",
+            "Steal parameters",
+            "Recover training data"
+        ]
+    },
+    {
+        "q": "Federated Learning preserves privacy by keeping data local.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Privacy-preserving anomaly detection uses encryption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Homomorphic encryption allows operations on ciphertexts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(map(lambda x: x**2, [1, 2])))",
+        "o": [
+            "[1, 4]",
+            "[1, 2]",
+            "[2, 4]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Transfer learning assumption: Source and Target domains are related.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Negative Transfer occurs when transfer learning hurts performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Domain adaptation techniques align feature distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CORAL (Correlation Alignment) aligns correct covariance matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Few-shot anomaly detection requires very few labeled anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Siamese networks are used for one-shot learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Triplet loss minimizes distance to positive, maximizes distance to _____.",
+        "type": "fill_blank",
+        "answers": [
+            "negative"
+        ],
+        "other_options": [
+            "anchor",
+            "mean",
+            "zero"
+        ]
+    },
+    {
+        "q": "Anchor, Positive, Negative are the three inputs for Triplet Loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange Triplet Loss inputs:",
+        "type": "rearrange",
+        "words": [
+            "Anchor",
+            "Positive",
+            "Negative"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\ndel x[:]\nprint(x)",
+        "o": [
+            "[]",
+            "[1, 2, 3]",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Graph Embedding methods like node2vec can be used for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Node2vec uses random walks to learn node representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structural Deep Network Embedding (SDNE) uses autoencoders on graphs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SDNE preserves 1st and 2nd order proximities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "First-order proximity captures local pairwise similarity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Second-order proximity captures similarity of neighborhoods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the graph concept:",
+        "type": "match",
+        "left": [
+            "Adjacency Matrix",
+            "Degree Matrix",
+            "Laplacian Matrix",
+            "Walk"
+        ],
+        "right": [
+            "Connections",
+            "Node counts",
+            "D - A",
+            "Sequence of nodes"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = {1, 2}\nb = {2, 3}\nprint(a.union(b))",
+        "o": [
+            "{1, 2, 3}",
+            "{1, 2, 2, 3}",
+            "{2}",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multi-view anomaly detection uses inconsistent views to find anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Co-training is a semi-supervised method using multiple views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Canonical Correlation Analysis (CCA) finds linear relationships between two views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep CCA extends CCA using deep neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kernel CCA allows non-linear relationships using kernels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(bin(4))",
+        "o": [
+            "0b100",
+            "100",
+            "0x4",
+            "4"
+        ]
+    },
+    {
+        "q": "Outlier Ensembles: 'Average' reduces variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Outlier Ensembles: 'Maximization' is optimistic.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "'Maximization' ensemble is pessimistic (unions outliers).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diversity in ensembles is crucial for performance improvement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sequential ensembles (Boosting) focus on hard-to-detect anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which GNN component aggregates information from neighbors?",
+        "type": "mcq",
+        "o": [
+            "Message Passing",
+            "Pooling",
+            "Activation",
+            "Dropout"
+        ]
+    },
+    {
+        "q": "Graph Attention Networks (GAT) assign different weights to neighbors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomalous nodes often have low attention weights from neighbors in GATs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GDN (Graph Deviation Network) learns deviations in relationships for time series.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(filter(None, [0, 1, 2])))",
+        "o": [
+            "[1, 2]",
+            "[0, 1, 2]",
+            "[0]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Information Bottleneck seeks minimal representation that maximally predicts the target.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In anomaly detection, IB can filter out noise, keeping only relevant information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Variational Information Bottleneck (VIB) combines VAEs and IB.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mutual Information measures the dependency between two variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange IB objectives:",
+        "type": "rearrange",
+        "words": [
+            "Minimize I(X;Z)",
+            "Maximize I(Z;Y)"
+        ]
+    },
+    {
+        "q": "Self-supervised learning on graphs can involves contrastive tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generative methods on graphs (like GraphVAE) reconstruct adjacency matrix and attributes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AnomalyDA adapts anomaly detectors across domains.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Features invariant to domain shift are preferred.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "t = (1, 2)\nt[0] = 3\nprint(t[0])",
+        "o": [
+            "Error",
+            "3",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "Anomaly Detection in sequences often uses Hidden Markov Models (HMM).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Low probability sequences in HMM are potential anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recurrent Autoencoders for sequences minimize reconstruction error of the sequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Seq2Seq models map input sequence to output sequence (e.g. self-reconstruction).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sequence model:",
+        "type": "match",
+        "left": [
+            "HMM",
+            "RNN",
+            "Transformer",
+            "CRF"
+        ],
+        "right": [
+            "Probabilistic States",
+            "Recurrent Neural Net",
+            "Attention Mechanism",
+            "Conditional Random Field"
+        ]
+    },
+    {
+        "q": "Bayesian Neural Networks (BNN) estimate uncertainty in predictions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "High epistemic uncertainty indicates the model is unfamiliar with the data (anomaly).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aleatoric uncertainty captures noise inherent in the data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Monte Carlo Dropout is a way to approximate Bayesian inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(pow(2, 3, 3))",
+        "o": [
+            "2",
+            "8",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Curriculum learning trains on easy anomalies first?",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Curriculum learning trains on easy 'tasks' or 'samples' first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-paced learning allows the model to select its own curriculum.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard example mining focuses training on difficult samples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Focal Loss down-weights easy examples to focus on hard ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Isolation Distributional Kernel (IDK) measures point-to-set similarity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('%.2f%%' % 99.5)",
+        "o": [
+            "99.50%",
+            "99.5%",
+            "99.50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Explainable Anomaly Detection: Anchors are sufficient conditions for a prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactuals show minimal change to flip the prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prototypes are representative examples of a class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Criticisms are examples that are not well-represented by prototypes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange explanation types:",
+        "type": "rearrange",
+        "words": [
+            "Feature Importance",
+            "Decision Rules",
+            "Prototypes",
+            "Counterfactuals"
+        ]
+    },
+    {
+        "q": "Hyperparameter optimization: Tree-structured Parzen Estimator (TPE).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TPE models P(x|y) and P(y) to choose next hyperparameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Successive Halving discards poorly performing configurations early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyperband combines Random Search and Successive Halving.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "from functools import reduce\nprint(reduce(lambda x, y: x+y, [1, 2, 3]))",
+        "o": [
+            "6",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Outlier exposure uses an auxiliary dataset of outliers during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Auxiliary outliers should be distinct from expected anomalies.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Energy-based models assign low energy to in-distribution data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Categorical data anomaly detection often uses frequency-based methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "COMPLEX (Compression-based method) finds anomalies that compress poorly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the compression concept:",
+        "type": "match",
+        "left": [
+            "MDL",
+            "Huffman",
+            "LZW",
+            "Kolmogorov"
+        ],
+        "right": [
+            "Min Description Length",
+            "Prefix codes",
+            "Dictionary compression",
+            "Algorithmic complexity"
+        ]
+    },
+    {
+        "q": "Kolmogorov Complexity is uncomputable in general.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Normal Compression Distance (NCD) approximates Information Distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(all([]))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Spectral Theory: Graph Laplacian eigenvalues relate to graph cuts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fiedler vector is the eigenvector corresponding to the second smallest eigenvalue.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local spectral methods focus on a subgraph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tensor decomposition for dynamic graph anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temporal tensor factorization captures time-evolving patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange steps in spectral clustering:",
+        "type": "rearrange",
+        "words": [
+            "Adjacency Matrix",
+            "Laplacian",
+            "Eigenvectors",
+            "K-Means"
+        ]
+    },
+    {
+        "q": "Random Cut Forest (RCF) is improved Isolation Forest for streaming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RCF handles concept drift via reservoir sampling and tree updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "T-Digest is a data structure for estimating quantiles in streams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {'a': 1}\nprint(d.pop('b', 2))",
+        "o": [
+            "2",
+            "Error",
+            "None",
+            "1"
+        ]
+    },
+    {
+        "q": "Differential Privacy adds Laplace noise for numerical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Exponential Mechanism is used for private selection from a set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PATE (Private Aggregation of Teacher Ensembles) transfers privacy to student.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Federated Averaging can leak information through gradient updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Leaking from Gradients (DLG) reconstructs training data from gradients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the defense:",
+        "type": "match",
+        "left": [
+            "Gradient Clipping",
+            "Noise Addition",
+            "Secure Aggregation",
+            "Audit"
+        ],
+        "right": [
+            "Prevents large updates",
+            "DP mechanism",
+            "Conceals individual updates",
+            "Check compliance"
+        ]
+    },
+    {
+        "q": "Fairness-aware anomaly detection ensures equal error rates across groups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Disparate Impact measures ratio of positive outcomes between groups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial debiasing uses a discriminator to remove sensitive info.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(divmod(10, 3))",
+        "o": [
+            "(3, 1)",
+            "[3, 1]",
+            "3.33",
+            "3"
+        ]
+    },
+    {
+        "q": "Gaussian Process (GP) provides probabilistic regression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GP is defined by a Mean function and a _____ function.",
+        "type": "fill_blank",
+        "answers": [
+            "Covariance"
+        ],
+        "other_options": [
+            "Loss",
+            "Activation",
+            "Kernel"
+        ]
+    },
+    {
+        "q": "GP complexity is typically O(n^3) due to matrix inversion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inducing points approximate GP for scalability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Gaussian Processes stack GPs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Normalizing Flows learn bijective mappings to a simple distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flows allow exact likelihood computation (unlike GANs/VAEs).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(chr(65))",
+        "o": [
+            "A",
+            "65",
+            "a",
+            "Error"
+        ]
+    },
+    {
+        "q": "Real NVP (Non-volume preserving) is a flow-based model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Glow is a generative flow with invertible 1x1 convolutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomaly detection with flows thresholds the exact log-likelihood.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Attention complexity is O(N^2) with respect to sequence length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparse Transformers reduce visual attention complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Linformer approximates attention with linear complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange flow steps:",
+        "type": "rearrange",
+        "words": [
+            "Input X",
+            "Bijective Map f",
+            "Latent Z",
+            "Inverse Map g"
+        ]
+    },
+    {
+        "q": "Causal inference can distinguish correlation from causation in anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Intervention (do-operator) changes the system to test causality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactuals answer 'what if' questions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structural Causal Models (SCM) describe the system with equations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hallucinations in LLMs can be considered a type of anomaly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-Consistency in LLMs checks if multiple reasoning paths lead to the same answer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Low probability of the generated token sequence is a strong indicator of hallucination.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Fact-checking LLM outputs can be framed as an _____ detection task.",
+        "type": "fill_blank",
+        "answers": [
+            "anomaly"
+        ],
+        "other_options": [
+            "sentiment",
+            "translation",
+            "sorting"
+        ]
+    },
+    {
+        "q": "Out-of-Distribution (OOD) detection is crucial for deploying safe AI systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mahalanobis distance in the feature space of a pre-trained network is effective for OOD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ODin (Out-of-Distribution detector for neural networks) uses temperature scaling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange OOD detection pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Input x",
+            "Extract Features",
+            "Compute Score",
+            "Thresholding"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(10 // 3)",
+        "o": [
+            "3",
+            "3.33",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "Quantum Anomaly Detection (QAD) uses quantum algorithms for speedup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantum Variational Circuits can be trained as autoencoders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantum kernel estimation helps in non-linear feature mapping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grover's algorithm provides a quadratic speedup for unstructured search (anomaly search).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the quantum concept:",
+        "type": "match",
+        "left": [
+            "Qubit",
+            "Superposition",
+            "Entanglement",
+            "Interference"
+        ],
+        "right": [
+            "Quantum bit",
+            "Multiple states",
+            "Correlated state",
+            "Wave addition"
+        ]
+    },
+    {
+        "q": "Extreme Value Theory (EVT) models the tails of a distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Peaks-Over-Threshold (POT) method models exceedances over a high threshold.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generalized Pareto Distribution (GPD) is used in POT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Block Maxima method uses Generalized Extreme Value (GEV) distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(abs(-5))",
+        "o": [
+            "5",
+            "-5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Heavy-tailed distributions have more extreme outliers than normal distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cauchy distribution is an example of a heavy-tailed distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In heavy-tailed data, the mean may not exist or be finite.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Power law distributions often appear in network traffic anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial Robustness Toolbox (ART) provides tools to defend models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Certified robustness guarantees no adversarial example exists within a radius.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Randomized Smoothing is a technique for certified robustness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = {1}\ns.update([2, 3])\nprint(len(s))",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Topological Data Analysis (TDA) analyzes the shape of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Persistent Homology tracks topological features (holes) across scales.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomalies can be topological features that persist for a long time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Betti numbers count the number of k-dimensional holes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange TDA steps:",
+        "type": "rearrange",
+        "words": [
+            "Point Cloud",
+            "Filtration",
+            "Persistence Diagram",
+            "Feature Vector"
+        ]
+    },
+    {
+        "q": "Neuromorphic computing simulates the spiking behavior of neurons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spiking Neural Networks (SNN) are energy-efficient for edge anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SNNs process information using the _____ of spikes.",
+        "type": "fill_blank",
+        "answers": [
+            "timing"
+        ],
+        "other_options": [
+            "color",
+            "shape",
+            "weight"
+        ]
+    },
+    {
+        "q": "Federated Learning with non-IID data poses challenges for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Personalized Federated Learning adapts the global model to local clients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Federated challenge:",
+        "type": "match",
+        "left": [
+            "Stragglers",
+            "Communication Cost",
+            "Privacy Leakage",
+            "Data Heterogeneity"
+        ],
+        "right": [
+            "Slow clients",
+            "Bandwidth limit",
+            "Inference attack",
+            "Non-IID distribution"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2, 3]\nprint(a.pop(0))",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Contrastive Learning pulls similar samples together and pushes apart distinct ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimCLR is a framework for simple contrastive learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In anomaly detection, negatives for contrastive loss can be generated by transformations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CSI (Contrastive Shift Independence) specializes in OOD detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Generative Models for graph generation (GraphRNN) compute likelihoods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Auto-regressive models estimate the joint probability as a product of conditionals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MADE (Masked Autoencoder for Distribution Estimation) enforces auto-regressive property via masks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PixelCNN generates images pixel by pixel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(min(max(2, 5), 4))",
+        "o": [
+            "4",
+            "5",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Zero-shot anomaly detection uses semantic descriptions of anomalies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CLIP (Contrastive Language-Image Pre-training) can be used for zero-shot AD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt engineering for CLIP can define 'normal' vs 'anomaly' text queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-modal anomaly detection combines audio, video, and text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-modal attention learns dependencies between different modalities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Missing modality problem: Model should work even if one sensor fails.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Edge computing brings computation closer to the data source.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model compression is essential for deploying AD on edge devices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pruning removes redundant connections in neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Quantization reduces the precision of weights (e.g., float32 to int8).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange model compression:",
+        "type": "rearrange",
+        "words": [
+            "Train Large Model",
+            "Prune Weights",
+            "Quantize",
+            "Deploy"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('hello'.replace('l', ''))",
+        "o": [
+            "heo",
+            "he",
+            "hello",
+            "lo"
+        ]
+    },
+    {
+        "q": "Continual Learning aims to learn new tasks without forgetting old ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Catastrophic forgetting is a major challenge in continual learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Elastic Weight Consolidation (EWC) protects important weights from changing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Replay buffers store old examples to retrain occasionally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anomaly detection in evolving streams is a continual learning problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Meta-learning is 'learning to learn'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MAML (Model-Agnostic Meta-Learning) optimizes for fast adaptation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Meta-learning can quickly adapt an anomaly detector to a new machine.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the learning paradigm:",
+        "type": "match",
+        "left": [
+            "Continual",
+            "Meta",
+            "Transfer",
+            "Active"
+        ],
+        "right": [
+            "Sequential tasks",
+            "Learn to adapt",
+            "Source to Target",
+            "Query labels"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nprint(l.pop())",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Weakly supervised anomaly detection uses noisy or inexact labels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiple Instance Learning (MIL) operates on bags of instances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MIL, a positive bag contains at least one positive instance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MIL, a negative bag contains only negative instances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MIL is useful for video anomaly where only the video-level label is known.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hierarchical Temporal Memory (HTM) mimics the neocortex.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HTM is designed for streaming data and anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sparse Distributed Representations (SDR) are robust to noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HTM learns continuous online without batch storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Manifold learning assumes data lies on a low-dimensional manifold.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Isomap uses geodesic distances instead of Euclidean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LLE (Locally Linear Embedding) preserves local neighborhoods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "t-SNE is mainly used for visualization, not direct anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange steps in Isomap:",
+        "type": "rearrange",
+        "words": [
+            "Nearest Neighbors",
+            "Graph Distance",
+            "MDS Embedding"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(round(3.5))",
+        "o": [
+            "4",
+            "3",
+            "3.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Synthetic data generation helps augment scarce anomaly datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SMOTE creates synthetic minority class examples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ADASYN focuses synthetic generation on harder examples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Evaluating with synthetic anomalies may not reflect real-world performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Benford's Law describes the frequency of leading digits in naturally occurring datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Benford's Law is often used for financial fraud detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The digit 1 appears about _____% of the time as the leading digit.",
+        "type": "fill_blank",
+        "answers": [
+            "30"
+        ],
+        "other_options": [
+            "10",
+            "50",
+            "90"
+        ]
+    },
+    {
+        "q": "Zipf's Law relates rank and frequency of words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deviations from power laws can indicate spam or bot activity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {1: 'a', 2: 'b'}\nd.clear()\nprint(len(d))",
+        "o": [
+            "0",
+            "2",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Isolation Forest",
+        "type": "rearrange",
+        "words": [
+            "Split",
+            "Randomly",
+            "Isolate",
+            "Points"
+        ]
+    },
+    {
+        "q": "LOF compares local density of a point to its neighbors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoencoders minimize reconstruction error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PCA projects data to lower dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "One-Class SVM learns a boundary around normal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "GANs have a generator and a discriminator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VAEs have an encoder and a decoder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hidden Markov Models are for sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Isolation Forest is an ensemble method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DBSCAN is a clustering algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "K-Means can be used for anomaly detection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Z-score assumes a normal distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Boxplots use IQR to detect outliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grubbs test detects a single outlier.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mahalanobis distance accounts for covariance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Euclidean distance is sensitive to scale.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Manhattan distance is L1 norm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cosine similarity measures angle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Jaccard index measures set overlap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Precision is TP / (TP + FP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recall is TP / (TP + FN).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "F1 score harmonic mean of Precision and Recall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ROC curve plots TPR vs FPR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AUC is area under ROC curve.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Confusion matrix shows TP, TN, FP, FN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Accuracy is (TP + TN) / Total.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Specificity is TN / (TN + FP).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sensitivity is the same as Recall.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Type I error is False Positive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Type II error is False Negative.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

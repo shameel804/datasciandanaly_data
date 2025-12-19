@@ -1,0 +1,4574 @@
+[
+    {
+        "q": "What is the primary goal of a recommendation system?",
+        "type": "mcq",
+        "o": [
+            "Suggest relevant items to users",
+            "Predict future stock prices",
+            "Classify images into categories",
+            "Detect anomalies in data"
+        ]
+    },
+    {
+        "q": "Which filtering method relies on user-item interaction data?",
+        "type": "mcq",
+        "o": [
+            "Collaborative Filtering",
+            "Content-Based Filtering",
+            "Demographic Filtering",
+            "Knowledge-Based Filtering"
+        ]
+    },
+    {
+        "q": "Content-based filtering recommends items based on:",
+        "type": "mcq",
+        "o": [
+            "Item attributes and user profile",
+            "Similar users' preferences",
+            "Popularity content",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "In collaborative filtering, what does 'user-user' similarity measure?",
+        "type": "mcq",
+        "o": [
+            "Similarity between users' rating patterns",
+            "Similarity between items' features",
+            "Similarity in user demographics",
+            "Similarity in item popularity"
+        ]
+    },
+    {
+        "q": "What is the output of this Python code snippet?",
+        "type": "mcq",
+        "c": "def recommend(user_id):\n    return f\"Recommending for {user_id}\"\nprint(recommend(101))",
+        "o": [
+            "Recommending for 101",
+            "Recommending for user_id",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Which metric is commonly used to evaluate recommendation systems?",
+        "type": "mcq",
+        "o": [
+            "RMSE",
+            "Accuracy",
+            "F1-Score",
+            "Log-Loss"
+        ]
+    },
+    {
+        "q": "The _____ problem occurs when a new user has no ratings.",
+        "type": "fill_blank",
+        "answers": [
+            "cold start"
+        ],
+        "other_options": [
+            "sparsity",
+            "scalability",
+            "overfitting"
+        ]
+    },
+    {
+        "q": "Match the recommendation type with its description:",
+        "type": "match",
+        "left": [
+            "Collaborative",
+            "Content-Based",
+            "Hybrid",
+            "Demographic"
+        ],
+        "right": [
+            "Uses user interactions",
+            "Uses item properties",
+            "Combines methods",
+            "Uses user age/location"
+        ]
+    },
+    {
+        "q": "A user-item matrix is typically sparse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps in a basic recommendation pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Data Collection",
+            "Preprocessing",
+            "Model Training",
+            "Recommendation",
+            "Evaluation"
+        ]
+    },
+    {
+        "q": "What does RMSE stand for in the context of recommender systems?",
+        "type": "mcq",
+        "o": [
+            "Root Mean Squared Error",
+            "Rate Mean Standard Error",
+            "Root Median Square Error",
+            "Ratio Mean Scale Error"
+        ]
+    },
+    {
+        "q": "Which library is popular for building recommendation systems in Python?",
+        "type": "mcq",
+        "o": [
+            "Surprise",
+            "Matplotlib",
+            "Flask",
+            "Requests"
+        ]
+    },
+    {
+        "q": "Explicit feedback includes:",
+        "type": "mcq",
+        "o": [
+            "Star Ratings",
+            "Clicks",
+            "Page Views",
+            "Time Spent"
+        ]
+    },
+    {
+        "q": "Implicit feedback includes:",
+        "type": "mcq",
+        "o": [
+            "Purchase History",
+            "Likret Scale",
+            "User Reviews",
+            "Thumbs Up"
+        ]
+    },
+    {
+        "q": "What is the output of this code checking for None ratings?",
+        "type": "mcq",
+        "c": "ratings = [5, 4, None, 3]\nprint(len([r for r in ratings if r]))",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Matrix Factorization is a technique used in:",
+        "type": "mcq",
+        "o": [
+            "Collaborative Filtering",
+            "Content-Based Filtering",
+            "Rule-Based Systems",
+            "Clustering"
+        ]
+    },
+    {
+        "q": "SVD stands for:",
+        "type": "mcq",
+        "o": [
+            "Singular Value Decomposition",
+            "Simple Vector Data",
+            "Standard Value Distribution",
+            "System Variable Definition"
+        ]
+    },
+    {
+        "q": "Jaccard similarity measures similarity between:",
+        "type": "mcq",
+        "o": [
+            "Sets",
+            "Vectors",
+            "Matrices",
+            "Probability Distributions"
+        ]
+    },
+    {
+        "q": "Cosine similarity ranges from:",
+        "type": "mcq",
+        "o": [
+            "-1 to 1",
+            "0 to 1",
+            "0 to 100",
+            "-infinity to +infinity"
+        ]
+    },
+    {
+        "q": "Hybrid recommender systems combine multiple techniques to improve performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Netflix Prize was a famous competition to improve movie recommendations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Amazon uses 'Item-to-Item' collaborative filtering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pandas is useful for manipulating user-item dataframes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Euclidean distance is a measure of similarity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the components of a simple recommender function:",
+        "type": "rearrange",
+        "words": [
+            "def recommend(user):",
+            "items = get_items()",
+            "scores = predict(user, items)",
+            "return top_k(scores)"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2])\nb = np.array([1, 2])\nprint(np.dot(a, b))",
+        "o": [
+            "5",
+            "3",
+            "4",
+            "2"
+        ]
+    },
+    {
+        "q": "Pearson correlation coefficient measures _____ relationship.",
+        "type": "fill_blank",
+        "answers": [
+            "linear"
+        ],
+        "other_options": [
+            "causal",
+            "exponential",
+            "binary"
+        ]
+    },
+    {
+        "q": "In KNN, 'K' stands for the number of:",
+        "type": "mcq",
+        "o": [
+            "Neighbors",
+            "Clusters",
+            "Features",
+            "Dimensions"
+        ]
+    },
+    {
+        "q": "Which algorithm is NOT typically used for recommendations?",
+        "type": "mcq",
+        "o": [
+            "Linear Regression",
+            "ALS",
+            "SVD",
+            "K-Means"
+        ]
+    },
+    {
+        "q": "ALS stands for Alternating _____ Squares.",
+        "type": "fill_blank",
+        "answers": [
+            "Least"
+        ],
+        "other_options": [
+            "Large",
+            "Linear",
+            "Log"
+        ]
+    },
+    {
+        "q": "Match the metric to its purpose:",
+        "type": "match",
+        "left": [
+            "Precision",
+            "Recall",
+            "MAE",
+            "AUC"
+        ],
+        "right": [
+            "Accuracy of positive predictions",
+            "Coverage of positive items",
+            "Average absolute error",
+            "Area Under Curve"
+        ]
+    },
+    {
+        "q": "What is 'churn' in the context of user behavior?",
+        "type": "mcq",
+        "o": [
+            "Users stopping service use",
+            "Users upgrading service",
+            "Users recommending items",
+            "Users rating items"
+        ]
+    },
+    {
+        "q": "Content-based filtering solves the user cold-start problem better than collaborative filtering.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "TF-IDF is used in content-based filtering for text features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "scores = {'A': 4.5, 'B': 3.0, 'C': 5.0}\nprint(max(scores, key=scores.get))",
+        "o": [
+            "C",
+            "A",
+            "B",
+            "5.0"
+        ]
+    },
+    {
+        "q": "Which is a challenge in recommender systems?",
+        "type": "mcq",
+        "o": [
+            "Data Sparsity",
+            "Too much labeled data",
+            "Low variance",
+            "High bias"
+        ]
+    },
+    {
+        "q": "Serendipity in recommendations refers to:",
+        "type": "mcq",
+        "o": [
+            "Surprising but relevant items",
+            "Most popular items",
+            "Items the user already knows",
+            "Random items"
+        ]
+    },
+    {
+        "q": "Diversity in recommendations ensures:",
+        "type": "mcq",
+        "o": [
+            "Variety of items",
+            "Only top rated items",
+            "Items from one category",
+            "Same items repeatedly"
+        ]
+    },
+    {
+        "q": "Scalability refers to the system's ability to handle:",
+        "type": "mcq",
+        "o": [
+            "Large numbers of users/items",
+            "Complex algorithms",
+            "Small datasets",
+            "Only text data"
+        ]
+    },
+    {
+        "q": "Privacy is a major concern in recommender systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the words to form a common term:",
+        "type": "rearrange",
+        "words": [
+            "Matrix",
+            "Factorization",
+            "Technique"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "users = ['U1', 'U2']\nitems = ['I1', 'I2']\nprint([(u, i) for u in users for i in items])",
+        "o": [
+            "[('U1', 'I1'), ('U1', 'I2'), ('U2', 'I1'), ('U2', 'I2')]",
+            "[('U1', 'I1'), ('U2', 'I2')]",
+            "['U1', 'U2', 'I1', 'I2']",
+            "Error"
+        ]
+    },
+    {
+        "q": "Shilling attacks involve fake profiles to maintain system integrity.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The 'grey sheep' problem refers to users with consistent opinions.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which is an example of a recommender system?",
+        "type": "mcq",
+        "o": [
+            "YouTube Video Suggestion",
+            "Excel Spreadsheet",
+            "Calculator App",
+            "Notepad"
+        ]
+    },
+    {
+        "q": "User-based collaborative filtering finds similar _____.",
+        "type": "fill_blank",
+        "answers": [
+            "users"
+        ],
+        "other_options": [
+            "items",
+            "products",
+            "features"
+        ]
+    },
+    {
+        "q": "Item-based collaborative filtering finds similar _____.",
+        "type": "fill_blank",
+        "answers": [
+            "items"
+        ],
+        "other_options": [
+            "users",
+            "people",
+            "demographics"
+        ]
+    },
+    {
+        "q": "The Long Tail phenomenon involves:",
+        "type": "mcq",
+        "o": [
+            "Selling many niche items",
+            "Selling few popular items",
+            "Short delivery times",
+            "Long user reviews"
+        ]
+    },
+    {
+        "q": "Match the library to its primary use:",
+        "type": "match",
+        "left": [
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "NLTK"
+        ],
+        "right": [
+            "Data Manipulation",
+            "Numerical Computing",
+            "Machine Learning",
+            "Text Processing"
+        ]
+    },
+    {
+        "q": "What is 'Hit Rate'?",
+        "type": "mcq",
+        "o": [
+            "Proportion of users with at least one correct recommendation",
+            "Number of clicks per second",
+            "Rate of server requests",
+            "Total number of items"
+        ]
+    },
+    {
+        "q": "Mean Average Precision (MAP) is a ranking metric.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "list1 = [1, 2, 3]\nlist2 = [1, 2, 3]\nprint(list1 == list2)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "What does a rating of 1 usually imply?",
+        "type": "mcq",
+        "o": [
+            "Dislike",
+            "Like",
+            "Neutral",
+            "Love"
+        ]
+    },
+    {
+        "q": "What does a rating of 5 usually imply?",
+        "type": "mcq",
+        "o": [
+            "Strongly Like",
+            "Dislike",
+            "Neutral",
+            "Ignore"
+        ]
+    },
+    {
+        "q": "A utility matrix contains:",
+        "type": "mcq",
+        "o": [
+            "User-Item Ratings",
+            "User Passwords",
+            "Item Prices",
+            "Server Logs"
+        ]
+    },
+    {
+        "q": "Normalization of ratings helps to adjust for:",
+        "type": "mcq",
+        "o": [
+            "User rating bias",
+            "Item colors",
+            "Download speed",
+            "Screen size"
+        ]
+    },
+    {
+        "q": "Centering the mean removes the user's average rating bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Z-score normalization scales data to have mean 0 and standard deviation 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Min-Max scaling scales data between:",
+        "type": "mcq",
+        "o": [
+            "0 and 1",
+            "-1 and 1",
+            "0 and 100",
+            "1 and 10"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "def fn(x):\n    return x > 3\nprint(list(filter(fn, [1, 2, 3, 4, 5])))",
+        "o": [
+            "[4, 5]",
+            "[1, 2, 3]",
+            "[1, 2]",
+            "[3, 4, 5]"
+        ]
+    },
+    {
+        "q": "Demographic filtering uses:",
+        "type": "mcq",
+        "o": [
+            "Age, Gender, Location",
+            "Previous purchases",
+            "Item descriptions",
+            "Clickstream data"
+        ]
+    },
+    {
+        "q": "Knowledge-based systems are useful for:",
+        "type": "mcq",
+        "o": [
+            "Complex items like cars/houses",
+            "Cheap items like candy",
+            "Frequent purchases",
+            "Movie recommendations"
+        ]
+    },
+    {
+        "q": "Constraint-based recommenders ask users for requirements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Case-based recommenders use similarity to retrieve items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the words:",
+        "type": "rearrange",
+        "words": [
+            "Collaborative",
+            "Filtering",
+            "Algorithm"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {'a': 1, 'b': 2}\nprint('c' in d)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Model-based collaborative filtering uses machine learning models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Memory-based collaborative filtering uses the raw data directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is a memory-based approach?",
+        "type": "mcq",
+        "o": [
+            "KNN",
+            "SVD",
+            "Neural Networks",
+            "Decision Trees"
+        ]
+    },
+    {
+        "q": "Which is a model-based approach?",
+        "type": "mcq",
+        "o": [
+            "Matrix Factorization",
+            "Nearest Neighbors",
+            "Simple Average",
+            "Most Popular"
+        ]
+    },
+    {
+        "q": "What is a latent factor?",
+        "type": "mcq",
+        "o": [
+            "Hidden feature inferred from data",
+            "Explicitly stated feature",
+            "User's name",
+            "Item's price"
+        ]
+    },
+    {
+        "q": "In Matrix Factorization, users and items are mapped to a joint _____ space.",
+        "type": "fill_blank",
+        "answers": [
+            "latent"
+        ],
+        "other_options": [
+            "visual",
+            "physical",
+            "color"
+        ]
+    },
+    {
+        "q": "SGD stands for:",
+        "type": "mcq",
+        "o": [
+            "Stochastic Gradient Descent",
+            "Standard Gradient Descent",
+            "Simple Gradient Direction",
+            "System Graphic Display"
+        ]
+    },
+    {
+        "q": "SGD is used to minimize the error in matrix factorization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = lambda a : a + 10\nprint(x(5))",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Overfitting in recommenders means:",
+        "type": "mcq",
+        "o": [
+            "Model learns noise in training data",
+            "Model is too simple",
+            "Model works well on new data",
+            "Model is very fast"
+        ]
+    },
+    {
+        "q": "Regularization helps prevent overfitting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bias terms in matrix factorization account for:",
+        "type": "mcq",
+        "o": [
+            "User/Item specific tendencies",
+            "Random error",
+            "Time of day",
+            "Weather"
+        ]
+    },
+    {
+        "q": "Implicit data is generally more abundant than explicit data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an example of unary data?",
+        "type": "mcq",
+        "o": [
+            "Purchases (without rating)",
+            "5-star rating",
+            "Review text",
+            "Thumbs down"
+        ]
+    },
+    {
+        "q": "Rearrange to form a concept:",
+        "type": "rearrange",
+        "words": [
+            "Singular",
+            "Value",
+            "Decomposition"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('hello'.upper())",
+        "o": [
+            "HELLO",
+            "Hello",
+            "hello",
+            "hELLO"
+        ]
+    },
+    {
+        "q": "Context-aware recommenders consider:",
+        "type": "mcq",
+        "o": [
+            "Time, location, companion",
+            "Only user ID",
+            "Only item ID",
+            "Global popularity"
+        ]
+    },
+    {
+        "q": "Temporal recommenders account for changes over _____.",
+        "type": "fill_blank",
+        "answers": [
+            "time"
+        ],
+        "other_options": [
+            "space",
+            "color",
+            "price"
+        ]
+    },
+    {
+        "q": "Session-based recommenders focus on:",
+        "type": "mcq",
+        "o": [
+            "Current sequence of interactions",
+            "Long-term history only",
+            "User demographics",
+            "Item price"
+        ]
+    },
+    {
+        "q": "Match the problem to the solution:",
+        "type": "match",
+        "left": [
+            "Cold Start",
+            "Sparsity",
+            "Scalability",
+            "Overfitting"
+        ],
+        "right": [
+            "Use Content/Hybrid",
+            "Matrix Factorization",
+            "Clustering/Sampling",
+            "Regularization"
+        ]
+    },
+    {
+        "q": "Deep Learning can be used for recommender systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Collaborative Filtering replaces dot product with a neural net.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Autoencoders can be used to learn user representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RNNs are useful for sequence-based recommendations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nl.append(4)\nprint(l)",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[1, 2, 3]",
+            "[4, 1, 2, 3]",
+            "None"
+        ]
+    },
+    {
+        "q": "Reinforcement Learning can optimize long-term user engagement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-armed bandit algorithms balance exploration and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "exploitation"
+        ],
+        "other_options": [
+            "explanation",
+            "execution",
+            "evaluation"
+        ]
+    },
+    {
+        "q": "Exploration typically involves showing:",
+        "type": "mcq",
+        "o": [
+            "New/Uncertain items",
+            "Items user likes",
+            "Most popular items",
+            "Cheapest items"
+        ]
+    },
+    {
+        "q": "Exploitation involves showing:",
+        "type": "mcq",
+        "o": [
+            "Items user is known to like",
+            "Random items",
+            "New items",
+            "Disliked items"
+        ]
+    },
+    {
+        "q": "A/B testing is used to compare recommender algorithms online.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Online evaluation uses real user traffic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Offline evaluation uses historical datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = 10\nif x > 5:\n    print('High')\nelse:\n    print('Low')",
+        "o": [
+            "High",
+            "Low",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Top-N recommendation provides a ranked list of N items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Precision@K measures precision at the top K recommendations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which data structure is most efficient for storing sparse user-item matrices?",
+        "type": "mcq",
+        "o": [
+            "CSR Matrix",
+            "Dense Array",
+            "List of Lists",
+            "Binary Tree"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "from scipy.sparse import csr_matrix\nimport numpy as np\ndata = np.array([1, 2, 3])\nrow = np.array([0, 0, 1])\ncol = np.array([0, 2, 2])\nm = csr_matrix((data, (row, col)), shape=(3, 3))\nprint(m.count_nonzero())",
+        "o": [
+            "3",
+            "9",
+            "0",
+            "2"
+        ]
+    },
+    {
+        "q": "In item-based filtering, we compute similarity between _____ vectors.",
+        "type": "fill_blank",
+        "answers": [
+            "item"
+        ],
+        "other_options": [
+            "user",
+            "feature",
+            "global"
+        ]
+    },
+    {
+        "q": "User-based filtering effectively handles the 'New Item' problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Item-based filtering is generally more scalable than User-based.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Slope One is a family of algorithms for collaborative filtering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange to form a filtering method:",
+        "type": "rearrange",
+        "words": [
+            "Item",
+            "Based",
+            "Collaborative",
+            "Filtering"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = {1, 2, 3}\ns.add(2)\nprint(len(s))",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "The 'Filter Bubble' refers to:",
+        "type": "mcq",
+        "o": [
+            "Intellectual isolation via algorithms",
+            "Cleaning data",
+            "Filtering spam",
+            "Removing outliers"
+        ]
+    },
+    {
+        "q": "Which library provides 'KNNBasic' for recommendations?",
+        "type": "mcq",
+        "o": [
+            "Surprise",
+            "TensorFlow",
+            "PyTorch",
+            "Scikit-image"
+        ]
+    },
+    {
+        "q": "Global Baseline estimate includes:",
+        "type": "mcq",
+        "o": [
+            "Global Mean + User Bias + Item Bias",
+            "Only Global Mean",
+            "User Mean only",
+            "Item Mean only"
+        ]
+    },
+    {
+        "q": "What is 'b_u' usually denoted as in recommender formulas?",
+        "type": "mcq",
+        "o": [
+            "User bias",
+            "Item bias",
+            "Global bias",
+            "Batch size"
+        ]
+    },
+    {
+        "q": "Match the Python library to its function:",
+        "type": "match",
+        "left": [
+            "Surprise",
+            "LightFM",
+            "Implicit",
+            "FastAI"
+        ],
+        "right": [
+            "Explicit Feedback Algos",
+            "Hybrid Recommendation",
+            "Implicit Feedback Algos",
+            "Deep Learning Helpers"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {'a': 1, 'b': 2}\ny = {'b': 3, 'c': 4}\nz = {**x, **y}\nprint(z['b'])",
+        "o": [
+            "3",
+            "2",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sharding is a technique used for scaling databases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A/B testing groups must be strictly exclusive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weighted ALS is used for implicit feedback datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "BPR stands for Bayesian Personalized Ranking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the evaluation steps:",
+        "type": "rearrange",
+        "words": [
+            "Split Data",
+            "Train Model",
+            "Predict Ratings",
+            "Compute RMSE"
+        ]
+    },
+    {
+        "q": "Which distance metric is best for high-dimensional sparse data?",
+        "type": "mcq",
+        "o": [
+            "Cosine Similarity",
+            "Euclidean Distance",
+            "Manhattan Distance",
+            "Hamming Distance"
+        ]
+    },
+    {
+        "q": "The dimensionality of latent factors is a hyperparameter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Learning rate controls the step size in SGD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "def func(a, b=5, c=10):\n    return a + b + c\nprint(func(1, c=20))",
+        "o": [
+            "26",
+            "16",
+            "31",
+            "Error"
+        ]
+    },
+    {
+        "q": "User-Item interaction graph is a _____ graph.",
+        "type": "fill_blank",
+        "answers": [
+            "bipartite"
+        ],
+        "other_options": [
+            "directed",
+            "weighted",
+            "complete"
+        ]
+    },
+    {
+        "q": "Link Prediction is a task in graph-based recommenders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PageRank can be adapted for recommendation (ItemRank).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2]\nb = a\nb.append(3)\nprint(len(a))",
+        "o": [
+            "3",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which evaluation metric is order-sensitive?",
+        "type": "mcq",
+        "o": [
+            "NDCG",
+            "RMSE",
+            "MAE",
+            "Accuracy"
+        ]
+    },
+    {
+        "q": "NDCG stands for Normalized Discounted Cumulative _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Gain"
+        ],
+        "other_options": [
+            "Goal",
+            "Growth",
+            "Gradient"
+        ]
+    },
+    {
+        "q": "Explainability is easier in:",
+        "type": "mcq",
+        "o": [
+            "Content-Based Filtering",
+            "Matrix Factorization",
+            "Deep Neural Networks",
+            "Ensemble Methods"
+        ]
+    },
+    {
+        "q": "In simple CBF, item profiles are often represented as TF-IDF vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Switching Hybrid switches methods based on criteria.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import math\nprint(math.ceil(4.2))",
+        "o": [
+            "5",
+            "4",
+            "4.2",
+            "5.0"
+        ]
+    },
+    {
+        "q": "Cascade Hybrid refines recommendations of one method with another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Weighted Hybrid combines scores from multiple recommenders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the words to form a metric:",
+        "type": "rearrange",
+        "words": [
+            "Mean",
+            "Absolute",
+            "Error"
+        ]
+    },
+    {
+        "q": "The standard deviation of rating errors is roughly:",
+        "type": "mcq",
+        "o": [
+            "RMSE",
+            "MAE",
+            "MSE",
+            "R-Squared"
+        ]
+    },
+    {
+        "q": "Which is safer for privacy?",
+        "type": "mcq",
+        "o": [
+            "Federated Learning",
+            "Centralized Learning",
+            "Sending Raw Data",
+            "Cloud Storage"
+        ]
+    },
+    {
+        "q": "Federated Learning trains models locally on devices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Differential Privacy adds noise to protect individual data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "text = \"Hello World\"\nprint(text[1:5])",
+        "o": [
+            "ello",
+            "Hello",
+            "ell",
+            "World"
+        ]
+    },
+    {
+        "q": "A user who rates everything 5 stars provides low information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data leakage in time-series split involves:",
+        "type": "mcq",
+        "o": [
+            "Using future data to predict past",
+            "Splitting randomly",
+            "Using cross-validation",
+            "Hiding test data"
+        ]
+    },
+    {
+        "q": "For time-series recommender evaluation, use a chronological split.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the concept:",
+        "type": "match",
+        "left": [
+            "Recall@K",
+            "Precision@K",
+            "MRR",
+            "AUC"
+        ],
+        "right": [
+            "Proportion of relevant items found",
+            "Proportion of recommended that are relevant",
+            "Mean Reciprocal Rank",
+            "Discrimination ability"
+        ]
+    },
+    {
+        "q": "Leave-One-Out Cross Validation is computationally expensive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\ny = [i*2 for i in x]\nprint(y)",
+        "o": [
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "[11, 22, 33]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Factorization Machines can be used for:",
+        "type": "mcq",
+        "o": [
+            "General prediction tasks",
+            "Only image processing",
+            "Only text processing",
+            "Simple sorting"
+        ]
+    },
+    {
+        "q": "Wide & Deep Learning was proposed by:",
+        "type": "mcq",
+        "o": [
+            "Google",
+            "Facebook",
+            "Netflix",
+            "Amazon"
+        ]
+    },
+    {
+        "q": "The 'Wide' part in Wide & Deep memorizes feature interactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Deep' part in Wide & Deep generalizes to unseen combinations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the components of a hybrid system:",
+        "type": "rearrange",
+        "words": [
+            "Content",
+            "Collaborative",
+            "Weighted",
+            "Hybrids"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "class A:\n    def foo(self):\n        return 'A'\nclass B(A):\n    pass\nprint(B().foo())",
+        "o": [
+            "A",
+            "B",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Word2Vec can be used to capture item semantic similarity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prod2Vec applies Word2Vec to product sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TF-IDF stands for Term Frequency-Inverse _____ Frequency.",
+        "type": "fill_blank",
+        "answers": [
+            "Document"
+        ],
+        "other_options": [
+            "Data",
+            "Dictionary",
+            "Density"
+        ]
+    },
+    {
+        "q": "Stop words are typically removed in text-based recommenders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Stemming reduces words to their root form.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = \" Apple \"\nprint(s.strip())",
+        "o": [
+            "Apple",
+            " Apple ",
+            "Apple ",
+            " Apple"
+        ]
+    },
+    {
+        "q": "Which is an example of a Contextual Bandit algorithm?",
+        "type": "mcq",
+        "o": [
+            "LinUCB",
+            "K-Means",
+            "PCA",
+            "Bubble Sort"
+        ]
+    },
+    {
+        "q": "Thompson Sampling is a probabilistic algorithm for multi-armed bandits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Epsilon-Greedy chooses the best option with probability:",
+        "type": "mcq",
+        "o": [
+            "1 - epsilon",
+            "epsilon",
+            "0.5",
+            "0"
+        ]
+    },
+    {
+        "q": "In Epsilon-Greedy, epsilon represents the _____ rate.",
+        "type": "fill_blank",
+        "answers": [
+            "exploration"
+        ],
+        "other_options": [
+            "error",
+            "evaluation",
+            "exit"
+        ]
+    },
+    {
+        "q": "Match the method to its type:",
+        "type": "match",
+        "left": [
+            "KNN",
+            "SVD",
+            "Wide & Deep",
+            "Association Rules"
+        ],
+        "right": [
+            "Memory-Based",
+            "Model-Based",
+            "Deep Learning",
+            "Rule-Based"
+        ]
+    },
+    {
+        "q": "Market Basket Analysis uses Association Rules.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Apriori algorithm is used for:",
+        "type": "mcq",
+        "o": [
+            "Frequent pattern mining",
+            "Sorting lists",
+            "Image processing",
+            "Voice recognition"
+        ]
+    },
+    {
+        "q": "Support in association rules measures frequency of itemset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Confidence in association rules measures conditional probability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lift measures the ratio of confidence to expected confidence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(range(2, 5)))",
+        "o": [
+            "[2, 3, 4]",
+            "[2, 3, 4, 5]",
+            "[2, 5]",
+            "[3, 4, 5]"
+        ]
+    },
+    {
+        "q": "Dwell time is an implicit signal for interest.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Click-Through Rate (CTR) is a common metric in ad recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Conversion Rate measures the percentage of users who take a desired action.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the metrics:",
+        "type": "rearrange",
+        "words": [
+            "Precision",
+            "Recall",
+            "F1",
+            "Score"
+        ]
+    },
+    {
+        "q": "Two-Tower architecture is common in industrial recommenders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Two-Tower models, one tower encodes user and the other encodes _____.",
+        "type": "fill_blank",
+        "answers": [
+            "item"
+        ],
+        "other_options": [
+            "context",
+            "time",
+            "location"
+        ]
+    },
+    {
+        "q": "The dot product of user & item embeddings represents relevance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "vals = [1, 2, 3]\nprint(vals[-1])",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Negative sampling is necessary when training with implicit data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard negative mining selects easier negatives.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Triplet loss minimizes distance between anchor and positive, maximizes anchor and negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoRec is an autoencoder-based collaborative filtering model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "for i in range(3):\n    if i == 1: continue\n    print(i)",
+        "o": [
+            "0 2",
+            "0 1 2",
+            "0",
+            "1"
+        ]
+    },
+    {
+        "q": "Knowledge Graphs can enrich recommender systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Convolutional Networks (GCN) propagate info on the user-item graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LightGCN simplifies GCN for recommendations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dropout is a regularization technique in neural networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Embedding layers map discrete IDs to dense vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the layers:",
+        "type": "rearrange",
+        "words": [
+            "Input",
+            "Embedding",
+            "Interaction",
+            "Output"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = True\nprint(not x)",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Cross-domain recommendation leverages data from source domain to target domain.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Group recommendation suggests items for a group of users.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Fairness in recommendations aims to avoid bias against specific groups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text feature extraction method preserves word order?",
+        "type": "mcq",
+        "o": [
+            "N-grams",
+            "Bag of Words",
+            "TF-IDF",
+            "Binary count"
+        ]
+    },
+    {
+        "q": "In N-grams, 'N=2' refers to:",
+        "type": "mcq",
+        "o": [
+            "Bigrams",
+            "Unigrams",
+            "Trigrams",
+            "Skip-grams"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "text = \"Machine Learning\"\nprint(text.split())",
+        "o": [
+            "['Machine', 'Learning']",
+            "['Machine Learning']",
+            "('Machine', 'Learning')",
+            "Error"
+        ]
+    },
+    {
+        "q": "BERT embeddings are context-independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "ELMo provides contextualized word embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deep learning model to its architecture:",
+        "type": "match",
+        "left": [
+            "AutoRec",
+            "NeuMF",
+            "DeepFM",
+            "Self-Attentive"
+        ],
+        "right": [
+            "AutoEncoder",
+            "MLP + GMF",
+            "Factorization Machine + DNN",
+            "Transformer"
+        ]
+    },
+    {
+        "q": "What is the primary advantage of LightGCN over NGCF?",
+        "type": "mcq",
+        "o": [
+            "Removes non-linear activation",
+            "Adds more layers",
+            "Uses more features",
+            "Increases complexity"
+        ]
+    },
+    {
+        "q": "A _____ Matrix represents relationships between two different sets of entities.",
+        "type": "fill_blank",
+        "answers": [
+            "Bi-adjacency"
+        ],
+        "other_options": [
+            "Square",
+            "Identity",
+            "Diagonal"
+        ]
+    },
+    {
+        "q": "SimRank is a graph-theoretic similarity measure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the DeepFM components:",
+        "type": "rearrange",
+        "words": [
+            "Sparse Features",
+            "Dense Embeddings",
+            "FM Layer",
+            "Deep Layer"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.zeros((2,2))\nprint(a.shape)",
+        "o": [
+            "(2, 2)",
+            "2",
+            "4",
+            "2x2"
+        ]
+    },
+    {
+        "q": "DIN stands for Deep Interest Network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DIEN stands for Deep Interest _____ Network.",
+        "type": "fill_blank",
+        "answers": [
+            "Evolution"
+        ],
+        "other_options": [
+            "Estimation",
+            "Evaluation",
+            "Entity"
+        ]
+    },
+    {
+        "q": "Which mechanism does DIN use to capture user interests?",
+        "type": "mcq",
+        "o": [
+            "Attention",
+            "Convolution",
+            "Pooling",
+            "Dropout"
+        ]
+    },
+    {
+        "q": "Calibration in recommenders ensures predicted probabilities match observed frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inter-list diversity measures diversity across different users' recommendations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Intra-list diversity measures diversity within a single user's recommendation list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "def f(x):\n    return x % 2 == 0\nprint(any(map(f, [1, 3, 5])))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Popularity bias typically favors:",
+        "type": "mcq",
+        "o": [
+            "Head items",
+            "Tail items",
+            "New items",
+            "Niche items"
+        ]
+    },
+    {
+        "q": "Propensity score weighting helps correct selection bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an example of a listwise ranking loss?",
+        "type": "mcq",
+        "o": [
+            "LambdaRank",
+            "MSE",
+            "LogLoss",
+            "Hinge Loss"
+        ]
+    },
+    {
+        "q": "Pointwise ranking treats recommendation as a regression or classification problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pairwise ranking compares pairs of items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange to form a ranking method:",
+        "type": "rearrange",
+        "words": [
+            "Bayesian",
+            "Personalized",
+            "Ranking"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = {1: 'x', 2: 'y'}\nprint(a.get(3, 'z'))",
+        "o": [
+            "z",
+            "x",
+            "y",
+            "None"
+        ]
+    },
+    {
+        "q": "BERT4Rec uses bidirectional self-attention for sequential recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SASRec uses _____ self-attention for sequential recommendation.",
+        "type": "fill_blank",
+        "answers": [
+            "unidirectional"
+        ],
+        "other_options": [
+            "bidirectional",
+            "convolutional",
+            "recursive"
+        ]
+    },
+    {
+        "q": "Causal inference in recommenders aims to estimate:",
+        "type": "mcq",
+        "o": [
+            "Treatment effect of recommendation",
+            "Correlation only",
+            "Prediction accuracy",
+            "Training time"
+        ]
+    },
+    {
+        "q": "Uplift modeling predicts the incremental impact of a treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bias type:",
+        "type": "match",
+        "left": [
+            "Selection Bias",
+            "Position Bias",
+            "Conformity Bias",
+            "Exposure Bias"
+        ],
+        "right": [
+            "Users select what to rate",
+            "Top items get more clicks",
+            "Users rate like others",
+            "Users only see exposed items"
+        ]
+    },
+    {
+        "q": "Inverse Propensity Scoring (IPS) is used for unbiased evaluation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {1, 2}\ny = {2, 3}\nprint(x & y)",
+        "o": [
+            "{2}",
+            "{1, 2, 3}",
+            "{1, 3}",
+            "{}"
+        ]
+    },
+    {
+        "q": "Multi-Task Learning (MTL) is used to optimize multiple objectives simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MMoE stands for Multi-gate Mixture-of-Experts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shared-Bottom is a simple architecture for MTL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MTL, tasks often share typical _____ layers.",
+        "type": "fill_blank",
+        "answers": [
+            "embedding"
+        ],
+        "other_options": [
+            "output",
+            "loss",
+            "prediction"
+        ]
+    },
+    {
+        "q": "Cross-Stitch Networks learn how to share information between tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the MTL concepts:",
+        "type": "rearrange",
+        "words": [
+            "Shared",
+            "Parameters",
+            "Task",
+            "Specific",
+            "Layers"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nprint(l[::-1])",
+        "o": [
+            "[3, 2, 1]",
+            "[1, 2, 3]",
+            "[3, 2]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Session-based recommendation often uses GNNs to model item transitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SR-GNN stands for Session-based Recommendation with Graph Neural Networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyperbolic embeddings are good for hierarchical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Poincare Embeddings operate in _____ space.",
+        "type": "fill_blank",
+        "answers": [
+            "hyperbolic"
+        ],
+        "other_options": [
+            "euclidean",
+            "spherical",
+            "linear"
+        ]
+    },
+    {
+        "q": "Simple Euclidean distance works best for hierarchical tree structures.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = 5\ny = 2\nprint(x // y)",
+        "o": [
+            "2",
+            "2.5",
+            "3",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Knowledge Distillation transfers knowledge from a teacher model to a student model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The student model is typically larger than the teacher model.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which loss function is commonly used in distillation?",
+        "type": "mcq",
+        "o": [
+            "KL Divergence",
+            "Hinge Loss",
+            "L1 Loss",
+            "Zero-One Loss"
+        ]
+    },
+    {
+        "q": "Cold-start users can be addressed using social network information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trust-based recommendation relies on a trust graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the adversarial concept:",
+        "type": "match",
+        "left": [
+            "FGSM",
+            "Adversarial Training",
+            "Perturbation",
+            "Robustness"
+        ],
+        "right": [
+            "Gradient-based attack",
+            "Training with attacks",
+            "Adding noise",
+            "Resistance to attacks"
+        ]
+    },
+    {
+        "q": "APR stands for Adversarial Personalized Ranking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial training improves model generalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2, 3]\ndel a[1]\nprint(a)",
+        "o": [
+            "[1, 3]",
+            "[1, 2]",
+            "[2, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Explainable Recommendation provides reasons 'why'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactual explanations ask 'What would happen if...?'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention weights can be used for explainability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an example of an explanation style?",
+        "type": "mcq",
+        "o": [
+            "\"Customers who bought this also bought...\"",
+            "\"Because price is low\"",
+            "\"Random guess\"",
+            "\"Error 404\""
+        ]
+    },
+    {
+        "q": "Rearrange to form a reinforcement learning term:",
+        "type": "rearrange",
+        "words": [
+            "Markov",
+            "Decision",
+            "Process"
+        ]
+    },
+    {
+        "q": "MDP tuple consists of (State, Action, Reward, Next State).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Q-Learning is a model-free RL algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Q-Networks (DQN) use generic neural networks to approximate Q-values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Actor-Critic methods have both a policy and a value function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(bool([]))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "RecSim is a simulation environment for recommender systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Slate recommendation suggests a set of items as a single action.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Greedy re-ranking maximizes marginal gain at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Determinantal Point Processes (DPP) are used for diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DPP models repulsive interactions between items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = lambda a, b : a * b\nprint(x(5, 6))",
+        "o": [
+            "30",
+            "11",
+            "56",
+            "Error"
+        ]
+    },
+    {
+        "q": "Real-time recommendation requires low _____.",
+        "type": "fill_blank",
+        "answers": [
+            "latency"
+        ],
+        "other_options": [
+            "accuracy",
+            "volume",
+            "bias"
+        ]
+    },
+    {
+        "q": "Approximate Nearest Neighbors (ANN) speeds up retrieval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Faiss is a library for efficient similarity search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HNSW is a graph-based ANN algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HNSW stands for Hierarchical Navigable Small _____.",
+        "type": "fill_blank",
+        "answers": [
+            "World"
+        ],
+        "other_options": [
+            "Web",
+            "Window",
+            "Wave"
+        ]
+    },
+    {
+        "q": "Match the ANN algorithm:",
+        "type": "match",
+        "left": [
+            "LSH",
+            "HNSW",
+            "IVF",
+            "PQ"
+        ],
+        "right": [
+            "Locality Sensitive Hashing",
+            "Graph-based",
+            "Inverted File",
+            "Product Quantization"
+        ]
+    },
+    {
+        "q": "Product Quantization compresses vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Streaming architecture typically involves Kafka/Flink.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lambda Architecture consists of Speed Layer, Batch Layer, and Serving Layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kappa Architecture removes the _____ Layer.",
+        "type": "fill_blank",
+        "answers": [
+            "Batch"
+        ],
+        "other_options": [
+            "Speed",
+            "Serving",
+            "Data"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import time\nprint(type(time.time()))",
+        "o": [
+            "<class 'float'>",
+            "<class 'int'>",
+            "<class 'str'>",
+            "<class 'time'>"
+        ]
+    },
+    {
+        "q": "Feature Store manages features for training and serving.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feast is an open-source feature store.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data drift occurs when statistical properties of input data change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concept drift occurs when relationship between input and target changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shadow deployment runs the new model in parallel without serving users.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Canary deployment rolls out to a small percentage of users first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-armed bandits allow for online learning and adaptation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the deployment steps:",
+        "type": "rearrange",
+        "words": [
+            "Build",
+            "Test",
+            "Deploy",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = \"Hello\"\nprint(x.replace(\"H\", \"J\"))",
+        "o": [
+            "Jello",
+            "Hello",
+            "JHllo",
+            "Error"
+        ]
+    },
+    {
+        "q": "Privacy-Preserving machine learning includes:",
+        "type": "mcq",
+        "o": [
+            "Federated Learning",
+            "Supervised Learning",
+            "Reinforcement Learning",
+            "Unsupervised Learning"
+        ]
+    },
+    {
+        "q": "Secure Multi-Party Computation allows joint computation without revealing inputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Homomorphic Encryption allows computation on encrypted data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local Differential Privacy adds noise at the user device level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text feature extraction method preserves word order?",
+        "type": "mcq",
+        "o": [
+            "N-grams",
+            "Bag of Words",
+            "TF-IDF",
+            "Binary count"
+        ]
+    },
+    {
+        "q": "In N-grams, 'N=2' refers to:",
+        "type": "mcq",
+        "o": [
+            "Bigrams",
+            "Unigrams",
+            "Trigrams",
+            "Skip-grams"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "text = \"Machine Learning\"\nprint(text.split())",
+        "o": [
+            "['Machine', 'Learning']",
+            "['Machine Learning']",
+            "('Machine', 'Learning')",
+            "Error"
+        ]
+    },
+    {
+        "q": "BERT embeddings are context-independent.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "ELMo provides contextualized word embeddings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deep learning model to its architecture:",
+        "type": "match",
+        "left": [
+            "AutoRec",
+            "NeuMF",
+            "DeepFM",
+            "Self-Attentive"
+        ],
+        "right": [
+            "AutoEncoder",
+            "MLP + GMF",
+            "Factorization Machine + DNN",
+            "Transformer"
+        ]
+    },
+    {
+        "q": "What is the primary advantage of LightGCN over NGCF?",
+        "type": "mcq",
+        "o": [
+            "Removes non-linear activation",
+            "Adds more layers",
+            "Uses more features",
+            "Increases complexity"
+        ]
+    },
+    {
+        "q": "A _____ Matrix represents relationships between two different sets of entities.",
+        "type": "fill_blank",
+        "answers": [
+            "Bi-adjacency"
+        ],
+        "other_options": [
+            "Square",
+            "Identity",
+            "Diagonal"
+        ]
+    },
+    {
+        "q": "SimRank is a graph-theoretic similarity measure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the DeepFM components:",
+        "type": "rearrange",
+        "words": [
+            "Sparse Features",
+            "Dense Embeddings",
+            "FM Layer",
+            "Deep Layer"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.zeros((2,2))\nprint(a.shape)",
+        "o": [
+            "(2, 2)",
+            "2",
+            "4",
+            "2x2"
+        ]
+    },
+    {
+        "q": "DIN stands for Deep Interest Network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DIEN stands for Deep Interest _____ Network.",
+        "type": "fill_blank",
+        "answers": [
+            "Evolution"
+        ],
+        "other_options": [
+            "Estimation",
+            "Evaluation",
+            "Entity"
+        ]
+    },
+    {
+        "q": "Which mechanism does DIN use to capture user interests?",
+        "type": "mcq",
+        "o": [
+            "Attention",
+            "Convolution",
+            "Pooling",
+            "Dropout"
+        ]
+    },
+    {
+        "q": "Calibration in recommenders ensures predicted probabilities match observed frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inter-list diversity measures diversity across different users' recommendations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Intra-list diversity measures diversity within a single user's recommendation list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "def f(x):\n    return x % 2 == 0\nprint(any(map(f, [1, 3, 5])))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Popularity bias typically favors:",
+        "type": "mcq",
+        "o": [
+            "Head items",
+            "Tail items",
+            "New items",
+            "Niche items"
+        ]
+    },
+    {
+        "q": "Propensity score weighting helps correct selection bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an example of a listwise ranking loss?",
+        "type": "mcq",
+        "o": [
+            "LambdaRank",
+            "MSE",
+            "LogLoss",
+            "Hinge Loss"
+        ]
+    },
+    {
+        "q": "Pointwise ranking treats recommendation as a regression or classification problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pairwise ranking compares pairs of items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange to form a ranking method:",
+        "type": "rearrange",
+        "words": [
+            "Bayesian",
+            "Personalized",
+            "Ranking"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = {1: 'x', 2: 'y'}\nprint(a.get(3, 'z'))",
+        "o": [
+            "z",
+            "x",
+            "y",
+            "None"
+        ]
+    },
+    {
+        "q": "BERT4Rec uses bidirectional self-attention for sequential recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SASRec uses _____ self-attention for sequential recommendation.",
+        "type": "fill_blank",
+        "answers": [
+            "unidirectional"
+        ],
+        "other_options": [
+            "bidirectional",
+            "convolutional",
+            "recursive"
+        ]
+    },
+    {
+        "q": "Causal inference in recommenders aims to estimate:",
+        "type": "mcq",
+        "o": [
+            "Treatment effect of recommendation",
+            "Correlation only",
+            "Prediction accuracy",
+            "Training time"
+        ]
+    },
+    {
+        "q": "Uplift modeling predicts the incremental impact of a treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bias type:",
+        "type": "match",
+        "left": [
+            "Selection Bias",
+            "Position Bias",
+            "Conformity Bias",
+            "Exposure Bias"
+        ],
+        "right": [
+            "Users select what to rate",
+            "Top items get more clicks",
+            "Users rate like others",
+            "Users only see exposed items"
+        ]
+    },
+    {
+        "q": "Inverse Propensity Scoring (IPS) is used for unbiased evaluation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {1, 2}\ny = {2, 3}\nprint(x & y)",
+        "o": [
+            "{2}",
+            "{1, 2, 3}",
+            "{1, 3}",
+            "{}"
+        ]
+    },
+    {
+        "q": "Multi-Task Learning (MTL) is used to optimize multiple objectives simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MMoE stands for Multi-gate Mixture-of-Experts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shared-Bottom is a simple architecture for MTL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In MTL, tasks often share typical _____ layers.",
+        "type": "fill_blank",
+        "answers": [
+            "embedding"
+        ],
+        "other_options": [
+            "output",
+            "loss",
+            "prediction"
+        ]
+    },
+    {
+        "q": "Cross-Stitch Networks learn how to share information between tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the MTL concepts:",
+        "type": "rearrange",
+        "words": [
+            "Shared",
+            "Parameters",
+            "Task",
+            "Specific",
+            "Layers"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nprint(l[::-1])",
+        "o": [
+            "[3, 2, 1]",
+            "[1, 2, 3]",
+            "[3, 2]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Session-based recommendation often uses GNNs to model item transitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SR-GNN stands for Session-based Recommendation with Graph Neural Networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyperbolic embeddings are good for hierarchical data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Poincare Embeddings operate in _____ space.",
+        "type": "fill_blank",
+        "answers": [
+            "hyperbolic"
+        ],
+        "other_options": [
+            "euclidean",
+            "spherical",
+            "linear"
+        ]
+    },
+    {
+        "q": "Simple Euclidean distance works best for hierarchical tree structures.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = 5\ny = 2\nprint(x // y)",
+        "o": [
+            "2",
+            "2.5",
+            "3",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Knowledge Distillation transfers knowledge from a teacher model to a student model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The student model is typically larger than the teacher model.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which loss function is commonly used in distillation?",
+        "type": "mcq",
+        "o": [
+            "KL Divergence",
+            "Hinge Loss",
+            "L1 Loss",
+            "Zero-One Loss"
+        ]
+    },
+    {
+        "q": "Cold-start users can be addressed using social network information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trust-based recommendation relies on a trust graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the adversarial concept:",
+        "type": "match",
+        "left": [
+            "FGSM",
+            "Adversarial Training",
+            "Perturbation",
+            "Robustness"
+        ],
+        "right": [
+            "Gradient-based attack",
+            "Training with attacks",
+            "Adding noise",
+            "Resistance to attacks"
+        ]
+    },
+    {
+        "q": "APR stands for Adversarial Personalized Ranking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial training improves model generalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2, 3]\ndel a[1]\nprint(a)",
+        "o": [
+            "[1, 3]",
+            "[1, 2]",
+            "[2, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Explainable Recommendation provides reasons 'why'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactual explanations ask 'What would happen if...?'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Attention weights can be used for explainability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is an example of an explanation style?",
+        "type": "mcq",
+        "o": [
+            "\"Customers who bought this also bought...\"",
+            "\"Because price is low\"",
+            "\"Random guess\"",
+            "\"Error 404\""
+        ]
+    },
+    {
+        "q": "Rearrange to form a reinforcement learning term:",
+        "type": "rearrange",
+        "words": [
+            "Markov",
+            "Decision",
+            "Process"
+        ]
+    },
+    {
+        "q": "MDP tuple consists of (State, Action, Reward, Next State).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Q-Learning is a model-free RL algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Q-Networks (DQN) use generic neural networks to approximate Q-values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Actor-Critic methods have both a policy and a value function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(bool([]))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "RecSim is a simulation environment for recommender systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Slate recommendation suggests a set of items as a single action.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Greedy re-ranking maximizes marginal gain at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Determinantal Point Processes (DPP) are used for diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DPP models repulsive interactions between items.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = lambda a, b : a * b\nprint(x(5, 6))",
+        "o": [
+            "30",
+            "11",
+            "56",
+            "Error"
+        ]
+    },
+    {
+        "q": "Real-time recommendation requires low _____.",
+        "type": "fill_blank",
+        "answers": [
+            "latency"
+        ],
+        "other_options": [
+            "accuracy",
+            "volume",
+            "bias"
+        ]
+    },
+    {
+        "q": "Approximate Nearest Neighbors (ANN) speeds up retrieval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Faiss is a library for efficient similarity search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HNSW is a graph-based ANN algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HNSW stands for Hierarchical Navigable Small _____.",
+        "type": "fill_blank",
+        "answers": [
+            "World"
+        ],
+        "other_options": [
+            "Web",
+            "Window",
+            "Wave"
+        ]
+    },
+    {
+        "q": "Match the ANN algorithm:",
+        "type": "match",
+        "left": [
+            "LSH",
+            "HNSW",
+            "IVF",
+            "PQ"
+        ],
+        "right": [
+            "Locality Sensitive Hashing",
+            "Graph-based",
+            "Inverted File",
+            "Product Quantization"
+        ]
+    },
+    {
+        "q": "Product Quantization compresses vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Streaming architecture typically involves Kafka/Flink.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lambda Architecture consists of Speed Layer, Batch Layer, and Serving Layer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Kappa Architecture removes the _____ Layer.",
+        "type": "fill_blank",
+        "answers": [
+            "Batch"
+        ],
+        "other_options": [
+            "Speed",
+            "Serving",
+            "Data"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import time\nprint(type(time.time()))",
+        "o": [
+            "<class 'float'>",
+            "<class 'int'>",
+            "<class 'str'>",
+            "<class 'time'>"
+        ]
+    },
+    {
+        "q": "Feature Store manages features for training and serving.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Feast is an open-source feature store.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data drift occurs when statistical properties of input data change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concept drift occurs when relationship between input and target changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Shadow deployment runs the new model in parallel without serving users.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Canary deployment rolls out to a small percentage of users first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multi-armed bandits allow for online learning and adaptation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the deployment steps:",
+        "type": "rearrange",
+        "words": [
+            "Build",
+            "Test",
+            "Deploy",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = \"Hello\"\nprint(x.replace(\"H\", \"J\"))",
+        "o": [
+            "Jello",
+            "Hello",
+            "JHllo",
+            "Error"
+        ]
+    },
+    {
+        "q": "Privacy-Preserving machine learning includes:",
+        "type": "mcq",
+        "o": [
+            "Federated Learning",
+            "Supervised Learning",
+            "Reinforcement Learning",
+            "Unsupervised Learning"
+        ]
+    },
+    {
+        "q": "Secure Multi-Party Computation allows joint computation without revealing inputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Homomorphic Encryption allows computation on encrypted data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local Differential Privacy adds noise at the user device level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which GNN model simplifies Graph Convolution by removing non-linearities?",
+        "type": "mcq",
+        "o": [
+            "LightGCN",
+            "GCN",
+            "GraphSAGE",
+            "GAT"
+        ]
+    },
+    {
+        "q": "GraphSAGE generates embeddings by _____ features from neighbors.",
+        "type": "fill_blank",
+        "answers": [
+            "sampling"
+        ],
+        "other_options": [
+            "sorting",
+            "summing",
+            "skipping"
+        ]
+    },
+    {
+        "q": "PinSage uses random walks to generate graph embeddings at scale.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In Transformers for RecSys, positional encoding is crucial for sequence order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Transformer steps:",
+        "type": "rearrange",
+        "words": [
+            "Embedding",
+            "Positional Encoding",
+            "MHA",
+            "FFN"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1., 2.])\nprint(x.mean().item())",
+        "o": [
+            "1.5",
+            "1.0",
+            "2.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Contrastive Learning pulls similar samples together and pushes dissimilar ones apart.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SimCLR is a framework for simple contrastive learning of representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which loss is commonly used in contrastive learning?",
+        "type": "mcq",
+        "o": [
+            "InfoNCE",
+            "MSE",
+            "Cross Entropy",
+            "Hinge"
+        ]
+    },
+    {
+        "q": "BERT4Rec replaces the valid masking of SASRec with Cloze task masking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cloze task typically involves predicting _____ tokens.",
+        "type": "fill_blank",
+        "answers": [
+            "masked"
+        ],
+        "other_options": [
+            "next",
+            "previous",
+            "random"
+        ]
+    },
+    {
+        "q": "Match the algorithm to the problem it solves:",
+        "type": "match",
+        "left": [
+            "Softmax",
+            "Hierarchical Softmax",
+            "Negative Sampling",
+            "Noise Contrastive Estimation"
+        ],
+        "right": [
+            "Standard Classification",
+            "Tree-based probability",
+            "Approximating Softmax",
+            "Approximating Partition Function"
+        ]
+    },
+    {
+        "q": "Hierarchical Softmax reduce complexity from O(V) to O(log V).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {'a': 1}\nd.setdefault('b', 2)\nd['b'] = 3\nprint(d['b'])",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Variational Autoencoders (VAE) introduce probabilistic latent variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mult-VAE uses multinomial likelihood for collaborative filtering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The reparameterization trick is used to backpropagate through random sampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Beta-VAE adds a coefficient to the _____ term in the ELBO.",
+        "type": "fill_blank",
+        "answers": [
+            "KL"
+        ],
+        "other_options": [
+            "Reconstruction",
+            "Loss",
+            "Weight"
+        ]
+    },
+    {
+        "q": "Disentangled representations separate different factors of variation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "l = [1, 2, 3]\nprint(l.pop(0))",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "2"
+        ]
+    },
+    {
+        "q": "Attentive Group Recommendation aggregates user preferences with attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Federated collaborative filtering sends gradients, not data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Secure Aggregation ensures the server cannot see individual updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Federated Learning steps:",
+        "type": "rearrange",
+        "words": [
+            "Global Model",
+            "Local Training",
+            "Model Update",
+            "Aggregation"
+        ]
+    },
+    {
+        "q": "Long-tail recommendation aims to improve accuracy for popular items.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Transfer Learning can help with cross-domain recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which technique is used to align latent spaces in cross-domain RecSys?",
+        "type": "mcq",
+        "o": [
+            "Manifold Alignment",
+            "PCA",
+            "K-Means",
+            "Linear Regression"
+        ]
+    },
+    {
+        "q": "Zero-shot recommendation recommends items without any prior training handling.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Cold-start items can be recommended using side information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {1, 2}\ny = {2, 3}\nprint(x ^ y)",
+        "o": [
+            "{1, 3}",
+            "{2}",
+            "{1, 2, 3}",
+            "{}"
+        ]
+    },
+    {
+        "q": "Debiasing in RecSys often involves Inverse Propensity Weighting (IPW).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Causal Embeddings attempt to capture causal relationships rather than correlations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Counterfactual Risk Minimization (CRM) is an off-policy learning framework.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which RL algorithm is suited for continuous action spaces?",
+        "type": "mcq",
+        "o": [
+            "DDPG",
+            "DQN",
+            "Q-Learning",
+            "SARSA"
+        ]
+    },
+    {
+        "q": "DDPG stands for Deep Deterministic _____ Gradients.",
+        "type": "fill_blank",
+        "answers": [
+            "Policy"
+        ],
+        "other_options": [
+            "Probability",
+            "Position",
+            "Process"
+        ]
+    },
+    {
+        "q": "In RL RecSys, the 'State' is typically the user's history and context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'Action' in RL RecSys is evaluating a specific item or list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RL term for RecSys:",
+        "type": "match",
+        "left": [
+            "Agent",
+            "Environment",
+            "Reward",
+            "State"
+        ],
+        "right": [
+            "Recommender System",
+            "User Behavior",
+            "Click/Purchase",
+            "User History"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import re\nprint(re.sub('a', 'b', 'banana'))",
+        "o": [
+            "bbnbnb",
+            "banana",
+            "bbanana",
+            "bananb"
+        ]
+    },
+    {
+        "q": "Session-Aware RecSys is the same as Session-Based RecSys.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Session-Aware considers both current session and long-term history.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DiffuRec uses Diffusion Models for sequential recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diffusion models generate data by reversing a noise addition process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Generative Adversarial Networks (GANs) consist of Generator and Discriminator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "IRGAN unifies Generative and Discriminative information retrieval models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the GAN training loop:",
+        "type": "rearrange",
+        "words": [
+            "Sample Noise",
+            "Generate Data",
+            "Train Discriminator",
+            "Train Generator"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "def foo(**kwargs):\n    print(len(kwargs))\nfoo(a=1, b=2)",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Knowledge Graph Attention Network (KGAT) explicitly models high-order connectivities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RippleNet propagates user preferences along links in the Knowledge Graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Meta-learning is often described as 'learning to _____'.",
+        "type": "fill_blank",
+        "answers": [
+            "learn"
+        ],
+        "other_options": [
+            "run",
+            "predict",
+            "optimize"
+        ]
+    },
+    {
+        "q": "MAML (Model-Agnostic Meta-Learning) optimizes for fast adaptation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MeLU uses meta-learning to estimate user preferences from few interactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient clipping helps prevent exploding gradients in RNNs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\ny = x.copy()\nx[0] = 0\nprint(y[0])",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Self-Supervised Learning (SSL) creates supervision from the data itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data Augmentation is critical for Contrastive Learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Node dropout involves randomly removing nodes during graph training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Edge dropout involves randomly removing edges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Curriculum Learning presents easy examples first, then hard ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Distillation can be used to compress a large ensemble into a single model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Curriculum Learning steps:",
+        "type": "rearrange",
+        "words": [
+            "Define Difficulty",
+            "Sort Examples",
+            "Train Easy",
+            "Train Hard"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "try:\n    1/0\nexcept ZeroDivisionError:\n    print('Zeros')\nfinally:\n    print('Done')",
+        "o": [
+            "Zeros\nDone",
+            "Zeros",
+            "Done",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multi-Behavior Recommendation considers clicks, carts, purchases, etc.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Auxiliary behaviors can help improve target behavior prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "MBGCN is a Graph Convolutional Network for Multi-Behavior recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hyper-parameter optimization can be automated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bayesian Optimization is efficient for tuning expensive functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Grid Search is computationally expensive for high dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Random Search often outperforms Grid Search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the optimization method:",
+        "type": "match",
+        "left": [
+            "Grid Search",
+            "Random Search",
+            "Bayesian Opt",
+            "Genetic Algo"
+        ],
+        "right": [
+            "Exhaustive",
+            "Stochastic",
+            "Probabilistic",
+            "Evolutionary"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = lambda : \"Hello\"\nprint(x())",
+        "o": [
+            "Hello",
+            "None",
+            "Error",
+            "lambda"
+        ]
+    },
+    {
+        "q": "Deep Learning recommendation models are usually serve-limited by latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Model quantization reduces precision to speed up inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pruning removes unimportant weights from the neural network.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TensorRT is a library for optimized deep learning inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ONNX is an open format for representing machine learning models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ONNX Runtime allows running models across different platforms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A/B testing is the gold standard for online evaluation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Interleaving is more sensitive than A/B testing for ranking comparison.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Interleaving mixes results from two algorithms in a single list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Team Draft Interleaving is a common interleaving method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the Interleaving process:",
+        "type": "rearrange",
+        "words": [
+            "Get Rankings",
+            "Interleave",
+            "Show User",
+            "Analyze Clicks"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import json\nd = {'a': 1}\nprint(type(json.dumps(d)))",
+        "o": [
+            "<class 'str'>",
+            "<class 'dict'>",
+            "<class 'json'>",
+            "Error"
+        ]
+    },
+    {
+        "q": "RecSys Fairness metrics include Statistical Parity and Equal Opportunity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Popularity bias mitigation can hurt overall accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pareto optimality helps trade-off between accuracy and diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Calibrated Recommendation aligns recommendation distribution with user history.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Surrogate problems are used when the direct objective is hard to optimize.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Implicit feedback is often treated as positive-unlabeled (PU) learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PU learning assumes unobserved items are not necessarily negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Negative Sampling ratio is a critical hyperparameter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(10_000)",
+        "o": [
+            "10000",
+            "10_000",
+            "Error",
+            "10"
+        ]
+    },
+    {
+        "q": "Dynamic Embedding Size Search (DESS) optimizes embedding sizes per user/item.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Neural Architecture Search (NAS) automates model design.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoML covers the complete pipeline from data to deployment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the key idea behind 'SVD++' compared to SVD?",
+        "type": "mcq",
+        "o": [
+            "Incorporating implicit feedback",
+            "Using higher rank",
+            "Using complex numbers",
+            "Using tensor decomposition"
+        ]
+    },
+    {
+        "q": "TimeSVD++ adds temporal dynamics to biases and factors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which text feature extraction preserves word order?",
+        "type": "mcq",
+        "o": [
+            "N-grams",
+            "TF-IDF",
+            "Bag of Words",
+            "Binary"
+        ]
+    },
+    {
+        "q": "Collective Matrix Factorization (CMF) jointly factorizes multiple matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the CMF objective terms:",
+        "type": "rearrange",
+        "words": [
+            "Target Matrix Loss",
+            "Auxiliary Matrix Loss",
+            "Regularization"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = {1, 2, 3}\nx.discard(4)\nprint(x)",
+        "o": [
+            "{1, 2, 3}",
+            "Error",
+            "None",
+            "{1, 2, 3, 4}"
+        ]
+    },
+    {
+        "q": "Higher-Order Singular Value Decomposition (HOSVD) generalizes SVD to tensors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tucker Decomposition factorizes a tensor into a core tensor and factor matrices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CP Decomposition expresses a tensor as a sum of rank-____ tensors.",
+        "type": "fill_blank",
+        "answers": [
+            "one"
+        ],
+        "other_options": [
+            "two",
+            "zero",
+            "full"
+        ]
+    },
+    {
+        "q": "Match the tensor method:",
+        "type": "match",
+        "left": [
+            "HOSVD",
+            "CP",
+            "Tucker",
+            "Tensor Train"
+        ],
+        "right": [
+            "Tucker-like",
+            "Canonical Polyadic",
+            "General core tensor",
+            "Train format"
+        ]
+    },
+    {
+        "q": "FM uses O(kn) complexity instead of O(n^2).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Field-aware Factorization Machines (FFM) learn separate embeddings per field.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The complexity of FFM is typically higher than FM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print((lambda x: x*2)(3))",
+        "o": [
+            "6",
+            "3",
+            "Error",
+            "2"
+        ]
+    },
+    {
+        "q": "xDeepFM includes a CIN (Compressed Interaction Network) component.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "AutoInt uses attention mechanisms to learn feature interactions automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FiBiNET uses a Squeeze-and-Excitation network for feature importance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the evolution of FMs:",
+        "type": "rearrange",
+        "words": [
+            "FM",
+            "FFM",
+            "DeepFM",
+            "xDeepFM"
+        ]
+    },
+    {
+        "q": "PinSage uses a max-margin ranking loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Isomorphism Network (GIN) is theoretically as powerful as the WL test.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = [1, 2]\nb = [3, 4]\nprint(a + b)",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[4, 6]",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Spectral Graph Convolution involves eigendecomposition of the _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Laplacian"
+        ],
+        "other_options": [
+            "Adjacency",
+            "Degree",
+            "Incidence"
+        ]
+    },
+    {
+        "q": "ChebNet approximates spectral filters using Chebyshev polynomials.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Debiased Contrastive Learning corrects for false negatives in batch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hard Negative Mixing synthesizes harder negatives from existing ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the contrastive concept:",
+        "type": "match",
+        "left": [
+            "Augmentation",
+            "Anchor",
+            "Positive",
+            "Negative"
+        ],
+        "right": [
+            "View generation",
+            "Reference sample",
+            "Similar sample",
+            "Dissimilar sample"
+        ]
+    },
+    {
+        "q": "Barlow Twins minimizes cross-correlation between embedding components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import math\nprint(math.factorial(4))",
+        "o": [
+            "24",
+            "12",
+            "4",
+            "10"
+        ]
+    },
+    {
+        "q": "Sequential Recommendation with Graph Neural Networks often builds a _____ graph.",
+        "type": "fill_blank",
+        "answers": [
+            "Session"
+        ],
+        "other_options": [
+            "Global",
+            "User",
+            "Social"
+        ]
+    },
+    {
+        "q": "Hypergraph Neural Networks can model non-pairwise relationships.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DHCN (Dual Channel Hypergraph Convolutional Network) is used for session recommendation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Disentangled GCN attempts to capture independent user intents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps in Disentangled Representation Learning:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Prototypes",
+            "Assign Neighbors",
+            "Update Embeddings",
+            "Update Prototypes"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print('%.2f' % 3.14159)",
+        "o": [
+            "3.14",
+            "3.14159",
+            "3.15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Meta-Path based recommenders operate on heterogeneous information networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "HAN (Heterogeneous Graph Attention Network) uses hierarchical attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KGCN aggregates neighbor information biased by relations in KG.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "KGE methods like TransE model relationships as translations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the KGE model to its space:",
+        "type": "match",
+        "left": [
+            "TransE",
+            "RotatE",
+            "DistMult",
+            "Complex"
+        ],
+        "right": [
+            "Euclidean",
+            "Complex Plane",
+            "Diagonal Bilinear",
+            "Complex Bilinear"
+        ]
+    },
+    {
+        "q": "RotatE models symmetric, antisymmetric, inversion, and composition relations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "s = 'abc'\nprint(s.find('d'))",
+        "o": [
+            "-1",
+            "0",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Federated Learning faces challenges with non-IID data distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vertical Federated Learning splits data by _____.",
+        "type": "fill_blank",
+        "answers": [
+            "features"
+        ],
+        "other_options": [
+            "samples",
+            "users",
+            "IDs"
+        ]
+    },
+    {
+        "q": "Horizontal Federated Learning splits data by samples (users).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FedAvg is a standard aggregation algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "FedProx adds a proximal term to handle heterogeneity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the components of a secure FL system:",
+        "type": "rearrange",
+        "words": [
+            "Client",
+            "Encryption",
+            "Server",
+            "Aggregation"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "a = {1, 2}\nb = {2, 3}\nprint(a - b)",
+        "o": [
+            "{1}",
+            "{3}",
+            "{1, 2}",
+            "{}"
+        ]
+    },
+    {
+        "q": "Differential Privacy epsilon is the privacy budget.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lower epsilon means _____ privacy.",
+        "type": "fill_blank",
+        "answers": [
+            "higher"
+        ],
+        "other_options": [
+            "lower",
+            "zero",
+            "no"
+        ]
+    },
+    {
+        "q": "Renyi Differential Privacy is a relaxation of pure DP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gaussian mechanism requires clipping the sensitivity of the function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RL concept:",
+        "type": "match",
+        "left": [
+            "Policy Gradient",
+            "Value Based",
+            "Model Based",
+            "Off Policy"
+        ],
+        "right": [
+            "Optimize pi directly",
+            "Optimize Q func",
+            "Learn transition dynamics",
+            "Use replay buffer"
+        ]
+    },
+    {
+        "q": "REINFORCE is a Monte-Carlo policy gradient method.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PPO (Proximal Policy Optimization) limits the policy update step size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2])\nprint(a * 2)",
+        "o": [
+            "[2 4]",
+            "[1 2 1 2]",
+            "Error",
+            "2"
+        ]
+    },
+    {
+        "q": "Slate-Q is a decomposition technique for slate-based RL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Wolpertinger Policy handles large action spaces in DDPG.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deadly Triad in RL includes: bootstrapping, off-policy learning, and function approximation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Top-K Off-Policy Correction reduces bias in REINFORCE recommender.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps in a typical Inductive GCN:",
+        "type": "rearrange",
+        "words": [
+            "Sample Neighbors",
+            "Aggregate Features",
+            "Update Node",
+            "Predict"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(all([True, False]))",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Neural ODEs can model continuous-time dynamics in user behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continuous-Time LSTM (CT-LSTM) handles irregular time intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hawkes Processes model self-exciting events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Temporal Point Processes are useful for predicting 'when' next interaction occurs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the fairness metric:",
+        "type": "match",
+        "left": [
+            "Demographic Parity",
+            "Equalized Odds",
+            "Calibration",
+            "Counterfactual Fairness"
+        ],
+        "right": [
+            "Equal acceptance rates",
+            "Equal error rates",
+            "Predictive parity",
+            "Change sensitive attr"
+        ]
+    },
+    {
+        "q": "Direct Ranker (DR) optimizes ranking directly without scoring.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "List-wise distillation aims to transfer the ranking knowledge.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "x = frozenset([1, 2])\n# x.add(3) # This would err\nprint(len(x))",
+        "o": [
+            "2",
+            "3",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Quantization-Aware Training (QAT) simulates quantization during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Post-Training Quantization (PTQ) requires no retraining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixed Precision Training uses both FP16 and FP32.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Embedding tables often consume the majority of memory in RecSys models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hashed Embeddings reduce memory by mapping multiple IDs to the same bucket.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Double Hashing or Quotient Hashing helps reduce collisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Compositional Embeddings construct representations from sub-word units or codes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange a memory-efficient pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Hash Input",
+            "Lookup Embed",
+            "Compute",
+            "Quantize Output"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "print(list(zip([1,2], [3,4])))",
+        "o": [
+            "[(1, 3), (2, 4)]",
+            "[(1, 2), (3, 4)]",
+            "[1, 2, 3, 4]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Information Bottleneck principle trades off prediction accuracy with compression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Graph Information Bottleneck aims to learn robust graph representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lottery Ticket Hypothesis states dense networks contain smaller sparse subnetworks that train well.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Boosting Decision Trees (GBDT) are often combined with LR in industrial stacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Facebook's DLRM combines MLP for dense features and embeddings for sparse features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DLRM uses a feature interaction layer typically implemented as a dot product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the industrial model:",
+        "type": "match",
+        "left": [
+            "Deep Crossing",
+            "PNN",
+            "NFM",
+            "AFM"
+        ],
+        "right": [
+            "ResNet for RecSys",
+            "Product-based NN",
+            "Neural FM",
+            "Attentional FM"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "d = {x: x**2 for x in (2, 3)}\nprint(d[3])",
+        "o": [
+            "9",
+            "6",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Visual Bayesian Personalized Ranking (VBPR) incorporates image features into BPR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DropoutNet addresses cold start by training to be robust to missing input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Domain Adaptation assumes feature space is same but distribution differs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Maximum Mean Discrepancy (MMD) measures distance between distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adversarial networks can minimize MMD for domain adaptation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the DA steps:",
+        "type": "rearrange",
+        "words": [
+            "Source Train",
+            "Align Features",
+            "Target Adapt",
+            "Evaluate"
+        ]
+    },
+    {
+        "q": "What is the output?",
+        "type": "mcq",
+        "c": "i = 1\nwhile i < 3:\n    print(i)\n    i += 1",
+        "o": [
+            "1\n2",
+            "1\n2\n3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Parameter Server architecture separates workers and servers for distributed training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ring-AllReduce is a bandwidth-optimal communication algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Horovod is a distributed deep learning framework utilizing Ring-AllReduce.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sync-SGD waits for all workers to compute gradients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Async-SGD allows workers to update without waiting, potentially causing staleness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Gradient Accumulation simulates larger batch sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep Retrieval (DR) learns a retrievable structure directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "TDM (Tree-based Deep Model) uses an arbitrary tree for retrieval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "JTM (Joint Optimization of Tree and Model) improves TDM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "OT (Optimal Transport) can align user and item distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Sinkhorn algorithm efficiently solves entropy-regularized OT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Causal graphs represent causal mechanism of data generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Front-door adjustment is used when unobserved confounders exist.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Back-door adjustment blocks backdoor paths.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Do-calculus provides rules for identifying causal effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Simpson's Paradox can mislead recommender evaluation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Recommendation systems are effectively a large-scale classification problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Extreme Multi-label Classification (XMC) deals with millions of labels (items).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Parabel is a tree-based XMC algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Negative sampling strategies include uniform, popularity-based, and hard negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixed Negative Sampling mixes different strategies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Curriculum Negative Sampling gradually introduces harder negatives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Denoising RecSys aims to remove false positives from implicit feedback.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adaptive Denoising Training (ADT) uses loss patterns to identify noise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Continual Learning prevents catastrophic forgetting in streaming RecSys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Elastic Weight Consolidation (EWC) protects important weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Experience Replay stores past data for retraining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "LLMs can be used as zero-shot recommenders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prompt engineering is crucial for LLM-based RecSys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Chain-of-Thought prompting helps LLMs reason about user preferences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Evaluating LLM recommendations is challenging due to generation variance.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

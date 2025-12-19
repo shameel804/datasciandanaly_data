@@ -1,0 +1,6114 @@
+[
+    {
+        "q": "Which library is PyTorch built by?",
+        "type": "mcq",
+        "o": [
+            "Meta (Facebook)",
+            "Google",
+            "Microsoft",
+            "Amazon"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(torch.__name__)",
+        "o": [
+            "torch",
+            "pytorch",
+            "PyTorch",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the PyTorch concepts:",
+        "type": "match",
+        "left": [
+            "Tensor",
+            "Autograd",
+            "Module"
+        ],
+        "right": [
+            "Multi-dimensional array",
+            "Automatic differentiation",
+            "Neural network component"
+        ]
+    },
+    {
+        "q": "The ______ alias is used for PyTorch.",
+        "type": "fill_blank",
+        "answers": [
+            "torch"
+        ],
+        "other_options": [
+            "pytorch",
+            "pt",
+            "th"
+        ]
+    },
+    {
+        "q": "PyTorch uses dynamic computational graphs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates tensors from lists?",
+        "type": "mcq",
+        "o": [
+            "torch.tensor",
+            "torch.array",
+            "torch.create",
+            "torch.list"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1, 2, 3])\nprint(type(x).__name__)",
+        "o": [
+            "Tensor",
+            "tensor",
+            "Array",
+            "List"
+        ]
+    },
+    {
+        "q": "Match the tensor creation functions:",
+        "type": "match",
+        "left": [
+            "torch.tensor",
+            "torch.zeros",
+            "torch.ones"
+        ],
+        "right": [
+            "From data",
+            "All zeros",
+            "All ones"
+        ]
+    },
+    {
+        "q": "The ______ creates tensors filled with zeros.",
+        "type": "fill_blank",
+        "answers": [
+            "torch.zeros"
+        ],
+        "other_options": [
+            "torch.zero",
+            "torch.empty",
+            "torch.null"
+        ]
+    },
+    {
+        "q": "Rearrange the PyTorch workflow:",
+        "type": "rearrange",
+        "words": [
+            "import torch",
+            "create tensors",
+            "define model",
+            "train"
+        ]
+    },
+    {
+        "q": "PyTorch tensors support GPU acceleration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates tensors filled with ones?",
+        "type": "mcq",
+        "o": [
+            "torch.ones",
+            "torch.one",
+            "torch.fill_ones",
+            "torch.unit"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.ones(2, 3)\nprint(x.shape)",
+        "o": [
+            "torch.Size([2, 3])",
+            "(2, 3)",
+            "[2, 3]",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the tensor properties:",
+        "type": "match",
+        "left": [
+            "shape",
+            "dtype",
+            "device"
+        ],
+        "right": [
+            "Dimensions",
+            "Data type",
+            "CPU/GPU"
+        ]
+    },
+    {
+        "q": "The ______ attribute shows tensor dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "shape"
+        ],
+        "other_options": [
+            "size",
+            "dims",
+            "dimensions"
+        ]
+    },
+    {
+        "q": "torch.Size is similar to a tuple.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function gets tensor shape?",
+        "type": "mcq",
+        "o": [
+            "tensor.shape or tensor.size()",
+            "tensor.dims()",
+            "tensor.dimensions()",
+            "torch.shape(tensor)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([[1, 2], [3, 4], [5, 6]])\nprint(len(x.shape))",
+        "o": [
+            "2",
+            "3",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "shape and size() return the same information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the tensor creation:",
+        "type": "rearrange",
+        "words": [
+            "specify shape",
+            "specify dtype",
+            "call function"
+        ]
+    },
+    {
+        "q": "Which function creates random tensors?",
+        "type": "mcq",
+        "o": [
+            "torch.rand or torch.randn",
+            "torch.random",
+            "torch.generate",
+            "torch.sample"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.rand(2, 3)\nprint(x.shape)",
+        "o": [
+            "torch.Size([2, 3])",
+            "(2, 3)",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the random functions:",
+        "type": "match",
+        "left": [
+            "torch.rand",
+            "torch.randn",
+            "torch.randint"
+        ],
+        "right": [
+            "Uniform 0-1",
+            "Normal 0-1",
+            "Integer range"
+        ]
+    },
+    {
+        "q": "The ______ generates normal distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "torch.randn"
+        ],
+        "other_options": [
+            "torch.rand",
+            "torch.normal",
+            "torch.gaussian"
+        ]
+    },
+    {
+        "q": "torch.rand generates uniform distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function reshapes tensors?",
+        "type": "mcq",
+        "o": [
+            "tensor.view or tensor.reshape",
+            "tensor.resize",
+            "tensor.transform",
+            "torch.reshape"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1, 2, 3, 4, 5, 6])\ny = x.view(2, 3)\nprint(y.shape)",
+        "o": [
+            "torch.Size([2, 3])",
+            "torch.Size([3, 2])",
+            "(6,)",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the shape operations:",
+        "type": "match",
+        "left": [
+            "view",
+            "reshape",
+            "squeeze"
+        ],
+        "right": [
+            "Contiguous",
+            "Any",
+            "Remove dim"
+        ]
+    },
+    {
+        "q": "The ______ requires contiguous memory.",
+        "type": "fill_blank",
+        "answers": [
+            "view"
+        ],
+        "other_options": [
+            "reshape",
+            "resize",
+            "transform"
+        ]
+    },
+    {
+        "q": "-1 in view/reshape infers the dimension.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the shape manipulation:",
+        "type": "rearrange",
+        "words": [
+            "original shape",
+            "calculate new shape",
+            "call view/reshape"
+        ]
+    },
+    {
+        "q": "Which function performs matrix multiplication?",
+        "type": "mcq",
+        "o": [
+            "torch.matmul or @",
+            "torch.multiply",
+            "torch.dot",
+            "torch.mm"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\na = torch.tensor([[1, 2], [3, 4]])\nb = torch.tensor([[5, 6], [7, 8]])\nc = torch.matmul(a, b)\nprint(c[0, 0].item())",
+        "o": [
+            "19",
+            "5",
+            "26",
+            "12"
+        ]
+    },
+    {
+        "q": "Match the math operations:",
+        "type": "match",
+        "left": [
+            "torch.add",
+            "torch.mul",
+            "torch.matmul"
+        ],
+        "right": [
+            "Element-wise add",
+            "Element-wise multiply",
+            "Matrix multiply"
+        ]
+    },
+    {
+        "q": "The ______ operator performs matrix multiplication.",
+        "type": "fill_blank",
+        "answers": [
+            "@"
+        ],
+        "other_options": [
+            "*",
+            "+",
+            "**"
+        ]
+    },
+    {
+        "q": "torch.mm is for 2D matrix multiplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class is the base for neural networks?",
+        "type": "mcq",
+        "o": [
+            "nn.Module",
+            "nn.Network",
+            "nn.Model",
+            "nn.Base"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nclass Net(nn.Module):\n    def __init__(self):\n        super().__init__()\nnet = Net()\nprint(type(net).__name__)",
+        "o": [
+            "Net",
+            "Module",
+            "Network",
+            "Model"
+        ]
+    },
+    {
+        "q": "Match the nn.Module methods:",
+        "type": "match",
+        "left": [
+            "__init__",
+            "forward",
+            "parameters"
+        ],
+        "right": [
+            "Setup layers",
+            "Computation",
+            "Get weights"
+        ]
+    },
+    {
+        "q": "The ______ method defines forward pass.",
+        "type": "fill_blank",
+        "answers": [
+            "forward"
+        ],
+        "other_options": [
+            "call",
+            "__call__",
+            "run"
+        ]
+    },
+    {
+        "q": "Rearrange the model creation:",
+        "type": "rearrange",
+        "words": [
+            "subclass nn.Module",
+            "define __init__",
+            "define forward",
+            "instantiate"
+        ]
+    },
+    {
+        "q": "nn.Module automatically tracks parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer is fully connected?",
+        "type": "mcq",
+        "o": [
+            "nn.Linear",
+            "nn.Dense",
+            "nn.FC",
+            "nn.FullyConnected"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Linear(10, 5)\nprint(type(layer).__name__)",
+        "o": [
+            "Linear",
+            "Dense",
+            "Layer",
+            "Module"
+        ]
+    },
+    {
+        "q": "Match the layer types:",
+        "type": "match",
+        "left": [
+            "nn.Linear",
+            "nn.Conv2d",
+            "nn.LSTM"
+        ],
+        "right": [
+            "Fully connected",
+            "Convolutional",
+            "Recurrent"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets output features.",
+        "type": "fill_blank",
+        "answers": [
+            "out_features"
+        ],
+        "other_options": [
+            "output_size",
+            "units",
+            "neurons"
+        ]
+    },
+    {
+        "q": "nn.Linear applies y = xW^T + b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which activation function is commonly used?",
+        "type": "mcq",
+        "o": [
+            "nn.ReLU or F.relu",
+            "nn.step",
+            "nn.linear",
+            "nn.identity"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.tensor([-1.0, 0.0, 1.0])\nprint(F.relu(x)[0].item())",
+        "o": [
+            "0.0",
+            "-1.0",
+            "1.0",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the activation functions:",
+        "type": "match",
+        "left": [
+            "ReLU",
+            "Sigmoid",
+            "Softmax"
+        ],
+        "right": [
+            "Max(0, x)",
+            "0 to 1",
+            "Probability distribution"
+        ]
+    },
+    {
+        "q": "The ______ activation outputs probabilities.",
+        "type": "fill_blank",
+        "answers": [
+            "Softmax"
+        ],
+        "other_options": [
+            "Sigmoid",
+            "ReLU",
+            "Tanh"
+        ]
+    },
+    {
+        "q": "Rearrange the activation by range:",
+        "type": "rearrange",
+        "words": [
+            "ReLU: 0 to inf",
+            "Sigmoid: 0 to 1",
+            "Tanh: -1 to 1"
+        ]
+    },
+    {
+        "q": "ReLU helps with vanishing gradient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which optimizer is commonly used?",
+        "type": "mcq",
+        "o": [
+            "torch.optim.Adam",
+            "torch.optim.Basic",
+            "torch.optim.Simple",
+            "torch.optim.Default"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nmodel = nn.Linear(10, 5)\nopt = torch.optim.Adam(model.parameters())\nprint(type(opt).__name__)",
+        "o": [
+            "Adam",
+            "Optimizer",
+            "SGD",
+            "Gradient"
+        ]
+    },
+    {
+        "q": "Match the optimizers:",
+        "type": "match",
+        "left": [
+            "SGD",
+            "Adam",
+            "RMSprop"
+        ],
+        "right": [
+            "Basic gradient",
+            "Adaptive momentum",
+            "Root mean square"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls step size.",
+        "type": "fill_blank",
+        "answers": [
+            "lr"
+        ],
+        "other_options": [
+            "learning_rate",
+            "step",
+            "rate"
+        ]
+    },
+    {
+        "q": "optimizer.zero_grad() clears gradients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the training step:",
+        "type": "rearrange",
+        "words": [
+            "zero_grad",
+            "forward pass",
+            "compute loss",
+            "backward",
+            "step"
+        ]
+    },
+    {
+        "q": "Which loss is used for classification?",
+        "type": "mcq",
+        "o": [
+            "nn.CrossEntropyLoss",
+            "nn.MSELoss",
+            "nn.MAELoss",
+            "nn.HingeLoss"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nloss_fn = nn.CrossEntropyLoss()\nprint(type(loss_fn).__name__)",
+        "o": [
+            "CrossEntropyLoss",
+            "Loss",
+            "Criterion",
+            "Entropy"
+        ]
+    },
+    {
+        "q": "Match the loss functions:",
+        "type": "match",
+        "left": [
+            "MSELoss",
+            "CrossEntropyLoss",
+            "BCELoss"
+        ],
+        "right": [
+            "Regression",
+            "Multi-class",
+            "Binary class"
+        ]
+    },
+    {
+        "q": "The ______ loss is for regression.",
+        "type": "fill_blank",
+        "answers": [
+            "MSELoss"
+        ],
+        "other_options": [
+            "CrossEntropyLoss",
+            "BCELoss",
+            "NLLLoss"
+        ]
+    },
+    {
+        "q": "CrossEntropyLoss includes softmax.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method computes gradients?",
+        "type": "mcq",
+        "o": [
+            "loss.backward()",
+            "loss.gradient()",
+            "loss.compute_grad()",
+            "torch.backward(loss)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([2.0], requires_grad=True)\ny = x ** 2\ny.backward()\nprint(x.grad.item())",
+        "o": [
+            "4.0",
+            "2.0",
+            "1.0",
+            "8.0"
+        ]
+    },
+    {
+        "q": "Match the autograd concepts:",
+        "type": "match",
+        "left": [
+            "requires_grad",
+            "backward",
+            "grad"
+        ],
+        "right": [
+            "Track gradients",
+            "Compute gradients",
+            "Access gradients"
+        ]
+    },
+    {
+        "q": "The ______ attribute stores gradients.",
+        "type": "fill_blank",
+        "answers": [
+            "grad"
+        ],
+        "other_options": [
+            "gradient",
+            "grads",
+            "derivative"
+        ]
+    },
+    {
+        "q": "backward() populates .grad attribute.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method updates weights?",
+        "type": "mcq",
+        "o": [
+            "optimizer.step()",
+            "optimizer.update()",
+            "optimizer.apply()",
+            "model.update()"
+        ]
+    },
+    {
+        "q": "optimizer.step() applies gradients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the gradient flow:",
+        "type": "rearrange",
+        "words": [
+            "forward",
+            "loss",
+            "backward",
+            "grad",
+            "step"
+        ]
+    },
+    {
+        "q": "Which layer performs 2D convolution?",
+        "type": "mcq",
+        "o": [
+            "nn.Conv2d",
+            "nn.Convolution2D",
+            "nn.Filter2D",
+            "nn.Kernel2D"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Conv2d(3, 32, 3)\nprint(type(layer).__name__)",
+        "o": [
+            "Conv2d",
+            "Convolution",
+            "Layer",
+            "Filter"
+        ]
+    },
+    {
+        "q": "Match the Conv2d parameters:",
+        "type": "match",
+        "left": [
+            "in_channels",
+            "out_channels",
+            "kernel_size"
+        ],
+        "right": [
+            "Input channels",
+            "Output channels",
+            "Filter size"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets filter dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "kernel_size"
+        ],
+        "other_options": [
+            "filter_size",
+            "window",
+            "size"
+        ]
+    },
+    {
+        "q": "Conv2d extracts spatial features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer performs pooling?",
+        "type": "mcq",
+        "o": [
+            "nn.MaxPool2d",
+            "nn.Pool2d",
+            "nn.Downsample",
+            "nn.Reduce2d"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.MaxPool2d(2)\nprint(type(layer).__name__)",
+        "o": [
+            "MaxPool2d",
+            "Pooling",
+            "MaxPool",
+            "Layer"
+        ]
+    },
+    {
+        "q": "Match the pooling types:",
+        "type": "match",
+        "left": [
+            "MaxPool2d",
+            "AvgPool2d",
+            "AdaptiveMaxPool2d"
+        ],
+        "right": [
+            "Max value",
+            "Average value",
+            "Adaptive output"
+        ]
+    },
+    {
+        "q": "Pooling reduces spatial dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the CNN structure:",
+        "type": "rearrange",
+        "words": [
+            "Conv2d",
+            "ReLU",
+            "MaxPool2d",
+            "Flatten",
+            "Linear"
+        ]
+    },
+    {
+        "q": "Which layer flattens input?",
+        "type": "mcq",
+        "o": [
+            "nn.Flatten",
+            "nn.Reshape",
+            "nn.Squeeze",
+            "nn.Dense"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nlayer = nn.Flatten()\nx = torch.randn(1, 2, 3)\nprint(layer(x).shape)",
+        "o": [
+            "torch.Size([1, 6])",
+            "torch.Size([6])",
+            "torch.Size([2, 3])",
+            "Error"
+        ]
+    },
+    {
+        "q": "nn.Flatten is used before Linear layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the reshape layers:",
+        "type": "match",
+        "left": [
+            "Flatten",
+            "Unflatten"
+        ],
+        "right": [
+            "To 1D",
+            "From 1D"
+        ]
+    },
+    {
+        "q": "Which layer adds dropout?",
+        "type": "mcq",
+        "o": [
+            "nn.Dropout",
+            "nn.Regularize",
+            "nn.DropConnect",
+            "nn.Noise"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Dropout(0.5)\nprint(type(layer).__name__)",
+        "o": [
+            "Dropout",
+            "Regularization",
+            "Layer",
+            "Drop"
+        ]
+    },
+    {
+        "q": "Match the regularization layers:",
+        "type": "match",
+        "left": [
+            "Dropout",
+            "BatchNorm2d"
+        ],
+        "right": [
+            "Random zeroing",
+            "Normalize activations"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets dropout probability.",
+        "type": "fill_blank",
+        "answers": [
+            "p"
+        ],
+        "other_options": [
+            "rate",
+            "prob",
+            "drop"
+        ]
+    },
+    {
+        "q": "Dropout is only active during training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer normalizes batch?",
+        "type": "mcq",
+        "o": [
+            "nn.BatchNorm2d",
+            "nn.LayerNorm",
+            "nn.Normalize",
+            "nn.StandardScale"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.BatchNorm2d(64)\nprint(type(layer).__name__)",
+        "o": [
+            "BatchNorm2d",
+            "Normalization",
+            "Layer",
+            "Batch"
+        ]
+    },
+    {
+        "q": "BatchNorm2d speeds up training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the regularization types:",
+        "type": "rearrange",
+        "words": [
+            "Dropout: random zeroing",
+            "BatchNorm: normalize",
+            "WeightDecay: L2"
+        ]
+    },
+    {
+        "q": "Which method sets model to training mode?",
+        "type": "mcq",
+        "o": [
+            "model.train()",
+            "model.training()",
+            "model.set_train()",
+            "model.mode('train')"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nmodel = nn.Linear(10, 5)\nmodel.train()\nprint(model.training)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the model modes:",
+        "type": "match",
+        "left": [
+            "train()",
+            "eval()"
+        ],
+        "right": [
+            "Training mode",
+            "Evaluation mode"
+        ]
+    },
+    {
+        "q": "The ______ method sets evaluation mode.",
+        "type": "fill_blank",
+        "answers": [
+            "eval"
+        ],
+        "other_options": [
+            "evaluate",
+            "test",
+            "inference"
+        ]
+    },
+    {
+        "q": "Rearrange the evaluation workflow:",
+        "type": "rearrange",
+        "words": [
+            "model.eval()",
+            "torch.no_grad()",
+            "forward pass"
+        ]
+    },
+    {
+        "q": "model.eval() disables dropout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which context disables gradient computation?",
+        "type": "mcq",
+        "o": [
+            "torch.no_grad()",
+            "torch.disable_grad()",
+            "torch.gradient_off()",
+            "torch.eval()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nwith torch.no_grad():\n    x = torch.tensor([1.0], requires_grad=True)\n    y = x * 2\nprint(y.requires_grad)",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.no_grad() saves memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the gradient contexts:",
+        "type": "match",
+        "left": [
+            "no_grad",
+            "enable_grad",
+            "set_grad_enabled"
+        ],
+        "right": [
+            "Disable",
+            "Enable",
+            "Toggle"
+        ]
+    },
+    {
+        "q": "Which method saves model?",
+        "type": "mcq",
+        "o": [
+            "torch.save()",
+            "model.save()",
+            "torch.export()",
+            "model.dump()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch, 'save'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the save/load functions:",
+        "type": "match",
+        "left": [
+            "torch.save",
+            "torch.load"
+        ],
+        "right": [
+            "Serialize",
+            "Deserialize"
+        ]
+    },
+    {
+        "q": "The ______ saves model state dict.",
+        "type": "fill_blank",
+        "answers": [
+            "torch.save"
+        ],
+        "other_options": [
+            "model.save",
+            "torch.dump",
+            "model.export"
+        ]
+    },
+    {
+        "q": "state_dict() contains model parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the save workflow:",
+        "type": "rearrange",
+        "words": [
+            "get state_dict",
+            "torch.save",
+            "save to file"
+        ]
+    },
+    {
+        "q": "Which method loads model weights?",
+        "type": "mcq",
+        "o": [
+            "model.load_state_dict()",
+            "model.load()",
+            "model.restore()",
+            "torch.load_model()"
+        ]
+    },
+    {
+        "q": "load_state_dict() restores parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the model persistence:",
+        "type": "match",
+        "left": [
+            "state_dict()",
+            "load_state_dict()"
+        ],
+        "right": [
+            "Get params",
+            "Set params"
+        ]
+    },
+    {
+        "q": "Which class handles datasets?",
+        "type": "mcq",
+        "o": [
+            "torch.utils.data.Dataset",
+            "torch.Dataset",
+            "torch.data.Dataset",
+            "torch.DataSet"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from torch.utils.data import Dataset\nprint(Dataset.__name__)",
+        "o": [
+            "Dataset",
+            "Data",
+            "TorchDataset",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the Dataset methods:",
+        "type": "match",
+        "left": [
+            "__len__",
+            "__getitem__"
+        ],
+        "right": [
+            "Return size",
+            "Return item"
+        ]
+    },
+    {
+        "q": "The ______ method returns dataset length.",
+        "type": "fill_blank",
+        "answers": [
+            "__len__"
+        ],
+        "other_options": [
+            "length",
+            "size",
+            "count"
+        ]
+    },
+    {
+        "q": "Custom Dataset must implement __getitem__.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which class handles data loading?",
+        "type": "mcq",
+        "o": [
+            "DataLoader",
+            "DataIterator",
+            "DataPipeline",
+            "DataBatcher"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "from torch.utils.data import DataLoader, TensorDataset\nimport torch\nds = TensorDataset(torch.randn(10, 3))\ndl = DataLoader(ds, batch_size=2)\nprint(len(dl))",
+        "o": [
+            "5",
+            "10",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DataLoader parameters:",
+        "type": "match",
+        "left": [
+            "batch_size",
+            "shuffle",
+            "num_workers"
+        ],
+        "right": [
+            "Batch count",
+            "Randomize",
+            "Parallel loading"
+        ]
+    },
+    {
+        "q": "The ______ parameter enables parallel loading.",
+        "type": "fill_blank",
+        "answers": [
+            "num_workers"
+        ],
+        "other_options": [
+            "workers",
+            "parallel",
+            "threads"
+        ]
+    },
+    {
+        "q": "Rearrange the data pipeline:",
+        "type": "rearrange",
+        "words": [
+            "create Dataset",
+            "wrap in DataLoader",
+            "iterate batches"
+        ]
+    },
+    {
+        "q": "DataLoader handles batching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer is recurrent?",
+        "type": "mcq",
+        "o": [
+            "nn.LSTM or nn.GRU",
+            "nn.Recurrent",
+            "nn.RNN",
+            "nn.Sequence"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.LSTM(input_size=10, hidden_size=20)\nprint(type(layer).__name__)",
+        "o": [
+            "LSTM",
+            "RNN",
+            "Recurrent",
+            "Layer"
+        ]
+    },
+    {
+        "q": "Match the recurrent layers:",
+        "type": "match",
+        "left": [
+            "RNN",
+            "LSTM",
+            "GRU"
+        ],
+        "right": [
+            "Basic",
+            "Long memory",
+            "Gated"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets hidden dimension.",
+        "type": "fill_blank",
+        "answers": [
+            "hidden_size"
+        ],
+        "other_options": [
+            "hidden_dim",
+            "units",
+            "hidden"
+        ]
+    },
+    {
+        "q": "LSTM handles long sequences better.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the LSTM complexity:",
+        "type": "rearrange",
+        "words": [
+            "RNN: simple",
+            "GRU: moderate",
+            "LSTM: complex"
+        ]
+    },
+    {
+        "q": "Which layer handles embeddings?",
+        "type": "mcq",
+        "o": [
+            "nn.Embedding",
+            "nn.Embed",
+            "nn.Lookup",
+            "nn.Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nemb = nn.Embedding(1000, 64)\nprint(type(emb).__name__)",
+        "o": [
+            "Embedding",
+            "Embed",
+            "Layer",
+            "Lookup"
+        ]
+    },
+    {
+        "q": "Match the Embedding parameters:",
+        "type": "match",
+        "left": [
+            "num_embeddings",
+            "embedding_dim"
+        ],
+        "right": [
+            "Vocabulary size",
+            "Vector dimension"
+        ]
+    },
+    {
+        "q": "The ______ is vocabulary size.",
+        "type": "fill_blank",
+        "answers": [
+            "num_embeddings"
+        ],
+        "other_options": [
+            "vocab_size",
+            "dictionary_size",
+            "count"
+        ]
+    },
+    {
+        "q": "Embedding converts indices to vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which module has pretrained models?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models",
+            "torch.models",
+            "torch.pretrained",
+            "torch.hub"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torchvision.models as models\nprint(hasattr(models, 'resnet18'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the model architectures:",
+        "type": "match",
+        "left": [
+            "ResNet",
+            "VGG",
+            "AlexNet"
+        ],
+        "right": [
+            "Residual",
+            "Very deep",
+            "Pioneer CNN"
+        ]
+    },
+    {
+        "q": "The ______ parameter loads pretrained.",
+        "type": "fill_blank",
+        "answers": [
+            "weights"
+        ],
+        "other_options": [
+            "pretrained",
+            "trained",
+            "load_weights"
+        ]
+    },
+    {
+        "q": "Transfer learning uses pretrained models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the transfer learning:",
+        "type": "rearrange",
+        "words": [
+            "load pretrained",
+            "freeze layers",
+            "replace head",
+            "train"
+        ]
+    },
+    {
+        "q": "Which module handles image transforms?",
+        "type": "mcq",
+        "o": [
+            "torchvision.transforms",
+            "torch.transforms",
+            "torch.image",
+            "torchvision.augment"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torchvision.transforms as T\nprint(hasattr(T, 'Compose'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the transforms:",
+        "type": "match",
+        "left": [
+            "ToTensor",
+            "Normalize",
+            "Resize"
+        ],
+        "right": [
+            "Image to tensor",
+            "Standardize",
+            "Change size"
+        ]
+    },
+    {
+        "q": "The ______ chains transforms.",
+        "type": "fill_blank",
+        "answers": [
+            "Compose"
+        ],
+        "other_options": [
+            "Chain",
+            "Sequence",
+            "Pipeline"
+        ]
+    },
+    {
+        "q": "ToTensor converts PIL to tensor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which transform normalizes images?",
+        "type": "mcq",
+        "o": [
+            "Normalize",
+            "Standardize",
+            "Scale",
+            "Mean"
+        ]
+    },
+    {
+        "q": "Match the augmentation transforms:",
+        "type": "match",
+        "left": [
+            "RandomCrop",
+            "RandomHorizontalFlip",
+            "ColorJitter"
+        ],
+        "right": [
+            "Crop portion",
+            "Flip horizontal",
+            "Change colors"
+        ]
+    },
+    {
+        "q": "Rearrange the image preprocessing:",
+        "type": "rearrange",
+        "words": [
+            "Resize",
+            "ToTensor",
+            "Normalize"
+        ]
+    },
+    {
+        "q": "Data augmentation improves generalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function moves tensor to GPU?",
+        "type": "mcq",
+        "o": [
+            "tensor.to('cuda') or tensor.cuda()",
+            "tensor.gpu()",
+            "torch.gpu(tensor)",
+            "tensor.device('cuda')"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(torch.cuda.is_available())",
+        "o": [
+            "True or False",
+            "cuda",
+            "gpu",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the device operations:",
+        "type": "match",
+        "left": [
+            "to('cuda')",
+            "to('cpu')",
+            "cuda.is_available()"
+        ],
+        "right": [
+            "Move to GPU",
+            "Move to CPU",
+            "Check GPU"
+        ]
+    },
+    {
+        "q": "The ______ attribute shows device.",
+        "type": "fill_blank",
+        "answers": [
+            "device"
+        ],
+        "other_options": [
+            "location",
+            "hardware",
+            "type"
+        ]
+    },
+    {
+        "q": "Model and data must be on same device.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the GPU workflow:",
+        "type": "rearrange",
+        "words": [
+            "check cuda",
+            "move model",
+            "move data",
+            "train"
+        ]
+    },
+    {
+        "q": "Which class handles learning rate scheduling?",
+        "type": "mcq",
+        "o": [
+            "torch.optim.lr_scheduler",
+            "torch.scheduler",
+            "torch.lr",
+            "optim.Schedule"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.optim as optim\nimport torch.nn as nn\nmodel = nn.Linear(10, 1)\nopt = optim.Adam(model.parameters())\nsch = optim.lr_scheduler.StepLR(opt, step_size=10)\nprint(type(sch).__name__)",
+        "o": [
+            "StepLR",
+            "Scheduler",
+            "LR",
+            "Step"
+        ]
+    },
+    {
+        "q": "Match the schedulers:",
+        "type": "match",
+        "left": [
+            "StepLR",
+            "ExponentialLR",
+            "CosineAnnealingLR"
+        ],
+        "right": [
+            "Step decay",
+            "Exponential decay",
+            "Cosine decay"
+        ]
+    },
+    {
+        "q": "The ______ method updates learning rate.",
+        "type": "fill_blank",
+        "answers": [
+            "scheduler.step"
+        ],
+        "other_options": [
+            "scheduler.update",
+            "scheduler.next",
+            "scheduler.advance"
+        ]
+    },
+    {
+        "q": "scheduler.step() is called after optimizer.step().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer handles attention?",
+        "type": "mcq",
+        "o": [
+            "nn.MultiheadAttention",
+            "nn.Attention",
+            "nn.SelfAttention",
+            "nn.AttentionLayer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.MultiheadAttention(embed_dim=64, num_heads=8)\nprint(type(layer).__name__)",
+        "o": [
+            "MultiheadAttention",
+            "Attention",
+            "Layer",
+            "Multihead"
+        ]
+    },
+    {
+        "q": "Match the attention parameters:",
+        "type": "match",
+        "left": [
+            "embed_dim",
+            "num_heads"
+        ],
+        "right": [
+            "Embedding size",
+            "Head count"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets number of heads.",
+        "type": "fill_blank",
+        "answers": [
+            "num_heads"
+        ],
+        "other_options": [
+            "heads",
+            "n_heads",
+            "head_count"
+        ]
+    },
+    {
+        "q": "Attention uses query, key, value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the attention mechanism:",
+        "type": "rearrange",
+        "words": [
+            "compute scores",
+            "apply softmax",
+            "weight values"
+        ]
+    },
+    {
+        "q": "Which layer handles transformer encoding?",
+        "type": "mcq",
+        "o": [
+            "nn.TransformerEncoder",
+            "nn.Encoder",
+            "nn.AttentionEncoder",
+            "nn.SelfEncoder"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.TransformerEncoderLayer(d_model=512, nhead=8)\nprint(type(layer).__name__)",
+        "o": [
+            "TransformerEncoderLayer",
+            "Encoder",
+            "Transformer",
+            "Layer"
+        ]
+    },
+    {
+        "q": "Match the transformer components:",
+        "type": "match",
+        "left": [
+            "TransformerEncoder",
+            "TransformerDecoder"
+        ],
+        "right": [
+            "Encode input",
+            "Generate output"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets model dimension.",
+        "type": "fill_blank",
+        "answers": [
+            "d_model"
+        ],
+        "other_options": [
+            "model_dim",
+            "embed_dim",
+            "hidden_size"
+        ]
+    },
+    {
+        "q": "Transformers use self-attention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer handles layer normalization?",
+        "type": "mcq",
+        "o": [
+            "nn.LayerNorm",
+            "nn.LNorm",
+            "nn.NormalizeLayer",
+            "nn.FeatureNorm"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.LayerNorm(64)\nprint(type(layer).__name__)",
+        "o": [
+            "LayerNorm",
+            "Normalization",
+            "Layer",
+            "Norm"
+        ]
+    },
+    {
+        "q": "Match the normalization layers:",
+        "type": "match",
+        "left": [
+            "BatchNorm",
+            "LayerNorm",
+            "GroupNorm"
+        ],
+        "right": [
+            "Batch stats",
+            "Layer stats",
+            "Group stats"
+        ]
+    },
+    {
+        "q": "LayerNorm works with any batch size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the normalization by use:",
+        "type": "rearrange",
+        "words": [
+            "BatchNorm: CNN",
+            "LayerNorm: Transformer",
+            "GroupNorm: small batch"
+        ]
+    },
+    {
+        "q": "Which function clips gradients?",
+        "type": "mcq",
+        "o": [
+            "nn.utils.clip_grad_norm_",
+            "torch.clip_grad",
+            "optim.clip_grad",
+            "grad.clip()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nprint(hasattr(nn.utils, 'clip_grad_norm_'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Gradient clipping prevents exploding gradients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the gradient operations:",
+        "type": "match",
+        "left": [
+            "clip_grad_norm_",
+            "clip_grad_value_"
+        ],
+        "right": [
+            "Clip by norm",
+            "Clip by value"
+        ]
+    },
+    {
+        "q": "The ______ clips by total norm.",
+        "type": "fill_blank",
+        "answers": [
+            "clip_grad_norm_"
+        ],
+        "other_options": [
+            "clip_grad",
+            "norm_clip",
+            "grad_clip"
+        ]
+    },
+    {
+        "q": "Which context enables mixed precision?",
+        "type": "mcq",
+        "o": [
+            "torch.cuda.amp.autocast",
+            "torch.fp16",
+            "torch.mixed",
+            "torch.half"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch.cuda.amp, 'autocast'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Mixed precision speeds up training.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the AMP components:",
+        "type": "match",
+        "left": [
+            "autocast",
+            "GradScaler"
+        ],
+        "right": [
+            "Auto dtype",
+            "Scale gradients"
+        ]
+    },
+    {
+        "q": "The ______ scales gradients for FP16.",
+        "type": "fill_blank",
+        "answers": [
+            "GradScaler"
+        ],
+        "other_options": [
+            "Scaler",
+            "GradientScale",
+            "FP16Scaler"
+        ]
+    },
+    {
+        "q": "Rearrange the AMP workflow:",
+        "type": "rearrange",
+        "words": [
+            "create scaler",
+            "autocast forward",
+            "scale loss",
+            "scaler.step"
+        ]
+    },
+    {
+        "q": "Which module handles distributed training?",
+        "type": "mcq",
+        "o": [
+            "torch.distributed or torch.nn.parallel",
+            "torch.parallel",
+            "torch.multi",
+            "torch.cluster"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch, 'distributed'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the parallelism types:",
+        "type": "match",
+        "left": [
+            "DataParallel",
+            "DistributedDataParallel"
+        ],
+        "right": [
+            "Single machine",
+            "Multi-machine"
+        ]
+    },
+    {
+        "q": "The ______ wraps model for data parallel.",
+        "type": "fill_blank",
+        "answers": [
+            "DataParallel"
+        ],
+        "other_options": [
+            "Parallel",
+            "MultiGPU",
+            "Distributed"
+        ]
+    },
+    {
+        "q": "DistributedDataParallel is more efficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function initializes process group?",
+        "type": "mcq",
+        "o": [
+            "dist.init_process_group",
+            "dist.initialize",
+            "dist.setup",
+            "dist.start"
+        ]
+    },
+    {
+        "q": "init_process_group sets up communication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the distributed training:",
+        "type": "rearrange",
+        "words": [
+            "init_process_group",
+            "wrap model DDP",
+            "train loop",
+            "cleanup"
+        ]
+    },
+    {
+        "q": "Which function exports to ONNX?",
+        "type": "mcq",
+        "o": [
+            "torch.onnx.export",
+            "torch.export_onnx",
+            "model.to_onnx",
+            "onnx.from_torch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch.onnx, 'export'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "ONNX enables cross-framework deployment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the export formats:",
+        "type": "match",
+        "left": [
+            "ONNX",
+            "TorchScript"
+        ],
+        "right": [
+            "Cross-framework",
+            "PyTorch native"
+        ]
+    },
+    {
+        "q": "The ______ converts to portable format.",
+        "type": "fill_blank",
+        "answers": [
+            "torch.jit.trace or torch.jit.script"
+        ],
+        "other_options": [
+            "torch.export",
+            "torch.compile",
+            "torch.serialize"
+        ]
+    },
+    {
+        "q": "Which function traces model?",
+        "type": "mcq",
+        "o": [
+            "torch.jit.trace",
+            "torch.trace",
+            "model.trace",
+            "jit.record"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch.jit, 'trace'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the JIT methods:",
+        "type": "match",
+        "left": [
+            "trace",
+            "script"
+        ],
+        "right": [
+            "Record execution",
+            "Parse code"
+        ]
+    },
+    {
+        "q": "torch.jit.trace records operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the JIT workflow:",
+        "type": "rearrange",
+        "words": [
+            "define model",
+            "trace or script",
+            "save",
+            "load in C++"
+        ]
+    },
+    {
+        "q": "Which function compiles model?",
+        "type": "mcq",
+        "o": [
+            "torch.compile",
+            "torch.optimize",
+            "torch.accelerate",
+            "torch.fast"
+        ]
+    },
+    {
+        "q": "torch.compile speeds up execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the compilation backends:",
+        "type": "match",
+        "left": [
+            "inductor",
+            "cudagraphs"
+        ],
+        "right": [
+            "Default",
+            "CUDA graphs"
+        ]
+    },
+    {
+        "q": "Which module handles checkpointing?",
+        "type": "mcq",
+        "o": [
+            "torch.utils.checkpoint",
+            "torch.checkpoint",
+            "torch.save",
+            "torch.memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch.utils, 'checkpoint'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Gradient checkpointing saves memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the memory techniques:",
+        "type": "match",
+        "left": [
+            "checkpointing",
+            "mixed precision"
+        ],
+        "right": [
+            "Recompute activations",
+            "Use FP16"
+        ]
+    },
+    {
+        "q": "The ______ trades compute for memory.",
+        "type": "fill_blank",
+        "answers": [
+            "checkpoint"
+        ],
+        "other_options": [
+            "save",
+            "recompute",
+            "memory"
+        ]
+    },
+    {
+        "q": "Which function detaches tensor?",
+        "type": "mcq",
+        "o": [
+            "tensor.detach()",
+            "tensor.clone()",
+            "tensor.copy()",
+            "torch.detach(tensor)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1.0], requires_grad=True)\ny = x.detach()\nprint(y.requires_grad)",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "detach() removes from computation graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the tensor operations:",
+        "type": "match",
+        "left": [
+            "detach",
+            "clone",
+            "contiguous"
+        ],
+        "right": [
+            "Remove grad",
+            "Copy data",
+            "Fix memory"
+        ]
+    },
+    {
+        "q": "The ______ creates a copy with grad.",
+        "type": "fill_blank",
+        "answers": [
+            "clone"
+        ],
+        "other_options": [
+            "copy",
+            "detach",
+            "duplicate"
+        ]
+    },
+    {
+        "q": "Rearrange the tensor operations:",
+        "type": "rearrange",
+        "words": [
+            "detach: no grad",
+            "clone: copy",
+            "contiguous: memory layout"
+        ]
+    },
+    {
+        "q": "Which layer is 1D convolution?",
+        "type": "mcq",
+        "o": [
+            "nn.Conv1d",
+            "nn.Convolution1D",
+            "nn.Filter1D",
+            "nn.Temporal"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Conv1d(1, 32, 3)\nprint(type(layer).__name__)",
+        "o": [
+            "Conv1d",
+            "Convolution",
+            "Layer",
+            "Temporal"
+        ]
+    },
+    {
+        "q": "Match the convolution dimensions:",
+        "type": "match",
+        "left": [
+            "Conv1d",
+            "Conv2d",
+            "Conv3d"
+        ],
+        "right": [
+            "Sequences",
+            "Images",
+            "Video"
+        ]
+    },
+    {
+        "q": "Conv1d processes sequence data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer is transposed convolution?",
+        "type": "mcq",
+        "o": [
+            "nn.ConvTranspose2d",
+            "nn.Deconv2d",
+            "nn.Upsample",
+            "nn.InverseConv"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.ConvTranspose2d(32, 16, 3)\nprint(type(layer).__name__)",
+        "o": [
+            "ConvTranspose2d",
+            "Transpose",
+            "Deconv",
+            "Layer"
+        ]
+    },
+    {
+        "q": "ConvTranspose2d upsamples feature maps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the convolution types:",
+        "type": "match",
+        "left": [
+            "Conv2d",
+            "ConvTranspose2d"
+        ],
+        "right": [
+            "Downsample",
+            "Upsample"
+        ]
+    },
+    {
+        "q": "Which layer is global pooling?",
+        "type": "mcq",
+        "o": [
+            "nn.AdaptiveAvgPool2d",
+            "nn.GlobalPool",
+            "nn.FinalPool",
+            "nn.ReducePool"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nlayer = nn.AdaptiveAvgPool2d(1)\nx = torch.randn(1, 64, 7, 7)\nprint(layer(x).shape)",
+        "o": [
+            "torch.Size([1, 64, 1, 1])",
+            "torch.Size([1, 64])",
+            "torch.Size([64])",
+            "Error"
+        ]
+    },
+    {
+        "q": "AdaptiveAvgPool2d(1) reduces to 1x1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the adaptive pooling:",
+        "type": "match",
+        "left": [
+            "AdaptiveAvgPool2d",
+            "AdaptiveMaxPool2d"
+        ],
+        "right": [
+            "Average to size",
+            "Max to size"
+        ]
+    },
+    {
+        "q": "Rearrange the pooling types:",
+        "type": "rearrange",
+        "words": [
+            "MaxPool: local max",
+            "AvgPool: local avg",
+            "AdaptivePool: target size"
+        ]
+    },
+    {
+        "q": "Which function creates depthwise convolution?",
+        "type": "mcq",
+        "o": [
+            "groups=in_channels in Conv2d",
+            "nn.DepthwiseConv2d",
+            "nn.SeparableConv2d",
+            "Conv2d(depthwise=True)"
+        ]
+    },
+    {
+        "q": "Depthwise convolution uses fewer parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the convolution patterns:",
+        "type": "match",
+        "left": [
+            "Standard",
+            "Depthwise",
+            "Pointwise"
+        ],
+        "right": [
+            "Full channels",
+            "Per channel",
+            "1x1 conv"
+        ]
+    },
+    {
+        "q": "Which layer handles padding?",
+        "type": "mcq",
+        "o": [
+            "padding parameter or nn.ZeroPad2d",
+            "nn.Padding",
+            "nn.Border",
+            "nn.Edge"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.ZeroPad2d(1)\nprint(type(layer).__name__)",
+        "o": [
+            "ZeroPad2d",
+            "Padding",
+            "Layer",
+            "Zero"
+        ]
+    },
+    {
+        "q": "ZeroPad2d adds border of zeros.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the padding types:",
+        "type": "match",
+        "left": [
+            "ZeroPad2d",
+            "ReplicationPad2d",
+            "ReflectionPad2d"
+        ],
+        "right": [
+            "Zeros",
+            "Edge values",
+            "Mirror"
+        ]
+    },
+    {
+        "q": "Which layer handles upsampling?",
+        "type": "mcq",
+        "o": [
+            "nn.Upsample or F.interpolate",
+            "nn.Upscale",
+            "nn.Enlarge",
+            "nn.Resize"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nlayer = nn.Upsample(scale_factor=2)\nx = torch.randn(1, 3, 4, 4)\nprint(layer(x).shape)",
+        "o": [
+            "torch.Size([1, 3, 8, 8])",
+            "torch.Size([1, 3, 2, 2])",
+            "torch.Size([1, 6, 4, 4])",
+            "Error"
+        ]
+    },
+    {
+        "q": "Upsample increases spatial dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the upsample modes:",
+        "type": "match",
+        "left": [
+            "nearest",
+            "bilinear",
+            "bicubic"
+        ],
+        "right": [
+            "No interpolation",
+            "Linear",
+            "Cubic"
+        ]
+    },
+    {
+        "q": "Rearrange the upsample quality:",
+        "type": "rearrange",
+        "words": [
+            "nearest: fast",
+            "bilinear: smooth",
+            "bicubic: best"
+        ]
+    },
+    {
+        "q": "Which activation is LeakyReLU?",
+        "type": "mcq",
+        "o": [
+            "nn.LeakyReLU",
+            "nn.Leaky",
+            "F.leaky_relu",
+            "Both nn.LeakyReLU and F.leaky_relu"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.LeakyReLU(0.1)\nprint(type(layer).__name__)",
+        "o": [
+            "LeakyReLU",
+            "ReLU",
+            "Activation",
+            "Leaky"
+        ]
+    },
+    {
+        "q": "LeakyReLU allows small negative values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the ReLU variants:",
+        "type": "match",
+        "left": [
+            "ReLU",
+            "LeakyReLU",
+            "PReLU"
+        ],
+        "right": [
+            "Zero negative",
+            "Fixed slope",
+            "Learned slope"
+        ]
+    },
+    {
+        "q": "The ______ parameter sets negative slope.",
+        "type": "fill_blank",
+        "answers": [
+            "negative_slope"
+        ],
+        "other_options": [
+            "alpha",
+            "slope",
+            "leak"
+        ]
+    },
+    {
+        "q": "Which activation is GELU?",
+        "type": "mcq",
+        "o": [
+            "nn.GELU",
+            "nn.Gaussian",
+            "F.gelu",
+            "Both nn.GELU and F.gelu"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.GELU()\nprint(type(layer).__name__)",
+        "o": [
+            "GELU",
+            "Activation",
+            "Layer",
+            "Gaussian"
+        ]
+    },
+    {
+        "q": "GELU is used in transformers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the transformer activations:",
+        "type": "match",
+        "left": [
+            "GELU",
+            "SiLU/Swish"
+        ],
+        "right": [
+            "BERT style",
+            "Gated"
+        ]
+    },
+    {
+        "q": "Rearrange the activations by smoothness:",
+        "type": "rearrange",
+        "words": [
+            "ReLU: sharp",
+            "LeakyReLU: corner",
+            "GELU: smooth"
+        ]
+    },
+    {
+        "q": "Which loss is for contrastive learning?",
+        "type": "mcq",
+        "o": [
+            "nn.TripletMarginLoss or custom",
+            "nn.ContrastiveLoss",
+            "nn.SiameseLoss",
+            "nn.PairLoss"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nloss_fn = nn.TripletMarginLoss()\nprint(type(loss_fn).__name__)",
+        "o": [
+            "TripletMarginLoss",
+            "Triplet",
+            "Loss",
+            "Margin"
+        ]
+    },
+    {
+        "q": "TripletMarginLoss uses anchor, positive, negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the metric learning losses:",
+        "type": "match",
+        "left": [
+            "TripletMarginLoss",
+            "CosineEmbeddingLoss"
+        ],
+        "right": [
+            "Distance triplets",
+            "Cosine similarity"
+        ]
+    },
+    {
+        "q": "Which loss is for KL divergence?",
+        "type": "mcq",
+        "o": [
+            "nn.KLDivLoss",
+            "nn.KullbackLeibler",
+            "F.kl_div",
+            "Both nn.KLDivLoss and F.kl_div"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nloss_fn = nn.KLDivLoss()\nprint(type(loss_fn).__name__)",
+        "o": [
+            "KLDivLoss",
+            "KL",
+            "Loss",
+            "Divergence"
+        ]
+    },
+    {
+        "q": "KLDivLoss expects log probabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the distribution losses:",
+        "type": "match",
+        "left": [
+            "KLDivLoss",
+            "CosineEmbeddingLoss"
+        ],
+        "right": [
+            "Distribution diff",
+            "Direction similarity"
+        ]
+    },
+    {
+        "q": "Which loss handles label smoothing?",
+        "type": "mcq",
+        "o": [
+            "CrossEntropyLoss with label_smoothing",
+            "nn.LabelSmoothingLoss",
+            "nn.SmoothCrossEntropy",
+            "F.smooth_cross_entropy"
+        ]
+    },
+    {
+        "q": "Label smoothing prevents overconfidence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the loss techniques:",
+        "type": "rearrange",
+        "words": [
+            "standard: hard labels",
+            "smoothing: soft labels",
+            "mixup: interpolated"
+        ]
+    },
+    {
+        "q": "Which optimizer is AdamW?",
+        "type": "mcq",
+        "o": [
+            "torch.optim.AdamW",
+            "torch.optim.Adam with weight_decay",
+            "torch.optim.DecoupledAdam",
+            "optim.WeightedAdam"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.optim as optim\nimport torch.nn as nn\nmodel = nn.Linear(10, 1)\nopt = optim.AdamW(model.parameters())\nprint(type(opt).__name__)",
+        "o": [
+            "AdamW",
+            "Adam",
+            "Optimizer",
+            "Weighted"
+        ]
+    },
+    {
+        "q": "AdamW decouples weight decay.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the Adam variants:",
+        "type": "match",
+        "left": [
+            "Adam",
+            "AdamW",
+            "RAdam"
+        ],
+        "right": [
+            "Standard",
+            "Decoupled decay",
+            "Rectified"
+        ]
+    },
+    {
+        "q": "Which scheduler is OneCycleLR?",
+        "type": "mcq",
+        "o": [
+            "torch.optim.lr_scheduler.OneCycleLR",
+            "torch.scheduler.OneCycle",
+            "optim.OneCycle",
+            "lr.OneCycleLR"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.optim as optim\nimport torch.nn as nn\nmodel = nn.Linear(10, 1)\nopt = optim.Adam(model.parameters())\nsch = optim.lr_scheduler.OneCycleLR(opt, max_lr=0.1, total_steps=100)\nprint(type(sch).__name__)",
+        "o": [
+            "OneCycleLR",
+            "Scheduler",
+            "OneCycle",
+            "LR"
+        ]
+    },
+    {
+        "q": "OneCycleLR uses warmup and annealing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the LR schedules:",
+        "type": "match",
+        "left": [
+            "StepLR",
+            "CosineAnnealingLR",
+            "OneCycleLR"
+        ],
+        "right": [
+            "Step decay",
+            "Cosine wave",
+            "One cycle"
+        ]
+    },
+    {
+        "q": "Rearrange the warmup strategies:",
+        "type": "rearrange",
+        "words": [
+            "no warmup",
+            "linear warmup",
+            "cosine warmup"
+        ]
+    },
+    {
+        "q": "Which module handles hooks?",
+        "type": "mcq",
+        "o": [
+            "register_forward_hook or register_backward_hook",
+            "nn.Hooks",
+            "torch.hooks",
+            "model.hooks"
+        ]
+    },
+    {
+        "q": "Hooks access intermediate activations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the hook types:",
+        "type": "match",
+        "left": [
+            "forward_hook",
+            "backward_hook"
+        ],
+        "right": [
+            "Access outputs",
+            "Access gradients"
+        ]
+    },
+    {
+        "q": "The ______ accesses layer outputs.",
+        "type": "fill_blank",
+        "answers": [
+            "register_forward_hook"
+        ],
+        "other_options": [
+            "forward_hook",
+            "output_hook",
+            "layer_hook"
+        ]
+    },
+    {
+        "q": "Which function handles weight initialization?",
+        "type": "mcq",
+        "o": [
+            "nn.init functions",
+            "torch.init",
+            "model.init_weights",
+            "layer.initialize"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nprint(hasattr(nn.init, 'xavier_uniform_'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Xavier initialization balances variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the initializations:",
+        "type": "match",
+        "left": [
+            "xavier_uniform_",
+            "kaiming_normal_",
+            "zeros_"
+        ],
+        "right": [
+            "Sigmoid/Tanh",
+            "ReLU",
+            "All zeros"
+        ]
+    },
+    {
+        "q": "The ______ is for ReLU networks.",
+        "type": "fill_blank",
+        "answers": [
+            "kaiming_normal_"
+        ],
+        "other_options": [
+            "xavier",
+            "he_init",
+            "relu_init"
+        ]
+    },
+    {
+        "q": "Rearrange the init by activation:",
+        "type": "rearrange",
+        "words": [
+            "xavier: sigmoid/tanh",
+            "kaiming: relu",
+            "orthogonal: RNN"
+        ]
+    },
+    {
+        "q": "Which method freezes parameters?",
+        "type": "mcq",
+        "o": [
+            "requires_grad = False",
+            "param.freeze()",
+            "model.freeze()",
+            "torch.freeze(param)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nmodel = nn.Linear(10, 5)\nfor param in model.parameters():\n    param.requires_grad = False\nprint(model.weight.requires_grad)",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Freezing prevents parameter updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the gradient control:",
+        "type": "match",
+        "left": [
+            "requires_grad=False",
+            "detach()"
+        ],
+        "right": [
+            "No updates",
+            "No graph"
+        ]
+    },
+    {
+        "q": "Which function handles parameter groups?",
+        "type": "mcq",
+        "o": [
+            "optimizer param_groups",
+            "torch.param_groups",
+            "model.groups",
+            "optim.groups"
+        ]
+    },
+    {
+        "q": "Different param groups can have different LR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the fine-tuning strategy:",
+        "type": "rearrange",
+        "words": [
+            "freeze backbone",
+            "train head",
+            "unfreeze gradually"
+        ]
+    },
+    {
+        "q": "Which module handles custom autograd?",
+        "type": "mcq",
+        "o": [
+            "torch.autograd.Function",
+            "torch.CustomGrad",
+            "nn.AutogradFunction",
+            "torch.GradFunction"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch.autograd, 'Function'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Custom Function defines forward and backward.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the autograd methods:",
+        "type": "match",
+        "left": [
+            "forward",
+            "backward"
+        ],
+        "right": [
+            "Compute output",
+            "Compute gradients"
+        ]
+    },
+    {
+        "q": "The ______ decorator marks static methods.",
+        "type": "fill_blank",
+        "answers": [
+            "@staticmethod"
+        ],
+        "other_options": [
+            "@static",
+            "@method",
+            "@autograd"
+        ]
+    },
+    {
+        "q": "Which function handles tensor indexing?",
+        "type": "mcq",
+        "o": [
+            "Standard Python indexing",
+            "tensor.index()",
+            "torch.index(tensor)",
+            "tensor.get()"
+        ]
+    },
+    {
+        "q": "PyTorch supports advanced indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the indexing types:",
+        "type": "match",
+        "left": [
+            "Basic",
+            "Advanced",
+            "Boolean"
+        ],
+        "right": [
+            "Slices",
+            "Integer arrays",
+            "Masks"
+        ]
+    },
+    {
+        "q": "Which function handles gather?",
+        "type": "mcq",
+        "o": [
+            "torch.gather",
+            "tensor.gather()",
+            "torch.select",
+            "Both torch.gather and tensor.gather()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([[1, 2], [3, 4]])\nidx = torch.tensor([[0], [1]])\nprint(torch.gather(x, 1, idx).shape)",
+        "o": [
+            "torch.Size([2, 1])",
+            "torch.Size([2, 2])",
+            "torch.Size([1, 2])",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.gather selects along axis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the selection functions:",
+        "type": "match",
+        "left": [
+            "gather",
+            "index_select",
+            "masked_select"
+        ],
+        "right": [
+            "Gather by index",
+            "Select indices",
+            "Select by mask"
+        ]
+    },
+    {
+        "q": "Which function handles scatter?",
+        "type": "mcq",
+        "o": [
+            "tensor.scatter_ or torch.scatter",
+            "tensor.put",
+            "torch.insert",
+            "tensor.set"
+        ]
+    },
+    {
+        "q": "scatter_ updates tensor in-place.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the scatter reduce modes:",
+        "type": "rearrange",
+        "words": [
+            "scatter: replace",
+            "scatter_add: sum",
+            "scatter_reduce: custom"
+        ]
+    },
+    {
+        "q": "Which function handles einsum?",
+        "type": "mcq",
+        "o": [
+            "torch.einsum",
+            "torch.einstein",
+            "tensor.einsum",
+            "F.einsum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\na = torch.randn(3, 4)\nb = torch.randn(4, 5)\nc = torch.einsum('ij,jk->ik', a, b)\nprint(c.shape)",
+        "o": [
+            "torch.Size([3, 5])",
+            "torch.Size([4, 4])",
+            "torch.Size([3, 4, 5])",
+            "Error"
+        ]
+    },
+    {
+        "q": "einsum handles complex tensor operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the einsum patterns:",
+        "type": "match",
+        "left": [
+            "ii->i",
+            "ij,jk->ik",
+            "ij->ji"
+        ],
+        "right": [
+            "Diagonal",
+            "Matmul",
+            "Transpose"
+        ]
+    },
+    {
+        "q": "Which function handles cumulative sum?",
+        "type": "mcq",
+        "o": [
+            "torch.cumsum",
+            "tensor.cumsum",
+            "Both torch.cumsum and tensor.cumsum",
+            "F.cumsum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1, 2, 3, 4])\nprint(torch.cumsum(x, dim=0)[-1].item())",
+        "o": [
+            "10",
+            "4",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "cumsum computes running total.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the cumulative functions:",
+        "type": "match",
+        "left": [
+            "cumsum",
+            "cumprod"
+        ],
+        "right": [
+            "Running sum",
+            "Running product"
+        ]
+    },
+    {
+        "q": "Which function handles unique values?",
+        "type": "mcq",
+        "o": [
+            "torch.unique",
+            "tensor.unique",
+            "Both torch.unique and tensor.unique",
+            "F.unique"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1, 2, 2, 3, 3, 3])\nprint(len(torch.unique(x)))",
+        "o": [
+            "3",
+            "6",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.unique removes duplicates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the set operations:",
+        "type": "match",
+        "left": [
+            "unique",
+            "bincount"
+        ],
+        "right": [
+            "Distinct values",
+            "Count occurrences"
+        ]
+    },
+    {
+        "q": "Rearrange the tensor analysis:",
+        "type": "rearrange",
+        "words": [
+            "unique: values",
+            "bincount: counts",
+            "sort: order"
+        ]
+    },
+    {
+        "q": "Which function handles broadcasting?",
+        "type": "mcq",
+        "o": [
+            "Automatic broadcasting",
+            "torch.broadcast",
+            "tensor.broadcast",
+            "F.broadcast"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\na = torch.tensor([[1], [2], [3]])\nb = torch.tensor([1, 2, 3])\nprint((a + b).shape)",
+        "o": [
+            "torch.Size([3, 3])",
+            "torch.Size([3, 1])",
+            "torch.Size([1, 3])",
+            "Error"
+        ]
+    },
+    {
+        "q": "Broadcasting expands dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the broadcasting rules:",
+        "type": "match",
+        "left": [
+            "Same size",
+            "One is 1",
+            "Missing dim"
+        ],
+        "right": [
+            "No change",
+            "Stretch",
+            "Add dim"
+        ]
+    },
+    {
+        "q": "Which function handles concatenation?",
+        "type": "mcq",
+        "o": [
+            "torch.cat",
+            "torch.concat",
+            "torch.concatenate",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\na = torch.randn(2, 3)\nb = torch.randn(2, 3)\nprint(torch.cat([a, b], dim=0).shape)",
+        "o": [
+            "torch.Size([4, 3])",
+            "torch.Size([2, 6])",
+            "torch.Size([2, 3, 2])",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.cat joins along existing dimension.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the combining functions:",
+        "type": "match",
+        "left": [
+            "cat",
+            "stack"
+        ],
+        "right": [
+            "Existing dim",
+            "New dim"
+        ]
+    },
+    {
+        "q": "The ______ creates a new dimension.",
+        "type": "fill_blank",
+        "answers": [
+            "torch.stack"
+        ],
+        "other_options": [
+            "torch.cat",
+            "torch.concat",
+            "torch.join"
+        ]
+    },
+    {
+        "q": "Which function handles chunk?",
+        "type": "mcq",
+        "o": [
+            "torch.chunk",
+            "tensor.chunk",
+            "Both torch.chunk and tensor.chunk",
+            "F.chunk"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.randn(6, 4)\nchunks = torch.chunk(x, 3, dim=0)\nprint(len(chunks))",
+        "o": [
+            "3",
+            "6",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "chunk splits into equal parts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the split functions:",
+        "type": "match",
+        "left": [
+            "chunk",
+            "split"
+        ],
+        "right": [
+            "N equal parts",
+            "Specific sizes"
+        ]
+    },
+    {
+        "q": "Rearrange the tensor manipulation:",
+        "type": "rearrange",
+        "words": [
+            "cat: join",
+            "stack: new dim",
+            "chunk: split equal"
+        ]
+    },
+    {
+        "q": "Which function handles unsqueeze?",
+        "type": "mcq",
+        "o": [
+            "tensor.unsqueeze or torch.unsqueeze",
+            "tensor.expand_dims",
+            "torch.add_dim",
+            "tensor.newaxis"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.randn(3, 4)\nprint(x.unsqueeze(0).shape)",
+        "o": [
+            "torch.Size([1, 3, 4])",
+            "torch.Size([3, 4, 1])",
+            "torch.Size([3, 1, 4])",
+            "Error"
+        ]
+    },
+    {
+        "q": "unsqueeze adds singleton dimension.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dimension operations:",
+        "type": "match",
+        "left": [
+            "squeeze",
+            "unsqueeze",
+            "flatten"
+        ],
+        "right": [
+            "Remove dim",
+            "Add dim",
+            "Make 1D"
+        ]
+    },
+    {
+        "q": "Which function handles permute?",
+        "type": "mcq",
+        "o": [
+            "tensor.permute",
+            "torch.permute",
+            "Both tensor.permute and torch.permute",
+            "tensor.rearrange"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.randn(2, 3, 4)\nprint(x.permute(2, 0, 1).shape)",
+        "o": [
+            "torch.Size([4, 2, 3])",
+            "torch.Size([2, 4, 3])",
+            "torch.Size([3, 4, 2])",
+            "Error"
+        ]
+    },
+    {
+        "q": "permute reorders dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the reorder operations:",
+        "type": "match",
+        "left": [
+            "permute",
+            "transpose"
+        ],
+        "right": [
+            "Any order",
+            "Two dims"
+        ]
+    },
+    {
+        "q": "Which function handles expand?",
+        "type": "mcq",
+        "o": [
+            "tensor.expand",
+            "torch.expand",
+            "tensor.repeat",
+            "tensor.broadcast_to"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.randn(1, 3)\nprint(x.expand(4, 3).shape)",
+        "o": [
+            "torch.Size([4, 3])",
+            "torch.Size([1, 3])",
+            "torch.Size([4, 12])",
+            "Error"
+        ]
+    },
+    {
+        "q": "expand does not copy data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the expand vs repeat:",
+        "type": "match",
+        "left": [
+            "expand",
+            "repeat"
+        ],
+        "right": [
+            "No copy",
+            "Copies data"
+        ]
+    },
+    {
+        "q": "Rearrange the memory efficiency:",
+        "type": "rearrange",
+        "words": [
+            "expand: view",
+            "repeat: copy",
+            "clone: full copy"
+        ]
+    },
+    {
+        "q": "Which function handles where?",
+        "type": "mcq",
+        "o": [
+            "torch.where",
+            "tensor.where",
+            "Both torch.where and tensor.where",
+            "F.where"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1, 2, 3, 4, 5])\ny = torch.where(x > 2, x, torch.zeros_like(x))\nprint(y[0].item())",
+        "o": [
+            "0",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.where applies conditional selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the conditional operations:",
+        "type": "match",
+        "left": [
+            "where",
+            "masked_fill"
+        ],
+        "right": [
+            "Select from two",
+            "Replace selected"
+        ]
+    },
+    {
+        "q": "Which function handles clamp?",
+        "type": "mcq",
+        "o": [
+            "torch.clamp or tensor.clamp",
+            "torch.clip",
+            "tensor.bound",
+            "Both torch.clamp and torch.clip"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1.0, 5.0, 10.0])\nprint(torch.clamp(x, 2.0, 8.0))",
+        "o": [
+            "tensor([2., 5., 8.])",
+            "tensor([1., 5., 10.])",
+            "tensor([2., 2., 2.])",
+            "Error"
+        ]
+    },
+    {
+        "q": "clamp limits value range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the clamp parameters:",
+        "type": "match",
+        "left": [
+            "min",
+            "max"
+        ],
+        "right": [
+            "Lower bound",
+            "Upper bound"
+        ]
+    },
+    {
+        "q": "Which function handles topk?",
+        "type": "mcq",
+        "o": [
+            "torch.topk",
+            "tensor.topk",
+            "Both torch.topk and tensor.topk",
+            "torch.top"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1, 5, 3, 4, 2])\nvalues, indices = torch.topk(x, 2)\nprint(values[0].item())",
+        "o": [
+            "5",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "topk returns k largest values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the selection functions:",
+        "type": "match",
+        "left": [
+            "topk",
+            "argmax",
+            "argmin"
+        ],
+        "right": [
+            "Top k values",
+            "Max index",
+            "Min index"
+        ]
+    },
+    {
+        "q": "Rearrange the value selection:",
+        "type": "rearrange",
+        "words": [
+            "max: single max",
+            "argmax: max index",
+            "topk: multiple top"
+        ]
+    },
+    {
+        "q": "Which function handles nonzero?",
+        "type": "mcq",
+        "o": [
+            "torch.nonzero",
+            "tensor.nonzero",
+            "Both torch.nonzero and tensor.nonzero",
+            "torch.indices"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([0, 1, 0, 2, 0, 3])\nprint(torch.nonzero(x).shape[0])",
+        "o": [
+            "3",
+            "6",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "nonzero returns indices of non-zero elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the index functions:",
+        "type": "match",
+        "left": [
+            "nonzero",
+            "where(condition)"
+        ],
+        "right": [
+            "Non-zero indices",
+            "Condition indices"
+        ]
+    },
+    {
+        "q": "Which module handles neural network utilities?",
+        "type": "mcq",
+        "o": [
+            "torch.nn.utils",
+            "torch.utils.nn",
+            "nn.utilities",
+            "torch.nn_utils"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nprint(hasattr(nn.utils, 'rnn'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "nn.utils.rnn handles packed sequences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the RNN utilities:",
+        "type": "match",
+        "left": [
+            "pack_padded_sequence",
+            "pad_packed_sequence"
+        ],
+        "right": [
+            "Pack for RNN",
+            "Unpack from RNN"
+        ]
+    },
+    {
+        "q": "The ______ packs variable length sequences.",
+        "type": "fill_blank",
+        "answers": [
+            "pack_padded_sequence"
+        ],
+        "other_options": [
+            "pack_sequence",
+            "pad_sequence",
+            "pack_rnn"
+        ]
+    },
+    {
+        "q": "Which layer handles spectral normalization?",
+        "type": "mcq",
+        "o": [
+            "nn.utils.spectral_norm",
+            "nn.SpectralNorm",
+            "SpectralNormalization",
+            "nn.spectral"
+        ]
+    },
+    {
+        "q": "Spectral normalization stabilizes GANs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the normalization utilities:",
+        "type": "match",
+        "left": [
+            "spectral_norm",
+            "weight_norm"
+        ],
+        "right": [
+            "Spectral constraint",
+            "Weight reparametrization"
+        ]
+    },
+    {
+        "q": "Which function handles model profiling?",
+        "type": "mcq",
+        "o": [
+            "torch.profiler",
+            "torch.profile",
+            "model.profile",
+            "torch.timing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch, 'profiler'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Profiler identifies bottlenecks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the profiler features:",
+        "type": "match",
+        "left": [
+            "CPU time",
+            "CUDA time",
+            "Memory"
+        ],
+        "right": [
+            "CPU ops",
+            "GPU ops",
+            "Allocations"
+        ]
+    },
+    {
+        "q": "Rearrange the profiling workflow:",
+        "type": "rearrange",
+        "words": [
+            "start profiler",
+            "run code",
+            "stop",
+            "analyze"
+        ]
+    },
+    {
+        "q": "Which module handles benchmarking?",
+        "type": "mcq",
+        "o": [
+            "torch.utils.benchmark",
+            "torch.benchmark",
+            "torch.timer",
+            "torch.time"
+        ]
+    },
+    {
+        "q": "torch.utils.benchmark provides timing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function handles reproducibility?",
+        "type": "mcq",
+        "o": [
+            "torch.manual_seed",
+            "torch.seed",
+            "torch.random_seed",
+            "torch.set_seed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\ntorch.manual_seed(42)\nx = torch.rand(1)\ntorch.manual_seed(42)\ny = torch.rand(1)\nprint((x == y).item())",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "manual_seed ensures reproducibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the seed functions:",
+        "type": "match",
+        "left": [
+            "manual_seed",
+            "cuda.manual_seed",
+            "cuda.manual_seed_all"
+        ],
+        "right": [
+            "CPU",
+            "Single GPU",
+            "All GPUs"
+        ]
+    },
+    {
+        "q": "The ______ sets seed for all GPUs.",
+        "type": "fill_blank",
+        "answers": [
+            "cuda.manual_seed_all"
+        ],
+        "other_options": [
+            "manual_seed",
+            "cuda.seed_all",
+            "set_all_seeds"
+        ]
+    },
+    {
+        "q": "Rearrange the reproducibility setup:",
+        "type": "rearrange",
+        "words": [
+            "set manual_seed",
+            "set CUDA seed",
+            "set deterministic",
+            "set benchmark=False"
+        ]
+    },
+    {
+        "q": "Which flag enables deterministic mode?",
+        "type": "mcq",
+        "o": [
+            "torch.use_deterministic_algorithms",
+            "torch.deterministic",
+            "torch.reproducible",
+            "torch.set_deterministic"
+        ]
+    },
+    {
+        "q": "Deterministic mode may be slower.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function handles memory management?",
+        "type": "mcq",
+        "o": [
+            "torch.cuda.empty_cache()",
+            "torch.clear_memory()",
+            "cuda.free()",
+            "torch.gc()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch.cuda, 'empty_cache'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "empty_cache() frees unused GPU memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the memory functions:",
+        "type": "match",
+        "left": [
+            "empty_cache",
+            "memory_allocated"
+        ],
+        "right": [
+            "Free memory",
+            "Check usage"
+        ]
+    },
+    {
+        "q": "The ______ shows current GPU memory usage.",
+        "type": "fill_blank",
+        "answers": [
+            "memory_allocated"
+        ],
+        "other_options": [
+            "memory_usage",
+            "gpu_memory",
+            "allocated"
+        ]
+    },
+    {
+        "q": "Which module handles torch.fx?",
+        "type": "mcq",
+        "o": [
+            "torch.fx",
+            "torch.transform",
+            "torch.compile",
+            "torch.graph"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch, 'fx'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.fx enables graph transformations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the fx components:",
+        "type": "match",
+        "left": [
+            "symbolic_trace",
+            "GraphModule"
+        ],
+        "right": [
+            "Trace model",
+            "Graph representation"
+        ]
+    },
+    {
+        "q": "Rearrange the fx workflow:",
+        "type": "rearrange",
+        "words": [
+            "trace model",
+            "transform graph",
+            "recompile"
+        ]
+    },
+    {
+        "q": "Which module handles quantization?",
+        "type": "mcq",
+        "o": [
+            "torch.quantization or torch.ao.quantization",
+            "torch.quant",
+            "torch.compress",
+            "torch.optimize"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nprint(hasattr(torch, 'quantization'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Quantization reduces model size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the quantization types:",
+        "type": "match",
+        "left": [
+            "Dynamic",
+            "Static",
+            "QAT"
+        ],
+        "right": [
+            "Runtime",
+            "Calibration",
+            "Training"
+        ]
+    },
+    {
+        "q": "The ______ uses calibration data.",
+        "type": "fill_blank",
+        "answers": [
+            "static quantization"
+        ],
+        "other_options": [
+            "dynamic",
+            "QAT",
+            "post-training"
+        ]
+    },
+    {
+        "q": "Rearrange the quantization by accuracy:",
+        "type": "rearrange",
+        "words": [
+            "dynamic: lower",
+            "static: medium",
+            "QAT: highest"
+        ]
+    },
+    {
+        "q": "Which module handles pruning?",
+        "type": "mcq",
+        "o": [
+            "torch.nn.utils.prune",
+            "torch.prune",
+            "nn.Pruning",
+            "torch.sparse"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nprint(hasattr(nn.utils, 'prune'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pruning removes unimportant weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pruning methods:",
+        "type": "match",
+        "left": [
+            "l1_unstructured",
+            "random_unstructured"
+        ],
+        "right": [
+            "By L1 norm",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "Which module handles TorchServe?",
+        "type": "mcq",
+        "o": [
+            "External TorchServe package",
+            "torch.serve",
+            "torch.deploy",
+            "torch.server"
+        ]
+    },
+    {
+        "q": "TorchServe handles model serving.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the deployment options:",
+        "type": "match",
+        "left": [
+            "TorchServe",
+            "TorchScript",
+            "ONNX"
+        ],
+        "right": [
+            "Server",
+            "Portable",
+            "Cross-framework"
+        ]
+    },
+    {
+        "q": "Which layer handles group convolution?",
+        "type": "mcq",
+        "o": [
+            "groups parameter in Conv2d",
+            "nn.GroupConv2d",
+            "nn.MultiConv2d",
+            "Conv2d(grouped=True)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Conv2d(32, 64, 3, groups=2)\nprint(layer.groups)",
+        "o": [
+            "2",
+            "32",
+            "64",
+            "1"
+        ]
+    },
+    {
+        "q": "Group convolution splits channels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the group settings:",
+        "type": "match",
+        "left": [
+            "groups=1",
+            "groups=in_channels"
+        ],
+        "right": [
+            "Standard conv",
+            "Depthwise conv"
+        ]
+    },
+    {
+        "q": "Which layer handles dilated convolution?",
+        "type": "mcq",
+        "o": [
+            "dilation parameter in Conv2d",
+            "nn.DilatedConv2d",
+            "nn.AtrousConv2d",
+            "Conv2d(dilated=True)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Conv2d(3, 32, 3, dilation=2)\nprint(layer.dilation)",
+        "o": [
+            "(2, 2)",
+            "2",
+            "(1, 1)",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dilation increases receptive field.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the convolution parameters:",
+        "type": "match",
+        "left": [
+            "stride",
+            "padding",
+            "dilation"
+        ],
+        "right": [
+            "Step size",
+            "Border",
+            "Spaced kernel"
+        ]
+    },
+    {
+        "q": "Rearrange the receptive field sizes:",
+        "type": "rearrange",
+        "words": [
+            "kernel: base",
+            "stride: reduce spatial",
+            "dilation: expand field"
+        ]
+    },
+    {
+        "q": "Which activation is Mish?",
+        "type": "mcq",
+        "o": [
+            "nn.Mish or F.mish",
+            "nn.MishActivation",
+            "Custom implementation",
+            "torch.mish"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.Mish()\nprint(type(layer).__name__)",
+        "o": [
+            "Mish",
+            "Activation",
+            "Layer",
+            "Error"
+        ]
+    },
+    {
+        "q": "Mish is smoother than ReLU.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the smooth activations:",
+        "type": "match",
+        "left": [
+            "GELU",
+            "Mish",
+            "SiLU"
+        ],
+        "right": [
+            "Gaussian",
+            "Self-regularized",
+            "Swish"
+        ]
+    },
+    {
+        "q": "Which loss handles focal loss?",
+        "type": "mcq",
+        "o": [
+            "Custom implementation or torchvision",
+            "nn.FocalLoss",
+            "F.focal_loss",
+            "torch.focal"
+        ]
+    },
+    {
+        "q": "Focal loss addresses class imbalance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the imbalance losses:",
+        "type": "match",
+        "left": [
+            "Focal",
+            "Weighted CE"
+        ],
+        "right": [
+            "Hard examples",
+            "Class weights"
+        ]
+    },
+    {
+        "q": "Which loss handles dice loss?",
+        "type": "mcq",
+        "o": [
+            "Custom implementation",
+            "nn.DiceLoss",
+            "F.dice",
+            "torch.dice"
+        ]
+    },
+    {
+        "q": "Dice loss is for segmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the segmentation losses:",
+        "type": "match",
+        "left": [
+            "Dice",
+            "IoU",
+            "BCE"
+        ],
+        "right": [
+            "Overlap coefficient",
+            "Intersection/Union",
+            "Pixel-wise"
+        ]
+    },
+    {
+        "q": "Rearrange the loss complexity:",
+        "type": "rearrange",
+        "words": [
+            "BCE: simple",
+            "Dice: overlap",
+            "Focal: weighted"
+        ]
+    },
+    {
+        "q": "Which layer handles squeeze-excitation?",
+        "type": "mcq",
+        "o": [
+            "Custom implementation",
+            "nn.SqueezeExcitation",
+            "nn.SE",
+            "nn.ChannelAttention"
+        ]
+    },
+    {
+        "q": "Squeeze-Excitation learns channel weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the attention mechanisms:",
+        "type": "match",
+        "left": [
+            "SE",
+            "CBAM",
+            "Self-attention"
+        ],
+        "right": [
+            "Channel",
+            "Channel+Spatial",
+            "Token"
+        ]
+    },
+    {
+        "q": "Which module handles optim state?",
+        "type": "mcq",
+        "o": [
+            "optimizer.state_dict()",
+            "optimizer.state",
+            "optimizer.get_state()",
+            "torch.optim.state"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nmodel = nn.Linear(10, 1)\nopt = torch.optim.Adam(model.parameters())\nprint('state' in opt.state_dict())",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Optimizer state tracks momentum.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the optimizer state:",
+        "type": "match",
+        "left": [
+            "state",
+            "param_groups"
+        ],
+        "right": [
+            "Per-param state",
+            "Group settings"
+        ]
+    },
+    {
+        "q": "Which function handles inf/nan detection?",
+        "type": "mcq",
+        "o": [
+            "torch.isnan and torch.isinf",
+            "torch.check_nan",
+            "tensor.is_valid()",
+            "torch.finite"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1.0, float('nan'), 3.0])\nprint(torch.isnan(x).any().item())",
+        "o": [
+            "True",
+            "False",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "torch.isnan detects NaN values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the value checks:",
+        "type": "match",
+        "left": [
+            "isnan",
+            "isinf",
+            "isfinite"
+        ],
+        "right": [
+            "NaN check",
+            "Inf check",
+            "Finite check"
+        ]
+    },
+    {
+        "q": "Rearrange the debugging steps:",
+        "type": "rearrange",
+        "words": [
+            "check isnan",
+            "check isinf",
+            "trace backward"
+        ]
+    },
+    {
+        "q": "Which function handles anomaly detection?",
+        "type": "mcq",
+        "o": [
+            "torch.autograd.set_detect_anomaly",
+            "torch.detect_nan",
+            "autograd.debug",
+            "torch.anomaly"
+        ]
+    },
+    {
+        "q": "set_detect_anomaly helps debug NaN.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the debug features:",
+        "type": "match",
+        "left": [
+            "detect_anomaly",
+            "gradcheck"
+        ],
+        "right": [
+            "Find NaN",
+            "Verify gradient"
+        ]
+    },
+    {
+        "q": "Which function handles gradient checking?",
+        "type": "mcq",
+        "o": [
+            "torch.autograd.gradcheck",
+            "torch.check_grad",
+            "autograd.verify",
+            "torch.grad_test"
+        ]
+    },
+    {
+        "q": "gradcheck verifies gradient correctness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which module handles neural net utilities?",
+        "type": "mcq",
+        "o": [
+            "nn.functional",
+            "torch.functional",
+            "torch.nn.F",
+            "nn.F"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn.functional as F\nprint(type(F).__name__)",
+        "o": [
+            "module",
+            "functional",
+            "F",
+            "None"
+        ]
+    },
+    {
+        "q": "nn.functional has stateless operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the module vs functional:",
+        "type": "match",
+        "left": [
+            "nn.Module layers",
+            "nn.functional"
+        ],
+        "right": [
+            "Stateful",
+            "Stateless"
+        ]
+    },
+    {
+        "q": "Rearrange the usage preference:",
+        "type": "rearrange",
+        "words": [
+            "trainable: nn.Module",
+            "fixed: nn.functional",
+            "custom: either"
+        ]
+    },
+    {
+        "q": "Which function handles interpolation?",
+        "type": "mcq",
+        "o": [
+            "F.interpolate",
+            "torch.interpolate",
+            "tensor.resize",
+            "F.resize"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.randn(1, 3, 4, 4)\ny = F.interpolate(x, scale_factor=2)\nprint(y.shape)",
+        "o": [
+            "torch.Size([1, 3, 8, 8])",
+            "torch.Size([1, 6, 4, 4])",
+            "torch.Size([1, 3, 2, 2])",
+            "Error"
+        ]
+    },
+    {
+        "q": "F.interpolate handles upsampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the interpolation modes:",
+        "type": "match",
+        "left": [
+            "nearest",
+            "bilinear",
+            "trilinear"
+        ],
+        "right": [
+            "No smooth",
+            "2D smooth",
+            "3D smooth"
+        ]
+    },
+    {
+        "q": "Which function handles grid_sample?",
+        "type": "mcq",
+        "o": [
+            "F.grid_sample",
+            "torch.grid_sample",
+            "nn.GridSampler",
+            "F.sample_grid"
+        ]
+    },
+    {
+        "q": "grid_sample enables spatial transforms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the spatial transforms:",
+        "type": "match",
+        "left": [
+            "grid_sample",
+            "affine_grid"
+        ],
+        "right": [
+            "Sample points",
+            "Generate grid"
+        ]
+    },
+    {
+        "q": "Which function handles pad?",
+        "type": "mcq",
+        "o": [
+            "F.pad",
+            "torch.pad",
+            "tensor.pad",
+            "nn.pad"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.randn(1, 3, 4, 4)\ny = F.pad(x, (1, 1, 1, 1))\nprint(y.shape)",
+        "o": [
+            "torch.Size([1, 3, 6, 6])",
+            "torch.Size([1, 5, 6, 6])",
+            "torch.Size([1, 3, 4, 4])",
+            "Error"
+        ]
+    },
+    {
+        "q": "F.pad adds border to tensor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the padding modes:",
+        "type": "match",
+        "left": [
+            "constant",
+            "reflect",
+            "replicate"
+        ],
+        "right": [
+            "Fixed value",
+            "Mirror",
+            "Edge"
+        ]
+    },
+    {
+        "q": "Rearrange the padding by use:",
+        "type": "rearrange",
+        "words": [
+            "constant: zeros",
+            "reflect: smooth",
+            "replicate: edges"
+        ]
+    },
+    {
+        "q": "Which function handles unfold?",
+        "type": "mcq",
+        "o": [
+            "tensor.unfold or F.unfold",
+            "torch.unfold",
+            "nn.Unfold",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "unfold extracts sliding windows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the fold operations:",
+        "type": "match",
+        "left": [
+            "unfold",
+            "fold"
+        ],
+        "right": [
+            "Extract patches",
+            "Reconstruct"
+        ]
+    },
+    {
+        "q": "Which function handles one_hot?",
+        "type": "mcq",
+        "o": [
+            "F.one_hot",
+            "torch.one_hot",
+            "Both F.one_hot and torch.one_hot",
+            "nn.OneHot"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.tensor([0, 1, 2])\nprint(F.one_hot(x, num_classes=3).shape)",
+        "o": [
+            "torch.Size([3, 3])",
+            "torch.Size([3])",
+            "torch.Size([9])",
+            "Error"
+        ]
+    },
+    {
+        "q": "one_hot creates one-hot encoding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the encoding methods:",
+        "type": "match",
+        "left": [
+            "one_hot",
+            "embedding"
+        ],
+        "right": [
+            "Sparse binary",
+            "Dense learned"
+        ]
+    },
+    {
+        "q": "Which function handles softmax?",
+        "type": "mcq",
+        "o": [
+            "F.softmax or nn.Softmax",
+            "torch.softmax",
+            "All of the above",
+            "tensor.softmax"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.tensor([1.0, 2.0, 3.0])\nprint(F.softmax(x, dim=0).sum().item())",
+        "o": [
+            "1.0",
+            "6.0",
+            "3.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Softmax outputs sum to 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the probability functions:",
+        "type": "match",
+        "left": [
+            "softmax",
+            "log_softmax",
+            "sigmoid"
+        ],
+        "right": [
+            "Multi-class",
+            "Log probs",
+            "Binary"
+        ]
+    },
+    {
+        "q": "Rearrange the softmax workflow:",
+        "type": "rearrange",
+        "words": [
+            "logits",
+            "softmax",
+            "argmax for prediction"
+        ]
+    },
+    {
+        "q": "Which function handles dropout in functional?",
+        "type": "mcq",
+        "o": [
+            "F.dropout",
+            "torch.dropout",
+            "nn.dropout",
+            "dropout()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.ones(10)\nprint(F.dropout(x, p=0.5, training=False).sum().item())",
+        "o": [
+            "10.0",
+            "5.0",
+            "0.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "F.dropout requires training flag.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dropout types:",
+        "type": "match",
+        "left": [
+            "dropout",
+            "dropout2d",
+            "alpha_dropout"
+        ],
+        "right": [
+            "Standard",
+            "Spatial",
+            "SELU"
+        ]
+    },
+    {
+        "q": "Which function handles batch normalization?",
+        "type": "mcq",
+        "o": [
+            "F.batch_norm",
+            "torch.batch_norm",
+            "nn.batch_norm",
+            "normalize()"
+        ]
+    },
+    {
+        "q": "F.batch_norm requires running stats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the normalization functions:",
+        "type": "match",
+        "left": [
+            "batch_norm",
+            "layer_norm",
+            "instance_norm"
+        ],
+        "right": [
+            "Batch stats",
+            "Layer stats",
+            "Instance stats"
+        ]
+    },
+    {
+        "q": "Which function handles linear?",
+        "type": "mcq",
+        "o": [
+            "F.linear",
+            "torch.linear",
+            "nn.linear",
+            "matmul"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn.functional as F\nx = torch.randn(2, 10)\nw = torch.randn(5, 10)\nprint(F.linear(x, w).shape)",
+        "o": [
+            "torch.Size([2, 5])",
+            "torch.Size([2, 10])",
+            "torch.Size([5, 10])",
+            "Error"
+        ]
+    },
+    {
+        "q": "F.linear applies y = xW^T + b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the linear operations:",
+        "type": "match",
+        "left": [
+            "linear",
+            "bilinear"
+        ],
+        "right": [
+            "One input",
+            "Two inputs"
+        ]
+    },
+    {
+        "q": "Rearrange the layer creation:",
+        "type": "rearrange",
+        "words": [
+            "define weight",
+            "define bias",
+            "call F.linear"
+        ]
+    },
+    {
+        "q": "Which function handles conv2d in functional?",
+        "type": "mcq",
+        "o": [
+            "F.conv2d",
+            "torch.conv2d",
+            "nn.conv2d",
+            "convolve2d"
+        ]
+    },
+    {
+        "q": "F.conv2d needs explicit weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the conv functions:",
+        "type": "match",
+        "left": [
+            "conv1d",
+            "conv2d",
+            "conv3d"
+        ],
+        "right": [
+            "1D signal",
+            "2D image",
+            "3D volume"
+        ]
+    },
+    {
+        "q": "Which class stacks identical layers?",
+        "type": "mcq",
+        "o": [
+            "nn.Sequential",
+            "nn.Stack",
+            "nn.Container",
+            "nn.Layers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nmodel = nn.Sequential(nn.Linear(10, 5), nn.ReLU(), nn.Linear(5, 2))\nprint(len(model))",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sequential chains layers in order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the container types:",
+        "type": "match",
+        "left": [
+            "Sequential",
+            "ModuleList",
+            "ModuleDict"
+        ],
+        "right": [
+            "Ordered chain",
+            "List of modules",
+            "Dict of modules"
+        ]
+    },
+    {
+        "q": "The ______ stores named modules.",
+        "type": "fill_blank",
+        "answers": [
+            "ModuleDict"
+        ],
+        "other_options": [
+            "ModuleList",
+            "Sequential",
+            "NamedModules"
+        ]
+    },
+    {
+        "q": "Rearrange the container by access:",
+        "type": "rearrange",
+        "words": [
+            "Sequential: forward chain",
+            "ModuleList: index",
+            "ModuleDict: key"
+        ]
+    },
+    {
+        "q": "Which class handles lazy initialization?",
+        "type": "mcq",
+        "o": [
+            "nn.LazyLinear or nn.LazyConv2d",
+            "nn.Lazy",
+            "nn.DelayedInit",
+            "nn.AutoInit"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.LazyLinear(5)\nprint(type(layer).__name__)",
+        "o": [
+            "LazyLinear",
+            "Linear",
+            "Lazy",
+            "Error"
+        ]
+    },
+    {
+        "q": "Lazy layers infer input size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the lazy layers:",
+        "type": "match",
+        "left": [
+            "LazyLinear",
+            "LazyConv2d"
+        ],
+        "right": [
+            "Infer in_features",
+            "Infer in_channels"
+        ]
+    },
+    {
+        "q": "Which class handles parameter registration?",
+        "type": "mcq",
+        "o": [
+            "nn.Parameter",
+            "torch.Parameter",
+            "nn.Weight",
+            "torch.Learnable"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\np = nn.Parameter(torch.randn(3, 3))\nprint(p.requires_grad)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "nn.Parameter is tracked by optimizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the parameter types:",
+        "type": "match",
+        "left": [
+            "Parameter",
+            "Buffer"
+        ],
+        "right": [
+            "Trainable",
+            "Non-trainable"
+        ]
+    },
+    {
+        "q": "The ______ stores non-learnable state.",
+        "type": "fill_blank",
+        "answers": [
+            "register_buffer"
+        ],
+        "other_options": [
+            "register_parameter",
+            "buffer",
+            "state"
+        ]
+    },
+    {
+        "q": "Rearrange the module components:",
+        "type": "rearrange",
+        "words": [
+            "parameters: learnable",
+            "buffers: state",
+            "modules: children"
+        ]
+    },
+    {
+        "q": "Which method accesses named parameters?",
+        "type": "mcq",
+        "o": [
+            "model.named_parameters()",
+            "model.params()",
+            "model.get_params()",
+            "model.weights()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nmodel = nn.Linear(10, 5)\nparams = list(model.named_parameters())\nprint(len(params))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "named_parameters returns (name, param) pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the iteration methods:",
+        "type": "match",
+        "left": [
+            "parameters()",
+            "named_parameters()",
+            "named_modules()"
+        ],
+        "right": [
+            "Params only",
+            "Named params",
+            "Named children"
+        ]
+    },
+    {
+        "q": "Which method applies function to all modules?",
+        "type": "mcq",
+        "o": [
+            "model.apply()",
+            "model.map()",
+            "model.each()",
+            "model.foreach()"
+        ]
+    },
+    {
+        "q": "apply() is used for initialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the module methods:",
+        "type": "match",
+        "left": [
+            "apply",
+            "children",
+            "modules"
+        ],
+        "right": [
+            "Apply function",
+            "Direct children",
+            "All modules"
+        ]
+    },
+    {
+        "q": "Which method counts parameters?",
+        "type": "mcq",
+        "o": [
+            "sum(p.numel() for p in model.parameters())",
+            "model.count_params()",
+            "model.num_params()",
+            "len(model.parameters())"
+        ]
+    },
+    {
+        "q": "numel() returns element count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the parameter counting:",
+        "type": "rearrange",
+        "words": [
+            "iterate parameters",
+            "get numel",
+            "sum total"
+        ]
+    },
+    {
+        "q": "Which function creates identity mapping?",
+        "type": "mcq",
+        "o": [
+            "nn.Identity",
+            "nn.Pass",
+            "nn.NoOp",
+            "nn.Through"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nlayer = nn.Identity()\nx = torch.tensor([1, 2, 3])\nprint((layer(x) == x).all().item())",
+        "o": [
+            "True",
+            "False",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Identity passes input unchanged.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the utility layers:",
+        "type": "match",
+        "left": [
+            "Identity",
+            "Flatten"
+        ],
+        "right": [
+            "Pass through",
+            "Reshape to 1D"
+        ]
+    },
+    {
+        "q": "Which module handles PixelShuffle?",
+        "type": "mcq",
+        "o": [
+            "nn.PixelShuffle",
+            "nn.Shuffle",
+            "nn.SubpixelConv",
+            "nn.Rearrange"
+        ]
+    },
+    {
+        "q": "PixelShuffle is for super-resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pixel operations:",
+        "type": "match",
+        "left": [
+            "PixelShuffle",
+            "PixelUnshuffle"
+        ],
+        "right": [
+            "Upscale",
+            "Downscale"
+        ]
+    },
+    {
+        "q": "Which layer handles RReLU?",
+        "type": "mcq",
+        "o": [
+            "nn.RReLU",
+            "nn.RandomReLU",
+            "F.rrelu",
+            "Both nn.RReLU and F.rrelu"
+        ]
+    },
+    {
+        "q": "RReLU uses random negative slope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the randomized layers:",
+        "type": "match",
+        "left": [
+            "RReLU",
+            "Dropout"
+        ],
+        "right": [
+            "Random slope",
+            "Random zero"
+        ]
+    },
+    {
+        "q": "Which layer handles Hardswish?",
+        "type": "mcq",
+        "o": [
+            "nn.Hardswish",
+            "nn.HardSigmoid",
+            "F.hardswish",
+            "Both nn.Hardswish and F.hardswish"
+        ]
+    },
+    {
+        "q": "Hardswish is computationally efficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the efficient activations:",
+        "type": "match",
+        "left": [
+            "Hardswish",
+            "Hardsigmoid",
+            "Hardtanh"
+        ],
+        "right": [
+            "Fast Swish",
+            "Fast sigmoid",
+            "Fast tanh"
+        ]
+    },
+    {
+        "q": "Rearrange the activation families:",
+        "type": "rearrange",
+        "words": [
+            "ReLU: zero threshold",
+            "Sigmoid: smooth S",
+            "Hard: piecewise"
+        ]
+    },
+    {
+        "q": "Which method copies model to device?",
+        "type": "mcq",
+        "o": [
+            "model.to(device)",
+            "model.move(device)",
+            "model.device(device)",
+            "torch.move(model, device)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nimport torch.nn as nn\nmodel = nn.Linear(10, 5)\ndevice = torch.device('cpu')\nmodel.to(device)\nprint(next(model.parameters()).device)",
+        "o": [
+            "cpu",
+            "cuda:0",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "model.to() moves parameters to device.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the device methods:",
+        "type": "match",
+        "left": [
+            "to()",
+            "cuda()",
+            "cpu()"
+        ],
+        "right": [
+            "Any device",
+            "GPU",
+            "CPU"
+        ]
+    },
+    {
+        "q": "The ______ method moves to GPU.",
+        "type": "fill_blank",
+        "answers": [
+            "cuda"
+        ],
+        "other_options": [
+            "to",
+            "gpu",
+            "device"
+        ]
+    },
+    {
+        "q": "Which function gets device of tensor?",
+        "type": "mcq",
+        "o": [
+            "tensor.device",
+            "tensor.get_device()",
+            "torch.device(tensor)",
+            "tensor.location"
+        ]
+    },
+    {
+        "q": "device attribute shows tensor location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates device object?",
+        "type": "mcq",
+        "o": [
+            "torch.device()",
+            "torch.Device()",
+            "device()",
+            "torch.get_device()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\ndevice = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')\nprint(type(device).__name__)",
+        "o": [
+            "device",
+            "Device",
+            "str",
+            "None"
+        ]
+    },
+    {
+        "q": "Rearrange the device setup:",
+        "type": "rearrange",
+        "words": [
+            "check CUDA available",
+            "create device",
+            "move model and data"
+        ]
+    },
+    {
+        "q": "Which function handles tensor type conversion?",
+        "type": "mcq",
+        "o": [
+            "tensor.to(dtype) or tensor.type()",
+            "tensor.convert()",
+            "tensor.cast()",
+            "torch.cast(tensor)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nx = torch.tensor([1.5, 2.5])\ny = x.to(torch.int)\nprint(y[0].item())",
+        "o": [
+            "1",
+            "1.5",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "to() can change dtype.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the type methods:",
+        "type": "match",
+        "left": [
+            "float()",
+            "double()",
+            "half()"
+        ],
+        "right": [
+            "Float32",
+            "Float64",
+            "Float16"
+        ]
+    },
+    {
+        "q": "Which function checks tensor dtype?",
+        "type": "mcq",
+        "o": [
+            "tensor.dtype",
+            "tensor.type",
+            "tensor.get_type()",
+            "type(tensor)"
+        ]
+    },
+    {
+        "q": "dtype attribute shows data type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the dtypes by precision:",
+        "type": "rearrange",
+        "words": [
+            "float16: half",
+            "float32: single",
+            "float64: double"
+        ]
+    },
+    {
+        "q": "Which function creates sparse tensor?",
+        "type": "mcq",
+        "o": [
+            "torch.sparse_coo_tensor",
+            "torch.sparse()",
+            "tensor.to_sparse()",
+            "Both torch.sparse_coo_tensor and tensor.to_sparse()"
+        ]
+    },
+    {
+        "q": "Sparse tensors save memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the sparse formats:",
+        "type": "match",
+        "left": [
+            "COO",
+            "CSR"
+        ],
+        "right": [
+            "Coordinate",
+            "Compressed row"
+        ]
+    },
+    {
+        "q": "Which module handles torchtext?",
+        "type": "mcq",
+        "o": [
+            "torchtext (external)",
+            "torch.text",
+            "torch.nlp",
+            "torch.language"
+        ]
+    },
+    {
+        "q": "torchtext provides NLP utilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the domain libraries:",
+        "type": "match",
+        "left": [
+            "torchvision",
+            "torchtext",
+            "torchaudio"
+        ],
+        "right": [
+            "Images",
+            "Text",
+            "Audio"
+        ]
+    },
+    {
+        "q": "Which module handles torchaudio?",
+        "type": "mcq",
+        "o": [
+            "torchaudio (external)",
+            "torch.audio",
+            "torch.sound",
+            "torch.wav"
+        ]
+    },
+    {
+        "q": "torchaudio handles audio processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the domain libraries:",
+        "type": "rearrange",
+        "words": [
+            "torchvision: vision",
+            "torchtext: NLP",
+            "torchaudio: sound"
+        ]
+    },
+    {
+        "q": "Which function handles spectrograms?",
+        "type": "mcq",
+        "o": [
+            "torchaudio.transforms.Spectrogram",
+            "torch.spectrogram",
+            "torch.fft",
+            "torch.signal"
+        ]
+    },
+    {
+        "q": "Spectrogram is time-frequency representation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the audio transforms:",
+        "type": "match",
+        "left": [
+            "Spectrogram",
+            "MelSpectrogram",
+            "MFCC"
+        ],
+        "right": [
+            "Power spectrum",
+            "Mel scale",
+            "Cepstral coefficients"
+        ]
+    },
+    {
+        "q": "Which function handles image datasets?",
+        "type": "mcq",
+        "o": [
+            "torchvision.datasets",
+            "torch.datasets",
+            "torch.data.images",
+            "torchvision.data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torchvision\nprint(hasattr(torchvision, 'datasets'))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "torchvision.datasets has common datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the data sources:",
+        "type": "match",
+        "left": [
+            "MNIST",
+            "CIFAR10",
+            "ImageNet"
+        ],
+        "right": [
+            "Digits",
+            "Objects",
+            "Large scale"
+        ]
+    },
+    {
+        "q": "The ______ dataset has 10 classes.",
+        "type": "fill_blank",
+        "answers": [
+            "CIFAR10"
+        ],
+        "other_options": [
+            "MNIST",
+            "CIFAR100",
+            "ImageNet"
+        ]
+    },
+    {
+        "q": "Which function handles detection models?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models.detection",
+            "torch.detection",
+            "torchvision.detect",
+            "torch.models.detect"
+        ]
+    },
+    {
+        "q": "torchvision has YOLO and RCNN models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the detection models:",
+        "type": "match",
+        "left": [
+            "FasterRCNN",
+            "FCOS",
+            "SSD"
+        ],
+        "right": [
+            "Two-stage",
+            "Anchor-free",
+            "Single shot"
+        ]
+    },
+    {
+        "q": "Rearrange the detection by speed:",
+        "type": "rearrange",
+        "words": [
+            "SSD: fast",
+            "FCOS: medium",
+            "FasterRCNN: accurate"
+        ]
+    },
+    {
+        "q": "Which function handles segmentation models?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models.segmentation",
+            "torch.segmentation",
+            "torchvision.segment",
+            "torch.models.segment"
+        ]
+    },
+    {
+        "q": "torchvision has FCN and DeepLab.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the segmentation models:",
+        "type": "match",
+        "left": [
+            "FCN",
+            "DeepLabV3"
+        ],
+        "right": [
+            "Fully convolutional",
+            "Atrous convolutions"
+        ]
+    },
+    {
+        "q": "Which function handles video models?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models.video",
+            "torch.video",
+            "torchvision.video",
+            "torch.models.video"
+        ]
+    },
+    {
+        "q": "Video models handle temporal data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the video architectures:",
+        "type": "match",
+        "left": [
+            "R3D",
+            "I3D"
+        ],
+        "right": [
+            "3D ResNet",
+            "Inflated 3D"
+        ]
+    },
+    {
+        "q": "Which module handles mobile models?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models.mobilenet",
+            "torch.mobile",
+            "torchvision.mobile",
+            "torch.models.mobile"
+        ]
+    },
+    {
+        "q": "MobileNet is efficient for edge devices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the efficient models:",
+        "type": "match",
+        "left": [
+            "MobileNet",
+            "EfficientNet",
+            "ShuffleNet"
+        ],
+        "right": [
+            "Depthwise sep",
+            "Compound scaling",
+            "Channel shuffle"
+        ]
+    },
+    {
+        "q": "Rearrange the model efficiency:",
+        "type": "rearrange",
+        "words": [
+            "ResNet: baseline",
+            "MobileNet: mobile",
+            "EfficientNet: best trade-off"
+        ]
+    },
+    {
+        "q": "Which function handles ViT models?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models.vit",
+            "torch.vit",
+            "torchvision.transformer",
+            "torch.vision_transformer"
+        ]
+    },
+    {
+        "q": "ViT uses patches as tokens.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the vision transformers:",
+        "type": "match",
+        "left": [
+            "ViT",
+            "DeiT",
+            "Swin"
+        ],
+        "right": [
+            "Original",
+            "Data-efficient",
+            "Shifted windows"
+        ]
+    },
+    {
+        "q": "Which module handles model weights?",
+        "type": "mcq",
+        "o": [
+            "torchvision.models.WeightsEnum",
+            "torch.weights",
+            "model.weights",
+            "torchvision.pretrained"
+        ]
+    },
+    {
+        "q": "WeightsEnum provides weight versions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the weight loading:",
+        "type": "match",
+        "left": [
+            "DEFAULT",
+            "IMAGENET1K_V1"
+        ],
+        "right": [
+            "Best available",
+            "Specific version"
+        ]
+    },
+    {
+        "q": "Which function handles automatic batching?",
+        "type": "mcq",
+        "o": [
+            "DataLoader collate_fn",
+            "torch.batch",
+            "automatic_batching()",
+            "torch.collate"
+        ]
+    },
+    {
+        "q": "collate_fn customizes batching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the DataLoader options:",
+        "type": "match",
+        "left": [
+            "collate_fn",
+            "sampler",
+            "drop_last"
+        ],
+        "right": [
+            "Batch creation",
+            "Index order",
+            "Incomplete batch"
+        ]
+    },
+    {
+        "q": "The ______ drops incomplete last batch.",
+        "type": "fill_blank",
+        "answers": [
+            "drop_last"
+        ],
+        "other_options": [
+            "ignore_last",
+            "skip_last",
+            "trim"
+        ]
+    },
+    {
+        "q": "Rearrange the DataLoader workflow:",
+        "type": "rearrange",
+        "words": [
+            "sample indices",
+            "fetch data",
+            "collate batch"
+        ]
+    },
+    {
+        "q": "Which sampler handles random sampling?",
+        "type": "mcq",
+        "o": [
+            "RandomSampler",
+            "torch.random_sampler",
+            "DataLoader(random=True)",
+            "Shuffle()"
+        ]
+    },
+    {
+        "q": "RandomSampler samples without replacement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the samplers:",
+        "type": "match",
+        "left": [
+            "SequentialSampler",
+            "RandomSampler",
+            "WeightedRandomSampler"
+        ],
+        "right": [
+            "In order",
+            "Random",
+            "By weights"
+        ]
+    },
+    {
+        "q": "Which sampler handles class imbalance?",
+        "type": "mcq",
+        "o": [
+            "WeightedRandomSampler",
+            "BalancedSampler",
+            "ClassSampler",
+            "StratifiedSampler"
+        ]
+    },
+    {
+        "q": "WeightedRandomSampler uses per-sample weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which dataset handles concatenation?",
+        "type": "mcq",
+        "o": [
+            "ConcatDataset",
+            "torch.concat",
+            "Dataset.concat()",
+            "MergeDataset"
+        ]
+    },
+    {
+        "q": "ConcatDataset combines multiple datasets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the dataset utilities:",
+        "type": "match",
+        "left": [
+            "ConcatDataset",
+            "Subset",
+            "TensorDataset"
+        ],
+        "right": [
+            "Combine",
+            "Select indices",
+            "From tensors"
+        ]
+    },
+    {
+        "q": "Which dataset handles subset?",
+        "type": "mcq",
+        "o": [
+            "Subset",
+            "Dataset.slice()",
+            "PartialDataset",
+            "SubDataset"
+        ]
+    },
+    {
+        "q": "Subset selects specific indices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the dataset utilities:",
+        "type": "rearrange",
+        "words": [
+            "Dataset: base",
+            "Subset: filter",
+            "Concat: combine"
+        ]
+    },
+    {
+        "q": "Which function handles random split?",
+        "type": "mcq",
+        "o": [
+            "torch.utils.data.random_split",
+            "Dataset.split()",
+            "torch.split_data",
+            "DataLoader.split()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch\nfrom torch.utils.data import TensorDataset, random_split\nds = TensorDataset(torch.randn(100, 10))\ntrain, val = random_split(ds, [80, 20])\nprint(len(train))",
+        "o": [
+            "80",
+            "100",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "random_split creates train/val splits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the split methods:",
+        "type": "match",
+        "left": [
+            "random_split",
+            "Subset"
+        ],
+        "right": [
+            "Random portions",
+            "Specific indices"
+        ]
+    },
+    {
+        "q": "Which function handles worker init?",
+        "type": "mcq",
+        "o": [
+            "DataLoader worker_init_fn",
+            "torch.worker_init",
+            "init_workers()",
+            "DataLoader.init_workers()"
+        ]
+    },
+    {
+        "q": "worker_init_fn sets worker seeds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the worker options:",
+        "type": "match",
+        "left": [
+            "num_workers",
+            "worker_init_fn",
+            "pin_memory"
+        ],
+        "right": [
+            "Parallel workers",
+            "Init function",
+            "Faster GPU transfer"
+        ]
+    },
+    {
+        "q": "The ______ enables faster GPU transfers.",
+        "type": "fill_blank",
+        "answers": [
+            "pin_memory"
+        ],
+        "other_options": [
+            "cuda_memory",
+            "fast_transfer",
+            "gpu_pin"
+        ]
+    },
+    {
+        "q": "Rearrange the DataLoader optimization:",
+        "type": "rearrange",
+        "words": [
+            "num_workers for parallel",
+            "pin_memory for GPU",
+            "prefetch for speed"
+        ]
+    },
+    {
+        "q": "Which function handles persistent workers?",
+        "type": "mcq",
+        "o": [
+            "persistent_workers=True in DataLoader",
+            "keep_workers=True",
+            "reuse_workers=True",
+            "worker_persist=True"
+        ]
+    },
+    {
+        "q": "persistent_workers keeps workers alive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which layer handles InstanceNorm?",
+        "type": "mcq",
+        "o": [
+            "nn.InstanceNorm2d",
+            "nn.FeatureNorm",
+            "nn.PixelNorm",
+            "nn.ChannelNorm"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import torch.nn as nn\nlayer = nn.InstanceNorm2d(64)\nprint(type(layer).__name__)",
+        "o": [
+            "InstanceNorm2d",
+            "Normalization",
+            "Layer",
+            "Instance"
+        ]
+    },
+    {
+        "q": "InstanceNorm normalizes per instance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the norm layers:",
+        "type": "match",
+        "left": [
+            "BatchNorm2d",
+            "InstanceNorm2d",
+            "GroupNorm"
+        ],
+        "right": [
+            "Batch",
+            "Instance",
+            "Groups"
+        ]
+    },
+    {
+        "q": "Which layer handles SyncBatchNorm?",
+        "type": "mcq",
+        "o": [
+            "nn.SyncBatchNorm",
+            "nn.DistributedBatchNorm",
+            "nn.ParallelBatchNorm",
+            "nn.MultiBatchNorm"
+        ]
+    },
+    {
+        "q": "SyncBatchNorm synchronizes across GPUs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the distributed normalization:",
+        "type": "match",
+        "left": [
+            "BatchNorm",
+            "SyncBatchNorm"
+        ],
+        "right": [
+            "Per GPU",
+            "Cross GPU"
+        ]
+    },
+    {
+        "q": "Rearrange the normalization scope:",
+        "type": "rearrange",
+        "words": [
+            "Instance: single sample",
+            "Batch: batch",
+            "Sync: all GPUs"
+        ]
+    },
+    {
+        "q": "Which function handles tensor item access?",
+        "type": "mcq",
+        "o": [
+            "tensor.item()",
+            "tensor.value()",
+            "tensor.get()",
+            "float(tensor)"
+        ]
+    },
+    {
+        "q": "item() extracts Python scalar.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the extraction methods:",
+        "type": "match",
+        "left": [
+            "item()",
+            "tolist()"
+        ],
+        "right": [
+            "Single value",
+            "Python list"
+        ]
+    },
+    {
+        "q": "Which function handles tensor info?",
+        "type": "mcq",
+        "o": [
+            "tensor.shape, tensor.dtype, tensor.device",
+            "tensor.info()",
+            "tensor.describe()",
+            "torch.info(tensor)"
+        ]
+    },
+    {
+        "q": "shape, dtype, device are tensor attributes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange tensor creation steps:",
+        "type": "rearrange",
+        "words": [
+            "specify data",
+            "specify dtype",
+            "specify device"
+        ]
+    },
+    {
+        "q": "Which function handles in-place operations?",
+        "type": "mcq",
+        "o": [
+            "operations ending with _",
+            "tensor.inplace=True",
+            "torch.inplace()",
+            "tensor.modify()"
+        ]
+    },
+    {
+        "q": "add_ modifies tensor in-place.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the operations:",
+        "type": "match",
+        "left": [
+            "add()",
+            "add_()"
+        ],
+        "right": [
+            "New tensor",
+            "In-place"
+        ]
+    },
+    {
+        "q": "In-place operations are memory efficient.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

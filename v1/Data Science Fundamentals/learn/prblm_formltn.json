@@ -1,0 +1,111 @@
+{
+    "id": "learn_prblm_formltn",
+    "topicId": "prblm_formltn",
+    "topicTitle": "Problem Formulation",
+    "description": "Learn to define data science problems effectively through business understanding, problem definition, success metrics, and stakeholder management",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "prblm_formltn_1",
+            "type": "content",
+            "title": "Welcome to Problem Formulation",
+            "content": "# Problem Formulation 🎯\n\nThe most critical skill in Data Science isn't coding—it's asking the right questions!\n\n## What you'll learn:\n- **Business Understanding** - Grasping the business context\n- **Problem Definition** - Translating business needs to data problems\n- **Success Metrics** - Defining measurable outcomes\n- **Stakeholder Management** - Aligning expectations\n\n> 💡 **Key Insight:** A well-defined problem is half solved!\n\n## Why This Matters\n\n| Poor Problem Definition | Good Problem Definition |\n|------------------------|------------------------|\n| Vague objectives | Clear, measurable goals |\n| Scope creep | Focused deliverables |\n| Misaligned expectations | Stakeholder buy-in |\n| Wasted resources | Efficient execution |\n\n## The Reality\n- 🎯 70% of DS projects fail due to poor problem definition\n- 💰 Clear objectives save 40% of project time\n- 📈 Well-scoped projects have 3x higher success rates"
+        },
+        {
+            "id": "prblm_formltn_2",
+            "type": "content",
+            "title": "Business Understanding",
+            "content": "# Business Understanding 💼\n\nUnderstanding the business context is the foundation of any DS project.\n\n## Key Questions to Ask\n\n### About the Business\n- What does the company do?\n- What are the key business drivers?\n- Who are the customers?\n- What's the competitive landscape?\n\n### About the Problem\n- What pain points exist?\n- What decisions need support?\n- What would success look like?\n- What's the cost of the current state?\n\n## Framework: The 5 Whys\n\n```\nProblem: Sales are declining\n\nWhy? → Customer churn increased\nWhy? → Customer satisfaction dropped\nWhy? → Product quality issues\nWhy? → Manufacturing defects\nWhy? → Supplier quality problems  ← Root cause!\n```\n\n## Business Context Document\n\n| Element | Description |\n|---------|-------------|\n| Industry | E-commerce, Healthcare, etc. |\n| Business Model | How company makes money |\n| Key Metrics | Revenue, DAU, Conversion |\n| Constraints | Budget, time, regulations |"
+        },
+        {
+            "id": "prblm_formltn_3",
+            "type": "content",
+            "title": "Problem Definition",
+            "content": "# Problem Definition 📝\n\nTranslating business needs into data science problems.\n\n## The SMART Framework\n\n- **S**pecific - Clear and well-defined\n- **M**easurable - Quantifiable outcomes\n- **A**chievable - Realistic with available resources\n- **R**elevant - Aligned with business goals\n- **T**ime-bound - Clear deadlines\n\n## Bad vs Good Problem Statements\n\n❌ **Bad:** \"We need to use AI to improve sales\"\n\n✅ **Good:** \"Increase conversion rate by 15% within Q2 by predicting which website visitors are most likely to purchase\"\n\n## Problem Types in Data Science\n\n| Type | Business Need | DS Approach |\n|------|---------------|-------------|\n| Prediction | Forecast future | Regression, Time Series |\n| Classification | Categorize items | Classification models |\n| Segmentation | Group customers | Clustering |\n| Optimization | Best decision | Optimization algorithms |\n\n## Template\n\n```\nWe want to [action] by [approach]\nso that [business outcome]\nmeasured by [metric] within [timeframe].\n```"
+        },
+        {
+            "id": "prblm_formltn_quiz_1",
+            "type": "quiz",
+            "title": "Definition Check",
+            "content": "Test your problem definition skills!",
+            "quizQuestion": "What does the 'M' in SMART objectives stand for?",
+            "quizOptions": [
+                "Meaningful",
+                "Measurable",
+                "Manageable",
+                "Motivated"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "prblm_formltn_4",
+            "type": "content",
+            "title": "Success Metrics",
+            "content": "# Success Metrics 📊\n\nDefine how you'll measure project success.\n\n## Types of Metrics\n\n### Business Metrics\n- Revenue impact\n- Cost reduction\n- Customer satisfaction\n- Time savings\n\n### Technical Metrics\n- Model accuracy\n- Precision/Recall\n- Latency\n- Throughput\n\n## Metric Selection Framework\n\n```python\nmetrics = {\n    'primary': 'conversion_rate_increase',  # Main success metric\n    'secondary': ['customer_ltv', 'churn_reduction'],  # Supporting\n    'guardrail': ['false_positive_rate', 'latency']  # Don't harm\n}\n```\n\n## Setting Baselines\n\n| Metric | Baseline | Target | Stretch |\n|--------|----------|--------|----------|\n| Accuracy | 0.75 | 0.85 | 0.90 |\n| Conversion | 2.5% | 3.5% | 4.0% |\n| Latency | 500ms | 200ms | 100ms |\n\n## Key Principles\n- ✅ Use business metrics, not just technical\n- ✅ Set realistic baselines\n- ✅ Define minimum viable thresholds\n- ✅ Include guardrail metrics"
+        },
+        {
+            "id": "prblm_formltn_5",
+            "type": "content",
+            "title": "Stakeholder Management",
+            "content": "# Stakeholder Management 👥\n\nAligning diverse perspectives for project success.\n\n## Stakeholder Mapping\n\n| Stakeholder | Interest | Influence | Strategy |\n|-------------|----------|-----------|----------|\n| Executive | ROI | High | Regular updates |\n| Product | Features | High | Collaboration |\n| Engineering | Integration | Medium | Technical specs |\n| End Users | Usability | Low | User testing |\n\n## Communication Plan\n\n### Weekly Updates\n```\n- Progress against milestones\n- Key findings and insights\n- Blockers and risks\n- Next week's priorities\n```\n\n### Monthly Reviews\n- Detailed progress report\n- Demo of deliverables\n- Scope discussions\n- Resource needs\n\n## Managing Expectations\n\n### Do:\n- ✅ Underpromise, overdeliver\n- ✅ Share early findings\n- ✅ Be transparent about limitations\n\n### Don't:\n- ❌ Promise specific accuracies\n- ❌ Hide bad news\n- ❌ Use jargon without explanation"
+        },
+        {
+            "id": "prblm_formltn_6",
+            "type": "content",
+            "title": "Scoping the Project",
+            "content": "# Project Scoping 🔍\n\nDefine what's in and out of scope.\n\n## Scoping Questions\n\n1. **Data Availability**\n   - What data exists?\n   - What's the quality?\n   - How will we access it?\n\n2. **Technical Constraints**\n   - Infrastructure limitations?\n   - Integration requirements?\n   - Performance needs?\n\n3. **Resource Constraints**\n   - Team size and skills?\n   - Budget available?\n   - Timeline?\n\n## Scope Document Template\n\n```markdown\n## In Scope\n- Predict customer churn for premium tier\n- Weekly batch predictions\n- Model accuracy > 80%\n\n## Out of Scope\n- Real-time predictions\n- Free tier customers\n- Automated interventions\n\n## Assumptions\n- Historical data available for 2 years\n- Labels for churned customers exist\n```\n\n## MVP Approach\n\nStart small, iterate fast:\n1. Prove concept with simple model\n2. Validate with stakeholders\n3. Enhance based on feedback\n4. Scale when proven"
+        },
+        {
+            "id": "prblm_formltn_quiz_2",
+            "type": "quiz",
+            "title": "Stakeholder Quiz",
+            "content": "Test your stakeholder management knowledge!",
+            "quizQuestion": "What is a 'guardrail metric'?",
+            "quizOptions": [
+                "The primary success metric",
+                "A metric that measures project cost",
+                "A metric that ensures you don't cause harm while optimizing",
+                "A metric only executives care about"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "prblm_formltn_7",
+            "type": "content",
+            "title": "Feasibility Assessment",
+            "content": "# Feasibility Assessment ✅\n\nEvaluate if the problem is solvable before committing.\n\n## Data Feasibility\n\n```python\ndef assess_data_feasibility(df, target):\n    checks = {\n        'enough_samples': len(df) > 1000,\n        'target_exists': target in df.columns,\n        'target_variance': df[target].std() > 0,\n        'missing_rate': df.isnull().mean().mean() < 0.3,\n        'class_balance': df[target].value_counts(normalize=True).min() > 0.1\n    }\n    return checks\n```\n\n## Technical Feasibility\n\n| Factor | Question | Red Flag |\n|--------|----------|----------|\n| Data | Is labeled data available? | No labels |\n| Signal | Is there predictive signal? | Random correlation |\n| Scale | Can solution scale? | Real-time with big data |\n| Integration | Can we deploy? | Legacy systems |\n\n## Business Feasibility\n\n- **Value:** Is the potential ROI worth the investment?\n- **Adoption:** Will users actually use the solution?\n- **Ethics:** Are there ethical concerns?\n\n## Decision Matrix\n\n| | High Business Value | Low Business Value |\n|-|---------------------|-------------------|\n| **High Feasibility** | ✅ Do it! | Consider |\n| **Low Feasibility** | Research more | ❌ Skip |"
+        },
+        {
+            "id": "prblm_formltn_8",
+            "type": "content",
+            "title": "Common Pitfalls",
+            "content": "# Common Pitfalls ⚠️\n\nAvoid these problem formulation mistakes.\n\n## Pitfall 1: Solution Before Problem\n\n❌ \"We need to implement deep learning\"\n✅ \"We need to improve fraud detection by 20%\"\n\n## Pitfall 2: Vague Success Criteria\n\n❌ \"Make recommendations better\"\n✅ \"Increase click-through rate from 2% to 3%\"\n\n## Pitfall 3: Ignoring Constraints\n\n❌ Assuming unlimited data and compute\n✅ Explicitly listing constraints upfront\n\n## Pitfall 4: Scope Creep\n\n```\nOriginal: Predict customer churn\n↓\n\"Can we also predict lifetime value?\"\n↓\n\"And segment customers?\"\n↓\n\"And recommend products?\"\n↓\nProject never finishes!\n```\n\n## Prevention Strategies\n\n- 📝 Document scope formally\n- 🤝 Get stakeholder sign-off\n- 🚧 Define change process\n- 📅 Review scope regularly\n\n> 💡 **Pro Tip:** Every scope change should trigger a discussion about timeline and resource impact!"
+        },
+        {
+            "id": "prblm_formltn_9",
+            "type": "content",
+            "title": "Problem Formulation Template",
+            "content": "# Complete Template 📋\n\nUse this template for any DS project.\n\n## Project Charter\n\n```markdown\n# [Project Name]\n\n## Business Context\n[Company/team background, current challenges]\n\n## Problem Statement\n[Clear, SMART problem statement]\n\n## Success Metrics\n- Primary: [metric, target]\n- Secondary: [metrics]\n- Guardrails: [don't harm metrics]\n\n## Scope\n### In Scope\n- [item 1]\n- [item 2]\n\n### Out of Scope\n- [item 1]\n\n## Stakeholders\n| Name | Role | Responsibility |\n|------|------|----------------|\n\n## Timeline\n| Phase | Duration | Deliverable |\n|-------|----------|-------------|\n\n## Risks\n| Risk | Mitigation |\n|------|------------|\n\n## Assumptions\n- [assumption 1]\n- [assumption 2]\n```\n\n## Sign-off Section\n\n- [ ] Business owner approved\n- [ ] Technical lead approved\n- [ ] Resources allocated"
+        },
+        {
+            "id": "prblm_formltn_quiz_3",
+            "type": "quiz",
+            "title": "Pitfalls Quiz",
+            "content": "Identify problem formulation issues!",
+            "quizQuestion": "What is 'scope creep'?",
+            "quizOptions": [
+                "When the project finishes early",
+                "When requirements continuously expand beyond original scope",
+                "When stakeholders lose interest",
+                "When data quality is poor"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "prblm_formltn_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Problem Formulation!\n\n## Key Takeaways\n\n### Business Understanding\n- ✅ Know the business context\n- ✅ Use the 5 Whys technique\n- ✅ Document constraints\n\n### Problem Definition\n- ✅ Use SMART framework\n- ✅ Write clear problem statements\n- ✅ Map to DS problem types\n\n### Success Metrics\n- ✅ Define primary, secondary, guardrail\n- ✅ Set baselines and targets\n- ✅ Focus on business metrics\n\n### Stakeholder Management\n- ✅ Map stakeholders\n- ✅ Communicate regularly\n- ✅ Manage expectations\n\n## Golden Rules\n\n> 🎯 \"A problem well-stated is a problem half-solved.\"\n\n- Start with \"why\" not \"how\"\n- Document everything\n- Get sign-off before starting\n- Revisit scope regularly\n\n## Next Steps\n- 📊 Learn **Data Collection** techniques\n- 📈 Master **Success Metrics** design\n\nHappy problem solving! 🚀"
+        }
+    ]
+}

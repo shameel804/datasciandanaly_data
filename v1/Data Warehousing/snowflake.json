@@ -1,0 +1,6662 @@
+[
+    {
+        "q": "Snowflake is a cloud-native data warehousing platform built for the cloud.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What type of architecture does Snowflake use?",
+        "type": "mcq",
+        "o": [
+            "Shared-nothing architecture with separation of compute and storage",
+            "Shared-everything architecture",
+            "Traditional on-premise architecture",
+            "Mainframe-based architecture"
+        ]
+    },
+    {
+        "q": "Snowflake separates _____ and storage layers for independent scaling.",
+        "type": "fill_blank",
+        "answers": [
+            "compute"
+        ],
+        "other_options": [
+            "network",
+            "security",
+            "interface"
+        ]
+    },
+    {
+        "q": "Which cloud platforms does Snowflake run on?",
+        "type": "mcq",
+        "o": [
+            "AWS, Azure, and Google Cloud Platform",
+            "Only AWS",
+            "Only Azure",
+            "Only on-premise"
+        ]
+    },
+    {
+        "q": "Match the Snowflake layer with its function:",
+        "type": "match",
+        "left": [
+            "Database Storage",
+            "Query Processing",
+            "Cloud Services",
+            "Virtual Warehouses"
+        ],
+        "right": [
+            "Persistent data",
+            "Compute resources",
+            "Infrastructure management",
+            "Query execution"
+        ]
+    },
+    {
+        "q": "Snowflake automatically handles infrastructure management tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a virtual warehouse in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A cluster of compute resources for executing queries",
+            "A database for storing data",
+            "A schema for organizing tables",
+            "A security mechanism"
+        ]
+    },
+    {
+        "q": "Virtual warehouses can be _____ or resumed on demand.",
+        "type": "fill_blank",
+        "answers": [
+            "suspended"
+        ],
+        "other_options": [
+            "deleted",
+            "copied",
+            "merged"
+        ]
+    },
+    {
+        "q": "Which virtual warehouse size determines compute power?",
+        "type": "mcq",
+        "o": [
+            "XS, S, M, L, XL, 2XL, 3XL, 4XL",
+            "Only Small, Medium, Large",
+            "1, 2, 3, 4, 5",
+            "A, B, C, D"
+        ]
+    },
+    {
+        "q": "Match the warehouse size with its relative compute power:",
+        "type": "match",
+        "left": [
+            "X-Small",
+            "Small",
+            "Medium",
+            "Large"
+        ],
+        "right": [
+            "1 credit/hour",
+            "2 credits/hour",
+            "4 credits/hour",
+            "8 credits/hour"
+        ]
+    },
+    {
+        "q": "Rearrange the virtual warehouse sizes from smallest to largest:",
+        "type": "rearrange",
+        "words": [
+            "X-Small",
+            "Small",
+            "Medium",
+            "Large",
+            "X-Large"
+        ]
+    },
+    {
+        "q": "Larger virtual warehouses can process complex queries faster.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's automatic scaling feature called?",
+        "type": "mcq",
+        "o": [
+            "Multi-cluster warehouses",
+            "Manual scaling",
+            "Fixed capacity",
+            "Static allocation"
+        ]
+    },
+    {
+        "q": "Multi-cluster warehouses automatically _____ clusters based on demand.",
+        "type": "fill_blank",
+        "answers": [
+            "add"
+        ],
+        "other_options": [
+            "remove",
+            "pause",
+            "disable"
+        ]
+    },
+    {
+        "q": "Which scaling mode balances performance and cost?",
+        "type": "mcq",
+        "o": [
+            "Auto-scale mode",
+            "Maximized mode",
+            "Fixed mode",
+            "Disabled scaling"
+        ]
+    },
+    {
+        "q": "Match the scaling mode with its behavior:",
+        "type": "match",
+        "left": [
+            "Auto-scale",
+            "Maximized",
+            "Suspended",
+            "Non-scaling"
+        ],
+        "right": [
+            "Add/remove as needed",
+            "Always maximum clusters",
+            "No compute",
+            "Fixed clusters"
+        ]
+    },
+    {
+        "q": "Multi-cluster warehouses help handle concurrent query demand.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does Snowflake use for data storage?",
+        "type": "mcq",
+        "o": [
+            "Cloud object storage (S3, Azure Blob, GCS)",
+            "Local hard drives",
+            "SAN storage",
+            "Tape backup"
+        ]
+    },
+    {
+        "q": "Snowflake stores data in a compressed, _____ format.",
+        "type": "fill_blank",
+        "answers": [
+            "columnar"
+        ],
+        "other_options": [
+            "row-based",
+            "flat",
+            "binary"
+        ]
+    },
+    {
+        "q": "Which data format does Snowflake use internally?",
+        "type": "mcq",
+        "o": [
+            "Proprietary micropartitions",
+            "Standard CSV files",
+            "Raw JSON files",
+            "XML documents"
+        ]
+    },
+    {
+        "q": "Match the storage concept with its benefit:",
+        "type": "match",
+        "left": [
+            "Columnar storage",
+            "Compression",
+            "Micropartitions",
+            "Automatic clustering"
+        ],
+        "right": [
+            "Analytical efficiency",
+            "Cost reduction",
+            "Metadata pruning",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Rearrange the data loading process in Snowflake:",
+        "type": "rearrange",
+        "words": [
+            "Stage Data",
+            "Create Table",
+            "Copy Into",
+            "Query Data"
+        ]
+    },
+    {
+        "q": "Snowflake automatically compresses data to reduce storage costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Snowflake database?",
+        "type": "mcq",
+        "o": [
+            "A logical container for schemas and tables",
+            "A physical server",
+            "A compute cluster",
+            "A security role"
+        ]
+    },
+    {
+        "q": "A database contains _____ which contain tables.",
+        "type": "fill_blank",
+        "answers": [
+            "schemas"
+        ],
+        "other_options": [
+            "clusters",
+            "roles",
+            "stages"
+        ]
+    },
+    {
+        "q": "What is the default schema in a new Snowflake database?",
+        "type": "mcq",
+        "o": [
+            "PUBLIC",
+            "PRIVATE",
+            "DEFAULT",
+            "MAIN"
+        ]
+    },
+    {
+        "q": "Match the object type with its hierarchy level:",
+        "type": "match",
+        "left": [
+            "Account",
+            "Database",
+            "Schema",
+            "Table"
+        ],
+        "right": [
+            "Top level",
+            "Contains schemas",
+            "Contains tables",
+            "Contains data"
+        ]
+    },
+    {
+        "q": "Databases must be created before schemas and tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Snowflake stage?",
+        "type": "mcq",
+        "o": [
+            "A location for storing files before loading into tables",
+            "A production deployment environment",
+            "A testing database",
+            "A type of table"
+        ]
+    },
+    {
+        "q": "_____ stages are specific to a user or table.",
+        "type": "fill_blank",
+        "answers": [
+            "Internal"
+        ],
+        "other_options": [
+            "External",
+            "Public",
+            "Shared"
+        ]
+    },
+    {
+        "q": "Which stage type references external cloud storage?",
+        "type": "mcq",
+        "o": [
+            "External stage pointing to S3/Azure/GCS",
+            "Internal user stage",
+            "Table stage",
+            "Named stage"
+        ]
+    },
+    {
+        "q": "Match the stage type with its location:",
+        "type": "match",
+        "left": [
+            "User stage",
+            "Table stage",
+            "Named stage",
+            "External stage"
+        ],
+        "right": [
+            "User's default area",
+            "Table's staging area",
+            "Custom named location",
+            "Cloud storage bucket"
+        ]
+    },
+    {
+        "q": "Rearrange the stage-based loading workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Stage",
+            "Put Files",
+            "Create Table",
+            "Copy Into Table"
+        ]
+    },
+    {
+        "q": "External stages can reference data in AWS S3 buckets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What command loads data from a stage into a table?",
+        "type": "mcq",
+        "o": [
+            "COPY INTO",
+            "INSERT INTO",
+            "LOAD DATA",
+            "IMPORT FROM"
+        ]
+    },
+    {
+        "q": "The COPY INTO command supports _____ file format.",
+        "type": "fill_blank",
+        "answers": [
+            "CSV"
+        ],
+        "other_options": [
+            "Only JSON",
+            "Only XML",
+            "Only Excel"
+        ]
+    },
+    {
+        "q": "Which file formats can COPY INTO load?",
+        "type": "mcq",
+        "o": [
+            "CSV, JSON, Parquet, Avro, ORC, XML",
+            "Only CSV",
+            "Only JSON",
+            "Only Parquet"
+        ]
+    },
+    {
+        "q": "Match the file format with its typical use:",
+        "type": "match",
+        "left": [
+            "CSV",
+            "JSON",
+            "Parquet",
+            "Avro"
+        ],
+        "right": [
+            "Simple tabular data",
+            "Semi-structured data",
+            "Columnar analytics",
+            "Streaming data"
+        ]
+    },
+    {
+        "q": "COPY INTO can load multiple files in parallel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Time Travel feature?",
+        "type": "mcq",
+        "o": [
+            "Access to historical data from past points in time",
+            "Faster query execution",
+            "Data replication",
+            "Schema migration"
+        ]
+    },
+    {
+        "q": "Time Travel allows querying data from up to _____ days ago on standard edition.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "7",
+            "30",
+            "90"
+        ]
+    },
+    {
+        "q": "Which SQL clause accesses historical data?",
+        "type": "mcq",
+        "o": [
+            "AT or BEFORE clause with timestamp",
+            "HISTORICAL clause",
+            "PAST clause",
+            "ARCHIVE clause"
+        ]
+    },
+    {
+        "q": "Match the Time Travel capability with its use:",
+        "type": "match",
+        "left": [
+            "Query at timestamp",
+            "Undrop table",
+            "Clone from past",
+            "Data restoration"
+        ],
+        "right": [
+            "Historical analysis",
+            "Recover deleted",
+            "Point-in-time copy",
+            "Fix mistakes"
+        ]
+    },
+    {
+        "q": "Rearrange the Time Travel retention periods from shortest to longest:",
+        "type": "rearrange",
+        "words": [
+            "Standard Edition 1 day",
+            "Enterprise 7 days",
+            "Enterprise 90 days max"
+        ]
+    },
+    {
+        "q": "Time Travel is useful for recovering accidentally deleted or modified data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Fail-safe in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A recovery feature for data after Time Travel expires",
+            "A security mechanism",
+            "A query optimizer",
+            "A data loading tool"
+        ]
+    },
+    {
+        "q": "Fail-safe provides _____ days of additional data recovery.",
+        "type": "fill_blank",
+        "answers": [
+            "7"
+        ],
+        "other_options": [
+            "1",
+            "30",
+            "90"
+        ]
+    },
+    {
+        "q": "Who can access Fail-safe data?",
+        "type": "mcq",
+        "o": [
+            "Only Snowflake support (not directly accessible to users)",
+            "Any database administrator",
+            "Public access",
+            "Only account owners"
+        ]
+    },
+    {
+        "q": "Match the data protection feature with its duration:",
+        "type": "match",
+        "left": [
+            "Time Travel Standard",
+            "Time Travel Enterprise",
+            "Fail-safe",
+            "Total protection"
+        ],
+        "right": [
+            "Up to 1 day",
+            "Up to 90 days",
+            "7 days after TT",
+            "Up to 97 days"
+        ]
+    },
+    {
+        "q": "Fail-safe is included in storage costs automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is zero-copy cloning in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Creating copies without duplicating storage",
+            "Standard table copying",
+            "Data deletion",
+            "Index creation"
+        ]
+    },
+    {
+        "q": "Zero-copy clones share the underlying _____ until modified.",
+        "type": "fill_blank",
+        "answers": [
+            "data"
+        ],
+        "other_options": [
+            "schema",
+            "permissions",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Which command creates a clone in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "CREATE ... CLONE",
+            "COPY TABLE",
+            "DUPLICATE",
+            "REPLICATE"
+        ]
+    },
+    {
+        "q": "Match the clone benefit with its advantage:",
+        "type": "match",
+        "left": [
+            "Instant creation",
+            "No storage cost initially",
+            "Independent changes",
+            "Easy testing"
+        ],
+        "right": [
+            "Immediate availability",
+            "Efficiency",
+            "Isolation",
+            "Safe experimentation"
+        ]
+    },
+    {
+        "q": "Rearrange the clone workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Clone",
+            "Modify Clone",
+            "Test Changes",
+            "Drop or Keep Clone"
+        ]
+    },
+    {
+        "q": "Cloning databases creates copies of all schemas and tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What are Snowflake credits?",
+        "type": "mcq",
+        "o": [
+            "Units of compute usage for billing",
+            "Storage measurements",
+            "Query counts",
+            "User limits"
+        ]
+    },
+    {
+        "q": "Credits are consumed by _____ warehouses when running.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "storage",
+            "security",
+            "network"
+        ]
+    },
+    {
+        "q": "Which factor does NOT affect credit consumption?",
+        "type": "mcq",
+        "o": [
+            "Number of tables in database",
+            "Warehouse size",
+            "Warehouse runtime",
+            "Number of clusters"
+        ]
+    },
+    {
+        "q": "Match the warehouse size with its credit per hour:",
+        "type": "match",
+        "left": [
+            "X-Small",
+            "Small",
+            "Medium",
+            "Large"
+        ],
+        "right": [
+            "1 credit",
+            "2 credits",
+            "4 credits",
+            "8 credits"
+        ]
+    },
+    {
+        "q": "Suspending a warehouse when not in use saves credits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's auto-suspend feature?",
+        "type": "mcq",
+        "o": [
+            "Automatically suspends idle warehouses after timeout",
+            "Permanently stops warehouses",
+            "Deletes unused warehouses",
+            "Upgrades warehouse size"
+        ]
+    },
+    {
+        "q": "Auto-suspend is configured in _____ of inactivity.",
+        "type": "fill_blank",
+        "answers": [
+            "minutes"
+        ],
+        "other_options": [
+            "hours",
+            "days",
+            "seconds"
+        ]
+    },
+    {
+        "q": "What is the minimum auto-suspend timeout?",
+        "type": "mcq",
+        "o": [
+            "1 minute (or 0 for immediate)",
+            "5 minutes",
+            "10 minutes",
+            "1 hour"
+        ]
+    },
+    {
+        "q": "Match the auto-suspend setting with its effect:",
+        "type": "match",
+        "left": [
+            "0 seconds",
+            "60 seconds",
+            "300 seconds",
+            "Never (null)"
+        ],
+        "right": [
+            "Immediate suspend",
+            "1 minute idle",
+            "5 minutes idle",
+            "Always running"
+        ]
+    },
+    {
+        "q": "Rearrange the warehouse lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create Warehouse",
+            "Run Queries",
+            "Idle Timeout",
+            "Auto-suspend",
+            "Auto-resume on Query"
+        ]
+    },
+    {
+        "q": "Auto-resume automatically starts suspended warehouses on query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Snowflake role?",
+        "type": "mcq",
+        "o": [
+            "A security entity that grants privileges to users",
+            "A type of database",
+            "A compute resource",
+            "A data format"
+        ]
+    },
+    {
+        "q": "The _____ role has all privileges on the account.",
+        "type": "fill_blank",
+        "answers": [
+            "ACCOUNTADMIN"
+        ],
+        "other_options": [
+            "SYSADMIN",
+            "PUBLIC",
+            "SECURITYADMIN"
+        ]
+    },
+    {
+        "q": "Which role is recommended for creating warehouses and databases?",
+        "type": "mcq",
+        "o": [
+            "SYSADMIN",
+            "ACCOUNTADMIN",
+            "PUBLIC",
+            "SECURITYADMIN"
+        ]
+    },
+    {
+        "q": "Match the role with its primary responsibility:",
+        "type": "match",
+        "left": [
+            "ACCOUNTADMIN",
+            "SYSADMIN",
+            "SECURITYADMIN",
+            "PUBLIC"
+        ],
+        "right": [
+            "Full account control",
+            "Object management",
+            "User management",
+            "Default access"
+        ]
+    },
+    {
+        "q": "ACCOUNTADMIN should be used sparingly for security.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is role-based access control (RBAC)?",
+        "type": "mcq",
+        "o": [
+            "Granting privileges to roles, then assigning roles to users",
+            "Direct user-to-object permissions",
+            "Password-only security",
+            "No access control"
+        ]
+    },
+    {
+        "q": "Users inherit privileges from their assigned _____.",
+        "type": "fill_blank",
+        "answers": [
+            "roles"
+        ],
+        "other_options": [
+            "databases",
+            "warehouses",
+            "schemas"
+        ]
+    },
+    {
+        "q": "Which command grants a role to a user?",
+        "type": "mcq",
+        "o": [
+            "GRANT ROLE role_name TO USER user_name",
+            "ADD ROLE role_name TO user_name",
+            "ASSIGN role_name user_name",
+            "SET ROLE role_name FOR user_name"
+        ]
+    },
+    {
+        "q": "Match the privilege with its scope:",
+        "type": "match",
+        "left": [
+            "USAGE",
+            "SELECT",
+            "INSERT",
+            "CREATE"
+        ],
+        "right": [
+            "Access database/schema",
+            "Read from table",
+            "Add to table",
+            "Make new objects"
+        ]
+    },
+    {
+        "q": "Rearrange the RBAC setup steps:",
+        "type": "rearrange",
+        "words": [
+            "Create Role",
+            "Grant Privileges to Role",
+            "Grant Role to User",
+            "User Accesses Objects"
+        ]
+    },
+    {
+        "q": "Roles can be granted to other roles to form hierarchies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake Data Sharing?",
+        "type": "mcq",
+        "o": [
+            "Sharing live data across accounts without copying",
+            "Copying data to external systems",
+            "Exporting data to files",
+            "Emailing data reports"
+        ]
+    },
+    {
+        "q": "Data Sharing provides _____ data without moving or copying.",
+        "type": "fill_blank",
+        "answers": [
+            "live"
+        ],
+        "other_options": [
+            "archived",
+            "cached",
+            "static"
+        ]
+    },
+    {
+        "q": "What is required to share data between accounts?",
+        "type": "mcq",
+        "o": [
+            "Create a share and grant access to consumer account",
+            "Export to S3",
+            "Email the data",
+            "Physical media transfer"
+        ]
+    },
+    {
+        "q": "Match the sharing role with its function:",
+        "type": "match",
+        "left": [
+            "Data Provider",
+            "Data Consumer",
+            "Share object",
+            "Reader account"
+        ],
+        "right": [
+            "Shares data",
+            "Receives data",
+            "Container for shared objects",
+            "Non-Snowflake consumer"
+        ]
+    },
+    {
+        "q": "Data consumers pay for their own compute to query shared data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Snowflake Marketplace?",
+        "type": "mcq",
+        "o": [
+            "A platform for discovering and accessing third-party data",
+            "A compute purchasing system",
+            "A storage marketplace",
+            "An ETL tool store"
+        ]
+    },
+    {
+        "q": "Marketplace data can be accessed as _____ or paid listings.",
+        "type": "fill_blank",
+        "answers": [
+            "free"
+        ],
+        "other_options": [
+            "trial",
+            "demo",
+            "limited"
+        ]
+    },
+    {
+        "q": "Which data types are available on Snowflake Marketplace?",
+        "type": "mcq",
+        "o": [
+            "Weather, financial, demographic, and industry datasets",
+            "Only internal company data",
+            "Only sample datasets",
+            "No real data"
+        ]
+    },
+    {
+        "q": "Match the Marketplace feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Live data",
+            "No ETL",
+            "Instant access",
+            "Third-party insights"
+        ],
+        "right": [
+            "Always current",
+            "No data copying",
+            "Quick onboarding",
+            "External perspectives"
+        ]
+    },
+    {
+        "q": "Rearrange the Marketplace data access workflow:",
+        "type": "rearrange",
+        "words": [
+            "Browse Marketplace",
+            "Request Access",
+            "Provider Grants",
+            "Query Shared Data"
+        ]
+    },
+    {
+        "q": "Marketplace listings can be monetized by data providers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Snowflake task?",
+        "type": "mcq",
+        "o": [
+            "A scheduled SQL statement that runs automatically",
+            "A user assignment",
+            "A storage container",
+            "A compute resource"
+        ]
+    },
+    {
+        "q": "Tasks can be scheduled using _____ expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "CRON"
+        ],
+        "other_options": [
+            "SQL",
+            "JSON",
+            "Python"
+        ]
+    },
+    {
+        "q": "Which command creates a scheduled task?",
+        "type": "mcq",
+        "o": [
+            "CREATE TASK",
+            "CREATE SCHEDULE",
+            "CREATE JOB",
+            "CREATE PROCEDURE"
+        ]
+    },
+    {
+        "q": "Match the task component with its purpose:",
+        "type": "match",
+        "left": [
+            "Schedule",
+            "Warehouse",
+            "SQL statement",
+            "AFTER clause"
+        ],
+        "right": [
+            "When to run",
+            "Compute resource",
+            "What to execute",
+            "Task dependencies"
+        ]
+    },
+    {
+        "q": "Tasks must be explicitly resumed after creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a Snowflake stream?",
+        "type": "mcq",
+        "o": [
+            "An object that captures changes to a table",
+            "A real-time data feed",
+            "A network connection",
+            "A file format"
+        ]
+    },
+    {
+        "q": "Streams track _____, UPDATE, and DELETE changes.",
+        "type": "fill_blank",
+        "answers": [
+            "INSERT"
+        ],
+        "other_options": [
+            "SELECT",
+            "TRUNCATE",
+            "DROP"
+        ]
+    },
+    {
+        "q": "Which pattern uses streams with tasks?",
+        "type": "mcq",
+        "o": [
+            "Change Data Capture (CDC) for incremental processing",
+            "Batch loading",
+            "Full refresh",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "Match the change type with its stream metadata:",
+        "type": "match",
+        "left": [
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "METADATA$ACTION"
+        ],
+        "right": [
+            "New rows",
+            "Modified rows",
+            "Removed rows",
+            "Change type column"
+        ]
+    },
+    {
+        "q": "Rearrange the CDC workflow with streams:",
+        "type": "rearrange",
+        "words": [
+            "Create Stream",
+            "Capture Changes",
+            "Process with Task",
+            "Consume Stream"
+        ]
+    },
+    {
+        "q": "Streams are consumed when their data is committed in a DML operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowpipe?",
+        "type": "mcq",
+        "o": [
+            "A continuous data ingestion service",
+            "A data export tool",
+            "A query optimizer",
+            "A security feature"
+        ]
+    },
+    {
+        "q": "Snowpipe loads data _____ as files arrive in a stage.",
+        "type": "fill_blank",
+        "answers": [
+            "automatically"
+        ],
+        "other_options": [
+            "manually",
+            "weekly",
+            "monthly"
+        ]
+    },
+    {
+        "q": "What triggers Snowpipe to load data?",
+        "type": "mcq",
+        "o": [
+            "Cloud event notifications (S3, Azure Blob, GCS)",
+            "Manual execution only",
+            "Time-based schedule only",
+            "User login"
+        ]
+    },
+    {
+        "q": "Match the Snowpipe component with its role:",
+        "type": "match",
+        "left": [
+            "Pipe definition",
+            "Stage",
+            "Event notification",
+            "COPY statement"
+        ],
+        "right": [
+            "Loading configuration",
+            "File location",
+            "Trigger mechanism",
+            "Data transformation"
+        ]
+    },
+    {
+        "q": "Snowpipe uses serverless compute for loading.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a stored procedure in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "JavaScript or SQL code stored and executed in the database",
+            "A data storage container",
+            "A virtual warehouse configuration",
+            "A security role"
+        ]
+    },
+    {
+        "q": "Stored procedures support _____ and SQL languages.",
+        "type": "fill_blank",
+        "answers": [
+            "JavaScript"
+        ],
+        "other_options": [
+            "Python only",
+            "Java only",
+            "C++ only"
+        ]
+    },
+    {
+        "q": "Which command creates a stored procedure?",
+        "type": "mcq",
+        "o": [
+            "CREATE PROCEDURE",
+            "CREATE FUNCTION",
+            "CREATE TASK",
+            "CREATE SCRIPT"
+        ]
+    },
+    {
+        "q": "Match the procedure feature with its capability:",
+        "type": "match",
+        "left": [
+            "Return value",
+            "Dynamic SQL",
+            "Error handling",
+            "Transaction control"
+        ],
+        "right": [
+            "Output result",
+            "Runtime queries",
+            "EXCEPTION blocks",
+            "COMMIT/ROLLBACK"
+        ]
+    },
+    {
+        "q": "Stored procedures can execute multiple SQL statements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a user-defined function (UDF) in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Custom functions that extend SQL capabilities",
+            "System administration tools",
+            "Data loading utilities",
+            "Security configurations"
+        ]
+    },
+    {
+        "q": "UDFs can be written in JavaScript, SQL, or _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Python"
+        ],
+        "other_options": [
+            "C++",
+            "Go",
+            "Ruby"
+        ]
+    },
+    {
+        "q": "Which UDF type returns a single value per input row?",
+        "type": "mcq",
+        "o": [
+            "Scalar UDF",
+            "Table UDF",
+            "Aggregate UDF",
+            "Window UDF"
+        ]
+    },
+    {
+        "q": "Match the UDF type with its return behavior:",
+        "type": "match",
+        "left": [
+            "Scalar UDF",
+            "Table UDF",
+            "UDTF",
+            "Secure UDF"
+        ],
+        "right": [
+            "Single value",
+            "Multiple rows",
+            "Table function",
+            "Hidden logic"
+        ]
+    },
+    {
+        "q": "Rearrange the UDF creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Choose Language",
+            "Define Function",
+            "Create UDF",
+            "Use in Queries"
+        ]
+    },
+    {
+        "q": "UDFs can be used in SELECT, WHERE, and other SQL clauses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's VARIANT data type?",
+        "type": "mcq",
+        "o": [
+            "A type for storing semi-structured data like JSON",
+            "A fixed-length string type",
+            "An integer type",
+            "A date type"
+        ]
+    },
+    {
+        "q": "VARIANT can store JSON, Avro, ORC, and _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "Parquet"
+        ],
+        "other_options": [
+            "CSV",
+            "TXT",
+            "HTML"
+        ]
+    },
+    {
+        "q": "How do you access nested JSON elements in VARIANT?",
+        "type": "mcq",
+        "o": [
+            "Using colon notation (column:key) or bracket notation",
+            "Only stored procedures",
+            "External functions only",
+            "Not possible"
+        ]
+    },
+    {
+        "q": "Match the VARIANT function with its purpose:",
+        "type": "match",
+        "left": [
+            "PARSE_JSON",
+            "TO_JSON",
+            "FLATTEN",
+            "GET_PATH"
+        ],
+        "right": [
+            "String to JSON",
+            "JSON to string",
+            "Expand arrays",
+            "Navigate paths"
+        ]
+    },
+    {
+        "q": "The FLATTEN function expands nested arrays into rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does the FLATTEN function do?",
+        "type": "mcq",
+        "o": [
+            "Converts semi-structured arrays into relational rows",
+            "Compresses data",
+            "Encrypts content",
+            "Deletes duplicates"
+        ]
+    },
+    {
+        "q": "FLATTEN uses _____ join syntax to expand arrays.",
+        "type": "fill_blank",
+        "answers": [
+            "LATERAL"
+        ],
+        "other_options": [
+            "INNER",
+            "OUTER",
+            "CROSS"
+        ]
+    },
+    {
+        "q": "Which output column contains the array element value?",
+        "type": "mcq",
+        "o": [
+            "VALUE column",
+            "KEY column",
+            "INDEX column",
+            "PATH column"
+        ]
+    },
+    {
+        "q": "Match the FLATTEN output column with its content:",
+        "type": "match",
+        "left": [
+            "SEQ",
+            "KEY",
+            "PATH",
+            "VALUE"
+        ],
+        "right": [
+            "Sequence number",
+            "Object key",
+            "Element path",
+            "Actual value"
+        ]
+    },
+    {
+        "q": "Rearrange the JSON processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Load JSON to VARIANT",
+            "Query with Dot Notation",
+            "FLATTEN Arrays",
+            "Extract Scalar Values"
+        ]
+    },
+    {
+        "q": "FLATTEN is essential for querying nested JSON arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a secure view in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A view where the definition is hidden from unauthorized users",
+            "A view with encryption",
+            "A view with no access control",
+            "A materialized view"
+        ]
+    },
+    {
+        "q": "Secure views prevent _____ from exposing the underlying query.",
+        "type": "fill_blank",
+        "answers": [
+            "metadata"
+        ],
+        "other_options": [
+            "data",
+            "columns",
+            "rows"
+        ]
+    },
+    {
+        "q": "Which keyword creates a secure view?",
+        "type": "mcq",
+        "o": [
+            "CREATE SECURE VIEW",
+            "CREATE PRIVATE VIEW",
+            "CREATE HIDDEN VIEW",
+            "CREATE ENCRYPTED VIEW"
+        ]
+    },
+    {
+        "q": "Match the view type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Standard view",
+            "Secure view",
+            "Materialized view",
+            "Recursive view"
+        ],
+        "right": [
+            "Visible definition",
+            "Hidden definition",
+            "Stored results",
+            "Self-referencing"
+        ]
+    },
+    {
+        "q": "Secure views are recommended for data sharing scenarios.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a materialized view in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A pre-computed view that stores query results",
+            "A view that refreshes in real-time",
+            "A temporary view",
+            "A view with no storage"
+        ]
+    },
+    {
+        "q": "Materialized views are automatically _____ by Snowflake.",
+        "type": "fill_blank",
+        "answers": [
+            "refreshed"
+        ],
+        "other_options": [
+            "deleted",
+            "encrypted",
+            "compressed"
+        ]
+    },
+    {
+        "q": "Which use case benefits most from materialized views?",
+        "type": "mcq",
+        "o": [
+            "Frequently executed expensive aggregations",
+            "One-time queries",
+            "Simple selects",
+            "Data loading"
+        ]
+    },
+    {
+        "q": "Match the view feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Pre-computed results",
+            "Auto-refresh",
+            "Incremental maintenance",
+            "Query acceleration"
+        ],
+        "right": [
+            "Fast queries",
+            "Current data",
+            "Efficient updates",
+            "Improved performance"
+        ]
+    },
+    {
+        "q": "Rearrange the materialized view lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create MV",
+            "Initial Computation",
+            "Background Refresh",
+            "Query MV"
+        ]
+    },
+    {
+        "q": "Materialized views incur additional storage costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's search optimization service?",
+        "type": "mcq",
+        "o": [
+            "An acceleration feature for point lookup queries",
+            "A full-text search engine",
+            "A data loading optimizer",
+            "A security scanner"
+        ]
+    },
+    {
+        "q": "Search optimization builds _____ structures for accelerated queries.",
+        "type": "fill_blank",
+        "answers": [
+            "access path"
+        ],
+        "other_options": [
+            "index",
+            "cache",
+            "partition"
+        ]
+    },
+    {
+        "q": "Which query type benefits from search optimization?",
+        "type": "mcq",
+        "o": [
+            "Queries with equality predicates on specific columns",
+            "Full table scans",
+            "Aggregations",
+            "Joins"
+        ]
+    },
+    {
+        "q": "Match the search optimization column type with its support:",
+        "type": "match",
+        "left": [
+            "Equality searches",
+            "Substring searches",
+            "Geo searches",
+            "VARIANT field searches"
+        ],
+        "right": [
+            "WHERE col = value",
+            "WHERE col LIKE '%val%'",
+            "WHERE ST_CONTAINS",
+            "WHERE variant:field = value"
+        ]
+    },
+    {
+        "q": "Search optimization is a serverless, maintenance-free feature.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is automatic clustering in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Automatic reorganization of table data for optimal query performance",
+            "Manual partitioning required by users",
+            "Compute cluster management",
+            "Security grouping"
+        ]
+    },
+    {
+        "q": "Clustering keys define the _____ order of data in table micropartitions.",
+        "type": "fill_blank",
+        "answers": [
+            "physical"
+        ],
+        "other_options": [
+            "logical",
+            "virtual",
+            "temporary"
+        ]
+    },
+    {
+        "q": "Which query type benefits most from clustering?",
+        "type": "mcq",
+        "o": [
+            "Range queries on the clustering key columns",
+            "Full table scans",
+            "Unrelated column queries",
+            "DELETE operations"
+        ]
+    },
+    {
+        "q": "Match the clustering concept with its explanation:",
+        "type": "match",
+        "left": [
+            "Clustering key",
+            "Clustering depth",
+            "Reclustering",
+            "Pruning"
+        ],
+        "right": [
+            "Physical order columns",
+            "Organization metric",
+            "Background maintenance",
+            "Skip irrelevant partitions"
+        ]
+    },
+    {
+        "q": "Rearrange the clustering optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze Query Patterns",
+            "Define Clustering Key",
+            "Monitor Clustering Depth",
+            "Benefit from Pruning"
+        ]
+    },
+    {
+        "q": "Automatic clustering runs as a background process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query acceleration in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Serverless compute that offloads portions of eligible queries",
+            "Manual query tuning",
+            "Index creation",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "Query acceleration helps with queries having _____ workloads.",
+        "type": "fill_blank",
+        "answers": [
+            "outlier"
+        ],
+        "other_options": [
+            "standard",
+            "simple",
+            "cached"
+        ]
+    },
+    {
+        "q": "Which setting enables query acceleration on a warehouse?",
+        "type": "mcq",
+        "o": [
+            "ENABLE_QUERY_ACCELERATION = TRUE",
+            "QUERY_BOOST = ON",
+            "ACCELERATE = YES",
+            "FAST_MODE = TRUE"
+        ]
+    },
+    {
+        "q": "Match the query acceleration concept with its function:",
+        "type": "match",
+        "left": [
+            "Eligible queries",
+            "Scale factor",
+            "Cost benefit",
+            "Serverless compute"
+        ],
+        "right": [
+            "Scans large data",
+            "Maximum boost",
+            "Faster vs credits",
+            "Additional resources"
+        ]
+    },
+    {
+        "q": "Query acceleration is billed separately from warehouse compute.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's result cache?",
+        "type": "mcq",
+        "o": [
+            "Cached query results returned without recomputation",
+            "Temporary table storage",
+            "Warehouse memory",
+            "Stage file cache"
+        ]
+    },
+    {
+        "q": "Result cache returns results in _____ when available.",
+        "type": "fill_blank",
+        "answers": [
+            "milliseconds"
+        ],
+        "other_options": [
+            "minutes",
+            "hours",
+            "days"
+        ]
+    },
+    {
+        "q": "Which condition invalidates the result cache?",
+        "type": "mcq",
+        "o": [
+            "Underlying data changes",
+            "User logs out",
+            "Warehouse restarts",
+            "Time zone changes"
+        ]
+    },
+    {
+        "q": "Match the cache type with its scope:",
+        "type": "match",
+        "left": [
+            "Result cache",
+            "Metadata cache",
+            "Local disk cache",
+            "Remote disk cache"
+        ],
+        "right": [
+            "Query results",
+            "Table info",
+            "Warehouse SSD",
+            "S3 data"
+        ]
+    },
+    {
+        "q": "Rearrange the query execution priority:",
+        "type": "rearrange",
+        "words": [
+            "Check Result Cache",
+            "Check Metadata Cache",
+            "Check Local Disk Cache",
+            "Read Remote Storage"
+        ]
+    },
+    {
+        "q": "Result cache is free and consumes no credits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is metadata caching in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Cloud services layer caching of table statistics",
+            "User data caching",
+            "Query result storage",
+            "File system cache"
+        ]
+    },
+    {
+        "q": "Metadata cache stores table _____ for query optimization.",
+        "type": "fill_blank",
+        "answers": [
+            "statistics"
+        ],
+        "other_options": [
+            "data",
+            "indexes",
+            "triggers"
+        ]
+    },
+    {
+        "q": "Which metadata enables partition pruning?",
+        "type": "mcq",
+        "o": [
+            "Min/max values per micropartition",
+            "Table names",
+            "Column data types",
+            "User permissions"
+        ]
+    },
+    {
+        "q": "Match the metadata type with its purpose:",
+        "type": "match",
+        "left": [
+            "Row count",
+            "Distinct count",
+            "Min/max values",
+            "Null count"
+        ],
+        "right": [
+            "Table size",
+            "Cardinality",
+            "Partition pruning",
+            "Data quality"
+        ]
+    },
+    {
+        "q": "Metadata-based optimizations happen automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a transient table in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A table with no Fail-safe period for temporary data",
+            "A permanent archive table",
+            "A replicated table",
+            "A secure table"
+        ]
+    },
+    {
+        "q": "Transient tables have _____ Time Travel and no Fail-safe.",
+        "type": "fill_blank",
+        "answers": [
+            "limited"
+        ],
+        "other_options": [
+            "extended",
+            "enhanced",
+            "permanent"
+        ]
+    },
+    {
+        "q": "Which use case fits transient tables?",
+        "type": "mcq",
+        "o": [
+            "Staging data that does not need long-term recovery",
+            "Critical business data",
+            "Regulatory compliance data",
+            "Long-term analytics"
+        ]
+    },
+    {
+        "q": "Match the table type with its data protection:",
+        "type": "match",
+        "left": [
+            "Permanent",
+            "Transient",
+            "Temporary",
+            "External"
+        ],
+        "right": [
+            "Full TT + Fail-safe",
+            "Limited TT, no Fail-safe",
+            "Session only",
+            "Read-only"
+        ]
+    },
+    {
+        "q": "Rearrange the table types by data protection level:",
+        "type": "rearrange",
+        "words": [
+            "Permanent (highest)",
+            "Transient (limited)",
+            "Temporary (session)",
+            "External (none)"
+        ]
+    },
+    {
+        "q": "Transient tables reduce storage costs for temporary data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a temporary table in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A table that exists only for the current session",
+            "A permanent table",
+            "A replicated table",
+            "A shared table"
+        ]
+    },
+    {
+        "q": "Temporary tables are automatically _____ when the session ends.",
+        "type": "fill_blank",
+        "answers": [
+            "dropped"
+        ],
+        "other_options": [
+            "backed up",
+            "cloned",
+            "shared"
+        ]
+    },
+    {
+        "q": "Which visibility does a temporary table have?",
+        "type": "mcq",
+        "o": [
+            "Only visible within the creating session",
+            "Visible to all users",
+            "Visible to all roles",
+            "Visible across accounts"
+        ]
+    },
+    {
+        "q": "Match the temporary table feature with its behavior:",
+        "type": "match",
+        "left": [
+            "Session scope",
+            "No persistence",
+            "No Time Travel",
+            "No Fail-safe"
+        ],
+        "right": [
+            "Current session only",
+            "Auto-deleted",
+            "No history access",
+            "No recovery"
+        ]
+    },
+    {
+        "q": "Temporary tables are ideal for intermediate processing results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is an external table in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A table that references data in external cloud storage",
+            "A table in another database",
+            "A table in another account",
+            "A temporary table"
+        ]
+    },
+    {
+        "q": "External tables are _____ only in Snowflake.",
+        "type": "fill_blank",
+        "answers": [
+            "read"
+        ],
+        "other_options": [
+            "write",
+            "update",
+            "delete"
+        ]
+    },
+    {
+        "q": "Which storage locations can external tables reference?",
+        "type": "mcq",
+        "o": [
+            "S3, Azure Blob, and GCS buckets",
+            "Only Snowflake internal storage",
+            "Only local file systems",
+            "Only FTP servers"
+        ]
+    },
+    {
+        "q": "Match the external table component with its function:",
+        "type": "match",
+        "left": [
+            "External stage",
+            "File format",
+            "Partition columns",
+            "Refresh"
+        ],
+        "right": [
+            "Cloud storage location",
+            "Data structure",
+            "Virtual partitions",
+            "Metadata update"
+        ]
+    },
+    {
+        "q": "Rearrange the external table setup workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create External Stage",
+            "Define File Format",
+            "Create External Table",
+            "Query External Data"
+        ]
+    },
+    {
+        "q": "External tables support Snowflake's query engine on external data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data masking in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Column-level security that hides sensitive data from unauthorized users",
+            "Data compression",
+            "Data loading",
+            "Data sharing"
+        ]
+    },
+    {
+        "q": "Dynamic data masking policies apply at _____ time.",
+        "type": "fill_blank",
+        "answers": [
+            "query"
+        ],
+        "other_options": [
+            "load",
+            "storage",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which users can see the original unmasked data?",
+        "type": "mcq",
+        "o": [
+            "Users with roles exempted in the masking policy",
+            "All users",
+            "No users",
+            "Only ACCOUNTADMIN"
+        ]
+    },
+    {
+        "q": "Match the masking type with its output:",
+        "type": "match",
+        "left": [
+            "Full mask",
+            "Partial mask",
+            "Hash mask",
+            "Null mask"
+        ],
+        "right": [
+            "Replace entirely",
+            "Show partial value",
+            "Cryptographic hash",
+            "Return NULL"
+        ]
+    },
+    {
+        "q": "Dynamic data masking protects PII without altering stored data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is row access policy in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Row-level security that filters rows based on user context",
+            "Column-level security",
+            "Network security",
+            "Authentication policy"
+        ]
+    },
+    {
+        "q": "Row access policies filter data at _____ time.",
+        "type": "fill_blank",
+        "answers": [
+            "query"
+        ],
+        "other_options": [
+            "load",
+            "storage",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which function determines user context in row policies?",
+        "type": "mcq",
+        "o": [
+            "CURRENT_ROLE() or CURRENT_USER() functions",
+            "No context functions available",
+            "Only timestamps",
+            "Only column values"
+        ]
+    },
+    {
+        "q": "Match the security policy with its scope:",
+        "type": "match",
+        "left": [
+            "Masking policy",
+            "Row access policy",
+            "Network policy",
+            "Object privilege"
+        ],
+        "right": [
+            "Column values",
+            "Row visibility",
+            "IP restrictions",
+            "Object access"
+        ]
+    },
+    {
+        "q": "Rearrange the row security implementation steps:",
+        "type": "rearrange",
+        "words": [
+            "Create Policy",
+            "Define Conditions",
+            "Apply to Table",
+            "Test Access"
+        ]
+    },
+    {
+        "q": "Row access policies enable multi-tenant data isolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is network policy in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "IP-based access control restricting connections",
+            "Data encryption policy",
+            "Query rate limiting",
+            "Storage quotas"
+        ]
+    },
+    {
+        "q": "Network policies use _____ IP addresses for access control.",
+        "type": "fill_blank",
+        "answers": [
+            "allowed/blocked"
+        ],
+        "other_options": [
+            "encrypted",
+            "compressed",
+            "cached"
+        ]
+    },
+    {
+        "q": "Which scope can network policies apply to?",
+        "type": "mcq",
+        "o": [
+            "Account level or user level",
+            "Only table level",
+            "Only database level",
+            "Only schema level"
+        ]
+    },
+    {
+        "q": "Match the network policy component with its function:",
+        "type": "match",
+        "left": [
+            "ALLOWED_IP_LIST",
+            "BLOCKED_IP_LIST",
+            "Account policy",
+            "User policy"
+        ],
+        "right": [
+            "Permitted access",
+            "Denied access",
+            "Default policy",
+            "Override policy"
+        ]
+    },
+    {
+        "q": "Network policies provide defense-in-depth security.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Key Pair authentication?",
+        "type": "mcq",
+        "o": [
+            "RSA key-based authentication without passwords",
+            "Password-only authentication",
+            "SMS-based authentication",
+            "Email-based authentication"
+        ]
+    },
+    {
+        "q": "Key pair authentication uses public and _____ keys.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "shared",
+            "symmetric",
+            "temporary"
+        ]
+    },
+    {
+        "q": "Where is the public key stored for authentication?",
+        "type": "mcq",
+        "o": [
+            "In Snowflake as a user property",
+            "Only on local machine",
+            "In cloud storage",
+            "In email"
+        ]
+    },
+    {
+        "q": "Match the authentication method with its use case:",
+        "type": "match",
+        "left": [
+            "Password",
+            "Key pair",
+            "SSO/SAML",
+            "MFA"
+        ],
+        "right": [
+            "Interactive login",
+            "Service accounts",
+            "Corporate identity",
+            "Additional security"
+        ]
+    },
+    {
+        "q": "Rearrange the key pair authentication setup:",
+        "type": "rearrange",
+        "words": [
+            "Generate Key Pair",
+            "Assign Public Key to User",
+            "Configure Client",
+            "Authenticate with Private Key"
+        ]
+    },
+    {
+        "q": "Key pair authentication is recommended for automation and service accounts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's SSO integration?",
+        "type": "mcq",
+        "o": [
+            "SAML-based Single Sign-On with identity providers",
+            "Password synchronization",
+            "Database replication",
+            "Data sharing"
+        ]
+    },
+    {
+        "q": "SSO integrates with identity providers using _____.",
+        "type": "fill_blank",
+        "answers": [
+            "SAML 2.0"
+        ],
+        "other_options": [
+            "FTP",
+            "REST API",
+            "JDBC"
+        ]
+    },
+    {
+        "q": "Which identity provider types are supported?",
+        "type": "mcq",
+        "o": [
+            "Okta, Azure AD, ADFS, and other SAML 2.0 providers",
+            "Only custom providers",
+            "No external providers",
+            "Only local authentication"
+        ]
+    },
+    {
+        "q": "Match the SSO component with its role:",
+        "type": "match",
+        "left": [
+            "Identity Provider",
+            "Service Provider",
+            "SAML assertion",
+            "User provisioning"
+        ],
+        "right": [
+            "Corporate login",
+            "Snowflake",
+            "Authentication token",
+            "Auto-create users"
+        ]
+    },
+    {
+        "q": "SSO reduces password management overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is MFA in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Multi-factor authentication requiring additional verification",
+            "Multiple file allocation",
+            "Metadata format adjustment",
+            "Memory factor analysis"
+        ]
+    },
+    {
+        "q": "MFA adds a second authentication _____ beyond password.",
+        "type": "fill_blank",
+        "answers": [
+            "factor"
+        ],
+        "other_options": [
+            "field",
+            "form",
+            "file"
+        ]
+    },
+    {
+        "q": "Which MFA method does Snowflake support?",
+        "type": "mcq",
+        "o": [
+            "Duo Security (push, SMS, or token)",
+            "Only hardware tokens",
+            "Only SMS",
+            "No MFA support"
+        ]
+    },
+    {
+        "q": "Match the MFA feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Push notification",
+            "SMS code",
+            "Token code",
+            "Bypass policy"
+        ],
+        "right": [
+            "Easy approval",
+            "Phone-based",
+            "Offline capable",
+            "Emergency access"
+        ]
+    },
+    {
+        "q": "Rearrange the MFA enrollment steps:",
+        "type": "rearrange",
+        "words": [
+            "User Logs In",
+            "Prompted for MFA",
+            "Enroll Device",
+            "Complete MFA"
+        ]
+    },
+    {
+        "q": "MFA can be required for specific roles or all users.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Query History view in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "An interface showing executed queries with performance metrics",
+            "A data backup system",
+            "A query scheduler",
+            "A data loading tool"
+        ]
+    },
+    {
+        "q": "Query History shows query _____ and resource consumption.",
+        "type": "fill_blank",
+        "answers": [
+            "performance"
+        ],
+        "other_options": [
+            "syntax",
+            "security",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which information is available in Query History?",
+        "type": "mcq",
+        "o": [
+            "Execution time, data scanned, rows returned, and errors",
+            "Only query text",
+            "Only timestamps",
+            "Only user names"
+        ]
+    },
+    {
+        "q": "Match the Query History metric with its insight:",
+        "type": "match",
+        "left": [
+            "Execution time",
+            "Bytes scanned",
+            "Partitions pruned",
+            "Queue time"
+        ],
+        "right": [
+            "Query speed",
+            "Data processed",
+            "Pruning efficiency",
+            "Resource contention"
+        ]
+    },
+    {
+        "q": "Query History helps identify slow-running queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Query Profile in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Detailed execution plan and statistics for a specific query",
+            "User profile settings",
+            "Database configuration",
+            "Role permissions"
+        ]
+    },
+    {
+        "q": "Query Profile shows query execution as a _____ structure.",
+        "type": "fill_blank",
+        "answers": [
+            "tree"
+        ],
+        "other_options": [
+            "list",
+            "table",
+            "graph"
+        ]
+    },
+    {
+        "q": "Which operator types appear in Query Profile?",
+        "type": "mcq",
+        "o": [
+            "TableScan, Filter, Join, Aggregate, and more",
+            "Only SELECT",
+            "Only FROM",
+            "Only WHERE"
+        ]
+    },
+    {
+        "q": "Match the Query Profile element with its information:",
+        "type": "match",
+        "left": [
+            "Operator nodes",
+            "Execution time",
+            "Rows processed",
+            "Spillage"
+        ],
+        "right": [
+            "Processing steps",
+            "Duration per step",
+            "Data volume",
+            "Memory issues"
+        ]
+    },
+    {
+        "q": "Rearrange the query optimization analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "Run Query",
+            "View Query Profile",
+            "Identify Bottlenecks",
+            "Optimize Query"
+        ]
+    },
+    {
+        "q": "Query Profile reveals expensive operations for optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the resource monitor in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A feature tracking credit usage and setting spending limits",
+            "A CPU monitor",
+            "A disk space tracker",
+            "A network monitor"
+        ]
+    },
+    {
+        "q": "Resource monitors can trigger _____ when limits are reached.",
+        "type": "fill_blank",
+        "answers": [
+            "actions"
+        ],
+        "other_options": [
+            "emails only",
+            "nothing",
+            "backups"
+        ]
+    },
+    {
+        "q": "Which action can a resource monitor take at 100% quota?",
+        "type": "mcq",
+        "o": [
+            "Suspend warehouses, notify users, or both",
+            "Only send email",
+            "Only log event",
+            "No actions possible"
+        ]
+    },
+    {
+        "q": "Match the resource monitor threshold with its typical action:",
+        "type": "match",
+        "left": [
+            "50%",
+            "75%",
+            "90%",
+            "100%"
+        ],
+        "right": [
+            "Notify warning",
+            "Notify alert",
+            "Suspend soon",
+            "Suspend immediately"
+        ]
+    },
+    {
+        "q": "Resource monitors help control unexpected credit consumption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is database replication in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Copying databases across accounts or regions for DR",
+            "Table backup",
+            "Data masking",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "Replication creates _____ copies for disaster recovery.",
+        "type": "fill_blank",
+        "answers": [
+            "secondary"
+        ],
+        "other_options": [
+            "temporary",
+            "cached",
+            "encrypted"
+        ]
+    },
+    {
+        "q": "Which command refreshes a replicated database?",
+        "type": "mcq",
+        "o": [
+            "ALTER DATABASE ... REFRESH",
+            "COPY DATABASE",
+            "CLONE DATABASE",
+            "SYNC DATABASE"
+        ]
+    },
+    {
+        "q": "Match the replication feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Primary database",
+            "Secondary database",
+            "Failover",
+            "Replication group"
+        ],
+        "right": [
+            "Source data",
+            "Read replica",
+            "Promote secondary",
+            "Multiple objects"
+        ]
+    },
+    {
+        "q": "Rearrange the replication setup workflow:",
+        "type": "rearrange",
+        "words": [
+            "Enable Replication",
+            "Create Secondary",
+            "Schedule Refresh",
+            "Test Failover"
+        ]
+    },
+    {
+        "q": "Cross-region replication supports global disaster recovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is account replication in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Replicating account-level objects across accounts",
+            "User data backup",
+            "Query logging",
+            "Warehouse cloning"
+        ]
+    },
+    {
+        "q": "Account replication includes users, roles, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "warehouses"
+        ],
+        "other_options": [
+            "queries",
+            "results",
+            "statistics"
+        ]
+    },
+    {
+        "q": "Which objects can be included in account replication?",
+        "type": "mcq",
+        "o": [
+            "Users, roles, warehouses, databases, and integrations",
+            "Only databases",
+            "Only users",
+            "Only warehouses"
+        ]
+    },
+    {
+        "q": "Match the replication level with its scope:",
+        "type": "match",
+        "left": [
+            "Database replication",
+            "Account replication",
+            "Share replication",
+            "Replication group"
+        ],
+        "right": [
+            "Single database",
+            "Account objects",
+            "Shared data",
+            "Multiple objects"
+        ]
+    },
+    {
+        "q": "Account replication enables complete business continuity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Data Clean Rooms feature?",
+        "type": "mcq",
+        "o": [
+            "Secure collaboration environments for private data analysis",
+            "Data cleaning utilities",
+            "Data compression rooms",
+            "Storage optimization"
+        ]
+    },
+    {
+        "q": "Clean rooms allow analysis without exposing _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "underlying"
+        ],
+        "other_options": [
+            "aggregate",
+            "public",
+            "cached"
+        ]
+    },
+    {
+        "q": "Which use case benefits from data clean rooms?",
+        "type": "mcq",
+        "o": [
+            "Cross-company analytics on combined datasets",
+            "Internal data backup",
+            "Query caching",
+            "Storage optimization"
+        ]
+    },
+    {
+        "q": "Match the clean room concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Provider data",
+            "Consumer data",
+            "Overlap analysis",
+            "Privacy rules"
+        ],
+        "right": [
+            "Source dataset",
+            "Querying party's data",
+            "Common records",
+            "Data protection"
+        ]
+    },
+    {
+        "q": "Data clean rooms enable privacy-preserving collaboration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake Cortex?",
+        "type": "mcq",
+        "o": [
+            "AI and ML features built into Snowflake",
+            "A data loading tool",
+            "A query optimizer",
+            "A security feature"
+        ]
+    },
+    {
+        "q": "Cortex provides _____ and machine learning functions.",
+        "type": "fill_blank",
+        "answers": [
+            "AI"
+        ],
+        "other_options": [
+            "ETL",
+            "backup",
+            "security"
+        ]
+    },
+    {
+        "q": "Which Cortex function analyzes text sentiment?",
+        "type": "mcq",
+        "o": [
+            "SENTIMENT() function",
+            "TEXT_ANALYZE()",
+            "PARSE_TEXT()",
+            "READ_TEXT()"
+        ]
+    },
+    {
+        "q": "Match the Cortex capability with its function:",
+        "type": "match",
+        "left": [
+            "Sentiment analysis",
+            "Text summarization",
+            "Translation",
+            "Classification"
+        ],
+        "right": [
+            "Positive/negative scoring",
+            "Condense content",
+            "Language conversion",
+            "Category prediction"
+        ]
+    },
+    {
+        "q": "Rearrange the Cortex ML workflow:",
+        "type": "rearrange",
+        "words": [
+            "Prepare Data",
+            "Choose Function",
+            "Apply Cortex",
+            "Analyze Results"
+        ]
+    },
+    {
+        "q": "Cortex functions run directly in SQL queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowpark in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A developer framework for Python, Java, and Scala",
+            "A data loading tool",
+            "A security feature",
+            "A storage format"
+        ]
+    },
+    {
+        "q": "Snowpark allows writing _____ code that runs on Snowflake.",
+        "type": "fill_blank",
+        "answers": [
+            "DataFrame"
+        ],
+        "other_options": [
+            "ETL",
+            "backup",
+            "security"
+        ]
+    },
+    {
+        "q": "Which languages does Snowpark support?",
+        "type": "mcq",
+        "o": [
+            "Python, Java, and Scala",
+            "Only SQL",
+            "Only JavaScript",
+            "Only R"
+        ]
+    },
+    {
+        "q": "Match the Snowpark feature with its capability:",
+        "type": "match",
+        "left": [
+            "DataFrame API",
+            "UDFs",
+            "Stored Procedures",
+            "ML integration"
+        ],
+        "right": [
+            "Data manipulation",
+            "Custom functions",
+            "Workflow logic",
+            "Model training"
+        ]
+    },
+    {
+        "q": "Snowpark enables server-side execution of Python code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's native application framework?",
+        "type": "mcq",
+        "o": [
+            "A way to build and distribute applications on Snowflake",
+            "A mobile app builder",
+            "A web hosting service",
+            "A security scanner"
+        ]
+    },
+    {
+        "q": "Native apps can be distributed via the _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Marketplace"
+        ],
+        "other_options": [
+            "Internet",
+            "Email",
+            "FTP"
+        ]
+    },
+    {
+        "q": "Which components can a native app include?",
+        "type": "mcq",
+        "o": [
+            "Stored procedures, UDFs, Streamlit dashboards, and data",
+            "Only tables",
+            "Only views",
+            "Only queries"
+        ]
+    },
+    {
+        "q": "Match the native app role with its function:",
+        "type": "match",
+        "left": [
+            "Provider",
+            "Consumer",
+            "Application package",
+            "Installed app"
+        ],
+        "right": [
+            "Creates app",
+            "Uses app",
+            "App template",
+            "Running instance"
+        ]
+    },
+    {
+        "q": "Rearrange the native app lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Build App",
+            "Package App",
+            "Publish to Marketplace",
+            "Consumer Installs",
+            "App Runs"
+        ]
+    },
+    {
+        "q": "Native apps enable data monetization and distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Streamlit in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A Python framework for building interactive data apps",
+            "A data loading tool",
+            "A query optimizer",
+            "A security feature"
+        ]
+    },
+    {
+        "q": "Streamlit apps in Snowflake run on _____ compute.",
+        "type": "fill_blank",
+        "answers": [
+            "serverless"
+        ],
+        "other_options": [
+            "warehouse",
+            "external",
+            "local"
+        ]
+    },
+    {
+        "q": "Which data visualization is possible with Streamlit?",
+        "type": "mcq",
+        "o": [
+            "Charts, tables, maps, and interactive widgets",
+            "Only text output",
+            "Only tables",
+            "No visualization"
+        ]
+    },
+    {
+        "q": "Match the Streamlit component with its purpose:",
+        "type": "match",
+        "left": [
+            "st.dataframe",
+            "st.line_chart",
+            "st.slider",
+            "st.button"
+        ],
+        "right": [
+            "Display table",
+            "Show chart",
+            "User input",
+            "Trigger action"
+        ]
+    },
+    {
+        "q": "Streamlit enables rapid development of data applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the INFORMATION_SCHEMA in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Metadata views about database objects",
+            "User data storage",
+            "Query results cache",
+            "Backup location"
+        ]
+    },
+    {
+        "q": "INFORMATION_SCHEMA provides metadata about tables, columns, and _____.",
+        "type": "fill_blank",
+        "answers": [
+            "views"
+        ],
+        "other_options": [
+            "backups",
+            "caches",
+            "logs"
+        ]
+    },
+    {
+        "q": "Which view lists all tables in a schema?",
+        "type": "mcq",
+        "o": [
+            "INFORMATION_SCHEMA.TABLES",
+            "SYS.TABLES",
+            "DBA_TABLES",
+            "ALL_TABLES"
+        ]
+    },
+    {
+        "q": "Match the schema view with its content:",
+        "type": "match",
+        "left": [
+            "TABLES",
+            "COLUMNS",
+            "VIEWS",
+            "FUNCTIONS"
+        ],
+        "right": [
+            "Table metadata",
+            "Column details",
+            "View definitions",
+            "UDF information"
+        ]
+    },
+    {
+        "q": "Rearrange the metadata discovery workflow:",
+        "type": "rearrange",
+        "words": [
+            "Query INFORMATION_SCHEMA",
+            "Find Object Details",
+            "Review Permissions",
+            "Access Data"
+        ]
+    },
+    {
+        "q": "INFORMATION_SCHEMA simplifies metadata discovery and documentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the ACCOUNT_USAGE schema in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Historical metadata with extended retention for account analysis",
+            "Current session information only",
+            "User preferences",
+            "Query cache"
+        ]
+    },
+    {
+        "q": "ACCOUNT_USAGE retains data for up to _____ year.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "7 days",
+            "30 days",
+            "90 days"
+        ]
+    },
+    {
+        "q": "Which analysis is ACCOUNT_USAGE ideal for?",
+        "type": "mcq",
+        "o": [
+            "Long-term usage trends and billing analysis",
+            "Real-time monitoring",
+            "Query execution",
+            "Data loading"
+        ]
+    },
+    {
+        "q": "Match the ACCOUNT_USAGE view with its purpose:",
+        "type": "match",
+        "left": [
+            "QUERY_HISTORY",
+            "LOGIN_HISTORY",
+            "WAREHOUSE_METERING_HISTORY",
+            "STORAGE_USAGE"
+        ],
+        "right": [
+            "Query performance",
+            "Authentication audit",
+            "Credit consumption",
+            "Data storage"
+        ]
+    },
+    {
+        "q": "ACCOUNT_USAGE has slight latency compared to real-time views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the recommended practice for warehouse sizing?",
+        "type": "mcq",
+        "o": [
+            "Start small and scale up based on query performance",
+            "Always use the largest size",
+            "Use fixed size for all workloads",
+            "Never change warehouse size"
+        ]
+    },
+    {
+        "q": "Query _____ time indicates a warehouse may be undersized.",
+        "type": "fill_blank",
+        "answers": [
+            "queue"
+        ],
+        "other_options": [
+            "execution",
+            "compile",
+            "cache"
+        ]
+    },
+    {
+        "q": "Which metric helps determine optimal warehouse size?",
+        "type": "mcq",
+        "o": [
+            "Query execution time relative to warehouse size",
+            "Table count",
+            "User count",
+            "Schema count"
+        ]
+    },
+    {
+        "q": "Match the warehouse sizing strategy with its goal:",
+        "type": "match",
+        "left": [
+            "Size up",
+            "Multi-cluster",
+            "Dedicated warehouse",
+            "Auto-suspend"
+        ],
+        "right": [
+            "Complex queries",
+            "Concurrency",
+            "Workload isolation",
+            "Cost control"
+        ]
+    },
+    {
+        "q": "Rearrange the warehouse optimization process:",
+        "type": "rearrange",
+        "words": [
+            "Analyze Query Profile",
+            "Identify Bottlenecks",
+            "Adjust Warehouse Size",
+            "Monitor Performance"
+        ]
+    },
+    {
+        "q": "Right-sizing warehouses balances performance and cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is workload management in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Separating different workloads to dedicated warehouses",
+            "Query caching",
+            "Data loading",
+            "User management"
+        ]
+    },
+    {
+        "q": "Workload isolation prevents _____ between different user groups.",
+        "type": "fill_blank",
+        "answers": [
+            "contention"
+        ],
+        "other_options": [
+            "sharing",
+            "caching",
+            "compression"
+        ]
+    },
+    {
+        "q": "Which workloads should typically be separated?",
+        "type": "mcq",
+        "o": [
+            "ETL, ad-hoc queries, and BI dashboards",
+            "No separation needed",
+            "All in one warehouse",
+            "Only large queries separated"
+        ]
+    },
+    {
+        "q": "Match the workload type with its warehouse strategy:",
+        "type": "match",
+        "left": [
+            "ETL loading",
+            "Dashboard queries",
+            "Data science",
+            "Ad-hoc exploration"
+        ],
+        "right": [
+            "Scheduled, auto-suspend",
+            "Always-on, fast resume",
+            "Large, flexible",
+            "On-demand, cost-efficient"
+        ]
+    },
+    {
+        "q": "Workload management improves predictable performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What best practice optimizes Snowflake storage costs?",
+        "type": "mcq",
+        "o": [
+            "Use transient/temporary tables for non-critical data",
+            "Store everything in permanent tables",
+            "Disable compression",
+            "Keep all historical versions"
+        ]
+    },
+    {
+        "q": "Reducing _____ Travel retention lowers storage costs.",
+        "type": "fill_blank",
+        "answers": [
+            "Time"
+        ],
+        "other_options": [
+            "Data",
+            "Query",
+            "User"
+        ]
+    },
+    {
+        "q": "Which storage practice increases costs unnecessarily?",
+        "type": "mcq",
+        "o": [
+            "Storing duplicate copies of data",
+            "Using zero-copy clones",
+            "Compressing data",
+            "Using transient tables"
+        ]
+    },
+    {
+        "q": "Match the storage optimization with its savings:",
+        "type": "match",
+        "left": [
+            "Zero-copy clone",
+            "Transient tables",
+            "Reduce Time Travel",
+            "Drop unused objects"
+        ],
+        "right": [
+            "Share storage",
+            "No Fail-safe cost",
+            "Less historical data",
+            "Eliminate storage"
+        ]
+    },
+    {
+        "q": "Rearrange the cost optimization priorities:",
+        "type": "rearrange",
+        "words": [
+            "Identify Unused Objects",
+            "Reduce Time Travel",
+            "Use Transient Tables",
+            "Monitor Storage Usage"
+        ]
+    },
+    {
+        "q": "Regular storage audits help control ongoing costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the data cloud concept in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A global network of connected Snowflake accounts for data sharing",
+            "A single data center",
+            "A local storage system",
+            "A backup service"
+        ]
+    },
+    {
+        "q": "The Data Cloud enables seamless _____ exchange across organizations.",
+        "type": "fill_blank",
+        "answers": [
+            "data"
+        ],
+        "other_options": [
+            "code",
+            "network",
+            "storage"
+        ]
+    },
+    {
+        "q": "Which industry benefits from Data Cloud for cross-company analytics?",
+        "type": "mcq",
+        "o": [
+            "All industries through secure data collaboration",
+            "Only technology companies",
+            "Only financial services",
+            "Only healthcare"
+        ]
+    },
+    {
+        "q": "Match the Data Cloud feature with its value:",
+        "type": "match",
+        "left": [
+            "Data Sharing",
+            "Marketplace",
+            "Clean Rooms",
+            "Native Apps"
+        ],
+        "right": [
+            "Direct sharing",
+            "Third-party data",
+            "Private collaboration",
+            "Packaged solutions"
+        ]
+    },
+    {
+        "q": "Rearrange the Data Cloud adoption stages:",
+        "type": "rearrange",
+        "words": [
+            "Internal Data Warehouse",
+            "Cross-team Sharing",
+            "External Data Exchange",
+            "Data Monetization"
+        ]
+    },
+    {
+        "q": "The Data Cloud breaks down data silos across organizations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is query profiling in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Analyzing query execution to identify performance bottlenecks",
+            "User authentication",
+            "Data loading",
+            "Storage management"
+        ]
+    },
+    {
+        "q": "Query profiling shows execution _____ for each operator.",
+        "type": "fill_blank",
+        "answers": [
+            "time"
+        ],
+        "other_options": [
+            "cost",
+            "size",
+            "count"
+        ]
+    },
+    {
+        "q": "Which issue can query profiling identify?",
+        "type": "mcq",
+        "o": [
+            "Expensive joins, full table scans, and data spillage",
+            "Only user errors",
+            "Only syntax issues",
+            "Only permission problems"
+        ]
+    },
+    {
+        "q": "Match the profiling indicator with its meaning:",
+        "type": "match",
+        "left": [
+            "Bytes spilled",
+            "Bytes scanned",
+            "Partitions pruned",
+            "Rows returned"
+        ],
+        "right": [
+            "Memory overflow",
+            "Data read",
+            "Optimization benefit",
+            "Query results"
+        ]
+    },
+    {
+        "q": "Query profiling is essential for performance tuning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What causes data spillage in query execution?",
+        "type": "mcq",
+        "o": [
+            "Query processing requires more memory than warehouse has available",
+            "Storage full",
+            "Network issues",
+            "User errors"
+        ]
+    },
+    {
+        "q": "Data spillage to _____ storage is slower than memory processing.",
+        "type": "fill_blank",
+        "answers": [
+            "local disk"
+        ],
+        "other_options": [
+            "cache",
+            "network",
+            "archive"
+        ]
+    },
+    {
+        "q": "Which approach reduces data spillage?",
+        "type": "mcq",
+        "o": [
+            "Use larger warehouse or optimize query to process less data",
+            "Ignore the issue",
+            "Reduce warehouse size",
+            "Add more users"
+        ]
+    },
+    {
+        "q": "Match the spillage type with its performance impact:",
+        "type": "match",
+        "left": [
+            "Local disk spill",
+            "Remote disk spill",
+            "No spill",
+            "Hash spill"
+        ],
+        "right": [
+            "Moderate slowdown",
+            "Significant slowdown",
+            "Optimal",
+            "Join processing issue"
+        ]
+    },
+    {
+        "q": "Rearrange spillage severity from least to most impactful:",
+        "type": "rearrange",
+        "words": [
+            "No Spillage",
+            "Local Disk Spill",
+            "Remote Disk Spill"
+        ]
+    },
+    {
+        "q": "Monitoring spillage helps identify memory-constrained queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of clustering depth in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Measure how well-organized table data is for query pruning",
+            "Count clusters",
+            "Measure storage",
+            "Track queries"
+        ]
+    },
+    {
+        "q": "A clustering depth of _____ indicates optimal organization.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "10",
+            "100",
+            "1000"
+        ]
+    },
+    {
+        "q": "Which command displays clustering information?",
+        "type": "mcq",
+        "o": [
+            "SYSTEM$CLUSTERING_INFORMATION",
+            "SHOW CLUSTERS",
+            "GET CLUSTERING",
+            "DESCRIBE CLUSTER"
+        ]
+    },
+    {
+        "q": "Match the clustering metric with its interpretation:",
+        "type": "match",
+        "left": [
+            "Depth 1",
+            "Depth 10+",
+            "Overlap",
+            "Constant width"
+        ],
+        "right": [
+            "Perfect clustering",
+            "Poor clustering",
+            "Partition redundancy",
+            "Partition size uniformity"
+        ]
+    },
+    {
+        "q": "Tables with high clustering depth benefit from reclustering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the role of micropartitions in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Automatic data units for storage and query optimization",
+            "User-defined partitions",
+            "Manual data segments",
+            "Security boundaries"
+        ]
+    },
+    {
+        "q": "Micropartitions contain contiguous _____ of storage.",
+        "type": "fill_blank",
+        "answers": [
+            "blocks"
+        ],
+        "other_options": [
+            "files",
+            "tables",
+            "schemas"
+        ]
+    },
+    {
+        "q": "What size are Snowflake micropartitions typically?",
+        "type": "mcq",
+        "o": [
+            "50-500 MB compressed",
+            "1 KB",
+            "1 GB",
+            "10 GB"
+        ]
+    },
+    {
+        "q": "Match the micropartition feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Automatic creation",
+            "Metadata tracking",
+            "Column storage",
+            "Immutability"
+        ],
+        "right": [
+            "No admin overhead",
+            "Query pruning",
+            "Efficient scans",
+            "Consistent reads"
+        ]
+    },
+    {
+        "q": "Rearrange the micropartition lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Data Loaded",
+            "Micropartition Created",
+            "Metadata Added",
+            "Query Pruning Available"
+        ]
+    },
+    {
+        "q": "Micropartitions are the fundamental unit of Snowflake storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is partition pruning in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Skipping irrelevant micropartitions during query execution",
+            "Deleting old partitions",
+            "Creating new partitions",
+            "Merging partitions"
+        ]
+    },
+    {
+        "q": "Partition pruning uses _____ metadata to skip data.",
+        "type": "fill_blank",
+        "answers": [
+            "min/max"
+        ],
+        "other_options": [
+            "user",
+            "schema",
+            "network"
+        ]
+    },
+    {
+        "q": "Which WHERE clause enables effective partition pruning?",
+        "type": "mcq",
+        "o": [
+            "Filters on clustered columns with equality or range predicates",
+            "Functions on all columns",
+            "No WHERE clause",
+            "Complex nested subqueries"
+        ]
+    },
+    {
+        "q": "Match the pruning scenario with its effectiveness:",
+        "type": "match",
+        "left": [
+            "Date range filter",
+            "Full scan",
+            "Equality on cluster key",
+            "Function on column"
+        ],
+        "right": [
+            "Good pruning",
+            "No pruning",
+            "Optimal pruning",
+            "May prevent pruning"
+        ]
+    },
+    {
+        "q": "Effective partition pruning dramatically reduces query scan volume.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a sequence in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "An object that generates unique numeric values",
+            "A list of tables",
+            "A type of warehouse",
+            "A security policy"
+        ]
+    },
+    {
+        "q": "Sequences generate _____ increasing values.",
+        "type": "fill_blank",
+        "answers": [
+            "monotonically"
+        ],
+        "other_options": [
+            "randomly",
+            "decreasing",
+            "constant"
+        ]
+    },
+    {
+        "q": "Which command retrieves the next sequence value?",
+        "type": "mcq",
+        "o": [
+            "sequence_name.NEXTVAL",
+            "GET_NEXT(sequence)",
+            "sequence++",
+            "NEXT sequence"
+        ]
+    },
+    {
+        "q": "Match the sequence attribute with its meaning:",
+        "type": "match",
+        "left": [
+            "START",
+            "INCREMENT",
+            "ORDER",
+            "NOORDER"
+        ],
+        "right": [
+            "Initial value",
+            "Step size",
+            "Guaranteed sequence",
+            "Faster performance"
+        ]
+    },
+    {
+        "q": "Rearrange the sequence usage workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Sequence",
+            "Use NEXTVAL",
+            "Insert with Sequence",
+            "Unique Keys Generated"
+        ]
+    },
+    {
+        "q": "Sequences are useful for generating surrogate keys.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the MERGE statement in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A statement that performs INSERT, UPDATE, and DELETE in one operation",
+            "A join-only operation",
+            "A create table statement",
+            "A security command"
+        ]
+    },
+    {
+        "q": "MERGE enables _____ loading patterns efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "upsert"
+        ],
+        "other_options": [
+            "delete",
+            "select",
+            "create"
+        ]
+    },
+    {
+        "q": "Which clause defines matching logic in MERGE?",
+        "type": "mcq",
+        "o": [
+            "WHEN MATCHED and WHEN NOT MATCHED clauses",
+            "WHERE only",
+            "JOIN only",
+            "ORDER BY"
+        ]
+    },
+    {
+        "q": "Match the MERGE clause with its action:",
+        "type": "match",
+        "left": [
+            "WHEN MATCHED THEN UPDATE",
+            "WHEN NOT MATCHED THEN INSERT",
+            "WHEN MATCHED THEN DELETE",
+            "ON clause"
+        ],
+        "right": [
+            "Update existing",
+            "Add new rows",
+            "Remove rows",
+            "Match condition"
+        ]
+    },
+    {
+        "q": "MERGE is essential for efficient CDC processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the QUALIFY clause in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A filter clause for window function results",
+            "A join condition",
+            "A table definition",
+            "A security filter"
+        ]
+    },
+    {
+        "q": "QUALIFY filters rows after _____ function evaluation.",
+        "type": "fill_blank",
+        "answers": [
+            "window"
+        ],
+        "other_options": [
+            "aggregate",
+            "scalar",
+            "table"
+        ]
+    },
+    {
+        "q": "Which pattern uses QUALIFY effectively?",
+        "type": "mcq",
+        "o": [
+            "Selecting first/last row per group with ROW_NUMBER",
+            "Simple SELECT",
+            "Table creation",
+            "Index building"
+        ]
+    },
+    {
+        "q": "Match the QUALIFY condition with its use:",
+        "type": "match",
+        "left": [
+            "ROW_NUMBER() = 1",
+            "RANK() <= 3",
+            "DENSE_RANK() = 1",
+            "LAG() IS NULL"
+        ],
+        "right": [
+            "First per group",
+            "Top 3 per group",
+            "All ties at top",
+            "First occurrence"
+        ]
+    },
+    {
+        "q": "Rearrange the query clauses in correct order:",
+        "type": "rearrange",
+        "words": [
+            "SELECT",
+            "FROM",
+            "WHERE",
+            "WINDOW Function",
+            "QUALIFY",
+            "ORDER BY"
+        ]
+    },
+    {
+        "q": "QUALIFY eliminates the need for subqueries in window filtering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the PIVOT function in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Transform rows into columns for crosstab analysis",
+            "Rotate table storage",
+            "Encrypt data",
+            "Compress data"
+        ]
+    },
+    {
+        "q": "PIVOT turns row values into _____ headers.",
+        "type": "fill_blank",
+        "answers": [
+            "column"
+        ],
+        "other_options": [
+            "row",
+            "index",
+            "table"
+        ]
+    },
+    {
+        "q": "Which aggregate function is commonly used with PIVOT?",
+        "type": "mcq",
+        "o": [
+            "SUM, COUNT, AVG, or any aggregate",
+            "Only SUM",
+            "Only COUNT",
+            "No aggregates allowed"
+        ]
+    },
+    {
+        "q": "Match the PIVOT component with its role:",
+        "type": "match",
+        "left": [
+            "Aggregate",
+            "FOR column",
+            "IN values",
+            "Result columns"
+        ],
+        "right": [
+            "Summarize data",
+            "Pivot column",
+            "Column values",
+            "New structure"
+        ]
+    },
+    {
+        "q": "PIVOT simplifies creating crosstab reports.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the UNPIVOT function in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Transform columns into rows for normalization",
+            "Merge tables",
+            "Delete columns",
+            "Create indexes"
+        ]
+    },
+    {
+        "q": "UNPIVOT converts columns into row _____.",
+        "type": "fill_blank",
+        "answers": [
+            "values"
+        ],
+        "other_options": [
+            "headers",
+            "indexes",
+            "keys"
+        ]
+    },
+    {
+        "q": "Which use case benefits from UNPIVOT?",
+        "type": "mcq",
+        "o": [
+            "Converting wide tables with repeated column patterns to normalized form",
+            "Creating wide tables",
+            "Adding columns",
+            "Deleting rows"
+        ]
+    },
+    {
+        "q": "Match the transformation with its function:",
+        "type": "match",
+        "left": [
+            "PIVOT",
+            "UNPIVOT",
+            "Crosstab",
+            "Normalization"
+        ],
+        "right": [
+            "Rows to columns",
+            "Columns to rows",
+            "Summary matrix",
+            "Reduce redundancy"
+        ]
+    },
+    {
+        "q": "Rearrange the data reshaping workflow:",
+        "type": "rearrange",
+        "words": [
+            "Analyze Source Structure",
+            "Determine Target Format",
+            "Apply PIVOT/UNPIVOT",
+            "Validate Results"
+        ]
+    },
+    {
+        "q": "UNPIVOT is useful for ELT transformation patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is a lateral flatten in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Expanding nested arrays into rows with access to outer table",
+            "Standard join",
+            "Table creation",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "LATERAL allows the subquery to reference _____ table columns.",
+        "type": "fill_blank",
+        "answers": [
+            "outer"
+        ],
+        "other_options": [
+            "inner",
+            "temp",
+            "system"
+        ]
+    },
+    {
+        "q": "Which syntax uses lateral flatten correctly?",
+        "type": "mcq",
+        "o": [
+            "FROM table t, LATERAL FLATTEN(input => t.array_col)",
+            "JOIN FLATTEN",
+            "CROSS FLATTEN",
+            "INNER FLATTEN"
+        ]
+    },
+    {
+        "q": "Match the FLATTEN output with its content:",
+        "type": "match",
+        "left": [
+            "VALUE",
+            "INDEX",
+            "KEY",
+            "PATH"
+        ],
+        "right": [
+            "Element data",
+            "Array position",
+            "Object key name",
+            "JSON path"
+        ]
+    },
+    {
+        "q": "LATERAL FLATTEN is essential for processing JSON arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is external network access in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Calling external APIs from Snowflake functions",
+            "VPN connection",
+            "Database link",
+            "File download"
+        ]
+    },
+    {
+        "q": "External network access is controlled by _____ objects.",
+        "type": "fill_blank",
+        "answers": [
+            "integration"
+        ],
+        "other_options": [
+            "role",
+            "stage",
+            "pipe"
+        ]
+    },
+    {
+        "q": "Which use case requires external network access?",
+        "type": "mcq",
+        "o": [
+            "Calling REST APIs or external services from UDFs",
+            "Local queries",
+            "Internal cloning",
+            "Time Travel"
+        ]
+    },
+    {
+        "q": "Match the integration type with its purpose:",
+        "type": "match",
+        "left": [
+            "API integration",
+            "Storage integration",
+            "Security integration",
+            "Notification integration"
+        ],
+        "right": [
+            "External APIs",
+            "Cloud storage",
+            "Authentication",
+            "Event alerts"
+        ]
+    },
+    {
+        "q": "Rearrange the external function setup:",
+        "type": "rearrange",
+        "words": [
+            "Create API Integration",
+            "Create External Function",
+            "Grant USAGE",
+            "Call Function"
+        ]
+    },
+    {
+        "q": "External functions enable hybrid cloud architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the event table in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A table that stores logs and telemetry from application code",
+            "A calendar table",
+            "A system log",
+            "A security audit"
+        ]
+    },
+    {
+        "q": "Event tables capture _____ from UDFs and procedures.",
+        "type": "fill_blank",
+        "answers": [
+            "logs"
+        ],
+        "other_options": [
+            "data",
+            "schema",
+            "storage"
+        ]
+    },
+    {
+        "q": "Which command creates an event table?",
+        "type": "mcq",
+        "o": [
+            "CREATE EVENT TABLE",
+            "CREATE LOG TABLE",
+            "CREATE AUDIT TABLE",
+            "CREATE TELEMETRY TABLE"
+        ]
+    },
+    {
+        "q": "Match the event table feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Log capture",
+            "Telemetry storage",
+            "Query debugging",
+            "UDF monitoring"
+        ],
+        "right": [
+            "Runtime logging",
+            "Metrics collection",
+            "Error analysis",
+            "Function performance"
+        ]
+    },
+    {
+        "q": "Event tables enable observability for Snowflake applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of object tagging in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Attaching metadata labels to database objects for governance",
+            "Naming objects",
+            "Creating indexes",
+            "Defining types"
+        ]
+    },
+    {
+        "q": "Tags enable data _____ and discovery across objects.",
+        "type": "fill_blank",
+        "answers": [
+            "classification"
+        ],
+        "other_options": [
+            "deletion",
+            "creation",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which command assigns a tag to a table?",
+        "type": "mcq",
+        "o": [
+            "ALTER TABLE ... SET TAG",
+            "ADD TAG",
+            "CREATE TAG ON",
+            "ASSIGN TAG TO"
+        ]
+    },
+    {
+        "q": "Match the tag use case with its governance benefit:",
+        "type": "match",
+        "left": [
+            "PII classification",
+            "Cost center",
+            "Data owner",
+            "Sensitivity level"
+        ],
+        "right": [
+            "Privacy compliance",
+            "Chargeback",
+            "Accountability",
+            "Access control"
+        ]
+    },
+    {
+        "q": "Rearrange the tag governance workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Tag",
+            "Define Allowed Values",
+            "Apply to Objects",
+            "Query Tagged Objects"
+        ]
+    },
+    {
+        "q": "Tags propagate to child objects for hierarchical governance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of access history in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Tracking who accessed what data for compliance and auditing",
+            "Query optimization",
+            "Storage management",
+            "User creation"
+        ]
+    },
+    {
+        "q": "Access history records column-level _____ access.",
+        "type": "fill_blank",
+        "answers": [
+            "read"
+        ],
+        "other_options": [
+            "write",
+            "delete",
+            "create"
+        ]
+    },
+    {
+        "q": "Which view provides access history information?",
+        "type": "mcq",
+        "o": [
+            "SNOWFLAKE.ACCOUNT_USAGE.ACCESS_HISTORY",
+            "INFORMATION_SCHEMA.ACCESS",
+            "SYS.ACCESS_LOG",
+            "DBA_ACCESS_HISTORY"
+        ]
+    },
+    {
+        "q": "Match the access history column with its content:",
+        "type": "match",
+        "left": [
+            "QUERY_ID",
+            "USER_NAME",
+            "BASE_OBJECTS_ACCESSED",
+            "DIRECT_OBJECTS_ACCESSED"
+        ],
+        "right": [
+            "Query identifier",
+            "Who accessed",
+            "Underlying tables",
+            "Direct objects"
+        ]
+    },
+    {
+        "q": "Access history supports data lineage and compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data lineage in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Tracking the origin and transformation of data",
+            "Data backup",
+            "Query caching",
+            "User management"
+        ]
+    },
+    {
+        "q": "Lineage shows how data _____ from source to destination.",
+        "type": "fill_blank",
+        "answers": [
+            "flows"
+        ],
+        "other_options": [
+            "deletes",
+            "caches",
+            "locks"
+        ]
+    },
+    {
+        "q": "Which Snowflake feature provides column-level lineage?",
+        "type": "mcq",
+        "o": [
+            "Access history with base and direct objects",
+            "Time Travel",
+            "Cloning",
+            "Streams"
+        ]
+    },
+    {
+        "q": "Match the lineage concept with its use:",
+        "type": "match",
+        "left": [
+            "Upstream lineage",
+            "Downstream lineage",
+            "Object dependencies",
+            "Column provenance"
+        ],
+        "right": [
+            "Data sources",
+            "Data consumers",
+            "Referenced objects",
+            "Column origins"
+        ]
+    },
+    {
+        "q": "Rearrange the lineage analysis process:",
+        "type": "rearrange",
+        "words": [
+            "Identify Object",
+            "Query Access History",
+            "Trace Dependencies",
+            "Document Lineage"
+        ]
+    },
+    {
+        "q": "Data lineage is essential for impact analysis and compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the cost management best practice in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Monitor usage, set resource monitors, and optimize queries",
+            "Ignore usage",
+            "Use largest warehouses always",
+            "Never suspend warehouses"
+        ]
+    },
+    {
+        "q": "Resource _____ prevent unexpected credit consumption.",
+        "type": "fill_blank",
+        "answers": [
+            "monitors"
+        ],
+        "other_options": [
+            "reports",
+            "logs",
+            "alerts"
+        ]
+    },
+    {
+        "q": "Which practice reduces compute costs most effectively?",
+        "type": "mcq",
+        "o": [
+            "Auto-suspend idle warehouses and right-size for workloads",
+            "Always run warehouses",
+            "Use fixed large size",
+            "Disable auto-suspend"
+        ]
+    },
+    {
+        "q": "Match the cost factor with its optimization:",
+        "type": "match",
+        "left": [
+            "Compute",
+            "Storage",
+            "Data transfer",
+            "Serverless features"
+        ],
+        "right": [
+            "Right-size warehouses",
+            "Reduce Time Travel",
+            "Minimize egress",
+            "Monitor usage"
+        ]
+    },
+    {
+        "q": "Regular cost reviews prevent budget overruns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the recommended approach for disaster recovery?",
+        "type": "mcq",
+        "o": [
+            "Database replication across regions with failover capability",
+            "No backup needed",
+            "Manual exports only",
+            "Single region only"
+        ]
+    },
+    {
+        "q": "Cross-region replication provides _____ continuity.",
+        "type": "fill_blank",
+        "answers": [
+            "business"
+        ],
+        "other_options": [
+            "network",
+            "storage",
+            "compute"
+        ]
+    },
+    {
+        "q": "Which recovery objective does replication address?",
+        "type": "mcq",
+        "o": [
+            "RPO (Recovery Point Objective) through continuous replication",
+            "Storage expansion",
+            "Query speed",
+            "User management"
+        ]
+    },
+    {
+        "q": "Match the DR component with its purpose:",
+        "type": "match",
+        "left": [
+            "Primary account",
+            "Secondary account",
+            "Failover",
+            "Refresh schedule"
+        ],
+        "right": [
+            "Main operations",
+            "DR target",
+            "Switch to secondary",
+            "Sync frequency"
+        ]
+    },
+    {
+        "q": "Rearrange the DR testing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Configure Replication",
+            "Schedule Refresh",
+            "Test Failover",
+            "Validate Data",
+            "Document Process"
+        ]
+    },
+    {
+        "q": "Regular DR testing validates recovery procedures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of organization accounts in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Managing multiple Snowflake accounts under unified governance",
+            "User login",
+            "Data storage",
+            "Query execution"
+        ]
+    },
+    {
+        "q": "Organization accounts enable _____ management across accounts.",
+        "type": "fill_blank",
+        "answers": [
+            "centralized"
+        ],
+        "other_options": [
+            "distributed",
+            "manual",
+            "local"
+        ]
+    },
+    {
+        "q": "Which benefit does organization-level management provide?",
+        "type": "mcq",
+        "o": [
+            "Unified billing, user management, and governance",
+            "Faster queries",
+            "More storage",
+            "Better compression"
+        ]
+    },
+    {
+        "q": "Match the organization feature with its scope:",
+        "type": "match",
+        "left": [
+            "ORGADMIN role",
+            "Account creation",
+            "Cross-account sharing",
+            "Billing consolidation"
+        ],
+        "right": [
+            "Organization management",
+            "New accounts",
+            "Data sharing",
+            "Unified invoicing"
+        ]
+    },
+    {
+        "q": "Organization accounts simplify enterprise Snowflake management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the best practice for Snowflake schema design?",
+        "type": "mcq",
+        "o": [
+            "Organize objects logically with separate schemas for different purposes",
+            "Put everything in one schema",
+            "Avoid schemas",
+            "Random organization"
+        ]
+    },
+    {
+        "q": "Separate schemas for raw, staging, and _____ layers is recommended.",
+        "type": "fill_blank",
+        "answers": [
+            "presentation"
+        ],
+        "other_options": [
+            "backup",
+            "archive",
+            "temp"
+        ]
+    },
+    {
+        "q": "Which schema pattern supports data pipeline stages?",
+        "type": "mcq",
+        "o": [
+            "Raw -> Staging -> Transformed -> Presentation layers",
+            "Single flat schema",
+            "Random organization",
+            "No schema structure"
+        ]
+    },
+    {
+        "q": "Match the schema layer with its purpose:",
+        "type": "match",
+        "left": [
+            "Raw",
+            "Staging",
+            "Transformed",
+            "Presentation"
+        ],
+        "right": [
+            "Source data",
+            "Intermediate processing",
+            "Business logic applied",
+            "User-facing"
+        ]
+    },
+    {
+        "q": "Rearrange the data layer progression:",
+        "type": "rearrange",
+        "words": [
+            "Raw Ingestion",
+            "Staging Validation",
+            "Core Transformation",
+            "Presentation Aggregation"
+        ]
+    },
+    {
+        "q": "Good schema design improves maintainability and governance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Python connector for Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A library for connecting Python applications to Snowflake",
+            "A stored procedure language",
+            "A data format",
+            "A security protocol"
+        ]
+    },
+    {
+        "q": "The Python connector uses _____ for connection credentials.",
+        "type": "fill_blank",
+        "answers": [
+            "parameters"
+        ],
+        "other_options": [
+            "files",
+            "tokens",
+            "keys"
+        ]
+    },
+    {
+        "q": "Which method executes a query with the Python connector?",
+        "type": "mcq",
+        "o": [
+            "cursor.execute(query)",
+            "run_query(query)",
+            "process(query)",
+            "call(query)"
+        ]
+    },
+    {
+        "q": "Match the connector method with its function:",
+        "type": "match",
+        "left": [
+            "connect()",
+            "execute()",
+            "fetchall()",
+            "close()"
+        ],
+        "right": [
+            "Establish connection",
+            "Run query",
+            "Get results",
+            "End session"
+        ]
+    },
+    {
+        "q": "The Python connector supports both sync and async operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the JDBC connector for Snowflake?",
+        "type": "mcq",
+        "o": [
+            "A Java-based driver for database connectivity",
+            "A Python library",
+            "A web interface",
+            "A mobile app"
+        ]
+    },
+    {
+        "q": "JDBC provides _____ database connectivity for Java applications.",
+        "type": "fill_blank",
+        "answers": [
+            "standard"
+        ],
+        "other_options": [
+            "custom",
+            "proprietary",
+            "unique"
+        ]
+    },
+    {
+        "q": "Which connection string format does JDBC use?",
+        "type": "mcq",
+        "o": [
+            "jdbc:snowflake://account.snowflakecomputing.com",
+            "http://snowflake.com",
+            "ftp://snowflake",
+            "ssh://snowflake"
+        ]
+    },
+    {
+        "q": "Match the JDBC component with its role:",
+        "type": "match",
+        "left": [
+            "Driver class",
+            "Connection URL",
+            "Statement",
+            "ResultSet"
+        ],
+        "right": [
+            "Load driver",
+            "Connect to account",
+            "Execute query",
+            "Hold results"
+        ]
+    },
+    {
+        "q": "Rearrange the JDBC workflow:",
+        "type": "rearrange",
+        "words": [
+            "Load Driver",
+            "Create Connection",
+            "Create Statement",
+            "Execute Query",
+            "Process Results"
+        ]
+    },
+    {
+        "q": "JDBC enables Java applications to query Snowflake.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the ODBC connector for Snowflake?",
+        "type": "mcq",
+        "o": [
+            "An open database connectivity driver for multiple languages",
+            "A Python-only connector",
+            "A web service",
+            "A mobile SDK"
+        ]
+    },
+    {
+        "q": "ODBC provides _____ database access across languages.",
+        "type": "fill_blank",
+        "answers": [
+            "standardized"
+        ],
+        "other_options": [
+            "custom",
+            "restricted",
+            "limited"
+        ]
+    },
+    {
+        "q": "Which tool commonly uses ODBC for Snowflake connectivity?",
+        "type": "mcq",
+        "o": [
+            "Excel, Tableau, and other BI tools",
+            "Only command line",
+            "Only Python",
+            "Only Java"
+        ]
+    },
+    {
+        "q": "Match the ODBC configuration with its purpose:",
+        "type": "match",
+        "left": [
+            "DSN",
+            "Driver",
+            "Connection string",
+            "Authentication"
+        ],
+        "right": [
+            "Named configuration",
+            "ODBC driver",
+            "Connect parameters",
+            "Login credentials"
+        ]
+    },
+    {
+        "q": "ODBC enables broad tool ecosystem connectivity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Snowflake REST API?",
+        "type": "mcq",
+        "o": [
+            "An HTTP-based interface for executing queries and management",
+            "A file upload service",
+            "A security protocol",
+            "A data format"
+        ]
+    },
+    {
+        "q": "The REST API uses _____ tokens for authentication.",
+        "type": "fill_blank",
+        "answers": [
+            "JWT"
+        ],
+        "other_options": [
+            "password",
+            "cookie",
+            "session"
+        ]
+    },
+    {
+        "q": "Which endpoint submits a SQL query via REST API?",
+        "type": "mcq",
+        "o": [
+            "/api/v2/statements POST endpoint",
+            "GET /query",
+            "PUT /sql",
+            "DELETE /execute"
+        ]
+    },
+    {
+        "q": "Match the REST API operation with its method:",
+        "type": "match",
+        "left": [
+            "Submit query",
+            "Get results",
+            "Cancel query",
+            "Get status"
+        ],
+        "right": [
+            "POST /statements",
+            "GET /statements/{id}",
+            "POST /statements/{id}/cancel",
+            "GET /statements/{id}/status"
+        ]
+    },
+    {
+        "q": "Rearrange the REST API query workflow:",
+        "type": "rearrange",
+        "words": [
+            "Authenticate",
+            "Submit Query",
+            "Poll Status",
+            "Retrieve Results"
+        ]
+    },
+    {
+        "q": "The REST API enables programmatic Snowflake access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is SnowSQL?",
+        "type": "mcq",
+        "o": [
+            "Snowflake's command-line client for SQL execution",
+            "A web interface",
+            "A mobile app",
+            "A data format"
+        ]
+    },
+    {
+        "q": "SnowSQL enables _____ execution of Snowflake queries.",
+        "type": "fill_blank",
+        "answers": [
+            "command-line"
+        ],
+        "other_options": [
+            "web",
+            "mobile",
+            "voice"
+        ]
+    },
+    {
+        "q": "Which SnowSQL feature supports automation?",
+        "type": "mcq",
+        "o": [
+            "Scripting with SQL files and variables",
+            "Only interactive mode",
+            "No automation support",
+            "Manual typing only"
+        ]
+    },
+    {
+        "q": "Match the SnowSQL command with its function:",
+        "type": "match",
+        "left": [
+            "!connect",
+            "!exit",
+            "!set",
+            "!source"
+        ],
+        "right": [
+            "Establish connection",
+            "End session",
+            "Configure variable",
+            "Run script file"
+        ]
+    },
+    {
+        "q": "SnowSQL is essential for scripted database administration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Snowflake Worksheets interface?",
+        "type": "mcq",
+        "o": [
+            "Web-based SQL editor in Snowsight for query development",
+            "A desktop application",
+            "A mobile app",
+            "A command-line tool"
+        ]
+    },
+    {
+        "q": "Worksheets provide _____ SQL development experience.",
+        "type": "fill_blank",
+        "answers": [
+            "interactive"
+        ],
+        "other_options": [
+            "batch",
+            "offline",
+            "scheduled"
+        ]
+    },
+    {
+        "q": "Which Worksheets feature aids query development?",
+        "type": "mcq",
+        "o": [
+            "Auto-complete, syntax highlighting, and query history",
+            "No assistance",
+            "Plain text only",
+            "No history"
+        ]
+    },
+    {
+        "q": "Match the Worksheets feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Auto-complete",
+            "Query history",
+            "Folders",
+            "Sharing"
+        ],
+        "right": [
+            "Faster typing",
+            "Find past queries",
+            "Organization",
+            "Collaboration"
+        ]
+    },
+    {
+        "q": "Rearrange the worksheet development workflow:",
+        "type": "rearrange",
+        "words": [
+            "Open Worksheet",
+            "Write Query",
+            "Execute",
+            "Review Results",
+            "Save/Share"
+        ]
+    },
+    {
+        "q": "Worksheets enable collaborative query development.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowsight?",
+        "type": "mcq",
+        "o": [
+            "Snowflake's modern web interface for data exploration",
+            "A command-line tool",
+            "A mobile app",
+            "A desktop application"
+        ]
+    },
+    {
+        "q": "Snowsight provides _____ dashboards and visualization.",
+        "type": "fill_blank",
+        "answers": [
+            "built-in"
+        ],
+        "other_options": [
+            "external",
+            "third-party",
+            "manual"
+        ]
+    },
+    {
+        "q": "Which Snowsight feature enables data visualization?",
+        "type": "mcq",
+        "o": [
+            "Charts and dashboards from query results",
+            "No visualization",
+            "External BI only",
+            "Command line only"
+        ]
+    },
+    {
+        "q": "Match the Snowsight component with its purpose:",
+        "type": "match",
+        "left": [
+            "Worksheets",
+            "Dashboards",
+            "Data",
+            "Admin"
+        ],
+        "right": [
+            "Query development",
+            "Visualizations",
+            "Browse objects",
+            "Manage account"
+        ]
+    },
+    {
+        "q": "Snowsight is the primary web interface for Snowflake users.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Snowflake Directory Tables?",
+        "type": "mcq",
+        "o": [
+            "Metadata tables for external stage file listings",
+            "User directories",
+            "Schema catalogues",
+            "Security logs"
+        ]
+    },
+    {
+        "q": "Directory tables enable querying file _____ in stages.",
+        "type": "fill_blank",
+        "answers": [
+            "metadata"
+        ],
+        "other_options": [
+            "content",
+            "schema",
+            "format"
+        ]
+    },
+    {
+        "q": "Which information does a directory table provide?",
+        "type": "mcq",
+        "o": [
+            "File names, sizes, last modified times, and ETags",
+            "Only file names",
+            "Only file sizes",
+            "No metadata"
+        ]
+    },
+    {
+        "q": "Match the directory table column with its content:",
+        "type": "match",
+        "left": [
+            "RELATIVE_PATH",
+            "SIZE",
+            "LAST_MODIFIED",
+            "ETAG"
+        ],
+        "right": [
+            "File location",
+            "Byte count",
+            "Change time",
+            "Version identifier"
+        ]
+    },
+    {
+        "q": "Directory tables simplify file discovery in external stages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Iceberg Tables in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Open table format for interoperability with other engines",
+            "Frozen data storage",
+            "Temporary tables",
+            "Security tables"
+        ]
+    },
+    {
+        "q": "Iceberg tables use an open _____ format for storage.",
+        "type": "fill_blank",
+        "answers": [
+            "table"
+        ],
+        "other_options": [
+            "file",
+            "stream",
+            "cache"
+        ]
+    },
+    {
+        "q": "Which benefit does Iceberg provide?",
+        "type": "mcq",
+        "o": [
+            "Cross-engine compatibility with Spark, Flink, and others",
+            "Only Snowflake access",
+            "No external access",
+            "Proprietary format"
+        ]
+    },
+    {
+        "q": "Match the Iceberg feature with its advantage:",
+        "type": "match",
+        "left": [
+            "Open format",
+            "Schema evolution",
+            "Time travel",
+            "Partition evolution"
+        ],
+        "right": [
+            "Interoperability",
+            "Flexible changes",
+            "Historical queries",
+            "Adaptive layouts"
+        ]
+    },
+    {
+        "q": "Rearrange the Iceberg integration workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Iceberg Table",
+            "Load Data",
+            "Query from Snowflake",
+            "Access from External Engine"
+        ]
+    },
+    {
+        "q": "Iceberg tables enable lakehouse architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Dynamic Tables in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Declarative tables that automatically refresh based on queries",
+            "Static tables",
+            "Temporary tables",
+            "External tables"
+        ]
+    },
+    {
+        "q": "Dynamic tables define target state using a _____ query.",
+        "type": "fill_blank",
+        "answers": [
+            "SELECT"
+        ],
+        "other_options": [
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "Which refresh model do dynamic tables support?",
+        "type": "mcq",
+        "o": [
+            "Incremental refreshes based on source changes",
+            "Full refresh only",
+            "Manual refresh only",
+            "No refresh capability"
+        ]
+    },
+    {
+        "q": "Match the dynamic table feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Declarative definition",
+            "Auto-refresh",
+            "Incremental processing",
+            "DAG support"
+        ],
+        "right": [
+            "Simplified pipelines",
+            "Current data",
+            "Efficiency",
+            "Complex dependencies"
+        ]
+    },
+    {
+        "q": "Dynamic tables simplify data pipeline development.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the lag specification in dynamic tables?",
+        "type": "mcq",
+        "o": [
+            "Maximum staleness allowed before automatic refresh",
+            "Historical data retention",
+            "Query timeout",
+            "Storage limit"
+        ]
+    },
+    {
+        "q": "TARGET_LAG defines the maximum data _____ tolerance.",
+        "type": "fill_blank",
+        "answers": [
+            "freshness"
+        ],
+        "other_options": [
+            "size",
+            "count",
+            "type"
+        ]
+    },
+    {
+        "q": "Which lag setting provides near real-time data?",
+        "type": "mcq",
+        "o": [
+            "Short lag like 1 minute or DOWNSTREAM",
+            "Daily lag",
+            "Weekly lag",
+            "No lag setting"
+        ]
+    },
+    {
+        "q": "Match the lag type with its behavior:",
+        "type": "match",
+        "left": [
+            "1 minute",
+            "1 hour",
+            "DOWNSTREAM",
+            "Manual"
+        ],
+        "right": [
+            "Near real-time",
+            "Batch refresh",
+            "Match downstream",
+            "No auto-refresh"
+        ]
+    },
+    {
+        "q": "Rearrange lag settings from freshest to stalest:",
+        "type": "rearrange",
+        "words": [
+            "1 Minute",
+            "5 Minutes",
+            "1 Hour",
+            "1 Day"
+        ]
+    },
+    {
+        "q": "Shorter lag settings increase compute costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Hybrid Tables feature?",
+        "type": "mcq",
+        "o": [
+            "Tables optimized for both transactional and analytical workloads",
+            "Tables spanning multiple accounts",
+            "Temporary and permanent hybrid",
+            "Internal and external hybrid"
+        ]
+    },
+    {
+        "q": "Hybrid tables support _____ operations with row-level locking.",
+        "type": "fill_blank",
+        "answers": [
+            "OLTP"
+        ],
+        "other_options": [
+            "OLAP",
+            "batch",
+            "archive"
+        ]
+    },
+    {
+        "q": "Which use case benefits from hybrid tables?",
+        "type": "mcq",
+        "o": [
+            "Applications requiring single-row updates with analytics",
+            "Only batch analytics",
+            "Only transactional processing",
+            "Archive storage"
+        ]
+    },
+    {
+        "q": "Match the hybrid table feature with its capability:",
+        "type": "match",
+        "left": [
+            "Row-level locking",
+            "Primary key enforcement",
+            "Fast point lookups",
+            "Analytics support"
+        ],
+        "right": [
+            "Concurrent updates",
+            "Data integrity",
+            "Low latency reads",
+            "Complex queries"
+        ]
+    },
+    {
+        "q": "Hybrid tables enable operational analytics use cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is object dependencies tracking in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Tracking relationships between database objects",
+            "User permission tracking",
+            "Storage monitoring",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "Dependencies show which objects _____ on other objects.",
+        "type": "fill_blank",
+        "answers": [
+            "depend"
+        ],
+        "other_options": [
+            "copy",
+            "delete",
+            "create"
+        ]
+    },
+    {
+        "q": "Which view shows object dependencies?",
+        "type": "mcq",
+        "o": [
+            "OBJECT_DEPENDENCIES view in ACCOUNT_USAGE",
+            "INFORMATION_SCHEMA.TABLES",
+            "SYS.OBJECTS",
+            "DBA_DEPENDENCIES"
+        ]
+    },
+    {
+        "q": "Match the dependency type with its meaning:",
+        "type": "match",
+        "left": [
+            "BY_NAME",
+            "BY_ID",
+            "BY_NAME_AND_ID",
+            "Secure view"
+        ],
+        "right": [
+            "Name reference",
+            "Object ID reference",
+            "Both references",
+            "Hidden dependency"
+        ]
+    },
+    {
+        "q": "Rearrange the dependency analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "Query Dependencies",
+            "Build Graph",
+            "Analyze Impact",
+            "Plan Changes"
+        ]
+    },
+    {
+        "q": "Dependency tracking enables safe schema modifications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Query Retry feature?",
+        "type": "mcq",
+        "o": [
+            "Automatic retry of failed queries due to transient errors",
+            "Manual query re-execution",
+            "Query caching",
+            "Query scheduling"
+        ]
+    },
+    {
+        "q": "Query retry handles _____ failures automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "transient"
+        ],
+        "other_options": [
+            "permanent",
+            "syntax",
+            "permission"
+        ]
+    },
+    {
+        "q": "Which error type triggers automatic retry?",
+        "type": "mcq",
+        "o": [
+            "Infrastructure failures and timeouts, not syntax errors",
+            "All errors",
+            "Only syntax errors",
+            "Only permission errors"
+        ]
+    },
+    {
+        "q": "Match the error type with its retry behavior:",
+        "type": "match",
+        "left": [
+            "Infrastructure failure",
+            "Syntax error",
+            "Permission denied",
+            "Timeout"
+        ],
+        "right": [
+            "Auto-retry",
+            "No retry",
+            "No retry",
+            "Auto-retry"
+        ]
+    },
+    {
+        "q": "Query retry improves application resilience.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's SCIM integration?",
+        "type": "mcq",
+        "o": [
+            "System for Cross-domain Identity Management for user provisioning",
+            "Storage management",
+            "Query optimization",
+            "Data encryption"
+        ]
+    },
+    {
+        "q": "SCIM enables automated _____ lifecycle management.",
+        "type": "fill_blank",
+        "answers": [
+            "user"
+        ],
+        "other_options": [
+            "data",
+            "query",
+            "storage"
+        ]
+    },
+    {
+        "q": "Which identity provider feature uses SCIM?",
+        "type": "mcq",
+        "o": [
+            "Automatic user creation, updates, and deactivation",
+            "Only authentication",
+            "Only authorization",
+            "No automation"
+        ]
+    },
+    {
+        "q": "Match the SCIM operation with its effect:",
+        "type": "match",
+        "left": [
+            "Provision",
+            "Deprovision",
+            "Update",
+            "Sync"
+        ],
+        "right": [
+            "Create user",
+            "Deactivate user",
+            "Modify attributes",
+            "Reconcile state"
+        ]
+    },
+    {
+        "q": "Rearrange the SCIM user lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "User Created in IdP",
+            "SCIM Provisions to Snowflake",
+            "User Accesses Snowflake",
+            "User Leaves Organization",
+            "SCIM Deprovisions"
+        ]
+    },
+    {
+        "q": "SCIM reduces manual user administration overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Tri-Secret Secure in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Customer-managed keys combined with Snowflake and cloud provider keys",
+            "Three-level password",
+            "Triple encryption",
+            "Three-factor authentication"
+        ]
+    },
+    {
+        "q": "Tri-Secret Secure requires a customer-managed _____ key.",
+        "type": "fill_blank",
+        "answers": [
+            "encryption"
+        ],
+        "other_options": [
+            "access",
+            "storage",
+            "network"
+        ]
+    },
+    {
+        "q": "Which cloud service holds the customer key?",
+        "type": "mcq",
+        "o": [
+            "Customer's cloud KMS (AWS KMS, Azure Key Vault, GCP KMS)",
+            "Snowflake servers",
+            "Public cloud",
+            "On-premise only"
+        ]
+    },
+    {
+        "q": "Match the key layer with its controller:",
+        "type": "match",
+        "left": [
+            "Account key",
+            "Database key",
+            "Table key",
+            "Customer key"
+        ],
+        "right": [
+            "Snowflake",
+            "Snowflake",
+            "Snowflake",
+            "Customer"
+        ]
+    },
+    {
+        "q": "Tri-Secret Secure gives customers control over data access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Private Link in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Private network connectivity bypassing public internet",
+            "Encrypted web connection",
+            "VPN tunnel",
+            "SSH connection"
+        ]
+    },
+    {
+        "q": "Private Link keeps traffic on the cloud provider's _____ network.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "shared",
+            "virtual"
+        ]
+    },
+    {
+        "q": "Which cloud provider services support Snowflake Private Link?",
+        "type": "mcq",
+        "o": [
+            "AWS PrivateLink, Azure Private Link, GCP Private Service Connect",
+            "Only AWS",
+            "Only Azure",
+            "No cloud support"
+        ]
+    },
+    {
+        "q": "Match the Private Link component with its role:",
+        "type": "match",
+        "left": [
+            "VPC endpoint",
+            "Private IP",
+            "DNS resolution",
+            "No internet"
+        ],
+        "right": [
+            "Connection point",
+            "Internal address",
+            "Name lookup",
+            "Security benefit"
+        ]
+    },
+    {
+        "q": "Rearrange the Private Link setup workflow:",
+        "type": "rearrange",
+        "words": [
+            "Request from Snowflake",
+            "Create Cloud Endpoint",
+            "Configure DNS",
+            "Connect Privately"
+        ]
+    },
+    {
+        "q": "Private Link enhances network security for sensitive data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Internal Stages for PUT/GET?",
+        "type": "mcq",
+        "o": [
+            "Snowflake-managed storage for file staging",
+            "External cloud storage",
+            "Local file system",
+            "Network share"
+        ]
+    },
+    {
+        "q": "PUT command uploads files to _____ stages.",
+        "type": "fill_blank",
+        "answers": [
+            "internal"
+        ],
+        "other_options": [
+            "external",
+            "public",
+            "shared"
+        ]
+    },
+    {
+        "q": "Which command downloads files from internal stages?",
+        "type": "mcq",
+        "o": [
+            "GET command",
+            "DOWNLOAD command",
+            "FETCH command",
+            "RETRIEVE command"
+        ]
+    },
+    {
+        "q": "Match the stage command with its operation:",
+        "type": "match",
+        "left": [
+            "PUT",
+            "GET",
+            "LIST",
+            "REMOVE"
+        ],
+        "right": [
+            "Upload files",
+            "Download files",
+            "Show files",
+            "Delete files"
+        ]
+    },
+    {
+        "q": "Internal stages simplify data loading without external storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's data exchange feature?",
+        "type": "mcq",
+        "o": [
+            "Private data sharing marketplaces for organizations",
+            "Public data exchange",
+            "File transfer protocol",
+            "Email data sharing"
+        ]
+    },
+    {
+        "q": "Data exchanges enable controlled _____ data distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "random",
+            "automatic"
+        ]
+    },
+    {
+        "q": "Which organization can create a data exchange?",
+        "type": "mcq",
+        "o": [
+            "Any Snowflake account with appropriate edition",
+            "Only Snowflake",
+            "Only large enterprises",
+            "Public organizations only"
+        ]
+    },
+    {
+        "q": "Match the exchange role with its function:",
+        "type": "match",
+        "left": [
+            "Exchange admin",
+            "Provider",
+            "Consumer",
+            "Listing"
+        ],
+        "right": [
+            "Manage exchange",
+            "Share data",
+            "Access data",
+            "Data offering"
+        ]
+    },
+    {
+        "q": "Rearrange the data exchange workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Exchange",
+            "Invite Members",
+            "Publish Listings",
+            "Consumers Access Data"
+        ]
+    },
+    {
+        "q": "Data exchanges enable trusted B2B data collaboration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Usage Views feature?",
+        "type": "mcq",
+        "o": [
+            "System views for monitoring resource consumption",
+            "User preferences",
+            "Query cache",
+            "Storage metrics"
+        ]
+    },
+    {
+        "q": "Usage views track _____ consumption over time.",
+        "type": "fill_blank",
+        "answers": [
+            "credit"
+        ],
+        "other_options": [
+            "storage",
+            "network",
+            "memory"
+        ]
+    },
+    {
+        "q": "Which schema contains usage views?",
+        "type": "mcq",
+        "o": [
+            "SNOWFLAKE.ACCOUNT_USAGE",
+            "PUBLIC",
+            "INFORMATION_SCHEMA",
+            "SYS"
+        ]
+    },
+    {
+        "q": "Match the usage view with its metrics:",
+        "type": "match",
+        "left": [
+            "METERING_HISTORY",
+            "STORAGE_USAGE",
+            "LOAD_HISTORY",
+            "PIPE_USAGE_HISTORY"
+        ],
+        "right": [
+            "Warehouse credits",
+            "Data volume",
+            "Copy operations",
+            "Snowpipe activity"
+        ]
+    },
+    {
+        "q": "Usage views enable detailed cost analysis and optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is alert management in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Automated notifications based on defined conditions",
+            "Manual monitoring",
+            "Query scheduling",
+            "Data loading"
+        ]
+    },
+    {
+        "q": "Alerts evaluate _____ and trigger actions when conditions are met.",
+        "type": "fill_blank",
+        "answers": [
+            "conditions"
+        ],
+        "other_options": [
+            "queries",
+            "storage",
+            "users"
+        ]
+    },
+    {
+        "q": "Which object type defines an alert in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "ALERT object with condition and action",
+            "TASK object",
+            "STREAM object",
+            "PROCEDURE object"
+        ]
+    },
+    {
+        "q": "Match the alert component with its role:",
+        "type": "match",
+        "left": [
+            "Condition",
+            "Action",
+            "Schedule",
+            "Warehouse"
+        ],
+        "right": [
+            "What to check",
+            "What to do",
+            "When to evaluate",
+            "Where to run"
+        ]
+    },
+    {
+        "q": "Rearrange the alert processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Schedule Triggers",
+            "Condition Evaluated",
+            "If True, Action Executes",
+            "Notification Sent"
+        ]
+    },
+    {
+        "q": "Alerts enable proactive monitoring and automated responses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is notification integration in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Configuration for sending alerts to external services",
+            "Internal messaging",
+            "Query caching",
+            "Data sharing"
+        ]
+    },
+    {
+        "q": "Notification integrations connect to cloud _____ services.",
+        "type": "fill_blank",
+        "answers": [
+            "messaging"
+        ],
+        "other_options": [
+            "storage",
+            "compute",
+            "network"
+        ]
+    },
+    {
+        "q": "Which external service can receive Snowflake notifications?",
+        "type": "mcq",
+        "o": [
+            "AWS SNS, Azure Event Grid, GCP Pub/Sub",
+            "Only email",
+            "Only SMS",
+            "No external services"
+        ]
+    },
+    {
+        "q": "Match the cloud provider with its notification service:",
+        "type": "match",
+        "left": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "Email"
+        ],
+        "right": [
+            "SNS",
+            "Event Grid",
+            "Pub/Sub",
+            "SMTP integration"
+        ]
+    },
+    {
+        "q": "Notification integration enables event-driven architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's data classification feature?",
+        "type": "mcq",
+        "o": [
+            "Automatic identification and tagging of sensitive data",
+            "Manual data labeling",
+            "Data compression",
+            "Data encryption"
+        ]
+    },
+    {
+        "q": "Classification identifies _____ information automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "sensitive"
+        ],
+        "other_options": [
+            "large",
+            "old",
+            "cached"
+        ]
+    },
+    {
+        "q": "Which data types does classification detect?",
+        "type": "mcq",
+        "o": [
+            "PII like SSN, email, phone numbers, and credit cards",
+            "Only numbers",
+            "Only text",
+            "No detection capability"
+        ]
+    },
+    {
+        "q": "Match the classification category with examples:",
+        "type": "match",
+        "left": [
+            "Personal identifier",
+            "Financial",
+            "Health",
+            "Contact"
+        ],
+        "right": [
+            "SSN, passport",
+            "Credit card, bank",
+            "Medical records",
+            "Email, phone"
+        ]
+    },
+    {
+        "q": "Rearrange the classification workflow:",
+        "type": "rearrange",
+        "words": [
+            "Scan Tables",
+            "Identify Sensitive Data",
+            "Generate Tags",
+            "Apply Policies"
+        ]
+    },
+    {
+        "q": "Data classification supports compliance and governance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of aggregation policies in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Enforce minimum group sizes to prevent individual identification",
+            "Speed up aggregations",
+            "Cache aggregate results",
+            "Storage optimization"
+        ]
+    },
+    {
+        "q": "Aggregation policies prevent queries with _____ group sizes.",
+        "type": "fill_blank",
+        "answers": [
+            "small"
+        ],
+        "other_options": [
+            "large",
+            "medium",
+            "zero"
+        ]
+    },
+    {
+        "q": "Which privacy concern do aggregation policies address?",
+        "type": "mcq",
+        "o": [
+            "Re-identification risk from small group queries",
+            "Data theft",
+            "SQL injection",
+            "Permission bypass"
+        ]
+    },
+    {
+        "q": "Match the aggregation policy parameter with its meaning:",
+        "type": "match",
+        "left": [
+            "MIN_GROUP_SIZE",
+            "Entity column",
+            "Protected columns",
+            "Error handling"
+        ],
+        "right": [
+            "Minimum count",
+            "Grouping key",
+            "Sensitive data",
+            "Query behavior"
+        ]
+    },
+    {
+        "q": "Aggregation policies are essential for privacy-preserving analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is projection policies in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Control which columns can be returned in query results",
+            "Optimize projections",
+            "Cache column data",
+            "Index creation"
+        ]
+    },
+    {
+        "q": "Projection policies restrict column _____ in queries.",
+        "type": "fill_blank",
+        "answers": [
+            "visibility"
+        ],
+        "other_options": [
+            "types",
+            "sizes",
+            "names"
+        ]
+    },
+    {
+        "q": "Which scenario uses projection policies?",
+        "type": "mcq",
+        "o": [
+            "Preventing specific columns from appearing in SELECT results",
+            "All queries",
+            "Only INSERT operations",
+            "Only DELETE operations"
+        ]
+    },
+    {
+        "q": "Match the policy type with its protection level:",
+        "type": "match",
+        "left": [
+            "Masking policy",
+            "Row access policy",
+            "Aggregation policy",
+            "Projection policy"
+        ],
+        "right": [
+            "Column value",
+            "Row visibility",
+            "Group size",
+            "Column selection"
+        ]
+    },
+    {
+        "q": "Rearrange policy enforcement from data to query:",
+        "type": "rearrange",
+        "words": [
+            "Data Stored",
+            "Row Access Applied",
+            "Projection Policy Applied",
+            "Masking Applied",
+            "Results Returned"
+        ]
+    },
+    {
+        "q": "Projection policies provide fine-grained access control.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's governance dashboard?",
+        "type": "mcq",
+        "o": [
+            "Unified view of data governance metrics and compliance status",
+            "Query optimization view",
+            "Storage management interface",
+            "User administration panel"
+        ]
+    },
+    {
+        "q": "The governance dashboard shows _____ and classification coverage.",
+        "type": "fill_blank",
+        "answers": [
+            "policy"
+        ],
+        "other_options": [
+            "storage",
+            "compute",
+            "network"
+        ]
+    },
+    {
+        "q": "Which governance metric is displayed?",
+        "type": "mcq",
+        "o": [
+            "Tagged objects, policy coverage, and access patterns",
+            "Only query counts",
+            "Only storage usage",
+            "Only user counts"
+        ]
+    },
+    {
+        "q": "Match the governance metric with its insight:",
+        "type": "match",
+        "left": [
+            "Tag coverage",
+            "Policy adoption",
+            "Sensitive data",
+            "Access patterns"
+        ],
+        "right": [
+            "Classification progress",
+            "Security implementation",
+            "PII locations",
+            "Usage tracking"
+        ]
+    },
+    {
+        "q": "The governance dashboard simplifies compliance monitoring.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's model registry?",
+        "type": "mcq",
+        "o": [
+            "Central repository for managing ML models",
+            "User registry",
+            "Data catalog",
+            "Query history"
+        ]
+    },
+    {
+        "q": "Model registry stores trained _____ models.",
+        "type": "fill_blank",
+        "answers": [
+            "machine learning"
+        ],
+        "other_options": [
+            "database",
+            "query",
+            "storage"
+        ]
+    },
+    {
+        "q": "Which ML lifecycle stage uses model registry?",
+        "type": "mcq",
+        "o": [
+            "Model versioning, deployment, and inference",
+            "Only training",
+            "Only data preparation",
+            "No ML support"
+        ]
+    },
+    {
+        "q": "Match the registry feature with its function:",
+        "type": "match",
+        "left": [
+            "Version control",
+            "Model deployment",
+            "Inference",
+            "Lineage"
+        ],
+        "right": [
+            "Track changes",
+            "Serve predictions",
+            "Run predictions",
+            "Track origins"
+        ]
+    },
+    {
+        "q": "Rearrange the ML model lifecycle with registry:",
+        "type": "rearrange",
+        "words": [
+            "Train Model",
+            "Register Model",
+            "Deploy Version",
+            "Serve Predictions",
+            "Monitor Performance"
+        ]
+    },
+    {
+        "q": "Model registry enables reproducible ML workflows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Document AI?",
+        "type": "mcq",
+        "o": [
+            "Capability to extract structured data from documents",
+            "Document storage",
+            "Text editing",
+            "PDF creation"
+        ]
+    },
+    {
+        "q": "Document AI extracts _____ from unstructured documents.",
+        "type": "fill_blank",
+        "answers": [
+            "data"
+        ],
+        "other_options": [
+            "images",
+            "audio",
+            "video"
+        ]
+    },
+    {
+        "q": "Which document types can Document AI process?",
+        "type": "mcq",
+        "o": [
+            "PDFs, images, and scanned documents",
+            "Only text files",
+            "Only spreadsheets",
+            "No document processing"
+        ]
+    },
+    {
+        "q": "Match the Document AI capability with its output:",
+        "type": "match",
+        "left": [
+            "Text extraction",
+            "Table extraction",
+            "Key-value extraction",
+            "Classification"
+        ],
+        "right": [
+            "Plain text",
+            "Structured tables",
+            "Form fields",
+            "Document types"
+        ]
+    },
+    {
+        "q": "Document AI enables automated document processing pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the Snowflake Trust Center?",
+        "type": "mcq",
+        "o": [
+            "Real-time status and security information portal",
+            "User trust settings",
+            "Data encryption",
+            "Access control"
+        ]
+    },
+    {
+        "q": "Trust Center displays service _____ and incidents.",
+        "type": "fill_blank",
+        "answers": [
+            "status"
+        ],
+        "other_options": [
+            "usage",
+            "cost",
+            "data"
+        ]
+    },
+    {
+        "q": "Which information does Trust Center provide?",
+        "type": "mcq",
+        "o": [
+            "Uptime, incidents, security certifications, and compliance",
+            "Only uptime",
+            "Only security",
+            "No information"
+        ]
+    },
+    {
+        "q": "Match the Trust Center section with its content:",
+        "type": "match",
+        "left": [
+            "Status",
+            "Security",
+            "Compliance",
+            "Privacy"
+        ],
+        "right": [
+            "Service availability",
+            "Protection measures",
+            "Certifications",
+            "Data handling"
+        ]
+    },
+    {
+        "q": "Trust Center provides transparency about Snowflake operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Container Services feature?",
+        "type": "mcq",
+        "o": [
+            "Run containerized workloads natively within Snowflake",
+            "Docker management",
+            "VM provisioning",
+            "Network containers"
+        ]
+    },
+    {
+        "q": "Container Services runs _____ images in Snowflake.",
+        "type": "fill_blank",
+        "answers": [
+            "OCI"
+        ],
+        "other_options": [
+            "VM",
+            "binary",
+            "script"
+        ]
+    },
+    {
+        "q": "Which workload type benefits from Container Services?",
+        "type": "mcq",
+        "o": [
+            "Custom applications, ML inference, and complex processing",
+            "Only SQL queries",
+            "Only storage",
+            "Only data loading"
+        ]
+    },
+    {
+        "q": "Match the Container Services concept with its function:",
+        "type": "match",
+        "left": [
+            "Compute pool",
+            "Service",
+            "Job",
+            "Image registry"
+        ],
+        "right": [
+            "Resource allocation",
+            "Long-running container",
+            "Batch processing",
+            "Container storage"
+        ]
+    },
+    {
+        "q": "Rearrange the Container Services workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create Compute Pool",
+            "Upload Image",
+            "Create Service/Job",
+            "Run Container"
+        ]
+    },
+    {
+        "q": "Container Services enables custom workloads with Snowflake data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Snowflake budgets?",
+        "type": "mcq",
+        "o": [
+            "Track and allocate credit usage across accounts or objects",
+            "Storage limits",
+            "User counts",
+            "Query counts"
+        ]
+    },
+    {
+        "q": "Budgets help manage _____ across cost centers.",
+        "type": "fill_blank",
+        "answers": [
+            "spending"
+        ],
+        "other_options": [
+            "storage",
+            "users",
+            "queries"
+        ]
+    },
+    {
+        "q": "Which level can budgets be applied to?",
+        "type": "mcq",
+        "o": [
+            "Account, database, schema, or custom scope",
+            "Only account level",
+            "Only database level",
+            "No budget support"
+        ]
+    },
+    {
+        "q": "Match the budget component with its purpose:",
+        "type": "match",
+        "left": [
+            "Credit quota",
+            "Notification threshold",
+            "Scope",
+            "Time period"
+        ],
+        "right": [
+            "Spending limit",
+            "Alert level",
+            "Objects covered",
+            "Budget duration"
+        ]
+    },
+    {
+        "q": "Budgets provide visibility into departmental spending.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Secure Data Sharing without copying?",
+        "type": "mcq",
+        "o": [
+            "Real-time access to shared data using storage references",
+            "File copying",
+            "ETL replication",
+            "Manual exports"
+        ]
+    },
+    {
+        "q": "Shared data is accessed through _____ without duplication.",
+        "type": "fill_blank",
+        "answers": [
+            "pointers"
+        ],
+        "other_options": [
+            "copies",
+            "exports",
+            "transfers"
+        ]
+    },
+    {
+        "q": "Which benefit does zero-copy sharing provide?",
+        "type": "mcq",
+        "o": [
+            "No storage duplication and instant updates",
+            "More storage used",
+            "Slower access",
+            "No benefits"
+        ]
+    },
+    {
+        "q": "Match the sharing benefit with its advantage:",
+        "type": "match",
+        "left": [
+            "Zero-copy",
+            "Real-time",
+            "Secure",
+            "Governed"
+        ],
+        "right": [
+            "No duplication",
+            "Latest data",
+            "Access control",
+            "Policy enforcement"
+        ]
+    },
+    {
+        "q": "Rearrange the data sharing process:",
+        "type": "rearrange",
+        "words": [
+            "Create Share",
+            "Add Objects",
+            "Grant to Consumer",
+            "Consumer Queries Data"
+        ]
+    },
+    {
+        "q": "Zero-copy sharing eliminates data synchronization overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the role of SHOW commands in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "List metadata about database objects",
+            "Execute queries",
+            "Create objects",
+            "Delete objects"
+        ]
+    },
+    {
+        "q": "SHOW TABLES lists tables in the _____ schema.",
+        "type": "fill_blank",
+        "answers": [
+            "current"
+        ],
+        "other_options": [
+            "public",
+            "system",
+            "all"
+        ]
+    },
+    {
+        "q": "Which SHOW command lists virtual warehouses?",
+        "type": "mcq",
+        "o": [
+            "SHOW WAREHOUSES",
+            "SHOW COMPUTES",
+            "SHOW SERVERS",
+            "SHOW CLUSTERS"
+        ]
+    },
+    {
+        "q": "Match the SHOW command with its output:",
+        "type": "match",
+        "left": [
+            "SHOW DATABASES",
+            "SHOW SCHEMAS",
+            "SHOW TABLES",
+            "SHOW ROLES"
+        ],
+        "right": [
+            "Database list",
+            "Schema list",
+            "Table list",
+            "Role list"
+        ]
+    },
+    {
+        "q": "SHOW commands provide metadata discovery capabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the DESCRIBE command in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Display detailed metadata about specific objects",
+            "Query data",
+            "Create objects",
+            "Delete objects"
+        ]
+    },
+    {
+        "q": "DESCRIBE TABLE shows column _____ and types.",
+        "type": "fill_blank",
+        "answers": [
+            "names"
+        ],
+        "other_options": [
+            "data",
+            "values",
+            "counts"
+        ]
+    },
+    {
+        "q": "Which object types can DESCRIBE inspect?",
+        "type": "mcq",
+        "o": [
+            "Tables, views, functions, procedures, and more",
+            "Only tables",
+            "Only views",
+            "Only users"
+        ]
+    },
+    {
+        "q": "Match the DESCRIBE target with its output:",
+        "type": "match",
+        "left": [
+            "DESCRIBE TABLE",
+            "DESCRIBE FUNCTION",
+            "DESCRIBE STAGE",
+            "DESCRIBE PROCEDURE"
+        ],
+        "right": [
+            "Columns and types",
+            "Parameters and return",
+            "Stage properties",
+            "Procedure signature"
+        ]
+    },
+    {
+        "q": "Rearrange the object exploration workflow:",
+        "type": "rearrange",
+        "words": [
+            "SHOW Objects",
+            "DESCRIBE Object",
+            "Query Data",
+            "Analyze Results"
+        ]
+    },
+    {
+        "q": "DESCRIBE provides essential schema documentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is Snowflake's Comment feature?",
+        "type": "mcq",
+        "o": [
+            "Adding descriptive text to database objects",
+            "Code comments only",
+            "User feedback",
+            "Query history"
+        ]
+    },
+    {
+        "q": "Comments help document _____ purpose and usage.",
+        "type": "fill_blank",
+        "answers": [
+            "object"
+        ],
+        "other_options": [
+            "query",
+            "user",
+            "role"
+        ]
+    },
+    {
+        "q": "Which command adds a comment to a table?",
+        "type": "mcq",
+        "o": [
+            "COMMENT ON TABLE table_name IS 'description'",
+            "ADD COMMENT",
+            "SET DESCRIPTION",
+            "CREATE COMMENT"
+        ]
+    },
+    {
+        "q": "Match the comment application with its benefit:",
+        "type": "match",
+        "left": [
+            "Table comment",
+            "Column comment",
+            "View comment",
+            "Schema comment"
+        ],
+        "right": [
+            "Table context",
+            "Column meaning",
+            "View purpose",
+            "Schema scope"
+        ]
+    },
+    {
+        "q": "Comments improve data discovery and documentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of EXPLAIN in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Display query execution plan without running the query",
+            "Execute query",
+            "Create tables",
+            "Delete data"
+        ]
+    },
+    {
+        "q": "EXPLAIN shows the _____ plan for a query.",
+        "type": "fill_blank",
+        "answers": [
+            "execution"
+        ],
+        "other_options": [
+            "storage",
+            "security",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which information does EXPLAIN provide?",
+        "type": "mcq",
+        "o": [
+            "Operators, cost estimates, and optimization strategies",
+            "Only syntax check",
+            "Only permissions",
+            "No information"
+        ]
+    },
+    {
+        "q": "Match the EXPLAIN output with its meaning:",
+        "type": "match",
+        "left": [
+            "Operation",
+            "Global Stats",
+            "Partition Stats",
+            "Expression"
+        ],
+        "right": [
+            "Processing step",
+            "Overall metrics",
+            "Pruning info",
+            "Calculated values"
+        ]
+    },
+    {
+        "q": "Rearrange the query optimization workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write Query",
+            "EXPLAIN Query",
+            "Analyze Plan",
+            "Optimize Query",
+            "Execute"
+        ]
+    },
+    {
+        "q": "EXPLAIN helps understand query behavior before execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the sample function in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Extract a random subset of rows from a table",
+            "Sample storage",
+            "Sample users",
+            "Sample queries"
+        ]
+    },
+    {
+        "q": "SAMPLE returns a _____ subset of table rows.",
+        "type": "fill_blank",
+        "answers": [
+            "random"
+        ],
+        "other_options": [
+            "first",
+            "last",
+            "sorted"
+        ]
+    },
+    {
+        "q": "Which sampling method is supported?",
+        "type": "mcq",
+        "o": [
+            "Row-based and block-based sampling",
+            "Only row-based",
+            "Only block-based",
+            "No sampling"
+        ]
+    },
+    {
+        "q": "Match the SAMPLE method with its behavior:",
+        "type": "match",
+        "left": [
+            "BERNOULLI",
+            "SYSTEM",
+            "ROW",
+            "BLOCK"
+        ],
+        "right": [
+            "Row probability",
+            "Block-based",
+            "Row sampling",
+            "Block sampling"
+        ]
+    },
+    {
+        "q": "SAMPLE is useful for testing queries on large tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the purpose of Common Table Expressions (CTEs) in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Define temporary named result sets for query readability",
+            "Permanent tables",
+            "Security policies",
+            "Storage optimization"
+        ]
+    },
+    {
+        "q": "CTEs are defined using the _____ clause.",
+        "type": "fill_blank",
+        "answers": [
+            "WITH"
+        ],
+        "other_options": [
+            "FROM",
+            "SELECT",
+            "WHERE"
+        ]
+    },
+    {
+        "q": "Which benefit do CTEs provide?",
+        "type": "mcq",
+        "o": [
+            "Improved query readability and reusable subqueries",
+            "Faster storage",
+            "Better security",
+            "No benefits"
+        ]
+    },
+    {
+        "q": "Match the CTE feature with its advantage:",
+        "type": "match",
+        "left": [
+            "Named subquery",
+            "Reusability",
+            "Recursion support",
+            "Query organization"
+        ],
+        "right": [
+            "Readable reference",
+            "Multiple use",
+            "Hierarchical queries",
+            "Logic structure"
+        ]
+    },
+    {
+        "q": "Rearrange the CTE query structure:",
+        "type": "rearrange",
+        "words": [
+            "WITH clause",
+            "CTE definition",
+            "Main SELECT",
+            "Reference CTE"
+        ]
+    },
+    {
+        "q": "CTEs improve query maintainability and readability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the ARRAY data type in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Ordered collection of values stored in a single column",
+            "Multiple columns",
+            "Multiple tables",
+            "Multiple schemas"
+        ]
+    },
+    {
+        "q": "Arrays store _____ elements in a sequence.",
+        "type": "fill_blank",
+        "answers": [
+            "multiple"
+        ],
+        "other_options": [
+            "single",
+            "zero",
+            "fixed"
+        ]
+    },
+    {
+        "q": "Which function creates an array?",
+        "type": "mcq",
+        "o": [
+            "ARRAY_CONSTRUCT or ARRAY_AGG",
+            "CREATE ARRAY",
+            "NEW ARRAY",
+            "INIT ARRAY"
+        ]
+    },
+    {
+        "q": "Match the ARRAY function with its operation:",
+        "type": "match",
+        "left": [
+            "ARRAY_CONSTRUCT",
+            "ARRAY_AGG",
+            "ARRAY_SIZE",
+            "ARRAY_SLICE"
+        ],
+        "right": [
+            "Build array",
+            "Aggregate to array",
+            "Count elements",
+            "Extract subset"
+        ]
+    },
+    {
+        "q": "Arrays enable flexible semi-structured data modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the OBJECT data type in Snowflake?",
+        "type": "mcq",
+        "o": [
+            "Key-value pairs stored in a single column",
+            "A database object",
+            "A schema object",
+            "A table object"
+        ]
+    },
+    {
+        "q": "OBJECT stores _____ pairs like JSON objects.",
+        "type": "fill_blank",
+        "answers": [
+            "key-value"
+        ],
+        "other_options": [
+            "row-column",
+            "table-schema",
+            "file-folder"
+        ]
+    },
+    {
+        "q": "Which function creates an object?",
+        "type": "mcq",
+        "o": [
+            "OBJECT_CONSTRUCT",
+            "CREATE OBJECT",
+            "NEW OBJECT",
+            "INIT OBJECT"
+        ]
+    },
+    {
+        "q": "Match the OBJECT function with its operation:",
+        "type": "match",
+        "left": [
+            "OBJECT_CONSTRUCT",
+            "OBJECT_KEYS",
+            "OBJECT_INSERT",
+            "OBJECT_DELETE"
+        ],
+        "right": [
+            "Build object",
+            "List keys",
+            "Add key-value",
+            "Remove key"
+        ]
+    },
+    {
+        "q": "OBJECT type enables flexible JSON-like structures.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

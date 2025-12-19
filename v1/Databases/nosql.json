@@ -1,0 +1,6810 @@
+[
+    {
+        "q": "What is NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Non-relational database management systems",
+            "New SQL standard",
+            "No Structured Query Language",
+            "Network SQL"
+        ]
+    },
+    {
+        "q": "The term NoSQL stands for _____ SQL.",
+        "type": "fill_blank",
+        "answers": [
+            "Not Only"
+        ],
+        "other_options": [
+            "No",
+            "New",
+            "Next"
+        ]
+    },
+    {
+        "q": "NoSQL databases sacrifice ACID for scalability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is NOT a type of NoSQL database?",
+        "type": "mcq",
+        "o": [
+            "Relational",
+            "Document",
+            "Key-Value",
+            "Graph"
+        ]
+    },
+    {
+        "q": "Match the NoSQL type with an example database:",
+        "type": "match",
+        "left": [
+            "Document",
+            "Key-Value",
+            "Column Family",
+            "Graph"
+        ],
+        "right": [
+            "MongoDB",
+            "Redis",
+            "Cassandra",
+            "Neo4j"
+        ]
+    },
+    {
+        "q": "Rearrange NoSQL databases by data complexity support:",
+        "type": "rearrange",
+        "words": [
+            "Key-Value",
+            "Document",
+            "Column Family",
+            "Graph"
+        ]
+    },
+    {
+        "q": "What is a document database?",
+        "type": "mcq",
+        "o": [
+            "Database storing data as JSON-like documents",
+            "Database for storing files",
+            "Database with text search",
+            "Database for office documents"
+        ]
+    },
+    {
+        "q": "MongoDB stores data as _____ documents.",
+        "type": "fill_blank",
+        "answers": [
+            "BSON"
+        ],
+        "other_options": [
+            "JSON",
+            "XML",
+            "CSV"
+        ]
+    },
+    {
+        "q": "Document databases have flexible schemas.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this MongoDB query?",
+        "type": "mcq",
+        "c": "db.users.find({ age: { $gt: 25 } })",
+        "o": [
+            "Users older than 25",
+            "Users exactly 25 years old",
+            "Users younger than 25",
+            "All users"
+        ]
+    },
+    {
+        "q": "Match the MongoDB operator with its function:",
+        "type": "match",
+        "left": [
+            "$gt",
+            "$lt",
+            "$eq",
+            "$in"
+        ],
+        "right": [
+            "Greater than",
+            "Less than",
+            "Equals",
+            "In array"
+        ]
+    },
+    {
+        "q": "Rearrange MongoDB CRUD operations:",
+        "type": "rearrange",
+        "words": [
+            "insertOne",
+            "find",
+            "updateOne",
+            "deleteOne"
+        ]
+    },
+    {
+        "q": "What is a key-value store?",
+        "type": "mcq",
+        "o": [
+            "Database storing data as key-value pairs",
+            "Database for encryption keys",
+            "Database with primary keys only",
+            "Database for passwords"
+        ]
+    },
+    {
+        "q": "Redis stores data primarily in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "disk",
+            "cloud",
+            "network"
+        ]
+    },
+    {
+        "q": "Key-value stores are ideal for caching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Redis command?",
+        "type": "mcq",
+        "c": "SET user:1 \"John\"\nGET user:1",
+        "o": [
+            "Returns \"John\"",
+            "Returns 1",
+            "Returns null",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Redis data structure with its use:",
+        "type": "match",
+        "left": [
+            "String",
+            "List",
+            "Set",
+            "Hash"
+        ],
+        "right": [
+            "Simple values",
+            "Ordered collection",
+            "Unique values",
+            "Object fields"
+        ]
+    },
+    {
+        "q": "Rearrange Redis data types by complexity:",
+        "type": "rearrange",
+        "words": [
+            "String",
+            "List",
+            "Set",
+            "Hash",
+            "Sorted Set"
+        ]
+    },
+    {
+        "q": "What is a column-family database?",
+        "type": "mcq",
+        "o": [
+            "Database organizing data by columns rather than rows",
+            "Database for spreadsheets",
+            "Database with column indexes",
+            "Database for tabular data only"
+        ]
+    },
+    {
+        "q": "Cassandra was designed for _____ availability.",
+        "type": "fill_blank",
+        "answers": [
+            "high"
+        ],
+        "other_options": [
+            "low",
+            "medium",
+            "static"
+        ]
+    },
+    {
+        "q": "Column-family databases are good for write-heavy workloads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this CQL query?",
+        "type": "mcq",
+        "c": "SELECT * FROM users WHERE partition_key = 'user123';",
+        "o": [
+            "Returns data for user123 partition",
+            "Returns all users",
+            "Error - missing table",
+            "Returns empty set"
+        ]
+    },
+    {
+        "q": "Match the Cassandra concept with its meaning:",
+        "type": "match",
+        "left": [
+            "Keyspace",
+            "Column family",
+            "Partition key",
+            "Clustering key"
+        ],
+        "right": [
+            "Database namespace",
+            "Table equivalent",
+            "Data distribution",
+            "Row ordering"
+        ]
+    },
+    {
+        "q": "Rearrange Cassandra hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Cluster",
+            "Keyspace",
+            "Table",
+            "Partition",
+            "Row"
+        ]
+    },
+    {
+        "q": "What is a graph database?",
+        "type": "mcq",
+        "o": [
+            "Database storing nodes and relationships",
+            "Database for charts",
+            "Database for images",
+            "Database for mathematical graphs"
+        ]
+    },
+    {
+        "q": "Neo4j uses _____ as its query language.",
+        "type": "fill_blank",
+        "answers": [
+            "Cypher"
+        ],
+        "other_options": [
+            "SQL",
+            "GraphQL",
+            "Gremlin"
+        ]
+    },
+    {
+        "q": "Graph databases excel at relationship-heavy queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Cypher query?",
+        "type": "mcq",
+        "c": "MATCH (p:Person)-[:KNOWS]->(friend)\nWHERE p.name = 'Alice'\nRETURN friend.name",
+        "o": [
+            "Names of Alice's friends",
+            "All persons named Alice",
+            "All relationships",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the graph term with its meaning:",
+        "type": "match",
+        "left": [
+            "Node",
+            "Edge",
+            "Property",
+            "Label"
+        ],
+        "right": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Type/category"
+        ]
+    },
+    {
+        "q": "Rearrange graph database use cases by fit:",
+        "type": "rearrange",
+        "words": [
+            "Social networks",
+            "Recommendation engines",
+            "Fraud detection",
+            "Path finding"
+        ]
+    },
+    {
+        "q": "What is eventual consistency?",
+        "type": "mcq",
+        "o": [
+            "Data becomes consistent after some time",
+            "Data is always consistent",
+            "Data is never consistent",
+            "Consistency is guaranteed"
+        ]
+    },
+    {
+        "q": "The CAP theorem states you can have at most _____ of C, A, P.",
+        "type": "fill_blank",
+        "answers": [
+            "two"
+        ],
+        "other_options": [
+            "one",
+            "three",
+            "all"
+        ]
+    },
+    {
+        "q": "NoSQL databases typically prioritize availability over consistency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does CAP stand for?",
+        "type": "mcq",
+        "o": [
+            "Consistency, Availability, Partition tolerance",
+            "Capacity, Availability, Performance",
+            "Consistency, Accuracy, Performance",
+            "Cache, Availability, Partition"
+        ]
+    },
+    {
+        "q": "Match the CAP choice with its database:",
+        "type": "match",
+        "left": [
+            "CA (no partition)",
+            "CP",
+            "AP",
+            "Tunable"
+        ],
+        "right": [
+            "Single node RDBMS",
+            "MongoDB",
+            "Cassandra",
+            "Configurable consistency"
+        ]
+    },
+    {
+        "q": "Rearrange consistency levels by strictness:",
+        "type": "rearrange",
+        "words": [
+            "Eventual",
+            "Causal",
+            "Sequential",
+            "Strong"
+        ]
+    },
+    {
+        "q": "What is BASE in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Basically Available, Soft state, Eventually consistent",
+            "Basic Available Storage Engine",
+            "Binary Access Storage Engine",
+            "Balanced Availability System Engine"
+        ]
+    },
+    {
+        "q": "BASE is often contrasted with _____ properties.",
+        "type": "fill_blank",
+        "answers": [
+            "ACID"
+        ],
+        "other_options": [
+            "SOLID",
+            "REST",
+            "CAP"
+        ]
+    },
+    {
+        "q": "BASE prioritizes availability over strict consistency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which property is NOT part of BASE?",
+        "type": "mcq",
+        "o": [
+            "Atomicity",
+            "Basically Available",
+            "Soft state",
+            "Eventually consistent"
+        ]
+    },
+    {
+        "q": "Match the transaction model with its property:",
+        "type": "match",
+        "left": [
+            "ACID",
+            "BASE",
+            "Strong consistency",
+            "Eventual consistency"
+        ],
+        "right": [
+            "Relational DBs",
+            "NoSQL DBs",
+            "Immediate accuracy",
+            "Delayed accuracy"
+        ]
+    },
+    {
+        "q": "Rearrange data consistency approaches:",
+        "type": "rearrange",
+        "words": [
+            "ACID transactions",
+            "Two-phase commit",
+            "Saga pattern",
+            "Eventual consistency"
+        ]
+    },
+    {
+        "q": "What is sharding in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Distributing data across multiple servers",
+            "Backing up data",
+            "Compressing data",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "A _____ key determines which shard stores a document.",
+        "type": "fill_blank",
+        "answers": [
+            "shard"
+        ],
+        "other_options": [
+            "primary",
+            "foreign",
+            "partition"
+        ]
+    },
+    {
+        "q": "Sharding improves horizontal scalability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sharding scenario?",
+        "type": "mcq",
+        "c": "// Shard key: user_id\n// Query: find({ user_id: 12345 })",
+        "o": [
+            "Query routed to single shard",
+            "Query hits all shards",
+            "Query fails",
+            "Random shard selected"
+        ]
+    },
+    {
+        "q": "Match the sharding strategy with its method:",
+        "type": "match",
+        "left": [
+            "Hash-based",
+            "Range-based",
+            "Directory-based",
+            "Geographic"
+        ],
+        "right": [
+            "Hash function",
+            "Value ranges",
+            "Lookup table",
+            "Location-based"
+        ]
+    },
+    {
+        "q": "Rearrange sharding considerations:",
+        "type": "rearrange",
+        "words": [
+            "Choose shard key",
+            "Determine strategy",
+            "Deploy shards",
+            "Rebalance data",
+            "Monitor distribution"
+        ]
+    },
+    {
+        "q": "What is replication in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Copying data to multiple nodes",
+            "Duplicating queries",
+            "Creating backups",
+            "Compressing data"
+        ]
+    },
+    {
+        "q": "A _____ factor determines how many copies of data exist.",
+        "type": "fill_blank",
+        "answers": [
+            "replication"
+        ],
+        "other_options": [
+            "shard",
+            "partition",
+            "backup"
+        ]
+    },
+    {
+        "q": "Replication improves read performance and fault tolerance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this replication config?",
+        "type": "mcq",
+        "c": "// Replication factor: 3\n// One node fails\n// Read request arrives",
+        "o": [
+            "Read succeeds from remaining nodes",
+            "Read fails",
+            "System shuts down",
+            "Data lost"
+        ]
+    },
+    {
+        "q": "Match the replication term with its meaning:",
+        "type": "match",
+        "left": [
+            "Primary",
+            "Secondary",
+            "Replica set",
+            "Quorum"
+        ],
+        "right": [
+            "Master node",
+            "Slave node",
+            "Node group",
+            "Majority agreement"
+        ]
+    },
+    {
+        "q": "Rearrange replication strategies by consistency:",
+        "type": "rearrange",
+        "words": [
+            "Asynchronous",
+            "Semi-synchronous",
+            "Synchronous",
+            "Raft consensus"
+        ]
+    },
+    {
+        "q": "What is a collection in MongoDB?",
+        "type": "mcq",
+        "o": [
+            "Group of documents similar to a table",
+            "Database instance",
+            "Index structure",
+            "Query result"
+        ]
+    },
+    {
+        "q": "MongoDB collections are contained within a _____.",
+        "type": "fill_blank",
+        "answers": [
+            "database"
+        ],
+        "other_options": [
+            "schema",
+            "namespace",
+            "cluster"
+        ]
+    },
+    {
+        "q": "Collections in MongoDB do not enforce a strict schema.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this MongoDB operation?",
+        "type": "mcq",
+        "c": "db.createCollection(\"users\", { capped: true, size: 1000000 })",
+        "o": [
+            "Creates a capped collection with size limit",
+            "Creates regular collection",
+            "Error - invalid options",
+            "Creates index"
+        ]
+    },
+    {
+        "q": "Match the MongoDB structure with SQL equivalent:",
+        "type": "match",
+        "left": [
+            "Database",
+            "Collection",
+            "Document",
+            "Field"
+        ],
+        "right": [
+            "Database",
+            "Table",
+            "Row",
+            "Column"
+        ]
+    },
+    {
+        "q": "Rearrange MongoDB hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Cluster",
+            "Database",
+            "Collection",
+            "Document",
+            "Field"
+        ]
+    },
+    {
+        "q": "What is an embedded document in MongoDB?",
+        "type": "mcq",
+        "o": [
+            "Document nested within another document",
+            "External document reference",
+            "Compressed document",
+            "Encrypted document"
+        ]
+    },
+    {
+        "q": "Embedding is better for _____ relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "one-to-few"
+        ],
+        "other_options": [
+            "many-to-many",
+            "all",
+            "complex"
+        ]
+    },
+    {
+        "q": "Embedded documents improve read performance for related data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this embedded document query?",
+        "type": "mcq",
+        "c": "db.users.find({ \"address.city\": \"New York\" })",
+        "o": [
+            "Users with New York in embedded address",
+            "All users",
+            "Users with any address",
+            "Error - invalid query"
+        ]
+    },
+    {
+        "q": "Match the data modeling approach with its use:",
+        "type": "match",
+        "left": [
+            "Embedding",
+            "Referencing",
+            "Hybrid",
+            "Denormalization"
+        ],
+        "right": [
+            "Related data together",
+            "Separate collections",
+            "Mix of both",
+            "Duplicate for speed"
+        ]
+    },
+    {
+        "q": "Rearrange data modeling by read/write trade-off:",
+        "type": "rearrange",
+        "words": [
+            "Full normalization",
+            "Referencing",
+            "Hybrid",
+            "Full embedding",
+            "Denormalization"
+        ]
+    },
+    {
+        "q": "What is MongoDB aggregation pipeline?",
+        "type": "mcq",
+        "o": [
+            "Framework for data processing and transformation",
+            "Data replication method",
+            "Index building process",
+            "Backup procedure"
+        ]
+    },
+    {
+        "q": "The _____ stage filters documents in aggregation.",
+        "type": "fill_blank",
+        "answers": [
+            "$match"
+        ],
+        "other_options": [
+            "$filter",
+            "$where",
+            "$find"
+        ]
+    },
+    {
+        "q": "Aggregation pipelines can unwind arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this aggregation?",
+        "type": "mcq",
+        "c": "db.orders.aggregate([\n  { $group: { _id: \"$status\", count: { $sum: 1 } } }\n])",
+        "o": [
+            "Count of orders by status",
+            "All orders",
+            "Sum of all orders",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the aggregation stage with its function:",
+        "type": "match",
+        "left": [
+            "$match",
+            "$group",
+            "$project",
+            "$sort"
+        ],
+        "right": [
+            "Filter documents",
+            "Aggregate data",
+            "Reshape output",
+            "Order results"
+        ]
+    },
+    {
+        "q": "Rearrange aggregation stages by typical order:",
+        "type": "rearrange",
+        "words": [
+            "$match",
+            "$unwind",
+            "$group",
+            "$project",
+            "$sort",
+            "$limit"
+        ]
+    },
+    {
+        "q": "What is Redis persistence?",
+        "type": "mcq",
+        "o": [
+            "Saving in-memory data to disk",
+            "Keeping connections alive",
+            "Caching queries",
+            "Replicating data"
+        ]
+    },
+    {
+        "q": "RDB persistence creates point-in-time _____.",
+        "type": "fill_blank",
+        "answers": [
+            "snapshots"
+        ],
+        "other_options": [
+            "backups",
+            "copies",
+            "replicas"
+        ]
+    },
+    {
+        "q": "AOF persistence logs every write operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this persistence config?",
+        "type": "mcq",
+        "c": "save 900 1\nsave 300 10\nsave 60 10000",
+        "o": [
+            "RDB snapshot rules based on changes and time",
+            "AOF configuration",
+            "Replication settings",
+            "Memory limits"
+        ]
+    },
+    {
+        "q": "Match the Redis persistence with its trade-off:",
+        "type": "match",
+        "left": [
+            "RDB only",
+            "AOF only",
+            "RDB + AOF",
+            "No persistence"
+        ],
+        "right": [
+            "Fast recovery, data loss risk",
+            "Durable, slower",
+            "Best durability",
+            "Fastest, volatile"
+        ]
+    },
+    {
+        "q": "Rearrange Redis persistence by durability:",
+        "type": "rearrange",
+        "words": [
+            "No persistence",
+            "RDB only",
+            "AOF everysec",
+            "AOF always",
+            "RDB + AOF"
+        ]
+    },
+    {
+        "q": "What is Redis Pub/Sub?",
+        "type": "mcq",
+        "o": [
+            "Publish-subscribe messaging pattern",
+            "Public-subscriber database",
+            "Publication subscription service",
+            "Publisher synchronization"
+        ]
+    },
+    {
+        "q": "SUBSCRIBE command listens to a _____.",
+        "type": "fill_blank",
+        "answers": [
+            "channel"
+        ],
+        "other_options": [
+            "queue",
+            "topic",
+            "stream"
+        ]
+    },
+    {
+        "q": "Redis Pub/Sub messages are not persisted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Pub/Sub scenario?",
+        "type": "mcq",
+        "c": "// Client 1: SUBSCRIBE news\n// Client 2: PUBLISH news \"Breaking news!\"\n// Result for Client 1:",
+        "o": [
+            "Receives \"Breaking news!\"",
+            "Receives nothing",
+            "Connection closes",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Redis messaging with its pattern:",
+        "type": "match",
+        "left": [
+            "Pub/Sub",
+            "Lists (LPUSH/BLPOP)",
+            "Streams",
+            "Sorted Sets"
+        ],
+        "right": [
+            "Broadcast",
+            "Queue",
+            "Log with consumer groups",
+            "Priority queue"
+        ]
+    },
+    {
+        "q": "Rearrange Redis use cases by complexity:",
+        "type": "rearrange",
+        "words": [
+            "Session cache",
+            "Rate limiting",
+            "Leaderboards",
+            "Pub/Sub messaging",
+            "Stream processing"
+        ]
+    },
+    {
+        "q": "What is Cassandra's write path?",
+        "type": "mcq",
+        "o": [
+            "Commit log, memtable, then SSTable",
+            "Direct to disk",
+            "Memory only",
+            "Index first, then data"
+        ]
+    },
+    {
+        "q": "Cassandra memtables are flushed to _____ on disk.",
+        "type": "fill_blank",
+        "answers": [
+            "SSTables"
+        ],
+        "other_options": [
+            "B-trees",
+            "logs",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Cassandra writes are always sequential.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this write scenario?",
+        "type": "mcq",
+        "c": "// Write to Cassandra\n// Commit log: Written\n// Memtable: Written\n// Node crashes before flush",
+        "o": [
+            "Data recovered from commit log on restart",
+            "Data lost permanently",
+            "Partial data saved",
+            "System cannot restart"
+        ]
+    },
+    {
+        "q": "Match Cassandra storage with its role:",
+        "type": "match",
+        "left": [
+            "Commit log",
+            "Memtable",
+            "SSTable",
+            "Bloom filter"
+        ],
+        "right": [
+            "Durability",
+            "Write buffer",
+            "Immutable storage",
+            "Skip missing keys"
+        ]
+    },
+    {
+        "q": "Rearrange Cassandra compaction strategies:",
+        "type": "rearrange",
+        "words": [
+            "Size-tiered",
+            "Leveled",
+            "Time-window",
+            "Unified"
+        ]
+    },
+    {
+        "q": "What is Cassandra's partition key purpose?",
+        "type": "mcq",
+        "o": [
+            "Determines data distribution across nodes",
+            "Orders data within a partition",
+            "Creates secondary index",
+            "Defines table schema"
+        ]
+    },
+    {
+        "q": "The _____ key determines row ordering within a partition.",
+        "type": "fill_blank",
+        "answers": [
+            "clustering"
+        ],
+        "other_options": [
+            "primary",
+            "partition",
+            "secondary"
+        ]
+    },
+    {
+        "q": "A hot partition occurs when one partition receives too much traffic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this partition query?",
+        "type": "mcq",
+        "c": "CREATE TABLE events (\n  user_id int,\n  event_time timestamp,\n  data text,\n  PRIMARY KEY (user_id, event_time)\n);",
+        "o": [
+            "user_id is partition key, event_time is clustering key",
+            "Both are partition keys",
+            "Both are clustering keys",
+            "No primary key defined"
+        ]
+    },
+    {
+        "q": "Match Cassandra key type with its function:",
+        "type": "match",
+        "left": [
+            "Partition key",
+            "Clustering key",
+            "Compound key",
+            "Composite partition"
+        ],
+        "right": [
+            "Data distribution",
+            "Row ordering",
+            "Multiple columns",
+            "Multiple partition columns"
+        ]
+    },
+    {
+        "q": "Rearrange Cassandra data modeling steps:",
+        "type": "rearrange",
+        "words": [
+            "Define queries",
+            "Design tables",
+            "Choose partition key",
+            "Add clustering columns",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is Neo4j's property graph model?",
+        "type": "mcq",
+        "o": [
+            "Nodes and relationships with key-value properties",
+            "Tree structure database",
+            "Hierarchical data model",
+            "Flat file storage"
+        ]
+    },
+    {
+        "q": "Neo4j nodes can have multiple _____.",
+        "type": "fill_blank",
+        "answers": [
+            "labels"
+        ],
+        "other_options": [
+            "ids",
+            "parents",
+            "children"
+        ]
+    },
+    {
+        "q": "Relationships in Neo4j are always directed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Cypher query?",
+        "type": "mcq",
+        "c": "CREATE (p:Person {name: 'Alice'})-[:WORKS_AT]->(c:Company {name: 'TechCorp'})\nRETURN p, c",
+        "o": [
+            "Creates person and company with relationship",
+            "Finds existing nodes",
+            "Deletes nodes",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Neo4j element with its description:",
+        "type": "match",
+        "left": [
+            "Node",
+            "Relationship",
+            "Property",
+            "Label"
+        ],
+        "right": [
+            "Entity/object",
+            "Connection",
+            "Attribute",
+            "Category"
+        ]
+    },
+    {
+        "q": "Rearrange graph traversal patterns:",
+        "type": "rearrange",
+        "words": [
+            "Direct neighbor",
+            "2 hops",
+            "Variable length",
+            "Shortest path"
+        ]
+    },
+    {
+        "q": "What is the Cypher MATCH clause?",
+        "type": "mcq",
+        "o": [
+            "Pattern matching to find graph data",
+            "Creating new nodes",
+            "Deleting relationships",
+            "Updating properties"
+        ]
+    },
+    {
+        "q": "OPTIONAL MATCH returns _____ for missing matches.",
+        "type": "fill_blank",
+        "answers": [
+            "null"
+        ],
+        "other_options": [
+            "empty",
+            "error",
+            "zero"
+        ]
+    },
+    {
+        "q": "Cypher uses ASCII art syntax for patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this traversal?",
+        "type": "mcq",
+        "c": "MATCH (a:Person)-[:FRIEND*1..3]->(b:Person)\nWHERE a.name = 'Alice'\nRETURN DISTINCT b.name",
+        "o": [
+            "Friends within 3 degrees of Alice",
+            "Only direct friends",
+            "All persons",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Cypher clause with its purpose:",
+        "type": "match",
+        "left": [
+            "CREATE",
+            "MATCH",
+            "WHERE",
+            "RETURN"
+        ],
+        "right": [
+            "Add data",
+            "Find patterns",
+            "Filter results",
+            "Output data"
+        ]
+    },
+    {
+        "q": "Rearrange Cypher query structure:",
+        "type": "rearrange",
+        "words": [
+            "MATCH",
+            "WHERE",
+            "WITH",
+            "ORDER BY",
+            "RETURN",
+            "LIMIT"
+        ]
+    },
+    {
+        "q": "What is indexing in NoSQL databases?",
+        "type": "mcq",
+        "o": [
+            "Creating data structures for faster queries",
+            "Numbering documents",
+            "Sorting collections",
+            "Compressing data"
+        ]
+    },
+    {
+        "q": "MongoDB creates a default index on the _____ field.",
+        "type": "fill_blank",
+        "answers": [
+            "_id"
+        ],
+        "other_options": [
+            "name",
+            "key",
+            "id"
+        ]
+    },
+    {
+        "q": "Compound indexes support queries on multiple fields.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this index creation?",
+        "type": "mcq",
+        "c": "db.users.createIndex({ email: 1 }, { unique: true })",
+        "o": [
+            "Creates unique ascending index on email",
+            "Creates non-unique index",
+            "Drops existing index",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match index type with its use case:",
+        "type": "match",
+        "left": [
+            "Single field",
+            "Compound",
+            "Multikey",
+            "Text"
+        ],
+        "right": [
+            "Simple queries",
+            "Multiple fields",
+            "Array fields",
+            "Text search"
+        ]
+    },
+    {
+        "q": "Rearrange index selection priority:",
+        "type": "rearrange",
+        "words": [
+            "Analyze query patterns",
+            "Create needed indexes",
+            "Test performance",
+            "Monitor usage",
+            "Remove unused"
+        ]
+    },
+    {
+        "q": "What is time-to-live (TTL) in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Automatic expiration of documents after specified time",
+            "Transaction timeout",
+            "Connection lifetime",
+            "Query duration limit"
+        ]
+    },
+    {
+        "q": "MongoDB TTL indexes work on _____ fields.",
+        "type": "fill_blank",
+        "answers": [
+            "date"
+        ],
+        "other_options": [
+            "number",
+            "string",
+            "boolean"
+        ]
+    },
+    {
+        "q": "TTL is useful for session and cache data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this TTL index?",
+        "type": "mcq",
+        "c": "db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 })",
+        "o": [
+            "Documents deleted 1 hour after createdAt",
+            "Index expires after 1 hour",
+            "Query timeout of 1 hour",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match TTL use case with its benefit:",
+        "type": "match",
+        "left": [
+            "Session data",
+            "Cache entries",
+            "Logs",
+            "Temporary tokens"
+        ],
+        "right": [
+            "Auto-logout",
+            "Auto-invalidation",
+            "Auto-archival",
+            "Auto-revocation"
+        ]
+    },
+    {
+        "q": "Rearrange data lifecycle stages:",
+        "type": "rearrange",
+        "words": [
+            "Creation",
+            "Active use",
+            "Archival",
+            "TTL expiration",
+            "Deletion"
+        ]
+    },
+    {
+        "q": "What is data denormalization in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Duplicating data to avoid joins",
+            "Normalizing to 3NF",
+            "Compressing data",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "Denormalization trades _____ for read performance.",
+        "type": "fill_blank",
+        "answers": [
+            "storage"
+        ],
+        "other_options": [
+            "speed",
+            "consistency",
+            "security"
+        ]
+    },
+    {
+        "q": "Denormalization requires updating multiple copies of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this data model?",
+        "type": "mcq",
+        "c": "// User document includes embedded order history\n// Query: Get user with orders\n// Performance:",
+        "o": [
+            "Single read, no joins needed",
+            "Multiple reads required",
+            "Same as normalized",
+            "Slower than normalized"
+        ]
+    },
+    {
+        "q": "Match modeling pattern with its trade-off:",
+        "type": "match",
+        "left": [
+            "Normalized",
+            "Denormalized",
+            "Embedded",
+            "Referenced"
+        ],
+        "right": [
+            "Less duplication",
+            "Faster reads",
+            "Related data together",
+            "Flexibility"
+        ]
+    },
+    {
+        "q": "Rearrange denormalization decisions:",
+        "type": "rearrange",
+        "words": [
+            "Analyze read patterns",
+            "Identify hot queries",
+            "Embed related data",
+            "Monitor write overhead",
+            "Adjust as needed"
+        ]
+    },
+    {
+        "q": "What is schema validation in MongoDB?",
+        "type": "mcq",
+        "o": [
+            "Enforcing document structure rules",
+            "Validating queries",
+            "Checking indexes",
+            "Verifying connections"
+        ]
+    },
+    {
+        "q": "MongoDB uses _____ schema for validation rules.",
+        "type": "fill_blank",
+        "answers": [
+            "JSON"
+        ],
+        "other_options": [
+            "XML",
+            "YAML",
+            "SQL"
+        ]
+    },
+    {
+        "q": "Schema validation can be set to warn or error mode.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this validation?",
+        "type": "mcq",
+        "c": "db.createCollection(\"users\", {\n  validator: { $jsonSchema: { required: [\"name\", \"email\"] } }\n})\ndb.users.insertOne({ name: \"John\" })",
+        "o": [
+            "Insert fails - missing email",
+            "Insert succeeds",
+            "Collection not created",
+            "Schema ignored"
+        ]
+    },
+    {
+        "q": "Match validation level with its behavior:",
+        "type": "match",
+        "left": [
+            "strict",
+            "moderate",
+            "off",
+            "warn"
+        ],
+        "right": [
+            "All documents",
+            "New + modified only",
+            "No validation",
+            "Log but allow"
+        ]
+    },
+    {
+        "q": "Rearrange schema evolution steps:",
+        "type": "rearrange",
+        "words": [
+            "Define initial schema",
+            "Deploy application",
+            "Identify needs",
+            "Update schema",
+            "Migrate data"
+        ]
+    },
+    {
+        "q": "What is MongoDB change streams?",
+        "type": "mcq",
+        "o": [
+            "Real-time notifications of data changes",
+            "Data backup stream",
+            "Network traffic monitor",
+            "Query log stream"
+        ]
+    },
+    {
+        "q": "Change streams require a _____ set deployment.",
+        "type": "fill_blank",
+        "answers": [
+            "replica"
+        ],
+        "other_options": [
+            "shard",
+            "cluster",
+            "backup"
+        ]
+    },
+    {
+        "q": "Change streams can resume from a specific point.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this change stream?",
+        "type": "mcq",
+        "c": "const stream = db.users.watch();\nstream.on('change', (change) => console.log(change));\n// User updated in another session",
+        "o": [
+            "Logs the update change event",
+            "No output",
+            "Error - not supported",
+            "Logs all users"
+        ]
+    },
+    {
+        "q": "Match change stream operation with event type:",
+        "type": "match",
+        "left": [
+            "insert",
+            "update",
+            "delete",
+            "replace"
+        ],
+        "right": [
+            "New document",
+            "Modified fields",
+            "Removed document",
+            "Full document swap"
+        ]
+    },
+    {
+        "q": "Rearrange change stream use cases:",
+        "type": "rearrange",
+        "words": [
+            "Real-time sync",
+            "Event sourcing",
+            "Audit logging",
+            "Cache invalidation",
+            "Notifications"
+        ]
+    },
+    {
+        "q": "What is Redis Cluster?",
+        "type": "mcq",
+        "o": [
+            "Distributed deployment with automatic sharding",
+            "Single server deployment",
+            "Backup system",
+            "Client library"
+        ]
+    },
+    {
+        "q": "Redis Cluster uses _____ hash slots for data distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "16384"
+        ],
+        "other_options": [
+            "1024",
+            "65536",
+            "256"
+        ]
+    },
+    {
+        "q": "Redis Cluster provides automatic failover.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cluster scenario?",
+        "type": "mcq",
+        "c": "// 3 master nodes, 3 replicas\n// Master node 1 fails\n// Cluster behavior:",
+        "o": [
+            "Replica promotes to master automatically",
+            "Cluster stops working",
+            "Manual intervention required",
+            "Data lost"
+        ]
+    },
+    {
+        "q": "Match Redis deployment with its capability:",
+        "type": "match",
+        "left": [
+            "Standalone",
+            "Sentinel",
+            "Cluster",
+            "Replica"
+        ],
+        "right": [
+            "Single node",
+            "HA monitoring",
+            "Sharding + HA",
+            "Read scaling"
+        ]
+    },
+    {
+        "q": "Rearrange Redis scaling options:",
+        "type": "rearrange",
+        "words": [
+            "Vertical scaling",
+            "Read replicas",
+            "Redis Sentinel",
+            "Redis Cluster",
+            "Multi-region"
+        ]
+    },
+    {
+        "q": "What is a MongoDB replica set?",
+        "type": "mcq",
+        "o": [
+            "Group of MongoDB instances maintaining same data",
+            "Collection of indexes",
+            "Set of queries",
+            "Group of databases"
+        ]
+    },
+    {
+        "q": "A replica set has one _____ and multiple secondaries.",
+        "type": "fill_blank",
+        "answers": [
+            "primary"
+        ],
+        "other_options": [
+            "master",
+            "leader",
+            "main"
+        ]
+    },
+    {
+        "q": "Replica sets provide automatic failover.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this replica set failure?",
+        "type": "mcq",
+        "c": "// 3-node replica set\n// Primary fails\n// Election timeout: 10 seconds",
+        "o": [
+            "New primary elected within timeout",
+            "All writes fail permanently",
+            "Manual intervention required",
+            "Data corruption"
+        ]
+    },
+    {
+        "q": "Match replica set member with its role:",
+        "type": "match",
+        "left": [
+            "Primary",
+            "Secondary",
+            "Arbiter",
+            "Hidden"
+        ],
+        "right": [
+            "Accept writes",
+            "Replicate data",
+            "Vote only",
+            "Backup/reporting"
+        ]
+    },
+    {
+        "q": "Rearrange replica set election priority:",
+        "type": "rearrange",
+        "words": [
+            "Priority 0 (never)",
+            "Low priority",
+            "Default priority",
+            "High priority"
+        ]
+    },
+    {
+        "q": "What is DynamoDB?",
+        "type": "mcq",
+        "o": [
+            "AWS managed NoSQL database",
+            "Oracle database product",
+            "Open source database",
+            "Microsoft database"
+        ]
+    },
+    {
+        "q": "DynamoDB uses _____ and sort key for data access.",
+        "type": "fill_blank",
+        "answers": [
+            "partition key"
+        ],
+        "other_options": [
+            "primary key",
+            "foreign key",
+            "cluster key"
+        ]
+    },
+    {
+        "q": "DynamoDB offers both provisioned and on-demand capacity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this DynamoDB operation?",
+        "type": "mcq",
+        "c": "// GetItem with partition key only\n// Table has composite key (partition + sort)\n// Result:",
+        "o": [
+            "Error - sort key required for single item",
+            "Returns all items with partition key",
+            "Returns first matching item",
+            "Returns random item"
+        ]
+    },
+    {
+        "q": "Match DynamoDB feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Global tables",
+            "DynamoDB Streams",
+            "DAX",
+            "TTL"
+        ],
+        "right": [
+            "Multi-region",
+            "Change capture",
+            "Caching",
+            "Auto-expiration"
+        ]
+    },
+    {
+        "q": "Rearrange DynamoDB capacity modes by cost control:",
+        "type": "rearrange",
+        "words": [
+            "On-demand (pay per request)",
+            "Provisioned (fixed)",
+            "Auto-scaling",
+            "Reserved capacity"
+        ]
+    },
+    {
+        "q": "What is Elasticsearch?",
+        "type": "mcq",
+        "o": [
+            "Distributed search and analytics engine",
+            "Graph database",
+            "Key-value store",
+            "Relational database"
+        ]
+    },
+    {
+        "q": "Elasticsearch stores data as JSON _____.",
+        "type": "fill_blank",
+        "answers": [
+            "documents"
+        ],
+        "other_options": [
+            "objects",
+            "records",
+            "rows"
+        ]
+    },
+    {
+        "q": "Elasticsearch is built on Apache Lucene.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Elasticsearch query?",
+        "type": "mcq",
+        "c": "GET /products/_search\n{\n  \"query\": { \"match\": { \"name\": \"laptop\" } }\n}",
+        "o": [
+            "Products matching 'laptop' in name field",
+            "Exact match only",
+            "All products",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Elasticsearch concept with its role:",
+        "type": "match",
+        "left": [
+            "Index",
+            "Shard",
+            "Replica",
+            "Analyzer"
+        ],
+        "right": [
+            "Document collection",
+            "Data partition",
+            "Fault tolerance",
+            "Text processing"
+        ]
+    },
+    {
+        "q": "Rearrange Elasticsearch stack (ELK):",
+        "type": "rearrange",
+        "words": [
+            "Beats (collect)",
+            "Logstash (process)",
+            "Elasticsearch (store)",
+            "Kibana (visualize)"
+        ]
+    },
+    {
+        "q": "What is time-series data?",
+        "type": "mcq",
+        "o": [
+            "Data indexed by time",
+            "Old data",
+            "Scheduled data",
+            "Cached data"
+        ]
+    },
+    {
+        "q": "InfluxDB is designed for _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "time-series"
+        ],
+        "other_options": [
+            "document",
+            "graph",
+            "key-value"
+        ]
+    },
+    {
+        "q": "Time-series databases optimize for append-only writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this time-series query?",
+        "type": "mcq",
+        "c": "SELECT mean(\"temperature\")\nFROM \"sensors\"\nWHERE time > now() - 1h\nGROUP BY time(5m)",
+        "o": [
+            "Average temperature per 5-minute intervals",
+            "All temperature readings",
+            "Single average value",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match time-series database with its origin:",
+        "type": "match",
+        "left": [
+            "InfluxDB",
+            "TimescaleDB",
+            "Prometheus",
+            "OpenTSDB"
+        ],
+        "right": [
+            "Native TSDB",
+            "PostgreSQL extension",
+            "Monitoring focused",
+            "HBase based"
+        ]
+    },
+    {
+        "q": "Rearrange time-series use cases:",
+        "type": "rearrange",
+        "words": [
+            "IoT sensors",
+            "Server metrics",
+            "Financial data",
+            "User analytics",
+            "Log aggregation"
+        ]
+    },
+    {
+        "q": "What is data consistency in distributed NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Ensuring all nodes have same data view",
+            "Data validation",
+            "Schema enforcement",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "Cassandra's consistency level _____ requires majority agreement.",
+        "type": "fill_blank",
+        "answers": [
+            "QUORUM"
+        ],
+        "other_options": [
+            "ALL",
+            "ONE",
+            "LOCAL_ONE"
+        ]
+    },
+    {
+        "q": "Read and write consistency levels can be configured separately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this consistency scenario?",
+        "type": "mcq",
+        "c": "// Write consistency: ONE\n// Read consistency: ALL\n// 3-node cluster, 1 node behind\n// Read result:",
+        "o": [
+            "May read latest or stale data depending on timing",
+            "Always latest data",
+            "Always stale data",
+            "Read fails"
+        ]
+    },
+    {
+        "q": "Match consistency level with its guarantee:",
+        "type": "match",
+        "left": [
+            "ONE",
+            "QUORUM",
+            "ALL",
+            "LOCAL_QUORUM"
+        ],
+        "right": [
+            "Any single node",
+            "Majority of nodes",
+            "All replicas",
+            "Majority in local DC"
+        ]
+    },
+    {
+        "q": "Rearrange consistency levels by latency:",
+        "type": "rearrange",
+        "words": [
+            "ONE",
+            "LOCAL_ONE",
+            "LOCAL_QUORUM",
+            "QUORUM",
+            "ALL"
+        ]
+    },
+    {
+        "q": "What is a vector database?",
+        "type": "mcq",
+        "o": [
+            "Database optimized for vector embeddings",
+            "Database for graphics",
+            "Database for arrays",
+            "Mathematical database"
+        ]
+    },
+    {
+        "q": "Vector databases use _____ search for similarity.",
+        "type": "fill_blank",
+        "answers": [
+            "nearest neighbor"
+        ],
+        "other_options": [
+            "exact match",
+            "range",
+            "full-text"
+        ]
+    },
+    {
+        "q": "Vector databases are essential for AI/ML applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this vector search?",
+        "type": "mcq",
+        "c": "// Query: Find 5 nearest neighbors\n// Vector: [0.1, 0.5, 0.3, ...]\n// Distance metric: Cosine similarity",
+        "o": [
+            "Returns 5 most similar vectors",
+            "Returns exact matches only",
+            "Returns all vectors",
+            "Returns random vectors"
+        ]
+    },
+    {
+        "q": "Match vector database with its feature:",
+        "type": "match",
+        "left": [
+            "Pinecone",
+            "Milvus",
+            "Weaviate",
+            "Qdrant"
+        ],
+        "right": [
+            "Managed cloud",
+            "Open source + scale",
+            "GraphQL + semantic",
+            "Rust performance"
+        ]
+    },
+    {
+        "q": "Rearrange vector search steps:",
+        "type": "rearrange",
+        "words": [
+            "Generate embedding",
+            "Store vector",
+            "Query with vector",
+            "Find neighbors",
+            "Return results"
+        ]
+    },
+    {
+        "q": "What is multi-model database?",
+        "type": "mcq",
+        "o": [
+            "Database supporting multiple data models",
+            "Multiple database instances",
+            "Database with multiple schemas",
+            "Replicated database"
+        ]
+    },
+    {
+        "q": "ArangoDB supports document, graph, and _____ models.",
+        "type": "fill_blank",
+        "answers": [
+            "key-value"
+        ],
+        "other_options": [
+            "column",
+            "time-series",
+            "object"
+        ]
+    },
+    {
+        "q": "Multi-model databases reduce operational complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this multi-model query?",
+        "type": "mcq",
+        "c": "// ArangoDB\n// Document query + Graph traversal in one query\n// Benefit:",
+        "o": [
+            "Combine different data access patterns efficiently",
+            "Same as using separate databases",
+            "Only one model used",
+            "Query fails"
+        ]
+    },
+    {
+        "q": "Match multi-model database with its models:",
+        "type": "match",
+        "left": [
+            "ArangoDB",
+            "OrientDB",
+            "CosmosDB",
+            "FaunaDB"
+        ],
+        "right": [
+            "Document + Graph + KV",
+            "Document + Graph + Object",
+            "Multiple APIs",
+            "Document + Relational"
+        ]
+    },
+    {
+        "q": "Rearrange database selection criteria:",
+        "type": "rearrange",
+        "words": [
+            "Data model fit",
+            "Scalability needs",
+            "Consistency requirements",
+            "Operational complexity",
+            "Cost"
+        ]
+    },
+    {
+        "q": "What is MongoDB sharding?",
+        "type": "mcq",
+        "o": [
+            "Horizontal scaling by distributing data across servers",
+            "Vertical scaling",
+            "Data backup method",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "A _____ router directs queries to appropriate shards.",
+        "type": "fill_blank",
+        "answers": [
+            "mongos"
+        ],
+        "other_options": [
+            "mongod",
+            "config",
+            "arbiter"
+        ]
+    },
+    {
+        "q": "Choosing a good shard key is critical for performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sharding scenario?",
+        "type": "mcq",
+        "c": "// Shard key: { country: 1 }\n// Most data from USA\n// Query performance:",
+        "o": [
+            "Uneven distribution causes hot shard",
+            "Perfect distribution",
+            "Query fails",
+            "All shards equally loaded"
+        ]
+    },
+    {
+        "q": "Match MongoDB sharding component with its role:",
+        "type": "match",
+        "left": [
+            "mongos",
+            "Config server",
+            "Shard",
+            "Chunk"
+        ],
+        "right": [
+            "Query router",
+            "Metadata storage",
+            "Data partition",
+            "Data unit"
+        ]
+    },
+    {
+        "q": "Rearrange shard key selection criteria:",
+        "type": "rearrange",
+        "words": [
+            "High cardinality",
+            "Even distribution",
+            "Query isolation",
+            "Write distribution",
+            "Future growth"
+        ]
+    },
+    {
+        "q": "What is Cassandra lightweight transaction?",
+        "type": "mcq",
+        "o": [
+            "Compare-and-set operations using Paxos consensus",
+            "Fast transaction without logging",
+            "Reduced isolation transaction",
+            "Background transaction"
+        ]
+    },
+    {
+        "q": "LWT uses the _____ statement for conditional updates.",
+        "type": "fill_blank",
+        "answers": [
+            "IF"
+        ],
+        "other_options": [
+            "WHEN",
+            "WHERE",
+            "CASE"
+        ]
+    },
+    {
+        "q": "Lightweight transactions have higher latency than regular writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this LWT?",
+        "type": "mcq",
+        "c": "UPDATE users SET balance = 100\nWHERE user_id = 1\nIF balance = 50;",
+        "o": [
+            "Update succeeds only if balance is 50",
+            "Always updates",
+            "Error - invalid syntax",
+            "Creates new row"
+        ]
+    },
+    {
+        "q": "Match Cassandra consistency with its use case:",
+        "type": "match",
+        "left": [
+            "SERIAL",
+            "LOCAL_SERIAL",
+            "QUORUM + LWT",
+            "ONE"
+        ],
+        "right": [
+            "LWT consistency",
+            "Local DC LWT",
+            "Strong consistency",
+            "Fast writes"
+        ]
+    },
+    {
+        "q": "Rearrange transaction patterns by consistency:",
+        "type": "rearrange",
+        "words": [
+            "No transactions",
+            "LWT single row",
+            "Batch logged",
+            "Distributed transaction"
+        ]
+    },
+    {
+        "q": "What is Neo4j APOC?",
+        "type": "mcq",
+        "o": [
+            "Library of procedures for advanced functionality",
+            "API for connections",
+            "Automatic query optimizer",
+            "Performance monitor"
+        ]
+    },
+    {
+        "q": "APOC provides utilities for data _____ and transformation.",
+        "type": "fill_blank",
+        "answers": [
+            "import"
+        ],
+        "other_options": [
+            "backup",
+            "replication",
+            "encryption"
+        ]
+    },
+    {
+        "q": "APOC includes procedures for JSON handling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this APOC call?",
+        "type": "mcq",
+        "c": "CALL apoc.load.json('https://api.example.com/data')\nYIELD value\nCREATE (n:Data) SET n = value",
+        "o": [
+            "Loads JSON from URL and creates nodes",
+            "Error - external calls not allowed",
+            "Queries existing data",
+            "Backs up database"
+        ]
+    },
+    {
+        "q": "Match APOC category with its function:",
+        "type": "match",
+        "left": [
+            "apoc.load",
+            "apoc.export",
+            "apoc.refactor",
+            "apoc.algo"
+        ],
+        "right": [
+            "Import data",
+            "Export data",
+            "Modify graph",
+            "Graph algorithms"
+        ]
+    },
+    {
+        "q": "Rearrange Neo4j capabilities:",
+        "type": "rearrange",
+        "words": [
+            "Core Cypher",
+            "APOC procedures",
+            "GDS algorithms",
+            "Custom plugins"
+        ]
+    },
+    {
+        "q": "What is Redis Streams?",
+        "type": "mcq",
+        "o": [
+            "Append-only log data structure for event streaming",
+            "Network stream handling",
+            "File streaming",
+            "Memory streaming"
+        ]
+    },
+    {
+        "q": "Streams support consumer _____ for parallel processing.",
+        "type": "fill_blank",
+        "answers": [
+            "groups"
+        ],
+        "other_options": [
+            "pools",
+            "sets",
+            "clusters"
+        ]
+    },
+    {
+        "q": "Redis Streams provide at-least-once message delivery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this stream operation?",
+        "type": "mcq",
+        "c": "XADD events * sensor_id 1 temperature 22.5\nXRANGE events - + COUNT 10",
+        "o": [
+            "Adds event and reads last 10 entries",
+            "Creates new stream only",
+            "Error - invalid command",
+            "Deletes entries"
+        ]
+    },
+    {
+        "q": "Match Redis Streams command with its function:",
+        "type": "match",
+        "left": [
+            "XADD",
+            "XREAD",
+            "XGROUP",
+            "XACK"
+        ],
+        "right": [
+            "Add entry",
+            "Read entries",
+            "Manage consumers",
+            "Acknowledge processing"
+        ]
+    },
+    {
+        "q": "Rearrange stream processing steps:",
+        "type": "rearrange",
+        "words": [
+            "Producer adds",
+            "Consumer reads",
+            "Process message",
+            "Acknowledge",
+            "Trim old entries"
+        ]
+    },
+    {
+        "q": "What is data migration in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Moving data between databases or formats",
+            "Data backup",
+            "Data encryption",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "Mongodump and _____ are MongoDB migration tools.",
+        "type": "fill_blank",
+        "answers": [
+            "mongorestore"
+        ],
+        "other_options": [
+            "mongoimport",
+            "mongoexport",
+            "mongos"
+        ]
+    },
+    {
+        "q": "Schema changes in NoSQL often require data migration scripts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this migration approach?",
+        "type": "mcq",
+        "c": "// Migrate: Change field 'name' to 'fullName'\n// Strategy: Read-both, write-new, background migration",
+        "o": [
+            "Zero-downtime migration with gradual cutover",
+            "Immediate full migration",
+            "Data loss during migration",
+            "Application downtime required"
+        ]
+    },
+    {
+        "q": "Match migration strategy with its trade-off:",
+        "type": "match",
+        "left": [
+            "Big bang",
+            "Dual write",
+            "Background migration",
+            "Expand-contract"
+        ],
+        "right": [
+            "Simple but downtime",
+            "Complex but safe",
+            "Eventual completion",
+            "Gradual rollout"
+        ]
+    },
+    {
+        "q": "Rearrange migration phases:",
+        "type": "rearrange",
+        "words": [
+            "Analyze schemas",
+            "Create migration plan",
+            "Test migration",
+            "Execute migration",
+            "Validate data"
+        ]
+    },
+    {
+        "q": "What is NoSQL data modeling pattern: bucket?",
+        "type": "mcq",
+        "o": [
+            "Grouping related items into time-based containers",
+            "Storing data in S3",
+            "Creating document hierarchies",
+            "Partitioning by size"
+        ]
+    },
+    {
+        "q": "Bucket pattern is useful for _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "time-series"
+        ],
+        "other_options": [
+            "relational",
+            "graph",
+            "key-value"
+        ]
+    },
+    {
+        "q": "Bucketing reduces document count and index size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this bucket design?",
+        "type": "mcq",
+        "c": "// Instead of: 1 document per minute\n// Use: 1 document per hour with 60 measurements\n// Result:",
+        "o": [
+            "60x fewer documents, more efficient queries",
+            "Same document count",
+            "More complex queries",
+            "Data loss"
+        ]
+    },
+    {
+        "q": "Match data pattern with its use case:",
+        "type": "match",
+        "left": [
+            "Bucket",
+            "Subset",
+            "Extended reference",
+            "Computed"
+        ],
+        "right": [
+            "Time grouping",
+            "Large arrays",
+            "Denormalized refs",
+            "Pre-calculated values"
+        ]
+    },
+    {
+        "q": "Rearrange data patterns by query optimization:",
+        "type": "rearrange",
+        "words": [
+            "Single document",
+            "Extended reference",
+            "Subset",
+            "Computed pattern",
+            "Full denormalization"
+        ]
+    },
+    {
+        "q": "What is MongoDB lookup aggregation?",
+        "type": "mcq",
+        "o": [
+            "Join-like operation between collections",
+            "Index lookup",
+            "Field search",
+            "Document validation"
+        ]
+    },
+    {
+        "q": "$lookup performs a left outer _____ across collections.",
+        "type": "fill_blank",
+        "answers": [
+            "join"
+        ],
+        "other_options": [
+            "merge",
+            "union",
+            "intersect"
+        ]
+    },
+    {
+        "q": "$lookup can be expensive without proper indexes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lookup?",
+        "type": "mcq",
+        "c": "db.orders.aggregate([\n  { $lookup: {\n    from: \"products\",\n    localField: \"product_id\",\n    foreignField: \"_id\",\n    as: \"product_info\"\n  }}\n])",
+        "o": [
+            "Orders with embedded product details array",
+            "Products only",
+            "Orders only",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match aggregation stage with its purpose:",
+        "type": "match",
+        "left": [
+            "$lookup",
+            "$unwind",
+            "$graphLookup",
+            "$merge"
+        ],
+        "right": [
+            "Simple join",
+            "Flatten array",
+            "Recursive join",
+            "Output to collection"
+        ]
+    },
+    {
+        "q": "Rearrange lookup optimization strategies:",
+        "type": "rearrange",
+        "words": [
+            "Add indexes",
+            "Filter before lookup",
+            "Limit results",
+            "Use uncorrelated subqueries",
+            "Consider embedding"
+        ]
+    },
+    {
+        "q": "What is Cassandra materialized view?",
+        "type": "mcq",
+        "o": [
+            "Auto-maintained denormalized table",
+            "Virtual table definition",
+            "Query result cache",
+            "Index structure"
+        ]
+    },
+    {
+        "q": "Materialized views allow querying by _____ columns.",
+        "type": "fill_blank",
+        "answers": [
+            "different"
+        ],
+        "other_options": [
+            "same",
+            "indexed",
+            "primary"
+        ]
+    },
+    {
+        "q": "Materialized view updates add write latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this view creation?",
+        "type": "mcq",
+        "c": "CREATE MATERIALIZED VIEW users_by_email AS\nSELECT * FROM users\nWHERE email IS NOT NULL\nPRIMARY KEY (email, user_id);",
+        "o": [
+            "New table partitioned by email",
+            "Virtual view only",
+            "Index on email",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Cassandra feature with its purpose:",
+        "type": "match",
+        "left": [
+            "Base table",
+            "Materialized view",
+            "Secondary index",
+            "SASI index"
+        ],
+        "right": [
+            "Primary storage",
+            "Alternate access",
+            "Simple lookups",
+            "Text search"
+        ]
+    },
+    {
+        "q": "Rearrange query options by performance:",
+        "type": "rearrange",
+        "words": [
+            "Primary key query",
+            "Materialized view",
+            "Secondary index",
+            "ALLOW FILTERING"
+        ]
+    },
+    {
+        "q": "What is graph traversal pattern?",
+        "type": "mcq",
+        "o": [
+            "Walking through connected nodes following relationships",
+            "Searching for patterns",
+            "Creating new nodes",
+            "Deleting relationships"
+        ]
+    },
+    {
+        "q": "BFS traverses _____ before going deeper.",
+        "type": "fill_blank",
+        "answers": [
+            "neighbors"
+        ],
+        "other_options": [
+            "children",
+            "ancestors",
+            "siblings"
+        ]
+    },
+    {
+        "q": "DFS is often more memory-efficient for deep graphs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this traversal?",
+        "type": "mcq",
+        "c": "MATCH path = shortestPath(\n  (a:Person {name: 'Alice'})-[*]-(b:Person {name: 'Bob'})\n)\nRETURN path",
+        "o": [
+            "Shortest path between Alice and Bob",
+            "All paths",
+            "Direct connection only",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match graph algorithm with its application:",
+        "type": "match",
+        "left": [
+            "Shortest path",
+            "PageRank",
+            "Community detection",
+            "Centrality"
+        ],
+        "right": [
+            "Navigation",
+            "Influence ranking",
+            "Clustering",
+            "Key nodes"
+        ]
+    },
+    {
+        "q": "Rearrange path finding algorithms by complexity:",
+        "type": "rearrange",
+        "words": [
+            "BFS",
+            "Dijkstra",
+            "A*",
+            "Bellman-Ford"
+        ]
+    },
+    {
+        "q": "What is Redis memory optimization?",
+        "type": "mcq",
+        "o": [
+            "Techniques to reduce memory usage",
+            "Adding more RAM",
+            "Disk caching",
+            "Network compression"
+        ]
+    },
+    {
+        "q": "Redis _____ encoding stores small hashes efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "ziplist"
+        ],
+        "other_options": [
+            "hashtable",
+            "listpack",
+            "quicklist"
+        ]
+    },
+    {
+        "q": "Shorter key names reduce memory usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this memory analysis?",
+        "type": "mcq",
+        "c": "MEMORY USAGE user:12345\n// Returns: 128 (bytes)",
+        "o": [
+            "Shows memory used by the key",
+            "Frees memory",
+            "Shows CPU usage",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Redis optimization with its technique:",
+        "type": "match",
+        "left": [
+            "Short keys",
+            "Hashes for small objects",
+            "Expire unused",
+            "Compression"
+        ],
+        "right": [
+            "Reduce key overhead",
+            "Efficient encoding",
+            "Auto cleanup",
+            "Reduce value size"
+        ]
+    },
+    {
+        "q": "Rearrange memory management strategies:",
+        "type": "rearrange",
+        "words": [
+            "Monitor usage",
+            "Set maxmemory",
+            "Choose eviction policy",
+            "Optimize data structures",
+            "Add expiration"
+        ]
+    },
+    {
+        "q": "What is NoSQL backup strategy?",
+        "type": "mcq",
+        "o": [
+            "Plan for data protection and recovery",
+            "Performance optimization",
+            "Query caching",
+            "Index management"
+        ]
+    },
+    {
+        "q": "MongoDB _____ backup captures data at a point in time.",
+        "type": "fill_blank",
+        "answers": [
+            "snapshot"
+        ],
+        "other_options": [
+            "streaming",
+            "incremental",
+            "differential"
+        ]
+    },
+    {
+        "q": "Backups should be tested regularly for recoverability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this backup scenario?",
+        "type": "mcq",
+        "c": "// mongodump with --oplog\n// Restore with --oplogReplay\n// Result:",
+        "o": [
+            "Point-in-time consistent backup",
+            "Inconsistent backup",
+            "Schema only backup",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match backup tool with its database:",
+        "type": "match",
+        "left": [
+            "mongodump",
+            "nodetool snapshot",
+            "redis-cli BGSAVE",
+            "neo4j-admin dump"
+        ],
+        "right": [
+            "MongoDB",
+            "Cassandra",
+            "Redis",
+            "Neo4j"
+        ]
+    },
+    {
+        "q": "Rearrange backup priorities:",
+        "type": "rearrange",
+        "words": [
+            "Define RPO/RTO",
+            "Choose method",
+            "Automate backups",
+            "Test restores",
+            "Monitor success"
+        ]
+    },
+    {
+        "q": "What is NoSQL security authentication?",
+        "type": "mcq",
+        "o": [
+            "Verifying user identity before access",
+            "Encrypting data",
+            "Network firewall",
+            "Query validation"
+        ]
+    },
+    {
+        "q": "MongoDB supports _____ authentication mechanism.",
+        "type": "fill_blank",
+        "answers": [
+            "SCRAM"
+        ],
+        "other_options": [
+            "OAuth",
+            "Basic",
+            "NTLM"
+        ]
+    },
+    {
+        "q": "Enabling authentication is a basic security requirement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this security config?",
+        "type": "mcq",
+        "c": "security:\n  authorization: enabled",
+        "o": [
+            "Enables role-based access control",
+            "Enables encryption",
+            "Enables auditing",
+            "Disables authentication"
+        ]
+    },
+    {
+        "q": "Match security feature with its protection:",
+        "type": "match",
+        "left": [
+            "Authentication",
+            "Authorization",
+            "Encryption at rest",
+            "TLS"
+        ],
+        "right": [
+            "Identity verification",
+            "Permission control",
+            "Data protection",
+            "Network security"
+        ]
+    },
+    {
+        "q": "Rearrange security implementation order:",
+        "type": "rearrange",
+        "words": [
+            "Enable authentication",
+            "Configure authorization",
+            "Enable TLS",
+            "Enable encryption",
+            "Enable auditing"
+        ]
+    },
+    {
+        "q": "What is Read Preference in MongoDB?",
+        "type": "mcq",
+        "o": [
+            "Configuration for which replica set member handles reads",
+            "Read speed setting",
+            "Data format preference",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "_____ read preference routes to primary only.",
+        "type": "fill_blank",
+        "answers": [
+            "primary"
+        ],
+        "other_options": [
+            "secondary",
+            "nearest",
+            "any"
+        ]
+    },
+    {
+        "q": "Reading from secondaries may return stale data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this read preference?",
+        "type": "mcq",
+        "c": "// ReadPreference: secondaryPreferred\n// Primary available: yes\n// Secondaries available: yes\n// Read routed to:",
+        "o": [
+            "Secondary (preferred over primary)",
+            "Primary always",
+            "Random member",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match read preference with its behavior:",
+        "type": "match",
+        "left": [
+            "primary",
+            "primaryPreferred",
+            "secondary",
+            "nearest"
+        ],
+        "right": [
+            "Only primary",
+            "Primary if available",
+            "Only secondaries",
+            "Lowest latency"
+        ]
+    },
+    {
+        "q": "Rearrange read preferences by consistency:",
+        "type": "rearrange",
+        "words": [
+            "primary",
+            "primaryPreferred",
+            "secondaryPreferred",
+            "secondary",
+            "nearest"
+        ]
+    },
+    {
+        "q": "What is Write Concern in MongoDB?",
+        "type": "mcq",
+        "o": [
+            "Acknowledgment level for write operations",
+            "Write speed setting",
+            "Data validation",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Write concern _____ waits for majority acknowledgment.",
+        "type": "fill_blank",
+        "answers": [
+            "majority"
+        ],
+        "other_options": [
+            "1",
+            "0",
+            "all"
+        ]
+    },
+    {
+        "q": "Higher write concern increases durability but latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this write concern?",
+        "type": "mcq",
+        "c": "db.users.insertOne(\n  { name: \"Alice\" },\n  { writeConcern: { w: 0 } }\n)",
+        "o": [
+            "Returns immediately without waiting for acknowledgment",
+            "Waits for primary confirmation",
+            "Waits for all replicas",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match write concern with its durability:",
+        "type": "match",
+        "left": [
+            "w: 0",
+            "w: 1",
+            "w: majority",
+            "j: true"
+        ],
+        "right": [
+            "Fire and forget",
+            "Primary only",
+            "Majority replicas",
+            "Journal sync"
+        ]
+    },
+    {
+        "q": "Rearrange write concerns by durability:",
+        "type": "rearrange",
+        "words": [
+            "w: 0",
+            "w: 1",
+            "w: 1 j: true",
+            "w: majority",
+            "w: majority j: true"
+        ]
+    },
+    {
+        "q": "What is CDC in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Change Data Capture for tracking modifications",
+            "Content Delivery Cache",
+            "Consistent Data Control",
+            "Cluster Data Coordinator"
+        ]
+    },
+    {
+        "q": "CDC enables real-time data _____ to other systems.",
+        "type": "fill_blank",
+        "answers": [
+            "synchronization"
+        ],
+        "other_options": [
+            "backup",
+            "encryption",
+            "compression"
+        ]
+    },
+    {
+        "q": "CDC is useful for event sourcing architectures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this CDC scenario?",
+        "type": "mcq",
+        "c": "// Source: MongoDB change streams\n// Target: Elasticsearch\n// On insert to MongoDB:",
+        "o": [
+            "Document automatically indexed in Elasticsearch",
+            "No sync happens",
+            "Manual export required",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match CDC source with its mechanism:",
+        "type": "match",
+        "left": [
+            "MongoDB",
+            "Cassandra",
+            "DynamoDB",
+            "PostgreSQL"
+        ],
+        "right": [
+            "Change streams",
+            "CDC enabled tables",
+            "Streams",
+            "Logical replication"
+        ]
+    },
+    {
+        "q": "Rearrange CDC implementation steps:",
+        "type": "rearrange",
+        "words": [
+            "Enable source CDC",
+            "Configure connector",
+            "Set up target",
+            "Start replication",
+            "Monitor lag"
+        ]
+    },
+    {
+        "q": "What is NoSQL query optimization?",
+        "type": "mcq",
+        "o": [
+            "Improving query performance and efficiency",
+            "Writing queries",
+            "Validating syntax",
+            "Formatting output"
+        ]
+    },
+    {
+        "q": "MongoDB explain() shows the query _____ plan.",
+        "type": "fill_blank",
+        "answers": [
+            "execution"
+        ],
+        "other_options": [
+            "optimization",
+            "parsing",
+            "validation"
+        ]
+    },
+    {
+        "q": "Index scans are usually faster than collection scans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this explain?",
+        "type": "mcq",
+        "c": "db.users.find({ email: \"test@test.com\" }).explain(\"executionStats\")\n// Result shows: COLLSCAN",
+        "o": [
+            "Full collection scan - needs index",
+            "Using index efficiently",
+            "Query cached",
+            "Optimal performance"
+        ]
+    },
+    {
+        "q": "Match query problem with its solution:",
+        "type": "match",
+        "left": [
+            "COLLSCAN",
+            "SORT in memory",
+            "FETCH many",
+            "Covered query"
+        ],
+        "right": [
+            "Add index",
+            "Create sort index",
+            "Use projection",
+            "Index includes all fields"
+        ]
+    },
+    {
+        "q": "Rearrange query optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify slow queries",
+            "Analyze explain plans",
+            "Create indexes",
+            "Test improvements",
+            "Monitor ongoing"
+        ]
+    },
+    {
+        "q": "What is cross-datacenter replication?",
+        "type": "mcq",
+        "o": [
+            "Copying data between geographic locations",
+            "Within datacenter backup",
+            "Memory replication",
+            "Query replication"
+        ]
+    },
+    {
+        "q": "Cross-DC replication provides _____ recovery capability.",
+        "type": "fill_blank",
+        "answers": [
+            "disaster"
+        ],
+        "other_options": [
+            "point-in-time",
+            "partial",
+            "quick"
+        ]
+    },
+    {
+        "q": "Cross-DC replication increases write latency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cross-DC config?",
+        "type": "mcq",
+        "c": "// Active-Active: Both DCs accept writes\n// Conflict resolution: Last-write-wins",
+        "o": [
+            "Both DCs operate independently with eventual consistency",
+            "One DC is always primary",
+            "Writes are synchronous",
+            "No replication"
+        ]
+    },
+    {
+        "q": "Match replication topology with its trade-off:",
+        "type": "match",
+        "left": [
+            "Active-Passive",
+            "Active-Active",
+            "Multi-master",
+            "Hub-spoke"
+        ],
+        "right": [
+            "Simple failover",
+            "Full redundancy",
+            "Conflict handling",
+            "Central management"
+        ]
+    },
+    {
+        "q": "Rearrange DR priorities:",
+        "type": "rearrange",
+        "words": [
+            "RTO/RPO requirements",
+            "Choose topology",
+            "Configure replication",
+            "Test failover",
+            "Document runbooks"
+        ]
+    },
+    {
+        "q": "What is NoSQL monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking database health and performance",
+            "User activity logging",
+            "Query logging only",
+            "Backup verification"
+        ]
+    },
+    {
+        "q": "MongoDB serverStatus provides _____ metrics.",
+        "type": "fill_blank",
+        "answers": [
+            "real-time"
+        ],
+        "other_options": [
+            "historical",
+            "predicted",
+            "static"
+        ]
+    },
+    {
+        "q": "Proactive monitoring prevents outages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this monitoring alert?",
+        "type": "mcq",
+        "c": "// Alert: Replication lag > 30 seconds\n// Action needed:",
+        "o": [
+            "Investigate secondary performance",
+            "Ignore as normal",
+            "Restart primary",
+            "Add more indexes"
+        ]
+    },
+    {
+        "q": "Match metric with its concern:",
+        "type": "match",
+        "left": [
+            "High connections",
+            "Slow queries",
+            "Replication lag",
+            "Low memory"
+        ],
+        "right": [
+            "Connection exhaustion",
+            "Performance issue",
+            "Data freshness",
+            "Eviction risk"
+        ]
+    },
+    {
+        "q": "Rearrange monitoring setup:",
+        "type": "rearrange",
+        "words": [
+            "Identify key metrics",
+            "Set up collection",
+            "Create dashboards",
+            "Configure alerts",
+            "Establish runbooks"
+        ]
+    },
+    {
+        "q": "What is schema migration in document databases?",
+        "type": "mcq",
+        "o": [
+            "Evolving document structure over time",
+            "Moving databases",
+            "Backing up schemas",
+            "Validating schemas"
+        ]
+    },
+    {
+        "q": "Schema versioning stores the _____ in each document.",
+        "type": "fill_blank",
+        "answers": [
+            "version"
+        ],
+        "other_options": [
+            "timestamp",
+            "author",
+            "hash"
+        ]
+    },
+    {
+        "q": "Lazy migration updates documents on access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this migration strategy?",
+        "type": "mcq",
+        "c": "// Document has schemaVersion: 1\n// Application expects version: 2\n// On read: Upgrade in-place\n// Result:",
+        "o": [
+            "Document upgraded to v2 on next read",
+            "Read fails",
+            "Always returns v1 format",
+            "Database restart required"
+        ]
+    },
+    {
+        "q": "Match migration strategy with its timing:",
+        "type": "match",
+        "left": [
+            "Lazy",
+            "Eager",
+            "Batch",
+            "Application-level"
+        ],
+        "right": [
+            "On access",
+            "Immediately",
+            "Scheduled job",
+            "Code handles both"
+        ]
+    },
+    {
+        "q": "Rearrange schema evolution approaches:",
+        "type": "rearrange",
+        "words": [
+            "Backward compatible",
+            "Dual write",
+            "Lazy migration",
+            "Eager migration",
+            "Breaking change"
+        ]
+    },
+    {
+        "q": "What is CQL BATCH in Cassandra?",
+        "type": "mcq",
+        "o": [
+            "Grouping multiple statements for atomic execution",
+            "Bulk data import",
+            "Scheduled queries",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "Unlogged batch skips _____ log writes.",
+        "type": "fill_blank",
+        "answers": [
+            "batch"
+        ],
+        "other_options": [
+            "commit",
+            "transaction",
+            "redo"
+        ]
+    },
+    {
+        "q": "Large batches can cause performance issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this batch?",
+        "type": "mcq",
+        "c": "BEGIN BATCH\n  INSERT INTO users (id, name) VALUES (1, 'Alice');\n  INSERT INTO users (id, name) VALUES (2, 'Bob');\nAPPLY BATCH;",
+        "o": [
+            "Both inserts succeed or fail together",
+            "Each insert independent",
+            "First insert only",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match batch type with its guarantee:",
+        "type": "match",
+        "left": [
+            "LOGGED",
+            "UNLOGGED",
+            "COUNTER",
+            "Single partition"
+        ],
+        "right": [
+            "Atomic across partitions",
+            "No atomicity",
+            "Counter updates only",
+            "Most efficient"
+        ]
+    },
+    {
+        "q": "Rearrange batch best practices:",
+        "type": "rearrange",
+        "words": [
+            "Keep batches small",
+            "Use single partition when possible",
+            "Avoid multi-partition",
+            "Monitor performance",
+            "Consider alternatives"
+        ]
+    },
+    {
+        "q": "What is Neo4j query profiling?",
+        "type": "mcq",
+        "o": [
+            "Analyzing query execution details",
+            "Creating query templates",
+            "Caching queries",
+            "Query validation"
+        ]
+    },
+    {
+        "q": "PROFILE shows actual _____ used during execution.",
+        "type": "fill_blank",
+        "answers": [
+            "resources"
+        ],
+        "other_options": [
+            "time",
+            "memory",
+            "disk"
+        ]
+    },
+    {
+        "q": "EXPLAIN shows the plan without executing the query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this profile?",
+        "type": "mcq",
+        "c": "PROFILE MATCH (n:Person) WHERE n.name = 'Alice' RETURN n\n// Result shows: AllNodesScan",
+        "o": [
+            "Missing index on Person.name",
+            "Optimal execution",
+            "Index used efficiently",
+            "Query cached"
+        ]
+    },
+    {
+        "q": "Match Cypher operator with its efficiency:",
+        "type": "match",
+        "left": [
+            "NodeByLabelScan",
+            "NodeIndexSeek",
+            "AllNodesScan",
+            "NodeUniqueIndexSeek"
+        ],
+        "right": [
+            "Moderate",
+            "Fast",
+            "Slow",
+            "Fastest"
+        ]
+    },
+    {
+        "q": "Rearrange query optimization priority:",
+        "type": "rearrange",
+        "words": [
+            "Add indexes",
+            "Reduce result set early",
+            "Use specific labels",
+            "Limit traversal depth",
+            "Profile queries"
+        ]
+    },
+    {
+        "q": "What is Redis Lua scripting?",
+        "type": "mcq",
+        "o": [
+            "Executing custom scripts atomically in Redis",
+            "Lua programming language database",
+            "External script execution",
+            "Query language"
+        ]
+    },
+    {
+        "q": "Redis scripts execute _____.",
+        "type": "fill_blank",
+        "answers": [
+            "atomically"
+        ],
+        "other_options": [
+            "concurrently",
+            "asynchronously",
+            "partially"
+        ]
+    },
+    {
+        "q": "Lua scripts can be cached using SCRIPT LOAD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Lua script?",
+        "type": "mcq",
+        "c": "EVAL \"return redis.call('SET', KEYS[1], ARGV[1])\" 1 mykey myvalue",
+        "o": [
+            "Sets mykey to myvalue atomically",
+            "Gets mykey value",
+            "Deletes mykey",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Redis operation with its atomicity:",
+        "type": "match",
+        "left": [
+            "Single command",
+            "MULTI/EXEC",
+            "Lua script",
+            "Pipeline"
+        ],
+        "right": [
+            "Atomic",
+            "Atomic batch",
+            "Atomic custom",
+            "Non-atomic batch"
+        ]
+    },
+    {
+        "q": "Rearrange script development steps:",
+        "type": "rearrange",
+        "words": [
+            "Design logic",
+            "Write Lua script",
+            "Test locally",
+            "Load to Redis",
+            "Call with EVALSHA"
+        ]
+    },
+    {
+        "q": "What is full-text search in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Searching within text content using natural language",
+            "Exact string matching",
+            "Regular expression search",
+            "Numeric search"
+        ]
+    },
+    {
+        "q": "MongoDB text indexes support multiple _____.",
+        "type": "fill_blank",
+        "answers": [
+            "languages"
+        ],
+        "other_options": [
+            "collections",
+            "databases",
+            "fields only"
+        ]
+    },
+    {
+        "q": "Full-text search uses stemming and stop words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this text search?",
+        "type": "mcq",
+        "c": "db.articles.find({ $text: { $search: \"running fast\" } })\n// With text index on content field",
+        "o": [
+            "Articles containing 'running' or 'fast'",
+            "Articles with exact phrase only",
+            "Error - invalid query",
+            "All articles"
+        ]
+    },
+    {
+        "q": "Match search type with its capability:",
+        "type": "match",
+        "left": [
+            "Text index",
+            "Regex search",
+            "Elasticsearch",
+            "Atlas Search"
+        ],
+        "right": [
+            "Basic full-text",
+            "Pattern matching",
+            "Advanced search",
+            "Managed full-text"
+        ]
+    },
+    {
+        "q": "Rearrange search capabilities by power:",
+        "type": "rearrange",
+        "words": [
+            "Exact match",
+            "Regex",
+            "Basic text index",
+            "Elasticsearch",
+            "AI-powered search"
+        ]
+    },
+    {
+        "q": "What is connection management in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Handling database connections efficiently",
+            "Network configuration",
+            "Authentication setup",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Connection _____ reuses existing connections.",
+        "type": "fill_blank",
+        "answers": [
+            "pooling"
+        ],
+        "other_options": [
+            "caching",
+            "sharing",
+            "routing"
+        ]
+    },
+    {
+        "q": "Too many connections can exhaust database resources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this connection scenario?",
+        "type": "mcq",
+        "c": "// Pool size: 10\n// Concurrent requests: 50\n// Pool behavior:",
+        "o": [
+            "40 requests wait for available connection",
+            "50 connections created",
+            "Requests fail immediately",
+            "Database crashes"
+        ]
+    },
+    {
+        "q": "Match connection setting with its purpose:",
+        "type": "match",
+        "left": [
+            "maxPoolSize",
+            "minPoolSize",
+            "maxIdleTimeMS",
+            "connectTimeoutMS"
+        ],
+        "right": [
+            "Max connections",
+            "Keep warm",
+            "Cleanup idle",
+            "Fail fast"
+        ]
+    },
+    {
+        "q": "Rearrange connection optimization:",
+        "type": "rearrange",
+        "words": [
+            "Monitor current usage",
+            "Size pool appropriately",
+            "Set timeouts",
+            "Handle failures gracefully",
+            "Use connection reuse"
+        ]
+    },
+    {
+        "q": "What is data archival in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Moving old data to cheaper storage",
+            "Deleting old data",
+            "Compressing data",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "Archival reduces _____ database size and costs.",
+        "type": "fill_blank",
+        "answers": [
+            "active"
+        ],
+        "other_options": [
+            "total",
+            "backup",
+            "replica"
+        ]
+    },
+    {
+        "q": "Archived data should still be retrievable when needed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this archival strategy?",
+        "type": "mcq",
+        "c": "// Data older than 1 year\n// Move to cold storage\n// Query pattern:",
+        "o": [
+            "Hot tier for recent, cold tier for old",
+            "All data in one tier",
+            "Delete old data",
+            "Compress in place"
+        ]
+    },
+    {
+        "q": "Match storage tier with its characteristic:",
+        "type": "match",
+        "left": [
+            "Hot",
+            "Warm",
+            "Cold",
+            "Archive"
+        ],
+        "right": [
+            "Fastest access",
+            "Moderate access",
+            "Slow access",
+            "Rarely accessed"
+        ]
+    },
+    {
+        "q": "Rearrange data lifecycle management:",
+        "type": "rearrange",
+        "words": [
+            "Active use",
+            "Aging policy",
+            "Tier down",
+            "Archive",
+            "Delete/retain"
+        ]
+    },
+    {
+        "q": "What is NoSQL capacity planning?",
+        "type": "mcq",
+        "o": [
+            "Predicting future resource requirements",
+            "Current resource measurement",
+            "Cost reduction",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Capacity planning considers _____ rate and query load.",
+        "type": "fill_blank",
+        "answers": [
+            "growth"
+        ],
+        "other_options": [
+            "deletion",
+            "compression",
+            "encryption"
+        ]
+    },
+    {
+        "q": "Under-provisioning leads to performance degradation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this capacity analysis?",
+        "type": "mcq",
+        "c": "// Current: 100GB, 1000 IOPS\n// Growth: 20GB/month\n// 6 months forecast:",
+        "o": [
+            "Need 220GB storage capacity",
+            "No change needed",
+            "Reduce capacity",
+            "Cannot forecast"
+        ]
+    },
+    {
+        "q": "Match capacity metric with its planning factor:",
+        "type": "match",
+        "left": [
+            "Storage",
+            "IOPS",
+            "Memory",
+            "Network"
+        ],
+        "right": [
+            "Data growth",
+            "Query load",
+            "Working set",
+            "Replication traffic"
+        ]
+    },
+    {
+        "q": "Rearrange capacity planning process:",
+        "type": "rearrange",
+        "words": [
+            "Baseline current usage",
+            "Identify growth patterns",
+            "Model future needs",
+            "Plan scaling",
+            "Implement and monitor"
+        ]
+    },
+    {
+        "q": "What is geographic distribution in NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Placing data in multiple regions",
+            "Data partitioning",
+            "Local backup",
+            "Single-region deployment"
+        ]
+    },
+    {
+        "q": "Geographic distribution reduces _____ for local users.",
+        "type": "fill_blank",
+        "answers": [
+            "latency"
+        ],
+        "other_options": [
+            "cost",
+            "security",
+            "complexity"
+        ]
+    },
+    {
+        "q": "Multi-region deployments increase complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this geo-distribution?",
+        "type": "mcq",
+        "c": "// User in Asia\n// Data replicated to: US, EU, Asia\n// Read preference: nearest",
+        "o": [
+            "Reads from Asia replica with low latency",
+            "Reads from US always",
+            "Reads fail",
+            "Random region selected"
+        ]
+    },
+    {
+        "q": "Match distribution strategy with its benefit:",
+        "type": "match",
+        "left": [
+            "Single region",
+            "Multi-region read",
+            "Multi-region write",
+            "Global distribution"
+        ],
+        "right": [
+            "Simple",
+            "Low read latency",
+            "Low write latency",
+            "Full coverage"
+        ]
+    },
+    {
+        "q": "Rearrange geo-distribution considerations:",
+        "type": "rearrange",
+        "words": [
+            "Identify user locations",
+            "Choose regions",
+            "Configure replication",
+            "Set consistency",
+            "Monitor latency"
+        ]
+    },
+    {
+        "q": "What is NoSQL data compression?",
+        "type": "mcq",
+        "o": [
+            "Reducing data size to save storage and I/O",
+            "Data encryption",
+            "Data validation",
+            "Index optimization"
+        ]
+    },
+    {
+        "q": "Snappy compression balances _____ and speed.",
+        "type": "fill_blank",
+        "answers": [
+            "compression ratio"
+        ],
+        "other_options": [
+            "encryption",
+            "validation",
+            "indexing"
+        ]
+    },
+    {
+        "q": "Compression reduces storage costs but uses CPU.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this compression config?",
+        "type": "mcq",
+        "c": "// Storage engine: WiredTiger\n// Compression: zstd\n// Trade-off:",
+        "o": [
+            "Higher compression ratio, more CPU usage",
+            "No compression",
+            "Lower compression, less CPU",
+            "Same as uncompressed"
+        ]
+    },
+    {
+        "q": "Match compression algorithm with its trait:",
+        "type": "match",
+        "left": [
+            "Snappy",
+            "zlib",
+            "zstd",
+            "LZ4"
+        ],
+        "right": [
+            "Fast balanced",
+            "High ratio slow",
+            "Best ratio/speed",
+            "Fastest"
+        ]
+    },
+    {
+        "q": "Rearrange compression algorithms by ratio:",
+        "type": "rearrange",
+        "words": [
+            "LZ4",
+            "Snappy",
+            "zlib",
+            "zstd",
+            "LZMA"
+        ]
+    },
+    {
+        "q": "What is NoSQL workload analysis?",
+        "type": "mcq",
+        "o": [
+            "Understanding query patterns and data access",
+            "Load testing",
+            "Performance benchmarking",
+            "Capacity planning"
+        ]
+    },
+    {
+        "q": "Read-heavy workloads benefit from _____ indexes.",
+        "type": "fill_blank",
+        "answers": [
+            "more"
+        ],
+        "other_options": [
+            "fewer",
+            "no",
+            "different"
+        ]
+    },
+    {
+        "q": "Write-heavy workloads may need different optimization strategies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this workload analysis?",
+        "type": "mcq",
+        "c": "// Read:Write ratio = 100:1\n// Most queries: by user_id\n// Optimization:",
+        "o": [
+            "Add index on user_id, optimize for reads",
+            "Optimize for writes",
+            "No optimization needed",
+            "Remove all indexes"
+        ]
+    },
+    {
+        "q": "Match workload type with its optimization:",
+        "type": "match",
+        "left": [
+            "Read-heavy",
+            "Write-heavy",
+            "Mixed",
+            "Batch"
+        ],
+        "right": [
+            "More indexes",
+            "Fewer indexes",
+            "Balanced",
+            "Bulk operations"
+        ]
+    },
+    {
+        "q": "Rearrange workload analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "Collect metrics",
+            "Identify patterns",
+            "Classify workload",
+            "Optimize accordingly",
+            "Monitor changes"
+        ]
+    },
+    {
+        "q": "What is NoSQL data partitioning strategy?",
+        "type": "mcq",
+        "o": [
+            "Dividing data across storage units",
+            "Data backup",
+            "Data encryption",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "Hash partitioning distributes data _____.",
+        "type": "fill_blank",
+        "answers": [
+            "evenly"
+        ],
+        "other_options": [
+            "sequentially",
+            "randomly",
+            "hierarchically"
+        ]
+    },
+    {
+        "q": "Range partitioning is good for time-series data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this partitioning choice?",
+        "type": "mcq",
+        "c": "// Data: Time-series events\n// Query: Range scans by date\n// Best partitioning:",
+        "o": [
+            "Range partitioning by date",
+            "Hash partitioning",
+            "Random partitioning",
+            "No partitioning"
+        ]
+    },
+    {
+        "q": "Match partitioning with its advantage:",
+        "type": "match",
+        "left": [
+            "Hash",
+            "Range",
+            "List",
+            "Composite"
+        ],
+        "right": [
+            "Even distribution",
+            "Range scans",
+            "Explicit values",
+            "Multi-column"
+        ]
+    },
+    {
+        "q": "Rearrange partitioning considerations:",
+        "type": "rearrange",
+        "words": [
+            "Query patterns",
+            "Data distribution",
+            "Growth expectations",
+            "Operations complexity",
+            "Choose strategy"
+        ]
+    },
+    {
+        "q": "What is NoSQL hot spot?",
+        "type": "mcq",
+        "o": [
+            "Partition receiving disproportionate traffic",
+            "High CPU temperature",
+            "Popular data",
+            "Cached data"
+        ]
+    },
+    {
+        "q": "Hot spots are caused by poor _____ key selection.",
+        "type": "fill_blank",
+        "answers": [
+            "partition"
+        ],
+        "other_options": [
+            "primary",
+            "foreign",
+            "unique"
+        ]
+    },
+    {
+        "q": "Adding salt to keys can prevent hot spots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hot spot scenario?",
+        "type": "mcq",
+        "c": "// Partition key: date\n// Most queries: today's date\n// Result:",
+        "o": [
+            "Today's partition overloaded",
+            "Even distribution",
+            "No performance impact",
+            "Data loss"
+        ]
+    },
+    {
+        "q": "Match hot spot cause with its solution:",
+        "type": "match",
+        "left": [
+            "Low cardinality",
+            "Sequential keys",
+            "Temporal data",
+            "Popular entities"
+        ],
+        "right": [
+            "Add more fields",
+            "Hash or random",
+            "Time bucketing",
+            "Caching layer"
+        ]
+    },
+    {
+        "q": "Rearrange hot spot mitigation steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify hot partition",
+            "Analyze key distribution",
+            "Redesign partition key",
+            "Implement solution",
+            "Verify distribution"
+        ]
+    },
+    {
+        "q": "What is NoSQL eventual consistency pattern?",
+        "type": "mcq",
+        "o": [
+            "Accepting temporary inconsistency for availability",
+            "Always consistent",
+            "Never consistent",
+            "Transaction isolation"
+        ]
+    },
+    {
+        "q": "Read-repair helps achieve _____ consistency.",
+        "type": "fill_blank",
+        "answers": [
+            "eventual"
+        ],
+        "other_options": [
+            "strong",
+            "immediate",
+            "strict"
+        ]
+    },
+    {
+        "q": "Conflict resolution is needed in eventually consistent systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this consistency scenario?",
+        "type": "mcq",
+        "c": "// User updates profile in DC1\n// Another user reads from DC2 immediately\n// Before replication completes:",
+        "o": [
+            "May see old data temporarily",
+            "Always sees new data",
+            "Read fails",
+            "Data corrupted"
+        ]
+    },
+    {
+        "q": "Match consistency pattern with its approach:",
+        "type": "match",
+        "left": [
+            "Last-write-wins",
+            "Vector clocks",
+            "CRDTs",
+            "Quorum"
+        ],
+        "right": [
+            "Timestamp based",
+            "Causal ordering",
+            "Conflict-free",
+            "Majority agreement"
+        ]
+    },
+    {
+        "q": "Rearrange consistency strategies by complexity:",
+        "type": "rearrange",
+        "words": [
+            "Last-write-wins",
+            "Quorum",
+            "Vector clocks",
+            "CRDTs",
+            "Consensus protocols"
+        ]
+    },
+    {
+        "q": "What is CRDT in distributed systems?",
+        "type": "mcq",
+        "o": [
+            "Conflict-free Replicated Data Type",
+            "Consistent Replicated Data Transfer",
+            "Concurrent Read Data Type",
+            "Cached Replicated Data Transfer"
+        ]
+    },
+    {
+        "q": "CRDTs allow concurrent _____ without conflicts.",
+        "type": "fill_blank",
+        "answers": [
+            "updates"
+        ],
+        "other_options": [
+            "reads",
+            "deletes",
+            "creates"
+        ]
+    },
+    {
+        "q": "G-Counter is a grow-only CRDT counter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this CRDT operation?",
+        "type": "mcq",
+        "c": "// G-Counter: Node A = 5, Node B = 3\n// Merge operation:",
+        "o": [
+            "Max of each node's count",
+            "Sum of all counts",
+            "Average",
+            "Conflict error"
+        ]
+    },
+    {
+        "q": "Match CRDT type with its operation:",
+        "type": "match",
+        "left": [
+            "G-Counter",
+            "PN-Counter",
+            "G-Set",
+            "OR-Set"
+        ],
+        "right": [
+            "Increment only",
+            "Increment and decrement",
+            "Add only",
+            "Add and remove"
+        ]
+    },
+    {
+        "q": "Rearrange CRDT complexity:",
+        "type": "rearrange",
+        "words": [
+            "G-Counter",
+            "PN-Counter",
+            "G-Set",
+            "2P-Set",
+            "OR-Set"
+        ]
+    },
+    {
+        "q": "What is NoSQL idempotency?",
+        "type": "mcq",
+        "o": [
+            "Operations that produce same result regardless of repetition",
+            "Data validation",
+            "Error handling",
+            "Transaction isolation"
+        ]
+    },
+    {
+        "q": "Idempotent operations are safe to _____.",
+        "type": "fill_blank",
+        "answers": [
+            "retry"
+        ],
+        "other_options": [
+            "cache",
+            "delete",
+            "encrypt"
+        ]
+    },
+    {
+        "q": "PUT is typically idempotent, POST is not.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of idempotent operation?",
+        "type": "mcq",
+        "c": "// Set user.name = 'Alice'\n// Execute twice\n// Result:",
+        "o": [
+            "Name is 'Alice' after both executions",
+            "Name is 'AliceAlice'",
+            "Error on second execution",
+            "Undefined behavior"
+        ]
+    },
+    {
+        "q": "Match operation with its idempotency:",
+        "type": "match",
+        "left": [
+            "SET value",
+            "INCREMENT",
+            "DELETE if exists",
+            "INSERT unique"
+        ],
+        "right": [
+            "Idempotent",
+            "Not idempotent",
+            "Idempotent",
+            "Conditional idempotent"
+        ]
+    },
+    {
+        "q": "Rearrange idempotency design patterns:",
+        "type": "rearrange",
+        "words": [
+            "Use idempotency keys",
+            "Store operation IDs",
+            "Check before apply",
+            "Return cached result",
+            "Expire old keys"
+        ]
+    },
+    {
+        "q": "What is NoSQL distributed locking?",
+        "type": "mcq",
+        "o": [
+            "Coordinating access across multiple nodes",
+            "Node authentication",
+            "Data encryption",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Redis SETNX is used for _____ locks.",
+        "type": "fill_blank",
+        "answers": [
+            "distributed"
+        ],
+        "other_options": [
+            "local",
+            "shared",
+            "exclusive"
+        ]
+    },
+    {
+        "q": "Lock expiration prevents deadlocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lock attempt?",
+        "type": "mcq",
+        "c": "SET lock:resource1 owner1 NX EX 30",
+        "o": [
+            "Lock acquired for 30 seconds if not exists",
+            "Lock always acquired",
+            "Lock fails",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match locking pattern with its use:",
+        "type": "match",
+        "left": [
+            "SETNX",
+            "Redlock",
+            "Fencing token",
+            "Lease"
+        ],
+        "right": [
+            "Simple lock",
+            "Multi-node lock",
+            "Prevent stale locks",
+            "Auto-renewing"
+        ]
+    },
+    {
+        "q": "Rearrange lock acquisition steps:",
+        "type": "rearrange",
+        "words": [
+            "Attempt lock",
+            "Check if acquired",
+            "Perform operation",
+            "Release lock",
+            "Handle timeout"
+        ]
+    },
+    {
+        "q": "What is NoSQL rate limiting?",
+        "type": "mcq",
+        "o": [
+            "Controlling request frequency to protect resources",
+            "Network throttling",
+            "Data compression",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Token bucket algorithm allows _____ of tokens.",
+        "type": "fill_blank",
+        "answers": [
+            "bursts"
+        ],
+        "other_options": [
+            "fixed rate",
+            "unlimited",
+            "no"
+        ]
+    },
+    {
+        "q": "Rate limiting protects databases from overload.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this rate limit?",
+        "type": "mcq",
+        "c": "// Limit: 100 req/min\n// Current: 120 requests in 1 minute\n// Result:",
+        "o": [
+            "20 requests rejected or delayed",
+            "All requests processed",
+            "All requests rejected",
+            "System crashes"
+        ]
+    },
+    {
+        "q": "Match rate limiting algorithm with its behavior:",
+        "type": "match",
+        "left": [
+            "Token bucket",
+            "Leaky bucket",
+            "Fixed window",
+            "Sliding window"
+        ],
+        "right": [
+            "Allows bursts",
+            "Constant rate",
+            "Simple but edge cases",
+            "Accurate but complex"
+        ]
+    },
+    {
+        "q": "Rearrange rate limiting implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define limits",
+            "Choose algorithm",
+            "Implement counter",
+            "Handle exceeded",
+            "Monitor usage"
+        ]
+    },
+    {
+        "q": "What is NoSQL session management?",
+        "type": "mcq",
+        "o": [
+            "Storing and managing user sessions",
+            "Database connections",
+            "Query caching",
+            "Authentication"
+        ]
+    },
+    {
+        "q": "Redis is often used for session _____ due to speed.",
+        "type": "fill_blank",
+        "answers": [
+            "storage"
+        ],
+        "other_options": [
+            "encryption",
+            "validation",
+            "creation"
+        ]
+    },
+    {
+        "q": "Session data should have TTL for automatic cleanup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this session storage?",
+        "type": "mcq",
+        "c": "SETEX session:abc123 3600 '{\"user_id\": 1}'",
+        "o": [
+            "Session stored with 1 hour expiry",
+            "Session stored permanently",
+            "Session deleted",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match session pattern with its benefit:",
+        "type": "match",
+        "left": [
+            "Redis sessions",
+            "JWT tokens",
+            "Database sessions",
+            "Cookie sessions"
+        ],
+        "right": [
+            "Fast shared",
+            "Stateless",
+            "Persistent",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "Rearrange session lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create session",
+            "Store data",
+            "Read on request",
+            "Update activity",
+            "Expire or logout"
+        ]
+    },
+    {
+        "q": "What is NoSQL caching pattern?",
+        "type": "mcq",
+        "o": [
+            "Storing frequently accessed data in fast storage",
+            "Data backup",
+            "Query logging",
+            "Index creation"
+        ]
+    },
+    {
+        "q": "Cache-aside pattern reads from _____ first.",
+        "type": "fill_blank",
+        "answers": [
+            "cache"
+        ],
+        "other_options": [
+            "database",
+            "disk",
+            "network"
+        ]
+    },
+    {
+        "q": "Write-through updates cache and database together.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of cache-aside?",
+        "type": "mcq",
+        "c": "// Request: Get user 123\n// Cache: Miss\n// Database: Found\n// Next step:",
+        "o": [
+            "Return data and update cache",
+            "Return null",
+            "Only return data",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match caching pattern with its write behavior:",
+        "type": "match",
+        "left": [
+            "Cache-aside",
+            "Write-through",
+            "Write-behind",
+            "Read-through"
+        ],
+        "right": [
+            "App writes both",
+            "Cache writes DB",
+            "Async write to DB",
+            "Cache loads on miss"
+        ]
+    },
+    {
+        "q": "Rearrange caching strategies by consistency:",
+        "type": "rearrange",
+        "words": [
+            "Write-through",
+            "Read-through",
+            "Cache-aside",
+            "Write-behind",
+            "No cache"
+        ]
+    },
+    {
+        "q": "What is cache invalidation?",
+        "type": "mcq",
+        "o": [
+            "Removing or updating stale cached data",
+            "Cache initialization",
+            "Cache expiration",
+            "Cache logging"
+        ]
+    },
+    {
+        "q": "Event-driven invalidation uses _____ to update cache.",
+        "type": "fill_blank",
+        "answers": [
+            "notifications"
+        ],
+        "other_options": [
+            "polling",
+            "timers",
+            "random"
+        ]
+    },
+    {
+        "q": "Cache invalidation is one of the hardest problems in computing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this invalidation?",
+        "type": "mcq",
+        "c": "// User updates profile\n// Event: user.updated\n// Cache invalidation:",
+        "o": [
+            "Delete or refresh cached user data",
+            "Ignore event",
+            "Cache updated automatically",
+            "Database updated"
+        ]
+    },
+    {
+        "q": "Match invalidation strategy with its trade-off:",
+        "type": "match",
+        "left": [
+            "TTL-based",
+            "Event-driven",
+            "Write-through",
+            "Manual"
+        ],
+        "right": [
+            "Simple but stale",
+            "Complex but fresh",
+            "Consistent but slow",
+            "Flexible but error-prone"
+        ]
+    },
+    {
+        "q": "Rearrange invalidation approaches by freshness:",
+        "type": "rearrange",
+        "words": [
+            "Long TTL",
+            "Short TTL",
+            "Event-driven",
+            "Write-through",
+            "No caching"
+        ]
+    },
+    {
+        "q": "What is NoSQL data validation?",
+        "type": "mcq",
+        "o": [
+            "Ensuring data meets defined rules before storage",
+            "Query validation",
+            "Schema creation",
+            "Index validation"
+        ]
+    },
+    {
+        "q": "Application-level validation occurs _____ database writes.",
+        "type": "fill_blank",
+        "answers": [
+            "before"
+        ],
+        "other_options": [
+            "after",
+            "during",
+            "instead of"
+        ]
+    },
+    {
+        "q": "Both application and database validation provide defense in depth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this validation?",
+        "type": "mcq",
+        "c": "// Schema: email must be valid format\n// Insert: { email: 'invalid' }\n// Result:",
+        "o": [
+            "Insert rejected with validation error",
+            "Insert succeeds",
+            "Email auto-corrected",
+            "Database crashes"
+        ]
+    },
+    {
+        "q": "Match validation layer with its purpose:",
+        "type": "match",
+        "left": [
+            "Application",
+            "API gateway",
+            "Database schema",
+            "Trigger"
+        ],
+        "right": [
+            "Business logic",
+            "Request format",
+            "Data integrity",
+            "Complex rules"
+        ]
+    },
+    {
+        "q": "Rearrange validation defense layers:",
+        "type": "rearrange",
+        "words": [
+            "Client",
+            "API gateway",
+            "Application",
+            "Database",
+            "Monitoring"
+        ]
+    },
+    {
+        "q": "What is NoSQL data encryption?",
+        "type": "mcq",
+        "o": [
+            "Protecting data confidentiality through encryption",
+            "Data compression",
+            "Data validation",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Client-side encryption protects data _____ it reaches the database.",
+        "type": "fill_blank",
+        "answers": [
+            "before"
+        ],
+        "other_options": [
+            "after",
+            "when",
+            "if"
+        ]
+    },
+    {
+        "q": "Encrypted data cannot be queried without decryption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of client-side encryption?",
+        "type": "mcq",
+        "c": "// Encrypt: SSN before storing\n// Query: Find by SSN\n// Required:",
+        "o": [
+            "Encrypt search value, use deterministic encryption",
+            "Query encrypted field directly",
+            "Decrypt all data",
+            "Cannot search"
+        ]
+    },
+    {
+        "q": "Match encryption type with its searchability:",
+        "type": "match",
+        "left": [
+            "No encryption",
+            "TDE",
+            "Deterministic",
+            "Randomized"
+        ],
+        "right": [
+            "Full search",
+            "Full search",
+            "Equality search",
+            "No search"
+        ]
+    },
+    {
+        "q": "Rearrange encryption layers by scope:",
+        "type": "rearrange",
+        "words": [
+            "Application field",
+            "Client-side",
+            "TDE",
+            "Storage",
+            "Network"
+        ]
+    },
+    {
+        "q": "What is NoSQL audit logging?",
+        "type": "mcq",
+        "o": [
+            "Recording database operations for compliance and security",
+            "Performance logging",
+            "Error logging",
+            "Debug logging"
+        ]
+    },
+    {
+        "q": "Audit logs track _____, what, and when.",
+        "type": "fill_blank",
+        "answers": [
+            "who"
+        ],
+        "other_options": [
+            "how",
+            "why",
+            "where"
+        ]
+    },
+    {
+        "q": "Audit logs should be tamper-proof.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this audit config?",
+        "type": "mcq",
+        "c": "auditLog:\n  destination: file\n  filter: '{ atype: { $in: [\"authenticate\", \"authCheck\"] } }'",
+        "o": [
+            "Logs authentication and authorization events",
+            "Logs all operations",
+            "Logs errors only",
+            "Disables logging"
+        ]
+    },
+    {
+        "q": "Match audit event with its category:",
+        "type": "match",
+        "left": [
+            "Login attempt",
+            "Schema change",
+            "Data access",
+            "Permission change"
+        ],
+        "right": [
+            "Authentication",
+            "DDL",
+            "DML",
+            "Security"
+        ]
+    },
+    {
+        "q": "Rearrange audit implementation:",
+        "type": "rearrange",
+        "words": [
+            "Enable auditing",
+            "Configure filters",
+            "Set destination",
+            "Protect logs",
+            "Review regularly"
+        ]
+    },
+    {
+        "q": "What is NoSQL performance testing?",
+        "type": "mcq",
+        "o": [
+            "Measuring database performance under load",
+            "Functional testing",
+            "Security testing",
+            "Unit testing"
+        ]
+    },
+    {
+        "q": "YCSB is a popular NoSQL _____ tool.",
+        "type": "fill_blank",
+        "answers": [
+            "benchmarking"
+        ],
+        "other_options": [
+            "backup",
+            "migration",
+            "monitoring"
+        ]
+    },
+    {
+        "q": "Performance testing should simulate production workloads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this benchmark?",
+        "type": "mcq",
+        "c": "// YCSB workload A: 50% read, 50% update\n// Threads: 100\n// Operations: 1M\n// Measures:",
+        "o": [
+            "Throughput and latency under mixed workload",
+            "Only read performance",
+            "Only write performance",
+            "Storage usage"
+        ]
+    },
+    {
+        "q": "Match benchmark tool with its focus:",
+        "type": "match",
+        "left": [
+            "YCSB",
+            "sysbench",
+            "cassandra-stress",
+            "redis-benchmark"
+        ],
+        "right": [
+            "Multi-database",
+            "MySQL focused",
+            "Cassandra specific",
+            "Redis specific"
+        ]
+    },
+    {
+        "q": "Rearrange performance testing process:",
+        "type": "rearrange",
+        "words": [
+            "Define workload",
+            "Set up environment",
+            "Run baseline",
+            "Apply changes",
+            "Compare results"
+        ]
+    },
+    {
+        "q": "What is NoSQL operational excellence?",
+        "type": "mcq",
+        "o": [
+            "Best practices for running databases in production",
+            "Performance optimization",
+            "Development practices",
+            "Design patterns"
+        ]
+    },
+    {
+        "q": "Runbooks document _____ for common issues.",
+        "type": "fill_blank",
+        "answers": [
+            "procedures"
+        ],
+        "other_options": [
+            "code",
+            "errors",
+            "metrics"
+        ]
+    },
+    {
+        "q": "Automation reduces human error in operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of operational maturity?",
+        "type": "mcq",
+        "c": "// Automated: Backups, failover, scaling\n// Monitored: All critical metrics\n// Documented: Runbooks for incidents\n// Result:",
+        "o": [
+            "Reduced downtime and faster recovery",
+            "More manual work",
+            "Same reliability",
+            "Higher costs only"
+        ]
+    },
+    {
+        "q": "Match operational practice with its benefit:",
+        "type": "match",
+        "left": [
+            "Automation",
+            "Monitoring",
+            "Documentation",
+            "Testing"
+        ],
+        "right": [
+            "Consistency",
+            "Visibility",
+            "Knowledge share",
+            "Confidence"
+        ]
+    },
+    {
+        "q": "Rearrange operational maturity levels:",
+        "type": "rearrange",
+        "words": [
+            "Manual everything",
+            "Basic automation",
+            "Full monitoring",
+            "Self-healing",
+            "Predictive"
+        ]
+    },
+    {
+        "q": "What is NoSQL cost optimization?",
+        "type": "mcq",
+        "o": [
+            "Reducing database costs while maintaining performance",
+            "Reducing features",
+            "Removing data",
+            "Downgrading hardware"
+        ]
+    },
+    {
+        "q": "Reserved capacity offers _____ vs on-demand pricing.",
+        "type": "fill_blank",
+        "answers": [
+            "discounts"
+        ],
+        "other_options": [
+            "premiums",
+            "same price",
+            "flexibility"
+        ]
+    },
+    {
+        "q": "Right-sizing prevents over-provisioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cost analysis?",
+        "type": "mcq",
+        "c": "// Current: 32GB RAM, 20% used\n// Optimization:",
+        "o": [
+            "Resize to smaller instance",
+            "Add more RAM",
+            "No change needed",
+            "Delete data"
+        ]
+    },
+    {
+        "q": "Match cost factor with its optimization:",
+        "type": "match",
+        "left": [
+            "Storage",
+            "Compute",
+            "Network",
+            "Operations"
+        ],
+        "right": [
+            "Compression/archival",
+            "Right-sizing",
+            "Data locality",
+            "Automation"
+        ]
+    },
+    {
+        "q": "Rearrange cost optimization priority:",
+        "type": "rearrange",
+        "words": [
+            "Right-size resources",
+            "Use reserved capacity",
+            "Optimize storage",
+            "Archive old data",
+            "Automate operations"
+        ]
+    },
+    {
+        "q": "What is NoSQL testing strategy?",
+        "type": "mcq",
+        "o": [
+            "Verifying database behavior and performance",
+            "Code testing only",
+            "UI testing",
+            "Network testing"
+        ]
+    },
+    {
+        "q": "Integration tests verify _____ with the database.",
+        "type": "fill_blank",
+        "answers": [
+            "interaction"
+        ],
+        "other_options": [
+            "connection",
+            "schema",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Using test containers provides isolated test environments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this test approach?",
+        "type": "mcq",
+        "c": "// Testcontainers: Spin up MongoDB\n// Test: CRUD operations\n// After test: Container destroyed",
+        "o": [
+            "Isolated, reproducible database tests",
+            "Shared database issues",
+            "No test isolation",
+            "Slow test setup"
+        ]
+    },
+    {
+        "q": "Match test type with its scope:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "Performance",
+            "Chaos"
+        ],
+        "right": [
+            "Single function",
+            "System interaction",
+            "Load handling",
+            "Failure response"
+        ]
+    },
+    {
+        "q": "Rearrange test pyramid layers:",
+        "type": "rearrange",
+        "words": [
+            "Unit tests (many)",
+            "Integration tests",
+            "Component tests",
+            "E2E tests (few)"
+        ]
+    },
+    {
+        "q": "What is NoSQL schema evolution?",
+        "type": "mcq",
+        "o": [
+            "Changing data structure over time",
+            "Database upgrade",
+            "Data migration",
+            "Index creation"
+        ]
+    },
+    {
+        "q": "Additive changes are _____ compatible.",
+        "type": "fill_blank",
+        "answers": [
+            "backward"
+        ],
+        "other_options": [
+            "forward",
+            "fully",
+            "not"
+        ]
+    },
+    {
+        "q": "Removing required fields is a breaking change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this schema change?",
+        "type": "mcq",
+        "c": "// Old schema: { name: string }\n// New schema: { name: string, email?: string }\n// Compatibility:",
+        "o": [
+            "Backward compatible - old data still valid",
+            "Breaking change",
+            "Forward compatible only",
+            "No compatibility"
+        ]
+    },
+    {
+        "q": "Match schema change with its compatibility:",
+        "type": "match",
+        "left": [
+            "Add optional field",
+            "Add required field",
+            "Remove field",
+            "Rename field"
+        ],
+        "right": [
+            "Backward compatible",
+            "Breaking",
+            "Breaking",
+            "Breaking"
+        ]
+    },
+    {
+        "q": "Rearrange schema change safety:",
+        "type": "rearrange",
+        "words": [
+            "Add optional field",
+            "Add with default",
+            "Migrate data",
+            "Remove field",
+            "Rename field"
+        ]
+    },
+    {
+        "q": "What is NoSQL observability stack?",
+        "type": "mcq",
+        "o": [
+            "Tools for monitoring, logging, and tracing",
+            "Backup tools",
+            "Development tools",
+            "Security tools"
+        ]
+    },
+    {
+        "q": "Prometheus collects _____ from databases.",
+        "type": "fill_blank",
+        "answers": [
+            "metrics"
+        ],
+        "other_options": [
+            "logs",
+            "traces",
+            "backups"
+        ]
+    },
+    {
+        "q": "Grafana dashboards visualize database metrics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this stack?",
+        "type": "mcq",
+        "c": "// Prometheus: Scrape MongoDB metrics\n// Grafana: Display dashboard\n// Alert: When replication lag > 10s",
+        "o": [
+            "Real-time visibility and alerting",
+            "Logs only",
+            "Backups only",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "Match observability tool with its function:",
+        "type": "match",
+        "left": [
+            "Prometheus",
+            "Grafana",
+            "ELK",
+            "Jaeger"
+        ],
+        "right": [
+            "Metrics collection",
+            "Visualization",
+            "Log analysis",
+            "Distributed tracing"
+        ]
+    },
+    {
+        "q": "Rearrange observability implementation:",
+        "type": "rearrange",
+        "words": [
+            "Enable exporters",
+            "Configure collection",
+            "Create dashboards",
+            "Set up alerts",
+            "Establish SLOs"
+        ]
+    },
+    {
+        "q": "What is NoSQL SRE practices?",
+        "type": "mcq",
+        "o": [
+            "Site Reliability Engineering for database operations",
+            "Software Requirements Engineering",
+            "System Resource Engineering",
+            "Service Response Engineering"
+        ]
+    },
+    {
+        "q": "SLOs define _____ for database availability.",
+        "type": "fill_blank",
+        "answers": [
+            "targets"
+        ],
+        "other_options": [
+            "rules",
+            "limits",
+            "policies"
+        ]
+    },
+    {
+        "q": "Error budgets allow controlled risk-taking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this SLO?",
+        "type": "mcq",
+        "c": "// SLO: 99.9% availability\n// Current month: 99.5%\n// Error budget:",
+        "o": [
+            "Exceeded, need reliability focus",
+            "On track",
+            "Not applicable",
+            "Plenty remaining"
+        ]
+    },
+    {
+        "q": "Match SRE concept with its purpose:",
+        "type": "match",
+        "left": [
+            "SLI",
+            "SLO",
+            "SLA",
+            "Error budget"
+        ],
+        "right": [
+            "Metric",
+            "Internal target",
+            "External contract",
+            "Allowed failures"
+        ]
+    },
+    {
+        "q": "Rearrange SRE maturity:",
+        "type": "rearrange",
+        "words": [
+            "Define SLIs",
+            "Set SLOs",
+            "Calculate error budget",
+            "Automate responses",
+            "Continuous improvement"
+        ]
+    },
+    {
+        "q": "What is database federation?",
+        "type": "mcq",
+        "o": [
+            "Accessing multiple databases through single interface",
+            "Single database setup",
+            "Database replication",
+            "Database backup"
+        ]
+    },
+    {
+        "q": "Federation provides _____ access to distributed data.",
+        "type": "fill_blank",
+        "answers": [
+            "unified"
+        ],
+        "other_options": [
+            "separate",
+            "fast",
+            "slow"
+        ]
+    },
+    {
+        "q": "Federation abstracts data location from applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this federation query?",
+        "type": "mcq",
+        "c": "// Query: Get user profile\n// User data: MongoDB\n// Orders: PostgreSQL\n// Federated query result:",
+        "o": [
+            "Combined data from both databases",
+            "MongoDB data only",
+            "PostgreSQL data only",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match federation approach with its trait:",
+        "type": "match",
+        "left": [
+            "Virtual federation",
+            "ETL",
+            "Materialized views",
+            "GraphQL federation"
+        ],
+        "right": [
+            "Real-time query",
+            "Batch sync",
+            "Pre-computed",
+            "API layer"
+        ]
+    },
+    {
+        "q": "Rearrange federation complexity:",
+        "type": "rearrange",
+        "words": [
+            "Single database",
+            "Read replicas",
+            "Sharded database",
+            "Multi-database",
+            "Full federation"
+        ]
+    },
+    {
+        "q": "What is NoSQL anti-pattern: god collection?",
+        "type": "mcq",
+        "o": [
+            "Single collection with all data types",
+            "Distributed collection",
+            "Well-designed collection",
+            "Empty collection"
+        ]
+    },
+    {
+        "q": "God collections become _____ to maintain.",
+        "type": "fill_blank",
+        "answers": [
+            "difficult"
+        ],
+        "other_options": [
+            "easy",
+            "fast",
+            "simple"
+        ]
+    },
+    {
+        "q": "Splitting large collections improves manageability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this anti-pattern?",
+        "type": "mcq",
+        "c": "// Collection: 'data'\n// Contains: users, orders, products, logs\n// Problems:",
+        "o": [
+            "Query complexity, indexing challenges, scaling issues",
+            "Simple queries",
+            "Easy optimization",
+            "No issues"
+        ]
+    },
+    {
+        "q": "Match anti-pattern with its problem:",
+        "type": "match",
+        "left": [
+            "God collection",
+            "Unbounded arrays",
+            "Deep nesting",
+            "No indexes"
+        ],
+        "right": [
+            "Maintenance",
+            "Document size",
+            "Query complexity",
+            "Slow queries"
+        ]
+    },
+    {
+        "q": "Rearrange collection design steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify entities",
+            "Define relationships",
+            "Choose embedding vs ref",
+            "Design indexes",
+            "Validate queries"
+        ]
+    },
+    {
+        "q": "What is NoSQL transaction saga pattern?",
+        "type": "mcq",
+        "o": [
+            "Sequence of local transactions with compensating actions",
+            "Single transaction",
+            "Distributed lock",
+            "Two-phase commit"
+        ]
+    },
+    {
+        "q": "Saga provides eventual _____ across services.",
+        "type": "fill_blank",
+        "answers": [
+            "consistency"
+        ],
+        "other_options": [
+            "isolation",
+            "durability",
+            "atomicity"
+        ]
+    },
+    {
+        "q": "Compensating transactions undo failed saga steps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this saga?",
+        "type": "mcq",
+        "c": "// Step 1: Reserve inventory (success)\n// Step 2: Charge payment (failure)\n// Saga action:",
+        "o": [
+            "Compensate: Release inventory",
+            "Ignore failure",
+            "Retry forever",
+            "Crash system"
+        ]
+    },
+    {
+        "q": "Match saga type with its coordination:",
+        "type": "match",
+        "left": [
+            "Choreography",
+            "Orchestration",
+            "Hybrid",
+            "Nested"
+        ],
+        "right": [
+            "Event-driven",
+            "Central coordinator",
+            "Mixed",
+            "Sub-transactions"
+        ]
+    },
+    {
+        "q": "Rearrange saga implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define steps",
+            "Implement compensations",
+            "Choose coordination",
+            "Handle failures",
+            "Monitor progress"
+        ]
+    },
+    {
+        "q": "What is NoSQL outbox pattern?",
+        "type": "mcq",
+        "o": [
+            "Reliable event publishing using database",
+            "Email sending",
+            "Message queue",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Outbox pattern ensures _____ delivery of events.",
+        "type": "fill_blank",
+        "answers": [
+            "at-least-once"
+        ],
+        "other_options": [
+            "exactly-once",
+            "at-most-once",
+            "no"
+        ]
+    },
+    {
+        "q": "Outbox writes event and data in same transaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of outbox pattern?",
+        "type": "mcq",
+        "c": "// Transaction: Insert order + Insert to outbox\n// Background: Read outbox, publish to Kafka\n// Benefit:",
+        "o": [
+            "Guaranteed event delivery with data consistency",
+            "Faster writes",
+            "Less storage",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "Match pattern with its guarantee:",
+        "type": "match",
+        "left": [
+            "Outbox",
+            "Direct publish",
+            "2PC",
+            "Polling publisher"
+        ],
+        "right": [
+            "Reliable + consistent",
+            "May lose events",
+            "Distributed atomic",
+            "Pull-based"
+        ]
+    },
+    {
+        "q": "Rearrange outbox processing:",
+        "type": "rearrange",
+        "words": [
+            "Write to outbox",
+            "Poll for new events",
+            "Publish to broker",
+            "Mark as processed",
+            "Archive old events"
+        ]
+    },
+    {
+        "q": "What is NoSQL circuit breaker?",
+        "type": "mcq",
+        "o": [
+            "Preventing cascading failures by stopping requests",
+            "Electrical component",
+            "Network switch",
+            "Load balancer"
+        ]
+    },
+    {
+        "q": "Circuit breaker has _____, open, and half-open states.",
+        "type": "fill_blank",
+        "answers": [
+            "closed"
+        ],
+        "other_options": [
+            "broken",
+            "fixed",
+            "partial"
+        ]
+    },
+    {
+        "q": "Circuit breaker allows system to fail fast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output when circuit is open?",
+        "type": "mcq",
+        "c": "// Database: Unresponsive\n// Circuit breaker: Open\n// New request arrives:",
+        "o": [
+            "Returns fallback immediately without trying database",
+            "Retries until success",
+            "Hangs indefinitely",
+            "Crashes application"
+        ]
+    },
+    {
+        "q": "Match circuit state with its behavior:",
+        "type": "match",
+        "left": [
+            "Closed",
+            "Open",
+            "Half-open",
+            "Disabled"
+        ],
+        "right": [
+            "Normal operation",
+            "Fail fast",
+            "Test recovery",
+            "No protection"
+        ]
+    },
+    {
+        "q": "Rearrange circuit breaker lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Start closed",
+            "Track failures",
+            "Open on threshold",
+            "Wait timeout",
+            "Try half-open",
+            "Close on success"
+        ]
+    },
+    {
+        "q": "What is NoSQL retry strategy?",
+        "type": "mcq",
+        "o": [
+            "Handling transient failures by retrying operations",
+            "Giving up immediately",
+            "Ignoring errors",
+            "Logging only"
+        ]
+    },
+    {
+        "q": "Exponential backoff increases _____ between retries.",
+        "type": "fill_blank",
+        "answers": [
+            "delay"
+        ],
+        "other_options": [
+            "speed",
+            "count",
+            "requests"
+        ]
+    },
+    {
+        "q": "Jitter prevents thundering herd problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this retry config?",
+        "type": "mcq",
+        "c": "// Max retries: 3\n// Backoff: Exponential (1s, 2s, 4s)\n// Jitter: +/- 500ms",
+        "o": [
+            "Retries with increasing delays and randomization",
+            "Fixed delay retries",
+            "Immediate retries",
+            "No retries"
+        ]
+    },
+    {
+        "q": "Match retry strategy with its behavior:",
+        "type": "match",
+        "left": [
+            "Fixed delay",
+            "Exponential",
+            "Exponential + jitter",
+            "No retry"
+        ],
+        "right": [
+            "Constant wait",
+            "Growing wait",
+            "Growing + random",
+            "Fail immediately"
+        ]
+    },
+    {
+        "q": "Rearrange retry considerations:",
+        "type": "rearrange",
+        "words": [
+            "Identify retryable errors",
+            "Set max attempts",
+            "Choose backoff",
+            "Add jitter",
+            "Implement timeout"
+        ]
+    },
+    {
+        "q": "What is NoSQL bulkhead pattern?",
+        "type": "mcq",
+        "o": [
+            "Isolating components to contain failures",
+            "Data partitioning",
+            "Load balancing",
+            "Caching strategy"
+        ]
+    },
+    {
+        "q": "Bulkhead limits _____ per component.",
+        "type": "fill_blank",
+        "answers": [
+            "resources"
+        ],
+        "other_options": [
+            "data",
+            "users",
+            "queries"
+        ]
+    },
+    {
+        "q": "Bulkhead prevents one failure from affecting all.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of bulkhead config?",
+        "type": "mcq",
+        "c": "// Connection pool: Orders = 10, Users = 10\n// Orders pool exhausted\n// Users queries:",
+        "o": [
+            "Continue working with isolated pool",
+            "Also fail",
+            "Share connections",
+            "Wait for orders"
+        ]
+    },
+    {
+        "q": "Match isolation pattern with its scope:",
+        "type": "match",
+        "left": [
+            "Connection pool",
+            "Thread pool",
+            "Service",
+            "Database"
+        ],
+        "right": [
+            "Per-component",
+            "Per-operation",
+            "Per-domain",
+            "Per-tenant"
+        ]
+    },
+    {
+        "q": "Rearrange resilience patterns by scope:",
+        "type": "rearrange",
+        "words": [
+            "Retry",
+            "Circuit breaker",
+            "Bulkhead",
+            "Failover",
+            "Disaster recovery"
+        ]
+    },
+    {
+        "q": "What is NoSQL polyglot persistence?",
+        "type": "mcq",
+        "o": [
+            "Using different databases for different needs",
+            "Single database for all",
+            "Multiple programming languages",
+            "Data translation"
+        ]
+    },
+    {
+        "q": "Polyglot uses _____ for specific use cases.",
+        "type": "fill_blank",
+        "answers": [
+            "specialized databases"
+        ],
+        "other_options": [
+            "one database",
+            "no databases",
+            "file storage"
+        ]
+    },
+    {
+        "q": "Polyglot increases operational complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this architecture?",
+        "type": "mcq",
+        "c": "// Users: PostgreSQL\n// Sessions: Redis\n// Analytics: ClickHouse\n// Search: Elasticsearch",
+        "o": [
+            "Each database optimized for its workload",
+            "All in one database",
+            "Reduced performance",
+            "Simpler operations"
+        ]
+    },
+    {
+        "q": "Match data type with ideal database:",
+        "type": "match",
+        "left": [
+            "User profiles",
+            "Sessions",
+            "Time-series",
+            "Full-text"
+        ],
+        "right": [
+            "Document/Relational",
+            "Key-value",
+            "TSDB",
+            "Search engine"
+        ]
+    },
+    {
+        "q": "Rearrange polyglot adoption:",
+        "type": "rearrange",
+        "words": [
+            "Start monolithic",
+            "Identify pain points",
+            "Evaluate options",
+            "Migrate gradually",
+            "Manage complexity"
+        ]
+    },
+    {
+        "q": "What is NoSQL data lake integration?",
+        "type": "mcq",
+        "o": [
+            "Connecting NoSQL with big data analytics",
+            "Storing data in lakes",
+            "Water-based cooling",
+            "Data backup"
+        ]
+    },
+    {
+        "q": "Data lakes store _____ format data.",
+        "type": "fill_blank",
+        "answers": [
+            "raw"
+        ],
+        "other_options": [
+            "processed",
+            "encrypted",
+            "compressed"
+        ]
+    },
+    {
+        "q": "NoSQL can feed data into data lakes for analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this integration?",
+        "type": "mcq",
+        "c": "// MongoDB change streams\n// Sync to: S3 data lake\n// Benefit:",
+        "o": [
+            "Historical analytics on operational data",
+            "Faster operational queries",
+            "Reduced storage",
+            "Simpler architecture"
+        ]
+    },
+    {
+        "q": "Match integration pattern with its timing:",
+        "type": "match",
+        "left": [
+            "Batch ETL",
+            "CDC",
+            "Direct query",
+            "Federated"
+        ],
+        "right": [
+            "Scheduled",
+            "Real-time",
+            "On-demand",
+            "Virtual"
+        ]
+    },
+    {
+        "q": "Rearrange data pipeline stages:",
+        "type": "rearrange",
+        "words": [
+            "Extract",
+            "Transform",
+            "Load",
+            "Catalog",
+            "Analyze"
+        ]
+    },
+    {
+        "q": "What is NoSQL event sourcing?",
+        "type": "mcq",
+        "o": [
+            "Storing state changes as sequence of events",
+            "Traditional CRUD",
+            "Event processing",
+            "Message queuing"
+        ]
+    },
+    {
+        "q": "Event sourcing stores _____ instead of current state.",
+        "type": "fill_blank",
+        "answers": [
+            "events"
+        ],
+        "other_options": [
+            "snapshots",
+            "diffs",
+            "copies"
+        ]
+    },
+    {
+        "q": "Event sourcing provides complete audit trail.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of replaying events?",
+        "type": "mcq",
+        "c": "// Events: [Created, Updated, Updated, Deleted]\n// Replay to point before delete:",
+        "o": [
+            "Reconstruct state at any point in time",
+            "Only current state",
+            "Events lost",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match event sourcing concept with its role:",
+        "type": "match",
+        "left": [
+            "Event store",
+            "Projection",
+            "Snapshot",
+            "Event handler"
+        ],
+        "right": [
+            "Persist events",
+            "Build read model",
+            "Performance optimization",
+            "Process events"
+        ]
+    },
+    {
+        "q": "Rearrange event sourcing implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define events",
+            "Store events",
+            "Build projections",
+            "Handle commands",
+            "Create snapshots"
+        ]
+    },
+    {
+        "q": "What is CQRS with NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Separate read and write models",
+            "Single model for all",
+            "Command processing only",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "CQRS stands for Command Query _____ Segregation.",
+        "type": "fill_blank",
+        "answers": [
+            "Responsibility"
+        ],
+        "other_options": [
+            "Read",
+            "Request",
+            "Response"
+        ]
+    },
+    {
+        "q": "CQRS allows independent scaling of reads and writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this CQRS setup?",
+        "type": "mcq",
+        "c": "// Write: MongoDB (normalized)\n// Read: Elasticsearch (denormalized)\n// Sync: Change streams",
+        "o": [
+            "Optimized write and read paths",
+            "Slower operations",
+            "Data inconsistency",
+            "Same performance"
+        ]
+    },
+    {
+        "q": "Match CQRS component with its database:",
+        "type": "match",
+        "left": [
+            "Command model",
+            "Query model",
+            "Event bus",
+            "Projector"
+        ],
+        "right": [
+            "Write-optimized",
+            "Read-optimized",
+            "Message broker",
+            "Sync service"
+        ]
+    },
+    {
+        "q": "Rearrange CQRS complexity:",
+        "type": "rearrange",
+        "words": [
+            "Simple CRUD",
+            "Read replicas",
+            "CQRS same DB",
+            "CQRS different DBs",
+            "Event sourcing + CQRS"
+        ]
+    },
+    {
+        "q": "What is NoSQL data governance?",
+        "type": "mcq",
+        "o": [
+            "Policies for data quality, security, and compliance",
+            "Performance tuning",
+            "Database design",
+            "Query optimization"
+        ]
+    },
+    {
+        "q": "Data governance defines data _____ and responsibilities.",
+        "type": "fill_blank",
+        "answers": [
+            "ownership"
+        ],
+        "other_options": [
+            "speed",
+            "size",
+            "color"
+        ]
+    },
+    {
+        "q": "Governance ensures regulatory compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of good governance?",
+        "type": "mcq",
+        "c": "// Policies: defined\n// Access: controlled\n// Audit: enabled\n// Compliance: monitored",
+        "o": [
+            "Trustworthy, secure, compliant data",
+            "Faster queries",
+            "Less storage",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "Match governance aspect with its implementation:",
+        "type": "match",
+        "left": [
+            "Data quality",
+            "Security",
+            "Privacy",
+            "Retention"
+        ],
+        "right": [
+            "Validation rules",
+            "Access controls",
+            "Anonymization",
+            "TTL/archival"
+        ]
+    },
+    {
+        "q": "Rearrange governance implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define policies",
+            "Assign ownership",
+            "Implement controls",
+            "Monitor compliance",
+            "Report status"
+        ]
+    },
+    {
+        "q": "What is NoSQL data lineage?",
+        "type": "mcq",
+        "o": [
+            "Tracking data origin and transformations",
+            "Data backup history",
+            "Query history",
+            "User access log"
+        ]
+    },
+    {
+        "q": "Lineage answers: where did this data come _____?",
+        "type": "fill_blank",
+        "answers": [
+            "from"
+        ],
+        "other_options": [
+            "to",
+            "out",
+            "in"
+        ]
+    },
+    {
+        "q": "Data lineage helps with impact analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lineage tracking?",
+        "type": "mcq",
+        "c": "// Track: Source -> Transformations -> Destination\n// Query lineage for report_sales field:",
+        "o": [
+            "Shows origin system and all transformations",
+            "Current value only",
+            "Query history",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match lineage type with its scope:",
+        "type": "match",
+        "left": [
+            "Table-level",
+            "Column-level",
+            "Row-level",
+            "Business"
+        ],
+        "right": [
+            "Coarse grain",
+            "Fine grain",
+            "Record tracking",
+            "Business context"
+        ]
+    },
+    {
+        "q": "Rearrange lineage maturity:",
+        "type": "rearrange",
+        "words": [
+            "No lineage",
+            "Manual documentation",
+            "Automated capture",
+            "Impact analysis",
+            "Self-service discovery"
+        ]
+    },
+    {
+        "q": "What is NoSQL semantic layer?",
+        "type": "mcq",
+        "o": [
+            "Business-friendly abstraction over data",
+            "Physical storage layer",
+            "Network layer",
+            "Security layer"
+        ]
+    },
+    {
+        "q": "Semantic layer translates _____ to database queries.",
+        "type": "fill_blank",
+        "answers": [
+            "business terms"
+        ],
+        "other_options": [
+            "code",
+            "SQL",
+            "JSON"
+        ]
+    },
+    {
+        "q": "Semantic layers enable self-service analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of semantic layer?",
+        "type": "mcq",
+        "c": "// User asks: Show me total sales by region\n// Semantic layer translates to: db.orders.aggregate(...)",
+        "o": [
+            "Business users query without knowing database details",
+            "Slower queries",
+            "Direct database access",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "Match semantic concept with its role:",
+        "type": "match",
+        "left": [
+            "Metrics",
+            "Dimensions",
+            "Hierarchies",
+            "Calculations"
+        ],
+        "right": [
+            "Measures",
+            "Group by fields",
+            "Drill paths",
+            "Derived values"
+        ]
+    },
+    {
+        "q": "Rearrange semantic layer benefits:",
+        "type": "rearrange",
+        "words": [
+            "Consistent definitions",
+            "Single source of truth",
+            "Self-service",
+            "Governance",
+            "Performance"
+        ]
+    },
+    {
+        "q": "What is NoSQL data mesh?",
+        "type": "mcq",
+        "o": [
+            "Decentralized data ownership and architecture",
+            "Centralized data warehouse",
+            "Data lake",
+            "ETL pipeline"
+        ]
+    },
+    {
+        "q": "Data mesh treats data as a _____.",
+        "type": "fill_blank",
+        "answers": [
+            "product"
+        ],
+        "other_options": [
+            "cost",
+            "waste",
+            "commodity"
+        ]
+    },
+    {
+        "q": "Data mesh promotes domain-driven data ownership.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of data mesh?",
+        "type": "mcq",
+        "c": "// Each domain: Owns their data products\n// Shared: Self-serve platform\n// Result:",
+        "o": [
+            "Scalable data architecture with domain expertise",
+            "Centralized control",
+            "Single database",
+            "No change"
+        ]
+    },
+    {
+        "q": "Match data mesh principle with its meaning:",
+        "type": "match",
+        "left": [
+            "Domain ownership",
+            "Data as product",
+            "Self-serve platform",
+            "Federated governance"
+        ],
+        "right": [
+            "Teams own data",
+            "Quality and discoverability",
+            "Infrastructure platform",
+            "Shared standards"
+        ]
+    },
+    {
+        "q": "Rearrange data mesh adoption:",
+        "type": "rearrange",
+        "words": [
+            "Assess readiness",
+            "Define domains",
+            "Build platform",
+            "Create data products",
+            "Establish governance"
+        ]
+    },
+    {
+        "q": "What is NoSQL schema registry?",
+        "type": "mcq",
+        "o": [
+            "Centralized store for data schemas and versions",
+            "Database index",
+            "Query registry",
+            "User registry"
+        ]
+    },
+    {
+        "q": "Schema registry ensures _____ compatibility.",
+        "type": "fill_blank",
+        "answers": [
+            "schema"
+        ],
+        "other_options": [
+            "code",
+            "network",
+            "user"
+        ]
+    },
+    {
+        "q": "Schema registry is essential for streaming data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of schema validation?",
+        "type": "mcq",
+        "c": "// Producer: New schema version\n// Registry: Checks compatibility\n// Incompatible change detected:",
+        "o": [
+            "Publish rejected until fixed",
+            "Schema accepted",
+            "Data corrupted",
+            "System crashes"
+        ]
+    },
+    {
+        "q": "Match compatibility type with its rule:",
+        "type": "match",
+        "left": [
+            "Backward",
+            "Forward",
+            "Full",
+            "None"
+        ],
+        "right": [
+            "New reads old",
+            "Old reads new",
+            "Both directions",
+            "No checking"
+        ]
+    },
+    {
+        "q": "Rearrange schema evolution:",
+        "type": "rearrange",
+        "words": [
+            "Register schema",
+            "Evolve schema",
+            "Check compatibility",
+            "Deploy producers",
+            "Deploy consumers"
+        ]
+    },
+    {
+        "q": "What is NoSQL feature flags?",
+        "type": "mcq",
+        "o": [
+            "Toggles to enable/disable features dynamically",
+            "Database flags",
+            "Query hints",
+            "Index options"
+        ]
+    },
+    {
+        "q": "Feature flags enable _____ deployments.",
+        "type": "fill_blank",
+        "answers": [
+            "dark"
+        ],
+        "other_options": [
+            "light",
+            "fast",
+            "slow"
+        ]
+    },
+    {
+        "q": "Feature flags can be stored in NoSQL for quick access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this flag check?",
+        "type": "mcq",
+        "c": "// Redis: GET feature:new_algorithm\n// Returns: 'enabled' for 10% of users\n// User in rollout:",
+        "o": [
+            "New algorithm enabled for this user",
+            "Old algorithm",
+            "Error",
+            "Random behavior"
+        ]
+    },
+    {
+        "q": "Match flag type with its use:",
+        "type": "match",
+        "left": [
+            "Release",
+            "Experiment",
+            "Ops",
+            "Permission"
+        ],
+        "right": [
+            "Deploy safely",
+            "A/B testing",
+            "Circuit breaker",
+            "Access control"
+        ]
+    },
+    {
+        "q": "Rearrange flag lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create flag",
+            "Roll out gradually",
+            "Monitor metrics",
+            "Full release",
+            "Remove flag"
+        ]
+    },
+    {
+        "q": "What is NoSQL blue-green deployment?",
+        "type": "mcq",
+        "o": [
+            "Two identical environments for zero-downtime releases",
+            "Color-coded servers",
+            "Load balancing",
+            "Data replication"
+        ]
+    },
+    {
+        "q": "Blue-green allows instant _____ if issues found.",
+        "type": "fill_blank",
+        "answers": [
+            "rollback"
+        ],
+        "other_options": [
+            "deployment",
+            "restart",
+            "backup"
+        ]
+    },
+    {
+        "q": "Database migrations need special handling in blue-green.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of blue-green switch?",
+        "type": "mcq",
+        "c": "// Blue: Current production\n// Green: New version deployed\n// Switch traffic to green:",
+        "o": [
+            "Zero-downtime deployment completed",
+            "Some downtime",
+            "Data loss",
+            "Both versions active"
+        ]
+    },
+    {
+        "q": "Match deployment strategy with its trade-off:",
+        "type": "match",
+        "left": [
+            "Blue-green",
+            "Canary",
+            "Rolling",
+            "Recreate"
+        ],
+        "right": [
+            "Full parallel",
+            "Gradual rollout",
+            "Incremental",
+            "Downtime required"
+        ]
+    },
+    {
+        "q": "Rearrange deployment safety:",
+        "type": "rearrange",
+        "words": [
+            "Recreate",
+            "Rolling",
+            "Canary",
+            "Blue-green",
+            "Traffic shadowing"
+        ]
+    },
+    {
+        "q": "What is NoSQL infrastructure as code?",
+        "type": "mcq",
+        "o": [
+            "Managing database infrastructure through code",
+            "Manual configuration",
+            "Console-based setup",
+            "Script backups"
+        ]
+    },
+    {
+        "q": "Terraform can provision NoSQL _____ declaratively.",
+        "type": "fill_blank",
+        "answers": [
+            "resources"
+        ],
+        "other_options": [
+            "data",
+            "queries",
+            "users"
+        ]
+    },
+    {
+        "q": "IaC enables reproducible infrastructure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this IaC?",
+        "type": "mcq",
+        "c": "resource \"aws_dynamodb_table\" \"users\" {\n  name = \"users\"\n  billing_mode = \"PAY_PER_REQUEST\"\n  ...\n}",
+        "o": [
+            "DynamoDB table created/updated declaratively",
+            "Manual table creation",
+            "Data inserted",
+            "Query executed"
+        ]
+    },
+    {
+        "q": "Match IaC tool with its focus:",
+        "type": "match",
+        "left": [
+            "Terraform",
+            "Pulumi",
+            "CloudFormation",
+            "Ansible"
+        ],
+        "right": [
+            "Multi-cloud",
+            "Programming languages",
+            "AWS native",
+            "Configuration management"
+        ]
+    },
+    {
+        "q": "Rearrange IaC adoption:",
+        "type": "rearrange",
+        "words": [
+            "Version control infra code",
+            "Automate provisioning",
+            "Test changes",
+            "Review pull requests",
+            "Apply to production"
+        ]
+    },
+    {
+        "q": "What is NoSQL GitOps for databases?",
+        "type": "mcq",
+        "o": [
+            "Managing database changes through Git workflows",
+            "Using Git for data storage",
+            "Database version control",
+            "Git hosting on databases"
+        ]
+    },
+    {
+        "q": "GitOps uses Git as the single source of _____.",
+        "type": "fill_blank",
+        "answers": [
+            "truth"
+        ],
+        "other_options": [
+            "data",
+            "code",
+            "config"
+        ]
+    },
+    {
+        "q": "GitOps enables declarative database configuration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of GitOps workflow?",
+        "type": "mcq",
+        "c": "// Change: Update index in Git\n// PR merged\n// GitOps operator detects change:",
+        "o": [
+            "Automatically applies index change to database",
+            "Manual deployment required",
+            "No change happens",
+            "Git conflict"
+        ]
+    },
+    {
+        "q": "Match GitOps principle with its benefit:",
+        "type": "match",
+        "left": [
+            "Declarative",
+            "Versioned",
+            "Automated",
+            "Auditable"
+        ],
+        "right": [
+            "Desired state",
+            "History tracking",
+            "Reduced manual",
+            "Compliance"
+        ]
+    },
+    {
+        "q": "Rearrange GitOps maturity:",
+        "type": "rearrange",
+        "words": [
+            "Manual changes",
+            "Scripted",
+            "CI/CD pipelines",
+            "GitOps pull",
+            "Full automation"
+        ]
+    },
+    {
+        "q": "What is chaos engineering for NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Testing system resilience by injecting failures",
+            "Random database design",
+            "Unstructured data",
+            "Ad-hoc testing"
+        ]
+    },
+    {
+        "q": "Chaos engineering builds _____ in system reliability.",
+        "type": "fill_blank",
+        "answers": [
+            "confidence"
+        ],
+        "other_options": [
+            "doubt",
+            "fear",
+            "uncertainty"
+        ]
+    },
+    {
+        "q": "Chaos experiments should start small and controlled.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this chaos experiment?",
+        "type": "mcq",
+        "c": "// Experiment: Kill primary node\n// Expected: Failover within 30 seconds\n// Actual: Failover took 2 minutes",
+        "o": [
+            "System weakness discovered, needs fixing",
+            "System passed",
+            "No issues",
+            "Ignore result"
+        ]
+    },
+    {
+        "q": "Match chaos tool with its target:",
+        "type": "match",
+        "left": [
+            "Chaos Monkey",
+            "Gremlin",
+            "Pumba",
+            "LitmusChaos"
+        ],
+        "right": [
+            "Kill instances",
+            "Enterprise chaos",
+            "Container chaos",
+            "Kubernetes chaos"
+        ]
+    },
+    {
+        "q": "Rearrange chaos engineering steps:",
+        "type": "rearrange",
+        "words": [
+            "Define steady state",
+            "Hypothesize",
+            "Run experiment",
+            "Analyze results",
+            "Improve"
+        ]
+    },
+    {
+        "q": "What is observability-driven development for NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Building systems with observability as priority",
+            "Debugging after failures",
+            "Log aggregation only",
+            "Manual monitoring"
+        ]
+    },
+    {
+        "q": "ODD ensures systems are _____ by design.",
+        "type": "fill_blank",
+        "answers": [
+            "observable"
+        ],
+        "other_options": [
+            "fast",
+            "secure",
+            "simple"
+        ]
+    },
+    {
+        "q": "Observability includes metrics, logs, and traces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of good observability?",
+        "type": "mcq",
+        "c": "// Alert: Query latency spike\n// Metrics: P99 = 500ms (normally 50ms)\n// Logs: Connection pool exhaustion\n// Traces: Slow downstream service",
+        "o": [
+            "Quickly identify root cause from correlated data",
+            "Guess the problem",
+            "Wait for user complaints",
+            "Restart everything"
+        ]
+    },
+    {
+        "q": "Match observability pillar with its purpose:",
+        "type": "match",
+        "left": [
+            "Metrics",
+            "Logs",
+            "Traces",
+            "Events"
+        ],
+        "right": [
+            "Aggregated health",
+            "Detailed text",
+            "Request flow",
+            "Point-in-time"
+        ]
+    },
+    {
+        "q": "Rearrange observability implementation:",
+        "type": "rearrange",
+        "words": [
+            "Instrument code",
+            "Collect telemetry",
+            "Store data",
+            "Correlate signals",
+            "Alert and analyze"
+        ]
+    },
+    {
+        "q": "What is FinOps for NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Financial operations for cloud database cost management",
+            "Financial database",
+            "Fintech operations",
+            "Database financing"
+        ]
+    },
+    {
+        "q": "FinOps enables _____ accountability for cloud costs.",
+        "type": "fill_blank",
+        "answers": [
+            "team"
+        ],
+        "other_options": [
+            "central",
+            "no",
+            "reduced"
+        ]
+    },
+    {
+        "q": "FinOps requires collaboration between finance and engineering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of FinOps practice?",
+        "type": "mcq",
+        "c": "// Tag: All resources by team\n// Dashboard: Cost per team\n// Alert: Budget threshold exceeded",
+        "o": [
+            "Teams own and optimize their database costs",
+            "Central IT controls all",
+            "No cost visibility",
+            "Higher costs"
+        ]
+    },
+    {
+        "q": "Match FinOps practice with its action:",
+        "type": "match",
+        "left": [
+            "Showback",
+            "Chargeback",
+            "Rightsizing",
+            "Reserved instances"
+        ],
+        "right": [
+            "Visibility",
+            "Accountability",
+            "Efficiency",
+            "Commitment"
+        ]
+    },
+    {
+        "q": "Rearrange FinOps phases:",
+        "type": "rearrange",
+        "words": [
+            "Inform (visibility)",
+            "Optimize (efficiency)",
+            "Operate (continuous)",
+            "Customize (mature)"
+        ]
+    },
+    {
+        "q": "What is Zero Trust for NoSQL?",
+        "type": "mcq",
+        "o": [
+            "Security model that verifies every access request",
+            "No security",
+            "Trust all internal traffic",
+            "Firewall only"
+        ]
+    },
+    {
+        "q": "Zero Trust assumes _____ is trusted by default.",
+        "type": "fill_blank",
+        "answers": [
+            "nothing"
+        ],
+        "other_options": [
+            "everything",
+            "internal",
+            "users"
+        ]
+    },
+    {
+        "q": "Zero Trust applies to both network and application layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of Zero Trust access?",
+        "type": "mcq",
+        "c": "// Request: Access database\n// Check: Identity, device, location, context\n// Decision:",
+        "o": [
+            "Access granted only if all checks pass",
+            "Always allow internal",
+            "Always deny external",
+            "No verification"
+        ]
+    },
+    {
+        "q": "Match Zero Trust principle with its implementation:",
+        "type": "match",
+        "left": [
+            "Verify explicitly",
+            "Least privilege",
+            "Assume breach",
+            "Continuous validation"
+        ],
+        "right": [
+            "Multi-factor auth",
+            "Minimal permissions",
+            "Detect and respond",
+            "Re-verify sessions"
+        ]
+    },
+    {
+        "q": "Rearrange Zero Trust adoption:",
+        "type": "rearrange",
+        "words": [
+            "Identify assets",
+            "Map access flows",
+            "Implement controls",
+            "Verify continuously",
+            "Improve posture"
+        ]
+    },
+    {
+        "q": "What is NoSQL multi-tenancy?",
+        "type": "mcq",
+        "o": [
+            "Single database serving multiple isolated customers",
+            "Single customer database",
+            "Multiple databases per customer",
+            "No isolation"
+        ]
+    },
+    {
+        "q": "Multi-tenancy can use separate collections or _____ per tenant.",
+        "type": "fill_blank",
+        "answers": [
+            "databases"
+        ],
+        "other_options": [
+            "servers",
+            "networks",
+            "clouds"
+        ]
+    },
+    {
+        "q": "Tenant isolation is critical for security and compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this tenancy model?",
+        "type": "mcq",
+        "c": "// Model: Shared database, tenant_id field\n// Query: db.orders.find({ tenant_id: 'tenant1' })\n// Isolation:",
+        "o": [
+            "Application-level isolation via tenant_id",
+            "Database-level isolation",
+            "No isolation",
+            "Network isolation"
+        ]
+    },
+    {
+        "q": "Match tenancy model with its trade-off:",
+        "type": "match",
+        "left": [
+            "Shared database",
+            "Separate database",
+            "Separate cluster",
+            "Hybrid"
+        ],
+        "right": [
+            "Cost efficient",
+            "Strong isolation",
+            "Complete isolation",
+            "Flexible"
+        ]
+    },
+    {
+        "q": "Rearrange tenancy isolation levels:",
+        "type": "rearrange",
+        "words": [
+            "Row-level (field)",
+            "Collection-level",
+            "Database-level",
+            "Cluster-level",
+            "Cloud account"
+        ]
+    }
+]

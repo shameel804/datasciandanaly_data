@@ -1,0 +1,6753 @@
+[
+    {
+        "q": "What is a data pipeline?",
+        "type": "mcq",
+        "o": [
+            "A series of data processing steps",
+            "A physical pipe for data",
+            "A type of database",
+            "A programming language"
+        ]
+    },
+    {
+        "q": "Data pipelines automate data movement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this simple pipeline?",
+        "type": "mcq",
+        "c": "data = [1, 2, 3, 4, 5]\nresult = [x * 2 for x in data]\nprint(result[0])",
+        "o": [
+            "2",
+            "1",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "The _____ is the starting point of a data pipeline.",
+        "type": "fill_blank",
+        "answers": [
+            "source"
+        ],
+        "other_options": [
+            "target",
+            "sink",
+            "output"
+        ]
+    },
+    {
+        "q": "Match the pipeline component with its role:",
+        "type": "match",
+        "left": [
+            "Source",
+            "Transform",
+            "Sink",
+            "Schedule"
+        ],
+        "right": [
+            "Data origin",
+            "Data processing",
+            "Data destination",
+            "Timing control"
+        ]
+    },
+    {
+        "q": "Rearrange the basic pipeline stages:",
+        "type": "rearrange",
+        "words": [
+            "Extract",
+            "Transform",
+            "Load",
+            "Validate",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is the output of this filter operation?",
+        "type": "mcq",
+        "c": "data = [10, 20, 30, 40, 50]\nfiltered = [x for x in data if x > 25]\nprint(len(filtered))",
+        "o": [
+            "3",
+            "2",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which component stores pipeline output?",
+        "type": "mcq",
+        "o": [
+            "Sink",
+            "Source",
+            "Trigger",
+            "Schedule"
+        ]
+    },
+    {
+        "q": "Batch pipelines process data continuously.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _____ pipeline processes data in fixed intervals.",
+        "type": "fill_blank",
+        "answers": [
+            "batch"
+        ],
+        "other_options": [
+            "streaming",
+            "real-time",
+            "continuous"
+        ]
+    },
+    {
+        "q": "What is the output of this batch grouping?",
+        "type": "mcq",
+        "c": "records = list(range(100))\nbatch_size = 25\nnum_batches = len(records) // batch_size\nprint(num_batches)",
+        "o": [
+            "4",
+            "25",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pipeline type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Batch",
+            "Streaming",
+            "Micro-batch",
+            "Lambda"
+        ],
+        "right": [
+            "Fixed schedule",
+            "Continuous",
+            "Small intervals",
+            "Dual path"
+        ]
+    },
+    {
+        "q": "Streaming pipelines process data as it arrives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the pipeline development stages:",
+        "type": "rearrange",
+        "words": [
+            "Design",
+            "Develop",
+            "Test",
+            "Deploy",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is the output of this mapping function?",
+        "type": "mcq",
+        "c": "data = ['a', 'b', 'c']\nupper = list(map(str.upper, data))\nprint(upper[1])",
+        "o": [
+            "B",
+            "b",
+            "A",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which tool orchestrates pipeline execution?",
+        "type": "mcq",
+        "o": [
+            "Scheduler",
+            "Database",
+            "Editor",
+            "Browser"
+        ]
+    },
+    {
+        "q": "The _____ determines when a pipeline runs.",
+        "type": "fill_blank",
+        "answers": [
+            "trigger"
+        ],
+        "other_options": [
+            "filter",
+            "mapper",
+            "reducer"
+        ]
+    },
+    {
+        "q": "Event-driven pipelines start based on data arrival.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the trigger type with its mechanism:",
+        "type": "match",
+        "left": [
+            "Time",
+            "Event",
+            "Manual",
+            "Completion"
+        ],
+        "right": [
+            "Schedule",
+            "Data arrival",
+            "Human action",
+            "Task finished"
+        ]
+    },
+    {
+        "q": "What is the output of this schedule check?",
+        "type": "mcq",
+        "c": "schedule = {'interval': 'hourly', 'hour': 0}\nis_hourly = schedule['interval'] == 'hourly'\nprint(is_hourly)",
+        "o": [
+            "True",
+            "False",
+            "hourly",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the pipeline execution flow:",
+        "type": "rearrange",
+        "words": [
+            "Trigger",
+            "Start",
+            "Process",
+            "Complete",
+            "Log"
+        ]
+    },
+    {
+        "q": "A DAG represents pipeline dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What does DAG stand for?",
+        "type": "mcq",
+        "o": [
+            "Directed Acyclic Graph",
+            "Data Analysis Graph",
+            "Direct Access Gateway",
+            "Database Application Group"
+        ]
+    },
+    {
+        "q": "The _____ in a DAG cannot form loops.",
+        "type": "fill_blank",
+        "answers": [
+            "edges"
+        ],
+        "other_options": [
+            "nodes",
+            "tasks",
+            "jobs"
+        ]
+    },
+    {
+        "q": "What is the output of this dependency check?",
+        "type": "mcq",
+        "c": "tasks = {'A': [], 'B': ['A'], 'C': ['B']}\ndeps = tasks['C']\nprint(deps)",
+        "o": [
+            "['B']",
+            "['A']",
+            "[]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DAG concept with its definition:",
+        "type": "match",
+        "left": [
+            "Node",
+            "Edge",
+            "Root",
+            "Leaf"
+        ],
+        "right": [
+            "Task",
+            "Dependency",
+            "No predecessors",
+            "No successors"
+        ]
+    },
+    {
+        "q": "Tasks in a DAG can run in parallel if independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the task dependency resolution:",
+        "type": "rearrange",
+        "words": [
+            "Build DAG",
+            "Find roots",
+            "Execute ready",
+            "Mark complete",
+            "Check done"
+        ]
+    },
+    {
+        "q": "What is the output of this parallel task check?",
+        "type": "mcq",
+        "c": "tasks = {'A': [], 'B': [], 'C': ['A', 'B']}\ncan_parallel = len([t for t, d in tasks.items() if len(d) == 0])\nprint(can_parallel)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which component logs pipeline events?",
+        "type": "mcq",
+        "o": [
+            "Logger",
+            "Trigger",
+            "Filter",
+            "Mapper"
+        ]
+    },
+    {
+        "q": "The _____ records pipeline execution history.",
+        "type": "fill_blank",
+        "answers": [
+            "log"
+        ],
+        "other_options": [
+            "config",
+            "schema",
+            "cache"
+        ]
+    },
+    {
+        "q": "Monitoring helps detect pipeline issues early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this log entry?",
+        "type": "mcq",
+        "c": "log = {'task': 'extract', 'status': 'success', 'duration': 120}\nprint(f\"{log['task']}: {log['status']}\")",
+        "o": [
+            "extract: success",
+            "success: extract",
+            "120",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the log level with its severity:",
+        "type": "match",
+        "left": [
+            "DEBUG",
+            "INFO",
+            "WARNING",
+            "ERROR"
+        ],
+        "right": [
+            "Lowest",
+            "Normal",
+            "Attention",
+            "Critical"
+        ]
+    },
+    {
+        "q": "Rearrange the log levels by severity:",
+        "type": "rearrange",
+        "words": [
+            "DEBUG",
+            "INFO",
+            "WARNING",
+            "ERROR",
+            "CRITICAL"
+        ]
+    },
+    {
+        "q": "What is the output of this duration calculation?",
+        "type": "mcq",
+        "c": "start = 100\nend = 245\nduration = end - start\nprint(f'{duration} seconds')",
+        "o": [
+            "145 seconds",
+            "245 seconds",
+            "100 seconds",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which metric indicates pipeline reliability?",
+        "type": "mcq",
+        "o": [
+            "Success rate",
+            "File size",
+            "Code length",
+            "Team size"
+        ]
+    },
+    {
+        "q": "The _____ tracks how often pipelines succeed.",
+        "type": "fill_blank",
+        "answers": [
+            "success rate"
+        ],
+        "other_options": [
+            "failure rate",
+            "error rate",
+            "miss rate"
+        ]
+    },
+    {
+        "q": "Retries help handle transient failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this retry logic?",
+        "type": "mcq",
+        "c": "max_retries = 3\ncurrent_retry = 0\nwhile current_retry < max_retries:\n    current_retry += 1\nprint(current_retry)",
+        "o": [
+            "3",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the failure handling strategy with its approach:",
+        "type": "match",
+        "left": [
+            "Retry",
+            "Skip",
+            "Fail",
+            "Notify"
+        ],
+        "right": [
+            "Try again",
+            "Continue without",
+            "Stop pipeline",
+            "Alert team"
+        ]
+    },
+    {
+        "q": "Rearrange the error handling steps:",
+        "type": "rearrange",
+        "words": [
+            "Catch error",
+            "Log details",
+            "Attempt retry",
+            "Escalate if needed",
+            "Clean up"
+        ]
+    },
+    {
+        "q": "What is the output of this error check?",
+        "type": "mcq",
+        "c": "errors = []\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    errors.append(str(e))\nprint(len(errors))",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "10"
+        ]
+    },
+    {
+        "q": "Which pattern prevents endless retry loops?",
+        "type": "mcq",
+        "o": [
+            "Exponential backoff",
+            "Immediate retry",
+            "No delay",
+            "Infinite loop"
+        ]
+    },
+    {
+        "q": "The _____ increases wait time between retries.",
+        "type": "fill_blank",
+        "answers": [
+            "backoff"
+        ],
+        "other_options": [
+            "forward",
+            "increment",
+            "step"
+        ]
+    },
+    {
+        "q": "Circuit breakers pause processing after multiple failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this backoff calculation?",
+        "type": "mcq",
+        "c": "base_delay = 1\nretry = 3\ndelay = base_delay * (2 ** retry)\nprint(f'{delay} seconds')",
+        "o": [
+            "8 seconds",
+            "3 seconds",
+            "2 seconds",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the backoff type with its formula:",
+        "type": "match",
+        "left": [
+            "Constant",
+            "Linear",
+            "Exponential",
+            "Fibonacci"
+        ],
+        "right": [
+            "Same delay",
+            "Add fixed",
+            "Double each",
+            "Fib sequence"
+        ]
+    },
+    {
+        "q": "Rearrange the circuit breaker states:",
+        "type": "rearrange",
+        "words": [
+            "Closed",
+            "Open",
+            "Half-Open",
+            "Closed again",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is the output of this state check?",
+        "type": "mcq",
+        "c": "failures = 5\nthreshold = 3\ncircuit = 'open' if failures >= threshold else 'closed'\nprint(circuit)",
+        "o": [
+            "open",
+            "closed",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Data lineage tracks data origin and transformations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is data lineage?",
+        "type": "mcq",
+        "o": [
+            "Record of data journey",
+            "Type of database",
+            "Encryption method",
+            "File format"
+        ]
+    },
+    {
+        "q": "The _____ shows where data came from.",
+        "type": "fill_blank",
+        "answers": [
+            "lineage"
+        ],
+        "other_options": [
+            "schema",
+            "format",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this lineage trace?",
+        "type": "mcq",
+        "c": "lineage = {'sales_report': ['raw_sales', 'transform_sales']}\nsources = lineage['sales_report']\nprint(sources[0])",
+        "o": [
+            "raw_sales",
+            "transform_sales",
+            "sales_report",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the lineage type with its scope:",
+        "type": "match",
+        "left": [
+            "Column",
+            "Table",
+            "Pipeline",
+            "System"
+        ],
+        "right": [
+            "Field level",
+            "Entity level",
+            "Flow level",
+            "Organization"
+        ]
+    },
+    {
+        "q": "Rearrange the lineage tracking steps:",
+        "type": "rearrange",
+        "words": [
+            "Capture source",
+            "Track transform",
+            "Record destination",
+            "Store metadata",
+            "Query history"
+        ]
+    },
+    {
+        "q": "Impact analysis uses lineage for change assessment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this impact check?",
+        "type": "mcq",
+        "c": "dependencies = {'report': ['table_a', 'table_b'], 'dashboard': ['report']}\nimpacted = [k for k, v in dependencies.items() if 'table_a' in v]\nprint(impacted)",
+        "o": [
+            "['report']",
+            "['dashboard']",
+            "['table_a']",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which tool provides pipeline visualization?",
+        "type": "mcq",
+        "o": [
+            "DAG viewer",
+            "Text editor",
+            "Calculator",
+            "Browser"
+        ]
+    },
+    {
+        "q": "The _____ displays pipeline status graphically.",
+        "type": "fill_blank",
+        "answers": [
+            "dashboard"
+        ],
+        "other_options": [
+            "terminal",
+            "log file",
+            "config"
+        ]
+    },
+    {
+        "q": "Alerts notify teams of pipeline issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this alert threshold?",
+        "type": "mcq",
+        "c": "duration_minutes = 45\nthreshold_minutes = 30\nis_slow = duration_minutes > threshold_minutes\nprint(f'Alert: {is_slow}')",
+        "o": [
+            "Alert: True",
+            "Alert: False",
+            "45",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the alert type with its trigger:",
+        "type": "match",
+        "left": [
+            "Failure",
+            "Latency",
+            "Volume",
+            "Quality"
+        ],
+        "right": [
+            "Task error",
+            "Slow processing",
+            "Row count change",
+            "Data issues"
+        ]
+    },
+    {
+        "q": "Rearrange the alerting workflow:",
+        "type": "rearrange",
+        "words": [
+            "Check metric",
+            "Compare threshold",
+            "Generate alert",
+            "Notify team",
+            "Track response"
+        ]
+    },
+    {
+        "q": "What is the output of this volume check?",
+        "type": "mcq",
+        "c": "expected = 1000\nactual = 500\ndeviation = abs(expected - actual) / expected * 100\nprint(f'{deviation}% deviation')",
+        "o": [
+            "50.0% deviation",
+            "100% deviation",
+            "500% deviation",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which practice ensures pipeline code quality?",
+        "type": "mcq",
+        "o": [
+            "Code review",
+            "Skipping tests",
+            "No documentation",
+            "Direct production deploy"
+        ]
+    },
+    {
+        "q": "The _____ environment tests pipelines before production.",
+        "type": "fill_blank",
+        "answers": [
+            "staging"
+        ],
+        "other_options": [
+            "production",
+            "live",
+            "final"
+        ]
+    },
+    {
+        "q": "Unit tests verify individual pipeline components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this test assertion?",
+        "type": "mcq",
+        "c": "def transform(x):\n    return x * 2\nresult = transform(5)\nexpected = 10\npassed = result == expected\nprint(f'Test passed: {passed}')",
+        "o": [
+            "Test passed: True",
+            "Test passed: False",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the test type with its scope:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "End-to-end",
+            "Performance"
+        ],
+        "right": [
+            "Single function",
+            "Multiple components",
+            "Full flow",
+            "Speed and load"
+        ]
+    },
+    {
+        "q": "Rearrange the testing pyramid:",
+        "type": "rearrange",
+        "words": [
+            "Unit tests",
+            "Integration tests",
+            "Contract tests",
+            "E2E tests",
+            "Manual tests"
+        ]
+    },
+    {
+        "q": "What is the output of this mock data setup?",
+        "type": "mcq",
+        "c": "mock_data = [{'id': 1, 'name': 'test1'}, {'id': 2, 'name': 'test2'}]\ncount = len(mock_data)\nprint(f'{count} records')",
+        "o": [
+            "2 records",
+            "1 records",
+            "0 records",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which file format is human-readable?",
+        "type": "mcq",
+        "o": [
+            "JSON",
+            "Parquet",
+            "ORC",
+            "Avro"
+        ]
+    },
+    {
+        "q": "The _____ format stores data in columns.",
+        "type": "fill_blank",
+        "answers": [
+            "Parquet"
+        ],
+        "other_options": [
+            "CSV",
+            "JSON",
+            "XML"
+        ]
+    },
+    {
+        "q": "CSV files use commas to separate values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this CSV parsing?",
+        "type": "mcq",
+        "c": "line = 'id,name,value'\nfields = line.split(',')\nprint(len(fields))",
+        "o": [
+            "3",
+            "1",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the file format with its use case:",
+        "type": "match",
+        "left": [
+            "CSV",
+            "JSON",
+            "Parquet",
+            "Avro"
+        ],
+        "right": [
+            "Simple data",
+            "Nested data",
+            "Analytics",
+            "Streaming"
+        ]
+    },
+    {
+        "q": "Rearrange the data format selection criteria:",
+        "type": "rearrange",
+        "words": [
+            "Identify use case",
+            "Check schema needs",
+            "Consider performance",
+            "Evaluate tool support",
+            "Choose format"
+        ]
+    },
+    {
+        "q": "What is the output of this JSON parsing?",
+        "type": "mcq",
+        "c": "import json\ndata = '{\"name\": \"test\", \"value\": 42}'\nobj = json.loads(data)\nprint(obj['value'])",
+        "o": [
+            "42",
+            "test",
+            "name",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which connector type pulls data from sources?",
+        "type": "mcq",
+        "o": [
+            "Source connector",
+            "Sink connector",
+            "Transform connector",
+            "Log connector"
+        ]
+    },
+    {
+        "q": "The _____ connector pushes data to destinations.",
+        "type": "fill_blank",
+        "answers": [
+            "sink"
+        ],
+        "other_options": [
+            "source",
+            "input",
+            "origin"
+        ]
+    },
+    {
+        "q": "Connectors abstract data source complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this connection test?",
+        "type": "mcq",
+        "c": "config = {'host': 'localhost', 'port': 5432, 'database': 'mydb'}\nconnection_string = f\"{config['host']}:{config['port']}/{config['database']}\"\nprint(connection_string)",
+        "o": [
+            "localhost:5432/mydb",
+            "5432:localhost/mydb",
+            "mydb:5432/localhost",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the connector with its system:",
+        "type": "match",
+        "left": [
+            "JDBC",
+            "S3",
+            "Kafka",
+            "REST"
+        ],
+        "right": [
+            "Databases",
+            "Cloud storage",
+            "Message queue",
+            "APIs"
+        ]
+    },
+    {
+        "q": "Rearrange the connector configuration steps:",
+        "type": "rearrange",
+        "words": [
+            "Set credentials",
+            "Define connection",
+            "Test connectivity",
+            "Configure options",
+            "Deploy connector"
+        ]
+    },
+    {
+        "q": "What is the output of this schema check?",
+        "type": "mcq",
+        "c": "schema = {'id': 'int', 'name': 'string', 'amount': 'float'}\ncolumns = list(schema.keys())\nprint(len(columns))",
+        "o": [
+            "3",
+            "2",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Schema defines the structure of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ validates data against a schema.",
+        "type": "fill_blank",
+        "answers": [
+            "validator"
+        ],
+        "other_options": [
+            "transformer",
+            "loader",
+            "extractor"
+        ]
+    },
+    {
+        "q": "What is the output of this type validation?",
+        "type": "mcq",
+        "c": "value = '123'\nexpected_type = int\nis_valid = isinstance(int(value), expected_type)\nprint(is_valid)",
+        "o": [
+            "True",
+            "False",
+            "123",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the data type with its example:",
+        "type": "match",
+        "left": [
+            "Integer",
+            "String",
+            "Float",
+            "Boolean"
+        ],
+        "right": [
+            "42",
+            "hello",
+            "3.14",
+            "True"
+        ]
+    },
+    {
+        "q": "Rearrange the schema evolution steps:",
+        "type": "rearrange",
+        "words": [
+            "Add new field",
+            "Update pipeline",
+            "Migrate data",
+            "Test changes",
+            "Deploy"
+        ]
+    },
+    {
+        "q": "What is the output of this null check?",
+        "type": "mcq",
+        "c": "record = {'id': 1, 'name': None}\nhas_null = any(v is None for v in record.values())\nprint(has_null)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operation combines data from multiple sources?",
+        "type": "mcq",
+        "o": [
+            "Join",
+            "Filter",
+            "Sort",
+            "Delete"
+        ]
+    },
+    {
+        "q": "The _____ join returns only matching records.",
+        "type": "fill_blank",
+        "answers": [
+            "inner"
+        ],
+        "other_options": [
+            "outer",
+            "cross",
+            "natural"
+        ]
+    },
+    {
+        "q": "Left join keeps all records from the left table.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this simple join?",
+        "type": "mcq",
+        "c": "orders = [{'id': 1, 'customer_id': 101}]\ncustomers = [{'id': 101, 'name': 'Alice'}]\njoined = [{'order': o['id'], 'customer': c['name']} for o in orders for c in customers if o['customer_id'] == c['id']]\nprint(joined[0]['customer'])",
+        "o": [
+            "Alice",
+            "101",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the join type with its behavior:",
+        "type": "match",
+        "left": [
+            "Inner",
+            "Left",
+            "Right",
+            "Full"
+        ],
+        "right": [
+            "Only matches",
+            "All from left",
+            "All from right",
+            "All from both"
+        ]
+    },
+    {
+        "q": "Rearrange the join process steps:",
+        "type": "rearrange",
+        "words": [
+            "Read left table",
+            "Read right table",
+            "Match keys",
+            "Combine rows",
+            "Output result"
+        ]
+    },
+    {
+        "q": "What is the output of this aggregation?",
+        "type": "mcq",
+        "c": "sales = [100, 200, 300]\ntotal = sum(sales)\nprint(total)",
+        "o": [
+            "600",
+            "300",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which function calculates the average of values?",
+        "type": "mcq",
+        "o": [
+            "AVG",
+            "SUM",
+            "COUNT",
+            "MAX"
+        ]
+    },
+    {
+        "q": "The _____ function returns the number of rows.",
+        "type": "fill_blank",
+        "answers": [
+            "COUNT"
+        ],
+        "other_options": [
+            "SUM",
+            "AVG",
+            "MAX"
+        ]
+    },
+    {
+        "q": "GROUP BY groups rows with same values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this grouping?",
+        "type": "mcq",
+        "c": "from collections import Counter\ndata = ['A', 'B', 'A', 'C', 'A']\ncounts = Counter(data)\nprint(counts['A'])",
+        "o": [
+            "3",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the aggregate function with its purpose:",
+        "type": "match",
+        "left": [
+            "SUM",
+            "AVG",
+            "MIN",
+            "MAX"
+        ],
+        "right": [
+            "Total",
+            "Average",
+            "Smallest",
+            "Largest"
+        ]
+    },
+    {
+        "q": "Window functions operate over partitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the data transformation steps:",
+        "type": "rearrange",
+        "words": [
+            "Read data",
+            "Filter rows",
+            "Transform values",
+            "Aggregate",
+            "Write output"
+        ]
+    },
+    {
+        "q": "What is the output of this partition?",
+        "type": "mcq",
+        "c": "data = [1, 2, 3, 4, 5, 6]\npartitions = 2\nchunk_size = len(data) // partitions\nprint(chunk_size)",
+        "o": [
+            "3",
+            "6",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which strategy divides data by ranges?",
+        "type": "mcq",
+        "o": [
+            "Range partitioning",
+            "Hash partitioning",
+            "Round robin",
+            "Random"
+        ]
+    },
+    {
+        "q": "The _____ partitioning uses a function on key values.",
+        "type": "fill_blank",
+        "answers": [
+            "hash"
+        ],
+        "other_options": [
+            "range",
+            "list",
+            "round"
+        ]
+    },
+    {
+        "q": "Match the partition strategy with its use:",
+        "type": "match",
+        "left": [
+            "Hash",
+            "Range",
+            "List",
+            "Composite"
+        ],
+        "right": [
+            "Uniform distribution",
+            "Date ranges",
+            "Specific values",
+            "Multiple keys"
+        ]
+    },
+    {
+        "q": "Partitioning improves query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hash partition?",
+        "type": "mcq",
+        "c": "key = 'customer_123'\npartitions = 4\npartition = hash(key) % partitions\nprint(type(partition).__name__)",
+        "o": [
+            "int",
+            "str",
+            "float",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the partition pruning steps:",
+        "type": "rearrange",
+        "words": [
+            "Parse query",
+            "Identify filter",
+            "Find matching partitions",
+            "Skip others",
+            "Read selected"
+        ]
+    },
+    {
+        "q": "Which operation removes duplicate rows?",
+        "type": "mcq",
+        "o": [
+            "Deduplication",
+            "Aggregation",
+            "Filtering",
+            "Sorting"
+        ]
+    },
+    {
+        "q": "The _____ removes duplicate values from a column.",
+        "type": "fill_blank",
+        "answers": [
+            "DISTINCT"
+        ],
+        "other_options": [
+            "UNIQUE",
+            "SINGLE",
+            "ONE"
+        ]
+    },
+    {
+        "q": "What is the output of this deduplication?",
+        "type": "mcq",
+        "c": "data = [1, 2, 2, 3, 3, 3]\nunique = list(set(data))\nprint(len(unique))",
+        "o": [
+            "3",
+            "6",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the dedup strategy with its approach:",
+        "type": "match",
+        "left": [
+            "Exact",
+            "Fuzzy",
+            "Window",
+            "Hash"
+        ],
+        "right": [
+            "All fields",
+            "Similarity",
+            "Time-based",
+            "Key-based"
+        ]
+    },
+    {
+        "q": "Fuzzy matching finds similar but not identical records.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the deduplication process:",
+        "type": "rearrange",
+        "words": [
+            "Identify key",
+            "Sort records",
+            "Compare adjacent",
+            "Keep first",
+            "Remove duplicates"
+        ]
+    },
+    {
+        "q": "What is the output of this sort operation?",
+        "type": "mcq",
+        "c": "data = [3, 1, 4, 1, 5, 9]\nsorted_data = sorted(data)\nprint(sorted_data[0])",
+        "o": [
+            "1",
+            "3",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which order sorts from smallest to largest?",
+        "type": "mcq",
+        "o": [
+            "Ascending",
+            "Descending",
+            "Random",
+            "None"
+        ]
+    },
+    {
+        "q": "The _____ sorts data from largest to smallest.",
+        "type": "fill_blank",
+        "answers": [
+            "descending"
+        ],
+        "other_options": [
+            "ascending",
+            "natural",
+            "random"
+        ]
+    },
+    {
+        "q": "Sorting by multiple columns is called multi-level sort.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this descending sort?",
+        "type": "mcq",
+        "c": "data = [3, 1, 4]\nsorted_desc = sorted(data, reverse=True)\nprint(sorted_desc[0])",
+        "o": [
+            "4",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sorting algorithm with its complexity:",
+        "type": "match",
+        "left": [
+            "Quick sort",
+            "Merge sort",
+            "Bubble sort",
+            "Heap sort"
+        ],
+        "right": [
+            "O(n log n) avg",
+            "O(n log n)",
+            "O(n^2)",
+            "O(n log n)"
+        ]
+    },
+    {
+        "q": "Rearrange the sorting steps:",
+        "type": "rearrange",
+        "words": [
+            "Compare elements",
+            "Swap if needed",
+            "Repeat",
+            "Until sorted",
+            "Output result"
+        ]
+    },
+    {
+        "q": "What is the output of this filter operation?",
+        "type": "mcq",
+        "c": "data = range(10)\nfiltered = [x for x in data if x % 2 == 0]\nprint(len(filtered))",
+        "o": [
+            "5",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which clause filters grouped data?",
+        "type": "mcq",
+        "o": [
+            "HAVING",
+            "WHERE",
+            "FROM",
+            "SELECT"
+        ]
+    },
+    {
+        "q": "The _____ clause filters rows before grouping.",
+        "type": "fill_blank",
+        "answers": [
+            "WHERE"
+        ],
+        "other_options": [
+            "HAVING",
+            "ORDER BY",
+            "GROUP BY"
+        ]
+    },
+    {
+        "q": "Predicate pushdown optimizes filter operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this complex filter?",
+        "type": "mcq",
+        "c": "data = [{'age': 25}, {'age': 35}, {'age': 45}]\nfiltered = [d for d in data if d['age'] > 30]\nprint(len(filtered))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the filter type with its description:",
+        "type": "match",
+        "left": [
+            "Equality",
+            "Range",
+            "Pattern",
+            "Null"
+        ],
+        "right": [
+            "Exact match",
+            "Between values",
+            "LIKE pattern",
+            "IS NULL/NOT NULL"
+        ]
+    },
+    {
+        "q": "Rearrange the filter optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze predicates",
+            "Push down filters",
+            "Use indexes",
+            "Reduce scan",
+            "Return results"
+        ]
+    },
+    {
+        "q": "What is data normalization?",
+        "type": "mcq",
+        "o": [
+            "Organizing data to reduce redundancy",
+            "Compressing data files",
+            "Encrypting data",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "The _____ form eliminates transitive dependencies.",
+        "type": "fill_blank",
+        "answers": [
+            "3NF"
+        ],
+        "other_options": [
+            "1NF",
+            "2NF",
+            "BCNF"
+        ]
+    },
+    {
+        "q": "Denormalization improves read performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this normalization check?",
+        "type": "mcq",
+        "c": "record = {'id': 1, 'name': 'John', 'dept': 'Sales', 'manager': 'Jane'}\nnon_key_fields = ['name', 'dept', 'manager']\nprint(len(non_key_fields))",
+        "o": [
+            "3",
+            "4",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the normal form with its rule:",
+        "type": "match",
+        "left": [
+            "1NF",
+            "2NF",
+            "3NF",
+            "BCNF"
+        ],
+        "right": [
+            "Atomic values",
+            "No partial deps",
+            "No transitive deps",
+            "Every determinant is key"
+        ]
+    },
+    {
+        "q": "Rearrange the normalization levels:",
+        "type": "rearrange",
+        "words": [
+            "1NF",
+            "2NF",
+            "3NF",
+            "BCNF",
+            "4NF"
+        ]
+    },
+    {
+        "q": "What is batch processing?",
+        "type": "mcq",
+        "o": [
+            "Processing data in groups at scheduled times",
+            "Processing data in real-time",
+            "Processing one record at a time",
+            "Not processing data"
+        ]
+    },
+    {
+        "q": "The _____ processes data as it arrives.",
+        "type": "fill_blank",
+        "answers": [
+            "streaming"
+        ],
+        "other_options": [
+            "batch",
+            "scheduled",
+            "manual"
+        ]
+    },
+    {
+        "q": "Micro-batching combines batch and streaming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this batch size calculation?",
+        "type": "mcq",
+        "c": "total_records = 10000\nbatch_size = 1000\nnum_batches = total_records // batch_size\nprint(num_batches)",
+        "o": [
+            "10",
+            "1000",
+            "10000",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the processing type with its latency:",
+        "type": "match",
+        "left": [
+            "Batch",
+            "Micro-batch",
+            "Streaming",
+            "Real-time"
+        ],
+        "right": [
+            "Hours",
+            "Seconds",
+            "Milliseconds",
+            "Sub-millisecond"
+        ]
+    },
+    {
+        "q": "Rearrange the batch processing flow:",
+        "type": "rearrange",
+        "words": [
+            "Collect data",
+            "Wait for schedule",
+            "Process batch",
+            "Write results",
+            "Mark complete"
+        ]
+    },
+    {
+        "q": "What is an idempotent operation?",
+        "type": "mcq",
+        "o": [
+            "Operation with same result when repeated",
+            "Operation that always fails",
+            "Operation that changes state",
+            "Irreversible operation"
+        ]
+    },
+    {
+        "q": "The _____ ensures operations can be safely retried.",
+        "type": "fill_blank",
+        "answers": [
+            "idempotency"
+        ],
+        "other_options": [
+            "atomicity",
+            "durability",
+            "isolation"
+        ]
+    },
+    {
+        "q": "Idempotent pipelines handle retries safely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this idempotent check?",
+        "type": "mcq",
+        "c": "processed = {1, 2, 3}\nnew_id = 2\nalready_done = new_id in processed\nprint(already_done)",
+        "o": [
+            "True",
+            "False",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the operation with its idempotency:",
+        "type": "match",
+        "left": [
+            "INSERT with key",
+            "UPDATE set value",
+            "DELETE",
+            "INCREMENT"
+        ],
+        "right": [
+            "Idempotent",
+            "Idempotent",
+            "Idempotent",
+            "Not idempotent"
+        ]
+    },
+    {
+        "q": "Rearrange the idempotent pipeline steps:",
+        "type": "rearrange",
+        "words": [
+            "Generate key",
+            "Check existence",
+            "Skip if exists",
+            "Process new",
+            "Record completion"
+        ]
+    },
+    {
+        "q": "What is the output of this key generation?",
+        "type": "mcq",
+        "c": "import hashlib\ndata = 'unique_record'\nkey = hashlib.md5(data.encode()).hexdigest()[:8]\nprint(len(key))",
+        "o": [
+            "8",
+            "32",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which pattern stores intermediate results?",
+        "type": "mcq",
+        "o": [
+            "Caching",
+            "Filtering",
+            "Sorting",
+            "Joining"
+        ]
+    },
+    {
+        "q": "The _____ stores frequently accessed data in memory.",
+        "type": "fill_blank",
+        "answers": [
+            "cache"
+        ],
+        "other_options": [
+            "disk",
+            "tape",
+            "archive"
+        ]
+    },
+    {
+        "q": "Caching reduces repeated computations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cache hit check?",
+        "type": "mcq",
+        "c": "cache = {'key1': 'value1'}\nquery = 'key1'\nhit = query in cache\nprint(f'Cache hit: {hit}')",
+        "o": [
+            "Cache hit: True",
+            "Cache hit: False",
+            "key1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cache type with its scope:",
+        "type": "match",
+        "left": [
+            "In-memory",
+            "Distributed",
+            "Local disk",
+            "CDN"
+        ],
+        "right": [
+            "Single node",
+            "Cluster-wide",
+            "Single machine",
+            "Edge locations"
+        ]
+    },
+    {
+        "q": "Rearrange the cache lookup steps:",
+        "type": "rearrange",
+        "words": [
+            "Check cache",
+            "If hit return",
+            "If miss compute",
+            "Store result",
+            "Return value"
+        ]
+    },
+    {
+        "q": "What is the output of this TTL check?",
+        "type": "mcq",
+        "c": "cache_time = 100\ncurrent_time = 150\nttl = 60\nexpired = (current_time - cache_time) > ttl\nprint(expired)",
+        "o": [
+            "False",
+            "True",
+            "60",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which eviction policy removes least recently used items?",
+        "type": "mcq",
+        "o": [
+            "LRU",
+            "FIFO",
+            "LIFO",
+            "Random"
+        ]
+    },
+    {
+        "q": "The _____ removes oldest items first.",
+        "type": "fill_blank",
+        "answers": [
+            "FIFO"
+        ],
+        "other_options": [
+            "LRU",
+            "LFU",
+            "Random"
+        ]
+    },
+    {
+        "q": "Cache invalidation is one of the hardest problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this eviction count?",
+        "type": "mcq",
+        "c": "cache_size = 100\ncurrent_items = 120\nevictions_needed = max(0, current_items - cache_size)\nprint(evictions_needed)",
+        "o": [
+            "20",
+            "100",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the eviction policy with its strategy:",
+        "type": "match",
+        "left": [
+            "LRU",
+            "LFU",
+            "FIFO",
+            "TTL"
+        ],
+        "right": [
+            "Least recent",
+            "Least frequent",
+            "First in",
+            "Time-based"
+        ]
+    },
+    {
+        "q": "Rearrange the cache eviction steps:",
+        "type": "rearrange",
+        "words": [
+            "Check size",
+            "If full evict",
+            "Select victim",
+            "Remove item",
+            "Add new entry"
+        ]
+    },
+    {
+        "q": "What is backpressure in pipelines?",
+        "type": "mcq",
+        "o": [
+            "Slowing producers when consumers can't keep up",
+            "Increasing processing speed",
+            "Deleting excess data",
+            "Ignoring slow components"
+        ]
+    },
+    {
+        "q": "The _____ prevents pipeline overwhelm.",
+        "type": "fill_blank",
+        "answers": [
+            "backpressure"
+        ],
+        "other_options": [
+            "forward pressure",
+            "side pressure",
+            "no pressure"
+        ]
+    },
+    {
+        "q": "Backpressure maintains pipeline stability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this buffer check?",
+        "type": "mcq",
+        "c": "buffer_size = 1000\nitems_in_buffer = 950\nthreshold = 0.9\napply_backpressure = items_in_buffer >= (buffer_size * threshold)\nprint(apply_backpressure)",
+        "o": [
+            "True",
+            "False",
+            "950",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the flow control strategy with its approach:",
+        "type": "match",
+        "left": [
+            "Backpressure",
+            "Dropping",
+            "Buffering",
+            "Sampling"
+        ],
+        "right": [
+            "Slow producer",
+            "Discard excess",
+            "Queue temporarily",
+            "Take subset"
+        ]
+    },
+    {
+        "q": "Rearrange the backpressure response:",
+        "type": "rearrange",
+        "words": [
+            "Detect slow consumer",
+            "Signal producer",
+            "Reduce rate",
+            "Wait for capacity",
+            "Resume normal"
+        ]
+    },
+    {
+        "q": "What is the output of this rate limit check?",
+        "type": "mcq",
+        "c": "messages_per_second = 1000\nlimit = 500\nis_throttled = messages_per_second > limit\nprint(is_throttled)",
+        "o": [
+            "True",
+            "False",
+            "1000",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which algorithm controls request rate?",
+        "type": "mcq",
+        "o": [
+            "Token bucket",
+            "Bubble sort",
+            "Binary search",
+            "Quick sort"
+        ]
+    },
+    {
+        "q": "The _____ bucket algorithm allows burst traffic.",
+        "type": "fill_blank",
+        "answers": [
+            "token"
+        ],
+        "other_options": [
+            "leaky",
+            "fixed",
+            "sliding"
+        ]
+    },
+    {
+        "q": "Rate limiting protects downstream systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this token bucket?",
+        "type": "mcq",
+        "c": "tokens = 10\nrequest_tokens = 3\nif tokens >= request_tokens:\n    tokens -= request_tokens\nprint(tokens)",
+        "o": [
+            "7",
+            "10",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the rate limiting algorithm with its behavior:",
+        "type": "match",
+        "left": [
+            "Token bucket",
+            "Leaky bucket",
+            "Fixed window",
+            "Sliding window"
+        ],
+        "right": [
+            "Allow bursts",
+            "Constant rate",
+            "Reset intervals",
+            "Moving window"
+        ]
+    },
+    {
+        "q": "Rearrange the rate limiting steps:",
+        "type": "rearrange",
+        "words": [
+            "Receive request",
+            "Check limit",
+            "Allow or deny",
+            "Update counter",
+            "Reset on interval"
+        ]
+    },
+    {
+        "q": "What is observability?",
+        "type": "mcq",
+        "o": [
+            "Ability to understand system state from outputs",
+            "Hiding system internals",
+            "Deleting logs",
+            "Ignoring metrics"
+        ]
+    },
+    {
+        "q": "The _____ are called the three pillars of observability.",
+        "type": "fill_blank",
+        "answers": [
+            "logs, metrics, traces"
+        ],
+        "other_options": [
+            "files, folders, drives",
+            "CPU, memory, disk",
+            "input, process, output"
+        ]
+    },
+    {
+        "q": "Distributed tracing shows request flow across services.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this trace span?",
+        "type": "mcq",
+        "c": "span = {'name': 'process', 'duration_ms': 150}\nprint(f\"{span['name']}: {span['duration_ms']}ms\")",
+        "o": [
+            "process: 150ms",
+            "150: process",
+            "150ms",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the observability concept with its tool:",
+        "type": "match",
+        "left": [
+            "Logs",
+            "Metrics",
+            "Traces",
+            "Dashboards"
+        ],
+        "right": [
+            "ELK Stack",
+            "Prometheus",
+            "Jaeger",
+            "Grafana"
+        ]
+    },
+    {
+        "q": "Rearrange the incident investigation:",
+        "type": "rearrange",
+        "words": [
+            "Check alerts",
+            "View dashboards",
+            "Search logs",
+            "Trace requests",
+            "Find root cause"
+        ]
+    },
+    {
+        "q": "What is the output of this metric aggregation?",
+        "type": "mcq",
+        "c": "metrics = [100, 150, 200, 180, 220]\navg = sum(metrics) / len(metrics)\nprint(f'{avg:.0f}')",
+        "o": [
+            "170",
+            "100",
+            "220",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which metric type tracks values over time?",
+        "type": "mcq",
+        "o": [
+            "Time series",
+            "Counter only",
+            "Gauge only",
+            "Histogram only"
+        ]
+    },
+    {
+        "q": "The _____ metric increases monotonically.",
+        "type": "fill_blank",
+        "answers": [
+            "counter"
+        ],
+        "other_options": [
+            "gauge",
+            "histogram",
+            "summary"
+        ]
+    },
+    {
+        "q": "Gauges can increase and decrease.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this counter increment?",
+        "type": "mcq",
+        "c": "counter = 1000\nevents = 50\ncounter += events\nprint(counter)",
+        "o": [
+            "1050",
+            "1000",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the metric type with its use:",
+        "type": "match",
+        "left": [
+            "Counter",
+            "Gauge",
+            "Histogram",
+            "Summary"
+        ],
+        "right": [
+            "Total requests",
+            "Current value",
+            "Distribution",
+            "Quantiles"
+        ]
+    },
+    {
+        "q": "Rearrange the metrics pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Collect metrics",
+            "Aggregate",
+            "Store time series",
+            "Query",
+            "Visualize"
+        ]
+    },
+    {
+        "q": "What is SLI, SLO, and SLA?",
+        "type": "mcq",
+        "o": [
+            "Indicator, Objective, Agreement",
+            "Integration, Operation, Application",
+            "Input, Output, Analysis",
+            "Index, Order, Archive"
+        ]
+    },
+    {
+        "q": "The _____ is a measurable characteristic of service quality.",
+        "type": "fill_blank",
+        "answers": [
+            "SLI"
+        ],
+        "other_options": [
+            "SLO",
+            "SLA",
+            "KPI"
+        ]
+    },
+    {
+        "q": "SLA violations may have financial penalties.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this SLI calculation?",
+        "type": "mcq",
+        "c": "successful_requests = 9900\ntotal_requests = 10000\nsli = successful_requests / total_requests\nprint(f'{sli * 100}% availability')",
+        "o": [
+            "99.0% availability",
+            "100% availability",
+            "9900% availability",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the metric with its type:",
+        "type": "match",
+        "left": [
+            "99.9% uptime",
+            "99% latency < 100ms",
+            "0 data loss",
+            "4 hour response"
+        ],
+        "right": [
+            "Availability SLO",
+            "Latency SLO",
+            "Durability SLO",
+            "Support SLA"
+        ]
+    },
+    {
+        "q": "Rearrange the SRE priorities:",
+        "type": "rearrange",
+        "words": [
+            "Define SLIs",
+            "Set SLOs",
+            "Track error budget",
+            "Automate operations",
+            "Improve reliability"
+        ]
+    },
+    {
+        "q": "What is infrastructure as code?",
+        "type": "mcq",
+        "o": [
+            "Managing infrastructure through code",
+            "Writing infrastructure documentation",
+            "Manual server setup",
+            "Hardware configuration"
+        ]
+    },
+    {
+        "q": "The _____ manages cloud infrastructure as code.",
+        "type": "fill_blank",
+        "answers": [
+            "Terraform"
+        ],
+        "other_options": [
+            "Word",
+            "Excel",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "IaC enables version control for infrastructure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this resource count?",
+        "type": "mcq",
+        "c": "resources = {'vm': 5, 'storage': 3, 'network': 2}\ntotal = sum(resources.values())\nprint(total)",
+        "o": [
+            "10",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the IaC tool with its approach:",
+        "type": "match",
+        "left": [
+            "Terraform",
+            "Ansible",
+            "CloudFormation",
+            "Pulumi"
+        ],
+        "right": [
+            "Declarative HCL",
+            "Procedural YAML",
+            "AWS native",
+            "General purpose"
+        ]
+    },
+    {
+        "q": "Rearrange the IaC workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write code",
+            "Plan changes",
+            "Review plan",
+            "Apply changes",
+            "Verify state"
+        ]
+    },
+    {
+        "q": "What is CI/CD?",
+        "type": "mcq",
+        "o": [
+            "Continuous Integration and Delivery",
+            "Code Integration and Development",
+            "Continuous Improvement and Design",
+            "Code Inspection and Debugging"
+        ]
+    },
+    {
+        "q": "The _____ automates code building and testing.",
+        "type": "fill_blank",
+        "answers": [
+            "CI"
+        ],
+        "other_options": [
+            "CD",
+            "QA",
+            "PM"
+        ]
+    },
+    {
+        "q": "CI/CD reduces deployment risks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this build status?",
+        "type": "mcq",
+        "c": "tests_passed = 95\ntests_total = 100\nbuild_passed = tests_passed == tests_total\nprint(f'Build passed: {build_passed}')",
+        "o": [
+            "Build passed: False",
+            "Build passed: True",
+            "95",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the CI/CD stage with its purpose:",
+        "type": "match",
+        "left": [
+            "Build",
+            "Test",
+            "Deploy",
+            "Monitor"
+        ],
+        "right": [
+            "Compile code",
+            "Verify quality",
+            "Release to env",
+            "Track health"
+        ]
+    },
+    {
+        "q": "Rearrange the deployment pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Commit code",
+            "Build artifact",
+            "Run tests",
+            "Deploy staging",
+            "Deploy production"
+        ]
+    },
+    {
+        "q": "What is Docker?",
+        "type": "mcq",
+        "o": [
+            "Container platform",
+            "Database system",
+            "Programming language",
+            "Operating system"
+        ]
+    },
+    {
+        "q": "The _____ packages applications with dependencies.",
+        "type": "fill_blank",
+        "answers": [
+            "container"
+        ],
+        "other_options": [
+            "virtual machine",
+            "physical server",
+            "bare metal"
+        ]
+    },
+    {
+        "q": "Containers share the host operating system kernel.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this container count?",
+        "type": "mcq",
+        "c": "containers = ['app1', 'app2', 'db', 'cache']\nprint(len(containers))",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the container concept with its description:",
+        "type": "match",
+        "left": [
+            "Image",
+            "Container",
+            "Registry",
+            "Volume"
+        ],
+        "right": [
+            "Blueprint",
+            "Running instance",
+            "Image storage",
+            "Persistent data"
+        ]
+    },
+    {
+        "q": "Rearrange the container lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Build image",
+            "Push to registry",
+            "Pull to host",
+            "Run container",
+            "Stop and remove"
+        ]
+    },
+    {
+        "q": "What is Kubernetes?",
+        "type": "mcq",
+        "o": [
+            "Container orchestration platform",
+            "Programming language",
+            "Database system",
+            "Text editor"
+        ]
+    },
+    {
+        "q": "The _____ is the smallest deployable unit in Kubernetes.",
+        "type": "fill_blank",
+        "answers": [
+            "Pod"
+        ],
+        "other_options": [
+            "Node",
+            "Cluster",
+            "Service"
+        ]
+    },
+    {
+        "q": "Kubernetes manages container scaling and healing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this replica count?",
+        "type": "mcq",
+        "c": "desired_replicas = 3\nrunning = 2\npending = desired_replicas - running\nprint(f'{pending} pending')",
+        "o": [
+            "1 pending",
+            "3 pending",
+            "2 pending",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Kubernetes object with its role:",
+        "type": "match",
+        "left": [
+            "Pod",
+            "Service",
+            "Deployment",
+            "ConfigMap"
+        ],
+        "right": [
+            "Container group",
+            "Network endpoint",
+            "Manage replicas",
+            "Configuration"
+        ]
+    },
+    {
+        "q": "Rearrange the Kubernetes deployment flow:",
+        "type": "rearrange",
+        "words": [
+            "Create deployment",
+            "Schedule pods",
+            "Pull images",
+            "Start containers",
+            "Expose service"
+        ]
+    },
+    {
+        "q": "What is Apache Kafka?",
+        "type": "mcq",
+        "o": [
+            "Distributed streaming platform",
+            "Relational database",
+            "File storage system",
+            "Text editor"
+        ]
+    },
+    {
+        "q": "The _____ is a category for messages in Kafka.",
+        "type": "fill_blank",
+        "answers": [
+            "topic"
+        ],
+        "other_options": [
+            "queue",
+            "bucket",
+            "table"
+        ]
+    },
+    {
+        "q": "Kafka stores messages durably on disk.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this offset calculation?",
+        "type": "mcq",
+        "c": "current_offset = 1000\nmessages_read = 50\nnew_offset = current_offset + messages_read\nprint(new_offset)",
+        "o": [
+            "1050",
+            "1000",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Kafka concept with its role:",
+        "type": "match",
+        "left": [
+            "Producer",
+            "Consumer",
+            "Broker",
+            "Partition"
+        ],
+        "right": [
+            "Send messages",
+            "Read messages",
+            "Store messages",
+            "Parallelism unit"
+        ]
+    },
+    {
+        "q": "Rearrange the Kafka message flow:",
+        "type": "rearrange",
+        "words": [
+            "Producer sends",
+            "Broker stores",
+            "Partition assigns",
+            "Consumer reads",
+            "Offset commits"
+        ]
+    },
+    {
+        "q": "What is Apache Spark?",
+        "type": "mcq",
+        "o": [
+            "Distributed computing engine",
+            "Text editor",
+            "File storage system",
+            "Version control"
+        ]
+    },
+    {
+        "q": "The _____ is the main abstraction in Spark.",
+        "type": "fill_blank",
+        "answers": [
+            "RDD"
+        ],
+        "other_options": [
+            "SQL",
+            "ML",
+            "Graph"
+        ]
+    },
+    {
+        "q": "Spark processes data in memory for speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this partition count?",
+        "type": "mcq",
+        "c": "data_size_mb = 1000\npartition_size_mb = 128\npartitions = data_size_mb // partition_size_mb\nprint(partitions)",
+        "o": [
+            "7",
+            "1000",
+            "128",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Spark component with its function:",
+        "type": "match",
+        "left": [
+            "Spark Core",
+            "Spark SQL",
+            "Spark Streaming",
+            "MLlib"
+        ],
+        "right": [
+            "Basic operations",
+            "Structured data",
+            "Real-time",
+            "Machine learning"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark job execution:",
+        "type": "rearrange",
+        "words": [
+            "Submit job",
+            "Create DAG",
+            "Divide stages",
+            "Execute tasks",
+            "Collect results"
+        ]
+    },
+    {
+        "q": "What is data quality?",
+        "type": "mcq",
+        "o": [
+            "Measure of data fitness for use",
+            "Amount of data stored",
+            "Speed of data processing",
+            "Cost of data storage"
+        ]
+    },
+    {
+        "q": "The _____ dimension measures if data is complete.",
+        "type": "fill_blank",
+        "answers": [
+            "completeness"
+        ],
+        "other_options": [
+            "accuracy",
+            "timeliness",
+            "consistency"
+        ]
+    },
+    {
+        "q": "Data profiling analyzes data characteristics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this completeness check?",
+        "type": "mcq",
+        "c": "total_fields = 100\nnon_null_fields = 95\ncompleteness = non_null_fields / total_fields * 100\nprint(f'{completeness}% complete')",
+        "o": [
+            "95.0% complete",
+            "100% complete",
+            "5% complete",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the quality dimension with its meaning:",
+        "type": "match",
+        "left": [
+            "Accuracy",
+            "Completeness",
+            "Timeliness",
+            "Consistency"
+        ],
+        "right": [
+            "Correctness",
+            "No missing values",
+            "Current data",
+            "Same across systems"
+        ]
+    },
+    {
+        "q": "Rearrange the data quality process:",
+        "type": "rearrange",
+        "words": [
+            "Profile data",
+            "Define rules",
+            "Validate",
+            "Report issues",
+            "Remediate"
+        ]
+    },
+    {
+        "q": "What is data governance?",
+        "type": "mcq",
+        "o": [
+            "Management of data availability and security",
+            "Deleting all data",
+            "Ignoring data policies",
+            "Unlimited data access"
+        ]
+    },
+    {
+        "q": "The _____ catalogs enterprise data assets.",
+        "type": "fill_blank",
+        "answers": [
+            "data catalog"
+        ],
+        "other_options": [
+            "file system",
+            "recycle bin",
+            "trash"
+        ]
+    },
+    {
+        "q": "Data stewards are responsible for data quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this access check?",
+        "type": "mcq",
+        "c": "user_role = 'analyst'\nallowed_roles = ['analyst', 'admin']\nhas_access = user_role in allowed_roles\nprint(has_access)",
+        "o": [
+            "True",
+            "False",
+            "analyst",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the governance role with its responsibility:",
+        "type": "match",
+        "left": [
+            "Data owner",
+            "Data steward",
+            "Data custodian",
+            "Data consumer"
+        ],
+        "right": [
+            "Accountable",
+            "Quality",
+            "Technical",
+            "User"
+        ]
+    },
+    {
+        "q": "Rearrange the governance framework:",
+        "type": "rearrange",
+        "words": [
+            "Define policies",
+            "Assign roles",
+            "Implement controls",
+            "Monitor compliance",
+            "Review and improve"
+        ]
+    },
+    {
+        "q": "What is metadata?",
+        "type": "mcq",
+        "o": [
+            "Data about data",
+            "Deleted data",
+            "Encrypted data",
+            "Compressed data"
+        ]
+    },
+    {
+        "q": "The _____ metadata describes data structure.",
+        "type": "fill_blank",
+        "answers": [
+            "technical"
+        ],
+        "other_options": [
+            "business",
+            "operational",
+            "social"
+        ]
+    },
+    {
+        "q": "Business metadata includes data definitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this metadata query?",
+        "type": "mcq",
+        "c": "metadata = {'table': 'sales', 'columns': 5, 'rows': 1000}\nprint(metadata['columns'])",
+        "o": [
+            "5",
+            "sales",
+            "1000",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the metadata type with its content:",
+        "type": "match",
+        "left": [
+            "Technical",
+            "Business",
+            "Operational",
+            "Process"
+        ],
+        "right": [
+            "Schema",
+            "Definitions",
+            "Stats",
+            "Lineage"
+        ]
+    },
+    {
+        "q": "Rearrange the metadata management steps:",
+        "type": "rearrange",
+        "words": [
+            "Discover data",
+            "Capture metadata",
+            "Catalog assets",
+            "Enrich descriptions",
+            "Maintain freshness"
+        ]
+    },
+    {
+        "q": "What is a data lake?",
+        "type": "mcq",
+        "o": [
+            "Storage for raw data in native format",
+            "Small database",
+            "Spreadsheet file",
+            "Email archive"
+        ]
+    },
+    {
+        "q": "The _____ architecture combines data lake and warehouse.",
+        "type": "fill_blank",
+        "answers": [
+            "lakehouse"
+        ],
+        "other_options": [
+            "database",
+            "filesystem",
+            "cache"
+        ]
+    },
+    {
+        "q": "Data lakes store structured and unstructured data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this zone assignment?",
+        "type": "mcq",
+        "c": "zones = ['raw', 'curated', 'consumption']\ndata_zone = zones[0]\nprint(data_zone)",
+        "o": [
+            "raw",
+            "curated",
+            "consumption",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the data lake zone with its purpose:",
+        "type": "match",
+        "left": [
+            "Raw",
+            "Curated",
+            "Consumption",
+            "Sandbox"
+        ],
+        "right": [
+            "As-is data",
+            "Cleaned data",
+            "Analytics ready",
+            "Experimentation"
+        ]
+    },
+    {
+        "q": "Rearrange the data lake zones:",
+        "type": "rearrange",
+        "words": [
+            "Landing",
+            "Raw",
+            "Curated",
+            "Refined",
+            "Consumption"
+        ]
+    },
+    {
+        "q": "What is Delta Lake?",
+        "type": "mcq",
+        "o": [
+            "Open-source storage layer with ACID",
+            "Traditional database",
+            "File sharing service",
+            "Email system"
+        ]
+    },
+    {
+        "q": "The _____ log tracks all changes in Delta Lake.",
+        "type": "fill_blank",
+        "answers": [
+            "transaction"
+        ],
+        "other_options": [
+            "error",
+            "debug",
+            "access"
+        ]
+    },
+    {
+        "q": "Delta Lake supports time travel queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this version check?",
+        "type": "mcq",
+        "c": "versions = [0, 1, 2, 3, 4]\nlatest = max(versions)\nprint(f'Version {latest}')",
+        "o": [
+            "Version 4",
+            "Version 0",
+            "Version 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Delta Lake feature with its benefit:",
+        "type": "match",
+        "left": [
+            "ACID",
+            "Time travel",
+            "Schema enforcement",
+            "Z-ordering"
+        ],
+        "right": [
+            "Consistency",
+            "History access",
+            "Data quality",
+            "Query speed"
+        ]
+    },
+    {
+        "q": "Rearrange the Delta Lake optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Write data",
+            "Compact files",
+            "Z-order columns",
+            "Vacuum old files",
+            "Verify performance"
+        ]
+    },
+    {
+        "q": "What is Apache Iceberg?",
+        "type": "mcq",
+        "o": [
+            "Open table format for huge datasets",
+            "Traditional database",
+            "File compression tool",
+            "Text editor"
+        ]
+    },
+    {
+        "q": "The _____ files contain Iceberg table metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "manifest"
+        ],
+        "other_options": [
+            "data",
+            "config",
+            "log"
+        ]
+    },
+    {
+        "q": "Iceberg supports schema evolution without rewrites.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this snapshot count?",
+        "type": "mcq",
+        "c": "snapshots = [{'id': 1}, {'id': 2}, {'id': 3}]\ncount = len(snapshots)\nprint(f'{count} snapshots')",
+        "o": [
+            "3 snapshots",
+            "1 snapshots",
+            "0 snapshots",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the table format with its creator:",
+        "type": "match",
+        "left": [
+            "Delta Lake",
+            "Apache Iceberg",
+            "Apache Hudi",
+            "Parquet"
+        ],
+        "right": [
+            "Databricks",
+            "Netflix",
+            "Uber",
+            "Apache"
+        ]
+    },
+    {
+        "q": "Rearrange the Iceberg transaction flow:",
+        "type": "rearrange",
+        "words": [
+            "Start transaction",
+            "Write data files",
+            "Create manifest",
+            "Update snapshot",
+            "Commit metadata"
+        ]
+    },
+    {
+        "q": "What is data mesh?",
+        "type": "mcq",
+        "o": [
+            "Decentralized data architecture",
+            "Centralized data warehouse",
+            "Single database",
+            "File system"
+        ]
+    },
+    {
+        "q": "The _____ principle gives domain teams data ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "domain ownership"
+        ],
+        "other_options": [
+            "central control",
+            "IT ownership",
+            "vendor ownership"
+        ]
+    },
+    {
+        "q": "Data mesh treats data as a product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this domain count?",
+        "type": "mcq",
+        "c": "domains = ['sales', 'marketing', 'engineering', 'finance']\ncount = len(domains)\nprint(f'{count} domains')",
+        "o": [
+            "4 domains",
+            "1 domains",
+            "0 domains",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the data mesh principle with its focus:",
+        "type": "match",
+        "left": [
+            "Domain ownership",
+            "Data as product",
+            "Self-serve platform",
+            "Federated governance"
+        ],
+        "right": [
+            "Accountability",
+            "Quality",
+            "Autonomy",
+            "Standards"
+        ]
+    },
+    {
+        "q": "Rearrange the data mesh adoption steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify domains",
+            "Assign ownership",
+            "Build data products",
+            "Create platform",
+            "Establish governance"
+        ]
+    },
+    {
+        "q": "What is event sourcing?",
+        "type": "mcq",
+        "o": [
+            "Storing state changes as events",
+            "Storing current state only",
+            "Deleting history",
+            "Ignoring changes"
+        ]
+    },
+    {
+        "q": "The _____ recreates state from event history.",
+        "type": "fill_blank",
+        "answers": [
+            "replay"
+        ],
+        "other_options": [
+            "delete",
+            "truncate",
+            "ignore"
+        ]
+    },
+    {
+        "q": "Event sourcing maintains complete audit trail.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this event replay?",
+        "type": "mcq",
+        "c": "events = [{'type': 'add', 'value': 10}, {'type': 'add', 'value': 20}]\nstate = 0\nfor e in events:\n    state += e['value']\nprint(state)",
+        "o": [
+            "30",
+            "20",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the event concept with its role:",
+        "type": "match",
+        "left": [
+            "Event",
+            "Event store",
+            "Projection",
+            "Snapshot"
+        ],
+        "right": [
+            "State change",
+            "Persistence",
+            "Read model",
+            "Checkpoint"
+        ]
+    },
+    {
+        "q": "Rearrange the event sourcing flow:",
+        "type": "rearrange",
+        "words": [
+            "Receive command",
+            "Create event",
+            "Store event",
+            "Update projection",
+            "Notify subscribers"
+        ]
+    },
+    {
+        "q": "What is CQRS?",
+        "type": "mcq",
+        "o": [
+            "Command Query Responsibility Segregation",
+            "Central Query Response Service",
+            "Common Query Resource System",
+            "Cached Query Result Store"
+        ]
+    },
+    {
+        "q": "The _____ side handles read operations in CQRS.",
+        "type": "fill_blank",
+        "answers": [
+            "query"
+        ],
+        "other_options": [
+            "command",
+            "event",
+            "saga"
+        ]
+    },
+    {
+        "q": "CQRS separates read and write models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this command check?",
+        "type": "mcq",
+        "c": "operation = {'type': 'CREATE', 'entity': 'user'}\nis_command = operation['type'] in ['CREATE', 'UPDATE', 'DELETE']\nprint(is_command)",
+        "o": [
+            "True",
+            "False",
+            "CREATE",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the CQRS component with its responsibility:",
+        "type": "match",
+        "left": [
+            "Command",
+            "Query",
+            "Read model",
+            "Write model"
+        ],
+        "right": [
+            "Mutate state",
+            "Retrieve data",
+            "Optimized reads",
+            "Business logic"
+        ]
+    },
+    {
+        "q": "Rearrange the CQRS implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define commands",
+            "Create handlers",
+            "Build read models",
+            "Sync views",
+            "Expose APIs"
+        ]
+    },
+    {
+        "q": "What is the saga pattern?",
+        "type": "mcq",
+        "o": [
+            "Distributed transaction management",
+            "Single database transaction",
+            "File compression",
+            "Logging system"
+        ]
+    },
+    {
+        "q": "The _____ handles saga step failures.",
+        "type": "fill_blank",
+        "answers": [
+            "compensating transaction"
+        ],
+        "other_options": [
+            "retry",
+            "ignore",
+            "crash"
+        ]
+    },
+    {
+        "q": "Sagas ensure eventual consistency across services.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this saga step count?",
+        "type": "mcq",
+        "c": "saga_steps = ['reserve', 'charge', 'ship', 'confirm']\ncompleted = saga_steps[:2]\nprint(len(completed))",
+        "o": [
+            "2",
+            "4",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the saga type with its coordination:",
+        "type": "match",
+        "left": [
+            "Choreography",
+            "Orchestration"
+        ],
+        "right": [
+            "Event-driven",
+            "Central coordinator"
+        ]
+    },
+    {
+        "q": "Rearrange the saga execution:",
+        "type": "rearrange",
+        "words": [
+            "Start saga",
+            "Execute steps",
+            "Handle failures",
+            "Compensate if needed",
+            "Complete saga"
+        ]
+    },
+    {
+        "q": "What is the outbox pattern?",
+        "type": "mcq",
+        "o": [
+            "Reliable event publishing from database",
+            "Email delivery system",
+            "File storage pattern",
+            "Logging pattern"
+        ]
+    },
+    {
+        "q": "The _____ table stores pending events.",
+        "type": "fill_blank",
+        "answers": [
+            "outbox"
+        ],
+        "other_options": [
+            "inbox",
+            "queue",
+            "cache"
+        ]
+    },
+    {
+        "q": "Outbox pattern ensures atomicity with database writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this outbox check?",
+        "type": "mcq",
+        "c": "outbox = [{'id': 1, 'processed': False}, {'id': 2, 'processed': True}]\npending = [e for e in outbox if not e['processed']]\nprint(len(pending))",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pattern with its use case:",
+        "type": "match",
+        "left": [
+            "Outbox",
+            "Inbox",
+            "CDC",
+            "Polling"
+        ],
+        "right": [
+            "Reliable publish",
+            "Idempotent receive",
+            "Change capture",
+            "Periodic check"
+        ]
+    },
+    {
+        "q": "Rearrange the outbox processing:",
+        "type": "rearrange",
+        "words": [
+            "Write to outbox",
+            "Poll outbox",
+            "Publish event",
+            "Mark processed",
+            "Clean up"
+        ]
+    },
+    {
+        "q": "What is CDC?",
+        "type": "mcq",
+        "o": [
+            "Change Data Capture",
+            "Central Data Center",
+            "Cloud Data Connection",
+            "Common Data Channel"
+        ]
+    },
+    {
+        "q": "The _____ reads database change logs.",
+        "type": "fill_blank",
+        "answers": [
+            "CDC connector"
+        ],
+        "other_options": [
+            "file reader",
+            "API client",
+            "cache"
+        ]
+    },
+    {
+        "q": "CDC captures row-level changes in real-time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this change type?",
+        "type": "mcq",
+        "c": "change = {'type': 'INSERT', 'table': 'users', 'data': {'id': 1}}\nprint(change['type'])",
+        "o": [
+            "INSERT",
+            "users",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the CDC tool with its database:",
+        "type": "match",
+        "left": [
+            "Debezium",
+            "Oracle GoldenGate",
+            "AWS DMS",
+            "Attunity"
+        ],
+        "right": [
+            "Open source",
+            "Oracle",
+            "AWS",
+            "Enterprise"
+        ]
+    },
+    {
+        "q": "Rearrange the CDC pipeline flow:",
+        "type": "rearrange",
+        "words": [
+            "Monitor database log",
+            "Capture changes",
+            "Transform events",
+            "Publish to stream",
+            "Consume downstream"
+        ]
+    },
+    {
+        "q": "What is schema registry?",
+        "type": "mcq",
+        "o": [
+            "Central repository for data schemas",
+            "File storage system",
+            "Database backup",
+            "Email service"
+        ]
+    },
+    {
+        "q": "The _____ validates schema compatibility.",
+        "type": "fill_blank",
+        "answers": [
+            "registry"
+        ],
+        "other_options": [
+            "database",
+            "cache",
+            "queue"
+        ]
+    },
+    {
+        "q": "Schema registry prevents breaking changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this schema version?",
+        "type": "mcq",
+        "c": "schema = {'subject': 'users', 'version': 3, 'id': 101}\nprint(f'Version {schema[\"version\"]}')",
+        "o": [
+            "Version 3",
+            "Version 101",
+            "Version users",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the compatibility type with its rule:",
+        "type": "match",
+        "left": [
+            "Backward",
+            "Forward",
+            "Full",
+            "None"
+        ],
+        "right": [
+            "New reads old",
+            "Old reads new",
+            "Both directions",
+            "No check"
+        ]
+    },
+    {
+        "q": "Rearrange the schema evolution:",
+        "type": "rearrange",
+        "words": [
+            "Propose change",
+            "Check compatibility",
+            "Register schema",
+            "Deploy producer",
+            "Deploy consumer"
+        ]
+    },
+    {
+        "q": "What is a data contract?",
+        "type": "mcq",
+        "o": [
+            "Agreement on data structure and semantics",
+            "Legal document only",
+            "Database license",
+            "Storage quota"
+        ]
+    },
+    {
+        "q": "The _____ defines expected data format.",
+        "type": "fill_blank",
+        "answers": [
+            "data contract"
+        ],
+        "other_options": [
+            "data file",
+            "data dump",
+            "data cache"
+        ]
+    },
+    {
+        "q": "Data contracts improve pipeline reliability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this contract check?",
+        "type": "mcq",
+        "c": "contract = {'fields': ['id', 'name', 'email'], 'required': ['id']}\nhas_id = 'id' in contract['required']\nprint(has_id)",
+        "o": [
+            "True",
+            "False",
+            "id",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the contract element with its purpose:",
+        "type": "match",
+        "left": [
+            "Schema",
+            "SLA",
+            "Owner",
+            "Version"
+        ],
+        "right": [
+            "Structure",
+            "Quality guarantees",
+            "Accountability",
+            "Change tracking"
+        ]
+    },
+    {
+        "q": "Rearrange the data contract lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Define contract",
+            "Validate data",
+            "Monitor compliance",
+            "Handle violations",
+            "Evolve contract"
+        ]
+    },
+    {
+        "q": "What is data virtualization?",
+        "type": "mcq",
+        "o": [
+            "Accessing data without moving it",
+            "Copying all data",
+            "Deleting data",
+            "Encrypting data"
+        ]
+    },
+    {
+        "q": "The _____ layer provides unified view of data.",
+        "type": "fill_blank",
+        "answers": [
+            "virtualization"
+        ],
+        "other_options": [
+            "physical",
+            "storage",
+            "network"
+        ]
+    },
+    {
+        "q": "Data virtualization reduces data duplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this federation query?",
+        "type": "mcq",
+        "c": "sources = {'db1': 100, 'db2': 200, 'db3': 150}\ntotal = sum(sources.values())\nprint(total)",
+        "o": [
+            "450",
+            "100",
+            "200",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the virtualization approach with its strength:",
+        "type": "match",
+        "left": [
+            "Federation",
+            "Materialization",
+            "Caching",
+            "Passthrough"
+        ],
+        "right": [
+            "Real-time access",
+            "Query speed",
+            "Repeated queries",
+            "Direct access"
+        ]
+    },
+    {
+        "q": "Rearrange the virtualization query flow:",
+        "type": "rearrange",
+        "words": [
+            "Receive query",
+            "Parse and plan",
+            "Federate to sources",
+            "Combine results",
+            "Return response"
+        ]
+    },
+    {
+        "q": "What is an API gateway?",
+        "type": "mcq",
+        "o": [
+            "Single entry point for API requests",
+            "Database server",
+            "File storage",
+            "Email system"
+        ]
+    },
+    {
+        "q": "The _____ handles API rate limiting.",
+        "type": "fill_blank",
+        "answers": [
+            "gateway"
+        ],
+        "other_options": [
+            "database",
+            "cache",
+            "queue"
+        ]
+    },
+    {
+        "q": "API gateways provide authentication and authorization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this route check?",
+        "type": "mcq",
+        "c": "routes = {'/users': 'user-service', '/orders': 'order-service'}\npath = '/users'\nservice = routes.get(path, 'default')\nprint(service)",
+        "o": [
+            "user-service",
+            "order-service",
+            "default",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the gateway function with its purpose:",
+        "type": "match",
+        "left": [
+            "Routing",
+            "Auth",
+            "Rate limiting",
+            "Caching"
+        ],
+        "right": [
+            "Direct requests",
+            "Verify identity",
+            "Protect backend",
+            "Speed response"
+        ]
+    },
+    {
+        "q": "Rearrange the API gateway flow:",
+        "type": "rearrange",
+        "words": [
+            "Receive request",
+            "Authenticate",
+            "Route to service",
+            "Transform response",
+            "Return to client"
+        ]
+    },
+    {
+        "q": "What is GraphQL?",
+        "type": "mcq",
+        "o": [
+            "Query language for APIs",
+            "Relational database",
+            "File format",
+            "Programming language"
+        ]
+    },
+    {
+        "q": "The _____ defines GraphQL data types.",
+        "type": "fill_blank",
+        "answers": [
+            "schema"
+        ],
+        "other_options": [
+            "query",
+            "mutation",
+            "subscription"
+        ]
+    },
+    {
+        "q": "GraphQL allows clients to request exactly the data they need.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this field selection?",
+        "type": "mcq",
+        "c": "user = {'id': 1, 'name': 'Alice', 'email': 'alice@test.com', 'age': 30}\nselected = ['name', 'email']\nresult = {k: user[k] for k in selected}\nprint(len(result))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the GraphQL operation with its purpose:",
+        "type": "match",
+        "left": [
+            "Query",
+            "Mutation",
+            "Subscription",
+            "Fragment"
+        ],
+        "right": [
+            "Read data",
+            "Write data",
+            "Real-time updates",
+            "Reusable fields"
+        ]
+    },
+    {
+        "q": "Rearrange the GraphQL request flow:",
+        "type": "rearrange",
+        "words": [
+            "Receive query",
+            "Validate against schema",
+            "Execute resolvers",
+            "Collect data",
+            "Return response"
+        ]
+    },
+    {
+        "q": "What is gRPC?",
+        "type": "mcq",
+        "o": [
+            "High-performance RPC framework",
+            "Database system",
+            "File format",
+            "Text editor"
+        ]
+    },
+    {
+        "q": "The _____ defines gRPC service contracts.",
+        "type": "fill_blank",
+        "answers": [
+            "protobuf"
+        ],
+        "other_options": [
+            "json",
+            "xml",
+            "yaml"
+        ]
+    },
+    {
+        "q": "gRPC uses HTTP/2 for transport.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this method check?",
+        "type": "mcq",
+        "c": "methods = ['GetUser', 'CreateUser', 'UpdateUser', 'DeleteUser']\nread_methods = [m for m in methods if m.startswith('Get')]\nprint(len(read_methods))",
+        "o": [
+            "1",
+            "4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the gRPC type with its behavior:",
+        "type": "match",
+        "left": [
+            "Unary",
+            "Server stream",
+            "Client stream",
+            "Bidirectional"
+        ],
+        "right": [
+            "Single request/response",
+            "Server sends many",
+            "Client sends many",
+            "Both stream"
+        ]
+    },
+    {
+        "q": "Rearrange the gRPC call flow:",
+        "type": "rearrange",
+        "words": [
+            "Generate stubs",
+            "Create channel",
+            "Make call",
+            "Serialize message",
+            "Receive response"
+        ]
+    },
+    {
+        "q": "What is message queuing?",
+        "type": "mcq",
+        "o": [
+            "Asynchronous communication between services",
+            "Synchronous API calls",
+            "Direct database access",
+            "File sharing"
+        ]
+    },
+    {
+        "q": "The _____ stores messages until consumed.",
+        "type": "fill_blank",
+        "answers": [
+            "queue"
+        ],
+        "other_options": [
+            "database",
+            "cache",
+            "file"
+        ]
+    },
+    {
+        "q": "Message queues decouple producers and consumers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this queue depth?",
+        "type": "mcq",
+        "c": "queue = ['msg1', 'msg2', 'msg3', 'msg4', 'msg5']\ndepth = len(queue)\nprint(f'{depth} messages')",
+        "o": [
+            "5 messages",
+            "1 messages",
+            "0 messages",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the messaging pattern with its behavior:",
+        "type": "match",
+        "left": [
+            "Point-to-point",
+            "Pub/sub",
+            "Request/reply",
+            "Fan-out"
+        ],
+        "right": [
+            "One consumer",
+            "Many subscribers",
+            "Bidirectional",
+            "Broadcast"
+        ]
+    },
+    {
+        "q": "Rearrange the message flow:",
+        "type": "rearrange",
+        "words": [
+            "Producer sends",
+            "Queue stores",
+            "Consumer reads",
+            "Acknowledge",
+            "Delete message"
+        ]
+    },
+    {
+        "q": "What is dead letter queue?",
+        "type": "mcq",
+        "o": [
+            "Queue for failed messages",
+            "Queue for old messages",
+            "Primary message queue",
+            "Email queue"
+        ]
+    },
+    {
+        "q": "The _____ receives messages that cannot be processed.",
+        "type": "fill_blank",
+        "answers": [
+            "DLQ"
+        ],
+        "other_options": [
+            "main queue",
+            "cache",
+            "database"
+        ]
+    },
+    {
+        "q": "Dead letter queues help debug message failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this DLQ check?",
+        "type": "mcq",
+        "c": "retry_count = 4\nmax_retries = 3\nsend_to_dlq = retry_count > max_retries\nprint(send_to_dlq)",
+        "o": [
+            "True",
+            "False",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the queue type with its purpose:",
+        "type": "match",
+        "left": [
+            "Main",
+            "DLQ",
+            "Retry",
+            "Priority"
+        ],
+        "right": [
+            "Normal flow",
+            "Failed messages",
+            "Delayed retry",
+            "Urgent messages"
+        ]
+    },
+    {
+        "q": "Rearrange the DLQ handling:",
+        "type": "rearrange",
+        "words": [
+            "Process message",
+            "Retry on failure",
+            "Exceed max retries",
+            "Move to DLQ",
+            "Investigate and fix"
+        ]
+    },
+    {
+        "q": "What is pub/sub messaging?",
+        "type": "mcq",
+        "o": [
+            "Publisher broadcasts to subscribers",
+            "Direct point-to-point",
+            "Database replication",
+            "File sharing"
+        ]
+    },
+    {
+        "q": "The _____ allows multiple consumers for same message.",
+        "type": "fill_blank",
+        "answers": [
+            "topic"
+        ],
+        "other_options": [
+            "queue",
+            "file",
+            "database"
+        ]
+    },
+    {
+        "q": "Pub/sub enables loose coupling between services.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this subscriber count?",
+        "type": "mcq",
+        "c": "topic = {'name': 'orders', 'subscribers': ['billing', 'shipping', 'analytics']}\ncount = len(topic['subscribers'])\nprint(count)",
+        "o": [
+            "3",
+            "1",
+            "orders",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the messaging system with its type:",
+        "type": "match",
+        "left": [
+            "Kafka",
+            "RabbitMQ",
+            "AWS SNS",
+            "Google Pub/Sub"
+        ],
+        "right": [
+            "Log-based",
+            "Queue-based",
+            "Notification",
+            "Cloud native"
+        ]
+    },
+    {
+        "q": "Rearrange the pub/sub flow:",
+        "type": "rearrange",
+        "words": [
+            "Publisher sends",
+            "Topic receives",
+            "Fan out to subscribers",
+            "Deliver messages",
+            "Acknowledge receipt"
+        ]
+    },
+    {
+        "q": "What is exactly-once delivery?",
+        "type": "mcq",
+        "o": [
+            "Message delivered exactly one time",
+            "Message may be delivered multiple times",
+            "Message may be lost",
+            "No delivery guarantee"
+        ]
+    },
+    {
+        "q": "The _____ ensures no duplicate message processing.",
+        "type": "fill_blank",
+        "answers": [
+            "deduplication"
+        ],
+        "other_options": [
+            "retry",
+            "batch",
+            "compress"
+        ]
+    },
+    {
+        "q": "At-least-once may result in duplicates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this idempotency check?",
+        "type": "mcq",
+        "c": "processed_ids = {'msg-1', 'msg-2', 'msg-3'}\nnew_msg = 'msg-2'\nis_dup = new_msg in processed_ids\nprint(f'Duplicate: {is_dup}')",
+        "o": [
+            "Duplicate: True",
+            "Duplicate: False",
+            "msg-2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the delivery guarantee with its trade-off:",
+        "type": "match",
+        "left": [
+            "At-most-once",
+            "At-least-once",
+            "Exactly-once"
+        ],
+        "right": [
+            "May lose",
+            "May duplicate",
+            "Complex implementation"
+        ]
+    },
+    {
+        "q": "Rearrange the message acknowledgment:",
+        "type": "rearrange",
+        "words": [
+            "Receive message",
+            "Process message",
+            "Write to database",
+            "Acknowledge",
+            "Remove from queue"
+        ]
+    },
+    {
+        "q": "What is stream processing?",
+        "type": "mcq",
+        "o": [
+            "Processing data as it flows",
+            "Batch processing only",
+            "File storage",
+            "Manual processing"
+        ]
+    },
+    {
+        "q": "The _____ defines stream processing computation.",
+        "type": "fill_blank",
+        "answers": [
+            "topology"
+        ],
+        "other_options": [
+            "schema",
+            "table",
+            "index"
+        ]
+    },
+    {
+        "q": "Stream processing provides low-latency results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this window aggregation?",
+        "type": "mcq",
+        "c": "events = [10, 20, 30, 40, 50]\nwindow_size = 3\nwindow = events[:window_size]\nprint(sum(window))",
+        "o": [
+            "60",
+            "150",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the stream processor with its creator:",
+        "type": "match",
+        "left": [
+            "Kafka Streams",
+            "Flink",
+            "Spark Streaming",
+            "Storm"
+        ],
+        "right": [
+            "Confluent",
+            "Apache",
+            "Apache",
+            "Apache"
+        ]
+    },
+    {
+        "q": "Rearrange the stream processing pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Ingest events",
+            "Parse and validate",
+            "Transform",
+            "Aggregate",
+            "Output results"
+        ]
+    },
+    {
+        "q": "What is watermarking in streaming?",
+        "type": "mcq",
+        "o": [
+            "Tracking event time progress",
+            "Adding image watermarks",
+            "Compressing data",
+            "Encrypting streams"
+        ]
+    },
+    {
+        "q": "The _____ indicates that no earlier events will arrive.",
+        "type": "fill_blank",
+        "answers": [
+            "watermark"
+        ],
+        "other_options": [
+            "timestamp",
+            "offset",
+            "partition"
+        ]
+    },
+    {
+        "q": "Late events may arrive after the watermark.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this watermark check?",
+        "type": "mcq",
+        "c": "watermark = 1000\nevent_time = 950\nis_late = event_time < watermark\nprint(f'Late: {is_late}')",
+        "o": [
+            "Late: True",
+            "Late: False",
+            "950",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the time concept with its definition:",
+        "type": "match",
+        "left": [
+            "Event time",
+            "Processing time",
+            "Ingestion time",
+            "Watermark"
+        ],
+        "right": [
+            "When occurred",
+            "When processed",
+            "When received",
+            "Progress marker"
+        ]
+    },
+    {
+        "q": "Rearrange the late event handling:",
+        "type": "rearrange",
+        "words": [
+            "Check watermark",
+            "Determine lateness",
+            "Allow grace period",
+            "Update or discard",
+            "Continue processing"
+        ]
+    },
+    {
+        "q": "What is stateful stream processing?",
+        "type": "mcq",
+        "o": [
+            "Maintaining state across events",
+            "Processing each event independently",
+            "Storing state in files only",
+            "Stateless computation"
+        ]
+    },
+    {
+        "q": "The _____ store maintains local state in stream processing.",
+        "type": "fill_blank",
+        "answers": [
+            "state"
+        ],
+        "other_options": [
+            "event",
+            "message",
+            "log"
+        ]
+    },
+    {
+        "q": "Checkpointing enables fault tolerance in stateful processing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this state update?",
+        "type": "mcq",
+        "c": "state = {'count': 10, 'sum': 100}\nnew_value = 20\nstate['count'] += 1\nstate['sum'] += new_value\nprint(state['count'])",
+        "o": [
+            "11",
+            "10",
+            "120",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the state store type with its characteristic:",
+        "type": "match",
+        "left": [
+            "In-memory",
+            "RocksDB",
+            "External DB",
+            "Key-value"
+        ],
+        "right": [
+            "Fastest",
+            "Persistent local",
+            "Remote",
+            "Simple access"
+        ]
+    },
+    {
+        "q": "Rearrange the checkpoint process:",
+        "type": "rearrange",
+        "words": [
+            "Trigger checkpoint",
+            "Capture state",
+            "Write to storage",
+            "Complete checkpoint",
+            "Resume processing"
+        ]
+    },
+    {
+        "q": "What is test-driven development for pipelines?",
+        "type": "mcq",
+        "o": [
+            "Writing tests before pipeline code",
+            "Testing after deployment",
+            "No testing",
+            "Manual testing only"
+        ]
+    },
+    {
+        "q": "The _____ tests verify single pipeline components.",
+        "type": "fill_blank",
+        "answers": [
+            "unit"
+        ],
+        "other_options": [
+            "integration",
+            "end-to-end",
+            "manual"
+        ]
+    },
+    {
+        "q": "Data assertions validate pipeline outputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this assertion?",
+        "type": "mcq",
+        "c": "expected_rows = 100\nactual_rows = 100\nassert_passed = expected_rows == actual_rows\nprint(f'Passed: {assert_passed}')",
+        "o": [
+            "Passed: True",
+            "Passed: False",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the test type with its focus:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "Data quality",
+            "Performance"
+        ],
+        "right": [
+            "Components",
+            "Connections",
+            "Correctness",
+            "Speed"
+        ]
+    },
+    {
+        "q": "Rearrange the pipeline testing strategy:",
+        "type": "rearrange",
+        "words": [
+            "Unit tests",
+            "Integration tests",
+            "Data validation",
+            "Performance tests",
+            "Production monitoring"
+        ]
+    },
+    {
+        "q": "What is data simulation for testing?",
+        "type": "mcq",
+        "o": [
+            "Generating realistic test data",
+            "Using production data",
+            "No test data",
+            "Random noise"
+        ]
+    },
+    {
+        "q": "The _____ data has similar characteristics to production.",
+        "type": "fill_blank",
+        "answers": [
+            "synthetic"
+        ],
+        "other_options": [
+            "production",
+            "real",
+            "sensitive"
+        ]
+    },
+    {
+        "q": "Test data should cover edge cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this test data generation?",
+        "type": "mcq",
+        "c": "import random\ntest_records = [{'id': i, 'value': random.randint(1, 100)} for i in range(5)]\nprint(len(test_records))",
+        "o": [
+            "5",
+            "100",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the test data approach with its benefit:",
+        "type": "match",
+        "left": [
+            "Synthetic",
+            "Masked production",
+            "Fixtures",
+            "Generators"
+        ],
+        "right": [
+            "Privacy safe",
+            "Realistic patterns",
+            "Consistent",
+            "Dynamic"
+        ]
+    },
+    {
+        "q": "Rearrange the test data management:",
+        "type": "rearrange",
+        "words": [
+            "Define requirements",
+            "Generate data",
+            "Validate coverage",
+            "Store fixtures",
+            "Maintain freshness"
+        ]
+    },
+    {
+        "q": "What is feature engineering?",
+        "type": "mcq",
+        "o": [
+            "Creating input features for ML models",
+            "Building software features",
+            "Hardware engineering",
+            "Infrastructure setup"
+        ]
+    },
+    {
+        "q": "The _____ store provides features for ML training and serving.",
+        "type": "fill_blank",
+        "answers": [
+            "feature"
+        ],
+        "other_options": [
+            "data",
+            "model",
+            "cache"
+        ]
+    },
+    {
+        "q": "Feature engineering improves model performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this feature calculation?",
+        "type": "mcq",
+        "c": "transactions = [100, 200, 150, 300]\navg_amount = sum(transactions) / len(transactions)\nprint(f'Avg: {avg_amount}')",
+        "o": [
+            "Avg: 187.5",
+            "Avg: 750",
+            "Avg: 100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the feature type with its example:",
+        "type": "match",
+        "left": [
+            "Numerical",
+            "Categorical",
+            "Temporal",
+            "Text"
+        ],
+        "right": [
+            "Age",
+            "Country",
+            "Day of week",
+            "Word count"
+        ]
+    },
+    {
+        "q": "Rearrange the feature pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Extract raw data",
+            "Transform features",
+            "Store in feature store",
+            "Serve to models",
+            "Monitor drift"
+        ]
+    },
+    {
+        "q": "What is data ops?",
+        "type": "mcq",
+        "o": [
+            "Applying DevOps practices to data",
+            "Database operations only",
+            "Manual data handling",
+            "Data deletion"
+        ]
+    },
+    {
+        "q": "The _____ automates data pipeline deployments.",
+        "type": "fill_blank",
+        "answers": [
+            "DataOps"
+        ],
+        "other_options": [
+            "DevOps",
+            "MLOps",
+            "AIOps"
+        ]
+    },
+    {
+        "q": "DataOps reduces time to value for data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this deployment status?",
+        "type": "mcq",
+        "c": "deployment = {'pipeline': 'etl_daily', 'status': 'success', 'version': 'v2.1'}\nprint(deployment['status'])",
+        "o": [
+            "success",
+            "etl_daily",
+            "v2.1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DataOps practice with its goal:",
+        "type": "match",
+        "left": [
+            "Automation",
+            "Collaboration",
+            "Monitoring",
+            "Testing"
+        ],
+        "right": [
+            "Efficiency",
+            "Team alignment",
+            "Reliability",
+            "Quality"
+        ]
+    },
+    {
+        "q": "Rearrange the DataOps lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Plan",
+            "Develop",
+            "Test",
+            "Deploy",
+            "Operate"
+        ]
+    },
+    {
+        "q": "What is blue-green deployment?",
+        "type": "mcq",
+        "o": [
+            "Two identical environments for zero-downtime deploys",
+            "Single environment deployment",
+            "Manual rollback",
+            "No deployment strategy"
+        ]
+    },
+    {
+        "q": "The _____ environment receives new version first.",
+        "type": "fill_blank",
+        "answers": [
+            "staging"
+        ],
+        "other_options": [
+            "production",
+            "development",
+            "testing"
+        ]
+    },
+    {
+        "q": "Blue-green deployment enables instant rollback.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this environment switch?",
+        "type": "mcq",
+        "c": "active = 'blue'\nnew_version = 'green'\nactive = new_version\nprint(f'Active: {active}')",
+        "o": [
+            "Active: green",
+            "Active: blue",
+            "Active: new_version",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the deployment strategy with its risk:",
+        "type": "match",
+        "left": [
+            "Big bang",
+            "Rolling",
+            "Canary",
+            "Blue-green"
+        ],
+        "right": [
+            "High",
+            "Medium",
+            "Low",
+            "Low with instant rollback"
+        ]
+    },
+    {
+        "q": "Rearrange the blue-green deployment:",
+        "type": "rearrange",
+        "words": [
+            "Deploy to green",
+            "Test green",
+            "Switch traffic",
+            "Monitor",
+            "Decommission blue"
+        ]
+    },
+    {
+        "q": "What is pipeline versioning?",
+        "type": "mcq",
+        "o": [
+            "Tracking pipeline code changes over time",
+            "Deleting old pipelines",
+            "Ignoring changes",
+            "Manual documentation"
+        ]
+    },
+    {
+        "q": "The _____ system tracks pipeline code history.",
+        "type": "fill_blank",
+        "answers": [
+            "version control"
+        ],
+        "other_options": [
+            "file system",
+            "email",
+            "chat"
+        ]
+    },
+    {
+        "q": "Pipeline versioning enables reproducibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this version comparison?",
+        "type": "mcq",
+        "c": "current = '2.1.0'\nprevious = '2.0.0'\nis_newer = current > previous\nprint(is_newer)",
+        "o": [
+            "True",
+            "False",
+            "2.1.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the versioning scheme with its meaning:",
+        "type": "match",
+        "left": [
+            "Major",
+            "Minor",
+            "Patch",
+            "Build"
+        ],
+        "right": [
+            "Breaking changes",
+            "New features",
+            "Bug fixes",
+            "Iteration"
+        ]
+    },
+    {
+        "q": "Rearrange the version release:",
+        "type": "rearrange",
+        "words": [
+            "Develop feature",
+            "Update version",
+            "Create changelog",
+            "Tag release",
+            "Deploy"
+        ]
+    },
+    {
+        "q": "What is dependency management in pipelines?",
+        "type": "mcq",
+        "o": [
+            "Managing libraries and packages used by pipelines",
+            "Managing team dependencies",
+            "Managing file dependencies",
+            "Ignoring dependencies"
+        ]
+    },
+    {
+        "q": "The _____ file lists pipeline dependencies.",
+        "type": "fill_blank",
+        "answers": [
+            "requirements"
+        ],
+        "other_options": [
+            "config",
+            "data",
+            "log"
+        ]
+    },
+    {
+        "q": "Pinning versions prevents unexpected changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this dependency check?",
+        "type": "mcq",
+        "c": "deps = {'pandas': '1.5.0', 'numpy': '1.23.0', 'spark': '3.3.0'}\ncount = len(deps)\nprint(f'{count} dependencies')",
+        "o": [
+            "3 dependencies",
+            "1 dependencies",
+            "0 dependencies",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the dependency tool with its ecosystem:",
+        "type": "match",
+        "left": [
+            "pip",
+            "npm",
+            "maven",
+            "conda"
+        ],
+        "right": [
+            "Python",
+            "JavaScript",
+            "Java",
+            "Data science"
+        ]
+    },
+    {
+        "q": "Rearrange the dependency update process:",
+        "type": "rearrange",
+        "words": [
+            "Check for updates",
+            "Test compatibility",
+            "Update versions",
+            "Run tests",
+            "Deploy"
+        ]
+    },
+    {
+        "q": "What is a data fabric?",
+        "type": "mcq",
+        "o": [
+            "Unified data management architecture",
+            "Physical network fabric",
+            "Database cluster",
+            "File system type"
+        ]
+    },
+    {
+        "q": "The _____ integrates data across heterogeneous environments.",
+        "type": "fill_blank",
+        "answers": [
+            "data fabric"
+        ],
+        "other_options": [
+            "data silo",
+            "data dump",
+            "data trash"
+        ]
+    },
+    {
+        "q": "Data fabric uses metadata for intelligent automation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this integration check?",
+        "type": "mcq",
+        "c": "sources = {'cloud': 3, 'on-prem': 2, 'edge': 1}\nintegrated = sum(sources.values())\nprint(f'{integrated} sources')",
+        "o": [
+            "6 sources",
+            "3 sources",
+            "1 sources",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the architecture with its focus:",
+        "type": "match",
+        "left": [
+            "Data fabric",
+            "Data mesh",
+            "Data lake",
+            "Data warehouse"
+        ],
+        "right": [
+            "Integration",
+            "Decentralization",
+            "Raw storage",
+            "Analytics"
+        ]
+    },
+    {
+        "q": "Rearrange the data fabric components:",
+        "type": "rearrange",
+        "words": [
+            "Data catalog",
+            "Integration layer",
+            "Governance",
+            "Orchestration",
+            "Analytics"
+        ]
+    },
+    {
+        "q": "What is MLOps?",
+        "type": "mcq",
+        "o": [
+            "ML operations and lifecycle management",
+            "Database operations",
+            "Network operations",
+            "Manual development"
+        ]
+    },
+    {
+        "q": "The _____ tracks ML model versions.",
+        "type": "fill_blank",
+        "answers": [
+            "model registry"
+        ],
+        "other_options": [
+            "file system",
+            "email",
+            "spreadsheet"
+        ]
+    },
+    {
+        "q": "MLOps enables reproducible ML experiments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this model version?",
+        "type": "mcq",
+        "c": "model = {'name': 'classifier', 'version': 'v3.2', 'accuracy': 0.95}\nprint(model['version'])",
+        "o": [
+            "v3.2",
+            "classifier",
+            "0.95",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the MLOps concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Training",
+            "Serving",
+            "Monitoring",
+            "Retraining"
+        ],
+        "right": [
+            "Build model",
+            "Deploy model",
+            "Track performance",
+            "Update model"
+        ]
+    },
+    {
+        "q": "Rearrange the ML pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Data prep",
+            "Feature engineering",
+            "Training",
+            "Evaluation",
+            "Deployment"
+        ]
+    },
+    {
+        "q": "What is model drift?",
+        "type": "mcq",
+        "o": [
+            "Model performance degradation over time",
+            "Model improvement",
+            "Model backup",
+            "Model deletion"
+        ]
+    },
+    {
+        "q": "The _____ detects changes in input data distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "data drift"
+        ],
+        "other_options": [
+            "model drift",
+            "concept drift",
+            "label drift"
+        ]
+    },
+    {
+        "q": "Drift monitoring is essential for model reliability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this drift check?",
+        "type": "mcq",
+        "c": "baseline_mean = 100\ncurrent_mean = 85\ndrift = abs(baseline_mean - current_mean) / baseline_mean * 100\nprint(f'{drift}% drift')",
+        "o": [
+            "15.0% drift",
+            "85% drift",
+            "100% drift",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the drift type with its cause:",
+        "type": "match",
+        "left": [
+            "Data drift",
+            "Concept drift",
+            "Label drift",
+            "Feature drift"
+        ],
+        "right": [
+            "Input changes",
+            "Relationship changes",
+            "Target changes",
+            "Variable changes"
+        ]
+    },
+    {
+        "q": "Rearrange the drift detection flow:",
+        "type": "rearrange",
+        "words": [
+            "Collect predictions",
+            "Compare distributions",
+            "Detect drift",
+            "Alert team",
+            "Retrain model"
+        ]
+    },
+    {
+        "q": "What is A/B testing for pipelines?",
+        "type": "mcq",
+        "o": [
+            "Comparing two pipeline versions",
+            "Running all pipelines",
+            "Deleting pipelines",
+            "Ignoring differences"
+        ]
+    },
+    {
+        "q": "The _____ group receives the new pipeline version.",
+        "type": "fill_blank",
+        "answers": [
+            "treatment"
+        ],
+        "other_options": [
+            "control",
+            "baseline",
+            "default"
+        ]
+    },
+    {
+        "q": "A/B testing validates pipeline changes before full rollout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this experiment split?",
+        "type": "mcq",
+        "c": "total_users = 10000\ntreatment_percent = 10\ntreatment_size = total_users * treatment_percent // 100\nprint(treatment_size)",
+        "o": [
+            "1000",
+            "10000",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the experiment term with its meaning:",
+        "type": "match",
+        "left": [
+            "Control",
+            "Treatment",
+            "Metric",
+            "Significance"
+        ],
+        "right": [
+            "Baseline",
+            "New version",
+            "Measurement",
+            "Confidence"
+        ]
+    },
+    {
+        "q": "Rearrange the A/B testing process:",
+        "type": "rearrange",
+        "words": [
+            "Define hypothesis",
+            "Split traffic",
+            "Run experiment",
+            "Analyze results",
+            "Make decision"
+        ]
+    },
+    {
+        "q": "What is pipeline orchestration?",
+        "type": "mcq",
+        "o": [
+            "Coordinating pipeline task execution",
+            "Running tasks randomly",
+            "Deleting pipelines",
+            "Manual execution"
+        ]
+    },
+    {
+        "q": "The _____ manages task dependencies and scheduling.",
+        "type": "fill_blank",
+        "answers": [
+            "orchestrator"
+        ],
+        "other_options": [
+            "executor",
+            "checker",
+            "logger"
+        ]
+    },
+    {
+        "q": "Orchestration ensures tasks run in the correct order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this dependency resolution?",
+        "type": "mcq",
+        "c": "dag = {'a': [], 'b': ['a'], 'c': ['a', 'b']}\nready = [t for t, deps in dag.items() if len(deps) == 0]\nprint(ready)",
+        "o": [
+            "['a']",
+            "['b']",
+            "['c']",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the orchestrator with its ecosystem:",
+        "type": "match",
+        "left": [
+            "Airflow",
+            "Prefect",
+            "Dagster",
+            "Argo"
+        ],
+        "right": [
+            "Apache",
+            "Modern Python",
+            "Data assets",
+            "Kubernetes"
+        ]
+    },
+    {
+        "q": "Rearrange the orchestration lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Define DAG",
+            "Schedule run",
+            "Execute tasks",
+            "Handle failures",
+            "Log results"
+        ]
+    },
+    {
+        "q": "What is data observability?",
+        "type": "mcq",
+        "o": [
+            "Understanding data health and quality",
+            "Hiding data issues",
+            "Deleting data",
+            "Ignoring errors"
+        ]
+    },
+    {
+        "q": "The _____ detects data freshness issues.",
+        "type": "fill_blank",
+        "answers": [
+            "observability tool"
+        ],
+        "other_options": [
+            "text editor",
+            "spreadsheet",
+            "email"
+        ]
+    },
+    {
+        "q": "Data observability includes freshness, volume, and schema checks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this freshness check?",
+        "type": "mcq",
+        "c": "last_update_hours = 48\nthreshold_hours = 24\nis_stale = last_update_hours > threshold_hours\nprint(f'Stale: {is_stale}')",
+        "o": [
+            "Stale: True",
+            "Stale: False",
+            "48",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the data metric with its check:",
+        "type": "match",
+        "left": [
+            "Freshness",
+            "Volume",
+            "Schema",
+            "Distribution"
+        ],
+        "right": [
+            "Last update",
+            "Row count",
+            "Column changes",
+            "Value patterns"
+        ]
+    },
+    {
+        "q": "Rearrange the observability pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Collect metadata",
+            "Run checks",
+            "Detect anomalies",
+            "Alert on issues",
+            "Root cause analysis"
+        ]
+    },
+    {
+        "q": "What is incremental processing?",
+        "type": "mcq",
+        "o": [
+            "Processing only new or changed data",
+            "Processing all data every time",
+            "Deleting data",
+            "Ignoring data"
+        ]
+    },
+    {
+        "q": "The _____ tracks what data has been processed.",
+        "type": "fill_blank",
+        "answers": [
+            "watermark"
+        ],
+        "other_options": [
+            "delete marker",
+            "random key",
+            "timestamp"
+        ]
+    },
+    {
+        "q": "Incremental processing reduces computational costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this incremental filter?",
+        "type": "mcq",
+        "c": "last_processed = 100\nall_ids = [98, 99, 100, 101, 102, 103]\nnew_ids = [i for i in all_ids if i > last_processed]\nprint(len(new_ids))",
+        "o": [
+            "3",
+            "6",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the processing mode with its approach:",
+        "type": "match",
+        "left": [
+            "Full refresh",
+            "Incremental",
+            "Delta",
+            "Merge"
+        ],
+        "right": [
+            "Replace all",
+            "Add new",
+            "Changes only",
+            "Upsert"
+        ]
+    },
+    {
+        "q": "Rearrange the incremental load steps:",
+        "type": "rearrange",
+        "words": [
+            "Get watermark",
+            "Query new data",
+            "Process records",
+            "Update watermark",
+            "Verify completeness"
+        ]
+    },
+    {
+        "q": "What is data partitioning?",
+        "type": "mcq",
+        "o": [
+            "Dividing data into manageable segments",
+            "Combining all data",
+            "Deleting segments",
+            "Ignoring structure"
+        ]
+    },
+    {
+        "q": "The _____ partition key enables efficient queries.",
+        "type": "fill_blank",
+        "answers": [
+            "date"
+        ],
+        "other_options": [
+            "random",
+            "unused",
+            "null"
+        ]
+    },
+    {
+        "q": "Partitioning enables partition pruning for faster queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this partition calculation?",
+        "type": "mcq",
+        "c": "date = '2024-01-15'\npartition = date[:7]\nprint(partition)",
+        "o": [
+            "2024-01",
+            "2024-01-15",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the partition strategy with its use:",
+        "type": "match",
+        "left": [
+            "Date",
+            "Hash",
+            "Range",
+            "List"
+        ],
+        "right": [
+            "Time series",
+            "Uniform distribution",
+            "Numeric ranges",
+            "Categoricals"
+        ]
+    },
+    {
+        "q": "Rearrange the partition optimization:",
+        "type": "rearrange",
+        "words": [
+            "Analyze queries",
+            "Choose partition key",
+            "Implement partitioning",
+            "Monitor performance",
+            "Adjust if needed"
+        ]
+    },
+    {
+        "q": "What is data compaction?",
+        "type": "mcq",
+        "o": [
+            "Merging small files into larger ones",
+            "Splitting large files",
+            "Deleting all files",
+            "Creating more files"
+        ]
+    },
+    {
+        "q": "The _____ combines many small files for efficiency.",
+        "type": "fill_blank",
+        "answers": [
+            "compaction"
+        ],
+        "other_options": [
+            "fragmentation",
+            "explosion",
+            "deletion"
+        ]
+    },
+    {
+        "q": "Small file problem impacts query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this file count?",
+        "type": "mcq",
+        "c": "files_before = 1000\ncompaction_ratio = 10\nfiles_after = files_before // compaction_ratio\nprint(files_after)",
+        "o": [
+            "100",
+            "1000",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the file operation with its purpose:",
+        "type": "match",
+        "left": [
+            "Compaction",
+            "Vacuum",
+            "Optimize",
+            "Reorg"
+        ],
+        "right": [
+            "Merge small",
+            "Remove old",
+            "Improve layout",
+            "Restructure"
+        ]
+    },
+    {
+        "q": "Rearrange the compaction process:",
+        "type": "rearrange",
+        "words": [
+            "Identify small files",
+            "Group by partition",
+            "Merge files",
+            "Replace old files",
+            "Update metadata"
+        ]
+    },
+    {
+        "q": "What is data skew?",
+        "type": "mcq",
+        "o": [
+            "Uneven data distribution across partitions",
+            "Even distribution",
+            "Perfect balance",
+            "No data"
+        ]
+    },
+    {
+        "q": "The _____ causes some tasks to run much longer.",
+        "type": "fill_blank",
+        "answers": [
+            "data skew"
+        ],
+        "other_options": [
+            "perfect balance",
+            "even split",
+            "uniform data"
+        ]
+    },
+    {
+        "q": "Data skew impacts parallel processing performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this skew detection?",
+        "type": "mcq",
+        "c": "partitions = [1000, 50, 30, 20]\nmax_val = max(partitions)\navg_val = sum(partitions) / len(partitions)\nskew_ratio = max_val / avg_val\nprint(f'{skew_ratio:.1f}x skew')",
+        "o": [
+            "3.6x skew",
+            "1.0x skew",
+            "1000x skew",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the skew mitigation with its technique:",
+        "type": "match",
+        "left": [
+            "Salting",
+            "Broadcast",
+            "Repartition",
+            "Sampling"
+        ],
+        "right": [
+            "Add random key",
+            "Small table copy",
+            "Redistribute",
+            "Subset data"
+        ]
+    },
+    {
+        "q": "Rearrange the skew handling steps:",
+        "type": "rearrange",
+        "words": [
+            "Detect skew",
+            "Identify hot keys",
+            "Apply mitigation",
+            "Monitor distribution",
+            "Adjust as needed"
+        ]
+    },
+    {
+        "q": "What is semantic layer?",
+        "type": "mcq",
+        "o": [
+            "Business meaning abstraction over data",
+            "Physical storage layer",
+            "Network layer",
+            "Hardware layer"
+        ]
+    },
+    {
+        "q": "The _____ provides consistent business definitions.",
+        "type": "fill_blank",
+        "answers": [
+            "semantic layer"
+        ],
+        "other_options": [
+            "physical layer",
+            "network layer",
+            "storage layer"
+        ]
+    },
+    {
+        "q": "Semantic layers enable self-service analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this metric definition?",
+        "type": "mcq",
+        "c": "metrics = {'revenue': 'sum(sales)', 'aov': 'revenue / order_count'}\nprint(len(metrics))",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the semantic concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Metric",
+            "Dimension",
+            "Entity",
+            "Relationship"
+        ],
+        "right": [
+            "Measurement",
+            "Grouping",
+            "Business object",
+            "Connections"
+        ]
+    },
+    {
+        "q": "Rearrange the semantic layer design:",
+        "type": "rearrange",
+        "words": [
+            "Define entities",
+            "Create dimensions",
+            "Build metrics",
+            "Establish relationships",
+            "Expose to users"
+        ]
+    },
+    {
+        "q": "What is reverse ETL?",
+        "type": "mcq",
+        "o": [
+            "Syncing data from warehouse to operational systems",
+            "Traditional ETL",
+            "Deleting data",
+            "Archiving data"
+        ]
+    },
+    {
+        "q": "The _____ ETL pushes data to SaaS applications.",
+        "type": "fill_blank",
+        "answers": [
+            "reverse"
+        ],
+        "other_options": [
+            "forward",
+            "normal",
+            "standard"
+        ]
+    },
+    {
+        "q": "Reverse ETL operationalizes analytics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sync check?",
+        "type": "mcq",
+        "c": "source_count = 1000\ndest_count = 998\nsync_rate = dest_count / source_count * 100\nprint(f'{sync_rate}% synced')",
+        "o": [
+            "99.8% synced",
+            "100% synced",
+            "0% synced",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the reverse ETL destination with its use:",
+        "type": "match",
+        "left": [
+            "Salesforce",
+            "Marketo",
+            "Intercom",
+            "Slack"
+        ],
+        "right": [
+            "CRM",
+            "Marketing",
+            "Customer support",
+            "Notifications"
+        ]
+    },
+    {
+        "q": "Rearrange the reverse ETL flow:",
+        "type": "rearrange",
+        "words": [
+            "Query warehouse",
+            "Transform for API",
+            "Push to destination",
+            "Handle errors",
+            "Track sync status"
+        ]
+    },
+    {
+        "q": "What is data product?",
+        "type": "mcq",
+        "o": [
+            "Curated and documented dataset",
+            "Raw data dump",
+            "Deleted data",
+            "Temporary file"
+        ]
+    },
+    {
+        "q": "The _____ treats data as a valuable asset.",
+        "type": "fill_blank",
+        "answers": [
+            "data product"
+        ],
+        "other_options": [
+            "data dump",
+            "data waste",
+            "data trash"
+        ]
+    },
+    {
+        "q": "Data products have SLAs and documentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this product quality check?",
+        "type": "mcq",
+        "c": "product = {'completeness': 0.99, 'freshness': 'daily', 'documented': True}\nis_ready = product['completeness'] > 0.95 and product['documented']\nprint(is_ready)",
+        "o": [
+            "True",
+            "False",
+            "0.99",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the data product attribute with its measure:",
+        "type": "match",
+        "left": [
+            "Quality",
+            "Discoverability",
+            "Interoperability",
+            "Security"
+        ],
+        "right": [
+            "Accuracy",
+            "Catalog presence",
+            "Standard formats",
+            "Access controls"
+        ]
+    },
+    {
+        "q": "Rearrange the data product lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Identify need",
+            "Build product",
+            "Document",
+            "Publish",
+            "Maintain"
+        ]
+    },
+    {
+        "q": "What is data democratization?",
+        "type": "mcq",
+        "o": [
+            "Enabling broad access to data",
+            "Restricting all access",
+            "Deleting data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ enables non-technical users to access data.",
+        "type": "fill_blank",
+        "answers": [
+            "self-service"
+        ],
+        "other_options": [
+            "restricted",
+            "locked",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Data democratization requires governance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this access level check?",
+        "type": "mcq",
+        "c": "access_levels = {'public': 100, 'internal': 50, 'restricted': 10}\ntotal_users = sum(access_levels.values())\nprint(total_users)",
+        "o": [
+            "160",
+            "100",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the access model with its scope:",
+        "type": "match",
+        "left": [
+            "Public",
+            "Internal",
+            "Team",
+            "Personal"
+        ],
+        "right": [
+            "Everyone",
+            "Company",
+            "Group",
+            "Individual"
+        ]
+    },
+    {
+        "q": "Rearrange the data democratization steps:",
+        "type": "rearrange",
+        "words": [
+            "Build platform",
+            "Create catalog",
+            "Define access",
+            "Train users",
+            "Monitor usage"
+        ]
+    },
+    {
+        "q": "What is cost attribution for pipelines?",
+        "type": "mcq",
+        "o": [
+            "Allocating costs to business units",
+            "Free computing",
+            "Ignoring costs",
+            "Hiding expenses"
+        ]
+    },
+    {
+        "q": "The _____ enables cost visibility per pipeline.",
+        "type": "fill_blank",
+        "answers": [
+            "tagging"
+        ],
+        "other_options": [
+            "deleting",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Cost attribution promotes efficient resource usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cost allocation?",
+        "type": "mcq",
+        "c": "costs = {'pipeline_a': 500, 'pipeline_b': 300, 'pipeline_c': 200}\ntotal = sum(costs.values())\nprint(f'${total}')",
+        "o": [
+            "$1000",
+            "$500",
+            "$200",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cost type with its category:",
+        "type": "match",
+        "left": [
+            "Compute",
+            "Storage",
+            "Network",
+            "License"
+        ],
+        "right": [
+            "Processing",
+            "Data retention",
+            "Transfer",
+            "Software"
+        ]
+    },
+    {
+        "q": "Rearrange the cost optimization process:",
+        "type": "rearrange",
+        "words": [
+            "Collect costs",
+            "Attribute to teams",
+            "Analyze trends",
+            "Identify waste",
+            "Implement savings"
+        ]
+    },
+    {
+        "q": "What is pipeline automation?",
+        "type": "mcq",
+        "o": [
+            "Running pipelines without manual intervention",
+            "Manual execution only",
+            "Deleting pipelines",
+            "Ignoring schedules"
+        ]
+    },
+    {
+        "q": "The _____ trigger starts pipelines automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "scheduled"
+        ],
+        "other_options": [
+            "manual",
+            "deleted",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Automation reduces human error in operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this schedule check?",
+        "type": "mcq",
+        "c": "schedule = {'cron': '0 * * * *', 'timezone': 'UTC'}\nis_hourly = '0 * * * *' in schedule['cron']\nprint(is_hourly)",
+        "o": [
+            "True",
+            "False",
+            "0 * * * *",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the trigger type with its mechanism:",
+        "type": "match",
+        "left": [
+            "Cron",
+            "Event",
+            "API",
+            "Sensor"
+        ],
+        "right": [
+            "Time-based",
+            "Message-based",
+            "Request-based",
+            "Condition-based"
+        ]
+    },
+    {
+        "q": "Rearrange the automation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define trigger",
+            "Configure pipeline",
+            "Test execution",
+            "Enable automation",
+            "Monitor runs"
+        ]
+    },
+    {
+        "q": "What is data documentation?",
+        "type": "mcq",
+        "o": [
+            "Describing data assets for users",
+            "Deleting documentation",
+            "Hiding information",
+            "Ignoring metadata"
+        ]
+    },
+    {
+        "q": "The _____ describes what data means.",
+        "type": "fill_blank",
+        "answers": [
+            "data dictionary"
+        ],
+        "other_options": [
+            "data trash",
+            "data dump",
+            "data void"
+        ]
+    },
+    {
+        "q": "Good documentation improves data discoverability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this documentation check?",
+        "type": "mcq",
+        "c": "table = {'name': 'orders', 'description': 'All customer orders', 'columns': 15}\nis_documented = len(table['description']) > 0\nprint(is_documented)",
+        "o": [
+            "True",
+            "False",
+            "orders",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the documentation type with its content:",
+        "type": "match",
+        "left": [
+            "Data dictionary",
+            "README",
+            "Runbook",
+            "API docs"
+        ],
+        "right": [
+            "Column definitions",
+            "Overview",
+            "Operations",
+            "Endpoints"
+        ]
+    },
+    {
+        "q": "Rearrange the documentation process:",
+        "type": "rearrange",
+        "words": [
+            "Identify assets",
+            "Write descriptions",
+            "Add examples",
+            "Publish docs",
+            "Keep updated"
+        ]
+    },
+    {
+        "q": "What is pipeline security?",
+        "type": "mcq",
+        "o": [
+            "Protecting data and systems from threats",
+            "Ignoring security",
+            "Open access to all",
+            "Deleting protections"
+        ]
+    },
+    {
+        "q": "The _____ encrypts data in transit.",
+        "type": "fill_blank",
+        "answers": [
+            "TLS"
+        ],
+        "other_options": [
+            "HTTP",
+            "FTP",
+            "Telnet"
+        ]
+    },
+    {
+        "q": "Defense in depth uses multiple security layers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this encryption check?",
+        "type": "mcq",
+        "c": "connection = {'protocol': 'https', 'encrypted': True}\nis_secure = connection['encrypted']\nprint(is_secure)",
+        "o": [
+            "True",
+            "False",
+            "https",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the security control with its protection:",
+        "type": "match",
+        "left": [
+            "Encryption",
+            "Authentication",
+            "Authorization",
+            "Auditing"
+        ],
+        "right": [
+            "Confidentiality",
+            "Identity",
+            "Access control",
+            "Accountability"
+        ]
+    },
+    {
+        "q": "Rearrange the security layers:",
+        "type": "rearrange",
+        "words": [
+            "Network security",
+            "Application security",
+            "Data security",
+            "Access control",
+            "Monitoring"
+        ]
+    },
+    {
+        "q": "What is compliance in data pipelines?",
+        "type": "mcq",
+        "o": [
+            "Following regulatory requirements",
+            "Ignoring regulations",
+            "Breaking rules",
+            "Avoiding audits"
+        ]
+    },
+    {
+        "q": "The _____ regulation protects personal data in EU.",
+        "type": "fill_blank",
+        "answers": [
+            "GDPR"
+        ],
+        "other_options": [
+            "CCPA",
+            "HIPAA",
+            "SOX"
+        ]
+    },
+    {
+        "q": "Data retention policies are required for compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this retention check?",
+        "type": "mcq",
+        "c": "retention_years = 7\ndata_age_years = 5\ncan_delete = data_age_years >= retention_years\nprint(can_delete)",
+        "o": [
+            "False",
+            "True",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the regulation with its focus:",
+        "type": "match",
+        "left": [
+            "GDPR",
+            "HIPAA",
+            "PCI-DSS",
+            "SOX"
+        ],
+        "right": [
+            "Privacy",
+            "Healthcare",
+            "Payment cards",
+            "Financial reporting"
+        ]
+    },
+    {
+        "q": "Rearrange the compliance process:",
+        "type": "rearrange",
+        "words": [
+            "Identify requirements",
+            "Implement controls",
+            "Document compliance",
+            "Conduct audits",
+            "Remediate gaps"
+        ]
+    },
+    {
+        "q": "What is data masking?",
+        "type": "mcq",
+        "o": [
+            "Hiding sensitive data values",
+            "Deleting all data",
+            "Sharing raw data",
+            "Ignoring privacy"
+        ]
+    },
+    {
+        "q": "The _____ replaces sensitive data with fake values.",
+        "type": "fill_blank",
+        "answers": [
+            "masking"
+        ],
+        "other_options": [
+            "exposing",
+            "sharing",
+            "publishing"
+        ]
+    },
+    {
+        "q": "Masking preserves data utility while protecting privacy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this masking?",
+        "type": "mcq",
+        "c": "email = 'john.doe@example.com'\nmasked = email[0] + '****' + email[email.index('@'):]\nprint(masked)",
+        "o": [
+            "j****@example.com",
+            "john.doe@example.com",
+            "****",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the masking technique with its method:",
+        "type": "match",
+        "left": [
+            "Substitution",
+            "Shuffling",
+            "Encryption",
+            "Nulling"
+        ],
+        "right": [
+            "Replace values",
+            "Rearrange",
+            "Transform",
+            "Remove"
+        ]
+    },
+    {
+        "q": "Rearrange the masking implementation:",
+        "type": "rearrange",
+        "words": [
+            "Identify PII",
+            "Choose technique",
+            "Apply masking",
+            "Validate output",
+            "Monitor access"
+        ]
+    },
+    {
+        "q": "What is data cataloging?",
+        "type": "mcq",
+        "o": [
+            "Inventorying and describing data assets",
+            "Deleting data",
+            "Hiding data",
+            "Ignoring metadata"
+        ]
+    },
+    {
+        "q": "The _____ helps users discover available data.",
+        "type": "fill_blank",
+        "answers": [
+            "data catalog"
+        ],
+        "other_options": [
+            "data trash",
+            "data void",
+            "data dump"
+        ]
+    },
+    {
+        "q": "Catalogs improve data discoverability and trust.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this catalog search?",
+        "type": "mcq",
+        "c": "catalog = ['orders', 'customers', 'products', 'order_items']\nmatches = [t for t in catalog if 'order' in t]\nprint(len(matches))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the catalog feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Search",
+            "Lineage",
+            "Quality",
+            "Classification"
+        ],
+        "right": [
+            "Find data",
+            "Track origin",
+            "Trust data",
+            "Organize data"
+        ]
+    },
+    {
+        "q": "Rearrange the cataloging process:",
+        "type": "rearrange",
+        "words": [
+            "Crawl sources",
+            "Extract metadata",
+            "Classify assets",
+            "Enable search",
+            "Maintain freshness"
+        ]
+    },
+    {
+        "q": "What is data stewardship?",
+        "type": "mcq",
+        "o": [
+            "Managing data quality and standards",
+            "Deleting all data",
+            "Ignoring data issues",
+            "Hiding problems"
+        ]
+    },
+    {
+        "q": "The _____ is responsible for data quality in their domain.",
+        "type": "fill_blank",
+        "answers": [
+            "data steward"
+        ],
+        "other_options": [
+            "data consumer",
+            "data visitor",
+            "data guest"
+        ]
+    },
+    {
+        "q": "Data stewards bridge business and technical teams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this quality score?",
+        "type": "mcq",
+        "c": "scores = {'completeness': 0.95, 'accuracy': 0.98, 'timeliness': 0.90}\navg_score = sum(scores.values()) / len(scores)\nprint(f'{avg_score:.2%}')",
+        "o": [
+            "94.33%",
+            "100.00%",
+            "0.95%",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the stewardship task with its focus:",
+        "type": "match",
+        "left": [
+            "Define rules",
+            "Monitor quality",
+            "Resolve issues",
+            "Train users"
+        ],
+        "right": [
+            "Standards",
+            "Metrics",
+            "Problems",
+            "Education"
+        ]
+    },
+    {
+        "q": "Rearrange the stewardship responsibilities:",
+        "type": "rearrange",
+        "words": [
+            "Define standards",
+            "Monitor compliance",
+            "Address issues",
+            "Document processes",
+            "Collaborate with teams"
+        ]
+    },
+    {
+        "q": "What is pipeline performance tuning?",
+        "type": "mcq",
+        "o": [
+            "Optimizing pipeline execution speed",
+            "Slowing pipelines",
+            "Deleting pipelines",
+            "Ignoring performance"
+        ]
+    },
+    {
+        "q": "The _____ identifies performance bottlenecks.",
+        "type": "fill_blank",
+        "answers": [
+            "profiling"
+        ],
+        "other_options": [
+            "deleting",
+            "ignoring",
+            "hiding"
+        ]
+    },
+    {
+        "q": "Performance tuning improves cost efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this speedup calculation?",
+        "type": "mcq",
+        "c": "original_time = 120\noptimized_time = 40\nimprovement = (original_time - optimized_time) / original_time * 100\nprint(f'{improvement:.0f}% faster')",
+        "o": [
+            "67% faster",
+            "33% faster",
+            "100% faster",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the optimization with its technique:",
+        "type": "match",
+        "left": [
+            "Parallelism",
+            "Caching",
+            "Indexing",
+            "Partitioning"
+        ],
+        "right": [
+            "Distribute work",
+            "Reduce reads",
+            "Speed queries",
+            "Prune data"
+        ]
+    },
+    {
+        "q": "Rearrange the tuning process:",
+        "type": "rearrange",
+        "words": [
+            "Profile performance",
+            "Identify bottlenecks",
+            "Apply optimizations",
+            "Measure improvement",
+            "Document changes"
+        ]
+    },
+    {
+        "q": "What is data lineage?",
+        "type": "mcq",
+        "o": [
+            "Tracking data origin and transformation history",
+            "Deleting data",
+            "Hiding data",
+            "Ignoring data"
+        ]
+    },
+    {
+        "q": "The _____ shows data flow through the pipeline.",
+        "type": "fill_blank",
+        "answers": [
+            "lineage graph"
+        ],
+        "other_options": [
+            "random chart",
+            "empty page",
+            "blank screen"
+        ]
+    },
+    {
+        "q": "Data lineage helps with impact analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lineage trace?",
+        "type": "mcq",
+        "c": "lineage = {'source': 'raw_table', 'transforms': ['clean', 'aggregate'], 'target': 'report'}\nprint(len(lineage['transforms']))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the lineage concept with its purpose:",
+        "type": "match",
+        "left": [
+            "Upstream",
+            "Downstream",
+            "Impact",
+            "Root cause"
+        ],
+        "right": [
+            "Data sources",
+            "Data consumers",
+            "Change effects",
+            "Issue origin"
+        ]
+    },
+    {
+        "q": "Rearrange the lineage analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify table",
+            "Trace upstream",
+            "Trace downstream",
+            "Analyze impact",
+            "Document findings"
+        ]
+    },
+    {
+        "q": "What is data retention?",
+        "type": "mcq",
+        "o": [
+            "Policy for how long to keep data",
+            "Deleting all data immediately",
+            "Never deleting data",
+            "Hiding data"
+        ]
+    },
+    {
+        "q": "The _____ policy defines data lifecycle.",
+        "type": "fill_blank",
+        "answers": [
+            "retention"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Retention policies balance storage costs and compliance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this retention check?",
+        "type": "mcq",
+        "c": "data_age_days = 365\nretention_days = 730\ncan_delete = data_age_days >= retention_days\nprint(can_delete)",
+        "o": [
+            "False",
+            "True",
+            "365",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the retention tier with its duration:",
+        "type": "match",
+        "left": [
+            "Hot",
+            "Warm",
+            "Cold",
+            "Archive"
+        ],
+        "right": [
+            "Days",
+            "Months",
+            "Years",
+            "Decades"
+        ]
+    },
+    {
+        "q": "Rearrange the retention lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create data",
+            "Active use",
+            "Transition to cold",
+            "Archive",
+            "Delete"
+        ]
+    },
+    {
+        "q": "What is data archiving?",
+        "type": "mcq",
+        "o": [
+            "Moving data to long-term storage",
+            "Deleting data",
+            "Active processing",
+            "Streaming data"
+        ]
+    },
+    {
+        "q": "The _____ storage tier has lowest cost but highest latency.",
+        "type": "fill_blank",
+        "answers": [
+            "archive"
+        ],
+        "other_options": [
+            "hot",
+            "warm",
+            "cool"
+        ]
+    },
+    {
+        "q": "Archived data may take hours to retrieve.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this storage tier?",
+        "type": "mcq",
+        "c": "tiers = {'hot': 0.023, 'warm': 0.015, 'cold': 0.004, 'archive': 0.001}\ncheapest = min(tiers, key=tiers.get)\nprint(cheapest)",
+        "o": [
+            "archive",
+            "hot",
+            "cold",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the storage class with its access pattern:",
+        "type": "match",
+        "left": [
+            "Standard",
+            "Infrequent",
+            "Glacier",
+            "Deep Archive"
+        ],
+        "right": [
+            "Frequent",
+            "Monthly",
+            "Yearly",
+            "Rarely"
+        ]
+    },
+    {
+        "q": "Rearrange the archiving process:",
+        "type": "rearrange",
+        "words": [
+            "Identify old data",
+            "Compress data",
+            "Move to archive",
+            "Update metadata",
+            "Verify integrity"
+        ]
+    },
+    {
+        "q": "What is data replication?",
+        "type": "mcq",
+        "o": [
+            "Copying data across locations",
+            "Deleting data",
+            "Single copy only",
+            "Ignoring redundancy"
+        ]
+    },
+    {
+        "q": "The _____ replication copies data synchronously.",
+        "type": "fill_blank",
+        "answers": [
+            "sync"
+        ],
+        "other_options": [
+            "async",
+            "lazy",
+            "never"
+        ]
+    },
+    {
+        "q": "Replication improves data availability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this replica count?",
+        "type": "mcq",
+        "c": "replicas = ['region-a', 'region-b', 'region-c']\ncount = len(replicas)\nprint(f'{count} replicas')",
+        "o": [
+            "3 replicas",
+            "1 replicas",
+            "0 replicas",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the replication type with its consistency:",
+        "type": "match",
+        "left": [
+            "Sync",
+            "Async",
+            "Semi-sync",
+            "Lazy"
+        ],
+        "right": [
+            "Strong",
+            "Eventual",
+            "Partial",
+            "Weak"
+        ]
+    },
+    {
+        "q": "Rearrange the replication setup:",
+        "type": "rearrange",
+        "words": [
+            "Configure primary",
+            "Add replicas",
+            "Enable sync",
+            "Monitor lag",
+            "Handle failover"
+        ]
+    },
+    {
+        "q": "What is disaster recovery for pipelines?",
+        "type": "mcq",
+        "o": [
+            "Restoring operations after failures",
+            "Ignoring failures",
+            "No backup plan",
+            "Manual recovery only"
+        ]
+    },
+    {
+        "q": "The _____ defines acceptable downtime.",
+        "type": "fill_blank",
+        "answers": [
+            "RTO"
+        ],
+        "other_options": [
+            "RPO",
+            "SLA",
+            "SLO"
+        ]
+    },
+    {
+        "q": "RPO defines acceptable data loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this RTO check?",
+        "type": "mcq",
+        "c": "rto_hours = 4\nactual_recovery = 3\nmet_rto = actual_recovery <= rto_hours\nprint(f'RTO met: {met_rto}')",
+        "o": [
+            "RTO met: True",
+            "RTO met: False",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DR metric with its meaning:",
+        "type": "match",
+        "left": [
+            "RTO",
+            "RPO",
+            "MTTR",
+            "MTBF"
+        ],
+        "right": [
+            "Recovery time",
+            "Data loss",
+            "Repair time",
+            "Failure interval"
+        ]
+    },
+    {
+        "q": "Rearrange the DR process:",
+        "type": "rearrange",
+        "words": [
+            "Detect failure",
+            "Activate DR site",
+            "Restore services",
+            "Verify operations",
+            "Document lessons"
+        ]
+    },
+    {
+        "q": "What is data anonymization?",
+        "type": "mcq",
+        "o": [
+            "Removing identifying information",
+            "Adding identifying information",
+            "Sharing personal data",
+            "Ignoring privacy"
+        ]
+    },
+    {
+        "q": "The _____ ensures individuals cannot be identified.",
+        "type": "fill_blank",
+        "answers": [
+            "anonymization"
+        ],
+        "other_options": [
+            "identification",
+            "exposure",
+            "sharing"
+        ]
+    },
+    {
+        "q": "Anonymized data cannot be re-identified.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this k-anonymity check?",
+        "type": "mcq",
+        "c": "group_sizes = [5, 6, 7, 8]\nk = min(group_sizes)\nprint(f'k={k}')",
+        "o": [
+            "k=5",
+            "k=8",
+            "k=1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the anonymization technique with its approach:",
+        "type": "match",
+        "left": [
+            "Generalization",
+            "Suppression",
+            "Perturbation",
+            "Swapping"
+        ],
+        "right": [
+            "Reduce precision",
+            "Remove values",
+            "Add noise",
+            "Exchange values"
+        ]
+    },
+    {
+        "q": "Rearrange the anonymization process:",
+        "type": "rearrange",
+        "words": [
+            "Identify PII",
+            "Select technique",
+            "Apply anonymization",
+            "Verify privacy",
+            "Document process"
+        ]
+    },
+    {
+        "q": "What is schema migration?",
+        "type": "mcq",
+        "o": [
+            "Updating database schema versions",
+            "Deleting schemas",
+            "Ignoring changes",
+            "Manual updates only"
+        ]
+    },
+    {
+        "q": "The _____ script applies schema changes.",
+        "type": "fill_blank",
+        "answers": [
+            "migration"
+        ],
+        "other_options": [
+            "deletion",
+            "backup",
+            "restore"
+        ]
+    },
+    {
+        "q": "Migrations should be reversible when possible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this migration version?",
+        "type": "mcq",
+        "c": "migrations = ['001_create_users', '002_add_email', '003_add_status']\ncurrent = len(migrations)\nprint(f'Version {current}')",
+        "o": [
+            "Version 3",
+            "Version 1",
+            "Version 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the migration type with its action:",
+        "type": "match",
+        "left": [
+            "Up",
+            "Down",
+            "Baseline",
+            "Repair"
+        ],
+        "right": [
+            "Apply changes",
+            "Rollback",
+            "Initial state",
+            "Fix metadata"
+        ]
+    },
+    {
+        "q": "Rearrange the migration process:",
+        "type": "rearrange",
+        "words": [
+            "Create migration",
+            "Test in dev",
+            "Apply to staging",
+            "Deploy to prod",
+            "Verify success"
+        ]
+    },
+    {
+        "q": "What is pipeline monitoring?",
+        "type": "mcq",
+        "o": [
+            "Tracking pipeline health and performance",
+            "Ignoring pipeline status",
+            "Deleting logs",
+            "No visibility"
+        ]
+    },
+    {
+        "q": "The _____ detects pipeline failures early.",
+        "type": "fill_blank",
+        "answers": [
+            "monitoring"
+        ],
+        "other_options": [
+            "deletion",
+            "hiding",
+            "ignoring"
+        ]
+    },
+    {
+        "q": "Alerting is essential for operational pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this health check?",
+        "type": "mcq",
+        "c": "pipeline = {'status': 'running', 'last_success': '2024-01-15', 'errors': 0}\nis_healthy = pipeline['status'] == 'running' and pipeline['errors'] == 0\nprint(is_healthy)",
+        "o": [
+            "True",
+            "False",
+            "running",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the monitoring metric with its purpose:",
+        "type": "match",
+        "left": [
+            "Latency",
+            "Throughput",
+            "Error rate",
+            "Success rate"
+        ],
+        "right": [
+            "Speed",
+            "Volume",
+            "Failures",
+            "Completions"
+        ]
+    },
+    {
+        "q": "Rearrange the monitoring setup:",
+        "type": "rearrange",
+        "words": [
+            "Define metrics",
+            "Instrument code",
+            "Configure alerts",
+            "Create dashboards",
+            "Review regularly"
+        ]
+    },
+    {
+        "q": "What is pipeline alerting?",
+        "type": "mcq",
+        "o": [
+            "Notifying teams of issues",
+            "Ignoring problems",
+            "Deleting notifications",
+            "No communication"
+        ]
+    },
+    {
+        "q": "The _____ page handles on-call rotations.",
+        "type": "fill_blank",
+        "answers": [
+            "PagerDuty"
+        ],
+        "other_options": [
+            "Word",
+            "Excel",
+            "PowerPoint"
+        ]
+    },
+    {
+        "q": "Alert fatigue reduces effectiveness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this alert severity?",
+        "type": "mcq",
+        "c": "alert = {'type': 'pipeline_failure', 'severity': 'critical'}\nis_urgent = alert['severity'] in ['critical', 'high']\nprint(is_urgent)",
+        "o": [
+            "True",
+            "False",
+            "critical",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the alert channel with its urgency:",
+        "type": "match",
+        "left": [
+            "Page",
+            "Slack",
+            "Email",
+            "Ticket"
+        ],
+        "right": [
+            "Critical",
+            "Important",
+            "Informational",
+            "Low priority"
+        ]
+    },
+    {
+        "q": "Rearrange the alert escalation:",
+        "type": "rearrange",
+        "words": [
+            "Detect issue",
+            "Send alert",
+            "Acknowledge",
+            "Investigate",
+            "Resolve"
+        ]
+    },
+    {
+        "q": "What is pipeline debugging?",
+        "type": "mcq",
+        "o": [
+            "Finding and fixing pipeline issues",
+            "Ignoring problems",
+            "Deleting pipelines",
+            "No troubleshooting"
+        ]
+    },
+    {
+        "q": "The _____ helps trace data through transformations.",
+        "type": "fill_blank",
+        "answers": [
+            "debugger"
+        ],
+        "other_options": [
+            "deleter",
+            "hider",
+            "ignorer"
+        ]
+    },
+    {
+        "q": "Logs are essential for debugging data pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this error analysis?",
+        "type": "mcq",
+        "c": "errors = [{'type': 'null_value'}, {'type': 'type_mismatch'}, {'type': 'null_value'}]\nerror_types = set(e['type'] for e in errors)\nprint(len(error_types))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the debugging tool with its purpose:",
+        "type": "match",
+        "left": [
+            "Logs",
+            "Traces",
+            "Profiler",
+            "Debugger"
+        ],
+        "right": [
+            "Events",
+            "Request flow",
+            "Performance",
+            "Step through"
+        ]
+    },
+    {
+        "q": "Rearrange the debugging process:",
+        "type": "rearrange",
+        "words": [
+            "Reproduce issue",
+            "Check logs",
+            "Trace data",
+            "Identify cause",
+            "Apply fix"
+        ]
+    },
+    {
+        "q": "What is data validation in pipelines?",
+        "type": "mcq",
+        "o": [
+            "Verifying data meets quality standards",
+            "Ignoring data quality",
+            "Deleting all data",
+            "No quality checks"
+        ]
+    },
+    {
+        "q": "The _____ validates data against defined rules.",
+        "type": "fill_blank",
+        "answers": [
+            "validator"
+        ],
+        "other_options": [
+            "deleter",
+            "ignorer",
+            "hider"
+        ]
+    },
+    {
+        "q": "Data validation should happen at pipeline boundaries.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

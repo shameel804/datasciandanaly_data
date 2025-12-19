@@ -1,0 +1,6601 @@
+[
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nprint(type(arr))",
+        "o": [
+            "<class 'numpy.ndarray'>",
+            "<class 'list'>",
+            "<class 'array'>",
+            "<class 'numpy.array'>"
+        ]
+    },
+    {
+        "q": "Which function creates a NumPy array from a Python list?",
+        "type": "mcq",
+        "o": [
+            "np.array()",
+            "np.list()",
+            "np.create()",
+            "np.make()"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns the number of dimensions of an array.",
+        "type": "fill_blank",
+        "answers": [
+            "ndim"
+        ],
+        "other_options": [
+            "dims",
+            "dimensions",
+            "rank"
+        ]
+    },
+    {
+        "q": "NumPy arrays are more efficient than Python lists for numerical operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr.shape)",
+        "o": [
+            "(5,)",
+            "[5]",
+            "5",
+            "(1, 5)"
+        ]
+    },
+    {
+        "q": "Match the NumPy array attributes with their descriptions:",
+        "type": "match",
+        "left": [
+            "ndim",
+            "shape",
+            "size",
+            "dtype"
+        ],
+        "right": [
+            "Number of dimensions",
+            "Dimension sizes",
+            "Total elements",
+            "Data type"
+        ]
+    },
+    {
+        "q": "Which function creates an array of zeros?",
+        "type": "mcq",
+        "o": [
+            "np.zeros()",
+            "np.empty()",
+            "np.null()",
+            "np.zero()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.zeros((2, 3))\nprint(arr.shape)",
+        "o": [
+            "(2, 3)",
+            "(3, 2)",
+            "[2, 3]",
+            "6"
+        ]
+    },
+    {
+        "q": "The ______ function creates an array filled with ones.",
+        "type": "fill_blank",
+        "answers": [
+            "np.ones"
+        ],
+        "other_options": [
+            "np.one",
+            "np.fill",
+            "np.full"
+        ]
+    },
+    {
+        "q": "Rearrange the array creation workflow:",
+        "type": "rearrange",
+        "words": [
+            "import numpy",
+            "choose function",
+            "specify shape",
+            "set dtype"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.ones((3, 2))\nprint(arr.size)",
+        "o": [
+            "6",
+            "5",
+            "(3, 2)",
+            "2"
+        ]
+    },
+    {
+        "q": "np.empty() creates an array with uninitialized values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates an identity matrix?",
+        "type": "mcq",
+        "o": [
+            "np.eye()",
+            "np.identity()",
+            "np.diag()",
+            "All of these can"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.eye(3)\nprint(arr[1, 1])",
+        "o": [
+            "1.0",
+            "0.0",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the array creation functions:",
+        "type": "match",
+        "left": [
+            "zeros",
+            "ones",
+            "empty",
+            "full"
+        ],
+        "right": [
+            "Fill with 0",
+            "Fill with 1",
+            "Uninitialized",
+            "Fill with value"
+        ]
+    },
+    {
+        "q": "The ______ function creates an array with a specific fill value.",
+        "type": "fill_blank",
+        "answers": [
+            "np.full"
+        ],
+        "other_options": [
+            "np.fill",
+            "np.constant",
+            "np.repeat"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.full((2, 2), 7)\nprint(arr.sum())",
+        "o": [
+            "28",
+            "7",
+            "14",
+            "4"
+        ]
+    },
+    {
+        "q": "np.arange() creates an array with evenly spaced values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates an array with evenly spaced values within a range?",
+        "type": "mcq",
+        "o": [
+            "np.arange()",
+            "np.range()",
+            "np.sequence()",
+            "np.series()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.arange(0, 10, 2)\nprint(arr.tolist())",
+        "o": [
+            "[0, 2, 4, 6, 8]",
+            "[0, 2, 4, 6, 8, 10]",
+            "[2, 4, 6, 8]",
+            "[0, 1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "The ______ function creates evenly spaced numbers over a specified interval.",
+        "type": "fill_blank",
+        "answers": [
+            "np.linspace"
+        ],
+        "other_options": [
+            "np.arange",
+            "np.range",
+            "np.space"
+        ]
+    },
+    {
+        "q": "Rearrange the linspace parameters:",
+        "type": "rearrange",
+        "words": [
+            "start value",
+            "stop value",
+            "num points",
+            "endpoint option"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.linspace(0, 1, 5)\nprint(len(arr))",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the sequence generation functions:",
+        "type": "match",
+        "left": [
+            "arange",
+            "linspace",
+            "logspace",
+            "geomspace"
+        ],
+        "right": [
+            "Step-based",
+            "Count-based linear",
+            "Log scale",
+            "Geometric scale"
+        ]
+    },
+    {
+        "q": "np.linspace includes the endpoint by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which operator performs element-wise addition?",
+        "type": "mcq",
+        "o": [
+            "+",
+            "np.add()",
+            "Both work",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\nprint((a + b).tolist())",
+        "o": [
+            "[5, 7, 9]",
+            "[4, 10, 18]",
+            "15",
+            "[1, 2, 3, 4, 5, 6]"
+        ]
+    },
+    {
+        "q": "The ______ operator performs element-wise multiplication.",
+        "type": "fill_blank",
+        "answers": [
+            "*"
+        ],
+        "other_options": [
+            "@",
+            "x",
+            "multiply"
+        ]
+    },
+    {
+        "q": "NumPy operations are vectorized by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4])\nprint((arr * 2).tolist())",
+        "o": [
+            "[2, 4, 6, 8]",
+            "[1, 2, 3, 4, 1, 2, 3, 4]",
+            "20",
+            "[2, 2, 2, 2]"
+        ]
+    },
+    {
+        "q": "Match the arithmetic operators:",
+        "type": "match",
+        "left": [
+            "+",
+            "-",
+            "*",
+            "/"
+        ],
+        "right": [
+            "Addition",
+            "Subtraction",
+            "Multiplication",
+            "Division"
+        ]
+    },
+    {
+        "q": "Which function computes the power of array elements?",
+        "type": "mcq",
+        "o": [
+            "np.power()",
+            "np.pow()",
+            "np.exp()",
+            "np.raise()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nprint(np.power(arr, 2).tolist())",
+        "o": [
+            "[1, 4, 9]",
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "[2, 4, 8]"
+        ]
+    },
+    {
+        "q": "The ______ operator can also be used for power operations.",
+        "type": "fill_blank",
+        "answers": [
+            "**"
+        ],
+        "other_options": [
+            "^",
+            "pow",
+            "^^"
+        ]
+    },
+    {
+        "q": "Rearrange the mathematical operation workflow:",
+        "type": "rearrange",
+        "words": [
+            "create arrays",
+            "choose operation",
+            "apply to elements",
+            "get result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([4, 9, 16])\nprint(np.sqrt(arr).tolist())",
+        "o": [
+            "[2.0, 3.0, 4.0]",
+            "[2, 3, 4]",
+            "[16, 81, 256]",
+            "[4.0, 9.0, 16.0]"
+        ]
+    },
+    {
+        "q": "np.sqrt() computes the square root of each element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns the sum of array elements?",
+        "type": "mcq",
+        "o": [
+            "np.sum()",
+            "np.add()",
+            "np.total()",
+            "np.aggregate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nprint(np.sum(arr))",
+        "o": [
+            "10",
+            "[4, 6]",
+            "[3, 7]",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the aggregation functions:",
+        "type": "match",
+        "left": [
+            "sum",
+            "mean",
+            "min",
+            "max"
+        ],
+        "right": [
+            "Total",
+            "Average",
+            "Minimum",
+            "Maximum"
+        ]
+    },
+    {
+        "q": "The ______ function returns the arithmetic mean.",
+        "type": "fill_blank",
+        "answers": [
+            "np.mean"
+        ],
+        "other_options": [
+            "np.avg",
+            "np.average",
+            "np.median"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(np.mean(arr))",
+        "o": [
+            "3.0",
+            "15",
+            "3",
+            "2.5"
+        ]
+    },
+    {
+        "q": "np.median() finds the middle value when sorted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes the standard deviation?",
+        "type": "mcq",
+        "o": [
+            "np.std()",
+            "np.stdev()",
+            "np.deviation()",
+            "np.sd()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr.min())",
+        "o": [
+            "1",
+            "5",
+            "3",
+            "15"
+        ]
+    },
+    {
+        "q": "The ______ function returns the variance of array elements.",
+        "type": "fill_blank",
+        "answers": [
+            "np.var"
+        ],
+        "other_options": [
+            "np.variance",
+            "np.spread",
+            "np.dev"
+        ]
+    },
+    {
+        "q": "Rearrange the statistical analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "load data",
+            "check shape",
+            "compute stats",
+            "interpret results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(np.max(arr))",
+        "o": [
+            "5",
+            "1",
+            "3",
+            "15"
+        ]
+    },
+    {
+        "q": "Match array methods with their functions:",
+        "type": "match",
+        "left": [
+            "arr.sum()",
+            "arr.mean()",
+            "arr.min()",
+            "arr.max()"
+        ],
+        "right": [
+            "Total sum",
+            "Average value",
+            "Smallest value",
+            "Largest value"
+        ]
+    },
+    {
+        "q": "Array methods and NumPy functions produce the same results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which syntax accesses a single element in a 1D array?",
+        "type": "mcq",
+        "o": [
+            "arr[index]",
+            "arr.get(index)",
+            "arr(index)",
+            "arr{index}"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([10, 20, 30, 40, 50])\nprint(arr[2])",
+        "o": [
+            "30",
+            "20",
+            "10",
+            "40"
+        ]
+    },
+    {
+        "q": "The ______ index accesses the last element of an array.",
+        "type": "fill_blank",
+        "answers": [
+            "-1"
+        ],
+        "other_options": [
+            "last",
+            "end",
+            "-0"
+        ]
+    },
+    {
+        "q": "NumPy uses zero-based indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr[-1])",
+        "o": [
+            "5",
+            "1",
+            "4",
+            "-1"
+        ]
+    },
+    {
+        "q": "Match the indexing patterns:",
+        "type": "match",
+        "left": [
+            "arr[0]",
+            "arr[-1]",
+            "arr[1:3]",
+            "arr[::2]"
+        ],
+        "right": [
+            "First element",
+            "Last element",
+            "Elements 1 and 2",
+            "Every other element"
+        ]
+    },
+    {
+        "q": "Which syntax creates a slice from index 1 to 4?",
+        "type": "mcq",
+        "o": [
+            "arr[1:4]",
+            "arr[1-4]",
+            "arr(1,4)",
+            "arr[1,4]"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 1, 2, 3, 4, 5])\nprint(arr[1:4].tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[1, 2, 3, 4]",
+            "[0, 1, 2, 3]",
+            "[2, 3, 4]"
+        ]
+    },
+    {
+        "q": "The ______ in slicing indicates the step size.",
+        "type": "fill_blank",
+        "answers": [
+            "third value"
+        ],
+        "other_options": [
+            "second value",
+            "first value",
+            "fourth value"
+        ]
+    },
+    {
+        "q": "Rearrange the slicing syntax components:",
+        "type": "rearrange",
+        "words": [
+            "start index",
+            "stop index",
+            "step value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 1, 2, 3, 4, 5])\nprint(arr[::2].tolist())",
+        "o": [
+            "[0, 2, 4]",
+            "[1, 3, 5]",
+            "[0, 1, 2]",
+            "[2, 4]"
+        ]
+    },
+    {
+        "q": "Slice end index is exclusive in NumPy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function reshapes an array?",
+        "type": "mcq",
+        "o": [
+            "reshape()",
+            "resize()",
+            "remodel()",
+            "reform()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5, 6])\nreshaped = arr.reshape(2, 3)\nprint(reshaped.shape)",
+        "o": [
+            "(2, 3)",
+            "(3, 2)",
+            "(6,)",
+            "(1, 6)"
+        ]
+    },
+    {
+        "q": "Match the reshape scenarios:",
+        "type": "match",
+        "left": [
+            "(6,) to (2,3)",
+            "(6,) to (3,2)",
+            "(6,) to (1,6)",
+            "(6,) to (6,1)"
+        ],
+        "right": [
+            "2 rows, 3 cols",
+            "3 rows, 2 cols",
+            "1 row, 6 cols",
+            "6 rows, 1 col"
+        ]
+    },
+    {
+        "q": "The ______ value in reshape means infer dimension size.",
+        "type": "fill_blank",
+        "answers": [
+            "-1"
+        ],
+        "other_options": [
+            "0",
+            "None",
+            "auto"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5, 6])\nreshaped = arr.reshape(-1, 2)\nprint(reshaped.shape)",
+        "o": [
+            "(3, 2)",
+            "(2, 3)",
+            "(6, 1)",
+            "(1, 6)"
+        ]
+    },
+    {
+        "q": "reshape() returns a view when possible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method flattens a multi-dimensional array?",
+        "type": "mcq",
+        "o": [
+            "flatten()",
+            "flat()",
+            "reduce()",
+            "compress()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nprint(arr.flatten().tolist())",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[[1, 2], [3, 4]]",
+            "[1, 3, 2, 4]",
+            "[4]"
+        ]
+    },
+    {
+        "q": "The ______ method also flattens but returns a view.",
+        "type": "fill_blank",
+        "answers": [
+            "ravel"
+        ],
+        "other_options": [
+            "flat",
+            "view",
+            "flatten"
+        ]
+    },
+    {
+        "q": "Rearrange the reshape workflow:",
+        "type": "rearrange",
+        "words": [
+            "check original shape",
+            "calculate new dims",
+            "call reshape",
+            "verify result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr.T.shape)",
+        "o": [
+            "(3, 2)",
+            "(2, 3)",
+            "(6,)",
+            "(1, 6)"
+        ]
+    },
+    {
+        "q": "Match the shape operations:",
+        "type": "match",
+        "left": [
+            "reshape",
+            "flatten",
+            "ravel",
+            "transpose"
+        ],
+        "right": [
+            "Change dimensions",
+            "To 1D copy",
+            "To 1D view",
+            "Swap axes"
+        ]
+    },
+    {
+        "q": ".T is a shorthand for transpose().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function concatenates arrays?",
+        "type": "mcq",
+        "o": [
+            "np.concatenate()",
+            "np.concat()",
+            "np.join()",
+            "np.merge()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2])\nb = np.array([3, 4])\nprint(np.concatenate([a, b]).tolist())",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[[1, 2], [3, 4]]",
+            "[4, 6]",
+            "[1, 3, 2, 4]"
+        ]
+    },
+    {
+        "q": "The ______ function stacks arrays vertically.",
+        "type": "fill_blank",
+        "answers": [
+            "np.vstack"
+        ],
+        "other_options": [
+            "np.vstackv",
+            "np.row_stack",
+            "np.vertical"
+        ]
+    },
+    {
+        "q": "np.hstack() stacks arrays horizontally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 2]])\nb = np.array([[3, 4]])\nprint(np.vstack([a, b]).shape)",
+        "o": [
+            "(2, 2)",
+            "(1, 4)",
+            "(4, 1)",
+            "(2, 1)"
+        ]
+    },
+    {
+        "q": "Match the stacking functions:",
+        "type": "match",
+        "left": [
+            "vstack",
+            "hstack",
+            "dstack",
+            "stack"
+        ],
+        "right": [
+            "Vertical (row)",
+            "Horizontal (col)",
+            "Depth (3rd axis)",
+            "New axis"
+        ]
+    },
+    {
+        "q": "Which function splits an array into multiple sub-arrays?",
+        "type": "mcq",
+        "o": [
+            "np.split()",
+            "np.divide()",
+            "np.separate()",
+            "np.partition()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5, 6])\nparts = np.split(arr, 3)\nprint(len(parts))",
+        "o": [
+            "3",
+            "2",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ function splits array horizontally.",
+        "type": "fill_blank",
+        "answers": [
+            "np.hsplit"
+        ],
+        "other_options": [
+            "np.split_h",
+            "np.horizontal_split",
+            "np.col_split"
+        ]
+    },
+    {
+        "q": "Rearrange the array manipulation concepts:",
+        "type": "rearrange",
+        "words": [
+            "create arrays",
+            "reshape if needed",
+            "combine or split",
+            "process result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])\nparts = np.hsplit(arr, 2)\nprint(parts[0].shape)",
+        "o": [
+            "(2, 2)",
+            "(1, 4)",
+            "(4, 1)",
+            "(2, 4)"
+        ]
+    },
+    {
+        "q": "np.vsplit() divides an array into multiple sub-arrays vertically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates an array copy?",
+        "type": "mcq",
+        "o": [
+            "np.copy()",
+            "np.clone()",
+            "np.duplicate()",
+            "np.replicate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.copy(a)\nb[0] = 10\nprint(a[0])",
+        "o": [
+            "1",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the copy behaviors:",
+        "type": "match",
+        "left": [
+            "np.copy()",
+            "arr.copy()",
+            "arr.view()",
+            "arr[:]"
+        ],
+        "right": [
+            "Deep copy function",
+            "Deep copy method",
+            "Shallow copy",
+            "Slice (may share)"
+        ]
+    },
+    {
+        "q": "The ______ creates a shallow copy that shares data.",
+        "type": "fill_blank",
+        "answers": [
+            "view"
+        ],
+        "other_options": [
+            "copy",
+            "clone",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = a\nb[0] = 10\nprint(a[0])",
+        "o": [
+            "10",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Assignment without copy creates a reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nprint(arr[1, 0])",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "Which syntax accesses element at row 1, column 2 in a 2D array?",
+        "type": "mcq",
+        "o": [
+            "arr[1, 2]",
+            "arr[1][2]",
+            "Both work",
+            "Neither"
+        ]
+    },
+    {
+        "q": "The ______ syntax selects all elements along an axis.",
+        "type": "fill_blank",
+        "answers": [
+            ":"
+        ],
+        "other_options": [
+            "*",
+            "all",
+            "..."
+        ]
+    },
+    {
+        "q": "2D array indexing uses comma-separated indices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr[0, :].tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[1, 4]",
+            "[4, 5, 6]",
+            "[1]"
+        ]
+    },
+    {
+        "q": "Match the 2D slicing patterns:",
+        "type": "match",
+        "left": [
+            "arr[0, :]",
+            "arr[:, 0]",
+            "arr[0:2, 0:2]",
+            "arr[:, :]"
+        ],
+        "right": [
+            "First row",
+            "First column",
+            "Top-left 2x2",
+            "All elements"
+        ]
+    },
+    {
+        "q": "Which feature allows operations between arrays of different shapes?",
+        "type": "mcq",
+        "o": [
+            "Broadcasting",
+            "Vectorization",
+            "Expansion",
+            "Stretching"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nresult = arr + 10\nprint(result.tolist())",
+        "o": [
+            "[11, 12, 13]",
+            "[10, 20, 30]",
+            "[1, 2, 3, 10]",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ rule requires dimensions to be equal or one of them to be 1.",
+        "type": "fill_blank",
+        "answers": [
+            "broadcasting"
+        ],
+        "other_options": [
+            "compatibility",
+            "expansion",
+            "matching"
+        ]
+    },
+    {
+        "q": "Rearrange the broadcasting rule steps:",
+        "type": "rearrange",
+        "words": [
+            "compare shapes",
+            "check compatibility",
+            "expand dimensions",
+            "perform operation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1], [2], [3]])\nb = np.array([10, 20, 30])\nprint((a + b).shape)",
+        "o": [
+            "(3, 3)",
+            "(3, 1)",
+            "(1, 3)",
+            "(9,)"
+        ]
+    },
+    {
+        "q": "Broadcasting automatically expands smaller arrays to match larger ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a boolean array from a condition?",
+        "type": "mcq",
+        "o": [
+            "Comparison operators",
+            "np.bool()",
+            "np.condition()",
+            "np.where()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nmask = arr > 3\nprint(mask.tolist())",
+        "o": [
+            "[False, False, False, True, True]",
+            "[True, True, True, False, False]",
+            "[0, 0, 0, 1, 1]",
+            "[4, 5]"
+        ]
+    },
+    {
+        "q": "Match the comparison operators:",
+        "type": "match",
+        "left": [
+            ">",
+            "<",
+            "==",
+            "!="
+        ],
+        "right": [
+            "Greater than",
+            "Less than",
+            "Equal to",
+            "Not equal"
+        ]
+    },
+    {
+        "q": "The ______ type stores True/False values in NumPy.",
+        "type": "fill_blank",
+        "answers": [
+            "bool"
+        ],
+        "other_options": [
+            "boolean",
+            "logical",
+            "binary"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr[arr > 3].tolist())",
+        "o": [
+            "[4, 5]",
+            "[1, 2, 3]",
+            "[True, True]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Boolean indexing filters elements based on conditions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns indices where condition is true?",
+        "type": "mcq",
+        "o": [
+            "np.where()",
+            "np.find()",
+            "np.index()",
+            "np.locate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nindices = np.where(arr > 3)\nprint(indices[0].tolist())",
+        "o": [
+            "[3, 4]",
+            "[4, 5]",
+            "[True, True]",
+            "[1, 2, 3]"
+        ]
+    },
+    {
+        "q": "The ______ operator combines boolean arrays with AND logic.",
+        "type": "fill_blank",
+        "answers": [
+            "&"
+        ],
+        "other_options": [
+            "and",
+            "&&",
+            "+"
+        ]
+    },
+    {
+        "q": "Rearrange the boolean operation workflow:",
+        "type": "rearrange",
+        "words": [
+            "create conditions",
+            "combine with operators",
+            "apply to array",
+            "get filtered result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nmask = (arr > 1) & (arr < 5)\nprint(arr[mask].tolist())",
+        "o": [
+            "[2, 3, 4]",
+            "[1, 5]",
+            "[2, 3, 4, 5]",
+            "[1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "Match the logical operators:",
+        "type": "match",
+        "left": [
+            "&",
+            "|",
+            "~",
+            "^"
+        ],
+        "right": [
+            "AND",
+            "OR",
+            "NOT",
+            "XOR"
+        ]
+    },
+    {
+        "q": "Parentheses are required around conditions when using & and |.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which indexing method uses an array of indices?",
+        "type": "mcq",
+        "o": [
+            "Fancy indexing",
+            "Boolean indexing",
+            "Slice indexing",
+            "Direct indexing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([10, 20, 30, 40, 50])\nindices = [0, 2, 4]\nprint(arr[indices].tolist())",
+        "o": [
+            "[10, 30, 50]",
+            "[20, 40]",
+            "[0, 2, 4]",
+            "[10, 20, 30]"
+        ]
+    },
+    {
+        "q": "The ______ method allows selecting elements with an array of indices.",
+        "type": "fill_blank",
+        "answers": [
+            "fancy indexing"
+        ],
+        "other_options": [
+            "index array",
+            "array slicing",
+            "multi-index"
+        ]
+    },
+    {
+        "q": "Fancy indexing always returns a copy, not a view.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4], [5, 6]])\nrows = [0, 2]\nprint(arr[rows].shape)",
+        "o": [
+            "(2, 2)",
+            "(3, 2)",
+            "(2,)",
+            "(2, 3)"
+        ]
+    },
+    {
+        "q": "Match the indexing methods:",
+        "type": "match",
+        "left": [
+            "arr[0]",
+            "arr[0:3]",
+            "arr[[0,2]]",
+            "arr[arr>0]"
+        ],
+        "right": [
+            "Single index",
+            "Slice",
+            "Fancy",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "Which function counts non-zero elements?",
+        "type": "mcq",
+        "o": [
+            "np.count_nonzero()",
+            "np.nonzero()",
+            "np.count()",
+            "np.tally()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 1, 2, 0, 3])\nprint(np.count_nonzero(arr))",
+        "o": [
+            "3",
+            "5",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "The ______ function returns indices of non-zero elements.",
+        "type": "fill_blank",
+        "answers": [
+            "np.nonzero"
+        ],
+        "other_options": [
+            "np.find",
+            "np.locate",
+            "np.indices"
+        ]
+    },
+    {
+        "q": "Rearrange the element counting workflow:",
+        "type": "rearrange",
+        "words": [
+            "create array",
+            "apply condition",
+            "count matches",
+            "use result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 0, 2, 0, 3])\nnz = np.nonzero(arr)\nprint(nz[0].tolist())",
+        "o": [
+            "[0, 2, 4]",
+            "[1, 2, 3]",
+            "[1, 0, 2, 0, 3]",
+            "[True, False, True, False, True]"
+        ]
+    },
+    {
+        "q": "np.any() checks if any element is True.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function checks if all elements are True?",
+        "type": "mcq",
+        "o": [
+            "np.all()",
+            "np.every()",
+            "np.check()",
+            "np.verify()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([True, True, False])\nprint(np.any(arr), np.all(arr))",
+        "o": [
+            "True False",
+            "True True",
+            "False False",
+            "False True"
+        ]
+    },
+    {
+        "q": "Match the aggregation checks:",
+        "type": "match",
+        "left": [
+            "np.any()",
+            "np.all()",
+            "np.sum()",
+            "np.prod()"
+        ],
+        "right": [
+            "Any True",
+            "All True",
+            "Sum of elements",
+            "Product of elements"
+        ]
+    },
+    {
+        "q": "The ______ function returns product of array elements.",
+        "type": "fill_blank",
+        "answers": [
+            "np.prod"
+        ],
+        "other_options": [
+            "np.product",
+            "np.multiply",
+            "np.times"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4])\nprint(np.prod(arr))",
+        "o": [
+            "24",
+            "10",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "np.cumsum() returns cumulative sum of elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes cumulative product?",
+        "type": "mcq",
+        "o": [
+            "np.cumprod()",
+            "np.cumproduct()",
+            "np.runprod()",
+            "np.accprod()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4])\nprint(np.cumsum(arr).tolist())",
+        "o": [
+            "[1, 3, 6, 10]",
+            "[1, 2, 3, 4]",
+            "[10, 9, 7, 4]",
+            "[1, 1, 1, 1]"
+        ]
+    },
+    {
+        "q": "The ______ function computes differences between consecutive elements.",
+        "type": "fill_blank",
+        "answers": [
+            "np.diff"
+        ],
+        "other_options": [
+            "np.delta",
+            "np.change",
+            "np.subtract"
+        ]
+    },
+    {
+        "q": "Rearrange the cumulative operations:",
+        "type": "rearrange",
+        "words": [
+            "start with first",
+            "add next element",
+            "store running total",
+            "repeat for all"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 4, 7])\nprint(np.diff(arr).tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[1, 2, 4, 7]",
+            "[0, 1, 2]",
+            "[2, 4, 7]"
+        ]
+    },
+    {
+        "q": "np.diff() returns an array with n-1 elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function sorts array elements?",
+        "type": "mcq",
+        "o": [
+            "np.sort()",
+            "np.order()",
+            "np.arrange()",
+            "np.rank()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([3, 1, 4, 1, 5])\nprint(np.sort(arr).tolist())",
+        "o": [
+            "[1, 1, 3, 4, 5]",
+            "[5, 4, 3, 1, 1]",
+            "[3, 1, 4, 1, 5]",
+            "[0, 1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "Match the sorting functions:",
+        "type": "match",
+        "left": [
+            "np.sort()",
+            "np.argsort()",
+            "np.lexsort()",
+            "arr.sort()"
+        ],
+        "right": [
+            "Returns sorted copy",
+            "Returns sort indices",
+            "Sort by multiple keys",
+            "Sorts in place"
+        ]
+    },
+    {
+        "q": "The ______ function returns indices that would sort the array.",
+        "type": "fill_blank",
+        "answers": [
+            "np.argsort"
+        ],
+        "other_options": [
+            "np.sortindex",
+            "np.order",
+            "np.rank"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([30, 10, 20])\nprint(np.argsort(arr).tolist())",
+        "o": [
+            "[1, 2, 0]",
+            "[10, 20, 30]",
+            "[0, 1, 2]",
+            "[2, 1, 0]"
+        ]
+    },
+    {
+        "q": "np.sort() returns a sorted copy without modifying original.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function finds unique elements?",
+        "type": "mcq",
+        "o": [
+            "np.unique()",
+            "np.distinct()",
+            "np.dedupe()",
+            "np.only()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 2, 3, 3, 3])\nprint(np.unique(arr).tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[1, 2, 2, 3, 3, 3]",
+            "[1, 2, 3, 3]",
+            "[3, 2, 1]"
+        ]
+    },
+    {
+        "q": "The ______ parameter in np.unique() counts occurrences.",
+        "type": "fill_blank",
+        "answers": [
+            "return_counts"
+        ],
+        "other_options": [
+            "count",
+            "counts",
+            "count_values"
+        ]
+    },
+    {
+        "q": "Rearrange the unique value analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "call np.unique()",
+            "get unique values",
+            "optionally get counts",
+            "analyze distribution"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 2, 3, 3, 3])\nvalues, counts = np.unique(arr, return_counts=True)\nprint(counts.tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[1, 2, 3, 3]",
+            "[3, 2, 1]",
+            "[1, 1, 1]"
+        ]
+    },
+    {
+        "q": "np.unique() returns sorted unique values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function generates random numbers?",
+        "type": "mcq",
+        "o": [
+            "np.random.rand()",
+            "np.rand()",
+            "np.random()",
+            "np.generate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(0)\nprint(np.random.rand(3).shape)",
+        "o": [
+            "(3,)",
+            "(1, 3)",
+            "(3, 1)",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the random functions:",
+        "type": "match",
+        "left": [
+            "rand()",
+            "randn()",
+            "randint()",
+            "random()"
+        ],
+        "right": [
+            "Uniform [0,1)",
+            "Standard normal",
+            "Random integers",
+            "Single random"
+        ]
+    },
+    {
+        "q": "The ______ function generates random integers in a range.",
+        "type": "fill_blank",
+        "answers": [
+            "np.random.randint"
+        ],
+        "other_options": [
+            "np.random.int",
+            "np.random.integer",
+            "np.randint"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(42)\narr = np.random.randint(0, 10, size=5)\nprint(len(arr))",
+        "o": [
+            "5",
+            "10",
+            "42",
+            "0"
+        ]
+    },
+    {
+        "q": "np.random.seed() ensures reproducible random numbers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function samples from a normal distribution?",
+        "type": "mcq",
+        "o": [
+            "np.random.randn()",
+            "np.random.normal()",
+            "Both work",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(0)\narr = np.random.randn(1000)\nprint(abs(arr.mean()) < 0.1)",
+        "o": [
+            "True",
+            "False",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ function randomly shuffles array elements.",
+        "type": "fill_blank",
+        "answers": [
+            "np.random.shuffle"
+        ],
+        "other_options": [
+            "np.shuffle",
+            "np.random.mix",
+            "np.random.permute"
+        ]
+    },
+    {
+        "q": "Rearrange the random sampling workflow:",
+        "type": "rearrange",
+        "words": [
+            "set seed",
+            "choose distribution",
+            "specify parameters",
+            "generate samples"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(0)\narr = np.array([1, 2, 3, 4, 5])\nnp.random.shuffle(arr)\nprint(len(arr))",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "np.random.choice() samples from an array.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes the dot product of two arrays?",
+        "type": "mcq",
+        "o": [
+            "np.dot()",
+            "np.multiply()",
+            "np.cross()",
+            "np.inner()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\nprint(np.dot(a, b))",
+        "o": [
+            "32",
+            "[4, 10, 18]",
+            "21",
+            "15"
+        ]
+    },
+    {
+        "q": "The ______ operator performs matrix multiplication in NumPy.",
+        "type": "fill_blank",
+        "answers": [
+            "@"
+        ],
+        "other_options": [
+            "*",
+            ".",
+            "x"
+        ]
+    },
+    {
+        "q": "np.dot() for 1D arrays computes the inner product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 2], [3, 4]])\nb = np.array([[5, 6], [7, 8]])\nprint((a @ b)[0, 0])",
+        "o": [
+            "19",
+            "5",
+            "12",
+            "32"
+        ]
+    },
+    {
+        "q": "Match the linear algebra operations:",
+        "type": "match",
+        "left": [
+            "np.dot()",
+            "np.matmul()",
+            "np.inner()",
+            "np.outer()"
+        ],
+        "right": [
+            "Dot product",
+            "Matrix multiply",
+            "Inner product",
+            "Outer product"
+        ]
+    },
+    {
+        "q": "Which function computes the matrix inverse?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.inv()",
+            "np.inverse()",
+            "np.matrix.inv()",
+            "np.inv()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 0], [0, 1]])\ninv = np.linalg.inv(a)\nprint(inv[0, 0])",
+        "o": [
+            "1.0",
+            "0.0",
+            "-1.0",
+            "2.0"
+        ]
+    },
+    {
+        "q": "The ______ function computes the determinant of a matrix.",
+        "type": "fill_blank",
+        "answers": [
+            "np.linalg.det"
+        ],
+        "other_options": [
+            "np.det",
+            "np.determinant",
+            "np.linalg.determinant"
+        ]
+    },
+    {
+        "q": "Rearrange the linear algebra workflow:",
+        "type": "rearrange",
+        "words": [
+            "define matrix",
+            "check properties",
+            "apply operation",
+            "verify result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 0], [0, 2]])\nprint(np.linalg.det(a))",
+        "o": [
+            "2.0",
+            "1.0",
+            "0.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "A singular matrix has determinant equal to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function solves a system of linear equations?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.solve()",
+            "np.solve()",
+            "np.linalg.equation()",
+            "np.linear.solve()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nA = np.array([[2, 1], [1, 3]])\nb = np.array([1, 2])\nx = np.linalg.solve(A, b)\nprint(round(x[0], 2))",
+        "o": [
+            "0.2",
+            "1.0",
+            "0.5",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Match the matrix properties:",
+        "type": "match",
+        "left": [
+            "np.linalg.norm()",
+            "np.linalg.rank()",
+            "np.linalg.eigvals()",
+            "np.trace()"
+        ],
+        "right": [
+            "Matrix norm",
+            "Matrix rank",
+            "Eigenvalues",
+            "Diagonal sum"
+        ]
+    },
+    {
+        "q": "The ______ function computes eigenvalues and eigenvectors.",
+        "type": "fill_blank",
+        "answers": [
+            "np.linalg.eig"
+        ],
+        "other_options": [
+            "np.eigen",
+            "np.linalg.eigen",
+            "np.eigenvectors"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 0], [0, 2]])\neigenvalues, _ = np.linalg.eig(a)\nprint(sorted(eigenvalues.tolist()))",
+        "o": [
+            "[1.0, 2.0]",
+            "[0.0, 1.0]",
+            "[1.0, 1.0]",
+            "[2.0, 2.0]"
+        ]
+    },
+    {
+        "q": "Eigenvalues of a diagonal matrix are the diagonal elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes singular value decomposition?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.svd()",
+            "np.svd()",
+            "np.singular()",
+            "np.linalg.singular()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 2], [3, 4]])\nU, S, Vt = np.linalg.svd(a)\nprint(len(S))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "The ______ function computes QR decomposition.",
+        "type": "fill_blank",
+        "answers": [
+            "np.linalg.qr"
+        ],
+        "other_options": [
+            "np.qr",
+            "np.linalg.qr_decomp",
+            "np.decompose"
+        ]
+    },
+    {
+        "q": "Rearrange the SVD components:",
+        "type": "rearrange",
+        "words": [
+            "U matrix",
+            "singular values",
+            "Vt matrix",
+            "reconstruct if needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 2], [3, 4], [5, 6]])\nQ, R = np.linalg.qr(a)\nprint(Q.shape)",
+        "o": [
+            "(3, 2)",
+            "(2, 2)",
+            "(3, 3)",
+            "(2, 3)"
+        ]
+    },
+    {
+        "q": "np.linalg.matrix_rank() returns the rank of a matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes the Frobenius norm?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.norm()",
+            "np.frobenius()",
+            "np.norm()",
+            "np.linalg.frob()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[3, 4]])\nprint(np.linalg.norm(a))",
+        "o": [
+            "5.0",
+            "7.0",
+            "12.0",
+            "25.0"
+        ]
+    },
+    {
+        "q": "Match the norm types:",
+        "type": "match",
+        "left": [
+            "ord=1",
+            "ord=2",
+            "ord=np.inf",
+            "ord='fro'"
+        ],
+        "right": [
+            "L1 norm",
+            "L2 norm",
+            "Infinity norm",
+            "Frobenius norm"
+        ]
+    },
+    {
+        "q": "The ______ parameter in norm() specifies the norm type.",
+        "type": "fill_blank",
+        "answers": [
+            "ord"
+        ],
+        "other_options": [
+            "type",
+            "kind",
+            "norm_type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, -2, 3])\nprint(np.linalg.norm(a, ord=1))",
+        "o": [
+            "6.0",
+            "3.74",
+            "3.0",
+            "9.0"
+        ]
+    },
+    {
+        "q": "L1 norm is the sum of absolute values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function adds a new axis to an array?",
+        "type": "mcq",
+        "o": [
+            "np.newaxis or np.expand_dims()",
+            "np.add_axis()",
+            "np.axis()",
+            "np.dimension()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nresult = arr[np.newaxis, :]\nprint(result.shape)",
+        "o": [
+            "(1, 3)",
+            "(3, 1)",
+            "(3,)",
+            "(1, 1, 3)"
+        ]
+    },
+    {
+        "q": "The ______ function removes single-dimensional entries from shape.",
+        "type": "fill_blank",
+        "answers": [
+            "np.squeeze"
+        ],
+        "other_options": [
+            "np.flatten",
+            "np.reduce",
+            "np.compress"
+        ]
+    },
+    {
+        "q": "Rearrange the axis manipulation workflow:",
+        "type": "rearrange",
+        "words": [
+            "check current shape",
+            "add axes if needed",
+            "perform operation",
+            "squeeze if needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[[1, 2, 3]]])\nresult = np.squeeze(arr)\nprint(result.shape)",
+        "o": [
+            "(3,)",
+            "(1, 1, 3)",
+            "(1, 3)",
+            "(3, 1)"
+        ]
+    },
+    {
+        "q": "np.expand_dims() is equivalent to using np.newaxis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function swaps two axes of an array?",
+        "type": "mcq",
+        "o": [
+            "np.swapaxes()",
+            "np.transpose()",
+            "np.moveaxis()",
+            "All of these can"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.ones((2, 3, 4))\nresult = np.swapaxes(arr, 0, 2)\nprint(result.shape)",
+        "o": [
+            "(4, 3, 2)",
+            "(2, 4, 3)",
+            "(3, 2, 4)",
+            "(2, 3, 4)"
+        ]
+    },
+    {
+        "q": "Match the axis manipulation functions:",
+        "type": "match",
+        "left": [
+            "swapaxes()",
+            "moveaxis()",
+            "rollaxis()",
+            "transpose()"
+        ],
+        "right": [
+            "Swap two axes",
+            "Move axis to position",
+            "Roll axis to position",
+            "Reorder all axes"
+        ]
+    },
+    {
+        "q": "The ______ function moves an axis to a new position.",
+        "type": "fill_blank",
+        "answers": [
+            "np.moveaxis"
+        ],
+        "other_options": [
+            "np.shift_axis",
+            "np.reorder_axis",
+            "np.place_axis"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.ones((2, 3, 4))\nresult = np.moveaxis(arr, 0, -1)\nprint(result.shape)",
+        "o": [
+            "(3, 4, 2)",
+            "(4, 3, 2)",
+            "(2, 3, 4)",
+            "(4, 2, 3)"
+        ]
+    },
+    {
+        "q": "np.transpose() with axes argument reorders dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function tiles an array?",
+        "type": "mcq",
+        "o": [
+            "np.tile()",
+            "np.repeat()",
+            "np.replicate()",
+            "np.duplicate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2])\nresult = np.tile(arr, 3)\nprint(result.tolist())",
+        "o": [
+            "[1, 2, 1, 2, 1, 2]",
+            "[1, 1, 1, 2, 2, 2]",
+            "[1, 2, 3]",
+            "[[1, 2], [1, 2], [1, 2]]"
+        ]
+    },
+    {
+        "q": "The ______ function repeats each element.",
+        "type": "fill_blank",
+        "answers": [
+            "np.repeat"
+        ],
+        "other_options": [
+            "np.tile",
+            "np.copy",
+            "np.duplicate"
+        ]
+    },
+    {
+        "q": "Rearrange the array replication concepts:",
+        "type": "rearrange",
+        "words": [
+            "choose method",
+            "specify repetitions",
+            "handle dimensions",
+            "get result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2])\nresult = np.repeat(arr, 3)\nprint(result.tolist())",
+        "o": [
+            "[1, 1, 1, 2, 2, 2]",
+            "[1, 2, 1, 2, 1, 2]",
+            "[1, 2, 3]",
+            "[3, 6]"
+        ]
+    },
+    {
+        "q": "np.tile() repeats the whole array, np.repeat() repeats elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function applies a function along an axis?",
+        "type": "mcq",
+        "o": [
+            "np.apply_along_axis()",
+            "np.map()",
+            "np.axis_apply()",
+            "np.along()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2, 3], [4, 5, 6]])\nresult = np.apply_along_axis(np.sum, 1, arr)\nprint(result.tolist())",
+        "o": [
+            "[6, 15]",
+            "[5, 7, 9]",
+            "21",
+            "[1, 2, 3, 4, 5, 6]"
+        ]
+    },
+    {
+        "q": "Match the apply functions:",
+        "type": "match",
+        "left": [
+            "apply_along_axis()",
+            "vectorize()",
+            "frompyfunc()",
+            "piecewise()"
+        ],
+        "right": [
+            "Apply along axis",
+            "Vectorize function",
+            "Create ufunc",
+            "Conditional apply"
+        ]
+    },
+    {
+        "q": "The ______ function vectorizes a Python function.",
+        "type": "fill_blank",
+        "answers": [
+            "np.vectorize"
+        ],
+        "other_options": [
+            "np.map",
+            "np.vec",
+            "np.broadcast"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndef my_func(x):\n    return x ** 2\nvec_func = np.vectorize(my_func)\nprint(vec_func([1, 2, 3]).tolist())",
+        "o": [
+            "[1, 4, 9]",
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "[1, 8, 27]"
+        ]
+    },
+    {
+        "q": "np.vectorize() is mainly for convenience, not performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function saves an array to a binary file?",
+        "type": "mcq",
+        "o": [
+            "np.save()",
+            "np.write()",
+            "np.export()",
+            "np.dump()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nimport os\narr = np.array([1, 2, 3])\nnp.save('/tmp/test.npy', arr)\nloaded = np.load('/tmp/test.npy')\nprint(loaded.tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "Error",
+            "None",
+            "{'arr': [1, 2, 3]}"
+        ]
+    },
+    {
+        "q": "The ______ function saves multiple arrays to a single file.",
+        "type": "fill_blank",
+        "answers": [
+            "np.savez"
+        ],
+        "other_options": [
+            "np.save_all",
+            "np.save_multi",
+            "np.save_arrays"
+        ]
+    },
+    {
+        "q": "Rearrange the file I/O workflow:",
+        "type": "rearrange",
+        "words": [
+            "create arrays",
+            "choose format",
+            "save to file",
+            "load when needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2])\nb = np.array([3, 4])\nnp.savez('/tmp/multi.npz', x=a, y=b)\ndata = np.load('/tmp/multi.npz')\nprint(data['x'].tolist())",
+        "o": [
+            "[1, 2]",
+            "[3, 4]",
+            "{'x': [1, 2]}",
+            "Error"
+        ]
+    },
+    {
+        "q": ".npy files store single arrays, .npz stores multiple.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function saves array to a text file?",
+        "type": "mcq",
+        "o": [
+            "np.savetxt()",
+            "np.totext()",
+            "np.write_text()",
+            "np.export_txt()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nnp.savetxt('/tmp/test.csv', arr, delimiter=',')\nloaded = np.loadtxt('/tmp/test.csv', delimiter=',')\nprint(loaded.shape)",
+        "o": [
+            "(2, 2)",
+            "(4,)",
+            "(1, 4)",
+            "(2,)"
+        ]
+    },
+    {
+        "q": "Match the file formats:",
+        "type": "match",
+        "left": [
+            ".npy",
+            ".npz",
+            ".csv",
+            ".txt"
+        ],
+        "right": [
+            "Binary single",
+            "Binary multiple",
+            "Comma-separated",
+            "Text file"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies the delimiter in savetxt.",
+        "type": "fill_blank",
+        "answers": [
+            "delimiter"
+        ],
+        "other_options": [
+            "sep",
+            "separator",
+            "delim"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1.5, 2.5, 3.5])\nnp.savetxt('/tmp/test.txt', arr, fmt='%.1f')\nloaded = np.loadtxt('/tmp/test.txt')\nprint(loaded.shape)",
+        "o": [
+            "(3,)",
+            "(1, 3)",
+            "(3, 1)",
+            "()"
+        ]
+    },
+    {
+        "q": "fmt parameter in savetxt controls number formatting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes the cross product?",
+        "type": "mcq",
+        "o": [
+            "np.cross()",
+            "np.multiply()",
+            "np.dot()",
+            "np.outer()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 0, 0])\nb = np.array([0, 1, 0])\nresult = np.cross(a, b)\nprint(result.tolist())",
+        "o": [
+            "[0, 0, 1]",
+            "[1, 0, 0]",
+            "[0, 1, 0]",
+            "[1, 1, 0]"
+        ]
+    },
+    {
+        "q": "The ______ function computes the outer product.",
+        "type": "fill_blank",
+        "answers": [
+            "np.outer"
+        ],
+        "other_options": [
+            "np.multiply",
+            "np.cross",
+            "np.external"
+        ]
+    },
+    {
+        "q": "Rearrange the vector operations:",
+        "type": "rearrange",
+        "words": [
+            "define vectors",
+            "choose operation",
+            "compute result",
+            "interpret geometrically"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2])\nb = np.array([3, 4])\nprint(np.outer(a, b).shape)",
+        "o": [
+            "(2, 2)",
+            "(4,)",
+            "(2,)",
+            "(1, 4)"
+        ]
+    },
+    {
+        "q": "Cross product is only defined for 3D vectors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a structured array with named fields?",
+        "type": "mcq",
+        "o": [
+            "np.array() with dtype",
+            "np.struct()",
+            "np.record()",
+            "np.named()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndt = np.dtype([('name', 'U10'), ('age', 'i4')])\narr = np.array([('Alice', 30)], dtype=dt)\nprint(arr['age'][0])",
+        "o": [
+            "30",
+            "Alice",
+            "('Alice', 30)",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ function creates a record array with named fields.",
+        "type": "fill_blank",
+        "answers": [
+            "np.rec.array"
+        ],
+        "other_options": [
+            "np.record",
+            "np.struct",
+            "np.named"
+        ]
+    },
+    {
+        "q": "Structured arrays allow heterogeneous data types per column.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndt = np.dtype([('x', 'f8'), ('y', 'f8')])\narr = np.zeros(3, dtype=dt)\nprint(arr['x'].tolist())",
+        "o": [
+            "[0.0, 0.0, 0.0]",
+            "0.0",
+            "[0, 0, 0]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the dtype strings:",
+        "type": "match",
+        "left": [
+            "i4",
+            "f8",
+            "U10",
+            "b1"
+        ],
+        "right": [
+            "32-bit int",
+            "64-bit float",
+            "10-char string",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "Which attribute shows array memory layout?",
+        "type": "mcq",
+        "o": [
+            "flags",
+            "layout",
+            "memory",
+            "order"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]], order='C')\nprint(arr.flags['C_CONTIGUOUS'])",
+        "o": [
+            "True",
+            "False",
+            "C",
+            "None"
+        ]
+    },
+    {
+        "q": "The ______ order stores elements row by row.",
+        "type": "fill_blank",
+        "answers": [
+            "C"
+        ],
+        "other_options": [
+            "F",
+            "A",
+            "K"
+        ]
+    },
+    {
+        "q": "Rearrange the memory layout concepts:",
+        "type": "rearrange",
+        "words": [
+            "define array",
+            "specify order",
+            "check contiguity",
+            "optimize access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]], order='F')\nprint(arr.flags['F_CONTIGUOUS'])",
+        "o": [
+            "True",
+            "False",
+            "F",
+            "None"
+        ]
+    },
+    {
+        "q": "Fortran order (F) stores elements column by column.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function ensures an array is contiguous?",
+        "type": "mcq",
+        "o": [
+            "np.ascontiguousarray()",
+            "np.contiguous()",
+            "np.make_contiguous()",
+            "np.ensure_contiguous()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nslice = arr[:, 0]\nprint(slice.flags['C_CONTIGUOUS'])",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the memory flags:",
+        "type": "match",
+        "left": [
+            "C_CONTIGUOUS",
+            "F_CONTIGUOUS",
+            "OWNDATA",
+            "WRITEABLE"
+        ],
+        "right": [
+            "Row-major",
+            "Column-major",
+            "Owns memory",
+            "Can modify"
+        ]
+    },
+    {
+        "q": "The ______ function creates a Fortran-order contiguous array.",
+        "type": "fill_blank",
+        "answers": [
+            "np.asfortranarray"
+        ],
+        "other_options": [
+            "np.fortran",
+            "np.farray",
+            "np.f_contiguous"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nprint(arr.flags['OWNDATA'])",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Views share memory with the original array.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a meshgrid from coordinate vectors?",
+        "type": "mcq",
+        "o": [
+            "np.meshgrid()",
+            "np.grid()",
+            "np.mesh()",
+            "np.coordinate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3])\ny = np.array([4, 5])\nX, Y = np.meshgrid(x, y)\nprint(X.shape)",
+        "o": [
+            "(2, 3)",
+            "(3, 2)",
+            "(5,)",
+            "(6,)"
+        ]
+    },
+    {
+        "q": "The ______ function creates index arrays from shape.",
+        "type": "fill_blank",
+        "answers": [
+            "np.indices"
+        ],
+        "other_options": [
+            "np.index",
+            "np.idx",
+            "np.meshindex"
+        ]
+    },
+    {
+        "q": "Rearrange the meshgrid creation workflow:",
+        "type": "rearrange",
+        "words": [
+            "define 1D vectors",
+            "call meshgrid",
+            "unpack results",
+            "use for computation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = [1, 2]\ny = [3, 4]\nX, Y = np.meshgrid(x, y)\nprint((X + Y)[0, 0])",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "q": "np.mgrid uses index slicing syntax to create meshgrids.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function clips values to a range?",
+        "type": "mcq",
+        "o": [
+            "np.clip()",
+            "np.limit()",
+            "np.bound()",
+            "np.constrain()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 5, 10, 15, 20])\nresult = np.clip(arr, 5, 15)\nprint(result.tolist())",
+        "o": [
+            "[5, 5, 10, 15, 15]",
+            "[1, 5, 10, 15, 20]",
+            "[5, 10, 15]",
+            "[0, 0, 10, 0, 0]"
+        ]
+    },
+    {
+        "q": "Match the limiting functions:",
+        "type": "match",
+        "left": [
+            "clip()",
+            "minimum()",
+            "maximum()",
+            "fmax()"
+        ],
+        "right": [
+            "Clip to range",
+            "Element-wise min",
+            "Element-wise max",
+            "NaN-ignoring max"
+        ]
+    },
+    {
+        "q": "The ______ function returns element-wise minimum.",
+        "type": "fill_blank",
+        "answers": [
+            "np.minimum"
+        ],
+        "other_options": [
+            "np.min",
+            "np.amin",
+            "np.fmin"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 5, 3])\nb = np.array([2, 2, 4])\nprint(np.minimum(a, b).tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[2, 5, 4]",
+            "[1, 5, 3]",
+            "[2, 2, 4]"
+        ]
+    },
+    {
+        "q": "np.fmin() ignores NaN when comparing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function rounds to nearest even number?",
+        "type": "mcq",
+        "o": [
+            "np.around() default",
+            "np.round_even()",
+            "np.banker_round()",
+            "np.even_round()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1.5, 2.5, 3.5])\nprint(np.floor(arr).tolist())",
+        "o": [
+            "[1.0, 2.0, 3.0]",
+            "[2.0, 3.0, 4.0]",
+            "[1.5, 2.5, 3.5]",
+            "[2.0, 2.0, 4.0]"
+        ]
+    },
+    {
+        "q": "The ______ function rounds towards positive infinity.",
+        "type": "fill_blank",
+        "answers": [
+            "np.ceil"
+        ],
+        "other_options": [
+            "np.ceiling",
+            "np.up",
+            "np.round_up"
+        ]
+    },
+    {
+        "q": "Rearrange the rounding functions by direction:",
+        "type": "rearrange",
+        "words": [
+            "floor (down)",
+            "ceil (up)",
+            "trunc (zero)",
+            "around (nearest)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([-1.7, 1.7])\nprint(np.trunc(arr).tolist())",
+        "o": [
+            "[-1.0, 1.0]",
+            "[-2.0, 2.0]",
+            "[-1.0, 2.0]",
+            "[-2.0, 1.0]"
+        ]
+    },
+    {
+        "q": "np.trunc() rounds towards zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes element-wise exponential?",
+        "type": "mcq",
+        "o": [
+            "np.exp()",
+            "np.power()",
+            "np.e()",
+            "np.exponent()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(round(np.exp(1), 2))",
+        "o": [
+            "2.72",
+            "1.0",
+            "10.0",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Match the exponential functions:",
+        "type": "match",
+        "left": [
+            "exp()",
+            "exp2()",
+            "expm1()",
+            "log()"
+        ],
+        "right": [
+            "e^x",
+            "2^x",
+            "e^x - 1",
+            "ln(x)"
+        ]
+    },
+    {
+        "q": "The ______ function computes natural logarithm.",
+        "type": "fill_blank",
+        "answers": [
+            "np.log"
+        ],
+        "other_options": [
+            "np.ln",
+            "np.natural_log",
+            "np.loge"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(np.log10(100))",
+        "o": [
+            "2.0",
+            "10.0",
+            "100.0",
+            "1.0"
+        ]
+    },
+    {
+        "q": "np.log2(8) equals 3.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes element-wise sine?",
+        "type": "mcq",
+        "o": [
+            "np.sin()",
+            "np.sine()",
+            "np.trig.sin()",
+            "np.math.sin()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(np.sin(np.pi / 2))",
+        "o": [
+            "1.0",
+            "0.0",
+            "-1.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "The ______ function computes inverse sine.",
+        "type": "fill_blank",
+        "answers": [
+            "np.arcsin"
+        ],
+        "other_options": [
+            "np.asin",
+            "np.inv_sin",
+            "np.sin_inv"
+        ]
+    },
+    {
+        "q": "Rearrange the trigonometric workflow:",
+        "type": "rearrange",
+        "words": [
+            "convert to radians",
+            "apply function",
+            "interpret result",
+            "convert if needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(np.cos(0))",
+        "o": [
+            "1.0",
+            "0.0",
+            "-1.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "np.degrees() converts radians to degrees.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function checks for NaN values?",
+        "type": "mcq",
+        "o": [
+            "np.isnan()",
+            "np.nan()",
+            "np.checknan()",
+            "np.hasnan()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, np.nan, 3])\nprint(np.isnan(arr).tolist())",
+        "o": [
+            "[False, True, False]",
+            "[True, True, True]",
+            "[1, nan, 3]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the special value checks:",
+        "type": "match",
+        "left": [
+            "isnan()",
+            "isinf()",
+            "isfinite()",
+            "isneginf()"
+        ],
+        "right": [
+            "Is NaN",
+            "Is infinity",
+            "Is finite",
+            "Is negative inf"
+        ]
+    },
+    {
+        "q": "The ______ constant represents Not a Number.",
+        "type": "fill_blank",
+        "answers": [
+            "np.nan"
+        ],
+        "other_options": [
+            "np.NaN",
+            "np.none",
+            "np.null"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(np.isfinite(np.inf))",
+        "o": [
+            "False",
+            "True",
+            "inf",
+            "Error"
+        ]
+    },
+    {
+        "q": "NaN is not equal to itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function replaces NaN with a value?",
+        "type": "mcq",
+        "o": [
+            "np.nan_to_num()",
+            "np.replace_nan()",
+            "np.fill_nan()",
+            "np.fix_nan()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, np.nan, 3])\nresult = np.nan_to_num(arr, nan=0)\nprint(result.tolist())",
+        "o": [
+            "[1.0, 0.0, 3.0]",
+            "[1, nan, 3]",
+            "[1.0, 1.0, 3.0]",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ function computes sum ignoring NaN.",
+        "type": "fill_blank",
+        "answers": [
+            "np.nansum"
+        ],
+        "other_options": [
+            "np.sum_nan",
+            "np.safe_sum",
+            "np.total"
+        ]
+    },
+    {
+        "q": "Rearrange the NaN handling workflow:",
+        "type": "rearrange",
+        "words": [
+            "detect NaN",
+            "decide strategy",
+            "apply function",
+            "verify result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, np.nan, 3])\nprint(np.nanmean(arr))",
+        "o": [
+            "2.0",
+            "nan",
+            "1.33",
+            "4.0"
+        ]
+    },
+    {
+        "q": "Match the NaN-safe functions:",
+        "type": "match",
+        "left": [
+            "nansum()",
+            "nanmean()",
+            "nanmax()",
+            "nanstd()"
+        ],
+        "right": [
+            "Sum ignoring NaN",
+            "Mean ignoring NaN",
+            "Max ignoring NaN",
+            "Std ignoring NaN"
+        ]
+    },
+    {
+        "q": "np.nanmax() returns the maximum ignoring NaN values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function performs polynomial fitting?",
+        "type": "mcq",
+        "o": [
+            "np.polyfit()",
+            "np.fit()",
+            "np.curve_fit()",
+            "np.polynomial()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([0, 1, 2])\ny = np.array([0, 1, 4])\ncoeffs = np.polyfit(x, y, 2)\nprint(len(coeffs))",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "The ______ function evaluates a polynomial at specific points.",
+        "type": "fill_blank",
+        "answers": [
+            "np.polyval"
+        ],
+        "other_options": [
+            "np.poly_eval",
+            "np.evaluate",
+            "np.compute_poly"
+        ]
+    },
+    {
+        "q": "polyfit degree n returns n+1 coefficients.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ncoeffs = [1, 0, 0]  # x^2\nresult = np.polyval(coeffs, 3)\nprint(result)",
+        "o": [
+            "9",
+            "3",
+            "0",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the polynomial functions:",
+        "type": "match",
+        "left": [
+            "polyfit()",
+            "polyval()",
+            "polyder()",
+            "polyint()"
+        ],
+        "right": [
+            "Fit coefficients",
+            "Evaluate",
+            "Derivative",
+            "Integral"
+        ]
+    },
+    {
+        "q": "Which function computes the Fast Fourier Transform?",
+        "type": "mcq",
+        "o": [
+            "np.fft.fft()",
+            "np.fourier()",
+            "np.transform()",
+            "np.freq()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 0, 1, 0])\nfft_result = np.fft.fft(arr)\nprint(len(fft_result))",
+        "o": [
+            "4",
+            "2",
+            "8",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ function computes the inverse FFT.",
+        "type": "fill_blank",
+        "answers": [
+            "np.fft.ifft"
+        ],
+        "other_options": [
+            "np.ifft",
+            "np.fft.inverse",
+            "np.inv_fft"
+        ]
+    },
+    {
+        "q": "FFT output has the same length as input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4])\nfft = np.fft.fft(arr)\nifft = np.fft.ifft(fft)\nprint(np.allclose(arr, ifft.real))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the FFT functions:",
+        "type": "match",
+        "left": [
+            "fft()",
+            "ifft()",
+            "fft2()",
+            "fftfreq()"
+        ],
+        "right": [
+            "1D FFT",
+            "Inverse FFT",
+            "2D FFT",
+            "Frequency bins"
+        ]
+    },
+    {
+        "q": "Which function returns frequency bins for FFT?",
+        "type": "mcq",
+        "o": [
+            "np.fft.fftfreq()",
+            "np.fft.freq()",
+            "np.frequency()",
+            "np.fft.bins()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nfreqs = np.fft.fftfreq(4)\nprint(len(freqs))",
+        "o": [
+            "4",
+            "2",
+            "8",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ function computes 2D FFT.",
+        "type": "fill_blank",
+        "answers": [
+            "np.fft.fft2"
+        ],
+        "other_options": [
+            "np.fft.2d",
+            "np.fft2",
+            "np.twod_fft"
+        ]
+    },
+    {
+        "q": "Rearrange the FFT analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare signal",
+            "compute FFT",
+            "get frequencies",
+            "analyze spectrum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nfft2 = np.fft.fft2(arr)\nprint(fft2.shape)",
+        "o": [
+            "(2, 2)",
+            "(4,)",
+            "(4, 4)",
+            "(1, 4)"
+        ]
+    },
+    {
+        "q": "np.fft.rfft() returns only positive frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a universal function?",
+        "type": "mcq",
+        "o": [
+            "np.frompyfunc()",
+            "np.ufunc()",
+            "np.universal()",
+            "np.create_ufunc()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ndef my_add(x, y):\n    return x + y\nufunc = np.frompyfunc(my_add, 2, 1)\nprint(ufunc(1, 2))",
+        "o": [
+            "3",
+            "[3]",
+            "Error",
+            "(1, 2)"
+        ]
+    },
+    {
+        "q": "Match the ufunc attributes:",
+        "type": "match",
+        "left": [
+            "nin",
+            "nout",
+            "ntypes",
+            "identity"
+        ],
+        "right": [
+            "Input count",
+            "Output count",
+            "Type signatures",
+            "Identity element"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns number of ufunc inputs.",
+        "type": "fill_blank",
+        "answers": [
+            "nin"
+        ],
+        "other_options": [
+            "inputs",
+            "n_in",
+            "num_inputs"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(np.add.nin)",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Built-in NumPy operations are ufuncs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which ufunc method applies accumulation?",
+        "type": "mcq",
+        "o": [
+            "accumulate()",
+            "reduce()",
+            "outer()",
+            "at()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4])\nprint(np.add.accumulate(arr).tolist())",
+        "o": [
+            "[1, 3, 6, 10]",
+            "[1, 2, 3, 4]",
+            "10",
+            "[10, 9, 7, 4]"
+        ]
+    },
+    {
+        "q": "The ______ method reduces along an axis.",
+        "type": "fill_blank",
+        "answers": [
+            "reduce"
+        ],
+        "other_options": [
+            "accumulate",
+            "fold",
+            "aggregate"
+        ]
+    },
+    {
+        "q": "Rearrange the ufunc method applications:",
+        "type": "rearrange",
+        "words": [
+            "choose ufunc",
+            "select method",
+            "specify axis",
+            "get result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4])\nprint(np.multiply.reduce(arr))",
+        "o": [
+            "24",
+            "10",
+            "[1, 2, 6, 24]",
+            "4"
+        ]
+    },
+    {
+        "q": "outer() creates an outer product with the ufunc.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method updates specific indices?",
+        "type": "mcq",
+        "o": [
+            "at()",
+            "update()",
+            "set()",
+            "place()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 0, 0, 0])\nnp.add.at(arr, [0, 1, 1], 1)\nprint(arr.tolist())",
+        "o": [
+            "[1, 2, 0, 0]",
+            "[1, 1, 0, 0]",
+            "[1, 1, 1, 0]",
+            "[0, 0, 0, 0]"
+        ]
+    },
+    {
+        "q": "Match the ufunc methods:",
+        "type": "match",
+        "left": [
+            "reduce()",
+            "accumulate()",
+            "outer()",
+            "at()"
+        ],
+        "right": [
+            "Reduce to scalar",
+            "Running total",
+            "Outer operation",
+            "Update at indices"
+        ]
+    },
+    {
+        "q": "The ______ function generates samples from binomial distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "np.random.binomial"
+        ],
+        "other_options": [
+            "np.binomial",
+            "np.random.binom",
+            "np.dist.binomial"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(0)\nsamples = np.random.binomial(10, 0.5, 5)\nprint(len(samples))",
+        "o": [
+            "5",
+            "10",
+            "50",
+            "1"
+        ]
+    },
+    {
+        "q": "np.random.poisson() samples from Poisson distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function samples from uniform distribution?",
+        "type": "mcq",
+        "o": [
+            "np.random.uniform()",
+            "np.random.rand()",
+            "Both work",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(0)\nsamples = np.random.uniform(0, 10, 100)\nprint(0 <= samples.min() and samples.max() <= 10)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the distributions:",
+        "type": "match",
+        "left": [
+            "normal()",
+            "uniform()",
+            "binomial()",
+            "poisson()"
+        ],
+        "right": [
+            "Gaussian",
+            "Even range",
+            "N trials",
+            "Event rate"
+        ]
+    },
+    {
+        "q": "The ______ function samples from exponential distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "np.random.exponential"
+        ],
+        "other_options": [
+            "np.random.exp",
+            "np.exponential",
+            "np.dist.exp"
+        ]
+    },
+    {
+        "q": "Rearrange the statistical sampling workflow:",
+        "type": "rearrange",
+        "words": [
+            "set seed",
+            "choose distribution",
+            "specify parameters",
+            "generate samples"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nnp.random.seed(0)\nsamples = np.random.normal(0, 1, 1000)\nprint(abs(samples.mean()) < 0.1)",
+        "o": [
+            "True",
+            "False",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "np.random.Generator is the new API for random numbers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a new random generator?",
+        "type": "mcq",
+        "o": [
+            "np.random.default_rng()",
+            "np.random.Generator()",
+            "np.random.new()",
+            "np.random.create()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nrng = np.random.default_rng(42)\nprint(type(rng).__name__)",
+        "o": [
+            "Generator",
+            "RandomState",
+            "Random",
+            "RNG"
+        ]
+    },
+    {
+        "q": "Match the new random API:",
+        "type": "match",
+        "left": [
+            "default_rng()",
+            "Generator.random()",
+            "Generator.integers()",
+            "Generator.standard_normal()"
+        ],
+        "right": [
+            "Create generator",
+            "Uniform [0,1)",
+            "Random integers",
+            "Standard normal"
+        ]
+    },
+    {
+        "q": "The ______ method of Generator creates random floats.",
+        "type": "fill_blank",
+        "answers": [
+            "random"
+        ],
+        "other_options": [
+            "rand",
+            "uniform",
+            "float"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nrng = np.random.default_rng(0)\narr = rng.random(5)\nprint(len(arr))",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "10"
+        ]
+    },
+    {
+        "q": "Generator API is preferred over legacy np.random functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes histogram?",
+        "type": "mcq",
+        "o": [
+            "np.histogram()",
+            "np.hist()",
+            "np.bins()",
+            "np.count()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 2, 3, 3, 3])\ncounts, bins = np.histogram(arr, bins=3)\nprint(len(counts))",
+        "o": [
+            "3",
+            "4",
+            "6",
+            "2"
+        ]
+    },
+    {
+        "q": "The ______ function returns bin edges for histograms.",
+        "type": "fill_blank",
+        "answers": [
+            "np.histogram_bin_edges"
+        ],
+        "other_options": [
+            "np.bins",
+            "np.edges",
+            "np.bin_edges"
+        ]
+    },
+    {
+        "q": "Rearrange the histogram creation:",
+        "type": "rearrange",
+        "words": [
+            "prepare data",
+            "choose bins",
+            "compute histogram",
+            "analyze distribution"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\ncounts, bins = np.histogram(arr, bins=5)\nprint(len(bins))",
+        "o": [
+            "6",
+            "5",
+            "4",
+            "10"
+        ]
+    },
+    {
+        "q": "np.histogram returns counts and bin edges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes 2D histogram?",
+        "type": "mcq",
+        "o": [
+            "np.histogram2d()",
+            "np.hist2d()",
+            "np.histogram_2d()",
+            "np.bivariate_histogram()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3])\ny = np.array([4, 5, 6])\nH, xedges, yedges = np.histogram2d(x, y, bins=3)\nprint(H.shape)",
+        "o": [
+            "(3, 3)",
+            "(3,)",
+            "(6,)",
+            "(2, 2)"
+        ]
+    },
+    {
+        "q": "Match the histogram functions:",
+        "type": "match",
+        "left": [
+            "histogram()",
+            "histogram2d()",
+            "histogramdd()",
+            "digitize()"
+        ],
+        "right": [
+            "1D histogram",
+            "2D histogram",
+            "N-D histogram",
+            "Bin indices"
+        ]
+    },
+    {
+        "q": "The ______ function computes correlations.",
+        "type": "fill_blank",
+        "answers": [
+            "np.corrcoef"
+        ],
+        "other_options": [
+            "np.corr",
+            "np.correlation",
+            "np.correlate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3, 4, 5])\ny = np.array([1, 2, 3, 4, 5])\ncorr = np.corrcoef(x, y)\nprint(corr[0, 1])",
+        "o": [
+            "1.0",
+            "0.0",
+            "-1.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "np.cov() computes covariance matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes percentiles?",
+        "type": "mcq",
+        "o": [
+            "np.percentile()",
+            "np.pct()",
+            "np.quantile()",
+            "np.percentile() and np.quantile()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint(np.percentile(arr, 50))",
+        "o": [
+            "5.5",
+            "5.0",
+            "6.0",
+            "50"
+        ]
+    },
+    {
+        "q": "The ______ function computes quantiles (0 to 1 scale).",
+        "type": "fill_blank",
+        "answers": [
+            "np.quantile"
+        ],
+        "other_options": [
+            "np.percentile",
+            "np.quartile",
+            "np.pct"
+        ]
+    },
+    {
+        "q": "Rearrange the statistical analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "load data",
+            "compute descriptive stats",
+            "check distribution",
+            "report findings"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(np.quantile(arr, 0.5))",
+        "o": [
+            "3.0",
+            "2.5",
+            "2.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the statistical functions:",
+        "type": "match",
+        "left": [
+            "percentile()",
+            "quantile()",
+            "corrcoef()",
+            "cov()"
+        ],
+        "right": [
+            "0-100 scale",
+            "0-1 scale",
+            "Correlation",
+            "Covariance"
+        ]
+    },
+    {
+        "q": "np.percentile(arr, 50) equals np.median(arr).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes Einstein summation?",
+        "type": "mcq",
+        "o": [
+            "np.einsum()",
+            "np.einstein()",
+            "np.tensordot()",
+            "np.contract()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 2], [3, 4]])\nresult = np.einsum('ii', a)\nprint(result)",
+        "o": [
+            "5",
+            "10",
+            "[1, 4]",
+            "[[1, 0], [0, 4]]"
+        ]
+    },
+    {
+        "q": "The ______ notation 'ii' in einsum computes the trace.",
+        "type": "fill_blank",
+        "answers": [
+            "subscript"
+        ],
+        "other_options": [
+            "index",
+            "dimension",
+            "axis"
+        ]
+    },
+    {
+        "q": "einsum can express matrix multiplication as 'ij,jk->ik'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\nresult = np.einsum('i,i', a, b)\nprint(result)",
+        "o": [
+            "32",
+            "[4, 10, 18]",
+            "21",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the einsum operations:",
+        "type": "match",
+        "left": [
+            "'ii'",
+            "'ij,jk->ik'",
+            "'i,i'",
+            "'ij->ji'"
+        ],
+        "right": [
+            "Trace",
+            "Matrix multiply",
+            "Dot product",
+            "Transpose"
+        ]
+    },
+    {
+        "q": "Which attribute returns the memory strides of array?",
+        "type": "mcq",
+        "o": [
+            "strides",
+            "steps",
+            "offsets",
+            "gaps"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]], dtype='int32')\nprint(arr.strides)",
+        "o": [
+            "(8, 4)",
+            "(4, 8)",
+            "(2, 1)",
+            "(1, 2)"
+        ]
+    },
+    {
+        "q": "The ______ function creates array with specified strides.",
+        "type": "fill_blank",
+        "answers": [
+            "np.lib.stride_tricks.as_strided"
+        ],
+        "other_options": [
+            "np.strided",
+            "np.custom_strides",
+            "np.view"
+        ]
+    },
+    {
+        "q": "Rearrange the stride-based optimization workflow:",
+        "type": "rearrange",
+        "words": [
+            "analyze memory layout",
+            "compute strides",
+            "create strided view",
+            "verify correctness"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4], dtype='int32')\nprint(arr.strides)",
+        "o": [
+            "(4,)",
+            "(1,)",
+            "(8,)",
+            "(2,)"
+        ]
+    },
+    {
+        "q": "Strides represent bytes between successive elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates sliding windows using strides?",
+        "type": "mcq",
+        "o": [
+            "np.lib.stride_tricks.sliding_window_view()",
+            "np.window()",
+            "np.slide()",
+            "np.rolling_window()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nwindows = np.lib.stride_tricks.sliding_window_view(arr, 3)\nprint(windows.shape)",
+        "o": [
+            "(3, 3)",
+            "(5, 3)",
+            "(3, 5)",
+            "(5,)"
+        ]
+    },
+    {
+        "q": "Match the stride tricks:",
+        "type": "match",
+        "left": [
+            "sliding_window_view()",
+            "as_strided()",
+            "broadcast_to()",
+            "reshape()"
+        ],
+        "right": [
+            "Sliding windows",
+            "Custom strides",
+            "Expand shape",
+            "Change shape"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls optimize strategy in einsum.",
+        "type": "fill_blank",
+        "answers": [
+            "optimize"
+        ],
+        "other_options": [
+            "strategy",
+            "method",
+            "path"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.ones((2, 3))\nb = np.ones((3, 4))\nresult = np.einsum('ij,jk->ik', a, b, optimize=True)\nprint(result.shape)",
+        "o": [
+            "(2, 4)",
+            "(3, 3)",
+            "(2, 3)",
+            "(3, 4)"
+        ]
+    },
+    {
+        "q": "einsum with optimize=True can be faster for complex operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes tensor dot product?",
+        "type": "mcq",
+        "o": [
+            "np.tensordot()",
+            "np.einsum()",
+            "np.dot()",
+            "np.outer()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.ones((2, 3))\nb = np.ones((3, 4))\nresult = np.tensordot(a, b, axes=1)\nprint(result.shape)",
+        "o": [
+            "(2, 4)",
+            "(6,)",
+            "(2, 3)",
+            "(3, 4)"
+        ]
+    },
+    {
+        "q": "The ______ parameter in tensordot specifies contraction axes.",
+        "type": "fill_blank",
+        "answers": [
+            "axes"
+        ],
+        "other_options": [
+            "axis",
+            "dims",
+            "contract"
+        ]
+    },
+    {
+        "q": "Rearrange the tensor operation complexity:",
+        "type": "rearrange",
+        "words": [
+            "dot product",
+            "matmul",
+            "tensordot",
+            "einsum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.ones((2, 3, 4))\nb = np.ones((4, 5))\nresult = np.tensordot(a, b, axes=([2], [0]))\nprint(result.shape)",
+        "o": [
+            "(2, 3, 5)",
+            "(2, 4, 5)",
+            "(3, 4, 5)",
+            "(2, 3)"
+        ]
+    },
+    {
+        "q": "tensordot axes=0 computes outer product.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function broadcasts shapes for compatibility?",
+        "type": "mcq",
+        "o": [
+            "np.broadcast_shapes()",
+            "np.compatible_shapes()",
+            "np.merge_shapes()",
+            "np.unify_shapes()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nresult = np.broadcast_shapes((3, 1), (1, 4))\nprint(result)",
+        "o": [
+            "(3, 4)",
+            "(3, 1)",
+            "(1, 4)",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the broadcasting helpers:",
+        "type": "match",
+        "left": [
+            "broadcast_shapes()",
+            "broadcast_to()",
+            "broadcast_arrays()",
+            "expand_dims()"
+        ],
+        "right": [
+            "Result shape",
+            "Expand to shape",
+            "All to common",
+            "Add dimension"
+        ]
+    },
+    {
+        "q": "The ______ function broadcasts multiple arrays together.",
+        "type": "fill_blank",
+        "answers": [
+            "np.broadcast_arrays"
+        ],
+        "other_options": [
+            "np.common_broadcast",
+            "np.multi_broadcast",
+            "np.all_broadcast"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([[1], [2]])\nc, d = np.broadcast_arrays(a, b)\nprint(c.shape)",
+        "o": [
+            "(2, 3)",
+            "(3,)",
+            "(2, 1)",
+            "(1, 3)"
+        ]
+    },
+    {
+        "q": "np.broadcast creates an iterator over broadcasted shapes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function converts to specified dtype?",
+        "type": "mcq",
+        "o": [
+            "astype()",
+            "convert()",
+            "cast()",
+            "dtype()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1.5, 2.5, 3.5])\nresult = arr.astype('int32')\nprint(result.tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[2, 3, 4]",
+            "[1.5, 2.5, 3.5]",
+            "[1.0, 2.0, 3.0]"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls copy behavior in astype().",
+        "type": "fill_blank",
+        "answers": [
+            "copy"
+        ],
+        "other_options": [
+            "inplace",
+            "clone",
+            "duplicate"
+        ]
+    },
+    {
+        "q": "Rearrange dtype conversion considerations:",
+        "type": "rearrange",
+        "words": [
+            "check current dtype",
+            "choose target",
+            "handle precision loss",
+            "apply conversion"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3], dtype='int32')\nresult = arr.astype('float64', copy=False)\nprint(result.dtype)",
+        "o": [
+            "float64",
+            "int32",
+            "float32",
+            "int64"
+        ]
+    },
+    {
+        "q": "astype() with copy=False may return view if dtypes match.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function checks if array is writeable?",
+        "type": "mcq",
+        "o": [
+            "flags['WRITEABLE']",
+            "is_writeable()",
+            "can_write()",
+            "writeable()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\narr.flags.writeable = False\ntry:\n    arr[0] = 10\n    print('Success')\nexcept:\n    print('Error')",
+        "o": [
+            "Error",
+            "Success",
+            "10",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the array flags:",
+        "type": "match",
+        "left": [
+            "WRITEABLE",
+            "ALIGNED",
+            "UPDATEIFCOPY",
+            "C_CONTIGUOUS"
+        ],
+        "right": [
+            "Can modify",
+            "Memory aligned",
+            "Update on del",
+            "Row-major"
+        ]
+    },
+    {
+        "q": "The ______ flag indicates proper memory alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "ALIGNED"
+        ],
+        "other_options": [
+            "ALIGNED_MEM",
+            "MEM_ALIGNED",
+            "PROPER"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.zeros(10)\nprint(arr.flags['ALIGNED'])",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Aligned arrays are faster for SIMD operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns convolution of two arrays?",
+        "type": "mcq",
+        "o": [
+            "np.convolve()",
+            "np.conv()",
+            "np.filter()",
+            "np.correlate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([0, 1, 0])\nresult = np.convolve(a, b, mode='same')\nprint(result.tolist())",
+        "o": [
+            "[2, 3, 0]",
+            "[1, 2, 3]",
+            "[0, 2, 0]",
+            "[1, 4, 9]"
+        ]
+    },
+    {
+        "q": "Match the convolution modes:",
+        "type": "match",
+        "left": [
+            "full",
+            "same",
+            "valid"
+        ],
+        "right": [
+            "All overlaps",
+            "Same as input",
+            "Complete overlap only"
+        ]
+    },
+    {
+        "q": "The ______ function computes cross-correlation.",
+        "type": "fill_blank",
+        "answers": [
+            "np.correlate"
+        ],
+        "other_options": [
+            "np.crosscorr",
+            "np.xcorr",
+            "np.correlation"
+        ]
+    },
+    {
+        "q": "Rearrange the signal processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare signals",
+            "choose operation",
+            "select mode",
+            "analyze result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([1, 2, 3])\nresult = np.correlate(a, b, mode='valid')\nprint(result)",
+        "o": [
+            "[14]",
+            "[1, 4, 9]",
+            "[6]",
+            "[1, 2, 3]"
+        ]
+    },
+    {
+        "q": "np.convolve flips the second array before sliding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function interpolates values?",
+        "type": "mcq",
+        "o": [
+            "np.interp()",
+            "np.interpolate()",
+            "np.fill()",
+            "np.estimate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nxp = [1, 2, 3]\nfp = [10, 20, 30]\nresult = np.interp(1.5, xp, fp)\nprint(result)",
+        "o": [
+            "15.0",
+            "20.0",
+            "10.0",
+            "25.0"
+        ]
+    },
+    {
+        "q": "The ______ module provides advanced interpolation.",
+        "type": "fill_blank",
+        "answers": [
+            "scipy.interpolate"
+        ],
+        "other_options": [
+            "np.interpolate",
+            "np.interp_advanced",
+            "numpy.interp"
+        ]
+    },
+    {
+        "q": "np.interp() performs linear interpolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nxp = [0, 1, 2]\nfp = [0, 10, 20]\nresult = np.interp([0.5, 1.5], xp, fp)\nprint(result.tolist())",
+        "o": [
+            "[5.0, 15.0]",
+            "[0.0, 10.0]",
+            "[10.0, 20.0]",
+            "[2.5, 7.5]"
+        ]
+    },
+    {
+        "q": "Match the interpolation behaviors:",
+        "type": "match",
+        "left": [
+            "left=",
+            "right=",
+            "period="
+        ],
+        "right": [
+            "Below range value",
+            "Above range value",
+            "Periodic data"
+        ]
+    },
+    {
+        "q": "Which function pads an array?",
+        "type": "mcq",
+        "o": [
+            "np.pad()",
+            "np.extend()",
+            "np.border()",
+            "np.expand()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\npadded = np.pad(arr, (1, 1), mode='constant', constant_values=0)\nprint(padded.tolist())",
+        "o": [
+            "[0, 1, 2, 3, 0]",
+            "[1, 2, 3]",
+            "[0, 0, 1, 2, 3, 0, 0]",
+            "[1, 1, 2, 3, 3]"
+        ]
+    },
+    {
+        "q": "Match the padding modes:",
+        "type": "match",
+        "left": [
+            "constant",
+            "edge",
+            "reflect",
+            "wrap"
+        ],
+        "right": [
+            "Fixed value",
+            "Repeat edge",
+            "Mirror",
+            "Circular"
+        ]
+    },
+    {
+        "q": "The ______ mode in pad() repeats edge values.",
+        "type": "fill_blank",
+        "answers": [
+            "edge"
+        ],
+        "other_options": [
+            "repeat",
+            "extend",
+            "border"
+        ]
+    },
+    {
+        "q": "Rearrange the array preparation workflow:",
+        "type": "rearrange",
+        "words": [
+            "check boundaries",
+            "choose pad mode",
+            "specify width",
+            "apply padding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\npadded = np.pad(arr, (1, 1), mode='edge')\nprint(padded.tolist())",
+        "o": [
+            "[1, 1, 2, 3, 3]",
+            "[0, 1, 2, 3, 0]",
+            "[1, 2, 3, 2, 1]",
+            "[3, 1, 2, 3, 1]"
+        ]
+    },
+    {
+        "q": "np.pad() supports custom padding functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function selects elements based on condition?",
+        "type": "mcq",
+        "o": [
+            "np.select()",
+            "np.choose()",
+            "np.pick()",
+            "np.filter()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nconditions = [arr < 3, arr >= 3]\nchoices = [0, 1]\nresult = np.select(conditions, choices)\nprint(result.tolist())",
+        "o": [
+            "[0, 0, 1, 1, 1]",
+            "[1, 2, 3, 4, 5]",
+            "[1, 1, 0, 0, 0]",
+            "[0, 1, 0, 1, 0]"
+        ]
+    },
+    {
+        "q": "Match the selection functions:",
+        "type": "match",
+        "left": [
+            "select()",
+            "choose()",
+            "where()",
+            "piecewise()"
+        ],
+        "right": [
+            "Multi-condition",
+            "Index-based",
+            "Conditional",
+            "Function-based"
+        ]
+    },
+    {
+        "q": "The ______ function applies different functions based on conditions.",
+        "type": "fill_blank",
+        "answers": [
+            "np.piecewise"
+        ],
+        "other_options": [
+            "np.conditional",
+            "np.switch",
+            "np.case"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([1, 2, 3, 4])\nresult = np.piecewise(x, [x < 2, x >= 2], [lambda x: x, lambda x: x * 2])\nprint(result.tolist())",
+        "o": [
+            "[1, 4, 6, 8]",
+            "[1, 2, 3, 4]",
+            "[2, 4, 6, 8]",
+            "[1, 2, 6, 8]"
+        ]
+    },
+    {
+        "q": "np.choose() uses an index array to select from choices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function fills diagonal of array?",
+        "type": "mcq",
+        "o": [
+            "np.fill_diagonal()",
+            "np.diag_fill()",
+            "np.set_diagonal()",
+            "np.diagonal_set()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.zeros((3, 3))\nnp.fill_diagonal(arr, 5)\nprint(arr[1, 1])",
+        "o": [
+            "5.0",
+            "0.0",
+            "1.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the diagonal operations:",
+        "type": "match",
+        "left": [
+            "diag()",
+            "diagonal()",
+            "fill_diagonal()",
+            "trace()"
+        ],
+        "right": [
+            "Create/extract",
+            "View diagonal",
+            "Fill in place",
+            "Sum diagonal"
+        ]
+    },
+    {
+        "q": "The ______ function extracts diagonal as a view.",
+        "type": "fill_blank",
+        "answers": [
+            "np.diagonal"
+        ],
+        "other_options": [
+            "np.diag",
+            "np.get_diag",
+            "np.diag_view"
+        ]
+    },
+    {
+        "q": "Rearrange the matrix operations:",
+        "type": "rearrange",
+        "words": [
+            "create matrix",
+            "modify diagonal",
+            "compute trace",
+            "verify result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\ndiag = np.diagonal(arr)\nprint(diag.tolist())",
+        "o": [
+            "[1, 5, 9]",
+            "[1, 2, 3]",
+            "[1, 4, 7]",
+            "[3, 5, 7]"
+        ]
+    },
+    {
+        "q": "np.diag(v) creates a diagonal matrix from vector v.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function puts values at specified indices?",
+        "type": "mcq",
+        "o": [
+            "np.put()",
+            "np.set()",
+            "np.place()",
+            "np.insert()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 0, 0, 0, 0])\nnp.put(arr, [1, 3], [10, 30])\nprint(arr.tolist())",
+        "o": [
+            "[0, 10, 0, 30, 0]",
+            "[10, 0, 30, 0, 0]",
+            "[0, 0, 0, 0, 0]",
+            "[10, 30, 0, 0, 0]"
+        ]
+    },
+    {
+        "q": "Match the index-based operations:",
+        "type": "match",
+        "left": [
+            "put()",
+            "take()",
+            "place()",
+            "put_along_axis()"
+        ],
+        "right": [
+            "Set by index",
+            "Get by index",
+            "Set by mask",
+            "Set along axis"
+        ]
+    },
+    {
+        "q": "The ______ function extracts values at indices.",
+        "type": "fill_blank",
+        "answers": [
+            "np.take"
+        ],
+        "other_options": [
+            "np.get",
+            "np.extract",
+            "np.fetch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([10, 20, 30, 40, 50])\nresult = np.take(arr, [0, 2, 4])\nprint(result.tolist())",
+        "o": [
+            "[10, 30, 50]",
+            "[20, 40]",
+            "[0, 2, 4]",
+            "[10, 20, 30]"
+        ]
+    },
+    {
+        "q": "np.place() uses a mask to put values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns array memory info?",
+        "type": "mcq",
+        "o": [
+            "nbytes attribute",
+            "memory_size()",
+            "size_in_memory()",
+            "bytes()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.zeros((100, 100), dtype='float64')\nprint(arr.nbytes)",
+        "o": [
+            "80000",
+            "10000",
+            "40000",
+            "160000"
+        ]
+    },
+    {
+        "q": "Match the memory attributes:",
+        "type": "match",
+        "left": [
+            "nbytes",
+            "itemsize",
+            "dtype",
+            "size"
+        ],
+        "right": [
+            "Total bytes",
+            "Bytes per element",
+            "Type info",
+            "Element count"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns bytes per element.",
+        "type": "fill_blank",
+        "answers": [
+            "itemsize"
+        ],
+        "other_options": [
+            "element_bytes",
+            "byte_size",
+            "unit_size"
+        ]
+    },
+    {
+        "q": "Rearrange the memory analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "check dtype",
+            "get itemsize",
+            "compute nbytes",
+            "optimize if needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3], dtype='int32')\nprint(arr.itemsize)",
+        "o": [
+            "4",
+            "8",
+            "1",
+            "32"
+        ]
+    },
+    {
+        "q": "float64 has itemsize of 8 bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function checks array equality?",
+        "type": "mcq",
+        "o": [
+            "np.array_equal()",
+            "np.equal()",
+            "np.same()",
+            "np.identical()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([1, 2, 3])\nprint(np.array_equal(a, b))",
+        "o": [
+            "True",
+            "False",
+            "[True, True, True]",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the comparison functions:",
+        "type": "match",
+        "left": [
+            "array_equal()",
+            "allclose()",
+            "isclose()",
+            "equal()"
+        ],
+        "right": [
+            "Exact match",
+            "Approximate all",
+            "Approximate each",
+            "Element-wise"
+        ]
+    },
+    {
+        "q": "The ______ function checks approximate equality.",
+        "type": "fill_blank",
+        "answers": [
+            "np.allclose"
+        ],
+        "other_options": [
+            "np.approx",
+            "np.near",
+            "np.similar"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1.0, 2.0])\nb = np.array([1.0000001, 2.0000001])\nprint(np.allclose(a, b))",
+        "o": [
+            "True",
+            "False",
+            "[True, True]",
+            "Error"
+        ]
+    },
+    {
+        "q": "np.allclose() uses relative and absolute tolerances.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a Vandermonde matrix?",
+        "type": "mcq",
+        "o": [
+            "np.vander()",
+            "np.vandermonde()",
+            "np.poly_matrix()",
+            "np.power_matrix()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nv = np.vander(arr, 3)\nprint(v.shape)",
+        "o": [
+            "(3, 3)",
+            "(3,)",
+            "(9,)",
+            "(3, 2)"
+        ]
+    },
+    {
+        "q": "The ______ function computes polynomial roots.",
+        "type": "fill_blank",
+        "answers": [
+            "np.roots"
+        ],
+        "other_options": [
+            "np.zeros",
+            "np.solutions",
+            "np.poly_roots"
+        ]
+    },
+    {
+        "q": "np.poly() returns polynomial coefficients from roots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nroots = np.roots([1, -3, 2])\nprint(len(roots))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the polynomial operations:",
+        "type": "match",
+        "left": [
+            "roots()",
+            "poly()",
+            "polyadd()",
+            "polymul()"
+        ],
+        "right": [
+            "Find roots",
+            "From roots",
+            "Add polys",
+            "Multiply polys"
+        ]
+    },
+    {
+        "q": "Which function computes matrix Cholesky decomposition?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.cholesky()",
+            "np.cholesky()",
+            "np.linalg.chol()",
+            "np.decompose()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[4, 2], [2, 2]])\nL = np.linalg.cholesky(a)\nprint(L.shape)",
+        "o": [
+            "(2, 2)",
+            "(4,)",
+            "(2,)",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ decomposition requires positive definite matrix.",
+        "type": "fill_blank",
+        "answers": [
+            "Cholesky"
+        ],
+        "other_options": [
+            "LU",
+            "QR",
+            "SVD"
+        ]
+    },
+    {
+        "q": "Rearrange the matrix decomposition complexity:",
+        "type": "rearrange",
+        "words": [
+            "Cholesky",
+            "LU",
+            "QR",
+            "SVD"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[4, 2], [2, 2]])\nL = np.linalg.cholesky(a)\nprint(np.allclose(a, L @ L.T))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Cholesky returns lower triangular matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes matrix condition number?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.cond()",
+            "np.cond()",
+            "np.linalg.condition()",
+            "np.matrix_cond()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.eye(3)\nprint(np.linalg.cond(a))",
+        "o": [
+            "1.0",
+            "3.0",
+            "0.0",
+            "inf"
+        ]
+    },
+    {
+        "q": "Match the matrix properties:",
+        "type": "match",
+        "left": [
+            "cond()",
+            "norm()",
+            "det()",
+            "rank()"
+        ],
+        "right": [
+            "Condition number",
+            "Matrix norm",
+            "Determinant",
+            "Matrix rank"
+        ]
+    },
+    {
+        "q": "The ______ of identity matrix is 1.",
+        "type": "fill_blank",
+        "answers": [
+            "condition number"
+        ],
+        "other_options": [
+            "determinant",
+            "rank",
+            "trace"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 1000], [0, 1]])\nprint(np.linalg.cond(a) > 1000)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "1000"
+        ]
+    },
+    {
+        "q": "High condition number indicates ill-conditioned matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function finds least squares solution?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.lstsq()",
+            "np.lstsq()",
+            "np.linalg.least_squares()",
+            "np.solve_ls()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nA = np.array([[1, 1], [1, 2], [1, 3]])\nb = np.array([1, 2, 3])\nx, residuals, rank, s = np.linalg.lstsq(A, b, rcond=None)\nprint(len(x))",
+        "o": [
+            "2",
+            "3",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls singular value cutoff.",
+        "type": "fill_blank",
+        "answers": [
+            "rcond"
+        ],
+        "other_options": [
+            "tol",
+            "cutoff",
+            "threshold"
+        ]
+    },
+    {
+        "q": "Rearrange the least squares workflow:",
+        "type": "rearrange",
+        "words": [
+            "define overdetermined system",
+            "call lstsq",
+            "get solution",
+            "check residuals"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nA = np.array([[1], [1], [1]])\nb = np.array([1, 2, 3])\nx, res, rank, s = np.linalg.lstsq(A, b, rcond=None)\nprint(round(x[0], 1))",
+        "o": [
+            "2.0",
+            "1.0",
+            "3.0",
+            "6.0"
+        ]
+    },
+    {
+        "q": "lstsq returns residuals for overdetermined systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes matrix power?",
+        "type": "mcq",
+        "o": [
+            "np.linalg.matrix_power()",
+            "np.matrix_pow()",
+            "np.linalg.pow()",
+            "np.power()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([[1, 1], [0, 1]])\nresult = np.linalg.matrix_power(a, 3)\nprint(result[0, 1])",
+        "o": [
+            "3",
+            "1",
+            "0",
+            "9"
+        ]
+    },
+    {
+        "q": "Match the matrix power operations:",
+        "type": "match",
+        "left": [
+            "matrix_power(a, 2)",
+            "matrix_power(a, -1)",
+            "matrix_power(a, 0)"
+        ],
+        "right": [
+            "a @ a",
+            "inverse",
+            "identity"
+        ]
+    },
+    {
+        "q": "The ______ power returns the inverse matrix.",
+        "type": "fill_blank",
+        "answers": [
+            "-1"
+        ],
+        "other_options": [
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.eye(3)\nresult = np.linalg.matrix_power(a, 100)\nprint(result[0, 0])",
+        "o": [
+            "1.0",
+            "100.0",
+            "0.0",
+            "inf"
+        ]
+    },
+    {
+        "q": "matrix_power(a, 0) returns identity matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes element-wise maximum?",
+        "type": "mcq",
+        "o": [
+            "np.maximum()",
+            "np.max()",
+            "np.fmax()",
+            "All work differently"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 5, 3])\nb = np.array([4, 2, 6])\nresult = np.maximum(a, b)\nprint(result.tolist())",
+        "o": [
+            "[4, 5, 6]",
+            "[1, 2, 3]",
+            "[5]",
+            "[4, 5, 3]"
+        ]
+    },
+    {
+        "q": "Match the min/max functions:",
+        "type": "match",
+        "left": [
+            "maximum()",
+            "minimum()",
+            "max()",
+            "argmax()"
+        ],
+        "right": [
+            "Element max",
+            "Element min",
+            "Array max",
+            "Max index"
+        ]
+    },
+    {
+        "q": "The ______ function returns index of maximum element.",
+        "type": "fill_blank",
+        "answers": [
+            "np.argmax"
+        ],
+        "other_options": [
+            "np.max_idx",
+            "np.maxindex",
+            "np.idxmax"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([3, 1, 4, 1, 5])\nprint(np.argmax(arr))",
+        "o": [
+            "4",
+            "5",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "argmax returns first occurrence if multiple maxima exist.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes gradient?",
+        "type": "mcq",
+        "o": [
+            "np.gradient()",
+            "np.diff()",
+            "np.derivative()",
+            "np.slope()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 4, 7, 11])\ngrad = np.gradient(arr)\nprint(len(grad))",
+        "o": [
+            "5",
+            "4",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "q": "The ______ uses central differences for interior points.",
+        "type": "fill_blank",
+        "answers": [
+            "np.gradient"
+        ],
+        "other_options": [
+            "np.diff",
+            "np.derivative",
+            "np.slope"
+        ]
+    },
+    {
+        "q": "Rearrange the numerical differentiation concepts:",
+        "type": "rearrange",
+        "words": [
+            "forward diff",
+            "backward diff",
+            "central diff",
+            "higher order"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 1, 4, 9])\ngrad = np.gradient(arr)\nprint(grad[1])",
+        "o": [
+            "2.0",
+            "1.0",
+            "3.0",
+            "1.5"
+        ]
+    },
+    {
+        "q": "np.gradient() maintains array length unlike np.diff().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes trapezoid integration?",
+        "type": "mcq",
+        "o": [
+            "np.trapz()",
+            "np.integrate()",
+            "np.quad()",
+            "np.area()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ny = np.array([0, 1, 2, 1, 0])\nresult = np.trapz(y)\nprint(result)",
+        "o": [
+            "4.0",
+            "5.0",
+            "3.0",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Match the integration methods:",
+        "type": "match",
+        "left": [
+            "trapz()",
+            "cumsum()",
+            "sum()"
+        ],
+        "right": [
+            "Trapezoid rule",
+            "Cumulative sum",
+            "Total sum"
+        ]
+    },
+    {
+        "q": "The ______ parameter in trapz specifies x spacing.",
+        "type": "fill_blank",
+        "answers": [
+            "dx"
+        ],
+        "other_options": [
+            "spacing",
+            "step",
+            "delta"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\ny = np.array([1, 1, 1, 1])\nresult = np.trapz(y, dx=2)\nprint(result)",
+        "o": [
+            "6.0",
+            "4.0",
+            "8.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "trapz with dx=2 uses spacing of 2 between points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes bincount?",
+        "type": "mcq",
+        "o": [
+            "np.bincount()",
+            "np.count()",
+            "np.histogram()",
+            "np.tally()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 1, 1, 2, 2, 2])\nresult = np.bincount(arr)\nprint(result.tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[0, 1, 2]",
+            "[1, 1, 2, 2, 2]",
+            "[3, 2, 1]"
+        ]
+    },
+    {
+        "q": "The ______ parameter in bincount specifies weights.",
+        "type": "fill_blank",
+        "answers": [
+            "weights"
+        ],
+        "other_options": [
+            "w",
+            "values",
+            "counts"
+        ]
+    },
+    {
+        "q": "Rearrange the counting workflow:",
+        "type": "rearrange",
+        "words": [
+            "get integer array",
+            "call bincount",
+            "interpret counts",
+            "use for analysis"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([0, 1, 1, 2])\nweights = np.array([1, 2, 3, 4])\nresult = np.bincount(arr, weights=weights)\nprint(result.tolist())",
+        "o": [
+            "[1.0, 5.0, 4.0]",
+            "[1, 2, 1]",
+            "[1, 3, 4]",
+            "[0, 5, 4]"
+        ]
+    },
+    {
+        "q": "bincount only works with non-negative integers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a memory-mapped array?",
+        "type": "mcq",
+        "o": [
+            "np.memmap()",
+            "np.mmap()",
+            "np.disk_array()",
+            "np.mapped()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nimport tempfile\nfp = tempfile.NamedTemporaryFile()\nmmap = np.memmap(fp.name, dtype='float32', mode='w+', shape=(10,))\nprint(mmap.shape)",
+        "o": [
+            "(10,)",
+            "10",
+            "()",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the memmap modes:",
+        "type": "match",
+        "left": [
+            "r",
+            "r+",
+            "w+",
+            "c"
+        ],
+        "right": [
+            "Read only",
+            "Read/write",
+            "Create/write",
+            "Copy on write"
+        ]
+    },
+    {
+        "q": "The ______ mode allows both reading and writing.",
+        "type": "fill_blank",
+        "answers": [
+            "r+"
+        ],
+        "other_options": [
+            "rw",
+            "w",
+            "a"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nimport tempfile\nfp = tempfile.NamedTemporaryFile()\nmmap = np.memmap(fp.name, dtype='float64', mode='w+', shape=(100,))\nprint(mmap.dtype)",
+        "o": [
+            "float64",
+            "float32",
+            "int64",
+            "object"
+        ]
+    },
+    {
+        "q": "Memory-mapped arrays allow working with data larger than RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns complex conjugate?",
+        "type": "mcq",
+        "o": [
+            "np.conj()",
+            "np.conjugate()",
+            "Both work",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nc = np.array([1+2j, 3+4j])\nresult = np.conj(c)\nprint(result[0])",
+        "o": [
+            "(1-2j)",
+            "(1+2j)",
+            "(-1-2j)",
+            "(-1+2j)"
+        ]
+    },
+    {
+        "q": "Match the complex operations:",
+        "type": "match",
+        "left": [
+            "conj()",
+            "real",
+            "imag",
+            "angle()"
+        ],
+        "right": [
+            "Conjugate",
+            "Real part",
+            "Imaginary part",
+            "Phase angle"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns imaginary part.",
+        "type": "fill_blank",
+        "answers": [
+            "imag"
+        ],
+        "other_options": [
+            "imaginary",
+            "im",
+            "complex"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nc = np.array([3+4j])\nprint(np.abs(c)[0])",
+        "o": [
+            "5.0",
+            "7.0",
+            "4.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "np.abs() on complex numbers returns magnitude.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function inserts values into array?",
+        "type": "mcq",
+        "o": [
+            "np.insert()",
+            "np.add()",
+            "np.put()",
+            "np.place()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nresult = np.insert(arr, 1, 10)\nprint(result.tolist())",
+        "o": [
+            "[1, 10, 2, 3]",
+            "[10, 1, 2, 3]",
+            "[1, 2, 10, 3]",
+            "[1, 2, 3, 10]"
+        ]
+    },
+    {
+        "q": "The ______ function removes elements from array.",
+        "type": "fill_blank",
+        "answers": [
+            "np.delete"
+        ],
+        "other_options": [
+            "np.remove",
+            "np.drop",
+            "np.pop"
+        ]
+    },
+    {
+        "q": "Rearrange the array modification operations:",
+        "type": "rearrange",
+        "words": [
+            "insert elements",
+            "append elements",
+            "delete elements",
+            "resize array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nresult = np.delete(arr, [1, 3])\nprint(result.tolist())",
+        "o": [
+            "[1, 3, 5]",
+            "[2, 4]",
+            "[1, 2, 3, 4, 5]",
+            "[2, 3, 4]"
+        ]
+    },
+    {
+        "q": "insert() and delete() return new arrays, not modify in place.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes the bit-wise AND?",
+        "type": "mcq",
+        "o": [
+            "np.bitwise_and()",
+            "np.and()",
+            "np.logical_and()",
+            "np.bit_and()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([5, 3])\nb = np.array([3, 1])\nresult = np.bitwise_and(a, b)\nprint(result.tolist())",
+        "o": [
+            "[1, 1]",
+            "[5, 3]",
+            "[7, 3]",
+            "[3, 1]"
+        ]
+    },
+    {
+        "q": "Match the bitwise operations:",
+        "type": "match",
+        "left": [
+            "bitwise_and()",
+            "bitwise_or()",
+            "bitwise_xor()",
+            "invert()"
+        ],
+        "right": [
+            "AND",
+            "OR",
+            "XOR",
+            "NOT"
+        ]
+    },
+    {
+        "q": "The ______ operator performs bitwise AND.",
+        "type": "fill_blank",
+        "answers": [
+            "&"
+        ],
+        "other_options": [
+            "and",
+            "&&",
+            "AND"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([5])\nb = np.array([3])\nprint((a | b)[0])",
+        "o": [
+            "7",
+            "5",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "bitwise_xor returns 1 where bits differ.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function shifts bits left?",
+        "type": "mcq",
+        "o": [
+            "np.left_shift()",
+            "np.shift_left()",
+            "np.lshift()",
+            "np.<<()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 4])\nresult = np.left_shift(arr, 2)\nprint(result.tolist())",
+        "o": [
+            "[4, 8, 16]",
+            "[1, 2, 4]",
+            "[4, 8, 4]",
+            "[2, 4, 8]"
+        ]
+    },
+    {
+        "q": "Match the shift operations:",
+        "type": "match",
+        "left": [
+            "left_shift(a, 1)",
+            "right_shift(a, 1)"
+        ],
+        "right": [
+            "Multiply by 2",
+            "Divide by 2"
+        ]
+    },
+    {
+        "q": "The ______ operator performs left shift.",
+        "type": "fill_blank",
+        "answers": [
+            "<<"
+        ],
+        "other_options": [
+            "<",
+            "<<<",
+            "shift"
+        ]
+    },
+    {
+        "q": "Left shift by n is equivalent to multiplying by 2^n.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([16, 8, 4])\nresult = np.right_shift(arr, 2)\nprint(result.tolist())",
+        "o": [
+            "[4, 2, 1]",
+            "[16, 8, 4]",
+            "[64, 32, 16]",
+            "[8, 4, 2]"
+        ]
+    },
+    {
+        "q": "Which function extracts lower triangle?",
+        "type": "mcq",
+        "o": [
+            "np.tril()",
+            "np.lower()",
+            "np.triangle_lower()",
+            "np.extract_lower()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.ones((3, 3))\nresult = np.tril(arr)\nprint(int(result.sum()))",
+        "o": [
+            "6",
+            "9",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the triangle functions:",
+        "type": "match",
+        "left": [
+            "tril()",
+            "triu()",
+            "tril_indices()",
+            "triu_indices()"
+        ],
+        "right": [
+            "Lower triangle",
+            "Upper triangle",
+            "Lower indices",
+            "Upper indices"
+        ]
+    },
+    {
+        "q": "The ______ function extracts upper triangle.",
+        "type": "fill_blank",
+        "answers": [
+            "np.triu"
+        ],
+        "other_options": [
+            "np.upper",
+            "np.tri_upper",
+            "np.extract_upper"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.ones((3, 3))\nresult = np.triu(arr, k=1)\nprint(int(result.sum()))",
+        "o": [
+            "3",
+            "6",
+            "9",
+            "0"
+        ]
+    },
+    {
+        "q": "k parameter in tril/triu controls diagonal offset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function flips array along axis?",
+        "type": "mcq",
+        "o": [
+            "np.flip()",
+            "np.reverse()",
+            "np.mirror()",
+            "np.invert()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nresult = np.flip(arr)\nprint(result.tolist())",
+        "o": [
+            "[5, 4, 3, 2, 1]",
+            "[1, 2, 3, 4, 5]",
+            "[2, 3, 4, 5, 1]",
+            "[5, 1, 4, 2, 3]"
+        ]
+    },
+    {
+        "q": "Match the array reversal functions:",
+        "type": "match",
+        "left": [
+            "flip()",
+            "flipud()",
+            "fliplr()",
+            "rot90()"
+        ],
+        "right": [
+            "General flip",
+            "Flip up-down",
+            "Flip left-right",
+            "Rotate 90"
+        ]
+    },
+    {
+        "q": "The ______ function rotates array by 90 degrees.",
+        "type": "fill_blank",
+        "answers": [
+            "np.rot90"
+        ],
+        "other_options": [
+            "np.rotate",
+            "np.turn90",
+            "np.spin"
+        ]
+    },
+    {
+        "q": "Rearrange the array transformation operations:",
+        "type": "rearrange",
+        "words": [
+            "flip",
+            "rotate",
+            "transpose",
+            "reshape"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([[1, 2], [3, 4]])\nresult = np.rot90(arr)\nprint(result[0, 0])",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "flipud() flips array vertically (up-down).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns the sign of elements?",
+        "type": "mcq",
+        "o": [
+            "np.sign()",
+            "np.signum()",
+            "np.negative()",
+            "np.positive()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([-2, 0, 3])\nresult = np.sign(arr)\nprint(result.tolist())",
+        "o": [
+            "[-1, 0, 1]",
+            "[-2, 0, 3]",
+            "[0, 0, 1]",
+            "[-1, -1, 1]"
+        ]
+    },
+    {
+        "q": "Match the sign-related functions:",
+        "type": "match",
+        "left": [
+            "sign()",
+            "abs()",
+            "negative()",
+            "positive()"
+        ],
+        "right": [
+            "Get sign",
+            "Absolute value",
+            "Negate",
+            "Positive"
+        ]
+    },
+    {
+        "q": "The ______ function returns absolute values.",
+        "type": "fill_blank",
+        "answers": [
+            "np.abs"
+        ],
+        "other_options": [
+            "np.absolute",
+            "np.magnitude",
+            "np.mod"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([-1, 2, -3])\nresult = np.negative(arr)\nprint(result.tolist())",
+        "o": [
+            "[1, -2, 3]",
+            "[-1, 2, -3]",
+            "[1, 2, 3]",
+            "[-1, -2, -3]"
+        ]
+    },
+    {
+        "q": "np.sign(0) returns 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes modulo?",
+        "type": "mcq",
+        "o": [
+            "np.mod()",
+            "np.modulo()",
+            "np.remainder()",
+            "All of these"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([5, 7, 9])\nb = np.array([2, 3, 4])\nresult = np.mod(a, b)\nprint(result.tolist())",
+        "o": [
+            "[1, 1, 1]",
+            "[2, 2, 2]",
+            "[5, 7, 9]",
+            "[0, 1, 1]"
+        ]
+    },
+    {
+        "q": "Match the division functions:",
+        "type": "match",
+        "left": [
+            "mod()",
+            "floor_divide()",
+            "divmod()",
+            "true_divide()"
+        ],
+        "right": [
+            "Remainder",
+            "Integer division",
+            "Both",
+            "Float division"
+        ]
+    },
+    {
+        "q": "The ______ operator performs floor division.",
+        "type": "fill_blank",
+        "answers": [
+            "//"
+        ],
+        "other_options": [
+            "/",
+            "div",
+            "floor"
+        ]
+    },
+    {
+        "q": "Rearrange the arithmetic operation precedence:",
+        "type": "rearrange",
+        "words": [
+            "power",
+            "multiply/divide",
+            "add/subtract",
+            "modulo"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([7, 8, 9])\nb = np.array([2, 3, 4])\nq, r = np.divmod(a, b)\nprint(q.tolist())",
+        "o": [
+            "[3, 2, 2]",
+            "[1, 2, 1]",
+            "[7, 8, 9]",
+            "[2, 3, 4]"
+        ]
+    },
+    {
+        "q": "divmod returns both quotient and remainder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes hyperbolic sine?",
+        "type": "mcq",
+        "o": [
+            "np.sinh()",
+            "np.hsin()",
+            "np.hyperbolic_sin()",
+            "np.sin_h()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(round(np.sinh(0), 1))",
+        "o": [
+            "0.0",
+            "1.0",
+            "-1.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the hyperbolic functions:",
+        "type": "match",
+        "left": [
+            "sinh()",
+            "cosh()",
+            "tanh()",
+            "arctanh()"
+        ],
+        "right": [
+            "Hyperbolic sin",
+            "Hyperbolic cos",
+            "Hyperbolic tan",
+            "Inverse tanh"
+        ]
+    },
+    {
+        "q": "The ______ function computes inverse hyperbolic tangent.",
+        "type": "fill_blank",
+        "answers": [
+            "np.arctanh"
+        ],
+        "other_options": [
+            "np.atanh",
+            "np.tanh_inv",
+            "np.inv_tanh"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nprint(round(np.cosh(0), 1))",
+        "o": [
+            "1.0",
+            "0.0",
+            "-1.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "cosh(0) equals 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function returns base array class?",
+        "type": "mcq",
+        "o": [
+            "arr.base",
+            "arr.parent",
+            "arr.origin",
+            "arr.source"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = a[1:]\nprint(b.base is a)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the array relationships:",
+        "type": "match",
+        "left": [
+            "base",
+            "flags",
+            "strides",
+            "dtype"
+        ],
+        "right": [
+            "Parent array",
+            "Memory info",
+            "Byte steps",
+            "Data type"
+        ]
+    },
+    {
+        "q": "The ______ attribute is None if array owns its data.",
+        "type": "fill_blank",
+        "answers": [
+            "base"
+        ],
+        "other_options": [
+            "parent",
+            "owner",
+            "source"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nprint(a.base is None)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "a"
+        ]
+    },
+    {
+        "q": "Views have non-None base attribute pointing to original.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes matrix exponential?",
+        "type": "mcq",
+        "o": [
+            "scipy.linalg.expm()",
+            "np.exp()",
+            "np.linalg.exp()",
+            "np.matrix_exp()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3])\nprint(arr.ctypes.data > 0)",
+        "o": [
+            "True",
+            "False",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ attribute provides C-compatible interface.",
+        "type": "fill_blank",
+        "answers": [
+            "ctypes"
+        ],
+        "other_options": [
+            "cinterface",
+            "cdata",
+            "cpointer"
+        ]
+    },
+    {
+        "q": "arr.ctypes.data returns memory address of array.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3], dtype='float64')\nprint(arr.ctypes.data_as(type(arr.ctypes.data)) > 0)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the ctypes attributes:",
+        "type": "match",
+        "left": [
+            "data",
+            "shape",
+            "strides",
+            "data_as()"
+        ],
+        "right": [
+            "Memory address",
+            "Shape pointer",
+            "Strides pointer",
+            "Cast pointer"
+        ]
+    },
+    {
+        "q": "Which function creates array from buffer?",
+        "type": "mcq",
+        "o": [
+            "np.frombuffer()",
+            "np.fromdata()",
+            "np.buffer_to_array()",
+            "np.read_buffer()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\nbuf = bytes([0, 0, 0, 1])\narr = np.frombuffer(buf, dtype='uint8')\nprint(len(arr))",
+        "o": [
+            "4",
+            "1",
+            "8",
+            "32"
+        ]
+    },
+    {
+        "q": "The ______ function creates array from iterator.",
+        "type": "fill_blank",
+        "answers": [
+            "np.fromiter"
+        ],
+        "other_options": [
+            "np.iterator",
+            "np.from_iter",
+            "np.iterate"
+        ]
+    },
+    {
+        "q": "Rearrange the array creation methods by data source:",
+        "type": "rearrange",
+        "words": [
+            "list",
+            "buffer",
+            "iterator",
+            "function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\niter = (x**2 for x in range(5))\narr = np.fromiter(iter, dtype=float)\nprint(arr.tolist())",
+        "o": [
+            "[0.0, 1.0, 4.0, 9.0, 16.0]",
+            "[0, 1, 2, 3, 4]",
+            "[1, 4, 9, 16, 25]",
+            "Error"
+        ]
+    },
+    {
+        "q": "fromiter requires dtype specification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates array from function?",
+        "type": "mcq",
+        "o": [
+            "np.fromfunction()",
+            "np.func_array()",
+            "np.generate()",
+            "np.apply()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.fromfunction(lambda i, j: i + j, (3, 3), dtype=int)\nprint(arr[1, 1])",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the from* functions:",
+        "type": "match",
+        "left": [
+            "frombuffer()",
+            "fromiter()",
+            "fromfunction()",
+            "fromstring()"
+        ],
+        "right": [
+            "From buffer",
+            "From iterator",
+            "From function",
+            "From string"
+        ]
+    },
+    {
+        "q": "The ______ function was deprecated in favor of frombuffer.",
+        "type": "fill_blank",
+        "answers": [
+            "np.fromstring"
+        ],
+        "other_options": [
+            "np.fromdata",
+            "np.fromtext",
+            "np.frombytes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.fromfunction(lambda i: i * 2, (5,), dtype=int)\nprint(arr.tolist())",
+        "o": [
+            "[0, 2, 4, 6, 8]",
+            "[2, 4, 6, 8, 10]",
+            "[1, 2, 3, 4, 5]",
+            "[0, 1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "fromfunction passes indices to the function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function partitions array?",
+        "type": "mcq",
+        "o": [
+            "np.partition()",
+            "np.split()",
+            "np.divide()",
+            "np.separate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([3, 4, 2, 1])\nresult = np.partition(arr, 2)\nprint(result[2])",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ function returns indices for partition.",
+        "type": "fill_blank",
+        "answers": [
+            "np.argpartition"
+        ],
+        "other_options": [
+            "np.partition_idx",
+            "np.part_index",
+            "np.idx_part"
+        ]
+    },
+    {
+        "q": "Rearrange the partial sorting concepts:",
+        "type": "rearrange",
+        "words": [
+            "choose kth element",
+            "elements smaller before k",
+            "elements larger after k",
+            "k-th in sorted position"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([3, 4, 2, 1, 5])\nresult = np.partition(arr, 2)\nprint(result[2] in [2, 3])",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "partition is faster than full sort for finding k smallest.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function searches for sorted insert position?",
+        "type": "mcq",
+        "o": [
+            "np.searchsorted()",
+            "np.find()",
+            "np.locate()",
+            "np.position()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 3, 5, 7, 9])\npos = np.searchsorted(arr, 4)\nprint(pos)",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the search parameters:",
+        "type": "match",
+        "left": [
+            "side='left'",
+            "side='right'"
+        ],
+        "right": [
+            "Insert before equal",
+            "Insert after equal"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls where equal values go.",
+        "type": "fill_blank",
+        "answers": [
+            "side"
+        ],
+        "other_options": [
+            "position",
+            "direction",
+            "where"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 2, 2, 3])\nleft = np.searchsorted(arr, 2, side='left')\nright = np.searchsorted(arr, 2, side='right')\nprint(right - left)",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "searchsorted requires sorted input array.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes pairwise differences?",
+        "type": "mcq",
+        "o": [
+            "np.subtract.outer()",
+            "np.pairwise_diff()",
+            "np.diff_pairs()",
+            "np.outer_diff()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([10, 20])\nresult = np.subtract.outer(a, b)\nprint(result.shape)",
+        "o": [
+            "(3, 2)",
+            "(2, 3)",
+            "(6,)",
+            "(5,)"
+        ]
+    },
+    {
+        "q": "Match the outer operations:",
+        "type": "match",
+        "left": [
+            "add.outer()",
+            "subtract.outer()",
+            "multiply.outer()",
+            "divide.outer()"
+        ],
+        "right": [
+            "Pairwise sum",
+            "Pairwise diff",
+            "Pairwise product",
+            "Pairwise ratio"
+        ]
+    },
+    {
+        "q": "The ______ method on ufuncs computes outer operation.",
+        "type": "fill_blank",
+        "answers": [
+            "outer"
+        ],
+        "other_options": [
+            "pairwise",
+            "external",
+            "broadcast"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\na = np.array([1, 2])\nb = np.array([3, 4])\nresult = np.add.outer(a, b)\nprint(result[0, 1])",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "q": "ufunc.outer produces N-D array from 1-D inputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function computes moving window statistics?",
+        "type": "mcq",
+        "o": [
+            "np.lib.stride_tricks.sliding_window_view + aggregation",
+            "np.rolling()",
+            "np.moving_average()",
+            "np.window_stats()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nwindows = np.lib.stride_tricks.sliding_window_view(arr, 3)\nmeans = windows.mean(axis=1)\nprint(len(means))",
+        "o": [
+            "3",
+            "5",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies window size.",
+        "type": "fill_blank",
+        "answers": [
+            "window_shape"
+        ],
+        "other_options": [
+            "size",
+            "width",
+            "length"
+        ]
+    },
+    {
+        "q": "Rearrange the rolling statistics workflow:",
+        "type": "rearrange",
+        "words": [
+            "create windows",
+            "apply aggregation",
+            "get result",
+            "handle edges"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5, 6])\nwindows = np.lib.stride_tricks.sliding_window_view(arr, 2)\nprint(windows.sum(axis=1).tolist())",
+        "o": [
+            "[3, 5, 7, 9, 11]",
+            "[1, 2, 3, 4, 5, 6]",
+            "[3, 7, 11]",
+            "[2, 4, 6, 8, 10]"
+        ]
+    },
+    {
+        "q": "sliding_window_view returns a view, not a copy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function extracts elements by mask?",
+        "type": "mcq",
+        "o": [
+            "np.extract()",
+            "np.filter()",
+            "np.select()",
+            "np.pick()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\ncond = arr > 2\nresult = np.extract(cond, arr)\nprint(result.tolist())",
+        "o": [
+            "[3, 4, 5]",
+            "[1, 2]",
+            "[True, True, True]",
+            "[1, 2, 3, 4, 5]"
+        ]
+    },
+    {
+        "q": "Match the extraction functions:",
+        "type": "match",
+        "left": [
+            "extract()",
+            "compress()",
+            "take()",
+            "choose()"
+        ],
+        "right": [
+            "By mask",
+            "By condition",
+            "By indices",
+            "By index array"
+        ]
+    },
+    {
+        "q": "The ______ function is similar to extract but works along axis.",
+        "type": "fill_blank",
+        "answers": [
+            "np.compress"
+        ],
+        "other_options": [
+            "np.filter",
+            "np.select",
+            "np.take"
+        ]
+    },
+    {
+        "q": "np.extract(condition, arr) is equivalent to arr[condition].",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

@@ -1,0 +1,6735 @@
+[
+    {
+        "q": "What is the primary data structure in pandas for 2D tabular data?",
+        "type": "mcq",
+        "o": [
+            "DataFrame",
+            "Series",
+            "Array",
+            "Matrix"
+        ]
+    },
+    {
+        "q": "Which pandas function is used to read a CSV file?",
+        "type": "mcq",
+        "o": [
+            "pd.read_csv()",
+            "pd.load_csv()",
+            "pd.import_csv()",
+            "pd.open_csv()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([10, 20, 30])\nprint(len(s))",
+        "o": [
+            "3",
+            "60",
+            "[10, 20, 30]",
+            "Error"
+        ]
+    },
+    {
+        "q": "A pandas Series is a ______ data structure.",
+        "type": "fill_blank",
+        "answers": [
+            "one-dimensional"
+        ],
+        "other_options": [
+            "two-dimensional",
+            "three-dimensional",
+            "multi-dimensional"
+        ]
+    },
+    {
+        "q": "DataFrames can only contain numeric data types.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which method displays the first 5 rows of a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "head()",
+            "first()",
+            "top()",
+            "show()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(df.shape)",
+        "o": [
+            "(3, 1)",
+            "(1, 3)",
+            "[3, 1]",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the pandas attributes with their descriptions:",
+        "type": "match",
+        "left": [
+            "shape",
+            "dtypes",
+            "columns",
+            "index"
+        ],
+        "right": [
+            "Returns dimensions as tuple",
+            "Returns data types of columns",
+            "Returns column labels",
+            "Returns row labels"
+        ]
+    },
+    {
+        "q": "Which method displays the last rows of a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "tail()",
+            "last()",
+            "bottom()",
+            "end()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([5, 10, 15], index=['a', 'b', 'c'])\nprint(s['b'])",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "b"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns the number of dimensions in a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "ndim"
+        ],
+        "other_options": [
+            "dim",
+            "dimensions",
+            "rank"
+        ]
+    },
+    {
+        "q": "pd.Series() can be created from a Python dictionary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\nprint(df.ndim)",
+        "o": [
+            "2",
+            "4",
+            "(2, 2)",
+            "1"
+        ]
+    },
+    {
+        "q": "Which attribute returns the total number of elements in a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "size",
+            "count",
+            "length",
+            "total"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nprint(s.sum())",
+        "o": [
+            "15",
+            "5",
+            "[1, 2, 3, 4, 5]",
+            "3"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to create and view a DataFrame:",
+        "type": "rearrange",
+        "words": [
+            "import pandas",
+            "create dictionary",
+            "pass to DataFrame()",
+            "call head()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'X': [10, 20, 30]})\nprint(df['X'].mean())",
+        "o": [
+            "20.0",
+            "60",
+            "30",
+            "10"
+        ]
+    },
+    {
+        "q": "Which method provides a concise summary of a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "info()",
+            "summary()",
+            "describe()",
+            "details()"
+        ]
+    },
+    {
+        "q": "The describe() method only works on numeric columns by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([3, 1, 4, 1, 5])\nprint(s.max())",
+        "o": [
+            "5",
+            "1",
+            "14",
+            "3"
+        ]
+    },
+    {
+        "q": "Which method returns basic statistical summary of numeric columns?",
+        "type": "mcq",
+        "o": [
+            "describe()",
+            "stats()",
+            "summary()",
+            "info()"
+        ]
+    },
+    {
+        "q": "Match the pandas methods with their purposes:",
+        "type": "match",
+        "left": [
+            "head()",
+            "tail()",
+            "info()",
+            "describe()"
+        ],
+        "right": [
+            "First n rows",
+            "Last n rows",
+            "DataFrame overview",
+            "Statistical summary"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(len(df.columns))",
+        "o": [
+            "2",
+            "3",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ property returns the column names of a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "columns"
+        ],
+        "other_options": [
+            "headers",
+            "labels",
+            "names"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([10, 20, 30])\nprint(s.min())",
+        "o": [
+            "10",
+            "30",
+            "20",
+            "0"
+        ]
+    },
+    {
+        "q": "A Series has both an index and values attribute.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function creates a DataFrame from a dictionary?",
+        "type": "mcq",
+        "o": [
+            "pd.DataFrame()",
+            "pd.create_df()",
+            "pd.make_frame()",
+            "pd.dict_to_frame()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [5, 10, 15]})\nprint(df['A'].median())",
+        "o": [
+            "10.0",
+            "15",
+            "5",
+            "30"
+        ]
+    },
+    {
+        "q": "Which method counts non-null values in each column?",
+        "type": "mcq",
+        "o": [
+            "count()",
+            "len()",
+            "size()",
+            "notnull()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([2, 4, 6, 8])\nprint(s.std())",
+        "o": [
+            "2.581988897471611",
+            "5",
+            "2",
+            "20"
+        ]
+    },
+    {
+        "q": "The index of a Series must be integers.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the data types with their pandas dtype codes:",
+        "type": "match",
+        "left": [
+            "int64",
+            "float64",
+            "object",
+            "bool"
+        ],
+        "right": [
+            "Integer values",
+            "Decimal numbers",
+            "String/mixed data",
+            "True/False values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\nprint(df.size)",
+        "o": [
+            "4",
+            "2",
+            "(2, 2)",
+            "6"
+        ]
+    },
+    {
+        "q": "Which method converts a DataFrame column to a different data type?",
+        "type": "mcq",
+        "o": [
+            "astype()",
+            "convert()",
+            "cast()",
+            "change_type()"
+        ]
+    },
+    {
+        "q": "The ______ method returns unique values in a Series.",
+        "type": "fill_blank",
+        "answers": [
+            "unique"
+        ],
+        "other_options": [
+            "distinct",
+            "different",
+            "separate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 2, 3, 3, 3])\nprint(s.nunique())",
+        "o": [
+            "3",
+            "6",
+            "14",
+            "1"
+        ]
+    },
+    {
+        "q": "DataFrames can have duplicate column names.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method returns the number of unique values?",
+        "type": "mcq",
+        "o": [
+            "nunique()",
+            "count_unique()",
+            "unique_count()",
+            "distinct()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y', 'x']})\nprint(df['A'].value_counts()['x'])",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "x"
+        ]
+    },
+    {
+        "q": "Match the Series methods with their results:",
+        "type": "match",
+        "left": [
+            "sum()",
+            "mean()",
+            "max()",
+            "min()"
+        ],
+        "right": [
+            "Total of all values",
+            "Average of values",
+            "Largest value",
+            "Smallest value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([True, False, True])\nprint(s.sum())",
+        "o": [
+            "2",
+            "True",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Which method checks for missing values in a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "isnull()",
+            "missing()",
+            "isna()",
+            "Both isnull() and isna()"
+        ]
+    },
+    {
+        "q": "The ______ method fills missing values with a specified value.",
+        "type": "fill_blank",
+        "answers": [
+            "fillna"
+        ],
+        "other_options": [
+            "fill",
+            "replace_na",
+            "impute"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ns = pd.Series([1, np.nan, 3])\nprint(s.isnull().sum())",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "dropna() removes rows with any missing values by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method removes rows containing missing values?",
+        "type": "mcq",
+        "o": [
+            "dropna()",
+            "remove_na()",
+            "clean()",
+            "delete_null()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf['B'] = df['A'] * 2\nprint(df['B'].tolist())",
+        "o": [
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "6",
+            "[1, 4, 9]"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to clean missing data:",
+        "type": "rearrange",
+        "words": [
+            "load data",
+            "check isnull()",
+            "decide strategy",
+            "apply fillna/dropna"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(list(df.columns))",
+        "o": [
+            "['A', 'B']",
+            "[1, 2, 3]",
+            "['A', 'B', 1, 2, 3, 4, 5, 6]",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the missing value methods with their actions:",
+        "type": "match",
+        "left": [
+            "isnull()",
+            "notnull()",
+            "fillna()",
+            "dropna()"
+        ],
+        "right": [
+            "Returns True for NaN",
+            "Returns True for valid",
+            "Replace NaN values",
+            "Remove NaN rows/cols"
+        ]
+    },
+    {
+        "q": "Which method selects a single column from a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "df['column_name']",
+            "df.select('column_name')",
+            "df.get_column('column_name')",
+            "df.column('column_name')"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\nprint(type(df['A']))",
+        "o": [
+            "<class 'pandas.core.series.Series'>",
+            "<class 'pandas.core.frame.DataFrame'>",
+            "<class 'list'>",
+            "<class 'numpy.ndarray'>"
+        ]
+    },
+    {
+        "q": "The ______ accessor is used for integer-based indexing.",
+        "type": "fill_blank",
+        "answers": [
+            "iloc"
+        ],
+        "other_options": [
+            "loc",
+            "ix",
+            "at"
+        ]
+    },
+    {
+        "q": "loc[] uses label-based indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [10, 20, 30]}, index=['x', 'y', 'z'])\nprint(df.loc['y', 'A'])",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "y"
+        ]
+    },
+    {
+        "q": "Which accessor is used for position-based indexing?",
+        "type": "mcq",
+        "o": [
+            "iloc",
+            "loc",
+            "ix",
+            "pos"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.iloc[0, 1])",
+        "o": [
+            "4",
+            "1",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the indexing methods with their types:",
+        "type": "match",
+        "left": [
+            "loc",
+            "iloc",
+            "at",
+            "iat"
+        ],
+        "right": [
+            "Label-based slicing",
+            "Integer-based slicing",
+            "Fast label scalar access",
+            "Fast integer scalar access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(df.iloc[1:3]['A'].tolist())",
+        "o": [
+            "[2, 3]",
+            "[1, 2]",
+            "[1, 2, 3]",
+            "[3]"
+        ]
+    },
+    {
+        "q": "Selecting multiple columns returns a DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method adds a new column to a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "df['new_col'] = values",
+            "df.add_column('new_col', values)",
+            "df.insert_col('new_col', values)",
+            "df.append_col('new_col', values)"
+        ]
+    },
+    {
+        "q": "The ______ method removes columns from a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "drop"
+        ],
+        "other_options": [
+            "remove",
+            "delete",
+            "pop"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\ndf2 = df.drop('A', axis=1)\nprint(list(df2.columns))",
+        "o": [
+            "['B']",
+            "['A']",
+            "['A', 'B']",
+            "[]"
+        ]
+    },
+    {
+        "q": "In drop(), axis=1 refers to columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf['B'] = df['A'] + 10\nprint(df['B'].sum())",
+        "o": [
+            "36",
+            "6",
+            "33",
+            "13"
+        ]
+    },
+    {
+        "q": "Which method renames columns in a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "rename()",
+            "change_name()",
+            "set_columns()",
+            "relabel()"
+        ]
+    },
+    {
+        "q": "Match the DataFrame operations with their axis values:",
+        "type": "match",
+        "left": [
+            "axis=0",
+            "axis=1",
+            "drop rows",
+            "drop columns"
+        ],
+        "right": [
+            "Row operations",
+            "Column operations",
+            "axis=0",
+            "axis=1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [5, 10, 15]})\nprint(df[df['A'] > 7])",
+        "o": [
+            "Rows where A is 10 and 15",
+            "Rows where A is 5",
+            "All rows",
+            "Empty DataFrame"
+        ]
+    },
+    {
+        "q": "Boolean indexing filters rows based on a condition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4, 5]})\nfiltered = df[df['A'] > 3]\nprint(len(filtered))",
+        "o": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "q": "The ______ method sorts a DataFrame by column values.",
+        "type": "fill_blank",
+        "answers": [
+            "sort_values"
+        ],
+        "other_options": [
+            "order_by",
+            "sort",
+            "arrange"
+        ]
+    },
+    {
+        "q": "Which method sorts a DataFrame by its index?",
+        "type": "mcq",
+        "o": [
+            "sort_index()",
+            "sort_by_index()",
+            "order_index()",
+            "arrange_index()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [3, 1, 2]})\ndf_sorted = df.sort_values('A')\nprint(df_sorted['A'].tolist())",
+        "o": [
+            "[1, 2, 3]",
+            "[3, 2, 1]",
+            "[3, 1, 2]",
+            "[2, 1, 3]"
+        ]
+    },
+    {
+        "q": "Rearrange data manipulation workflow steps:",
+        "type": "rearrange",
+        "words": [
+            "load data",
+            "filter rows",
+            "select columns",
+            "sort values",
+            "export results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf_desc = df.sort_values('A', ascending=False)\nprint(df_desc['A'].iloc[0])",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "q": "ascending=False in sort_values() sorts in descending order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method groups data by one or more columns?",
+        "type": "mcq",
+        "o": [
+            "groupby()",
+            "group()",
+            "aggregate()",
+            "cluster()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, 2, 3]})\nprint(df.groupby('A')['B'].sum()['x'])",
+        "o": [
+            "3",
+            "1",
+            "6",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the groupby aggregation methods:",
+        "type": "match",
+        "left": [
+            "sum()",
+            "mean()",
+            "count()",
+            "max()"
+        ],
+        "right": [
+            "Total per group",
+            "Average per group",
+            "Items per group",
+            "Maximum per group"
+        ]
+    },
+    {
+        "q": "The ______ method applies multiple aggregations to grouped data.",
+        "type": "fill_blank",
+        "answers": [
+            "agg"
+        ],
+        "other_options": [
+            "apply",
+            "multi",
+            "aggregate_all"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y', 'x'], 'B': [10, 20, 30]})\nprint(df.groupby('A')['B'].mean()['x'])",
+        "o": [
+            "20.0",
+            "30",
+            "10",
+            "40"
+        ]
+    },
+    {
+        "q": "groupby() returns a GroupBy object, not a DataFrame directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method concatenates DataFrames vertically?",
+        "type": "mcq",
+        "o": [
+            "pd.concat()",
+            "pd.join()",
+            "pd.combine()",
+            "pd.stack()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2]})\ndf2 = pd.DataFrame({'A': [3, 4]})\nresult = pd.concat([df1, df2])\nprint(len(result))",
+        "o": [
+            "4",
+            "2",
+            "6",
+            "8"
+        ]
+    },
+    {
+        "q": "Rearrange the groupby workflow steps:",
+        "type": "rearrange",
+        "words": [
+            "select column",
+            "call groupby()",
+            "apply aggregation",
+            "view result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['a', 'b', 'a', 'b'], 'B': [1, 2, 3, 4]})\nprint(df.groupby('A').size()['a'])",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Which method merges two DataFrames on a common column?",
+        "type": "mcq",
+        "o": [
+            "pd.merge()",
+            "pd.join()",
+            "pd.combine()",
+            "pd.mix()"
+        ]
+    },
+    {
+        "q": "The ______ parameter in merge() specifies the column to join on.",
+        "type": "fill_blank",
+        "answers": [
+            "on"
+        ],
+        "other_options": [
+            "by",
+            "key",
+            "column"
+        ]
+    },
+    {
+        "q": "Match the merge types with their descriptions:",
+        "type": "match",
+        "left": [
+            "inner",
+            "left",
+            "right",
+            "outer"
+        ],
+        "right": [
+            "Only matching rows",
+            "All left + matching right",
+            "All right + matching left",
+            "All rows from both"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'key': ['A', 'B'], 'val1': [1, 2]})\ndf2 = pd.DataFrame({'key': ['A', 'B'], 'val2': [3, 4]})\nmerged = pd.merge(df1, df2, on='key')\nprint(len(merged.columns))",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "An inner merge only keeps rows with matching keys in both DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which function converts a column to datetime type?",
+        "type": "mcq",
+        "o": [
+            "pd.to_datetime()",
+            "pd.datetime()",
+            "pd.convert_datetime()",
+            "pd.parse_date()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.to_datetime(['2023-01-01', '2023-01-02'])\nprint(dates[0].year)",
+        "o": [
+            "2023",
+            "1",
+            "01",
+            "2023-01-01"
+        ]
+    },
+    {
+        "q": "The ______ attribute extracts the month from a datetime column.",
+        "type": "fill_blank",
+        "answers": [
+            "dt.month"
+        ],
+        "other_options": [
+            "month",
+            "get_month",
+            "extract_month"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'date': pd.to_datetime(['2023-03-15'])})\nprint(df['date'].dt.day[0])",
+        "o": [
+            "15",
+            "3",
+            "2023",
+            "March"
+        ]
+    },
+    {
+        "q": "Match the datetime accessor attributes:",
+        "type": "match",
+        "left": [
+            "dt.year",
+            "dt.month",
+            "dt.day",
+            "dt.weekday"
+        ],
+        "right": [
+            "Extract year",
+            "Extract month number",
+            "Extract day number",
+            "Day of week (0=Monday)"
+        ]
+    },
+    {
+        "q": "The dt accessor is used to access datetime properties.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method sets a column as the DataFrame index?",
+        "type": "mcq",
+        "o": [
+            "set_index()",
+            "as_index()",
+            "make_index()",
+            "index_column()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': ['x', 'y', 'z']})\ndf2 = df.set_index('B')\nprint(df2.loc['y', 'A'])",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "y"
+        ]
+    },
+    {
+        "q": "The ______ method resets the index back to default integers.",
+        "type": "fill_blank",
+        "answers": [
+            "reset_index"
+        ],
+        "other_options": [
+            "default_index",
+            "clear_index",
+            "remove_index"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2]})\nprint(df.T.shape)",
+        "o": [
+            "(1, 2)",
+            "(2, 1)",
+            "(2, 2)",
+            "(1, 1)"
+        ]
+    },
+    {
+        "q": "The T attribute returns the transpose of a DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method applies a function element-wise to a Series?",
+        "type": "mcq",
+        "o": [
+            "apply()",
+            "map()",
+            "transform()",
+            "execute()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3])\nresult = s.apply(lambda x: x ** 2)\nprint(result.tolist())",
+        "o": [
+            "[1, 4, 9]",
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "[3, 6, 9]"
+        ]
+    },
+    {
+        "q": "The ______ method applies a function to each row or column of a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "apply"
+        ],
+        "other_options": [
+            "map",
+            "transform",
+            "execute"
+        ]
+    },
+    {
+        "q": "map() is used exclusively on Series, not DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.apply(lambda x: x.sum(), axis=0)['A'])",
+        "o": [
+            "6",
+            "5",
+            "15",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the pandas string methods with their purposes:",
+        "type": "match",
+        "left": [
+            "str.lower()",
+            "str.upper()",
+            "str.strip()",
+            "str.len()"
+        ],
+        "right": [
+            "Convert to lowercase",
+            "Convert to uppercase",
+            "Remove whitespace",
+            "Get string length"
+        ]
+    },
+    {
+        "q": "Which accessor is used for string operations on a Series?",
+        "type": "mcq",
+        "o": [
+            "str",
+            "string",
+            "text",
+            "char"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['Hello', 'World'])\nprint(s.str.lower().tolist())",
+        "o": [
+            "['hello', 'world']",
+            "['HELLO', 'WORLD']",
+            "['Hello', 'World']",
+            "['h', 'w']"
+        ]
+    },
+    {
+        "q": "The str.contains() method checks if a pattern exists in each string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['apple', 'banana', 'cherry'])\nprint(s.str.contains('an').sum())",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Which method splits string values into separate columns?",
+        "type": "mcq",
+        "o": [
+            "str.split(expand=True)",
+            "str.separate()",
+            "str.divide()",
+            "str.explode()"
+        ]
+    },
+    {
+        "q": "The ______ method replaces occurrences of a pattern in strings.",
+        "type": "fill_blank",
+        "answers": [
+            "str.replace"
+        ],
+        "other_options": [
+            "str.sub",
+            "str.swap",
+            "str.change"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['a-b', 'c-d'])\nprint(s.str.split('-').str[0].tolist())",
+        "o": [
+            "['a', 'c']",
+            "['b', 'd']",
+            "['a-b', 'c-d']",
+            "['-', '-']"
+        ]
+    },
+    {
+        "q": "Match the string extraction patterns:",
+        "type": "match",
+        "left": [
+            "str[0]",
+            "str[-1]",
+            "str[:3]",
+            "str[1:4]"
+        ],
+        "right": [
+            "First character",
+            "Last character",
+            "First 3 chars",
+            "Chars 2-4"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['  test  '])\nprint(s.str.strip().tolist())",
+        "o": [
+            "['test']",
+            "['  test  ']",
+            "['test  ']",
+            "['  test']"
+        ]
+    },
+    {
+        "q": "str.startswith() checks if strings begin with a specified pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method converts a DataFrame to a NumPy array?",
+        "type": "mcq",
+        "o": [
+            "to_numpy()",
+            "to_array()",
+            "as_numpy()",
+            "convert_numpy()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\narr = df.to_numpy()\nprint(arr.shape)",
+        "o": [
+            "(2, 2)",
+            "(2,)",
+            "(4,)",
+            "(1, 4)"
+        ]
+    },
+    {
+        "q": "The ______ method exports a DataFrame to a CSV file.",
+        "type": "fill_blank",
+        "answers": [
+            "to_csv"
+        ],
+        "other_options": [
+            "export_csv",
+            "save_csv",
+            "write_csv"
+        ]
+    },
+    {
+        "q": "Rearrange the data export workflow:",
+        "type": "rearrange",
+        "words": [
+            "process data",
+            "validate results",
+            "select columns",
+            "call to_csv()",
+            "verify file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 2, 3]})\nprint(df.duplicated().sum())",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "Which method removes duplicate rows from a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "drop_duplicates()",
+            "remove_duplicates()",
+            "unique()",
+            "deduplicate()"
+        ]
+    },
+    {
+        "q": "Match the duplicate handling parameters:",
+        "type": "match",
+        "left": [
+            "keep='first'",
+            "keep='last'",
+            "keep=False",
+            "subset=['col']"
+        ],
+        "right": [
+            "Keep first occurrence",
+            "Keep last occurrence",
+            "Remove all duplicates",
+            "Check specific columns"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 1, 2], 'B': [3, 3, 4]})\nprint(len(df.drop_duplicates()))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "duplicated() returns True for the first occurrence of each row.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which method creates a cross-tabulation of two columns?",
+        "type": "mcq",
+        "o": [
+            "pd.crosstab()",
+            "pd.crosstable()",
+            "pd.tabulate()",
+            "pd.cross()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': ['a', 'b', 'a']})\nct = pd.crosstab(df['A'], df['B'])\nprint(ct.loc['x', 'a'])",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "The ______ method creates a pivot table from a DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "pivot_table"
+        ],
+        "other_options": [
+            "pivot",
+            "crosstab",
+            "transpose"
+        ]
+    },
+    {
+        "q": "pivot() requires unique index/column combinations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y'], 'B': ['a', 'b'], 'C': [1, 2]})\npv = df.pivot(index='A', columns='B', values='C')\nprint(pv.loc['x', 'a'])",
+        "o": [
+            "1",
+            "2",
+            "x",
+            "a"
+        ]
+    },
+    {
+        "q": "Match the pivot table parameters:",
+        "type": "match",
+        "left": [
+            "index",
+            "columns",
+            "values",
+            "aggfunc"
+        ],
+        "right": [
+            "Row labels",
+            "Column headers",
+            "Data to aggregate",
+            "Aggregation function"
+        ]
+    },
+    {
+        "q": "Which method reshapes data from wide to long format?",
+        "type": "mcq",
+        "o": [
+            "melt()",
+            "unpivot()",
+            "reshape()",
+            "long()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'id': [1], 'A': [10], 'B': [20]})\nmelted = pd.melt(df, id_vars=['id'])\nprint(len(melted))",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "The ______ method replaces values in a Series or DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "replace"
+        ],
+        "other_options": [
+            "swap",
+            "change",
+            "substitute"
+        ]
+    },
+    {
+        "q": "Rearrange the data cleaning workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify issues",
+            "handle missing",
+            "fix duplicates",
+            "validate types",
+            "verify clean"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 2, 1])\nprint(s.replace(2, 99).tolist())",
+        "o": [
+            "[1, 99, 3, 99, 1]",
+            "[1, 2, 3, 2, 1]",
+            "[99, 99, 99, 99, 99]",
+            "[1, 2, 3, 99, 1]"
+        ]
+    },
+    {
+        "q": "replace() can accept a dictionary for multiple replacements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method bins continuous data into discrete intervals?",
+        "type": "mcq",
+        "o": [
+            "pd.cut()",
+            "pd.bin()",
+            "pd.bucket()",
+            "pd.discretize()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 5, 10, 15])\nbins = pd.cut(s, bins=2)\nprint(bins.nunique())",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the binning methods:",
+        "type": "match",
+        "left": [
+            "pd.cut()",
+            "pd.qcut()",
+            "bins=n",
+            "labels=[]"
+        ],
+        "right": [
+            "Equal-width bins",
+            "Equal-frequency bins",
+            "Number of bins",
+            "Custom bin labels"
+        ]
+    },
+    {
+        "q": "The ______ function creates bins with equal number of items in each.",
+        "type": "fill_blank",
+        "answers": [
+            "qcut"
+        ],
+        "other_options": [
+            "cut",
+            "bin",
+            "quantile"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5, 6, 7, 8])\nprint(pd.qcut(s, q=4).nunique())",
+        "o": [
+            "4",
+            "8",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "pd.cut() with labels=False returns integer indicators instead of intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates dummy variables from categorical columns?",
+        "type": "mcq",
+        "o": [
+            "pd.get_dummies()",
+            "pd.one_hot()",
+            "pd.encode()",
+            "pd.dummy()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y', 'x']})\ndummies = pd.get_dummies(df['A'])\nprint(len(dummies.columns))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "The ______ parameter in get_dummies() adds a prefix to column names.",
+        "type": "fill_blank",
+        "answers": [
+            "prefix"
+        ],
+        "other_options": [
+            "name",
+            "label",
+            "header"
+        ]
+    },
+    {
+        "q": "One-hot encoding creates binary columns for each category.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['a', 'b', 'c']})\ndummies = pd.get_dummies(df['A'], drop_first=True)\nprint(len(dummies.columns))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the categorical encoding concepts:",
+        "type": "match",
+        "left": [
+            "get_dummies()",
+            "drop_first=True",
+            "prefix='col'",
+            "sparse=True"
+        ],
+        "right": [
+            "Create binary columns",
+            "Avoid multicollinearity",
+            "Add column prefix",
+            "Memory efficient storage"
+        ]
+    },
+    {
+        "q": "Which method clips values outside specified range?",
+        "type": "mcq",
+        "o": [
+            "clip()",
+            "bound()",
+            "limit()",
+            "constrain()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 5, 10, 15, 20])\nprint(s.clip(lower=5, upper=15).tolist())",
+        "o": [
+            "[5, 5, 10, 15, 15]",
+            "[1, 5, 10, 15, 20]",
+            "[5, 5, 5, 15, 15]",
+            "[1, 5, 10, 15, 15]"
+        ]
+    },
+    {
+        "q": "The ______ method calculates the difference between consecutive elements.",
+        "type": "fill_blank",
+        "answers": [
+            "diff"
+        ],
+        "other_options": [
+            "delta",
+            "change",
+            "subtract"
+        ]
+    },
+    {
+        "q": "Rearrange the feature engineering steps:",
+        "type": "rearrange",
+        "words": [
+            "identify features",
+            "encode categorical",
+            "scale numeric",
+            "create interactions",
+            "validate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([10, 15, 25, 40])\nprint(s.diff().dropna().tolist())",
+        "o": [
+            "[5.0, 10.0, 15.0]",
+            "[10, 15, 25, 40]",
+            "[5, 15, 25]",
+            "[10.0, 15.0, 25.0]"
+        ]
+    },
+    {
+        "q": "diff() returns NaN for the first element by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method calculates percentage change between elements?",
+        "type": "mcq",
+        "o": [
+            "pct_change()",
+            "percent_change()",
+            "change_pct()",
+            "growth()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([100, 110, 121])\nprint(round(s.pct_change().iloc[1], 1))",
+        "o": [
+            "0.1",
+            "10.0",
+            "1.0",
+            "0.01"
+        ]
+    },
+    {
+        "q": "Match the time-related methods:",
+        "type": "match",
+        "left": [
+            "diff()",
+            "pct_change()",
+            "shift()",
+            "cumsum()"
+        ],
+        "right": [
+            "Absolute difference",
+            "Relative change",
+            "Lag/lead values",
+            "Running total"
+        ]
+    },
+    {
+        "q": "The ______ method shifts values by a specified number of periods.",
+        "type": "fill_blank",
+        "answers": [
+            "shift"
+        ],
+        "other_options": [
+            "lag",
+            "move",
+            "offset"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4])\nprint(s.shift(1).dropna().tolist())",
+        "o": [
+            "[1.0, 2.0, 3.0]",
+            "[2.0, 3.0, 4.0]",
+            "[1, 2, 3]",
+            "[2, 3, 4]"
+        ]
+    },
+    {
+        "q": "shift(-1) shifts values backwards (up).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method calculates cumulative sum?",
+        "type": "mcq",
+        "o": [
+            "cumsum()",
+            "running_sum()",
+            "total()",
+            "accum()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4])\nprint(s.cumsum().tolist())",
+        "o": [
+            "[1, 3, 6, 10]",
+            "[1, 2, 3, 4]",
+            "[10, 9, 7, 4]",
+            "[4, 7, 9, 10]"
+        ]
+    },
+    {
+        "q": "The ______ method returns the cumulative maximum.",
+        "type": "fill_blank",
+        "answers": [
+            "cummax"
+        ],
+        "other_options": [
+            "maxcum",
+            "running_max",
+            "accum_max"
+        ]
+    },
+    {
+        "q": "Rearrange time series analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "parse dates",
+            "set DatetimeIndex",
+            "resample",
+            "aggregate",
+            "plot"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([3, 1, 4, 1, 5])\nprint(s.cummax().tolist())",
+        "o": [
+            "[3, 3, 4, 4, 5]",
+            "[3, 1, 4, 1, 5]",
+            "[5, 5, 5, 5, 5]",
+            "[3, 4, 5, 5, 5]"
+        ]
+    },
+    {
+        "q": "Match the cumulative methods:",
+        "type": "match",
+        "left": [
+            "cumsum()",
+            "cumprod()",
+            "cummax()",
+            "cummin()"
+        ],
+        "right": [
+            "Running total",
+            "Running product",
+            "Running maximum",
+            "Running minimum"
+        ]
+    },
+    {
+        "q": "Which method applies a rolling window calculation?",
+        "type": "mcq",
+        "o": [
+            "rolling()",
+            "window()",
+            "slide()",
+            "moving()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nprint(s.rolling(window=3).mean().dropna().tolist())",
+        "o": [
+            "[2.0, 3.0, 4.0]",
+            "[1.0, 2.0, 3.0, 4.0, 5.0]",
+            "[3.0, 4.0, 5.0]",
+            "[1.5, 2.5, 3.5]"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies the number of observations in a rolling window.",
+        "type": "fill_blank",
+        "answers": [
+            "window"
+        ],
+        "other_options": [
+            "size",
+            "n",
+            "length"
+        ]
+    },
+    {
+        "q": "rolling() with min_periods allows calculations with fewer observations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nprint(s.rolling(2).sum().dropna().tolist())",
+        "o": [
+            "[3.0, 5.0, 7.0, 9.0]",
+            "[1.0, 3.0, 6.0, 10.0]",
+            "[2.0, 4.0, 6.0, 8.0]",
+            "[1.5, 2.5, 3.5, 4.5]"
+        ]
+    },
+    {
+        "q": "Match rolling window parameters:",
+        "type": "match",
+        "left": [
+            "window=3",
+            "min_periods=1",
+            "center=True",
+            "closed='right'"
+        ],
+        "right": [
+            "Window size of 3",
+            "Min 1 value required",
+            "Center the window",
+            "Include right endpoint"
+        ]
+    },
+    {
+        "q": "Which method applies an exponentially weighted calculation?",
+        "type": "mcq",
+        "o": [
+            "ewm()",
+            "exp_weighted()",
+            "exponential()",
+            "weighted()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([10, 20, 30])\nprint(round(s.ewm(alpha=0.5).mean().iloc[-1], 1))",
+        "o": [
+            "22.5",
+            "20.0",
+            "30.0",
+            "15.0"
+        ]
+    },
+    {
+        "q": "The ______ parameter in ewm() controls the decay rate.",
+        "type": "fill_blank",
+        "answers": [
+            "alpha"
+        ],
+        "other_options": [
+            "decay",
+            "rate",
+            "weight"
+        ]
+    },
+    {
+        "q": "EWM gives more weight to recent observations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method resamples time series to a different frequency?",
+        "type": "mcq",
+        "o": [
+            "resample()",
+            "frequency()",
+            "period()",
+            "convert()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=3, freq='D')\ns = pd.Series([1, 2, 3], index=dates)\nprint(s.resample('2D').sum().tolist())",
+        "o": [
+            "[3, 3]",
+            "[1, 2, 3]",
+            "[6]",
+            "[1.5, 3]"
+        ]
+    },
+    {
+        "q": "Match the resample frequency codes:",
+        "type": "match",
+        "left": [
+            "D",
+            "W",
+            "M",
+            "Q"
+        ],
+        "right": [
+            "Daily",
+            "Weekly",
+            "Monthly",
+            "Quarterly"
+        ]
+    },
+    {
+        "q": "The ______ method changes the frequency of a DatetimeIndex.",
+        "type": "fill_blank",
+        "answers": [
+            "asfreq"
+        ],
+        "other_options": [
+            "setfreq",
+            "changefreq",
+            "refreq"
+        ]
+    },
+    {
+        "q": "Rearrange time series resampling workflow:",
+        "type": "rearrange",
+        "words": [
+            "set DatetimeIndex",
+            "call resample()",
+            "specify frequency",
+            "apply aggregation",
+            "analyze result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.rank().iloc[0].tolist())",
+        "o": [
+            "[1.0, 1.0]",
+            "[1, 4]",
+            "[3.0, 3.0]",
+            "[1, 1]"
+        ]
+    },
+    {
+        "q": "rank() assigns numerical ranks to values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method returns the index of the maximum value?",
+        "type": "mcq",
+        "o": [
+            "idxmax()",
+            "maxidx()",
+            "argmax()",
+            "index_max()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([3, 1, 4, 1, 5], index=['a', 'b', 'c', 'd', 'e'])\nprint(s.idxmax())",
+        "o": [
+            "e",
+            "c",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the index location methods:",
+        "type": "match",
+        "left": [
+            "idxmax()",
+            "idxmin()",
+            "nlargest()",
+            "nsmallest()"
+        ],
+        "right": [
+            "Index of maximum",
+            "Index of minimum",
+            "N largest values",
+            "N smallest values"
+        ]
+    },
+    {
+        "q": "The ______ method returns the n largest values in a Series.",
+        "type": "fill_blank",
+        "answers": [
+            "nlargest"
+        ],
+        "other_options": [
+            "largest",
+            "topn",
+            "maxn"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 5, 3, 9, 2])\nprint(s.nlargest(2).tolist())",
+        "o": [
+            "[9, 5]",
+            "[1, 2]",
+            "[9, 3]",
+            "[5, 9]"
+        ]
+    },
+    {
+        "q": "nsmallest() returns values in ascending order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method samples random rows from a DataFrame?",
+        "type": "mcq",
+        "o": [
+            "sample()",
+            "random()",
+            "rand()",
+            "pick()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4, 5]})\nprint(len(df.sample(n=3)))",
+        "o": [
+            "3",
+            "5",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "The ______ parameter in sample() specifies the fraction of rows to return.",
+        "type": "fill_blank",
+        "answers": [
+            "frac"
+        ],
+        "other_options": [
+            "ratio",
+            "percent",
+            "proportion"
+        ]
+    },
+    {
+        "q": "sample(replace=True) allows sampling the same row multiple times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4]})\nprint(len(df.sample(frac=0.5)))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the sampling parameters:",
+        "type": "match",
+        "left": [
+            "n=10",
+            "frac=0.5",
+            "replace=True",
+            "random_state=42"
+        ],
+        "right": [
+            "Sample 10 items",
+            "Sample 50%",
+            "With replacement",
+            "Reproducible results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, 2, 3]})\nresult = df.groupby('A').agg({'B': ['sum', 'mean']})\nprint(result.loc['x', ('B', 'sum')])",
+        "o": [
+            "3",
+            "1.5",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "q": "Which method applies different aggregations to different columns?",
+        "type": "mcq",
+        "o": [
+            "agg()",
+            "apply()",
+            "transform()",
+            "aggregate()"
+        ]
+    },
+    {
+        "q": "The ______ method returns same-shaped result as input when applied to grouped data.",
+        "type": "fill_blank",
+        "answers": [
+            "transform"
+        ],
+        "other_options": [
+            "apply",
+            "agg",
+            "map"
+        ]
+    },
+    {
+        "q": "transform() broadcasts aggregated values back to original rows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [10, 20, 30]})\ndf['B_mean'] = df.groupby('A')['B'].transform('mean')\nprint(df['B_mean'].iloc[0])",
+        "o": [
+            "15.0",
+            "10",
+            "20.0",
+            "30"
+        ]
+    },
+    {
+        "q": "Match the groupby methods with their outputs:",
+        "type": "match",
+        "left": [
+            "agg()",
+            "transform()",
+            "apply()",
+            "filter()"
+        ],
+        "right": [
+            "Returns reduced DataFrame",
+            "Returns same size as input",
+            "Flexible arbitrary function",
+            "Returns filtered rows"
+        ]
+    },
+    {
+        "q": "Which method filters groups based on a condition?",
+        "type": "mcq",
+        "o": [
+            "filter()",
+            "where()",
+            "select()",
+            "query()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y', 'y', 'y'], 'B': [1, 2, 3, 4, 5]})\nfiltered = df.groupby('A').filter(lambda g: len(g) > 2)\nprint(len(filtered))",
+        "o": [
+            "3",
+            "5",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "The ______ method creates a hierarchical index from columns.",
+        "type": "fill_blank",
+        "answers": [
+            "set_index"
+        ],
+        "other_options": [
+            "multi_index",
+            "create_hierarchy",
+            "add_levels"
+        ]
+    },
+    {
+        "q": "Rearrange the MultiIndex workflow steps:",
+        "type": "rearrange",
+        "words": [
+            "create DataFrame",
+            "set multi-level index",
+            "use xs() accessor",
+            "reset if needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x'], 'B': ['p', 'q'], 'C': [1, 2]})\ndf = df.set_index(['A', 'B'])\nprint(df.index.nlevels)",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "MultiIndex allows hierarchical indexing on both rows and columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method selects data from a specific level in MultiIndex?",
+        "type": "mcq",
+        "o": [
+            "xs()",
+            "get_level()",
+            "select_level()",
+            "index_at()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\narrays = [['x', 'x', 'y'], ['a', 'b', 'a']]\nindex = pd.MultiIndex.from_arrays(arrays)\nprint(index.get_level_values(0).tolist())",
+        "o": [
+            "['x', 'x', 'y']",
+            "['a', 'b', 'a']",
+            "['x', 'y']",
+            "['a', 'b']"
+        ]
+    },
+    {
+        "q": "Match the MultiIndex creation methods:",
+        "type": "match",
+        "left": [
+            "from_arrays()",
+            "from_tuples()",
+            "from_product()",
+            "from_frame()"
+        ],
+        "right": [
+            "From list of arrays",
+            "From list of tuples",
+            "Cartesian product",
+            "From DataFrame columns"
+        ]
+    },
+    {
+        "q": "The ______ method swaps levels in a MultiIndex.",
+        "type": "fill_blank",
+        "answers": [
+            "swaplevel"
+        ],
+        "other_options": [
+            "swap",
+            "exchange_levels",
+            "switch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}, index=pd.MultiIndex.from_tuples([('x', 'a'), ('y', 'b')]))\nprint(df.xs('x').shape)",
+        "o": [
+            "(1, 2)",
+            "(2, 2)",
+            "(2,)",
+            "(1, 1)"
+        ]
+    },
+    {
+        "q": "stack() moves innermost column level to row index.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method moves row index to column?",
+        "type": "mcq",
+        "o": [
+            "unstack()",
+            "pivot()",
+            "melt()",
+            "transpose()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}, index=['x', 'y'])\nstacked = df.stack()\nprint(type(stacked).__name__)",
+        "o": [
+            "Series",
+            "DataFrame",
+            "MultiIndex",
+            "Index"
+        ]
+    },
+    {
+        "q": "Match the reshaping methods with their operations:",
+        "type": "match",
+        "left": [
+            "stack()",
+            "unstack()",
+            "pivot()",
+            "melt()"
+        ],
+        "right": [
+            "Columns to rows",
+            "Rows to columns",
+            "Long to wide",
+            "Wide to long"
+        ]
+    },
+    {
+        "q": "The ______ method explodes list-like columns into separate rows.",
+        "type": "fill_blank",
+        "answers": [
+            "explode"
+        ],
+        "other_options": [
+            "expand",
+            "flatten",
+            "unnest"
+        ]
+    },
+    {
+        "q": "Rearrange the data reshaping workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify structure",
+            "choose method",
+            "apply reshape",
+            "verify shape",
+            "clean result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [[1, 2], [3]]})\nprint(len(df.explode('A')))",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "explode() increases the row count for list-like values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method interpolates missing values?",
+        "type": "mcq",
+        "o": [
+            "interpolate()",
+            "fill()",
+            "impute()",
+            "complete()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ns = pd.Series([1.0, np.nan, 3.0])\nprint(s.interpolate().iloc[1])",
+        "o": [
+            "2.0",
+            "1.0",
+            "3.0",
+            "NaN"
+        ]
+    },
+    {
+        "q": "Match the interpolation methods:",
+        "type": "match",
+        "left": [
+            "linear",
+            "time",
+            "pad",
+            "polynomial"
+        ],
+        "right": [
+            "Equal spacing",
+            "Time-weighted",
+            "Forward fill",
+            "Polynomial fit"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies the interpolation direction.",
+        "type": "fill_blank",
+        "answers": [
+            "limit_direction"
+        ],
+        "other_options": [
+            "direction",
+            "fill_direction",
+            "method"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ns = pd.Series([1.0, np.nan, np.nan, 4.0])\nprint(s.interpolate(limit=1).isnull().sum())",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "interpolate(method='ffill') is equivalent to forward fill.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Which method applies a function across sliding pairs of rows?",
+        "type": "mcq",
+        "o": [
+            "expanding()",
+            "sliding()",
+            "pairwise()",
+            "consecutive()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nprint(s.expanding().mean().iloc[2])",
+        "o": [
+            "2.0",
+            "3.0",
+            "1.5",
+            "2.5"
+        ]
+    },
+    {
+        "q": "The ______ method creates expanding window calculations.",
+        "type": "fill_blank",
+        "answers": [
+            "expanding"
+        ],
+        "other_options": [
+            "cumulative",
+            "growing",
+            "progressive"
+        ]
+    },
+    {
+        "q": "Rearrange window function workflow:",
+        "type": "rearrange",
+        "words": [
+            "select column",
+            "choose window type",
+            "set parameters",
+            "apply function",
+            "analyze"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([10, 20, 30, 40])\nprint(s.expanding(min_periods=2).std().notna().sum())",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the window types with their behavior:",
+        "type": "match",
+        "left": [
+            "rolling",
+            "expanding",
+            "ewm",
+            "groupby"
+        ],
+        "right": [
+            "Fixed size window",
+            "Growing window",
+            "Weighted decay",
+            "Categorical groups"
+        ]
+    },
+    {
+        "q": "expanding() includes all previous observations from the start.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates lagged features for time series?",
+        "type": "mcq",
+        "o": [
+            "shift()",
+            "lag()",
+            "delay()",
+            "offset()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4]})\ndf['A_lag1'] = df['A'].shift(1)\ndf['A_lag2'] = df['A'].shift(2)\nprint(df.dropna().shape[0])",
+        "o": [
+            "2",
+            "4",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ function combines DataFrames with automatic alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "pd.concat"
+        ],
+        "other_options": [
+            "pd.combine",
+            "pd.join",
+            "pd.union"
+        ]
+    },
+    {
+        "q": "concat() with ignore_index=True resets the index.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2]}, index=[0, 1])\ndf2 = pd.DataFrame({'A': [3, 4]}, index=[0, 1])\nresult = pd.concat([df1, df2], ignore_index=True)\nprint(result.index.tolist())",
+        "o": [
+            "[0, 1, 2, 3]",
+            "[0, 1, 0, 1]",
+            "[0, 1]",
+            "[1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "Match the concat parameters:",
+        "type": "match",
+        "left": [
+            "axis=0",
+            "axis=1",
+            "join='inner'",
+            "join='outer'"
+        ],
+        "right": [
+            "Stack vertically",
+            "Stack horizontally",
+            "Intersection of columns",
+            "Union of columns"
+        ]
+    },
+    {
+        "q": "Which method performs database-style join operations?",
+        "type": "mcq",
+        "o": [
+            "merge()",
+            "join()",
+            "concat()",
+            "combine()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'val': [1, 2, 3]})\ndf2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'val2': [4, 5, 6]})\nresult = pd.merge(df1, df2, on='key', how='inner')\nprint(len(result))",
+        "o": [
+            "2",
+            "3",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ parameter in merge() specifies columns with different names to join on.",
+        "type": "fill_blank",
+        "answers": [
+            "left_on"
+        ],
+        "other_options": [
+            "left_key",
+            "left_column",
+            "left_join"
+        ]
+    },
+    {
+        "q": "Rearrange the merge workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify keys",
+            "choose join type",
+            "call merge()",
+            "handle suffixes",
+            "verify results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\ndf2 = pd.DataFrame({'A': [1, 2], 'C': [5, 6]})\nresult = pd.merge(df1, df2, on='A')\nprint(list(result.columns))",
+        "o": [
+            "['A', 'B', 'C']",
+            "['A', 'B']",
+            "['A', 'C']",
+            "['B', 'C']"
+        ]
+    },
+    {
+        "q": "Match the merge types with their SQL equivalents:",
+        "type": "match",
+        "left": [
+            "inner",
+            "left",
+            "right",
+            "outer"
+        ],
+        "right": [
+            "INNER JOIN",
+            "LEFT OUTER JOIN",
+            "RIGHT OUTER JOIN",
+            "FULL OUTER JOIN"
+        ]
+    },
+    {
+        "q": "merge() with indicator=True adds a column showing merge status.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method computes pairwise correlation?",
+        "type": "mcq",
+        "o": [
+            "corr()",
+            "correlation()",
+            "cov()",
+            "relate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [1, 2, 3]})\nprint(df['A'].corr(df['B']))",
+        "o": [
+            "1.0",
+            "0.0",
+            "0.5",
+            "-1.0"
+        ]
+    },
+    {
+        "q": "The ______ method computes pairwise covariance.",
+        "type": "fill_blank",
+        "answers": [
+            "cov"
+        ],
+        "other_options": [
+            "covariance",
+            "covar",
+            "variance"
+        ]
+    },
+    {
+        "q": "corr() computes Pearson correlation by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4], 'B': [4, 3, 2, 1]})\nprint(df['A'].corr(df['B']))",
+        "o": [
+            "-1.0",
+            "1.0",
+            "0.0",
+            "0.5"
+        ]
+    },
+    {
+        "q": "Match the correlation methods:",
+        "type": "match",
+        "left": [
+            "pearson",
+            "spearman",
+            "kendall",
+            "method="
+        ],
+        "right": [
+            "Linear correlation",
+            "Rank correlation",
+            "Ordinal correlation",
+            "Correlation type parameter"
+        ]
+    },
+    {
+        "q": "Which method applies a function to DataFrame elements?",
+        "type": "mcq",
+        "o": [
+            "applymap()",
+            "apply()",
+            "map()",
+            "transform()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 4], 'B': [9, 16]})\nresult = df.map(lambda x: x ** 0.5)\nprint(result.iloc[0, 0])",
+        "o": [
+            "1.0",
+            "2.0",
+            "3.0",
+            "4.0"
+        ]
+    },
+    {
+        "q": "The ______ method combines DataFrame with another based on function.",
+        "type": "fill_blank",
+        "answers": [
+            "combine"
+        ],
+        "other_options": [
+            "merge",
+            "join",
+            "concat"
+        ]
+    },
+    {
+        "q": "Rearrange the data transformation workflow:",
+        "type": "rearrange",
+        "words": [
+            "load data",
+            "clean missing",
+            "encode categories",
+            "scale features",
+            "validate output"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf['A_normalized'] = (df['A'] - df['A'].min()) / (df['A'].max() - df['A'].min())\nprint(df['A_normalized'].max())",
+        "o": [
+            "1.0",
+            "3.0",
+            "0.5",
+            "2.0"
+        ]
+    },
+    {
+        "q": "Min-max normalization scales values between 0 and 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method computes z-scores for standardization?",
+        "type": "mcq",
+        "o": [
+            "Using (x - mean) / std formula",
+            "normalize()",
+            "standardize()",
+            "zscore()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [10, 20, 30, 40, 50]})\nz_scores = (df['A'] - df['A'].mean()) / df['A'].std()\nprint(round(z_scores.mean(), 5))",
+        "o": [
+            "0.0",
+            "1.0",
+            "30.0",
+            "-1.0"
+        ]
+    },
+    {
+        "q": "Match the normalization techniques:",
+        "type": "match",
+        "left": [
+            "Min-Max",
+            "Z-score",
+            "Robust",
+            "Log"
+        ],
+        "right": [
+            "Scale to [0,1]",
+            "Mean 0, std 1",
+            "Use median/IQR",
+            "Reduce skewness"
+        ]
+    },
+    {
+        "q": "The ______ function applies logarithmic transformation.",
+        "type": "fill_blank",
+        "answers": [
+            "np.log"
+        ],
+        "other_options": [
+            "pd.log",
+            "log",
+            "logarithm"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, 10, 100]})\ndf['A_log'] = np.log10(df['A'])\nprint(df['A_log'].tolist())",
+        "o": [
+            "[0.0, 1.0, 2.0]",
+            "[1.0, 2.0, 3.0]",
+            "[0.0, 0.5, 1.0]",
+            "[1, 10, 100]"
+        ]
+    },
+    {
+        "q": "Log transformation is commonly used for right-skewed data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles timezone-aware datetime objects?",
+        "type": "mcq",
+        "o": [
+            "tz_localize()",
+            "set_timezone()",
+            "add_tz()",
+            "timezone()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndt = pd.Timestamp('2023-01-01 12:00')\ndt_utc = dt.tz_localize('UTC')\nprint(dt_utc.tzinfo is not None)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ method converts between timezones.",
+        "type": "fill_blank",
+        "answers": [
+            "tz_convert"
+        ],
+        "other_options": [
+            "convert_tz",
+            "change_timezone",
+            "to_timezone"
+        ]
+    },
+    {
+        "q": "Rearrange the timezone handling workflow:",
+        "type": "rearrange",
+        "words": [
+            "parse datetime",
+            "localize timezone",
+            "convert if needed",
+            "store in UTC"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=5, freq='D')\nprint(dates.dayofweek[0])",
+        "o": [
+            "6",
+            "0",
+            "1",
+            "7"
+        ]
+    },
+    {
+        "q": "Match the datetime components:",
+        "type": "match",
+        "left": [
+            "dayofweek",
+            "quarter",
+            "dayofyear",
+            "is_leap_year"
+        ],
+        "right": [
+            "0=Monday to 6=Sunday",
+            "1 to 4",
+            "1 to 366",
+            "True/False"
+        ]
+    },
+    {
+        "q": "tz_localize() assigns a timezone to naive datetime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates time-based slices from DatetimeIndex?",
+        "type": "mcq",
+        "o": [
+            "between_time()",
+            "time_slice()",
+            "hour_filter()",
+            "time_range()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]}, index=pd.date_range('2023-01-01', periods=3, freq='D'))\nprint(df.loc['2023-01'].shape[0])",
+        "o": [
+            "3",
+            "1",
+            "31",
+            "0"
+        ]
+    },
+    {
+        "q": "The ______ method extracts date or time component from DatetimeIndex.",
+        "type": "fill_blank",
+        "answers": [
+            "date"
+        ],
+        "other_options": [
+            "extract_date",
+            "get_date",
+            "to_date"
+        ]
+    },
+    {
+        "q": "Partial string indexing works with DatetimeIndex for date ranges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': range(12)}, index=pd.date_range('2023-01-01', periods=12, freq='M'))\nquarterly = df.resample('Q').sum()\nprint(len(quarterly))",
+        "o": [
+            "4",
+            "12",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the resample aggregation methods:",
+        "type": "match",
+        "left": [
+            "ohlc()",
+            "first()",
+            "last()",
+            "asfreq()"
+        ],
+        "right": [
+            "Open-High-Low-Close",
+            "First value in group",
+            "Last value in group",
+            "Frequency conversion"
+        ]
+    },
+    {
+        "q": "Which method fills forward in resampled data?",
+        "type": "mcq",
+        "o": [
+            "ffill()",
+            "pad()",
+            "forward()",
+            "propagate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2]}, index=pd.date_range('2023-01-01', periods=2, freq='D'))\nresampled = df.resample('12H').ffill()\nprint(len(resampled))",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nresult = df.eval('C = A + B')\nprint(result['C'].sum())",
+        "o": [
+            "21",
+            "15",
+            "12",
+            "18"
+        ]
+    },
+    {
+        "q": "Which method evaluates string expressions for computation?",
+        "type": "mcq",
+        "o": [
+            "eval()",
+            "execute()",
+            "compute()",
+            "calculate()"
+        ]
+    },
+    {
+        "q": "The ______ method queries DataFrame using boolean expressions as strings.",
+        "type": "fill_blank",
+        "answers": [
+            "query"
+        ],
+        "other_options": [
+            "filter",
+            "select",
+            "where"
+        ]
+    },
+    {
+        "q": "eval() and query() can be faster for large DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4, 5], 'B': ['x', 'y', 'x', 'y', 'x']})\nresult = df.query('A > 2 and B == \"x\"')\nprint(len(result))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the performance optimization methods:",
+        "type": "match",
+        "left": [
+            "eval()",
+            "query()",
+            "numexpr",
+            "cython"
+        ],
+        "right": [
+            "Arithmetic expressions",
+            "Boolean filtering",
+            "Fast numeric ops",
+            "Compiled extensions"
+        ]
+    },
+    {
+        "q": "Which method reduces DataFrame memory usage?",
+        "type": "mcq",
+        "o": [
+            "astype() with smaller types",
+            "compress()",
+            "minimize()",
+            "reduce_memory()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\noriginal = df['A'].dtype\ndf['A'] = df['A'].astype('int8')\nprint(df['A'].dtype)",
+        "o": [
+            "int8",
+            "int64",
+            "int32",
+            "float64"
+        ]
+    },
+    {
+        "q": "The ______ method returns memory usage of DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "memory_usage"
+        ],
+        "other_options": [
+            "mem_size",
+            "size_bytes",
+            "footprint"
+        ]
+    },
+    {
+        "q": "Rearrange the memory optimization workflow:",
+        "type": "rearrange",
+        "words": [
+            "check memory_usage()",
+            "identify large columns",
+            "downcast types",
+            "use categories",
+            "verify savings"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y', 'x', 'y'] * 1000})\noriginal = df.memory_usage(deep=True).sum()\ndf['A'] = df['A'].astype('category')\nreduced = df.memory_usage(deep=True).sum()\nprint(reduced < original)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Categorical dtype significantly reduces memory for low-cardinality columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method converts numeric types to smaller representations?",
+        "type": "mcq",
+        "o": [
+            "pd.to_numeric() with downcast",
+            "minimize()",
+            "shrink()",
+            "compact()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3])\nresult = pd.to_numeric(s, downcast='integer')\nprint(result.dtype)",
+        "o": [
+            "int8",
+            "int64",
+            "int32",
+            "int16"
+        ]
+    },
+    {
+        "q": "Match the dtype categories:",
+        "type": "match",
+        "left": [
+            "int8",
+            "int16",
+            "int32",
+            "int64"
+        ],
+        "right": [
+            "-128 to 127",
+            "-32K to 32K",
+            "-2B to 2B",
+            "Very large range"
+        ]
+    },
+    {
+        "q": "The ______ method selects columns by data type.",
+        "type": "fill_blank",
+        "answers": [
+            "select_dtypes"
+        ],
+        "other_options": [
+            "filter_types",
+            "get_dtypes",
+            "dtype_filter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [1.0, 2.0], 'C': ['x', 'y']})\nresult = df.select_dtypes(include=['number'])\nprint(len(result.columns))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "select_dtypes(exclude=['object']) removes string columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates a sparse representation of data?",
+        "type": "mcq",
+        "o": [
+            "pd.arrays.SparseArray()",
+            "to_sparse()",
+            "sparsify()",
+            "compress()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\narr = pd.arrays.SparseArray([0, 0, 1, 0, 0])\nprint(arr.fill_value)",
+        "o": [
+            "0",
+            "NaN",
+            "None",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ attribute shows the proportion of non-fill values in sparse array.",
+        "type": "fill_blank",
+        "answers": [
+            "density"
+        ],
+        "other_options": [
+            "sparsity",
+            "fill_ratio",
+            "non_zero"
+        ]
+    },
+    {
+        "q": "Rearrange the data pipeline optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "profile baseline",
+            "identify bottlenecks",
+            "apply optimizations",
+            "measure improvement",
+            "iterate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nwith pd.option_context('display.max_rows', 2):\n    pass\nprint(pd.get_option('display.max_rows') == 60)",
+        "o": [
+            "True",
+            "False",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pandas option categories:",
+        "type": "match",
+        "left": [
+            "display.max_rows",
+            "display.precision",
+            "mode.chained_assignment",
+            "compute.use_numexpr"
+        ],
+        "right": [
+            "Rows to show",
+            "Decimal places",
+            "Warning control",
+            "Fast computation"
+        ]
+    },
+    {
+        "q": "pd.option_context() temporarily changes settings within a block.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method reads data in chunks for large files?",
+        "type": "mcq",
+        "o": [
+            "pd.read_csv() with chunksize",
+            "pd.read_chunks()",
+            "pd.stream_csv()",
+            "pd.iterate_csv()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport io\ndata = 'A,B\\n1,2\\n3,4\\n5,6\\n7,8'\nchunks = list(pd.read_csv(io.StringIO(data), chunksize=2))\nprint(len(chunks))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "The ______ parameter limits columns loaded during read.",
+        "type": "fill_blank",
+        "answers": [
+            "usecols"
+        ],
+        "other_options": [
+            "columns",
+            "select",
+            "include"
+        ]
+    },
+    {
+        "q": "Using usecols reduces memory and improves read performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport io\ndata = 'A,B,C\\n1,2,3\\n4,5,6'\ndf = pd.read_csv(io.StringIO(data), usecols=['A', 'C'])\nprint(list(df.columns))",
+        "o": [
+            "['A', 'C']",
+            "['A', 'B', 'C']",
+            "['A', 'B']",
+            "['B', 'C']"
+        ]
+    },
+    {
+        "q": "Match the read_csv optimization parameters:",
+        "type": "match",
+        "left": [
+            "usecols",
+            "dtype",
+            "parse_dates",
+            "nrows"
+        ],
+        "right": [
+            "Select columns",
+            "Specify types",
+            "Convert dates",
+            "Limit rows"
+        ]
+    },
+    {
+        "q": "Which format provides fastest read/write for DataFrames?",
+        "type": "mcq",
+        "o": [
+            "Parquet",
+            "CSV",
+            "Excel",
+            "JSON"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ntry:\n    df.to_parquet('/tmp/test.parquet')\n    df2 = pd.read_parquet('/tmp/test.parquet')\n    print(df.equals(df2))\nexcept:\n    print('Error')",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The ______ format supports columnar storage and compression.",
+        "type": "fill_blank",
+        "answers": [
+            "parquet"
+        ],
+        "other_options": [
+            "csv",
+            "feather",
+            "pickle"
+        ]
+    },
+    {
+        "q": "Rearrange the file format selection criteria:",
+        "type": "rearrange",
+        "words": [
+            "assess data size",
+            "check compatibility",
+            "consider compression",
+            "evaluate performance",
+            "choose format"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': pd.Categorical(['x', 'y', 'x'])})\nprint(df['A'].cat.codes.tolist())",
+        "o": [
+            "[0, 1, 0]",
+            "['x', 'y', 'x']",
+            "[1, 2, 1]",
+            "[0, 0, 1]"
+        ]
+    },
+    {
+        "q": "Parquet preserves categorical data types on save/load.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method applies vectorized string operations?",
+        "type": "mcq",
+        "o": [
+            "str accessor methods",
+            "apply() with lambda",
+            "map() with function",
+            "loop iteration"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['ABC', 'DEF', 'GHI'])\nresult = s.str.lower().str.replace('a', 'x')\nprint(result.iloc[0])",
+        "o": [
+            "xbc",
+            "ABC",
+            "abc",
+            "XBC"
+        ]
+    },
+    {
+        "q": "Match the vectorized operations with their benefits:",
+        "type": "match",
+        "left": [
+            "str methods",
+            "dt accessor",
+            "cat accessor",
+            "NumPy ufuncs"
+        ],
+        "right": [
+            "String processing",
+            "Datetime extraction",
+            "Category manipulation",
+            "Numeric operations"
+        ]
+    },
+    {
+        "q": "The ______ method applies NumPy universal functions to DataFrames.",
+        "type": "fill_blank",
+        "answers": [
+            "apply"
+        ],
+        "other_options": [
+            "vectorize",
+            "ufunc",
+            "numpy"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, 4, 9]})\nresult = np.sqrt(df['A'])\nprint(result.iloc[1])",
+        "o": [
+            "2.0",
+            "4.0",
+            "1.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "NumPy ufuncs work directly on pandas objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates a pipe for chained operations?",
+        "type": "mcq",
+        "o": [
+            "pipe()",
+            "chain()",
+            "flow()",
+            "sequence()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndef add_one(df):\n    return df + 1\ndef multiply_two(df):\n    return df * 2\ndf = pd.DataFrame({'A': [1, 2, 3]})\nresult = df.pipe(add_one).pipe(multiply_two)\nprint(result['A'].iloc[0])",
+        "o": [
+            "4",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "q": "The ______ method enables method chaining with custom functions.",
+        "type": "fill_blank",
+        "answers": [
+            "pipe"
+        ],
+        "other_options": [
+            "chain",
+            "apply",
+            "transform"
+        ]
+    },
+    {
+        "q": "Rearrange the method chaining best practices:",
+        "type": "rearrange",
+        "words": [
+            "keep steps atomic",
+            "use pipe()",
+            "assign to variable",
+            "add line breaks",
+            "document steps"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nresult = (df\n    .assign(C=lambda x: x['A'] + x['B'])\n    .query('C > 5')\n    .shape[0])\nprint(result)",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the chaining methods:",
+        "type": "match",
+        "left": [
+            "pipe()",
+            "assign()",
+            "query()",
+            "loc[]"
+        ],
+        "right": [
+            "Custom functions",
+            "Add columns",
+            "Filter rows",
+            "Select subset"
+        ]
+    },
+    {
+        "q": "assign() creates new columns and returns modified DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles missing data during aggregation?",
+        "type": "mcq",
+        "o": [
+            "skipna parameter",
+            "ignore_na()",
+            "drop_missing()",
+            "handle_null()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ns = pd.Series([1, np.nan, 3])\nprint(s.sum(skipna=True))",
+        "o": [
+            "4.0",
+            "NaN",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "The ______ method fills missing values with group statistics.",
+        "type": "fill_blank",
+        "answers": [
+            "fillna"
+        ],
+        "other_options": [
+            "impute",
+            "replace_na",
+            "complete"
+        ]
+    },
+    {
+        "q": "skipna=True is the default for most aggregation functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, np.nan, 3]})\ndf['B_filled'] = df.groupby('A')['B'].transform(lambda x: x.fillna(x.mean()))\nprint(df['B_filled'].iloc[1])",
+        "o": [
+            "1.0",
+            "NaN",
+            "2.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "Match the missing value strategies:",
+        "type": "match",
+        "left": [
+            "Forward fill",
+            "Backward fill",
+            "Mean imputation",
+            "Interpolation"
+        ],
+        "right": [
+            "Use previous value",
+            "Use next value",
+            "Use average",
+            "Estimate between values"
+        ]
+    },
+    {
+        "q": "Which method computes rolling correlation between columns?",
+        "type": "mcq",
+        "o": [
+            "rolling().corr()",
+            "rolling_corr()",
+            "corr().rolling()",
+            "window_corr()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4], 'B': [1, 2, 3, 4]})\nresult = df['A'].rolling(3).corr(df['B']).iloc[-1]\nprint(result)",
+        "o": [
+            "1.0",
+            "0.0",
+            "0.5",
+            "NaN"
+        ]
+    },
+    {
+        "q": "The ______ method applies custom aggregation to rolling windows.",
+        "type": "fill_blank",
+        "answers": [
+            "apply"
+        ],
+        "other_options": [
+            "aggregate",
+            "custom",
+            "func"
+        ]
+    },
+    {
+        "q": "Rearrange the rolling analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "define window",
+            "select method",
+            "apply calculation",
+            "handle edges",
+            "interpret results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nresult = s.rolling(3).apply(lambda x: x.max() - x.min()).iloc[-1]\nprint(result)",
+        "o": [
+            "2.0",
+            "4.0",
+            "3.0",
+            "1.0"
+        ]
+    },
+    {
+        "q": "Match the window edge handling options:",
+        "type": "match",
+        "left": [
+            "min_periods=1",
+            "center=True",
+            "closed='left'",
+            "win_type='gaussian'"
+        ],
+        "right": [
+            "Allow partial windows",
+            "Center the window",
+            "Exclude right edge",
+            "Weighted window"
+        ]
+    },
+    {
+        "q": "rolling().apply() allows arbitrary functions on windows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates offset-based rolling windows?",
+        "type": "mcq",
+        "o": [
+            "rolling() with DateOffset",
+            "time_rolling()",
+            "date_window()",
+            "period_rolling()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=5, freq='D')\ndf = pd.DataFrame({'A': [1, 2, 3, 4, 5]}, index=dates)\nresult = df.rolling('2D').mean().iloc[-1, 0]\nprint(result)",
+        "o": [
+            "4.5",
+            "5.0",
+            "3.0",
+            "4.0"
+        ]
+    },
+    {
+        "q": "The ______ method creates time-aware grouping for resampling.",
+        "type": "fill_blank",
+        "answers": [
+            "resample"
+        ],
+        "other_options": [
+            "groupby_time",
+            "time_group",
+            "period_group"
+        ]
+    },
+    {
+        "q": "Time-based rolling requires a DatetimeIndex.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=6, freq='H')\ndf = pd.DataFrame({'A': range(6)}, index=dates)\nresult = df.resample('3H').sum()\nprint(len(result))",
+        "o": [
+            "2",
+            "6",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "q": "Match the resample offset aliases:",
+        "type": "match",
+        "left": [
+            "H",
+            "T",
+            "S",
+            "L"
+        ],
+        "right": [
+            "Hourly",
+            "Minutely",
+            "Secondly",
+            "Milliseconds"
+        ]
+    },
+    {
+        "q": "Which method handles business day calculations?",
+        "type": "mcq",
+        "o": [
+            "pd.offsets.BDay()",
+            "pd.BusinessDay()",
+            "pd.Workday()",
+            "pd.BizDay()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndt = pd.Timestamp('2023-01-06')  # Friday\nnext_bday = dt + pd.offsets.BDay(1)\nprint(next_bday.day_name())",
+        "o": [
+            "Monday",
+            "Saturday",
+            "Sunday",
+            "Friday"
+        ]
+    },
+    {
+        "q": "The ______ method generates business day date ranges.",
+        "type": "fill_blank",
+        "answers": [
+            "bdate_range"
+        ],
+        "other_options": [
+            "business_range",
+            "workday_range",
+            "bday_range"
+        ]
+    },
+    {
+        "q": "Rearrange the time series feature engineering steps:",
+        "type": "rearrange",
+        "words": [
+            "extract components",
+            "create lags",
+            "add rolling stats",
+            "encode cyclical",
+            "handle holidays"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nfrom pandas.tseries.holiday import USFederalHolidayCalendar\ncal = USFederalHolidayCalendar()\nholidays = cal.holidays(start='2023-01-01', end='2023-01-31')\nprint(len(holidays))",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the datetime offset types:",
+        "type": "match",
+        "left": [
+            "BDay",
+            "BMonthEnd",
+            "BQuarterEnd",
+            "CustomBusinessDay"
+        ],
+        "right": [
+            "Business day",
+            "Business month end",
+            "Business quarter end",
+            "Custom calendar"
+        ]
+    },
+    {
+        "q": "CustomBusinessDay allows specifying holidays and weekmask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method performs period-based time series analysis?",
+        "type": "mcq",
+        "o": [
+            "to_period()",
+            "as_period()",
+            "periodify()",
+            "make_period()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndt = pd.Timestamp('2023-03-15')\nperiod = dt.to_period('M')\nprint(period)",
+        "o": [
+            "2023-03",
+            "2023-03-15",
+            "March 2023",
+            "3/2023"
+        ]
+    },
+    {
+        "q": "The ______ method converts Period to Timestamp.",
+        "type": "fill_blank",
+        "answers": [
+            "to_timestamp"
+        ],
+        "other_options": [
+            "as_timestamp",
+            "timestamp",
+            "to_datetime"
+        ]
+    },
+    {
+        "q": "Periods represent time spans rather than points in time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\np1 = pd.Period('2023-01', freq='M')\np2 = pd.Period('2023-04', freq='M')\nprint(p2 - p1)",
+        "o": [
+            "<3 * MonthEnds>",
+            "3",
+            "90 days",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Period frequencies:",
+        "type": "match",
+        "left": [
+            "A",
+            "Q",
+            "M",
+            "W"
+        ],
+        "right": [
+            "Annual",
+            "Quarterly",
+            "Monthly",
+            "Weekly"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nresult = df.agg({'A': 'sum', 'B': 'mean'})\nprint(result['A'])",
+        "o": [
+            "6",
+            "5.0",
+            "2.0",
+            "15"
+        ]
+    },
+    {
+        "q": "Which method creates a named aggregation for clarity?",
+        "type": "mcq",
+        "o": [
+            "pd.NamedAgg()",
+            "namedagg()",
+            "AggFunc()",
+            "NamedFunction()"
+        ]
+    },
+    {
+        "q": "The ______ pattern uses tuples for named aggregations in groupby.",
+        "type": "fill_blank",
+        "answers": [
+            "NamedAgg"
+        ],
+        "other_options": [
+            "NamedTuple",
+            "AggTuple",
+            "GroupAgg"
+        ]
+    },
+    {
+        "q": "Named aggregations improve readability of complex groupby operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, 2, 3]})\nresult = df.groupby('A').agg(\n    total=pd.NamedAgg(column='B', aggfunc='sum'),\n    avg=pd.NamedAgg(column='B', aggfunc='mean')\n)\nprint(result.loc['x', 'total'])",
+        "o": [
+            "3",
+            "1.5",
+            "6",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the advanced aggregation patterns:",
+        "type": "match",
+        "left": [
+            "NamedAgg",
+            "lambda",
+            "custom function",
+            "multiple columns"
+        ],
+        "right": [
+            "Named output columns",
+            "Inline computation",
+            "Reusable logic",
+            "Dict of functions"
+        ]
+    },
+    {
+        "q": "Which extension type handles nullable integers?",
+        "type": "mcq",
+        "o": [
+            "pd.Int64Dtype()",
+            "pd.NullableInt()",
+            "pd.IntNA()",
+            "pd.OptionalInt()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, pd.NA], dtype='Int64')\nprint(s.isna().sum())",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ extension type represents nullable strings.",
+        "type": "fill_blank",
+        "answers": [
+            "StringDtype"
+        ],
+        "other_options": [
+            "StringType",
+            "NullString",
+            "OptionalStr"
+        ]
+    },
+    {
+        "q": "Rearrange the nullable type usage workflow:",
+        "type": "rearrange",
+        "words": [
+            "specify dtype",
+            "handle pd.NA",
+            "use extension methods",
+            "convert if needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['a', 'b', None], dtype='string')\nprint(s.dtype)",
+        "o": [
+            "string",
+            "object",
+            "str",
+            "String"
+        ]
+    },
+    {
+        "q": "Extension arrays enable better handling of missing values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method tests DataFrame equality with tolerance?",
+        "type": "mcq",
+        "o": [
+            "pd.testing.assert_frame_equal()",
+            "df.equals()",
+            "df.compare()",
+            "df.is_equal()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1.0, 2.0]})\ndf2 = pd.DataFrame({'A': [1.0, 2.0]})\nprint(df1.equals(df2))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the testing utilities:",
+        "type": "match",
+        "left": [
+            "assert_frame_equal",
+            "assert_series_equal",
+            "assert_index_equal",
+            "check_dtype"
+        ],
+        "right": [
+            "Compare DataFrames",
+            "Compare Series",
+            "Compare Index",
+            "Validate data types"
+        ]
+    },
+    {
+        "q": "The ______ parameter in assert_frame_equal checks column order.",
+        "type": "fill_blank",
+        "answers": [
+            "check_like"
+        ],
+        "other_options": [
+            "check_order",
+            "column_order",
+            "same_columns"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport pandas.testing as tm\ndf1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\ndf2 = pd.DataFrame({'B': [3, 4], 'A': [1, 2]})\ntry:\n    tm.assert_frame_equal(df1, df2, check_like=True)\n    print('Equal')\nexcept:\n    print('Not equal')",
+        "o": [
+            "Equal",
+            "Not equal",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "check_exact=False allows floating-point tolerance in comparisons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which decorator marks a function for use with GroupBy.apply?",
+        "type": "mcq",
+        "o": [
+            "No decorator needed",
+            "@groupby_apply",
+            "@apply_func",
+            "@group_function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndef top_n(group, n=2):\n    return group.nlargest(n, 'B')\ndf = pd.DataFrame({'A': ['x', 'x', 'x', 'y', 'y'], 'B': [1, 3, 2, 5, 4]})\nresult = df.groupby('A').apply(top_n, n=2, include_groups=False)\nprint(len(result))",
+        "o": [
+            "4",
+            "5",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "q": "The ______ method returns first n rows per group.",
+        "type": "fill_blank",
+        "answers": [
+            "head"
+        ],
+        "other_options": [
+            "first",
+            "top",
+            "take"
+        ]
+    },
+    {
+        "q": "Rearrange the custom groupby function workflow:",
+        "type": "rearrange",
+        "words": [
+            "define function",
+            "handle group shape",
+            "return result",
+            "apply to groups",
+            "combine output"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y', 'y'], 'B': [1, 2, 3, 4]})\nresult = df.groupby('A').head(1)\nprint(len(result))",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the groupby selection methods:",
+        "type": "match",
+        "left": [
+            "head()",
+            "tail()",
+            "nth()",
+            "first()"
+        ],
+        "right": [
+            "First n rows",
+            "Last n rows",
+            "Nth row",
+            "First non-null"
+        ]
+    },
+    {
+        "q": "nth(0) and first() may return different results with NaN values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates a boolean mask for outlier detection?",
+        "type": "mcq",
+        "o": [
+            "Using quantile() and comparison",
+            "detect_outliers()",
+            "is_outlier()",
+            "outlier_mask()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 100])\nq1, q3 = s.quantile([0.25, 0.75])\niqr = q3 - q1\nlower = q1 - 1.5 * iqr\nupper = q3 + 1.5 * iqr\noutliers = (s < lower) | (s > upper)\nprint(outliers.sum())",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "q": "The ______ method returns percentile-based values.",
+        "type": "fill_blank",
+        "answers": [
+            "quantile"
+        ],
+        "other_options": [
+            "percentile",
+            "quartile",
+            "pct"
+        ]
+    },
+    {
+        "q": "IQR-based outlier detection uses 1.5 times the interquartile range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': np.random.randn(100)})\nz_scores = (df['A'] - df['A'].mean()) / df['A'].std()\noutliers = (np.abs(z_scores) > 3).sum()\nprint(type(outliers).__name__)",
+        "o": [
+            "int64",
+            "int",
+            "float64",
+            "bool"
+        ]
+    },
+    {
+        "q": "Match the outlier detection methods:",
+        "type": "match",
+        "left": [
+            "Z-score",
+            "IQR",
+            "MAD",
+            "Percentile"
+        ],
+        "right": [
+            "Standard deviations",
+            "Quartile range",
+            "Median deviation",
+            "Threshold percentile"
+        ]
+    },
+    {
+        "q": "Which method creates interval-based indices?",
+        "type": "mcq",
+        "o": [
+            "pd.IntervalIndex.from_breaks()",
+            "pd.CutIndex()",
+            "pd.RangeIndex.intervals()",
+            "pd.BinIndex()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nidx = pd.IntervalIndex.from_breaks([0, 1, 2, 3])\nprint(len(idx))",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "The ______ attribute indicates if intervals are closed on left or right.",
+        "type": "fill_blank",
+        "answers": [
+            "closed"
+        ],
+        "other_options": [
+            "side",
+            "bound",
+            "edge"
+        ]
+    },
+    {
+        "q": "Rearrange the interval analysis workflow:",
+        "type": "rearrange",
+        "words": [
+            "define breaks",
+            "create IntervalIndex",
+            "check containment",
+            "perform lookup"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nidx = pd.IntervalIndex.from_breaks([0, 5, 10], closed='right')\nprint(idx.contains(5).tolist())",
+        "o": [
+            "[True, False]",
+            "[False, True]",
+            "[True, True]",
+            "[False, False]"
+        ]
+    },
+    {
+        "q": "Match the interval properties:",
+        "type": "match",
+        "left": [
+            "left",
+            "right",
+            "mid",
+            "length"
+        ],
+        "right": [
+            "Left endpoint",
+            "Right endpoint",
+            "Midpoint",
+            "Interval width"
+        ]
+    },
+    {
+        "q": "IntervalIndex enables efficient range-based lookups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles hierarchical data with parent-child relationships?",
+        "type": "mcq",
+        "o": [
+            "MultiIndex with levels",
+            "TreeIndex()",
+            "HierarchyIndex()",
+            "NestedIndex()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\narrays = [['A', 'A', 'B', 'B'], ['one', 'two', 'one', 'two']]\nindex = pd.MultiIndex.from_arrays(arrays, names=['first', 'second'])\ndf = pd.DataFrame({'val': [1, 2, 3, 4]}, index=index)\nprint(df.loc['A', 'val'].sum())",
+        "o": [
+            "3",
+            "6",
+            "1",
+            "10"
+        ]
+    },
+    {
+        "q": "The ______ method selects cross-section from hierarchical index.",
+        "type": "fill_blank",
+        "answers": [
+            "xs"
+        ],
+        "other_options": [
+            "cross",
+            "section",
+            "level_select"
+        ]
+    },
+    {
+        "q": "MultiIndex.droplevel() removes a specified level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}, index=pd.MultiIndex.from_tuples([('x', 'a'), ('x', 'b')]))\ndf2 = df.reset_index(level=1)\nprint(df2.index.tolist())",
+        "o": [
+            "['x', 'x']",
+            "[('x', 'a'), ('x', 'b')]",
+            "['a', 'b']",
+            "[0, 1]"
+        ]
+    },
+    {
+        "q": "Match the MultiIndex manipulation methods:",
+        "type": "match",
+        "left": [
+            "droplevel()",
+            "swaplevel()",
+            "reorder_levels()",
+            "set_names()"
+        ],
+        "right": [
+            "Remove a level",
+            "Switch two levels",
+            "Rearrange all levels",
+            "Rename levels"
+        ]
+    },
+    {
+        "q": "Which method efficiently stores DataFrames in HDF5 format?",
+        "type": "mcq",
+        "o": [
+            "to_hdf()",
+            "to_h5()",
+            "to_hdf5()",
+            "to_hierarchical()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ntry:\n    df.to_hdf('/tmp/test.h5', key='data', mode='w')\n    df2 = pd.read_hdf('/tmp/test.h5', 'data')\n    print(df.equals(df2))\nexcept:\n    print('HDF5 not available')",
+        "o": [
+            "True",
+            "False",
+            "HDF5 not available",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies the compression algorithm for HDF5.",
+        "type": "fill_blank",
+        "answers": [
+            "complib"
+        ],
+        "other_options": [
+            "compress",
+            "compression",
+            "codec"
+        ]
+    },
+    {
+        "q": "Rearrange the data storage format selection criteria:",
+        "type": "rearrange",
+        "words": [
+            "evaluate size",
+            "check speed needs",
+            "consider portability",
+            "test compression",
+            "make decision"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': range(1000)})\nprint(df.to_json()[:20])",
+        "o": [
+            "'{\"A\":{\"0\":0,\"1\":1,\"'",
+            "[{A: 0}, {A: 1}]",
+            "A,0,1,2,3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the file formats with their characteristics:",
+        "type": "match",
+        "left": [
+            "Parquet",
+            "Feather",
+            "HDF5",
+            "Pickle"
+        ],
+        "right": [
+            "Columnar, compressed",
+            "Fast binary",
+            "Hierarchical storage",
+            "Python serialization"
+        ]
+    },
+    {
+        "q": "Pickle format is not recommended for untrusted data sources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method applies element-wise comparisons with broadcasting?",
+        "type": "mcq",
+        "o": [
+            "Standard comparison operators",
+            "element_compare()",
+            "broadcast_compare()",
+            "vectorized_cmp()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [2, 2, 2]})\nresult = (df['A'] > df['B']).sum()\nprint(result)",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "The ______ method element-wise compares two DataFrames.",
+        "type": "fill_blank",
+        "answers": [
+            "compare"
+        ],
+        "other_options": [
+            "diff",
+            "contrast",
+            "versus"
+        ]
+    },
+    {
+        "q": "Comparison operators on DataFrames return boolean DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2, 3]})\ndf2 = pd.DataFrame({'A': [1, 5, 3]})\ndiff = df1.compare(df2)\nprint(len(diff))",
+        "o": [
+            "1",
+            "3",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the comparison operations:",
+        "type": "match",
+        "left": [
+            "equals()",
+            "compare()",
+            "==",
+            "eq()"
+        ],
+        "right": [
+            "Check identical",
+            "Show differences",
+            "Element-wise equal",
+            "Method for equality"
+        ]
+    },
+    {
+        "q": "Which method efficiently updates values based on conditions?",
+        "type": "mcq",
+        "o": [
+            "where()",
+            "update_if()",
+            "conditional_set()",
+            "set_where()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nresult = s.where(s > 3, 0)\nprint(result.tolist())",
+        "o": [
+            "[0, 0, 0, 4, 5]",
+            "[1, 2, 3, 0, 0]",
+            "[4, 5]",
+            "[0, 0, 0, 0, 0]"
+        ]
+    },
+    {
+        "q": "The ______ method is the inverse of where().",
+        "type": "fill_blank",
+        "answers": [
+            "mask"
+        ],
+        "other_options": [
+            "inverse",
+            "not_where",
+            "opposite"
+        ]
+    },
+    {
+        "q": "Rearrange conditional operations workflow:",
+        "type": "rearrange",
+        "words": [
+            "define condition",
+            "choose where/mask",
+            "specify replacement",
+            "apply operation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nresult = s.mask(s > 3, 0)\nprint(result.tolist())",
+        "o": [
+            "[1, 2, 3, 0, 0]",
+            "[0, 0, 0, 4, 5]",
+            "[1, 2, 3]",
+            "[0, 0, 0, 0, 0]"
+        ]
+    },
+    {
+        "q": "Match the conditional methods:",
+        "type": "match",
+        "left": [
+            "where()",
+            "mask()",
+            "np.select()",
+            "case_when()"
+        ],
+        "right": [
+            "Keep where true",
+            "Mask where true",
+            "Multiple conditions",
+            "SQL-style cases"
+        ]
+    },
+    {
+        "q": "where() keeps values where condition is True.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles conversion between timezone-naive and aware?",
+        "type": "mcq",
+        "o": [
+            "tz_localize() and tz_convert()",
+            "set_tz() and change_tz()",
+            "add_timezone() and convert_timezone()",
+            "localize() and convert()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndt = pd.Timestamp('2023-01-01 12:00', tz='US/Eastern')\ndt_utc = dt.tz_convert('UTC')\nprint(dt_utc.hour)",
+        "o": [
+            "17",
+            "12",
+            "7",
+            "0"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns the timezone of a datetime object.",
+        "type": "fill_blank",
+        "answers": [
+            "tz"
+        ],
+        "other_options": [
+            "timezone",
+            "tzinfo",
+            "zone"
+        ]
+    },
+    {
+        "q": "Converting timezone-naive datetime requires tz_localize first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=3, freq='D', tz='UTC')\nprint(dates.tz)",
+        "o": [
+            "UTC",
+            "None",
+            "Etc/UTC",
+            "timezone.utc"
+        ]
+    },
+    {
+        "q": "Match the timezone handling scenarios:",
+        "type": "match",
+        "left": [
+            "Naive to aware",
+            "Aware to aware",
+            "Remove timezone",
+            "Check timezone"
+        ],
+        "right": [
+            "tz_localize()",
+            "tz_convert()",
+            "tz_localize(None)",
+            "dt.tz attribute"
+        ]
+    },
+    {
+        "q": "Which method creates a new dtype from existing types?",
+        "type": "mcq",
+        "o": [
+            "pd.api.types functions",
+            "create_dtype()",
+            "new_dtype()",
+            "dtype_factory()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nfrom pandas.api.types import is_numeric_dtype\ndf = pd.DataFrame({'A': [1, 2], 'B': ['x', 'y']})\nprint(is_numeric_dtype(df['A']))",
+        "o": [
+            "True",
+            "False",
+            "1",
+            "int64"
+        ]
+    },
+    {
+        "q": "The ______ function checks if dtype is categorical.",
+        "type": "fill_blank",
+        "answers": [
+            "is_categorical_dtype"
+        ],
+        "other_options": [
+            "is_category",
+            "is_cat",
+            "check_categorical"
+        ]
+    },
+    {
+        "q": "Rearrange the dtype inspection workflow:",
+        "type": "rearrange",
+        "words": [
+            "import api.types",
+            "select column",
+            "use is_*_dtype()",
+            "handle result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nfrom pandas.api.types import is_datetime64_any_dtype\ns = pd.Series(pd.date_range('2023-01-01', periods=3))\nprint(is_datetime64_any_dtype(s))",
+        "o": [
+            "True",
+            "False",
+            "datetime64",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the dtype checking functions:",
+        "type": "match",
+        "left": [
+            "is_numeric_dtype",
+            "is_string_dtype",
+            "is_bool_dtype",
+            "is_extension_array_dtype"
+        ],
+        "right": [
+            "Numbers",
+            "Strings",
+            "Booleans",
+            "Extension types"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nresult = df.query('@df.A.mean() > 1')\nprint(len(result))",
+        "o": [
+            "3",
+            "0",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Which syntax allows external variable reference in query()?",
+        "type": "mcq",
+        "o": [
+            "@ prefix",
+            "$ prefix",
+            "% prefix",
+            "# prefix"
+        ]
+    },
+    {
+        "q": "The ______ method converts DataFrame operations to SQL-like syntax.",
+        "type": "fill_blank",
+        "answers": [
+            "query"
+        ],
+        "other_options": [
+            "sql",
+            "filter",
+            "select"
+        ]
+    },
+    {
+        "q": "query() with engine='python' allows arbitrary Python expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nthreshold = 2\ndf = pd.DataFrame({'A': [1, 2, 3, 4]})\nresult = df.query('A > @threshold')\nprint(result['A'].tolist())",
+        "o": [
+            "[3, 4]",
+            "[1, 2]",
+            "[2, 3, 4]",
+            "[1, 2, 3]"
+        ]
+    },
+    {
+        "q": "Match the query engine options:",
+        "type": "match",
+        "left": [
+            "numexpr",
+            "python",
+            "@variable",
+            "backticks"
+        ],
+        "right": [
+            "Fast numeric",
+            "Full Python",
+            "External reference",
+            "Column with spaces"
+        ]
+    },
+    {
+        "q": "Which accessor provides categorical-specific operations?",
+        "type": "mcq",
+        "o": [
+            "cat",
+            "category",
+            "categorical",
+            "ctg"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': pd.Categorical(['x', 'y', 'z'])})\ndf['A'] = df['A'].cat.add_categories(['w'])\nprint(len(df['A'].cat.categories))",
+        "o": [
+            "4",
+            "3",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "The ______ method reorders categories.",
+        "type": "fill_blank",
+        "answers": [
+            "cat.reorder_categories"
+        ],
+        "other_options": [
+            "cat.sort",
+            "cat.order",
+            "cat.arrange"
+        ]
+    },
+    {
+        "q": "Rearrange the categorical optimization workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify low cardinality",
+            "convert to categorical",
+            "optimize operations",
+            "preserve ordering"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(pd.Categorical(['b', 'a', 'c'], ordered=True))\nprint(s.cat.ordered)",
+        "o": [
+            "True",
+            "False",
+            "['a', 'b', 'c']",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the categorical accessor methods:",
+        "type": "match",
+        "left": [
+            "add_categories",
+            "remove_categories",
+            "set_categories",
+            "as_ordered"
+        ],
+        "right": [
+            "Add new categories",
+            "Remove categories",
+            "Replace all categories",
+            "Make ordered"
+        ]
+    },
+    {
+        "q": "Ordered categoricals support comparison operations like < and >.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates a custom accessor for Series?",
+        "type": "mcq",
+        "o": [
+            "@pd.api.extensions.register_series_accessor",
+            "@pd.accessor",
+            "@pd.custom_accessor",
+            "@pd.extend_series"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nfrom pandas.api.extensions import register_series_accessor\n@register_series_accessor('custom')\nclass CustomAccessor:\n    def __init__(self, obj):\n        self._obj = obj\n    def double(self):\n        return self._obj * 2\ns = pd.Series([1, 2, 3])\nprint(s.custom.double().tolist())",
+        "o": [
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "Error",
+            "[1, 4, 9]"
+        ]
+    },
+    {
+        "q": "The ______ decorator registers a DataFrame accessor.",
+        "type": "fill_blank",
+        "answers": [
+            "register_dataframe_accessor"
+        ],
+        "other_options": [
+            "register_accessor",
+            "add_accessor",
+            "create_accessor"
+        ]
+    },
+    {
+        "q": "Custom accessors enable domain-specific DataFrame APIs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]}, index=pd.RangeIndex(start=0, stop=3, step=1))\nprint(type(df.index).__name__)",
+        "o": [
+            "RangeIndex",
+            "Index",
+            "Int64Index",
+            "IntegerIndex"
+        ]
+    },
+    {
+        "q": "Match the specialized index types:",
+        "type": "match",
+        "left": [
+            "RangeIndex",
+            "DatetimeIndex",
+            "PeriodIndex",
+            "CategoricalIndex"
+        ],
+        "right": [
+            "Memory-efficient integers",
+            "Datetime values",
+            "Time periods",
+            "Categorical values"
+        ]
+    },
+    {
+        "q": "Which method optimizes string storage in memory?",
+        "type": "mcq",
+        "o": [
+            "Convert to 'string' dtype",
+            "compress_strings()",
+            "optimize_memory()",
+            "string_pool()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['a', 'b', 'c'], dtype='object')\ns_string = s.astype('string')\nprint(s_string.dtype)",
+        "o": [
+            "string",
+            "object",
+            "str",
+            "String"
+        ]
+    },
+    {
+        "q": "The ______ dtype uses PyArrow backend for efficient string storage.",
+        "type": "fill_blank",
+        "answers": [
+            "string[pyarrow]"
+        ],
+        "other_options": [
+            "arrow_string",
+            "pyarrow_str",
+            "efficient_string"
+        ]
+    },
+    {
+        "q": "Rearrange the memory profiling workflow:",
+        "type": "rearrange",
+        "words": [
+            "baseline memory_usage()",
+            "identify bottlenecks",
+            "apply optimizations",
+            "verify improvements",
+            "document changes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(df.memory_usage(deep=True).sum() > df.memory_usage(deep=False).sum())",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the memory optimization strategies:",
+        "type": "match",
+        "left": [
+            "Downcast integers",
+            "Use categorical",
+            "Sparse arrays",
+            "PyArrow strings"
+        ],
+        "right": [
+            "Reduce numeric size",
+            "Low cardinality columns",
+            "Mostly null/default",
+            "Efficient string storage"
+        ]
+    },
+    {
+        "q": "deep=True in memory_usage() includes object dtype actual memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method profiles DataFrame operations?",
+        "type": "mcq",
+        "o": [
+            "External profilers like line_profiler",
+            "df.profile()",
+            "pd.profile()",
+            "df.benchmark()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': range(1000000)})\nimport timeit\nt1 = timeit.timeit(lambda: df['A'] + 1, number=10)\nt2 = timeit.timeit(lambda: df.eval('A + 1'), number=10)\nprint(t1 > t2 or t1 < t2)  # Just checking both run",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The ______ library provides detailed line-by-line profiling.",
+        "type": "fill_blank",
+        "answers": [
+            "line_profiler"
+        ],
+        "other_options": [
+            "pandas_profiler",
+            "memory_profiler",
+            "time_profiler"
+        ]
+    },
+    {
+        "q": "numexpr backend accelerates eval() and query() for large DataFrames.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nwith pd.option_context('compute.use_numexpr', False):\n    result = df.eval('A + 1')\nprint(result.tolist())",
+        "o": [
+            "[2, 3, 4]",
+            "[1, 2, 3]",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the performance monitoring tools:",
+        "type": "match",
+        "left": [
+            "timeit",
+            "memory_profiler",
+            "line_profiler",
+            "cProfile"
+        ],
+        "right": [
+            "Execution time",
+            "Memory usage",
+            "Line-by-line",
+            "Function-level"
+        ]
+    },
+    {
+        "q": "Which method handles large CSV files efficiently?",
+        "type": "mcq",
+        "o": [
+            "pd.read_csv() with chunksize and dtype",
+            "pd.read_large_csv()",
+            "pd.stream_csv()",
+            "pd.parallel_read_csv()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport io\ndata = 'A,B\\n1,2\\n3,4\\n5,6'\nchunk_sum = 0\nfor chunk in pd.read_csv(io.StringIO(data), chunksize=1):\n    chunk_sum += chunk['A'].sum()\nprint(chunk_sum)",
+        "o": [
+            "9",
+            "6",
+            "3",
+            "15"
+        ]
+    },
+    {
+        "q": "The ______ parameter in read_csv specifies low-memory mode.",
+        "type": "fill_blank",
+        "answers": [
+            "low_memory"
+        ],
+        "other_options": [
+            "memory_efficient",
+            "reduce_memory",
+            "optimize"
+        ]
+    },
+    {
+        "q": "Rearrange the large file processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "estimate size",
+            "plan chunk size",
+            "process iteratively",
+            "aggregate results",
+            "handle edge cases"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport io\ndata = 'A,B\\n1,x\\n2,y\\n3,z'\ndf = pd.read_csv(io.StringIO(data), dtype={'A': 'int8', 'B': 'category'})\nprint(df.dtypes['A'])",
+        "o": [
+            "int8",
+            "int64",
+            "object",
+            "int32"
+        ]
+    },
+    {
+        "q": "Match the read_csv memory optimization techniques:",
+        "type": "match",
+        "left": [
+            "dtype=",
+            "usecols=",
+            "chunksize=",
+            "parse_dates="
+        ],
+        "right": [
+            "Specify column types",
+            "Select columns",
+            "Iterate chunks",
+            "Convert dates"
+        ]
+    },
+    {
+        "q": "Specifying dtype during read prevents dtype inference overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method enables SQL-like window functions?",
+        "type": "mcq",
+        "o": [
+            "groupby().transform() with ranking",
+            "window_function()",
+            "sql_window()",
+            "analytical_function()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y', 'y'], 'B': [1, 2, 3, 4]})\ndf['rank'] = df.groupby('A')['B'].rank(method='dense')\nprint(df['rank'].tolist())",
+        "o": [
+            "[1.0, 2.0, 1.0, 2.0]",
+            "[1, 2, 1, 2]",
+            "[1.0, 1.0, 2.0, 2.0]",
+            "[1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "The ______ method computes row number within groups.",
+        "type": "fill_blank",
+        "answers": [
+            "cumcount"
+        ],
+        "other_options": [
+            "row_number",
+            "count_within",
+            "group_row"
+        ]
+    },
+    {
+        "q": "rank(method='first') assigns ranks in order of appearance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'x'], 'B': [3, 1, 2]})\ndf['cumcount'] = df.groupby('A').cumcount()\nprint(df['cumcount'].tolist())",
+        "o": [
+            "[0, 1, 2]",
+            "[1, 2, 3]",
+            "[3, 3, 3]",
+            "[0, 0, 0]"
+        ]
+    },
+    {
+        "q": "Match the ranking methods:",
+        "type": "match",
+        "left": [
+            "average",
+            "min",
+            "max",
+            "dense"
+        ],
+        "right": [
+            "Mean of tied ranks",
+            "Lowest rank",
+            "Highest rank",
+            "No gaps"
+        ]
+    },
+    {
+        "q": "Which method computes nth differences?",
+        "type": "mcq",
+        "o": [
+            "diff(periods=n)",
+            "nth_diff(n)",
+            "difference(n)",
+            "delta(n)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 4, 7, 11])\nresult = s.diff(periods=2).dropna().tolist()\nprint(result)",
+        "o": [
+            "[3.0, 5.0, 7.0]",
+            "[1.0, 2.0, 3.0, 4.0]",
+            "[1, 2, 4, 7, 11]",
+            "[3, 5, 7]"
+        ]
+    },
+    {
+        "q": "The ______ method computes first differences (periods=1).",
+        "type": "fill_blank",
+        "answers": [
+            "diff"
+        ],
+        "other_options": [
+            "delta",
+            "change",
+            "difference"
+        ]
+    },
+    {
+        "q": "Rearrange the time series decomposition workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify trend",
+            "extract seasonality",
+            "compute residuals",
+            "validate components"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ns = pd.Series([1, 2, 3, 4, 5])\nprint(s.diff().diff().dropna().mean())",
+        "o": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "-1.0"
+        ]
+    },
+    {
+        "q": "Match the differencing applications:",
+        "type": "match",
+        "left": [
+            "First difference",
+            "Second difference",
+            "Seasonal difference",
+            "Log difference"
+        ],
+        "right": [
+            "Remove trend",
+            "Remove acceleration",
+            "Remove seasonality",
+            "Percentage change"
+        ]
+    },
+    {
+        "q": "Second differencing of a linear trend yields zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles heterogeneous data in columns?",
+        "type": "mcq",
+        "o": [
+            "object dtype or union types",
+            "mixed_type()",
+            "heterogeneous()",
+            "any_type()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 'two', 3.0]})\nprint(df['A'].dtype)",
+        "o": [
+            "object",
+            "mixed",
+            "any",
+            "union"
+        ]
+    },
+    {
+        "q": "The ______ function infers better dtypes for object columns.",
+        "type": "fill_blank",
+        "answers": [
+            "convert_dtypes"
+        ],
+        "other_options": [
+            "infer_types",
+            "auto_dtype",
+            "best_dtype"
+        ]
+    },
+    {
+        "q": "convert_dtypes() uses nullable extension types when possible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['1', '2', '3']})\ndf_converted = df.convert_dtypes()\nprint(df_converted['A'].dtype)",
+        "o": [
+            "Int64",
+            "int64",
+            "string",
+            "object"
+        ]
+    },
+    {
+        "q": "Match the dtype inference behaviors:",
+        "type": "match",
+        "left": [
+            "infer_objects()",
+            "convert_dtypes()",
+            "astype()",
+            "to_numeric()"
+        ],
+        "right": [
+            "Infer from object",
+            "Use extension types",
+            "Explicit conversion",
+            "String to number"
+        ]
+    },
+    {
+        "q": "Which method handles complex multi-key sorting?",
+        "type": "mcq",
+        "o": [
+            "sort_values() with list of columns",
+            "multi_sort()",
+            "complex_sort()",
+            "hierarchical_sort()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 1, 2, 2], 'B': [3, 1, 4, 2]})\ndf_sorted = df.sort_values(['A', 'B'], ascending=[True, False])\nprint(df_sorted['B'].tolist())",
+        "o": [
+            "[3, 1, 4, 2]",
+            "[1, 3, 2, 4]",
+            "[4, 3, 2, 1]",
+            "[1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls null value position in sort.",
+        "type": "fill_blank",
+        "answers": [
+            "na_position"
+        ],
+        "other_options": [
+            "null_position",
+            "nan_order",
+            "missing_place"
+        ]
+    },
+    {
+        "q": "Rearrange the data ranking workflow:",
+        "type": "rearrange",
+        "words": [
+            "define criteria",
+            "choose method",
+            "handle ties",
+            "apply within groups",
+            "verify order"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, np.nan, 3], 'B': [4, 5, 6]})\ndf_sorted = df.sort_values('A', na_position='first')\nprint(df_sorted['A'].isna().iloc[0])",
+        "o": [
+            "True",
+            "False",
+            "NaN",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sorting parameters:",
+        "type": "match",
+        "left": [
+            "ascending=",
+            "na_position=",
+            "key=",
+            "inplace="
+        ],
+        "right": [
+            "Sort direction",
+            "NaN placement",
+            "Transform before sort",
+            "Modify original"
+        ]
+    },
+    {
+        "q": "key parameter allows custom sort functions like str.lower().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method efficiently computes percentile ranks?",
+        "type": "mcq",
+        "o": [
+            "rank(pct=True)",
+            "percentile_rank()",
+            "pct_rank()",
+            "quantile_rank()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nresult = s.rank(pct=True)\nprint(result.iloc[-1])",
+        "o": [
+            "1.0",
+            "0.8",
+            "5.0",
+            "0.2"
+        ]
+    },
+    {
+        "q": "The ______ method returns decile-based categorization.",
+        "type": "fill_blank",
+        "answers": [
+            "pd.qcut"
+        ],
+        "other_options": [
+            "pd.decile",
+            "pd.percentile_cut",
+            "pd.rank_cut"
+        ]
+    },
+    {
+        "q": "pct=True in rank() scales ranks to [0, 1] range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])\nquintiles = pd.qcut(s, q=5, labels=['Q1', 'Q2', 'Q3', 'Q4', 'Q5'])\nprint(quintiles.iloc[0])",
+        "o": [
+            "Q1",
+            "Q5",
+            "1",
+            "10"
+        ]
+    },
+    {
+        "q": "Match the quantile operations:",
+        "type": "match",
+        "left": [
+            "qcut()",
+            "cut()",
+            "quantile()",
+            "describe()"
+        ],
+        "right": [
+            "Equal-frequency bins",
+            "Equal-width bins",
+            "Specific percentiles",
+            "Summary statistics"
+        ]
+    },
+    {
+        "q": "Which pattern optimizes repeated groupby operations?",
+        "type": "mcq",
+        "o": [
+            "Store GroupBy object and reuse",
+            "Always call groupby fresh",
+            "Use cache=True parameter",
+            "Precompute all aggregations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y', 'y'], 'B': [1, 2, 3, 4]})\ngrouped = df.groupby('A')\nprint(grouped.ngroups)",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "The ______ attribute returns the number of groups.",
+        "type": "fill_blank",
+        "answers": [
+            "ngroups"
+        ],
+        "other_options": [
+            "group_count",
+            "num_groups",
+            "n_groups"
+        ]
+    },
+    {
+        "q": "Rearrange the groupby optimization workflow:",
+        "type": "rearrange",
+        "words": [
+            "cache GroupBy object",
+            "compute common aggregations",
+            "use transform wisely",
+            "avoid redundant operations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, 2, 3]})\ngrouped = df.groupby('A')\nprint(list(grouped.groups.keys()))",
+        "o": [
+            "['x', 'y']",
+            "[0, 1, 2]",
+            "['A', 'B']",
+            "[(0,), (1,)]"
+        ]
+    },
+    {
+        "q": "Match the GroupBy attributes:",
+        "type": "match",
+        "left": [
+            "groups",
+            "ngroups",
+            "indices",
+            "get_group()"
+        ],
+        "right": [
+            "Dict of group members",
+            "Number of groups",
+            "Row indices per group",
+            "Retrieve single group"
+        ]
+    },
+    {
+        "q": "Storing GroupBy object avoids recomputing group assignments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method applies multiple window specifications?",
+        "type": "mcq",
+        "o": [
+            "Chain multiple rolling() calls",
+            "multi_rolling()",
+            "parallel_windows()",
+            "batch_rolling()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5])\nma3 = s.rolling(3).mean()\nma5 = s.rolling(5).mean()\nprint(ma3.notna().sum(), ma5.notna().sum())",
+        "o": [
+            "3 1",
+            "5 5",
+            "3 5",
+            "1 3"
+        ]
+    },
+    {
+        "q": "The ______ method combines multiple rolling calculations efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "pipe"
+        ],
+        "other_options": [
+            "chain",
+            "combine",
+            "merge"
+        ]
+    },
+    {
+        "q": "Rolling calculations can be chained for complex indicators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series([1, 2, 3, 4, 5, 6, 7])\nema = s.ewm(span=3).mean()\nprint(round(ema.iloc[-1], 2))",
+        "o": [
+            "5.52",
+            "7.0",
+            "4.0",
+            "6.0"
+        ]
+    },
+    {
+        "q": "Match the EWM parameters:",
+        "type": "match",
+        "left": [
+            "span",
+            "halflife",
+            "alpha",
+            "min_periods"
+        ],
+        "right": [
+            "Decay in terms of span",
+            "Decay in terms of halflife",
+            "Direct smoothing factor",
+            "Minimum observations"
+        ]
+    },
+    {
+        "q": "Which method handles time-series cross-validation?",
+        "type": "mcq",
+        "o": [
+            "Manual rolling window splits",
+            "ts_crossval()",
+            "time_split()",
+            "rolling_cv()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=10, freq='D')\ndf = pd.DataFrame({'A': range(10)}, index=dates)\ntrain = df.iloc[:7]\ntest = df.iloc[7:]\nprint(len(train), len(test))",
+        "o": [
+            "7 3",
+            "5 5",
+            "8 2",
+            "6 4"
+        ]
+    },
+    {
+        "q": "The ______ approach ensures no data leakage in time series.",
+        "type": "fill_blank",
+        "answers": [
+            "walk-forward"
+        ],
+        "other_options": [
+            "random-split",
+            "k-fold",
+            "stratified"
+        ]
+    },
+    {
+        "q": "Rearrange the time series validation workflow:",
+        "type": "rearrange",
+        "words": [
+            "define window",
+            "train on history",
+            "predict forward",
+            "evaluate",
+            "slide window"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndates = pd.date_range('2023-01-01', periods=100, freq='D')\ndf = pd.DataFrame({'A': range(100)}, index=dates)\nmonthly_last = df.resample('M').last()\nprint(len(monthly_last))",
+        "o": [
+            "4",
+            "100",
+            "3",
+            "12"
+        ]
+    },
+    {
+        "q": "Match the time series validation patterns:",
+        "type": "match",
+        "left": [
+            "Expanding window",
+            "Sliding window",
+            "Walk-forward",
+            "Blocked"
+        ],
+        "right": [
+            "Growing training",
+            "Fixed size",
+            "Sequential prediction",
+            "Non-overlapping"
+        ]
+    },
+    {
+        "q": "Time series validation must respect temporal ordering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method creates efficient column-wise operations?",
+        "type": "mcq",
+        "o": [
+            "Vectorized operations with NumPy",
+            "column_apply()",
+            "parallel_cols()",
+            "vectorize_columns()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nresult = np.sum(df.values, axis=1)\nprint(result.tolist())",
+        "o": [
+            "[5, 7, 9]",
+            "[6, 15]",
+            "[1, 2, 3, 4, 5, 6]",
+            "[21]"
+        ]
+    },
+    {
+        "q": "The ______ attribute provides direct access to underlying NumPy array.",
+        "type": "fill_blank",
+        "answers": [
+            "values"
+        ],
+        "other_options": [
+            "array",
+            "data",
+            "numpy"
+        ]
+    },
+    {
+        "q": "Accessing .values bypasses pandas overhead for pure computation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nresult = np.dot(df['A'].values, df['B'].values)\nprint(result)",
+        "o": [
+            "32",
+            "21",
+            "15",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the DataFrame to array conversions:",
+        "type": "match",
+        "left": [
+            ".values",
+            ".to_numpy()",
+            ".array",
+            "np.asarray()"
+        ],
+        "right": [
+            "Legacy NumPy",
+            "Preferred NumPy",
+            "Extension array",
+            "External conversion"
+        ]
+    },
+    {
+        "q": "Which method handles timezone-aware period operations?",
+        "type": "mcq",
+        "o": [
+            "Use Timestamp with tz then convert to Period",
+            "period_tz()",
+            "tz_period()",
+            "timezone_period()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndt = pd.Timestamp('2023-06-15 10:30', tz='US/Eastern')\nperiod = dt.tz_localize(None).to_period('M')\nprint(period)",
+        "o": [
+            "2023-06",
+            "2023-06-15",
+            "June 2023",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ method removes timezone before period conversion.",
+        "type": "fill_blank",
+        "answers": [
+            "tz_localize(None)"
+        ],
+        "other_options": [
+            "remove_tz()",
+            "clear_tz()",
+            "no_tz()"
+        ]
+    },
+    {
+        "q": "Periods are inherently timezone-naive in pandas.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\np = pd.Period('2023-Q2')\nprint(p.start_time.month)",
+        "o": [
+            "4",
+            "1",
+            "6",
+            "2"
+        ]
+    },
+    {
+        "q": "Match the Period boundary methods:",
+        "type": "match",
+        "left": [
+            "start_time",
+            "end_time",
+            "asfreq()",
+            "to_timestamp()"
+        ],
+        "right": [
+            "Period start",
+            "Period end",
+            "Change frequency",
+            "Convert to Timestamp"
+        ]
+    },
+    {
+        "q": "Which approach handles very wide DataFrames efficiently?",
+        "type": "mcq",
+        "o": [
+            "Transpose and process as rows",
+            "wide_process()",
+            "column_batch()",
+            "parallel_columns()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({f'col_{i}': [i] for i in range(100)})\nprint(df.T.shape)",
+        "o": [
+            "(100, 1)",
+            "(1, 100)",
+            "(100, 100)",
+            "(10, 10)"
+        ]
+    },
+    {
+        "q": "The ______ attribute efficiently iterates over column names.",
+        "type": "fill_blank",
+        "answers": [
+            "columns"
+        ],
+        "other_options": [
+            "col_names",
+            "headers",
+            "column_list"
+        ]
+    },
+    {
+        "q": "Rearrange the wide DataFrame processing workflow:",
+        "type": "rearrange",
+        "words": [
+            "assess dimensions",
+            "consider transpose",
+            "batch if needed",
+            "vectorize operations",
+            "reassemble"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4], 'C': [5, 6]})\nresult = df.iloc[:, 1:].sum(axis=1)\nprint(result.tolist())",
+        "o": [
+            "[8, 10]",
+            "[3, 5]",
+            "[4, 6]",
+            "[6, 15]"
+        ]
+    },
+    {
+        "q": "Match the DataFrame slicing techniques:",
+        "type": "match",
+        "left": [
+            "iloc[:, 1:]",
+            "loc[:, 'B':]",
+            "filter()",
+            "select_dtypes()"
+        ],
+        "right": [
+            "Position-based columns",
+            "Label-based columns",
+            "By name pattern",
+            "By data type"
+        ]
+    },
+    {
+        "q": "Column slicing with iloc uses exclusive end index.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method validates DataFrame schema?",
+        "type": "mcq",
+        "o": [
+            "Custom validation functions with assert",
+            "validate_schema()",
+            "check_schema()",
+            "schema_valid()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nexpected_cols = ['A']\nexpected_dtype = 'int64'\nvalid = list(df.columns) == expected_cols and str(df['A'].dtype) == expected_dtype\nprint(valid)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The ______ library provides declarative DataFrame validation.",
+        "type": "fill_blank",
+        "answers": [
+            "pandera"
+        ],
+        "other_options": [
+            "pandas_validate",
+            "df_schema",
+            "validate_df"
+        ]
+    },
+    {
+        "q": "Schema validation helps catch data quality issues early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nassertions = [\n    df.shape[1] == 2,\n    'A' in df.columns,\n    df['A'].dtype == 'int64'\n]\nprint(all(assertions))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "[True, True, True]"
+        ]
+    },
+    {
+        "q": "Match the validation techniques:",
+        "type": "match",
+        "left": [
+            "Column presence",
+            "Data type check",
+            "Value range",
+            "Null check"
+        ],
+        "right": [
+            "'col' in df.columns",
+            "df.dtype",
+            "df.between()",
+            "df.isnull().sum()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf.attrs['description'] = 'Test DataFrame'\nprint('description' in df.attrs)",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Which attribute stores custom metadata on DataFrames?",
+        "type": "mcq",
+        "o": [
+            "attrs",
+            "metadata",
+            "info",
+            "properties"
+        ]
+    },
+    {
+        "q": "The ______ method ensures data is stored contiguously in memory.",
+        "type": "fill_blank",
+        "answers": [
+            "copy"
+        ],
+        "other_options": [
+            "contiguous",
+            "compact",
+            "consolidate"
+        ]
+    },
+    {
+        "q": "DataFrame.attrs preserves metadata through operations in some cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nflags = df.flags\nprint('allows_duplicate_labels' in dir(flags))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Match the DataFrame attributes:",
+        "type": "match",
+        "left": [
+            "attrs",
+            "flags",
+            "index",
+            "columns"
+        ],
+        "right": [
+            "Custom metadata",
+            "Behavior flags",
+            "Row labels",
+            "Column labels"
+        ]
+    },
+    {
+        "q": "Which method checks if DataFrame has duplicate labels?",
+        "type": "mcq",
+        "o": [
+            "index.is_unique and columns.is_unique",
+            "has_duplicates()",
+            "check_unique()",
+            "is_duplicate()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2]}, index=['x', 'x'])\nprint(df.index.is_unique)",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "The ______ method returns underlying data as a 2D NumPy array.",
+        "type": "fill_blank",
+        "answers": [
+            "to_numpy"
+        ],
+        "other_options": [
+            "as_array",
+            "get_numpy",
+            "numpy_array"
+        ]
+    },
+    {
+        "q": "Rearrange the data export workflow:",
+        "type": "rearrange",
+        "words": [
+            "prepare data",
+            "choose format",
+            "set options",
+            "write file",
+            "verify output"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\narr = df.to_numpy()\nprint(type(arr).__module__)",
+        "o": [
+            "numpy",
+            "pandas",
+            "builtins",
+            "array"
+        ]
+    },
+    {
+        "q": "to_numpy() returns a view when possible with copy=False.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles DataFrame styling for display?",
+        "type": "mcq",
+        "o": [
+            "style",
+            "format",
+            "display",
+            "render"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nstyler = df.style\nprint(type(styler).__name__)",
+        "o": [
+            "Styler",
+            "DataFrame",
+            "Style",
+            "Formatter"
+        ]
+    },
+    {
+        "q": "Match the Styler methods:",
+        "type": "match",
+        "left": [
+            "highlight_max",
+            "bar",
+            "format",
+            "to_html"
+        ],
+        "right": [
+            "Highlight maximum",
+            "Add data bars",
+            "Number formatting",
+            "Export HTML"
+        ]
+    },
+    {
+        "q": "The ______ method applies gradient coloring to cells.",
+        "type": "fill_blank",
+        "answers": [
+            "background_gradient"
+        ],
+        "other_options": [
+            "gradient",
+            "color_gradient",
+            "heatmap"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nstyled = df.style.format('{:.2f}')\nprint('Styler' in str(type(styled)))",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ]
+    },
+    {
+        "q": "Styler objects can chain multiple formatting methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles DataFrame concatenation along axis?",
+        "type": "mcq",
+        "o": [
+            "pd.concat()",
+            "df.append()",
+            "df.add()",
+            "df.extend()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2]})\ndf2 = pd.DataFrame({'B': [3, 4]})\nresult = pd.concat([df1, df2], axis=1)\nprint(result.shape)",
+        "o": [
+            "(2, 2)",
+            "(4, 1)",
+            "(2, 1)",
+            "(4, 2)"
+        ]
+    },
+    {
+        "q": "The ______ parameter creates hierarchical index on concatenation.",
+        "type": "fill_blank",
+        "answers": [
+            "keys"
+        ],
+        "other_options": [
+            "levels",
+            "names",
+            "hierarchy"
+        ]
+    },
+    {
+        "q": "Rearrange the merge strategy selection:",
+        "type": "rearrange",
+        "words": [
+            "identify join columns",
+            "choose merge type",
+            "handle duplicates",
+            "verify cardinality",
+            "execute merge"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2]}, index=['x', 'y'])\ndf2 = pd.DataFrame({'A': [3, 4]}, index=['y', 'z'])\nresult = pd.concat([df1, df2], keys=['first', 'second'])\nprint(result.index.nlevels)",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the join strategies:",
+        "type": "match",
+        "left": [
+            "concat axis=0",
+            "concat axis=1",
+            "merge",
+            "join"
+        ],
+        "right": [
+            "Stack vertically",
+            "Stack horizontally",
+            "SQL-style join",
+            "Index-based join"
+        ]
+    },
+    {
+        "q": "join() method defaults to join on index.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles missing data replacement with regex?",
+        "type": "mcq",
+        "o": [
+            "replace() with regex=True",
+            "regex_replace()",
+            "sub()",
+            "pattern_replace()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['abc123', 'def456']})\nresult = df['A'].str.replace(r'\\d+', 'X', regex=True)\nprint(result.iloc[0])",
+        "o": [
+            "abcX",
+            "abc123",
+            "Xabc",
+            "abc"
+        ]
+    },
+    {
+        "q": "The ______ method extracts groups from regex patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "str.extract"
+        ],
+        "other_options": [
+            "str.match",
+            "str.find",
+            "str.capture"
+        ]
+    },
+    {
+        "q": "str.extract() with expand=True returns DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ns = pd.Series(['a1', 'b2', 'c3'])\nresult = s.str.extract(r'([a-z])(\\d)', expand=True)\nprint(result.shape)",
+        "o": [
+            "(3, 2)",
+            "(3, 1)",
+            "(2, 3)",
+            "(1, 3)"
+        ]
+    },
+    {
+        "q": "Match the string extraction methods:",
+        "type": "match",
+        "left": [
+            "extract",
+            "extractall",
+            "findall",
+            "split"
+        ],
+        "right": [
+            "First match",
+            "All matches",
+            "List of matches",
+            "Split by pattern"
+        ]
+    },
+    {
+        "q": "Which method creates a copy with new column order?",
+        "type": "mcq",
+        "o": [
+            "reindex(columns=...)",
+            "reorder()",
+            "sort_columns()",
+            "arrange_columns()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'B': [1, 2], 'A': [3, 4], 'C': [5, 6]})\ndf_reordered = df.reindex(columns=['A', 'B', 'C'])\nprint(list(df_reordered.columns))",
+        "o": [
+            "['A', 'B', 'C']",
+            "['B', 'A', 'C']",
+            "['C', 'B', 'A']",
+            "['A', 'C', 'B']"
+        ]
+    },
+    {
+        "q": "The ______ method inserts a column at a specific position.",
+        "type": "fill_blank",
+        "answers": [
+            "insert"
+        ],
+        "other_options": [
+            "add_column",
+            "put",
+            "place"
+        ]
+    },
+    {
+        "q": "Rearrange column operations workflow:",
+        "type": "rearrange",
+        "words": [
+            "identify columns",
+            "plan order",
+            "use reindex",
+            "verify result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\ndf.insert(1, 'C', [5, 6])\nprint(list(df.columns))",
+        "o": [
+            "['A', 'C', 'B']",
+            "['A', 'B', 'C']",
+            "['C', 'A', 'B']",
+            "['A', 'B']"
+        ]
+    },
+    {
+        "q": "insert() modifies DataFrame in place by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles cross-tabulation of two or more factors?",
+        "type": "mcq",
+        "o": [
+            "pd.crosstab()",
+            "pd.cross()",
+            "pd.tabulate()",
+            "pd.contingency()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y', 'y'], 'B': ['p', 'q', 'p', 'q']})\nresult = pd.crosstab(df['A'], df['B'])\nprint(result.loc['x', 'p'])",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the contingency table methods:",
+        "type": "match",
+        "left": [
+            "crosstab",
+            "pivot_table",
+            "value_counts",
+            "groupby.size"
+        ],
+        "right": [
+            "Cross-tabulation",
+            "Aggregated pivot",
+            "Frequency count",
+            "Group sizes"
+        ]
+    },
+    {
+        "q": "The ______ parameter in crosstab normalizes values.",
+        "type": "fill_blank",
+        "answers": [
+            "normalize"
+        ],
+        "other_options": [
+            "norm",
+            "percent",
+            "proportion"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y', 'y'], 'B': ['p', 'q', 'p', 'q']})\nresult = pd.crosstab(df['A'], df['B'], normalize='all')\nprint(result.sum().sum())",
+        "o": [
+            "1.0",
+            "4.0",
+            "2.0",
+            "0.25"
+        ]
+    },
+    {
+        "q": "crosstab with margins=True adds row/column totals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method efficiently iterates over DataFrame groups?",
+        "type": "mcq",
+        "o": [
+            "groupby() iterator",
+            "group_iter()",
+            "iterate_groups()",
+            "each_group()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, 2, 3]})\ngroups = list(df.groupby('A'))\nprint(type(groups[0]))",
+        "o": [
+            "<class 'tuple'>",
+            "<class 'DataFrame'>",
+            "<class 'list'>",
+            "<class 'dict'>"
+        ]
+    },
+    {
+        "q": "The ______ method gets a single group by name.",
+        "type": "fill_blank",
+        "answers": [
+            "get_group"
+        ],
+        "other_options": [
+            "select_group",
+            "fetch_group",
+            "group_by_name"
+        ]
+    },
+    {
+        "q": "Rearrange the groupby iteration pattern:",
+        "type": "rearrange",
+        "words": [
+            "create groupby",
+            "iterate groups",
+            "process each",
+            "collect results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'x', 'y'], 'B': [1, 2, 3]})\ngroup_x = df.groupby('A').get_group('x')\nprint(len(group_x))",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the GroupBy iteration methods:",
+        "type": "match",
+        "left": [
+            "__iter__",
+            "get_group()",
+            "groups",
+            "indices"
+        ],
+        "right": [
+            "Iterate name-group pairs",
+            "Get specific group",
+            "Dict of labels",
+            "Dict of indices"
+        ]
+    },
+    {
+        "q": "Iterating over groupby yields (name, group) tuples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles panel data operations?",
+        "type": "mcq",
+        "o": [
+            "MultiIndex and groupby",
+            "Panel()",
+            "panel_data()",
+            "Wide to long"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'entity': ['A', 'A', 'B', 'B'], 'time': [1, 2, 1, 2], 'value': [10, 20, 30, 40]})\ndf = df.set_index(['entity', 'time'])\nprint(df.loc['A', 1, 'value'])",
+        "o": [
+            "10",
+            "20",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ method transforms long to wide format.",
+        "type": "fill_blank",
+        "answers": [
+            "pivot"
+        ],
+        "other_options": [
+            "wide",
+            "spread",
+            "cast"
+        ]
+    },
+    {
+        "q": "Panel data typically has entity and time dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y'], 't': [1, 2], 'v': [10, 20]})\npivoted = df.pivot(index='A', columns='t', values='v')\nprint(pivoted.shape)",
+        "o": [
+            "(2, 2)",
+            "(2, 1)",
+            "(1, 2)",
+            "(2, 3)"
+        ]
+    },
+    {
+        "q": "Match the data reshaping patterns:",
+        "type": "match",
+        "left": [
+            "pivot",
+            "melt",
+            "stack",
+            "unstack"
+        ],
+        "right": [
+            "Long to wide",
+            "Wide to long",
+            "Columns to rows",
+            "Rows to columns"
+        ]
+    },
+    {
+        "q": "Which method efficiently updates values in place?",
+        "type": "mcq",
+        "o": [
+            "update()",
+            "replace_inplace()",
+            "modify()",
+            "set_values()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2, 3]})\ndf2 = pd.DataFrame({'A': [10, 20]}, index=[0, 1])\ndf1.update(df2)\nprint(df1['A'].tolist())",
+        "o": [
+            "[10, 20, 3]",
+            "[1, 2, 3]",
+            "[10, 20, 30]",
+            "[1, 10, 20]"
+        ]
+    },
+    {
+        "q": "The ______ method combines values from another DataFrame.",
+        "type": "fill_blank",
+        "answers": [
+            "combine_first"
+        ],
+        "other_options": [
+            "merge_first",
+            "join_first",
+            "concat_first"
+        ]
+    },
+    {
+        "q": "Rearrange the DataFrame update workflow:",
+        "type": "rearrange",
+        "words": [
+            "align indices",
+            "prepare updates",
+            "call update()",
+            "verify changes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\nimport numpy as np\ndf1 = pd.DataFrame({'A': [1, np.nan, 3]})\ndf2 = pd.DataFrame({'A': [10, 20, 30]})\nresult = df1.combine_first(df2)\nprint(result['A'].iloc[1])",
+        "o": [
+            "20.0",
+            "NaN",
+            "2.0",
+            "10.0"
+        ]
+    },
+    {
+        "q": "combine_first() fills NaN values from another DataFrame.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method computes element-wise boolean AND?",
+        "type": "mcq",
+        "o": [
+            "& operator",
+            "and()",
+            "logical_and()",
+            "both()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [True, True, False], 'B': [True, False, False]})\nresult = (df['A'] & df['B']).sum()\nprint(result)",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the boolean operators:",
+        "type": "match",
+        "left": [
+            "&",
+            "|",
+            "~",
+            "^"
+        ],
+        "right": [
+            "AND",
+            "OR",
+            "NOT",
+            "XOR"
+        ]
+    },
+    {
+        "q": "The ______ method computes any True value along axis.",
+        "type": "fill_blank",
+        "answers": [
+            "any"
+        ],
+        "other_options": [
+            "some",
+            "exists",
+            "has_true"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [True, False], 'B': [False, False]})\nprint(df.any(axis=1).tolist())",
+        "o": [
+            "[True, False]",
+            "[True, True]",
+            "[False, False]",
+            "[False, True]"
+        ]
+    },
+    {
+        "q": "all() returns True only if all values are True.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which method handles Excel file operations with multiple sheets?",
+        "type": "mcq",
+        "o": [
+            "pd.ExcelFile()",
+            "pd.MultiSheet()",
+            "pd.Workbook()",
+            "pd.ExcelSheets()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nwith pd.ExcelWriter('/tmp/test.xlsx') as writer:\n    df.to_excel(writer, sheet_name='Sheet1')\n    df.to_excel(writer, sheet_name='Sheet2')\nprint('Done')",
+        "o": [
+            "Done",
+            "Error",
+            "None",
+            "True"
+        ]
+    },
+    {
+        "q": "The ______ parameter specifies which sheet to read.",
+        "type": "fill_blank",
+        "answers": [
+            "sheet_name"
+        ],
+        "other_options": [
+            "sheet",
+            "tab",
+            "worksheet"
+        ]
+    },
+    {
+        "q": "Rearrange the Excel export workflow:",
+        "type": "rearrange",
+        "words": [
+            "create ExcelWriter",
+            "write sheets",
+            "format if needed",
+            "save and close"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf.to_excel('/tmp/test.xlsx', index=False)\ndf_read = pd.read_excel('/tmp/test.xlsx')\nprint(list(df_read.columns))",
+        "o": [
+            "['A']",
+            "['A', 'index']",
+            "['Unnamed: 0', 'A']",
+            "[]"
+        ]
+    },
+    {
+        "q": "Match the Excel parameters:",
+        "type": "match",
+        "left": [
+            "sheet_name",
+            "header",
+            "index_col",
+            "usecols"
+        ],
+        "right": [
+            "Select sheet",
+            "Row for headers",
+            "Index column",
+            "Columns to read"
+        ]
+    },
+    {
+        "q": "ExcelWriter context manager auto-saves on exit.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

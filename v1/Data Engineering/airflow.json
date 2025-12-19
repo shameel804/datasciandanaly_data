@@ -1,0 +1,6715 @@
+[
+    {
+        "q": "What is Apache Airflow?",
+        "type": "mcq",
+        "o": [
+            "Workflow orchestration platform",
+            "Database system",
+            "Web framework",
+            "Machine learning library"
+        ]
+    },
+    {
+        "q": "The _____ is the core concept in Airflow representing a workflow.",
+        "type": "fill_blank",
+        "answers": [
+            "DAG"
+        ],
+        "other_options": [
+            "task",
+            "operator",
+            "sensor"
+        ]
+    },
+    {
+        "q": "DAG stands for Directed Acyclic Graph.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this DAG ID?",
+        "type": "mcq",
+        "c": "from airflow import DAG\ndag = DAG('my_first_dag')\nprint(dag.dag_id)",
+        "o": [
+            "my_first_dag",
+            "DAG",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Airflow component with its function:",
+        "type": "match",
+        "left": [
+            "Scheduler",
+            "Executor",
+            "Web Server",
+            "Metadata DB"
+        ],
+        "right": [
+            "Triggers tasks",
+            "Runs tasks",
+            "UI interface",
+            "Stores state"
+        ]
+    },
+    {
+        "q": "Rearrange the Airflow workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define DAG",
+            "Create tasks",
+            "Set dependencies",
+            "Schedule run",
+            "Monitor execution"
+        ]
+    },
+    {
+        "q": "What is an Operator in Airflow?",
+        "type": "mcq",
+        "o": [
+            "A template for a task",
+            "A database connection",
+            "A scheduling algorithm",
+            "A log file"
+        ]
+    },
+    {
+        "q": "The _____ operator executes Python functions.",
+        "type": "fill_blank",
+        "answers": [
+            "PythonOperator"
+        ],
+        "other_options": [
+            "BashOperator",
+            "SqlOperator",
+            "EmailOperator"
+        ]
+    },
+    {
+        "q": "Tasks in Airflow are instances of Operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this task count?",
+        "type": "mcq",
+        "c": "tasks = ['extract', 'transform', 'load']\nprint(len(tasks))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the operator with its use:",
+        "type": "match",
+        "left": [
+            "PythonOperator",
+            "BashOperator",
+            "EmailOperator",
+            "DummyOperator"
+        ],
+        "right": [
+            "Python code",
+            "Shell command",
+            "Send email",
+            "No operation"
+        ]
+    },
+    {
+        "q": "Rearrange the task lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Scheduled",
+            "Queued",
+            "Running",
+            "Success",
+            "Completed"
+        ]
+    },
+    {
+        "q": "What is a Sensor in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Operator that waits for a condition",
+            "Database connection",
+            "Log analyzer",
+            "Scheduler component"
+        ]
+    },
+    {
+        "q": "The _____ sensor waits for a file to appear.",
+        "type": "fill_blank",
+        "answers": [
+            "FileSensor"
+        ],
+        "other_options": [
+            "TimeSensor",
+            "HttpSensor",
+            "SqlSensor"
+        ]
+    },
+    {
+        "q": "Sensors block until their condition is met.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sensor mode?",
+        "type": "mcq",
+        "c": "modes = ['poke', 'reschedule']\nprint(modes[0])",
+        "o": [
+            "poke",
+            "reschedule",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sensor with its trigger:",
+        "type": "match",
+        "left": [
+            "FileSensor",
+            "HttpSensor",
+            "SqlSensor",
+            "TimeSensor"
+        ],
+        "right": [
+            "File exists",
+            "HTTP response",
+            "Query result",
+            "Time reached"
+        ]
+    },
+    {
+        "q": "Rearrange the sensor workflow:",
+        "type": "rearrange",
+        "words": [
+            "Check condition",
+            "Poke interval",
+            "Retry",
+            "Condition met",
+            "Continue DAG"
+        ]
+    },
+    {
+        "q": "What is a Hook in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Interface to external systems",
+            "Task scheduler",
+            "Log handler",
+            "UI component"
+        ]
+    },
+    {
+        "q": "The _____ hook connects to PostgreSQL.",
+        "type": "fill_blank",
+        "answers": [
+            "PostgresHook"
+        ],
+        "other_options": [
+            "MySqlHook",
+            "S3Hook",
+            "HttpHook"
+        ]
+    },
+    {
+        "q": "Hooks abstract connection details from operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hook type?",
+        "type": "mcq",
+        "c": "hooks = ['PostgresHook', 'S3Hook', 'HttpHook']\nprint(len(hooks))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the hook with its system:",
+        "type": "match",
+        "left": [
+            "S3Hook",
+            "PostgresHook",
+            "HttpHook",
+            "SlackHook"
+        ],
+        "right": [
+            "AWS S3",
+            "PostgreSQL",
+            "REST APIs",
+            "Slack"
+        ]
+    },
+    {
+        "q": "Rearrange the hook usage:",
+        "type": "rearrange",
+        "words": [
+            "Define connection",
+            "Import hook",
+            "Instantiate hook",
+            "Call method",
+            "Close connection"
+        ]
+    },
+    {
+        "q": "What is XCom in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Cross-communication between tasks",
+            "External command",
+            "Executor configuration",
+            "Connection manager"
+        ]
+    },
+    {
+        "q": "The _____ method pushes data to XCom.",
+        "type": "fill_blank",
+        "answers": [
+            "xcom_push"
+        ],
+        "other_options": [
+            "xcom_pull",
+            "xcom_get",
+            "xcom_set"
+        ]
+    },
+    {
+        "q": "XCom allows tasks to share small data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this XCom key?",
+        "type": "mcq",
+        "c": "xcom = {'key': 'result', 'value': 100}\nprint(xcom['key'])",
+        "o": [
+            "result",
+            "100",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the XCom operation with its action:",
+        "type": "match",
+        "left": [
+            "xcom_push",
+            "xcom_pull",
+            "do_xcom_push",
+            "return_value"
+        ],
+        "right": [
+            "Store data",
+            "Retrieve data",
+            "Enable push",
+            "Auto-push"
+        ]
+    },
+    {
+        "q": "Rearrange the XCom flow:",
+        "type": "rearrange",
+        "words": [
+            "Task A runs",
+            "Push to XCom",
+            "Task B runs",
+            "Pull from XCom",
+            "Use data"
+        ]
+    },
+    {
+        "q": "What is the Airflow scheduler?",
+        "type": "mcq",
+        "o": [
+            "Component that triggers DAG runs",
+            "Database connection",
+            "Web interface",
+            "Log handler"
+        ]
+    },
+    {
+        "q": "The _____ determines when DAGs should run.",
+        "type": "fill_blank",
+        "answers": [
+            "scheduler"
+        ],
+        "other_options": [
+            "executor",
+            "worker",
+            "webserver"
+        ]
+    },
+    {
+        "q": "The scheduler runs continuously in production.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this schedule?",
+        "type": "mcq",
+        "c": "schedule = '@daily'\nprint(schedule)",
+        "o": [
+            "@daily",
+            "daily",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the schedule preset with its interval:",
+        "type": "match",
+        "left": [
+            "@daily",
+            "@hourly",
+            "@weekly",
+            "@monthly"
+        ],
+        "right": [
+            "Every day",
+            "Every hour",
+            "Every week",
+            "Every month"
+        ]
+    },
+    {
+        "q": "Rearrange the scheduling process:",
+        "type": "rearrange",
+        "words": [
+            "Parse DAG",
+            "Check schedule",
+            "Create DAG run",
+            "Queue tasks",
+            "Execute tasks"
+        ]
+    },
+    {
+        "q": "What is schedule_interval in Airflow?",
+        "type": "mcq",
+        "o": [
+            "How often DAG runs",
+            "Task timeout",
+            "Retry interval",
+            "Poke interval"
+        ]
+    },
+    {
+        "q": "The _____ expression '0 0 * * *' runs at midnight.",
+        "type": "fill_blank",
+        "answers": [
+            "cron"
+        ],
+        "other_options": [
+            "preset",
+            "interval",
+            "schedule"
+        ]
+    },
+    {
+        "q": "Cron expressions define schedule intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cron field count?",
+        "type": "mcq",
+        "c": "cron = '0 0 * * *'.split()\nprint(len(cron))",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cron position with its meaning:",
+        "type": "match",
+        "left": [
+            "First",
+            "Second",
+            "Third",
+            "Fifth"
+        ],
+        "right": [
+            "Minute",
+            "Hour",
+            "Day of month",
+            "Day of week"
+        ]
+    },
+    {
+        "q": "Rearrange the cron expression parts:",
+        "type": "rearrange",
+        "words": [
+            "Minute",
+            "Hour",
+            "Day of month",
+            "Month",
+            "Day of week"
+        ]
+    },
+    {
+        "q": "What is start_date in Airflow?",
+        "type": "mcq",
+        "o": [
+            "When DAG begins scheduling",
+            "Task start time",
+            "Log start time",
+            "Connection timeout"
+        ]
+    },
+    {
+        "q": "The _____ defines when the DAG becomes active.",
+        "type": "fill_blank",
+        "answers": [
+            "start_date"
+        ],
+        "other_options": [
+            "end_date",
+            "schedule_date",
+            "run_date"
+        ]
+    },
+    {
+        "q": "start_date should be a static datetime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this date?",
+        "type": "mcq",
+        "c": "from datetime import datetime\ndt = datetime(2024, 1, 1)\nprint(dt.year)",
+        "o": [
+            "2024",
+            "1",
+            "01",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the date parameter with its use:",
+        "type": "match",
+        "left": [
+            "start_date",
+            "end_date",
+            "execution_date",
+            "next_execution_date"
+        ],
+        "right": [
+            "When to start",
+            "When to stop",
+            "Current run",
+            "Next run"
+        ]
+    },
+    {
+        "q": "Rearrange the DAG date flow:",
+        "type": "rearrange",
+        "words": [
+            "Set start_date",
+            "First interval",
+            "First run",
+            "Subsequent runs",
+            "Optional end_date"
+        ]
+    },
+    {
+        "q": "What is catchup in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Running missed DAG runs",
+            "Error handling",
+            "Log collection",
+            "Connection retry"
+        ]
+    },
+    {
+        "q": "The _____ parameter controls backfilling.",
+        "type": "fill_blank",
+        "answers": [
+            "catchup"
+        ],
+        "other_options": [
+            "backfill",
+            "retry",
+            "depends"
+        ]
+    },
+    {
+        "q": "Setting catchup=False prevents backfilling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this catchup?",
+        "type": "mcq",
+        "c": "config = {'catchup': False}\nprint(config['catchup'])",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the parameter with its effect:",
+        "type": "match",
+        "left": [
+            "catchup=True",
+            "catchup=False",
+            "max_active_runs",
+            "concurrency"
+        ],
+        "right": [
+            "Run missed",
+            "Skip missed",
+            "Limit DAG runs",
+            "Limit tasks"
+        ]
+    },
+    {
+        "q": "Rearrange the catchup behavior:",
+        "type": "rearrange",
+        "words": [
+            "DAG created",
+            "Check start_date",
+            "Calculate missed runs",
+            "Create backfill runs",
+            "Execute sequentially"
+        ]
+    },
+    {
+        "q": "What is a DAG run?",
+        "type": "mcq",
+        "o": [
+            "Single execution of a DAG",
+            "Task execution",
+            "Scheduler cycle",
+            "Log rotation"
+        ]
+    },
+    {
+        "q": "The _____ identifies a specific DAG run.",
+        "type": "fill_blank",
+        "answers": [
+            "run_id"
+        ],
+        "other_options": [
+            "dag_id",
+            "task_id",
+            "execution_id"
+        ]
+    },
+    {
+        "q": "Each DAG run has a unique execution_date.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this run state?",
+        "type": "mcq",
+        "c": "states = ['running', 'success', 'failed']\nprint(states[1])",
+        "o": [
+            "success",
+            "running",
+            "failed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the DAG run state with its meaning:",
+        "type": "match",
+        "left": [
+            "running",
+            "success",
+            "failed",
+            "queued"
+        ],
+        "right": [
+            "In progress",
+            "Completed",
+            "Error occurred",
+            "Waiting"
+        ]
+    },
+    {
+        "q": "Rearrange the DAG run lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Scheduled",
+            "Queued",
+            "Running",
+            "Success or fail",
+            "Completed"
+        ]
+    },
+    {
+        "q": "What is task dependency in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Relationship between tasks",
+            "Task configuration",
+            "Connection setting",
+            "Log dependency"
+        ]
+    },
+    {
+        "q": "The _____ operator sets downstream dependency.",
+        "type": "fill_blank",
+        "answers": [
+            ">>"
+        ],
+        "other_options": [
+            "<<",
+            "->",
+            "<-"
+        ]
+    },
+    {
+        "q": "task_a >> task_b means task_a runs before task_b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this dependency?",
+        "type": "mcq",
+        "c": "deps = ['extract', 'transform', 'load']\nprint(deps[0], '>>', deps[1])",
+        "o": [
+            "extract >> transform",
+            "transform >> extract",
+            "load >> extract",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the dependency method with its syntax:",
+        "type": "match",
+        "left": [
+            ">>",
+            "<<",
+            "set_downstream",
+            "set_upstream"
+        ],
+        "right": [
+            "Downstream",
+            "Upstream",
+            "Method downstream",
+            "Method upstream"
+        ]
+    },
+    {
+        "q": "Rearrange the dependency chain:",
+        "type": "rearrange",
+        "words": [
+            "Task A",
+            "Task B",
+            "Task C",
+            "Task D",
+            "Task E"
+        ]
+    },
+    {
+        "q": "What is BashOperator?",
+        "type": "mcq",
+        "o": [
+            "Operator that runs bash commands",
+            "Python operator",
+            "Email operator",
+            "File operator"
+        ]
+    },
+    {
+        "q": "The _____ parameter contains the bash command.",
+        "type": "fill_blank",
+        "answers": [
+            "bash_command"
+        ],
+        "other_options": [
+            "command",
+            "script",
+            "shell"
+        ]
+    },
+    {
+        "q": "BashOperator executes shell commands.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this bash command?",
+        "type": "mcq",
+        "c": "cmd = 'echo Hello'\nprint(cmd)",
+        "o": [
+            "echo Hello",
+            "Hello",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the operator parameter with its value:",
+        "type": "match",
+        "left": [
+            "task_id",
+            "bash_command",
+            "dag",
+            "retries"
+        ],
+        "right": [
+            "Task name",
+            "Shell command",
+            "Parent DAG",
+            "Retry count"
+        ]
+    },
+    {
+        "q": "Rearrange the BashOperator setup:",
+        "type": "rearrange",
+        "words": [
+            "Import operator",
+            "Define task_id",
+            "Set bash_command",
+            "Assign to DAG",
+            "Set dependencies"
+        ]
+    },
+    {
+        "q": "What is PythonOperator?",
+        "type": "mcq",
+        "o": [
+            "Operator that runs Python callables",
+            "Bash operator",
+            "SQL operator",
+            "File operator"
+        ]
+    },
+    {
+        "q": "The _____ parameter specifies the Python function.",
+        "type": "fill_blank",
+        "answers": [
+            "python_callable"
+        ],
+        "other_options": [
+            "callable",
+            "function",
+            "method"
+        ]
+    },
+    {
+        "q": "PythonOperator can pass arguments to functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this callable?",
+        "type": "mcq",
+        "c": "def my_func():\n    return 'Hello'\nprint(my_func())",
+        "o": [
+            "Hello",
+            "my_func",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the PythonOperator param with its use:",
+        "type": "match",
+        "left": [
+            "python_callable",
+            "op_args",
+            "op_kwargs",
+            "provide_context"
+        ],
+        "right": [
+            "Function",
+            "Positional args",
+            "Keyword args",
+            "Pass context"
+        ]
+    },
+    {
+        "q": "Rearrange the PythonOperator setup:",
+        "type": "rearrange",
+        "words": [
+            "Define function",
+            "Import operator",
+            "Create task",
+            "Set callable",
+            "Add to DAG"
+        ]
+    },
+    {
+        "q": "What is the TaskFlow API?",
+        "type": "mcq",
+        "o": [
+            "Decorator-based task definition",
+            "REST API",
+            "Database API",
+            "Connection API"
+        ]
+    },
+    {
+        "q": "The _____ decorator creates a task.",
+        "type": "fill_blank",
+        "answers": [
+            "@task"
+        ],
+        "other_options": [
+            "@dag",
+            "@operator",
+            "@sensor"
+        ]
+    },
+    {
+        "q": "TaskFlow simplifies DAG authoring.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this decorator?",
+        "type": "mcq",
+        "c": "decorators = ['@task', '@dag', '@task_group']\nprint(decorators[0])",
+        "o": [
+            "@task",
+            "@dag",
+            "@task_group",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the decorator with its purpose:",
+        "type": "match",
+        "left": [
+            "@task",
+            "@dag",
+            "@task_group",
+            "@provide_context"
+        ],
+        "right": [
+            "Define task",
+            "Define DAG",
+            "Group tasks",
+            "Legacy context"
+        ]
+    },
+    {
+        "q": "Rearrange the TaskFlow workflow:",
+        "type": "rearrange",
+        "words": [
+            "Import decorators",
+            "Define @dag function",
+            "Define @task functions",
+            "Call tasks",
+            "Return results"
+        ]
+    },
+    {
+        "q": "What is a connection in Airflow?",
+        "type": "mcq",
+        "o": [
+            "External system credentials",
+            "Task relationship",
+            "Log connection",
+            "Scheduler link"
+        ]
+    },
+    {
+        "q": "The _____ stores connection configurations.",
+        "type": "fill_blank",
+        "answers": [
+            "connection"
+        ],
+        "other_options": [
+            "variable",
+            "secret",
+            "config"
+        ]
+    },
+    {
+        "q": "Connections are stored in the metadata database.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this connection field?",
+        "type": "mcq",
+        "c": "conn = {'conn_id': 'my_postgres', 'host': 'localhost'}\nprint(conn['conn_id'])",
+        "o": [
+            "my_postgres",
+            "localhost",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the connection field with its content:",
+        "type": "match",
+        "left": [
+            "conn_id",
+            "host",
+            "login",
+            "password"
+        ],
+        "right": [
+            "Identifier",
+            "Server",
+            "Username",
+            "Secret"
+        ]
+    },
+    {
+        "q": "Rearrange the connection setup:",
+        "type": "rearrange",
+        "words": [
+            "Open Admin menu",
+            "Click Connections",
+            "Add connection",
+            "Fill fields",
+            "Save connection"
+        ]
+    },
+    {
+        "q": "What are Airflow Variables?",
+        "type": "mcq",
+        "o": [
+            "Global key-value configuration",
+            "Task parameters",
+            "Log settings",
+            "Scheduler configs"
+        ]
+    },
+    {
+        "q": "The _____ stores runtime configurations.",
+        "type": "fill_blank",
+        "answers": [
+            "Variable"
+        ],
+        "other_options": [
+            "Connection",
+            "Secret",
+            "Config"
+        ]
+    },
+    {
+        "q": "Variables can be accessed in DAGs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this variable?",
+        "type": "mcq",
+        "c": "from airflow.models import Variable\nvar = {'key': 'env', 'value': 'prod'}\nprint(var['value'])",
+        "o": [
+            "prod",
+            "env",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Variable method with its action:",
+        "type": "match",
+        "left": [
+            "get",
+            "set",
+            "delete",
+            "get_json"
+        ],
+        "right": [
+            "Retrieve",
+            "Store",
+            "Remove",
+            "Get as JSON"
+        ]
+    },
+    {
+        "q": "Rearrange the Variable usage:",
+        "type": "rearrange",
+        "words": [
+            "Import Variable",
+            "Set value in UI",
+            "Get in DAG",
+            "Use in task",
+            "Update as needed"
+        ]
+    },
+    {
+        "q": "What is the Airflow executor?",
+        "type": "mcq",
+        "o": [
+            "Component that runs tasks",
+            "Scheduler component",
+            "Web server",
+            "Database"
+        ]
+    },
+    {
+        "q": "The _____ executor runs tasks sequentially.",
+        "type": "fill_blank",
+        "answers": [
+            "SequentialExecutor"
+        ],
+        "other_options": [
+            "LocalExecutor",
+            "CeleryExecutor",
+            "KubernetesExecutor"
+        ]
+    },
+    {
+        "q": "Different executors suit different scales.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this executor list?",
+        "type": "mcq",
+        "c": "executors = ['Sequential', 'Local', 'Celery', 'Kubernetes']\nprint(len(executors))",
+        "o": [
+            "4",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the executor with its use case:",
+        "type": "match",
+        "left": [
+            "SequentialExecutor",
+            "LocalExecutor",
+            "CeleryExecutor",
+            "KubernetesExecutor"
+        ],
+        "right": [
+            "Development",
+            "Single machine",
+            "Distributed workers",
+            "Container per task"
+        ]
+    },
+    {
+        "q": "Rearrange the executor scalability:",
+        "type": "rearrange",
+        "words": [
+            "SequentialExecutor",
+            "LocalExecutor",
+            "CeleryExecutor",
+            "KubernetesExecutor",
+            "Production scale"
+        ]
+    },
+    {
+        "q": "What is the LocalExecutor?",
+        "type": "mcq",
+        "o": [
+            "Runs tasks in parallel on local machine",
+            "Runs tasks sequentially",
+            "Runs tasks in Kubernetes",
+            "Runs tasks in Celery"
+        ]
+    },
+    {
+        "q": "The _____ executor uses multiprocessing.",
+        "type": "fill_blank",
+        "answers": [
+            "LocalExecutor"
+        ],
+        "other_options": [
+            "SequentialExecutor",
+            "CeleryExecutor",
+            "KubernetesExecutor"
+        ]
+    },
+    {
+        "q": "LocalExecutor is good for single-node production.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this parallelism?",
+        "type": "mcq",
+        "c": "config = {'parallelism': 32, 'dag_concurrency': 16}\nprint(config['parallelism'])",
+        "o": [
+            "32",
+            "16",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the config with its purpose:",
+        "type": "match",
+        "left": [
+            "parallelism",
+            "dag_concurrency",
+            "max_active_runs_per_dag",
+            "worker_concurrency"
+        ],
+        "right": [
+            "Total tasks",
+            "Tasks per DAG",
+            "DAG runs",
+            "Celery worker"
+        ]
+    },
+    {
+        "q": "Rearrange the LocalExecutor setup:",
+        "type": "rearrange",
+        "words": [
+            "Edit airflow.cfg",
+            "Set executor",
+            "Configure parallelism",
+            "Restart scheduler",
+            "Run tasks"
+        ]
+    },
+    {
+        "q": "What is CeleryExecutor?",
+        "type": "mcq",
+        "o": [
+            "Distributed task execution with Celery",
+            "Sequential execution",
+            "Kubernetes-based execution",
+            "Local multiprocessing"
+        ]
+    },
+    {
+        "q": "The _____ enables horizontal scaling.",
+        "type": "fill_blank",
+        "answers": [
+            "CeleryExecutor"
+        ],
+        "other_options": [
+            "LocalExecutor",
+            "SequentialExecutor",
+            "DebugExecutor"
+        ]
+    },
+    {
+        "q": "CeleryExecutor requires a message broker.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this broker?",
+        "type": "mcq",
+        "c": "broker = 'redis://localhost:6379/0'\nprint(broker.split(':')[0])",
+        "o": [
+            "redis",
+            "localhost",
+            "6379",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the broker with its type:",
+        "type": "match",
+        "left": [
+            "Redis",
+            "RabbitMQ",
+            "SQS",
+            "Kafka"
+        ],
+        "right": [
+            "In-memory",
+            "AMQP",
+            "AWS queue",
+            "Streaming"
+        ]
+    },
+    {
+        "q": "Rearrange the Celery setup:",
+        "type": "rearrange",
+        "words": [
+            "Install Celery",
+            "Configure broker",
+            "Set executor",
+            "Start workers",
+            "Run tasks"
+        ]
+    },
+    {
+        "q": "What is KubernetesExecutor?",
+        "type": "mcq",
+        "o": [
+            "Runs each task in a Kubernetes pod",
+            "Runs tasks locally",
+            "Runs tasks with Celery",
+            "Runs tasks sequentially"
+        ]
+    },
+    {
+        "q": "The _____ provides task-level isolation.",
+        "type": "fill_blank",
+        "answers": [
+            "KubernetesExecutor"
+        ],
+        "other_options": [
+            "LocalExecutor",
+            "CeleryExecutor",
+            "SequentialExecutor"
+        ]
+    },
+    {
+        "q": "KubernetesExecutor spins up pods per task.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this pod spec?",
+        "type": "mcq",
+        "c": "spec = {'image': 'airflow:2.0', 'resources': {'cpu': '1', 'memory': '1Gi'}}\nprint(spec['image'])",
+        "o": [
+            "airflow:2.0",
+            "1",
+            "1Gi",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the K8s config with its setting:",
+        "type": "match",
+        "left": [
+            "namespace",
+            "image",
+            "resources",
+            "secrets"
+        ],
+        "right": [
+            "Isolation",
+            "Container",
+            "CPU/memory",
+            "Credentials"
+        ]
+    },
+    {
+        "q": "Rearrange the K8s executor setup:",
+        "type": "rearrange",
+        "words": [
+            "Setup cluster",
+            "Configure executor",
+            "Define pod template",
+            "Deploy Airflow",
+            "Run tasks"
+        ]
+    },
+    {
+        "q": "What is task retry in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Automatic task re-execution on failure",
+            "Manual restart",
+            "Task deletion",
+            "Log rotation"
+        ]
+    },
+    {
+        "q": "The _____ parameter sets retry count.",
+        "type": "fill_blank",
+        "answers": [
+            "retries"
+        ],
+        "other_options": [
+            "retry_count",
+            "max_retries",
+            "attempts"
+        ]
+    },
+    {
+        "q": "Retries help handle transient failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this retry config?",
+        "type": "mcq",
+        "c": "config = {'retries': 3, 'retry_delay': 300}\nprint(config['retries'])",
+        "o": [
+            "3",
+            "300",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the retry param with its function:",
+        "type": "match",
+        "left": [
+            "retries",
+            "retry_delay",
+            "retry_exponential_backoff",
+            "max_retry_delay"
+        ],
+        "right": [
+            "Attempts",
+            "Wait time",
+            "Increasing delay",
+            "Max wait"
+        ]
+    },
+    {
+        "q": "Rearrange the retry flow:",
+        "type": "rearrange",
+        "words": [
+            "Task fails",
+            "Wait retry_delay",
+            "Retry task",
+            "Check retries left",
+            "Mark failed or success"
+        ]
+    },
+    {
+        "q": "What is trigger_rule in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Condition for task execution",
+            "Scheduling rule",
+            "Dependency type",
+            "Retry policy"
+        ]
+    },
+    {
+        "q": "The _____ trigger rule runs if all upstream succeed.",
+        "type": "fill_blank",
+        "answers": [
+            "all_success"
+        ],
+        "other_options": [
+            "all_failed",
+            "one_success",
+            "all_done"
+        ]
+    },
+    {
+        "q": "Trigger rules control task dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this trigger rule?",
+        "type": "mcq",
+        "c": "rules = ['all_success', 'all_failed', 'one_success', 'all_done']\nprint(rules[0])",
+        "o": [
+            "all_success",
+            "all_failed",
+            "one_success",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the trigger rule with its condition:",
+        "type": "match",
+        "left": [
+            "all_success",
+            "all_failed",
+            "one_success",
+            "none_failed"
+        ],
+        "right": [
+            "All succeed",
+            "All fail",
+            "Any succeeds",
+            "None fail or skip"
+        ]
+    },
+    {
+        "q": "Rearrange the trigger rules by strictness:",
+        "type": "rearrange",
+        "words": [
+            "all_success",
+            "none_failed",
+            "one_success",
+            "all_done",
+            "dummy"
+        ]
+    },
+    {
+        "q": "What is pool in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Resource limit for concurrent tasks",
+            "Database connection",
+            "Log storage",
+            "Scheduler queue"
+        ]
+    },
+    {
+        "q": "The _____ limits resource usage.",
+        "type": "fill_blank",
+        "answers": [
+            "pool"
+        ],
+        "other_options": [
+            "queue",
+            "limit",
+            "constraint"
+        ]
+    },
+    {
+        "q": "Pools prevent resource exhaustion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this pool config?",
+        "type": "mcq",
+        "c": "pool = {'name': 'db_pool', 'slots': 5}\nprint(pool['slots'])",
+        "o": [
+            "5",
+            "db_pool",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pool setting with its purpose:",
+        "type": "match",
+        "left": [
+            "name",
+            "slots",
+            "description",
+            "include_deferred"
+        ],
+        "right": [
+            "Identifier",
+            "Capacity",
+            "Documentation",
+            "Count deferred"
+        ]
+    },
+    {
+        "q": "Rearrange the pool usage:",
+        "type": "rearrange",
+        "words": [
+            "Create pool",
+            "Set slots",
+            "Assign to tasks",
+            "Monitor usage",
+            "Adjust as needed"
+        ]
+    },
+    {
+        "q": "What is priority_weight in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Task execution priority",
+            "Retry order",
+            "Pool assignment",
+            "Dependency order"
+        ]
+    },
+    {
+        "q": "The _____ determines task scheduling order.",
+        "type": "fill_blank",
+        "answers": [
+            "priority_weight"
+        ],
+        "other_options": [
+            "weight",
+            "priority",
+            "order"
+        ]
+    },
+    {
+        "q": "Higher priority_weight runs first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this priority?",
+        "type": "mcq",
+        "c": "tasks = [{'name': 'a', 'priority': 10}, {'name': 'b', 'priority': 5}]\nprint(max(tasks, key=lambda x: x['priority'])['name'])",
+        "o": [
+            "a",
+            "b",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the priority rule with its calculation:",
+        "type": "match",
+        "left": [
+            "downstream",
+            "upstream",
+            "absolute",
+            "manual"
+        ],
+        "right": [
+            "Sum downstream",
+            "Sum upstream",
+            "Use value",
+            "Set explicitly"
+        ]
+    },
+    {
+        "q": "Rearrange the priority calculation:",
+        "type": "rearrange",
+        "words": [
+            "Set weight",
+            "Calculate rule",
+            "Sum weights",
+            "Order tasks",
+            "Execute by priority"
+        ]
+    },
+    {
+        "q": "What is SLA in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Expected task completion time",
+            "Task priority",
+            "Retry delay",
+            "Pool limit"
+        ]
+    },
+    {
+        "q": "The _____ triggers alerts on missed deadlines.",
+        "type": "fill_blank",
+        "answers": [
+            "SLA"
+        ],
+        "other_options": [
+            "timeout",
+            "deadline",
+            "alert"
+        ]
+    },
+    {
+        "q": "SLA miss notifications require callbacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this SLA?",
+        "type": "mcq",
+        "c": "from datetime import timedelta\nsla = timedelta(hours=2)\nprint(sla.total_seconds())",
+        "o": [
+            "7200.0",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the SLA config with its purpose:",
+        "type": "match",
+        "left": [
+            "sla",
+            "sla_miss_callback",
+            "email_on_sla_miss",
+            "sla_miss_percent"
+        ],
+        "right": [
+            "Target time",
+            "Handler",
+            "Send email",
+            "Threshold"
+        ]
+    },
+    {
+        "q": "Rearrange the SLA workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define SLA",
+            "Task runs",
+            "Check deadline",
+            "Miss detected",
+            "Trigger callback"
+        ]
+    },
+    {
+        "q": "What is execution_timeout in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Maximum task runtime",
+            "SLA deadline",
+            "Retry delay",
+            "Poke interval"
+        ]
+    },
+    {
+        "q": "The _____ kills tasks exceeding time limit.",
+        "type": "fill_blank",
+        "answers": [
+            "execution_timeout"
+        ],
+        "other_options": [
+            "timeout",
+            "max_time",
+            "time_limit"
+        ]
+    },
+    {
+        "q": "Timeout prevents runaway tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this timeout?",
+        "type": "mcq",
+        "c": "from datetime import timedelta\ntimeout = timedelta(minutes=30)\nprint(timeout.seconds)",
+        "o": [
+            "1800",
+            "30",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the timeout type with its scope:",
+        "type": "match",
+        "left": [
+            "execution_timeout",
+            "dagrun_timeout",
+            "sensor_timeout",
+            "pool_timeout"
+        ],
+        "right": [
+            "Task",
+            "DAG run",
+            "Sensor",
+            "Pool wait"
+        ]
+    },
+    {
+        "q": "Rearrange the timeout handling:",
+        "type": "rearrange",
+        "words": [
+            "Task starts",
+            "Timer runs",
+            "Timeout reached",
+            "Kill task",
+            "Mark failed"
+        ]
+    },
+    {
+        "q": "What is on_failure_callback?",
+        "type": "mcq",
+        "o": [
+            "Function called on task failure",
+            "Success handler",
+            "Retry handler",
+            "Completion handler"
+        ]
+    },
+    {
+        "q": "The _____ handles task failures.",
+        "type": "fill_blank",
+        "answers": [
+            "on_failure_callback"
+        ],
+        "other_options": [
+            "on_success_callback",
+            "on_retry_callback",
+            "on_execute_callback"
+        ]
+    },
+    {
+        "q": "Callbacks enable custom alerting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this callback?",
+        "type": "mcq",
+        "c": "callbacks = ['on_failure_callback', 'on_success_callback', 'on_retry_callback']\nprint(len(callbacks))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the callback with its trigger:",
+        "type": "match",
+        "left": [
+            "on_failure_callback",
+            "on_success_callback",
+            "on_retry_callback",
+            "sla_miss_callback"
+        ],
+        "right": [
+            "Task fails",
+            "Task succeeds",
+            "Task retries",
+            "SLA missed"
+        ]
+    },
+    {
+        "q": "Rearrange the callback setup:",
+        "type": "rearrange",
+        "words": [
+            "Define function",
+            "Accept context",
+            "Implement logic",
+            "Assign to task",
+            "Test callback"
+        ]
+    },
+    {
+        "q": "What is SubDagOperator?",
+        "type": "mcq",
+        "o": [
+            "Operator for nested DAGs",
+            "Task grouping",
+            "Parallel execution",
+            "Sequential execution"
+        ]
+    },
+    {
+        "q": "The _____ creates a DAG within a DAG.",
+        "type": "fill_blank",
+        "answers": [
+            "SubDagOperator"
+        ],
+        "other_options": [
+            "TaskGroup",
+            "BranchOperator",
+            "DummyOperator"
+        ]
+    },
+    {
+        "q": "SubDagOperator is deprecated in favor of TaskGroup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this subdag?",
+        "type": "mcq",
+        "c": "subdag_id = 'parent.child'\nprint(subdag_id.split('.')[1])",
+        "o": [
+            "child",
+            "parent",
+            "parent.child",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the grouping method with its feature:",
+        "type": "match",
+        "left": [
+            "SubDagOperator",
+            "TaskGroup",
+            "Dynamic mapping",
+            "Loop"
+        ],
+        "right": [
+            "Separate DAG",
+            "Visual grouping",
+            "Runtime tasks",
+            "Static tasks"
+        ]
+    },
+    {
+        "q": "Rearrange the subdag creation:",
+        "type": "rearrange",
+        "words": [
+            "Define parent DAG",
+            "Create subdag function",
+            "Add SubDagOperator",
+            "Set dependencies",
+            "Execute"
+        ]
+    },
+    {
+        "q": "What is TaskGroup?",
+        "type": "mcq",
+        "o": [
+            "Visual grouping of tasks",
+            "Nested DAG",
+            "Parallel executor",
+            "Pool assignment"
+        ]
+    },
+    {
+        "q": "The _____ organizes tasks in the UI.",
+        "type": "fill_blank",
+        "answers": [
+            "TaskGroup"
+        ],
+        "other_options": [
+            "SubDag",
+            "Pool",
+            "Queue"
+        ]
+    },
+    {
+        "q": "TaskGroups improve DAG readability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this group?",
+        "type": "mcq",
+        "c": "from airflow.utils.task_group import TaskGroup\ngroup = {'group_id': 'etl_tasks'}\nprint(group['group_id'])",
+        "o": [
+            "etl_tasks",
+            "TaskGroup",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the TaskGroup feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Collapse",
+            "Prefix",
+            "Tooltip",
+            "Dependencies"
+        ],
+        "right": [
+            "Hide details",
+            "Task naming",
+            "Documentation",
+            "Group-level"
+        ]
+    },
+    {
+        "q": "Rearrange the TaskGroup usage:",
+        "type": "rearrange",
+        "words": [
+            "Import TaskGroup",
+            "Create context",
+            "Add tasks inside",
+            "Set group deps",
+            "View in UI"
+        ]
+    },
+    {
+        "q": "What is BranchPythonOperator?",
+        "type": "mcq",
+        "o": [
+            "Conditional task branching",
+            "Parallel execution",
+            "Sequential execution",
+            "Task grouping"
+        ]
+    },
+    {
+        "q": "The _____ returns task_id to execute.",
+        "type": "fill_blank",
+        "answers": [
+            "BranchPythonOperator"
+        ],
+        "other_options": [
+            "PythonOperator",
+            "BashOperator",
+            "DummyOperator"
+        ]
+    },
+    {
+        "q": "Branches skip non-selected paths.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this branch?",
+        "type": "mcq",
+        "c": "def choose_branch():\n    return 'task_a' if True else 'task_b'\nprint(choose_branch())",
+        "o": [
+            "task_a",
+            "task_b",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the branching operator with its use:",
+        "type": "match",
+        "left": [
+            "BranchPythonOperator",
+            "ShortCircuitOperator",
+            "SkipMixin",
+            "TriggerRule"
+        ],
+        "right": [
+            "Choose path",
+            "Stop pipeline",
+            "Skip tasks",
+            "Join paths"
+        ]
+    },
+    {
+        "q": "Rearrange the branching workflow:",
+        "type": "rearrange",
+        "words": [
+            "Define branch function",
+            "Create branch task",
+            "Add branch paths",
+            "Join with trigger_rule",
+            "Execute"
+        ]
+    },
+    {
+        "q": "What is ShortCircuitOperator?",
+        "type": "mcq",
+        "o": [
+            "Stops pipeline based on condition",
+            "Continues all tasks",
+            "Retries failed tasks",
+            "Parallel execution"
+        ]
+    },
+    {
+        "q": "The _____ skips downstream on False.",
+        "type": "fill_blank",
+        "answers": [
+            "ShortCircuitOperator"
+        ],
+        "other_options": [
+            "BranchOperator",
+            "SkipOperator",
+            "StopOperator"
+        ]
+    },
+    {
+        "q": "ShortCircuit is useful for conditional pipelines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this condition?",
+        "type": "mcq",
+        "c": "def should_continue():\n    return False\nprint(should_continue())",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the control operator with its action:",
+        "type": "match",
+        "left": [
+            "ShortCircuit",
+            "Branch",
+            "Trigger",
+            "Skip"
+        ],
+        "right": [
+            "Stop pipeline",
+            "Choose path",
+            "Start DAG",
+            "Skip task"
+        ]
+    },
+    {
+        "q": "Rearrange the short circuit flow:",
+        "type": "rearrange",
+        "words": [
+            "Define condition",
+            "Create operator",
+            "Check result",
+            "Skip if False",
+            "Continue if True"
+        ]
+    },
+    {
+        "q": "What is TriggerDagRunOperator?",
+        "type": "mcq",
+        "o": [
+            "Triggers another DAG",
+            "Schedules current DAG",
+            "Restarts DAG",
+            "Stops DAG"
+        ]
+    },
+    {
+        "q": "The _____ starts a different DAG.",
+        "type": "fill_blank",
+        "answers": [
+            "TriggerDagRunOperator"
+        ],
+        "other_options": [
+            "StartDagOperator",
+            "RunDagOperator",
+            "ExecDagOperator"
+        ]
+    },
+    {
+        "q": "TriggerDagRunOperator enables DAG chaining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this trigger?",
+        "type": "mcq",
+        "c": "trigger = {'trigger_dag_id': 'downstream_dag', 'wait_for_completion': True}\nprint(trigger['trigger_dag_id'])",
+        "o": [
+            "downstream_dag",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the trigger param with its function:",
+        "type": "match",
+        "left": [
+            "trigger_dag_id",
+            "conf",
+            "execution_date",
+            "wait_for_completion"
+        ],
+        "right": [
+            "Target DAG",
+            "Pass data",
+            "Run date",
+            "Block until done"
+        ]
+    },
+    {
+        "q": "Rearrange the DAG trigger:",
+        "type": "rearrange",
+        "words": [
+            "Create operator",
+            "Set target dag_id",
+            "Pass conf data",
+            "Execute trigger",
+            "Monitor downstream"
+        ]
+    },
+    {
+        "q": "What is ExternalTaskSensor?",
+        "type": "mcq",
+        "o": [
+            "Waits for external DAG task",
+            "Waits for file",
+            "Waits for HTTP response",
+            "Waits for time"
+        ]
+    },
+    {
+        "q": "The _____ monitors other DAG tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "ExternalTaskSensor"
+        ],
+        "other_options": [
+            "TaskSensor",
+            "DagSensor",
+            "WaitSensor"
+        ]
+    },
+    {
+        "q": "ExternalTaskSensor enables cross-DAG dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this sensor config?",
+        "type": "mcq",
+        "c": "config = {'external_dag_id': 'upstream', 'external_task_id': 'final'}\nprint(config['external_task_id'])",
+        "o": [
+            "final",
+            "upstream",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sensor param with its value:",
+        "type": "match",
+        "left": [
+            "external_dag_id",
+            "external_task_id",
+            "execution_delta",
+            "allowed_states"
+        ],
+        "right": [
+            "Target DAG",
+            "Target task",
+            "Time offset",
+            "Success states"
+        ]
+    },
+    {
+        "q": "Rearrange the external sensing:",
+        "type": "rearrange",
+        "words": [
+            "Define sensor",
+            "Set external dag",
+            "Set external task",
+            "Configure delta",
+            "Poke until ready"
+        ]
+    },
+    {
+        "q": "What is dynamic task mapping?",
+        "type": "mcq",
+        "o": [
+            "Creating tasks at runtime",
+            "Static task definition",
+            "Task grouping",
+            "Task branching"
+        ]
+    },
+    {
+        "q": "The _____ method creates dynamic tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "expand"
+        ],
+        "other_options": [
+            "map",
+            "create",
+            "generate"
+        ]
+    },
+    {
+        "q": "Dynamic mapping reduces DAG complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this mapping?",
+        "type": "mcq",
+        "c": "items = [1, 2, 3, 4, 5]\nprint(len(items))",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the mapping method with its use:",
+        "type": "match",
+        "left": [
+            "expand",
+            "partial",
+            "map_index",
+            "expand_kwargs"
+        ],
+        "right": [
+            "Create instances",
+            "Fixed params",
+            "Instance ID",
+            "Dict expansion"
+        ]
+    },
+    {
+        "q": "Rearrange the dynamic mapping:",
+        "type": "rearrange",
+        "words": [
+            "Define task",
+            "Use expand",
+            "Pass iterable",
+            "Tasks created",
+            "Execute in parallel"
+        ]
+    },
+    {
+        "q": "What is Airflow REST API?",
+        "type": "mcq",
+        "o": [
+            "Programmatic Airflow control",
+            "Database access",
+            "Log viewing",
+            "Task execution"
+        ]
+    },
+    {
+        "q": "The _____ enables external integration.",
+        "type": "fill_blank",
+        "answers": [
+            "REST API"
+        ],
+        "other_options": [
+            "CLI",
+            "UI",
+            "SDK"
+        ]
+    },
+    {
+        "q": "REST API requires authentication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this endpoint?",
+        "type": "mcq",
+        "c": "endpoint = '/api/v1/dags'\nprint(endpoint.split('/')[-1])",
+        "o": [
+            "dags",
+            "api",
+            "v1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the API endpoint with its action:",
+        "type": "match",
+        "left": [
+            "/dags",
+            "/dagRuns",
+            "/tasks",
+            "/variables"
+        ],
+        "right": [
+            "List DAGs",
+            "Trigger runs",
+            "View tasks",
+            "Get variables"
+        ]
+    },
+    {
+        "q": "Rearrange the API usage:",
+        "type": "rearrange",
+        "words": [
+            "Get credentials",
+            "Build request",
+            "Call endpoint",
+            "Parse response",
+            "Handle result"
+        ]
+    },
+    {
+        "q": "What is Airflow CLI?",
+        "type": "mcq",
+        "o": [
+            "Command-line interface for Airflow",
+            "Web interface",
+            "REST API",
+            "Python SDK"
+        ]
+    },
+    {
+        "q": "The _____ manages Airflow from terminal.",
+        "type": "fill_blank",
+        "answers": [
+            "CLI"
+        ],
+        "other_options": [
+            "API",
+            "UI",
+            "SDK"
+        ]
+    },
+    {
+        "q": "CLI is useful for automation scripts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this command?",
+        "type": "mcq",
+        "c": "cmd = 'airflow dags list'\nprint(cmd.split()[0])",
+        "o": [
+            "airflow",
+            "dags",
+            "list",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the CLI command with its action:",
+        "type": "match",
+        "left": [
+            "dags list",
+            "tasks run",
+            "db init",
+            "scheduler"
+        ],
+        "right": [
+            "Show DAGs",
+            "Execute task",
+            "Setup database",
+            "Start scheduler"
+        ]
+    },
+    {
+        "q": "Rearrange the CLI workflow:",
+        "type": "rearrange",
+        "words": [
+            "Open terminal",
+            "Navigate to Airflow",
+            "Run command",
+            "View output",
+            "Parse result"
+        ]
+    },
+    {
+        "q": "What is dag_run conf?",
+        "type": "mcq",
+        "o": [
+            "Runtime configuration for DAG run",
+            "Static configuration",
+            "Connection settings",
+            "Variable storage"
+        ]
+    },
+    {
+        "q": "The _____ passes data to DAG runs.",
+        "type": "fill_blank",
+        "answers": [
+            "conf"
+        ],
+        "other_options": [
+            "params",
+            "args",
+            "data"
+        ]
+    },
+    {
+        "q": "Conf is accessible in task context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this conf?",
+        "type": "mcq",
+        "c": "conf = {'key': 'value', 'count': 10}\nprint(conf['key'])",
+        "o": [
+            "value",
+            "10",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the context key with its content:",
+        "type": "match",
+        "left": [
+            "dag_run.conf",
+            "params",
+            "var.json",
+            "var.value"
+        ],
+        "right": [
+            "Runtime config",
+            "DAG params",
+            "JSON variable",
+            "String variable"
+        ]
+    },
+    {
+        "q": "Rearrange the conf usage:",
+        "type": "rearrange",
+        "words": [
+            "Trigger with conf",
+            "Pass JSON data",
+            "Access in task",
+            "Use in logic",
+            "Log values"
+        ]
+    },
+    {
+        "q": "What is Jinja templating in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Dynamic parameter substitution",
+            "Static configuration",
+            "Log formatting",
+            "Database query"
+        ]
+    },
+    {
+        "q": "The _____ expression accesses execution date.",
+        "type": "fill_blank",
+        "answers": [
+            "{{ ds }}"
+        ],
+        "other_options": [
+            "{{ date }}",
+            "{{ exec }}",
+            "{{ run }}"
+        ]
+    },
+    {
+        "q": "Jinja templates are rendered at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this template?",
+        "type": "mcq",
+        "c": "template = '{{ ds }}'\nds = '2024-01-01'\nprint(ds)",
+        "o": [
+            "2024-01-01",
+            "{{ ds }}",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the template with its value:",
+        "type": "match",
+        "left": [
+            "{{ ds }}",
+            "{{ ts }}",
+            "{{ dag_run.conf }}",
+            "{{ task_instance }}"
+        ],
+        "right": [
+            "Date string",
+            "Timestamp",
+            "Config dict",
+            "Task object"
+        ]
+    },
+    {
+        "q": "Rearrange the templating flow:",
+        "type": "rearrange",
+        "words": [
+            "Write template",
+            "Define task",
+            "Scheduler parses",
+            "Render at runtime",
+            "Execute with values"
+        ]
+    },
+    {
+        "q": "What is default_args in DAG?",
+        "type": "mcq",
+        "o": [
+            "Default parameters for all tasks",
+            "DAG-level only settings",
+            "Connection defaults",
+            "Variable defaults"
+        ]
+    },
+    {
+        "q": "The _____ applies to all tasks in DAG.",
+        "type": "fill_blank",
+        "answers": [
+            "default_args"
+        ],
+        "other_options": [
+            "dag_args",
+            "task_args",
+            "global_args"
+        ]
+    },
+    {
+        "q": "default_args reduce code duplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this default?",
+        "type": "mcq",
+        "c": "default_args = {'owner': 'airflow', 'retries': 3}\nprint(default_args['owner'])",
+        "o": [
+            "airflow",
+            "3",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the default_arg with its typical value:",
+        "type": "match",
+        "left": [
+            "owner",
+            "retries",
+            "retry_delay",
+            "email_on_failure"
+        ],
+        "right": [
+            "Username",
+            "3",
+            "timedelta(minutes=5)",
+            "True"
+        ]
+    },
+    {
+        "q": "Rearrange the default_args setup:",
+        "type": "rearrange",
+        "words": [
+            "Define dict",
+            "Set common params",
+            "Pass to DAG",
+            "Override in tasks",
+            "Execute"
+        ]
+    },
+    {
+        "q": "What is airflow.cfg?",
+        "type": "mcq",
+        "o": [
+            "Main Airflow configuration file",
+            "DAG definition file",
+            "Log configuration",
+            "Database schema"
+        ]
+    },
+    {
+        "q": "The _____ configures Airflow behavior.",
+        "type": "fill_blank",
+        "answers": [
+            "airflow.cfg"
+        ],
+        "other_options": [
+            "config.yaml",
+            "settings.py",
+            "env.sh"
+        ]
+    },
+    {
+        "q": "Environment variables can override airflow.cfg.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this config section?",
+        "type": "mcq",
+        "c": "sections = ['core', 'scheduler', 'webserver', 'database']\nprint(sections[0])",
+        "o": [
+            "core",
+            "scheduler",
+            "webserver",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the config section with its settings:",
+        "type": "match",
+        "left": [
+            "core",
+            "scheduler",
+            "webserver",
+            "celery"
+        ],
+        "right": [
+            "Executor",
+            "Parse interval",
+            "UI port",
+            "Broker URL"
+        ]
+    },
+    {
+        "q": "Rearrange the configuration:",
+        "type": "rearrange",
+        "words": [
+            "Locate airflow.cfg",
+            "Edit settings",
+            "Set environment vars",
+            "Restart services",
+            "Verify changes"
+        ]
+    },
+    {
+        "q": "What is Airflow metadata database?",
+        "type": "mcq",
+        "o": [
+            "Stores DAG and task state",
+            "Stores data files",
+            "Stores logs",
+            "Stores connections only"
+        ]
+    },
+    {
+        "q": "The _____ stores DAG run history.",
+        "type": "fill_blank",
+        "answers": [
+            "metadata database"
+        ],
+        "other_options": [
+            "log database",
+            "file database",
+            "cache database"
+        ]
+    },
+    {
+        "q": "PostgreSQL is recommended for production.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this database?",
+        "type": "mcq",
+        "c": "dbs = ['sqlite', 'postgres', 'mysql']\nprint(dbs[1])",
+        "o": [
+            "postgres",
+            "sqlite",
+            "mysql",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the database with its use:",
+        "type": "match",
+        "left": [
+            "SQLite",
+            "PostgreSQL",
+            "MySQL",
+            "MSSQL"
+        ],
+        "right": [
+            "Development",
+            "Production",
+            "Alternative",
+            "Enterprise"
+        ]
+    },
+    {
+        "q": "Rearrange the database setup:",
+        "type": "rearrange",
+        "words": [
+            "Create database",
+            "Configure connection",
+            "Run db init",
+            "Run db migrate",
+            "Start Airflow"
+        ]
+    },
+    {
+        "q": "What is S3Hook?",
+        "type": "mcq",
+        "o": [
+            "Interface to AWS S3",
+            "PostgreSQL hook",
+            "HTTP hook",
+            "Slack hook"
+        ]
+    },
+    {
+        "q": "The _____ interacts with S3 buckets.",
+        "type": "fill_blank",
+        "answers": [
+            "S3Hook"
+        ],
+        "other_options": [
+            "AWSHook",
+            "BucketHook",
+            "StorageHook"
+        ]
+    },
+    {
+        "q": "S3Hook supports upload and download.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this S3 operation?",
+        "type": "mcq",
+        "c": "operations = ['load_file', 'download_file', 'delete_objects', 'list_keys']\nprint(len(operations))",
+        "o": [
+            "4",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the S3 method with its action:",
+        "type": "match",
+        "left": [
+            "load_file",
+            "download_file",
+            "delete_objects",
+            "list_keys"
+        ],
+        "right": [
+            "Upload",
+            "Download",
+            "Delete",
+            "List"
+        ]
+    },
+    {
+        "q": "Rearrange the S3 workflow:",
+        "type": "rearrange",
+        "words": [
+            "Create connection",
+            "Import hook",
+            "Instantiate hook",
+            "Call method",
+            "Handle result"
+        ]
+    },
+    {
+        "q": "What is GCSHook?",
+        "type": "mcq",
+        "o": [
+            "Interface to Google Cloud Storage",
+            "AWS S3 hook",
+            "Azure Blob hook",
+            "Local file hook"
+        ]
+    },
+    {
+        "q": "The _____ interacts with GCS buckets.",
+        "type": "fill_blank",
+        "answers": [
+            "GCSHook"
+        ],
+        "other_options": [
+            "GoogleHook",
+            "CloudHook",
+            "StorageHook"
+        ]
+    },
+    {
+        "q": "GCSHook requires google-cloud-storage package.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this GCS bucket?",
+        "type": "mcq",
+        "c": "bucket = {'name': 'my-bucket', 'location': 'us-central1'}\nprint(bucket['name'])",
+        "o": [
+            "my-bucket",
+            "us-central1",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the cloud hook with its provider:",
+        "type": "match",
+        "left": [
+            "S3Hook",
+            "GCSHook",
+            "AzureBlobHook",
+            "WasbHook"
+        ],
+        "right": [
+            "AWS",
+            "Google",
+            "Azure Blob",
+            "Azure WASB"
+        ]
+    },
+    {
+        "q": "Rearrange the GCS usage:",
+        "type": "rearrange",
+        "words": [
+            "Setup GCP connection",
+            "Import GCSHook",
+            "Create hook instance",
+            "Perform operation",
+            "Close connection"
+        ]
+    },
+    {
+        "q": "What is BigQueryOperator?",
+        "type": "mcq",
+        "o": [
+            "Executes BigQuery SQL",
+            "Executes PostgreSQL",
+            "Executes MySQL",
+            "Executes SQLite"
+        ]
+    },
+    {
+        "q": "The _____ runs queries in BigQuery.",
+        "type": "fill_blank",
+        "answers": [
+            "BigQueryOperator"
+        ],
+        "other_options": [
+            "PostgresOperator",
+            "SqlOperator",
+            "QueryOperator"
+        ]
+    },
+    {
+        "q": "BigQueryOperator supports parameterized queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this BQ config?",
+        "type": "mcq",
+        "c": "config = {'sql': 'SELECT * FROM table', 'destination': 'project.dataset.table'}\nprint(config['destination'].split('.')[-1])",
+        "o": [
+            "table",
+            "project",
+            "dataset",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the BQ param with its purpose:",
+        "type": "match",
+        "left": [
+            "sql",
+            "destination_dataset_table",
+            "write_disposition",
+            "use_legacy_sql"
+        ],
+        "right": [
+            "Query",
+            "Output table",
+            "Overwrite mode",
+            "SQL dialect"
+        ]
+    },
+    {
+        "q": "Rearrange the BigQuery task:",
+        "type": "rearrange",
+        "words": [
+            "Create connection",
+            "Write SQL",
+            "Configure operator",
+            "Execute query",
+            "Check results"
+        ]
+    },
+    {
+        "q": "What is SparkSubmitOperator?",
+        "type": "mcq",
+        "o": [
+            "Submits Spark jobs",
+            "Runs Python code",
+            "Runs Bash commands",
+            "Runs SQL queries"
+        ]
+    },
+    {
+        "q": "The _____ integrates Spark with Airflow.",
+        "type": "fill_blank",
+        "answers": [
+            "SparkSubmitOperator"
+        ],
+        "other_options": [
+            "PySparkOperator",
+            "SparkOperator",
+            "DataprocOperator"
+        ]
+    },
+    {
+        "q": "SparkSubmitOperator requires Spark installation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Spark config?",
+        "type": "mcq",
+        "c": "spark = {'application': 'job.py', 'master': 'yarn'}\nprint(spark['master'])",
+        "o": [
+            "yarn",
+            "job.py",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Spark param with its value:",
+        "type": "match",
+        "left": [
+            "application",
+            "master",
+            "deploy_mode",
+            "num_executors"
+        ],
+        "right": [
+            "Job file",
+            "Cluster manager",
+            "Client/cluster",
+            "Parallelism"
+        ]
+    },
+    {
+        "q": "Rearrange the Spark submission:",
+        "type": "rearrange",
+        "words": [
+            "Write Spark job",
+            "Configure operator",
+            "Set connection",
+            "Submit job",
+            "Monitor execution"
+        ]
+    },
+    {
+        "q": "What is DockerOperator?",
+        "type": "mcq",
+        "o": [
+            "Runs tasks in Docker containers",
+            "Runs on local machine",
+            "Runs in Kubernetes",
+            "Runs in cloud"
+        ]
+    },
+    {
+        "q": "The _____ provides container isolation.",
+        "type": "fill_blank",
+        "answers": [
+            "DockerOperator"
+        ],
+        "other_options": [
+            "ContainerOperator",
+            "PodOperator",
+            "VmOperator"
+        ]
+    },
+    {
+        "q": "DockerOperator requires Docker daemon.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Docker config?",
+        "type": "mcq",
+        "c": "config = {'image': 'python:3.9', 'command': 'python script.py'}\nprint(config['image'])",
+        "o": [
+            "python:3.9",
+            "python script.py",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Docker param with its setting:",
+        "type": "match",
+        "left": [
+            "image",
+            "command",
+            "volumes",
+            "environment"
+        ],
+        "right": [
+            "Container image",
+            "Run command",
+            "Mount paths",
+            "Env vars"
+        ]
+    },
+    {
+        "q": "Rearrange the Docker task:",
+        "type": "rearrange",
+        "words": [
+            "Build image",
+            "Push to registry",
+            "Configure operator",
+            "Pull and run",
+            "Collect output"
+        ]
+    },
+    {
+        "q": "What is KubernetesPodOperator?",
+        "type": "mcq",
+        "o": [
+            "Runs tasks in Kubernetes pods",
+            "Runs in Docker",
+            "Runs locally",
+            "Runs in cloud VMs"
+        ]
+    },
+    {
+        "q": "The _____ creates pods for tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "KubernetesPodOperator"
+        ],
+        "other_options": [
+            "DockerOperator",
+            "ContainerOperator",
+            "PodOperator"
+        ]
+    },
+    {
+        "q": "KubernetesPodOperator provides full isolation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this pod config?",
+        "type": "mcq",
+        "c": "pod = {'name': 'my-pod', 'namespace': 'airflow'}\nprint(pod['namespace'])",
+        "o": [
+            "airflow",
+            "my-pod",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the K8s param with its config:",
+        "type": "match",
+        "left": [
+            "namespace",
+            "image",
+            "resources",
+            "secrets"
+        ],
+        "right": [
+            "Isolation",
+            "Container",
+            "CPU/memory",
+            "Credentials"
+        ]
+    },
+    {
+        "q": "Rearrange the K8s pod task:",
+        "type": "rearrange",
+        "words": [
+            "Define pod spec",
+            "Configure operator",
+            "Submit to cluster",
+            "Pod runs",
+            "Collect logs"
+        ]
+    },
+    {
+        "q": "What is sensor mode?",
+        "type": "mcq",
+        "o": [
+            "How sensor waits for condition",
+            "Sensor trigger",
+            "Sensor timeout",
+            "Sensor retry"
+        ]
+    },
+    {
+        "q": "The _____ mode releases worker between checks.",
+        "type": "fill_blank",
+        "answers": [
+            "reschedule"
+        ],
+        "other_options": [
+            "poke",
+            "wait",
+            "sleep"
+        ]
+    },
+    {
+        "q": "Reschedule mode is more resource efficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this mode?",
+        "type": "mcq",
+        "c": "modes = {'poke': 'holds worker', 'reschedule': 'releases worker'}\nprint(modes['reschedule'])",
+        "o": [
+            "releases worker",
+            "holds worker",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the mode with its behavior:",
+        "type": "match",
+        "left": [
+            "poke",
+            "reschedule",
+            "deferrable",
+            "async"
+        ],
+        "right": [
+            "Holds slot",
+            "Releases slot",
+            "Triggers deferred",
+            "Non-blocking"
+        ]
+    },
+    {
+        "q": "Rearrange the sensor modes by efficiency:",
+        "type": "rearrange",
+        "words": [
+            "poke",
+            "reschedule",
+            "deferrable",
+            "async",
+            "Most efficient"
+        ]
+    },
+    {
+        "q": "What is deferrable operator?",
+        "type": "mcq",
+        "o": [
+            "Operator that releases resources while waiting",
+            "Standard operator",
+            "Sensor only",
+            "Hook only"
+        ]
+    },
+    {
+        "q": "The _____ mode uses triggers for efficiency.",
+        "type": "fill_blank",
+        "answers": [
+            "deferrable"
+        ],
+        "other_options": [
+            "poke",
+            "reschedule",
+            "wait"
+        ]
+    },
+    {
+        "q": "Deferrable operators reduce resource usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this triggerer?",
+        "type": "mcq",
+        "c": "components = ['scheduler', 'webserver', 'triggerer', 'worker']\nprint(components[2])",
+        "o": [
+            "triggerer",
+            "scheduler",
+            "webserver",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the component with its role:",
+        "type": "match",
+        "left": [
+            "scheduler",
+            "webserver",
+            "triggerer",
+            "worker"
+        ],
+        "right": [
+            "Queue tasks",
+            "UI",
+            "Handle deferrals",
+            "Execute tasks"
+        ]
+    },
+    {
+        "q": "Rearrange the deferrable flow:",
+        "type": "rearrange",
+        "words": [
+            "Task defers",
+            "Triggerer monitors",
+            "Condition met",
+            "Task resumes",
+            "Complete execution"
+        ]
+    },
+    {
+        "q": "What is Airflow testing?",
+        "type": "mcq",
+        "o": [
+            "Validating DAGs and tasks",
+            "Running production",
+            "Deploying Airflow",
+            "Monitoring tasks"
+        ]
+    },
+    {
+        "q": "The _____ validates DAG structure.",
+        "type": "fill_blank",
+        "answers": [
+            "dag.test()"
+        ],
+        "other_options": [
+            "dag.run()",
+            "dag.validate()",
+            "dag.check()"
+        ]
+    },
+    {
+        "q": "DAGs should be tested before deployment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this test?",
+        "type": "mcq",
+        "c": "test_types = ['unit', 'integration', 'dag_validation', 'e2e']\nprint(len(test_types))",
+        "o": [
+            "4",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the test type with its scope:",
+        "type": "match",
+        "left": [
+            "Unit",
+            "Integration",
+            "DAG validation",
+            "E2E"
+        ],
+        "right": [
+            "Single function",
+            "Components",
+            "Structure",
+            "Full pipeline"
+        ]
+    },
+    {
+        "q": "Rearrange the testing workflow:",
+        "type": "rearrange",
+        "words": [
+            "Write tests",
+            "Run unit tests",
+            "Validate DAGs",
+            "Integration test",
+            "Deploy to prod"
+        ]
+    },
+    {
+        "q": "Apache Airflow is essential for workflow orchestration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ platform manages complex data pipelines.",
+        "type": "fill_blank",
+        "answers": [
+            "Apache Airflow"
+        ],
+        "other_options": [
+            "random",
+            "nothing",
+            "simple"
+        ]
+    },
+    {
+        "q": "What is Airflow webserver?",
+        "type": "mcq",
+        "o": [
+            "UI interface for Airflow",
+            "Database server",
+            "Task runner",
+            "Scheduler"
+        ]
+    },
+    {
+        "q": "The _____ serves the Airflow UI.",
+        "type": "fill_blank",
+        "answers": [
+            "webserver"
+        ],
+        "other_options": [
+            "scheduler",
+            "worker",
+            "triggerer"
+        ]
+    },
+    {
+        "q": "The webserver is a Flask application.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this port?",
+        "type": "mcq",
+        "c": "config = {'webserver_port': 8080}\nprint(config['webserver_port'])",
+        "o": [
+            "8080",
+            "80",
+            "443",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the UI view with its purpose:",
+        "type": "match",
+        "left": [
+            "Tree View",
+            "Graph View",
+            "Gantt View",
+            "Code View"
+        ],
+        "right": [
+            "Task history",
+            "Dependencies",
+            "Task duration",
+            "DAG code"
+        ]
+    },
+    {
+        "q": "Rearrange the UI navigation:",
+        "type": "rearrange",
+        "words": [
+            "Open browser",
+            "Login",
+            "Select DAG",
+            "View Graph",
+            "Trigger Run"
+        ]
+    },
+    {
+        "q": "What is dagbag?",
+        "type": "mcq",
+        "o": [
+            "Collection of parsed DAGs",
+            "Database table",
+            "Log file",
+            "Config file"
+        ]
+    },
+    {
+        "q": "The _____ process fills the DagBag.",
+        "type": "fill_blank",
+        "answers": [
+            "scheduler"
+        ],
+        "other_options": [
+            "webserver",
+            "worker",
+            "executor"
+        ]
+    },
+    {
+        "q": "DagBag parsing errors appear in the UI.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this DagBag check?",
+        "type": "mcq",
+        "c": "dags = ['dag1', 'dag2', 'dag3']\nprint(len(dags))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the parsing error with its cause:",
+        "type": "match",
+        "left": [
+            "ImportError",
+            "SyntaxError",
+            "Timeout",
+            "Cycle"
+        ],
+        "right": [
+            "Missing module",
+            "Bad code",
+            "Slow parse",
+            "Loop dependency"
+        ]
+    },
+    {
+        "q": "Rearrange the DAG parsing:",
+        "type": "rearrange",
+        "words": [
+            "Scan folder",
+            "Load file",
+            "Execute top-level",
+            "Create DAG object",
+            "Add to DagBag"
+        ]
+    },
+    {
+        "q": "What is airflow db init?",
+        "type": "mcq",
+        "o": [
+            "Initialize metadata database",
+            "Start scheduler",
+            "Start webserver",
+            "Run task"
+        ]
+    },
+    {
+        "q": "The _____ command upgrades database schema.",
+        "type": "fill_blank",
+        "answers": [
+            "airflow db upgrade"
+        ],
+        "other_options": [
+            "airflow db init",
+            "airflow db reset",
+            "airflow db clean"
+        ]
+    },
+    {
+        "q": "Database migration is required for upgrades.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this command check?",
+        "type": "mcq",
+        "c": "cmd = 'airflow db check'\nprint(cmd.split()[-1])",
+        "o": [
+            "check",
+            "db",
+            "airflow",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the db command with its function:",
+        "type": "match",
+        "left": [
+            "init",
+            "upgrade",
+            "reset",
+            "shell"
+        ],
+        "right": [
+            "Create tables",
+            "Migration",
+            "Clear all",
+            "SQL prompt"
+        ]
+    },
+    {
+        "q": "Rearrange the database setup:",
+        "type": "rearrange",
+        "words": [
+            "Install Airflow",
+            "Configure connection",
+            "Run db init",
+            "Create user",
+            "Start services"
+        ]
+    },
+    {
+        "q": "What is Multi-tenancy in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Isolating users and DAGs",
+            "Running multiple schedulers",
+            "Multiple databases",
+            "Multiple webservers"
+        ]
+    },
+    {
+        "q": "The _____ ensures isolation in multi-tenant setup.",
+        "type": "fill_blank",
+        "answers": [
+            "security manager"
+        ],
+        "other_options": [
+            "scheduler",
+            "executor",
+            "operator"
+        ]
+    },
+    {
+        "q": "Airflow uses RBAC for multi-tenancy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this role?",
+        "type": "mcq",
+        "c": "role = 'Viewer'\nprint(role)",
+        "o": [
+            "Viewer",
+            "Admin",
+            "User",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the role with its permission:",
+        "type": "match",
+        "left": [
+            "Admin",
+            "Op",
+            "User",
+            "Viewer"
+        ],
+        "right": [
+            "Full access",
+            "Operational",
+            "DAG access",
+            "Read only"
+        ]
+    },
+    {
+        "q": "Rearrange the RBAC setup:",
+        "type": "rearrange",
+        "words": [
+            "Create role",
+            "Define permissions",
+            "Create user",
+            "Assign role",
+            "Test access"
+        ]
+    },
+    {
+        "q": "What is a Plugin in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Extension mechanism for custom features",
+            "DAG file",
+            "Configuration file",
+            "Log file"
+        ]
+    },
+    {
+        "q": "The _____ folder stores custom plugins.",
+        "type": "fill_blank",
+        "answers": [
+            "plugins"
+        ],
+        "other_options": [
+            "dags",
+            "logs",
+            "config"
+        ]
+    },
+    {
+        "q": "Plugins can add custom operators and hooks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this plugin check?",
+        "type": "mcq",
+        "c": "from airflow.plugins_manager import AirflowPlugin\nprint(issubclass(AirflowPlugin, object))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the plugin type with its use:",
+        "type": "match",
+        "left": [
+            "AppBuilder",
+            "Operator",
+            "Hook",
+            "Executor"
+        ],
+        "right": [
+            "UI views",
+            "Custom task",
+            "Custom integration",
+            "Custom runner"
+        ]
+    },
+    {
+        "q": "Rearrange the plugin creation:",
+        "type": "rearrange",
+        "words": [
+            "Create python file",
+            "Define class",
+            "Inherit AirflowPlugin",
+            "Register components",
+            "Place in plugins folder"
+        ]
+    },
+    {
+        "q": "What is Lineage in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Tracking data origin and movement",
+            "Task dependency",
+            "DAG history",
+            "Log tracking"
+        ]
+    },
+    {
+        "q": "The _____ backend tracks lineage metadata.",
+        "type": "fill_blank",
+        "answers": [
+            "lineage"
+        ],
+        "other_options": [
+            "metadata",
+            "history",
+            "audit"
+        ]
+    },
+    {
+        "q": "Airflow supports OpenLineage integration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this lineage?",
+        "type": "mcq",
+        "c": "inlets = ['s3://bucket/input.csv']\nprint(len(inlets))",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the lineage concept with its meaning:",
+        "type": "match",
+        "left": [
+            "inlets",
+            "outlets",
+            "backend",
+            "extractor"
+        ],
+        "right": [
+            "Input data",
+            "Output data",
+            "Storage",
+            "Parser"
+        ]
+    },
+    {
+        "q": "Rearrange the lineage tracking:",
+        "type": "rearrange",
+        "words": [
+            "Task starts",
+            "Extract lineage",
+            "Send event",
+            "Process task",
+            "Send complete event"
+        ]
+    },
+    {
+        "q": "What is DataAware Scheduling?",
+        "type": "mcq",
+        "o": [
+            "Scheduling based on dataset updates",
+            "Time-based scheduling",
+            "External trigger",
+            "Manual trigger"
+        ]
+    },
+    {
+        "q": "The _____ keyword defines dataset dependency.",
+        "type": "fill_blank",
+        "answers": [
+            "Dataset"
+        ],
+        "other_options": [
+            "Data",
+            "File",
+            "Table"
+        ]
+    },
+    {
+        "q": "Dataset scheduling requires dataset definition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this dataset?",
+        "type": "mcq",
+        "c": "from airflow import Dataset\nd = Dataset('s3://b/f')\nprint(d.uri)",
+        "o": [
+            "s3://b/f",
+            "Dataset",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the scheduling type with its trigger:",
+        "type": "match",
+        "left": [
+            "Cron",
+            "Dataset",
+            "External",
+            "API"
+        ],
+        "right": [
+            "Time",
+            "Data update",
+            "Sensor",
+            "Request"
+        ]
+    },
+    {
+        "q": "Rearrange the dataset scheduling:",
+        "type": "rearrange",
+        "words": [
+            "Define Dataset",
+            "Producer updates",
+            "Consumer schedule",
+            "Trigger run",
+            "Verify data"
+        ]
+    },
+    {
+        "q": "What is Airflow Cluster Policy?",
+        "type": "mcq",
+        "o": [
+            "Global rules applied to DAGs/Tasks",
+            "Scheduler config",
+            "Executor config",
+            "Security rule"
+        ]
+    },
+    {
+        "q": "The _____ function enforces task rules.",
+        "type": "fill_blank",
+        "answers": [
+            "task_policy"
+        ],
+        "other_options": [
+            "dag_policy",
+            "cluster_policy",
+            "rule_policy"
+        ]
+    },
+    {
+        "q": "Cluster policies run at DAG parsing time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this policy?",
+        "type": "mcq",
+        "c": "def task_policy(task):\n    task.retries = 3\nprint('Policy applied')",
+        "o": [
+            "Policy applied",
+            "Error",
+            "None",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the policy with its target:",
+        "type": "match",
+        "left": [
+            "dag_policy",
+            "task_policy",
+            "task_instance_mutation_hook",
+            "pod_mutation_hook"
+        ],
+        "right": [
+            "DAG object",
+            "Task object",
+            "Task runtime",
+            "K8s Pod"
+        ]
+    },
+    {
+        "q": "Rearrange the policy application:",
+        "type": "rearrange",
+        "words": [
+            "Define policy",
+            "Place in setting",
+            "Scheduler loads",
+            "Parse DAG",
+            "Apply mutations"
+        ]
+    },
+    {
+        "q": "What is Scaling in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Handling increased workload",
+            "Resizing UI",
+            "Compressing logs",
+            "Deleting history"
+        ]
+    },
+    {
+        "q": "The _____ allows adding more workers.",
+        "type": "fill_blank",
+        "answers": [
+            "horizontal scaling"
+        ],
+        "other_options": [
+            "vertical scaling",
+            "diagonal scaling",
+            "auto scaling"
+        ]
+    },
+    {
+        "q": "CeleryExecutor supports infinite scaling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this worker count?",
+        "type": "mcq",
+        "c": "workers = 5\nprint(workers * 2)",
+        "o": [
+            "10",
+            "5",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the scaling method with its executor:",
+        "type": "match",
+        "left": [
+            "Processes",
+            "Nodes",
+            "Pods",
+            "Threads"
+        ],
+        "right": [
+            "LocalExecutor",
+            "CeleryExecutor",
+            "KubernetesExecutor",
+            "DebugExecutor"
+        ]
+    },
+    {
+        "q": "Rearrange the scaling process:",
+        "type": "rearrange",
+        "words": [
+            "Monitor load",
+            "Add resource",
+            "Configure executor",
+            "Deploy workers",
+            "Balance load"
+        ]
+    },
+    {
+        "q": "What is High Availability (HA)?",
+        "type": "mcq",
+        "o": [
+            "System reliability and uptime",
+            "Task speed",
+            "Log availability",
+            "Data access"
+        ]
+    },
+    {
+        "q": "Running multiple _____ enables HA.",
+        "type": "fill_blank",
+        "answers": [
+            "schedulers"
+        ],
+        "other_options": [
+            "webservers",
+            "executors",
+            "databases"
+        ]
+    },
+    {
+        "q": "Airflow 2.0 supports multiple schedulers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this HA config?",
+        "type": "mcq",
+        "c": "schedulers = 2\nprint(schedulers > 1)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the component with its HA strategy:",
+        "type": "match",
+        "left": [
+            "Scheduler",
+            "Webserver",
+            "Database",
+            "Worker"
+        ],
+        "right": [
+            "Active-Active",
+            "Load balanced",
+            "Replication",
+            "Distributed"
+        ]
+    },
+    {
+        "q": "Rearrange the HA setup:",
+        "type": "rearrange",
+        "words": [
+            "Setup DB cluster",
+            "Deploy multiple schedulers",
+            "Load balance web",
+            "Monitor health",
+            "Test failover"
+        ]
+    },
+    {
+        "q": "What is GitSync?",
+        "type": "mcq",
+        "o": [
+            "Syncing DAGs from Git repository",
+            "Version control code",
+            "Backup database",
+            "Sync logs"
+        ]
+    },
+    {
+        "q": "The _____ sidecar syncs DAGs.",
+        "type": "fill_blank",
+        "answers": [
+            "git-sync"
+        ],
+        "other_options": [
+            "s3-sync",
+            "gcs-sync",
+            "db-sync"
+        ]
+    },
+    {
+        "q": "GitSync ensures consistent DAG code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this git branch?",
+        "type": "mcq",
+        "c": "branch = 'main'\nprint(branch)",
+        "o": [
+            "main",
+            "master",
+            "dev",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sync parameter with its use:",
+        "type": "match",
+        "left": [
+            "repo",
+            "branch",
+            "dest",
+            "rev"
+        ],
+        "right": [
+            "URL",
+            "Git ref",
+            "Local path",
+            "Commit hash"
+        ]
+    },
+    {
+        "q": "Rearrange the GitSync flow:",
+        "type": "rearrange",
+        "words": [
+            "Commit DAG",
+            "Push to Git",
+            "GitSync pulls",
+            "Update local folder",
+            "Scheduler parses"
+        ]
+    },
+    {
+        "q": "What is Airflow security?",
+        "type": "mcq",
+        "o": [
+            "Protecting access and data",
+            "Backup strategy",
+            "Performance tuning",
+            "Testing"
+        ]
+    },
+    {
+        "q": "The _____ encrypts variables and connections.",
+        "type": "fill_blank",
+        "answers": [
+            "fernet_key"
+        ],
+        "other_options": [
+            "secret_key",
+            "public_key",
+            "ssh_key"
+        ]
+    },
+    {
+        "q": "Fernet key must be consistent across nodes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this key length?",
+        "type": "mcq",
+        "c": "key = '32byteslongkeyneedsbase64encoding'\nprint(len(key))",
+        "o": [
+            "35",
+            "32",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the security feature with its role:",
+        "type": "match",
+        "left": [
+            "Fernet",
+            "RBAC",
+            "Kerberos",
+            "TLS/SSL"
+        ],
+        "right": [
+            "Encryption",
+            "Access control",
+            "Authentication",
+            "Transport security"
+        ]
+    },
+    {
+        "q": "Rearrange the security setup:",
+        "type": "rearrange",
+        "words": [
+            "Generate Fernet key",
+            "Configure auth backend",
+            "Setup SSL",
+            "Create roles",
+            "Enforce policies"
+        ]
+    },
+    {
+        "q": "What is Secrets Backend?",
+        "type": "mcq",
+        "o": [
+            "External storage for secrets",
+            "Internal database",
+            "Log directory",
+            "Config file"
+        ]
+    },
+    {
+        "q": "The _____ retrieves secrets from HashiCorp Vault.",
+        "type": "fill_blank",
+        "answers": [
+            "VaultBackend"
+        ],
+        "other_options": [
+            "AWSBackend",
+            "GCPBackend",
+            "AzureBackend"
+        ]
+    },
+    {
+        "q": "Secrets backends reduce risk of credential leak.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this secret lookup?",
+        "type": "mcq",
+        "c": "path = 'airflow/connections/my_conn'\nprint(path.split('/')[-1])",
+        "o": [
+            "my_conn",
+            "connections",
+            "airflow",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the backend with its provider:",
+        "type": "match",
+        "left": [
+            "SSMParameterStore",
+            "SecretsManager",
+            "Vault",
+            "KeyVault"
+        ],
+        "right": [
+            "AWS SSM",
+            "AWS SM",
+            "HashiCorp",
+            "Azure"
+        ]
+    },
+    {
+        "q": "Rearrange the secrets flow:",
+        "type": "rearrange",
+        "words": [
+            "Store secret",
+            "Config backend",
+            "Task requests",
+            "Backend retrieves",
+            "Use in task"
+        ]
+    },
+    {
+        "q": "What is Logging in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Recording task execution events",
+            "Running tasks",
+            "Scaling workers",
+            "Scheduling DAGs"
+        ]
+    },
+    {
+        "q": "The _____ folder contains local log files.",
+        "type": "fill_blank",
+        "answers": [
+            "logs"
+        ],
+        "other_options": [
+            "dags",
+            "plugins",
+            "config"
+        ]
+    },
+    {
+        "q": "Airflow supports remote logging to cloud storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this log level?",
+        "type": "mcq",
+        "c": "level = 'INFO'\nprint(level)",
+        "o": [
+            "INFO",
+            "DEBUG",
+            "ERROR",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the log destination with its handler:",
+        "type": "match",
+        "left": [
+            "Local",
+            "S3",
+            "GCS",
+            "Elasticsearch"
+        ],
+        "right": [
+            "FileTaskHandler",
+            "S3TaskHandler",
+            "GCSTaskHandler",
+            "ElasticsearchTaskHandler"
+        ]
+    },
+    {
+        "q": "Rearrange the log flow:",
+        "type": "rearrange",
+        "words": [
+            "Task writes log",
+            "Handler captures",
+            "Write to destination",
+            "Serve to UI",
+            "Archive/Delete"
+        ]
+    },
+    {
+        "q": "What is Monitoring in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Tracking system and task health",
+            "Running tasks",
+            "Developing DAGs",
+            "Managing users"
+        ]
+    },
+    {
+        "q": "The _____ exposes metrics for Prometheus.",
+        "type": "fill_blank",
+        "answers": [
+            "statsd"
+        ],
+        "other_options": [
+            "graphite",
+            "influxdb",
+            "datadog"
+        ]
+    },
+    {
+        "q": "Metrics help detect performance bottlenecks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this metric name?",
+        "type": "mcq",
+        "c": "metric = 'dag.duration'\nprint(metric)",
+        "o": [
+            "dag.duration",
+            "task.duration",
+            "pool.usage",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the metric with its type:",
+        "type": "match",
+        "left": [
+            "Counter",
+            "Gauge",
+            "Timer",
+            "Set"
+        ],
+        "right": [
+            "Count events",
+            "Current value",
+            "Duration",
+            "Unique count"
+        ]
+    },
+    {
+        "q": "Rearrange the monitoring setup:",
+        "type": "rearrange",
+        "words": [
+            "Enable metrics",
+            "Config statsd",
+            "Deploy exporter",
+            "Scrape metrics",
+            "Visualize dashboard"
+        ]
+    },
+    {
+        "q": "What is the check_interval?",
+        "type": "mcq",
+        "o": [
+            "Frequency of detecting new runs",
+            "Task timeout",
+            "Retry timeout",
+            "Heartbeat interval"
+        ]
+    },
+    {
+        "q": "The _____ controls how often scheduler loops.",
+        "type": "fill_blank",
+        "answers": [
+            "scheduler_heartbeat_sec"
+        ],
+        "other_options": [
+            "min_file_process_interval",
+            "job_heartbeat_sec",
+            "dagconfig"
+        ]
+    },
+    {
+        "q": "Tuning intervals improves scheduler performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this interval?",
+        "type": "mcq",
+        "c": "interval = 5\nprint(interval)",
+        "o": [
+            "5",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the interval config with its impact:",
+        "type": "match",
+        "left": [
+            "job_heartbeat_sec",
+            "scheduler_heartbeat_sec",
+            "min_file_process_interval",
+            "max_tis_per_query"
+        ],
+        "right": [
+            "Liveness check",
+            "Scheduler loop",
+            "Parse frequency",
+            "Batch size"
+        ]
+    },
+    {
+        "q": "Rearrange the tuning process:",
+        "type": "rearrange",
+        "words": [
+            "Identify bottleneck",
+            "Adjust config",
+            "Restart scheduler",
+            "Monitor metrics",
+            "Validate improvement"
+        ]
+    },
+    {
+        "q": "What is Pydantic in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Data validation for serialization",
+            "Operator type",
+            "Executor type",
+            "Plugin type"
+        ]
+    },
+    {
+        "q": "Airflow uses Pydantic for _____ serialization.",
+        "type": "fill_blank",
+        "answers": [
+            "internal"
+        ],
+        "other_options": [
+            "external",
+            "hybrid",
+            "none"
+        ]
+    },
+    {
+        "q": "Pydantic ensures type safety in internal models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this validation?",
+        "type": "mcq",
+        "c": "valid = True\nprint(valid)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the serialization with its format:",
+        "type": "match",
+        "left": [
+            "JSON",
+            "Pickle",
+            "YAML",
+            "Pydantic"
+        ],
+        "right": [
+            "Text/Web",
+            "Binary/Python",
+            "Config",
+            "Validation"
+        ]
+    },
+    {
+        "q": "Rearrange the serialization flow:",
+        "type": "rearrange",
+        "words": [
+            "Create object",
+            "Validate types",
+            "Serialize to JSON",
+            "Store in DB",
+            "Deserialize"
+        ]
+    },
+    {
+        "q": "What is Helm Chart for Airflow?",
+        "type": "mcq",
+        "o": [
+            "Deployment package for Kubernetes",
+            "Docker image",
+            "Python package",
+            "Config file"
+        ]
+    },
+    {
+        "q": "The _____ installs Airflow on K8s.",
+        "type": "fill_blank",
+        "answers": [
+            "helm install"
+        ],
+        "other_options": [
+            "helm delete",
+            "helm upgrade",
+            "helm list"
+        ]
+    },
+    {
+        "q": "Official Airflow Helm chart is production ready.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this release name?",
+        "type": "mcq",
+        "c": "release = 'airflow-prod'\nprint(release)",
+        "o": [
+            "airflow-prod",
+            "airflow",
+            "prod",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Helm component with its resource:",
+        "type": "match",
+        "left": [
+            "Deployment",
+            "StatefulSet",
+            "Service",
+            "Ingress"
+        ],
+        "right": [
+            "Webserver/Scheduler",
+            "Workers/Redis",
+            "Networking",
+            "External access"
+        ]
+    },
+    {
+        "q": "Rearrange the Helm deployment:",
+        "type": "rearrange",
+        "words": [
+            "Add repo",
+            "Update values.yaml",
+            "Helm install",
+            "Wait for pods",
+            "Access UI"
+        ]
+    },
+    {
+        "q": "What is KEDA?",
+        "type": "mcq",
+        "o": [
+            "Kubernetes Event-driven Autoscaling",
+            "Container runtime",
+            "Network plugin",
+            "Storage driver"
+        ]
+    },
+    {
+        "q": "KEDA enables _____ autoscaling for Airflow.",
+        "type": "fill_blank",
+        "answers": [
+            "event-driven"
+        ],
+        "other_options": [
+            "metric-driven",
+            "time-driven",
+            "manual"
+        ]
+    },
+    {
+        "q": "KEDA scales workers based on queue depth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this scaler?",
+        "type": "mcq",
+        "c": "scaler = 'postgresql'\nprint(scaler)",
+        "o": [
+            "postgresql",
+            "keda",
+            "rabbitmq",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the KEDA concept with its role:",
+        "type": "match",
+        "left": [
+            "ScaledObject",
+            "Trigger",
+            "Scaler",
+            "Metrics"
+        ],
+        "right": [
+            "Target resource",
+            "Scale condition",
+            "Logic source",
+            "Scale criteria"
+        ]
+    },
+    {
+        "q": "Rearrange the KEDA scaling:",
+        "type": "rearrange",
+        "words": [
+            "Tasks queue up",
+            "KEDA detects depth",
+            "Scale up workers",
+            "Process tasks",
+            "Scale down"
+        ]
+    },
+    {
+        "q": "What is TimeDeltaSensor?",
+        "type": "mcq",
+        "o": [
+            "Waits for a specific time delta",
+            "Waits for a file",
+            "Waits for database",
+            "Waits for manual approval"
+        ]
+    },
+    {
+        "q": "The _____ waits relative to execution date.",
+        "type": "fill_blank",
+        "answers": [
+            "TimeDeltaSensor"
+        ],
+        "other_options": [
+            "TimeSensor",
+            "DateTimeSensor",
+            "WaitSensor"
+        ]
+    },
+    {
+        "q": "TimeDeltaSensor is useful for offsets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this delta?",
+        "type": "mcq",
+        "c": "from datetime import timedelta\nd = timedelta(minutes=10)\nprint(d.seconds)",
+        "o": [
+            "600",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the time component with its unit:",
+        "type": "match",
+        "left": [
+            "days",
+            "seconds",
+            "microseconds",
+            "weeks"
+        ],
+        "right": [
+            "Daily",
+            "Base unit",
+            "Precise",
+            "Weekly"
+        ]
+    },
+    {
+        "q": "Rearrange the time wait:",
+        "type": "rearrange",
+        "words": [
+            "Task starts",
+            "Calc target time",
+            "Sleep loop",
+            "Check time",
+            "Complete"
+        ]
+    },
+    {
+        "q": "What is managing dependencies?",
+        "type": "mcq",
+        "o": [
+            "Defining execution order",
+            "Managing libraries",
+            "Managing connections",
+            "Managing users"
+        ]
+    },
+    {
+        "q": "The _____ creates a chain of tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "chain"
+        ],
+        "other_options": [
+            "link",
+            "connect",
+            "order"
+        ]
+    },
+    {
+        "q": "Cross_downstream sets dependency lists.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this chain?",
+        "type": "mcq",
+        "c": "tasks = [1, 2, 3]\nprint(len(tasks))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the helper function with its use:",
+        "type": "match",
+        "left": [
+            "chain",
+            "cross_downstream",
+            "chain_linear",
+            "TaskGroup"
+        ],
+        "right": [
+            "Linear list",
+            "Many-to-many",
+            "Linear complex",
+            "Grouping"
+        ]
+    },
+    {
+        "q": "Rearrange the dependency set:",
+        "type": "rearrange",
+        "words": [
+            "Identify tasks",
+            "Determine order",
+            "Select helper",
+            "Apply function",
+            "Verify graph"
+        ]
+    },
+    {
+        "q": "What is Airflow upgrade check?",
+        "type": "mcq",
+        "o": [
+            "Tool to check compatibility",
+            "Database migration",
+            "Installer",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "The _____ command lists upgrade problems.",
+        "type": "fill_blank",
+        "answers": [
+            "airflow upgrade_check"
+        ],
+        "other_options": [
+            "checklist",
+            "verify",
+            "validate"
+        ]
+    },
+    {
+        "q": "Updates often require configuration changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this version?",
+        "type": "mcq",
+        "c": "ver = '2.0.0'\nprint(ver.split('.')[0])",
+        "o": [
+            "2",
+            "0",
+            "0.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the version component with its meaning:",
+        "type": "match",
+        "left": [
+            "Major",
+            "Minor",
+            "Patch",
+            "Beta"
+        ],
+        "right": [
+            "Breaking",
+            "Feature",
+            "Fix",
+            "Pre-release"
+        ]
+    },
+    {
+        "q": "Rearrange the upgrade process:",
+        "type": "rearrange",
+        "words": [
+            "Backup DB",
+            "Install new version",
+            "Run upgrade check",
+            "Run db upgrade",
+            "Restart services"
+        ]
+    },
+    {
+        "q": "Apache Airflow uses DAGs to define workflows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ is the standard for programmatic workflow authoring.",
+        "type": "fill_blank",
+        "answers": [
+            "Apache Airflow"
+        ],
+        "other_options": [
+            "Apache Beam",
+            "Apache Spark",
+            "Apache Flink"
+        ]
+    },
+    {
+        "q": "Airflow is part of the modern data stack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ ecosystem includes many providers and hooks.",
+        "type": "fill_blank",
+        "answers": [
+            "Airflow"
+        ],
+        "other_options": [
+            "Hadoop",
+            "Spark",
+            "Kafka"
+        ]
+    },
+    {
+        "q": "Airflow is written in Python.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ allows extending functionality easiest.",
+        "type": "fill_blank",
+        "answers": [
+            "Python"
+        ],
+        "other_options": [
+            "Java",
+            "Scala",
+            "Go"
+        ]
+    },
+    {
+        "q": "Airflow provides a rich user interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ view shows task duration over time.",
+        "type": "fill_blank",
+        "answers": [
+            "Gantt"
+        ],
+        "other_options": [
+            "Tree",
+            "Graph",
+            "Code"
+        ]
+    },
+    {
+        "q": "Airflow scheduling is robust and flexible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ handles task execution distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "executor"
+        ],
+        "other_options": [
+            "scheduler",
+            "worker",
+            "webserver"
+        ]
+    },
+    {
+        "q": "What is custom operator?",
+        "type": "mcq",
+        "o": [
+            "User-defined task logic class",
+            "Built-in operator",
+            "Executor",
+            "Sensor"
+        ]
+    },
+    {
+        "q": "The _____ method executes operator logic.",
+        "type": "fill_blank",
+        "answers": [
+            "execute"
+        ],
+        "other_options": [
+            "run",
+            "call",
+            "start"
+        ]
+    },
+    {
+        "q": "Custom operators inherit from BaseOperator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this inheritance?",
+        "type": "mcq",
+        "c": "from airflow.models import BaseOperator\nclass MyOp(BaseOperator): pass\nprint(issubclass(MyOp, BaseOperator))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the custom operator component with its role:",
+        "type": "match",
+        "left": [
+            "__init__",
+            "execute",
+            "template_fields",
+            "ui_color"
+        ],
+        "right": [
+            "Setup",
+            "Runtime logic",
+            "Jinja parsing",
+            "UI appearance"
+        ]
+    },
+    {
+        "q": "Rearrange the custom operator creation:",
+        "type": "rearrange",
+        "words": [
+            "Import BaseOperator",
+            "Define class",
+            "Implement __init__",
+            "Implement execute",
+            "Use in DAG"
+        ]
+    },
+    {
+        "q": "What is Airflow Timetable?",
+        "type": "mcq",
+        "o": [
+            "Custom scheduling logic interface",
+            "Timezone setting",
+            "Cron expression",
+            "Date parser"
+        ]
+    },
+    {
+        "q": "The _____ defines next run info.",
+        "type": "fill_blank",
+        "answers": [
+            "next_dagrun_info"
+        ],
+        "other_options": [
+            "next_run",
+            "schedule_info",
+            "run_date"
+        ]
+    },
+    {
+        "q": "Timetables allow non-cron scheduling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this timetable?",
+        "type": "mcq",
+        "c": "from airflow.timetables.base import Timetable\nprint(issubclass(Timetable, object))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Timetable method with its purpose:",
+        "type": "match",
+        "left": [
+            "infer_manual_data_interval",
+            "next_dagrun_info",
+            "serialization",
+            "validation"
+        ],
+        "right": [
+            "Manual run",
+            "Schedule run",
+            "Storage",
+            "Check logic"
+        ]
+    },
+    {
+        "q": "Rearrange the timetable implementation:",
+        "type": "rearrange",
+        "words": [
+            "Inherit Timetable",
+            "Define logic",
+            "Register plugin",
+            "Import in DAG",
+            "Set schedule"
+        ]
+    },
+    {
+        "q": "What is Kerberos in Airflow?",
+        "type": "mcq",
+        "o": [
+            "Network authentication protocol",
+            "Encryption key",
+            "Access control",
+            "Logging system"
+        ]
+    },
+    {
+        "q": "The _____ renews Kerberos tickets.",
+        "type": "fill_blank",
+        "answers": [
+            "airflow kerberos"
+        ],
+        "other_options": [
+            "airflow ticket",
+            "airflow renew",
+            "airflow auth"
+        ]
+    },
+    {
+        "q": "Kerberos requires a keytab file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this principal?",
+        "type": "mcq",
+        "c": "p = 'airflow/hostname@REALM'\nprint(p.split('@')[1])",
+        "o": [
+            "REALM",
+            "hostname",
+            "airflow",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Kerberos config with its file:",
+        "type": "match",
+        "left": [
+            "keytab",
+            "principal",
+            "ccache",
+            "conf"
+        ],
+        "right": [
+            "Credential file",
+            "Identity",
+            "Ticket cache",
+            "krb5.conf"
+        ]
+    },
+    {
+        "q": "Rearrange the Kerberos flow:",
+        "type": "rearrange",
+        "words": [
+            "Start ticket renewer",
+            "Get TGT",
+            "Authenticate service",
+            "Run task",
+            "Renew ticket"
+        ]
+    },
+    {
+        "q": "What is Smart Sensor?",
+        "type": "mcq",
+        "o": [
+            "Deprecated efficient sensing mechanism",
+            "AI sensor",
+            "Hardware sensor",
+            "Cloud sensor"
+        ]
+    },
+    {
+        "q": "Smart Sensors are replaced by _____.",
+        "type": "fill_blank",
+        "answers": [
+            "Deferrable Operators"
+        ],
+        "other_options": [
+            "Dumb Sensors",
+            "Fast Sensors",
+            "Quick Sensors"
+        ]
+    },
+    {
+        "q": "Smart Sensors consolidated multiple checks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this deprecation?",
+        "type": "mcq",
+        "c": "status = 'deprecated'\nprint(status.upper())",
+        "o": [
+            "DEPRECATED",
+            "deprecated",
+            "Active",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Smart Sensor concept with its replacement:",
+        "type": "match",
+        "left": [
+            "SmartSensor",
+            "Shard",
+            "Poker",
+            "Consolidation"
+        ],
+        "right": [
+            "Deferrable Op",
+            "Triggerer",
+            "Async loop",
+            "Trigger event"
+        ]
+    },
+    {
+        "q": "Rearrange the transition to deferrable:",
+        "type": "rearrange",
+        "words": [
+            "Identify SmartSensor",
+            "Find Async version",
+            "Replace usage",
+            "Deploy triggerer",
+            "Remove SmartSensor config"
+        ]
+    },
+    {
+        "q": "What is Setup/Teardown tasks?",
+        "type": "mcq",
+        "o": [
+            "Tasks for resource init and cleanup",
+            "DAG parsing",
+            "Installation",
+            "Migration"
+        ]
+    },
+    {
+        "q": "The _____ method marks teardown tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "as_teardown"
+        ],
+        "other_options": [
+            "as_setup",
+            "as_cleanup",
+            "as_end"
+        ]
+    },
+    {
+        "q": "Teardown tasks run even if setup fails.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this setup?",
+        "type": "mcq",
+        "c": "tasks = ['create_cluster', 'run_job', 'delete_cluster']\nprint(tasks[0])",
+        "o": [
+            "create_cluster",
+            "run_job",
+            "delete_cluster",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the task type with its role:",
+        "type": "match",
+        "left": [
+            "Setup",
+            "Teardown",
+            "Work",
+            "Sensor"
+        ],
+        "right": [
+            "Provision",
+            "Deprovision",
+            "Process",
+            "Wait"
+        ]
+    },
+    {
+        "q": "Rearrange the setup/teardown flow:",
+        "type": "rearrange",
+        "words": [
+            "Define setup",
+            "Define work",
+            "Define teardown",
+            "Chain tasks",
+            "Mark as_teardown"
+        ]
+    },
+    {
+        "q": "What is Object Storage Path?",
+        "type": "mcq",
+        "o": [
+            "Unified implementation of file paths",
+            "Hardcoded string",
+            "Local path",
+            "URL"
+        ]
+    },
+    {
+        "q": "The _____ object abstracts file systems.",
+        "type": "fill_blank",
+        "answers": [
+            "ObjectStoragePath"
+        ],
+        "other_options": [
+            "FilePath",
+            "CloudPath",
+            "S3Path"
+        ]
+    },
+    {
+        "q": "ObjectStoragePath works across S3, GCS, etc.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this path join?",
+        "type": "mcq",
+        "c": "base = 's3://bucket'\nfile = 'data.csv'\nprint(f'{base}/{file}')",
+        "o": [
+            "s3://bucket/data.csv",
+            "s3://bucket",
+            "data.csv",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the path operation with its method:",
+        "type": "match",
+        "left": [
+            "read",
+            "write",
+            "exists",
+            "glob"
+        ],
+        "right": [
+            "Open read",
+            "Open write",
+            "Check file",
+            "Pattern watch"
+        ]
+    },
+    {
+        "q": "Rearrange the ObjectStorage usage:",
+        "type": "rearrange",
+        "words": [
+            "Import ObjectStoragePath",
+            "Define base path",
+            "Join file name",
+            "Open stream",
+            "Read/Write data"
+        ]
+    },
+    {
+        "q": "What is Listener Plugin?",
+        "type": "mcq",
+        "o": [
+            "Mechanim to subscribe to lifecycle events",
+            "Task listener",
+            "Web listener",
+            "Port listener"
+        ]
+    },
+    {
+        "q": "Listeners use _____ hook spec.",
+        "type": "fill_blank",
+        "answers": [
+            "pluggy"
+        ],
+        "other_options": [
+            "hooks",
+            "events",
+            "callbacks"
+        ]
+    },
+    {
+        "q": "Listeners can track dag run states globally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this event?",
+        "type": "mcq",
+        "c": "event = 'on_task_instance_running'\nprint(event.split('_')[-1])",
+        "o": [
+            "running",
+            "instance",
+            "task",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the listener event with its trigger:",
+        "type": "match",
+        "left": [
+            "on_dag_run_running",
+            "on_task_instance_success",
+            "on_task_instance_failed",
+            "on_starting"
+        ],
+        "right": [
+            "DAG starts",
+            "Task succeeds",
+            "Task fails",
+            "Airflow starts"
+        ]
+    },
+    {
+        "q": "Rearrange the listener setup:",
+        "type": "rearrange",
+        "words": [
+            "Define listener module",
+            "Implement hook impl",
+            "Register in plugin",
+            "Install plugin",
+            "Receive events"
+        ]
+    },
+    {
+        "q": "What is DAG versioning?",
+        "type": "mcq",
+        "o": [
+            "Tracking changes to DAG code",
+            "Airflow version",
+            "Python version",
+            "DB version"
+        ]
+    },
+    {
+        "q": "DAG versioning helps audit _____ logic.",
+        "type": "fill_blank",
+        "answers": [
+            "historical"
+        ],
+        "other_options": [
+            "future",
+            "current",
+            "pending"
+        ]
+    },
+    {
+        "q": "Airflow maintains serialized DAG history.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this version count?",
+        "type": "mcq",
+        "c": "versions = [1, 2, 3, 4]\nprint(max(versions))",
+        "o": [
+            "4",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the version data with its storage:",
+        "type": "match",
+        "left": [
+            "Code",
+            "Serialized DAG",
+            "Hash",
+            "Run ID"
+        ],
+        "right": [
+            "Git",
+            "DB table",
+            "Fingerprint",
+            "Execution"
+        ]
+    },
+    {
+        "q": "Rearrange the version usage:",
+        "type": "rearrange",
+        "words": [
+            "Change DAG",
+            "Parser detects",
+            "New version stored",
+            "DAG Run links version",
+            "UI shows history"
+        ]
+    },
+    {
+        "q": "What is AIP?",
+        "type": "mcq",
+        "o": [
+            "Airflow Improvement Proposal",
+            "Airflow IP",
+            "Artificial Intelligence",
+            "Protocol"
+        ]
+    },
+    {
+        "q": "AIP-_____ introduced Deferrable Operators.",
+        "type": "fill_blank",
+        "answers": [
+            "40"
+        ],
+        "other_options": [
+            "31",
+            "44",
+            "2"
+        ]
+    },
+    {
+        "q": "AIPs are discussed in the community.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this AIP ID?",
+        "type": "mcq",
+        "c": "aip = 'AIP-44'\nprint(aip[-2:])",
+        "o": [
+            "44",
+            "IP",
+            "AIP",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the AIP with its feature:",
+        "type": "match",
+        "left": [
+            "AIP-31",
+            "AIP-40",
+            "AIP-44",
+            "AIP-2"
+        ],
+        "right": [
+            "Functional DAGs",
+            "Deferrable Ops",
+            "Internal API",
+            "Removal of Pickling"
+        ]
+    },
+    {
+        "q": "Rearrange the AIP lifecyle:",
+        "type": "rearrange",
+        "words": [
+            "Proposal",
+            "Discussion",
+            "Vote",
+            "Implementation",
+            "Release"
+        ]
+    },
+    {
+        "q": "What is Provider Package?",
+        "type": "mcq",
+        "o": [
+            "Separate package for external integration",
+            "Core Airflow",
+            "Internal dependency",
+            "OS package"
+        ]
+    },
+    {
+        "q": "The _____ provider connects to AWS.",
+        "type": "fill_blank",
+        "answers": [
+            "apache-airflow-providers-aws"
+        ],
+        "other_options": [
+            "aws-airflow",
+            "airflow-aws",
+            "provider-aws"
+        ]
+    },
+    {
+        "q": "Providers have their own release cycles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this provider name?",
+        "type": "mcq",
+        "c": "pkg = 'apache-airflow-providers-google'\nprint(pkg.split('-')[-1])",
+        "o": [
+            "google",
+            "providers",
+            "airflow",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the provider with its service:",
+        "type": "match",
+        "left": [
+            "postgres",
+            "ssh",
+            "http",
+            "cncf.kubernetes"
+        ],
+        "right": [
+            "Database",
+            "Remote exec",
+            "Web API",
+            "K8s cluster"
+        ]
+    },
+    {
+        "q": "Rearrange the provider installation:",
+        "type": "rearrange",
+        "words": [
+            "Identify need",
+            "Pip install provider",
+            "Restart scheduler",
+            "Configure conn",
+            "Use hook/operator"
+        ]
+    },
+    {
+        "q": "What is Airflow Summit?",
+        "type": "mcq",
+        "o": [
+            "Annual community conference",
+            "Mountain peak",
+            "Software release",
+            "Company meeting"
+        ]
+    },
+    {
+        "q": "The _____ brings users and contributors together.",
+        "type": "fill_blank",
+        "answers": [
+            "Airflow Summit"
+        ],
+        "other_options": [
+            "Airflow Meet",
+            "Airflow Con",
+            "Airflow DevDay"
+        ]
+    },
+    {
+        "q": "Airflow is a Top-Level Apache Project.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this event year?",
+        "type": "mcq",
+        "c": "year = 2024\nprint(year + 1)",
+        "o": [
+            "2025",
+            "2024",
+            "2023",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the community role with its check:",
+        "type": "match",
+        "left": [
+            "PMC",
+            "Committer",
+            "Contributor",
+            "User"
+        ],
+        "right": [
+            "Governance",
+            "Write access",
+            "Code patches",
+            "Usage"
+        ]
+    },
+    {
+        "q": "Rearrange the contribution flow:",
+        "type": "rearrange",
+        "words": [
+            "Fork repo",
+            "Create branch",
+            "Commit code",
+            "Open PR",
+            "Merge"
+        ]
+    },
+    {
+        "q": "What is LocalKubernetesExecutor?",
+        "type": "mcq",
+        "o": [
+            "Hybrid of Local and Kubernetes executors",
+            "Local executor only",
+            "K8s executor only",
+            "Celery executor"
+        ]
+    },
+    {
+        "q": "It allows handling _____ task loads flexibly.",
+        "type": "fill_blank",
+        "answers": [
+            "variable"
+        ],
+        "other_options": [
+            "static",
+            "constant",
+            "zero"
+        ]
+    },
+    {
+        "q": "LocalKubernetesExecutor reduces K8s overhead for small tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this selection?",
+        "type": "mcq",
+        "c": "queue = 'kubernetes'\nexec = 'K8s' if queue == 'kubernetes' else 'Local'\nprint(exec)",
+        "o": [
+            "K8s",
+            "Local",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the task type with the best executor:",
+        "type": "match",
+        "left": [
+            "Heavy processing",
+            "Light script",
+            "Distributed ML",
+            "Quick API call"
+        ],
+        "right": [
+            "Kubernetes",
+            "Local",
+            "Celery",
+            "Local"
+        ]
+    },
+    {
+        "q": "Rearrange the hybrid execution:",
+        "type": "rearrange",
+        "words": [
+            "Task scheduled",
+            "Check queue",
+            "If default run Local",
+            "If K8s run Pod",
+            "Monitor completion"
+        ]
+    },
+    {
+        "q": "What is Connection URI?",
+        "type": "mcq",
+        "o": [
+            "String representation of connection details",
+            "Website URL",
+            "API endpoint",
+            "File path"
+        ]
+    },
+    {
+        "q": "The URI scheme defines the _____ type.",
+        "type": "fill_blank",
+        "answers": [
+            "connection"
+        ],
+        "other_options": [
+            "file",
+            "task",
+            "dag"
+        ]
+    },
+    {
+        "q": "URI encoding is handled automatically by Airflow UI.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this URI parsing?",
+        "type": "mcq",
+        "c": "uri = 'postgresql://user:pass@host:5432/db'\nprint(uri.split('://')[0])",
+        "o": [
+            "postgresql",
+            "user",
+            "host",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the URI component with its field:",
+        "type": "match",
+        "left": [
+            "Scheme",
+            "Netloc",
+            "Path",
+            "Query"
+        ],
+        "right": [
+            "Conn Type",
+            "User/Host",
+            "Schema",
+            "Extras"
+        ]
+    },
+    {
+        "q": "Rearrange the connection definition:",
+        "type": "rearrange",
+        "words": [
+            "Determine type",
+            "Gather credentials",
+            "Format URI",
+            "Add to Env Var",
+            "Airflow reads"
+        ]
+    },
+    {
+        "q": "What is masking sensitive data?",
+        "type": "mcq",
+        "o": [
+            "Hiding secrets in logs and UI",
+            "Encrypting db",
+            "Deleting data",
+            "Locking UI"
+        ]
+    },
+    {
+        "q": "Airflow masks values of variables ending in _____.",
+        "type": "fill_blank",
+        "answers": [
+            "password"
+        ],
+        "other_options": [
+            "user",
+            "host",
+            "port"
+        ]
+    },
+    {
+        "q": "Masking prevents accidental credential leakage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this mask check?",
+        "type": "mcq",
+        "c": "key = 'api_secret'\nsensitive = ['secret', 'password', 'key']\nprint(any(s in key for s in sensitive))",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sensitive key with masking:",
+        "type": "match",
+        "left": [
+            "password",
+            "secret",
+            "token",
+            "apikey"
+        ],
+        "right": [
+            "******",
+            "******",
+            "******",
+            "******"
+        ]
+    },
+    {
+        "q": "Rearrange the masking process:",
+        "type": "rearrange",
+        "words": [
+            "Task runs",
+            "Variable accessed",
+            "Logger checks name",
+            "Mask if sensitive",
+            "Write to log"
+        ]
+    },
+    {
+        "q": "What is Zombie Task?",
+        "type": "mcq",
+        "o": [
+            "Task detected as running but process is gone",
+            "Failed task",
+            "Success task",
+            "Skipped task"
+        ]
+    },
+    {
+        "q": "Only the _____ can detect zombies.",
+        "type": "fill_blank",
+        "answers": [
+            "scheduler"
+        ],
+        "other_options": [
+            "webserver",
+            "worker",
+            "triggerer"
+        ]
+    },
+    {
+        "q": "Zombies are marked as failed for retry.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this zombie check?",
+        "type": "mcq",
+        "c": "proc_alive = False\ndb_state = 'running'\nis_zombie = not proc_alive and db_state == 'running'\nprint(is_zombie)",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the task state with its meaning:",
+        "type": "match",
+        "left": [
+            "zombie",
+            "upstream_failed",
+            "shutdown",
+            "restarting"
+        ],
+        "right": [
+            "Process missing",
+            "Dependency fail",
+            "Terminating",
+            "Re-init"
+        ]
+    },
+    {
+        "q": "Rearrange the zombie handling:",
+        "type": "rearrange",
+        "words": [
+            "Scheduler loop",
+            "Find running TIs",
+            "Check heartbeat",
+            "Identify missing",
+            "Mark failed"
+        ]
+    },
+    {
+        "q": "What is backfill?",
+        "type": "mcq",
+        "o": [
+            "Running past DAG runs",
+            "Running future runs",
+            "Deleting runs",
+            "Pausing runs"
+        ]
+    },
+    {
+        "q": "The _____ command executes backfill.",
+        "type": "fill_blank",
+        "answers": [
+            "airflow dags backfill"
+        ],
+        "other_options": [
+            "airflow dags run",
+            "airflow trigger",
+            "airflow start"
+        ]
+    },
+    {
+        "q": "Backfill respects dependencies and pools.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this date range?",
+        "type": "mcq",
+        "c": "start = 1\nend = 5\nruns = list(range(start, end + 1))\nprint(len(runs))",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the backfill param with its effect:",
+        "type": "match",
+        "left": [
+            "start_date",
+            "end_date",
+            "reset_dagruns",
+            "rerun_failed_tasks"
+        ],
+        "right": [
+            "From",
+            "To",
+            "Clear existing",
+            "Fix attempts"
+        ]
+    },
+    {
+        "q": "Rearrange the backfill process:",
+        "type": "rearrange",
+        "words": [
+            "Define range",
+            "Run command",
+            "Scheduler creates runs",
+            "Tasks execute",
+            "Verify completion"
+        ]
+    },
+    {
+        "q": "What is catchup?",
+        "type": "mcq",
+        "o": [
+            "Scheduling missing past runs",
+            "Speeding up tasks",
+            "Skipping tasks",
+            "Debugging"
+        ]
+    },
+    {
+        "q": "Setting catchup to _____ disables backfilling.",
+        "type": "fill_blank",
+        "answers": [
+            "False"
+        ],
+        "other_options": [
+            "True",
+            "None",
+            "Zero"
+        ]
+    },
+    {
+        "q": "Catchup defaults to True in airflow.cfg.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this catchup config?",
+        "type": "mcq",
+        "c": "dag_args = {'catchup': False}\nprint(dag_args['catchup'])",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the catchup behavior with setting:",
+        "type": "match",
+        "left": [
+            "True",
+            "False",
+            "LatestOnly",
+            "Manual"
+        ],
+        "right": [
+            "Run all past",
+            "Run current only",
+            "Skip old",
+            "User trigger"
+        ]
+    },
+    {
+        "q": "Rearrange the catchup logic:",
+        "type": "rearrange",
+        "words": [
+            "Turn on DAG",
+            "Check last run",
+            "Check current time",
+            "Schedule missing intervals",
+            "Execute runs"
+        ]
+    },
+    {
+        "q": "Apache Airflow is written in Python.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ is used to define workflows.",
+        "type": "fill_blank",
+        "answers": [
+            "DAG"
+        ],
+        "other_options": [
+            "Task",
+            "Job",
+            "Run"
+        ]
+    },
+    {
+        "q": "Airflow requires a database backend.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ executes the tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "Executor"
+        ],
+        "other_options": [
+            "Scheduler",
+            "Webserver",
+            "Database"
+        ]
+    },
+    {
+        "q": "Airflow has a modular architecture.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ monitors all tasks and DAGs.",
+        "type": "fill_blank",
+        "answers": [
+            "Scheduler"
+        ],
+        "other_options": [
+            "Worker",
+            "Triggerer",
+            "Webserver"
+        ]
+    },
+    {
+        "q": "Operators determine what actually gets done.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ defines the structure of the workflow.",
+        "type": "fill_blank",
+        "answers": [
+            "DAG"
+        ],
+        "other_options": [
+            "Task",
+            "Operator",
+            "Sensor"
+        ]
+    },
+    {
+        "q": "Airflow is scalable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ interface allows monitoring of pipelines.",
+        "type": "fill_blank",
+        "answers": [
+            "Web UI"
+        ],
+        "other_options": [
+            "CLI",
+            "API",
+            "Logs"
+        ]
+    },
+    {
+        "q": "Sensors wait for a certain condition to be met.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ defines dependencies between tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "Bitshift Operator"
+        ],
+        "other_options": [
+            "Dependency Manager",
+            "Linker",
+            "Connector"
+        ]
+    },
+    {
+        "q": "XComs let tasks exchange small amounts of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ variable stores global configuration.",
+        "type": "fill_blank",
+        "answers": [
+            "Variable"
+        ],
+        "other_options": [
+            "Config",
+            "Setting",
+            "Param"
+        ]
+    },
+    {
+        "q": "Connections store credentials securely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ manages the distribution of tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "Celery"
+        ],
+        "other_options": [
+            "Redis",
+            "RabbitMQ",
+            "Kafka"
+        ]
+    },
+    {
+        "q": "KubernetesExecutor runs every task in a separate pod.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ serves the logs to the UI.",
+        "type": "fill_blank",
+        "answers": [
+            "Webserver"
+        ],
+        "other_options": [
+            "Scheduler",
+            "Worker",
+            "Executor"
+        ]
+    },
+    {
+        "q": "DAGs are defined in Python files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ folder is where Airflow looks for DAGs.",
+        "type": "fill_blank",
+        "answers": [
+            "dags_folder"
+        ],
+        "other_options": [
+            "plugins_folder",
+            "logs_folder",
+            "config_folder"
+        ]
+    },
+    {
+        "q": "What is Airflow Pool?",
+        "type": "mcq",
+        "o": [
+            "Limit concurrency for specific tasks",
+            "Database connection",
+            "Executor type",
+            "DAG group"
+        ]
+    },
+    {
+        "q": "The _____ argument assigns a task to a pool.",
+        "type": "fill_blank",
+        "answers": [
+            "pool"
+        ],
+        "other_options": [
+            "queue",
+            "group",
+            "slot"
+        ]
+    },
+    {
+        "q": "Pools prevent source system overload.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this pool slot?",
+        "type": "mcq",
+        "c": "slots = 128\nused = 120\nprint(slots - used)",
+        "o": [
+            "8",
+            "128",
+            "120",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pool status with its meaning:",
+        "type": "match",
+        "left": [
+            "Open",
+            "Queued",
+            "Running",
+            "Failed"
+        ],
+        "right": [
+            "Available slots",
+            "Waiting for slot",
+            "Occupying slot",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the pool creation:",
+        "type": "rearrange",
+        "words": [
+            "Go to Admin",
+            "Select Pools",
+            "Click Create",
+            "Set Name/Slots",
+            "Save"
+        ]
+    },
+    {
+        "q": "What is SLA miss callback?",
+        "type": "mcq",
+        "o": [
+            "Function called when SLA is missed",
+            "Success callback",
+            "Failure callback",
+            "Retry callback"
+        ]
+    },
+    {
+        "q": "SLA is defined on the _____ level.",
+        "type": "fill_blank",
+        "answers": [
+            "task"
+        ],
+        "other_options": [
+            "dag",
+            "run",
+            "job"
+        ]
+    },
+    {
+        "q": "Airflow sends emails on SLA miss by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this SLA time?",
+        "type": "mcq",
+        "c": "from datetime import timedelta\nprint(timedelta(hours=1).seconds)",
+        "o": [
+            "3600",
+            "60",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the callback argument with its data:",
+        "type": "match",
+        "left": [
+            "dag",
+            "task_list",
+            "blocking_task_list",
+            "slas"
+        ],
+        "right": [
+            "DAG object",
+            "Affected tasks",
+            "Blockers",
+            "Missed SLAs"
+        ]
+    },
+    {
+        "q": "Rearrange the SLA check:",
+        "type": "rearrange",
+        "words": [
+            "Task starts",
+            "Scheduler monitors",
+            "Deadline passes",
+            "Identify miss",
+            "Trigger callback"
+        ]
+    },
+    {
+        "q": "What is Deferrable Operator?",
+        "type": "mcq",
+        "o": [
+            "Operator that suspends itself while waiting",
+            "Standard operator",
+            "Sensor",
+            "Hook"
+        ]
+    },
+    {
+        "q": "Deferrable operators release the _____ slot.",
+        "type": "fill_blank",
+        "answers": [
+            "worker"
+        ],
+        "other_options": [
+            "scheduler",
+            "webserver",
+            "triggerer"
+        ]
+    },
+    {
+        "q": "The Triggerer component handles deferred tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this state?",
+        "type": "mcq",
+        "c": "state = 'DEFERRED'\nprint(state.lower())",
+        "o": [
+            "deferred",
+            "running",
+            "success",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the component with deferral role:",
+        "type": "match",
+        "left": [
+            "Worker",
+            "Triggerer",
+            "Database",
+            "Scheduler"
+        ],
+        "right": [
+            "Suspends task",
+            "Runs trigger",
+            "Stores state",
+            "Resumes task"
+        ]
+    },
+    {
+        "q": "Rearrange the deferral flow:",
+        "type": "rearrange",
+        "words": [
+            "Task execute",
+            "Yield trigger",
+            "Worker releases",
+            "Triggerer polls",
+            "Task resumes"
+        ]
+    },
+    {
+        "q": "What is Role-Based Access Control (RBAC)?",
+        "type": "mcq",
+        "o": [
+            "Managing user permissions via roles",
+            "Network security",
+            "Data encryption",
+            "Log access"
+        ]
+    },
+    {
+        "q": "The _____ role has full access.",
+        "type": "fill_blank",
+        "answers": [
+            "Admin"
+        ],
+        "other_options": [
+            "Op",
+            "User",
+            "Viewer"
+        ]
+    },
+    {
+        "q": "Custom roles can include specific DAG permissions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this permission?",
+        "type": "mcq",
+        "c": "perm = 'can_read_dag'\nprint(perm.split('_')[1])",
+        "o": [
+            "read",
+            "can",
+            "dag",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the role with its scope:",
+        "type": "match",
+        "left": [
+            "Viewer",
+            "User",
+            "Op",
+            "Public"
+        ],
+        "right": [
+            "Read-only",
+            "DAG edits",
+            "Config edits",
+            "No access"
+        ]
+    },
+    {
+        "q": "Rearrange the RBAC assignment:",
+        "type": "rearrange",
+        "words": [
+            "Create User",
+            "Select Role",
+            "Save User",
+            "User logs in",
+            "Check access"
+        ]
+    },
+    {
+        "q": "What is Airflow UI Security?",
+        "type": "mcq",
+        "o": [
+            "Protecting the web interface",
+            "Protecting database",
+            "Protecting logs",
+            "Protecting code"
+        ]
+    },
+    {
+        "q": "Airflow supports authentication via _____.",
+        "type": "fill_blank",
+        "answers": [
+            "LDAP"
+        ],
+        "other_options": [
+            "FTP",
+            "SSH",
+            "Telnet"
+        ]
+    },
+    {
+        "q": "OAuth can be used for Airflow login.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this auth backend?",
+        "type": "mcq",
+        "c": "backend = 'airflow.contrib.auth.backends.password_auth'\nprint(backend.split('.')[-1])",
+        "o": [
+            "password_auth",
+            "backends",
+            "auth",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the auth method with its type:",
+        "type": "match",
+        "left": [
+            "Database",
+            "LDAP",
+            "OAuth",
+            "REMOTE_USER"
+        ],
+        "right": [
+            "Local DB",
+            "Directory",
+            "Token",
+            "Proxy header"
+        ]
+    },
+    {
+        "q": "Rearrange the auth setup:",
+        "type": "rearrange",
+        "words": [
+            "Install provider",
+            "Config airflow.cfg",
+            "Restart webserver",
+            "Create user",
+            "Login"
+        ]
+    },
+    {
+        "q": "What is Fernet Key?",
+        "type": "mcq",
+        "o": [
+            "Key for encrypting connection credentials",
+            "SSH key",
+            "SSL certificate",
+            "API token"
+        ]
+    },
+    {
+        "q": "Fernet key is a _____ string.",
+        "type": "fill_blank",
+        "answers": [
+            "base64-encoded"
+        ],
+        "other_options": [
+            "hex-encoded",
+            "binary",
+            "plain-text"
+        ]
+    },
+    {
+        "q": "Rotating Fernet keys requires re-encrypting data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this rotation?",
+        "type": "mcq",
+        "c": "keys = ['old_key', 'new_key']\nprint(keys[1])",
+        "o": [
+            "new_key",
+            "old_key",
+            "None",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the Fernet action with its tool:",
+        "type": "match",
+        "left": [
+            "Generate",
+            "Rotate",
+            "Encrypt",
+            "Decrypt"
+        ],
+        "right": [
+            "cryptography",
+            "airflow-rotate",
+            "Fernet()",
+            "Fernet()"
+        ]
+    },
+    {
+        "q": "Rearrange the key rotation:",
+        "type": "rearrange",
+        "words": [
+            "Generate new key",
+            "Add to config",
+            "Run rotation cmd",
+            "Remove old key",
+            "Restart services"
+        ]
+    },
+    {
+        "q": "What is Airflow Plugin Manager?",
+        "type": "mcq",
+        "o": [
+            "Loads plugins at startup",
+            "Manages tasks",
+            "Manages users",
+            "Manages DB"
+        ]
+    },
+    {
+        "q": "Plugins are lazy-loaded by default in Airflow _____.",
+        "type": "fill_blank",
+        "answers": [
+            "2.0"
+        ],
+        "other_options": [
+            "1.10",
+            "1.0",
+            "3.0"
+        ]
+    },
+    {
+        "q": "Plugins can inject UI blueprints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this plugin source?",
+        "type": "mcq",
+        "c": "source = 'plugins_folder'\nprint(source)",
+        "o": [
+            "plugins_folder",
+            "dags_folder",
+            "logs_folder",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the plugin hook with its function:",
+        "type": "match",
+        "left": [
+            "on_load",
+            "operators",
+            "hooks",
+            "executors"
+        ],
+        "right": [
+            "Startup",
+            "Export Ops",
+            "Export Hooks",
+            "Export Execs"
+        ]
+    },
+    {
+        "q": "Rearrange the plugin loading:",
+        "type": "rearrange",
+        "words": [
+            "Scan folder",
+            "Import module",
+            "Validate class",
+            "Register components",
+            "Available in DAGs"
+        ]
+    },
+    {
+        "q": "What is Airflow Best Practice?",
+        "type": "mcq",
+        "o": [
+            "Guidelines for efficient DAGs",
+            "Rules for parsing",
+            "Security policy",
+            "Legal requirement"
+        ]
+    },
+    {
+        "q": "Keep top-level code in DAG files _____.",
+        "type": "fill_blank",
+        "answers": [
+            "minimal"
+        ],
+        "other_options": [
+            "complex",
+            "heavy",
+            "slow"
+        ]
+    },
+    {
+        "q": "Idempotency is a key property of Airflow tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this principle?",
+        "type": "mcq",
+        "c": "principle = 'Idempotency'\nprint(len(principle))",
+        "o": [
+            "11",
+            "10",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the best practice with its benefit:",
+        "type": "match",
+        "left": [
+            "Idempotency",
+            "Atomic tasks",
+            "Avoid top-level code",
+            "Use connections"
+        ],
+        "right": [
+            "Safe retries",
+            "Clear failure",
+            "Fast parsing",
+            "Security"
+        ]
+    },
+    {
+        "q": "Rearrange the DAG optimization:",
+        "type": "rearrange",
+        "words": [
+            "Profile DAG",
+            "Identify bottlenecks",
+            "Refactor top-level",
+            "Optimize queries",
+            "Test performance"
+        ]
+    },
+    {
+        "q": "What is Airflow Troubleshooting?",
+        "type": "mcq",
+        "o": [
+            "Diagnosing and fixing issues",
+            "Monitoring",
+            "Deployment",
+            "Development"
+        ]
+    },
+    {
+        "q": "Check the _____ for task failure details.",
+        "type": "fill_blank",
+        "answers": [
+            "logs"
+        ],
+        "other_options": [
+            "code",
+            "config",
+            "db"
+        ]
+    },
+    {
+        "q": "The 'Test' button in UI runs task without checking dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this error?",
+        "type": "mcq",
+        "c": "error = 'Task exited with return code 1'\nprint(error.split()[-1])",
+        "o": [
+            "1",
+            "code",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the issue with possible cause:",
+        "type": "match",
+        "left": [
+            "Task stuck in Queued",
+            "Task fails immediately",
+            "DAG not appearing",
+            "Scheduler crashed"
+        ],
+        "right": [
+            "Executor/Worker issue",
+            "Code/Config error",
+            "Parse error",
+            "Resource OOM"
+        ]
+    },
+    {
+        "q": "Rearrange the debugging steps:",
+        "type": "rearrange",
+        "words": [
+            "Check UI state",
+            "Read task logs",
+            "Check scheduler logs",
+            "Reproduce locally",
+            "Fix and deploy"
+        ]
+    },
+    {
+        "q": "Apache Airflow is the industry standard for orchestration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _____ community actively maintains Airflow.",
+        "type": "fill_blank",
+        "answers": [
+            "Apache"
+        ],
+        "other_options": [
+            "Linux",
+            "Google",
+            "Facebook"
+        ]
+    },
+    {
+        "q": "What is LatestOnlyOperator?",
+        "type": "mcq",
+        "o": [
+            "Operator that skips downstream if not latest run",
+            "Operator that runs always",
+            "Operator that fails old runs",
+            "Backfill operator"
+        ]
+    },
+    {
+        "q": "Detailed logs are available for _____ days.",
+        "type": "fill_blank",
+        "answers": [
+            "30"
+        ],
+        "other_options": [
+            "7",
+            "1",
+            "365"
+        ]
+    },
+    {
+        "q": "Trigger Rule: one_success fires if at least one parent succeeds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this Trigger Rule?",
+        "type": "mcq",
+        "c": "rule = 'all_done'\nprint(rule.replace('_', ' '))",
+        "o": [
+            "all done",
+            "alldone",
+            "done",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the trigger rule with its logic:",
+        "type": "match",
+        "left": [
+            "all_success",
+            "all_failed",
+            "one_failed",
+            "none_failed"
+        ],
+        "right": [
+            "Default",
+            "All parents fail",
+            "At least one fail",
+            "No parents fail"
+        ]
+    }
+]

@@ -1,0 +1,6800 @@
+[
+    {
+        "q": "What is query optimization?",
+        "type": "mcq",
+        "o": [
+            "Finding the most efficient way to execute a query",
+            "Writing queries faster",
+            "Shortening query length",
+            "Caching all queries"
+        ]
+    },
+    {
+        "q": "A query _____ generates execution plans.",
+        "type": "fill_blank",
+        "answers": [
+            "optimizer"
+        ],
+        "other_options": [
+            "executor",
+            "parser",
+            "analyzer"
+        ]
+    },
+    {
+        "q": "Query optimization happens before query execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which is NOT a query optimization goal?",
+        "type": "mcq",
+        "o": [
+            "Increase disk usage",
+            "Reduce I/O operations",
+            "Minimize CPU usage",
+            "Lower response time"
+        ]
+    },
+    {
+        "q": "Match the optimization phase with its goal:",
+        "type": "match",
+        "left": [
+            "Parsing",
+            "Optimization",
+            "Execution",
+            "Caching"
+        ],
+        "right": [
+            "Syntax check",
+            "Plan selection",
+            "Run query",
+            "Store results"
+        ]
+    },
+    {
+        "q": "Rearrange query processing steps:",
+        "type": "rearrange",
+        "words": [
+            "Parse SQL",
+            "Analyze semantics",
+            "Optimize",
+            "Execute",
+            "Return results"
+        ]
+    },
+    {
+        "q": "What is an execution plan?",
+        "type": "mcq",
+        "o": [
+            "Step-by-step instructions for how database executes a query",
+            "Query result",
+            "Database schema",
+            "Index structure"
+        ]
+    },
+    {
+        "q": "EXPLAIN shows the query's _____ plan.",
+        "type": "fill_blank",
+        "answers": [
+            "execution"
+        ],
+        "other_options": [
+            "backup",
+            "storage",
+            "security"
+        ]
+    },
+    {
+        "q": "Different execution plans can have vastly different performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this EXPLAIN?",
+        "type": "mcq",
+        "c": "EXPLAIN SELECT * FROM users WHERE id = 1;",
+        "o": [
+            "Shows how the database will execute the query",
+            "Returns the query results",
+            "Modifies the table",
+            "Creates an index"
+        ]
+    },
+    {
+        "q": "Match EXPLAIN output with its meaning:",
+        "type": "match",
+        "left": [
+            "Seq Scan",
+            "Index Scan",
+            "Nested Loop",
+            "Hash Join"
+        ],
+        "right": [
+            "Full table scan",
+            "Uses index",
+            "Row-by-row join",
+            "Hash-based join"
+        ]
+    },
+    {
+        "q": "Rearrange plan reading order:",
+        "type": "rearrange",
+        "words": [
+            "Innermost operation",
+            "Child operations",
+            "Parent operations",
+            "Final output"
+        ]
+    },
+    {
+        "q": "What is a database index?",
+        "type": "mcq",
+        "o": [
+            "Data structure that speeds up data retrieval",
+            "Primary key only",
+            "Table copy",
+            "Query cache"
+        ]
+    },
+    {
+        "q": "B-tree is the most common _____ implementation.",
+        "type": "fill_blank",
+        "answers": [
+            "index"
+        ],
+        "other_options": [
+            "table",
+            "query",
+            "view"
+        ]
+    },
+    {
+        "q": "Indexes speed up reads but slow down writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this index creation?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx_email ON users(email);",
+        "o": [
+            "Creates index on email column for faster lookups",
+            "Creates new table",
+            "Modifies email values",
+            "Drops the column"
+        ]
+    },
+    {
+        "q": "Match index type with its use case:",
+        "type": "match",
+        "left": [
+            "B-tree",
+            "Hash",
+            "GIN",
+            "BRIN"
+        ],
+        "right": [
+            "Range queries",
+            "Equality only",
+            "Full-text search",
+            "Large sorted tables"
+        ]
+    },
+    {
+        "q": "Rearrange index selection process:",
+        "type": "rearrange",
+        "words": [
+            "Analyze queries",
+            "Identify columns",
+            "Choose index type",
+            "Create index",
+            "Monitor usage"
+        ]
+    },
+    {
+        "q": "What is a composite index?",
+        "type": "mcq",
+        "o": [
+            "Index on multiple columns",
+            "Index on single column",
+            "Primary key index",
+            "Unique index"
+        ]
+    },
+    {
+        "q": "The _____ of columns in composite index matters.",
+        "type": "fill_blank",
+        "answers": [
+            "order"
+        ],
+        "other_options": [
+            "type",
+            "name",
+            "length"
+        ]
+    },
+    {
+        "q": "Composite indexes can be used for prefix queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this composite index?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx_loc ON orders(country, city, zip);\nSELECT * FROM orders WHERE country = 'US' AND city = 'NYC';",
+        "o": [
+            "Index is used for country and city filtering",
+            "Full table scan",
+            "Index not used",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match column position with index usage:",
+        "type": "match",
+        "left": [
+            "First column",
+            "Second column",
+            "Third column",
+            "Skipped column"
+        ],
+        "right": [
+            "Always usable",
+            "With first",
+            "With first two",
+            "Breaks index use"
+        ]
+    },
+    {
+        "q": "Rearrange columns in composite index by:",
+        "type": "rearrange",
+        "words": [
+            "Equality filters first",
+            "Range filters second",
+            "Sort columns",
+            "Covered columns"
+        ]
+    },
+    {
+        "q": "What is a covering index?",
+        "type": "mcq",
+        "o": [
+            "Index that includes all columns needed by a query",
+            "Index on primary key",
+            "Index on all columns",
+            "Clustered index"
+        ]
+    },
+    {
+        "q": "Covering indexes avoid accessing the _____ table.",
+        "type": "fill_blank",
+        "answers": [
+            "base"
+        ],
+        "other_options": [
+            "index",
+            "temp",
+            "cache"
+        ]
+    },
+    {
+        "q": "Covering indexes are also called index-only scans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this covering index?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx_cover ON users(email, name);\nSELECT email, name FROM users WHERE email = 'test@test.com';",
+        "o": [
+            "Index-only scan, no table access needed",
+            "Index scan plus table lookup",
+            "Full table scan",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match scan type with table access:",
+        "type": "match",
+        "left": [
+            "Index-only scan",
+            "Index scan + fetch",
+            "Sequential scan",
+            "Bitmap scan"
+        ],
+        "right": [
+            "No table access",
+            "Table access",
+            "Full table read",
+            "Batched access"
+        ]
+    },
+    {
+        "q": "Rearrange by efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Index-only scan",
+            "Index scan",
+            "Bitmap index scan",
+            "Sequential scan"
+        ]
+    },
+    {
+        "q": "What is table partitioning?",
+        "type": "mcq",
+        "o": [
+            "Dividing a table into smaller segments",
+            "Creating table copies",
+            "Indexing a table",
+            "Joining tables"
+        ]
+    },
+    {
+        "q": "Range partitioning divides by value _____.",
+        "type": "fill_blank",
+        "answers": [
+            "ranges"
+        ],
+        "other_options": [
+            "hashes",
+            "lists",
+            "groups"
+        ]
+    },
+    {
+        "q": "Partitioning can improve query performance for large tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this partition query?",
+        "type": "mcq",
+        "c": "-- Table partitioned by date\nSELECT * FROM orders WHERE order_date = '2024-01-15';",
+        "o": [
+            "Only scans partition containing January 2024 data",
+            "Scans all partitions",
+            "Error",
+            "No partition pruning"
+        ]
+    },
+    {
+        "q": "Match partition type with its use:",
+        "type": "match",
+        "left": [
+            "Range",
+            "List",
+            "Hash",
+            "Composite"
+        ],
+        "right": [
+            "Date ranges",
+            "Specific values",
+            "Even distribution",
+            "Multiple levels"
+        ]
+    },
+    {
+        "q": "Rearrange partitioning steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze query patterns",
+            "Choose partition key",
+            "Select partition type",
+            "Create partitions",
+            "Migrate data"
+        ]
+    },
+    {
+        "q": "What is partition pruning?",
+        "type": "mcq",
+        "o": [
+            "Skipping irrelevant partitions during query",
+            "Deleting old partitions",
+            "Merging partitions",
+            "Creating new partitions"
+        ]
+    },
+    {
+        "q": "Partition pruning reduces _____ scanned.",
+        "type": "fill_blank",
+        "answers": [
+            "data"
+        ],
+        "other_options": [
+            "queries",
+            "indexes",
+            "tables"
+        ]
+    },
+    {
+        "q": "Partition pruning happens automatically when WHERE clause matches partition key.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of pruning?",
+        "type": "mcq",
+        "c": "-- 12 monthly partitions\n-- Query: WHERE month = 'Jan'\n-- Partitions scanned:",
+        "o": [
+            "Only January partition is scanned",
+            "All 12 partitions scanned",
+            "Random partition scanned",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pruning requirement with its importance:",
+        "type": "match",
+        "left": [
+            "Partition key in WHERE",
+            "Constant values",
+            "Proper partition bounds",
+            "Statistics updated"
+        ],
+        "right": [
+            "Enable pruning",
+            "Compile-time pruning",
+            "Accurate pruning",
+            "Correct estimates"
+        ]
+    },
+    {
+        "q": "Rearrange pruning effectiveness factors:",
+        "type": "rearrange",
+        "words": [
+            "Query pattern match",
+            "Partition key selectivity",
+            "Number of partitions",
+            "Data distribution"
+        ]
+    },
+    {
+        "q": "What is query caching?",
+        "type": "mcq",
+        "o": [
+            "Storing query results for reuse",
+            "Caching query text",
+            "Storing indexes",
+            "Buffering writes"
+        ]
+    },
+    {
+        "q": "Query cache stores _____ for identical queries.",
+        "type": "fill_blank",
+        "answers": [
+            "results"
+        ],
+        "other_options": [
+            "plans",
+            "indexes",
+            "tables"
+        ]
+    },
+    {
+        "q": "Query cache must be invalidated when data changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of cache hit?",
+        "type": "mcq",
+        "c": "-- Query executed before: SELECT * FROM products WHERE id = 1\n-- Same query executed again:",
+        "o": [
+            "Returns cached result instantly",
+            "Re-executes query",
+            "Error",
+            "Returns stale data always"
+        ]
+    },
+    {
+        "q": "Match cache level with its scope:",
+        "type": "match",
+        "left": [
+            "Query cache",
+            "Buffer pool",
+            "Application cache",
+            "CDN cache"
+        ],
+        "right": [
+            "Result caching",
+            "Page caching",
+            "Object caching",
+            "Response caching"
+        ]
+    },
+    {
+        "q": "Rearrange cache hierarchy by proximity:",
+        "type": "rearrange",
+        "words": [
+            "CPU cache",
+            "Buffer pool",
+            "Query cache",
+            "Application cache",
+            "Distributed cache"
+        ]
+    },
+    {
+        "q": "What is connection pooling?",
+        "type": "mcq",
+        "o": [
+            "Reusing database connections across requests",
+            "Creating new connection per query",
+            "Closing all connections",
+            "Connection monitoring"
+        ]
+    },
+    {
+        "q": "Connection pools reduce _____ overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "connection"
+        ],
+        "other_options": [
+            "query",
+            "data",
+            "index"
+        ]
+    },
+    {
+        "q": "Connection pooling improves application performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of pooling?",
+        "type": "mcq",
+        "c": "-- Pool size: 10\n-- Concurrent requests: 5\n-- Connection behavior:",
+        "o": [
+            "Requests reuse connections from pool",
+            "5 new connections created",
+            "Requests queued",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pool setting with its purpose:",
+        "type": "match",
+        "left": [
+            "Min size",
+            "Max size",
+            "Idle timeout",
+            "Connection timeout"
+        ],
+        "right": [
+            "Keep warm",
+            "Limit resources",
+            "Cleanup unused",
+            "Fail fast"
+        ]
+    },
+    {
+        "q": "Rearrange connection lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Request connection",
+            "Check pool",
+            "Use connection",
+            "Return to pool",
+            "Close if idle"
+        ]
+    },
+    {
+        "q": "What is the cost-based optimizer?",
+        "type": "mcq",
+        "o": [
+            "Optimizer that estimates and compares plan costs",
+            "Optimizer based on rules only",
+            "Query pricing system",
+            "Index cost calculator"
+        ]
+    },
+    {
+        "q": "Cost estimates are based on _____ about data.",
+        "type": "fill_blank",
+        "answers": [
+            "statistics"
+        ],
+        "other_options": [
+            "guesses",
+            "rules",
+            "defaults"
+        ]
+    },
+    {
+        "q": "Cost-based optimizer chooses lowest estimated cost plan.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cost factor?",
+        "type": "mcq",
+        "c": "-- Table: 1 million rows\n-- Index on 'email': very selective\n-- Query: WHERE email = 'unique@test.com'",
+        "o": [
+            "Index scan chosen due to low estimated cost",
+            "Full table scan chosen",
+            "Both scans used",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match cost factor with its meaning:",
+        "type": "match",
+        "left": [
+            "Rows",
+            "Width",
+            "Startup cost",
+            "Total cost"
+        ],
+        "right": [
+            "Estimated rows",
+            "Row size",
+            "Time to first row",
+            "Complete execution"
+        ]
+    },
+    {
+        "q": "Rearrange cost factors by impact:",
+        "type": "rearrange",
+        "words": [
+            "I/O cost",
+            "CPU cost",
+            "Memory cost",
+            "Network cost"
+        ]
+    },
+    {
+        "q": "What is table statistics?",
+        "type": "mcq",
+        "o": [
+            "Information about table data distribution",
+            "Query execution logs",
+            "Table size in bytes",
+            "Index structure"
+        ]
+    },
+    {
+        "q": "ANALYZE command updates table _____.",
+        "type": "fill_blank",
+        "answers": [
+            "statistics"
+        ],
+        "other_options": [
+            "data",
+            "indexes",
+            "constraints"
+        ]
+    },
+    {
+        "q": "Outdated statistics can lead to poor query plans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this statistics query?",
+        "type": "mcq",
+        "c": "ANALYZE users;",
+        "o": [
+            "Updates statistics for users table",
+            "Returns table data",
+            "Drops the table",
+            "Creates index"
+        ]
+    },
+    {
+        "q": "Match statistic with its use:",
+        "type": "match",
+        "left": [
+            "n_distinct",
+            "null_frac",
+            "most_common_vals",
+            "histogram_bounds"
+        ],
+        "right": [
+            "Unique values",
+            "NULL percentage",
+            "Frequent values",
+            "Value distribution"
+        ]
+    },
+    {
+        "q": "Rearrange statistics maintenance:",
+        "type": "rearrange",
+        "words": [
+            "Load data",
+            "Run ANALYZE",
+            "Verify plans",
+            "Schedule updates",
+            "Monitor drift"
+        ]
+    },
+    {
+        "q": "What is a sequential scan?",
+        "type": "mcq",
+        "o": [
+            "Reading all rows in a table",
+            "Reading specific rows only",
+            "Using an index",
+            "Parallel scan"
+        ]
+    },
+    {
+        "q": "Sequential scans read pages in _____ order.",
+        "type": "fill_blank",
+        "answers": [
+            "physical"
+        ],
+        "other_options": [
+            "random",
+            "logical",
+            "sorted"
+        ]
+    },
+    {
+        "q": "Sequential scans are efficient for reading large portions of data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this scan choice?",
+        "type": "mcq",
+        "c": "-- Table: 1000 rows\n-- Query needs: 900 rows\n-- Scan type chosen:",
+        "o": [
+            "Sequential scan (reading most rows anyway)",
+            "Index scan",
+            "Index-only scan",
+            "Bitmap scan"
+        ]
+    },
+    {
+        "q": "Match scan type with its scenario:",
+        "type": "match",
+        "left": [
+            "Seq scan",
+            "Index scan",
+            "Bitmap scan",
+            "TID scan"
+        ],
+        "right": [
+            "Large result set",
+            "Small result set",
+            "Multiple predicates",
+            "Known row ID"
+        ]
+    },
+    {
+        "q": "Rearrange by rows returned efficiency:",
+        "type": "rearrange",
+        "words": [
+            "TID scan",
+            "Index scan",
+            "Bitmap scan",
+            "Sequential scan"
+        ]
+    },
+    {
+        "q": "What is a bitmap index scan?",
+        "type": "mcq",
+        "o": [
+            "Using multiple indexes and combining results",
+            "Single index scan",
+            "Full table scan",
+            "Hash scan"
+        ]
+    },
+    {
+        "q": "Bitmap scans create a _____ of matching rows.",
+        "type": "fill_blank",
+        "answers": [
+            "bitmap"
+        ],
+        "other_options": [
+            "list",
+            "tree",
+            "hash"
+        ]
+    },
+    {
+        "q": "Bitmap scans reduce random I/O.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this bitmap operation?",
+        "type": "mcq",
+        "c": "-- Index on status, Index on date\n-- Query: WHERE status = 'active' AND date > '2024-01-01'",
+        "o": [
+            "Bitmap AND of both index results",
+            "Sequential scan",
+            "Only one index used",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match bitmap operation with its meaning:",
+        "type": "match",
+        "left": [
+            "BitmapAnd",
+            "BitmapOr",
+            "Bitmap Heap Scan",
+            "Bitmap Index Scan"
+        ],
+        "right": [
+            "AND conditions",
+            "OR conditions",
+            "Fetch rows",
+            "Build bitmap"
+        ]
+    },
+    {
+        "q": "Rearrange bitmap scan steps:",
+        "type": "rearrange",
+        "words": [
+            "Scan first index",
+            "Scan second index",
+            "Combine bitmaps",
+            "Heap scan matching",
+            "Return results"
+        ]
+    },
+    {
+        "q": "What is a nested loop join?",
+        "type": "mcq",
+        "o": [
+            "For each outer row, scan inner table",
+            "Hash-based join",
+            "Merge-based join",
+            "Parallel join"
+        ]
+    },
+    {
+        "q": "Nested loops work best with _____ inner tables.",
+        "type": "fill_blank",
+        "answers": [
+            "small"
+        ],
+        "other_options": [
+            "large",
+            "partitioned",
+            "indexed"
+        ]
+    },
+    {
+        "q": "Nested loop joins benefit from indexes on inner table.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this join scenario?",
+        "type": "mcq",
+        "c": "-- Outer: 100 rows\n-- Inner: 10 rows (indexed)\n-- Join type best suited:",
+        "o": [
+            "Nested loop join",
+            "Hash join",
+            "Merge join",
+            "Cross join"
+        ]
+    },
+    {
+        "q": "Match join scenario with best join type:",
+        "type": "match",
+        "left": [
+            "Small inner table",
+            "Large unsorted tables",
+            "Pre-sorted tables",
+            "Many matches"
+        ],
+        "right": [
+            "Nested loop",
+            "Hash join",
+            "Merge join",
+            "Hash join"
+        ]
+    },
+    {
+        "q": "Rearrange nested loop steps:",
+        "type": "rearrange",
+        "words": [
+            "Get outer row",
+            "Scan inner table",
+            "Check join condition",
+            "Output match",
+            "Next outer row"
+        ]
+    },
+    {
+        "q": "What is a hash join?",
+        "type": "mcq",
+        "o": [
+            "Build hash table from one table, probe with other",
+            "Sort both tables",
+            "Nested scanning",
+            "Index-based join"
+        ]
+    },
+    {
+        "q": "Hash joins require _____ to build hash table.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "disk",
+            "index",
+            "network"
+        ]
+    },
+    {
+        "q": "Hash joins are efficient for large unsorted tables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of hash join?",
+        "type": "mcq",
+        "c": "-- Table A: 100,000 rows\n-- Table B: 50,000 rows\n-- No indexes, enough memory",
+        "o": [
+            "Hash join chosen for efficiency",
+            "Nested loop join",
+            "Sequential scan only",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match hash join phase with its action:",
+        "type": "match",
+        "left": [
+            "Build phase",
+            "Probe phase",
+            "Spill to disk",
+            "Batch processing"
+        ],
+        "right": [
+            "Create hash table",
+            "Find matches",
+            "Memory exceeded",
+            "Process spilled data"
+        ]
+    },
+    {
+        "q": "Rearrange hash join steps:",
+        "type": "rearrange",
+        "words": [
+            "Scan build table",
+            "Create hash buckets",
+            "Scan probe table",
+            "Hash and match",
+            "Output results"
+        ]
+    },
+    {
+        "q": "What is a merge join?",
+        "type": "mcq",
+        "o": [
+            "Join pre-sorted tables by merging",
+            "Hash-based joining",
+            "Nested iteration",
+            "Random access join"
+        ]
+    },
+    {
+        "q": "Merge joins require inputs to be _____.",
+        "type": "fill_blank",
+        "answers": [
+            "sorted"
+        ],
+        "other_options": [
+            "indexed",
+            "hashed",
+            "partitioned"
+        ]
+    },
+    {
+        "q": "Merge joins can use index scans that return sorted data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of merge join scenario?",
+        "type": "mcq",
+        "c": "-- Both tables have index on join column\n-- Data retrieved in sorted order\n-- Join type:",
+        "o": [
+            "Merge join avoids separate sort step",
+            "Hash join",
+            "Nested loop",
+            "Sequential scan"
+        ]
+    },
+    {
+        "q": "Match join property with merge join benefit:",
+        "type": "match",
+        "left": [
+            "Pre-sorted data",
+            "Index availability",
+            "Large tables",
+            "Memory efficiency"
+        ],
+        "right": [
+            "No sort needed",
+            "Sorted scan",
+            "Scales well",
+            "Streaming process"
+        ]
+    },
+    {
+        "q": "Rearrange merge join steps:",
+        "type": "rearrange",
+        "words": [
+            "Get sorted left row",
+            "Get sorted right row",
+            "Compare keys",
+            "Advance pointer",
+            "Output matches"
+        ]
+    },
+    {
+        "q": "What is query rewriting?",
+        "type": "mcq",
+        "o": [
+            "Transforming query to equivalent but more efficient form",
+            "Changing query results",
+            "Modifying table structure",
+            "Updating statistics"
+        ]
+    },
+    {
+        "q": "Subquery unnesting _____ correlated subqueries.",
+        "type": "fill_blank",
+        "answers": [
+            "eliminates"
+        ],
+        "other_options": [
+            "creates",
+            "duplicates",
+            "caches"
+        ]
+    },
+    {
+        "q": "Query rewriting happens during optimization phase.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this rewrite?",
+        "type": "mcq",
+        "c": "-- Original: SELECT * FROM a WHERE x IN (SELECT x FROM b)\n-- Rewritten to:",
+        "o": [
+            "Semi-join between a and b",
+            "Same subquery",
+            "Full join",
+            "Cross join"
+        ]
+    },
+    {
+        "q": "Match rewrite with its transformation:",
+        "type": "match",
+        "left": [
+            "Subquery unnesting",
+            "Predicate pushdown",
+            "Constant folding",
+            "View inlining"
+        ],
+        "right": [
+            "Subquery to join",
+            "Filter early",
+            "Evaluate constants",
+            "Expand view definition"
+        ]
+    },
+    {
+        "q": "Rearrange rewrite benefits:",
+        "type": "rearrange",
+        "words": [
+            "Simplify query",
+            "Enable optimizations",
+            "Reduce operations",
+            "Improve plan choices"
+        ]
+    },
+    {
+        "q": "What is predicate pushdown?",
+        "type": "mcq",
+        "o": [
+            "Applying filters as early as possible in execution",
+            "Delaying filter application",
+            "Removing filters",
+            "Adding filters"
+        ]
+    },
+    {
+        "q": "Pushdown reduces rows _____ through the query.",
+        "type": "fill_blank",
+        "answers": [
+            "flowing"
+        ],
+        "other_options": [
+            "returning",
+            "joining",
+            "sorting"
+        ]
+    },
+    {
+        "q": "Predicate pushdown reduces intermediate result sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of pushdown?",
+        "type": "mcq",
+        "c": "-- Query: SELECT * FROM (SELECT * FROM orders) WHERE status = 'shipped'\n-- Pushdown result:",
+        "o": [
+            "Filter applied inside subquery",
+            "Filter applied after subquery",
+            "No optimization",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pushdown with its target:",
+        "type": "match",
+        "left": [
+            "Predicate pushdown",
+            "Projection pushdown",
+            "Join pushdown",
+            "Aggregation pushdown"
+        ],
+        "right": [
+            "Push WHERE",
+            "Push SELECT",
+            "Push JOIN",
+            "Push GROUP BY"
+        ]
+    },
+    {
+        "q": "Rearrange pushdown priorities:",
+        "type": "rearrange",
+        "words": [
+            "Identify predicates",
+            "Check pushability",
+            "Move to source",
+            "Verify correctness",
+            "Execute optimized"
+        ]
+    },
+    {
+        "q": "What is parallel query execution?",
+        "type": "mcq",
+        "o": [
+            "Using multiple processes to execute query parts",
+            "Sequential execution",
+            "Single-threaded processing",
+            "Async execution without parallelism"
+        ]
+    },
+    {
+        "q": "Parallel scans divide table into _____.",
+        "type": "fill_blank",
+        "answers": [
+            "chunks"
+        ],
+        "other_options": [
+            "rows",
+            "indexes",
+            "partitions"
+        ]
+    },
+    {
+        "q": "Parallel execution can significantly improve query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this parallel setting?",
+        "type": "mcq",
+        "c": "-- max_parallel_workers_per_gather = 4\n-- Large table scan query:",
+        "o": [
+            "Up to 4 workers process table in parallel",
+            "Single worker only",
+            "No parallelism",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match parallel operator with its role:",
+        "type": "match",
+        "left": [
+            "Gather",
+            "Parallel Seq Scan",
+            "Parallel Hash Join",
+            "Gather Merge"
+        ],
+        "right": [
+            "Collect results",
+            "Split table scan",
+            "Parallel join",
+            "Merge sorted results"
+        ]
+    },
+    {
+        "q": "Rearrange parallel execution steps:",
+        "type": "rearrange",
+        "words": [
+            "Decide parallelism",
+            "Spawn workers",
+            "Distribute work",
+            "Execute in parallel",
+            "Gather results"
+        ]
+    },
+    {
+        "q": "What is work_mem in query optimization?",
+        "type": "mcq",
+        "o": [
+            "Memory allocated for sorts and hashes per operation",
+            "Total database memory",
+            "Disk cache size",
+            "Network buffer"
+        ]
+    },
+    {
+        "q": "Low work_mem causes operations to _____ to disk.",
+        "type": "fill_blank",
+        "answers": [
+            "spill"
+        ],
+        "other_options": [
+            "cache",
+            "buffer",
+            "compress"
+        ]
+    },
+    {
+        "q": "Increasing work_mem can improve sort and hash performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of insufficient work_mem?",
+        "type": "mcq",
+        "c": "-- work_mem = 4MB\n-- Sort requires 100MB\n-- Behavior:",
+        "o": [
+            "External sort using disk",
+            "In-memory sort",
+            "Query fails",
+            "Sort skipped"
+        ]
+    },
+    {
+        "q": "Match memory setting with its impact:",
+        "type": "match",
+        "left": [
+            "work_mem",
+            "shared_buffers",
+            "effective_cache_size",
+            "maintenance_work_mem"
+        ],
+        "right": [
+            "Sort/hash operations",
+            "Data caching",
+            "Planner estimate",
+            "Index creation"
+        ]
+    },
+    {
+        "q": "Rearrange memory tuning steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze workload",
+            "Identify memory needs",
+            "Set initial values",
+            "Monitor performance",
+            "Tune iteratively"
+        ]
+    },
+    {
+        "q": "What is query hint?",
+        "type": "mcq",
+        "o": [
+            "Directive to influence optimizer decisions",
+            "Query comment",
+            "Error message",
+            "Result hint"
+        ]
+    },
+    {
+        "q": "Hints can force specific _____ or join methods.",
+        "type": "fill_blank",
+        "answers": [
+            "indexes"
+        ],
+        "other_options": [
+            "tables",
+            "columns",
+            "databases"
+        ]
+    },
+    {
+        "q": "Hints should be used sparingly as they override optimizer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hint?",
+        "type": "mcq",
+        "c": "SELECT /*+ INDEX(users idx_email) */ * FROM users WHERE email = 'test@test.com';",
+        "o": [
+            "Forces use of idx_email index",
+            "Creates new index",
+            "Ignores all indexes",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match hint type with its purpose:",
+        "type": "match",
+        "left": [
+            "INDEX",
+            "PARALLEL",
+            "LEADING",
+            "USE_HASH"
+        ],
+        "right": [
+            "Force index",
+            "Set parallelism",
+            "Join order",
+            "Join method"
+        ]
+    },
+    {
+        "q": "Rearrange hint usage considerations:",
+        "type": "rearrange",
+        "words": [
+            "Investigate slow query",
+            "Analyze plan",
+            "Try tuning first",
+            "Use hint if needed",
+            "Document reason"
+        ]
+    },
+    {
+        "q": "What is explain analyze?",
+        "type": "mcq",
+        "o": [
+            "Runs query and shows actual execution statistics",
+            "Estimates without running",
+            "Only shows plan",
+            "Creates new plan"
+        ]
+    },
+    {
+        "q": "EXPLAIN ANALYZE shows actual vs _____ row counts.",
+        "type": "fill_blank",
+        "answers": [
+            "estimated"
+        ],
+        "other_options": [
+            "cached",
+            "indexed",
+            "partitioned"
+        ]
+    },
+    {
+        "q": "EXPLAIN ANALYZE actually executes the query.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of analyze discrepancy?",
+        "type": "mcq",
+        "c": "-- EXPLAIN ANALYZE shows:\n-- Estimated rows: 10, Actual rows: 10000\n-- Implication:",
+        "o": [
+            "Statistics are outdated, run ANALYZE",
+            "Query is optimal",
+            "Index is unused",
+            "Table is empty"
+        ]
+    },
+    {
+        "q": "Match explain option with its output:",
+        "type": "match",
+        "left": [
+            "ANALYZE",
+            "BUFFERS",
+            "TIMING",
+            "VERBOSE"
+        ],
+        "right": [
+            "Actual execution",
+            "I/O statistics",
+            "Execution time",
+            "Detailed output"
+        ]
+    },
+    {
+        "q": "Rearrange explain analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "Run EXPLAIN ANALYZE",
+            "Compare estimates",
+            "Identify bottlenecks",
+            "Check buffer usage",
+            "Plan improvements"
+        ]
+    },
+    {
+        "q": "What is slow query log?",
+        "type": "mcq",
+        "o": [
+            "Log of queries exceeding time threshold",
+            "All query log",
+            "Error log",
+            "Transaction log"
+        ]
+    },
+    {
+        "q": "Slow query log helps identify _____ queries.",
+        "type": "fill_blank",
+        "answers": [
+            "problematic"
+        ],
+        "other_options": [
+            "fast",
+            "correct",
+            "simple"
+        ]
+    },
+    {
+        "q": "Slow query logging should be enabled in production.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this slow query config?",
+        "type": "mcq",
+        "c": "log_min_duration_statement = 1000  -- 1 second",
+        "o": [
+            "Logs queries taking more than 1 second",
+            "Logs all queries",
+            "Logs only errors",
+            "Disables logging"
+        ]
+    },
+    {
+        "q": "Match log analysis with its insight:",
+        "type": "match",
+        "left": [
+            "Duration",
+            "Frequency",
+            "Pattern",
+            "Timing"
+        ],
+        "right": [
+            "Slowness",
+            "Hot queries",
+            "Common issues",
+            "Peak loads"
+        ]
+    },
+    {
+        "q": "Rearrange performance investigation:",
+        "type": "rearrange",
+        "words": [
+            "Enable slow log",
+            "Collect samples",
+            "Analyze patterns",
+            "Identify top queries",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is an anti-pattern: SELECT *?",
+        "type": "mcq",
+        "o": [
+            "Retrieving all columns when only some needed",
+            "Best practice query",
+            "Efficient query",
+            "Optimized query"
+        ]
+    },
+    {
+        "q": "SELECT * prevents _____ scans.",
+        "type": "fill_blank",
+        "answers": [
+            "index-only"
+        ],
+        "other_options": [
+            "sequential",
+            "parallel",
+            "bitmap"
+        ]
+    },
+    {
+        "q": "Specifying needed columns improves query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this comparison?",
+        "type": "mcq",
+        "c": "-- Query A: SELECT * FROM users WHERE id = 1\n-- Query B: SELECT name FROM users WHERE id = 1\n-- With covering index on (id, name):",
+        "o": [
+            "Query B can use index-only scan",
+            "Same performance",
+            "Query A faster",
+            "Both use table scan"
+        ]
+    },
+    {
+        "q": "Match anti-pattern with its fix:",
+        "type": "match",
+        "left": [
+            "SELECT *",
+            "N+1 queries",
+            "Missing indexes",
+            "Cartesian join"
+        ],
+        "right": [
+            "Specify columns",
+            "Batch queries",
+            "Add indexes",
+            "Add join condition"
+        ]
+    },
+    {
+        "q": "Rearrange query best practices:",
+        "type": "rearrange",
+        "words": [
+            "Specify columns",
+            "Use appropriate indexes",
+            "Limit results",
+            "Avoid functions on indexed columns",
+            "Test with realistic data"
+        ]
+    },
+    {
+        "q": "What is N+1 query problem?",
+        "type": "mcq",
+        "o": [
+            "Fetching related data with separate queries per row",
+            "Single efficient query",
+            "Batched queries",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "N+1 causes _____ round trips to database.",
+        "type": "fill_blank",
+        "answers": [
+            "excessive"
+        ],
+        "other_options": [
+            "minimal",
+            "zero",
+            "cached"
+        ]
+    },
+    {
+        "q": "JOINs or batch loading solve N+1 problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of N+1 scenario?",
+        "type": "mcq",
+        "c": "-- Fetch 100 orders\n-- For each order: fetch customer\n-- Total queries:",
+        "o": [
+            "101 queries (1 + 100)",
+            "1 query",
+            "2 queries",
+            "100 queries"
+        ]
+    },
+    {
+        "q": "Match solution with N+1 type:",
+        "type": "match",
+        "left": [
+            "ORM lazy loading",
+            "API loops",
+            "Report generation",
+            "Batch operations"
+        ],
+        "right": [
+            "Eager loading",
+            "JOIN query",
+            "Single query",
+            "Bulk fetch"
+        ]
+    },
+    {
+        "q": "Rearrange N+1 detection steps:",
+        "type": "rearrange",
+        "words": [
+            "Monitor query counts",
+            "Identify patterns",
+            "Trace to code",
+            "Implement batch loading",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "What is index selectivity?",
+        "type": "mcq",
+        "o": [
+            "Ratio of distinct values to total rows",
+            "Index size",
+            "Index type",
+            "Index count"
+        ]
+    },
+    {
+        "q": "High selectivity indexes are more _____.",
+        "type": "fill_blank",
+        "answers": [
+            "effective"
+        ],
+        "other_options": [
+            "expensive",
+            "complex",
+            "slow"
+        ]
+    },
+    {
+        "q": "Primary key has maximum selectivity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of low selectivity?",
+        "type": "mcq",
+        "c": "-- Column: status (values: 'active', 'inactive')\n-- Table: 1 million rows\n-- Index usage decision:",
+        "o": [
+            "Index may not be used due to low selectivity",
+            "Index always used",
+            "Error",
+            "Index automatically dropped"
+        ]
+    },
+    {
+        "q": "Match column type with typical selectivity:",
+        "type": "match",
+        "left": [
+            "Primary key",
+            "Email",
+            "Status",
+            "Boolean flag"
+        ],
+        "right": [
+            "Maximum",
+            "High",
+            "Low",
+            "Very low"
+        ]
+    },
+    {
+        "q": "Rearrange selectivity impact:",
+        "type": "rearrange",
+        "words": [
+            "Calculate distinct ratio",
+            "Estimate matching rows",
+            "Compare scan costs",
+            "Choose access method"
+        ]
+    },
+    {
+        "q": "What is function-based index?",
+        "type": "mcq",
+        "o": [
+            "Index on expression or function result",
+            "Index on raw column",
+            "Stored procedure",
+            "Trigger"
+        ]
+    },
+    {
+        "q": "Function indexes support queries using _____ expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "same"
+        ],
+        "other_options": [
+            "different",
+            "any",
+            "simple"
+        ]
+    },
+    {
+        "q": "LOWER(email) function index only helps LOWER(email) queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this function index?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx_lower_email ON users(LOWER(email));\nSELECT * FROM users WHERE LOWER(email) = 'test@test.com';",
+        "o": [
+            "Index scan using function index",
+            "Full table scan",
+            "Error",
+            "Regular index used"
+        ]
+    },
+    {
+        "q": "Match expression with index type:",
+        "type": "match",
+        "left": [
+            "LOWER(col)",
+            "DATE_TRUNC(col)",
+            "col->>'field'",
+            "col + 1"
+        ],
+        "right": [
+            "Case-insensitive search",
+            "Date grouping",
+            "JSON field",
+            "Computed value"
+        ]
+    },
+    {
+        "q": "Rearrange function index creation:",
+        "type": "rearrange",
+        "words": [
+            "Identify query pattern",
+            "Match expression exactly",
+            "Create function index",
+            "Test query plan",
+            "Verify usage"
+        ]
+    },
+    {
+        "q": "What is partial index?",
+        "type": "mcq",
+        "o": [
+            "Index on subset of rows matching a condition",
+            "Index on some columns",
+            "Incomplete index",
+            "Broken index"
+        ]
+    },
+    {
+        "q": "Partial indexes reduce index _____ and maintenance overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "size"
+        ],
+        "other_options": [
+            "speed",
+            "accuracy",
+            "usage"
+        ]
+    },
+    {
+        "q": "Partial indexes only help queries matching the index condition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this partial index?",
+        "type": "mcq",
+        "c": "CREATE INDEX idx_active ON users(email) WHERE status = 'active';\nSELECT * FROM users WHERE status = 'active' AND email = 'test@test.com';",
+        "o": [
+            "Uses partial index efficiently",
+            "Full table scan",
+            "Error",
+            "Uses different index"
+        ]
+    },
+    {
+        "q": "Match partial index use case with its benefit:",
+        "type": "match",
+        "left": [
+            "Active records only",
+            "Recent data only",
+            "Non-null values",
+            "Rare status values"
+        ],
+        "right": [
+            "Smaller index",
+            "Time-based queries",
+            "Avoid nulls",
+            "Highly selective"
+        ]
+    },
+    {
+        "q": "Rearrange partial index scenarios:",
+        "type": "rearrange",
+        "words": [
+            "Identify query pattern",
+            "Define condition",
+            "Create partial index",
+            "Ensure query matches",
+            "Compare to full index"
+        ]
+    },
+    {
+        "q": "What is query plan caching?",
+        "type": "mcq",
+        "o": [
+            "Storing compiled query plans for reuse",
+            "Caching query results",
+            "Caching table data",
+            "Caching indexes"
+        ]
+    },
+    {
+        "q": "Prepared statements benefit from plan _____.",
+        "type": "fill_blank",
+        "answers": [
+            "caching"
+        ],
+        "other_options": [
+            "creation",
+            "validation",
+            "logging"
+        ]
+    },
+    {
+        "q": "Plan caching reduces optimization overhead for repeated queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of prepared statement?",
+        "type": "mcq",
+        "c": "PREPARE get_user AS SELECT * FROM users WHERE id = $1;\nEXECUTE get_user(123);",
+        "o": [
+            "Plan compiled once, reused for each execution",
+            "Plan recompiled each time",
+            "Error",
+            "No caching"
+        ]
+    },
+    {
+        "q": "Match plan type with its behavior:",
+        "type": "match",
+        "left": [
+            "Generic plan",
+            "Custom plan",
+            "Forced replan",
+            "Cached plan"
+        ],
+        "right": [
+            "Parameter-independent",
+            "Parameter-specific",
+            "Stats changed",
+            "Stored for reuse"
+        ]
+    },
+    {
+        "q": "Rearrange plan caching lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Parse query",
+            "Create generic plan",
+            "Execute with params",
+            "Track performance",
+            "Customize if beneficial"
+        ]
+    },
+    {
+        "q": "What is lock contention in queries?",
+        "type": "mcq",
+        "o": [
+            "Queries waiting for locks held by other queries",
+            "Query ordering",
+            "Index locking",
+            "Table creation"
+        ]
+    },
+    {
+        "q": "High contention reduces query _____.",
+        "type": "fill_blank",
+        "answers": [
+            "throughput"
+        ],
+        "other_options": [
+            "complexity",
+            "accuracy",
+            "length"
+        ]
+    },
+    {
+        "q": "Reducing transaction duration helps reduce lock contention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lock analysis?",
+        "type": "mcq",
+        "c": "-- Query A: Holding row lock for 30 seconds\n-- Query B: Waiting for same row\n-- Status:",
+        "o": [
+            "Query B blocked until A releases lock",
+            "Both run concurrently",
+            "Query A aborted",
+            "Deadlock"
+        ]
+    },
+    {
+        "q": "Match lock type with its scope:",
+        "type": "match",
+        "left": [
+            "Row lock",
+            "Table lock",
+            "Page lock",
+            "Advisory lock"
+        ],
+        "right": [
+            "Single row",
+            "Entire table",
+            "Data page",
+            "Application-defined"
+        ]
+    },
+    {
+        "q": "Rearrange contention reduction strategies:",
+        "type": "rearrange",
+        "words": [
+            "Shorten transactions",
+            "Use appropriate isolation",
+            "Add indexes",
+            "Batch updates",
+            "Retry on conflict"
+        ]
+    },
+    {
+        "q": "What is cardinality estimation?",
+        "type": "mcq",
+        "o": [
+            "Predicting number of rows a query operation will produce",
+            "Counting table rows",
+            "Index size estimation",
+            "Query length calculation"
+        ]
+    },
+    {
+        "q": "Poor cardinality estimates lead to suboptimal _____ choices.",
+        "type": "fill_blank",
+        "answers": [
+            "plan"
+        ],
+        "other_options": [
+            "table",
+            "index",
+            "column"
+        ]
+    },
+    {
+        "q": "Complex predicates are harder to estimate accurately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of estimation error?",
+        "type": "mcq",
+        "c": "-- Estimated rows: 10\n-- Actual rows: 1,000,000\n-- Impact on plan:",
+        "o": [
+            "Wrong join type or access method chosen",
+            "Perfect plan",
+            "No impact",
+            "Query fails"
+        ]
+    },
+    {
+        "q": "Match estimation challenge with its cause:",
+        "type": "match",
+        "left": [
+            "Correlated columns",
+            "Skewed distribution",
+            "Functions on columns",
+            "Stale statistics"
+        ],
+        "right": [
+            "Independence assumption",
+            "Histogram limits",
+            "Unknown selectivity",
+            "Outdated info"
+        ]
+    },
+    {
+        "q": "Rearrange estimation accuracy factors:",
+        "type": "rearrange",
+        "words": [
+            "Fresh statistics",
+            "Good histograms",
+            "Extended statistics",
+            "Simple predicates"
+        ]
+    },
+    {
+        "q": "What is materialized view?",
+        "type": "mcq",
+        "o": [
+            "Pre-computed query results stored as table",
+            "Virtual view",
+            "Temporary table",
+            "Index structure"
+        ]
+    },
+    {
+        "q": "Materialized views trade _____ for query speed.",
+        "type": "fill_blank",
+        "answers": [
+            "storage"
+        ],
+        "other_options": [
+            "accuracy",
+            "security",
+            "simplicity"
+        ]
+    },
+    {
+        "q": "Materialized views need periodic refresh.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of materialized view?",
+        "type": "mcq",
+        "c": "CREATE MATERIALIZED VIEW sales_summary AS\nSELECT date, SUM(amount) FROM sales GROUP BY date;\nSELECT * FROM sales_summary WHERE date = '2024-01-01';",
+        "o": [
+            "Fast read from pre-computed summary",
+            "Full aggregation at query time",
+            "Error",
+            "Empty result"
+        ]
+    },
+    {
+        "q": "Match view type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Regular view",
+            "Materialized view",
+            "Indexed view",
+            "Updatable view"
+        ],
+        "right": [
+            "Query at runtime",
+            "Pre-computed",
+            "With unique index",
+            "Allows DML"
+        ]
+    },
+    {
+        "q": "Rearrange materialized view lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create view definition",
+            "Initial compute",
+            "Query from view",
+            "Detect staleness",
+            "Refresh"
+        ]
+    },
+    {
+        "q": "What is query federation?",
+        "type": "mcq",
+        "o": [
+            "Querying multiple data sources through single interface",
+            "Single database query",
+            "Query caching",
+            "Query rewriting"
+        ]
+    },
+    {
+        "q": "Federation can query _____ databases or systems.",
+        "type": "fill_blank",
+        "answers": [
+            "remote"
+        ],
+        "other_options": [
+            "local",
+            "cached",
+            "temporary"
+        ]
+    },
+    {
+        "q": "Federation adds network latency to queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of federated query?",
+        "type": "mcq",
+        "c": "-- Local table: users\n-- Remote: postgres_fdw to orders DB\nSELECT * FROM users u JOIN orders o ON u.id = o.user_id;",
+        "o": [
+            "Joins local and remote data transparently",
+            "Error - cannot join",
+            "Local data only",
+            "Remote data only"
+        ]
+    },
+    {
+        "q": "Match federation challenge with its mitigation:",
+        "type": "match",
+        "left": [
+            "Network latency",
+            "Data consistency",
+            "Security",
+            "Schema mismatch"
+        ],
+        "right": [
+            "Cache results",
+            "Transaction support",
+            "VPN/encryption",
+            "Column mapping"
+        ]
+    },
+    {
+        "q": "Rearrange federation optimization:",
+        "type": "rearrange",
+        "words": [
+            "Push predicates to remote",
+            "Limit data transfer",
+            "Cache remote data",
+            "Batch requests",
+            "Use indices remotely"
+        ]
+    },
+    {
+        "q": "What is query cost model?",
+        "type": "mcq",
+        "o": [
+            "Formula used to estimate query execution cost",
+            "Query pricing",
+            "Database licensing",
+            "Storage cost"
+        ]
+    },
+    {
+        "q": "Cost models consider I/O, CPU, and _____ costs.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "license",
+            "network",
+            "support"
+        ]
+    },
+    {
+        "q": "Different databases have different cost models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this cost comparison?",
+        "type": "mcq",
+        "c": "-- Plan A cost: 1000\n-- Plan B cost: 500\n-- Optimizer chooses:",
+        "o": [
+            "Plan B (lower cost)",
+            "Plan A (higher cost)",
+            "Both plans",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "Match cost component with its factor:",
+        "type": "match",
+        "left": [
+            "seq_page_cost",
+            "random_page_cost",
+            "cpu_tuple_cost",
+            "cpu_operator_cost"
+        ],
+        "right": [
+            "Sequential read",
+            "Random read",
+            "Process row",
+            "Apply operation"
+        ]
+    },
+    {
+        "q": "Rearrange cost factors by typical impact:",
+        "type": "rearrange",
+        "words": [
+            "Random I/O",
+            "Sequential I/O",
+            "CPU tuple",
+            "CPU operator"
+        ]
+    },
+    {
+        "q": "What is adaptive query execution?",
+        "type": "mcq",
+        "o": [
+            "Adjusting query plan during execution based on runtime stats",
+            "Static query planning",
+            "Query caching",
+            "Manual optimization"
+        ]
+    },
+    {
+        "q": "Adaptive execution can change _____ mid-query.",
+        "type": "fill_blank",
+        "answers": [
+            "join strategies"
+        ],
+        "other_options": [
+            "table schemas",
+            "indexes",
+            "permissions"
+        ]
+    },
+    {
+        "q": "Spark uses adaptive query execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of adaptive execution?",
+        "type": "mcq",
+        "c": "-- Initial plan: Sort merge join\n-- Runtime: Small table detected\n-- Adapted to:",
+        "o": [
+            "Broadcast hash join",
+            "Same sort merge join",
+            "Nested loop",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match adaptive feature with its benefit:",
+        "type": "match",
+        "left": [
+            "Coalesce partitions",
+            "Broadcast join",
+            "Skew handling",
+            "Dynamic pruning"
+        ],
+        "right": [
+            "Reduce parallelism",
+            "Small table join",
+            "Balance load",
+            "Filter partitions"
+        ]
+    },
+    {
+        "q": "Rearrange adaptive execution steps:",
+        "type": "rearrange",
+        "words": [
+            "Start with initial plan",
+            "Collect runtime stats",
+            "Detect optimization opportunity",
+            "Adjust plan",
+            "Continue execution"
+        ]
+    },
+    {
+        "q": "What is query vectorization?",
+        "type": "mcq",
+        "o": [
+            "Processing data in batches using SIMD instructions",
+            "Converting queries to vectors",
+            "Parallel processing",
+            "Column storage"
+        ]
+    },
+    {
+        "q": "Vectorized execution processes _____ of rows at once.",
+        "type": "fill_blank",
+        "answers": [
+            "batches"
+        ],
+        "other_options": [
+            "single",
+            "pairs",
+            "triples"
+        ]
+    },
+    {
+        "q": "Vectorization improves CPU cache utilization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of vectorized processing?",
+        "type": "mcq",
+        "c": "-- Traditional: Process row by row\n-- Vectorized: Process 1024 rows per batch\n-- Benefit:",
+        "o": [
+            "Better CPU efficiency and throughput",
+            "Same performance",
+            "Slower execution",
+            "More memory usage only"
+        ]
+    },
+    {
+        "q": "Match processing model with its unit:",
+        "type": "match",
+        "left": [
+            "Volcano model",
+            "Vectorized",
+            "Compiled",
+            "Push-based"
+        ],
+        "right": [
+            "Single tuple",
+            "Tuple batch",
+            "Native code",
+            "Push data forward"
+        ]
+    },
+    {
+        "q": "Rearrange by processing efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Interpreted row-at-a-time",
+            "Vectorized batched",
+            "JIT compiled",
+            "Native compiled"
+        ]
+    },
+    {
+        "q": "What is just-in-time (JIT) compilation for queries?",
+        "type": "mcq",
+        "o": [
+            "Compiling query to native code at runtime",
+            "Pre-compiled queries",
+            "Interpreted execution",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "JIT reduces _____ overhead for complex expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "interpretation"
+        ],
+        "other_options": [
+            "memory",
+            "network",
+            "disk"
+        ]
+    },
+    {
+        "q": "PostgreSQL supports JIT compilation for queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of JIT enabled query?",
+        "type": "mcq",
+        "c": "-- jit = on\n-- Complex aggregation query\n-- Execution:",
+        "o": [
+            "Query expressions compiled to machine code",
+            "Interpreted execution",
+            "No difference",
+            "Query fails"
+        ]
+    },
+    {
+        "q": "Match JIT component with its compilation:",
+        "type": "match",
+        "left": [
+            "Expression evaluation",
+            "Tuple deforming",
+            "Aggregation",
+            "Hash computation"
+        ],
+        "right": [
+            "Compile predicates",
+            "Compile column access",
+            "Compile aggregate funcs",
+            "Compile hash func"
+        ]
+    },
+    {
+        "q": "Rearrange JIT trade-offs:",
+        "type": "rearrange",
+        "words": [
+            "Compilation overhead",
+            "Execution speedup",
+            "Break-even point",
+            "Net benefit for large queries"
+        ]
+    },
+    {
+        "q": "What is histogram in query optimization?",
+        "type": "mcq",
+        "o": [
+            "Data structure showing value distribution",
+            "Query execution graph",
+            "Index structure",
+            "Table diagram"
+        ]
+    },
+    {
+        "q": "Histograms help estimate _____ for range predicates.",
+        "type": "fill_blank",
+        "answers": [
+            "selectivity"
+        ],
+        "other_options": [
+            "speed",
+            "cost",
+            "size"
+        ]
+    },
+    {
+        "q": "More histogram buckets generally improve estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of histogram use?",
+        "type": "mcq",
+        "c": "-- Histogram shows: 10% of values < 100, 50% < 500\n-- Query: WHERE value < 300\n-- Estimate:",
+        "o": [
+            "Interpolate between histogram bounds",
+            "Assume uniform distribution",
+            "Random guess",
+            "Full table scan"
+        ]
+    },
+    {
+        "q": "Match histogram type with its approach:",
+        "type": "match",
+        "left": [
+            "Equi-width",
+            "Equi-depth",
+            "Singleton",
+            "Hybrid"
+        ],
+        "right": [
+            "Fixed ranges",
+            "Equal row counts",
+            "Individual values",
+            "Combined approach"
+        ]
+    },
+    {
+        "q": "Rearrange histogram accuracy factors:",
+        "type": "rearrange",
+        "words": [
+            "Number of buckets",
+            "Data skewness",
+            "Update frequency",
+            "Sampling quality"
+        ]
+    },
+    {
+        "q": "What is extended statistics?",
+        "type": "mcq",
+        "o": [
+            "Statistics capturing column correlations",
+            "Basic column stats",
+            "Table-level stats",
+            "Index stats"
+        ]
+    },
+    {
+        "q": "Extended statistics help with _____ predicates.",
+        "type": "fill_blank",
+        "answers": [
+            "multi-column"
+        ],
+        "other_options": [
+            "single-column",
+            "simple",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Functional dependencies can be captured in extended statistics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of extended stats?",
+        "type": "mcq",
+        "c": "CREATE STATISTICS stats_city_state ON city, state FROM addresses;\n-- Query: WHERE city = 'NYC' AND state = 'NY'",
+        "o": [
+            "Better estimate using correlation info",
+            "Independent column estimates",
+            "Error",
+            "No improvement"
+        ]
+    },
+    {
+        "q": "Match extended stat type with its use:",
+        "type": "match",
+        "left": [
+            "ndistinct",
+            "dependencies",
+            "mcv",
+            "expression"
+        ],
+        "right": [
+            "Distinct combinations",
+            "Functional deps",
+            "Common combos",
+            "Expression stats"
+        ]
+    },
+    {
+        "q": "Rearrange extended stats creation:",
+        "type": "rearrange",
+        "words": [
+            "Identify correlated columns",
+            "Create statistics object",
+            "Run ANALYZE",
+            "Verify improved estimates"
+        ]
+    },
+    {
+        "q": "What is query parameterization?",
+        "type": "mcq",
+        "o": [
+            "Using parameters instead of literal values",
+            "Query customization",
+            "Query generation",
+            "Query templating"
+        ]
+    },
+    {
+        "q": "Parameterized queries prevent SQL _____.",
+        "type": "fill_blank",
+        "answers": [
+            "injection"
+        ],
+        "other_options": [
+            "errors",
+            "logging",
+            "caching"
+        ]
+    },
+    {
+        "q": "Parameterized queries enable plan reuse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of parameterization?",
+        "type": "mcq",
+        "c": "-- Non-parameterized: WHERE id = 123\n-- Parameterized: WHERE id = $1\n-- Plan caching:",
+        "o": [
+            "Parameterized can reuse same plan",
+            "Same behavior",
+            "Non-parameterized better",
+            "Both fail"
+        ]
+    },
+    {
+        "q": "Match parameter approach with its trade-off:",
+        "type": "match",
+        "left": [
+            "Generic plan",
+            "Custom plan",
+            "Forced literal",
+            "Hybrid"
+        ],
+        "right": [
+            "Plan reuse",
+            "Better estimates",
+            "No caching",
+            "Adaptive choice"
+        ]
+    },
+    {
+        "q": "Rearrange parameterization benefits:",
+        "type": "rearrange",
+        "words": [
+            "Security (injection)",
+            "Plan caching",
+            "Query clarity",
+            "Maintenance"
+        ]
+    },
+    {
+        "q": "What is query plan stability?",
+        "type": "mcq",
+        "o": [
+            "Consistent query plans across executions",
+            "Query performance",
+            "Plan caching",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "Plan _____ can cause performance regressions.",
+        "type": "fill_blank",
+        "answers": [
+            "changes"
+        ],
+        "other_options": [
+            "caching",
+            "logging",
+            "validation"
+        ]
+    },
+    {
+        "q": "Statistics updates can change query plans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of plan instability?",
+        "type": "mcq",
+        "c": "-- Monday: Index scan, 10ms\n-- Tuesday (after ANALYZE): Seq scan, 5000ms\n-- Cause:",
+        "o": [
+            "Statistics change led to worse plan",
+            "Index dropped",
+            "Table corrupted",
+            "Query changed"
+        ]
+    },
+    {
+        "q": "Match stability approach with its method:",
+        "type": "match",
+        "left": [
+            "Plan baselines",
+            "Hints",
+            "Statistics freeze",
+            "Gradual rollout"
+        ],
+        "right": [
+            "Store good plans",
+            "Force plan elements",
+            "Keep old stats",
+            "Test new plans"
+        ]
+    },
+    {
+        "q": "Rearrange plan stability strategies:",
+        "type": "rearrange",
+        "words": [
+            "Monitor plan changes",
+            "Capture baselines",
+            "Test new plans",
+            "Approve updates",
+            "Rollback if worse"
+        ]
+    },
+    {
+        "q": "What is index-only scan?",
+        "type": "mcq",
+        "o": [
+            "Scan that reads all data from index without table access",
+            "Any index scan",
+            "Sequential scan",
+            "Bitmap scan"
+        ]
+    },
+    {
+        "q": "Index-only scans require all columns in the _____.",
+        "type": "fill_blank",
+        "answers": [
+            "index"
+        ],
+        "other_options": [
+            "table",
+            "query",
+            "cache"
+        ]
+    },
+    {
+        "q": "Visibility map enables index-only scans in PostgreSQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this query?",
+        "type": "mcq",
+        "c": "-- Index on (id, name, email)\n-- Query: SELECT name, email FROM users WHERE id = 1\n-- Scan type:",
+        "o": [
+            "Index-only scan possible",
+            "Index scan + heap fetch",
+            "Sequential scan",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match scan outcome with its requirement:",
+        "type": "match",
+        "left": [
+            "Index-only",
+            "Index + heap",
+            "Sequential",
+            "Bitmap"
+        ],
+        "right": [
+            "All cols in index",
+            "Need other cols",
+            "No useful index",
+            "Multiple conditions"
+        ]
+    },
+    {
+        "q": "Rearrange for index-only scan optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify frequent queries",
+            "Include needed columns",
+            "Create covering index",
+            "VACUUM for visibility",
+            "Verify plan"
+        ]
+    },
+    {
+        "q": "What is loose index scan?",
+        "type": "mcq",
+        "o": [
+            "Skip scanning through index for distinct values",
+            "Regular index scan",
+            "Index-only scan",
+            "Sequential scan"
+        ]
+    },
+    {
+        "q": "Loose scans are efficient for _____ queries.",
+        "type": "fill_blank",
+        "answers": [
+            "DISTINCT"
+        ],
+        "other_options": [
+            "COUNT",
+            "SUM",
+            "AVG"
+        ]
+    },
+    {
+        "q": "Loose index scan skips duplicate values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of loose scan?",
+        "type": "mcq",
+        "c": "-- Index on status (values: 'A', 'A', 'A', 'B', 'B', 'C', 'C', 'C')\n-- Query: SELECT DISTINCT status FROM orders\n-- Scan behavior:",
+        "o": [
+            "Jump to next distinct value",
+            "Scan every row",
+            "Full table scan",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match scan optimization with its scenario:",
+        "type": "match",
+        "left": [
+            "Loose scan",
+            "Skip scan",
+            "Range scan",
+            "Full scan"
+        ],
+        "right": [
+            "DISTINCT on index",
+            "Multi-column distinct",
+            "Range predicate",
+            "No filter"
+        ]
+    },
+    {
+        "q": "Rearrange scan efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Loose index scan",
+            "Range index scan",
+            "Full index scan",
+            "Sequential scan"
+        ]
+    },
+    {
+        "q": "What is index condition pushdown?",
+        "type": "mcq",
+        "o": [
+            "Evaluating conditions at storage engine using index",
+            "Pushing data to index",
+            "Creating new index",
+            "Dropping index"
+        ]
+    },
+    {
+        "q": "ICP reduces rows sent to _____ layer.",
+        "type": "fill_blank",
+        "answers": [
+            "SQL"
+        ],
+        "other_options": [
+            "storage",
+            "network",
+            "cache"
+        ]
+    },
+    {
+        "q": "Index condition pushdown reduces disk reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of ICP?",
+        "type": "mcq",
+        "c": "-- Index on (a, b)\n-- Query: WHERE a = 1 AND b LIKE 'test%'\n-- With ICP:",
+        "o": [
+            "Both conditions evaluated during index read",
+            "Only a checked in index",
+            "Full table scan",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pushdown type with its level:",
+        "type": "match",
+        "left": [
+            "ICP",
+            "Predicate pushdown",
+            "Projection pushdown",
+            "Aggregation pushdown"
+        ],
+        "right": [
+            "Storage engine",
+            "Data source",
+            "Column filtering",
+            "Source aggregation"
+        ]
+    },
+    {
+        "q": "Rearrange pushdown benefits:",
+        "type": "rearrange",
+        "words": [
+            "Reduce I/O",
+            "Reduce network",
+            "Reduce CPU",
+            "Improve latency"
+        ]
+    },
+    {
+        "q": "What is multi-range read (MRR)?",
+        "type": "mcq",
+        "o": [
+            "Batching index row lookups for sequential disk access",
+            "Reading multiple tables",
+            "Parallel range scan",
+            "Multi-index scan"
+        ]
+    },
+    {
+        "q": "MRR converts random reads to _____ reads.",
+        "type": "fill_blank",
+        "answers": [
+            "sequential"
+        ],
+        "other_options": [
+            "parallel",
+            "cached",
+            "batched"
+        ]
+    },
+    {
+        "q": "MRR sorts row IDs before fetching from table.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of MRR?",
+        "type": "mcq",
+        "c": "-- Index returns row IDs: [100, 5, 50, 200, 25]\n-- MRR sorts: [5, 25, 50, 100, 200]\n-- Disk access:",
+        "o": [
+            "Sequential reads in row order",
+            "Random access",
+            "No difference",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match read optimization with its technique:",
+        "type": "match",
+        "left": [
+            "MRR",
+            "Prefetching",
+            "Read-ahead",
+            "Caching"
+        ],
+        "right": [
+            "Sort then fetch",
+            "Load in advance",
+            "Predict next pages",
+            "Store in memory"
+        ]
+    },
+    {
+        "q": "Rearrange read optimization impact:",
+        "type": "rearrange",
+        "words": [
+            "Identify access pattern",
+            "Apply optimization",
+            "Reduce seeks",
+            "Improve throughput"
+        ]
+    },
+    {
+        "q": "What is anti-join?",
+        "type": "mcq",
+        "o": [
+            "Finding rows in one table not matching another",
+            "Regular join",
+            "Cross join",
+            "Self join"
+        ]
+    },
+    {
+        "q": "NOT EXISTS is typically implemented as _____.",
+        "type": "fill_blank",
+        "answers": [
+            "anti-join"
+        ],
+        "other_options": [
+            "semi-join",
+            "outer join",
+            "cross join"
+        ]
+    },
+    {
+        "q": "Anti-join stops at first non-match for each row.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of anti-join?",
+        "type": "mcq",
+        "c": "SELECT * FROM orders o\nWHERE NOT EXISTS (SELECT 1 FROM returns r WHERE r.order_id = o.id);",
+        "o": [
+            "Orders without any returns",
+            "Orders with returns",
+            "All orders joined with returns",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match join type with its semantics:",
+        "type": "match",
+        "left": [
+            "Inner join",
+            "Semi-join",
+            "Anti-join",
+            "Left join"
+        ],
+        "right": [
+            "Matching rows",
+            "Exists check",
+            "Not exists check",
+            "All left + matches"
+        ]
+    },
+    {
+        "q": "Rearrange join execution:",
+        "type": "rearrange",
+        "words": [
+            "Get outer row",
+            "Probe inner",
+            "Check condition",
+            "Return/skip based on type"
+        ]
+    },
+    {
+        "q": "What is semi-join?",
+        "type": "mcq",
+        "o": [
+            "Finding rows in one table that match another (deduplicated)",
+            "Half a join",
+            "Partial join",
+            "Two-way join"
+        ]
+    },
+    {
+        "q": "EXISTS is typically implemented as _____.",
+        "type": "fill_blank",
+        "answers": [
+            "semi-join"
+        ],
+        "other_options": [
+            "anti-join",
+            "inner join",
+            "outer join"
+        ]
+    },
+    {
+        "q": "Semi-join returns each matching outer row only once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of semi-join?",
+        "type": "mcq",
+        "c": "SELECT * FROM customers c\nWHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id);",
+        "o": [
+            "Customers who have placed at least one order",
+            "All customers with all their orders",
+            "Customers with no orders",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match technique with join type:",
+        "type": "match",
+        "left": [
+            "Nested loop semi",
+            "Hash semi",
+            "Merge semi",
+            "Index semi"
+        ],
+        "right": [
+            "Row-by-row check",
+            "Hash probe once",
+            "Sorted check",
+            "Index lookup"
+        ]
+    },
+    {
+        "q": "Rearrange semi-join optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify EXISTS/IN",
+            "Convert to semi-join",
+            "Choose join method",
+            "Short-circuit on match"
+        ]
+    },
+    {
+        "q": "What is lateral join?",
+        "type": "mcq",
+        "o": [
+            "Subquery that references columns from preceding tables",
+            "Side-by-side join",
+            "Horizontal join",
+            "Cross join"
+        ]
+    },
+    {
+        "q": "LATERAL allows correlated _____ in FROM clause.",
+        "type": "fill_blank",
+        "answers": [
+            "subqueries"
+        ],
+        "other_options": [
+            "tables",
+            "indexes",
+            "views"
+        ]
+    },
+    {
+        "q": "Lateral join evaluates subquery for each outer row.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of lateral join?",
+        "type": "mcq",
+        "c": "SELECT c.*, latest.*\nFROM customers c,\nLATERAL (SELECT * FROM orders WHERE customer_id = c.id ORDER BY date DESC LIMIT 3) latest;",
+        "o": [
+            "Each customer with their 3 most recent orders",
+            "All customers with all orders",
+            "Cartesian product",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match lateral use case with its benefit:",
+        "type": "match",
+        "left": [
+            "Top-N per group",
+            "Table function",
+            "Unnest array",
+            "Row expansion"
+        ],
+        "right": [
+            "LIMIT in subquery",
+            "Generate rows",
+            "Expand to rows",
+            "Multiple rows per input"
+        ]
+    },
+    {
+        "q": "Rearrange lateral optimization:",
+        "type": "rearrange",
+        "words": [
+            "Process outer row",
+            "Execute lateral subquery",
+            "Combine results",
+            "Next outer row"
+        ]
+    },
+    {
+        "q": "What is window function optimization?",
+        "type": "mcq",
+        "o": [
+            "Efficient execution of OVER() calculations",
+            "GUI optimization",
+            "Display optimization",
+            "Frame rate"
+        ]
+    },
+    {
+        "q": "Window functions can share _____ when using same partitioning.",
+        "type": "fill_blank",
+        "answers": [
+            "sorts"
+        ],
+        "other_options": [
+            "results",
+            "indexes",
+            "caches"
+        ]
+    },
+    {
+        "q": "Multiple window functions can be evaluated in single pass.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of window optimization?",
+        "type": "mcq",
+        "c": "SELECT *,\n  ROW_NUMBER() OVER (PARTITION BY dept ORDER BY salary),\n  SUM(salary) OVER (PARTITION BY dept)\nFROM employees;",
+        "o": [
+            "Single sort for both window functions",
+            "Two separate sorts",
+            "No sort needed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match window optimization with its technique:",
+        "type": "match",
+        "left": [
+            "Same partition/order",
+            "Segment node",
+            "Aggregate sharing",
+            "Index scan"
+        ],
+        "right": [
+            "Share sort",
+            "Track partition",
+            "Reuse aggregate",
+            "Pre-sorted data"
+        ]
+    },
+    {
+        "q": "Rearrange window execution:",
+        "type": "rearrange",
+        "words": [
+            "Sort by partition/order",
+            "Mark segment boundaries",
+            "Compute window functions",
+            "Output rows"
+        ]
+    },
+    {
+        "q": "What is grouping sets optimization?",
+        "type": "mcq",
+        "o": [
+            "Computing multiple groupings in single pass",
+            "Single GROUP BY",
+            "DISTINCT optimization",
+            "ORDER BY optimization"
+        ]
+    },
+    {
+        "q": "CUBE and ROLLUP are special cases of _____ sets.",
+        "type": "fill_blank",
+        "answers": [
+            "grouping"
+        ],
+        "other_options": [
+            "result",
+            "data",
+            "index"
+        ]
+    },
+    {
+        "q": "Grouping sets avoid multiple table scans.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of grouping sets?",
+        "type": "mcq",
+        "c": "SELECT year, quarter, SUM(sales)\nFROM sales\nGROUP BY GROUPING SETS ((year, quarter), (year), ());",
+        "o": [
+            "Three aggregation levels in one query",
+            "Single aggregation",
+            "Error",
+            "Cartesian product"
+        ]
+    },
+    {
+        "q": "Match grouping with its result:",
+        "type": "match",
+        "left": [
+            "ROLLUP(a,b)",
+            "CUBE(a,b)",
+            "GROUPING SETS",
+            "GROUP BY a,b"
+        ],
+        "right": [
+            "Hierarchical",
+            "All combinations",
+            "Explicit groups",
+            "Single grouping"
+        ]
+    },
+    {
+        "q": "Rearrange aggregation efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Single GROUP BY",
+            "ROLLUP",
+            "CUBE",
+            "Full GROUPING SETS"
+        ]
+    },
+    {
+        "q": "What is recursive query optimization?",
+        "type": "mcq",
+        "o": [
+            "Efficient execution of WITH RECURSIVE queries",
+            "Loop optimization",
+            "Function call optimization",
+            "Procedure optimization"
+        ]
+    },
+    {
+        "q": "Recursive CTEs have _____ and recursive parts.",
+        "type": "fill_blank",
+        "answers": [
+            "anchor"
+        ],
+        "other_options": [
+            "base",
+            "start",
+            "initial"
+        ]
+    },
+    {
+        "q": "Recursive queries can cause infinite loops without proper termination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of recursive query?",
+        "type": "mcq",
+        "c": "WITH RECURSIVE org AS (\n  SELECT id, name, 0 as level FROM employees WHERE manager_id IS NULL\n  UNION ALL\n  SELECT e.id, e.name, o.level + 1\n  FROM employees e JOIN org o ON e.manager_id = o.id\n)\nSELECT * FROM org;",
+        "o": [
+            "Hierarchy from top to all employees with levels",
+            "Only top level",
+            "Infinite loop",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match recursive optimization with its technique:",
+        "type": "match",
+        "left": [
+            "Work table",
+            "Hash join",
+            "Depth limit",
+            "Cycle detection"
+        ],
+        "right": [
+            "Store intermediate",
+            "Efficient lookup",
+            "Prevent infinite",
+            "Detect loops"
+        ]
+    },
+    {
+        "q": "Rearrange recursive execution:",
+        "type": "rearrange",
+        "words": [
+            "Execute anchor",
+            "Process work table",
+            "Add new rows",
+            "Repeat until empty",
+            "Return all"
+        ]
+    },
+    {
+        "q": "What is query timeout?",
+        "type": "mcq",
+        "o": [
+            "Maximum time allowed for query execution",
+            "Connection timeout",
+            "Lock timeout",
+            "Network timeout"
+        ]
+    },
+    {
+        "q": "Query timeouts prevent _____ queries from consuming resources.",
+        "type": "fill_blank",
+        "answers": [
+            "runaway"
+        ],
+        "other_options": [
+            "fast",
+            "simple",
+            "indexed"
+        ]
+    },
+    {
+        "q": "Query timeout cancels the query when exceeded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of timeout setting?",
+        "type": "mcq",
+        "c": "SET statement_timeout = '30s';\n-- Query runs for 45 seconds:",
+        "o": [
+            "Query cancelled after 30 seconds",
+            "Query completes",
+            "Warning issued",
+            "No effect"
+        ]
+    },
+    {
+        "q": "Match timeout type with its scope:",
+        "type": "match",
+        "left": [
+            "statement_timeout",
+            "lock_timeout",
+            "idle_in_transaction",
+            "connect_timeout"
+        ],
+        "right": [
+            "Query duration",
+            "Lock wait",
+            "Idle transaction",
+            "Connection establish"
+        ]
+    },
+    {
+        "q": "Rearrange timeout strategy:",
+        "type": "rearrange",
+        "words": [
+            "Set appropriate limits",
+            "Monitor timeouts",
+            "Identify slow queries",
+            "Optimize or kill"
+        ]
+    },
+    {
+        "q": "What is query resource management?",
+        "type": "mcq",
+        "o": [
+            "Controlling CPU, memory, I/O per query or user",
+            "Query syntax",
+            "Query caching",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "Resource groups limit _____ per workload.",
+        "type": "fill_blank",
+        "answers": [
+            "resources"
+        ],
+        "other_options": [
+            "queries",
+            "users",
+            "tables"
+        ]
+    },
+    {
+        "q": "Resource management prevents one workload from starving others.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of resource limiting?",
+        "type": "mcq",
+        "c": "-- Report workload: 20% CPU limit\n-- Report query uses 100% CPU\n-- Actual usage:",
+        "o": [
+            "Throttled to 20% CPU",
+            "Uses 100% CPU",
+            "Query fails",
+            "No limit applied"
+        ]
+    },
+    {
+        "q": "Match resource control with its method:",
+        "type": "match",
+        "left": [
+            "Concurrency limit",
+            "Memory limit",
+            "I/O priority",
+            "CPU quota"
+        ],
+        "right": [
+            "Max parallel queries",
+            "Max work_mem",
+            "Read/write priority",
+            "CPU time limit"
+        ]
+    },
+    {
+        "q": "Rearrange resource management setup:",
+        "type": "rearrange",
+        "words": [
+            "Define workload classes",
+            "Set resource limits",
+            "Assign users/queries",
+            "Monitor usage",
+            "Tune limits"
+        ]
+    },
+    {
+        "q": "What is query prioritization?",
+        "type": "mcq",
+        "o": [
+            "Giving some queries higher execution priority",
+            "Query ordering",
+            "Query queueing",
+            "Query scheduling"
+        ]
+    },
+    {
+        "q": "OLTP queries often need _____ priority than batch queries.",
+        "type": "fill_blank",
+        "answers": [
+            "higher"
+        ],
+        "other_options": [
+            "lower",
+            "same",
+            "no"
+        ]
+    },
+    {
+        "q": "Priority queues can prevent important queries from waiting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of prioritization?",
+        "type": "mcq",
+        "c": "-- High priority: User-facing queries\n-- Low priority: Background reports\n-- Resource contention:",
+        "o": [
+            "User queries get resources first",
+            "FIFO order",
+            "Random order",
+            "Reports first"
+        ]
+    },
+    {
+        "q": "Match priority scenario with its approach:",
+        "type": "match",
+        "left": [
+            "OLTP vs batch",
+            "Free vs paid",
+            "Admin vs user",
+            "Time-sensitive"
+        ],
+        "right": [
+            "Latency priority",
+            "Tier-based",
+            "Role-based",
+            "Deadline-based"
+        ]
+    },
+    {
+        "q": "Rearrange priority implementation:",
+        "type": "rearrange",
+        "words": [
+            "Classify workloads",
+            "Define priorities",
+            "Configure scheduler",
+            "Monitor fairness",
+            "Adjust as needed"
+        ]
+    },
+    {
+        "q": "What is query queueing?",
+        "type": "mcq",
+        "o": [
+            "Holding queries when resources are exhausted",
+            "Query ordering",
+            "Query caching",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "Connection pool exhaustion causes query _____.",
+        "type": "fill_blank",
+        "answers": [
+            "queueing"
+        ],
+        "other_options": [
+            "execution",
+            "caching",
+            "logging"
+        ]
+    },
+    {
+        "q": "Query queues can prevent database overload.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of queue management?",
+        "type": "mcq",
+        "c": "-- Max concurrent: 10\n-- Current running: 10\n-- New query arrives:",
+        "o": [
+            "Query waits in queue",
+            "Query executes immediately",
+            "Query rejected",
+            "Database crashes"
+        ]
+    },
+    {
+        "q": "Match queue setting with its purpose:",
+        "type": "match",
+        "left": [
+            "Max concurrency",
+            "Queue timeout",
+            "Queue size",
+            "Priority queue"
+        ],
+        "right": [
+            "Limit parallel",
+            "Fail slow",
+            "Limit waiting",
+            "Order by priority"
+        ]
+    },
+    {
+        "q": "Rearrange queue handling:",
+        "type": "rearrange",
+        "words": [
+            "Check concurrency",
+            "Queue if full",
+            "Wait for slot",
+            "Execute or timeout",
+            "Monitor queue depth"
+        ]
+    },
+    {
+        "q": "What is result set caching?",
+        "type": "mcq",
+        "o": [
+            "Storing query results for reuse",
+            "Connection caching",
+            "Plan caching",
+            "Table caching"
+        ]
+    },
+    {
+        "q": "Result caching works best for _____ data.",
+        "type": "fill_blank",
+        "answers": [
+            "stable"
+        ],
+        "other_options": [
+            "changing",
+            "random",
+            "encrypted"
+        ]
+    },
+    {
+        "q": "Result caching requires cache invalidation on data changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of result cache hit?",
+        "type": "mcq",
+        "c": "-- Query: SELECT * FROM config (rarely changes)\n-- Second execution:",
+        "o": [
+            "Returns cached result instantly",
+            "Re-executes query",
+            "Error",
+            "Empty result"
+        ]
+    },
+    {
+        "q": "Match cache level with its location:",
+        "type": "match",
+        "left": [
+            "Database cache",
+            "Application cache",
+            "CDN cache",
+            "Browser cache"
+        ],
+        "right": [
+            "DB server",
+            "App server",
+            "Edge",
+            "Client"
+        ]
+    },
+    {
+        "q": "Rearrange caching strategy:",
+        "type": "rearrange",
+        "words": [
+            "Identify cacheable queries",
+            "Set TTL",
+            "Implement cache",
+            "Handle invalidation",
+            "Monitor hit rate"
+        ]
+    },
+    {
+        "q": "What is read replica routing?",
+        "type": "mcq",
+        "o": [
+            "Directing read queries to replica databases",
+            "Write routing",
+            "Network routing",
+            "Table routing"
+        ]
+    },
+    {
+        "q": "Read replicas scale _____ workloads.",
+        "type": "fill_blank",
+        "answers": [
+            "read"
+        ],
+        "other_options": [
+            "write",
+            "admin",
+            "backup"
+        ]
+    },
+    {
+        "q": "Read replica data may be slightly behind primary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of replica routing?",
+        "type": "mcq",
+        "c": "-- Primary: handles writes\n-- 3 replicas: handle reads\n-- SELECT query arrives:",
+        "o": [
+            "Routed to one of the read replicas",
+            "Always goes to primary",
+            "Query fails",
+            "Random destination"
+        ]
+    },
+    {
+        "q": "Match routing strategy with its approach:",
+        "type": "match",
+        "left": [
+            "Round-robin",
+            "Least connections",
+            "Latency-based",
+            "Custom rules"
+        ],
+        "right": [
+            "Equal distribution",
+            "Load-aware",
+            "Performance-based",
+            "Query-specific"
+        ]
+    },
+    {
+        "q": "Rearrange replica setup:",
+        "type": "rearrange",
+        "words": [
+            "Set up replication",
+            "Configure replicas",
+            "Implement routing",
+            "Handle failover",
+            "Monitor lag"
+        ]
+    },
+    {
+        "q": "What is connection load balancing?",
+        "type": "mcq",
+        "o": [
+            "Distributing connections across database nodes",
+            "Query load balancing",
+            "Data distribution",
+            "Index balancing"
+        ]
+    },
+    {
+        "q": "PgBouncer is a connection _____ for PostgreSQL.",
+        "type": "fill_blank",
+        "answers": [
+            "pooler"
+        ],
+        "other_options": [
+            "manager",
+            "balancer",
+            "router"
+        ]
+    },
+    {
+        "q": "Connection poolers reduce database connection overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of connection pooling?",
+        "type": "mcq",
+        "c": "-- App servers: 100\n-- Desired connections per app: 50\n-- PgBouncer pool: 100 connections\n-- Result:",
+        "o": [
+            "5000 app connections share 100 DB connections",
+            "5000 DB connections",
+            "100 app connections only",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pooling mode with its behavior:",
+        "type": "match",
+        "left": [
+            "Transaction",
+            "Session",
+            "Statement",
+            "Proxy"
+        ],
+        "right": [
+            "Per transaction",
+            "Per session",
+            "Per query",
+            "Pass through"
+        ]
+    },
+    {
+        "q": "Rearrange connection management:",
+        "type": "rearrange",
+        "words": [
+            "Size pools",
+            "Configure pooler",
+            "Route connections",
+            "Monitor usage",
+            "Tune as needed"
+        ]
+    },
+    {
+        "q": "What is query result streaming?",
+        "type": "mcq",
+        "o": [
+            "Returning results incrementally as computed",
+            "Batch result return",
+            "Result caching",
+            "Result compression"
+        ]
+    },
+    {
+        "q": "Streaming reduces time to _____ row.",
+        "type": "fill_blank",
+        "answers": [
+            "first"
+        ],
+        "other_options": [
+            "last",
+            "any",
+            "random"
+        ]
+    },
+    {
+        "q": "Cursors enable result streaming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of streaming?",
+        "type": "mcq",
+        "c": "-- Query returns 1 million rows\n-- Without streaming: wait for all rows\n-- With streaming:",
+        "o": [
+            "Start processing immediately as rows arrive",
+            "Same behavior",
+            "Faster total time",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match streaming approach with its benefit:",
+        "type": "match",
+        "left": [
+            "Server cursor",
+            "Client cursor",
+            "Async iteration",
+            "Pagination"
+        ],
+        "right": [
+            "Server-side buffer",
+            "Client-side buffer",
+            "Non-blocking",
+            "Chunked results"
+        ]
+    },
+    {
+        "q": "Rearrange streaming implementation:",
+        "type": "rearrange",
+        "words": [
+            "Open cursor",
+            "Fetch batch",
+            "Process batch",
+            "Fetch more",
+            "Close cursor"
+        ]
+    },
+    {
+        "q": "What is query profiling?",
+        "type": "mcq",
+        "o": [
+            "Detailed measurement of query execution",
+            "Query syntax check",
+            "Query formatting",
+            "Query caching"
+        ]
+    },
+    {
+        "q": "Profiling shows time spent in each query _____.",
+        "type": "fill_blank",
+        "answers": [
+            "stage"
+        ],
+        "other_options": [
+            "result",
+            "column",
+            "table"
+        ]
+    },
+    {
+        "q": "pg_stat_statements provides query profiling in PostgreSQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of profiling?",
+        "type": "mcq",
+        "c": "-- Profile shows:\n-- Parsing: 1ms, Planning: 5ms, Execution: 500ms\n-- Bottleneck:",
+        "o": [
+            "Execution phase needs optimization",
+            "Parsing needs optimization",
+            "Planning needs optimization",
+            "All phases equal"
+        ]
+    },
+    {
+        "q": "Match profiling metric with its meaning:",
+        "type": "match",
+        "left": [
+            "calls",
+            "total_time",
+            "mean_time",
+            "blks_read"
+        ],
+        "right": [
+            "Execution count",
+            "Cumulative time",
+            "Average time",
+            "Disk reads"
+        ]
+    },
+    {
+        "q": "Rearrange profiling workflow:",
+        "type": "rearrange",
+        "words": [
+            "Enable profiling",
+            "Run workload",
+            "Collect statistics",
+            "Identify slow queries",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is query wait event?",
+        "type": "mcq",
+        "o": [
+            "What a query is waiting for during execution",
+            "Query trigger",
+            "Query result",
+            "Query error"
+        ]
+    },
+    {
+        "q": "Wait events reveal query _____ time.",
+        "type": "fill_blank",
+        "answers": [
+            "blocked"
+        ],
+        "other_options": [
+            "execution",
+            "parsing",
+            "planning"
+        ]
+    },
+    {
+        "q": "I/O wait events indicate disk bottlenecks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of wait analysis?",
+        "type": "mcq",
+        "c": "-- Top wait: LWLock (buffer_content)\n-- Interpretation:",
+        "o": [
+            "Contention on buffer pool access",
+            "Query is efficient",
+            "No waits",
+            "Disk failure"
+        ]
+    },
+    {
+        "q": "Match wait type with its category:",
+        "type": "match",
+        "left": [
+            "LWLock",
+            "I/O",
+            "Network",
+            "Client"
+        ],
+        "right": [
+            "Internal lock",
+            "Disk access",
+            "Communication",
+            "Client response"
+        ]
+    },
+    {
+        "q": "Rearrange wait analysis:",
+        "type": "rearrange",
+        "words": [
+            "Capture wait events",
+            "Aggregate by type",
+            "Identify patterns",
+            "Diagnose root cause",
+            "Resolve"
+        ]
+    },
+    {
+        "q": "What is query deadlock?",
+        "type": "mcq",
+        "o": [
+            "Circular lock dependency between queries",
+            "Query timeout",
+            "Query error",
+            "Resource exhaustion"
+        ]
+    },
+    {
+        "q": "Deadlock detection automatically _____ one transaction.",
+        "type": "fill_blank",
+        "answers": [
+            "aborts"
+        ],
+        "other_options": [
+            "completes",
+            "pauses",
+            "retries"
+        ]
+    },
+    {
+        "q": "Consistent lock ordering prevents deadlocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of deadlock detection?",
+        "type": "mcq",
+        "c": "-- Transaction A: locks row 1, waits for row 2\n-- Transaction B: locks row 2, waits for row 1\n-- Database action:",
+        "o": [
+            "Detects deadlock, aborts one transaction",
+            "Both complete",
+            "Both wait forever",
+            "System crash"
+        ]
+    },
+    {
+        "q": "Match deadlock prevention with its technique:",
+        "type": "match",
+        "left": [
+            "Lock ordering",
+            "Lock timeout",
+            "Retry logic",
+            "Pessimistic lock"
+        ],
+        "right": [
+            "Consistent sequence",
+            "Fail if stuck",
+            "Retry on abort",
+            "Lock early"
+        ]
+    },
+    {
+        "q": "Rearrange deadlock handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect deadlock",
+            "Choose victim",
+            "Abort victim",
+            "Retry transaction",
+            "Log for analysis"
+        ]
+    },
+    {
+        "q": "What is query regression testing?",
+        "type": "mcq",
+        "o": [
+            "Verifying query performance hasn't degraded",
+            "Testing SQL syntax",
+            "Testing query results",
+            "Testing connections"
+        ]
+    },
+    {
+        "q": "Regression tests compare against _____ performance.",
+        "type": "fill_blank",
+        "answers": [
+            "baseline"
+        ],
+        "other_options": [
+            "expected",
+            "maximum",
+            "minimum"
+        ]
+    },
+    {
+        "q": "Regression testing should use production-like data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of regression test?",
+        "type": "mcq",
+        "c": "-- Baseline: 50ms\n-- After change: 500ms\n-- Regression detected:",
+        "o": [
+            "10x performance degradation flagged",
+            "Test passes",
+            "No comparison made",
+            "Test skipped"
+        ]
+    },
+    {
+        "q": "Match test type with its focus:",
+        "type": "match",
+        "left": [
+            "Performance",
+            "Correctness",
+            "Load",
+            "Stress"
+        ],
+        "right": [
+            "Execution time",
+            "Result accuracy",
+            "Concurrent users",
+            "Resource limits"
+        ]
+    },
+    {
+        "q": "Rearrange regression testing:",
+        "type": "rearrange",
+        "words": [
+            "Establish baseline",
+            "Make changes",
+            "Run same tests",
+            "Compare results",
+            "Investigate regressions"
+        ]
+    },
+    {
+        "q": "What is explain plan output format?",
+        "type": "mcq",
+        "o": [
+            "Way of presenting query execution plan information",
+            "Query result format",
+            "Data export format",
+            "Schema format"
+        ]
+    },
+    {
+        "q": "JSON format explain output is _____ parseable.",
+        "type": "fill_blank",
+        "answers": [
+            "machine"
+        ],
+        "other_options": [
+            "human",
+            "partially",
+            "not"
+        ]
+    },
+    {
+        "q": "Different databases have different explain formats.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this explain format?",
+        "type": "mcq",
+        "c": "EXPLAIN (FORMAT JSON) SELECT * FROM users;",
+        "o": [
+            "JSON structured plan for programmatic analysis",
+            "Plain text plan",
+            "Error",
+            "No output"
+        ]
+    },
+    {
+        "q": "Match explain format with its use:",
+        "type": "match",
+        "left": [
+            "TEXT",
+            "JSON",
+            "XML",
+            "YAML"
+        ],
+        "right": [
+            "Human readable",
+            "API/tools",
+            "Cross-platform",
+            "Config-like"
+        ]
+    },
+    {
+        "q": "Rearrange plan analysis tools:",
+        "type": "rearrange",
+        "words": [
+            "Get explain output",
+            "Parse format",
+            "Visualize tree",
+            "Identify issues",
+            "Suggest fixes"
+        ]
+    },
+    {
+        "q": "What is auto_explain?",
+        "type": "mcq",
+        "o": [
+            "Module that automatically logs slow query plans",
+            "Auto-generated explanations",
+            "Self-tuning optimizer",
+            "Documentation tool"
+        ]
+    },
+    {
+        "q": "auto_explain logs plans for queries exceeding _____ threshold.",
+        "type": "fill_blank",
+        "answers": [
+            "time"
+        ],
+        "other_options": [
+            "row",
+            "memory",
+            "cost"
+        ]
+    },
+    {
+        "q": "auto_explain is useful for production debugging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of auto_explain?",
+        "type": "mcq",
+        "c": "auto_explain.log_min_duration = 1000\nauto_explain.log_analyze = on",
+        "o": [
+            "Logs full analyze plans for queries over 1 second",
+            "Logs all queries",
+            "Disables logging",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match auto_explain setting with its effect:",
+        "type": "match",
+        "left": [
+            "log_min_duration",
+            "log_analyze",
+            "log_buffers",
+            "log_nested_statements"
+        ],
+        "right": [
+            "Threshold",
+            "Include actuals",
+            "Include I/O",
+            "Include nested"
+        ]
+    },
+    {
+        "q": "Rearrange auto_explain workflow:",
+        "type": "rearrange",
+        "words": [
+            "Configure settings",
+            "Query executes",
+            "Exceeds threshold",
+            "Plan logged",
+            "Review logs"
+        ]
+    },
+    {
+        "q": "What is query plan visualization?",
+        "type": "mcq",
+        "o": [
+            "Graphical representation of execution plan",
+            "Query result charts",
+            "Database schema diagram",
+            "ER diagram"
+        ]
+    },
+    {
+        "q": "Plan visualizers show _____ relationships between operations.",
+        "type": "fill_blank",
+        "answers": [
+            "tree"
+        ],
+        "other_options": [
+            "list",
+            "random",
+            "linear"
+        ]
+    },
+    {
+        "q": "Visual plans make bottlenecks easier to identify.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of plan visualization?",
+        "type": "mcq",
+        "c": "-- Text plan: nested, hard to read\n-- Visualized: tree diagram with colors\n-- Benefit:",
+        "o": [
+            "Quickly identify expensive operations",
+            "Same as text",
+            "Slower analysis",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "Match visualization feature with its value:",
+        "type": "match",
+        "left": [
+            "Color coding",
+            "Node sizing",
+            "Drill-down",
+            "Comparison"
+        ],
+        "right": [
+            "Highlight issues",
+            "Show relative cost",
+            "Detail view",
+            "Before/after"
+        ]
+    },
+    {
+        "q": "Rearrange visualization analysis:",
+        "type": "rearrange",
+        "words": [
+            "Capture plan",
+            "Visualize tree",
+            "Spot large nodes",
+            "Drill into details",
+            "Plan fix"
+        ]
+    },
+    {
+        "q": "What is explain.depesz.com?",
+        "type": "mcq",
+        "o": [
+            "PostgreSQL explain plan analyzer tool",
+            "Database hosting",
+            "Query editor",
+            "Schema designer"
+        ]
+    },
+    {
+        "q": "explain.depesz.com highlights _____ operations.",
+        "type": "fill_blank",
+        "answers": [
+            "problematic"
+        ],
+        "other_options": [
+            "fast",
+            "simple",
+            "all"
+        ]
+    },
+    {
+        "q": "Online explain analyzers support paste-and-analyze.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of such analyzers?",
+        "type": "mcq",
+        "c": "-- Paste EXPLAIN ANALYZE output\n-- Tool provides:",
+        "o": [
+            "Parsed, colored, annotated plan with warnings",
+            "Raw text",
+            "Error",
+            "No analysis"
+        ]
+    },
+    {
+        "q": "Match analyzer feature with its insight:",
+        "type": "match",
+        "left": [
+            "Row estimation errors",
+            "Slow nodes",
+            "I/O statistics",
+            "Timing breakdown"
+        ],
+        "right": [
+            "Stats issues",
+            "Bottlenecks",
+            "Disk access",
+            "Time distribution"
+        ]
+    },
+    {
+        "q": "Rearrange online analysis:",
+        "type": "rearrange",
+        "words": [
+            "Run EXPLAIN ANALYZE",
+            "Copy output",
+            "Paste to tool",
+            "Review highlights",
+            "Apply insights"
+        ]
+    },
+    {
+        "q": "What is query store?",
+        "type": "mcq",
+        "o": [
+            "System that captures and stores query performance data",
+            "Query cache",
+            "Result storage",
+            "Data warehouse"
+        ]
+    },
+    {
+        "q": "Query store tracks _____ statistics over time.",
+        "type": "fill_blank",
+        "answers": [
+            "execution"
+        ],
+        "other_options": [
+            "storage",
+            "user",
+            "table"
+        ]
+    },
+    {
+        "q": "Query store enables historical performance analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of query store?",
+        "type": "mcq",
+        "c": "-- Query store enabled\n-- Same query over 30 days\n-- Analysis shows:",
+        "o": [
+            "Performance trends and plan changes over time",
+            "Current performance only",
+            "No history",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match query store feature with its use:",
+        "type": "match",
+        "left": [
+            "Top queries",
+            "Regressed queries",
+            "Plan forcing",
+            "Wait stats"
+        ],
+        "right": [
+            "Resource consumers",
+            "Performance drops",
+            "Pin good plans",
+            "Wait analysis"
+        ]
+    },
+    {
+        "q": "Rearrange query store workflow:",
+        "type": "rearrange",
+        "words": [
+            "Enable query store",
+            "Collect data",
+            "Identify issues",
+            "Force plans if needed",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is statement_timeout?",
+        "type": "mcq",
+        "o": [
+            "Maximum time a statement can run before cancellation",
+            "Connection timeout",
+            "Lock timeout",
+            "Idle timeout"
+        ]
+    },
+    {
+        "q": "statement_timeout prevents _____ queries.",
+        "type": "fill_blank",
+        "answers": [
+            "runaway"
+        ],
+        "other_options": [
+            "fast",
+            "simple",
+            "cached"
+        ]
+    },
+    {
+        "q": "Zero statement_timeout means no limit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of timeout?",
+        "type": "mcq",
+        "c": "SET statement_timeout = '10s';\n-- Query runs 15 seconds:",
+        "o": [
+            "Query cancelled after 10 seconds with error",
+            "Query completes at 15 seconds",
+            "No effect",
+            "Server crashes"
+        ]
+    },
+    {
+        "q": "Match timeout with its granularity:",
+        "type": "match",
+        "left": [
+            "Per session",
+            "Per role",
+            "Per database",
+            "Global"
+        ],
+        "right": [
+            "SET in session",
+            "ALTER ROLE",
+            "ALTER DATABASE",
+            "postgresql.conf"
+        ]
+    },
+    {
+        "q": "Rearrange timeout strategy:",
+        "type": "rearrange",
+        "words": [
+            "Set reasonable limits",
+            "Monitor cancellations",
+            "Identify slow queries",
+            "Optimize or extend",
+            "Alert on patterns"
+        ]
+    },
+    {
+        "q": "What is cursor-based pagination?",
+        "type": "mcq",
+        "o": [
+            "Pagination using opaque cursor instead of offset",
+            "Mouse cursor tracking",
+            "Database cursor",
+            "UI component"
+        ]
+    },
+    {
+        "q": "Cursor pagination avoids _____ counting.",
+        "type": "fill_blank",
+        "answers": [
+            "OFFSET"
+        ],
+        "other_options": [
+            "LIMIT",
+            "WHERE",
+            "ORDER"
+        ]
+    },
+    {
+        "q": "Cursor pagination is more efficient for deep pages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of cursor pagination?",
+        "type": "mcq",
+        "c": "-- OFFSET 100000 LIMIT 10: must skip 100000 rows\n-- Cursor after '...' LIMIT 10: starts from cursor position\n-- Efficiency:",
+        "o": [
+            "Cursor avoids scanning skipped rows",
+            "Same performance",
+            "OFFSET faster",
+            "Both slow"
+        ]
+    },
+    {
+        "q": "Match pagination type with its trade-off:",
+        "type": "match",
+        "left": [
+            "Offset",
+            "Cursor",
+            "Keyset",
+            "Seek"
+        ],
+        "right": [
+            "Simple but slow",
+            "Efficient but opaque",
+            "Efficient and clear",
+            "Direct jump"
+        ]
+    },
+    {
+        "q": "Rearrange pagination efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Keyset/Cursor",
+            "Small OFFSET",
+            "Medium OFFSET",
+            "Large OFFSET"
+        ]
+    },
+    {
+        "q": "What is keyset pagination?",
+        "type": "mcq",
+        "o": [
+            "Pagination using last row's key to fetch next page",
+            "Keyboard shortcuts",
+            "Primary key pagination",
+            "Unique key only"
+        ]
+    },
+    {
+        "q": "Keyset uses _____ of last item for next page.",
+        "type": "fill_blank",
+        "answers": [
+            "values"
+        ],
+        "other_options": [
+            "offset",
+            "count",
+            "hash"
+        ]
+    },
+    {
+        "q": "Keyset pagination requires stable ordering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of keyset query?",
+        "type": "mcq",
+        "c": "SELECT * FROM orders\nWHERE (created_at, id) > ('2024-01-15', 1000)\nORDER BY created_at, id\nLIMIT 10;",
+        "o": [
+            "Next 10 orders after the specified point",
+            "First 10 orders",
+            "Random orders",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match keyset benefit with its impact:",
+        "type": "match",
+        "left": [
+            "No OFFSET scan",
+            "Stable paging",
+            "Index usage",
+            "Consistent performance"
+        ],
+        "right": [
+            "Skip avoidance",
+            "Concurrent inserts OK",
+            "Efficient lookup",
+            "Deep pages fast"
+        ]
+    },
+    {
+        "q": "Rearrange keyset implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define sort columns",
+            "Create composite index",
+            "Fetch page with WHERE",
+            "Return last key to client",
+            "Use key for next page"
+        ]
+    },
+    {
+        "q": "What is count estimation?",
+        "type": "mcq",
+        "o": [
+            "Approximating total rows without full count",
+            "Exact counting",
+            "Row numbering",
+            "Index counting"
+        ]
+    },
+    {
+        "q": "Count estimation uses _____ instead of exact count.",
+        "type": "fill_blank",
+        "answers": [
+            "statistics"
+        ],
+        "other_options": [
+            "indexes",
+            "samples",
+            "guesses"
+        ]
+    },
+    {
+        "q": "Exact COUNT(*) on large tables is expensive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of estimate?",
+        "type": "mcq",
+        "c": "SELECT reltuples FROM pg_class WHERE relname = 'orders';",
+        "o": [
+            "Approximate row count from statistics",
+            "Exact row count",
+            "Table size",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match counting method with its accuracy:",
+        "type": "match",
+        "left": [
+            "COUNT(*)",
+            "pg_class.reltuples",
+            "EXPLAIN estimate",
+            "Sample count"
+        ],
+        "right": [
+            "Exact but slow",
+            "Approximate fast",
+            "Optimizer guess",
+            "Statistical sample"
+        ]
+    },
+    {
+        "q": "Rearrange by counting efficiency:",
+        "type": "rearrange",
+        "words": [
+            "Statistics lookup",
+            "Index-only count",
+            "Sampled count",
+            "Full COUNT(*)"
+        ]
+    },
+    {
+        "q": "What is query batching?",
+        "type": "mcq",
+        "o": [
+            "Combining multiple queries into single roundtrip",
+            "Query caching",
+            "Query queueing",
+            "Query scheduling"
+        ]
+    },
+    {
+        "q": "Batching reduces network _____ overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "roundtrip"
+        ],
+        "other_options": [
+            "bandwidth",
+            "speed",
+            "security"
+        ]
+    },
+    {
+        "q": "Batching is useful for high latency connections.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of batching?",
+        "type": "mcq",
+        "c": "-- 100 individual queries: 100 roundtrips\n-- Batched: 1 roundtrip with 100 queries\n-- Improvement:",
+        "o": [
+            "Reduced latency from fewer roundtrips",
+            "Same performance",
+            "Slower",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match batching technique with its approach:",
+        "type": "match",
+        "left": [
+            "pipelining",
+            "multi-statement",
+            "COPY",
+            "bulk insert"
+        ],
+        "right": [
+            "Send before receive",
+            "Semicolon separated",
+            "Efficient load",
+            "VALUES lists"
+        ]
+    },
+    {
+        "q": "Rearrange batching strategies:",
+        "type": "rearrange",
+        "words": [
+            "Identify batch candidates",
+            "Group by operation",
+            "Execute as batch",
+            "Process results",
+            "Handle errors"
+        ]
+    },
+    {
+        "q": "What is query scheduling?",
+        "type": "mcq",
+        "o": [
+            "Controlling when queries execute",
+            "Query ordering",
+            "Query caching",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "Scheduled queries run during _____ periods.",
+        "type": "fill_blank",
+        "answers": [
+            "low-traffic"
+        ],
+        "other_options": [
+            "high-traffic",
+            "random",
+            "busy"
+        ]
+    },
+    {
+        "q": "Heavy reports should be scheduled for off-peak hours.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of scheduling?",
+        "type": "mcq",
+        "c": "-- Heavy report: 2 AM\n-- User traffic peak: 10 AM\n-- Benefit:",
+        "o": [
+            "Report doesn't impact user queries",
+            "No benefit",
+            "Users see faster reports",
+            "Less accurate reports"
+        ]
+    },
+    {
+        "q": "Match scheduling approach with its use:",
+        "type": "match",
+        "left": [
+            "Cron job",
+            "Database scheduler",
+            "Job queue",
+            "On-demand"
+        ],
+        "right": [
+            "Time-based",
+            "DB integrated",
+            "Application-driven",
+            "User-triggered"
+        ]
+    },
+    {
+        "q": "Rearrange scheduling considerations:",
+        "type": "rearrange",
+        "words": [
+            "Identify heavy queries",
+            "Analyze traffic patterns",
+            "Schedule off-peak",
+            "Monitor impact",
+            "Adjust timing"
+        ]
+    },
+    {
+        "q": "What is query throttling?",
+        "type": "mcq",
+        "o": [
+            "Limiting query execution rate",
+            "Query acceleration",
+            "Query caching",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "Throttling prevents resource _____.",
+        "type": "fill_blank",
+        "answers": [
+            "exhaustion"
+        ],
+        "other_options": [
+            "sharing",
+            "caching",
+            "logging"
+        ]
+    },
+    {
+        "q": "Throttling protects database from overload.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of throttling?",
+        "type": "mcq",
+        "c": "-- Rate limit: 100 queries/second\n-- Incoming: 200 queries/second\n-- Action:",
+        "o": [
+            "100 execute, 100 queued or rejected",
+            "All 200 execute",
+            "All rejected",
+            "Database crashes"
+        ]
+    },
+    {
+        "q": "Match throttling strategy with its mechanism:",
+        "type": "match",
+        "left": [
+            "Rate limiting",
+            "Concurrency limit",
+            "Resource quota",
+            "Circuit breaker"
+        ],
+        "right": [
+            "Queries per time",
+            "Parallel queries",
+            "CPU/memory",
+            "Fail fast"
+        ]
+    },
+    {
+        "q": "Rearrange throttling implementation:",
+        "type": "rearrange",
+        "words": [
+            "Define limits",
+            "Implement counter",
+            "Check on request",
+            "Queue or reject",
+            "Monitor patterns"
+        ]
+    },
+    {
+        "q": "What is hot table?",
+        "type": "mcq",
+        "o": [
+            "Table with high update frequency causing contention",
+            "Frequently read table",
+            "Large table",
+            "Cached table"
+        ]
+    },
+    {
+        "q": "Hot tables often have _____ on specific rows.",
+        "type": "fill_blank",
+        "answers": [
+            "contention"
+        ],
+        "other_options": [
+            "indexes",
+            "constraints",
+            "triggers"
+        ]
+    },
+    {
+        "q": "Table partitioning can help with hot table issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of hot table?",
+        "type": "mcq",
+        "c": "-- Counter table with single row\n-- 1000 concurrent updates\n-- Problem:",
+        "o": [
+            "All updates contend for same row lock",
+            "Fast updates",
+            "No issue",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match hot table pattern with its solution:",
+        "type": "match",
+        "left": [
+            "Single row counter",
+            "Status table",
+            "Queue table",
+            "Sequence"
+        ],
+        "right": [
+            "Sharded counters",
+            "Cache aside",
+            "Partitioned queue",
+            "Pre-allocation"
+        ]
+    },
+    {
+        "q": "Rearrange hot table mitigation:",
+        "type": "rearrange",
+        "words": [
+            "Identify hot spots",
+            "Analyze access pattern",
+            "Distribute load",
+            "Implement solution",
+            "Monitor effectiveness"
+        ]
+    },
+    {
+        "q": "What is table bloat?",
+        "type": "mcq",
+        "o": [
+            "Wasted space from dead tuples and fragmentation",
+            "Large tables",
+            "Index size",
+            "Data growth"
+        ]
+    },
+    {
+        "q": "VACUUM reclaims space from _____ tuples.",
+        "type": "fill_blank",
+        "answers": [
+            "dead"
+        ],
+        "other_options": [
+            "live",
+            "new",
+            "old"
+        ]
+    },
+    {
+        "q": "Table bloat degrades query performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of bloat check?",
+        "type": "mcq",
+        "c": "-- Table physical size: 10GB\n-- Estimated live data: 3GB\n-- Bloat:",
+        "o": [
+            "7GB dead space needing VACUUM",
+            "No bloat",
+            "Normal",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match bloat solution with its approach:",
+        "type": "match",
+        "left": [
+            "VACUUM",
+            "VACUUM FULL",
+            "pg_repack",
+            "autovacuum"
+        ],
+        "right": [
+            "Mark space reusable",
+            "Rebuild table",
+            "Online rebuild",
+            "Automatic cleanup"
+        ]
+    },
+    {
+        "q": "Rearrange bloat management:",
+        "type": "rearrange",
+        "words": [
+            "Monitor bloat",
+            "Tune autovacuum",
+            "Check periodically",
+            "Manual VACUUM if needed",
+            "Consider rebuild"
+        ]
+    },
+    {
+        "q": "What is index bloat?",
+        "type": "mcq",
+        "o": [
+            "Wasted space in indexes from dead entries",
+            "Large indexes",
+            "Too many indexes",
+            "Index fragmentation"
+        ]
+    },
+    {
+        "q": "REINDEX rebuilds indexes without _____.",
+        "type": "fill_blank",
+        "answers": [
+            "bloat"
+        ],
+        "other_options": [
+            "data",
+            "structure",
+            "keys"
+        ]
+    },
+    {
+        "q": "Index bloat increases index scan time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of index rebuild?",
+        "type": "mcq",
+        "c": "-- Index size before: 2GB\n-- After REINDEX: 500MB\n-- Improvement:",
+        "o": [
+            "4x smaller, faster scans",
+            "Same performance",
+            "Slower",
+            "Data loss"
+        ]
+    },
+    {
+        "q": "Match index maintenance with its method:",
+        "type": "match",
+        "left": [
+            "REINDEX",
+            "CREATE INDEX CONCURRENTLY",
+            "pg_repack",
+            "DROP + CREATE"
+        ],
+        "right": [
+            "Blocking rebuild",
+            "Non-blocking",
+            "Online rebuild",
+            "Manual approach"
+        ]
+    },
+    {
+        "q": "Rearrange index maintenance:",
+        "type": "rearrange",
+        "words": [
+            "Check index bloat",
+            "Schedule maintenance window",
+            "Rebuild indexes",
+            "Verify performance",
+            "Monitor ongoing"
+        ]
+    },
+    {
+        "q": "What is query analysis dashboard?",
+        "type": "mcq",
+        "o": [
+            "Visual interface for monitoring query performance",
+            "Query editor",
+            "Schema viewer",
+            "Data browser"
+        ]
+    },
+    {
+        "q": "Dashboards aggregate query _____ for analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "metrics"
+        ],
+        "other_options": [
+            "results",
+            "text",
+            "errors"
+        ]
+    },
+    {
+        "q": "Real-time dashboards help catch issues quickly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of query dashboard?",
+        "type": "mcq",
+        "c": "-- Dashboard shows:\n-- Top 10 queries by execution time\n-- Queries with estimate errors\n-- Wait event breakdown",
+        "o": [
+            "Quick visibility into performance issues",
+            "Query results",
+            "Schema changes",
+            "User list"
+        ]
+    },
+    {
+        "q": "Match dashboard section with its purpose:",
+        "type": "match",
+        "left": [
+            "Top queries",
+            "Wait events",
+            "Connections",
+            "I/O stats"
+        ],
+        "right": [
+            "Resource consumers",
+            "Blocking analysis",
+            "Pool usage",
+            "Disk activity"
+        ]
+    },
+    {
+        "q": "Rearrange dashboard workflow:",
+        "type": "rearrange",
+        "words": [
+            "Monitor dashboard",
+            "Spot anomalies",
+            "Drill into details",
+            "Identify root cause",
+            "Take action"
+        ]
+    },
+    {
+        "q": "What is SQL tuning advisor?",
+        "type": "mcq",
+        "o": [
+            "Tool that analyzes queries and suggests optimizations",
+            "Query editor",
+            "Schema designer",
+            "Data validator"
+        ]
+    },
+    {
+        "q": "Tuning advisors suggest _____ and query rewrites.",
+        "type": "fill_blank",
+        "answers": [
+            "indexes"
+        ],
+        "other_options": [
+            "tables",
+            "columns",
+            "views"
+        ]
+    },
+    {
+        "q": "Tuning advisors can recommend statistics updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of tuning advisor?",
+        "type": "mcq",
+        "c": "-- Input: Slow query\n-- Advisor output:",
+        "o": [
+            "Recommended indexes, rewrites, and hints",
+            "Query results",
+            "Error message",
+            "Schema"
+        ]
+    },
+    {
+        "q": "Match advisor type with its scope:",
+        "type": "match",
+        "left": [
+            "Index advisor",
+            "Query rewrite",
+            "Stats advisor",
+            "Workload advisor"
+        ],
+        "right": [
+            "Suggest indexes",
+            "Optimize query",
+            "Update stats",
+            "Holistic analysis"
+        ]
+    },
+    {
+        "q": "Rearrange tuning workflow:",
+        "type": "rearrange",
+        "words": [
+            "Submit slow query",
+            "Analyze execution",
+            "Generate recommendations",
+            "Evaluate suggestions",
+            "Implement and verify"
+        ]
+    },
+    {
+        "q": "What is index recommendation?",
+        "type": "mcq",
+        "o": [
+            "Suggested index based on query patterns",
+            "Existing index list",
+            "Index structure",
+            "Index statistics"
+        ]
+    },
+    {
+        "q": "Recommendations balance query speed vs _____ overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "write"
+        ],
+        "other_options": [
+            "read",
+            "storage",
+            "network"
+        ]
+    },
+    {
+        "q": "Unused indexes should be dropped.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of recommendation?",
+        "type": "mcq",
+        "c": "-- Workload: 80% reads on (user_id, date)\n-- Recommendation:",
+        "o": [
+            "Create composite index on (user_id, date)",
+            "Drop all indexes",
+            "No recommendation",
+            "Create trigger"
+        ]
+    },
+    {
+        "q": "Match recommendation source with its data:",
+        "type": "match",
+        "left": [
+            "Query patterns",
+            "Missing index hints",
+            "Index usage stats",
+            "Workload analysis"
+        ],
+        "right": [
+            "Common predicates",
+            "Optimizer signals",
+            "Hits vs scans",
+            "Full workload review"
+        ]
+    },
+    {
+        "q": "Rearrange recommendation process:",
+        "type": "rearrange",
+        "words": [
+            "Collect query workload",
+            "Analyze patterns",
+            "Generate candidates",
+            "Estimate benefit",
+            "Prioritize and implement"
+        ]
+    },
+    {
+        "q": "What is hypothetical index?",
+        "type": "mcq",
+        "o": [
+            "Testing index benefit without actually creating it",
+            "Theoretical concept",
+            "Partial index",
+            "Future index"
+        ]
+    },
+    {
+        "q": "Hypothetical indexes allow _____ analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "what-if"
+        ],
+        "other_options": [
+            "real",
+            "historical",
+            "live"
+        ]
+    },
+    {
+        "q": "HypoPG extension supports hypothetical indexes in PostgreSQL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of hypothetical index?",
+        "type": "mcq",
+        "c": "SELECT hypopg_create_index('CREATE INDEX ON users(email)');\nEXPLAIN SELECT * FROM users WHERE email = 'test';",
+        "o": [
+            "Plan shows hypothetical index usage",
+            "Index actually created",
+            "Error",
+            "No change"
+        ]
+    },
+    {
+        "q": "Match hypothetical analysis with its benefit:",
+        "type": "match",
+        "left": [
+            "No disk usage",
+            "Quick evaluation",
+            "Safe testing",
+            "Plan comparison"
+        ],
+        "right": [
+            "No storage cost",
+            "Fast iteration",
+            "No prod impact",
+            "Before/after analysis"
+        ]
+    },
+    {
+        "q": "Rearrange hypothetical analysis:",
+        "type": "rearrange",
+        "words": [
+            "Create hypothetical index",
+            "Run EXPLAIN",
+            "Evaluate benefit",
+            "Decide to create",
+            "Drop hypothetical"
+        ]
+    },
+    {
+        "q": "What is query performance SLO?",
+        "type": "mcq",
+        "o": [
+            "Target performance metrics for queries",
+            "Query limit",
+            "Query quota",
+            "Query cap"
+        ]
+    },
+    {
+        "q": "SLO defines acceptable _____ for query types.",
+        "type": "fill_blank",
+        "answers": [
+            "latency"
+        ],
+        "other_options": [
+            "count",
+            "size",
+            "frequency"
+        ]
+    },
+    {
+        "q": "Alerts should fire when SLO is breached.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of SLO monitoring?",
+        "type": "mcq",
+        "c": "-- SLO: P99 latency < 100ms\n-- Current P99: 150ms\n-- Action:",
+        "o": [
+            "Alert triggered, investigate and optimize",
+            "SLO met",
+            "No action",
+            "Ignore"
+        ]
+    },
+    {
+        "q": "Match SLO metric with its meaning:",
+        "type": "match",
+        "left": [
+            "P50",
+            "P95",
+            "P99",
+            "Availability"
+        ],
+        "right": [
+            "Median",
+            "95th percentile",
+            "99th percentile",
+            "Uptime percentage"
+        ]
+    },
+    {
+        "q": "Rearrange SLO definition:",
+        "type": "rearrange",
+        "words": [
+            "Identify critical queries",
+            "Define targets",
+            "Implement monitoring",
+            "Set alerts",
+            "Review and adjust"
+        ]
+    },
+    {
+        "q": "What is query performance baseline?",
+        "type": "mcq",
+        "o": [
+            "Normal performance metrics to compare against",
+            "Query limit",
+            "Query quota",
+            "Query starting point"
+        ]
+    },
+    {
+        "q": "Baselines help detect performance _____.",
+        "type": "fill_blank",
+        "answers": [
+            "regressions"
+        ],
+        "other_options": [
+            "improvements",
+            "changes",
+            "issues"
+        ]
+    },
+    {
+        "q": "Baselines should be updated after deliberate changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of baseline comparison?",
+        "type": "mcq",
+        "c": "-- Baseline: 50ms average\n-- Current: 200ms average\n-- Deviation:",
+        "o": [
+            "4x regression detected",
+            "Performance improved",
+            "No change",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match baseline type with its timeframe:",
+        "type": "match",
+        "left": [
+            "Rolling",
+            "Fixed",
+            "Seasonal",
+            "Dynamic"
+        ],
+        "right": [
+            "Recent window",
+            "Point in time",
+            "Historical periods",
+            "Adaptive"
+        ]
+    },
+    {
+        "q": "Rearrange baseline management:",
+        "type": "rearrange",
+        "words": [
+            "Capture initial baseline",
+            "Monitor continuously",
+            "Compare to baseline",
+            "Alert on deviation",
+            "Update after changes"
+        ]
+    },
+    {
+        "q": "What is query performance trend?",
+        "type": "mcq",
+        "o": [
+            "Pattern of performance change over time",
+            "Current performance",
+            "Peak performance",
+            "Average performance"
+        ]
+    },
+    {
+        "q": "Trends help predict future _____ needs.",
+        "type": "fill_blank",
+        "answers": [
+            "capacity"
+        ],
+        "other_options": [
+            "feature",
+            "query",
+            "user"
+        ]
+    },
+    {
+        "q": "Gradual degradation trends are easier to miss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of trend analysis?",
+        "type": "mcq",
+        "c": "-- Month 1: 50ms\n-- Month 2: 55ms\n-- Month 3: 61ms\n-- Month 4: 67ms\n-- Trend:",
+        "o": [
+            "Gradual degradation, needs investigation",
+            "Stable performance",
+            "Improving",
+            "No pattern"
+        ]
+    },
+    {
+        "q": "Match trend type with its cause:",
+        "type": "match",
+        "left": [
+            "Linear increase",
+            "Sudden spike",
+            "Periodic pattern",
+            "Stable"
+        ],
+        "right": [
+            "Data growth",
+            "Incident/change",
+            "Load cycles",
+            "Healthy"
+        ]
+    },
+    {
+        "q": "Rearrange trend analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect metrics over time",
+            "Plot trends",
+            "Identify patterns",
+            "Correlate with changes",
+            "Plan capacity"
+        ]
+    },
+    {
+        "q": "What is query anomaly detection?",
+        "type": "mcq",
+        "o": [
+            "Identifying unusual query behavior automatically",
+            "Query validation",
+            "Query logging",
+            "Query counting"
+        ]
+    },
+    {
+        "q": "Anomaly detection uses _____ learning or statistical methods.",
+        "type": "fill_blank",
+        "answers": [
+            "machine"
+        ],
+        "other_options": [
+            "deep",
+            "reinforcement",
+            "supervised"
+        ]
+    },
+    {
+        "q": "Anomaly detection can catch issues before users notice.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of anomaly detection?",
+        "type": "mcq",
+        "c": "-- Normal: 100 similar queries\n-- Anomaly: 1 query 100x slower than usual\n-- Alert:",
+        "o": [
+            "Anomalous query flagged for investigation",
+            "All queries flagged",
+            "No alert",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match anomaly type with its characteristic:",
+        "type": "match",
+        "left": [
+            "Point anomaly",
+            "Contextual",
+            "Collective",
+            "Seasonal"
+        ],
+        "right": [
+            "Single outlier",
+            "Context-dependent",
+            "Group of anomalies",
+            "Time-based"
+        ]
+    },
+    {
+        "q": "Rearrange anomaly detection:",
+        "type": "rearrange",
+        "words": [
+            "Define normal baseline",
+            "Train model",
+            "Score new queries",
+            "Alert on high score",
+            "Investigate and tune"
+        ]
+    },
+    {
+        "q": "What is query plan regression?",
+        "type": "mcq",
+        "o": [
+            "Performance degradation due to plan change",
+            "Query improvement",
+            "Plan caching",
+            "Plan validation"
+        ]
+    },
+    {
+        "q": "Plan regression often follows _____ updates.",
+        "type": "fill_blank",
+        "answers": [
+            "statistics"
+        ],
+        "other_options": [
+            "table",
+            "index",
+            "schema"
+        ]
+    },
+    {
+        "q": "Plan baselines can prevent regressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of regression scenario?",
+        "type": "mcq",
+        "c": "-- Before: Index scan, 10ms\n-- After ANALYZE: Seq scan, 5 seconds\n-- Issue:",
+        "o": [
+            "Statistics caused worse plan choice",
+            "Index dropped",
+            "Query changed",
+            "No issue"
+        ]
+    },
+    {
+        "q": "Match regression cause with its fix:",
+        "type": "match",
+        "left": [
+            "Stats change",
+            "Index change",
+            "Data growth",
+            "Version upgrade"
+        ],
+        "right": [
+            "Force plan",
+            "Recreate index",
+            "Partition data",
+            "Test before upgrade"
+        ]
+    },
+    {
+        "q": "Rearrange regression handling:",
+        "type": "rearrange",
+        "words": [
+            "Detect regression",
+            "Identify cause",
+            "Rollback or fix",
+            "Prevent recurrence",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is optimizer hints in PostgreSQL?",
+        "type": "mcq",
+        "o": [
+            "pg_hint_plan extension for plan control",
+            "Built-in hints",
+            "Query comments",
+            "Index hints only"
+        ]
+    },
+    {
+        "q": "pg_hint_plan uses _____ style comments for hints.",
+        "type": "fill_blank",
+        "answers": [
+            "SQL"
+        ],
+        "other_options": [
+            "C",
+            "Python",
+            "Shell"
+        ]
+    },
+    {
+        "q": "Hints override optimizer decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this hint?",
+        "type": "mcq",
+        "c": "/*+ SeqScan(users) */ SELECT * FROM users WHERE id = 1;",
+        "o": [
+            "Forces sequential scan ignoring index",
+            "Uses index scan",
+            "Error",
+            "No effect"
+        ]
+    },
+    {
+        "q": "Match hint type with its effect:",
+        "type": "match",
+        "left": [
+            "SeqScan",
+            "IndexScan",
+            "NestLoop",
+            "HashJoin"
+        ],
+        "right": [
+            "Force seq scan",
+            "Force index",
+            "Force nested loop",
+            "Force hash join"
+        ]
+    },
+    {
+        "q": "Rearrange hint usage:",
+        "type": "rearrange",
+        "words": [
+            "Diagnose issue",
+            "Test hint",
+            "Verify improvement",
+            "Document reason",
+            "Monitor long-term"
+        ]
+    },
+    {
+        "q": "What is explain analyze buffers?",
+        "type": "mcq",
+        "o": [
+            "Shows buffer pool hits and disk reads",
+            "Memory allocation",
+            "Query results",
+            "Table sizes"
+        ]
+    },
+    {
+        "q": "BUFFERS output shows _____ vs read ratio.",
+        "type": "fill_blank",
+        "answers": [
+            "hit"
+        ],
+        "other_options": [
+            "miss",
+            "write",
+            "flush"
+        ]
+    },
+    {
+        "q": "High buffer hits indicate good cache efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of buffer analysis?",
+        "type": "mcq",
+        "c": "-- Buffers: shared hit=1000 read=5000\n-- Interpretation:",
+        "o": [
+            "83% disk reads, need more memory or better index",
+            "Excellent cache hit",
+            "No I/O",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match buffer metric with its meaning:",
+        "type": "match",
+        "left": [
+            "shared hit",
+            "shared read",
+            "shared written",
+            "temp read"
+        ],
+        "right": [
+            "From cache",
+            "From disk",
+            "Dirty pages",
+            "Temp files"
+        ]
+    },
+    {
+        "q": "Rearrange buffer optimization:",
+        "type": "rearrange",
+        "words": [
+            "Analyze buffer stats",
+            "Check hit ratio",
+            "Tune shared_buffers",
+            "Optimize queries",
+            "Recheck"
+        ]
+    },
+    {
+        "q": "What is query timing breakdown?",
+        "type": "mcq",
+        "o": [
+            "Time spent in each query phase",
+            "Query count",
+            "Query size",
+            "Query frequency"
+        ]
+    },
+    {
+        "q": "EXPLAIN ANALYZE shows _____ time per node.",
+        "type": "fill_blank",
+        "answers": [
+            "actual"
+        ],
+        "other_options": [
+            "estimated",
+            "cached",
+            "expected"
+        ]
+    },
+    {
+        "q": "Timing overhead can affect very fast queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of timing?",
+        "type": "mcq",
+        "c": "-- Planning Time: 1ms\n-- Execution Time: 500ms\n-- Bottleneck:",
+        "o": [
+            "Execution phase dominates, optimize query",
+            "Planning dominant",
+            "Equal distribution",
+            "No timing"
+        ]
+    },
+    {
+        "q": "Match timing phase with its scope:",
+        "type": "match",
+        "left": [
+            "Planning",
+            "Startup",
+            "Execution",
+            "Total"
+        ],
+        "right": [
+            "Optimize plan",
+            "First row prep",
+            "Fetch rows",
+            "End to end"
+        ]
+    },
+    {
+        "q": "Rearrange timing analysis:",
+        "type": "rearrange",
+        "words": [
+            "Run EXPLAIN ANALYZE",
+            "Check planning time",
+            "Check execution time",
+            "Find slowest nodes",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is row estimate accuracy?",
+        "type": "mcq",
+        "o": [
+            "How close estimated rows match actual rows",
+            "Row count",
+            "Row size",
+            "Row format"
+        ]
+    },
+    {
+        "q": "Large estimation errors cause _____ plan choices.",
+        "type": "fill_blank",
+        "answers": [
+            "wrong"
+        ],
+        "other_options": [
+            "good",
+            "fast",
+            "cached"
+        ]
+    },
+    {
+        "q": "Ratio of actual/estimated over 10 is concerning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of estimation error?",
+        "type": "mcq",
+        "c": "-- Estimated: 100 rows\n-- Actual: 100,000 rows\n-- Impact:",
+        "o": [
+            "1000x underestimate, likely wrong join type",
+            "Accurate estimate",
+            "No impact",
+            "Overestimate"
+        ]
+    },
+    {
+        "q": "Match estimation issue with its fix:",
+        "type": "match",
+        "left": [
+            "Stale stats",
+            "Correlated columns",
+            "Function selectivity",
+            "Complex predicates"
+        ],
+        "right": [
+            "Run ANALYZE",
+            "Extended stats",
+            "Function stats",
+            "Simplify query"
+        ]
+    },
+    {
+        "q": "Rearrange estimation improvement:",
+        "type": "rearrange",
+        "words": [
+            "Identify bad estimates",
+            "Check statistics",
+            "Update or extend stats",
+            "Rerun explain",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "What is cost unit?",
+        "type": "mcq",
+        "o": [
+            "Arbitrary unit for comparing plan costs",
+            "Dollar amount",
+            "Time in seconds",
+            "Memory bytes"
+        ]
+    },
+    {
+        "q": "Cost units are _____ across different hardware.",
+        "type": "fill_blank",
+        "answers": [
+            "relative"
+        ],
+        "other_options": [
+            "absolute",
+            "fixed",
+            "standard"
+        ]
+    },
+    {
+        "q": "Lower cost generally means faster execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of cost comparison?",
+        "type": "mcq",
+        "c": "-- Plan A: cost=100..2000\n-- Plan B: cost=500..1000\n-- Choice:",
+        "o": [
+            "Plan B chosen, lower total cost",
+            "Plan A chosen",
+            "Random choice",
+            "Both executed"
+        ]
+    },
+    {
+        "q": "Match cost component with its meaning:",
+        "type": "match",
+        "left": [
+            "Startup cost",
+            "Total cost",
+            "Run cost",
+            "Parallel overhead"
+        ],
+        "right": [
+            "First row",
+            "All rows",
+            "Total minus startup",
+            "Coordination cost"
+        ]
+    },
+    {
+        "q": "Rearrange cost interpretation:",
+        "type": "rearrange",
+        "words": [
+            "Read startup cost",
+            "Read total cost",
+            "Compare options",
+            "Consider rows",
+            "Tune cost params"
+        ]
+    },
+    {
+        "q": "What is sort optimization?",
+        "type": "mcq",
+        "o": [
+            "Minimizing sort overhead in queries",
+            "Alphabetical sorting",
+            "Index sorting",
+            "Data sorting"
+        ]
+    },
+    {
+        "q": "Index _____ can eliminate sorting.",
+        "type": "fill_blank",
+        "answers": [
+            "scans"
+        ],
+        "other_options": [
+            "creation",
+            "deletion",
+            "updates"
+        ]
+    },
+    {
+        "q": "External sorts are slower than in-memory sorts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of sort method?",
+        "type": "mcq",
+        "c": "-- Sort Method: external merge Disk: 500MB\n-- Interpretation:",
+        "o": [
+            "Data didn't fit in work_mem, spilled to disk",
+            "Fast in-memory sort",
+            "No sort needed",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match sort method with its characteristics:",
+        "type": "match",
+        "left": [
+            "quicksort",
+            "top-N heapsort",
+            "external merge",
+            "presorted"
+        ],
+        "right": [
+            "In-memory",
+            "Limited output",
+            "Disk spill",
+            "Already sorted"
+        ]
+    },
+    {
+        "q": "Rearrange sort optimization:",
+        "type": "rearrange",
+        "words": [
+            "Check sort method",
+            "Increase work_mem if needed",
+            "Add index for ORDER BY",
+            "Limit rows before sort",
+            "Verify improvement"
+        ]
+    },
+    {
+        "q": "What is aggregate optimization?",
+        "type": "mcq",
+        "o": [
+            "Efficient computation of SUM, COUNT, AVG etc",
+            "Data aggregation",
+            "Table joining",
+            "Row filtering"
+        ]
+    },
+    {
+        "q": "Hash aggregation uses _____ to group rows.",
+        "type": "fill_blank",
+        "answers": [
+            "hash table"
+        ],
+        "other_options": [
+            "sort",
+            "index",
+            "tree"
+        ]
+    },
+    {
+        "q": "Sorted aggregation works on pre-sorted data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of aggregate method?",
+        "type": "mcq",
+        "c": "-- HashAggregate (Batches: 5, Memory: work_mem exceeded)\n-- Interpretation:",
+        "o": [
+            "Multiple batches due to memory limit",
+            "Single fast batch",
+            "No aggregation",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match aggregate type with its method:",
+        "type": "match",
+        "left": [
+            "HashAggregate",
+            "GroupAggregate",
+            "Partial Aggregate",
+            "Final Aggregate"
+        ],
+        "right": [
+            "Hash-based",
+            "Sort-based",
+            "Parallel first stage",
+            "Parallel final stage"
+        ]
+    },
+    {
+        "q": "Rearrange aggregate optimization:",
+        "type": "rearrange",
+        "words": [
+            "Check aggregate method",
+            "Tune work_mem",
+            "Consider partial agg",
+            "Add supporting index",
+            "Test alternatives"
+        ]
+    },
+    {
+        "q": "What is distinct optimization?",
+        "type": "mcq",
+        "o": [
+            "Efficient duplicate elimination",
+            "Data deduplication",
+            "Unique constraints",
+            "Primary keys"
+        ]
+    },
+    {
+        "q": "DISTINCT can use _____ or sorting.",
+        "type": "fill_blank",
+        "answers": [
+            "hashing"
+        ],
+        "other_options": [
+            "indexing",
+            "filtering",
+            "joining"
+        ]
+    },
+    {
+        "q": "Index-only scan can optimize DISTINCT on indexed columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of distinct method?",
+        "type": "mcq",
+        "c": "-- HashSetOp Intersect\n-- Buckets: 1024, Batches: 1\n-- Method:",
+        "o": [
+            "Hash-based duplicate elimination",
+            "Sort-based",
+            "Index scan",
+            "Full table scan"
+        ]
+    },
+    {
+        "q": "Match distinct approach with its use:",
+        "type": "match",
+        "left": [
+            "HashSetOp",
+            "Sort Unique",
+            "Index Skip Scan",
+            "Recursive CTE"
+        ],
+        "right": [
+            "Hash dedupe",
+            "Sort then dedupe",
+            "Index-based dedupe",
+            "Complex dedupe"
+        ]
+    },
+    {
+        "q": "Rearrange distinct optimization:",
+        "type": "rearrange",
+        "words": [
+            "Check distinct method",
+            "Consider index",
+            "Tune work_mem",
+            "Limit input rows",
+            "Compare alternatives"
+        ]
+    },
+    {
+        "q": "What is union optimization?",
+        "type": "mcq",
+        "o": [
+            "Efficient combination of query results",
+            "Table merging",
+            "Column combining",
+            "Row appending"
+        ]
+    },
+    {
+        "q": "UNION ALL skips _____ elimination.",
+        "type": "fill_blank",
+        "answers": [
+            "duplicate"
+        ],
+        "other_options": [
+            "sort",
+            "hash",
+            "filter"
+        ]
+    },
+    {
+        "q": "UNION ALL is faster than UNION when duplicates are acceptable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of union choice?",
+        "type": "mcq",
+        "c": "-- UNION: Hash + dedupe\n-- UNION ALL: Append only\n-- When data is already unique:",
+        "o": [
+            "UNION ALL is faster",
+            "UNION is faster",
+            "Same performance",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match union operation with its plan:",
+        "type": "match",
+        "left": [
+            "UNION",
+            "UNION ALL",
+            "INTERSECT",
+            "EXCEPT"
+        ],
+        "right": [
+            "Append + dedupe",
+            "Append only",
+            "Common rows",
+            "Difference rows"
+        ]
+    },
+    {
+        "q": "Rearrange union optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify union type needed",
+            "Check for inherent uniqueness",
+            "Use UNION ALL if safe",
+            "Push filters to branches",
+            "Verify correctness"
+        ]
+    },
+    {
+        "q": "What is subquery optimization?",
+        "type": "mcq",
+        "o": [
+            "Transforming subqueries for better performance",
+            "Subquery caching",
+            "Subquery logging",
+            "Subquery validation"
+        ]
+    },
+    {
+        "q": "Correlated subqueries execute once per _____ row.",
+        "type": "fill_blank",
+        "answers": [
+            "outer"
+        ],
+        "other_options": [
+            "inner",
+            "first",
+            "last"
+        ]
+    },
+    {
+        "q": "Subquery unnesting can eliminate repeated execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of subquery transformation?",
+        "type": "mcq",
+        "c": "-- Before: SELECT * FROM a WHERE x IN (SELECT x FROM b)\n-- After optimizer:",
+        "o": [
+            "Transformed to semi-join",
+            "Same subquery execution",
+            "Error",
+            "Cannot transform"
+        ]
+    },
+    {
+        "q": "Match subquery type with optimization:",
+        "type": "match",
+        "left": [
+            "Scalar subquery",
+            "IN subquery",
+            "EXISTS subquery",
+            "Correlated"
+        ],
+        "right": [
+            "Cache result",
+            "Semi-join",
+            "Anti-join possible",
+            "Decorrelate if possible"
+        ]
+    },
+    {
+        "q": "Rearrange subquery optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify subquery type",
+            "Check unnesting",
+            "Verify transformed plan",
+            "Compare performance",
+            "Rewrite manually if needed"
+        ]
+    },
+    {
+        "q": "What is CTE optimization?",
+        "type": "mcq",
+        "o": [
+            "Efficient execution of WITH clause queries",
+            "Table creation",
+            "View creation",
+            "Function creation"
+        ]
+    },
+    {
+        "q": "CTEs were traditionally _____ fences in PostgreSQL.",
+        "type": "fill_blank",
+        "answers": [
+            "optimization"
+        ],
+        "other_options": [
+            "security",
+            "transaction",
+            "network"
+        ]
+    },
+    {
+        "q": "PostgreSQL 12+ can inline simple CTEs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of CTE materialization?",
+        "type": "mcq",
+        "c": "WITH cte AS MATERIALIZED (\n  SELECT * FROM large_table WHERE ...\n)\nSELECT * FROM cte WHERE ...;",
+        "o": [
+            "CTE executed once and materialized",
+            "CTE inlined",
+            "CTE skipped",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match CTE option with its behavior:",
+        "type": "match",
+        "left": [
+            "MATERIALIZED",
+            "NOT MATERIALIZED",
+            "Default",
+            "Recursive"
+        ],
+        "right": [
+            "Force materialize",
+            "Force inline",
+            "Optimizer choice",
+            "Always materialized"
+        ]
+    },
+    {
+        "q": "Rearrange CTE optimization:",
+        "type": "rearrange",
+        "words": [
+            "Write CTE",
+            "Check plan",
+            "Try MATERIALIZED",
+            "Try NOT MATERIALIZED",
+            "Choose best"
+        ]
+    },
+    {
+        "q": "What is join filter pushdown?",
+        "type": "mcq",
+        "o": [
+            "Moving join conditions to table scans",
+            "Join removal",
+            "Join caching",
+            "Join logging"
+        ]
+    },
+    {
+        "q": "Pushdown reduces rows _____ the join.",
+        "type": "fill_blank",
+        "answers": [
+            "entering"
+        ],
+        "other_options": [
+            "leaving",
+            "in",
+            "after"
+        ]
+    },
+    {
+        "q": "Early filtering improves join performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of filter pushdown?",
+        "type": "mcq",
+        "c": "-- Before: Join all rows, then filter\n-- After: Filter each table, then join\n-- Benefit:",
+        "o": [
+            "Smaller intermediate results",
+            "Same performance",
+            "Larger results",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pushdown type with its level:",
+        "type": "match",
+        "left": [
+            "Join pushdown",
+            "Storage pushdown",
+            "Partition pushdown",
+            "Remote pushdown"
+        ],
+        "right": [
+            "Before join",
+            "To storage",
+            "To partition",
+            "To remote DB"
+        ]
+    },
+    {
+        "q": "Rearrange filter optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify filters",
+            "Check pushability",
+            "Push to source",
+            "Verify plan",
+            "Measure improvement"
+        ]
+    },
+    {
+        "q": "What is query cancellation?",
+        "type": "mcq",
+        "o": [
+            "Stopping a running query",
+            "Query completion",
+            "Query caching",
+            "Query logging"
+        ]
+    },
+    {
+        "q": "pg_cancel_backend() sends _____ signal.",
+        "type": "fill_blank",
+        "answers": [
+            "cancel"
+        ],
+        "other_options": [
+            "kill",
+            "stop",
+            "pause"
+        ]
+    },
+    {
+        "q": "Cancelled queries rollback their transaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of cancellation?",
+        "type": "mcq",
+        "c": "SELECT pg_cancel_backend(12345);",
+        "o": [
+            "Query with pid 12345 is cancelled",
+            "Query completes",
+            "Database stops",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match termination level with its action:",
+        "type": "match",
+        "left": [
+            "pg_cancel_backend",
+            "pg_terminate_backend",
+            "statement_timeout",
+            "idle_session_timeout"
+        ],
+        "right": [
+            "Cancel query",
+            "Kill connection",
+            "Auto cancel",
+            "Close idle"
+        ]
+    },
+    {
+        "q": "Rearrange cancellation workflow:",
+        "type": "rearrange",
+        "words": [
+            "Identify long query",
+            "Check if safe to cancel",
+            "Cancel or terminate",
+            "Verify effect",
+            "Investigate cause"
+        ]
+    },
+    {
+        "q": "What is query memory usage?",
+        "type": "mcq",
+        "o": [
+            "Amount of memory used by query execution",
+            "Storage usage",
+            "Network usage",
+            "CPU usage"
+        ]
+    },
+    {
+        "q": "Hash operations can _____ to disk if memory exceeded.",
+        "type": "fill_blank",
+        "answers": [
+            "spill"
+        ],
+        "other_options": [
+            "fail",
+            "retry",
+            "wait"
+        ]
+    },
+    {
+        "q": "Higher work_mem allows more in-memory operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of memory analysis?",
+        "type": "mcq",
+        "c": "-- HashAggregate: Batches: 16, Memory Usage: work_mem exceeded\n-- Issue:",
+        "o": [
+            "Multiple batches due to memory pressure",
+            "Fast single batch",
+            "No memory usage",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match memory setting with its scope:",
+        "type": "match",
+        "left": [
+            "work_mem",
+            "hash_mem_multiplier",
+            "maintenance_work_mem",
+            "temp_buffers"
+        ],
+        "right": [
+            "Per operation",
+            "Hash scaling",
+            "Maintenance ops",
+            "Temp tables"
+        ]
+    },
+    {
+        "q": "Rearrange memory tuning:",
+        "type": "rearrange",
+        "words": [
+            "Monitor memory usage",
+            "Identify spilling operations",
+            "Tune work_mem",
+            "Test with workload",
+            "Balance with connections"
+        ]
+    },
+    {
+        "q": "What is automatic plan tuning?",
+        "type": "mcq",
+        "o": [
+            "Database automatically selecting better plans",
+            "Manual plan tuning",
+            "Plan caching",
+            "Plan logging"
+        ]
+    },
+    {
+        "q": "SQL Server uses _____ tuning for regression fixes.",
+        "type": "fill_blank",
+        "answers": [
+            "automatic"
+        ],
+        "other_options": [
+            "manual",
+            "periodic",
+            "scheduled"
+        ]
+    },
+    {
+        "q": "Automatic tuning can force good plans automatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of auto tuning?",
+        "type": "mcq",
+        "c": "-- Query regressed: 5s to 30s\n-- System detects regression\n-- Action:",
+        "o": [
+            "Automatically force previous good plan",
+            "No action",
+            "Alert only",
+            "Drop query"
+        ]
+    },
+    {
+        "q": "Match auto tuning with its database:",
+        "type": "match",
+        "left": [
+            "Query Store",
+            "Automatic Plan Correction",
+            "Plan Baselines",
+            "Adaptive Optimizer"
+        ],
+        "right": [
+            "SQL Server",
+            "SQL Server",
+            "Oracle",
+            "Various"
+        ]
+    },
+    {
+        "q": "Rearrange auto tuning workflow:",
+        "type": "rearrange",
+        "words": [
+            "Detect regression",
+            "Find previous good plan",
+            "Verify improvement",
+            "Force plan",
+            "Monitor"
+        ]
+    },
+    {
+        "q": "What is performance schema?",
+        "type": "mcq",
+        "o": [
+            "MySQL instrumentation for performance monitoring",
+            "Database schema",
+            "Query schema",
+            "Index schema"
+        ]
+    },
+    {
+        "q": "Performance schema tracks _____ statistics.",
+        "type": "fill_blank",
+        "answers": [
+            "execution"
+        ],
+        "other_options": [
+            "storage",
+            "user",
+            "table"
+        ]
+    },
+    {
+        "q": "Performance schema has low overhead when properly configured.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of performance schema query?",
+        "type": "mcq",
+        "c": "SELECT * FROM performance_schema.events_statements_summary_by_digest\nORDER BY SUM_TIMER_WAIT DESC LIMIT 10;",
+        "o": [
+            "Top 10 slowest query patterns",
+            "Query results",
+            "Table data",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match performance schema table with its data:",
+        "type": "match",
+        "left": [
+            "events_statements",
+            "events_waits",
+            "file_summary",
+            "table_io_waits"
+        ],
+        "right": [
+            "Query stats",
+            "Wait events",
+            "File I/O",
+            "Table I/O"
+        ]
+    },
+    {
+        "q": "Rearrange performance analysis:",
+        "type": "rearrange",
+        "words": [
+            "Enable instruments",
+            "Run workload",
+            "Query performance schema",
+            "Identify issues",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is sys schema in MySQL?",
+        "type": "mcq",
+        "o": [
+            "Simplified views on performance_schema data",
+            "System tables",
+            "User tables",
+            "Temporary tables"
+        ]
+    },
+    {
+        "q": "sys schema makes performance data more _____.",
+        "type": "fill_blank",
+        "answers": [
+            "accessible"
+        ],
+        "other_options": [
+            "complex",
+            "hidden",
+            "encrypted"
+        ]
+    },
+    {
+        "q": "sys schema provides human-readable formatting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of sys query?",
+        "type": "mcq",
+        "c": "SELECT * FROM sys.statement_analysis LIMIT 10;",
+        "o": [
+            "Top queries with execution metrics in readable format",
+            "Raw binary data",
+            "Error",
+            "Schema definition"
+        ]
+    },
+    {
+        "q": "Match sys view with its purpose:",
+        "type": "match",
+        "left": [
+            "statement_analysis",
+            "host_summary",
+            "user_summary",
+            "schema_table_statistics"
+        ],
+        "right": [
+            "Query analysis",
+            "Per-host stats",
+            "Per-user stats",
+            "Table I/O stats"
+        ]
+    },
+    {
+        "q": "Rearrange sys usage:",
+        "type": "rearrange",
+        "words": [
+            "Identify slow queries",
+            "Check wait analysis",
+            "Review host stats",
+            "Find table issues",
+            "Optimize"
+        ]
+    },
+    {
+        "q": "What is query fingerprinting?",
+        "type": "mcq",
+        "o": [
+            "Normalizing queries to group similar patterns",
+            "Query encryption",
+            "Query signing",
+            "Query validation"
+        ]
+    },
+    {
+        "q": "Fingerprinting replaces _____ with placeholders.",
+        "type": "fill_blank",
+        "answers": [
+            "literals"
+        ],
+        "other_options": [
+            "tables",
+            "columns",
+            "functions"
+        ]
+    },
+    {
+        "q": "Fingerprints help aggregate statistics for similar queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of fingerprinting?",
+        "type": "mcq",
+        "c": "-- Query: SELECT * FROM users WHERE id = 123\n-- Fingerprint:",
+        "o": [
+            "SELECT * FROM users WHERE id = ?",
+            "Same query",
+            "Error",
+            "Encrypted query"
+        ]
+    },
+    {
+        "q": "Match fingerprint use with its benefit:",
+        "type": "match",
+        "left": [
+            "Grouping",
+            "Aggregation",
+            "Comparison",
+            "Caching"
+        ],
+        "right": [
+            "Similar queries",
+            "Combined stats",
+            "Before/after",
+            "Plan reuse"
+        ]
+    },
+    {
+        "q": "Rearrange fingerprint analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect queries",
+            "Normalize to fingerprints",
+            "Aggregate by fingerprint",
+            "Rank by resource",
+            "Optimize top patterns"
+        ]
+    }
+]

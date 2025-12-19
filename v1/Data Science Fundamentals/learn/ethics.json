@@ -1,0 +1,111 @@
+{
+    "id": "learn_ethics",
+    "topicId": "ethics",
+    "topicTitle": "Data Ethics and Privacy",
+    "description": "Understand data privacy laws, ethical considerations, bias in AI, transparency, and accountability in data science",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "ethics_1",
+            "type": "content",
+            "title": "Welcome to Data Ethics",
+            "content": "# Data Ethics and Privacy ⚖️\n\nWith great data comes great responsibility!\n\n## What you'll learn:\n- **Data Privacy Laws** - GDPR, CCPA, HIPAA\n- **Ethical Considerations** - Do no harm principles\n- **Bias in AI** - Identifying and mitigating bias\n- **Transparency** - Explainable AI\n- **Accountability** - Who's responsible?\n\n> 💡 **Key Insight:** Ethics isn't just compliance—it's about building trust!\n\n## Why This Matters\n\n| Unethical Practice | Consequence |\n|-------------------|-------------|\n| Privacy violations | Fines up to €20M+ |\n| Biased algorithms | Discrimination lawsuits |\n| Lack of transparency | Loss of trust |\n| Data breaches | Reputation damage |\n\n## Real-World Impact\n- 🏛️ Governments regulating AI use\n- 📰 Public scrutiny of tech companies\n- 💼 Companies hiring ethics officers\n- 🎓 Ethics now in DS curriculum"
+        },
+        {
+            "id": "ethics_2",
+            "type": "content",
+            "title": "Data Privacy Laws",
+            "content": "# Data Privacy Laws 📜\n\nKey regulations every Data Scientist should know.\n\n## GDPR (EU)\n\nGeneral Data Protection Regulation:\n\n### Key Principles\n- **Consent** - Clear permission required\n- **Purpose Limitation** - Use only for stated purpose\n- **Data Minimization** - Collect only what's needed\n- **Right to Erasure** - Users can request deletion\n\n### Fines\n- Up to €20 million or 4% of global revenue\n\n## CCPA (California)\n\nCalifornia Consumer Privacy Act:\n- Right to know what data is collected\n- Right to delete personal information\n- Right to opt-out of data sales\n\n## HIPAA (Healthcare)\n\nHealth Insurance Portability Act:\n- Protected Health Information (PHI)\n- Strict access controls\n- Audit requirements\n\n## Best Practices\n\n```python\n# Always anonymize before analysis\ndef anonymize(df):\n    df = df.drop(['name', 'email', 'ssn'], axis=1)\n    df['id'] = hash_function(df['id'])\n    return df\n```"
+        },
+        {
+            "id": "ethics_3",
+            "type": "content",
+            "title": "Ethical Considerations",
+            "content": "# Ethical Considerations 🤔\n\nPrinciples for responsible data science.\n\n## Core Ethical Principles\n\n### 1. Beneficence\n- Do good with data\n- Create positive impact\n- Consider societal benefits\n\n### 2. Non-maleficence\n- Do no harm\n- Prevent misuse\n- Consider unintended consequences\n\n### 3. Autonomy\n- Respect user choices\n- Provide opt-out options\n- Enable informed consent\n\n### 4. Justice\n- Fair treatment for all\n- Equitable access\n- No discrimination\n\n## Ethical Checklist\n\n- [ ] Is consent clearly obtained?\n- [ ] Could this harm any group?\n- [ ] Are we transparent about data use?\n- [ ] Have we considered edge cases?\n- [ ] Would we be proud if this was public?\n\n## The Newspaper Test\n\n> 📰 Would you be comfortable if your decision was on the front page of a newspaper?"
+        },
+        {
+            "id": "ethics_quiz_1",
+            "type": "quiz",
+            "title": "Privacy Check",
+            "content": "Test your knowledge of data privacy!",
+            "quizQuestion": "What is the maximum GDPR fine for serious violations?",
+            "quizOptions": [
+                "€1 million",
+                "€10 million",
+                "€20 million or 4% of global revenue",
+                "€50 million"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ethics_4",
+            "type": "content",
+            "title": "Bias in AI",
+            "content": "# Bias in AI 🎯\n\nUnderstanding and mitigating algorithmic bias.\n\n## Types of Bias\n\n### Data Bias\n- **Selection bias** - Non-representative samples\n- **Historical bias** - Past discrimination in data\n- **Measurement bias** - Inconsistent data collection\n\n### Algorithm Bias\n- **Confirmation bias** - Reinforcing existing patterns\n- **Automation bias** - Over-trusting algorithms\n\n## Real Examples\n\n| Case | Bias Type | Impact |\n|------|-----------|--------|\n| Hiring tools | Gender bias | Fewer women hired |\n| Credit scoring | Racial bias | Loan discrimination |\n| Facial recognition | Demographic bias | Higher error for minorities |\n| Healthcare AI | Historical bias | Unequal treatment |\n\n## Detection Methods\n\n```python\n# Check demographic parity\ndef check_bias(predictions, protected_attr):\n    groups = predictions.groupby(protected_attr)\n    rates = groups['positive'].mean()\n    disparity = rates.max() / rates.min()\n    return disparity < 1.2  # 80% rule\n```\n\n## Mitigation Strategies\n- Diverse training data\n- Fair sampling techniques\n- Regular bias audits\n- Diverse teams"
+        },
+        {
+            "id": "ethics_5",
+            "type": "content",
+            "title": "Fairness Metrics",
+            "content": "# Fairness Metrics 📊\n\nQuantifying fairness in ML models.\n\n## Key Fairness Metrics\n\n### Demographic Parity\n- Equal positive rates across groups\n- P(Y=1|A=0) = P(Y=1|A=1)\n\n### Equalized Odds\n- Equal TPR and FPR across groups\n- Same accuracy for all groups\n\n### Individual Fairness\n- Similar individuals treated similarly\n- Distance-based approach\n\n## Implementation\n\n```python\nfrom aif360.metrics import BinaryLabelDatasetMetric\n\n# Check disparate impact\nmetric = BinaryLabelDatasetMetric(\n    dataset,\n    privileged_groups=[{'gender': 1}],\n    unprivileged_groups=[{'gender': 0}]\n)\n\nprint(f\"Disparate Impact: {metric.disparate_impact()}\")\nprint(f\"Statistical Parity: {metric.statistical_parity_difference()}\")\n```\n\n## Fairness Trade-offs\n\n| Approach | Pro | Con |\n|----------|-----|-----|\n| Demographic parity | Simple | May lower accuracy |\n| Equalized odds | More nuanced | Hard to achieve |\n| Calibration | Probability accurate | May not ensure equality |\n\n> ⚠️ **Note:** Perfect fairness across all metrics is mathematically impossible!"
+        },
+        {
+            "id": "ethics_6",
+            "type": "content",
+            "title": "Transparency",
+            "content": "# Transparency 🔍\n\nMaking AI decisions understandable.\n\n## Why Transparency Matters\n- 🤝 Builds trust with users\n- 📋 Required by regulations (GDPR Article 22)\n- 🔧 Helps debug and improve models\n- ⚖️ Supports legal accountability\n\n## Explainability Techniques\n\n### Model-Agnostic Methods\n\n```python\nimport shap\n\n# SHAP values for interpretation\nexplainer = shap.Explainer(model)\nshap_values = explainer(X_test)\n\n# Visualize feature importance\nshap.summary_plot(shap_values, X_test)\n```\n\n### LIME (Local Interpretable Explanations)\n\n```python\nfrom lime import lime_tabular\n\nexplainer = lime_tabular.LimeTabularExplainer(X_train)\nexplanation = explainer.explain_instance(X_test[0], model.predict_proba)\n```\n\n## Transparency Levels\n\n| Level | Description | Example |\n|-------|-------------|----------|\n| Algorithm | How model works | Decision tree rules |\n| Data | What data is used | Feature list |\n| Decision | Why this output | SHAP values |\n| System | Overall process | Documentation |\n\n## Best Practices\n- Provide plain-language explanations\n- Offer recourse for decisions\n- Document model limitations"
+        },
+        {
+            "id": "ethics_quiz_2",
+            "type": "quiz",
+            "title": "Bias Quiz",
+            "content": "Test your understanding of AI bias!",
+            "quizQuestion": "What type of bias occurs when training data reflects past discrimination?",
+            "quizOptions": [
+                "Selection bias",
+                "Historical bias",
+                "Confirmation bias",
+                "Automation bias"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ethics_7",
+            "type": "content",
+            "title": "Accountability",
+            "content": "# Accountability 📋\n\nWho is responsible when AI goes wrong?\n\n## Accountability Framework\n\n### Levels of Responsibility\n\n| Role | Responsibility |\n|------|---------------|\n| Data Scientists | Model accuracy and fairness |\n| Managers | Oversight and governance |\n| Organizations | Policy and compliance |\n| Regulators | Standards and enforcement |\n\n## Accountability Practices\n\n### Documentation\n```markdown\n## Model Card\n- Model purpose and limitations\n- Training data description\n- Performance metrics by group\n- Intended use cases\n- Known issues and risks\n```\n\n### Audit Trail\n- Version control for models\n- Logging of predictions\n- Decision rationale capture\n\n## When Things Go Wrong\n\n### Response Protocol\n1. Identify the issue immediately\n2. Assess impact and affected parties\n3. Communicate transparently\n4. Implement fixes\n5. Document lessons learned\n\n> 💡 **Pro Tip:** Create an AI Ethics Board to review high-impact models before deployment!"
+        },
+        {
+            "id": "ethics_8",
+            "type": "content",
+            "title": "Data Governance",
+            "content": "# Data Governance 🏛️\n\nStructures and policies for ethical data use.\n\n## Governance Framework\n\n### Data Classification\n| Level | Description | Examples |\n|-------|-------------|----------|\n| Public | No restrictions | Marketing data |\n| Internal | Company only | Sales figures |\n| Confidential | Limited access | Customer PII |\n| Restricted | Strict controls | Health records |\n\n### Access Control\n```python\n# Role-based access control\nPERMISSIONS = {\n    'analyst': ['read_aggregated'],\n    'data_scientist': ['read_anonymized'],\n    'admin': ['read_all', 'write']\n}\n\ndef check_access(user_role, action):\n    return action in PERMISSIONS.get(user_role, [])\n```\n\n## Privacy by Design\n\n### Principles\n- Proactive, not reactive\n- Privacy as default\n- Security embedded\n- Full lifecycle protection\n\n### Techniques\n- Data minimization\n- Anonymization/pseudonymization\n- Encryption at rest and in transit\n- Secure deletion"
+        },
+        {
+            "id": "ethics_9",
+            "type": "content",
+            "title": "Ethical AI Framework",
+            "content": "# Building Ethical AI 🌟\n\nA practical framework for your projects.\n\n## Pre-Development\n- [ ] Define ethical objectives\n- [ ] Identify stakeholder impacts\n- [ ] Assess potential harms\n- [ ] Get diverse input on design\n\n## During Development\n- [ ] Audit training data for bias\n- [ ] Test on diverse populations\n- [ ] Build in explainability\n- [ ] Document decisions\n\n## Post-Deployment\n- [ ] Monitor for bias drift\n- [ ] Collect user feedback\n- [ ] Enable appeals process\n- [ ] Regular ethical audits\n\n## Ethics Review Checklist\n\n```markdown\n## Ethics Assessment\n\n### Data\n- Source of data: [trusted/verified]\n- Consent obtained: [yes/no]\n- PII handled properly: [yes/no]\n\n### Algorithm\n- Bias tested: [yes/no]\n- Explainable: [yes/no]\n- Audited: [yes/no]\n\n### Impact\n- Affected groups: [list]\n- Potential harms: [list]\n- Mitigations: [list]\n```"
+        },
+        {
+            "id": "ethics_quiz_3",
+            "type": "quiz",
+            "title": "Ethics Quiz",
+            "content": "Final ethics check!",
+            "quizQuestion": "What is the 'newspaper test' in data ethics?",
+            "quizOptions": [
+                "Publishing your model in a journal",
+                "Checking if your decision would be acceptable on a newspaper front page",
+                "Using news data for training",
+                "Testing model on newspaper articles"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ethics_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Data Ethics and Privacy!\n\n## Key Takeaways\n\n### Data Privacy Laws\n- ✅ GDPR, CCPA, HIPAA fundamentals\n- ✅ User rights and consent\n- ✅ Compliance requirements\n\n### Ethical Considerations\n- ✅ Do good, avoid harm\n- ✅ Respect autonomy\n- ✅ Ensure justice and fairness\n\n### Bias in AI\n- ✅ Identify bias types\n- ✅ Use fairness metrics\n- ✅ Implement mitigation strategies\n\n### Transparency\n- ✅ Explainable AI techniques\n- ✅ SHAP, LIME for interpretation\n- ✅ Plain-language explanations\n\n### Accountability\n- ✅ Clear responsibility chains\n- ✅ Documentation (Model Cards)\n- ✅ Audit trails\n\n## Remember\n\n> ⚖️ \"With great data comes great responsibility.\"\n\n- Ethics is everyone's job\n- Build trust through transparency\n- Bias is a feature, not a bug—address it!\n\nBuild responsibly! 🌟"
+        }
+    ]
+}
