@@ -1,0 +1,99 @@
+{
+    "id": "learn_nlp",
+    "topicId": "nlp",
+    "topicTitle": "Natural Language Processing",
+    "description": "Master NLP fundamentals including text preprocessing, vectorization, sentiment analysis, and language models",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "nlp_1",
+            "type": "content",
+            "title": "Welcome to NLP",
+            "content": "# Natural Language Processing 📝\n\nTeaching machines to understand language!\n\n## What you'll learn:\n- **Text Preprocessing** - Cleaning text data\n- **Vectorization** - Text to numbers\n- **Sentiment Analysis** - Understanding opinions\n- **Language Models** - Understanding context\n\n> 💡 **Key Insight:** NLP bridges human language and machine understanding!\n\n## Applications\n\n| Application | Example |\n|-------------|----------|\n| Chatbots | Customer service |\n| Translation | Google Translate |\n| Sentiment | Review analysis |\n| Search | Google, Bing |\n| Summarization | News digests |\n\n## NLP Pipeline\n\n```\nRaw Text → Preprocess → Vectorize → Model → Output\n```"
+        },
+        {
+            "id": "nlp_2",
+            "type": "content",
+            "title": "Text Preprocessing",
+            "content": "# Text Preprocessing 🧹\n\nCleaning text for analysis.\n\n## Basic Cleaning\n\n```python\nimport re\n\ntext = \"Hello! Visit https://example.com TODAY!!!\"\n\n# Lowercase\ntext = text.lower()\n\n# Remove URLs\ntext = re.sub(r'http\\S+', '', text)\n\n# Remove punctuation\ntext = re.sub(r'[^\\w\\s]', '', text)\n\n# Remove numbers\ntext = re.sub(r'\\d+', '', text)\n```\n\n## Tokenization\n\n```python\nfrom nltk.tokenize import word_tokenize\n\ntokens = word_tokenize(\"Hello world!\")\n# ['Hello', 'world', '!']\n```\n\n## Stop Words\n\n```python\nfrom nltk.corpus import stopwords\n\nstop_words = set(stopwords.words('english'))\nfiltered = [w for w in tokens if w.lower() not in stop_words]\n```\n\n## Stemming vs Lemmatization\n\n```python\nfrom nltk.stem import PorterStemmer, WordNetLemmatizer\n\nstemmer = PorterStemmer()\nstemmer.stem('running')  # 'run'\n\nlemmatizer = WordNetLemmatizer()\nlemmatizer.lemmatize('running', pos='v')  # 'run'\n```"
+        },
+        {
+            "id": "nlp_3",
+            "type": "content",
+            "title": "Text Vectorization",
+            "content": "# Text Vectorization 🔢\n\nConverting text to numbers.\n\n## Bag of Words\n\n```python\nfrom sklearn.feature_extraction.text import CountVectorizer\n\ncorpus = ['I love NLP', 'NLP is great', 'I love AI']\n\nvectorizer = CountVectorizer()\nX = vectorizer.fit_transform(corpus)\n\nprint(vectorizer.get_feature_names_out())\n# ['ai', 'great', 'is', 'love', 'nlp']\n```\n\n## TF-IDF\n\n```python\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\ntfidf = TfidfVectorizer()\nX = tfidf.fit_transform(corpus)\n\n# Higher weight for rare, important words\n```\n\n## N-grams\n\n```python\nvectorizer = CountVectorizer(ngram_range=(1, 2))\n# Captures word pairs like 'machine learning'\n```\n\n## Comparison\n\n| Method | Pros | Cons |\n|--------|------|------|\n| BoW | Simple | Ignores order |\n| TF-IDF | Weights importance | Still ignores order |\n| N-grams | Captures phrases | High dimensionality |"
+        },
+        {
+            "id": "nlp_quiz_1",
+            "type": "quiz",
+            "title": "Preprocessing Check",
+            "content": "Test your understanding!",
+            "quizQuestion": "What does TF-IDF give higher weight to?",
+            "quizOptions": [
+                "Common words like 'the'",
+                "Rare but important words",
+                "The first word in each document",
+                "Stop words"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "nlp_4",
+            "type": "content",
+            "title": "Word Embeddings",
+            "content": "# Word Embeddings 📐\n\nDense vector representations.\n\n## Concept\n\n```\nWord → Dense vector (e.g., 300 dimensions)\n\n'king' - 'man' + 'woman' ≈ 'queen'\n```\n\n## Using Pre-trained Embeddings\n\n```python\nimport gensim.downloader as api\n\n# Load Word2Vec\nmodel = api.load('word2vec-google-news-300')\n\n# Get vector\nvector = model['king']  # 300-dim vector\n\n# Find similar words\nmodel.most_similar('king')\n# [('kings', 0.71), ('queen', 0.65), ...]\n```\n\n## GloVe\n\n```python\n# Pre-trained on Wikipedia\n# Available in spaCy, gensim\n```\n\n## Embedding in Neural Networks\n\n```python\nfrom tensorflow.keras.layers import Embedding\n\nembedding_layer = Embedding(\n    input_dim=vocab_size,\n    output_dim=100,\n    input_length=max_length\n)\n```\n\n## Advantages\n\n- ✅ Captures semantics\n- ✅ Similar words → similar vectors\n- ✅ Transfer learning from large corpora"
+        },
+        {
+            "id": "nlp_5",
+            "type": "content",
+            "title": "Sentiment Analysis",
+            "content": "# Sentiment Analysis 😊😐😠\n\nUnderstanding opinions.\n\n## Basic Approach\n\n```python\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.linear_model import LogisticRegression\n\n# Vectorize\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(reviews)\n\n# Train classifier\nmodel = LogisticRegression()\nmodel.fit(X, labels)  # positive/negative\n\n# Predict\nnew_review = [\"This product is amazing!\"]\nX_new = vectorizer.transform(new_review)\nsentiment = model.predict(X_new)\n```\n\n## Using VADER (No Training)\n\n```python\nfrom nltk.sentiment import SentimentIntensityAnalyzer\n\nsia = SentimentIntensityAnalyzer()\nscores = sia.polarity_scores(\"This is great!\")\n# {'neg': 0.0, 'neu': 0.406, 'pos': 0.594, 'compound': 0.6588}\n```\n\n## Deep Learning\n\n```python\nfrom transformers import pipeline\n\nsentiment = pipeline('sentiment-analysis')\nresult = sentiment(\"I love this!\")\n# [{'label': 'POSITIVE', 'score': 0.999}]\n```"
+        },
+        {
+            "id": "nlp_6",
+            "type": "content",
+            "title": "Named Entity Recognition",
+            "content": "# Named Entity Recognition 🏷️\n\nIdentifying entities in text.\n\n## Using spaCy\n\n```python\nimport spacy\n\nnlp = spacy.load('en_core_web_sm')\ndoc = nlp(\"Apple is looking to buy UK startup for $1B\")\n\nfor ent in doc.ents:\n    print(f\"{ent.text}: {ent.label_}\")\n\n# Apple: ORG\n# UK: GPE\n# $1B: MONEY\n```\n\n## Common Entity Types\n\n| Label | Description |\n|-------|------------|\n| PERSON | People names |\n| ORG | Organizations |\n| GPE | Countries, cities |\n| DATE | Dates |\n| MONEY | Monetary values |\n| PRODUCT | Products |\n\n## Using Transformers\n\n```python\nfrom transformers import pipeline\n\nner = pipeline('ner', grouped_entities=True)\nresult = ner(\"Bill Gates founded Microsoft in Seattle\")\n```\n\n## Applications\n\n- 📰 News categorization\n- 📊 Information extraction\n- 🔍 Knowledge graphs"
+        },
+        {
+            "id": "nlp_quiz_2",
+            "type": "quiz",
+            "title": "NER Quiz",
+            "content": "Test your NER knowledge!",
+            "quizQuestion": "What entity type would 'Microsoft' be labeled as?",
+            "quizOptions": [
+                "PERSON",
+                "GPE",
+                "ORG",
+                "PRODUCT"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "nlp_7",
+            "type": "content",
+            "title": "Transformers and BERT",
+            "content": "# Transformers and BERT 🤖\n\nState-of-the-art NLP.\n\n## What is BERT?\n\n- Bidirectional Encoder from Transformers\n- Pre-trained on massive text\n- Understands context\n\n## Using Hugging Face\n\n```python\nfrom transformers import pipeline\n\n# Classification\nclassifier = pipeline('text-classification')\nresult = classifier(\"This movie was amazing!\")\n\n# Question Answering\nqa = pipeline('question-answering')\nanswer = qa(\n    question=\"What is Python?\",\n    context=\"Python is a programming language.\"\n)\n\n# Summarization\nsummarizer = pipeline('summarization')\nsummary = summarizer(long_text, max_length=50)\n```\n\n## Fine-tuning\n\n```python\nfrom transformers import AutoModelForSequenceClassification\n\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    'bert-base-uncased', num_labels=2\n)\n# Then train on your data\n```\n\n## Popular Models\n\n| Model | Best For |\n|-------|----------|\n| BERT | Classification |\n| GPT | Text generation |\n| T5 | Multi-task |"
+        },
+        {
+            "id": "nlp_quiz_3",
+            "type": "quiz",
+            "title": "Final Quiz",
+            "content": "Test your overall understanding!",
+            "quizQuestion": "Which library provides easy access to pre-trained transformers?",
+            "quizOptions": [
+                "scikit-learn",
+                "NLTK",
+                "Hugging Face Transformers",
+                "spaCy"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "nlp_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered NLP Fundamentals!\n\n## Key Takeaways\n\n### Preprocessing\n- ✅ Tokenization, stop words, stemming\n\n### Vectorization\n- ✅ Bag of Words, TF-IDF\n- ✅ Word embeddings (Word2Vec, GloVe)\n\n### Tasks\n- ✅ Sentiment Analysis\n- ✅ Named Entity Recognition\n- ✅ Text Classification\n\n### Modern NLP\n- ✅ Transformers (BERT, GPT)\n- ✅ Hugging Face for easy access\n\n## Quick Reference\n\n```python\n# Traditional\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\n# Modern\nfrom transformers import pipeline\nclassifier = pipeline('text-classification')\n```\n\n## Remember\n\n> 📝 \"NLP is about bridging humans and machines.\"\n\n## Next Steps\n- 🚀 Learn **Model Deployment**\n- 🧠 Explore **Deep Learning for NLP**\n\nKeep processing! 📝"
+        }
+    ]
+}

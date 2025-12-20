@@ -1,0 +1,105 @@
+{
+    "id": "learn_basic",
+    "topicId": "basic",
+    "topicTitle": "Machine Learning Basics",
+    "description": "Master foundational ML concepts including types of learning, algorithms overview, and the ML workflow",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "basic_1",
+            "type": "content",
+            "title": "Welcome to Machine Learning",
+            "content": "# Machine Learning Basics 🤖\n\nTeaching computers to learn from data!\n\n## What you'll learn:\n- **Types of ML** - Supervised, unsupervised, reinforcement\n- **Algorithm Overview** - Key algorithms\n- **ML Workflow** - End-to-end process\n- **Key Concepts** - Bias, variance, overfitting\n\n> 💡 **Key Insight:** ML is pattern recognition at scale!\n\n## What is Machine Learning?\n\n| Traditional Programming | Machine Learning |\n|------------------------|-------------------|\n| Rules + Data = Output | Data + Output = Rules |\n| Explicit instructions | Learn from examples |\n| Fixed behavior | Adaptive behavior |\n\n## Applications\n- 🔍 Search engines\n- 🛒 Recommendation systems\n- 📧 Spam detection\n- 🗣️ Voice assistants\n- 🚗 Self-driving cars"
+        },
+        {
+            "id": "basic_2",
+            "type": "content",
+            "title": "Types of Machine Learning",
+            "content": "# Types of Machine Learning 📚\n\nThree main learning paradigms.\n\n## Supervised Learning\n\nLearn from labeled examples.\n\n```\nInput + Label → Learn mapping\n\n📧 Email + Spam/Not Spam → Spam filter\n🏠 Features + Price → Price predictor\n```\n\n## Unsupervised Learning\n\nFind patterns without labels.\n\n```\nInput only → Discover structure\n\n👥 Customer data → Customer segments\n📊 Transactions → Fraud patterns\n```\n\n## Reinforcement Learning\n\nLearn through trial and error.\n\n```\nActions + Rewards → Optimal behavior\n\n🎮 Game moves → Game strategy\n🤖 Robot actions → Walking ability\n```\n\n## Comparison\n\n| Type | Labels | Goal |\n|------|--------|------|\n| Supervised | Yes | Predict |\n| Unsupervised | No | Discover |\n| Reinforcement | Rewards | Optimize |"
+        },
+        {
+            "id": "basic_3",
+            "type": "content",
+            "title": "Supervised Learning Tasks",
+            "content": "# Supervised Learning Tasks 🎯\n\nClassification vs Regression.\n\n## Classification\n\nPredict discrete categories.\n\n```python\n# Binary Classification\nSpam / Not Spam\nFraud / Normal\n\n# Multi-class Classification\nCat / Dog / Bird\nLow / Medium / High Priority\n```\n\n## Regression\n\nPredict continuous values.\n\n```python\n# Examples\nHouse price: $350,000\nTemperature: 72.5°F\nStock price: $142.50\n```\n\n## Key Algorithms\n\n| Algorithm | Classification | Regression |\n|-----------|----------------|------------|\n| Linear Models | Logistic Regression | Linear Regression |\n| Trees | Decision Tree | Decision Tree |\n| Ensemble | Random Forest | Random Forest |\n| SVM | SVC | SVR |\n| Neural Networks | ✅ | ✅ |\n\n## Choosing the Right Task\n\n```\nIs the target categorical? → Classification\nIs the target continuous? → Regression\n```"
+        },
+        {
+            "id": "basic_quiz_1",
+            "type": "quiz",
+            "title": "Learning Type Check",
+            "content": "Test your understanding!",
+            "quizQuestion": "Customer segmentation (grouping similar customers) is an example of:",
+            "quizOptions": [
+                "Supervised learning",
+                "Unsupervised learning",
+                "Reinforcement learning",
+                "Deep learning"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "basic_4",
+            "type": "content",
+            "title": "The ML Workflow",
+            "content": "# The ML Workflow 🔄\n\nEnd-to-end machine learning process.\n\n## Pipeline Steps\n\n```\n1. Problem Definition\n        ↓\n2. Data Collection\n        ↓\n3. Data Preprocessing\n        ↓\n4. Feature Engineering\n        ↓\n5. Model Selection\n        ↓\n6. Training\n        ↓\n7. Evaluation\n        ↓\n8. Tuning\n        ↓\n9. Deployment\n        ↓\n10. Monitoring\n```\n\n## Time Distribution\n\n| Phase | Time |\n|-------|------|\n| Data preparation | 60-70% |\n| Model building | 20-30% |\n| Deployment | 10-20% |\n\n## Key Principle\n\n> 💡 \"Better data beats better algorithms.\"\n\nMost improvements come from:\n- Better features\n- More/better data\n- Problem understanding"
+        },
+        {
+            "id": "basic_5",
+            "type": "content",
+            "title": "Key Concepts",
+            "content": "# Key Concepts 🧠\n\nFoundational ML ideas.\n\n## Features and Labels\n\n```python\n# Features (X) - inputs\nX = [[1500, 3, 2],   # sqft, beds, baths\n     [2000, 4, 2]]\n\n# Labels (y) - outputs\ny = [300000, 400000]  # prices\n```\n\n## Training and Test Sets\n\n```python\nfrom sklearn.model_selection import train_test_split\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n```\n\n## Overfitting vs Underfitting\n\n| Overfitting | Underfitting |\n|-------------|---------------|\n| Memorizes training data | Too simple |\n| Poor on new data | Poor on all data |\n| High variance | High bias |\n| Complex model | Simple model |\n\n## The Bias-Variance Tradeoff\n\n```\nTotal Error = Bias² + Variance + Noise\n\nGoal: Find the sweet spot!\n```"
+        },
+        {
+            "id": "basic_6",
+            "type": "content",
+            "title": "Your First ML Model",
+            "content": "# Your First Model 🚀\n\nScikit-learn in action.\n\n```python\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.metrics import accuracy_score\n\n# 1. Load data\ndf = pd.read_csv('data.csv')\nX = df.drop('target', axis=1)\ny = df['target']\n\n# 2. Split\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# 3. Create model\nmodel = RandomForestClassifier(n_estimators=100)\n\n# 4. Train\nmodel.fit(X_train, y_train)\n\n# 5. Predict\ny_pred = model.predict(X_test)\n\n# 6. Evaluate\naccuracy = accuracy_score(y_test, y_pred)\nprint(f'Accuracy: {accuracy:.2%}')\n```\n\n> That's machine learning in 6 steps!"
+        },
+        {
+            "id": "basic_quiz_2",
+            "type": "quiz",
+            "title": "Concept Check",
+            "content": "Test your concept understanding!",
+            "quizQuestion": "When a model performs well on training data but poorly on test data, this is called:",
+            "quizOptions": [
+                "Underfitting",
+                "Overfitting",
+                "Bias",
+                "Good generalization"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "basic_7",
+            "type": "content",
+            "title": "Common Algorithms Overview",
+            "content": "# Common Algorithms 📋\n\nQuick overview of key algorithms.\n\n## Linear Models\n\n- **Linear Regression:** Predict continuous values\n- **Logistic Regression:** Binary classification\n- Simple, interpretable, fast\n\n## Tree-Based\n\n- **Decision Tree:** If-then rules\n- **Random Forest:** Ensemble of trees\n- **Gradient Boosting:** Sequential improvement\n\n## Support Vector Machines\n\n- Find optimal decision boundary\n- Good for high-dimensional data\n- Kernel trick for non-linear\n\n## K-Nearest Neighbors\n\n- Classify based on similar examples\n- Simple, no training phase\n- Distance-based\n\n## Algorithm Selection Guide\n\n| Scenario | Consider |\n|----------|----------|\n| Start simple | Logistic/Linear Regression |\n| Need accuracy | Random Forest, XGBoost |\n| Need interpretability | Decision Tree |\n| Few features | SVM |\n| Baseline | KNN |"
+        },
+        {
+            "id": "basic_8",
+            "type": "content",
+            "title": "Model Evaluation Basics",
+            "content": "# Model Evaluation 📊\n\nMeasuring model performance.\n\n## Classification Metrics\n\n```python\nfrom sklearn.metrics import (accuracy_score, \n                              precision_score, \n                              recall_score, \n                              f1_score)\n\naccuracy = accuracy_score(y_test, y_pred)\nprecision = precision_score(y_test, y_pred)\nrecall = recall_score(y_test, y_pred)\nf1 = f1_score(y_test, y_pred)\n```\n\n## Regression Metrics\n\n```python\nfrom sklearn.metrics import (mean_absolute_error,\n                              mean_squared_error,\n                              r2_score)\n\nmae = mean_absolute_error(y_test, y_pred)\nmse = mean_squared_error(y_test, y_pred)\nrmse = mse ** 0.5\nr2 = r2_score(y_test, y_pred)\n```\n\n## Metric Selection\n\n| Task | Key Metric |\n|------|------------|\n| Balanced classification | Accuracy |\n| Imbalanced classification | F1, AUC |\n| Regression | RMSE, MAE |\n| Business | Custom metrics |"
+        },
+        {
+            "id": "basic_quiz_3",
+            "type": "quiz",
+            "title": "Final Quiz",
+            "content": "Test your overall understanding!",
+            "quizQuestion": "Which metric is most appropriate for imbalanced classification?",
+            "quizOptions": [
+                "Accuracy",
+                "Mean Absolute Error",
+                "F1 Score",
+                "R-squared"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "basic_9",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered ML Basics!\n\n## Key Takeaways\n\n### Types of Learning\n- ✅ Supervised: Labeled data\n- ✅ Unsupervised: No labels\n- ✅ Reinforcement: Rewards\n\n### Tasks\n- ✅ Classification: Categories\n- ✅ Regression: Continuous values\n\n### Key Concepts\n- ✅ Features vs Labels\n- ✅ Train/Test split\n- ✅ Overfitting vs Underfitting\n- ✅ Bias-Variance tradeoff\n\n### Workflow\n- ✅ Data → Preprocess → Train → Evaluate → Deploy\n\n## ML Template\n\n```python\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\n\nX_train, X_test, y_train, y_test = train_test_split(X, y)\nmodel = RandomForestClassifier()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\n```\n\n## Remember\n\n> 🤖 \"ML is about finding patterns in data.\"\n\n## Next Steps\n- 📊 Learn **Data Preprocessing**\n- 🎯 Master **Supervised Learning**\n\nKeep learning! 🤖"
+        }
+    ]
+}

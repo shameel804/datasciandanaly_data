@@ -1,0 +1,105 @@
+{
+    "id": "learn_deploy",
+    "topicId": "deploy",
+    "topicTitle": "Model Deployment",
+    "description": "Master model deployment including saving models, APIs, containerization, and MLOps best practices",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "deploy_1",
+            "type": "content",
+            "title": "Welcome to Model Deployment",
+            "content": "# Model Deployment 🚀\n\nTaking models from notebooks to production!\n\n## What you'll learn:\n- **Saving Models** - Serialization\n- **APIs** - Serving predictions\n- **Containerization** - Docker basics\n- **MLOps** - Continuous delivery for ML\n\n> 💡 **Key Insight:** A model has no value until it's deployed!\n\n## The ML Lifecycle\n\n```\nDevelop → Train → Evaluate → Deploy → Monitor\n                              ↑\n                         You are here!\n```\n\n## Deployment Options\n\n| Option | Use Case |\n|--------|----------|\n| Batch | Weekly reports |\n| Real-time API | User requests |\n| Edge | Mobile, IoT |\n| Embedded | In-database |"
+        },
+        {
+            "id": "deploy_2",
+            "type": "content",
+            "title": "Saving and Loading Models",
+            "content": "# Saving Models 💾\n\nPersisting trained models.\n\n## Scikit-learn (joblib)\n\n```python\nimport joblib\n\n# Save\njoblib.dump(model, 'model.joblib')\n\n# Load\nmodel = joblib.load('model.joblib')\n```\n\n## Pickle\n\n```python\nimport pickle\n\n# Save\nwith open('model.pkl', 'wb') as f:\n    pickle.dump(model, f)\n\n# Load\nwith open('model.pkl', 'rb') as f:\n    model = pickle.load(f)\n```\n\n## Keras/TensorFlow\n\n```python\n# Save\nmodel.save('model.h5')\n\n# Load\nfrom tensorflow import keras\nmodel = keras.models.load_model('model.h5')\n```\n\n## ONNX (Cross-platform)\n\n```python\nimport onnx\nimport skl2onnx\n\n# Convert sklearn to ONNX\nonnx_model = skl2onnx.convert_sklearn(model)\nonnx.save_model(onnx_model, 'model.onnx')\n```"
+        },
+        {
+            "id": "deploy_3",
+            "type": "content",
+            "title": "Building APIs with Flask",
+            "content": "# Flask API 🌐\n\nServing predictions via HTTP.\n\n## Basic Flask API\n\n```python\nfrom flask import Flask, request, jsonify\nimport joblib\n\napp = Flask(__name__)\nmodel = joblib.load('model.joblib')\n\n@app.route('/predict', methods=['POST'])\ndef predict():\n    data = request.json\n    features = [data['features']]\n    prediction = model.predict(features)\n    return jsonify({\n        'prediction': prediction[0].tolist()\n    })\n\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=5000)\n```\n\n## Client Request\n\n```python\nimport requests\n\nresponse = requests.post(\n    'http://localhost:5000/predict',\n    json={'features': [1.5, 2.3, 3.1, 4.0]}\n)\nprint(response.json())\n```\n\n## Best Practices\n\n- ✅ Input validation\n- ✅ Error handling\n- ✅ Logging\n- ✅ Health check endpoint"
+        },
+        {
+            "id": "deploy_quiz_1",
+            "type": "quiz",
+            "title": "API Check",
+            "content": "Test your understanding!",
+            "quizQuestion": "What HTTP method is typically used for prediction requests?",
+            "quizOptions": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "deploy_4",
+            "type": "content",
+            "title": "FastAPI (Modern Alternative)",
+            "content": "# FastAPI ⚡\n\nModern, fast API framework.\n\n## FastAPI Example\n\n```python\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\nimport joblib\n\napp = FastAPI()\nmodel = joblib.load('model.joblib')\n\nclass PredictionRequest(BaseModel):\n    features: list[float]\n\nclass PredictionResponse(BaseModel):\n    prediction: float\n\n@app.post('/predict', response_model=PredictionResponse)\ndef predict(request: PredictionRequest):\n    prediction = model.predict([request.features])[0]\n    return PredictionResponse(prediction=prediction)\n```\n\n## Advantages over Flask\n\n| Feature | Flask | FastAPI |\n|---------|-------|----------|\n| Speed | Good | Very fast |\n| Type hints | Manual | Automatic |\n| Docs | Manual | Auto-generated |\n| Async | Add-on | Built-in |\n\n## Run\n\n```bash\nuvicorn app:app --reload\n# Docs at http://localhost:8000/docs\n```"
+        },
+        {
+            "id": "deploy_5",
+            "type": "content",
+            "title": "Docker Basics",
+            "content": "# Docker 🐳\n\nContainerizing your application.\n\n## Dockerfile\n\n```dockerfile\nFROM python:3.9-slim\n\nWORKDIR /app\n\nCOPY requirements.txt .\nRUN pip install -r requirements.txt\n\nCOPY . .\n\nEXPOSE 5000\n\nCMD [\"python\", \"app.py\"]\n```\n\n## Build and Run\n\n```bash\n# Build image\ndocker build -t ml-app .\n\n# Run container\ndocker run -p 5000:5000 ml-app\n```\n\n## Docker Compose\n\n```yaml\nversion: '3'\nservices:\n  api:\n    build: .\n    ports:\n      - \"5000:5000\"\n    volumes:\n      - ./models:/app/models\n```\n\n## Why Docker?\n\n- ✅ Reproducible environments\n- ✅ Easy deployment\n- ✅ Scalable\n- ✅ Works anywhere"
+        },
+        {
+            "id": "deploy_6",
+            "type": "content",
+            "title": "Cloud Deployment",
+            "content": "# Cloud Deployment ☁️\n\nDeploying to cloud platforms.\n\n## AWS SageMaker\n\n```python\nimport sagemaker\nfrom sagemaker.sklearn import SKLearnModel\n\nmodel = SKLearnModel(\n    model_data='s3://bucket/model.tar.gz',\n    role=role,\n    framework_version='1.0-1'\n)\n\npredictor = model.deploy(\n    instance_type='ml.t2.medium',\n    initial_instance_count=1\n)\n```\n\n## Google Cloud AI Platform\n\n```bash\ngcloud ai-platform models create my_model\ngcloud ai-platform versions create v1 \\\n    --model my_model \\\n    --framework scikit-learn \\\n    --runtime-version 2.5\n```\n\n## Serverless Options\n\n| Service | Provider |\n|---------|----------|\n| Lambda | AWS |\n| Cloud Functions | GCP |\n| Azure Functions | Azure |\n\n## Considerations\n\n- Cost (pay per use vs always-on)\n- Latency requirements\n- Scale expectations"
+        },
+        {
+            "id": "deploy_quiz_2",
+            "type": "quiz",
+            "title": "Docker Quiz",
+            "content": "Test your Docker knowledge!",
+            "quizQuestion": "What does a Dockerfile specify?",
+            "quizOptions": [
+                "The training data",
+                "How to build a container image",
+                "The model architecture",
+                "Cloud credentials"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "deploy_7",
+            "type": "content",
+            "title": "MLOps Basics",
+            "content": "# MLOps Basics 🔄\n\nOperationalizing machine learning.\n\n## MLOp Principles\n\n```\n1. Version everything (data, code, models)\n2. Automate pipelines\n3. Monitor in production\n4. Enable reproducibility\n```\n\n## Model Versioning\n\n```python\nimport mlflow\n\n# Log model\nmlflow.sklearn.log_model(model, \"model\")\n\n# Register\nmlflow.register_model(\n    \"runs:/.../model\",\n    \"ProductionModel\"\n)\n```\n\n## Monitoring\n\n```python\n# Track predictions\ndef predict_with_logging(features):\n    prediction = model.predict(features)\n    log_prediction(features, prediction)\n    return prediction\n\n# Check for data drift\nfrom evidently import data_drift\nreport = data_drift.Report()\n```\n\n## CI/CD for ML\n\n```yaml\n# GitHub Actions example\non: push\njobs:\n  train:\n    runs-on: ubuntu-latest\n    steps:\n      - run: python train.py\n      - run: python test.py\n      - run: python deploy.py\n```"
+        },
+        {
+            "id": "deploy_8",
+            "type": "content",
+            "title": "Model Monitoring",
+            "content": "# Model Monitoring 📊\n\nKeeping models healthy in production.\n\n## What to Monitor\n\n| Metric | Why |\n|--------|-----|\n| Prediction latency | User experience |\n| Prediction volume | Load planning |\n| Data drift | Input changes |\n| Model performance | Accuracy decay |\n\n## Data Drift Detection\n\n```python\nfrom scipy import stats\n\n# KS test for distribution change\nks_stat, p_value = stats.ks_2samp(\n    training_data, production_data\n)\n\nif p_value < 0.05:\n    alert(\"Data drift detected!\")\n```\n\n## Performance Tracking\n\n```python\n# Log actual outcomes when available\ndef log_outcome(prediction_id, actual):\n    prediction = get_prediction(prediction_id)\n    log_metric('accuracy', prediction == actual)\n```\n\n## Retraining Triggers\n\n- Scheduled (weekly, monthly)\n- Performance threshold\n- Data drift detection\n- New data volume"
+        },
+        {
+            "id": "deploy_quiz_3",
+            "type": "quiz",
+            "title": "Final Quiz",
+            "content": "Test your overall understanding!",
+            "quizQuestion": "Why is model monitoring important?",
+            "quizOptions": [
+                "To train models faster",
+                "To detect when model performance degrades",
+                "To reduce storage costs",
+                "To improve data collection"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "deploy_9",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Model Deployment!\n\n## Key Takeaways\n\n### Saving Models\n- ✅ joblib, pickle for sklearn\n- ✅ .h5 for Keras\n- ✅ ONNX for cross-platform\n\n### APIs\n- ✅ Flask for simplicity\n- ✅ FastAPI for performance\n- ✅ POST requests for predictions\n\n### Containerization\n- ✅ Docker for reproducibility\n- ✅ Docker Compose for multi-service\n\n### MLOps\n- ✅ Version models (MLflow)\n- ✅ Monitor performance\n- ✅ Detect data drift\n- ✅ Automate retraining\n\n## Deployment Checklist\n\n```markdown\n[ ] Model saved and versioned\n[ ] API tested locally\n[ ] Docker container built\n[ ] Deployed to cloud\n[ ] Monitoring in place\n```\n\n## Remember\n\n> 🚀 \"A model is only as good as its deployment.\"\n\n## Next Steps\n- 📊 Build real projects\n- 🔄 Learn advanced MLOps\n\nKeep deploying! 🚀"
+        }
+    ]
+}
