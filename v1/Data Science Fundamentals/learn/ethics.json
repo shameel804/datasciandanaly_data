@@ -3,109 +3,121 @@
     "topicId": "ethics",
     "topicTitle": "Data Ethics and Privacy",
     "description": "Understand data privacy laws, ethical considerations, bias in AI, transparency, and accountability in data science",
-    "baseKP": 75,
+    "baseKP": 85,
     "slides": [
         {
             "id": "ethics_1",
             "type": "content",
-            "title": "Welcome to Data Ethics",
-            "content": "# Data Ethics and Privacy ⚖️\n\nWith great data comes great responsibility!\n\n## What you'll learn:\n- **Data Privacy Laws** - GDPR, CCPA, HIPAA\n- **Ethical Considerations** - Do no harm principles\n- **Bias in AI** - Identifying and mitigating bias\n- **Transparency** - Explainable AI\n- **Accountability** - Who's responsible?\n\n> 💡 **Key Insight:** Ethics isn't just compliance—it's about building trust!\n\n## Why This Matters\n\n| Unethical Practice | Consequence |\n|-------------------|-------------|\n| Privacy violations | Fines up to €20M+ |\n| Biased algorithms | Discrimination lawsuits |\n| Lack of transparency | Loss of trust |\n| Data breaches | Reputation damage |\n\n## Real-World Impact\n- 🏛️ Governments regulating AI use\n- 📰 Public scrutiny of tech companies\n- 💼 Companies hiring ethics officers\n- 🎓 Ethics now in DS curriculum"
+            "title": "Data Ethics: Why It Matters",
+            "content": "# Data Ethics and Privacy 🔐\n\nIn the age of AI, ethical considerations are more important than ever.\n\n## What You'll Learn\n- **Data Privacy Laws** - GDPR, CCPA, and global regulations\n- **Ethical Considerations** - Responsible data use\n- **Bias in AI** - Detecting and mitigating unfairness\n- **Transparency** - Explainable AI\n- **Accountability** - Taking responsibility for AI decisions\n\n> ⚠️ **Reality Check:** AI systems affect billions of people daily—our choices have consequences!\n\n## Why Ethics Matters in Data Science\n\n| Example | Ethical Issue | Impact |\n|---------|--------------|--------|\n| Facial recognition | Privacy, bias | Wrongful arrests |\n| Hiring algorithms | Discrimination | Unfair job exclusion |\n| Credit scoring | Fairness | Denied opportunities |\n| Social media | Manipulation | Mental health effects |\n\n## The Stakes Are High\n\n- 💰 **Financial:** GDPR fines up to €20M or 4% of revenue\n- 🏛️ **Legal:** Lawsuits and regulatory action\n- 📉 **Reputation:** Loss of customer trust\n- 🌍 **Social:** Harm to vulnerable populations\n\nLet's learn to do data science responsibly!"
         },
         {
             "id": "ethics_2",
             "type": "content",
-            "title": "Data Privacy Laws",
-            "content": "# Data Privacy Laws 📜\n\nKey regulations every Data Scientist should know.\n\n## GDPR (EU)\n\nGeneral Data Protection Regulation:\n\n### Key Principles\n- **Consent** - Clear permission required\n- **Purpose Limitation** - Use only for stated purpose\n- **Data Minimization** - Collect only what's needed\n- **Right to Erasure** - Users can request deletion\n\n### Fines\n- Up to €20 million or 4% of global revenue\n\n## CCPA (California)\n\nCalifornia Consumer Privacy Act:\n- Right to know what data is collected\n- Right to delete personal information\n- Right to opt-out of data sales\n\n## HIPAA (Healthcare)\n\nHealth Insurance Portability Act:\n- Protected Health Information (PHI)\n- Strict access controls\n- Audit requirements\n\n## Best Practices\n\n```python\n# Always anonymize before analysis\ndef anonymize(df):\n    df = df.drop(['name', 'email', 'ssn'], axis=1)\n    df['id'] = hash_function(df['id'])\n    return df\n```"
+            "title": "Data Privacy Laws: GDPR",
+            "content": "# GDPR: The Gold Standard 🇪🇺\n\nThe General Data Protection Regulation is the world's strictest privacy law.\n\n## Key GDPR Principles\n\n### 1. Lawfulness, Fairness, Transparency\nProcess data legally and openly\n\n### 2. Purpose Limitation\nCollect data only for specified purposes\n\n### 3. Data Minimization\nCollect only what's necessary\n\n### 4. Accuracy\nKeep data correct and up-to-date\n\n### 5. Storage Limitation\nDon't keep data longer than needed\n\n### 6. Security\nProtect data from breaches\n\n## Individual Rights Under GDPR\n\n| Right | Description |\n|-------|-------------|\n| Access | See what data is collected |\n| Rectification | Correct inaccurate data |\n| Erasure | \"Right to be forgotten\" |\n| Portability | Transfer data to another service |\n| Object | Opt-out of certain processing |\n\n## Penalties\n\n- **Tier 1:** Up to €10M or 2% of revenue\n- **Tier 2:** Up to €20M or 4% of revenue\n\n> 💡 **Note:** GDPR applies to ANY company handling EU citizens' data, regardless of location!"
         },
         {
             "id": "ethics_3",
             "type": "content",
-            "title": "Ethical Considerations",
-            "content": "# Ethical Considerations 🤔\n\nPrinciples for responsible data science.\n\n## Core Ethical Principles\n\n### 1. Beneficence\n- Do good with data\n- Create positive impact\n- Consider societal benefits\n\n### 2. Non-maleficence\n- Do no harm\n- Prevent misuse\n- Consider unintended consequences\n\n### 3. Autonomy\n- Respect user choices\n- Provide opt-out options\n- Enable informed consent\n\n### 4. Justice\n- Fair treatment for all\n- Equitable access\n- No discrimination\n\n## Ethical Checklist\n\n- [ ] Is consent clearly obtained?\n- [ ] Could this harm any group?\n- [ ] Are we transparent about data use?\n- [ ] Have we considered edge cases?\n- [ ] Would we be proud if this was public?\n\n## The Newspaper Test\n\n> 📰 Would you be comfortable if your decision was on the front page of a newspaper?"
+            "title": "Global Privacy Regulations",
+            "content": "# Global Privacy Landscape 🌍\n\nPrivacy regulations are expanding worldwide.\n\n## Major Regulations\n\n### CCPA (California)\n- 🇺🇸 California Consumer Privacy Act\n- Right to know, delete, opt-out\n- Applies to businesses with CA customers\n\n### PIPEDA (Canada)\n- 🇨🇦 Personal Information Protection\n- Consent-based framework\n- Fair information principles\n\n### LGPD (Brazil)\n- 🇧🇷 Lei Geral de Proteção de Dados\n- Similar to GDPR\n- Heavy penalties\n\n### Data Protection Bill (India)\n- 🇮🇳 Emerging comprehensive framework\n- Localization requirements\n- Consent management\n\n## Comparison Table\n\n| Aspect | GDPR | CCPA | LGPD |\n|--------|------|------|------|\n| Consent Required | Yes | Opt-out | Yes |\n| Right to Delete | Yes | Yes | Yes |\n| Data Portability | Yes | Yes | Yes |\n| Max Fine | 4% revenue | $7,500/violation | 2% revenue |\n\n## For Data Scientists\n\n- ✅ Understand which laws apply to your data\n- ✅ Implement data minimization\n- ✅ Build consent mechanisms\n- ✅ Enable data deletion capabilities\n\n> 🌐 **Trend:** Privacy regulations are converging globally—design for the strictest!"
         },
         {
             "id": "ethics_quiz_1",
             "type": "quiz",
-            "title": "Privacy Check",
-            "content": "Test your knowledge of data privacy!",
-            "quizQuestion": "What is the maximum GDPR fine for serious violations?",
+            "title": "Privacy Laws Quiz",
+            "content": "Test your knowledge of data privacy laws!",
+            "quizQuestion": "Under GDPR, what is the maximum fine for serious violations?",
             "quizOptions": [
-                "€1 million",
-                "€10 million",
-                "€20 million or 4% of global revenue",
-                "€50 million"
+                "$1 million",
+                "2% of annual revenue",
+                "4% of annual revenue or €20 million (whichever is higher)",
+                "$100,000 per violation"
             ],
             "correctOptionIndex": 2
         },
         {
             "id": "ethics_4",
             "type": "content",
-            "title": "Bias in AI",
-            "content": "# Bias in AI 🎯\n\nUnderstanding and mitigating algorithmic bias.\n\n## Types of Bias\n\n### Data Bias\n- **Selection bias** - Non-representative samples\n- **Historical bias** - Past discrimination in data\n- **Measurement bias** - Inconsistent data collection\n\n### Algorithm Bias\n- **Confirmation bias** - Reinforcing existing patterns\n- **Automation bias** - Over-trusting algorithms\n\n## Real Examples\n\n| Case | Bias Type | Impact |\n|------|-----------|--------|\n| Hiring tools | Gender bias | Fewer women hired |\n| Credit scoring | Racial bias | Loan discrimination |\n| Facial recognition | Demographic bias | Higher error for minorities |\n| Healthcare AI | Historical bias | Unequal treatment |\n\n## Detection Methods\n\n```python\n# Check demographic parity\ndef check_bias(predictions, protected_attr):\n    groups = predictions.groupby(protected_attr)\n    rates = groups['positive'].mean()\n    disparity = rates.max() / rates.min()\n    return disparity < 1.2  # 80% rule\n```\n\n## Mitigation Strategies\n- Diverse training data\n- Fair sampling techniques\n- Regular bias audits\n- Diverse teams"
+            "title": "Ethical Considerations in Data Science",
+            "content": "# Ethical Considerations 🤔\n\nBeyond legal compliance, data scientists face moral decisions daily.\n\n## Core Ethical Principles\n\n### 1. Beneficence\nDo good—create positive impact\n\n### 2. Non-Maleficence\nDo no harm—avoid negative consequences\n\n### 3. Autonomy\nRespect individual choices and consent\n\n### 4. Justice\nEnsure fair distribution of benefits and burdens\n\n### 5. Explicability\nMake decisions understandable\n\n## Ethical Questions to Ask\n\n| Stage | Question |\n|-------|----------|\n| Collection | Should we collect this data? |\n| Analysis | Could findings harm anyone? |\n| Modeling | Is the model fair to all groups? |\n| Deployment | Who benefits? Who's harmed? |\n| Monitoring | Are we detecting negative impacts? |\n\n## The Ethical Decision Framework\n\n```\n1. Identify stakeholders\n2. Consider potential harms\n3. Evaluate alternatives\n4. Seek diverse perspectives\n5. Document your reasoning\n6. Monitor outcomes\n```\n\n## Red Flags 🚩\n\n- Data collected without proper consent\n- Vulnerable populations disproportionately affected\n- No human oversight in critical decisions\n- Lack of transparency about how data is used\n\n> 🎯 **Principle:** Just because we CAN doesn't mean we SHOULD."
         },
         {
             "id": "ethics_5",
             "type": "content",
-            "title": "Fairness Metrics",
-            "content": "# Fairness Metrics 📊\n\nQuantifying fairness in ML models.\n\n## Key Fairness Metrics\n\n### Demographic Parity\n- Equal positive rates across groups\n- P(Y=1|A=0) = P(Y=1|A=1)\n\n### Equalized Odds\n- Equal TPR and FPR across groups\n- Same accuracy for all groups\n\n### Individual Fairness\n- Similar individuals treated similarly\n- Distance-based approach\n\n## Implementation\n\n```python\nfrom aif360.metrics import BinaryLabelDatasetMetric\n\n# Check disparate impact\nmetric = BinaryLabelDatasetMetric(\n    dataset,\n    privileged_groups=[{'gender': 1}],\n    unprivileged_groups=[{'gender': 0}]\n)\n\nprint(f\"Disparate Impact: {metric.disparate_impact()}\")\nprint(f\"Statistical Parity: {metric.statistical_parity_difference()}\")\n```\n\n## Fairness Trade-offs\n\n| Approach | Pro | Con |\n|----------|-----|-----|\n| Demographic parity | Simple | May lower accuracy |\n| Equalized odds | More nuanced | Hard to achieve |\n| Calibration | Probability accurate | May not ensure equality |\n\n> ⚠️ **Note:** Perfect fairness across all metrics is mathematically impossible!"
+            "title": "Bias in AI: Understanding the Problem",
+            "content": "# Bias in AI: The Hidden Danger 🎭\n\nAI systems can perpetuate and amplify human biases.\n\n## Types of Bias\n\n### 1. Historical Bias\nBias existing in the real world reflected in data\n- Example: Gender bias in hiring data\n\n### 2. Representation Bias\nUnderrepresentation of certain groups in training data\n- Example: Medical AI trained mostly on white patients\n\n### 3. Measurement Bias\nThe way we measure things introduces bias\n- Example: Using arrest rates as proxy for crime rates\n\n### 4. Aggregation Bias\nOne-size-fits-all models that ignore group differences\n- Example: Diabetes prediction ignoring ethnic variations\n\n### 5. Evaluation Bias\nBiased benchmarks for testing models\n- Example: Facial recognition tested mainly on lighter faces\n\n## Real-World Examples\n\n| System | Bias | Consequence |\n|--------|------|-------------|\n| COMPAS | Racial | Higher false positives for Black defendants |\n| Amazon Hiring | Gender | Lower scores for women |\n| Healthcare | Racial | Black patients received less care |\n| Image Search | Stereotyping | Reinforced gender stereotypes |\n\n> ⚠️ **Warning:** Bias is often invisible until it causes harm—actively look for it!"
         },
         {
             "id": "ethics_6",
             "type": "content",
-            "title": "Transparency",
-            "content": "# Transparency 🔍\n\nMaking AI decisions understandable.\n\n## Why Transparency Matters\n- 🤝 Builds trust with users\n- 📋 Required by regulations (GDPR Article 22)\n- 🔧 Helps debug and improve models\n- ⚖️ Supports legal accountability\n\n## Explainability Techniques\n\n### Model-Agnostic Methods\n\n```python\nimport shap\n\n# SHAP values for interpretation\nexplainer = shap.Explainer(model)\nshap_values = explainer(X_test)\n\n# Visualize feature importance\nshap.summary_plot(shap_values, X_test)\n```\n\n### LIME (Local Interpretable Explanations)\n\n```python\nfrom lime import lime_tabular\n\nexplainer = lime_tabular.LimeTabularExplainer(X_train)\nexplanation = explainer.explain_instance(X_test[0], model.predict_proba)\n```\n\n## Transparency Levels\n\n| Level | Description | Example |\n|-------|-------------|----------|\n| Algorithm | How model works | Decision tree rules |\n| Data | What data is used | Feature list |\n| Decision | Why this output | SHAP values |\n| System | Overall process | Documentation |\n\n## Best Practices\n- Provide plain-language explanations\n- Offer recourse for decisions\n- Document model limitations"
+            "title": "Detecting and Mitigating Bias",
+            "content": "# Bias Detection and Mitigation 🔍\n\nProactive approaches to building fair AI systems.\n\n## Detection Methods\n\n### 1. Demographic Parity\nAre outcomes equal across groups?\n\n```python\n# Check if approval rates are similar\napproval_male = approved_male / total_male\napproval_female = approved_female / total_female\ndisparity = abs(approval_male - approval_female)\nprint(f\"Disparity: {disparity:.2%}\")\n```\n\n<!-- FULL_CODE_START\n# Bias Detection Example: Demographic Parity\n\n# Simulated loan approval data\napproved_male = 450\ntotal_male = 500\napproved_female = 360\ntotal_female = 500\n\n# Calculate approval rates\napproval_male = approved_male / total_male\napproval_female = approved_female / total_female\n\nprint(\"=== Bias Detection: Demographic Parity ===\")\nprint(f\"\\nMale approval rate: {approval_male:.1%}\")\nprint(f\"Female approval rate: {approval_female:.1%}\")\n\n# Calculate disparity\ndisparity = abs(approval_male - approval_female)\nprint(f\"\\nDisparity: {disparity:.1%}\")\n\n# Check if within acceptable threshold (typically 80% rule)\nratio = min(approval_male, approval_female) / max(approval_male, approval_female)\nprint(f\"Ratio (should be > 0.8): {ratio:.2f}\")\n\nif ratio < 0.8:\n    print(\"\\n⚠️ Potential bias detected! Disparate impact found.\")\nelse:\n    print(\"\\n✅ Passes 80% rule for demographic parity.\")\nFULL_CODE_END -->\n\n### 2. Equalized Odds\nAre error rates equal across groups?\n\n### 3. Individual Fairness\nDo similar individuals get similar outcomes?\n\n## Mitigation Strategies\n\n| Stage | Strategy |\n|-------|----------|\n| Pre-processing | Re-sample, re-weight data |\n| In-processing | Add fairness constraints |\n| Post-processing | Adjust thresholds per group |\n\n## Fairness Metrics Trade-offs\n\n> 💡 **Reality:** You can't optimize for all fairness metrics simultaneously—choose based on context!"
         },
         {
             "id": "ethics_quiz_2",
             "type": "quiz",
             "title": "Bias Quiz",
             "content": "Test your understanding of AI bias!",
-            "quizQuestion": "What type of bias occurs when training data reflects past discrimination?",
+            "quizQuestion": "What type of bias occurs when training data underrepresents certain groups?",
             "quizOptions": [
-                "Selection bias",
-                "Historical bias",
-                "Confirmation bias",
-                "Automation bias"
+                "Historical Bias",
+                "Representation Bias",
+                "Measurement Bias",
+                "Evaluation Bias"
             ],
             "correctOptionIndex": 1
         },
         {
             "id": "ethics_7",
             "type": "content",
-            "title": "Accountability",
-            "content": "# Accountability 📋\n\nWho is responsible when AI goes wrong?\n\n## Accountability Framework\n\n### Levels of Responsibility\n\n| Role | Responsibility |\n|------|---------------|\n| Data Scientists | Model accuracy and fairness |\n| Managers | Oversight and governance |\n| Organizations | Policy and compliance |\n| Regulators | Standards and enforcement |\n\n## Accountability Practices\n\n### Documentation\n```markdown\n## Model Card\n- Model purpose and limitations\n- Training data description\n- Performance metrics by group\n- Intended use cases\n- Known issues and risks\n```\n\n### Audit Trail\n- Version control for models\n- Logging of predictions\n- Decision rationale capture\n\n## When Things Go Wrong\n\n### Response Protocol\n1. Identify the issue immediately\n2. Assess impact and affected parties\n3. Communicate transparently\n4. Implement fixes\n5. Document lessons learned\n\n> 💡 **Pro Tip:** Create an AI Ethics Board to review high-impact models before deployment!"
+            "title": "Transparency and Explainability",
+            "content": "# Transparency in AI 🔍\n\nBlack-box AI is increasingly unacceptable in high-stakes decisions.\n\n## Why Explainability Matters\n\n- 🏛️ **Legal:** GDPR requires explanations for automated decisions\n- 🤝 **Trust:** Users trust what they understand\n- 🐛 **Debugging:** Find and fix model errors\n- 📋 **Compliance:** Regulatory requirements\n\n## Levels of Explainability\n\n| Level | Description | Example |\n|-------|-------------|--------|\n| Global | How model works overall | Feature importance |\n| Local | Why this specific prediction | SHAP values |\n| Counterfactual | What would change the outcome | \"If income were $10K higher...\" |\n\n## Explainability Techniques\n\n### Model-Specific\n- Decision tree visualization\n- Linear model coefficients\n- Rule extraction\n\n### Model-Agnostic\n- LIME (Local Interpretable Model-agnostic Explanations)\n- SHAP (SHapley Additive exPlanations)\n- Partial Dependence Plots\n\n## Example: Feature Importance\n\n```python\n# Feature importance example\nfeatures = ['Age', 'Income', 'Credit_History', 'Employment']\nimportance = [0.15, 0.45, 0.30, 0.10]\n\nfor f, i in sorted(zip(features, importance), \n                   key=lambda x: x[1], reverse=True):\n    print(f\"{f}: {i:.0%}\")\n```\n\n<!-- FULL_CODE_START\n# Feature Importance Visualization\n\nfeatures = ['Age', 'Income', 'Credit_History', 'Employment', 'Education']\nimportance = [0.15, 0.35, 0.25, 0.15, 0.10]\n\nprint(\"=== Feature Importance (Model Transparency) ===\")\nprint(\"\\nRanked by importance:\")\nprint(\"-\" * 40)\n\nfor f, i in sorted(zip(features, importance), \n                   key=lambda x: x[1], reverse=True):\n    bar = \"█\" * int(i * 40)\n    print(f\"{f:20s} {i:5.0%} {bar}\")\n\nprint(\"\\n\" + \"=\" * 40)\nprint(\"\\nInterpretation:\")\nprint(\"- Income is the most important factor (35%)\")\nprint(\"- Credit History is second most important (25%)\")\nprint(\"- This helps stakeholders understand the model\")\nFULL_CODE_END -->\n\n> 🎯 **Goal:** Match explainability level to the decision's stakes and audience."
         },
         {
             "id": "ethics_8",
             "type": "content",
-            "title": "Data Governance",
-            "content": "# Data Governance 🏛️\n\nStructures and policies for ethical data use.\n\n## Governance Framework\n\n### Data Classification\n| Level | Description | Examples |\n|-------|-------------|----------|\n| Public | No restrictions | Marketing data |\n| Internal | Company only | Sales figures |\n| Confidential | Limited access | Customer PII |\n| Restricted | Strict controls | Health records |\n\n### Access Control\n```python\n# Role-based access control\nPERMISSIONS = {\n    'analyst': ['read_aggregated'],\n    'data_scientist': ['read_anonymized'],\n    'admin': ['read_all', 'write']\n}\n\ndef check_access(user_role, action):\n    return action in PERMISSIONS.get(user_role, [])\n```\n\n## Privacy by Design\n\n### Principles\n- Proactive, not reactive\n- Privacy as default\n- Security embedded\n- Full lifecycle protection\n\n### Techniques\n- Data minimization\n- Anonymization/pseudonymization\n- Encryption at rest and in transit\n- Secure deletion"
+            "title": "Accountability in AI",
+            "content": "# Accountability: Taking Responsibility 📋\n\nWho is responsible when AI systems cause harm?\n\n## The Accountability Challenge\n\n### Multiple Stakeholders\n- Data collectors\n- Model developers\n- Deploying organizations\n- End users\n\n### The Responsibility Gap\n> When AI makes decisions, accountability becomes diffuse.\n\n## Accountability Framework\n\n### 1. Clear Ownership\n- Designate responsible parties\n- Define roles and responsibilities\n- Establish decision authority\n\n### 2. Documentation\n- Model cards describing capabilities/limitations\n- Data sheets documenting data sources\n- Decision logs for auditing\n\n### 3. Human Oversight\n- Human-in-the-loop for critical decisions\n- Override mechanisms\n- Escalation procedures\n\n### 4. Remedy\n- Channels for complaints\n- Correction mechanisms\n- Compensation processes\n\n## Model Card Template\n\n| Section | Content |\n|---------|--------|\n| Model Details | Type, version, owner |\n| Intended Use | Proper applications |\n| Factors | Groups that may be affected |\n| Metrics | Performance measures |\n| Limitations | Known weaknesses |\n| Ethical Considerations | Potential harms |\n\n> 🎯 **Principle:** No AI system should be deployed without clear human accountability."
         },
         {
             "id": "ethics_9",
             "type": "content",
-            "title": "Ethical AI Framework",
-            "content": "# Building Ethical AI 🌟\n\nA practical framework for your projects.\n\n## Pre-Development\n- [ ] Define ethical objectives\n- [ ] Identify stakeholder impacts\n- [ ] Assess potential harms\n- [ ] Get diverse input on design\n\n## During Development\n- [ ] Audit training data for bias\n- [ ] Test on diverse populations\n- [ ] Build in explainability\n- [ ] Document decisions\n\n## Post-Deployment\n- [ ] Monitor for bias drift\n- [ ] Collect user feedback\n- [ ] Enable appeals process\n- [ ] Regular ethical audits\n\n## Ethics Review Checklist\n\n```markdown\n## Ethics Assessment\n\n### Data\n- Source of data: [trusted/verified]\n- Consent obtained: [yes/no]\n- PII handled properly: [yes/no]\n\n### Algorithm\n- Bias tested: [yes/no]\n- Explainable: [yes/no]\n- Audited: [yes/no]\n\n### Impact\n- Affected groups: [list]\n- Potential harms: [list]\n- Mitigations: [list]\n```"
+            "title": "Privacy-Preserving Techniques",
+            "content": "# Privacy-Preserving Data Science 🔒\n\nTechniques to analyze data while protecting individual privacy.\n\n## Key Techniques\n\n### 1. Anonymization\nRemove identifying information\n- Remove names, addresses, IDs\n- Generalize specific values\n- Suppress rare categories\n\n### 2. Differential Privacy\nAdd mathematical noise to protect individuals\n- Guarantees that individual contributions can't be detected\n- Used by Apple, Google, US Census\n\n### 3. Federated Learning\nTrain models without centralizing data\n- Data stays on user devices\n- Only model updates are shared\n- Used for keyboard prediction\n\n### 4. Secure Multi-Party Computation\nMultiple parties compute together without sharing data\n- Encrypted computation\n- No party sees raw data\n\n### 5. Synthetic Data\nGenerate fake data that preserves statistical properties\n- Useful for testing and development\n- No real individuals exposed\n\n## Technique Comparison\n\n| Technique | Privacy Level | Data Utility | Complexity |\n|-----------|--------------|--------------|------------|\n| Anonymization | Medium | High | Low |\n| Differential Privacy | High | Medium | High |\n| Federated Learning | High | High | Very High |\n| Synthetic Data | High | Medium | Medium |\n\n> 💡 **Trend:** Privacy-preserving AI is becoming a competitive advantage!"
         },
         {
             "id": "ethics_quiz_3",
             "type": "quiz",
-            "title": "Ethics Quiz",
-            "content": "Final ethics check!",
-            "quizQuestion": "What is the 'newspaper test' in data ethics?",
+            "title": "Privacy Techniques Quiz",
+            "content": "Test your knowledge of privacy-preserving techniques!",
+            "quizQuestion": "Which privacy technique allows training ML models without centralizing user data?",
             "quizOptions": [
-                "Publishing your model in a journal",
-                "Checking if your decision would be acceptable on a newspaper front page",
-                "Using news data for training",
-                "Testing model on newspaper articles"
+                "Anonymization",
+                "Differential Privacy",
+                "Federated Learning",
+                "Encryption"
             ],
-            "correctOptionIndex": 1
+            "correctOptionIndex": 2
         },
         {
             "id": "ethics_10",
             "type": "content",
+            "title": "Building Ethical AI Systems",
+            "content": "# Building Ethical AI: A Practical Guide 🛠️\n\nIntegrate ethics throughout the AI development lifecycle.\n\n## The Ethics Checklist\n\n### Planning Phase\n- [ ] Is this AI application necessary?\n- [ ] Who will be affected?\n- [ ] What could go wrong?\n- [ ] Do we have diverse perspectives on the team?\n\n### Data Phase\n- [ ] Do we have proper consent?\n- [ ] Is the data representative?\n- [ ] Have we checked for historical biases?\n- [ ] Are we collecting only necessary data?\n\n### Modeling Phase\n- [ ] Have we tested for fairness across groups?\n- [ ] Can we explain the model's decisions?\n- [ ] What's the failure mode?\n- [ ] Have we set appropriate thresholds?\n\n### Deployment Phase\n- [ ] Is there human oversight?\n- [ ] Can users appeal decisions?\n- [ ] Do we have monitoring for bias drift?\n- [ ] Is accountability clearly assigned?\n\n## Ethics Review Board\n\nConsider establishing:\n- Cross-functional team\n- Regular review schedule\n- Clear escalation process\n- Documentation requirements\n\n## Red Teaming\n\nActively try to break your system:\n- What if adversaries manipulate inputs?\n- How can the system be misused?\n- What edge cases cause harm?\n\n> 🎯 **Culture:** Ethics is everyone's job, not just the compliance team's!"
+        },
+        {
+            "id": "ethics_11",
+            "type": "content",
+            "title": "Case Studies in AI Ethics",
+            "content": "# AI Ethics Case Studies 📚\n\nLearn from real-world examples.\n\n## Case 1: Amazon's Hiring Algorithm\n\n**What happened:** AI trained on historical hiring data\n\n**Issue:** Model learned to penalize resumes with \"women's\" indicators\n\n**Outcome:** Project was scrapped\n\n**Lesson:** Historical data reflects historical biases\n\n---\n\n## Case 2: COMPAS Recidivism\n\n**What happened:** AI predicted criminal reoffending risk\n\n**Issue:** Higher false positive rates for Black defendants\n\n**Outcome:** Ongoing debate, calls for regulation\n\n**Lesson:** Different error rates across groups is a fairness issue\n\n---\n\n## Case 3: Healthcare Algorithm\n\n**What happened:** AI allocated healthcare resources\n\n**Issue:** Used cost as proxy for health needs, disadvantaging Black patients\n\n**Outcome:** Algorithm remediated\n\n**Lesson:** Proxy variables can encode bias\n\n---\n\n## Case 4: Facial Recognition Bans\n\n**What happened:** Multiple cities banned government use\n\n**Issue:** Accuracy disparities, privacy concerns, civil liberties\n\n**Outcome:** Growing regulatory action\n\n**Lesson:** Some AI applications may be too risky\n\n> 💡 **Takeaway:** Study failures to avoid repeating them!"
+        },
+        {
+            "id": "ethics_12",
+            "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered Data Ethics and Privacy!\n\n## Key Takeaways\n\n### Data Privacy Laws\n- ✅ GDPR, CCPA, HIPAA fundamentals\n- ✅ User rights and consent\n- ✅ Compliance requirements\n\n### Ethical Considerations\n- ✅ Do good, avoid harm\n- ✅ Respect autonomy\n- ✅ Ensure justice and fairness\n\n### Bias in AI\n- ✅ Identify bias types\n- ✅ Use fairness metrics\n- ✅ Implement mitigation strategies\n\n### Transparency\n- ✅ Explainable AI techniques\n- ✅ SHAP, LIME for interpretation\n- ✅ Plain-language explanations\n\n### Accountability\n- ✅ Clear responsibility chains\n- ✅ Documentation (Model Cards)\n- ✅ Audit trails\n\n## Remember\n\n> ⚖️ \"With great data comes great responsibility.\"\n\n- Ethics is everyone's job\n- Build trust through transparency\n- Bias is a feature, not a bug—address it!\n\nBuild responsibly! 🌟"
+            "content": "# Congratulations! 🎉\n\nYou've completed Data Ethics and Privacy!\n\n## Key Takeaways\n\n### Data Privacy Laws\n- ✅ GDPR sets the global standard\n- ✅ Know which regulations apply to your work\n- ✅ Design for privacy from the start\n\n### Ethical Considerations\n- ✅ Apply beneficence, non-maleficence, autonomy, justice\n- ✅ Ask ethical questions at every stage\n- ✅ Just because we CAN doesn't mean we SHOULD\n\n### Bias in AI\n- ✅ Bias exists in many forms (historical, representation, measurement)\n- ✅ Actively detect bias using fairness metrics\n- ✅ Apply mitigation strategies throughout the pipeline\n\n### Transparency\n- ✅ Explainability builds trust and enables debugging\n- ✅ Match explanation depth to stakes and audience\n- ✅ Use techniques like SHAP, LIME, feature importance\n\n### Accountability\n- ✅ Establish clear ownership and documentation\n- ✅ Ensure human oversight for critical decisions\n- ✅ Create channels for remedy and appeal\n\n## Remember\n\n> 🎯 **Ethical AI is not a one-time checkbox—it's an ongoing commitment!**\n\n- Build diverse teams\n- Question assumptions\n- Monitor continuously\n- Stay informed on evolving standards\n\nBuild AI that makes the world better! 🌍"
         }
     ]
 }

@@ -2,36 +2,36 @@
     "id": "learn_data_lifecycle",
     "topicId": "data_lifecycle",
     "topicTitle": "Data Science Lifecycle",
-    "description": "Master the complete Data Science lifecycle from data collection through deployment and monitoring",
-    "baseKP": 75,
+    "description": "Master the complete data science lifecycle from data collection through deployment and monitoring",
+    "baseKP": 80,
     "slides": [
         {
             "id": "data_lifecycle_1",
             "type": "content",
             "title": "Welcome to the Data Science Lifecycle",
-            "content": "# Data Science Lifecycle 🔄\n\nEvery successful Data Science project follows a structured lifecycle.\n\n## What you'll learn:\n- **Data Collection** - Gathering data from various sources\n- **Data Preparation** - Cleaning and transforming data\n- **Exploratory Analysis** - Understanding your data deeply\n- **Model Building** - Creating predictive models\n- **Deployment** - Putting models into production\n- **Monitoring** - Ensuring ongoing performance\n\n> 💡 **Key Insight:** The lifecycle is not linear - you'll iterate between stages!\n\n## Why This Matters\n\n| Without Lifecycle | With Lifecycle |\n|-------------------|----------------|\n| Ad-hoc analysis | Systematic approach |\n| Inconsistent results | Reproducible outcomes |\n| Scope creep | Clear milestones |\n\nLet's explore each stage!"
+            "content": "# Data Science Lifecycle 🔄\n\nEvery successful data science project follows a structured lifecycle. Understanding this lifecycle is crucial for delivering impactful solutions.\n\n## What You'll Learn:\n- **Data Collection** - Gathering raw data from various sources\n- **Data Preparation** - Cleaning and transforming data\n- **Exploratory Analysis** - Understanding patterns and relationships\n- **Model Building** - Creating predictive solutions\n- **Deployment** - Putting models into production\n- **Monitoring** - Maintaining model performance\n\n> 💡 **Key Insight:** The lifecycle is iterative, not linear. You'll often revisit earlier stages as you learn more!\n\n## Why This Matters\n\n| Statistic | Impact |\n|-----------|--------|\n| 80% of time | Spent on data preparation |\n| 70% of projects | Fail due to poor data quality |\n| 87% of models | Never make it to production |\n\nLet's master each stage to beat these odds!"
         },
         {
             "id": "data_lifecycle_2",
             "type": "content",
             "title": "Stage 1: Data Collection",
-            "content": "# Data Collection 📥\n\nThe first stage is gathering the data you need.\n\n## Data Sources\n\n### Internal Sources\n- **Databases** - SQL, NoSQL systems\n- **Data Warehouses** - Historical business data\n- **Logs** - Application and server logs\n\n### External Sources\n- **APIs** - Web services\n- **Web Scraping** - Public website data\n- **Third-party Data** - Purchased datasets\n\n## Collection Example\n\n```python\nimport pandas as pd\nimport requests\n\n# From database\ndf_db = pd.read_sql('SELECT * FROM customers', engine)\n\n# From API\nresponse = requests.get('https://api.example.com/data')\ndf_api = pd.DataFrame(response.json())\n\n# From CSV\ndf_file = pd.read_csv('sales_data.csv')\n```\n\n## Key Considerations\n- ✅ Data availability and access rights\n- ✅ Privacy and compliance (GDPR, HIPAA)\n- ✅ Data freshness requirements"
+            "content": "# Data Collection 📥\n\nThe foundation of any data science project begins with gathering quality data.\n\n## Data Sources\n\n### Internal Sources\n- 🗄️ **Databases** - SQL, NoSQL databases\n- 📊 **Data Warehouses** - Centralized storage\n- 📁 **Files** - CSV, Excel, JSON, Parquet\n- 📝 **Logs** - Application and server logs\n\n### External Sources\n- 🌐 **APIs** - Web services, REST endpoints\n- 🕷️ **Web Scraping** - Extracting web data\n- 📦 **Open Datasets** - Kaggle, government data\n- 🤝 **Third-party** - Vendors, partners\n\n## Data Collection Best Practices\n\n| Practice | Benefit |\n|----------|--------|\n| Document sources | Traceability |\n| Validate on ingestion | Early error detection |\n| Store metadata | Context preservation |\n| Version your data | Reproducibility |\n\n## Common Challenges\n\n- ❌ Missing or incomplete data\n- ❌ Inconsistent formats\n- ❌ Access and permission issues\n- ❌ Real-time vs batch requirements\n\n> ⚠️ **Warning:** Poor data collection leads to \"Garbage In, Garbage Out\"!"
         },
         {
             "id": "data_lifecycle_3",
             "type": "content",
             "title": "Stage 2: Data Preparation",
-            "content": "# Data Preparation 🧹\n\nTransforms raw data into a clean, usable format.\n\n> 📊 Data Scientists spend **60-80% of their time** on data preparation!\n\n## Key Activities\n\n### 1. Data Cleaning\n```python\n# Handle missing values\ndf['age'].fillna(df['age'].median(), inplace=True)\n\n# Remove duplicates\ndf = df.drop_duplicates()\n\n# Fix inconsistent values\ndf['country'] = df['country'].str.strip().str.title()\n```\n\n### 2. Data Transformation\n```python\n# Type conversion\ndf['date'] = pd.to_datetime(df['date'])\n\n# Create new features\ndf['year'] = df['date'].dt.year\n\n# Scaling\nfrom sklearn.preprocessing import StandardScaler\ndf['amount_scaled'] = scaler.fit_transform(df[['amount']])\n```\n\n## Common Issues\n- ❌ Missing values\n- ❌ Outliers\n- ❌ Inconsistent formats\n- ❌ Duplicate records"
+            "content": "# Data Preparation 🧹\n\nData preparation is the most time-consuming but critical stage—typically 60-80% of the project!\n\n## Key Activities\n\n### 1. Data Cleaning\n- Handle missing values\n- Remove duplicates\n- Fix inconsistencies\n- Correct errors\n\n### 2. Data Transformation\n- Normalize/standardize features\n- Encode categorical variables\n- Create derived features\n- Aggregate data\n\n### 3. Data Integration\n- Merge multiple sources\n- Resolve conflicts\n- Align schemas\n\n## Example: Handling Missing Values\n\n```python\nimport numpy as np\n\n# Sample data with missing values\ndata = [10, 20, np.nan, 40, 50, np.nan, 70]\n\n# Calculate mean excluding NaN\nclean_data = [x for x in data if not np.isnan(x)]\nmean_value = sum(clean_data) / len(clean_data)\n\nprint(f\"Mean value: {mean_value}\")\nprint(f\"Clean data: {clean_data}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Sample data with missing values\ndata = [10, 20, np.nan, 40, 50, np.nan, 70]\n\n# Calculate mean excluding NaN\nclean_data = [x for x in data if not np.isnan(x)]\nmean_value = sum(clean_data) / len(clean_data)\n\nprint(f\"Original data: {data}\")\nprint(f\"Mean value: {mean_value}\")\nprint(f\"Clean data: {clean_data}\")\n\n# Fill missing with mean\nfilled_data = [x if not np.isnan(x) else mean_value for x in data]\nprint(f\"Filled data: {filled_data}\")\nFULL_CODE_END -->\n\n> 💡 **Pro Tip:** Automate data cleaning pipelines to ensure consistency!"
         },
         {
             "id": "data_lifecycle_quiz_1",
             "type": "quiz",
-            "title": "Preparation Check",
-            "content": "Test your understanding!",
-            "quizQuestion": "What percentage of time do Data Scientists typically spend on data preparation?",
+            "title": "Data Preparation Check",
+            "content": "Test your understanding of data preparation!",
+            "quizQuestion": "What percentage of a data science project is typically spent on data preparation?",
             "quizOptions": [
-                "20-30%",
-                "40-50%",
+                "10-20%",
+                "30-40%",
                 "60-80%",
                 "90-100%"
             ],
@@ -41,71 +41,97 @@
             "id": "data_lifecycle_4",
             "type": "content",
             "title": "Stage 3: Exploratory Data Analysis",
-            "content": "# Exploratory Data Analysis 🔍\n\nEDA is about understanding your data before modeling.\n\n## Goals of EDA\n- 📊 Understand data distributions\n- 🔗 Find relationships between variables\n- 🚨 Detect anomalies and outliers\n- 💡 Generate hypotheses\n\n## Statistical Summary\n\n```python\n# Basic statistics\nprint(df.describe())\n\n# Correlation matrix\ncorr_matrix = df.corr()\n```\n\n## Visualization Techniques\n\n```python\nimport seaborn as sns\n\n# Distribution\nsns.histplot(df['sales'], kde=True)\n\n# Relationship\nsns.scatterplot(x='advertising', y='sales', data=df)\n\n# Comparison\nsns.boxplot(x='region', y='sales', data=df)\n\n# Correlation heatmap\nsns.heatmap(df.corr(), annot=True)\n```\n\n## EDA Checklist\n- [ ] Univariate analysis\n- [ ] Bivariate analysis\n- [ ] Check for multicollinearity\n- [ ] Identify outliers"
+            "content": "# Exploratory Data Analysis (EDA) 🔍\n\nEDA helps you understand your data before building models.\n\n## Goals of EDA\n\n- 📊 Understand data distributions\n- 🔗 Discover relationships between variables\n- 🚨 Identify outliers and anomalies\n- 💡 Generate hypotheses for modeling\n\n## Key Techniques\n\n### Summary Statistics\n- Mean, median, mode\n- Standard deviation, variance\n- Min, max, range\n- Percentiles and quartiles\n\n### Visualization Types\n\n| Chart Type | Use Case |\n|------------|----------|\n| Histograms | Distribution of single variable |\n| Box Plots | Outliers and quartiles |\n| Scatter Plots | Relationships between variables |\n| Heatmaps | Correlation matrices |\n| Bar Charts | Categorical comparisons |\n\n## Example: Basic Statistics with NumPy\n\n```python\nimport numpy as np\n\ndata = [23, 45, 67, 89, 12, 34, 56, 78, 90, 21]\n\nprint(f\"Mean: {np.mean(data):.2f}\")\nprint(f\"Median: {np.median(data):.2f}\")\nprint(f\"Std Dev: {np.std(data):.2f}\")\nprint(f\"Min: {np.min(data)}, Max: {np.max(data)}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Sample dataset\ndata = [23, 45, 67, 89, 12, 34, 56, 78, 90, 21]\n\nprint(\"=== Exploratory Data Analysis ===\")\nprint(f\"\\nDataset: {data}\")\nprint(f\"\\nNumber of observations: {len(data)}\")\nprint(f\"\\nMean: {np.mean(data):.2f}\")\nprint(f\"Median: {np.median(data):.2f}\")\nprint(f\"Standard Deviation: {np.std(data):.2f}\")\nprint(f\"Variance: {np.var(data):.2f}\")\nprint(f\"Min: {np.min(data)}\")\nprint(f\"Max: {np.max(data)}\")\nprint(f\"Range: {np.max(data) - np.min(data)}\")\nprint(f\"\\n25th percentile: {np.percentile(data, 25):.2f}\")\nprint(f\"75th percentile: {np.percentile(data, 75):.2f}\")\nFULL_CODE_END -->\n\n> 🎯 **Remember:** EDA is about asking questions and letting the data answer them!"
         },
         {
             "id": "data_lifecycle_5",
             "type": "content",
-            "title": "Stage 4: Model Building",
-            "content": "# Model Building 🤖\n\nCreate algorithms to solve your problem.\n\n## Problem Type Matrix\n\n| Problem | Target | Algorithms |\n|---------|--------|------------|\n| Classification | Categorical | Logistic Regression, Random Forest |\n| Regression | Numerical | Linear Regression, XGBoost |\n| Clustering | None | K-Means, DBSCAN |\n\n## Modeling Workflow\n\n```python\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\n\n# 1. Split data\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42)\n\n# 2. Train model\nmodel = RandomForestClassifier(n_estimators=100)\nmodel.fit(X_train, y_train)\n\n# 3. Predict\ny_pred = model.predict(X_test)\n\n# 4. Evaluate\nfrom sklearn.metrics import accuracy_score\nprint(f\"Accuracy: {accuracy_score(y_test, y_pred):.2f}\")\n```\n\n## Key Activities\n- Model selection\n- Hyperparameter tuning\n- Cross-validation\n- Performance evaluation"
-        },
-        {
-            "id": "data_lifecycle_6",
-            "type": "content",
-            "title": "Model Validation",
-            "content": "# Model Validation ✅\n\nProper validation ensures your model generalizes well.\n\n## Cross-Validation\n\n```python\nfrom sklearn.model_selection import cross_val_score\n\nscores = cross_val_score(model, X, y, cv=5)\nprint(f\"Mean CV Score: {scores.mean():.2f} (+/- {scores.std()*2:.2f})\")\n```\n\n## Classification Metrics\n\n| Metric | Use Case |\n|--------|----------|\n| **Accuracy** | Balanced classes |\n| **Precision** | Minimize false positives |\n| **Recall** | Minimize false negatives |\n| **F1-Score** | Balance precision/recall |\n| **AUC-ROC** | Overall performance |\n\n## Regression Metrics\n\n```python\nfrom sklearn.metrics import mean_squared_error, r2_score\n\nprint(f\"RMSE: {mean_squared_error(y_test, y_pred, squared=False):.2f}\")\nprint(f\"R²: {r2_score(y_test, y_pred):.2f}\")\n```\n\n## Common Pitfalls\n- ⚠️ Data leakage\n- ⚠️ Overfitting\n- ⚠️ Underfitting\n- ⚠️ Selection bias"
+            "title": "EDA Best Practices",
+            "content": "# EDA Best Practices 📋\n\nFollow these guidelines for effective exploratory analysis.\n\n## The EDA Checklist\n\n### 1. Start with the Basics\n- ✅ Check data shape (rows, columns)\n- ✅ Examine data types\n- ✅ Look for missing values\n- ✅ Identify duplicates\n\n### 2. Univariate Analysis\n- ✅ Analyze each variable separately\n- ✅ Check distributions\n- ✅ Identify outliers\n- ✅ Understand value ranges\n\n### 3. Bivariate Analysis\n- ✅ Explore relationships between pairs\n- ✅ Calculate correlations\n- ✅ Create scatter plots\n- ✅ Compare groups\n\n### 4. Multivariate Analysis\n- ✅ Look at interactions\n- ✅ Create correlation heatmaps\n- ✅ Use dimensionality reduction\n\n## Questions to Ask During EDA\n\n| Category | Questions |\n|----------|----------|\n| Quality | Are there missing values? Outliers? |\n| Distribution | Is data normally distributed? Skewed? |\n| Relationships | Which variables are correlated? |\n| Patterns | Are there trends or seasonality? |\n\n> 💡 **Pro Tip:** Document your findings! EDA insights guide the entire modeling process."
         },
         {
             "id": "data_lifecycle_quiz_2",
             "type": "quiz",
-            "title": "Model Quiz",
-            "content": "Test your modeling knowledge!",
-            "quizQuestion": "Which metric should you prioritize when you need to minimize false negatives?",
+            "title": "EDA Quiz",
+            "content": "Test your EDA knowledge!",
+            "quizQuestion": "Which chart type is BEST for identifying outliers in a dataset?",
             "quizOptions": [
-                "Accuracy",
-                "Precision",
-                "Recall",
-                "F1-Score"
+                "Pie Chart",
+                "Box Plot",
+                "Line Chart",
+                "Area Chart"
             ],
-            "correctOptionIndex": 2
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "data_lifecycle_6",
+            "type": "content",
+            "title": "Stage 4: Model Building",
+            "content": "# Model Building 🤖\n\nThis is where data science gets exciting—creating predictive models!\n\n## The Modeling Process\n\n### 1. Problem Definition\n- Classification vs Regression vs Clustering\n- Define success metrics\n- Set baseline performance\n\n### 2. Feature Engineering\n- Create new features\n- Select important features\n- Handle categorical variables\n\n### 3. Model Selection\n\n| Problem Type | Common Algorithms |\n|--------------|------------------|\n| Classification | Logistic Regression, Random Forest, XGBoost |\n| Regression | Linear Regression, Decision Trees, Neural Networks |\n| Clustering | K-Means, DBSCAN, Hierarchical |\n\n### 4. Training & Validation\n- Split data (train/validation/test)\n- Train multiple models\n- Cross-validation\n- Hyperparameter tuning\n\n### 5. Evaluation\n\n| Metric | Use Case |\n|--------|----------|\n| Accuracy | Balanced classification |\n| Precision/Recall | Imbalanced classes |\n| RMSE | Regression |\n| AUC-ROC | Binary classification |\n\n> ⚠️ **Warning:** Don't just pick the model with highest accuracy—consider interpretability, training time, and deployment complexity!"
         },
         {
             "id": "data_lifecycle_7",
             "type": "content",
             "title": "Stage 5: Deployment",
-            "content": "# Model Deployment 🚀\n\nDeployment puts your model into production.\n\n## Deployment Options\n\n### 1. API Deployment\n```python\nfrom flask import Flask, request, jsonify\nimport joblib\n\napp = Flask(__name__)\nmodel = joblib.load('model.pkl')\n\n@app.route('/predict', methods=['POST'])\ndef predict():\n    data = request.json\n    prediction = model.predict([data['features']])\n    return jsonify({'prediction': prediction.tolist()})\n```\n\n### 2. Batch Prediction\n- Scheduled jobs (daily, weekly)\n- Full dataset predictions\n\n### 3. Embedded Deployment\n- Model in application\n- Edge devices (mobile, IoT)\n\n## Model Serialization\n\n```python\nimport joblib\n\n# Save model\njoblib.dump(model, 'model.joblib')\n\n# Load model\nloaded_model = joblib.load('model.joblib')\n```\n\n## Deployment Checklist\n- [ ] Model serialized and versioned\n- [ ] API endpoints tested\n- [ ] Error handling implemented\n- [ ] Documentation complete"
+            "content": "# Model Deployment 🚀\n\nA model has no value until it's in production serving real users!\n\n## Deployment Options\n\n### Batch Prediction\n- Run predictions on schedule\n- Process large datasets offline\n- Store results in database\n- **Use case:** Daily sales forecasts\n\n### Real-time Prediction\n- Serve predictions via API\n- Low-latency requirements\n- **Use case:** Fraud detection\n\n### Edge Deployment\n- Run on device (mobile, IoT)\n- Offline capable\n- **Use case:** Image recognition apps\n\n## Deployment Checklist\n\n- ✅ Model serialization (save the trained model)\n- ✅ API development (REST endpoints)\n- ✅ Containerization (Docker)\n- ✅ Infrastructure (cloud or on-premise)\n- ✅ CI/CD pipeline\n- ✅ Documentation\n\n## Common Deployment Patterns\n\n```\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│   Request   │ --> │   API       │ --> │   Model     │\n│   (Input)   │     │   Gateway   │     │   Server    │\n└─────────────┘     └─────────────┘     └─────────────┘\n                                              │\n                                              v\n                                        ┌─────────────┐\n                                        │  Response   │\n                                        │ (Prediction)│\n                                        └─────────────┘\n```\n\n> 💡 **Fact:** 87% of machine learning projects never make it to production. Proper deployment practices are key to success!"
         },
         {
             "id": "data_lifecycle_8",
             "type": "content",
             "title": "Stage 6: Monitoring",
-            "content": "# Monitoring & Maintenance 📊\n\nModels degrade over time - continuous monitoring is essential.\n\n## Why Models Degrade\n- 📉 **Data drift** - Input data changes over time\n- 📉 **Concept drift** - Feature-target relationship changes\n- 📉 **Feature drift** - Individual features behave differently\n\n## Monitoring Metrics\n\n```python\ndef monitor_predictions(predictions):\n    stats = {\n        'mean': predictions.mean(),\n        'std': predictions.std(),\n        'null_pct': predictions.isnull().sum() / len(predictions)\n    }\n    return stats\n```\n\n## Monitoring Dashboard\n\n| Metric | Current | Baseline | Status |\n|--------|---------|----------|--------|\n| Accuracy | 0.85 | 0.88 | ⚠️ |\n| Latency | 45ms | 50ms | ✅ |\n| Error rate | 0.5% | 0.3% | ⚠️ |\n\n## Retraining Strategy\n- **Scheduled** - Weekly, monthly\n- **Triggered** - When drift exceeds threshold\n\n> 💡 Set up automated alerts for performance degradation!"
-        },
-        {
-            "id": "data_lifecycle_9",
-            "type": "content",
-            "title": "Lifecycle Integration",
-            "content": "# Bringing It All Together 🔗\n\n## The Complete Lifecycle\n\n```\nCollection → Preparation → EDA → Modeling\n     ↑                              ↓\n     └──── Monitoring ←── Deployment\n```\n\n## MLOps: Operationalizing Data Science\n\n| Component | Purpose | Tools |\n|-----------|---------|-------|\n| Version Control | Track code/data | Git, DVC |\n| Experiment Tracking | Log experiments | MLflow |\n| CI/CD | Automate deployment | GitHub Actions |\n| Containerization | Reproducibility | Docker |\n| Monitoring | Track production | Prometheus |\n\n## Success Metrics by Stage\n\n| Stage | Success Indicator |\n|-------|-------------------|\n| Collection | Complete data gathered |\n| Preparation | Clean dataset ready |\n| EDA | Clear insights gained |\n| Modeling | Performance criteria met |\n| Deployment | Model serving in production |\n| Monitoring | Sustained performance |\n\n> 🎯 The lifecycle is circular - monitoring feeds back into new collection!"
+            "content": "# Model Monitoring 📊\n\nDeployment is just the beginning—continuous monitoring ensures long-term success.\n\n## Why Monitoring Matters\n\nModels degrade over time due to:\n- 📉 **Data Drift** - Input data distributions change\n- 🎯 **Concept Drift** - Relationships between features and target change\n- 🐛 **Model Decay** - Accuracy decreases over time\n\n## What to Monitor\n\n### 1. Model Performance\n- Prediction accuracy/error rates\n- Response times/latency\n- Throughput (predictions/second)\n\n### 2. Data Quality\n- Missing values rate\n- Feature distributions\n- Outlier frequency\n\n### 3. System Health\n- CPU/Memory usage\n- API availability\n- Error rates\n\n## Monitoring Dashboard Example\n\n| Metric | Threshold | Alert |\n|--------|-----------|-------|\n| Accuracy | < 90% | Warning |\n| Latency | > 100ms | Critical |\n| Error Rate | > 1% | Critical |\n| Data Drift Score | > 0.3 | Warning |\n\n## Retraining Triggers\n\n- ⚠️ Performance drops below threshold\n- ⚠️ Significant data drift detected\n- ⚠️ New data available\n- ⚠️ Business rules change\n\n> 🎯 **Best Practice:** Set up automated alerts and retraining pipelines!"
         },
         {
             "id": "data_lifecycle_quiz_3",
             "type": "quiz",
-            "title": "Lifecycle Quiz",
-            "content": "Final check on the lifecycle!",
-            "quizQuestion": "What causes 'concept drift' in a deployed model?",
+            "title": "Monitoring Quiz",
+            "content": "Test your understanding of model monitoring!",
+            "quizQuestion": "What is 'Data Drift' in the context of model monitoring?",
             "quizOptions": [
-                "The model file gets corrupted",
-                "The server runs out of memory",
-                "The relationship between features and target changes",
-                "The API endpoint changes"
+                "When the model moves to a different server",
+                "When input data distributions change over time",
+                "When the model forgets its training",
+                "When the database runs out of space"
             ],
-            "correctOptionIndex": 2
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "data_lifecycle_9",
+            "type": "content",
+            "title": "MLOps: Operationalizing ML",
+            "content": "# MLOps: Operationalizing Machine Learning ⚙️\n\nMLOps brings DevOps practices to machine learning for reliable, scalable ML systems.\n\n## Core MLOps Principles\n\n### 1. Version Control Everything\n- Code (Git)\n- Data (DVC, Delta Lake)\n- Models (MLflow, Weights & Biases)\n- Experiments (tracking tools)\n\n### 2. Automate Pipelines\n- Data ingestion\n- Feature engineering\n- Model training\n- Deployment\n- Monitoring\n\n### 3. Reproducibility\n- Environment management (Docker)\n- Dependency tracking\n- Random seed control\n- Configuration management\n\n## MLOps Maturity Levels\n\n| Level | Description | Automation |\n|-------|-------------|------------|\n| 0 | Manual, script-based | None |\n| 1 | ML pipeline automation | Partial |\n| 2 | CI/CD pipeline | Full |\n| 3 | Automated retraining | Self-healing |\n\n## Key MLOps Tools\n\n- **Experiment Tracking:** MLflow, Weights & Biases\n- **Pipeline Orchestration:** Airflow, Kubeflow\n- **Model Serving:** TensorFlow Serving, Seldon\n- **Monitoring:** Evidently AI, WhyLabs\n\n> 🚀 **Goal:** Reduce time from experiment to production while maintaining quality!"
         },
         {
             "id": "data_lifecycle_10",
             "type": "content",
+            "title": "Lifecycle in Practice",
+            "content": "# Putting It All Together 🔄\n\nLet's see how the lifecycle works in a real project.\n\n## Case Study: Customer Churn Prediction\n\n### Stage 1: Collection\n- Extract customer data from CRM\n- Gather transaction history\n- Pull support ticket data\n\n### Stage 2: Preparation\n- Clean missing values\n- Create features (usage patterns, tenure)\n- Encode categorical variables\n\n### Stage 3: EDA\n- Analyze churn distribution\n- Find correlations with behavior\n- Identify at-risk segments\n\n### Stage 4: Modeling\n- Train classification models\n- Evaluate with precision/recall\n- Select best performer\n\n### Stage 5: Deployment\n- Deploy as REST API\n- Integrate with CRM system\n- Set up batch scoring\n\n### Stage 6: Monitoring\n- Track prediction accuracy\n- Monitor data drift\n- Retrain quarterly\n\n## Timeline\n\n```\nWeek 1-2: Collection + Preparation\nWeek 3:   EDA + Feature Engineering  \nWeek 4:   Model Building + Evaluation\nWeek 5:   Deployment\nOngoing:  Monitoring + Maintenance\n```\n\n> 💡 **Reality Check:** Most projects take 2-4 months from concept to production!"
+        },
+        {
+            "id": "data_lifecycle_quiz_4",
+            "type": "quiz",
+            "title": "Lifecycle Order Quiz",
+            "content": "Test your understanding of the lifecycle order!",
+            "quizQuestion": "What is the correct order of the data science lifecycle stages?",
+            "quizOptions": [
+                "Modeling → Collection → EDA → Deployment",
+                "Collection → EDA → Preparation → Modeling",
+                "Collection → Preparation → EDA → Modeling → Deployment → Monitoring",
+                "EDA → Collection → Deployment → Monitoring"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "data_lifecycle_11",
+            "type": "content",
+            "title": "Common Pitfalls",
+            "content": "# Common Lifecycle Pitfalls ⚠️\n\nAvoid these common mistakes at each stage.\n\n## Collection Pitfalls\n- ❌ Not validating data sources\n- ❌ Ignoring data privacy requirements\n- ❌ Collecting irrelevant data\n\n## Preparation Pitfalls\n- ❌ Data leakage (using future info)\n- ❌ Over-engineering features\n- ❌ Inconsistent preprocessing\n\n## EDA Pitfalls\n- ❌ Skipping EDA entirely\n- ❌ Confirmation bias\n- ❌ Ignoring outliers\n\n## Modeling Pitfalls\n- ❌ Overfitting to training data\n- ❌ Wrong evaluation metrics\n- ❌ Not establishing baselines\n\n## Deployment Pitfalls\n- ❌ Training-serving skew\n- ❌ No rollback plan\n- ❌ Missing documentation\n\n## Monitoring Pitfalls\n- ❌ No monitoring at all\n- ❌ Ignoring drift alerts\n- ❌ Manual retraining processes\n\n> 🎯 **Key Lesson:** Document everything, automate where possible, and always validate your assumptions!"
+        },
+        {
+            "id": "data_lifecycle_12",
+            "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered the Data Science Lifecycle!\n\n## The Six Stages\n\n### 1. Data Collection 📥\n- Gather data from internal/external sources\n\n### 2. Data Preparation 🧹\n- Clean and transform (60-80% of time)\n\n### 3. Exploratory Data Analysis 🔍\n- Understand distributions and relationships\n\n### 4. Model Building 🤖\n- Select, train, and validate models\n\n### 5. Deployment 🚀\n- Put models into production\n\n### 6. Monitoring 📊\n- Track and maintain performance\n\n## Key Takeaways\n- ✅ The lifecycle is **iterative**, not linear\n- ✅ **Data quality** determines model quality\n- ✅ **Monitoring** is as important as building\n- ✅ **Documentation** throughout is essential\n\n> 🚀 **Next Steps:** Dive deeper into each stage!\n\nKeep building and deploying! 🎯"
+            "content": "# Congratulations! 🎉\n\nYou've mastered the Data Science Lifecycle!\n\n## Key Takeaways\n\n### The 6 Stages\n1. **Collection** 📥 - Gather data from multiple sources\n2. **Preparation** 🧹 - Clean and transform (60-80% of time!)\n3. **EDA** 🔍 - Understand patterns and relationships\n4. **Modeling** 🤖 - Build and validate predictive models\n5. **Deployment** 🚀 - Put models into production\n6. **Monitoring** 📊 - Maintain performance over time\n\n### Critical Insights\n\n- ✅ The lifecycle is **iterative**, not linear\n- ✅ Data quality determines model quality\n- ✅ EDA insights guide modeling decisions\n- ✅ Deployment and monitoring are essential, not optional\n- ✅ MLOps practices ensure reliability\n\n### Remember\n\n| Stage | Typical Time |\n|-------|-------------|\n| Collection + Prep | 60-80% |\n| EDA + Modeling | 15-25% |\n| Deployment + Monitoring | 5-15% |\n\n> 🚀 **Next Steps:** Practice each stage with a real dataset from Kaggle!\n\nKeep building and deploying! 💪"
         }
     ]
 }
