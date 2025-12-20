@@ -1,0 +1,67 @@
+{
+    "id": "learn_sql_basics",
+    "topicId": "sql_basics",
+    "topicTitle": "SQL Fundamentals",
+    "description": "Master SQL basics for data querying and manipulation",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "sql_basics_1",
+            "type": "content",
+            "title": "Introduction to SQL",
+            "content": "# SQL Fundamentals 📊\n\nThe language of data.\n\n## What is SQL?\n\nStructured Query Language - the standard for relational databases.\n\n## Why SQL?\n\n- Universal database language\n- Query data efficiently\n- Essential for data work\n- Foundation for analytics\n\n## SQL Operations\n\n| Category | Commands |\n|----------|----------|\n| Query | SELECT |\n| Modify | INSERT, UPDATE, DELETE |\n| Define | CREATE, ALTER, DROP |\n\n> 💡 SQL is non-negotiable for data professionals!"
+        },
+        {
+            "id": "sql_basics_2",
+            "type": "content",
+            "title": "SELECT Statement",
+            "content": "# SELECT Statement 🔍\n\n## Basic Syntax\n\n```sql\nSELECT column1, column2\nFROM table_name\nWHERE condition\nORDER BY column1;\n```\n\n## Examples\n\n```sql\n-- All columns\nSELECT * FROM customers;\n\n-- Specific columns\nSELECT name, email FROM customers;\n\n-- With condition\nSELECT * FROM orders WHERE amount > 100;\n```\n\n> 🎯 SELECT is your primary data retrieval tool!"
+        },
+        {
+            "id": "sql_basics_quiz_1",
+            "type": "quiz",
+            "title": "SELECT Quiz",
+            "content": "Test your SQL knowledge!",
+            "quizQuestion": "Which clause is used to filter rows in SQL?",
+            "quizOptions": [
+                "SELECT",
+                "FROM",
+                "WHERE",
+                "ORDER BY"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sql_basics_3",
+            "type": "content",
+            "title": "Joins",
+            "content": "# SQL Joins 🔗\n\n## Types of Joins\n\n| Join | Returns |\n|------|--------|\n| INNER | Matching rows only |\n| LEFT | All left + matching right |\n| RIGHT | All right + matching left |\n| FULL | All rows from both |\n\n## Syntax\n\n```sql\nSELECT o.id, c.name\nFROM orders o\nINNER JOIN customers c\nON o.customer_id = c.id;\n```\n\n> 💡 Joins combine tables for analysis!"
+        },
+        {
+            "id": "sql_basics_4",
+            "type": "content",
+            "title": "Aggregations",
+            "content": "# Aggregations 📊\n\n## Aggregate Functions\n\n| Function | Purpose |\n|----------|--------|\n| COUNT() | Count rows |\n| SUM() | Total |\n| AVG() | Average |\n| MIN()/MAX() | Extremes |\n\n## GROUP BY\n\n```sql\nSELECT category, SUM(sales)\nFROM products\nGROUP BY category\nHAVING SUM(sales) > 1000;\n```\n\n> 🎯 Aggregations summarize data!"
+        },
+        {
+            "id": "sql_basics_quiz_2",
+            "type": "quiz",
+            "title": "Aggregations Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which clause filters grouped results?",
+            "quizOptions": [
+                "WHERE",
+                "GROUP BY",
+                "HAVING",
+                "ORDER BY"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sql_basics_5",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned SQL Fundamentals!\n\n## Key Commands\n\n- ✅ SELECT for querying\n- ✅ WHERE for filtering\n- ✅ JOIN for combining tables\n- ✅ GROUP BY for aggregation\n\n## SQL Order of Execution\n\n1. FROM → 2. WHERE → 3. GROUP BY → 4. HAVING → 5. SELECT → 6. ORDER BY\n\n> 🚀 SQL is essential for data!\n\nKeep querying! 📊"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "learn_data_modeling",
+    "topicId": "data_modeling",
+    "topicTitle": "Data Modeling",
+    "description": "Master data modeling techniques",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "data_modeling_1",
+            "type": "content",
+            "title": "Data Modeling Overview",
+            "content": "# Data Modeling 📐\n\n## What is Data Modeling?\n\nDefining data structure and relationships.\n\n## Model Types\n\n| Type | Level |\n|------|-------|\n| Conceptual | Business view |\n| Logical | Detailed, platform-independent |\n| Physical | Implementation-specific |\n\n> 💡 Good models = good databases!"
+        },
+        {
+            "id": "data_modeling_2",
+            "type": "content",
+            "title": "Normalization",
+            "content": "# Normalization 📊\n\n## Normal Forms\n\n| Form | Eliminates |\n|------|------------|\n| 1NF | Repeating groups |\n| 2NF | Partial dependencies |\n| 3NF | Transitive dependencies |\n\n## When to Denormalize\n\n- Read-heavy workloads\n- Analytics/warehousing\n- Performance critical\n\n> 🎯 Balance normalization with performance!"
+        },
+        {
+            "id": "data_modeling_quiz_1",
+            "type": "quiz",
+            "title": "Normalization Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "3NF eliminates:",
+            "quizOptions": [
+                "Repeating groups",
+                "Partial dependencies",
+                "Transitive dependencies",
+                "All redundancy"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "data_modeling_3",
+            "type": "content",
+            "title": "Dimensional Modeling",
+            "content": "# Dimensional Modeling 🏢\n\n## Star Schema\n\n- Fact table (measures)\n- Dimension tables (context)\n- Simple joins\n\n## Key Concepts\n\n| Element | Purpose |\n|---------|--------|\n| Fact | Metrics, measures |\n| Dimension | Who, what, when, where |\n| Grain | Level of detail |\n\n> 💡 Star schema for analytics!"
+        },
+        {
+            "id": "data_modeling_quiz_2",
+            "type": "quiz",
+            "title": "Dimensional Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Fact tables contain:",
+            "quizOptions": [
+                "Descriptive attributes",
+                "Measures and metrics",
+                "Customer names",
+                "Date descriptions"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "data_modeling_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Data Modeling!\n\n## Key Takeaways\n\n- ✅ Conceptual → Logical → Physical\n- ✅ Normalization for OLTP\n- ✅ Star schema for OLAP\n- ✅ Balance with performance needs\n\n> 🚀 Model well, query well!\n\nKeep modeling! 📐"
+        }
+    ]
+}

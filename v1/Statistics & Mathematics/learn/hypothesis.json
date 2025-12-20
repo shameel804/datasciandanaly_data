@@ -1,0 +1,117 @@
+{
+    "id": "learn_hypothesis",
+    "topicId": "hypothesis",
+    "topicTitle": "Hypothesis Testing",
+    "description": "Master null and alternative hypotheses, p-values, Type I/II errors, and test selection",
+    "baseKP": 90,
+    "slides": [
+        {
+            "id": "hypothesis_1",
+            "type": "content",
+            "title": "Introduction to Hypothesis Testing",
+            "content": "# Hypothesis Testing 🔬\n\nMaking data-driven decisions using statistical evidence.\n\n## What You'll Learn\n- **Null & Alternative Hypotheses** - Framing testable claims\n- **p-values** - Quantifying evidence against null\n- **Type I & II Errors** - Understanding decision errors\n- **Test Selection** - Choosing the right test\n\n> 💡 **Key Insight:** Hypothesis testing is the scientific method applied to data!\n\n## Why Hypothesis Testing?\n\n| Question | Hypothesis Test |\n|----------|----------------|\n| Does this drug work? | Compare treatment vs placebo |\n| Is A better than B? | A/B test |\n| Has the process changed? | Quality control test |\n| Is there a relationship? | Correlation test |\n\n## The Framework\n\n```\n1. State hypotheses (H₀ and H₁)\n2. Choose significance level (α)\n3. Collect data and calculate test statistic\n4. Find p-value\n5. Make decision (reject or fail to reject H₀)\n6. Interpret results\n```\n\nLet's master evidence-based decision making! 🎯"
+        },
+        {
+            "id": "hypothesis_2",
+            "type": "content",
+            "title": "Null and Alternative Hypotheses",
+            "content": "# Null and Alternative Hypotheses 📝\n\nThe foundation of every hypothesis test.\n\n## Null Hypothesis (H₀)\n\nThe \"no effect\" or \"no difference\" claim.\n- Assumed true until evidence suggests otherwise\n- Usually states: μ = μ₀, or no difference, no relationship\n\n## Alternative Hypothesis (H₁ or Hₐ)\n\nWhat we're trying to find evidence for.\n- The research hypothesis\n- States there IS an effect/difference\n\n## Types of Tests\n\n| Type | H₁ | Example |\n|------|-----|--------|\n| Two-tailed | μ ≠ μ₀ | Mean is different from 100 |\n| Right-tailed | μ > μ₀ | Mean is greater than 100 |\n| Left-tailed | μ < μ₀ | Mean is less than 100 |\n\n## Examples\n\n### Drug Effectiveness\n- H₀: Drug has no effect (μ_treatment = μ_placebo)\n- H₁: Drug has an effect (μ_treatment ≠ μ_placebo)\n\n### Website A/B Test\n- H₀: New design same as old (conversion_A = conversion_B)\n- H₁: New design is better (conversion_B > conversion_A)\n\n> ⚠️ **Key:** We never \"accept\" H₀, we only \"fail to reject\" it!"
+        },
+        {
+            "id": "hypothesis_3",
+            "type": "content",
+            "title": "Test Statistics",
+            "content": "# Test Statistics 📊\n\nQuantifying how far the data is from H₀.\n\n## Common Test Statistics\n\n### Z-statistic (known σ)\nz = (x̄ - μ₀) / (σ/√n)\n\n### T-statistic (unknown σ)\nt = (x̄ - μ₀) / (s/√n)\n\n### Chi-square (χ²)\nχ² = Σ (O - E)² / E\n\n## Interpretation\n\n| Test Statistic | Meaning |\n|----------------|--------|\n| Close to 0 | Data consistent with H₀ |\n| Far from 0 | Data inconsistent with H₀ |\n\n## Example: One-Sample t-test\n\n```python\nimport numpy as np\nfrom scipy import stats\n\n# Sample data\nsample = [102, 98, 105, 101, 99, 103, 100, 104]\nmu_0 = 100  # Hypothesized mean\n\n# Calculate t-statistic\nn = len(sample)\nx_bar = np.mean(sample)\ns = np.std(sample, ddof=1)\nt_stat = (x_bar - mu_0) / (s / np.sqrt(n))\n\nprint(f\"t-statistic: {t_stat:.3f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== Test Statistics Example ===\")\n\n# Sample data\nsample = np.array([102, 98, 105, 101, 99, 103, 100, 104])\nmu_0 = 100  # Hypothesized mean\n\nprint(f\"\\nSample: {sample}\")\nprint(f\"Hypothesized mean (H₀): μ = {mu_0}\")\n\n# Calculate statistics\nn = len(sample)\nx_bar = np.mean(sample)\ns = np.std(sample, ddof=1)\nse = s / np.sqrt(n)\n\nprint(f\"\\nSample statistics:\")\nprint(f\"  n = {n}\")\nprint(f\"  x̄ = {x_bar:.2f}\")\nprint(f\"  s = {s:.2f}\")\nprint(f\"  SE = {se:.2f}\")\n\n# Calculate t-statistic\nt_stat = (x_bar - mu_0) / se\nprint(f\"\\nt-statistic = (x̄ - μ₀) / SE\")\nprint(f\"t-statistic = ({x_bar:.2f} - {mu_0}) / {se:.2f}\")\nprint(f\"t-statistic = {t_stat:.3f}\")\n\n# Using scipy for comparison\nt_scipy, p_scipy = stats.ttest_1samp(sample, mu_0)\nprint(f\"\\nScipy verification:\")\nprint(f\"  t-statistic: {t_scipy:.3f}\")\nprint(f\"  p-value: {p_scipy:.4f}\")\nFULL_CODE_END -->\n\n> 🎯 **Key Insight:** The test statistic measures evidence against H₀ in standard units."
+        },
+        {
+            "id": "hypothesis_quiz_1",
+            "type": "quiz",
+            "title": "Hypothesis Quiz",
+            "content": "Test your understanding of hypotheses!",
+            "quizQuestion": "A company claims their product lasts at least 100 hours. You want to test if it lasts LESS. What is the alternative hypothesis?",
+            "quizOptions": [
+                "H₁: μ = 100",
+                "H₁: μ ≠ 100",
+                "H₁: μ > 100",
+                "H₁: μ < 100"
+            ],
+            "correctOptionIndex": 3
+        },
+        {
+            "id": "hypothesis_4",
+            "type": "content",
+            "title": "P-Values Explained",
+            "content": "# P-Values: Quantifying Evidence 📈\n\nThe probability of observing your data (or more extreme) IF H₀ is true.\n\n## Definition\n\n**p-value:** Probability of getting a test statistic as extreme or more extreme than observed, assuming H₀ is true.\n\n## Interpretation\n\n| p-value | Evidence against H₀ |\n|---------|--------------------|\n| > 0.10 | Little or no evidence |\n| 0.05 - 0.10 | Weak evidence |\n| 0.01 - 0.05 | Moderate evidence |\n| 0.001 - 0.01 | Strong evidence |\n| < 0.001 | Very strong evidence |\n\n## Decision Rule\n\n- If p-value ≤ α: Reject H₀\n- If p-value > α: Fail to reject H₀\n\n(α = significance level, commonly 0.05)\n\n## Example\n\n```python\nfrom scipy import stats\n\nt_stat = 2.5\ndf = 29\n\n# Two-tailed p-value\np_value = 2 * (1 - stats.t.cdf(abs(t_stat), df))\nprint(f\"p-value: {p_value:.4f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== P-Value Demonstration ===\")\n\n# Example 1: Calculate p-value from t-statistic\nprint(\"\\n1. P-VALUE FROM T-STATISTIC\")\nt_stat = 2.5\ndf = 29\n\n# Two-tailed\np_two = 2 * (1 - stats.t.cdf(abs(t_stat), df))\n# One-tailed (right)\np_one_right = 1 - stats.t.cdf(t_stat, df)\n# One-tailed (left)\np_one_left = stats.t.cdf(t_stat, df)\n\nprint(f\"   t-statistic: {t_stat}\")\nprint(f\"   df: {df}\")\nprint(f\"   Two-tailed p-value: {p_two:.4f}\")\nprint(f\"   One-tailed (right) p-value: {p_one_right:.4f}\")\n\n# Example 2: Full hypothesis test\nprint(\"\\n2. COMPLETE HYPOTHESIS TEST\")\nnp.random.seed(42)\nsample = np.random.normal(102, 5, 30)  # True mean is 102\nmu_0 = 100\nalpha = 0.05\n\nt_stat, p_value = stats.ttest_1samp(sample, mu_0)\n\nprint(f\"   H₀: μ = {mu_0}\")\nprint(f\"   H₁: μ ≠ {mu_0}\")\nprint(f\"   α = {alpha}\")\nprint(f\"   Sample mean: {np.mean(sample):.2f}\")\nprint(f\"   t-statistic: {t_stat:.3f}\")\nprint(f\"   p-value: {p_value:.4f}\")\n\nif p_value <= alpha:\n    print(f\"\\n   Decision: Reject H₀ (p = {p_value:.4f} ≤ {alpha})\")\n    print(\"   Conclusion: Evidence suggests μ ≠ 100\")\nelse:\n    print(f\"\\n   Decision: Fail to reject H₀ (p = {p_value:.4f} > {alpha})\")\n    print(\"   Conclusion: Insufficient evidence that μ ≠ 100\")\nFULL_CODE_END -->\n\n> ⚠️ **Common Misconception:** p-value is NOT the probability that H₀ is true!"
+        },
+        {
+            "id": "hypothesis_5",
+            "type": "content",
+            "title": "Type I and Type II Errors",
+            "content": "# Type I and Type II Errors ⚠️\n\nThe two types of mistakes in hypothesis testing.\n\n## Error Types\n\n|  | H₀ True | H₀ False |\n|--|---------|----------|\n| **Reject H₀** | Type I Error (α) | Correct! |\n| **Fail to Reject** | Correct! | Type II Error (β) |\n\n## Type I Error (False Positive)\n\n- **Definition:** Rejecting H₀ when it's actually true\n- **Probability:** α (significance level)\n- **Example:** Convicting an innocent person\n\n## Type II Error (False Negative)\n\n- **Definition:** Failing to reject H₀ when it's false\n- **Probability:** β\n- **Example:** Letting a guilty person go free\n\n## Power\n\n**Power = 1 - β**\n\nProbability of correctly rejecting a false H₀.\n\n## Trade-offs\n\n| Decrease α | Consequence |\n|------------|-------------|\n| Fewer Type I errors | More Type II errors |\n| Harder to reject H₀ | Miss real effects |\n\n## Increasing Power\n\n- ↑ Sample size (n)\n- ↑ Significance level (α)\n- ↑ Effect size\n- ↓ Variability\n\n> 🎯 **Balancing Act:** Choose α based on which error is more costly!"
+        },
+        {
+            "id": "hypothesis_quiz_2",
+            "type": "quiz",
+            "title": "Error Types Quiz",
+            "content": "Test your understanding of errors!",
+            "quizQuestion": "A medical test says a healthy patient has a disease. This is an example of:",
+            "quizOptions": [
+                "Type I Error (False Positive)",
+                "Type II Error (False Negative)",
+                "Correct decision",
+                "Power"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "id": "hypothesis_6",
+            "type": "content",
+            "title": "Common Hypothesis Tests",
+            "content": "# Common Hypothesis Tests 📋\n\nChoosing the right test for your data.\n\n## One Sample Tests\n\n| Test | Use When |\n|------|----------|\n| One-sample t-test | Compare mean to known value |\n| One-sample z-test | σ known (rare) |\n| One proportion z-test | Compare proportion to value |\n\n## Two Sample Tests\n\n| Test | Use When |\n|------|----------|\n| Independent t-test | Compare means of 2 groups |\n| Paired t-test | Before/after, matched pairs |\n| Two proportion z-test | Compare 2 proportions |\n\n## Multiple Groups\n\n| Test | Use When |\n|------|----------|\n| ANOVA | Compare means of 3+ groups |\n| Chi-square | Categorical variables |\n\n## Decision Flowchart\n\n```\n     What are you comparing?\n            ↓\n    ┌───────┴───────┐\n  Means          Proportions\n    ↓                 ↓\n 1 or 2?          Z-test\n    ↓\n ┌──┴──┐\n 1     2\n ↓     ↓\nt-test  Independent\n        or Paired?\n```\n\n> 💡 **Pro Tip:** Also check assumptions (normality, independence, equal variances)!"
+        },
+        {
+            "id": "hypothesis_7",
+            "type": "content",
+            "title": "One-Sample T-Test",
+            "content": "# One-Sample T-Test 📊\n\nComparing a sample mean to a known value.\n\n## When to Use\n- You have one sample\n- Testing if population mean = specific value\n- Data approximately normal (or n ≥ 30)\n\n## Hypotheses\n\n- H₀: μ = μ₀\n- H₁: μ ≠ μ₀ (or < or >)\n\n## Formula\n\nt = (x̄ - μ₀) / (s / √n)\n\ndf = n - 1\n\n## Example\n\n```python\nfrom scipy import stats\nimport numpy as np\n\n# Battery life data (claimed: 500 hours)\nbattery_life = [495, 502, 498, 503, 497, 501, 499, 504, 496, 500]\n\nt_stat, p_value = stats.ttest_1samp(battery_life, 500)\nprint(f\"t-statistic: {t_stat:.3f}\")\nprint(f\"p-value: {p_value:.4f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== One-Sample T-Test ===\")\n\n# Battery life example\nbattery_life = np.array([495, 502, 498, 503, 497, 501, 499, 504, 496, 500])\nclaimed_mean = 500\nalpha = 0.05\n\nprint(f\"\\nScenario: Testing if battery life differs from {claimed_mean} hours\")\nprint(f\"Sample: {battery_life}\")\nprint(f\"\\nH₀: μ = {claimed_mean}\")\nprint(f\"H₁: μ ≠ {claimed_mean}\")\nprint(f\"α = {alpha}\")\n\n# Manual calculation\nn = len(battery_life)\nx_bar = np.mean(battery_life)\ns = np.std(battery_life, ddof=1)\nse = s / np.sqrt(n)\nt_manual = (x_bar - claimed_mean) / se\n\nprint(f\"\\nManual Calculation:\")\nprint(f\"  n = {n}\")\nprint(f\"  x̄ = {x_bar:.2f}\")\nprint(f\"  s = {s:.2f}\")\nprint(f\"  SE = {se:.2f}\")\nprint(f\"  t = ({x_bar:.2f} - {claimed_mean}) / {se:.2f} = {t_manual:.3f}\")\n\n# Using scipy\nt_stat, p_value = stats.ttest_1samp(battery_life, claimed_mean)\n\nprint(f\"\\nScipy Results:\")\nprint(f\"  t-statistic: {t_stat:.3f}\")\nprint(f\"  p-value: {p_value:.4f}\")\n\n# Decision\nif p_value <= alpha:\n    print(f\"\\n✗ Reject H₀: Evidence suggests μ ≠ {claimed_mean}\")\nelse:\n    print(f\"\\n✓ Fail to reject H₀: No evidence that μ ≠ {claimed_mean}\")\nFULL_CODE_END -->\n\n> 🎯 **Interpretation:** Always state conclusions in context of the problem!"
+        },
+        {
+            "id": "hypothesis_8",
+            "type": "content",
+            "title": "Two-Sample T-Test",
+            "content": "# Two-Sample T-Test 📊\n\nComparing means of two independent groups.\n\n## When to Use\n- Two independent samples\n- Testing if means are different\n- Data approximately normal\n\n## Hypotheses\n\n- H₀: μ₁ = μ₂\n- H₁: μ₁ ≠ μ₂\n\n## Types\n\n| Test | Assumption |\n|------|------------|\n| Equal variance | σ₁ = σ₂ |\n| Welch's t-test | σ₁ ≠ σ₂ (default) |\n\n## Example: A/B Test\n\n```python\nfrom scipy import stats\nimport numpy as np\n\n# Conversion rates\ngroup_a = [2.1, 2.5, 2.3, 2.8, 2.2]\ngroup_b = [2.8, 3.1, 2.9, 3.2, 2.7]\n\nt_stat, p_value = stats.ttest_ind(group_a, group_b)\nprint(f\"t-statistic: {t_stat:.3f}\")\nprint(f\"p-value: {p_value:.4f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== Two-Sample T-Test (A/B Test) ===\")\n\n# Website conversion rates (%)\nnp.random.seed(42)\ngroup_a = np.array([2.1, 2.5, 2.3, 2.8, 2.2, 2.4, 2.6, 2.3, 2.5, 2.4])\ngroup_b = np.array([2.8, 3.1, 2.9, 3.2, 2.7, 3.0, 2.9, 3.1, 2.8, 3.0])\nalpha = 0.05\n\nprint(f\"\\nGroup A (Control): {group_a}\")\nprint(f\"Group B (New Design): {group_b}\")\nprint(f\"\\nH₀: μ_A = μ_B (no difference)\")\nprint(f\"H₁: μ_A ≠ μ_B (there is a difference)\")\nprint(f\"α = {alpha}\")\n\n# Summary statistics\nprint(f\"\\nSummary Statistics:\")\nprint(f\"  Group A: n={len(group_a)}, mean={np.mean(group_a):.3f}, std={np.std(group_a, ddof=1):.3f}\")\nprint(f\"  Group B: n={len(group_b)}, mean={np.mean(group_b):.3f}, std={np.std(group_b, ddof=1):.3f}\")\n\n# Welch's t-test (default, doesn't assume equal variance)\nt_stat, p_value = stats.ttest_ind(group_a, group_b, equal_var=False)\n\nprint(f\"\\nWelch's t-test Results:\")\nprint(f\"  t-statistic: {t_stat:.3f}\")\nprint(f\"  p-value: {p_value:.4f}\")\n\n# Effect size (Cohen's d)\npooled_std = np.sqrt((np.var(group_a, ddof=1) + np.var(group_b, ddof=1)) / 2)\ncohens_d = (np.mean(group_b) - np.mean(group_a)) / pooled_std\nprint(f\"  Cohen's d (effect size): {cohens_d:.3f}\")\n\n# Decision\nif p_value <= alpha:\n    print(f\"\\n✗ Reject H₀: Significant difference between groups\")\n    print(f\"  Group B mean is {np.mean(group_b) - np.mean(group_a):.2f} higher than Group A\")\nelse:\n    print(f\"\\n✓ Fail to reject H₀: No significant difference\")\nFULL_CODE_END -->\n\n> 💡 **A/B Testing:** This is exactly how companies test new features!"
+        },
+        {
+            "id": "hypothesis_9",
+            "type": "content",
+            "title": "Chi-Square Test",
+            "content": "# Chi-Square Test 📊\n\nTesting relationships between categorical variables.\n\n## Types\n\n### 1. Goodness of Fit\nDoes observed distribution match expected?\n\n### 2. Test of Independence\nAre two categorical variables related?\n\n## Formula\n\nχ² = Σ (O - E)² / E\n\nWhere:\n- O = Observed frequency\n- E = Expected frequency\n\n## Example: Survey Independence\n\n```python\nfrom scipy import stats\nimport numpy as np\n\n# Contingency table\nobserved = np.array([[50, 30],\n                     [35, 45]])\n\nchi2, p_value, dof, expected = stats.chi2_contingency(observed)\nprint(f\"Chi-square: {chi2:.3f}\")\nprint(f\"p-value: {p_value:.4f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== Chi-Square Test of Independence ===\")\n\n# Survey: Is gender related to product preference?\nprint(\"\\nScenario: Is gender related to product preference?\")\nprint(\"\\nObserved Data:\")\nprint(\"              Product A  Product B\")\nprint(\"  Male           50         30\")\nprint(\"  Female         35         45\")\n\nobserved = np.array([[50, 30],\n                     [35, 45]])\n\nprint(f\"\\nH₀: Gender and preference are independent\")\nprint(f\"H₁: Gender and preference are related\")\n\n# Chi-square test\nchi2, p_value, dof, expected = stats.chi2_contingency(observed)\n\nprint(f\"\\nExpected frequencies (if independent):\")\nprint(f\"              Product A  Product B\")\nprint(f\"  Male         {expected[0,0]:.1f}       {expected[0,1]:.1f}\")\nprint(f\"  Female       {expected[1,0]:.1f}       {expected[1,1]:.1f}\")\n\nprint(f\"\\nResults:\")\nprint(f\"  Chi-square statistic: {chi2:.3f}\")\nprint(f\"  Degrees of freedom: {dof}\")\nprint(f\"  p-value: {p_value:.4f}\")\n\nalpha = 0.05\nif p_value <= alpha:\n    print(f\"\\n✗ Reject H₀: Gender and preference ARE related\")\nelse:\n    print(f\"\\n✓ Fail to reject H₀: No evidence of relationship\")\nFULL_CODE_END -->\n\n> 🎯 **Use Case:** Great for survey data and A/B testing with categorical outcomes!"
+        },
+        {
+            "id": "hypothesis_quiz_3",
+            "type": "quiz",
+            "title": "Test Selection Quiz",
+            "content": "Choose the right test!",
+            "quizQuestion": "You want to compare customer satisfaction (1-5 scale) BEFORE and AFTER a training program for the SAME employees. Which test should you use?",
+            "quizOptions": [
+                "Independent t-test",
+                "Paired t-test",
+                "One-sample t-test",
+                "Chi-square test"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "hypothesis_10",
+            "type": "content",
+            "title": "Statistical Significance vs Practical Significance",
+            "content": "# Beyond P-Values 🎯\n\nStatistical significance isn't everything!\n\n## Statistical vs Practical Significance\n\n| Type | Question | Measure |\n|------|----------|--------|\n| Statistical | Is there an effect? | p-value |\n| Practical | Is the effect meaningful? | Effect size |\n\n## The Problem with Large Samples\n\nWith enough data, even tiny effects become \"significant\".\n\n**Example:**\n- New website: 2.01% conversion\n- Old website: 2.00% conversion\n- With n=1,000,000, p < 0.001!\n- But is 0.01% increase worth the cost?\n\n## Effect Size Measures\n\n| Measure | For | Small | Medium | Large |\n|---------|-----|-------|--------|-------|\n| Cohen's d | Means | 0.2 | 0.5 | 0.8 |\n| Pearson's r | Correlation | 0.1 | 0.3 | 0.5 |\n| Odds Ratio | Categorical | 1.5 | 2.5 | 4.0 |\n\n## Cohen's d Formula\n\nd = (x̄₁ - x̄₂) / s_pooled\n\n## Best Practice\n\nAlways report:\n1. ✅ Test statistic\n2. ✅ P-value\n3. ✅ Effect size\n4. ✅ Confidence interval\n\n> 🎯 **Key Insight:** A significant result with tiny effect size may not matter in practice!"
+        },
+        {
+            "id": "hypothesis_11",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Hypothesis Testing!\n\n## Key Takeaways\n\n### The Framework\n1. State H₀ and H₁\n2. Choose α (usually 0.05)\n3. Collect data, calculate test statistic\n4. Find p-value\n5. Make decision\n6. Report effect size\n\n### Core Concepts\n\n| Concept | Definition |\n|---------|------------|\n| H₀ | No effect/difference |\n| H₁ | There IS an effect |\n| p-value | P(data | H₀ true) |\n| α | Significance level |\n| Type I | False positive |\n| Type II | False negative |\n| Power | 1 - β |\n\n### Common Tests\n\n| Test | Use For |\n|------|--------|\n| One-sample t | Mean vs known value |\n| Two-sample t | Compare 2 group means |\n| Paired t | Before/after same subjects |\n| Chi-square | Categorical variables |\n| ANOVA | Compare 3+ groups |\n\n### Remember\n\n- ✅ P-value < α → Reject H₀\n- ✅ Always report effect size\n- ✅ Statistical ≠ Practical significance\n- ✅ Check assumptions before testing\n\n> 🚀 **Next:** Learn Regression for modeling relationships!\n\nYou can now make data-driven decisions! 📊"
+        }
+    ]
+}

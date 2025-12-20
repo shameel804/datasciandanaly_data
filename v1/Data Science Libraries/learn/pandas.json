@@ -1,0 +1,61 @@
+{
+    "id": "learn_pandas",
+    "topicId": "pandas",
+    "topicTitle": "Pandas",
+    "description": "Master Pandas for data manipulation and analysis",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "pandas_1",
+            "type": "content",
+            "title": "Pandas Overview",
+            "content": "# Pandas 🐼\n\n## What is Pandas?\n\nPython library for data manipulation and analysis.\n\n## Core Data Structures\n\n| Structure | Description |\n|-----------|-------------|\n| Series | 1D labeled array |\n| DataFrame | 2D labeled table |\n\n## Why Pandas?\n\n- Easy data loading\n- Powerful manipulation\n- Handles missing data\n- Great for exploration\n\n> 💡 Pandas is essential for data work!"
+        },
+        {
+            "id": "pandas_2",
+            "type": "content",
+            "title": "Basic Operations",
+            "content": "# Basic Operations 🔧\n\n## Loading Data\n\n```python_not\nimport pandas as pd\n\ndf = pd.read_csv('data.csv')\ndf.head()\ndf.info()\ndf.describe()\n```\n\n## Selection\n\n| Method | Use |\n|--------|-----|\n| df['col'] | Single column |\n| df[['a','b']] | Multiple columns |\n| df.loc[] | Label-based |\n| df.iloc[] | Index-based |\n\n> 🎯 Use loc/iloc for precise selection!"
+        },
+        {
+            "id": "pandas_quiz_1",
+            "type": "quiz",
+            "title": "Pandas Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which method selects by integer index in Pandas?",
+            "quizOptions": [
+                "loc",
+                "iloc",
+                "at",
+                "select"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "pandas_3",
+            "type": "content",
+            "title": "Data Manipulation",
+            "content": "# Data Manipulation 📊\n\n## Common Operations\n\n```python_not\n# Filter\ndf[df['age'] > 30]\n\n# Group\ndf.groupby('category').sum()\n\n# Merge\npd.merge(df1, df2, on='key')\n\n# Pivot\ndf.pivot_table(values='sales', index='month')\n```\n\n## Method Chaining\n\n```python_not\nresult = (df\n    .query('age > 30')\n    .groupby('city')\n    .agg({'salary': 'mean'})\n    .sort_values('salary'))\n```"
+        },
+        {
+            "id": "pandas_quiz_2",
+            "type": "quiz",
+            "title": "Operations Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which function combines two DataFrames?",
+            "quizOptions": [
+                "concat only",
+                "merge",
+                "append only",
+                "combine"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "pandas_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Pandas!\n\n## Key Takeaways\n\n- ✅ Series and DataFrames\n- ✅ loc/iloc for selection\n- ✅ groupby for aggregation\n- ✅ merge for joins\n\n> 🚀 Pandas is your data workhorse!\n\nKeep wrangling! 🐼"
+        }
+    ]
+}

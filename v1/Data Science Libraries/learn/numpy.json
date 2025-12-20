@@ -1,0 +1,61 @@
+{
+    "id": "learn_numpy",
+    "topicId": "numpy",
+    "topicTitle": "NumPy",
+    "description": "Master NumPy for numerical computing",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "numpy_1",
+            "type": "content",
+            "title": "NumPy Overview",
+            "content": "# NumPy 🔢\n\n## What is NumPy?\n\nFundamental package for numerical computing.\n\n## Why NumPy?\n\n- Fast array operations\n- Vectorized computations\n- Foundation for other libraries\n\n## Core: ndarray\n\n| Feature | Benefit |\n|---------|--------|\n| Homogeneous | Memory efficient |\n| Fixed size | Fast operations |\n| Multi-dimensional | Matrix math |\n\n> 💡 NumPy is 50x+ faster than Python lists!"
+        },
+        {
+            "id": "numpy_2",
+            "type": "content",
+            "title": "Array Operations",
+            "content": "# Array Operations 📊\n\n## Creating Arrays\n\n```python\nimport numpy as np\n\narr = np.array([1, 2, 3, 4, 5])\nzeros = np.zeros((3, 3))\nones = np.ones((2, 4))\nrange_arr = np.arange(0, 10, 2)\nprint(arr * 2)  # Vectorized!\n```\n\n## Key Operations\n\n| Operation | Example |\n|-----------|--------|\n| Element-wise | a + b |\n| Dot product | np.dot(a, b) |\n| Reshape | arr.reshape(2, 3) |\n| Aggregate | arr.sum(), arr.mean() |"
+        },
+        {
+            "id": "numpy_quiz_1",
+            "type": "quiz",
+            "title": "NumPy Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What makes NumPy faster than Python lists?",
+            "quizOptions": [
+                "Prettier syntax",
+                "Vectorized operations",
+                "Less memory",
+                "Newer code"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "numpy_3",
+            "type": "content",
+            "title": "Indexing and Slicing",
+            "content": "# Indexing and Slicing 🔍\n\n## Basic Indexing\n\n```python\nimport numpy as np\n\narr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nprint(arr[0, 1])    # 2\nprint(arr[:, 1])    # [2, 5, 8]\nprint(arr[1:, :2])  # [[4, 5], [7, 8]]\n```\n\n## Boolean Indexing\n\n```python\nimport numpy as np\n\narr = np.array([1, 2, 3, 4, 5])\nmask = arr > 2\nprint(arr[mask])  # [3, 4, 5]\n```"
+        },
+        {
+            "id": "numpy_quiz_2",
+            "type": "quiz",
+            "title": "Indexing Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "arr[:, 0] selects what from a 2D array?",
+            "quizOptions": [
+                "First row",
+                "First column",
+                "Last row",
+                "Last column"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "numpy_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned NumPy!\n\n## Key Takeaways\n\n- ✅ Arrays are fast and efficient\n- ✅ Vectorized operations\n- ✅ Powerful indexing/slicing\n- ✅ Foundation for data science\n\n> 🚀 NumPy powers scientific Python!\n\nKeep computing! 🔢"
+        }
+    ]
+}

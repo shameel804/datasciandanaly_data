@@ -2,104 +2,72 @@
     "id": "learn_preprocess",
     "topicId": "preprocess",
     "topicTitle": "Data Preprocessing",
-    "description": "Master data preprocessing techniques including scaling, encoding, feature selection, and handling imbalanced data",
-    "baseKP": 75,
+    "description": "Master data cleaning, feature engineering, and data transformation techniques",
+    "baseKP": 80,
     "slides": [
         {
             "id": "preprocess_1",
             "type": "content",
-            "title": "Welcome to Data Preprocessing",
-            "content": "# Data Preprocessing 🔧\n\nPreparing data for machine learning!\n\n## What you'll learn:\n- **Feature Scaling** - Normalize data ranges\n- **Encoding** - Convert categories to numbers\n- **Feature Selection** - Choose important features\n- **Imbalanced Data** - Handle class imbalance\n\n> 💡 **Key Insight:** Good preprocessing can be more impactful than model choice!\n\n## Why Preprocessing?\n\n| Raw Data | Preprocessed Data |\n|----------|-------------------|\n| Different scales | Uniform scales |\n| Categories as text | Numeric encoding |\n| Missing values | Handled properly |\n| Irrelevant features | Key features only |\n\n## Impact on Models\n\n- KNN, SVM: Very sensitive to scale\n- Trees: Less sensitive\n- Neural Networks: Need proper scaling"
+            "title": "Why Preprocessing Matters",
+            "content": "# Data Preprocessing 🧹\n\nGarbage in, garbage out!\n\n## Why Preprocess?\n\n- ML models are sensitive to data quality\n- Real data is messy\n- Features need proper format\n\n## Key Steps\n\n1. Handle missing values\n2. Encode categories\n3. Scale/normalize\n4. Feature engineering\n5. Handle outliers\n\n> 💡 80% of ML time is preprocessing!"
         },
         {
             "id": "preprocess_2",
             "type": "content",
-            "title": "Feature Scaling",
-            "content": "# Feature Scaling 📏\n\nNormalizing data ranges.\n\n## StandardScaler (Z-score)\n\n```python\nfrom sklearn.preprocessing import StandardScaler\n\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)\n\n# Result: mean=0, std=1\n```\n\n## MinMaxScaler\n\n```python\nfrom sklearn.preprocessing import MinMaxScaler\n\nscaler = MinMaxScaler()\nX_scaled = scaler.fit_transform(X_train)\n\n# Result: range [0, 1]\n```\n\n## RobustScaler (Outlier-resistant)\n\n```python\nfrom sklearn.preprocessing import RobustScaler\n\nscaler = RobustScaler()\nX_scaled = scaler.fit_transform(X_train)\n\n# Uses median and IQR (less affected by outliers)\n```\n\n## When to Use\n\n| Scaler | Best For |\n|--------|----------|\n| Standard | Normally distributed |\n| MinMax | Bounded range needed |\n| Robust | Data with outliers |"
-        },
-        {
-            "id": "preprocess_3",
-            "type": "content",
-            "title": "Categorical Encoding",
-            "content": "# Categorical Encoding 🔤\n\nConverting categories to numbers.\n\n## Label Encoding (Ordinal)\n\n```python\nfrom sklearn.preprocessing import LabelEncoder\n\nle = LabelEncoder()\ndf['encoded'] = le.fit_transform(df['category'])\n\n# Low=0, Medium=1, High=2\n```\n\n## One-Hot Encoding (Nominal)\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\nimport pandas as pd\n\n# Pandas method\ndf_encoded = pd.get_dummies(df, columns=['color'])\n\n# Sklearn method\nencoder = OneHotEncoder(sparse=False)\nencoded = encoder.fit_transform(df[['color']])\n```\n\n## Result Example\n\n```\nOriginal:     One-Hot Encoded:\ncolor         red  blue  green\nred    →      1    0     0\nblue   →      0    1     0\ngreen  →      0    0     1\n```\n\n## When to Use\n\n| Encoding | Use When |\n|----------|----------|\n| Label | Ordinal data (low/med/high) |\n| One-Hot | Nominal data (no order) |\n| Target | Binary classification target |"
+            "title": "Missing Values",
+            "content": "# Handling Missing Values 🔍\n\n## Detection\n```python\nimport numpy as np\ndata = [1, np.nan, 3, np.nan, 5]\nmissing = np.isnan(data).sum()\n```\n\n## Strategies\n\n| Strategy | Use When |\n|----------|----------|\n| Delete rows | Few missing |\n| Mean/median | Numerical |\n| Mode | Categorical |\n| Prediction | Complex |\n\n## Best Practices\n\n- Analyze missing patterns\n- Consider why data is missing\n- Don't delete too much\n\n> 🎯 Missing data needs thoughtful handling!"
         },
         {
             "id": "preprocess_quiz_1",
             "type": "quiz",
-            "title": "Encoding Check",
-            "content": "Test your understanding!",
-            "quizQuestion": "For a 'color' feature with values red/blue/green (no natural order), which encoding is best?",
+            "title": "Missing Data Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "For categorical missing values, which imputation is typically used?",
             "quizOptions": [
-                "Label Encoding",
-                "One-Hot Encoding",
-                "StandardScaler",
-                "No encoding needed"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "preprocess_4",
-            "type": "content",
-            "title": "Feature Selection",
-            "content": "# Feature Selection 🎯\n\nChoosing important features.\n\n## Why Select Features?\n\n- Reduce overfitting\n- Improve speed\n- Better interpretability\n- Remove noise\n\n## Correlation Analysis\n\n```python\nimport seaborn as sns\n\n# Correlation with target\ncorrelations = df.corr()['target'].sort_values()\n\n# Heatmap\nsns.heatmap(df.corr(), annot=True)\n```\n\n## SelectKBest\n\n```python\nfrom sklearn.feature_selection import SelectKBest, f_classif\n\nselector = SelectKBest(f_classif, k=10)\nX_selected = selector.fit_transform(X, y)\n\n# Get selected feature names\nselected_features = X.columns[selector.get_support()]\n```\n\n## Feature Importance (from models)\n\n```python\nfrom sklearn.ensemble import RandomForestClassifier\n\nmodel = RandomForestClassifier()\nmodel.fit(X, y)\n\n# Get importance\nimportances = pd.Series(\n    model.feature_importances_,\n    index=X.columns\n).sort_values(ascending=False)\n```"
-        },
-        {
-            "id": "preprocess_5",
-            "type": "content",
-            "title": "Handling Imbalanced Data",
-            "content": "# Imbalanced Data ⚖️\n\nWhen classes aren't equal.\n\n## Problem\n\n```\nClass 0: 9,500 samples (95%)\nClass 1:   500 samples (5%)\n\n→ Model predicts all Class 0 = 95% accuracy!\n   But useless for detecting Class 1.\n```\n\n## Oversampling (SMOTE)\n\n```python\nfrom imblearn.over_sampling import SMOTE\n\nsmote = SMOTE(random_state=42)\nX_resampled, y_resampled = smote.fit_resample(X, y)\n```\n\n## Undersampling\n\n```python\nfrom imblearn.under_sampling import RandomUnderSampler\n\nrus = RandomUnderSampler(random_state=42)\nX_resampled, y_resampled = rus.fit_resample(X, y)\n```\n\n## Class Weights\n\n```python\n# Built into many models\nmodel = RandomForestClassifier(class_weight='balanced')\nmodel = LogisticRegression(class_weight='balanced')\n```\n\n## Strategy Comparison\n\n| Method | Pros | Cons |\n|--------|------|------|\n| SMOTE | Creates synthetic | Can add noise |\n| Undersample | Fast | Loses data |\n| Weights | Simple | May not be enough |"
-        },
-        {
-            "id": "preprocess_6",
-            "type": "content",
-            "title": "Pipelines",
-            "content": "# Sklearn Pipelines 🔗\n\nChaining preprocessing steps.\n\n## Why Pipelines?\n\n- Prevent data leakage\n- Reproducible workflow\n- Clean code\n- Easy deployment\n\n## Basic Pipeline\n\n```python\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.ensemble import RandomForestClassifier\n\npipeline = Pipeline([\n    ('scaler', StandardScaler()),\n    ('classifier', RandomForestClassifier())\n])\n\npipeline.fit(X_train, y_train)\ny_pred = pipeline.predict(X_test)\n```\n\n## ColumnTransformer\n\n```python\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import StandardScaler, OneHotEncoder\n\npreprocessor = ColumnTransformer([\n    ('num', StandardScaler(), numeric_cols),\n    ('cat', OneHotEncoder(), categorical_cols)\n])\n\npipeline = Pipeline([\n    ('preprocessor', preprocessor),\n    ('classifier', RandomForestClassifier())\n])\n```"
-        },
-        {
-            "id": "preprocess_quiz_2",
-            "type": "quiz",
-            "title": "Pipeline Quiz",
-            "content": "Test your preprocessing knowledge!",
-            "quizQuestion": "Why should you ONLY fit scalers on training data?",
-            "quizOptions": [
-                "It's faster that way",
-                "To prevent data leakage from test set",
-                "Test data doesn't need scaling",
-                "It doesn't matter"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "preprocess_7",
-            "type": "content",
-            "title": "Dimensionality Reduction",
-            "content": "# Dimensionality Reduction 📉\n\nReducing features while preserving information.\n\n## PCA (Principal Component Analysis)\n\n```python\nfrom sklearn.decomposition import PCA\n\n# Keep 95% of variance\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X)\n\nprint(f\"Reduced from {X.shape[1]} to {X_reduced.shape[1]} features\")\n```\n\n## Explained Variance\n\n```python\nimport matplotlib.pyplot as plt\n\npca = PCA()\npca.fit(X)\n\nplt.plot(range(1, len(pca.explained_variance_ratio_) + 1),\n         np.cumsum(pca.explained_variance_ratio_))\nplt.xlabel('Number of Components')\nplt.ylabel('Cumulative Explained Variance')\n```\n\n## When to Use\n\n| Scenario | Use |\n|----------|-----|\n| Many correlated features | PCA |\n| Visualization | t-SNE, UMAP |\n| Sparse data | Truncated SVD |\n\n## Benefits\n\n- ✅ Reduces noise\n- ✅ Speeds up training\n- ✅ Avoids curse of dimensionality\n- ❌ Loses interpretability"
-        },
-        {
-            "id": "preprocess_8",
-            "type": "content",
-            "title": "Complete Preprocessing Example",
-            "content": "# Complete Example 🔧\n\nEnd-to-end preprocessing.\n\n```python\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler, OneHotEncoder\nfrom sklearn.impute import SimpleImputer\nfrom sklearn.ensemble import RandomForestClassifier\n\n# Define column types\nnumeric_features = ['age', 'salary', 'experience']\ncategorical_features = ['department', 'location']\n\n# Numeric pipeline\nnumeric_transformer = Pipeline([\n    ('imputer', SimpleImputer(strategy='median')),\n    ('scaler', StandardScaler())\n])\n\n# Categorical pipeline\ncategorical_transformer = Pipeline([\n    ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),\n    ('encoder', OneHotEncoder(handle_unknown='ignore'))\n])\n\n# Combine\npreprocessor = ColumnTransformer([\n    ('num', numeric_transformer, numeric_features),\n    ('cat', categorical_transformer, categorical_features)\n])\n\n# Full pipeline\nmodel = Pipeline([\n    ('preprocessor', preprocessor),\n    ('classifier', RandomForestClassifier())\n])\n\nmodel.fit(X_train, y_train)\n```"
-        },
-        {
-            "id": "preprocess_quiz_3",
-            "type": "quiz",
-            "title": "Final Quiz",
-            "content": "Test your overall understanding!",
-            "quizQuestion": "SMOTE is used to handle:",
-            "quizOptions": [
-                "Missing values",
-                "Categorical encoding",
-                "Imbalanced classes",
-                "Feature scaling"
+                "Mean",
+                "Median",
+                "Mode",
+                "Zero"
             ],
             "correctOptionIndex": 2
         },
         {
-            "id": "preprocess_9",
+            "id": "preprocess_3",
+            "type": "content",
+            "title": "Encoding Categories",
+            "content": "# Encoding Categorical Variables 🏷️\n\n## Label Encoding\nAssign numbers to categories.\n\n```python\ncolors = ['red', 'blue', 'green']\n# red=0, blue=1, green=2\n```\n\n## One-Hot Encoding\nCreate binary columns.\n\n```python\n# red → [1, 0, 0]\n# blue → [0, 1, 0]\n# green → [0, 0, 1]\n```\n\n## When to Use\n\n| Method | Use For |\n|--------|--------|\n| Label | Ordinal (order matters) |\n| One-Hot | Nominal (no order) |\n\n> 💡 Wrong encoding can mislead models!"
+        },
+        {
+            "id": "preprocess_4",
+            "type": "content",
+            "title": "Feature Scaling",
+            "content": "# Feature Scaling 📏\n\n## Standardization (Z-score)\n\n**X' = (X - μ) / σ**\n- Mean = 0, Std = 1\n- Good for most algorithms\n\n## Min-Max Normalization\n\n**X' = (X - min) / (max - min)**\n- Range [0, 1]\n- Sensitive to outliers\n\n## When to Scale\n\n| Algorithm | Need Scaling? |\n|-----------|---------------|\n| Linear/Logistic | Yes |\n| SVM, KNN | Yes |\n| Tree-based | No |\n| Neural Networks | Yes |\n\n```python\nimport numpy as np\ndata = [10, 20, 30, 40, 50]\nstandardized = (data - np.mean(data)) / np.std(data)\n```"
+        },
+        {
+            "id": "preprocess_5",
+            "type": "content",
+            "title": "Feature Engineering",
+            "content": "# Feature Engineering 🔧\n\nCreating informative features.\n\n## Techniques\n\n### Combine Features\n- Ratios: price_per_sqft = price / sqft\n- Differences: age = current_year - birth\n\n### Extract Features\n- Date: year, month, day, weekday\n- Text: word count, sentiment\n\n### Binning\n- Age → Age groups\n- Continuous → Categorical\n\n### Polynomial Features\n- x, x², x³\n- Feature interactions\n\n## Impact\n\n| Good Features | Poor Features |\n|--------------|---------------|\n| High signal | Mostly noise |\n| Domain relevant | Arbitrary |\n| Interpretable | Black box |\n\n> 🎯 Feature engineering often beats algorithm choice!"
+        },
+        {
+            "id": "preprocess_quiz_2",
+            "type": "quiz",
+            "title": "Feature Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which algorithms do NOT require feature scaling?",
+            "quizOptions": [
+                "Linear Regression",
+                "SVM",
+                "Tree-based (Random Forest)",
+                "Neural Networks"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "preprocess_6",
             "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered Data Preprocessing!\n\n## Key Takeaways\n\n### Feature Scaling\n- ✅ StandardScaler: mean=0, std=1\n- ✅ MinMaxScaler: range [0,1]\n- ✅ RobustScaler: for outliers\n\n### Encoding\n- ✅ LabelEncoder: ordinal\n- ✅ OneHotEncoder: nominal\n\n### Feature Selection\n- ✅ Correlation analysis\n- ✅ SelectKBest\n- ✅ Feature importance\n\n### Imbalanced Data\n- ✅ SMOTE oversampling\n- ✅ Undersampling\n- ✅ Class weights\n\n### Pipelines\n- ✅ Chain transformations\n- ✅ Prevent data leakage\n\n## Golden Rule\n\n> 🔧 \"Fit on train, transform on both!\"\n\n## Remember\n\n```python\nscaler.fit(X_train)\nX_train_scaled = scaler.transform(X_train)\nX_test_scaled = scaler.transform(X_test)\n```\n\n## Next Steps\n- 🎯 Learn **Supervised Learning**\n- 🔍 Explore **Model Evaluation**\n\nKeep preprocessing! 🔧"
+            "content": "# Congratulations! 🎉\n\nYou've mastered Data Preprocessing!\n\n## Key Takeaways\n\n- ✅ Handle missing values thoughtfully\n- ✅ Encode categories properly\n- ✅ Scale features for distance-based models\n- ✅ Engineer meaningful features\n\n## Checklist\n\n- [ ] Check for missing values\n- [ ] Handle outliers\n- [ ] Encode categories\n- [ ] Scale if needed\n- [ ] Create new features\n\n> 🚀 Good preprocessing = better models!\n\nKeep cleaning! 🧹"
         }
     ]
 }

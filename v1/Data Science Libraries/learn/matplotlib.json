@@ -1,0 +1,61 @@
+{
+    "id": "learn_matplotlib",
+    "topicId": "matplotlib",
+    "topicTitle": "Matplotlib & Seaborn",
+    "description": "Master Python visualization libraries",
+    "baseKP": 75,
+    "slides": [
+        {
+            "id": "matplotlib_1",
+            "type": "content",
+            "title": "Matplotlib Overview",
+            "content": "# Matplotlib & Seaborn 📊\n\n## Matplotlib\n\nFoundational plotting library.\n\n## Seaborn\n\nStatistical visualization built on Matplotlib.\n\n| Library | Strength |\n|---------|----------|\n| Matplotlib | Customization |\n| Seaborn | Beautiful defaults |\n\n> 💡 Use Seaborn for quick plots, Matplotlib for custom!"
+        },
+        {
+            "id": "matplotlib_2",
+            "type": "content",
+            "title": "Basic Plotting",
+            "content": "# Basic Plots 📈\n\n## Matplotlib\n\n```python_not\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(10, 6))\nplt.plot([1, 2, 3], [1, 4, 9])\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Line Plot')\nplt.show()\n```\n\n## Seaborn\n\n```python_not\nimport seaborn as sns\n\nsns.histplot(data=df, x='value')\nsns.scatterplot(data=df, x='x', y='y', hue='category')\n```"
+        },
+        {
+            "id": "matplotlib_quiz_1",
+            "type": "quiz",
+            "title": "Plotting Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which library has better default styling?",
+            "quizOptions": [
+                "Matplotlib",
+                "Seaborn",
+                "NumPy",
+                "Plotly"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "matplotlib_3",
+            "type": "content",
+            "title": "Statistical Plots",
+            "content": "# Statistical Plots 📊\n\n## Seaborn Specialties\n\n| Plot | Use |\n|------|-----|\n| histplot | Distribution |\n| boxplot | Compare groups |\n| heatmap | Correlation |\n| pairplot | Multi-variable |\n\n## Example\n\n```python_not\nimport seaborn as sns\n\nsns.heatmap(df.corr(), annot=True, cmap='coolwarm')\n```"
+        },
+        {
+            "id": "matplotlib_quiz_2",
+            "type": "quiz",
+            "title": "Seaborn Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which Seaborn plot shows correlation matrix?",
+            "quizOptions": [
+                "boxplot",
+                "scatterplot",
+                "heatmap",
+                "barplot"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "matplotlib_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Matplotlib & Seaborn!\n\n## Key Takeaways\n\n- ✅ Matplotlib for customization\n- ✅ Seaborn for quick beautiful plots\n- ✅ Statistical visualizations\n- ✅ Combine both libraries\n\n> 🚀 Visualize your data!\n\nKeep plotting! 📊"
+        }
+    ]
+}

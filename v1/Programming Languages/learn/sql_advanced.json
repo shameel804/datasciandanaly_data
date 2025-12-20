@@ -1,0 +1,61 @@
+{
+    "id": "learn_sql_advanced",
+    "topicId": "sql_advanced",
+    "topicTitle": "Advanced SQL",
+    "description": "Master advanced SQL techniques",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "sql_advanced_1",
+            "type": "content",
+            "title": "Advanced SQL Overview",
+            "content": "# Advanced SQL 🔍\n\n## Beyond Basics\n\n- Window functions\n- CTEs (Common Table Expressions)\n- Subqueries\n- Performance optimization\n\n> 💡 Advanced SQL unlocks powerful analysis!"
+        },
+        {
+            "id": "sql_advanced_2",
+            "type": "content",
+            "title": "Window Functions",
+            "content": "# Window Functions 🪟\n\n## Concept\n\nCalculate across rows related to current row.\n\n```sql\nSELECT \n    name,\n    sales,\n    SUM(sales) OVER (PARTITION BY region) as region_total,\n    RANK() OVER (ORDER BY sales DESC) as sales_rank\nFROM sales_table;\n```\n\n## Common Functions\n\n| Function | Purpose |\n|----------|--------|\n| ROW_NUMBER() | Unique row number |\n| RANK() | Rank with gaps |\n| DENSE_RANK() | Rank without gaps |\n| LAG/LEAD | Previous/next row |"
+        },
+        {
+            "id": "sql_advanced_quiz_1",
+            "type": "quiz",
+            "title": "Window Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "PARTITION BY in window functions:",
+            "quizOptions": [
+                "Filters rows",
+                "Groups for window calculation",
+                "Orders results",
+                "Creates new table"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "sql_advanced_3",
+            "type": "content",
+            "title": "CTEs",
+            "content": "# CTEs (WITH Clause) 📝\n\n## Readable Subqueries\n\n```sql\nWITH regional_sales AS (\n    SELECT region, SUM(sales) as total\n    FROM orders\n    GROUP BY region\n)\nSELECT * \nFROM regional_sales\nWHERE total > 1000000;\n```\n\n## Benefits\n\n- Readable\n- Reusable within query\n- Recursive capability"
+        },
+        {
+            "id": "sql_advanced_quiz_2",
+            "type": "quiz",
+            "title": "CTE Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "CTEs are defined using which keyword?",
+            "quizOptions": [
+                "CREATE",
+                "DEFINE",
+                "WITH",
+                "AS"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sql_advanced_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Advanced SQL!\n\n## Key Takeaways\n\n- ✅ Window functions for analytics\n- ✅ CTEs for readable queries\n- ✅ Performance optimization\n- ✅ Complex query patterns\n\n> 🚀 Advanced SQL = powerful analysis!\n\nKeep querying! 🔍"
+        }
+    ]
+}

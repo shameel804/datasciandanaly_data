@@ -1,0 +1,61 @@
+{
+    "id": "learn_spark",
+    "topicId": "spark",
+    "topicTitle": "Apache Spark",
+    "description": "Master Spark for big data processing",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "spark_1",
+            "type": "content",
+            "title": "Spark Overview",
+            "content": "# Apache Spark ⚡\n\n## What is Spark?\n\nUnified analytics engine for large-scale data processing.\n\n## Why Spark?\n\n- 100x faster than MapReduce\n- In-memory processing\n- Unified API\n\n## Components\n\n| Component | Use |\n|-----------|-----|\n| Spark Core | Base engine |\n| Spark SQL | Structured data |\n| MLlib | Machine learning |\n| Structured Streaming | Real-time |\n\n> 💡 Spark is the modern big data standard!"
+        },
+        {
+            "id": "spark_2",
+            "type": "content",
+            "title": "RDDs and DataFrames",
+            "content": "# Core Abstractions 📊\n\n## RDD (Legacy)\n\nResilient Distributed Dataset\n- Low-level API\n- Immutable, distributed\n\n## DataFrame (Preferred)\n\n- Table-like structure\n- SQL-like operations\n- Optimized by Catalyst\n\n## Example\n\n```python_not\nfrom pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"app\").getOrCreate()\ndf = spark.read.csv(\"data.csv\", header=True)\ndf.filter(df.age > 30).show()\n```\n\n> 🎯 Use DataFrames for most tasks!"
+        },
+        {
+            "id": "spark_quiz_1",
+            "type": "quiz",
+            "title": "Spark Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Why is Spark faster than MapReduce?",
+            "quizOptions": [
+                "Better algorithms",
+                "In-memory processing",
+                "Newer hardware",
+                "Smaller data"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "spark_3",
+            "type": "content",
+            "title": "Spark Operations",
+            "content": "# Spark Operations 🔧\n\n## Transformations (Lazy)\n\n- filter, map, groupBy\n- Not executed until action\n\n## Actions (Trigger)\n\n- collect, count, show\n- Trigger computation\n\n| Type | Examples |\n|------|----------|\n| Transform | select, filter, join |\n| Action | show, count, write |\n\n> 💡 Lazy evaluation optimizes execution!"
+        },
+        {
+            "id": "spark_quiz_2",
+            "type": "quiz",
+            "title": "Operations Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which type of Spark operation triggers computation?",
+            "quizOptions": [
+                "Transformation",
+                "Action",
+                "Both",
+                "Neither"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "spark_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Apache Spark!\n\n## Key Takeaways\n\n- ✅ In-memory for speed\n- ✅ Use DataFrames\n- ✅ Lazy transformations\n- ✅ Actions trigger execution\n\n> 🚀 Spark powers modern analytics!\n\nKeep sparking! ⚡"
+        }
+    ]
+}

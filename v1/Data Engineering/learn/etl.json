@@ -1,0 +1,73 @@
+{
+    "id": "learn_etl",
+    "topicId": "etl",
+    "topicTitle": "ETL Processes",
+    "description": "Master Extract, Transform, Load data integration pipelines",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "etl_1",
+            "type": "content",
+            "title": "What is ETL",
+            "content": "# ETL Processes 🔄\n\nMoving and transforming data.\n\n## Definition\n\n**E**xtract - Get data from sources\n**T**ransform - Clean and reshape\n**L**oad - Store in destination\n\n## Why ETL?\n\n- Integrate multiple sources\n- Clean data for analysis\n- Enable reporting\n- Build data warehouses\n\n> 💡 ETL is the backbone of data integration!"
+        },
+        {
+            "id": "etl_2",
+            "type": "content",
+            "title": "Extract Phase",
+            "content": "# Extract Phase 📥\n\n## Data Sources\n\n| Source | Example |\n|--------|--------|\n| Databases | MySQL, PostgreSQL |\n| Files | CSV, JSON, XML |\n| APIs | REST, GraphQL |\n| Streams | Kafka, Kinesis |\n\n## Considerations\n\n- Full vs incremental\n- Connection handling\n- Error recovery\n- Rate limiting\n\n> 🎯 Extract carefully and efficiently!"
+        },
+        {
+            "id": "etl_quiz_1",
+            "type": "quiz",
+            "title": "ETL Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What does the 'T' in ETL stand for?",
+            "quizOptions": [
+                "Table",
+                "Transfer",
+                "Transform",
+                "Terminate"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "etl_3",
+            "type": "content",
+            "title": "Transform Phase",
+            "content": "# Transform Phase 🔧\n\n## Common Transformations\n\n- Data cleaning\n- Type conversions\n- Aggregations\n- Joins and lookups\n- Filtering\n- Deduplication\n\n## Quality Checks\n\n| Check | Purpose |\n|-------|--------|\n| Null handling | Missing data |\n| Validation | Data integrity |\n| Standardization | Consistency |\n\n> 💡 Transform where data quality happens!"
+        },
+        {
+            "id": "etl_4",
+            "type": "content",
+            "title": "Load Phase",
+            "content": "# Load Phase 📤\n\n## Load Strategies\n\n| Strategy | Description |\n|----------|-------------|\n| Full load | Replace all data |\n| Incremental | Add new records |\n| Upsert | Insert or update |\n\n## Destinations\n\n- Data warehouses\n- Data lakes\n- OLAP cubes\n- Reports/dashboards\n\n> 🎯 Load efficiently for performance!"
+        },
+        {
+            "id": "etl_5",
+            "type": "content",
+            "title": "ETL Tools",
+            "content": "# ETL Tools 🛠️\n\n## Popular Tools\n\n| Tool | Type |\n|------|------|\n| Apache Airflow | Orchestration |\n| Talend | Enterprise ETL |\n| Informatica | Enterprise |\n| dbt | Transform |\n| AWS Glue | Cloud ETL |\n\n## Modern Trend: ELT\n\nLoad first, transform in warehouse.\n\n> 💡 Choose tools based on needs!"
+        },
+        {
+            "id": "etl_quiz_2",
+            "type": "quiz",
+            "title": "Tools Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What is the main difference between ETL and ELT?",
+            "quizOptions": [
+                "Speed",
+                "Transform happens before vs after load",
+                "Cost",
+                "Number of sources"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "etl_6",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned ETL Processes!\n\n## Key Takeaways\n\n- ✅ Extract from various sources\n- ✅ Transform for quality\n- ✅ Load efficiently\n- ✅ Consider ELT for modern warehouses\n\n## Best Practices\n\n- Monitor pipelines\n- Log everything\n- Plan for failures\n- Test thoroughly\n\n> 🚀 ETL enables data-driven decisions!\n\nKeep building pipelines! 🔄"
+        }
+    ]
+}

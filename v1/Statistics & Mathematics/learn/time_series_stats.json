@@ -1,0 +1,111 @@
+{
+    "id": "learn_time_series_stats",
+    "topicId": "time_series_stats",
+    "topicTitle": "Time Series Analysis",
+    "description": "Master time series components, stationarity, autocorrelation, and forecasting methods",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "time_series_stats_1",
+            "type": "content",
+            "title": "Introduction to Time Series",
+            "content": "# Time Series Analysis 📈\n\nAnalyzing data collected over time.\n\n## What You'll Learn\n- **Time Series Components** - Trend, seasonality, cycles\n- **Stationarity** - Key concept for modeling\n- **Autocorrelation** - Relationships across time\n- **Forecasting** - Predicting future values\n\n## What is a Time Series?\n\nObservations collected at regular time intervals.\n\n**Examples:**\n- Stock prices (daily)\n- Temperature readings (hourly)\n- Sales figures (monthly)\n- Website traffic (per minute)\n\n## Why Time Series is Different\n\n| Regular Data | Time Series |\n|--------------|-------------|\n| Observations independent | Observations correlated |\n| Order doesn't matter | Order is crucial |\n| Random sampling | Sequential collection |\n\n> 💡 **Key Insight:** The past helps predict the future!"
+        },
+        {
+            "id": "time_series_stats_2",
+            "type": "content",
+            "title": "Time Series Components",
+            "content": "# Time Series Components 🔍\n\n## The Four Components\n\n### 1. Trend (T)\nLong-term movement (upward, downward, flat)\n\n### 2. Seasonality (S)\nRegular patterns at fixed intervals\n- Weekly, monthly, yearly patterns\n\n### 3. Cyclical (C)\nLonger-term fluctuations\n- Business cycles, economic cycles\n\n### 4. Irregular/Residual (I)\nRandom, unpredictable variation\n\n## Decomposition Models\n\n**Additive:** Y = T + S + C + I\n- Components are independent\n\n**Multiplicative:** Y = T × S × C × I\n- Components interact\n\n## Choosing a Model\n\n| Use Additive | Use Multiplicative |\n|--------------|-------------------|\n| Constant seasonality | Seasonality grows with trend |\n| Stable variance | Variance increases over time |\n\n> 🎯 **Goal:** Decompose series to understand and forecast each component!"
+        },
+        {
+            "id": "time_series_stats_3",
+            "type": "content",
+            "title": "Stationarity",
+            "content": "# Stationarity 📊\n\nThe foundation of time series modeling.\n\n## Definition\n\nA stationary series has constant statistical properties over time:\n- Constant mean\n- Constant variance\n-Constant autocorrelation structure\n\n## Why Stationarity Matters\n\n- Most forecasting models assume stationarity\n- Non-stationary data gives misleading results\n- Patterns from past won't repeat\n\n## Testing for Stationarity\n\n### Augmented Dickey-Fuller Test\n- H₀: Series has unit root (non-stationary)\n- H₁: Series is stationary\n- p-value < 0.05 → likely stationary\n\n### KPSS Test\n- H₀: Series is stationary\n- H₁: Series is non-stationary\n\n## Making Series Stationary\n\n### 1. Differencing\nSubtract previous value: y'ₜ = yₜ - yₜ₋₁\n\n### 2. Log Transformation\nStabilize variance: y' = log(y)\n\n### 3. Seasonal Differencing\nFor seasonal patterns: y'ₜ = yₜ - yₜ₋ₘ\n\n> 🎯 **First Step:** Always check and achieve stationarity!"
+        },
+        {
+            "id": "time_series_stats_quiz_1",
+            "type": "quiz",
+            "title": "Stationarity Quiz",
+            "content": "Test your understanding!",
+            "quizQuestion": "Which transformation is commonly used to make a trend non-stationary series stationary?",
+            "quizOptions": [
+                "Squaring the values",
+                "First differencing",
+                "Adding seasonal component",
+                "Multiplying by time"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "time_series_stats_4",
+            "type": "content",
+            "title": "Autocorrelation",
+            "content": "# Autocorrelation Functions 📈\n\nMeasuring self-correlation across time.\n\n## ACF (Autocorrelation Function)\n\nCorrelation between yₜ and yₜ₋ₖ\n\nIncludes direct and indirect effects.\n\n## PACF (Partial Autocorrelation Function)\n\nCorrelation controlling for intermediate lags.\n\nShows direct effect only.\n\n## Interpreting ACF/PACF\n\n| Pattern | ACF | PACF | Model |\n|---------|-----|------|-------|\n| AR(p) | Decays | Cuts off at p | Autoregressive |\n| MA(q) | Cuts off at q | Decays | Moving Average |\n| ARMA | Decays | Decays | Both |\n\n## Example\n\n```python\nimport numpy as np\n\ndef autocorr(x, lag):\n    n = len(x)\n    mean = np.mean(x)\n    var = np.var(x)\n    return np.sum((x[:n-lag] - mean) * (x[lag:] - mean)) / (n * var)\n\nx = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nprint(f\"Lag 1 autocorr: {autocorr(x, 1):.3f}\")\n```\n\n> 💡 **Use:** ACF/PACF help choose model parameters!"
+        },
+        {
+            "id": "time_series_stats_5",
+            "type": "content",
+            "title": "Moving Averages",
+            "content": "# Moving Averages 📉\n\nSmoothing techniques for trend extraction.\n\n## Simple Moving Average (SMA)\n\nAverage of last n observations.\n\nSMAₜ = (yₜ + yₜ₋₁ + ... + yₜ₋ₙ₊₁) / n\n\n## Weighted Moving Average\n\nRecent observations weighted more heavily.\n\n## Exponential Moving Average (EMA)\n\nExponentially decreasing weights.\n\nEMAₜ = α × yₜ + (1-α) × EMAₜ₋₁\n\nα = smoothing factor (0 to 1)\n\n## Comparison\n\n| Method | Responsiveness | Smoothness |\n|--------|---------------|------------|\n| SMA | Low | High |\n| WMA | Medium | Medium |\n| EMA | High | Medium |\n\n```python\nimport numpy as np\n\ndata = [10, 12, 15, 14, 18, 20, 22, 25, 24, 28]\n\n# Simple moving average (window=3)\nsma = [np.mean(data[i:i+3]) for i in range(len(data)-2)]\nprint(f\"SMA: {sma}\")\n```\n\n> 🎯 **Use Case:** Trend extraction and noise reduction!"
+        },
+        {
+            "id": "time_series_stats_6",
+            "type": "content",
+            "title": "ARIMA Models",
+            "content": "# ARIMA Models 🔧\n\nThe workhorse of time series forecasting.\n\n## What is ARIMA?\n\n**A**uto**R**egressive **I**ntegrated **M**oving **A**verage\n\nARIMA(p, d, q)\n\n## Components\n\n### AR(p) - Autoregressive\nUse past values to predict: yₜ = φ₁yₜ₋₁ + φ₂yₜ₋₂ + ... + εₜ\n\n### I(d) - Integrated\nNumber of differences needed for stationarity\n\n### MA(q) - Moving Average\nUse past errors: yₜ = εₜ + θ₁εₜ₋₁ + θ₂εₜ₋₂ + ...\n\n## Choosing Parameters\n\n| Parameter | Determine From |\n|-----------|---------------|\n| p (AR) | PACF cutoff |\n| d (diff) | Number of differencing for stationarity |\n| q (MA) | ACF cutoff |\n\n## Seasonal ARIMA\n\nSARIMA(p,d,q)(P,D,Q)m\n\nAdds seasonal components with period m.\n\n> 💡 **Box-Jenkins Method:** Identify → Estimate → Diagnose → Forecast"
+        },
+        {
+            "id": "time_series_stats_quiz_2",
+            "type": "quiz",
+            "title": "ARIMA Quiz",
+            "content": "Test your ARIMA knowledge!",
+            "quizQuestion": "In ARIMA(2,1,1), what does the '1' in the middle represent?",
+            "quizOptions": [
+                "One autoregressive term",
+                "First-order differencing",
+                "One moving average term",
+                "One seasonal cycle"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "time_series_stats_7",
+            "type": "content",
+            "title": "Exponential Smoothing",
+            "content": "# Exponential Smoothing 📊\n\nWeighted average forecasting methods.\n\n## Simple Exponential Smoothing (SES)\n\nFor series without trend or seasonality.\n\nForecast: Fₜ₊₁ = αyₜ + (1-α)Fₜ\n\n## Holt's Method\n\nFor series with trend.\n\n- Level: Lₜ = αyₜ + (1-α)(Lₜ₋₁ + Tₜ₋₁)\n- Trend: Tₜ = β(Lₜ - Lₜ₋₁) + (1-β)Tₜ₋₁\n\n## Holt-Winters\n\nFor trend and seasonality.\n\nAdditive or multiplicative seasonality.\n\n## Choosing α, β, γ\n\n| Value | Effect |\n|-------|--------|\n| High (→1) | More weight on recent |\n| Low (→0) | More smoothing |\n\n## Method Selection\n\n| Pattern | Method |\n|---------|--------|\n| No trend, no season | SES |\n| Trend only | Holt's Linear |\n| Trend + Season | Holt-Winters |\n\n> 🎯 **Advantage:** Simple, requires less data than ARIMA!"
+        },
+        {
+            "id": "time_series_stats_8",
+            "type": "content",
+            "title": "Forecast Accuracy",
+            "content": "# Measuring Forecast Accuracy 📏\n\nHow good are your predictions?\n\n## Error Metrics\n\n### MAE (Mean Absolute Error)\nMAE = (1/n) Σ|yₜ - ŷₜ|\n\n### MSE (Mean Squared Error)\nMSE = (1/n) Σ(yₜ - ŷₜ)²\n\n### RMSE (Root Mean Squared Error)\nRMSE = √MSE\n\n### MAPE (Mean Absolute Percentage Error)\nMAPE = (100/n) Σ|yₜ - ŷₜ|/|yₜ|\n\n## Metric Comparison\n\n| Metric | Scale | Outliers |\n|--------|-------|----------|\n| MAE | Same as data | Robust |\n| MSE/RMSE | Same/Squared | Sensitive |\n| MAPE | Percentage | Scale-free |\n\n## Validation Approaches\n\n### Time Series Split\nTrain on past, test on future.\n\n### Rolling Window\nSliding train/test windows.\n\n> ⚠️ **Never:** Use random split for time series!"
+        },
+        {
+            "id": "time_series_stats_9",
+            "type": "content",
+            "title": "Advanced Topics",
+            "content": "# Advanced Time Series 🚀\n\nBeyond classical methods.\n\n## Prophet (Facebook)\n\n- Handles missing data\n- Automatic seasonality detection\n- Holiday effects\n- Good for business forecasting\n\n## LSTM (Deep Learning)\n\n- Long Short-Term Memory networks\n- Captures long-term dependencies\n- Good for complex patterns\n- Requires more data\n\n## Vector Autoregression (VAR)\n\n- Multiple time series\n- Captures interdependencies\n- Used in econometrics\n\n## Method Selection Guide\n\n| Situation | Method |\n|-----------|--------|\n| Simple, stable | Exponential Smoothing |\n| Complex, stable | ARIMA |\n| Business data | Prophet |\n| Many features | ML/DL methods |\n| Multiple series | VAR |\n\n> 💡 **Trend:** Hybrid models combining classical and ML approaches!"
+        },
+        {
+            "id": "time_series_stats_quiz_3",
+            "type": "quiz",
+            "title": "Forecasting Quiz",
+            "content": "Test your forecasting knowledge!",
+            "quizQuestion": "Why shouldn't you use random train/test split for time series data?",
+            "quizOptions": [
+                "It's mathematically incorrect",
+                "Future data shouldn't be used to predict past",
+                "It takes too long",
+                "It only works for classification"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "time_series_stats_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Time Series Analysis!\n\n## Key Takeaways\n\n### Components\n- ✅ Trend, Seasonality, Cyclical, Irregular\n- ✅ Additive vs Multiplicative decomposition\n\n### Stationarity\n- ✅ Constant mean, variance, autocorrelation\n- ✅ Use differencing to achieve it\n\n### Models\n\n| Model | Use Case |\n|-------|----------|\n| MA | Smoothing |\n| ARIMA | General forecasting |\n| Exp. Smoothing | Trend/seasonality |\n| Prophet | Business data |\n\n### Best Practices\n- ✅ Visualize first\n- ✅ Check stationarity\n- ✅ Examine ACF/PACF\n- ✅ Validate on held-out future data\n- ✅ Report confidence intervals\n\n> 🚀 **Next:** Apply these skills to real datasets!\n\nYou can now forecast the future! 📈"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "id": "learn_ensemble",
+    "topicId": "ensemble",
+    "topicTitle": "Ensemble Methods",
+    "description": "Master bagging, boosting, stacking, and ensemble techniques",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "ensemble_1",
+            "type": "content",
+            "title": "Ensemble Overview",
+            "content": "# Ensemble Methods 🎭\n\nCombining models for better performance.\n\n## What is Ensemble?\n\nCombine multiple models to improve predictions.\n\n## Why Ensembles Work\n\n- Reduce variance\n- Reduce bias\n- Average out errors\n\n## Main Types\n\n| Type | Method |\n|------|--------|\n| Bagging | Parallel, reduce variance |\n| Boosting | Sequential, reduce bias |\n| Stacking | Layer models |\n\n> 💡 \"Wisdom of crowds\" for ML!"
+        },
+        {
+            "id": "ensemble_2",
+            "type": "content",
+            "title": "Bagging",
+            "content": "# Bagging 🎒\n\nBootstrap Aggregating.\n\n## How It Works\n\n1. Create bootstrap samples\n2. Train model on each\n3. Aggregate predictions\n\n## Random Forest\n\nBagging + random feature selection.\n\n## Benefits\n\n- Reduces overfitting\n- Decreases variance\n- Parallel training\n\n## When to Use\n\n- High variance models (trees)\n- Unstable learners\n- Need robustness\n\n> 🎯 Random Forest is bagging's star performer!"
+        },
+        {
+            "id": "ensemble_quiz_1",
+            "type": "quiz",
+            "title": "Bagging Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Bagging primarily reduces:",
+            "quizOptions": [
+                "Bias",
+                "Variance",
+                "Data size",
+                "Training time"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ensemble_3",
+            "type": "content",
+            "title": "Boosting",
+            "content": "# Boosting 🚀\n\nSequential model improvement.\n\n## How It Works\n\n1. Train weak learner\n2. Focus on errors\n3. Train next learner\n4. Combine weighted\n\n## Popular Algorithms\n\n| Algorithm | Features |\n|-----------|----------|\n| AdaBoost | Adjusts weights |\n| Gradient Boosting | Gradient descent |\n| XGBoost | Fast, regularized |\n| LightGBM | Handles large data |\n| CatBoost | Handles categories |\n\n## Benefits\n\n- Reduces bias\n- Often best accuracy\n- Handles complex patterns\n\n> 💡 XGBoost dominates Kaggle competitions!"
+        },
+        {
+            "id": "ensemble_4",
+            "type": "content",
+            "title": "Stacking",
+            "content": "# Stacking 📚\n\nMeta-learning from base models.\n\n## How It Works\n\n1. Train diverse base models\n2. Get their predictions\n3. Use predictions as features\n4. Train meta-model\n\n## Design Considerations\n\n- Diverse base models\n- Simple meta-model\n- Use CV to prevent leakage\n\n## Pros/Cons\n\n| Pros | Cons |\n|------|------|\n| Often best results | Complex |\n| Flexible | Slow |\n| Leverages diversity | Risk of overfitting |\n\n> 🎯 Stacking is for competition-winning!"
+        },
+        {
+            "id": "ensemble_quiz_2",
+            "type": "quiz",
+            "title": "Boosting Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which algorithm is famous for winning Kaggle competitions?",
+            "quizOptions": [
+                "Linear Regression",
+                "K-Means",
+                "XGBoost",
+                "Naive Bayes"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ensemble_5",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Ensemble Methods!\n\n## Key Methods\n\n| Method | Reduces | Training |\n|--------|---------|----------|\n| Bagging | Variance | Parallel |\n| Boosting | Bias | Sequential |\n| Stacking | Both | Layered |\n\n## Algorithm Selection\n\n- **Random Forest:** Good default\n- **XGBoost:** Best accuracy\n- **LightGBM:** Large datasets\n- **Stacking:** Competitions\n\n## Key Takeaways\n\n- ✅ Combine models for better results\n- ✅ Bagging for unstable learners\n- ✅ Boosting for complex patterns\n- ✅ Stacking for maximum performance\n\n> 🚀 Ensembles often win!\n\nKeep combining! 🎭"
+        }
+    ]
+}

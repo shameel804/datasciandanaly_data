@@ -1,0 +1,61 @@
+{
+    "id": "learn_dimensional_modeling",
+    "topicId": "dimensional_modeling",
+    "topicTitle": "Dimensional Modeling",
+    "description": "Master dimensional modeling for data warehousing",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "dimensional_modeling_1",
+            "type": "content",
+            "title": "Dimensional Modeling Overview",
+            "content": "# Dimensional Modeling 📊\n\n## The Kimball Approach\n\nDesigning for query performance and usability.\n\n## Core Concepts\n\n| Concept | Description |\n|---------|-------------|\n| Fact | Business metrics |\n| Dimension | Context for facts |\n| Grain | Level of detail |\n\n> 💡 User-friendly data warehouse design!"
+        },
+        {
+            "id": "dimensional_modeling_2",
+            "type": "content",
+            "title": "Fact Tables",
+            "content": "# Fact Tables 📈\n\n## Types of Facts\n\n| Type | Description |\n|------|-------------|\n| Additive | Sum across all dimensions |\n| Semi-additive | Sum across some |\n| Non-additive | Cannot be summed |\n\n## Best Practices\n\n- Grain first\n- Keep facts atomic\n- Store foreign keys\n- Include date stamps"
+        },
+        {
+            "id": "dimensional_modeling_quiz_1",
+            "type": "quiz",
+            "title": "Fact Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Revenue is typically what type of fact?",
+            "quizOptions": [
+                "Non-additive",
+                "Semi-additive",
+                "Additive",
+                "Derived"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "dimensional_modeling_3",
+            "type": "content",
+            "title": "Dimension Tables",
+            "content": "# Dimension Tables 🏷️\n\n## Common Dimensions\n\n| Dimension | Contains |\n|-----------|----------|\n| Time | Date, month, year |\n| Customer | Demographics |\n| Product | Categories, attributes |\n| Geography | Location hierarchy |\n\n## SCD (Slowly Changing Dimensions)\n\n- Type 1: Overwrite\n- Type 2: New row with history\n- Type 3: New column"
+        },
+        {
+            "id": "dimensional_modeling_quiz_2",
+            "type": "quiz",
+            "title": "SCD Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "SCD Type 2 handles changes by:",
+            "quizOptions": [
+                "Overwriting",
+                "Adding new row",
+                "Adding new column",
+                "Ignoring changes"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "dimensional_modeling_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Dimensional Modeling!\n\n## Key Takeaways\n\n- ✅ Facts contain measures\n- ✅ Dimensions provide context\n- ✅ Define grain first\n- ✅ Use SCD for history\n\n> 🚀 Dimensional modeling enables analytics!\n\nKeep modeling! 📊"
+        }
+    ]
+}

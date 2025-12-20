@@ -1,0 +1,61 @@
+{
+    "id": "learn_scala",
+    "topicId": "scala",
+    "topicTitle": "Scala for Big Data",
+    "description": "Master Scala for distributed computing",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "scala_1",
+            "type": "content",
+            "title": "Scala Overview",
+            "content": "# Scala for Big Data 🔷\n\n## What is Scala?\n\nFunctional + Object-oriented language on JVM.\n\n## Why Scala for Big Data?\n\n- Spark is written in Scala\n- Functional paradigm\n- Type safety\n- Concise code\n\n| Python | Scala |\n|--------|-------|\n| Easy to learn | More performant |\n| PySpark | Native Spark |\n\n> 💡 Scala = Spark's native language!"
+        },
+        {
+            "id": "scala_2",
+            "type": "content",
+            "title": "Scala Basics",
+            "content": "# Scala Basics 🔧\n\n## Core Concepts\n\n```scala\n// Immutable by default\nval x = 10\nvar y = 20  // mutable\n\n// Functions\ndef add(a: Int, b: Int): Int = a + b\n\n// Collections\nval list = List(1, 2, 3)\nlist.map(_ * 2)  // [2, 4, 6]\n\n// Case classes\ncase class Person(name: String, age: Int)\n```\n\n> 🎯 Immutability and functions are key!"
+        },
+        {
+            "id": "scala_quiz_1",
+            "type": "quiz",
+            "title": "Scala Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "In Scala, 'val' creates what type of variable?",
+            "quizOptions": [
+                "Mutable",
+                "Immutable",
+                "Dynamic",
+                "Nullable"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "scala_3",
+            "type": "content",
+            "title": "Spark with Scala",
+            "content": "# Spark with Scala ⚡\n\n```scala\nimport org.apache.spark.sql.SparkSession\n\nval spark = SparkSession.builder\n    .appName(\"MyApp\")\n    .getOrCreate()\n\nval df = spark.read.csv(\"data.csv\")\ndf.filter(df(\"age\") > 30)\n    .groupBy(\"city\")\n    .count()\n    .show()\n```\n\n> 🎯 Native Spark = best performance!"
+        },
+        {
+            "id": "scala_quiz_2",
+            "type": "quiz",
+            "title": "Spark Scala Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Why use Scala for Spark?",
+            "quizOptions": [
+                "Easier to learn",
+                "Native language, best performance",
+                "More libraries",
+                "Required"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "scala_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Scala for Big Data!\n\n## Key Takeaways\n\n- ✅ Functional programming\n- ✅ Native Spark language\n- ✅ Type safety\n- ✅ Best Spark performance\n\n> 🚀 Scala for serious Spark!\n\nKeep scaling! 🔷"
+        }
+    ]
+}

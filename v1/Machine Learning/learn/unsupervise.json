@@ -1,105 +1,73 @@
 {
-    "id": "learn_unsupervise",
-    "topicId": "unsupervise",
+    "id": "learn_unsupervised",
+    "topicId": "unsupervised",
     "topicTitle": "Unsupervised Learning",
-    "description": "Master unsupervised learning including clustering, dimensionality reduction, and anomaly detection algorithms",
-    "baseKP": 75,
+    "description": "Master clustering, dimensionality reduction, and pattern discovery techniques",
+    "baseKP": 85,
     "slides": [
         {
-            "id": "unsupervise_1",
+            "id": "unsupervised_1",
             "type": "content",
-            "title": "Welcome to Unsupervised Learning",
-            "content": "# Unsupervised Learning 🔍\n\nDiscovering patterns without labels!\n\n## What you'll learn:\n- **Clustering** - Grouping similar data\n- **Dimensionality Reduction** - Reducing features\n- **Association Rules** - Finding relationships\n- **Anomaly Detection** - Finding outliers\n\n> 💡 **Key Insight:** Unsupervised learning finds structure we didn't know existed!\n\n## The Unsupervised Paradigm\n\n```\nInput: X (features only - no labels)\nOutput: Discovered patterns/groups\n```\n\n## Applications\n\n| Application | Technique |\n|-------------|----------|\n| Customer segmentation | Clustering |\n| Visualization | PCA, t-SNE |\n| Fraud detection | Anomaly detection |\n| Market basket | Association rules |"
+            "title": "What is Unsupervised Learning",
+            "content": "# Unsupervised Learning 🔍\n\nFinding patterns without labels.\n\n## Definition\n\nDiscover hidden structure in unlabeled data.\n\n## Main Types\n\n### Clustering\n- Group similar items\n- Customer segments\n\n### Dimensionality Reduction\n- Reduce features\n- Visualization\n\n### Association\n- Find co-occurrences\n- Market basket analysis\n\n## Use Cases\n\n- Customer segmentation\n- Anomaly detection\n- Feature extraction\n- Data exploration\n\n> 💡 No right answers - you discover structure!"
         },
         {
-            "id": "unsupervise_2",
+            "id": "unsupervised_2",
             "type": "content",
             "title": "K-Means Clustering",
-            "content": "# K-Means Clustering 🎯\n\nPartitioning data into k groups.\n\n## Algorithm\n\n```\n1. Choose k centroids randomly\n2. Assign points to nearest centroid\n3. Update centroids to cluster mean\n4. Repeat 2-3 until convergence\n```\n\n## Implementation\n\n```python\nfrom sklearn.cluster import KMeans\n\nkmeans = KMeans(\n    n_clusters=3,\n    random_state=42,\n    n_init=10\n)\n\nclusters = kmeans.fit_predict(X)\n\n# Cluster centers\ncentroids = kmeans.cluster_centers_\n```\n\n## Choosing K (Elbow Method)\n\n```python\nimport matplotlib.pyplot as plt\n\ninertias = []\nfor k in range(1, 11):\n    kmeans = KMeans(n_clusters=k, random_state=42)\n    kmeans.fit(X)\n    inertias.append(kmeans.inertia_)\n\nplt.plot(range(1, 11), inertias, 'bo-')\nplt.xlabel('k')\nplt.ylabel('Inertia')\nplt.title('Elbow Method')\n```\n\n## Notes\n\n- ⚡ Scale features first!\n- 📊 Works best with spherical clusters"
+            "content": "# K-Means Clustering 🎯\n\nPartition data into k clusters.\n\n## Algorithm\n\n1. Pick k initial centroids\n2. Assign points to nearest centroid\n3. Recalculate centroids\n4. Repeat until convergence\n\n## Choosing K\n\n- Elbow method\n- Silhouette score\n- Domain knowledge\n\n## Pros/Cons\n\n| Pros | Cons |\n|------|------|\n| Simple, fast | Must choose k |\n| Scales well | Spherical clusters only |\n| Easy to interpret | Sensitive to outliers |\n\n## Use Cases\n\n- Customer segments\n- Image compression\n- Document clustering\n\n> 🎯 Most popular clustering algorithm!"
         },
         {
-            "id": "unsupervise_3",
+            "id": "unsupervised_quiz_1",
+            "type": "quiz",
+            "title": "Clustering Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What is a major limitation of K-Means?",
+            "quizOptions": [
+                "Too slow",
+                "Must specify k in advance",
+                "Cannot handle numerical data",
+                "Requires labels"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "unsupervised_3",
             "type": "content",
             "title": "Hierarchical Clustering",
-            "content": "# Hierarchical Clustering 🌳\n\nBuilding a tree of clusters.\n\n## Types\n\n### Agglomerative (Bottom-up)\n```\nStart: Each point is a cluster\nMerge closest clusters\nRepeat until one cluster\n```\n\n### Divisive (Top-down)\n```\nStart: All points in one cluster\nSplit into sub-clusters\nRepeat until desired clusters\n```\n\n## Implementation\n\n```python\nfrom sklearn.cluster import AgglomerativeClustering\n\nmodel = AgglomerativeClustering(\n    n_clusters=3,\n    linkage='ward'  # 'single', 'complete', 'average'\n)\nclusters = model.fit_predict(X)\n```\n\n## Dendrogram\n\n```python\nfrom scipy.cluster.hierarchy import dendrogram, linkage\nimport matplotlib.pyplot as plt\n\nlinkage_matrix = linkage(X, method='ward')\ndendrogram(linkage_matrix)\nplt.title('Hierarchical Clustering')\nplt.show()\n```\n\n## Advantages\n\n- ✅ No need to specify k upfront\n- ✅ Dendrogram visualization\n- ❌ Slower for large data"
+            "content": "# Hierarchical Clustering 🌳\n\nBuild a tree of clusters.\n\n## Types\n\n### Agglomerative (Bottom-Up)\n- Start with individual points\n- Merge closest clusters\n\n### Divisive (Top-Down)\n- Start with all points\n- Split recursively\n\n## Dendrogram\n\nTree diagram showing merges.\n\n## Linkage Methods\n\n| Method | Definition |\n|--------|------------|\n| Single | Min distance |\n| Complete | Max distance |\n| Ward | Min variance increase |\n\n## When to Use\n\n- Explore hierarchical structure\n- Unknown number of clusters\n- Small to medium datasets\n\n> 💡 Great for exploration!"
         },
         {
-            "id": "unsupervise_quiz_1",
-            "type": "quiz",
-            "title": "Clustering Check",
-            "content": "Test your understanding!",
-            "quizQuestion": "The Elbow Method is used to determine:",
-            "quizOptions": [
-                "Which clustering algorithm to use",
-                "The optimal number of clusters k",
-                "The best features for clustering",
-                "How to scale the data"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "unsupervise_4",
+            "id": "unsupervised_4",
             "type": "content",
             "title": "DBSCAN",
-            "content": "# DBSCAN 🔵\n\nDensity-based clustering.\n\n## Concept\n\n```\nCore points: Have many neighbors\nBorder points: Near core points\nNoise: Neither (outliers!)\n```\n\n## Implementation\n\n```python\nfrom sklearn.cluster import DBSCAN\n\nmodel = DBSCAN(\n    eps=0.5,          # Neighborhood radius\n    min_samples=5      # Min points to form cluster\n)\nclusters = model.fit_predict(X)\n\n# -1 means noise/outlier\nnoise = X[clusters == -1]\n```\n\n## Advantages over K-Means\n\n| K-Means | DBSCAN |\n|---------|--------|\n| Specify k | Auto-detect clusters |\n| Spherical shapes | Any shape |\n| All points assigned | Can identify noise |\n| Sensitive to outliers | Robust to outliers |\n\n## Parameter Selection\n\n```python\n# Use k-distance plot\nfrom sklearn.neighbors import NearestNeighbors\n\nneighbors = NearestNeighbors(n_neighbors=5)\nneighbors.fit(X)\ndistances, _ = neighbors.kneighbors(X)\n\nplt.plot(sorted(distances[:, -1]))\n# Look for 'elbow' to choose eps\n```"
+            "content": "# DBSCAN 🔬\n\nDensity-based clustering.\n\n## Key Concepts\n\n- **ε (eps):** Neighborhood radius\n- **MinPts:** Minimum points in neighborhood\n\n## Point Types\n\n| Type | Definition |\n|------|------------|\n| Core | ≥ MinPts in radius |\n| Border | Near core point |\n| Noise | Neither |\n\n## Pros/Cons\n\n| Pros | Cons |\n|------|------|\n| No k needed | Sensitive to parameters |\n| Finds outliers | Varying density issues |\n| Any shape clusters | Can be slow |\n\n## Use Cases\n\n- Geographic clustering\n- Anomaly detection\n- Non-spherical clusters\n\n> 🎯 Great when clusters have irregular shapes!"
         },
         {
-            "id": "unsupervise_5",
+            "id": "unsupervised_5",
             "type": "content",
             "title": "PCA",
-            "content": "# Principal Component Analysis 📉\n\nReducing dimensions while preserving variance.\n\n## Concept\n\n```\nFind directions (principal components)\nthat capture most variance\n\n100 features → 5 components\n(preserving 95% of information)\n```\n\n## Implementation\n\n```python\nfrom sklearn.decomposition import PCA\n\n# Reduce to 2 dimensions\npca = PCA(n_components=2)\nX_reduced = pca.fit_transform(X)\n\n# Or keep 95% variance\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X)\n```\n\n## Explained Variance\n\n```python\nimport matplotlib.pyplot as plt\n\npca = PCA()\npca.fit(X)\n\nplt.plot(range(1, len(pca.explained_variance_ratio_) + 1),\n         np.cumsum(pca.explained_variance_ratio_))\nplt.xlabel('Number of Components')\nplt.ylabel('Cumulative Variance Explained')\n```\n\n## Applications\n\n- 📊 Visualization (2D/3D)\n- 🚀 Speed up training\n- 🔍 Noise reduction\n- 🧹 Data compression"
+            "content": "# Principal Component Analysis 📉\n\nDimensionality reduction.\n\n## Goal\n\nReduce features while keeping variance.\n\n## How It Works\n\n1. Standardize data\n2. Find principal components\n3. Keep top k components\n4. Transform data\n\n## Use Cases\n\n- Visualization (2D/3D)\n- Speed up ML\n- Remove noise\n- Feature extraction\n\n## Keep How Many?\n\n- Explain 80-95% of variance\n- Use scree plot\n- Balance compression vs info loss\n\n> 💡 PCA is often a first step in ML pipelines!"
         },
         {
-            "id": "unsupervise_6",
-            "type": "content",
-            "title": "t-SNE and UMAP",
-            "content": "# t-SNE and UMAP 🎨\n\nNon-linear dimensionality reduction.\n\n## t-SNE\n\n```python\nfrom sklearn.manifold import TSNE\n\ntsne = TSNE(\n    n_components=2,\n    perplexity=30,\n    random_state=42\n)\nX_2d = tsne.fit_transform(X)\n\nplt.scatter(X_2d[:, 0], X_2d[:, 1], c=labels)\nplt.title('t-SNE Visualization')\n```\n\n## UMAP (Faster, Better)\n\n```python\nimport umap\n\nreducer = umap.UMAP(\n    n_components=2,\n    n_neighbors=15,\n    min_dist=0.1\n)\nX_2d = reducer.fit_transform(X)\n```\n\n## Comparison\n\n| Method | Speed | Preserve Global |\n|--------|-------|----------------|\n| PCA | ⚡⚡⚡ | ✅ |\n| t-SNE | ⚡ | ⚠️ |\n| UMAP | ⚡⚡ | ✅ |\n\n## Use Cases\n\n- 📊 High-dimensional data visualization\n- 🔍 Exploring clusters\n- ❌ NOT for preprocessing before ML"
-        },
-        {
-            "id": "unsupervise_quiz_2",
+            "id": "unsupervised_quiz_2",
             "type": "quiz",
-            "title": "Dimensionality Quiz",
-            "content": "Test your understanding!",
-            "quizQuestion": "Which method preserves global structure better?",
+            "title": "PCA Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "PCA aims to preserve as much _____ as possible.",
             "quizOptions": [
-                "t-SNE",
-                "UMAP",
-                "K-Means",
-                "DBSCAN"
+                "Labels",
+                "Variance",
+                "Missing values",
+                "Clusters"
             ],
             "correctOptionIndex": 1
         },
         {
-            "id": "unsupervise_7",
-            "type": "content",
-            "title": "Anomaly Detection",
-            "content": "# Anomaly Detection 🚨\n\nFinding unusual patterns.\n\n## Isolation Forest\n\n```python\nfrom sklearn.ensemble import IsolationForest\n\nmodel = IsolationForest(\n    contamination=0.05,  # Expected outlier ratio\n    random_state=42\n)\n\npredictions = model.fit_predict(X)\n# 1 = normal, -1 = anomaly\n\nanomalies = X[predictions == -1]\n```\n\n## One-Class SVM\n\n```python\nfrom sklearn.svm import OneClassSVM\n\nmodel = OneClassSVM(nu=0.05)\npredictions = model.fit_predict(X)\n```\n\n## Local Outlier Factor\n\n```python\nfrom sklearn.neighbors import LocalOutlierFactor\n\nlof = LocalOutlierFactor(n_neighbors=20)\npredictions = lof.fit_predict(X)\n```\n\n## Applications\n\n| Domain | Example |\n|--------|----------|\n| Finance | Fraud detection |\n| Security | Intrusion detection |\n| Manufacturing | Defect detection |\n| Healthcare | Disease detection |"
-        },
-        {
-            "id": "unsupervise_8",
-            "type": "content",
-            "title": "Clustering Evaluation",
-            "content": "# Clustering Evaluation 📊\n\nMeasuring clustering quality.\n\n## With Labels (External)\n\n```python\nfrom sklearn.metrics import (adjusted_rand_score,\n                              normalized_mutual_info_score)\n\nari = adjusted_rand_score(true_labels, clusters)\nnmi = normalized_mutual_info_score(true_labels, clusters)\n```\n\n## Without Labels (Internal)\n\n```python\nfrom sklearn.metrics import silhouette_score\n\nscore = silhouette_score(X, clusters)\n# Range: -1 to 1, higher is better\n```\n\n## Silhouette Interpretation\n\n```\n+1: Dense, well-separated clusters\n 0: Overlapping clusters\n-1: Wrong clustering\n```\n\n## Other Metrics\n\n| Metric | Range | Higher is |\n|--------|-------|--------|\n| Silhouette | [-1, 1] | Better |\n| Calinski-Harabasz | [0, ∞] | Better |\n| Davies-Bouldin | [0, ∞] | Worse |\n\n```python\nfrom sklearn.metrics import (calinski_harabasz_score,\n                              davies_bouldin_score)\n```"
-        },
-        {
-            "id": "unsupervise_quiz_3",
-            "type": "quiz",
-            "title": "Final Quiz",
-            "content": "Test your overall understanding!",
-            "quizQuestion": "Which algorithm automatically identifies outliers as noise?",
-            "quizOptions": [
-                "K-Means",
-                "Hierarchical Clustering",
-                "DBSCAN",
-                "PCA"
-            ],
-            "correctOptionIndex": 2
-        },
-        {
-            "id": "unsupervise_9",
+            "id": "unsupervised_6",
             "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered Unsupervised Learning!\n\n## Clustering Methods\n\n| Method | Best For |\n|--------|----------|\n| K-Means | Fast, spherical clusters |\n| Hierarchical | Dendrogram visualization |\n| DBSCAN | Any shape, handles noise |\n\n## Dimensionality Reduction\n\n| Method | Use Case |\n|--------|----------|\n| PCA | Preprocessing, speed |\n| t-SNE | Visualization |\n| UMAP | Visualization, faster |\n\n## Anomaly Detection\n\n- Isolation Forest\n- One-Class SVM\n- Local Outlier Factor\n\n## Key Metrics\n\n- Silhouette Score (no labels)\n- ARI (with labels)\n- Elbow/Silhouette for k selection\n\n## Remember\n\n> 🔍 \"Unsupervised learning finds patterns we didn't ask for.\"\n\n## Next Steps\n- 🧠 Learn **Deep Learning**\n- 📊 Master **Model Evaluation**\n\nKeep exploring! 🔍"
+            "content": "# Congratulations! 🎉\n\nYou've mastered Unsupervised Learning!\n\n## Methods Summary\n\n| Method | Use Case |\n|--------|----------|\n| K-Means | General clustering |\n| Hierarchical | Explore structure |\n| DBSCAN | Arbitrary shapes |\n| PCA | Dimension reduction |\n\n## Key Takeaways\n\n- ✅ No labels needed\n- ✅ Discover hidden patterns\n- ✅ Choose method based on data\n- ✅ Validate using domain knowledge\n\n## Remember\n\n> 🎯 Unsupervised learning is about exploration!\n\nKeep discovering! 🔍"
         }
     ]
 }

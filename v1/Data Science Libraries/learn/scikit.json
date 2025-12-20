@@ -1,0 +1,61 @@
+{
+    "id": "learn_scikit",
+    "topicId": "scikit",
+    "topicTitle": "Scikit-learn",
+    "description": "Master Scikit-learn for machine learning",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "scikit_1",
+            "type": "content",
+            "title": "Scikit-learn Overview",
+            "content": "# Scikit-learn 🔬\n\n## What is Scikit-learn?\n\nMachine learning library for Python.\n\n## Features\n\n- Consistent API\n- Well-documented\n- Production-ready\n\n## Capabilities\n\n| Type | Examples |\n|------|----------|\n| Classification | SVM, RF, LogReg |\n| Regression | Linear, Ridge |\n| Clustering | K-Means, DBSCAN |\n| Preprocessing | Scaling, encoding |\n\n> 💡 Sklearn is THE ML library!"
+        },
+        {
+            "id": "scikit_2",
+            "type": "content",
+            "title": "The Sklearn API",
+            "content": "# Sklearn API 🔧\n\n## Consistent Pattern\n\n```python_not\nfrom sklearn.ensemble import RandomForestClassifier\n\n# Create model\nmodel = RandomForestClassifier()\n\n# Train\nmodel.fit(X_train, y_train)\n\n# Predict\npredictions = model.predict(X_test)\n\n# Evaluate\nscore = model.score(X_test, y_test)\n```\n\n## Key Methods\n\n| Method | Purpose |\n|--------|--------|\n| fit() | Train model |\n| predict() | Make predictions |\n| score() | Evaluate |\n| transform() | Transform data |"
+        },
+        {
+            "id": "scikit_quiz_1",
+            "type": "quiz",
+            "title": "API Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which method trains a sklearn model?",
+            "quizOptions": [
+                "train()",
+                "fit()",
+                "learn()",
+                "predict()"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "scikit_3",
+            "type": "content",
+            "title": "Model Selection",
+            "content": "# Model Selection 🎯\n\n## Train/Test Split\n\n```python_not\nfrom sklearn.model_selection import train_test_split\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42)\n```\n\n## Cross-Validation\n\n```python_not\nfrom sklearn.model_selection import cross_val_score\n\nscores = cross_val_score(model, X, y, cv=5)\n```\n\n## Grid Search\n\n- Find best hyperparameters\n- GridSearchCV\n- RandomizedSearchCV"
+        },
+        {
+            "id": "scikit_quiz_2",
+            "type": "quiz",
+            "title": "Selection Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What does cross_val_score do?",
+            "quizOptions": [
+                "Split data once",
+                "Evaluate on multiple folds",
+                "Train final model",
+                "Optimize hyperparameters"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "scikit_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Scikit-learn!\n\n## Key Takeaways\n\n- ✅ Consistent fit/predict API\n- ✅ Preprocessing included\n- ✅ Cross-validation for robust evaluation\n- ✅ GridSearch for hyperparameters\n\n> 🚀 Sklearn makes ML accessible!\n\nKeep modeling! 🔬"
+        }
+    ]
+}

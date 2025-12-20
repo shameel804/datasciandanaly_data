@@ -1,34 +1,28 @@
 {
-    "id": "learn_dl",
-    "topicId": "dl",
-    "topicTitle": "Deep Learning Introduction",
-    "description": "Master deep learning fundamentals including neural networks, backpropagation, and common architectures",
-    "baseKP": 75,
+    "id": "learn_neural_nets",
+    "topicId": "neural_nets",
+    "topicTitle": "Neural Networks",
+    "description": "Introduction to neural networks, deep learning, and modern architectures",
+    "baseKP": 90,
     "slides": [
         {
-            "id": "dl_1",
+            "id": "neural_nets_1",
             "type": "content",
-            "title": "Welcome to Deep Learning",
-            "content": "# Deep Learning 🧠\n\nNeural networks that learn complex patterns!\n\n## What you'll learn:\n- **Neural Networks** - Layers of neurons\n- **Backpropagation** - How networks learn\n- **Activation Functions** - Non-linear transforms\n- **Common Architectures** - CNN, RNN basics\n\n> 💡 **Key Insight:** Deep learning enables machines to learn from raw data!\n\n## Deep Learning vs ML\n\n| Machine Learning | Deep Learning |\n|-----------------|---------------|\n| Feature engineering | Automatic features |\n| Works on smaller data | Needs big data |\n| Faster training | GPU required |\n| More interpretable | Black box |\n\n## Applications\n- 🖼️ Image recognition\n- 🗣️ Speech recognition\n- 📝 Text generation\n- 🎮 Game playing"
+            "title": "Introduction to Neural Networks",
+            "content": "# Neural Networks 🧠\n\nLearning inspired by the brain.\n\n## What is a Neural Network?\n\nLayers of interconnected nodes that learn patterns.\n\n## Key Components\n\n| Component | Function |\n|-----------|----------|\n| Input layer | Receives data |\n| Hidden layers | Learn features |\n| Output layer | Makes predictions |\n| Weights | Connection strengths |\n| Activation | Introduces non-linearity |\n\n## Why Neural Networks?\n\n- Learn complex patterns\n- Automatic feature extraction\n- State-of-the-art many tasks\n\n> 💡 Deep Learning = Neural Networks with many layers!"
         },
         {
-            "id": "dl_2",
+            "id": "neural_nets_2",
             "type": "content",
-            "title": "Neural Network Basics",
-            "content": "# Neural Network Basics 🔗\n\nBuilding blocks of deep learning.\n\n## Structure\n\n```\nInput Layer → Hidden Layers → Output Layer\n\n     [x₁]──┐     ┌──[h₁]──┐     ┌──[y]\n     [x₂]──┼──→──┼──[h₂]──┼──→──┤\n     [x₃]──┘     └──[h₃]──┘     └──[y]\n```\n\n## Single Neuron\n\n```\nInputs: x₁, x₂, x₃\nWeights: w₁, w₂, w₃\nBias: b\n\nz = w₁x₁ + w₂x₂ + w₃x₃ + b\noutput = activation(z)\n```\n\n## Matrix Form\n\n```python\nimport numpy as np\n\n# Forward pass\nz = np.dot(W, x) + b\na = activation(z)\n```\n\n## Key Terms\n\n| Term | Definition |\n|------|------------|\n| Weight | Connection strength |\n| Bias | Offset term |\n| Activation | Non-linear function |\n| Layer | Group of neurons |"
+            "title": "Building Blocks",
+            "content": "# Neural Network Building Blocks 🔧\n\n## Neurons\n\noutput = activation(Σ(weight × input) + bias)\n\n## Activation Functions\n\n| Function | Output | Use Case |\n|----------|--------|----------|\n| ReLU | [0, ∞) | Hidden layers |\n| Sigmoid | [0, 1] | Binary output |\n| Softmax | Probabilities | Multi-class |\n| Tanh | [-1, 1] | Hidden layers |\n\n## Loss Functions\n\n- Classification: Cross-entropy\n- Regression: MSE\n\n## Optimization\n\n- Gradient Descent\n- Adam (popular)\n- Learning rate\n\n> 🎯 Choose components based on task!"
         },
         {
-            "id": "dl_3",
-            "type": "content",
-            "title": "Activation Functions",
-            "content": "# Activation Functions ⚡\n\nAdding non-linearity.\n\n## ReLU (Most Common)\n\n```python\ndef relu(x):\n    return max(0, x)\n\n# f(x) = 0 if x < 0\n#      = x if x >= 0\n```\n\n## Sigmoid\n\n```python\ndef sigmoid(x):\n    return 1 / (1 + np.exp(-x))\n\n# Output: (0, 1) - good for probabilities\n```\n\n## Tanh\n\n```python\ndef tanh(x):\n    return np.tanh(x)\n\n# Output: (-1, 1)\n```\n\n## Softmax (Output Layer)\n\n```python\ndef softmax(x):\n    exp_x = np.exp(x - np.max(x))\n    return exp_x / exp_x.sum()\n\n# Multi-class probabilities that sum to 1\n```\n\n## When to Use\n\n| Function | Use Case |\n|----------|----------|\n| ReLU | Hidden layers (default) |\n| Sigmoid | Binary output |\n| Softmax | Multi-class output |\n| Tanh | RNN hidden states |"
-        },
-        {
-            "id": "dl_quiz_1",
+            "id": "neural_nets_quiz_1",
             "type": "quiz",
-            "title": "Activation Check",
-            "content": "Test your understanding!",
-            "quizQuestion": "Which activation function is most commonly used for hidden layers?",
+            "title": "NN Basics Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which activation function is most commonly used in hidden layers?",
             "quizOptions": [
                 "Sigmoid",
                 "ReLU",
@@ -38,62 +32,42 @@
             "correctOptionIndex": 1
         },
         {
-            "id": "dl_4",
+            "id": "neural_nets_3",
             "type": "content",
-            "title": "Backpropagation",
-            "content": "# Backpropagation 🔄\n\nHow neural networks learn.\n\n## The Learning Process\n\n```\n1. Forward Pass: Compute predictions\n2. Compute Loss: How wrong are we?\n3. Backward Pass: Compute gradients\n4. Update Weights: Gradient descent\n5. Repeat\n```\n\n## Loss Functions\n\n```python\n# Binary Cross-Entropy\nloss = -mean(y*log(pred) + (1-y)*log(1-pred))\n\n# Mean Squared Error\nloss = mean((y - pred)²)\n\n# Categorical Cross-Entropy\nloss = -sum(y * log(pred))\n```\n\n## Gradient Descent\n\n```python\n# Update rule\nweight = weight - learning_rate * gradient\n\n# w_new = w_old - lr * ∂Loss/∂w\n```\n\n## Chain Rule\n\n```\n∂Loss/∂w₁ = ∂Loss/∂output × ∂output/∂z × ∂z/∂w₁\n\nGradients flow backwards through layers!\n```"
+            "title": "Training Neural Networks",
+            "content": "# Training Neural Networks 📈\n\n## Forward Pass\n\nData flows through network to output.\n\n## Loss Calculation\n\nMeasure error between prediction and actual.\n\n## Backpropagation\n\nCalculate gradients of loss w.r.t. weights.\n\n## Weight Update\n\nw = w - learning_rate × gradient\n\n## Training Tips\n\n| Issue | Solution |\n|-------|----------|\n| Slow convergence | Adjust learning rate |\n| Overfitting | Dropout, regularization |\n| Vanishing gradient | ReLU, batch norm |\n\n> 💡 Training is iterative optimization!"
         },
         {
-            "id": "dl_5",
+            "id": "neural_nets_4",
             "type": "content",
-            "title": "Building with Keras",
-            "content": "# Building with Keras 🔧\n\nHigh-level deep learning API.\n\n## Simple Neural Network\n\n```python\nimport tensorflow as tf\nfrom tensorflow import keras\n\nmodel = keras.Sequential([\n    keras.layers.Dense(128, activation='relu', input_shape=(10,)),\n    keras.layers.Dense(64, activation='relu'),\n    keras.layers.Dense(1, activation='sigmoid')\n])\n\nmodel.compile(\n    optimizer='adam',\n    loss='binary_crossentropy',\n    metrics=['accuracy']\n)\n\nmodel.summary()\n```\n\n## Training\n\n```python\nhistory = model.fit(\n    X_train, y_train,\n    epochs=50,\n    batch_size=32,\n    validation_split=0.2\n)\n```\n\n## Evaluation\n\n```python\nloss, accuracy = model.evaluate(X_test, y_test)\nprint(f\"Test Accuracy: {accuracy:.2%}\")\n\n# Predictions\ny_pred = model.predict(X_test)\n```"
+            "title": "Types of Networks",
+            "content": "# Types of Neural Networks 🌐\n\n## Feedforward (MLP)\n\n- Fully connected layers\n- General purpose\n\n## CNN (Convolutional)\n\n- Image processing\n- Spatial patterns\n\n## RNN (Recurrent)\n\n- Sequential data\n- Time series, text\n\n## Transformer\n\n- Attention mechanism\n- NLP revolution (BERT, GPT)\n\n| Network | Best For |\n|---------|----------|\n| MLP | Tabular data |\n| CNN | Images |\n| RNN/LSTM | Sequences |\n| Transformer | Text, large data |\n\n> 🎯 Choose architecture based on data type!"
         },
         {
-            "id": "dl_6",
+            "id": "neural_nets_5",
             "type": "content",
-            "title": "Training Techniques",
-            "content": "# Training Techniques 🎛️\n\nImproving neural network training.\n\n## Optimizers\n\n```python\n# SGD - Stochastic Gradient Descent\nkeras.optimizers.SGD(learning_rate=0.01)\n\n# Adam - Most popular\nkeras.optimizers.Adam(learning_rate=0.001)\n\n# RMSprop - Good for RNNs\nkeras.optimizers.RMSprop(learning_rate=0.001)\n```\n\n## Regularization\n\n```python\n# Dropout - Randomly disable neurons\nkeras.layers.Dropout(0.3)\n\n# L2 Regularization\nkeras.layers.Dense(64, kernel_regularizer='l2')\n```\n\n## Batch Normalization\n\n```python\nmodel = keras.Sequential([\n    keras.layers.Dense(128, activation='relu'),\n    keras.layers.BatchNormalization(),\n    keras.layers.Dense(64, activation='relu'),\n    keras.layers.BatchNormalization(),\n    keras.layers.Dense(1, activation='sigmoid')\n])\n```\n\n## Callbacks\n\n```python\ncallbacks = [\n    keras.callbacks.EarlyStopping(patience=5),\n    keras.callbacks.ModelCheckpoint('best_model.h5', save_best_only=True)\n]\n\nmodel.fit(..., callbacks=callbacks)\n```"
+            "title": "Deep Learning Frameworks",
+            "content": "# Deep Learning Frameworks 🛠️\n\n## Popular Frameworks\n\n### TensorFlow\n- Google\n- Production ready\n- TensorFlow Lite for mobile\n\n### PyTorch\n- Facebook/Meta\n- Research favorite\n- Dynamic computation\n\n### Keras\n- High-level API\n- Built into TensorFlow\n- Beginner friendly\n\n## Comparison\n\n| Framework | Strength |\n|-----------|----------|\n| TensorFlow | Production |\n| PyTorch | Research |\n| Keras | Simplicity |\n\n> 💡 PyTorch gaining in popularity!"
         },
         {
-            "id": "dl_quiz_2",
+            "id": "neural_nets_quiz_2",
             "type": "quiz",
-            "title": "Training Quiz",
-            "content": "Test your training knowledge!",
-            "quizQuestion": "What does Dropout do?",
-            "quizOptions": [
-                "Speeds up training",
-                "Randomly disables neurons to prevent overfitting",
-                "Reduces the number of layers",
-                "Increases learning rate"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "dl_7",
-            "type": "content",
-            "title": "CNN and RNN Overview",
-            "content": "# CNN and RNN Overview 📊\n\nSpecialized architectures.\n\n## CNN (Convolutional Neural Networks)\n\nFor spatial data (images).\n\n```python\nmodel = keras.Sequential([\n    keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),\n    keras.layers.MaxPooling2D((2,2)),\n    keras.layers.Conv2D(64, (3,3), activation='relu'),\n    keras.layers.Flatten(),\n    keras.layers.Dense(64, activation='relu'),\n    keras.layers.Dense(10, activation='softmax')\n])\n```\n\n## RNN (Recurrent Neural Networks)\n\nFor sequential data (text, time series).\n\n```python\nmodel = keras.Sequential([\n    keras.layers.Embedding(vocab_size, 64),\n    keras.layers.LSTM(128, return_sequences=True),\n    keras.layers.LSTM(64),\n    keras.layers.Dense(1, activation='sigmoid')\n])\n```\n\n## Use Cases\n\n| Architecture | Applications |\n|--------------|---------------|\n| CNN | Images, vision, video |\n| RNN/LSTM | Text, speech, time series |\n| Transformer | NLP, everything |"
-        },
-        {
-            "id": "dl_quiz_3",
-            "type": "quiz",
-            "title": "Final Quiz",
-            "content": "Test your overall understanding!",
+            "title": "Architecture Quiz",
+            "content": "Test your knowledge!",
             "quizQuestion": "Which architecture is best for image classification?",
             "quizOptions": [
                 "RNN",
                 "CNN",
-                "Dense only",
-                "Autoencoder"
+                "Transformer",
+                "Simple MLP"
             ],
             "correctOptionIndex": 1
         },
         {
-            "id": "dl_8",
+            "id": "neural_nets_6",
             "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered Deep Learning Introduction!\n\n## Key Takeaways\n\n### Neural Networks\n- ✅ Layers of connected neurons\n- ✅ Weights, biases, activations\n\n### Backpropagation\n- ✅ Forward → Loss → Backward → Update\n- ✅ Gradient descent optimization\n\n### Activation Functions\n- ✅ ReLU for hidden layers\n- ✅ Sigmoid/Softmax for output\n\n### Training\n- ✅ Adam optimizer\n- ✅ Dropout for regularization\n- ✅ Early stopping\n\n## Keras Template\n\n```python\nmodel = keras.Sequential([...])\nmodel.compile(optimizer='adam', loss='...', metrics=[...])\nmodel.fit(X_train, y_train, epochs=50)\nmodel.evaluate(X_test, y_test)\n```\n\n## Remember\n\n> 🧠 \"Deep learning is about learning representations.\"\n\n## Next Steps\n- 📊 Master **Model Evaluation**\n- 🗣️ Explore **NLP**\n\nKeep learning! 🧠"
+            "content": "# Congratulations! 🎉\n\nYou've learned Neural Networks!\n\n## Key Concepts\n\n- ✅ Layers learn features\n- ✅ Backprop updates weights\n- ✅ Activation adds non-linearity\n- ✅ Architecture depends on data type\n\n## Architecture Guide\n\n| Data Type | Use |\n|-----------|-----|\n| Tabular | MLP |\n| Images | CNN |\n| Sequences | RNN/LSTM |\n| Text | Transformer |\n\n## Next Steps\n\n- Try TensorFlow or PyTorch\n- Build simple models first\n- Learn transfer learning\n\n> 🚀 Deep Learning powers modern AI!\n\nKeep learning! 🧠"
         }
     ]
 }

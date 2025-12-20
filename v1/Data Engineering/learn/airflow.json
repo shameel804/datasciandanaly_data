@@ -1,0 +1,61 @@
+{
+    "id": "learn_airflow",
+    "topicId": "airflow",
+    "topicTitle": "Apache Airflow",
+    "description": "Master workflow orchestration with Airflow",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "airflow_1",
+            "type": "content",
+            "title": "Airflow Overview",
+            "content": "# Apache Airflow 🌬️\n\n## What is Airflow?\n\nPlatform to author, schedule, and monitor workflows.\n\n## Key Concepts\n\n| Concept | Description |\n|---------|-------------|\n| DAG | Directed Acyclic Graph |\n| Task | Single unit of work |\n| Operator | Task template |\n| Scheduler | Triggers workflows |\n\n> 💡 Airflow is the standard for orchestration!"
+        },
+        {
+            "id": "airflow_2",
+            "type": "content",
+            "title": "DAGs and Tasks",
+            "content": "# DAGs and Tasks 📊\n\n## DAG Definition\n\n```python_not\nfrom airflow import DAG\nfrom airflow.operators.python import PythonOperator\n\nwith DAG('my_dag', schedule='@daily') as dag:\n    task1 = PythonOperator(\n        task_id='extract',\n        python_callable=extract_fn\n    )\n    task2 = PythonOperator(\n        task_id='transform',\n        python_callable=transform_fn\n    )\n    task1 >> task2  # Dependencies\n```"
+        },
+        {
+            "id": "airflow_quiz_1",
+            "type": "quiz",
+            "title": "Airflow Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What does DAG stand for?",
+            "quizOptions": [
+                "Data Analysis Group",
+                "Directed Acyclic Graph",
+                "Database Access Gateway",
+                "Dynamic Algorithm Gate"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "airflow_3",
+            "type": "content",
+            "title": "Operators",
+            "content": "# Operators 🔧\n\n| Operator | Purpose |\n|----------|--------|\n| PythonOperator | Run Python |\n| BashOperator | Shell commands |\n| SQLOperator | Database queries |\n| SensorOperator | Wait for condition |\n\n## Best Practices\n\n- Keep tasks atomic\n- Use XComs for data passing\n- Set retries appropriately"
+        },
+        {
+            "id": "airflow_quiz_2",
+            "type": "quiz",
+            "title": "Operators Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which operator runs Python code?",
+            "quizOptions": [
+                "BashOperator",
+                "PythonOperator",
+                "SQLOperator",
+                "HttpOperator"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "airflow_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Apache Airflow!\n\n## Key Takeaways\n\n- ✅ DAGs define workflows\n- ✅ Operators run tasks\n- ✅ Scheduler triggers\n- ✅ Industry standard\n\n> 🚀 Orchestrate everything!\n\nKeep orchestrating! 🌬️"
+        }
+    ]
+}

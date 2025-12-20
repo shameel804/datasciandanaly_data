@@ -1,0 +1,123 @@
+{
+    "id": "learn_stats_basics",
+    "topicId": "stats_basics",
+    "topicTitle": "Basic Statistics",
+    "description": "Master descriptive statistics, measures of central tendency, dispersion, distributions, and correlation",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "stats_basics_1",
+            "type": "content",
+            "title": "Welcome to Statistics",
+            "content": "# Basic Statistics for Data Science 📊\n\nStatistics is the foundation of all data analysis and machine learning.\n\n## What You'll Learn\n- **Descriptive Statistics** - Summarizing data\n- **Measures of Central Tendency** - Mean, median, mode\n- **Measures of Dispersion** - Variance, standard deviation, range\n- **Distributions** - Understanding data shapes\n- **Correlation** - Relationships between variables\n\n> 💡 **Key Insight:** Understanding statistics helps you make sense of data and avoid misleading conclusions!\n\n## Why Statistics Matters\n\n| Application | Statistics Used |\n|-------------|----------------|\n| A/B Testing | Hypothesis testing |\n| ML Models | Optimization, evaluation |\n| Forecasting | Time series analysis |\n| Quality Control | Process monitoring |\n| Research | Experimental design |\n\n## Types of Statistics\n\n- **Descriptive:** Summarize what the data shows\n- **Inferential:** Draw conclusions about populations from samples\n\nLet's build your statistical foundation! 🏗️"
+        },
+        {
+            "id": "stats_basics_2",
+            "type": "content",
+            "title": "Types of Data",
+            "content": "# Types of Data 📋\n\nUnderstanding data types is essential for choosing the right analysis.\n\n## Quantitative Data (Numerical)\n\n### Discrete\n- Countable, whole numbers\n- Examples: Number of customers, items sold\n\n### Continuous\n- Any value within a range\n- Examples: Height, weight, temperature\n\n## Qualitative Data (Categorical)\n\n### Nominal\n- No natural order\n- Examples: Colors, countries, product categories\n\n### Ordinal\n- Has meaningful order\n- Examples: Education level, satisfaction rating\n\n## Data Types Summary\n\n| Type | Example | Analysis |\n|------|---------|----------|\n| Discrete | Age (in years) | Count, mode |\n| Continuous | Height | Mean, std dev |\n| Nominal | Country | Mode, frequency |\n| Ordinal | Rating (1-5) | Median, mode |\n\n## Quick Test\n\n```python\n# Identifying data types\ndata = {\n    'age': 25,           # Discrete\n    'height': 5.9,       # Continuous  \n    'country': 'India',  # Nominal\n    'rating': 4          # Ordinal\n}\n```\n\n> 🎯 **Rule of Thumb:** Ask \"Can I average these values?\" If yes, it's quantitative!"
+        },
+        {
+            "id": "stats_basics_3",
+            "type": "content",
+            "title": "Measures of Central Tendency",
+            "content": "# Measures of Central Tendency 🎯\n\nThese metrics tell us where the \"center\" of our data lies.\n\n## Mean (Average)\n\nSum of all values divided by count.\n\n```python\nimport numpy as np\n\ndata = [10, 20, 30, 40, 50]\nmean = np.mean(data)\nprint(f\"Mean: {mean}\")  # Output: 30.0\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Sample dataset\ndata = [10, 20, 30, 40, 50]\n\n# Calculate mean\nmean = np.mean(data)\nprint(\"=== Measures of Central Tendency ===\")\nprint(f\"\\nData: {data}\")\nprint(f\"\\nMean (Average): {mean}\")\nprint(f\"Formula: Sum/Count = {sum(data)}/{len(data)} = {mean}\")\n\n# Mean is sensitive to outliers\ndata_with_outlier = [10, 20, 30, 40, 500]\nmean_outlier = np.mean(data_with_outlier)\nprint(f\"\\nWith outlier {data_with_outlier}: Mean = {mean_outlier}\")\nprint(\"Notice how the outlier pulls the mean up significantly!\")\nFULL_CODE_END -->\n\n## Median (Middle Value)\n\nThe middle value when data is sorted.\n\n```python\nmedian = np.median(data)\nprint(f\"Median: {median}\")  # Output: 30.0\n```\n\n## Mode (Most Frequent)\n\nThe value that appears most often.\n\n```python\nfrom scipy import stats\nmode = stats.mode([1, 2, 2, 3, 3, 3])\nprint(f\"Mode: 3\")  # 3 appears most\n```\n\n## When to Use Each\n\n| Measure | Best For | Weakness |\n|---------|----------|----------|\n| Mean | Symmetric data | Affected by outliers |\n| Median | Skewed data | Ignores extreme values |\n| Mode | Categorical data | May not exist |\n\n> 💡 **Pro Tip:** Always check all three to understand your data better!"
+        },
+        {
+            "id": "stats_basics_quiz_1",
+            "type": "quiz",
+            "title": "Central Tendency Quiz",
+            "content": "Test your understanding of central tendency!",
+            "quizQuestion": "For a dataset with extreme outliers, which measure of central tendency is MOST reliable?",
+            "quizOptions": [
+                "Mean",
+                "Median",
+                "Mode",
+                "Range"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "stats_basics_4",
+            "type": "content",
+            "title": "Measures of Dispersion",
+            "content": "# Measures of Dispersion 📐\n\nDispersion measures tell us how spread out our data is.\n\n## Range\n\nSimplest measure: Maximum - Minimum\n\n```python\nimport numpy as np\n\ndata = [10, 20, 30, 40, 50]\nrange_val = np.max(data) - np.min(data)\nprint(f\"Range: {range_val}\")  # Output: 40\n```\n\n## Variance\n\nAverage of squared deviations from mean.\n\n```python\nvariance = np.var(data)\nprint(f\"Variance: {variance}\")  # Output: 200.0\n```\n\n## Standard Deviation\n\nSquare root of variance—in the same units as data!\n\n```python\nstd_dev = np.std(data)\nprint(f\"Std Dev: {std_dev}\")  # Output: 14.14\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Sample datasets\ndata1 = [10, 20, 30, 40, 50]\ndata2 = [28, 29, 30, 31, 32]  # Less spread\n\nprint(\"=== Measures of Dispersion ===\")\n\nfor i, data in enumerate([data1, data2], 1):\n    print(f\"\\nDataset {i}: {data}\")\n    print(f\"  Mean: {np.mean(data):.2f}\")\n    print(f\"  Range: {np.max(data) - np.min(data)}\")\n    print(f\"  Variance: {np.var(data):.2f}\")\n    print(f\"  Std Dev: {np.std(data):.2f}\")\n\nprint(\"\\n\" + \"=\"*40)\nprint(\"\\nBoth datasets have the same mean (30)\")\nprint(\"But Dataset 2 has MUCH lower dispersion!\")\nprint(\"This shows why dispersion measures are crucial.\")\nFULL_CODE_END -->\n\n## Comparison\n\n| Measure | Pros | Cons |\n|---------|------|------|\n| Range | Easy to calculate | Ignores middle values |\n| Variance | Uses all data | Squared units |\n| Std Dev | Same units as data | Less intuitive |\n\n> 🎯 **Key Insight:** Two datasets can have the same mean but very different spreads!"
+        },
+        {
+            "id": "stats_basics_5",
+            "type": "content",
+            "title": "Percentiles and Quartiles",
+            "content": "# Percentiles and Quartiles 📊\n\nDividing data into meaningful segments.\n\n## Percentiles\n\nThe value below which a percentage of data falls.\n\n```python\nimport numpy as np\n\ndata = [15, 20, 35, 40, 50, 55, 60, 75, 80, 95]\n\np25 = np.percentile(data, 25)\np50 = np.percentile(data, 50)  # Same as median\np75 = np.percentile(data, 75)\n\nprint(f\"25th percentile: {p25}\")\nprint(f\"50th percentile: {p50}\")\nprint(f\"75th percentile: {p75}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Sample test scores\nscores = [55, 62, 67, 70, 72, 75, 78, 82, 85, 88, 90, 93, 95, 98]\n\nprint(\"=== Percentiles and Quartiles ===\")\nprint(f\"\\nTest Scores: {scores}\")\nprint(f\"Number of students: {len(scores)}\")\n\n# Calculate key percentiles\nfor p in [10, 25, 50, 75, 90]:\n    value = np.percentile(scores, p)\n    print(f\"\\n{p}th percentile: {value}\")\n    print(f\"  → {p}% of students scored below {value}\")\n\n# Quartiles\nq1 = np.percentile(scores, 25)\nq2 = np.percentile(scores, 50)\nq3 = np.percentile(scores, 75)\n\nprint(f\"\\n\" + \"=\"*40)\nprint(f\"\\nQuartile Summary:\")\nprint(f\"Q1 (25th percentile): {q1}\")\nprint(f\"Q2 (Median): {q2}\")\nprint(f\"Q3 (75th percentile): {q3}\")\nprint(f\"IQR (Q3 - Q1): {q3 - q1}\")\nFULL_CODE_END -->\n\n## Quartiles\n\n| Quartile | Percentile | Description |\n|----------|------------|-------------|\n| Q1 | 25th | Lower quartile |\n| Q2 | 50th | Median |\n| Q3 | 75th | Upper quartile |\n\n## Interquartile Range (IQR)\n\nIQR = Q3 - Q1\n\nUsed for detecting outliers:\n- **Lower bound:** Q1 - 1.5 × IQR\n- **Upper bound:** Q3 + 1.5 × IQR\n\n> 💡 **Use Case:** \"You scored in the 90th percentile\" means you did better than 90% of test takers!"
+        },
+        {
+            "id": "stats_basics_6",
+            "type": "content",
+            "title": "Understanding Distributions",
+            "content": "# Understanding Distributions 📈\n\nDistributions describe how data values are spread.\n\n## Normal Distribution (Bell Curve)\n\nThe most important distribution in statistics!\n\n### Properties\n- Symmetric around the mean\n- Mean = Median = Mode\n- 68-95-99.7 Rule (Empirical Rule)\n\n### The Empirical Rule\n\n| Within | % of Data |\n|--------|----------|\n| ±1 Std Dev | 68% |\n| ±2 Std Dev | 95% |\n| ±3 Std Dev | 99.7% |\n\n```python\nimport numpy as np\n\n# Generate normal distribution\ndata = np.random.normal(loc=100, scale=15, size=1000)\nprint(f\"Mean: {np.mean(data):.1f}\")\nprint(f\"Std: {np.std(data):.1f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Generate normal distribution (e.g., IQ scores)\nnp.random.seed(42)\nmean = 100\nstd = 15\ndata = np.random.normal(loc=mean, scale=std, size=10000)\n\nprint(\"=== Normal Distribution Demo ===\")\nprint(f\"\\nGenerated {len(data)} samples\")\nprint(f\"Mean: {np.mean(data):.1f}\")\nprint(f\"Std Dev: {np.std(data):.1f}\")\n\n# Verify empirical rule\nwithin_1_std = np.sum((data >= mean - std) & (data <= mean + std)) / len(data)\nwithin_2_std = np.sum((data >= mean - 2*std) & (data <= mean + 2*std)) / len(data)\nwithin_3_std = np.sum((data >= mean - 3*std) & (data <= mean + 3*std)) / len(data)\n\nprint(f\"\\n=== Empirical Rule Verification ===\")\nprint(f\"Within 1 Std Dev: {within_1_std:.1%} (Expected: 68%)\")\nprint(f\"Within 2 Std Dev: {within_2_std:.1%} (Expected: 95%)\")\nprint(f\"Within 3 Std Dev: {within_3_std:.1%} (Expected: 99.7%)\")\nFULL_CODE_END -->\n\n## Skewed Distributions\n\n| Skew | Description | Example |\n|------|-------------|--------|\n| Right (positive) | Long tail right | Income |\n| Left (negative) | Long tail left | Age at retirement |\n\n> 🎯 **Key Insight:** Many statistical tests assume normality!"
+        },
+        {
+            "id": "stats_basics_quiz_2",
+            "type": "quiz",
+            "title": "Distribution Quiz",
+            "content": "Test your knowledge of distributions!",
+            "quizQuestion": "According to the Empirical Rule, approximately what percentage of data falls within 2 standard deviations of the mean in a normal distribution?",
+            "quizOptions": [
+                "68%",
+                "95%",
+                "99.7%",
+                "50%"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "stats_basics_7",
+            "type": "content",
+            "title": "Other Common Distributions",
+            "content": "# Common Statistical Distributions 📊\n\nBeyond the normal distribution, several others are essential.\n\n## Uniform Distribution\n\nAll values equally likely.\n\n- **Example:** Rolling a fair die\n- **Properties:** Flat shape, equal probabilities\n\n## Binomial Distribution\n\nNumber of successes in n trials.\n\n- **Example:** Flipping a coin 10 times\n- **Parameters:** n (trials), p (probability)\n\n## Poisson Distribution\n\nNumber of events in a fixed time period.\n\n- **Example:** Calls to a call center per hour\n- **Parameter:** λ (lambda) - average rate\n\n## Exponential Distribution\n\nTime between events.\n\n- **Example:** Time between customer arrivals\n- **Properties:** Memoryless\n\n## Distribution Use Cases\n\n| Distribution | Use Case |\n|--------------|----------|\n| Normal | Heights, test scores |\n| Binomial | Pass/fail outcomes |\n| Poisson | Count events |\n| Exponential | Wait times |\n| Uniform | Random sampling |\n\n```python\nimport numpy as np\n\n# Generate different distributions\nuniform = np.random.uniform(0, 1, 1000)\nbinomial = np.random.binomial(10, 0.5, 1000)\npoisson = np.random.poisson(5, 1000)\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nnp.random.seed(42)\nn_samples = 10000\n\nprint(\"=== Common Statistical Distributions ===\")\n\n# Uniform Distribution\nuniform = np.random.uniform(0, 10, n_samples)\nprint(f\"\\n1. UNIFORM (0 to 10)\")\nprint(f\"   Mean: {np.mean(uniform):.2f} (expected: 5.0)\")\nprint(f\"   Std: {np.std(uniform):.2f}\")\n\n# Binomial Distribution (10 coin flips)\nbinomial = np.random.binomial(n=10, p=0.5, size=n_samples)\nprint(f\"\\n2. BINOMIAL (10 trials, p=0.5)\")\nprint(f\"   Mean: {np.mean(binomial):.2f} (expected: 5.0)\")\nprint(f\"   Std: {np.std(binomial):.2f}\")\n\n# Poisson Distribution\npoisson = np.random.poisson(lam=5, size=n_samples)\nprint(f\"\\n3. POISSON (lambda=5)\")\nprint(f\"   Mean: {np.mean(poisson):.2f} (expected: 5.0)\")\nprint(f\"   Std: {np.std(poisson):.2f}\")\n\n# Exponential Distribution\nexponential = np.random.exponential(scale=2, size=n_samples)\nprint(f\"\\n4. EXPONENTIAL (scale=2)\")\nprint(f\"   Mean: {np.mean(exponential):.2f} (expected: 2.0)\")\nprint(f\"   Std: {np.std(exponential):.2f}\")\nFULL_CODE_END -->\n\n> 💡 **Tip:** Choosing the right distribution is crucial for accurate modeling!"
+        },
+        {
+            "id": "stats_basics_8",
+            "type": "content",
+            "title": "Correlation",
+            "content": "# Correlation: Measuring Relationships 🔗\n\nCorrelation measures the strength and direction of relationships between variables.\n\n## Pearson Correlation Coefficient (r)\n\nMeasures linear relationship.\n\n| Value | Interpretation |\n|-------|---------------|\n| +1.0 | Perfect positive |\n| +0.7 | Strong positive |\n| +0.3 | Moderate positive |\n| 0 | No correlation |\n| -0.3 | Moderate negative |\n| -0.7 | Strong negative |\n| -1.0 | Perfect negative |\n\n```python\nimport numpy as np\n\nx = [1, 2, 3, 4, 5]\ny = [2, 4, 5, 4, 5]\n\ncorr = np.corrcoef(x, y)[0, 1]\nprint(f\"Correlation: {corr:.2f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nprint(\"=== Correlation Examples ===\")\n\n# Perfect positive correlation\nx1 = np.array([1, 2, 3, 4, 5])\ny1 = np.array([2, 4, 6, 8, 10])\ncorr1 = np.corrcoef(x1, y1)[0, 1]\nprint(f\"\\n1. Perfect Positive:\")\nprint(f\"   X: {x1.tolist()}\")\nprint(f\"   Y: {y1.tolist()}\")\nprint(f\"   Correlation: {corr1:.2f}\")\n\n# Perfect negative correlation\ny2 = np.array([10, 8, 6, 4, 2])\ncorr2 = np.corrcoef(x1, y2)[0, 1]\nprint(f\"\\n2. Perfect Negative:\")\nprint(f\"   X: {x1.tolist()}\")\nprint(f\"   Y: {y2.tolist()}\")\nprint(f\"   Correlation: {corr2:.2f}\")\n\n# No correlation\nnp.random.seed(42)\ny3 = np.random.rand(5) * 10\ncorr3 = np.corrcoef(x1, y3)[0, 1]\nprint(f\"\\n3. Random (No Correlation):\")\nprint(f\"   X: {x1.tolist()}\")\nprint(f\"   Y: {[round(v,1) for v in y3]}\")\nprint(f\"   Correlation: {corr3:.2f}\")\n\n# Moderate positive\ny4 = x1 + np.random.rand(5) * 2\ncorr4 = np.corrcoef(x1, y4)[0, 1]\nprint(f\"\\n4. Moderate Positive:\")\nprint(f\"   X: {x1.tolist()}\")\nprint(f\"   Y: {[round(v,1) for v in y4]}\")\nprint(f\"   Correlation: {corr4:.2f}\")\nFULL_CODE_END -->\n\n## Critical Reminder ⚠️\n\n> **Correlation ≠ Causation!**\n\nJust because two variables are correlated doesn't mean one causes the other.\n\n**Classic example:** Ice cream sales and drowning deaths are correlated (both increase in summer), but ice cream doesn't cause drowning!"
+        },
+        {
+            "id": "stats_basics_9",
+            "type": "content",
+            "title": "Correlation vs Causation",
+            "content": "# Correlation vs Causation ⚠️\n\nOne of the most important distinctions in data science!\n\n## Why Correlation ≠ Causation\n\n### 1. Third Variable (Confounding)\n\n```\n    Ice Cream Sales     Drowning Deaths\n           ↘               ↙\n              Summer Heat\n                (cause)\n```\n\n### 2. Reverse Causation\n\n- Observed: Countries with more TVs have higher life expectancy\n- True cause: Wealth → both more TVs AND better healthcare\n\n### 3. Coincidence\n\nSpurious correlations that are purely chance.\n\n## Famous Spurious Correlations\n\n| Variables | Correlation |\n|-----------|------------|\n| Nicolas Cage films vs Pool drownings | 0.67 |\n| Cheese consumption vs PhD graduates | 0.95 |\n| Movie revenue vs COVID cases | ??? |\n\n## Establishing Causation\n\nRequires:\n- ✅ **Temporal precedence:** Cause before effect\n- ✅ **Covariation:** They change together\n- ✅ **Eliminate alternatives:** Rule out confounders\n\n### Best Method: Randomized Controlled Trials (RCTs)\n\n```\nRandom Assignment\n     ↓\n[Treatment Group] → Measure Outcome\n[Control Group]   → Measure Outcome\n     ↓\nCompare Results\n```\n\n> 🎯 **Golden Rule:** Always ask \"What else could explain this relationship?\""
+        },
+        {
+            "id": "stats_basics_quiz_3",
+            "type": "quiz",
+            "title": "Correlation Quiz",
+            "content": "Test your understanding of correlation!",
+            "quizQuestion": "A study finds that students who eat breakfast have higher test scores. Which statement is MOST accurate?",
+            "quizOptions": [
+                "Eating breakfast causes better test scores",
+                "There is a correlation between breakfast and test scores",
+                "Students should skip breakfast to focus on studying",
+                "Test scores cause students to eat breakfast"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "stats_basics_10",
+            "type": "content",
+            "title": "Descriptive Statistics Summary",
+            "content": "# Descriptive Statistics Summary 📋\n\nPutting it all together with a complete analysis.\n\n## Complete Descriptive Analysis Steps\n\n### Step 1: Count & Overview\n```python\nn = len(data)\nprint(f\"Sample size: {n}\")\n```\n\n### Step 2: Central Tendency\n```python\nmean = np.mean(data)\nmedian = np.median(data)\n# mode using scipy\n```\n\n### Step 3: Dispersion\n```python\nstd = np.std(data)\nvariance = np.var(data)\ndata_range = np.max(data) - np.min(data)\niqr = np.percentile(data, 75) - np.percentile(data, 25)\n```\n\n### Step 4: Distribution Shape\n- Check for normality\n- Identify skewness\n- Find outliers\n\n<!-- FULL_CODE_START\nimport numpy as np\n\n# Complete descriptive statistics example\nnp.random.seed(42)\ndata = np.random.normal(loc=75, scale=10, size=100)\ndata = np.append(data, [120, 125])  # Add some outliers\n\nprint(\"=== Complete Descriptive Statistics ===\")\nprint(f\"\\nSample size: {len(data)}\")\n\n# Central Tendency\nprint(f\"\\n--- Central Tendency ---\")\nprint(f\"Mean: {np.mean(data):.2f}\")\nprint(f\"Median: {np.median(data):.2f}\")\n\n# Dispersion\nprint(f\"\\n--- Dispersion ---\")\nprint(f\"Std Dev: {np.std(data):.2f}\")\nprint(f\"Variance: {np.var(data):.2f}\")\nprint(f\"Range: {np.max(data) - np.min(data):.2f}\")\nprint(f\"Min: {np.min(data):.2f}\")\nprint(f\"Max: {np.max(data):.2f}\")\n\n# Quartiles\nq1 = np.percentile(data, 25)\nq2 = np.percentile(data, 50)\nq3 = np.percentile(data, 75)\niqr = q3 - q1\n\nprint(f\"\\n--- Quartiles ---\")\nprint(f\"Q1 (25%): {q1:.2f}\")\nprint(f\"Q2 (50%): {q2:.2f}\")\nprint(f\"Q3 (75%): {q3:.2f}\")\nprint(f\"IQR: {iqr:.2f}\")\n\n# Outlier Detection\nlower_bound = q1 - 1.5 * iqr\nupper_bound = q3 + 1.5 * iqr\noutliers = data[(data < lower_bound) | (data > upper_bound)]\n\nprint(f\"\\n--- Outlier Detection ---\")\nprint(f\"Lower bound: {lower_bound:.2f}\")\nprint(f\"Upper bound: {upper_bound:.2f}\")\nprint(f\"Outliers found: {len(outliers)}\")\nprint(f\"Outlier values: {outliers}\")\nFULL_CODE_END -->\n\n## Report Template\n\n| Metric | Value | Interpretation |\n|--------|-------|---------------|\n| n | 100 | Sample size |\n| Mean | 75.2 | Average score |\n| Median | 74.5 | Middle value |\n| Std Dev | 10.3 | Typical deviation |\n| IQR | 13.5 | Middle 50% spread |\n\n> 💡 **Best Practice:** Always report both central tendency AND dispersion!"
+        },
+        {
+            "id": "stats_basics_11",
+            "type": "content",
+            "title": "Visualizing Statistics",
+            "content": "# Visualizing Statistics 📊\n\nVisualization makes statistics intuitive.\n\n## Key Visualization Types\n\n### Histogram\nShows distribution of a single variable\n- X-axis: Value bins\n- Y-axis: Frequency/count\n- **Use for:** Understanding data distribution\n\n### Box Plot\nShows summary statistics visually\n- Box: Q1 to Q3 (IQR)\n- Line: Median\n- Whiskers: Data range\n- Points: Outliers\n- **Use for:** Comparing groups, finding outliers\n\n### Scatter Plot\nShows relationship between two variables\n- Each point is an observation\n- **Use for:** Identifying correlations\n\n### Bar Chart\nShows categorical comparisons\n- **Use for:** Comparing categories\n\n## Choosing the Right Chart\n\n| Data Type | Best Chart |\n|-----------|------------|\n| Distribution | Histogram |\n| Summary stats | Box plot |\n| Correlation | Scatter plot |\n| Categories | Bar chart |\n| Trends | Line chart |\n\n## Visualization Principles\n\n- ✅ Clear labels and titles\n- ✅ Appropriate scale\n- ✅ Minimal chartjunk\n- ✅ Color with purpose\n- ❌ Misleading axes\n- ❌ 3D charts (mostly)\n\n> 🎯 **Goal:** Let the data tell its story honestly!"
+        },
+        {
+            "id": "stats_basics_12",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Basic Statistics!\n\n## Key Takeaways\n\n### Data Types\n- ✅ Quantitative: Discrete and Continuous\n- ✅ Qualitative: Nominal and Ordinal\n\n### Central Tendency\n- ✅ **Mean:** Average value (affected by outliers)\n- ✅ **Median:** Middle value (robust to outliers)\n- ✅ **Mode:** Most frequent value\n\n### Dispersion\n- ✅ **Range:** Max - Min\n- ✅ **Variance:** Average squared deviation\n- ✅ **Standard Deviation:** Square root of variance\n- ✅ **IQR:** Q3 - Q1\n\n### Distributions\n- ✅ Normal distribution and the Empirical Rule\n- ✅ Binomial, Poisson, and Exponential\n- ✅ Understanding skewness\n\n### Correlation\n- ✅ Pearson correlation coefficient (-1 to +1)\n- ✅ **Correlation ≠ Causation!**\n\n## Formulas to Remember\n\n| Measure | Formula |\n|---------|---------|\n| Mean | Σx / n |\n| Variance | Σ(x - μ)² / n |\n| Std Dev | √Variance |\n| IQR | Q3 - Q1 |\n\n> 🚀 **Next Steps:** Learn Probability Theory to understand uncertainty!\n\nYou're building a solid foundation! 💪"
+        }
+    ]
+}

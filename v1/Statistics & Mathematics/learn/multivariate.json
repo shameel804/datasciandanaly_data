@@ -1,0 +1,111 @@
+{
+    "id": "learn_multivariate",
+    "topicId": "multivariate",
+    "topicTitle": "Multivariate Analysis",
+    "description": "Master PCA, factor analysis, clustering, and dimensionality reduction techniques",
+    "baseKP": 90,
+    "slides": [
+        {
+            "id": "multivariate_1",
+            "type": "content",
+            "title": "Introduction to Multivariate Analysis",
+            "content": "# Multivariate Analysis 🔬\n\nAnalyzing multiple variables simultaneously.\n\n## What You'll Learn\n- **Principal Component Analysis** - Dimensionality reduction\n- **Factor Analysis** - Latent variable discovery\n- **Cluster Analysis** - Grouping observations\n\n## Types of MVA\n\n### Dependence Methods\n- Multiple regression\n- MANOVA\n- Discriminant analysis\n\n### Interdependence Methods\n- PCA\n- Factor analysis\n- Cluster analysis\n\nLet's explore hidden patterns! 🎯"
+        },
+        {
+            "id": "multivariate_2",
+            "type": "content",
+            "title": "Covariance and Correlation Matrix",
+            "content": "# Covariance and Correlation Matrices 📊\n\nThe foundation of multivariate analysis.\n\n## Covariance Matrix\n\nMeasures how variables vary together.\n\n## Correlation Matrix\n\nStandardized covariances (-1 to 1).\n\n## Example\n\n```python\nimport numpy as np\n\ndata = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\ncov_matrix = np.cov(data, rowvar=False)\ncorr_matrix = np.corrcoef(data, rowvar=False)\n\nprint(\"Correlation Matrix:\")\nprint(corr_matrix)\n```\n\n> 🎯 **Key Insight:** Correlation matrices are used in PCA and factor analysis!"
+        },
+        {
+            "id": "multivariate_3",
+            "type": "content",
+            "title": "Principal Component Analysis",
+            "content": "# Principal Component Analysis (PCA) 📉\n\nThe most popular dimensionality reduction technique.\n\n## What PCA Does\n\n1. Finds directions of maximum variance\n2. Creates new uncorrelated variables (PCs)\n3. Ranks them by variance explained\n\n## Key Concepts\n\n| Term | Meaning |\n|------|--------|\n| Principal Component | New axis of maximum variance |\n| Eigenvalue | Variance explained by each PC |\n| Eigenvector | Direction of each PC |\n\n## Choosing Components\n\n- Kaiser Rule: Keep PCs with eigenvalue > 1\n- Scree Plot: Look for \"elbow\"\n- Keep enough to explain ~80% variance\n\n> 💡 **PCA creates linear combinations of original features!**"
+        },
+        {
+            "id": "multivariate_quiz_1",
+            "type": "quiz",
+            "title": "PCA Quiz",
+            "content": "Test your PCA understanding!",
+            "quizQuestion": "In PCA, what does the first principal component capture?",
+            "quizOptions": [
+                "The mean of all variables",
+                "The direction of maximum variance",
+                "The smallest eigenvalue",
+                "The original feature with highest variance"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "multivariate_4",
+            "type": "content",
+            "title": "PCA Implementation",
+            "content": "# PCA Step by Step 🔍\n\n## The Steps\n\n1. **Standardize** the data\n2. **Calculate** covariance matrix\n3. **Compute** eigenvalues and eigenvectors\n4. **Sort** by eigenvalue (descending)\n5. **Select** top k components\n6. **Transform** data\n\n```python\nimport numpy as np\n\nX = np.array([[2.5, 2.4], [0.5, 0.7], [2.2, 2.9]])\nX_std = (X - X.mean(axis=0)) / X.std(axis=0)\ncov_mat = np.cov(X_std.T)\neig_vals, eig_vecs = np.linalg.eig(cov_mat)\n\nprint(f\"Eigenvalues: {eig_vals}\")\n```\n\n> 🎯 **In Practice:** Use sklearn's PCA for production code!"
+        },
+        {
+            "id": "multivariate_5",
+            "type": "content",
+            "title": "Factor Analysis",
+            "content": "# Factor Analysis 🔍\n\nDiscovering latent (hidden) factors.\n\n## PCA vs Factor Analysis\n\n| Aspect | PCA | Factor Analysis |\n|--------|-----|----------------|\n| Goal | Reduce dimensions | Identify latent factors |\n| Model | Data = PCs | X = Factors + Unique |\n| Variance | All variance | Common variance only |\n\n## Factor Loadings\n\n| Loading | Interpretation |\n|---------|---------------|\n| > 0.7 | Strong |\n| 0.4-0.7 | Moderate |\n| < 0.4 | Weak |\n\n> 💡 **Use Case:** Factor analysis reveals the underlying structure!"
+        },
+        {
+            "id": "multivariate_6",
+            "type": "content",
+            "title": "Cluster Analysis",
+            "content": "# Cluster Analysis 🎯\n\nGrouping similar observations.\n\n## Types of Clustering\n\n### K-Means\n1. Choose k cluster centers\n2. Assign points to nearest center\n3. Recalculate centers\n4. Repeat until convergence\n\n### Hierarchical\n- Agglomerative: Bottom-up (merge)\n- Divisive: Top-down (split)\n\n## Choosing K\n\n- Elbow Method: Plot SSE vs k\n- Silhouette Score: Measure cluster quality\n\n> 🎯 **Key Insight:** Clustering is unsupervised—no correct answer!"
+        },
+        {
+            "id": "multivariate_quiz_2",
+            "type": "quiz",
+            "title": "Clustering Quiz",
+            "content": "Test your clustering knowledge!",
+            "quizQuestion": "What is the main limitation of K-Means clustering?",
+            "quizOptions": [
+                "It can only handle categorical data",
+                "You must specify k in advance",
+                "It always finds the global optimum",
+                "It cannot handle more than 2 dimensions"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "multivariate_7",
+            "type": "content",
+            "title": "Hierarchical Clustering",
+            "content": "# Hierarchical Clustering 🌳\n\nBuilding a tree of clusters.\n\n## Linkage Methods\n\n| Method | Definition |\n|--------|------------|\n| Single | Min distance between clusters |\n| Complete | Max distance between clusters |\n| Ward's | Minimize variance increase |\n\n## Dendrogram\n\n- Height = Distance at merge\n- Cut at desired level for clusters\n\n## Pros and Cons\n\n| Pros | Cons |\n|------|------|\n| No k needed | Computationally expensive |\n| Shows hierarchy | Sensitive to outliers |\n\n> 💡 **Use Case:** Great for exploring different granularities!"
+        },
+        {
+            "id": "multivariate_8",
+            "type": "content",
+            "title": "Discriminant Analysis",
+            "content": "# Discriminant Analysis 📊\n\nClassification based on group membership.\n\n## LDA vs PCA\n\n| Aspect | PCA | LDA |\n|--------|-----|-----|\n| Supervised | No | Yes |\n| Goal | Max variance | Max class separation |\n| Uses labels | No | Yes |\n\n## Use Cases\n\n- Customer segmentation\n- Medical diagnosis\n- Credit scoring\n\n> 🎯 **Key Insight:** LDA for classification, PCA for general reduction!"
+        },
+        {
+            "id": "multivariate_9",
+            "type": "content",
+            "title": "t-SNE and UMAP",
+            "content": "# Modern Dimensionality Reduction 🌟\n\nNon-linear techniques for visualization.\n\n## Comparison\n\n| Method | Speed | Global Structure | Use Case |\n|--------|-------|-----------------|----------|\n| PCA | Fast | Preserves | Initial exploration |\n| t-SNE | Slow | Loses | Visualization |\n| UMAP | Medium | Moderate | Visualization, clustering |\n\n## Best Practices\n\n- ✅ Use PCA first to reduce to ~50 dims\n- ✅ t-SNE/UMAP for final visualization\n- ❌ Don't use for downstream ML\n\n> ⚠️ **Warning:** t-SNE can create clusters that don't exist!"
+        },
+        {
+            "id": "multivariate_quiz_3",
+            "type": "quiz",
+            "title": "MVA Applications Quiz",
+            "content": "Test your applied knowledge!",
+            "quizQuestion": "For visualizing high-dimensional data in 2D, which approach is typically BEST?",
+            "quizOptions": [
+                "Apply PCA directly to 2D",
+                "Apply t-SNE directly",
+                "First reduce with PCA, then apply t-SNE",
+                "Use regression"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "multivariate_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Multivariate Analysis!\n\n## Key Takeaways\n\n### Dimensionality Reduction\n- ✅ **PCA:** Linear, unsupervised\n- ✅ **LDA:** Linear, supervised\n- ✅ **t-SNE/UMAP:** Non-linear, visualization\n\n### Cluster Analysis\n- ✅ **K-Means:** Fast, requires k\n- ✅ **Hierarchical:** Dendrogram, no k needed\n\n### Method Selection\n\n| Goal | Method |\n|------|--------|\n| Reduce dimensions | PCA |\n| Find hidden factors | Factor Analysis |\n| Group observations | Clustering |\n| Visualize high-D | t-SNE, UMAP |\n\n> 🚀 **Next:** Learn Time Series Analysis!\n\nYou can now find hidden patterns! 🔍"
+        }
+    ]
+}

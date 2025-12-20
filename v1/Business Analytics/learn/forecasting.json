@@ -1,0 +1,67 @@
+{
+    "id": "learn_forecasting",
+    "topicId": "forecasting",
+    "topicTitle": "Business Forecasting",
+    "description": "Master demand forecasting, sales predictions, and planning techniques",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "forecasting_1",
+            "type": "content",
+            "title": "Introduction to Forecasting",
+            "content": "# Business Forecasting 📈\n\nPredicting the future to plan today.\n\n## What is Forecasting?\n\nUsing historical data and analysis to predict future values.\n\n## Why Forecast?\n\n- Inventory planning\n- Budgeting\n- Staffing\n- Capacity planning\n\n## Types of Forecasts\n\n| Type | Horizon | Example |\n|------|---------|--------|\n| Short-term | Days-weeks | Daily sales |\n| Medium-term | Months | Quarterly budget |\n| Long-term | Years | Market trends |\n\n> 💡 All forecasts are wrong—some are useful!"
+        },
+        {
+            "id": "forecasting_2",
+            "type": "content",
+            "title": "Forecasting Methods",
+            "content": "# Forecasting Methods 🔧\n\n## Qualitative Methods\n- Expert judgment\n- Delphi method\n- Market research\n\n## Quantitative Methods\n\n### Time Series\n- Moving averages\n- Exponential smoothing\n- ARIMA\n\n### Causal/Regression\n- Linear regression\n- Multiple regression\n- ML models\n\n## Method Selection\n\n| Situation | Method |\n|-----------|--------|\n| No historical data | Qualitative |\n| Stable patterns | Time series |\n| Causal relationships | Regression |\n| Complex patterns | ML |\n\n> 🎯 Start simple, add complexity as needed!"
+        },
+        {
+            "id": "forecasting_quiz_1",
+            "type": "quiz",
+            "title": "Methods Quiz",
+            "content": "Test your forecasting knowledge!",
+            "quizQuestion": "For a new product with no sales history, which method is most appropriate?",
+            "quizOptions": [
+                "ARIMA",
+                "Moving average",
+                "Qualitative/expert judgment",
+                "Regression"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "forecasting_3",
+            "type": "content",
+            "title": "Simple Forecasting",
+            "content": "# Simple Forecasting Techniques 📊\n\n## Moving Average\n\nAverage of last n periods.\n\n**SMA = (Y₁ + Y₂ + ... + Yₙ) / n**\n\n## Exponential Smoothing\n\nWeighted average favoring recent data.\n\n**Fₜ₊₁ = α × Yₜ + (1-α) × Fₜ**\n\n## Trend Analysis\n\nFit linear trend to data.\n\n**Y = a + bt**\n\n## Seasonal Adjustment\n\n1. Calculate seasonal indices\n2. Deseasonalize data\n3. Forecast trend\n4. Reapply seasonality\n\n```python\nimport numpy as np\n\ndata = [100, 120, 130, 125, 140, 150]\nsma_3 = np.convolve(data, np.ones(3)/3, mode='valid')\nprint(f\"3-period SMA: {sma_3}\")\n```"
+        },
+        {
+            "id": "forecasting_4",
+            "type": "content",
+            "title": "Forecast Accuracy",
+            "content": "# Measuring Forecast Accuracy 📏\n\n## Error Metrics\n\n### MAE (Mean Absolute Error)\nAverage of absolute errors.\n\n### MAPE (Mean Absolute % Error)\n**MAPE = (100/n) × Σ|Actual - Forecast|/Actual**\n\n### RMSE\nRoot Mean Square Error—penalizes large errors.\n\n## Accuracy Guidelines\n\n| MAPE | Interpretation |\n|------|---------------|\n| < 10% | Highly accurate |\n| 10-20% | Good |\n| 20-50% | Reasonable |\n| > 50% | Inaccurate |\n\n## Best Practices\n\n- Track bias (over/under)\n- Use holdout validation\n- Compare multiple methods\n- Update models regularly"
+        },
+        {
+            "id": "forecasting_quiz_2",
+            "type": "quiz",
+            "title": "Accuracy Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "A MAPE of 15% indicates what level of forecast accuracy?",
+            "quizOptions": [
+                "Poor",
+                "Good",
+                "Perfect",
+                "Unacceptable"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "forecasting_5",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Business Forecasting!\n\n## Key Takeaways\n\n- ✅ Choose method based on data availability\n- ✅ Start simple, add complexity as needed\n- ✅ Always measure accuracy\n- ✅ Update forecasts regularly\n\n## Methods Summary\n\n| Method | Best For |\n|--------|----------|\n| Moving Average | Stable data |\n| Exp. Smoothing | Level + trend |\n| Regression | Causal relationships |\n| ARIMA | Complex patterns |\n\n> 🎯 Good forecasting enables good planning!\n\nKeep forecasting! 📈"
+        }
+    ]
+}

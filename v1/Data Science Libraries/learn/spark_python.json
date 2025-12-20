@@ -1,0 +1,61 @@
+{
+    "id": "learn_spark_python",
+    "topicId": "spark_python",
+    "topicTitle": "PySpark",
+    "description": "Master PySpark for big data Python",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "spark_python_1",
+            "type": "content",
+            "title": "PySpark Overview",
+            "content": "# PySpark 🐍⚡\n\n## What is PySpark?\n\nPython API for Apache Spark.\n\n## Why PySpark?\n\n- Python simplicity\n- Spark scalability\n- Pandas-like API\n\n| Compare | PySpark |\n|---------|--------|\n| Data size | Unlimited |\n| Processing | Distributed |\n| Syntax | Familiar |\n\n> 💡 PySpark = Python + Big Data!"
+        },
+        {
+            "id": "spark_python_2",
+            "type": "content",
+            "title": "DataFrame Operations",
+            "content": "# DataFrame Operations 📊\n\n```python_not\nfrom pyspark.sql import SparkSession\n\nspark = SparkSession.builder.getOrCreate()\n\n# Read data\ndf = spark.read.csv('data.csv', header=True)\n\n# Operations\ndf.select('col1', 'col2')\ndf.filter(df.age > 30)\ndf.groupBy('city').count()\ndf.join(df2, 'key')\n```\n\n> 🎯 Familiar Pandas-like syntax!"
+        },
+        {
+            "id": "spark_python_quiz_1",
+            "type": "quiz",
+            "title": "PySpark Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What is SparkSession used for?",
+            "quizOptions": [
+                "Database connection",
+                "Entry point to Spark",
+                "Machine learning",
+                "Visualization"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "spark_python_3",
+            "type": "content",
+            "title": "Spark MLlib",
+            "content": "# Spark MLlib 🔬\n\n## ML at Scale\n\n```python_not\nfrom pyspark.ml.classification import RandomForestClassifier\nfrom pyspark.ml.feature import VectorAssembler\n\n# Prepare features\nassembler = VectorAssembler(inputCols=['f1', 'f2'], outputCol='features')\ndf = assembler.transform(df)\n\n# Train\nrf = RandomForestClassifier()\nmodel = rf.fit(df)\n```"
+        },
+        {
+            "id": "spark_python_quiz_2",
+            "type": "quiz",
+            "title": "MLlib Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "VectorAssembler is used to:",
+            "quizOptions": [
+                "Split data",
+                "Combine features into vector",
+                "Visualize data",
+                "Export data"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "spark_python_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned PySpark!\n\n## Key Takeaways\n\n- ✅ Python on Spark\n- ✅ Pandas-like operations\n- ✅ ML at scale with MLlib\n- ✅ Handle any data size\n\n> 🚀 Scale your Python!\n\nKeep sparking! ⚡"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "learn_kafka",
+    "topicId": "kafka",
+    "topicTitle": "Apache Kafka",
+    "description": "Master Kafka for event streaming",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "kafka_1",
+            "type": "content",
+            "title": "Kafka Overview",
+            "content": "# Apache Kafka 📬\n\n## What is Kafka?\n\nDistributed event streaming platform.\n\n## Key Concepts\n\n| Concept | Description |\n|---------|-------------|\n| Producer | Sends messages |\n| Consumer | Reads messages |\n| Topic | Category of messages |\n| Broker | Kafka server |\n\n## Use Cases\n\n- Real-time pipelines\n- Event sourcing\n- Log aggregation\n\n> 💡 Kafka handles trillions of events/day!"
+        },
+        {
+            "id": "kafka_2",
+            "type": "content",
+            "title": "Topics and Partitions",
+            "content": "# Topics and Partitions 📊\n\n## Topics\n\n- Named stream of messages\n- Append-only log\n- Configurable retention\n\n## Partitions\n\n- Topic split for parallelism\n- Ordered within partition\n- Distributed across brokers\n\n## Replication\n\n- Each partition replicated\n- Leader handles requests\n- Followers for backup\n\n> 🎯 Partitions enable scale and parallelism!"
+        },
+        {
+            "id": "kafka_quiz_1",
+            "type": "quiz",
+            "title": "Kafka Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What sends messages to Kafka?",
+            "quizOptions": [
+                "Consumer",
+                "Producer",
+                "Broker",
+                "Topic"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "kafka_3",
+            "type": "content",
+            "title": "Use Cases",
+            "content": "# Kafka Use Cases 🔧\n\n| Use Case | Description |\n|----------|-------------|\n| Messaging | Queue replacement |\n| Activity tracking | User actions |\n| Metrics | System monitoring |\n| Log aggregation | Centralize logs |\n| Stream processing | Real-time analytics |\n\n## Kafka Ecosystem\n\n- Kafka Streams\n- Kafka Connect\n- ksqlDB\n\n> 💡 Kafka is the backbone of data pipelines!"
+        },
+        {
+            "id": "kafka_quiz_2",
+            "type": "quiz",
+            "title": "Use Cases Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Kafka is primarily used for:",
+            "quizOptions": [
+                "Batch processing",
+                "Event streaming",
+                "Data visualization",
+                "Machine learning"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "kafka_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Apache Kafka!\n\n## Key Takeaways\n\n- ✅ Event streaming platform\n- ✅ Producers → Topics → Consumers\n- ✅ Partitions for scale\n- ✅ High throughput and durability\n\n> 🚀 Kafka enables real-time data!\n\nKeep streaming! 📬"
+        }
+    ]
+}

@@ -1,105 +1,79 @@
 {
-    "id": "learn_supervise",
-    "topicId": "supervise",
+    "id": "learn_supervised",
+    "topicId": "supervised",
     "topicTitle": "Supervised Learning",
-    "description": "Master supervised learning algorithms including linear models, trees, SVM, ensemble methods, and practical applications",
-    "baseKP": 75,
+    "description": "Master classification and regression algorithms including decision trees and SVM",
+    "baseKP": 85,
     "slides": [
         {
-            "id": "supervise_1",
+            "id": "supervised_1",
             "type": "content",
-            "title": "Welcome to Supervised Learning",
-            "content": "# Supervised Learning 🎯\n\nLearning from labeled examples!\n\n## What you'll learn:\n- **Linear Models** - Regression and classification\n- **Tree-Based** - Decision trees and random forests\n- **SVM** - Support vector machines\n- **Ensemble Methods** - Combining models\n\n> 💡 **Key Insight:** Supervised learning is the workhorse of ML!\n\n## The Supervised Paradigm\n\n```\nTraining: X (features) + y (labels) → Learn f\nPrediction: X_new → f(X_new) → y_pred\n```\n\n## Algorithm Categories\n\n| Category | Examples |\n|----------|----------|\n| Linear | Linear/Logistic Regression |\n| Tree-based | Decision Tree, Random Forest |\n| Instance-based | KNN |\n| Kernel | SVM |\n| Ensemble | Boosting, Bagging |"
+            "title": "What is Supervised Learning",
+            "content": "# Supervised Learning 🎯\n\nLearning from labeled examples.\n\n## Definition\n\nSupervised learning uses labeled training data (input + correct output) to learn a mapping function.\n\n## Two Main Types\n\n### Classification\n- Predict discrete categories\n- Spam/Not spam, Cat/Dog\n\n### Regression\n- Predict continuous values\n- House price, temperature\n\n## The Process\n\n1. Collect labeled data\n2. Train model\n3. Predict new instances\n4. Evaluate performance\n\n> 💡 The 'supervision' comes from labeled examples!"
         },
         {
-            "id": "supervise_2",
+            "id": "supervised_2",
             "type": "content",
             "title": "Linear Regression",
-            "content": "# Linear Regression 📈\n\nPredicting continuous values.\n\n## Concept\n\n```\ny = β₀ + β₁x₁ + β₂x₂ + ... + ε\n```\n\nFind line that minimizes error!\n\n## Implementation\n\n```python\nfrom sklearn.linear_model import LinearRegression\n\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n\ny_pred = model.predict(X_test)\n\n# Coefficients\nprint(f\"Intercept: {model.intercept_}\")\nprint(f\"Coefficients: {model.coef_}\")\n```\n\n## Evaluation\n\n```python\nfrom sklearn.metrics import mean_squared_error, r2_score\n\nmse = mean_squared_error(y_test, y_pred)\nrmse = mse ** 0.5\nr2 = r2_score(y_test, y_pred)\n\nprint(f\"RMSE: {rmse:.2f}\")\nprint(f\"R²: {r2:.4f}\")\n```\n\n## Regularization\n\n```python\nfrom sklearn.linear_model import Ridge, Lasso\n\nridge = Ridge(alpha=1.0)  # L2\nlasso = Lasso(alpha=1.0)  # L1 (feature selection)\n```"
+            "content": "# Linear Regression 📈\n\nPredicting continuous values.\n\n## The Model\n\n**y = β₀ + β₁x₁ + β₂x₂ + ... + ε**\n\n## Goal\n\nMinimize squared errors (MSE).\n\n## Use Cases\n\n- Price prediction\n- Sales forecasting\n- Stock returns\n\n## Pros/Cons\n\n| Pros | Cons |\n|------|------|\n| Simple | Linear only |\n| Interpretable | Sensitive to outliers |\n| Fast | Assumes normality |\n\n```python\nimport numpy as np\nX = np.array([[1], [2], [3], [4], [5]])\ny = np.array([2, 4, 5, 4, 5])\n# Use: from sklearn.linear_model import LinearRegression\n```"
         },
         {
-            "id": "supervise_3",
-            "type": "content",
-            "title": "Logistic Regression",
-            "content": "# Logistic Regression 🔀\n\nBinary classification despite the name!\n\n## Concept\n\n```\nP(y=1) = 1 / (1 + e^(-z))\n\nwhere z = β₀ + β₁x₁ + β₂x₂ + ...\n```\n\n## Implementation\n\n```python\nfrom sklearn.linear_model import LogisticRegression\n\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\n\ny_pred = model.predict(X_test)\ny_prob = model.predict_proba(X_test)[:, 1]  # Probability\n```\n\n## Evaluation\n\n```python\nfrom sklearn.metrics import (accuracy_score, \n                              classification_report,\n                              confusion_matrix)\n\nprint(f\"Accuracy: {accuracy_score(y_test, y_pred):.2%}\")\nprint(classification_report(y_test, y_pred))\nprint(confusion_matrix(y_test, y_pred))\n```\n\n## Multi-class\n\n```python\nmodel = LogisticRegression(multi_class='multinomial')\n# Handles 3+ classes automatically\n```"
-        },
-        {
-            "id": "supervise_quiz_1",
+            "id": "supervised_quiz_1",
             "type": "quiz",
-            "title": "Linear Models Check",
-            "content": "Test your understanding!",
-            "quizQuestion": "Logistic Regression is used for:",
+            "title": "Regression Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which metric is commonly used to evaluate regression models?",
             "quizOptions": [
-                "Predicting continuous values",
-                "Classification tasks",
-                "Clustering",
-                "Dimensionality reduction"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "supervise_4",
-            "type": "content",
-            "title": "Decision Trees",
-            "content": "# Decision Trees 🌳\n\nIf-then rules from data.\n\n## How It Works\n\n```\n           Is Age > 30?\n          /          \\\n        Yes           No\n       /               \\\n  Income > 50K?     Deny\n   /        \\\nApprove    Deny\n```\n\n## Implementation\n\n```python\nfrom sklearn.tree import DecisionTreeClassifier\n\nmodel = DecisionTreeClassifier(\n    max_depth=5,\n    min_samples_split=10,\n    min_samples_leaf=5\n)\nmodel.fit(X_train, y_train)\n```\n\n## Visualization\n\n```python\nfrom sklearn.tree import plot_tree\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(15, 10))\nplot_tree(model, feature_names=X.columns, filled=True)\nplt.show()\n```\n\n## Pros and Cons\n\n| Pros | Cons |\n|------|------|\n| ✅ Interpretable | ❌ Prone to overfit |\n| ✅ Handles non-linear | ❌ Instable |\n| ✅ No scaling needed | ❌ Greedy splits |"
-        },
-        {
-            "id": "supervise_5",
-            "type": "content",
-            "title": "Random Forest",
-            "content": "# Random Forest 🌲🌲🌲\n\nEnsemble of decision trees.\n\n## Concept\n\n```\nTrain many trees on random subsets\nCombine predictions (vote/average)\n→ More robust than single tree\n```\n\n## Implementation\n\n```python\nfrom sklearn.ensemble import RandomForestClassifier\n\nmodel = RandomForestClassifier(\n    n_estimators=100,      # Number of trees\n    max_depth=10,          # Tree depth\n    min_samples_split=5,   # Min samples to split\n    random_state=42\n)\nmodel.fit(X_train, y_train)\n```\n\n## Feature Importance\n\n```python\nimport pandas as pd\n\nimportances = pd.Series(\n    model.feature_importances_,\n    index=X.columns\n).sort_values(ascending=False)\n\nimportances.plot(kind='bar')\n```\n\n## Why Random Forest Works\n\n- Reduces variance (averaging)\n- Reduces overfitting\n- Handles noise well\n- Robust to outliers"
-        },
-        {
-            "id": "supervise_6",
-            "type": "content",
-            "title": "Gradient Boosting",
-            "content": "# Gradient Boosting 🚀\n\nSequentially improving weak learners.\n\n## Concept\n\n```\n1. Fit model to data\n2. Fit next model to residuals (errors)\n3. Combine predictions\n4. Repeat\n```\n\n## XGBoost\n\n```python\nimport xgboost as xgb\n\nmodel = xgb.XGBClassifier(\n    n_estimators=100,\n    max_depth=6,\n    learning_rate=0.1,\n    subsample=0.8\n)\nmodel.fit(X_train, y_train)\n```\n\n## LightGBM (Faster)\n\n```python\nimport lightgbm as lgb\n\nmodel = lgb.LGBMClassifier(\n    n_estimators=100,\n    num_leaves=31\n)\nmodel.fit(X_train, y_train)\n```\n\n## Comparison\n\n| Algorithm | Speed | Memory |\n|-----------|-------|--------|\n| XGBoost | Medium | Higher |\n| LightGBM | Fast | Lower |\n| CatBoost | Medium | Medium |\n\n> 💡 XGBoost/LightGBM win most Kaggle competitions!"
-        },
-        {
-            "id": "supervise_quiz_2",
-            "type": "quiz",
-            "title": "Ensemble Quiz",
-            "content": "Test your ensemble knowledge!",
-            "quizQuestion": "Random Forest reduces overfitting by:",
-            "quizOptions": [
-                "Using fewer features",
-                "Training multiple trees and averaging",
-                "Increasing tree depth",
-                "Removing outliers"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "supervise_7",
-            "type": "content",
-            "title": "Support Vector Machines",
-            "content": "# Support Vector Machines 📊\n\nFinding optimal decision boundaries.\n\n## Concept\n\n```\nFind hyperplane that maximizes margin\nbetween classes\n\n  Class A        Margin        Class B\n    o  o    |    ====    |    x  x\n      o     |            |    x\n    o       |            |      x\n```\n\n## Implementation\n\n```python\nfrom sklearn.svm import SVC\n\nmodel = SVC(\n    kernel='rbf',   # 'linear', 'poly', 'rbf'\n    C=1.0,          # Regularization\n    gamma='scale'   # Kernel coefficient\n)\nmodel.fit(X_train, y_train)\n```\n\n## Kernels\n\n| Kernel | Use Case |\n|--------|----------|\n| linear | Linearly separable |\n| poly | Polynomial relationships |\n| rbf | Non-linear (default) |\n\n## Important Notes\n\n- ⚡ Requires feature scaling!\n- 📊 Works well with high dimensions\n- 🐌 Slow on large datasets"
-        },
-        {
-            "id": "supervise_8",
-            "type": "content",
-            "title": "K-Nearest Neighbors",
-            "content": "# K-Nearest Neighbors 👥\n\nClassify based on neighbors.\n\n## Concept\n\n```\nTo classify new point:\n1. Find k nearest neighbors\n2. Majority vote (classification)\n   or average (regression)\n\n   o o     → If k=3: 2 circles, 1 cross\n     ? x   → Classify as circle\n   o\n```\n\n## Implementation\n\n```python\nfrom sklearn.neighbors import KNeighborsClassifier\n\nmodel = KNeighborsClassifier(\n    n_neighbors=5,\n    weights='uniform',  # or 'distance'\n    metric='euclidean'\n)\nmodel.fit(X_train, y_train)\n```\n\n## Choosing K\n\n```python\nfrom sklearn.model_selection import cross_val_score\n\nfor k in range(1, 21):\n    model = KNeighborsClassifier(n_neighbors=k)\n    scores = cross_val_score(model, X, y, cv=5)\n    print(f\"k={k}: {scores.mean():.4f}\")\n```\n\n## Notes\n\n- ⚡ Must scale features!\n- 🐌 Slow prediction on large data\n- 💡 No training phase"
-        },
-        {
-            "id": "supervise_quiz_3",
-            "type": "quiz",
-            "title": "Final Quiz",
-            "content": "Test your overall understanding!",
-            "quizQuestion": "Which algorithm is most commonly used in Kaggle winning solutions?",
-            "quizOptions": [
-                "Logistic Regression",
-                "Decision Trees",
-                "XGBoost/LightGBM",
-                "KNN"
+                "Accuracy",
+                "Precision",
+                "Mean Squared Error (MSE)",
+                "F1 Score"
             ],
             "correctOptionIndex": 2
         },
         {
-            "id": "supervise_9",
+            "id": "supervised_3",
+            "type": "content",
+            "title": "Logistic Regression",
+            "content": "# Logistic Regression 📊\n\nClassification despite the name!\n\n## The Model\n\nPredicts probability using sigmoid function.\n\n**P(y=1) = 1 / (1 + e^-(β₀ + β₁x))**\n\n## Output\n\n- Probability between 0 and 1\n- Apply threshold (usually 0.5)\n\n## Use Cases\n\n- Spam detection\n- Medical diagnosis\n- Credit scoring\n\n## Decision Boundary\n\nLinear separator between classes.\n\n> 💡 Logistic regression is the baseline for classification!"
+        },
+        {
+            "id": "supervised_4",
+            "type": "content",
+            "title": "Decision Trees",
+            "content": "# Decision Trees 🌳\n\nTree-structured decisions.\n\n## How It Works\n\n- Split data on features\n- Create if-then rules\n- Leaf nodes = predictions\n\n## Key Terms\n\n| Term | Meaning |\n|------|--------|\n| Node | Decision point |\n| Branch | Outcome path |\n| Leaf | Final prediction |\n| Depth | Levels in tree |\n\n## Pros/Cons\n\n| Pros | Cons |\n|------|------|\n| Interpretable | Overfits easily |\n| No scaling needed | Unstable |\n| Handles mixed types | Biased to dominant |\n\n## Hyperparameters\n\n- max_depth\n- min_samples_split\n- min_samples_leaf\n\n> 🎯 Great for interpretability!"
+        },
+        {
+            "id": "supervised_5",
+            "type": "content",
+            "title": "Random Forest",
+            "content": "# Random Forest 🌲🌲🌲\n\nEnsemble of decision trees.\n\n## How It Works\n\n1. Build many trees on random subsets\n2. Each tree votes\n3. Majority vote wins (classification)\n4. Average for regression\n\n## Why It Works\n\n- Reduces overfitting\n- Averages out noise\n- Handles outliers\n\n## Key Parameters\n\n| Parameter | Effect |\n|-----------|--------|\n| n_estimators | Number of trees |\n| max_depth | Tree complexity |\n| max_features | Features per split |\n\n## When to Use\n\n- Strong baseline model\n- Mixed feature types\n- Need feature importance\n\n> 💡 RF is often the go-to algorithm!"
+        },
+        {
+            "id": "supervised_quiz_2",
+            "type": "quiz",
+            "title": "Trees Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Random Forest reduces overfitting by:",
+            "quizOptions": [
+                "Using deeper trees",
+                "Training on ALL data",
+                "Averaging predictions from many trees",
+                "Using fewer features total"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "supervised_6",
+            "type": "content",
+            "title": "Support Vector Machines",
+            "content": "# Support Vector Machines 📐\n\nFinding the optimal decision boundary.\n\n## Key Concept\n\nMaximize margin between classes.\n\n## Support Vectors\n\nData points closest to boundary.\n\n## Kernel Trick\n\n- Linear: Straight boundary\n- RBF: Curved boundary\n- Poly: Polynomial boundary\n\n## When to Use\n\n- Clear margin of separation\n- High-dimensional data\n- Text classification\n\n## Pros/Cons\n\n| Pros | Cons |\n|------|------|\n| Works in high dimensions | Slow on large data |\n| Memory efficient | Sensitive to scaling |\n| Effective | Hard to interpret |\n\n> 🎯 Great for text and image classification!"
+        },
+        {
+            "id": "supervised_7",
             "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered Supervised Learning!\n\n## Algorithm Guide\n\n### Start Simple\n- Linear/Logistic Regression\n- Interpretable baseline\n\n### For Accuracy\n- Random Forest\n- XGBoost/LightGBM\n\n### For Interpretability\n- Decision Trees\n- Logistic Regression\n\n### For High Dimensions\n- SVM\n\n## Key Takeaways\n\n| Algorithm | Scale? | Interpretable? |\n|-----------|--------|----------------|\n| Linear/Logistic | No | ✅ |\n| Decision Tree | No | ✅ |\n| Random Forest | No | ⚠️ |\n| XGBoost | No | ⚠️ |\n| SVM | ✅ | ❌ |\n| KNN | ✅ | ✅ |\n\n## Remember\n\n> 🎯 \"Start simple, add complexity only if needed.\"\n\n## Next Steps\n- 🔍 Learn **Unsupervised Learning**\n- 📊 Master **Model Evaluation**\n\nKeep learning! 🎯"
+            "content": "# Congratulations! 🎉\n\nYou've mastered Supervised Learning!\n\n## Algorithms Summary\n\n| Algorithm | Type | Best For |\n|-----------|------|----------|\n| Linear Regression | Regression | Simple relationships |\n| Logistic Regression | Classification | Baseline |\n| Decision Trees | Both | Interpretability |\n| Random Forest | Both | General purpose |\n| SVM | Classification | High dimensions |\n\n## Key Takeaways\n\n- ✅ Start with simple models\n- ✅ Use Random Forest as baseline\n- ✅ Evaluate on test data\n- ✅ Consider interpretability needs\n\n> 🚀 Supervised learning solves most business problems!\n\nKeep learning! 🤖"
         }
     ]
 }

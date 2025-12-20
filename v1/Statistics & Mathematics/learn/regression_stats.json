@@ -1,0 +1,117 @@
+{
+    "id": "learn_regression_stats",
+    "topicId": "regression_stats",
+    "topicTitle": "Statistical Regression",
+    "description": "Master linear regression, least squares, assumptions, diagnostics, and multiple regression",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "regression_stats_1",
+            "type": "content",
+            "title": "Introduction to Regression",
+            "content": "# Statistical Regression 📈\n\nModeling relationships between variables.\n\n## What You'll Learn\n- **Simple Linear Regression** - One predictor variable\n- **Least Squares Method** - Finding the best fit line\n- **Assumptions** - When regression is valid\n- **Diagnostics** - Checking model quality\n- **Multiple Regression** - Multiple predictors\n\n> 💡 **Key Insight:** Regression quantifies relationships and enables prediction!\n\n## Why Regression Matters\n\n| Application | Regression Use |\n|-------------|---------------|\n| House prices | Price ~ Size, Location |\n| Salary prediction | Salary ~ Experience, Education |\n| Sales forecasting | Sales ~ Ads, Season |\n| Scientific research | Effect of treatment |\n\n## The Core Idea\n\nFind the line (or surface) that best describes the relationship:\n\n**y = β₀ + β₁x + ε**\n\nWhere:\n- y = Dependent variable (outcome)\n- x = Independent variable (predictor)\n- β₀ = Intercept\n- β₁ = Slope\n- ε = Error term"
+        },
+        {
+            "id": "regression_stats_2",
+            "type": "content",
+            "title": "Simple Linear Regression",
+            "content": "# Simple Linear Regression 📊\n\nModeling the relationship between two continuous variables.\n\n## The Model\n\n**y = β₀ + β₁x + ε**\n\n| Term | Meaning |\n|------|--------|\n| y | Response variable |\n| x | Predictor variable |\n| β₀ | y-intercept |\n| β₁ | Slope (change in y per unit x) |\n| ε | Random error |\n\n## Interpretation\n\n- **Intercept (β₀):** Value of y when x = 0\n- **Slope (β₁):** For every 1-unit increase in x, y changes by β₁\n\n## Example\n\n```python\nimport numpy as np\nfrom scipy import stats\n\n# Study hours vs exam scores\nhours = [2, 3, 4, 5, 6, 7, 8]\nscores = [55, 60, 65, 70, 80, 85, 90]\n\nslope, intercept, r, p, se = stats.linregress(hours, scores)\nprint(f\"Score = {intercept:.1f} + {slope:.1f} × Hours\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== Simple Linear Regression ===\")\n\n# Study hours vs exam scores\nhours = np.array([2, 3, 4, 5, 6, 7, 8])\nscores = np.array([55, 60, 65, 70, 80, 85, 90])\n\nprint(f\"\\nData:\")\nprint(f\"  Hours studied: {hours.tolist()}\")\nprint(f\"  Exam scores: {scores.tolist()}\")\n\n# Fit regression\nslope, intercept, r_value, p_value, std_err = stats.linregress(hours, scores)\n\nprint(f\"\\nRegression Results:\")\nprint(f\"  Equation: Score = {intercept:.2f} + {slope:.2f} × Hours\")\nprint(f\"  Intercept (β₀): {intercept:.2f}\")\nprint(f\"  Slope (β₁): {slope:.2f}\")\nprint(f\"  R-squared: {r_value**2:.3f}\")\nprint(f\"  P-value: {p_value:.4f}\")\n\nprint(f\"\\nInterpretation:\")\nprint(f\"  - Each additional hour of study → {slope:.2f} point increase\")\nprint(f\"  - R² = {r_value**2:.1%} of variance in scores explained by hours\")\n\n# Predictions\nprint(f\"\\nPredictions:\")\nfor h in [5, 10]:\n    pred = intercept + slope * h\n    print(f\"  {h} hours → predicted score: {pred:.1f}\")\nFULL_CODE_END -->\n\n> 🎯 **Key Insight:** The slope tells us the strength and direction of the relationship!"
+        },
+        {
+            "id": "regression_stats_3",
+            "type": "content",
+            "title": "Least Squares Method",
+            "content": "# Least Squares Method 📐\n\nHow we find the \"best\" line.\n\n## The Goal\n\nMinimize the sum of squared residuals (errors).\n\n**SSE = Σ(yᵢ - ŷᵢ)²**\n\nWhere ŷᵢ is the predicted value.\n\n## The Formulas\n\n**Slope:**\nβ₁ = Σ(xᵢ - x̄)(yᵢ - ȳ) / Σ(xᵢ - x̄)²\n\n**Intercept:**\nβ₀ = ȳ - β₁x̄\n\n## Visual Intuition\n\n```\n  y\n  │      *     /\n  │    *    /\n  │  *   /\n  │ * /     \n  │*/         <- Minimize vertical distances\n  └─────────── x\n```\n\n## Why Squared Errors?\n\n- ✅ Penalizes large errors more\n- ✅ Differentiable (can find minimum)\n- ✅ Positive and negative errors don't cancel\n\n## Manual Calculation\n\n```python\nimport numpy as np\n\nx = np.array([1, 2, 3, 4, 5])\ny = np.array([2, 4, 5, 4, 5])\n\nx_mean, y_mean = np.mean(x), np.mean(y)\nbeta1 = np.sum((x - x_mean) * (y - y_mean)) / np.sum((x - x_mean)**2)\nbeta0 = y_mean - beta1 * x_mean\n\nprint(f\"y = {beta0:.2f} + {beta1:.2f}x\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nprint(\"=== Least Squares Method ===\")\n\n# Simple data\nx = np.array([1, 2, 3, 4, 5])\ny = np.array([2, 4, 5, 4, 5])\n\nprint(f\"\\nData:\")\nprint(f\"  x: {x.tolist()}\")\nprint(f\"  y: {y.tolist()}\")\n\n# Calculate means\nx_mean = np.mean(x)\ny_mean = np.mean(y)\nprint(f\"\\nMeans: x̄ = {x_mean}, ȳ = {y_mean}\")\n\n# Calculate deviations\nprint(f\"\\nDeviations:\")\nfor i in range(len(x)):\n    x_dev = x[i] - x_mean\n    y_dev = y[i] - y_mean\n    product = x_dev * y_dev\n    print(f\"  i={i+1}: (x-x̄)={x_dev:+.1f}, (y-ȳ)={y_dev:+.1f}, product={product:+.2f}\")\n\n# Calculate slope\nnumerator = np.sum((x - x_mean) * (y - y_mean))\ndenominator = np.sum((x - x_mean)**2)\nbeta1 = numerator / denominator\n\nprint(f\"\\nSlope calculation:\")\nprint(f\"  β₁ = Σ(x-x̄)(y-ȳ) / Σ(x-x̄)²\")\nprint(f\"  β₁ = {numerator} / {denominator} = {beta1:.2f}\")\n\n# Calculate intercept\nbeta0 = y_mean - beta1 * x_mean\nprint(f\"\\nIntercept calculation:\")\nprint(f\"  β₀ = ȳ - β₁x̄ = {y_mean} - {beta1:.2f}×{x_mean} = {beta0:.2f}\")\n\nprint(f\"\\n✅ Regression equation: y = {beta0:.2f} + {beta1:.2f}x\")\n\n# Calculate SSE\ny_pred = beta0 + beta1 * x\nsse = np.sum((y - y_pred)**2)\nprint(f\"\\nSum of Squared Errors (SSE): {sse:.2f}\")\nFULL_CODE_END -->\n\n> 💡 **Pro Tip:** Understanding the math helps you diagnose problems!"
+        },
+        {
+            "id": "regression_stats_quiz_1",
+            "type": "quiz",
+            "title": "Regression Quiz",
+            "content": "Test your regression understanding!",
+            "quizQuestion": "In the equation y = 5 + 3x, if x increases by 2 units, how much does y increase?",
+            "quizOptions": [
+                "3 units",
+                "5 units",
+                "6 units",
+                "8 units"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "regression_stats_4",
+            "type": "content",
+            "title": "R-Squared",
+            "content": "# R-Squared: Goodness of Fit 📊\n\nHow well does the model explain the data?\n\n## Definition\n\n**R² = 1 - (SSE / SST)**\n\nWhere:\n- SSE = Sum of Squared Errors (unexplained)\n- SST = Total Sum of Squares\n\n## Interpretation\n\n| R² | Interpretation |\n|----|---------------|\n| 0.90+ | Excellent fit |\n| 0.70-0.90 | Good fit |\n| 0.50-0.70 | Moderate fit |\n| 0.30-0.50 | Weak fit |\n| < 0.30 | Poor fit |\n\n## What R² Tells Us\n\n\"X% of the variance in y is explained by x\"\n\n## Example\n\n```python\nimport numpy as np\nfrom scipy import stats\n\nx = np.array([1, 2, 3, 4, 5, 6, 7, 8])\ny = np.array([10, 12, 15, 18, 22, 25, 28, 30])\n\nslope, intercept, r, p, se = stats.linregress(x, y)\nr_squared = r**2\n\nprint(f\"R² = {r_squared:.3f}\")\nprint(f\"{r_squared:.1%} of variance explained\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== R-Squared Demonstration ===\")\n\n# High R² example (strong relationship)\nprint(\"\\n1. STRONG RELATIONSHIP (High R²)\")\nx1 = np.array([1, 2, 3, 4, 5, 6, 7, 8])\ny1 = 5 + 3*x1 + np.random.normal(0, 0.5, 8)  # Small noise\n\nslope, intercept, r, p, se = stats.linregress(x1, y1)\nprint(f\"   Equation: y = {intercept:.2f} + {slope:.2f}x\")\nprint(f\"   R² = {r**2:.3f} ({r**2:.1%} variance explained)\")\n\n# Low R² example (weak relationship)\nprint(\"\\n2. WEAK RELATIONSHIP (Low R²)\")\nnp.random.seed(42)\nx2 = np.array([1, 2, 3, 4, 5, 6, 7, 8])\ny2 = 5 + 0.5*x2 + np.random.normal(0, 5, 8)  # Large noise\n\nslope, intercept, r, p, se = stats.linregress(x2, y2)\nprint(f\"   Equation: y = {intercept:.2f} + {slope:.2f}x\")\nprint(f\"   R² = {r**2:.3f} ({r**2:.1%} variance explained)\")\n\n# Manual R² calculation\nprint(\"\\n3. MANUAL R² CALCULATION\")\nx = np.array([1, 2, 3, 4, 5])\ny = np.array([2.1, 4.2, 5.8, 8.1, 10.0])\n\nslope, intercept, r, p, se = stats.linregress(x, y)\ny_pred = intercept + slope * x\ny_mean = np.mean(y)\n\nsse = np.sum((y - y_pred)**2)  # Unexplained variance\nsst = np.sum((y - y_mean)**2)  # Total variance\nssr = np.sum((y_pred - y_mean)**2)  # Explained variance\n\nr_squared = 1 - sse/sst\n\nprint(f\"   SST (Total): {sst:.2f}\")\nprint(f\"   SSR (Explained): {ssr:.2f}\")\nprint(f\"   SSE (Unexplained): {sse:.2f}\")\nprint(f\"   R² = 1 - SSE/SST = 1 - {sse:.2f}/{sst:.2f} = {r_squared:.3f}\")\nFULL_CODE_END -->\n\n> ⚠️ **Caution:** High R² doesn't mean causation or that the model is correct!"
+        },
+        {
+            "id": "regression_stats_5",
+            "type": "content",
+            "title": "Regression Assumptions",
+            "content": "# Regression Assumptions 📋\n\nFor valid inference, these must hold.\n\n## The LINE Assumptions\n\n### L - Linearity\nThe relationship between x and y is linear.\n\n### I - Independence\nObservations are independent of each other.\n\n### N - Normality\nResiduals are normally distributed.\n\n### E - Equal Variance (Homoscedasticity)\nResidual variance is constant across x values.\n\n## Checking Assumptions\n\n| Assumption | How to Check |\n|------------|-------------|\n| Linearity | Scatter plot, residual plot |\n| Independence | Study design, time series plot |\n| Normality | Q-Q plot, histogram of residuals |\n| Equal Variance | Residual vs fitted plot |\n\n## What Happens If Violated?\n\n| Violation | Consequence |\n|-----------|-------------|\n| Non-linearity | Biased predictions |\n| Non-independence | Invalid p-values, SE |\n| Non-normality | Invalid confidence intervals |\n| Heteroscedasticity | Inefficient estimates |\n\n## Residual Analysis\n\n```\nGood residuals:     Bad residuals:\n     .                    .\n  .  .  .              . . .\n . . . . .           .  .  .\n  .  .  .                . .\n     .                      .\n ──────────          ──────────\n  (random)            (pattern)\n```\n\n> 🎯 **Rule:** Always check assumptions before trusting regression results!"
+        },
+        {
+            "id": "regression_stats_6",
+            "type": "content",
+            "title": "Regression Diagnostics",
+            "content": "# Regression Diagnostics 🔍\n\nChecking if your model is valid.\n\n## Residual Analysis\n\n**Residual = Observed - Predicted**\neᵢ = yᵢ - ŷᵢ\n\n## Key Diagnostic Plots\n\n### 1. Residuals vs Fitted\nLook for: Random scatter around 0\n\n### 2. Q-Q Plot\nLook for: Points on diagonal line\n\n### 3. Scale-Location\nLook for: Horizontal band\n\n### 4. Residuals vs Leverage\nLook for: No influential points\n\n## Identifying Problems\n\n| Pattern | Problem | Fix |\n|---------|---------|-----|\n| Curved residuals | Non-linearity | Transform or polynomial |\n| Funnel shape | Heteroscedasticity | Transform y or use WLS |\n| Outliers | Influential points | Investigate or robust regression |\n\n## Example\n\n```python\nimport numpy as np\n\n# Calculate residuals\nx = np.array([1, 2, 3, 4, 5])\ny = np.array([2.2, 4.1, 5.9, 8.2, 9.8])\nbeta0, beta1 = 0.1, 2.0  # Fitted coefficients\n\ny_pred = beta0 + beta1 * x\nresiduals = y - y_pred\n\nprint(f\"Residuals: {residuals}\")\nprint(f\"Mean residual: {np.mean(residuals):.4f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== Regression Diagnostics ===\")\n\n# Create example data\nnp.random.seed(42)\nx = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\ny = 2 + 3*x + np.random.normal(0, 1.5, 10)\n\n# Fit regression\nslope, intercept, r, p, se = stats.linregress(x, y)\ny_pred = intercept + slope * x\nresiduals = y - y_pred\n\nprint(f\"\\nFitted model: y = {intercept:.2f} + {slope:.2f}x\")\nprint(f\"R² = {r**2:.3f}\")\n\nprint(f\"\\nResidual Analysis:\")\nprint(f\"  Residuals: {[f'{r:.2f}' for r in residuals]}\")\nprint(f\"  Mean: {np.mean(residuals):.4f} (should be ~0)\")\nprint(f\"  Std: {np.std(residuals):.2f}\")\n\n# Check normality with Shapiro-Wilk test\nstat, p_shapiro = stats.shapiro(residuals)\nprint(f\"\\nNormality Check (Shapiro-Wilk):\")\nprint(f\"  Statistic: {stat:.3f}\")\nprint(f\"  p-value: {p_shapiro:.4f}\")\nif p_shapiro > 0.05:\n    print(f\"  ✅ Residuals appear normally distributed\")\nelse:\n    print(f\"  ⚠️ Residuals may not be normally distributed\")\n\n# Check for outliers (standardized residuals > 2)\nstd_residuals = residuals / np.std(residuals)\noutliers = np.where(np.abs(std_residuals) > 2)[0]\nprint(f\"\\nOutlier Check:\")\nprint(f\"  Standardized residuals: {[f'{r:.2f}' for r in std_residuals]}\")\nprint(f\"  Potential outliers (|z| > 2): {len(outliers)}\")\nFULL_CODE_END -->\n\n> 💡 **Best Practice:** Run diagnostics before interpreting any regression!"
+        },
+        {
+            "id": "regression_stats_quiz_2",
+            "type": "quiz",
+            "title": "Assumptions Quiz",
+            "content": "Test your knowledge of regression assumptions!",
+            "quizQuestion": "In a residual plot, you notice the residuals form a funnel shape (spreading out as fitted values increase). This indicates:",
+            "quizOptions": [
+                "Non-linearity",
+                "Non-normality",
+                "Heteroscedasticity (unequal variance)",
+                "Independence violation"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "regression_stats_7",
+            "type": "content",
+            "title": "Multiple Linear Regression",
+            "content": "# Multiple Linear Regression 📊\n\nUsing multiple predictors.\n\n## The Model\n\n**y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ + ε**\n\n## Example: House Prices\n\nPrice = β₀ + β₁(Size) + β₂(Bedrooms) + β₃(Age) + ε\n\n## Interpretation of Coefficients\n\n**βⱼ:** Change in y for 1-unit change in xⱼ, **holding all other variables constant**.\n\n## Key Metrics\n\n| Metric | Purpose |\n|--------|--------|\n| R² | Variance explained |\n| Adjusted R² | Penalizes for more predictors |\n| F-statistic | Overall model significance |\n| t-statistics | Individual predictor significance |\n\n## Important Concepts\n\n### Adjusted R²\nR²_adj = 1 - (1 - R²)(n-1)/(n-p-1)\n\nAccounts for number of predictors.\n\n### Multicollinearity\nWhen predictors are highly correlated with each other.\n- Inflates standard errors\n- Makes coefficients unstable\n- Check with VIF (Variance Inflation Factor)\n\n## VIF Guidelines\n\n| VIF | Interpretation |\n|-----|---------------|\n| 1 | No correlation |\n| 1-5 | Moderate |\n| 5-10 | High |\n| > 10 | Serious problem |\n\n> 🎯 **Key Insight:** More predictors isn't always better—be parsimonious!"
+        },
+        {
+            "id": "regression_stats_8",
+            "type": "content",
+            "title": "Feature Selection",
+            "content": "# Feature Selection 🎯\n\nChoosing which predictors to include.\n\n## Methods\n\n### 1. Forward Selection\n- Start with no predictors\n- Add one at a time (best improvement)\n- Stop when no improvement\n\n### 2. Backward Elimination\n- Start with all predictors\n- Remove least significant one\n- Stop when all significant\n\n### 3. Stepwise Selection\n- Combine forward and backward\n- Add/remove at each step\n\n## Criteria for Selection\n\n| Criterion | Formula | Goal |\n|-----------|---------|------|\n| Adjusted R² | Penalizes more predictors | Maximize |\n| AIC | -2L + 2p | Minimize |\n| BIC | -2L + p·log(n) | Minimize |\n| Mallow's Cp | Compare to p+1 | Close to p+1 |\n\n## Best Practices\n\n- ✅ Start with domain knowledge\n- ✅ Check for multicollinearity\n- ✅ Use cross-validation\n- ✅ Consider interpretability\n- ❌ Don't just maximize R²\n- ❌ Avoid p-hacking\n\n## The Bias-Variance Trade-off\n\n```\n        Error\n          │\n          │  \\  Total Error\n          │   \\____/‾‾‾‾\n          │   Bias    Variance\n          │\n          └───────────────────\n            Model Complexity\n```\n\n> 💡 **Principle of Parsimony:** Prefer simpler models that explain the data well!"
+        },
+        {
+            "id": "regression_stats_9",
+            "type": "content",
+            "title": "Categorical Predictors",
+            "content": "# Categorical Predictors 📊\n\nUsing non-numeric variables in regression.\n\n## Dummy Variables\n\nConvert categories to 0/1 indicators.\n\n**Example:** Color (Red, Blue, Green)\n- Dummy_Blue = 1 if Blue, 0 otherwise\n- Dummy_Green = 1 if Green, 0 otherwise\n- (Red is the reference category)\n\n## Rule: k-1 Dummies\n\nFor k categories, create k-1 dummy variables.\n\n| Original | Dummy_Blue | Dummy_Green |\n|----------|------------|-------------|\n| Red | 0 | 0 |\n| Blue | 1 | 0 |\n| Green | 0 | 1 |\n\n## Interpretation\n\nCoefficient = Difference from reference category.\n\n**Example:**\ny = 10 + 5(Dummy_Blue) + 3(Dummy_Green)\n- Red: y = 10\n- Blue: y = 10 + 5 = 15 (5 more than Red)\n- Green: y = 10 + 3 = 13 (3 more than Red)\n\n## Interaction Terms\n\nWhen the effect of one variable depends on another.\n\ny = β₀ + β₁x₁ + β₂x₂ + β₃(x₁ × x₂)\n\n```python\nimport numpy as np\n\n# Creating dummy variables\ncolors = ['Red', 'Blue', 'Green', 'Red', 'Blue']\ncolor_blue = [1 if c == 'Blue' else 0 for c in colors]\ncolor_green = [1 if c == 'Green' else 0 for c in colors]\n\nprint(f\"Original: {colors}\")\nprint(f\"Dummy Blue: {color_blue}\")\nprint(f\"Dummy Green: {color_green}\")\n```\n\n> 🎯 **Key:** The reference category is absorbed into the intercept!"
+        },
+        {
+            "id": "regression_stats_10",
+            "type": "content",
+            "title": "Polynomial Regression",
+            "content": "# Polynomial Regression 📈\n\nModeling non-linear relationships.\n\n## When to Use\n\n- Curved relationship between x and y\n- Linear model doesn't fit well\n- Theory suggests non-linear effect\n\n## The Model\n\n**Quadratic:** y = β₀ + β₁x + β₂x² + ε\n\n**Cubic:** y = β₀ + β₁x + β₂x² + β₃x³ + ε\n\n## Example\n\n```python\nimport numpy as np\nfrom numpy.polynomial import polynomial as P\n\nx = np.array([1, 2, 3, 4, 5, 6, 7])\ny = np.array([1, 4, 9, 15, 24, 35, 50])\n\n# Fit quadratic (degree 2)\ncoeffs = np.polyfit(x, y, 2)\nprint(f\"y = {coeffs[0]:.2f}x² + {coeffs[1]:.2f}x + {coeffs[2]:.2f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== Polynomial Regression ===\")\n\n# Data with curved relationship\nx = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\ny = np.array([2, 5, 9, 16, 24, 35, 48, 63, 81, 100])\n\nprint(f\"\\nData:\")\nprint(f\"  x: {x.tolist()}\")\nprint(f\"  y: {y.tolist()}\")\n\n# Linear fit\nslope, intercept, r, p, se = stats.linregress(x, y)\ny_pred_linear = intercept + slope * x\nss_res_linear = np.sum((y - y_pred_linear)**2)\nprint(f\"\\n1. LINEAR MODEL\")\nprint(f\"   y = {intercept:.2f} + {slope:.2f}x\")\nprint(f\"   R² = {r**2:.3f}\")\nprint(f\"   SSE = {ss_res_linear:.1f}\")\n\n# Quadratic fit\ncoeffs_quad = np.polyfit(x, y, 2)\ny_pred_quad = np.polyval(coeffs_quad, x)\nss_res_quad = np.sum((y - y_pred_quad)**2)\nss_tot = np.sum((y - np.mean(y))**2)\nr2_quad = 1 - ss_res_quad/ss_tot\n\nprint(f\"\\n2. QUADRATIC MODEL\")\nprint(f\"   y = {coeffs_quad[0]:.2f}x² + {coeffs_quad[1]:.2f}x + {coeffs_quad[2]:.2f}\")\nprint(f\"   R² = {r2_quad:.3f}\")\nprint(f\"   SSE = {ss_res_quad:.1f}\")\n\n# Predictions comparison\nprint(f\"\\n3. PREDICTIONS COMPARISON\")\nprint(f\"   {'x':>4} | {'Actual':>8} | {'Linear':>8} | {'Quadratic':>10}\")\nprint(f\"   {'-'*4} | {'-'*8} | {'-'*8} | {'-'*10}\")\nfor i in range(0, len(x), 2):\n    print(f\"   {x[i]:>4} | {y[i]:>8} | {y_pred_linear[i]:>8.1f} | {y_pred_quad[i]:>10.1f}\")\n\nprint(f\"\\n💡 Quadratic model fits much better!\")\nFULL_CODE_END -->\n\n> ⚠️ **Warning:** Higher degrees can overfit—use sparingly and validate!"
+        },
+        {
+            "id": "regression_stats_quiz_3",
+            "type": "quiz",
+            "title": "Multiple Regression Quiz",
+            "content": "Test your understanding!",
+            "quizQuestion": "In multiple regression, what does Adjusted R² do that regular R² doesn't?",
+            "quizOptions": [
+                "Shows the percentage of variance explained",
+                "Penalizes for adding more predictors",
+                "Measures multicollinearity",
+                "Tests individual coefficients"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "regression_stats_11",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Statistical Regression!\n\n## Key Takeaways\n\n### Simple Linear Regression\n- ✅ y = β₀ + β₁x + ε\n- ✅ Slope = change in y per unit x\n- ✅ Least squares minimizes SSE\n\n### Model Quality\n- ✅ R² = proportion of variance explained\n- ✅ Use Adjusted R² for multiple predictors\n- ✅ Always check significance (p-values)\n\n### LINE Assumptions\n- **L**inearity\n- **I**ndependence\n- **N**ormality of residuals\n- **E**qual variance (homoscedasticity)\n\n### Multiple Regression\n- ✅ Multiple predictors\n- ✅ Watch for multicollinearity\n- ✅ Use VIF to detect\n- ✅ Preferance for parsimony\n\n### Special Cases\n- ✅ Dummy variables for categories\n- ✅ Polynomial for curved relationships\n- ✅ Interactions when effects depend on each other\n\n## Model Building Process\n\n1. Explore data visually\n2. Fit model\n3. Check assumptions\n4. Interpret results\n5. Validate predictions\n\n> 🚀 **Next:** Learn Multivariate Analysis for complex data!\n\nYou can now model relationships! 📈"
+        }
+    ]
+}

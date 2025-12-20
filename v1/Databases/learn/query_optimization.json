@@ -1,0 +1,61 @@
+{
+    "id": "learn_query_optimization",
+    "topicId": "query_optimization",
+    "topicTitle": "Query Optimization",
+    "description": "Master SQL query performance tuning",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "query_optimization_1",
+            "type": "content",
+            "title": "Query Optimization Overview",
+            "content": "# Query Optimization ⚡\n\n## Why Optimize?\n\n- Faster results\n- Less resources\n- Better user experience\n- Lower costs\n\n## Key Concepts\n\n| Concept | Description |\n|---------|-------------|\n| Execution plan | How query runs |\n| Indexes | Speed up lookups |\n| Statistics | Query planner info |\n\n> 💡 Small changes = big improvements!"
+        },
+        {
+            "id": "query_optimization_2",
+            "type": "content",
+            "title": "Indexing",
+            "content": "# Indexing 📇\n\n## What are Indexes?\n\nData structures that speed up queries.\n\n## Types\n\n| Type | Use Case |\n|------|----------|\n| B-tree | Default, range queries |\n| Hash | Equality lookups |\n| Composite | Multi-column |\n\n## Best Practices\n\n- Index WHERE clause columns\n- Consider selectivity\n- Don't over-index\n\n> 🎯 Right indexes = fast queries!"
+        },
+        {
+            "id": "query_optimization_quiz_1",
+            "type": "quiz",
+            "title": "Index Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Indexes primarily speed up:",
+            "quizOptions": [
+                "INSERT operations",
+                "SELECT queries",
+                "DELETE all",
+                "CREATE TABLE"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "query_optimization_3",
+            "type": "content",
+            "title": "Query Patterns",
+            "content": "# Query Patterns 📊\n\n## Avoid\n\n- SELECT *\n- Functions in WHERE on indexed columns\n- Unnecessary JOINs\n- Missing WHERE clauses\n\n## Prefer\n\n- Select only needed columns\n- Appropriate indexes\n- Limit results when possible\n- Use EXPLAIN\n\n> 💡 Understand your execution plan!"
+        },
+        {
+            "id": "query_optimization_quiz_2",
+            "type": "quiz",
+            "title": "Patterns Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "EXPLAIN shows what?",
+            "quizOptions": [
+                "Query results",
+                "Execution plan",
+                "Table structure",
+                "Index names"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "query_optimization_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Query Optimization!\n\n## Key Takeaways\n\n- ✅ Use indexes wisely\n- ✅ Understand execution plans\n- ✅ Avoid anti-patterns\n- ✅ Test and measure\n\n> 🚀 Fast queries = happy users!\n\nKeep optimizing! ⚡"
+        }
+    ]
+}

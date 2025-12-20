@@ -1,0 +1,117 @@
+{
+    "id": "learn_inferential",
+    "topicId": "inferential",
+    "topicTitle": "Inferential Statistics",
+    "description": "Master sampling methods, confidence intervals, central limit theorem, and estimation theory",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "inferential_1",
+            "type": "content",
+            "title": "Inferential Statistics Overview",
+            "content": "# Inferential Statistics 📊\n\nMaking conclusions about populations from samples.\n\n## What You'll Learn\n- **Sampling Methods** - How to collect representative data\n- **Confidence Intervals** - Quantifying uncertainty\n- **Central Limit Theorem** - Foundation of inference\n- **Estimation Theory** - Point and interval estimates\n\n> 💡 **Key Insight:** We rarely have access to entire populations—inference lets us draw valid conclusions from samples!\n\n## Descriptive vs Inferential\n\n| Type | Question | Example |\n|------|----------|--------|\n| Descriptive | What does the data show? | Average height is 170cm |\n| Inferential | What can we conclude about the population? | Population average is between 168-172cm |\n\n## The Inference Process\n\n```\nPopulation → Sample → Statistic → Inference → Population\n   (?)       (known)   (calculated)  (estimate)    (conclusion)\n```\n\n## Applications\n\n- 🗳️ Election polling\n- 💊 Clinical trials\n- 📈 Market research\n- 🏭 Quality control\n\nLet's learn to draw valid conclusions! 🎯"
+        },
+        {
+            "id": "inferential_2",
+            "type": "content",
+            "title": "Population vs Sample",
+            "content": "# Population vs Sample 🎯\n\nUnderstanding these concepts is fundamental.\n\n## Definitions\n\n**Population:** The entire group you want to study\n- All customers of a company\n- All adults in a country\n- All products manufactured\n\n**Sample:** A subset of the population\n- 500 surveyed customers\n- 1,000 polled voters\n- 100 tested products\n\n## Parameters vs Statistics\n\n| Concept | Population | Sample |\n|---------|------------|--------|\n| Term | Parameter | Statistic |\n| Mean | μ (mu) | x̄ (x-bar) |\n| Std Dev | σ (sigma) | s |\n| Proportion | p | p̂ (p-hat) |\n| Known? | Usually unknown | Calculated |\n\n## Why Sample?\n\n- ✅ **Cost:** Studying everyone is expensive\n- ✅ **Time:** Faster than census\n- ✅ **Practicality:** Sometimes destructive testing\n- ✅ **Sufficient:** Good samples give accurate estimates\n\n## Key Principle\n\n> 🎯 **Goal:** Use sample statistics to estimate population parameters with quantified uncertainty!"
+        },
+        {
+            "id": "inferential_3",
+            "type": "content",
+            "title": "Sampling Methods",
+            "content": "# Sampling Methods 🎲\n\nHow you sample determines the validity of your conclusions.\n\n## Probability Sampling\n\n### Simple Random Sampling\nEvery member has equal chance of selection\n```python\nimport numpy as np\nnp.random.seed(42)\npopulation = list(range(1, 1001))\nsample = np.random.choice(population, size=50, replace=False)\n```\n\n### Stratified Sampling\nDivide into groups, sample from each\n- Ensures representation of subgroups\n- Example: Sample by age groups\n\n### Cluster Sampling\nRandomly select groups, study all in selected groups\n- Example: Select random schools, survey all students\n\n### Systematic Sampling\nSelect every kth element\n- Example: Every 10th customer\n\n## Non-Probability Sampling\n\n| Method | Description | Risk |\n|--------|-------------|------|\n| Convenience | Easiest to reach | High bias |\n| Volunteer | Self-selected | Selection bias |\n| Quota | Fill predetermined quotas | May miss groups |\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nnp.random.seed(42)\n\nprint(\"=== Sampling Methods Demo ===\")\n\n# Population\npopulation = np.arange(1, 1001)\nprint(f\"\\nPopulation size: {len(population)}\")\n\n# Simple Random Sampling\nprint(\"\\n1. SIMPLE RANDOM SAMPLING\")\nsrs_sample = np.random.choice(population, size=50, replace=False)\nprint(f\"   Sample size: {len(srs_sample)}\")\nprint(f\"   First 10: {srs_sample[:10]}\")\nprint(f\"   Sample mean: {np.mean(srs_sample):.1f}\")\nprint(f\"   Population mean: {np.mean(population):.1f}\")\n\n# Stratified Sampling (simulated)\nprint(\"\\n2. STRATIFIED SAMPLING\")\nlow = population[population <= 333]\nmid = population[(population > 333) & (population <= 666)]\nhigh = population[population > 666]\n\nstrat_sample = np.concatenate([\n    np.random.choice(low, size=17, replace=False),\n    np.random.choice(mid, size=17, replace=False),\n    np.random.choice(high, size=16, replace=False)\n])\nprint(f\"   Sample size: {len(strat_sample)}\")\nprint(f\"   Sample mean: {np.mean(strat_sample):.1f}\")\n\n# Systematic Sampling\nprint(\"\\n3. SYSTEMATIC SAMPLING\")\nk = 20  # Every 20th element\nstart = np.random.randint(0, k)\nsys_sample = population[start::k]\nprint(f\"   Every {k}th element starting at {start}\")\nprint(f\"   Sample size: {len(sys_sample)}\")\nprint(f\"   Sample mean: {np.mean(sys_sample):.1f}\")\nFULL_CODE_END -->\n\n> ⚠️ **Warning:** Non-random samples can lead to biased conclusions!"
+        },
+        {
+            "id": "inferential_quiz_1",
+            "type": "quiz",
+            "title": "Sampling Quiz",
+            "content": "Test your understanding of sampling methods!",
+            "quizQuestion": "A researcher wants to ensure equal representation of different age groups in their study. Which sampling method should they use?",
+            "quizOptions": [
+                "Simple Random Sampling",
+                "Stratified Sampling",
+                "Cluster Sampling",
+                "Convenience Sampling"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "inferential_4",
+            "type": "content",
+            "title": "Sampling Distribution",
+            "content": "# Sampling Distribution 📈\n\nThe distribution of a statistic across many samples.\n\n## Concept\n\nIf we repeatedly:\n1. Draw a sample from population\n2. Calculate a statistic (e.g., mean)\n3. Record the value\n\nThe distribution of these values is the **sampling distribution**.\n\n## Properties of Sample Mean Distribution\n\n| Property | Formula |\n|----------|--------|\n| Mean | μ_x̄ = μ (population mean) |\n| Standard Error | SE = σ / √n |\n| Shape | Approximately normal (CLT) |\n\n## Standard Error\n\nThe standard deviation of the sampling distribution.\n\n```python\nimport numpy as np\n\n# Demonstrate sampling distribution\nnp.random.seed(42)\npopulation = np.random.normal(100, 15, 10000)\n\nsample_means = []\nfor _ in range(1000):\n    sample = np.random.choice(population, 30)\n    sample_means.append(np.mean(sample))\n\nprint(f\"SE (theoretical): {15/np.sqrt(30):.2f}\")\nprint(f\"SE (observed): {np.std(sample_means):.2f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nnp.random.seed(42)\n\nprint(\"=== Sampling Distribution ===\")\n\n# Create population\npop_mean = 100\npop_std = 15\npopulation = np.random.normal(pop_mean, pop_std, 100000)\n\nprint(f\"\\nPopulation: N({pop_mean}, {pop_std})\")\nprint(f\"Population size: {len(population)}\")\n\n# Generate sampling distribution\nprint(\"\\nGenerating sampling distributions...\")\n\nfor n in [10, 30, 100]:\n    sample_means = []\n    for _ in range(5000):\n        sample = np.random.choice(population, n, replace=False)\n        sample_means.append(np.mean(sample))\n    \n    theoretical_se = pop_std / np.sqrt(n)\n    observed_se = np.std(sample_means)\n    \n    print(f\"\\nSample size n = {n}:\")\n    print(f\"  Mean of sample means: {np.mean(sample_means):.2f}\")\n    print(f\"  Theoretical SE (σ/√n): {theoretical_se:.2f}\")\n    print(f\"  Observed SE: {observed_se:.2f}\")\n\nprint(\"\\n💡 Notice: As n increases, SE decreases!\")\nprint(\"   Larger samples give more precise estimates.\")\nFULL_CODE_END -->\n\n> 🎯 **Key Insight:** Larger samples → Smaller standard error → More precise estimates!"
+        },
+        {
+            "id": "inferential_5",
+            "type": "content",
+            "title": "Point Estimation",
+            "content": "# Point Estimation 🎯\n\nUsing sample statistics to estimate population parameters.\n\n## Point Estimators\n\nA single value that estimates a population parameter.\n\n| Parameter | Estimator | Symbol |\n|-----------|-----------|--------|\n| Population mean (μ) | Sample mean | x̄ |\n| Population variance (σ²) | Sample variance | s² |\n| Population proportion (p) | Sample proportion | p̂ |\n\n## Properties of Good Estimators\n\n### 1. Unbiased\nExpected value equals the parameter\nE[estimator] = parameter\n\n### 2. Consistent\nApproaches parameter as n → ∞\n\n### 3. Efficient\nSmallest variance among unbiased estimators\n\n## Example\n\n```python\nimport numpy as np\n\n# Estimate population mean\nsample = [68, 72, 65, 70, 75, 69, 71, 73]\npoint_estimate = np.mean(sample)\nprint(f\"Point estimate of μ: {point_estimate}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nnp.random.seed(42)\n\nprint(\"=== Point Estimation ===\")\n\n# True population (in practice, unknown)\npop_mean = 70\npop_std = 5\npopulation = np.random.normal(pop_mean, pop_std, 10000)\n\nprint(f\"\\nTrue population mean: {pop_mean}\")\nprint(f\"True population std: {pop_std}\")\n\n# Take samples and estimate\nprint(\"\\nPoint estimates from different samples:\")\nfor i in range(5):\n    sample = np.random.choice(population, 50)\n    est_mean = np.mean(sample)\n    est_std = np.std(sample, ddof=1)  # ddof=1 for unbiased\n    print(f\"  Sample {i+1}: Mean = {est_mean:.2f}, Std = {est_std:.2f}\")\n\n# Show unbiasedness\nprint(\"\\n--- Demonstrating Unbiasedness ---\")\nestimates = [np.mean(np.random.choice(population, 50)) for _ in range(10000)]\nprint(f\"Average of 10,000 sample means: {np.mean(estimates):.2f}\")\nprint(f\"True population mean: {pop_mean}\")\nprint(\"\\n💡 The average of sample means equals the population mean (unbiased)!\")\nFULL_CODE_END -->\n\n> ⚠️ **Limitation:** Point estimates don't tell us about uncertainty—that's where confidence intervals come in!"
+        },
+        {
+            "id": "inferential_6",
+            "type": "content",
+            "title": "Confidence Intervals",
+            "content": "# Confidence Intervals 📏\n\nQuantifying uncertainty in our estimates.\n\n## Definition\n\nA range of values that likely contains the population parameter.\n\n**95% Confidence Interval:**\n\"We are 95% confident that the true parameter lies within this range.\"\n\n## Formula for Mean (known σ)\n\nCI = x̄ ± z* × (σ / √n)\n\n| Confidence Level | z* Value |\n|-----------------|----------|\n| 90% | 1.645 |\n| 95% | 1.96 |\n| 99% | 2.576 |\n\n## Example\n\n```python\nimport numpy as np\nfrom scipy import stats\n\nsample = np.array([68, 72, 65, 70, 75, 69, 71, 73, 74, 67])\nn = len(sample)\nx_bar = np.mean(sample)\nse = np.std(sample, ddof=1) / np.sqrt(n)\n\n# 95% CI using t-distribution (unknown σ)\nt_crit = stats.t.ppf(0.975, df=n-1)\nci_lower = x_bar - t_crit * se\nci_upper = x_bar + t_crit * se\n\nprint(f\"95% CI: ({ci_lower:.2f}, {ci_upper:.2f})\")\n```\n\n## Interpretation ⚠️\n\n**Correct:** \"95% of intervals constructed this way contain μ\"\n\n**Incorrect:** \"There's a 95% probability μ is in this interval\"\n\n> 🎯 **Key Insight:** The parameter is fixed; it's the interval that's random!"
+        },
+        {
+            "id": "inferential_quiz_2",
+            "type": "quiz",
+            "title": "Confidence Interval Quiz",
+            "content": "Test your CI understanding!",
+            "quizQuestion": "What happens to a confidence interval if you increase the confidence level from 95% to 99%?",
+            "quizOptions": [
+                "The interval becomes narrower",
+                "The interval becomes wider",
+                "The interval stays the same",
+                "The sample size increases"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "inferential_7",
+            "type": "content",
+            "title": "Confidence Interval Factors",
+            "content": "# Factors Affecting CI Width 📐\n\nUnderstanding what makes intervals wider or narrower.\n\n## The Three Factors\n\n### 1. Sample Size (n)\n- ↑ n → Narrower CI\n- SE = σ/√n decreases with n\n\n### 2. Confidence Level\n- ↑ Confidence → Wider CI\n- z* increases with confidence\n\n### 3. Variability (σ)\n- ↑ σ → Wider CI\n- More variability = more uncertainty\n\n## Comparison\n\n| Factor | Change | Effect on CI |\n|--------|--------|-------------|\n| n | Increase | Narrower |\n| Confidence | Increase | Wider |\n| σ | Increase | Wider |\n\n## Example: Effect of Sample Size\n\n```python\nimport numpy as np\n\nstd = 15\nz = 1.96  # 95% confidence\n\nfor n in [25, 100, 400, 1600]:\n    margin = z * (std / np.sqrt(n))\n    print(f\"n={n:4}: Margin of Error = ±{margin:.2f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nprint(\"=== Factors Affecting CI Width ===\")\n\nstd = 15  # Population standard deviation\nmean = 100  # Assume sample mean\n\n# Effect of sample size\nprint(\"\\n1. EFFECT OF SAMPLE SIZE (95% CI)\")\nz = 1.96\nfor n in [25, 100, 400, 1600]:\n    margin = z * (std / np.sqrt(n))\n    ci = (mean - margin, mean + margin)\n    print(f\"   n = {n:4}: CI = ({ci[0]:.1f}, {ci[1]:.1f}), Width = {2*margin:.1f}\")\n\n# Effect of confidence level\nprint(\"\\n2. EFFECT OF CONFIDENCE LEVEL (n=100)\")\nn = 100\nconfidence_levels = [(0.90, 1.645), (0.95, 1.96), (0.99, 2.576)]\nfor conf, z_val in confidence_levels:\n    margin = z_val * (std / np.sqrt(n))\n    ci = (mean - margin, mean + margin)\n    print(f\"   {conf:.0%}: CI = ({ci[0]:.1f}, {ci[1]:.1f}), Width = {2*margin:.1f}\")\n\n# Effect of variability\nprint(\"\\n3. EFFECT OF VARIABILITY (n=100, 95% CI)\")\nz = 1.96\nn = 100\nfor std_val in [5, 15, 30, 50]:\n    margin = z * (std_val / np.sqrt(n))\n    ci = (mean - margin, mean + margin)\n    print(f\"   σ = {std_val:2}: CI = ({ci[0]:.1f}, {ci[1]:.1f}), Width = {2*margin:.1f}\")\n\nprint(\"\\n💡 Insight: Increasing sample size is the best way to narrow CI!\")\nFULL_CODE_END -->\n\n> 🎯 **Best Strategy:** Increase sample size to get narrower intervals without sacrificing confidence!"
+        },
+        {
+            "id": "inferential_8",
+            "type": "content",
+            "title": "T-Distribution",
+            "content": "# The t-Distribution 📊\n\nUsed when population standard deviation is unknown.\n\n## When to Use t vs z?\n\n| Scenario | Distribution | Reason |\n|----------|-------------|--------|\n| σ known, n ≥ 30 | z | Standard normal |\n| σ unknown | t | Extra uncertainty |\n| Small sample (n < 30) | t | Wider tails |\n\n## Properties of t-Distribution\n\n- Bell-shaped and symmetric\n- Heavier tails than normal\n- Approaches normal as df → ∞\n- Depends on degrees of freedom (df = n - 1)\n\n## CI with t-Distribution\n\nCI = x̄ ± t* × (s / √n)\n\nWhere:\n- s = sample standard deviation\n- t* = t-critical value for df = n-1\n\n## Example\n\n```python\nimport numpy as np\nfrom scipy import stats\n\nsample = [23, 25, 28, 22, 26, 24, 27, 25]\nn = len(sample)\nx_bar = np.mean(sample)\ns = np.std(sample, ddof=1)\nse = s / np.sqrt(n)\n\nt_crit = stats.t.ppf(0.975, df=n-1)\nci = (x_bar - t_crit * se, x_bar + t_crit * se)\nprint(f\"95% CI: {ci}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\nfrom scipy import stats\n\nprint(\"=== T-Distribution ===\")\n\n# Compare t and z distributions\nprint(\"\\n1. COMPARING T vs Z CRITICAL VALUES (95% CI)\")\nz_crit = 1.96\nprint(f\"   z-critical (95%): {z_crit:.3f}\")\n\nfor df in [5, 10, 30, 100, 1000]:\n    t_crit = stats.t.ppf(0.975, df=df)\n    print(f\"   t-critical (df={df:4}): {t_crit:.3f}\")\n\nprint(\"\\n   Notice: t approaches z as df increases!\")\n\n# Practical example\nprint(\"\\n2. CONFIDENCE INTERVAL EXAMPLE\")\nsample = np.array([23, 25, 28, 22, 26, 24, 27, 25, 29, 24])\nn = len(sample)\nx_bar = np.mean(sample)\ns = np.std(sample, ddof=1)\nse = s / np.sqrt(n)\n\nprint(f\"   Sample: {sample}\")\nprint(f\"   n = {n}\")\nprint(f\"   x̄ = {x_bar:.2f}\")\nprint(f\"   s = {s:.2f}\")\nprint(f\"   SE = s/√n = {se:.2f}\")\n\n# Calculate CI\nt_crit = stats.t.ppf(0.975, df=n-1)\nmargin = t_crit * se\nci = (x_bar - margin, x_bar + margin)\n\nprint(f\"\\n   t-critical (df={n-1}): {t_crit:.3f}\")\nprint(f\"   Margin of error: ±{margin:.2f}\")\nprint(f\"   95% CI: ({ci[0]:.2f}, {ci[1]:.2f})\")\nFULL_CODE_END -->\n\n> 💡 **Rule of Thumb:** Always use t-distribution when σ is unknown (which is almost always)!"
+        },
+        {
+            "id": "inferential_9",
+            "type": "content",
+            "title": "CI for Proportions",
+            "content": "# Confidence Intervals for Proportions 📊\n\nEstimating population proportions.\n\n## Formula\n\nCI = p̂ ± z* × √(p̂(1-p̂)/n)\n\nWhere:\n- p̂ = sample proportion = x/n\n- n = sample size\n- z* = z-critical value\n\n## Conditions\n\nRequires:\n- Random sample\n- np̂ ≥ 10 (at least 10 successes)\n- n(1-p̂) ≥ 10 (at least 10 failures)\n\n## Example: Election Polling\n\n```python\nimport numpy as np\n\n# Survey results\nn = 1000\nsupporters = 520\np_hat = supporters / n\n\n# 95% CI\nz = 1.96\nse = np.sqrt(p_hat * (1 - p_hat) / n)\nmargin = z * se\n\nci = (p_hat - margin, p_hat + margin)\nprint(f\"Support: {p_hat:.1%}\")\nprint(f\"95% CI: ({ci[0]:.1%}, {ci[1]:.1%})\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nprint(\"=== Confidence Interval for Proportions ===\")\n\n# Election polling example\nprint(\"\\nEXAMPLE: Election Poll\")\nn = 1000\nsupporters = 520\np_hat = supporters / n\n\nprint(f\"Sample size: {n}\")\nprint(f\"Supporters in sample: {supporters}\")\nprint(f\"Sample proportion (p̂): {p_hat:.3f} ({p_hat:.1%})\")\n\n# Check conditions\nprint(f\"\\nConditions check:\")\nprint(f\"  np̂ = {n * p_hat:.0f} ≥ 10? {n * p_hat >= 10}\")\nprint(f\"  n(1-p̂) = {n * (1-p_hat):.0f} ≥ 10? {n * (1-p_hat) >= 10}\")\n\n# Calculate CI\nfor conf, z_val in [(0.90, 1.645), (0.95, 1.96), (0.99, 2.576)]:\n    se = np.sqrt(p_hat * (1 - p_hat) / n)\n    margin = z_val * se\n    ci = (p_hat - margin, p_hat + margin)\n    print(f\"\\n{conf:.0%} CI: ({ci[0]:.1%}, {ci[1]:.1%})\")\n    print(f\"   Margin of error: ±{margin:.1%}\")\n\n# Sample size for desired margin\nprint(\"\\n\" + \"=\"*40)\nprint(\"\\nSample size needed for ±2% margin (95% CI):\")\ndesired_margin = 0.02\nz = 1.96\nn_needed = (z**2 * 0.5 * 0.5) / (desired_margin**2)\nprint(f\"  n = {n_needed:.0f}\")\nFULL_CODE_END -->\n\n> 🎯 **Application:** This is exactly how political polls report \"±3% margin of error\"!"
+        },
+        {
+            "id": "inferential_quiz_3",
+            "type": "quiz",
+            "title": "Proportion CI Quiz",
+            "content": "Test your understanding!",
+            "quizQuestion": "A poll of 400 people finds 60% support a policy. What is the approximate margin of error for a 95% CI?",
+            "quizOptions": [
+                "±2.4%",
+                "±4.8%",
+                "±6.0%",
+                "±10.0%"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "inferential_10",
+            "type": "content",
+            "title": "Sample Size Determination",
+            "content": "# Sample Size Determination 🔢\n\nHow many observations do you need?\n\n## For Estimating a Mean\n\nn = (z* × σ / E)²\n\nWhere:\n- E = desired margin of error\n- σ = population standard deviation\n- z* = critical value for confidence level\n\n## For Estimating a Proportion\n\nn = p̂(1-p̂) × (z*/E)²\n\nIf p̂ unknown, use p̂ = 0.5 (maximum variance)\n\n## Example Calculations\n\n```python\nimport numpy as np\n\n# Sample size for mean\nsigma = 15\nmargin = 3\nz = 1.96\nn_mean = (z * sigma / margin) ** 2\nprint(f\"Sample size for mean: {np.ceil(n_mean):.0f}\")\n\n# Sample size for proportion\np = 0.5  # Conservative estimate\nmargin = 0.03\nn_prop = p * (1-p) * (z / margin) ** 2\nprint(f\"Sample size for proportion: {np.ceil(n_prop):.0f}\")\n```\n\n<!-- FULL_CODE_START\nimport numpy as np\n\nprint(\"=== Sample Size Determination ===\")\n\n# For means\nprint(\"\\n1. SAMPLE SIZE FOR ESTIMATING A MEAN\")\nsigma = 15  # Estimated population std\nz = 1.96  # 95% confidence\n\nfor margin in [5, 3, 2, 1]:\n    n = (z * sigma / margin) ** 2\n    print(f\"   Margin ±{margin}: n = {np.ceil(n):.0f}\")\n\n# For proportions\nprint(\"\\n2. SAMPLE SIZE FOR ESTIMATING A PROPORTION\")\nz = 1.96\np = 0.5  # Conservative (maximum variance)\n\nfor margin in [0.05, 0.03, 0.02, 0.01]:\n    n = p * (1-p) * (z / margin) ** 2\n    print(f\"   Margin ±{margin:.0%}: n = {np.ceil(n):.0f}\")\n\nprint(\"\\n3. EFFECT OF ESTIMATED PROPORTION\")\nmargin = 0.03\nfor p_est in [0.1, 0.3, 0.5, 0.7, 0.9]:\n    n = p_est * (1-p_est) * (z / margin) ** 2\n    print(f\"   p̂ = {p_est}: n = {np.ceil(n):.0f}\")\n\nprint(\"\\n💡 Note: p=0.5 gives maximum n (conservative approach)\")\nFULL_CODE_END -->\n\n> 💡 **Pro Tip:** Always round up to ensure sufficient sample size!"
+        },
+        {
+            "id": "inferential_11",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've mastered Inferential Statistics!\n\n## Key Takeaways\n\n### Sampling\n- ✅ Population → Sample → Inference\n- ✅ Random sampling prevents bias\n- ✅ Stratified sampling ensures representation\n\n### Sampling Distribution\n- ✅ Distribution of sample statistics\n- ✅ Standard Error = σ/√n\n- ✅ Central Limit Theorem: approaches normal\n\n### Estimation\n- ✅ **Point Estimate:** Single value (x̄)\n- ✅ **Interval Estimate:** Range with confidence\n\n### Confidence Intervals\n\n| For | Formula |\n|-----|--------|\n| Mean (σ known) | x̄ ± z*(σ/√n) |\n| Mean (σ unknown) | x̄ ± t*(s/√n) |\n| Proportion | p̂ ± z*√(p̂(1-p̂)/n) |\n\n### CI Interpretation\n- ✅ \"95% of intervals contain μ\"\n- ✅ Wider CI = More confidence OR smaller n OR more variability\n\n### Sample Size\n- ✅ ↑ sample size → narrower CI\n- ✅ Plan ahead for desired precision\n\n> 🚀 **Next Steps:** Learn Hypothesis Testing to make data-driven decisions!\n\nYou can now quantify uncertainty! 📊"
+        }
+    ]
+}

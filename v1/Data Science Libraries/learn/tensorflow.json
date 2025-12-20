@@ -1,0 +1,61 @@
+{
+    "id": "learn_tensorflow",
+    "topicId": "tensorflow",
+    "topicTitle": "TensorFlow",
+    "description": "Master TensorFlow for deep learning",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "tensorflow_1",
+            "type": "content",
+            "title": "TensorFlow Overview",
+            "content": "# TensorFlow 🔵\n\n## What is TensorFlow?\n\nGoogle's deep learning framework.\n\n## Key Features\n\n- Production-ready\n- Multiple platforms\n- Large ecosystem\n\n## Versions\n\n| API | For |\n|-----|-----|\n| Keras (High) | Quick prototyping |\n| Core (Low) | Custom ops |\n\n> 💡 TensorFlow powers Google AI!"
+        },
+        {
+            "id": "tensorflow_2",
+            "type": "content",
+            "title": "Keras API",
+            "content": "# Keras API 🔧\n\n## Building Models\n\n```python_not\nimport tensorflow as tf\nfrom tensorflow import keras\n\nmodel = keras.Sequential([\n    keras.layers.Dense(128, activation='relu'),\n    keras.layers.Dropout(0.2),\n    keras.layers.Dense(10, activation='softmax')\n])\n\nmodel.compile(optimizer='adam',\n              loss='sparse_categorical_crossentropy',\n              metrics=['accuracy'])\n\nmodel.fit(X_train, y_train, epochs=10)\n```"
+        },
+        {
+            "id": "tensorflow_quiz_1",
+            "type": "quiz",
+            "title": "TF Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What is Keras in TensorFlow?",
+            "quizOptions": [
+                "Low-level API",
+                "High-level API",
+                "Database",
+                "Visualization tool"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "tensorflow_3",
+            "type": "content",
+            "title": "Ecosystem",
+            "content": "# TF Ecosystem 🌐\n\n| Tool | Purpose |\n|------|--------|\n| TF Lite | Mobile deployment |\n| TF.js | Browser ML |\n| TF Serving | Production serving |\n| TFX | ML pipelines |\n| TensorBoard | Visualization |\n\n> 🎯 Deploy anywhere!"
+        },
+        {
+            "id": "tensorflow_quiz_2",
+            "type": "quiz",
+            "title": "Ecosystem Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which tool is for mobile deployment?",
+            "quizOptions": [
+                "TensorBoard",
+                "TF Lite",
+                "TF.js",
+                "TFX"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "tensorflow_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned TensorFlow!\n\n## Key Takeaways\n\n- ✅ Keras for high-level API\n- ✅ Production-ready\n- ✅ Multi-platform deployment\n- ✅ Rich ecosystem\n\n> 🚀 Build with TensorFlow!\n\nKeep learning! 🔵"
+        }
+    ]
+}

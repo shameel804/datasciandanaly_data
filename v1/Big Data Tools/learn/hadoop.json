@@ -1,0 +1,61 @@
+{
+    "id": "learn_hadoop",
+    "topicId": "hadoop",
+    "topicTitle": "Hadoop Ecosystem",
+    "description": "Master Hadoop distributed computing fundamentals",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "hadoop_1",
+            "type": "content",
+            "title": "Hadoop Overview",
+            "content": "# Hadoop Ecosystem 🐘\n\n## What is Hadoop?\n\nOpen-source framework for distributed storage and processing.\n\n## Core Components\n\n| Component | Purpose |\n|-----------|--------|\n| HDFS | Distributed storage |\n| YARN | Resource management |\n| MapReduce | Processing |\n\n## Why Hadoop?\n\n- Handle massive data\n- Scale horizontally\n- Cost-effective (commodity hardware)\n\n> 💡 Hadoop started the big data revolution!"
+        },
+        {
+            "id": "hadoop_2",
+            "type": "content",
+            "title": "HDFS",
+            "content": "# HDFS - Storage Layer 💾\n\n## Hadoop Distributed File System\n\n- Split files into blocks (128MB)\n- Replicate across nodes (3x default)\n- Fault tolerant\n\n## Architecture\n\n| Node | Role |\n|------|------|\n| NameNode | Metadata, directory |\n| DataNode | Store blocks |\n\n## Commands\n\n```bash\nhadoop fs -ls /\nhadoop fs -put file.csv /data/\nhadoop fs -get /data/file.csv .\n```\n\n> 🎯 HDFS stores petabytes reliably!"
+        },
+        {
+            "id": "hadoop_quiz_1",
+            "type": "quiz",
+            "title": "HDFS Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "What is the default replication factor in HDFS?",
+            "quizOptions": [
+                "1",
+                "2",
+                "3",
+                "5"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "hadoop_3",
+            "type": "content",
+            "title": "Ecosystem Tools",
+            "content": "# Hadoop Ecosystem 🔧\n\n## Popular Tools\n\n| Tool | Purpose |\n|------|--------|\n| Hive | SQL on Hadoop |\n| Pig | Scripting |\n| HBase | NoSQL database |\n| Sqoop | Data transfer |\n| Flume | Log ingestion |\n| Oozie | Workflow |\n\n## Modern Evolution\n\nSpark has largely replaced MapReduce.\n\n> 💡 Choose tools based on use case!"
+        },
+        {
+            "id": "hadoop_quiz_2",
+            "type": "quiz",
+            "title": "Ecosystem Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "Which tool provides SQL interface for Hadoop?",
+            "quizOptions": [
+                "Sqoop",
+                "Hive",
+                "Flume",
+                "Oozie"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "hadoop_4",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Congratulations! 🎉\n\nYou've learned Hadoop!\n\n## Key Takeaways\n\n- ✅ HDFS for distributed storage\n- ✅ YARN for resource management\n- ✅ Rich ecosystem of tools\n- ✅ Spark often preferred now\n\n> 🚀 Hadoop handles big data!\n\nKeep scaling! 🐘"
+        }
+    ]
+}

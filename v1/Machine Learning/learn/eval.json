@@ -1,105 +1,73 @@
 {
-    "id": "learn_eval",
-    "topicId": "eval",
-    "topicTitle": "Model Evaluation and Validation",
-    "description": "Master model evaluation techniques including cross-validation, metrics, hyperparameter tuning, and model selection",
-    "baseKP": 75,
+    "id": "learn_model_eval",
+    "topicId": "model_eval",
+    "topicTitle": "Model Evaluation",
+    "description": "Master evaluation metrics, cross-validation, and model selection techniques",
+    "baseKP": 85,
     "slides": [
         {
-            "id": "eval_1",
+            "id": "model_eval_1",
             "type": "content",
-            "title": "Welcome to Model Evaluation",
-            "content": "# Model Evaluation 📊\n\nMeasuring and improving model performance!\n\n## What you'll learn:\n- **Classification Metrics** - Accuracy, precision, recall\n- **Regression Metrics** - MAE, RMSE, R²\n- **Cross-Validation** - Robust evaluation\n- **Hyperparameter Tuning** - Optimizing models\n\n> 💡 **Key Insight:** A model is only as good as its evaluation!\n\n## Why Proper Evaluation?\n\n| Bad Evaluation | Good Evaluation |\n|----------------|------------------|\n| Train accuracy only | Train + test split |\n| Single split | Cross-validation |\n| Wrong metric | Business-aligned metric |\n\n## The Evaluation Workflow\n\n```\n1. Split data properly\n2. Train on training set\n3. Validate on validation set\n4. Final test on holdout\n```"
+            "title": "Why Model Evaluation",
+            "content": "# Model Evaluation 📊\n\nMeasuring model performance.\n\n## Why Evaluate?\n\n- Compare models\n- Detect overfitting\n- Improve models\n- Select best model\n\n## Train vs Test\n\n| Set | Purpose |\n|-----|--------|\n| Training | Fit model |\n| Validation | Tune hyperparameters |\n| Test | Final evaluation |\n\n## Golden Rule\n\n> ⚠️ Never evaluate on training data!\n\n## Typical Split\n\n- 70% Training\n- 15% Validation\n- 15% Test"
         },
         {
-            "id": "eval_2",
+            "id": "model_eval_2",
             "type": "content",
             "title": "Classification Metrics",
-            "content": "# Classification Metrics 🎯\n\nMeasuring classification performance.\n\n## Confusion Matrix\n\n```\n              Predicted\n             Pos    Neg\nActual Pos [ TP  |  FN ]\nActual Neg [ FP  |  TN ]\n```\n\n## Key Metrics\n\n```python\nfrom sklearn.metrics import classification_report, confusion_matrix\n\n# Accuracy = (TP + TN) / Total\naccuracy = accuracy_score(y_true, y_pred)\n\n# Precision = TP / (TP + FP)\nprecision = precision_score(y_true, y_pred)\n\n# Recall = TP / (TP + FN)\nrecall = recall_score(y_true, y_pred)\n\n# F1 = 2 × (Precision × Recall) / (Precision + Recall)\nf1 = f1_score(y_true, y_pred)\n\nprint(classification_report(y_true, y_pred))\n```\n\n## When to Use\n\n| Metric | Use When |\n|--------|----------|\n| Accuracy | Balanced classes |\n| Precision | Cost of FP is high (spam) |\n| Recall | Cost of FN is high (fraud) |\n| F1 | Balance both |"
+            "content": "# Classification Metrics 🎯\n\n## Confusion Matrix\n\n|  | Predicted + | Predicted - |\n|--|------------|------------|\n| Actual + | TP | FN |\n| Actual - | FP | TN |\n\n## Key Metrics\n\n**Accuracy** = (TP + TN) / Total\n\n**Precision** = TP / (TP + FP)\n\"Of predicted positive, how many correct?\"\n\n**Recall** = TP / (TP + FN)\n\"Of actual positive, how many found?\"\n\n**F1 Score** = 2 × (Precision × Recall) / (Precision + Recall)\n\n## When to Use\n\n| Metric | Use When |\n|--------|----------|\n| Accuracy | Balanced classes |\n| Precision | False positives costly |\n| Recall | False negatives costly |\n| F1 | Balance both |"
         },
         {
-            "id": "eval_3",
-            "type": "content",
-            "title": "ROC and AUC",
-            "content": "# ROC and AUC 📈\n\nThreshold-independent evaluation.\n\n## ROC Curve\n\n```python\nfrom sklearn.metrics import roc_curve, roc_auc_score\nimport matplotlib.pyplot as plt\n\n# Get probabilities\ny_prob = model.predict_proba(X_test)[:, 1]\n\n# Calculate ROC curve\nfpr, tpr, thresholds = roc_curve(y_test, y_prob)\nauc = roc_auc_score(y_test, y_prob)\n\nplt.plot(fpr, tpr, label=f'AUC = {auc:.3f}')\nplt.plot([0, 1], [0, 1], 'k--')  # Random classifier\nplt.xlabel('False Positive Rate')\nplt.ylabel('True Positive Rate')\nplt.legend()\n```\n\n## AUC Interpretation\n\n| AUC | Model Quality |\n|-----|---------------|\n| 0.5 | Random (useless) |\n| 0.5-0.7 | Poor |\n| 0.7-0.8 | Fair |\n| 0.8-0.9 | Good |\n| 0.9+ | Excellent |\n\n## Precision-Recall Curve\n\n```python\nfrom sklearn.metrics import precision_recall_curve, average_precision_score\n\n# Better for imbalanced data\n```"
-        },
-        {
-            "id": "eval_quiz_1",
+            "id": "model_eval_quiz_1",
             "type": "quiz",
-            "title": "Metrics Check",
-            "content": "Test your understanding!",
-            "quizQuestion": "For fraud detection where missing fraud is very costly, which metric is most important?",
+            "title": "Metrics Quiz",
+            "content": "Test your knowledge!",
+            "quizQuestion": "For cancer detection, which metric is MOST important?",
             "quizOptions": [
                 "Accuracy",
                 "Precision",
-                "Recall",
-                "F1 Score"
+                "Recall (Sensitivity)",
+                "Specificity"
             ],
             "correctOptionIndex": 2
         },
         {
-            "id": "eval_4",
+            "id": "model_eval_3",
             "type": "content",
             "title": "Regression Metrics",
-            "content": "# Regression Metrics 📏\n\nMeasuring prediction accuracy.\n\n## Key Metrics\n\n```python\nfrom sklearn.metrics import (mean_absolute_error,\n                              mean_squared_error,\n                              r2_score)\n\n# Mean Absolute Error\nmae = mean_absolute_error(y_true, y_pred)\n# Average absolute difference\n\n# Mean Squared Error\nmse = mean_squared_error(y_true, y_pred)\n# Penalizes large errors more\n\n# Root Mean Squared Error\nrmse = mse ** 0.5\n# Same units as target\n\n# R² Score\nr2 = r2_score(y_true, y_pred)\n# 1 = perfect, 0 = mean only, <0 = worse than mean\n```\n\n## Metric Comparison\n\n| Metric | Interpretation |\n|--------|----------------|\n| MAE | Average error in units |\n| RMSE | Average error, penalizes outliers |\n| R² | Variance explained (0-1) |\n| MAPE | Percentage error |\n\n## MAPE\n\n```python\nmape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100\n```"
+            "content": "# Regression Metrics 📈\n\n## Common Metrics\n\n### MAE (Mean Absolute Error)\n**MAE = (1/n) Σ|y - ŷ|**\n\n### MSE (Mean Squared Error)\n**MSE = (1/n) Σ(y - ŷ)²**\n\n### RMSE\n**RMSE = √MSE**\n\n### R² (Coefficient of Determination)\n**R² = 1 - (SSE/SST)**\nProportion of variance explained.\n\n## Comparison\n\n| Metric | Scale | Outliers |\n|--------|-------|----------|\n| MAE | Same as y | Robust |\n| RMSE | Same as y | Penalizes large |\n| R² | 0-1 | N/A |\n\n> 🎯 R² tells how much variance is explained!"
         },
         {
-            "id": "eval_5",
+            "id": "model_eval_4",
             "type": "content",
             "title": "Cross-Validation",
-            "content": "# Cross-Validation 🔄\n\nRobust model evaluation.\n\n## K-Fold Cross-Validation\n\n```\nFold 1: [TEST][Train][Train][Train][Train]\nFold 2: [Train][TEST][Train][Train][Train]\nFold 3: [Train][Train][TEST][Train][Train]\nFold 4: [Train][Train][Train][TEST][Train]\nFold 5: [Train][Train][Train][Train][TEST]\n\nFinal Score = Average of 5 folds\n```\n\n## Implementation\n\n```python\nfrom sklearn.model_selection import cross_val_score\n\nmodel = RandomForestClassifier()\nscores = cross_val_score(model, X, y, cv=5, scoring='accuracy')\n\nprint(f\"Mean: {scores.mean():.4f}\")\nprint(f\"Std: {scores.std():.4f}\")\n```\n\n## Stratified K-Fold\n\n```python\nfrom sklearn.model_selection import StratifiedKFold\n\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\n# Preserves class distribution in each fold\n```\n\n## Time Series Split\n\n```python\nfrom sklearn.model_selection import TimeSeriesSplit\n\ntscv = TimeSeriesSplit(n_splits=5)\n# No future data leakage!\n```"
+            "content": "# Cross-Validation 🔄\n\nMore robust evaluation.\n\n## K-Fold CV\n\n1. Split data into k folds\n2. Train on k-1 folds\n3. Test on remaining fold\n4. Repeat k times\n5. Average results\n\n## Common Values\n\n- 5-fold (default)\n- 10-fold (more robust)\n- LOOCV (small datasets)\n\n## Benefits\n\n- Use all data for testing\n- Reduce variance in estimates\n- Better generalization measure\n\n## Stratified K-Fold\n\n- Maintains class proportions\n- Use for imbalanced data\n\n> 💡 CV gives more reliable estimates!"
         },
         {
-            "id": "eval_6",
+            "id": "model_eval_5",
             "type": "content",
-            "title": "Hyperparameter Tuning",
-            "content": "# Hyperparameter Tuning 🎛️\n\nFinding optimal model settings.\n\n## Grid Search\n\n```python\nfrom sklearn.model_selection import GridSearchCV\n\nparam_grid = {\n    'n_estimators': [100, 200, 300],\n    'max_depth': [5, 10, 15, None],\n    'min_samples_split': [2, 5, 10]\n}\n\ngrid_search = GridSearchCV(\n    RandomForestClassifier(),\n    param_grid,\n    cv=5,\n    scoring='accuracy',\n    n_jobs=-1\n)\n\ngrid_search.fit(X_train, y_train)\nprint(f\"Best params: {grid_search.best_params_}\")\nprint(f\"Best score: {grid_search.best_score_:.4f}\")\n```\n\n## Random Search (Faster)\n\n```python\nfrom sklearn.model_selection import RandomizedSearchCV\n\nrandom_search = RandomizedSearchCV(\n    model, param_distributions, n_iter=50, cv=5\n)\n```\n\n## Tips\n\n- Start with wide ranges\n- Use RandomSearch for many params\n- Refine with GridSearch\n- Always use cross-validation!"
+            "title": "Overfitting and Underfitting",
+            "content": "# Bias-Variance Tradeoff ⚖️\n\n## Underfitting (High Bias)\n\n- Model too simple\n- High train AND test error\n- Solution: More complex model\n\n## Overfitting (High Variance)\n\n- Model memorizes training data\n- Low train, high test error\n- Solution: Regularization, more data\n\n## Diagnosing\n\n| Train Error | Test Error | Diagnosis |\n|------------|------------|----------|\n| High | High | Underfit |\n| Low | High | Overfit |\n| Low | Low | Good fit |\n\n## Solutions\n\n- Regularization (L1, L2)\n- Early stopping\n- Dropout (neural nets)\n- More data\n- Simpler model\n\n> 🎯 Balance complexity with generalization!"
         },
         {
-            "id": "eval_quiz_2",
+            "id": "model_eval_quiz_2",
             "type": "quiz",
-            "title": "CV Quiz",
-            "content": "Test your cross-validation knowledge!",
-            "quizQuestion": "Why is StratifiedKFold important for classification?",
-            "quizOptions": [
-                "It's faster",
-                "It preserves class distribution in each fold",
-                "It reduces overfitting",
-                "It uses more data"
-            ],
-            "correctOptionIndex": 1
-        },
-        {
-            "id": "eval_7",
-            "type": "content",
-            "title": "Learning Curves",
-            "content": "# Learning Curves 📉\n\nDiagnosing model issues.\n\n## Implementation\n\n```python\nfrom sklearn.model_selection import learning_curve\nimport matplotlib.pyplot as plt\n\ntrain_sizes, train_scores, val_scores = learning_curve(\n    model, X, y, cv=5, \n    train_sizes=np.linspace(0.1, 1.0, 10)\n)\n\nplt.plot(train_sizes, train_scores.mean(axis=1), label='Train')\nplt.plot(train_sizes, val_scores.mean(axis=1), label='Validation')\nplt.xlabel('Training Size')\nplt.ylabel('Score')\nplt.legend()\n```\n\n## Diagnosing Problems\n\n### Overfitting\n```\nTrain: High, stable\nVal: Low, not improving\n→ Need regularization, more data\n```\n\n### Underfitting\n```\nTrain: Low\nVal: Low\n→ Need more complex model, features\n```\n\n### Good Fit\n```\nTrain: High\nVal: High, close to train\n→ Model generalizes well!\n```"
-        },
-        {
-            "id": "eval_8",
-            "type": "content",
-            "title": "Model Selection",
-            "content": "# Model Selection 🏆\n\nChoosing the best model.\n\n## The Process\n\n```\n1. Define problem and metric\n2. Try multiple algorithms\n3. Cross-validate each\n4. Tune best candidates\n5. Final evaluation on test set\n```\n\n## Comparison Framework\n\n```python\nmodels = {\n    'LogReg': LogisticRegression(),\n    'RF': RandomForestClassifier(),\n    'XGB': XGBClassifier()\n}\n\nresults = {}\nfor name, model in models.items():\n    scores = cross_val_score(model, X, y, cv=5, scoring='roc_auc')\n    results[name] = (scores.mean(), scores.std())\n    print(f\"{name}: {scores.mean():.4f} ± {scores.std():.4f}\")\n```\n\n## Considerations\n\n| Factor | Question |\n|--------|----------|\n| Performance | Best metric? |\n| Speed | Acceptable training time? |\n| Interpretability | Need to explain? |\n| Maintenance | Easy to update? |"
-        },
-        {
-            "id": "eval_quiz_3",
-            "type": "quiz",
-            "title": "Final Quiz",
-            "content": "Test your overall understanding!",
-            "quizQuestion": "If training accuracy is high but validation accuracy is low, this indicates:",
+            "title": "Overfitting Quiz",
+            "content": "Test your understanding!",
+            "quizQuestion": "A model with 95% training accuracy and 60% test accuracy is likely:",
             "quizOptions": [
                 "Underfitting",
                 "Overfitting",
-                "Good generalization",
-                "Not enough data"
+                "Well-balanced",
+                "Perfect"
             ],
             "correctOptionIndex": 1
         },
         {
-            "id": "eval_9",
+            "id": "model_eval_6",
             "type": "content",
             "title": "Summary",
-            "content": "# Congratulations! 🎉\n\nYou've mastered Model Evaluation!\n\n## Classification Metrics\n\n- ✅ Accuracy, Precision, Recall, F1\n- ✅ ROC-AUC for probabilistic models\n\n## Regression Metrics\n\n- ✅ MAE, RMSE, R²\n\n## Cross-Validation\n\n- ✅ K-Fold for robust estimation\n- ✅ StratifiedKFold for classification\n- ✅ TimeSeriesSplit for temporal data\n\n## Hyperparameter Tuning\n\n- ✅ GridSearchCV for exhaustive\n- ✅ RandomizedSearchCV for speed\n\n## Best Practices\n\n```python\n# Always use cross-validation\nscores = cross_val_score(model, X, y, cv=5)\n\n# Choose metric based on business\nscoring='recall'  # If FN is costly\n```\n\n## Remember\n\n> 📊 \"A model is only as good as its evaluation.\"\n\n## Next Steps\n- 🗣️ Explore **NLP**\n- 🚀 Learn **Model Deployment**\n\nKeep evaluating! 📊"
+            "content": "# Congratulations! 🎉\n\nYou've mastered Model Evaluation!\n\n## Key Metrics\n\n### Classification\n- Accuracy, Precision, Recall, F1\n\n### Regression\n- MAE, MSE, RMSE, R²\n\n## Key Takeaways\n\n- ✅ Never test on training data\n- ✅ Use cross-validation\n- ✅ Choose metrics based on problem\n- ✅ Balance bias and variance\n\n## Best Practices\n\n- [ ] Split data properly\n- [ ] Use stratified sampling\n- [ ] Check for overfitting\n- [ ] Report multiple metrics\n\n> 🚀 Good evaluation = trustworthy models!\n\nKeep evaluating! 📊"
         }
     ]
 }
