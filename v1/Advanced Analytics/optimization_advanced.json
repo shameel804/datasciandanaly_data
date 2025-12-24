@@ -1,0 +1,6774 @@
+[
+    {
+        "q": "What is linear programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization with linear objective and constraints",
+            "Programming in lines",
+            "Linear coding",
+            "Straight programming"
+        ]
+    },
+    {
+        "q": "What does this code output for LP objective?",
+        "type": "mcq",
+        "c": "x, y = 3, 4\nobjective = 2*x + 3*y\nprint(f'Objective: {objective}')",
+        "o": [
+            "Objective: 18",
+            "Objective: 7",
+            "Objective: 12",
+            "Objective: 5"
+        ]
+    },
+    {
+        "q": "The feasible region in LP is convex.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match LP components:",
+        "type": "match",
+        "left": [
+            "Objective",
+            "Decision Variables",
+            "Constraints",
+            "Bounds"
+        ],
+        "right": [
+            "Goal function",
+            "Choices to make",
+            "Limitations",
+            "Variable limits"
+        ]
+    },
+    {
+        "q": "The ______ method solves LP by moving along edges.",
+        "type": "fill_blank",
+        "answers": [
+            "simplex"
+        ],
+        "other_options": [
+            "gradient",
+            "Newton",
+            "branch"
+        ]
+    },
+    {
+        "q": "Rearrange LP formulation steps:",
+        "type": "rearrange",
+        "words": [
+            "Define Variables",
+            "Write Objective",
+            "Identify Constraints",
+            "Set Bounds",
+            "Solve"
+        ]
+    },
+    {
+        "q": "What is the standard form of LP?",
+        "type": "mcq",
+        "o": [
+            "Minimize c'x subject to Ax = b, x >= 0",
+            "Maximize any function",
+            "No constraints",
+            "Only integers"
+        ]
+    },
+    {
+        "q": "What does this code calculate for constraint slack?",
+        "type": "mcq",
+        "c": "lhs = 8\nrhs = 10\nslack = rhs - lhs\nprint(f'Slack: {slack}')",
+        "o": [
+            "Slack: 2",
+            "Slack: -2",
+            "Slack: 18",
+            "Slack: 0.8"
+        ]
+    },
+    {
+        "q": "Binding constraints have zero slack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match LP terminology:",
+        "type": "match",
+        "left": [
+            "Slack",
+            "Surplus",
+            "Artificial",
+            "Basic"
+        ],
+        "right": [
+            "Unused resource",
+            "Excess over minimum",
+            "Start feasibility",
+            "In solution"
+        ]
+    },
+    {
+        "q": "The ______ value shows constraint's marginal worth.",
+        "type": "fill_blank",
+        "answers": [
+            "shadow price"
+        ],
+        "other_options": [
+            "slack",
+            "objective",
+            "coefficient"
+        ]
+    },
+    {
+        "q": "What is the dual problem in LP?",
+        "type": "mcq",
+        "o": [
+            "Related problem with transposed structure and opposite optimization",
+            "Duplicate problem",
+            "Second solution",
+            "Backup problem"
+        ]
+    },
+    {
+        "q": "What does this code output for primal-dual relationship?",
+        "type": "mcq",
+        "c": "primal_obj = 100\ndual_obj = 100\nstrong_duality = primal_obj == dual_obj\nprint(f'Strong duality: {strong_duality}')",
+        "o": [
+            "Strong duality: True",
+            "Strong duality: False",
+            "Strong duality: 100",
+            "Strong duality: 0"
+        ]
+    },
+    {
+        "q": "Rearrange duality concepts:",
+        "type": "rearrange",
+        "words": [
+            "Formulate Primal",
+            "Construct Dual",
+            "Solve Both",
+            "Compare Solutions",
+            "Interpret"
+        ]
+    },
+    {
+        "q": "Weak duality means dual bound >= primal optimal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match primal-dual pairs:",
+        "type": "match",
+        "left": [
+            "Maximize",
+            "<=",
+            "Free variable",
+            ">= 0"
+        ],
+        "right": [
+            "Dual minimizes",
+            ">= constraint",
+            "Equality dual",
+            "Unrestricted dual"
+        ]
+    },
+    {
+        "q": "The ______ theorem states optimal values are equal.",
+        "type": "fill_blank",
+        "answers": [
+            "strong duality"
+        ],
+        "other_options": [
+            "weak duality",
+            "primal",
+            "complementary"
+        ]
+    },
+    {
+        "q": "What is sensitivity analysis in LP?",
+        "type": "mcq",
+        "o": [
+            "Studying how optimal solution changes with parameter changes",
+            "Sensitive solving",
+            "Analysis sensitivity",
+            "Parameter setting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for allowable increase?",
+        "type": "mcq",
+        "c": "current = 5\nupper_bound = 12\nincrease = upper_bound - current\nprint(f'Allowable increase: {increase}')",
+        "o": [
+            "Allowable increase: 7",
+            "Allowable increase: 17",
+            "Allowable increase: 5",
+            "Allowable increase: 12"
+        ]
+    },
+    {
+        "q": "Within allowable range, basis remains optimal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sensitivity terms:",
+        "type": "match",
+        "left": [
+            "Reduced Cost",
+            "Shadow Price",
+            "Range",
+            "100% Rule"
+        ],
+        "right": [
+            "Variable improvement",
+            "Constraint value",
+            "Change limits",
+            "Combined changes"
+        ]
+    },
+    {
+        "q": "The ______ cost shows improvement to enter solution.",
+        "type": "fill_blank",
+        "answers": [
+            "reduced"
+        ],
+        "other_options": [
+            "marginal",
+            "shadow",
+            "total"
+        ]
+    },
+    {
+        "q": "What is integer programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization where some variables must be integers",
+            "Programming with integers only",
+            "Integer coding",
+            "Whole number analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for binary variable value?",
+        "type": "mcq",
+        "c": "select = True\nvalue = 1 if select else 0\nprint(f'Binary: {value}')",
+        "o": [
+            "Binary: 1",
+            "Binary: 0",
+            "Binary: True",
+            "Binary: False"
+        ]
+    },
+    {
+        "q": "Rearrange IP solution methods:",
+        "type": "rearrange",
+        "words": [
+            "Relax Integrality",
+            "Solve LP",
+            "Branch Variables",
+            "Bound Subproblems",
+            "Prune Tree"
+        ]
+    },
+    {
+        "q": "Integer programming is NP-hard in general.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match IP types:",
+        "type": "match",
+        "left": [
+            "Pure IP",
+            "Mixed IP",
+            "Binary IP",
+            "0-1 IP"
+        ],
+        "right": [
+            "All integers",
+            "Some integers",
+            "Yes/no decisions",
+            "Selection variables"
+        ]
+    },
+    {
+        "q": "The ______ method systematically explores integer solutions.",
+        "type": "fill_blank",
+        "answers": [
+            "branch and bound"
+        ],
+        "other_options": [
+            "simplex",
+            "gradient",
+            "Newton"
+        ]
+    },
+    {
+        "q": "What is branch and bound?",
+        "type": "mcq",
+        "o": [
+            "Systematic enumeration with intelligent pruning",
+            "Tree branching",
+            "Bound estimation",
+            "Random search"
+        ]
+    },
+    {
+        "q": "What does this code calculate for pruning decision?",
+        "type": "mcq",
+        "c": "subproblem_bound = 95\nincumbent = 100\nprune = subproblem_bound <= incumbent\nprint(f'Prune: {prune}')",
+        "o": [
+            "Prune: True",
+            "Prune: False",
+            "Prune: 95",
+            "Prune: 5"
+        ]
+    },
+    {
+        "q": "Tighter bounds improve branch and bound efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match B&B concepts:",
+        "type": "match",
+        "left": [
+            "Branching",
+            "Bounding",
+            "Fathoming",
+            "Incumbent"
+        ],
+        "right": [
+            "Creating subproblems",
+            "Estimating quality",
+            "Eliminating nodes",
+            "Best so far"
+        ]
+    },
+    {
+        "q": "The ______ provides upper bound on maximization problem.",
+        "type": "fill_blank",
+        "answers": [
+            "LP relaxation"
+        ],
+        "other_options": [
+            "integer solution",
+            "feasibility",
+            "constraint"
+        ]
+    },
+    {
+        "q": "What is cutting planes method?",
+        "type": "mcq",
+        "o": [
+            "Adding constraints to tighten LP relaxation",
+            "Cutting solutions",
+            "Plane analysis",
+            "Reduction method"
+        ]
+    },
+    {
+        "q": "What does this code output for Gomory cut?",
+        "type": "mcq",
+        "c": "fractional = 3.7\nfloor = int(fractional)\nfraction = fractional - floor\nprint(f'Fractional part: {fraction}')",
+        "o": [
+            "Fractional part: 0.7",
+            "Fractional part: 3.7",
+            "Fractional part: 3",
+            "Fractional part: 0.3"
+        ]
+    },
+    {
+        "q": "Rearrange cutting plane procedure:",
+        "type": "rearrange",
+        "words": [
+            "Solve LP",
+            "Check Integrality",
+            "Generate Cut",
+            "Add to Model",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "Valid cuts remove fractional solutions but keep integer ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match cutting plane types:",
+        "type": "match",
+        "left": [
+            "Gomory",
+            "Lift-and-project",
+            "Clique",
+            "Cover"
+        ],
+        "right": [
+            "Tableaux-based",
+            "Disjunctive",
+            "Graph structure",
+            "Knapsack"
+        ]
+    },
+    {
+        "q": "The ______ integer cut comes from simplex tableau.",
+        "type": "fill_blank",
+        "answers": [
+            "Gomory"
+        ],
+        "other_options": [
+            "Chvatal",
+            "lift",
+            "clique"
+        ]
+    },
+    {
+        "q": "What is branch and cut?",
+        "type": "mcq",
+        "o": [
+            "Combining branch and bound with cutting planes",
+            "Branch cutting",
+            "Cut branching",
+            "Tree cutting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for gap percentage?",
+        "type": "mcq",
+        "c": "best_bound = 105\nbest_solution = 100\ngap = (best_bound - best_solution) / best_solution * 100\nprint(f'Gap: {gap}%')",
+        "o": [
+            "Gap: 5.0%",
+            "Gap: 5%",
+            "Gap: 0.05%",
+            "Gap: 95.0%"
+        ]
+    },
+    {
+        "q": "Modern IP solvers use branch and cut by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match solver features:",
+        "type": "match",
+        "left": [
+            "Presolve",
+            "Probing",
+            "Cuts",
+            "Heuristics"
+        ],
+        "right": [
+            "Simplify model",
+            "Fix variables",
+            "Tighten bounds",
+            "Find solutions"
+        ]
+    },
+    {
+        "q": "The ______ phase simplifies model before solving.",
+        "type": "fill_blank",
+        "answers": [
+            "presolve"
+        ],
+        "other_options": [
+            "solve",
+            "postsolve",
+            "relax"
+        ]
+    },
+    {
+        "q": "What is nonlinear programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization with nonlinear objective or constraints",
+            "Curved programming",
+            "Nonlinear coding",
+            "Complex optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for quadratic objective?",
+        "type": "mcq",
+        "c": "x = 3\nobjective = x**2 + 4*x + 5\nprint(f'Objective: {objective}')",
+        "o": [
+            "Objective: 26",
+            "Objective: 12",
+            "Objective: 17",
+            "Objective: 21"
+        ]
+    },
+    {
+        "q": "Rearrange NLP solution challenges:",
+        "type": "rearrange",
+        "words": [
+            "Nonconvexity",
+            "Local Optima",
+            "Gradients Needed",
+            "Initialization Matters",
+            "Convergence Issues"
+        ]
+    },
+    {
+        "q": "Convex NLP guarantees global optimum.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match NLP types:",
+        "type": "match",
+        "left": [
+            "QP",
+            "QCQP",
+            "SOCP",
+            "SDP"
+        ],
+        "right": [
+            "Quadratic objective",
+            "Quadratic constraints",
+            "Second-order cone",
+            "Semidefinite"
+        ]
+    },
+    {
+        "q": "The ______ point satisfies first-order conditions.",
+        "type": "fill_blank",
+        "answers": [
+            "KKT"
+        ],
+        "other_options": [
+            "optimal",
+            "feasible",
+            "critical"
+        ]
+    },
+    {
+        "q": "What is gradient descent?",
+        "type": "mcq",
+        "o": [
+            "Iterative optimization moving in negative gradient direction",
+            "Gradient climbing",
+            "Descent analysis",
+            "Slope following"
+        ]
+    },
+    {
+        "q": "What does this code calculate for gradient step?",
+        "type": "mcq",
+        "c": "x = 10\ngradient = 4\nstep_size = 0.1\nnew_x = x - step_size * gradient\nprint(f'New x: {new_x}')",
+        "o": [
+            "New x: 9.6",
+            "New x: 10.4",
+            "New x: 6.0",
+            "New x: 14.0"
+        ]
+    },
+    {
+        "q": "Smaller step sizes guarantee convergence but slower.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match gradient methods:",
+        "type": "match",
+        "left": [
+            "Steepest Descent",
+            "Conjugate Gradient",
+            "Newton",
+            "Quasi-Newton"
+        ],
+        "right": [
+            "First order",
+            "Orthogonal directions",
+            "Second order",
+            "Approximate Hessian"
+        ]
+    },
+    {
+        "q": "The ______ rate determines step size in gradient descent.",
+        "type": "fill_blank",
+        "answers": [
+            "learning"
+        ],
+        "other_options": [
+            "step",
+            "gradient",
+            "convergence"
+        ]
+    },
+    {
+        "q": "What is Newton's method for optimization?",
+        "type": "mcq",
+        "o": [
+            "Using second derivatives for faster convergence",
+            "Newton's laws",
+            "Physics optimization",
+            "Force-based method"
+        ]
+    },
+    {
+        "q": "What does this code output for Newton step?",
+        "type": "mcq",
+        "c": "gradient = 10\nhessian = 2\nstep = gradient / hessian\nprint(f'Newton step: {step}')",
+        "o": [
+            "Newton step: 5.0",
+            "Newton step: 20",
+            "Newton step: 0.2",
+            "Newton step: 12"
+        ]
+    },
+    {
+        "q": "Rearrange Newton's method iteration:",
+        "type": "rearrange",
+        "words": [
+            "Compute Gradient",
+            "Compute Hessian",
+            "Solve Direction",
+            "Update Solution",
+            "Check Convergence"
+        ]
+    },
+    {
+        "q": "Newton's method has quadratic convergence near optimum.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match optimization algorithms:",
+        "type": "match",
+        "left": [
+            "BFGS",
+            "L-BFGS",
+            "Trust Region",
+            "Line Search"
+        ],
+        "right": [
+            "Quasi-Newton",
+            "Limited memory",
+            "Local model",
+            "Step size"
+        ]
+    },
+    {
+        "q": "The ______ matrix approximates second derivatives.",
+        "type": "fill_blank",
+        "answers": [
+            "Hessian"
+        ],
+        "other_options": [
+            "Jacobian",
+            "gradient",
+            "curvature"
+        ]
+    },
+    {
+        "q": "What are KKT conditions?",
+        "type": "mcq",
+        "o": [
+            "Necessary conditions for constrained optimization optima",
+            "KKT algorithm",
+            "Constraint conditions",
+            "Optimality test"
+        ]
+    },
+    {
+        "q": "What does this code calculate for complementary slackness?",
+        "type": "mcq",
+        "c": "multiplier = 5\nslack = 0\ncomplement = multiplier * slack\nprint(f'Product: {complement}')",
+        "o": [
+            "Product: 0",
+            "Product: 5",
+            "Product: -5",
+            "Product: Error"
+        ]
+    },
+    {
+        "q": "KKT conditions are sufficient for convex problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match KKT conditions:",
+        "type": "match",
+        "left": [
+            "Stationarity",
+            "Primal Feasibility",
+            "Dual Feasibility",
+            "Complementarity"
+        ],
+        "right": [
+            "Gradient zero",
+            "Constraints satisfied",
+            "Multipliers >= 0",
+            "Product = 0"
+        ]
+    },
+    {
+        "q": "The ______ multiplier measures constraint sensitivity.",
+        "type": "fill_blank",
+        "answers": [
+            "Lagrange"
+        ],
+        "other_options": [
+            "KKT",
+            "dual",
+            "shadow"
+        ]
+    },
+    {
+        "q": "What is convex optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization over convex sets with convex objectives",
+            "Curved optimization",
+            "Simple optimization",
+            "Easy problems"
+        ]
+    },
+    {
+        "q": "What does this code output for convexity check?",
+        "type": "mcq",
+        "c": "import numpy as np\nH = np.array([[2, 0], [0, 3]])\neigenvalues = np.linalg.eigvals(H)\nconvex = all(e >= 0 for e in eigenvalues)\nprint(f'Convex: {convex}')",
+        "o": [
+            "Convex: True",
+            "Convex: False",
+            "Convex: [2, 3]",
+            "Convex: Error"
+        ]
+    },
+    {
+        "q": "Rearrange convexity verification:",
+        "type": "rearrange",
+        "words": [
+            "Compute Hessian",
+            "Find Eigenvalues",
+            "Check Sign",
+            "Determine Convexity",
+            "Conclude"
+        ]
+    },
+    {
+        "q": "Local optima are global optima in convex problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match convexity concepts:",
+        "type": "match",
+        "left": [
+            "Convex Set",
+            "Convex Function",
+            "Concave",
+            "Quasiconvex"
+        ],
+        "right": [
+            "Line segment inside",
+            "Chord above graph",
+            "Chord below",
+            "Level sets convex"
+        ]
+    },
+    {
+        "q": "A ______ definite Hessian indicates convexity.",
+        "type": "fill_blank",
+        "answers": [
+            "positive semi"
+        ],
+        "other_options": [
+            "negative",
+            "indefinite",
+            "zero"
+        ]
+    },
+    {
+        "q": "What is interior point method?",
+        "type": "mcq",
+        "o": [
+            "Optimization traversing interior of feasible region",
+            "Interior solving",
+            "Point method",
+            "Inside approach"
+        ]
+    },
+    {
+        "q": "What does this code calculate for barrier term?",
+        "type": "mcq",
+        "c": "import math\nx = 0.5\nmu = 0.1\nbarrier = -mu * math.log(x)\nprint(f'Barrier: {round(barrier, 3)}')",
+        "o": [
+            "Barrier: 0.069",
+            "Barrier: -0.069",
+            "Barrier: 0.5",
+            "Barrier: 0.1"
+        ]
+    },
+    {
+        "q": "Interior point methods have polynomial complexity for LP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match interior point concepts:",
+        "type": "match",
+        "left": [
+            "Barrier",
+            "Central Path",
+            "Newton Step",
+            "Centering"
+        ],
+        "right": [
+            "Boundary penalty",
+            "Analytic center",
+            "Direction computation",
+            "Stay centered"
+        ]
+    },
+    {
+        "q": "The ______ function penalizes boundary approach.",
+        "type": "fill_blank",
+        "answers": [
+            "barrier"
+        ],
+        "other_options": [
+            "penalty",
+            "objective",
+            "constraint"
+        ]
+    },
+    {
+        "q": "What is quadratic programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization with quadratic objective and linear constraints",
+            "Square programming",
+            "Quadratic coding",
+            "Second-degree analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for QP objective?",
+        "type": "mcq",
+        "c": "x = [1, 2]\nQ = [[2, 0], [0, 2]]\nc = [1, 1]\nobj = 0.5 * sum(x[i] * Q[i][j] * x[j] for i in range(2) for j in range(2)) + sum(c[i] * x[i] for i in range(2))\nprint(f'Objective: {obj}')",
+        "o": [
+            "Objective: 8.0",
+            "Objective: 5.0",
+            "Objective: 3.0",
+            "Objective: 10.0"
+        ]
+    },
+    {
+        "q": "Rearrange QP formulation:",
+        "type": "rearrange",
+        "words": [
+            "Define Q matrix",
+            "Set linear term",
+            "Specify constraints",
+            "Add bounds",
+            "Solve"
+        ]
+    },
+    {
+        "q": "Convex QP is solvable in polynomial time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match QP applications:",
+        "type": "match",
+        "left": [
+            "Portfolio",
+            "SVM",
+            "Regression",
+            "Control"
+        ],
+        "right": [
+            "Risk-return",
+            "Classification",
+            "Least squares",
+            "MPC"
+        ]
+    },
+    {
+        "q": "The ______ matrix must be positive semidefinite for convexity.",
+        "type": "fill_blank",
+        "answers": [
+            "Q"
+        ],
+        "other_options": [
+            "A",
+            "b",
+            "c"
+        ]
+    },
+    {
+        "q": "What is global optimization?",
+        "type": "mcq",
+        "o": [
+            "Finding the best solution among all local optima",
+            "Worldwide optimization",
+            "Global search",
+            "Complete solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for multistart results?",
+        "type": "mcq",
+        "c": "local_optima = [85, 92, 78, 100, 88]\nbest = max(local_optima)\nprint(f'Best: {best}')",
+        "o": [
+            "Best: 100",
+            "Best: 78",
+            "Best: 88.6",
+            "Best: 5"
+        ]
+    },
+    {
+        "q": "Global optimization is generally NP-hard.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match global optimization methods:",
+        "type": "match",
+        "left": [
+            "Multistart",
+            "Simulated Annealing",
+            "Genetic Algorithm",
+            "Branch and Bound"
+        ],
+        "right": [
+            "Random starts",
+            "Temperature cooling",
+            "Evolution",
+            "Enumeration"
+        ]
+    },
+    {
+        "q": "The ______ bound guarantees quality of global solution.",
+        "type": "fill_blank",
+        "answers": [
+            "deterministic"
+        ],
+        "other_options": [
+            "probabilistic",
+            "heuristic",
+            "approximate"
+        ]
+    },
+    {
+        "q": "What is genetic algorithm?",
+        "type": "mcq",
+        "o": [
+            "Optimization inspired by natural selection",
+            "Gene programming",
+            "DNA optimization",
+            "Biology coding"
+        ]
+    },
+    {
+        "q": "What does this code output for fitness selection?",
+        "type": "mcq",
+        "c": "population = [{'fitness': 80}, {'fitness': 95}, {'fitness': 70}]\nbest = max(population, key=lambda x: x['fitness'])\nprint(f'Best fitness: {best[\"fitness\"]}')",
+        "o": [
+            "Best fitness: 95",
+            "Best fitness: 80",
+            "Best fitness: 70",
+            "Best fitness: 81.67"
+        ]
+    },
+    {
+        "q": "Rearrange genetic algorithm steps:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Population",
+            "Evaluate Fitness",
+            "Select Parents",
+            "Crossover/Mutate",
+            "Replace Population"
+        ]
+    },
+    {
+        "q": "Mutation helps escape local optima.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match GA operators:",
+        "type": "match",
+        "left": [
+            "Selection",
+            "Crossover",
+            "Mutation",
+            "Elitism"
+        ],
+        "right": [
+            "Choose parents",
+            "Combine genes",
+            "Random change",
+            "Keep best"
+        ]
+    },
+    {
+        "q": "The ______ rate controls random variation in GA.",
+        "type": "fill_blank",
+        "answers": [
+            "mutation"
+        ],
+        "other_options": [
+            "crossover",
+            "selection",
+            "fitness"
+        ]
+    },
+    {
+        "q": "What is simulated annealing?",
+        "type": "mcq",
+        "o": [
+            "Optimization inspired by metallurgical annealing",
+            "Heat optimization",
+            "Temperature analysis",
+            "Cooling algorithm"
+        ]
+    },
+    {
+        "q": "What does this code calculate for acceptance probability?",
+        "type": "mcq",
+        "c": "import math\ndelta = 5\ntemp = 100\nprob = math.exp(-delta / temp)\nprint(f'Accept probability: {round(prob, 3)}')",
+        "o": [
+            "Accept probability: 0.951",
+            "Accept probability: 0.05",
+            "Accept probability: 0.5",
+            "Accept probability: 1.0"
+        ]
+    },
+    {
+        "q": "Lower temperature reduces acceptance of worse solutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SA concepts:",
+        "type": "match",
+        "left": [
+            "Temperature",
+            "Cooling Schedule",
+            "Metropolis",
+            "Frozen"
+        ],
+        "right": [
+            "Exploration control",
+            "Temp reduction",
+            "Acceptance criterion",
+            "Converged"
+        ]
+    },
+    {
+        "q": "The ______ schedule determines temperature decrease rate.",
+        "type": "fill_blank",
+        "answers": [
+            "cooling"
+        ],
+        "other_options": [
+            "heating",
+            "annealing",
+            "temperature"
+        ]
+    },
+    {
+        "q": "What is particle swarm optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization inspired by bird flocking behavior",
+            "Particle physics",
+            "Swarm analysis",
+            "Group optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for velocity update?",
+        "type": "mcq",
+        "c": "v = 2\nw = 0.5\nc1, c2 = 1.5, 1.5\npbest, gbest, x = 10, 12, 5\nnew_v = w*v + c1*(pbest-x) + c2*(gbest-x)\nprint(f'New velocity: {new_v}')",
+        "o": [
+            "New velocity: 18.5",
+            "New velocity: 1.0",
+            "New velocity: 7.0",
+            "New velocity: 27.0"
+        ]
+    },
+    {
+        "q": "Rearrange PSO algorithm:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Particles",
+            "Evaluate Fitness",
+            "Update Personal Best",
+            "Update Global Best",
+            "Update Velocity/Position"
+        ]
+    },
+    {
+        "q": "PSO balances exploration and exploitation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match PSO components:",
+        "type": "match",
+        "left": [
+            "Particle",
+            "Velocity",
+            "Personal Best",
+            "Global Best"
+        ],
+        "right": [
+            "Candidate solution",
+            "Movement",
+            "Own best",
+            "Swarm best"
+        ]
+    },
+    {
+        "q": "The ______ factor controls particle inertia.",
+        "type": "fill_blank",
+        "answers": [
+            "inertia weight"
+        ],
+        "other_options": [
+            "cognitive",
+            "social",
+            "velocity"
+        ]
+    },
+    {
+        "q": "What is ant colony optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization inspired by ant foraging behavior",
+            "Ant programming",
+            "Colony analysis",
+            "Insect optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for pheromone update?",
+        "type": "mcq",
+        "c": "pheromone = 1.0\nevaporation = 0.5\ndeposit = 0.3\nnew_pheromone = (1 - evaporation) * pheromone + deposit\nprint(f'Pheromone: {new_pheromone}')",
+        "o": [
+            "Pheromone: 0.8",
+            "Pheromone: 1.8",
+            "Pheromone: 0.5",
+            "Pheromone: 1.3"
+        ]
+    },
+    {
+        "q": "Pheromone evaporation prevents premature convergence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ACO concepts:",
+        "type": "match",
+        "left": [
+            "Pheromone",
+            "Evaporation",
+            "Heuristic",
+            "Construction"
+        ],
+        "right": [
+            "Chemical trail",
+            "Decay",
+            "Local info",
+            "Solution building"
+        ]
+    },
+    {
+        "q": "The ______ information guides probabilistic choice.",
+        "type": "fill_blank",
+        "answers": [
+            "pheromone"
+        ],
+        "other_options": [
+            "position",
+            "fitness",
+            "velocity"
+        ]
+    },
+    {
+        "q": "What is tabu search?",
+        "type": "mcq",
+        "o": [
+            "Local search with memory to avoid cycling",
+            "Taboo optimization",
+            "Forbidden search",
+            "Restricted optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for tabu check?",
+        "type": "mcq",
+        "c": "tabu_list = [1, 3, 5, 7]\nmove = 5\nis_tabu = move in tabu_list\nprint(f'Tabu: {is_tabu}')",
+        "o": [
+            "Tabu: True",
+            "Tabu: False",
+            "Tabu: 5",
+            "Tabu: 4"
+        ]
+    },
+    {
+        "q": "Rearrange tabu search steps:",
+        "type": "rearrange",
+        "words": [
+            "Generate Neighbors",
+            "Check Tabu Status",
+            "Select Best Non-Tabu",
+            "Update Tabu List",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "Aspiration criteria can override tabu status.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match tabu concepts:",
+        "type": "match",
+        "left": [
+            "Tabu List",
+            "Tenure",
+            "Aspiration",
+            "Intensification"
+        ],
+        "right": [
+            "Forbidden moves",
+            "Memory length",
+            "Override condition",
+            "Focus on good"
+        ]
+    },
+    {
+        "q": "The ______ tenure determines how long moves stay forbidden.",
+        "type": "fill_blank",
+        "answers": [
+            "tabu"
+        ],
+        "other_options": [
+            "memory",
+            "search",
+            "move"
+        ]
+    },
+    {
+        "q": "What is variable neighborhood search?",
+        "type": "mcq",
+        "o": [
+            "Local search systematically changing neighborhood structures",
+            "Variable optimization",
+            "Neighborhood analysis",
+            "Search variation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for neighborhood size?",
+        "type": "mcq",
+        "c": "n = 10\nk = 2\nneighbors = n * (n - 1) // 2 if k == 2 else n\nprint(f'Neighbors: {neighbors}')",
+        "o": [
+            "Neighbors: 45",
+            "Neighbors: 10",
+            "Neighbors: 90",
+            "Neighbors: 20"
+        ]
+    },
+    {
+        "q": "Larger neighborhoods explore more but are slower.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match VNS components:",
+        "type": "match",
+        "left": [
+            "Shaking",
+            "Local Search",
+            "Move",
+            "Accept"
+        ],
+        "right": [
+            "Perturbation",
+            "Improvement",
+            "Transition",
+            "Criterion"
+        ]
+    },
+    {
+        "q": "The ______ phase generates random neighbor in current neighborhood.",
+        "type": "fill_blank",
+        "answers": [
+            "shaking"
+        ],
+        "other_options": [
+            "search",
+            "accept",
+            "move"
+        ]
+    },
+    {
+        "q": "What is greedy randomized adaptive search?",
+        "type": "mcq",
+        "o": [
+            "Two-phase metaheuristic: greedy construction plus local search",
+            "Greedy search",
+            "Random search",
+            "Adaptive analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for RCL size?",
+        "type": "mcq",
+        "c": "candidates = [85, 90, 75, 80, 95]\nalpha = 0.3\nbest = max(candidates)\nthreshold = best - alpha * (best - min(candidates))\nrcl = [c for c in candidates if c >= threshold]\nprint(f'RCL size: {len(rcl)}')",
+        "o": [
+            "RCL size: 3",
+            "RCL size: 5",
+            "RCL size: 1",
+            "RCL size: 2"
+        ]
+    },
+    {
+        "q": "Rearrange GRASP procedure:",
+        "type": "rearrange",
+        "words": [
+            "Build RCL",
+            "Random Selection",
+            "Update Solution",
+            "Local Search",
+            "Track Best"
+        ]
+    },
+    {
+        "q": "Alpha controls greediness vs randomness tradeoff.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match GRASP elements:",
+        "type": "match",
+        "left": [
+            "Construction",
+            "RCL",
+            "Alpha",
+            "Local Search"
+        ],
+        "right": [
+            "Build solution",
+            "Candidate list",
+            "Randomness",
+            "Improvement"
+        ]
+    },
+    {
+        "q": "The ______ list contains high-quality elements.",
+        "type": "fill_blank",
+        "answers": [
+            "restricted candidate"
+        ],
+        "other_options": [
+            "tabu",
+            "forbidden",
+            "best"
+        ]
+    },
+    {
+        "q": "What is iterated local search?",
+        "type": "mcq",
+        "o": [
+            "Repeatedly applying local search with perturbation",
+            "Iterated optimization",
+            "Local iteration",
+            "Search repetition"
+        ]
+    },
+    {
+        "q": "What does this code calculate for perturbation strength?",
+        "type": "mcq",
+        "c": "solution_size = 100\nstrength = 0.2\nchanges = int(solution_size * strength)\nprint(f'Changes: {changes}')",
+        "o": [
+            "Changes: 20",
+            "Changes: 80",
+            "Changes: 0.2",
+            "Changes: 100"
+        ]
+    },
+    {
+        "q": "Strong perturbation aids exploration but may lose good features.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ILS components:",
+        "type": "match",
+        "left": [
+            "Perturbation",
+            "Local Search",
+            "Accept",
+            "History"
+        ],
+        "right": [
+            "Random changes",
+            "Improvement",
+            "Selection",
+            "Memory"
+        ]
+    },
+    {
+        "q": "The ______ criterion decides whether to accept new solution.",
+        "type": "fill_blank",
+        "answers": [
+            "acceptance"
+        ],
+        "other_options": [
+            "selection",
+            "perturbation",
+            "search"
+        ]
+    },
+    {
+        "q": "What is large neighborhood search?",
+        "type": "mcq",
+        "o": [
+            "Exploring large neighborhoods via destroy and repair",
+            "Large search",
+            "Neighborhood analysis",
+            "Big optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for destroy ratio?",
+        "type": "mcq",
+        "c": "size = 100\ndestroy_pct = 0.4\nto_remove = int(size * destroy_pct)\nprint(f'Remove: {to_remove}')",
+        "o": [
+            "Remove: 40",
+            "Remove: 60",
+            "Remove: 0.4",
+            "Remove: 100"
+        ]
+    },
+    {
+        "q": "Rearrange LNS procedure:",
+        "type": "rearrange",
+        "words": [
+            "Initial Solution",
+            "Destroy Part",
+            "Repair Solution",
+            "Evaluate",
+            "Accept or Reject"
+        ]
+    },
+    {
+        "q": "Adaptive LNS learns which operators work best.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match LNS concepts:",
+        "type": "match",
+        "left": [
+            "Destroy",
+            "Repair",
+            "Adaptive",
+            "Roulette"
+        ],
+        "right": [
+            "Remove elements",
+            "Rebuild solution",
+            "Learn weights",
+            "Operator selection"
+        ]
+    },
+    {
+        "q": "The ______ operator removes part of solution.",
+        "type": "fill_blank",
+        "answers": [
+            "destroy"
+        ],
+        "other_options": [
+            "repair",
+            "build",
+            "create"
+        ]
+    },
+    {
+        "q": "What is memetic algorithm?",
+        "type": "mcq",
+        "o": [
+            "Genetic algorithm combined with local search",
+            "Memory algorithm",
+            "Memetic optimization",
+            "Hybrid evolution"
+        ]
+    },
+    {
+        "q": "What does this code calculate for hybrid improvement?",
+        "type": "mcq",
+        "c": "ga_fitness = 85\nls_improvement = 10\nfinal = ga_fitness + ls_improvement\nprint(f'Final: {final}')",
+        "o": [
+            "Final: 95",
+            "Final: 85",
+            "Final: 10",
+            "Final: 75"
+        ]
+    },
+    {
+        "q": "Memes represent local knowledge units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memetic components:",
+        "type": "match",
+        "left": [
+            "Global Search",
+            "Local Search",
+            "Meme",
+            "Lamarckian"
+        ],
+        "right": [
+            "GA exploration",
+            "Neighborhood",
+            "Local knowledge",
+            "Pass improvements"
+        ]
+    },
+    {
+        "q": "The ______ effect passes local improvements to offspring.",
+        "type": "fill_blank",
+        "answers": [
+            "Lamarckian"
+        ],
+        "other_options": [
+            "Darwinian",
+            "Baldwinian",
+            "genetic"
+        ]
+    },
+    {
+        "q": "What is differential evolution?",
+        "type": "mcq",
+        "o": [
+            "Evolutionary algorithm using vector differences for mutation",
+            "Differential optimization",
+            "Evolution difference",
+            "Vector evolution"
+        ]
+    },
+    {
+        "q": "What does this code output for DE mutation?",
+        "type": "mcq",
+        "c": "x1, x2, x3 = 5, 8, 3\nF = 0.5\nmutant = x1 + F * (x2 - x3)\nprint(f'Mutant: {mutant}')",
+        "o": [
+            "Mutant: 7.5",
+            "Mutant: 16.0",
+            "Mutant: 2.5",
+            "Mutant: 10.5"
+        ]
+    },
+    {
+        "q": "Rearrange DE algorithm:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Population",
+            "Mutation",
+            "Crossover",
+            "Selection",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "DE works well on continuous optimization problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DE parameters:",
+        "type": "match",
+        "left": [
+            "F",
+            "CR",
+            "NP",
+            "Strategy"
+        ],
+        "right": [
+            "Scale factor",
+            "Crossover rate",
+            "Population size",
+            "Mutation scheme"
+        ]
+    },
+    {
+        "q": "The ______ factor controls mutation step size.",
+        "type": "fill_blank",
+        "answers": [
+            "scale"
+        ],
+        "other_options": [
+            "crossover",
+            "population",
+            "evolution"
+        ]
+    },
+    {
+        "q": "What is evolution strategy?",
+        "type": "mcq",
+        "o": [
+            "Evolutionary algorithm focusing on self-adaptive mutation",
+            "Strategy evolution",
+            "Strategic optimization",
+            "Evolution planning"
+        ]
+    },
+    {
+        "q": "What does this code calculate for sigma adaptation?",
+        "type": "mcq",
+        "c": "sigma = 1.0\nsuccess_rate = 0.3\nif success_rate > 0.2:\n    sigma *= 1.1\nelse:\n    sigma *= 0.9\nprint(f'Sigma: {sigma}')",
+        "o": [
+            "Sigma: 1.1",
+            "Sigma: 0.9",
+            "Sigma: 1.0",
+            "Sigma: 0.3"
+        ]
+    },
+    {
+        "q": "Self-adaptation evolves mutation parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ES concepts:",
+        "type": "match",
+        "left": [
+            "(mu,lambda)",
+            "(mu+lambda)",
+            "Sigma",
+            "1/5 Rule"
+        ],
+        "right": [
+            "Replace all",
+            "Keep parents",
+            "Step size",
+            "Success rate"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls mutation step size in ES.",
+        "type": "fill_blank",
+        "answers": [
+            "sigma"
+        ],
+        "other_options": [
+            "mu",
+            "lambda",
+            "alpha"
+        ]
+    },
+    {
+        "q": "What is scatter search?",
+        "type": "mcq",
+        "o": [
+            "Population metaheuristic with structured combination",
+            "Scattered optimization",
+            "Search scatter",
+            "Random search"
+        ]
+    },
+    {
+        "q": "What does this code output for reference set size?",
+        "type": "mcq",
+        "c": "population = 100\nref_set_ratio = 0.1\nref_set = int(population * ref_set_ratio)\nprint(f'RefSet: {ref_set}')",
+        "o": [
+            "RefSet: 10",
+            "RefSet: 100",
+            "RefSet: 90",
+            "RefSet: 0.1"
+        ]
+    },
+    {
+        "q": "Rearrange scatter search phases:",
+        "type": "rearrange",
+        "words": [
+            "Generate Diverse",
+            "Build Reference Set",
+            "Subset Generation",
+            "Combination",
+            "Improvement"
+        ]
+    },
+    {
+        "q": "Reference set includes both quality and diversity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scatter search elements:",
+        "type": "match",
+        "left": [
+            "Diversification",
+            "Reference Set",
+            "Combination",
+            "Improvement"
+        ],
+        "right": [
+            "Create variety",
+            "Elite solutions",
+            "Mix solutions",
+            "Local search"
+        ]
+    },
+    {
+        "q": "The ______ method systematically combines reference solutions.",
+        "type": "fill_blank",
+        "answers": [
+            "combination"
+        ],
+        "other_options": [
+            "diversification",
+            "improvement",
+            "selection"
+        ]
+    },
+    {
+        "q": "What is estimation of distribution algorithm?",
+        "type": "mcq",
+        "o": [
+            "Evolutionary algorithm using probability models",
+            "Distribution estimation",
+            "Algorithm distribution",
+            "Probability evolution"
+        ]
+    },
+    {
+        "q": "What does this code calculate for probability update?",
+        "type": "mcq",
+        "c": "selected = [1, 1, 0, 1, 1, 0]\nprob = sum(selected) / len(selected)\nprint(f'P(1): {round(prob, 2)}')",
+        "o": [
+            "P(1): 0.67",
+            "P(1): 0.33",
+            "P(1): 1.0",
+            "P(1): 4.0"
+        ]
+    },
+    {
+        "q": "EDAs capture variable dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match EDA types:",
+        "type": "match",
+        "left": [
+            "UMDA",
+            "PBIL",
+            "BOA",
+            "CGA"
+        ],
+        "right": [
+            "Univariate marginal",
+            "Population learning",
+            "Bayesian network",
+            "Compact genetic"
+        ]
+    },
+    {
+        "q": "The ______ model captures variable relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "probability"
+        ],
+        "other_options": [
+            "fitness",
+            "selection",
+            "crossover"
+        ]
+    },
+    {
+        "q": "What is surrogate optimization?",
+        "type": "mcq",
+        "o": [
+            "Using approximation models to guide expensive optimization",
+            "Surrogate search",
+            "Model optimization",
+            "Approximate solving"
+        ]
+    },
+    {
+        "q": "What does this code output for model prediction?",
+        "type": "mcq",
+        "c": "x = 5\nmodel = lambda x: 2*x + 3  # Surrogate\nprediction = model(x)\nprint(f'Predicted: {prediction}')",
+        "o": [
+            "Predicted: 13",
+            "Predicted: 5",
+            "Predicted: 10",
+            "Predicted: 8"
+        ]
+    },
+    {
+        "q": "Rearrange surrogate optimization:",
+        "type": "rearrange",
+        "words": [
+            "Sample Points",
+            "Build Model",
+            "Optimize Model",
+            "Evaluate True Function",
+            "Update Model"
+        ]
+    },
+    {
+        "q": "Kriging provides uncertainty estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match surrogate types:",
+        "type": "match",
+        "left": [
+            "Polynomial",
+            "RBF",
+            "Kriging",
+            "Neural Network"
+        ],
+        "right": [
+            "Polynomial fit",
+            "Radial basis",
+            "Gaussian process",
+            "Deep learning"
+        ]
+    },
+    {
+        "q": "The ______ function balances exploration and exploitation.",
+        "type": "fill_blank",
+        "answers": [
+            "acquisition"
+        ],
+        "other_options": [
+            "surrogate",
+            "prediction",
+            "model"
+        ]
+    },
+    {
+        "q": "What is Bayesian optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization using probabilistic models and acquisition functions",
+            "Bayesian search",
+            "Probability optimization",
+            "Statistical solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for EI acquisition?",
+        "type": "mcq",
+        "c": "mean = 90\nstd = 5\nbest_so_far = 85\nimprovement = mean - best_so_far\nprint(f'Expected improvement: {improvement}')",
+        "o": [
+            "Expected improvement: 5",
+            "Expected improvement: 90",
+            "Expected improvement: 85",
+            "Expected improvement: 175"
+        ]
+    },
+    {
+        "q": "Gaussian processes provide uncertainty quantification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Bayesian optimization concepts:",
+        "type": "match",
+        "left": [
+            "GP Prior",
+            "EI",
+            "UCB",
+            "Kernel"
+        ],
+        "right": [
+            "Probability belief",
+            "Expected improvement",
+            "Upper confidence",
+            "Covariance function"
+        ]
+    },
+    {
+        "q": "The ______ criterion selects next point to evaluate.",
+        "type": "fill_blank",
+        "answers": [
+            "acquisition"
+        ],
+        "other_options": [
+            "surrogate",
+            "Bayesian",
+            "kernel"
+        ]
+    },
+    {
+        "q": "What is hyperparameter optimization?",
+        "type": "mcq",
+        "o": [
+            "Tuning algorithm parameters for best performance",
+            "Hyper optimization",
+            "Parameter tuning",
+            "Algorithm setting"
+        ]
+    },
+    {
+        "q": "What does this code output for grid search count?",
+        "type": "mcq",
+        "c": "param1_values = 5\nparam2_values = 4\nparam3_values = 3\ntotal = param1_values * param2_values * param3_values\nprint(f'Combinations: {total}')",
+        "o": [
+            "Combinations: 60",
+            "Combinations: 12",
+            "Combinations: 5",
+            "Combinations: 543"
+        ]
+    },
+    {
+        "q": "Rearrange hyperparameter tuning:",
+        "type": "rearrange",
+        "words": [
+            "Define Parameters",
+            "Set Ranges",
+            "Choose Method",
+            "Run Trials",
+            "Select Best"
+        ]
+    },
+    {
+        "q": "Random search often outperforms grid search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match tuning methods:",
+        "type": "match",
+        "left": [
+            "Grid Search",
+            "Random Search",
+            "Bayesian",
+            "Hyperband"
+        ],
+        "right": [
+            "Exhaustive",
+            "Random sampling",
+            "Sequential",
+            "Early stopping"
+        ]
+    },
+    {
+        "q": "The ______ of dimensionality affects grid search.",
+        "type": "fill_blank",
+        "answers": [
+            "curse"
+        ],
+        "other_options": [
+            "blessing",
+            "power",
+            "benefit"
+        ]
+    },
+    {
+        "q": "What is column generation?",
+        "type": "mcq",
+        "o": [
+            "Adding columns dynamically to master problem",
+            "Column creation",
+            "Generation method",
+            "Dynamic columns"
+        ]
+    },
+    {
+        "q": "What does this code calculate for reduced cost?",
+        "type": "mcq",
+        "c": "cost = 10\ndual_multipliers = [2, 3, 1]\ncoefficients = [1, 1, 2]\nreduced = cost - sum(d*c for d, c in zip(dual_multipliers, coefficients))\nprint(f'Reduced cost: {reduced}')",
+        "o": [
+            "Reduced cost: 3",
+            "Reduced cost: 10",
+            "Reduced cost: 7",
+            "Reduced cost: -3"
+        ]
+    },
+    {
+        "q": "Negative reduced cost columns can improve solution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match column generation concepts:",
+        "type": "match",
+        "left": [
+            "Master Problem",
+            "Subproblem",
+            "Dual Values",
+            "Column"
+        ],
+        "right": [
+            "Restricted LP",
+            "Pricing",
+            "Multipliers",
+            "Variable"
+        ]
+    },
+    {
+        "q": "The ______ problem generates promising columns.",
+        "type": "fill_blank",
+        "answers": [
+            "pricing"
+        ],
+        "other_options": [
+            "master",
+            "dual",
+            "separation"
+        ]
+    },
+    {
+        "q": "What is Benders decomposition?",
+        "type": "mcq",
+        "o": [
+            "Decomposing problems into master and subproblems with cuts",
+            "Benders method",
+            "Decomposition analysis",
+            "Problem splitting"
+        ]
+    },
+    {
+        "q": "What does this code output for feasibility check?",
+        "type": "mcq",
+        "c": "subproblem_obj = float('inf')\nfeasible = subproblem_obj != float('inf')\nprint(f'Feasible: {feasible}')",
+        "o": [
+            "Feasible: False",
+            "Feasible: True",
+            "Feasible: inf",
+            "Feasible: Error"
+        ]
+    },
+    {
+        "q": "Rearrange Benders procedure:",
+        "type": "rearrange",
+        "words": [
+            "Solve Master",
+            "Fix First Stage",
+            "Solve Subproblem",
+            "Generate Cut",
+            "Add to Master"
+        ]
+    },
+    {
+        "q": "Optimality cuts improve lower bounds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Benders cuts:",
+        "type": "match",
+        "left": [
+            "Feasibility",
+            "Optimality",
+            "Master",
+            "Subproblem"
+        ],
+        "right": [
+            "Remove infeasible",
+            "Improve bound",
+            "First stage",
+            "Second stage"
+        ]
+    },
+    {
+        "q": "The ______ cut eliminates infeasible master solutions.",
+        "type": "fill_blank",
+        "answers": [
+            "feasibility"
+        ],
+        "other_options": [
+            "optimality",
+            "master",
+            "dual"
+        ]
+    },
+    {
+        "q": "What is Lagrangian relaxation?",
+        "type": "mcq",
+        "o": [
+            "Relaxing constraints by moving them to objective with penalties",
+            "Lagrange method",
+            "Relaxation analysis",
+            "Constraint relaxing"
+        ]
+    },
+    {
+        "q": "What does this code calculate for Lagrangian?",
+        "type": "mcq",
+        "c": "f_x = 100\nlambda_val = 5\ng_x = 3  # g(x) - b\nlagrangian = f_x + lambda_val * g_x\nprint(f'L: {lagrangian}')",
+        "o": [
+            "L: 115",
+            "L: 100",
+            "L: 15",
+            "L: 85"
+        ]
+    },
+    {
+        "q": "Lagrangian dual provides bound on original problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Lagrangian concepts:",
+        "type": "match",
+        "left": [
+            "Multiplier",
+            "Relaxation",
+            "Dual",
+            "Subgradient"
+        ],
+        "right": [
+            "Penalty weight",
+            "Constraint removal",
+            "Outer problem",
+            "Multiplier update"
+        ]
+    },
+    {
+        "q": "The ______ method updates Lagrange multipliers.",
+        "type": "fill_blank",
+        "answers": [
+            "subgradient"
+        ],
+        "other_options": [
+            "gradient",
+            "Newton",
+            "simplex"
+        ]
+    },
+    {
+        "q": "What is ADMM?",
+        "type": "mcq",
+        "o": [
+            "Alternating Direction Method of Multipliers for distributed optimization",
+            "ADMM algorithm",
+            "Multiplier method",
+            "Direction alternating"
+        ]
+    },
+    {
+        "q": "What does this code output for ADMM update?",
+        "type": "mcq",
+        "c": "x = 5\nz = 3\nu = 1\nrho = 2\nresidual = x - z\nu_new = u + rho * residual\nprint(f'u: {u_new}')",
+        "o": [
+            "u: 5",
+            "u: 1",
+            "u: 3",
+            "u: 4"
+        ]
+    },
+    {
+        "q": "Rearrange ADMM iteration:",
+        "type": "rearrange",
+        "words": [
+            "Update x",
+            "Update z",
+            "Update u",
+            "Check Convergence",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "ADMM enables distributed optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ADMM terms:",
+        "type": "match",
+        "left": [
+            "Primal Residual",
+            "Dual Residual",
+            "Rho",
+            "Augmented"
+        ],
+        "right": [
+            "Constraint violation",
+            "Dual variable change",
+            "Penalty parameter",
+            "Add quadratic"
+        ]
+    },
+    {
+        "q": "The ______ residual measures primal constraint violation.",
+        "type": "fill_blank",
+        "answers": [
+            "primal"
+        ],
+        "other_options": [
+            "dual",
+            "total",
+            "combined"
+        ]
+    },
+    {
+        "q": "What is network flow optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing flow through networks with capacities",
+            "Network analysis",
+            "Flow management",
+            "Capacity optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for maximum flow?",
+        "type": "mcq",
+        "c": "capacities = [10, 15, 8, 12]\nmin_cut = min(capacities)\nprint(f'Max flow: {min_cut}')",
+        "o": [
+            "Max flow: 8",
+            "Max flow: 45",
+            "Max flow: 15",
+            "Max flow: 10"
+        ]
+    },
+    {
+        "q": "Max flow equals min cut in networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match network problems:",
+        "type": "match",
+        "left": [
+            "Shortest Path",
+            "Max Flow",
+            "Min Cost Flow",
+            "Assignment"
+        ],
+        "right": [
+            "Minimum distance",
+            "Maximum throughput",
+            "Cheapest transport",
+            "One-to-one match"
+        ]
+    },
+    {
+        "q": "The ______ algorithm finds shortest paths from source.",
+        "type": "fill_blank",
+        "answers": [
+            "Dijkstra"
+        ],
+        "other_options": [
+            "Ford-Fulkerson",
+            "Bellman-Ford",
+            "simplex"
+        ]
+    },
+    {
+        "q": "What is the assignment problem?",
+        "type": "mcq",
+        "o": [
+            "Optimal one-to-one matching minimizing total cost",
+            "Assignment analysis",
+            "Matching problem",
+            "Allocation task"
+        ]
+    },
+    {
+        "q": "What does this code output for assignment cost?",
+        "type": "mcq",
+        "c": "costs = [[5, 9, 3], [10, 8, 7], [9, 6, 8]]\nassignment = [0, 2, 1]  # row to column\ntotal = sum(costs[i][assignment[i]] for i in range(3))\nprint(f'Total: {total}')",
+        "o": [
+            "Total: 18",
+            "Total: 17",
+            "Total: 53",
+            "Total: 15"
+        ]
+    },
+    {
+        "q": "Rearrange Hungarian algorithm:",
+        "type": "rearrange",
+        "words": [
+            "Subtract Row Min",
+            "Subtract Column Min",
+            "Cover Zeros",
+            "Adjust Matrix",
+            "Find Assignment"
+        ]
+    },
+    {
+        "q": "Assignment problem is solvable in polynomial time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match assignment concepts:",
+        "type": "match",
+        "left": [
+            "Cost Matrix",
+            "Reduction",
+            "Covering",
+            "Optimal"
+        ],
+        "right": [
+            "Pairwise costs",
+            "Simplify matrix",
+            "Minimum lines",
+            "Best matching"
+        ]
+    },
+    {
+        "q": "The ______ algorithm solves assignment optimally.",
+        "type": "fill_blank",
+        "answers": [
+            "Hungarian"
+        ],
+        "other_options": [
+            "simplex",
+            "greedy",
+            "branch"
+        ]
+    },
+    {
+        "q": "What is the traveling salesman problem?",
+        "type": "mcq",
+        "o": [
+            "Finding shortest route visiting all cities exactly once",
+            "Salesman optimization",
+            "Travel planning",
+            "Route analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for tour length?",
+        "type": "mcq",
+        "c": "distances = [[0, 10, 15, 20], [10, 0, 35, 25], [15, 35, 0, 30], [20, 25, 30, 0]]\ntour = [0, 1, 3, 2, 0]\nlength = sum(distances[tour[i]][tour[i+1]] for i in range(len(tour)-1))\nprint(f'Length: {length}')",
+        "o": [
+            "Length: 80",
+            "Length: 100",
+            "Length: 70",
+            "Length: 90"
+        ]
+    },
+    {
+        "q": "TSP is NP-hard.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match TSP variants:",
+        "type": "match",
+        "left": [
+            "Symmetric",
+            "Asymmetric",
+            "Time Windows",
+            "Multiple"
+        ],
+        "right": [
+            "Same both ways",
+            "Direction matters",
+            "Arrival times",
+            "Multiple salesmen"
+        ]
+    },
+    {
+        "q": "The ______ heuristic connects nearest unvisited city.",
+        "type": "fill_blank",
+        "answers": [
+            "nearest neighbor"
+        ],
+        "other_options": [
+            "farthest",
+            "random",
+            "greedy"
+        ]
+    },
+    {
+        "q": "What is the vehicle routing problem?",
+        "type": "mcq",
+        "o": [
+            "Designing optimal routes for fleet serving customers",
+            "Vehicle optimization",
+            "Routing analysis",
+            "Fleet management"
+        ]
+    },
+    {
+        "q": "What does this code output for route capacity check?",
+        "type": "mcq",
+        "c": "demands = [0, 10, 15, 8, 12]  # depot + customers\nroute = [1, 2]\ncapacity = 30\nload = sum(demands[c] for c in route)\nfeasible = load <= capacity\nprint(f'Feasible: {feasible}')",
+        "o": [
+            "Feasible: True",
+            "Feasible: False",
+            "Feasible: 25",
+            "Feasible: 30"
+        ]
+    },
+    {
+        "q": "Rearrange VRP solution approach:",
+        "type": "rearrange",
+        "words": [
+            "Cluster Customers",
+            "Route Each Cluster",
+            "Optimize Routes",
+            "Balance Workload",
+            "Finalize"
+        ]
+    },
+    {
+        "q": "Capacity constraints limit vehicle load.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match VRP variants:",
+        "type": "match",
+        "left": [
+            "CVRP",
+            "VRPTW",
+            "VRPPD",
+            "MDVRP"
+        ],
+        "right": [
+            "Capacity",
+            "Time windows",
+            "Pickup-delivery",
+            "Multi-depot"
+        ]
+    },
+    {
+        "q": "The ______ algorithm builds routes by inserting customers.",
+        "type": "fill_blank",
+        "answers": [
+            "insertion"
+        ],
+        "other_options": [
+            "deletion",
+            "swap",
+            "exchange"
+        ]
+    },
+    {
+        "q": "What is the bin packing problem?",
+        "type": "mcq",
+        "o": [
+            "Packing items into minimum number of bins",
+            "Bin analysis",
+            "Packing optimization",
+            "Container filling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for first fit?",
+        "type": "mcq",
+        "c": "items = [4, 8, 5, 1, 7, 6, 1, 4, 2, 2]\nbin_capacity = 10\nbins = [[items[0]]]\nfor item in items[1:]:\n    placed = False\n    for b in bins:\n        if sum(b) + item <= bin_capacity:\n            b.append(item)\n            placed = True\n            break\n    if not placed:\n        bins.append([item])\nprint(f'Bins: {len(bins)}')",
+        "o": [
+            "Bins: 5",
+            "Bins: 4",
+            "Bins: 10",
+            "Bins: 6"
+        ]
+    },
+    {
+        "q": "First Fit Decreasing often outperforms First Fit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bin packing heuristics:",
+        "type": "match",
+        "left": [
+            "First Fit",
+            "Best Fit",
+            "Next Fit",
+            "Decreasing"
+        ],
+        "right": [
+            "First available",
+            "Tightest fit",
+            "Current bin",
+            "Sort first"
+        ]
+    },
+    {
+        "q": "The ______ heuristic places item in best fitting bin.",
+        "type": "fill_blank",
+        "answers": [
+            "best fit"
+        ],
+        "other_options": [
+            "first fit",
+            "next fit",
+            "worst fit"
+        ]
+    },
+    {
+        "q": "What is the knapsack problem?",
+        "type": "mcq",
+        "o": [
+            "Selecting items to maximize value within weight limit",
+            "Knapsack analysis",
+            "Selection problem",
+            "Capacity filling"
+        ]
+    },
+    {
+        "q": "What does this code output for knapsack value?",
+        "type": "mcq",
+        "c": "items = [(60, 10), (100, 20), (120, 30)]  # (value, weight)\ncapacity = 50\n# Optimal: items 0 and 1\nvalue = 60 + 100\nprint(f'Value: {value}')",
+        "o": [
+            "Value: 160",
+            "Value: 280",
+            "Value: 120",
+            "Value: 220"
+        ]
+    },
+    {
+        "q": "Rearrange dynamic programming for knapsack:",
+        "type": "rearrange",
+        "words": [
+            "Define Subproblems",
+            "Set Base Cases",
+            "Fill Table",
+            "Trace Solution",
+            "Return Optimal"
+        ]
+    },
+    {
+        "q": "0-1 knapsack is NP-complete.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match knapsack variants:",
+        "type": "match",
+        "left": [
+            "0-1",
+            "Bounded",
+            "Unbounded",
+            "Multi-dimensional"
+        ],
+        "right": [
+            "Select or not",
+            "Limited copies",
+            "Unlimited",
+            "Multiple constraints"
+        ]
+    },
+    {
+        "q": "The ______ ratio ranks items by value per weight.",
+        "type": "fill_blank",
+        "answers": [
+            "value-to-weight"
+        ],
+        "other_options": [
+            "weight-to-value",
+            "total",
+            "average"
+        ]
+    },
+    {
+        "q": "What is set covering problem?",
+        "type": "mcq",
+        "o": [
+            "Selecting minimum cost sets covering all elements",
+            "Set analysis",
+            "Covering optimization",
+            "Element selection"
+        ]
+    },
+    {
+        "q": "What does this code calculate for coverage?",
+        "type": "mcq",
+        "c": "universe = {1, 2, 3, 4, 5}\nsets = [{1, 2, 3}, {2, 4}, {3, 4}, {4, 5}]\nselected = [0, 3]\ncovered = set().union(*[sets[i] for i in selected])\ncomplete = covered == universe\nprint(f'Complete: {complete}')",
+        "o": [
+            "Complete: True",
+            "Complete: False",
+            "Complete: 5",
+            "Complete: Error"
+        ]
+    },
+    {
+        "q": "Greedy set cover has logarithmic approximation ratio.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match covering problems:",
+        "type": "match",
+        "left": [
+            "Set Cover",
+            "Vertex Cover",
+            "Facility Location",
+            "Dominating Set"
+        ],
+        "right": [
+            "Cover elements",
+            "Cover edges",
+            "Cover demand",
+            "Cover neighbors"
+        ]
+    },
+    {
+        "q": "The ______ cover selects sets covering most uncovered.",
+        "type": "fill_blank",
+        "answers": [
+            "greedy"
+        ],
+        "other_options": [
+            "optimal",
+            "random",
+            "best"
+        ]
+    },
+    {
+        "q": "What is scheduling optimization?",
+        "type": "mcq",
+        "o": [
+            "Assigning tasks to resources over time to optimize objectives",
+            "Schedule analysis",
+            "Time optimization",
+            "Task planning"
+        ]
+    },
+    {
+        "q": "What does this code output for makespan?",
+        "type": "mcq",
+        "c": "jobs = [{'end': 10}, {'end': 15}, {'end': 8}]\nmakespan = max(j['end'] for j in jobs)\nprint(f'Makespan: {makespan}')",
+        "o": [
+            "Makespan: 15",
+            "Makespan: 33",
+            "Makespan: 10",
+            "Makespan: 8"
+        ]
+    },
+    {
+        "q": "Minimizing makespan finishes all jobs earliest.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scheduling objectives:",
+        "type": "match",
+        "left": [
+            "Makespan",
+            "Total Flow",
+            "Tardiness",
+            "Utilization"
+        ],
+        "right": [
+            "Last completion",
+            "Sum of completions",
+            "Lateness cost",
+            "Resource usage"
+        ]
+    },
+    {
+        "q": "The ______ rule schedules shortest job first.",
+        "type": "fill_blank",
+        "answers": [
+            "SPT"
+        ],
+        "other_options": [
+            "EDD",
+            "LPT",
+            "FIFO"
+        ]
+    },
+    {
+        "q": "What is job shop scheduling?",
+        "type": "mcq",
+        "o": [
+            "Scheduling jobs through machines in varying orders",
+            "Shop management",
+            "Job optimization",
+            "Work scheduling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for job completion?",
+        "type": "mcq",
+        "c": "start_times = [0, 5, 12]\nprocessing = [5, 7, 8]\ncompletions = [s + p for s, p in zip(start_times, processing)]\nprint(f'Completions: {completions}')",
+        "o": [
+            "Completions: [5, 12, 20]",
+            "Completions: [0, 5, 12]",
+            "Completions: [5, 7, 8]",
+            "Completions: 20"
+        ]
+    },
+    {
+        "q": "Rearrange scheduling problem solving:",
+        "type": "rearrange",
+        "words": [
+            "Define Jobs",
+            "Set Precedence",
+            "Assign Resources",
+            "Sequence Operations",
+            "Evaluate Schedule"
+        ]
+    },
+    {
+        "q": "Disjunctive graphs model machine conflicts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scheduling environments:",
+        "type": "match",
+        "left": [
+            "Single Machine",
+            "Parallel",
+            "Flow Shop",
+            "Job Shop"
+        ],
+        "right": [
+            "One resource",
+            "Identical machines",
+            "Same sequence",
+            "Different routes"
+        ]
+    },
+    {
+        "q": "The ______ time measures when job must complete.",
+        "type": "fill_blank",
+        "answers": [
+            "due date"
+        ],
+        "other_options": [
+            "release",
+            "processing",
+            "setup"
+        ]
+    },
+    {
+        "q": "What is project scheduling?",
+        "type": "mcq",
+        "o": [
+            "Scheduling activities respecting precedence constraints",
+            "Project management",
+            "Activity planning",
+            "Time scheduling"
+        ]
+    },
+    {
+        "q": "What does this code output for critical path?",
+        "type": "mcq",
+        "c": "paths = {'A-B-D': 12, 'A-C-D': 18, 'A-B-E': 14}\ncritical = max(paths.values())\nprint(f'Duration: {critical}')",
+        "o": [
+            "Duration: 18",
+            "Duration: 12",
+            "Duration: 14",
+            "Duration: 44"
+        ]
+    },
+    {
+        "q": "Activities on critical path have zero float.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match project scheduling terms:",
+        "type": "match",
+        "left": [
+            "Early Start",
+            "Late Finish",
+            "Float",
+            "Critical"
+        ],
+        "right": [
+            "Earliest begin",
+            "Latest end",
+            "Schedule flexibility",
+            "Longest path"
+        ]
+    },
+    {
+        "q": "The ______ method finds minimum project duration.",
+        "type": "fill_blank",
+        "answers": [
+            "CPM"
+        ],
+        "other_options": [
+            "PERT",
+            "Gantt",
+            "WBS"
+        ]
+    },
+    {
+        "q": "What is robust optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization ensuring feasibility under uncertainty",
+            "Robust analysis",
+            "Strong optimization",
+            "Safe solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for worst case?",
+        "type": "mcq",
+        "c": "scenarios = [100, 95, 110, 98, 105]\nworst = min(scenarios)\nprint(f'Worst: {worst}')",
+        "o": [
+            "Worst: 95",
+            "Worst: 100",
+            "Worst: 110",
+            "Worst: 101.6"
+        ]
+    },
+    {
+        "q": "Rearrange robust optimization approach:",
+        "type": "rearrange",
+        "words": [
+            "Define Uncertainty Set",
+            "Formulate Worst Case",
+            "Add Robustness",
+            "Solve Model",
+            "Validate Solution"
+        ]
+    },
+    {
+        "q": "Box uncertainty assumes parameters vary independently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match uncertainty sets:",
+        "type": "match",
+        "left": [
+            "Box",
+            "Ellipsoid",
+            "Polyhedral",
+            "Budget"
+        ],
+        "right": [
+            "Interval",
+            "Correlated",
+            "Polyhedron",
+            "Limited deviations"
+        ]
+    },
+    {
+        "q": "The ______ of uncertainty determines conservativeness.",
+        "type": "fill_blank",
+        "answers": [
+            "budget"
+        ],
+        "other_options": [
+            "size",
+            "shape",
+            "center"
+        ]
+    },
+    {
+        "q": "What is stochastic optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization with random parameters modeled probabilistically",
+            "Random optimization",
+            "Stochastic analysis",
+            "Probability solving"
+        ]
+    },
+    {
+        "q": "What does this code output for expected value?",
+        "type": "mcq",
+        "c": "scenarios = [100, 120, 80]\nprobs = [0.5, 0.3, 0.2]\nexpected = sum(s*p for s, p in zip(scenarios, probs))\nprint(f'Expected: {expected}')",
+        "o": [
+            "Expected: 102.0",
+            "Expected: 100.0",
+            "Expected: 300.0",
+            "Expected: 1.0"
+        ]
+    },
+    {
+        "q": "Two-stage models have here-and-now and wait-and-see decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match stochastic concepts:",
+        "type": "match",
+        "left": [
+            "Recourse",
+            "Scenario",
+            "Stage",
+            "Risk"
+        ],
+        "right": [
+            "Corrective action",
+            "Uncertainty realization",
+            "Decision timing",
+            "Downside measure"
+        ]
+    },
+    {
+        "q": "The ______ problem minimizes expected cost.",
+        "type": "fill_blank",
+        "answers": [
+            "risk-neutral"
+        ],
+        "other_options": [
+            "risk-averse",
+            "robust",
+            "deterministic"
+        ]
+    },
+    {
+        "q": "What is CVaR optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing conditional value-at-risk for tail risk",
+            "CVaR analysis",
+            "Risk optimization",
+            "Value analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for VaR?",
+        "type": "mcq",
+        "c": "losses = sorted([10, 5, 25, 15, 8, 30, 12, 20])\nalpha = 0.9\nindex = int(len(losses) * alpha)\nvar = losses[index]\nprint(f'VaR: {var}')",
+        "o": [
+            "VaR: 25",
+            "VaR: 30",
+            "VaR: 15.6",
+            "VaR: 0.9"
+        ]
+    },
+    {
+        "q": "Rearrange risk measurement:",
+        "type": "rearrange",
+        "words": [
+            "Generate Scenarios",
+            "Calculate Losses",
+            "Sort Losses",
+            "Find Quantile",
+            "Compute CVaR"
+        ]
+    },
+    {
+        "q": "CVaR is coherent risk measure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match risk measures:",
+        "type": "match",
+        "left": [
+            "VaR",
+            "CVaR",
+            "Variance",
+            "Semi-variance"
+        ],
+        "right": [
+            "Quantile",
+            "Tail average",
+            "Spread",
+            "Downside only"
+        ]
+    },
+    {
+        "q": "The ______ level determines risk threshold.",
+        "type": "fill_blank",
+        "answers": [
+            "confidence"
+        ],
+        "other_options": [
+            "risk",
+            "probability",
+            "quantile"
+        ]
+    },
+    {
+        "q": "What is multi-stage stochastic programming?",
+        "type": "mcq",
+        "o": [
+            "Sequential decision-making as uncertainty reveals over time",
+            "Multi-stage analysis",
+            "Sequential optimization",
+            "Time programming"
+        ]
+    },
+    {
+        "q": "What does this code output for scenario tree size?",
+        "type": "mcq",
+        "c": "branches_per_stage = 3\nstages = 4\ntotal_scenarios = branches_per_stage ** (stages - 1)\nprint(f'Scenarios: {total_scenarios}')",
+        "o": [
+            "Scenarios: 27",
+            "Scenarios: 12",
+            "Scenarios: 81",
+            "Scenarios: 9"
+        ]
+    },
+    {
+        "q": "Non-anticipativity ensures decisions don't use future info.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match multi-stage concepts:",
+        "type": "match",
+        "left": [
+            "Scenario Tree",
+            "Non-anticipativity",
+            "Recourse",
+            "Stage"
+        ],
+        "right": [
+            "Branching paths",
+            "Information constraint",
+            "Corrective action",
+            "Time period"
+        ]
+    },
+    {
+        "q": "The ______ tree represents uncertainty evolution.",
+        "type": "fill_blank",
+        "answers": [
+            "scenario"
+        ],
+        "other_options": [
+            "decision",
+            "probability",
+            "outcome"
+        ]
+    },
+    {
+        "q": "What is sample average approximation?",
+        "type": "mcq",
+        "o": [
+            "Approximating stochastic problem with Monte Carlo samples",
+            "Sample analysis",
+            "Average approximation",
+            "Monte Carlo optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for sample mean?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nsamples = [random.gauss(100, 10) for _ in range(100)]\nmean = sum(samples) / len(samples)\nprint(f'Mean: {round(mean, 1)}')",
+        "o": [
+            "Mean: 100.1",
+            "Mean: 10.0",
+            "Mean: 100.0",
+            "Mean: 42.0"
+        ]
+    },
+    {
+        "q": "Rearrange SAA procedure:",
+        "type": "rearrange",
+        "words": [
+            "Generate Samples",
+            "Solve Sample Problem",
+            "Evaluate Candidate",
+            "Increase Samples",
+            "Validate Solution"
+        ]
+    },
+    {
+        "q": "More samples improve approximation quality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SAA elements:",
+        "type": "match",
+        "left": [
+            "Sample Size",
+            "Confidence",
+            "Optimality Gap",
+            "Validation"
+        ],
+        "right": [
+            "Number of scenarios",
+            "Statistical bound",
+            "Solution quality",
+            "Out-of-sample test"
+        ]
+    },
+    {
+        "q": "The ______ bound estimates true optimal value.",
+        "type": "fill_blank",
+        "answers": [
+            "statistical"
+        ],
+        "other_options": [
+            "deterministic",
+            "sample",
+            "approximate"
+        ]
+    },
+    {
+        "q": "What is progressive hedging?",
+        "type": "mcq",
+        "o": [
+            "Decomposition for stochastic programming enforcing non-anticipativity",
+            "Progressive optimization",
+            "Hedging analysis",
+            "Scenario decomposition"
+        ]
+    },
+    {
+        "q": "What does this code output for consensus variable?",
+        "type": "mcq",
+        "c": "scenario_values = [100, 98, 102, 99, 101]\nconsensus = sum(scenario_values) / len(scenario_values)\nprint(f'Consensus: {consensus}')",
+        "o": [
+            "Consensus: 100.0",
+            "Consensus: 500.0",
+            "Consensus: 5.0",
+            "Consensus: 102.0"
+        ]
+    },
+    {
+        "q": "Penalty terms drive scenarios toward consensus.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match progressive hedging:",
+        "type": "match",
+        "left": [
+            "Scenario",
+            "Consensus",
+            "Multiplier",
+            "Penalty"
+        ],
+        "right": [
+            "Individual problem",
+            "Common value",
+            "Dual variable",
+            "Convergence force"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls convergence speed.",
+        "type": "fill_blank",
+        "answers": [
+            "penalty"
+        ],
+        "other_options": [
+            "multiplier",
+            "consensus",
+            "scenario"
+        ]
+    },
+    {
+        "q": "What is conic optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization over conic constraints like SOCP and SDP",
+            "Cone analysis",
+            "Conic programming",
+            "Geometry optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for norm constraint?",
+        "type": "mcq",
+        "c": "import math\nx = [3, 4]\nnorm = math.sqrt(sum(xi**2 for xi in x))\nprint(f'Norm: {norm}')",
+        "o": [
+            "Norm: 5.0",
+            "Norm: 7.0",
+            "Norm: 25.0",
+            "Norm: 12.0"
+        ]
+    },
+    {
+        "q": "Rearrange conic hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "LP",
+            "SOCP",
+            "SDP",
+            "General NLP",
+            "NP-hard"
+        ]
+    },
+    {
+        "q": "SOCP is solvable in polynomial time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match conic types:",
+        "type": "match",
+        "left": [
+            "LP Cone",
+            "SOCP Cone",
+            "SDP Cone",
+            "Exponential"
+        ],
+        "right": [
+            "Non-negative",
+            "Second-order",
+            "Positive semidefinite",
+            "Entropy"
+        ]
+    },
+    {
+        "q": "The ______ cone generalizes quadratic constraints.",
+        "type": "fill_blank",
+        "answers": [
+            "second-order"
+        ],
+        "other_options": [
+            "first-order",
+            "linear",
+            "semidefinite"
+        ]
+    },
+    {
+        "q": "What is semidefinite programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization with positive semidefinite matrix constraints",
+            "Semidefinite analysis",
+            "Matrix optimization",
+            "Definite programming"
+        ]
+    },
+    {
+        "q": "What does this code output for matrix eigenvalue?",
+        "type": "mcq",
+        "c": "import numpy as np\nM = np.array([[4, 2], [2, 4]])\neigs = np.linalg.eigvals(M)\nmin_eig = min(eigs)\nprint(f'Min eigenvalue: {min_eig}')",
+        "o": [
+            "Min eigenvalue: 2.0",
+            "Min eigenvalue: 6.0",
+            "Min eigenvalue: 4.0",
+            "Min eigenvalue: 0.0"
+        ]
+    },
+    {
+        "q": "Positive semidefinite matrices have non-negative eigenvalues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SDP applications:",
+        "type": "match",
+        "left": [
+            "Max Cut",
+            "Sensor Localization",
+            "Optimal Control",
+            "Combinatorial"
+        ],
+        "right": [
+            "Graph partitioning",
+            "Position finding",
+            "System design",
+            "Relaxation"
+        ]
+    },
+    {
+        "q": "The ______ relaxation approximates combinatorial problems.",
+        "type": "fill_blank",
+        "answers": [
+            "SDP"
+        ],
+        "other_options": [
+            "LP",
+            "QP",
+            "SOCP"
+        ]
+    },
+    {
+        "q": "What is geometric programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization with posynomial functions transformed to convex",
+            "Geometric analysis",
+            "Shape optimization",
+            "Geometry solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for monomial?",
+        "type": "mcq",
+        "c": "c = 3\nx = [2, 4]\na = [1, 0.5]\nmonomial = c * (x[0]**a[0]) * (x[1]**a[1])\nprint(f'Monomial: {monomial}')",
+        "o": [
+            "Monomial: 12.0",
+            "Monomial: 6.0",
+            "Monomial: 24.0",
+            "Monomial: 3.0"
+        ]
+    },
+    {
+        "q": "Rearrange GP solution process:",
+        "type": "rearrange",
+        "words": [
+            "Check Posynomial Form",
+            "Log Transform",
+            "Convex Form",
+            "Solve",
+            "Exponentiate"
+        ]
+    },
+    {
+        "q": "Geometric programming is convex after transformation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match GP terms:",
+        "type": "match",
+        "left": [
+            "Monomial",
+            "Posynomial",
+            "Log Transform",
+            "Convex"
+        ],
+        "right": [
+            "Product form",
+            "Sum of monomials",
+            "Variable change",
+            "After transform"
+        ]
+    },
+    {
+        "q": "The ______ form uses sum of exponentials.",
+        "type": "fill_blank",
+        "answers": [
+            "log-sum-exp"
+        ],
+        "other_options": [
+            "monomial",
+            "polynomial",
+            "exponential"
+        ]
+    },
+    {
+        "q": "What is mixed-integer nonlinear programming?",
+        "type": "mcq",
+        "o": [
+            "Optimization with integer variables and nonlinear functions",
+            "Mixed optimization",
+            "Integer nonlinear",
+            "Complex programming"
+        ]
+    },
+    {
+        "q": "What does this code output for MINLP feasibility?",
+        "type": "mcq",
+        "c": "x_continuous = 3.5\ny_integer = 2\nconstraint = x_continuous + y_integer**2\nfeasible = constraint <= 10\nprint(f'Feasible: {feasible}')",
+        "o": [
+            "Feasible: True",
+            "Feasible: False",
+            "Feasible: 7.5",
+            "Feasible: 10"
+        ]
+    },
+    {
+        "q": "MINLP combines NLP difficulty with integer complexity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match MINLP methods:",
+        "type": "match",
+        "left": [
+            "Outer Approximation",
+            "Generalized Benders",
+            "Branch and Bound",
+            "Convexification"
+        ],
+        "right": [
+            "Linear cuts",
+            "Decomposition",
+            "Enumeration",
+            "Relaxation"
+        ]
+    },
+    {
+        "q": "The ______ approximation adds linear cuts for nonlinear constraints.",
+        "type": "fill_blank",
+        "answers": [
+            "outer"
+        ],
+        "other_options": [
+            "inner",
+            "linear",
+            "convex"
+        ]
+    },
+    {
+        "q": "What is constraint optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization with complex logical and structural constraints",
+            "Constraint analysis",
+            "Logic optimization",
+            "Structure solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for big-M indicator?",
+        "type": "mcq",
+        "c": "x = 5\ny = 1  # binary\nM = 1000\nconstraint = x <= M * y\nprint(f'Satisfied: {constraint}')",
+        "o": [
+            "Satisfied: True",
+            "Satisfied: False",
+            "Satisfied: 5",
+            "Satisfied: 1000"
+        ]
+    },
+    {
+        "q": "Rearrange constraint handling:",
+        "type": "rearrange",
+        "words": [
+            "Identify Constraints",
+            "Choose Formulation",
+            "Add Variables",
+            "Model Logic",
+            "Solve"
+        ]
+    },
+    {
+        "q": "Tight big-M values improve relaxation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match logical constraints:",
+        "type": "match",
+        "left": [
+            "Indicator",
+            "Either-Or",
+            "If-Then",
+            "SOS"
+        ],
+        "right": [
+            "Binary activation",
+            "Disjunction",
+            "Implication",
+            "Special ordered set"
+        ]
+    },
+    {
+        "q": "The ______ constraint activates based on binary variable.",
+        "type": "fill_blank",
+        "answers": [
+            "indicator"
+        ],
+        "other_options": [
+            "big-M",
+            "logical",
+            "conditional"
+        ]
+    },
+    {
+        "q": "What is symmetry breaking?",
+        "type": "mcq",
+        "o": [
+            "Adding constraints to eliminate equivalent solutions",
+            "Breaking symmetry",
+            "Symmetric analysis",
+            "Equivalence removal"
+        ]
+    },
+    {
+        "q": "What does this code output for lexicographic order?",
+        "type": "mcq",
+        "c": "x = [1, 0, 1]\ny = [0, 1, 1]\nlex_smaller = x < y\nprint(f'x < y: {lex_smaller}')",
+        "o": [
+            "x < y: False",
+            "x < y: True",
+            "x < y: Equal",
+            "x < y: Error"
+        ]
+    },
+    {
+        "q": "Symmetry can exponentially increase search space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match symmetry types:",
+        "type": "match",
+        "left": [
+            "Variable",
+            "Value",
+            "Structure",
+            "Orbit"
+        ],
+        "right": [
+            "Permutable vars",
+            "Interchangeable vals",
+            "Problem pattern",
+            "Symmetry group"
+        ]
+    },
+    {
+        "q": "The ______ constraints order symmetric variables.",
+        "type": "fill_blank",
+        "answers": [
+            "lexicographic"
+        ],
+        "other_options": [
+            "symmetric",
+            "breaking",
+            "ordering"
+        ]
+    },
+    {
+        "q": "What is callback programming?",
+        "type": "mcq",
+        "o": [
+            "Customizing solver behavior with user functions",
+            "Callback analysis",
+            "Programming callbacks",
+            "Function calling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for lazy constraint?",
+        "type": "mcq",
+        "c": "def check_constraint(solution):\n    return sum(solution) <= 3\nsol = [1, 1, 1, 0]\nvalid = check_constraint(sol)\nprint(f'Valid: {valid}')",
+        "o": [
+            "Valid: True",
+            "Valid: False",
+            "Valid: 3",
+            "Valid: 4"
+        ]
+    },
+    {
+        "q": "Rearrange callback integration:",
+        "type": "rearrange",
+        "words": [
+            "Define Callback",
+            "Register with Solver",
+            "Solver Triggers",
+            "Callback Executes",
+            "Modify Search"
+        ]
+    },
+    {
+        "q": "Lazy constraints are added during solve.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match callback types:",
+        "type": "match",
+        "left": [
+            "Lazy",
+            "User Cut",
+            "Heuristic",
+            "Logging"
+        ],
+        "right": [
+            "Violated constraint",
+            "Tightening cut",
+            "Solution hint",
+            "Progress info"
+        ]
+    },
+    {
+        "q": "The ______ callback provides custom branching decisions.",
+        "type": "fill_blank",
+        "answers": [
+            "branching"
+        ],
+        "other_options": [
+            "cutting",
+            "solving",
+            "logging"
+        ]
+    },
+    {
+        "q": "What is parallel optimization?",
+        "type": "mcq",
+        "o": [
+            "Using multiple processors to speed up optimization",
+            "Parallel analysis",
+            "Multi-core solving",
+            "Concurrent optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for parallel speedup?",
+        "type": "mcq",
+        "c": "serial_time = 100\nparallel_time = 30\nspeedup = serial_time / parallel_time\nprint(f'Speedup: {round(speedup, 1)}x')",
+        "o": [
+            "Speedup: 3.3x",
+            "Speedup: 0.3x",
+            "Speedup: 70.0x",
+            "Speedup: 130.0x"
+        ]
+    },
+    {
+        "q": "Amdahl's law limits parallel speedup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match parallelization strategies:",
+        "type": "match",
+        "left": [
+            "Thread",
+            "Distributed",
+            "GPU",
+            "Hybrid"
+        ],
+        "right": [
+            "Shared memory",
+            "Multiple machines",
+            "Massive parallel",
+            "Combined"
+        ]
+    },
+    {
+        "q": "The ______ theorem estimates maximum parallel speedup.",
+        "type": "fill_blank",
+        "answers": [
+            "Amdahl"
+        ],
+        "other_options": [
+            "Moore",
+            "Gustafson",
+            "scalability"
+        ]
+    },
+    {
+        "q": "What is warm starting?",
+        "type": "mcq",
+        "o": [
+            "Providing initial solution to accelerate solving",
+            "Warm analysis",
+            "Starting optimization",
+            "Initial solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for improvement?",
+        "type": "mcq",
+        "c": "cold_start_time = 60\nwarm_start_time = 15\nimprovement = (cold_start_time - warm_start_time) / cold_start_time * 100\nprint(f'Improvement: {improvement}%')",
+        "o": [
+            "Improvement: 75.0%",
+            "Improvement: 25.0%",
+            "Improvement: 45.0%",
+            "Improvement: 400.0%"
+        ]
+    },
+    {
+        "q": "Rearrange warm start process:",
+        "type": "rearrange",
+        "words": [
+            "Solve Similar Problem",
+            "Save Solution",
+            "Load for New Problem",
+            "Adjust Values",
+            "Continue Solving"
+        ]
+    },
+    {
+        "q": "MIP starts provide good initial feasible solutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match warm start types:",
+        "type": "match",
+        "left": [
+            "Solution Hint",
+            "Basis",
+            "Priority",
+            "Branching"
+        ],
+        "right": [
+            "Starting point",
+            "Simplex state",
+            "Variable order",
+            "Decision tree"
+        ]
+    },
+    {
+        "q": "The ______ information from previous solve accelerates new solve.",
+        "type": "fill_blank",
+        "answers": [
+            "basis"
+        ],
+        "other_options": [
+            "solution",
+            "cut",
+            "bound"
+        ]
+    },
+    {
+        "q": "What is model validation?",
+        "type": "mcq",
+        "o": [
+            "Ensuring optimization model correctly represents problem",
+            "Validation analysis",
+            "Model checking",
+            "Correctness optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for infeasibility diagnostic?",
+        "type": "mcq",
+        "c": "constraints = ['capacity', 'demand', 'budget', 'limit']\ninfeasible = ['budget', 'limit']\niis = [c for c in infeasible]\nprint(f'IIS: {iis}')",
+        "o": [
+            "IIS: ['budget', 'limit']",
+            "IIS: []",
+            "IIS: ['capacity', 'demand']",
+            "IIS: 4"
+        ]
+    },
+    {
+        "q": "IIS identifies minimal infeasible constraint set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match validation techniques:",
+        "type": "match",
+        "left": [
+            "IIS",
+            "FeasRelax",
+            "Bounds Analysis",
+            "Solution Check"
+        ],
+        "right": [
+            "Infeasibility set",
+            "Relax constraints",
+            "Variable limits",
+            "Verify feasibility"
+        ]
+    },
+    {
+        "q": "The ______ relaxation finds feasibility with minimum changes.",
+        "type": "fill_blank",
+        "answers": [
+            "feasibility"
+        ],
+        "other_options": [
+            "optimality",
+            "robustness",
+            "sensitivity"
+        ]
+    },
+    {
+        "q": "What is model reformulation?",
+        "type": "mcq",
+        "o": [
+            "Transforming model to equivalent but more tractable form",
+            "Reformulation analysis",
+            "Model transformation",
+            "Equivalent solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for aggregation?",
+        "type": "mcq",
+        "c": "original_vars = 100\naggregated = 20\nreduction = (original_vars - aggregated) / original_vars * 100\nprint(f'Reduction: {reduction}%')",
+        "o": [
+            "Reduction: 80.0%",
+            "Reduction: 20.0%",
+            "Reduction: 5.0%",
+            "Reduction: 500.0%"
+        ]
+    },
+    {
+        "q": "Rearrange reformulation process:",
+        "type": "rearrange",
+        "words": [
+            "Analyze Structure",
+            "Identify Patterns",
+            "Apply Transformations",
+            "Verify Equivalence",
+            "Solve"
+        ]
+    },
+    {
+        "q": "Tighter formulations have better relaxation bounds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match reformulation techniques:",
+        "type": "match",
+        "left": [
+            "Disaggregation",
+            "Lift-and-Project",
+            "Extended",
+            "Convex Hull"
+        ],
+        "right": [
+            "Add variables",
+            "Higher dimension",
+            "Auxiliary vars",
+            "Tightest relaxation"
+        ]
+    },
+    {
+        "q": "The ______ formulation uses additional variables for tightness.",
+        "type": "fill_blank",
+        "answers": [
+            "extended"
+        ],
+        "other_options": [
+            "compact",
+            "natural",
+            "standard"
+        ]
+    },
+    {
+        "q": "What is presolve?",
+        "type": "mcq",
+        "o": [
+            "Simplifying model before main solve algorithm",
+            "Pre-solving analysis",
+            "Initial solving",
+            "Setup optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for bound tightening?",
+        "type": "mcq",
+        "c": "original_lb = 0\noriginal_ub = 100\nimplied_lb = 15\nimplied_ub = 85\nnew_lb = max(original_lb, implied_lb)\nnew_ub = min(original_ub, implied_ub)\nprint(f'Bounds: [{new_lb}, {new_ub}]')",
+        "o": [
+            "Bounds: [15, 85]",
+            "Bounds: [0, 100]",
+            "Bounds: [15, 100]",
+            "Bounds: [0, 85]"
+        ]
+    },
+    {
+        "q": "Presolve can detect infeasibility early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match presolve techniques:",
+        "type": "match",
+        "left": [
+            "Bound Tightening",
+            "Probing",
+            "Substitution",
+            "Clique Detection"
+        ],
+        "right": [
+            "Improve limits",
+            "Fix binaries",
+            "Eliminate variables",
+            "Find conflicts"
+        ]
+    },
+    {
+        "q": "The ______ technique fixes binary variables based on implications.",
+        "type": "fill_blank",
+        "answers": [
+            "probing"
+        ],
+        "other_options": [
+            "substitution",
+            "tightening",
+            "detection"
+        ]
+    },
+    {
+        "q": "What is solver selection?",
+        "type": "mcq",
+        "o": [
+            "Choosing appropriate optimization solver for problem type",
+            "Solver analysis",
+            "Selection optimization",
+            "Algorithm choice"
+        ]
+    },
+    {
+        "q": "What does this code calculate for performance comparison?",
+        "type": "mcq",
+        "c": "solver_times = {'A': 10, 'B': 8, 'C': 12, 'D': 15}\nbest = min(solver_times, key=solver_times.get)\nprint(f'Best: {best}')",
+        "o": [
+            "Best: B",
+            "Best: A",
+            "Best: C",
+            "Best: D"
+        ]
+    },
+    {
+        "q": "Rearrange solver selection process:",
+        "type": "rearrange",
+        "words": [
+            "Identify Problem Type",
+            "List Compatible Solvers",
+            "Benchmark Performance",
+            "Consider Licensing",
+            "Select Solver"
+        ]
+    },
+    {
+        "q": "Commercial solvers often outperform open-source.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match solver types:",
+        "type": "match",
+        "left": [
+            "Gurobi",
+            "CPLEX",
+            "SCIP",
+            "GLPK"
+        ],
+        "right": [
+            "Commercial MIP",
+            "IBM solver",
+            "Open source MIP",
+            "GNU LP"
+        ]
+    },
+    {
+        "q": "The ______ solver is known for state-of-the-art MIP performance.",
+        "type": "fill_blank",
+        "answers": [
+            "Gurobi"
+        ],
+        "other_options": [
+            "GLPK",
+            "CBC",
+            "SYMPHONY"
+        ]
+    },
+    {
+        "q": "What is modeling language?",
+        "type": "mcq",
+        "o": [
+            "High-level language for expressing optimization models",
+            "Language modeling",
+            "Model coding",
+            "Optimization language"
+        ]
+    },
+    {
+        "q": "What does this code output for Pyomo model?",
+        "type": "mcq",
+        "c": "components = ['Set', 'Param', 'Var', 'Objective', 'Constraint']\ncount = len(components)\nprint(f'Components: {count}')",
+        "o": [
+            "Components: 5",
+            "Components: 0",
+            "Components: 10",
+            "Components: 3"
+        ]
+    },
+    {
+        "q": "Algebraic modeling separates model from data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match modeling languages:",
+        "type": "match",
+        "left": [
+            "AMPL",
+            "GAMS",
+            "Pyomo",
+            "JuMP"
+        ],
+        "right": [
+            "Algebraic",
+            "General system",
+            "Python-based",
+            "Julia-based"
+        ]
+    },
+    {
+        "q": "The ______ language is most widely used commercial modeling system.",
+        "type": "fill_blank",
+        "answers": [
+            "AMPL"
+        ],
+        "other_options": [
+            "Python",
+            "MATLAB",
+            "R"
+        ]
+    },
+    {
+        "q": "What is multi-objective optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization with multiple conflicting objectives",
+            "Multi-objective analysis",
+            "Multiple optimization",
+            "Objective counting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for Pareto?",
+        "type": "mcq",
+        "c": "solutions = [(100, 50), (90, 60), (95, 55)]\ndominated = [s for s in solutions if any(o[0] >= s[0] and o[1] >= s[1] and (o[0] > s[0] or o[1] > s[1]) for o in solutions)]\nprint(f'Dominated: {len(dominated)}')",
+        "o": [
+            "Dominated: 1",
+            "Dominated: 0",
+            "Dominated: 3",
+            "Dominated: 2"
+        ]
+    },
+    {
+        "q": "Pareto optimal solutions cannot improve one objective without worsening another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match multi-objective concepts:",
+        "type": "match",
+        "left": [
+            "Pareto Front",
+            "Dominance",
+            "Trade-off",
+            "Ideal Point"
+        ],
+        "right": [
+            "Non-dominated set",
+            "Solution comparison",
+            "Objective conflict",
+            "Best per objective"
+        ]
+    },
+    {
+        "q": "The ______ front contains all non-dominated solutions.",
+        "type": "fill_blank",
+        "answers": [
+            "Pareto"
+        ],
+        "other_options": [
+            "optimal",
+            "efficient",
+            "trade-off"
+        ]
+    },
+    {
+        "q": "What is weighted sum scalarization?",
+        "type": "mcq",
+        "o": [
+            "Combining objectives with weights into single objective",
+            "Weight optimization",
+            "Sum analysis",
+            "Scalar weighting"
+        ]
+    },
+    {
+        "q": "What does this code output for weighted objective?",
+        "type": "mcq",
+        "c": "f1, f2 = 100, 50\nw1, w2 = 0.6, 0.4\nweighted = w1 * f1 + w2 * f2\nprint(f'Weighted: {weighted}')",
+        "o": [
+            "Weighted: 80.0",
+            "Weighted: 150.0",
+            "Weighted: 75.0",
+            "Weighted: 1.0"
+        ]
+    },
+    {
+        "q": "Rearrange weighted sum approach:",
+        "type": "rearrange",
+        "words": [
+            "Define Objectives",
+            "Choose Weights",
+            "Combine Objectives",
+            "Solve",
+            "Vary Weights"
+        ]
+    },
+    {
+        "q": "Weighted sum cannot find non-convex Pareto points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scalarization methods:",
+        "type": "match",
+        "left": [
+            "Weighted Sum",
+            "Epsilon-Constraint",
+            "Goal Programming",
+            "Lexicographic"
+        ],
+        "right": [
+            "Linear combination",
+            "Constraint bounds",
+            "Target values",
+            "Priority order"
+        ]
+    },
+    {
+        "q": "The ______ method constrains all but one objective.",
+        "type": "fill_blank",
+        "answers": [
+            "epsilon-constraint"
+        ],
+        "other_options": [
+            "weighted-sum",
+            "goal",
+            "lexicographic"
+        ]
+    },
+    {
+        "q": "What is NSGA-II?",
+        "type": "mcq",
+        "o": [
+            "Non-dominated Sorting Genetic Algorithm for multi-objective",
+            "NSGA algorithm",
+            "Sorting optimization",
+            "Genetic sorting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for crowding distance?",
+        "type": "mcq",
+        "c": "neighbors = [(95, 52), (100, 50), (105, 48)]\ndist = abs(neighbors[2][0] - neighbors[0][0]) + abs(neighbors[2][1] - neighbors[0][1])\nprint(f'Crowding: {dist}')",
+        "o": [
+            "Crowding: 14",
+            "Crowding: 10",
+            "Crowding: 4",
+            "Crowding: 100"
+        ]
+    },
+    {
+        "q": "Higher crowding distance means more isolated solution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match NSGA-II features:",
+        "type": "match",
+        "left": [
+            "Fast Sorting",
+            "Crowding",
+            "Elitism",
+            "Binary Tournament"
+        ],
+        "right": [
+            "Non-dominated",
+            "Diversity",
+            "Keep best",
+            "Selection"
+        ]
+    },
+    {
+        "q": "The ______ metric preserves diversity in Pareto front.",
+        "type": "fill_blank",
+        "answers": [
+            "crowding distance"
+        ],
+        "other_options": [
+            "fitness",
+            "rank",
+            "dominance"
+        ]
+    },
+    {
+        "q": "What is reference point method?",
+        "type": "mcq",
+        "o": [
+            "Guiding multi-objective search toward desired regions",
+            "Reference analysis",
+            "Point optimization",
+            "Region method"
+        ]
+    },
+    {
+        "q": "What does this code output for ASF value?",
+        "type": "mcq",
+        "c": "solution = [90, 60]\nreference = [100, 65]\nweights = [0.5, 0.5]\nasf = max(w * abs(s - r) for s, r, w in zip(solution, reference, weights))\nprint(f'ASF: {asf}')",
+        "o": [
+            "ASF: 5.0",
+            "ASF: 2.5",
+            "ASF: 15.0",
+            "ASF: 10.0"
+        ]
+    },
+    {
+        "q": "Rearrange reference point optimization:",
+        "type": "rearrange",
+        "words": [
+            "Set Reference Point",
+            "Define ASF",
+            "Minimize ASF",
+            "Find Solution",
+            "Adjust Reference"
+        ]
+    },
+    {
+        "q": "Decision maker preferences guide reference point selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match interactive methods:",
+        "type": "match",
+        "left": [
+            "Reference Point",
+            "Trade-off",
+            "Classification",
+            "Satisficing"
+        ],
+        "right": [
+            "Aspiration",
+            "Rate of change",
+            "Good/bad bounds",
+            "Acceptable levels"
+        ]
+    },
+    {
+        "q": "The ______ function measures distance to reference point.",
+        "type": "fill_blank",
+        "answers": [
+            "achievement scalarizing"
+        ],
+        "other_options": [
+            "objective",
+            "weighted",
+            "Pareto"
+        ]
+    },
+    {
+        "q": "What is bilevel optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization with hierarchical decision-making structure",
+            "Two-level analysis",
+            "Bilevel programming",
+            "Hierarchy optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for leader response?",
+        "type": "mcq",
+        "c": "leader_decision = 10\nfollower_response = lambda x: 0.5 * x + 5\nresponse = follower_response(leader_decision)\nprint(f'Response: {response}')",
+        "o": [
+            "Response: 10.0",
+            "Response: 15.0",
+            "Response: 5.0",
+            "Response: 7.5"
+        ]
+    },
+    {
+        "q": "Bilevel problems have leader-follower structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bilevel concepts:",
+        "type": "match",
+        "left": [
+            "Upper Level",
+            "Lower Level",
+            "Reaction",
+            "Stackelberg"
+        ],
+        "right": [
+            "Leader problem",
+            "Follower problem",
+            "Response function",
+            "Game equilibrium"
+        ]
+    },
+    {
+        "q": "The ______ level optimizes given upper level decisions.",
+        "type": "fill_blank",
+        "answers": [
+            "lower"
+        ],
+        "other_options": [
+            "upper",
+            "middle",
+            "joint"
+        ]
+    },
+    {
+        "q": "What is inverse optimization?",
+        "type": "mcq",
+        "o": [
+            "Finding parameters that make given solution optimal",
+            "Inverse analysis",
+            "Backward optimization",
+            "Parameter finding"
+        ]
+    },
+    {
+        "q": "What does this code output for cost recovery?",
+        "type": "mcq",
+        "c": "observed = [1, 0, 1, 0]\nrecovered_costs = [c * 10 + (1-c) * 20 for c in observed]\nprint(f'Costs: {recovered_costs}')",
+        "o": [
+            "Costs: [10, 20, 10, 20]",
+            "Costs: [20, 10, 20, 10]",
+            "Costs: [10, 10, 10, 10]",
+            "Costs: [1, 0, 1, 0]"
+        ]
+    },
+    {
+        "q": "Rearrange inverse optimization:",
+        "type": "rearrange",
+        "words": [
+            "Observe Solution",
+            "Define Model Structure",
+            "Find Parameters",
+            "Verify Optimality",
+            "Apply Parameters"
+        ]
+    },
+    {
+        "q": "Inverse optimization recovers decision maker preferences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match inverse problems:",
+        "type": "match",
+        "left": [
+            "Cost Recovery",
+            "Preference Learning",
+            "Model Calibration",
+            "Imputation"
+        ],
+        "right": [
+            "Find costs",
+            "Learn utility",
+            "Fit parameters",
+            "Fill missing"
+        ]
+    },
+    {
+        "q": "The ______ optimization finds why solution is optimal.",
+        "type": "fill_blank",
+        "answers": [
+            "inverse"
+        ],
+        "other_options": [
+            "forward",
+            "direct",
+            "primal"
+        ]
+    },
+    {
+        "q": "What is adjustable robust optimization?",
+        "type": "mcq",
+        "o": [
+            "Robust optimization with recourse decisions",
+            "Adjustable analysis",
+            "Robust adjustment",
+            "Flexible optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for affine policy?",
+        "type": "mcq",
+        "c": "uncertainty = 5\nintercept = 10\nslope = 2\nrecourse = intercept + slope * uncertainty\nprint(f'Recourse: {recourse}')",
+        "o": [
+            "Recourse: 20",
+            "Recourse: 15",
+            "Recourse: 10",
+            "Recourse: 7"
+        ]
+    },
+    {
+        "q": "Affine policies provide tractable approximation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match adjustable concepts:",
+        "type": "match",
+        "left": [
+            "Here-and-now",
+            "Wait-and-see",
+            "Affine Policy",
+            "Lifting"
+        ],
+        "right": [
+            "First stage",
+            "After uncertainty",
+            "Linear decision",
+            "Reformulation"
+        ]
+    },
+    {
+        "q": "The ______ policy makes recourse linear in uncertainty.",
+        "type": "fill_blank",
+        "answers": [
+            "affine"
+        ],
+        "other_options": [
+            "constant",
+            "quadratic",
+            "general"
+        ]
+    },
+    {
+        "q": "What is data-driven optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization using data directly without distributional assumptions",
+            "Data optimization",
+            "Driven analysis",
+            "Learning optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for sample constraint?",
+        "type": "mcq",
+        "c": "samples = [95, 102, 98, 105, 100]\nthreshold = 100\nviolations = sum(1 for s in samples if s > threshold)\nprint(f'Violations: {violations}')",
+        "o": [
+            "Violations: 2",
+            "Violations: 3",
+            "Violations: 5",
+            "Violations: 0"
+        ]
+    },
+    {
+        "q": "Rearrange data-driven approach:",
+        "type": "rearrange",
+        "words": [
+            "Collect Data",
+            "Build Uncertainty Set",
+            "Formulate Problem",
+            "Solve",
+            "Validate"
+        ]
+    },
+    {
+        "q": "Distributionally robust optimization hedges against worst distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match data-driven methods:",
+        "type": "match",
+        "left": [
+            "SAA",
+            "DRO",
+            "Chance Constraint",
+            "CVaR"
+        ],
+        "right": [
+            "Sample average",
+            "Worst distribution",
+            "Probability bound",
+            "Tail risk"
+        ]
+    },
+    {
+        "q": "The ______ set contains distributions consistent with data.",
+        "type": "fill_blank",
+        "answers": [
+            "ambiguity"
+        ],
+        "other_options": [
+            "uncertainty",
+            "sample",
+            "empirical"
+        ]
+    },
+    {
+        "q": "What is online optimization?",
+        "type": "mcq",
+        "o": [
+            "Making decisions sequentially as information arrives",
+            "Internet optimization",
+            "Online analysis",
+            "Sequential solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for competitive ratio?",
+        "type": "mcq",
+        "c": "online_cost = 120\noffline_optimal = 100\nratio = online_cost / offline_optimal\nprint(f'Ratio: {ratio}')",
+        "o": [
+            "Ratio: 1.2",
+            "Ratio: 0.83",
+            "Ratio: 20",
+            "Ratio: 1.0"
+        ]
+    },
+    {
+        "q": "Competitive analysis compares to offline optimal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match online algorithms:",
+        "type": "match",
+        "left": [
+            "Ski Rental",
+            "Secretary",
+            "Paging",
+            "Routing"
+        ],
+        "right": [
+            "Rent vs buy",
+            "Hiring decision",
+            "Cache management",
+            "Path selection"
+        ]
+    },
+    {
+        "q": "The ______ ratio measures online algorithm quality.",
+        "type": "fill_blank",
+        "answers": [
+            "competitive"
+        ],
+        "other_options": [
+            "approximation",
+            "optimality",
+            "performance"
+        ]
+    },
+    {
+        "q": "What is reinforcement learning for optimization?",
+        "type": "mcq",
+        "o": [
+            "Learning to optimize through trial and reward",
+            "RL optimization",
+            "Learning analysis",
+            "Reward optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for Q-value update?",
+        "type": "mcq",
+        "c": "Q = 50\nreward = 10\nnext_Q = 60\nalpha = 0.1\ngamma = 0.9\nnew_Q = Q + alpha * (reward + gamma * next_Q - Q)\nprint(f'Q: {new_Q}')",
+        "o": [
+            "Q: 51.4",
+            "Q: 60.0",
+            "Q: 50.0",
+            "Q: 64.0"
+        ]
+    },
+    {
+        "q": "Rearrange RL optimization loop:",
+        "type": "rearrange",
+        "words": [
+            "Observe State",
+            "Select Action",
+            "Receive Reward",
+            "Update Policy",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "Deep RL can learn complex optimization policies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match RL concepts:",
+        "type": "match",
+        "left": [
+            "State",
+            "Action",
+            "Reward",
+            "Policy"
+        ],
+        "right": [
+            "Current situation",
+            "Decision",
+            "Feedback",
+            "Strategy"
+        ]
+    },
+    {
+        "q": "The ______ function estimates expected future rewards.",
+        "type": "fill_blank",
+        "answers": [
+            "value"
+        ],
+        "other_options": [
+            "policy",
+            "reward",
+            "action"
+        ]
+    },
+    {
+        "q": "What is learn to optimize?",
+        "type": "mcq",
+        "o": [
+            "Using machine learning to design optimization algorithms",
+            "Learning optimization",
+            "Optimize learning",
+            "Algorithm learning"
+        ]
+    },
+    {
+        "q": "What does this code calculate for learned heuristic?",
+        "type": "mcq",
+        "c": "features = [10, 5, 8]\nweights = [0.3, 0.5, 0.2]\npriority = sum(f * w for f, w in zip(features, weights))\nprint(f'Priority: {priority}')",
+        "o": [
+            "Priority: 7.1",
+            "Priority: 23.0",
+            "Priority: 10.0",
+            "Priority: 5.5"
+        ]
+    },
+    {
+        "q": "Neural networks can predict good branching decisions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match L2O applications:",
+        "type": "match",
+        "left": [
+            "Branching",
+            "Cutting",
+            "Scheduling",
+            "Configuration"
+        ],
+        "right": [
+            "Variable selection",
+            "Cut generation",
+            "Job ordering",
+            "Parameter tuning"
+        ]
+    },
+    {
+        "q": "The ______ to optimize uses ML for solver decisions.",
+        "type": "fill_blank",
+        "answers": [
+            "learn"
+        ],
+        "other_options": [
+            "optimize",
+            "solve",
+            "search"
+        ]
+    },
+    {
+        "q": "What is graph neural network for optimization?",
+        "type": "mcq",
+        "o": [
+            "Using GNNs to encode optimization problem structure",
+            "Graph optimization",
+            "Neural graph",
+            "Network optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for node embedding?",
+        "type": "mcq",
+        "c": "neighbors = [[1.0, 2.0], [3.0, 4.0], [2.0, 1.0]]\naggregated = [sum(n[i] for n in neighbors)/len(neighbors) for i in range(2)]\nprint(f'Embedding: {aggregated}')",
+        "o": [
+            "Embedding: [2.0, 2.333333333333333]",
+            "Embedding: [6.0, 7.0]",
+            "Embedding: [1.0, 2.0]",
+            "Embedding: [3.0, 4.0]"
+        ]
+    },
+    {
+        "q": "Rearrange GNN optimization pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Encode Problem",
+            "Message Passing",
+            "Readout",
+            "Predict Solution",
+            "Decode"
+        ]
+    },
+    {
+        "q": "Bipartite graphs model variable-constraint relationships.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match GNN components:",
+        "type": "match",
+        "left": [
+            "Node Features",
+            "Edge Features",
+            "Message",
+            "Aggregation"
+        ],
+        "right": [
+            "Variable/constraint info",
+            "Coefficient info",
+            "Neighbor info",
+            "Combine messages"
+        ]
+    },
+    {
+        "q": "The ______ graph represents LP constraint structure.",
+        "type": "fill_blank",
+        "answers": [
+            "bipartite"
+        ],
+        "other_options": [
+            "complete",
+            "sparse",
+            "dense"
+        ]
+    },
+    {
+        "q": "What is portfolio optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing asset allocation for risk-return trade-off",
+            "Portfolio analysis",
+            "Asset optimization",
+            "Investment solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for portfolio variance?",
+        "type": "mcq",
+        "c": "weights = [0.6, 0.4]\nvariances = [0.04, 0.09]\ncovariance = 0.02\nport_var = sum(w**2 * v for w, v in zip(weights, variances)) + 2 * weights[0] * weights[1] * covariance\nprint(f'Variance: {round(port_var, 4)}')",
+        "o": [
+            "Variance: 0.0384",
+            "Variance: 0.065",
+            "Variance: 0.13",
+            "Variance: 0.04"
+        ]
+    },
+    {
+        "q": "Markowitz model balances expected return and variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match portfolio concepts:",
+        "type": "match",
+        "left": [
+            "Efficient Frontier",
+            "Sharpe Ratio",
+            "Diversification",
+            "Beta"
+        ],
+        "right": [
+            "Optimal trade-offs",
+            "Risk-adjusted return",
+            "Risk reduction",
+            "Market sensitivity"
+        ]
+    },
+    {
+        "q": "The ______ frontier shows optimal risk-return portfolios.",
+        "type": "fill_blank",
+        "answers": [
+            "efficient"
+        ],
+        "other_options": [
+            "Pareto",
+            "optimal",
+            "mean-variance"
+        ]
+    },
+    {
+        "q": "What is supply chain optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing operations across supply chain network",
+            "Supply analysis",
+            "Chain optimization",
+            "Network solving"
+        ]
+    },
+    {
+        "q": "What does this code output for total cost?",
+        "type": "mcq",
+        "c": "production = 100\ntransport = 50\nholding = 20\ntotal = production + transport + holding\nprint(f'Total cost: {total}')",
+        "o": [
+            "Total cost: 170",
+            "Total cost: 100",
+            "Total cost: 150",
+            "Total cost: 270"
+        ]
+    },
+    {
+        "q": "Rearrange supply chain planning:",
+        "type": "rearrange",
+        "words": [
+            "Demand Forecast",
+            "Production Plan",
+            "Distribution",
+            "Inventory",
+            "Fulfillment"
+        ]
+    },
+    {
+        "q": "Bullwhip effect amplifies demand variability upstream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match supply chain decisions:",
+        "type": "match",
+        "left": [
+            "Strategic",
+            "Tactical",
+            "Operational",
+            "Real-time"
+        ],
+        "right": [
+            "Network design",
+            "Aggregate planning",
+            "Daily scheduling",
+            "Immediate response"
+        ]
+    },
+    {
+        "q": "The ______ level determines supply chain network structure.",
+        "type": "fill_blank",
+        "answers": [
+            "strategic"
+        ],
+        "other_options": [
+            "tactical",
+            "operational",
+            "transactional"
+        ]
+    },
+    {
+        "q": "What is production scheduling optimization?",
+        "type": "mcq",
+        "o": [
+            "Sequencing and timing production operations",
+            "Production analysis",
+            "Schedule optimization",
+            "Operation planning"
+        ]
+    },
+    {
+        "q": "What does this code calculate for setup time?",
+        "type": "mcq",
+        "c": "setup_matrix = [[0, 5, 8], [6, 0, 4], [7, 3, 0]]\nsequence = [0, 2, 1]\ntotal_setup = sum(setup_matrix[sequence[i]][sequence[i+1]] for i in range(len(sequence)-1))\nprint(f'Setup: {total_setup}')",
+        "o": [
+            "Setup: 11",
+            "Setup: 8",
+            "Setup: 15",
+            "Setup: 9"
+        ]
+    },
+    {
+        "q": "Lot sizing determines production quantities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match production concepts:",
+        "type": "match",
+        "left": [
+            "Lot Sizing",
+            "Sequencing",
+            "Setup",
+            "Changeover"
+        ],
+        "right": [
+            "Batch quantity",
+            "Order of jobs",
+            "Preparation time",
+            "Product switch"
+        ]
+    },
+    {
+        "q": "The ______ model determines economic order quantity.",
+        "type": "fill_blank",
+        "answers": [
+            "EOQ"
+        ],
+        "other_options": [
+            "MRP",
+            "JIT",
+            "Kanban"
+        ]
+    },
+    {
+        "q": "What is workforce scheduling?",
+        "type": "mcq",
+        "o": [
+            "Assigning employees to shifts meeting demand",
+            "Workforce analysis",
+            "Employee optimization",
+            "Shift planning"
+        ]
+    },
+    {
+        "q": "What does this code output for coverage check?",
+        "type": "mcq",
+        "c": "demand = [5, 8, 10, 6]\nstaff = [6, 7, 10, 8]\nshortage = sum(max(0, d - s) for d, s in zip(demand, staff))\nprint(f'Shortage: {shortage}')",
+        "o": [
+            "Shortage: 1",
+            "Shortage: 0",
+            "Shortage: 29",
+            "Shortage: 6"
+        ]
+    },
+    {
+        "q": "Rearrange workforce planning:",
+        "type": "rearrange",
+        "words": [
+            "Forecast Demand",
+            "Create Shifts",
+            "Assign Staff",
+            "Balance Preferences",
+            "Publish Schedule"
+        ]
+    },
+    {
+        "q": "Shift preferences improve employee satisfaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scheduling constraints:",
+        "type": "match",
+        "left": [
+            "Coverage",
+            "Availability",
+            "Skills",
+            "Regulations"
+        ],
+        "right": [
+            "Meet demand",
+            "When can work",
+            "Qualifications",
+            "Labor laws"
+        ]
+    },
+    {
+        "q": "The ______ constraint ensures minimum rest between shifts.",
+        "type": "fill_blank",
+        "answers": [
+            "rest"
+        ],
+        "other_options": [
+            "coverage",
+            "skill",
+            "preference"
+        ]
+    },
+    {
+        "q": "What is facility location optimization?",
+        "type": "mcq",
+        "o": [
+            "Determining optimal placement of facilities",
+            "Facility analysis",
+            "Location solving",
+            "Placement optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for distance?",
+        "type": "mcq",
+        "c": "import math\nfacility = (0, 0)\ncustomer = (3, 4)\ndist = math.sqrt((facility[0]-customer[0])**2 + (facility[1]-customer[1])**2)\nprint(f'Distance: {dist}')",
+        "o": [
+            "Distance: 5.0",
+            "Distance: 7.0",
+            "Distance: 12.0",
+            "Distance: 25.0"
+        ]
+    },
+    {
+        "q": "P-median minimizes total customer distance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match location problems:",
+        "type": "match",
+        "left": [
+            "P-Median",
+            "P-Center",
+            "Covering",
+            "Capacitated"
+        ],
+        "right": [
+            "Minimize total distance",
+            "Minimize max distance",
+            "Service radius",
+            "Capacity limits"
+        ]
+    },
+    {
+        "q": "The ______ problem locates P facilities to serve demand.",
+        "type": "fill_blank",
+        "answers": [
+            "p-median"
+        ],
+        "other_options": [
+            "p-center",
+            "covering",
+            "hub"
+        ]
+    },
+    {
+        "q": "What is network design optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing network topology and capacity",
+            "Network analysis",
+            "Design solving",
+            "Topology optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for arc capacity?",
+        "type": "mcq",
+        "c": "fixed_cost = 100\nflow = 80\nunit_cost = 2\ntotal = fixed_cost + flow * unit_cost\nprint(f'Cost: {total}')",
+        "o": [
+            "Cost: 260",
+            "Cost: 180",
+            "Cost: 100",
+            "Cost: 160"
+        ]
+    },
+    {
+        "q": "Rearrange network design process:",
+        "type": "rearrange",
+        "words": [
+            "Define Nodes",
+            "Potential Arcs",
+            "Set Capacities",
+            "Route Flows",
+            "Minimize Cost"
+        ]
+    },
+    {
+        "q": "Fixed charge models include opening costs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match network elements:",
+        "type": "match",
+        "left": [
+            "Node",
+            "Arc",
+            "Capacity",
+            "Flow"
+        ],
+        "right": [
+            "Location",
+            "Connection",
+            "Maximum amount",
+            "Actual amount"
+        ]
+    },
+    {
+        "q": "The ______ design determines which arcs to build.",
+        "type": "fill_blank",
+        "answers": [
+            "network"
+        ],
+        "other_options": [
+            "route",
+            "flow",
+            "capacity"
+        ]
+    },
+    {
+        "q": "What is revenue management optimization?",
+        "type": "mcq",
+        "o": [
+            "Maximizing revenue through pricing and capacity allocation",
+            "Revenue analysis",
+            "Management optimization",
+            "Pricing solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for expected revenue?",
+        "type": "mcq",
+        "c": "price = 100\nprob_sell = 0.7\nexpected = price * prob_sell\nprint(f'Expected: {expected}')",
+        "o": [
+            "Expected: 70.0",
+            "Expected: 100.0",
+            "Expected: 0.7",
+            "Expected: 170.0"
+        ]
+    },
+    {
+        "q": "Higher prices reduce demand but increase margin.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match revenue concepts:",
+        "type": "match",
+        "left": [
+            "Overbooking",
+            "Nested Booking",
+            "Dynamic Pricing",
+            "Protection"
+        ],
+        "right": [
+            "Sell more than capacity",
+            "Class hierarchy",
+            "Time-varying prices",
+            "Reserve for high fare"
+        ]
+    },
+    {
+        "q": "The ______ limit controls how many seats to sell per class.",
+        "type": "fill_blank",
+        "answers": [
+            "booking"
+        ],
+        "other_options": [
+            "capacity",
+            "revenue",
+            "pricing"
+        ]
+    },
+    {
+        "q": "What is healthcare scheduling optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing appointments, surgeries, and resource allocation in healthcare",
+            "Healthcare analysis",
+            "Medical optimization",
+            "Hospital solving"
+        ]
+    },
+    {
+        "q": "What does this code output for OR utilization?",
+        "type": "mcq",
+        "c": "surgery_time = 6\navailable_time = 8\nutilization = surgery_time / available_time * 100\nprint(f'Utilization: {utilization}%')",
+        "o": [
+            "Utilization: 75.0%",
+            "Utilization: 133.3%",
+            "Utilization: 6.0%",
+            "Utilization: 48.0%"
+        ]
+    },
+    {
+        "q": "Rearrange surgical scheduling:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Duration",
+            "Assign OR",
+            "Sequence Surgeries",
+            "Allocate Staff",
+            "Monitor Progress"
+        ]
+    },
+    {
+        "q": "Overbooking appointments reduces no-show impact.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match healthcare optimization:",
+        "type": "match",
+        "left": [
+            "Appointment",
+            "Surgery",
+            "Bed Assignment",
+            "Staff Rostering"
+        ],
+        "right": [
+            "Patient slots",
+            "OR scheduling",
+            "Capacity allocation",
+            "Nurse shifts"
+        ]
+    },
+    {
+        "q": "The ______ scheduling balances OR utilization and patient waiting.",
+        "type": "fill_blank",
+        "answers": [
+            "surgical"
+        ],
+        "other_options": [
+            "patient",
+            "staff",
+            "bed"
+        ]
+    },
+    {
+        "q": "What is energy optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing power generation, distribution, and consumption",
+            "Energy analysis",
+            "Power optimization",
+            "Grid solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for generation cost?",
+        "type": "mcq",
+        "c": "generators = [{'power': 50, 'cost': 30}, {'power': 80, 'cost': 25}]\ntotal_cost = sum(g['power'] * g['cost'] for g in generators)\nprint(f'Cost: {total_cost}')",
+        "o": [
+            "Cost: 3500",
+            "Cost: 130",
+            "Cost: 55",
+            "Cost: 2000"
+        ]
+    },
+    {
+        "q": "Unit commitment determines which generators to run.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match energy problems:",
+        "type": "match",
+        "left": [
+            "Unit Commitment",
+            "Economic Dispatch",
+            "OPF",
+            "Storage"
+        ],
+        "right": [
+            "On/off decisions",
+            "Output levels",
+            "Power flow",
+            "Charge/discharge"
+        ]
+    },
+    {
+        "q": "The ______ flow model optimizes power system operation.",
+        "type": "fill_blank",
+        "answers": [
+            "optimal power"
+        ],
+        "other_options": [
+            "max",
+            "min cost",
+            "network"
+        ]
+    },
+    {
+        "q": "What is telecommunications optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing network capacity, routing, and coverage",
+            "Telecom analysis",
+            "Network optimization",
+            "Coverage solving"
+        ]
+    },
+    {
+        "q": "What does this code output for bandwidth allocation?",
+        "type": "mcq",
+        "c": "total_bandwidth = 100\nrequests = [30, 40, 50]\nallocated = [min(r, total_bandwidth // len(requests)) for r in requests]\nprint(f'Allocated: {allocated}')",
+        "o": [
+            "Allocated: [30, 33, 33]",
+            "Allocated: [30, 40, 50]",
+            "Allocated: [33, 33, 33]",
+            "Allocated: [100, 100, 100]"
+        ]
+    },
+    {
+        "q": "Rearrange network planning:",
+        "type": "rearrange",
+        "words": [
+            "Demand Forecast",
+            "Site Selection",
+            "Capacity Planning",
+            "Routing Design",
+            "Implementation"
+        ]
+    },
+    {
+        "q": "Cell tower placement affects coverage and interference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match telecom optimization:",
+        "type": "match",
+        "left": [
+            "Coverage",
+            "Capacity",
+            "Routing",
+            "Frequency"
+        ],
+        "right": [
+            "Service area",
+            "Bandwidth",
+            "Path selection",
+            "Spectrum allocation"
+        ]
+    },
+    {
+        "q": "The ______ assignment problem allocates frequencies to avoid interference.",
+        "type": "fill_blank",
+        "answers": [
+            "frequency"
+        ],
+        "other_options": [
+            "channel",
+            "bandwidth",
+            "cell"
+        ]
+    },
+    {
+        "q": "What is sports scheduling optimization?",
+        "type": "mcq",
+        "o": [
+            "Creating fair and efficient game schedules",
+            "Sports analysis",
+            "Schedule optimization",
+            "Game planning"
+        ]
+    },
+    {
+        "q": "What does this code calculate for travel distance?",
+        "type": "mcq",
+        "c": "games = [('A', 'B'), ('B', 'C'), ('C', 'A')]\ndistances = {'A-B': 100, 'B-C': 150, 'C-A': 120}\ntotal = sum(distances.get(f'{g[0]}-{g[1]}', distances.get(f'{g[1]}-{g[0]}', 0)) for g in games)\nprint(f'Travel: {total}')",
+        "o": [
+            "Travel: 370",
+            "Travel: 100",
+            "Travel: 250",
+            "Travel: 3"
+        ]
+    },
+    {
+        "q": "Home-away patterns affect team fairness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sports constraints:",
+        "type": "match",
+        "left": [
+            "Round Robin",
+            "Double Round",
+            "Home-Away",
+            "Break"
+        ],
+        "right": [
+            "Play each once",
+            "Play each twice",
+            "Venue alternation",
+            "Consecutive home/away"
+        ]
+    },
+    {
+        "q": "The ______ trip minimizes total team travel.",
+        "type": "fill_blank",
+        "answers": [
+            "traveling tournament"
+        ],
+        "other_options": [
+            "round robin",
+            "balanced",
+            "compact"
+        ]
+    },
+    {
+        "q": "What is airline crew scheduling?",
+        "type": "mcq",
+        "o": [
+            "Assigning crew members to flights respecting regulations",
+            "Crew analysis",
+            "Flight optimization",
+            "Pilot scheduling"
+        ]
+    },
+    {
+        "q": "What does this code output for duty time check?",
+        "type": "mcq",
+        "c": "flight_times = [3, 2, 4, 2]\nmax_duty = 10\ntotal = sum(flight_times)\nvalid = total <= max_duty\nprint(f'Valid: {valid}')",
+        "o": [
+            "Valid: False",
+            "Valid: True",
+            "Valid: 11",
+            "Valid: 10"
+        ]
+    },
+    {
+        "q": "Rearrange crew scheduling:",
+        "type": "rearrange",
+        "words": [
+            "Generate Pairings",
+            "Build Rosters",
+            "Consider Preferences",
+            "Check Regulations",
+            "Assign Crew"
+        ]
+    },
+    {
+        "q": "Crew pairings are sequences of flights starting and ending at base.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match crew constraints:",
+        "type": "match",
+        "left": [
+            "Duty Time",
+            "Rest",
+            "Qualification",
+            "Base"
+        ],
+        "right": [
+            "Working hours",
+            "Time off",
+            "Aircraft type",
+            "Home location"
+        ]
+    },
+    {
+        "q": "The ______ pairing starts and ends at crew base.",
+        "type": "fill_blank",
+        "answers": [
+            "crew"
+        ],
+        "other_options": [
+            "flight",
+            "duty",
+            "rest"
+        ]
+    },
+    {
+        "q": "What is machine learning model selection?",
+        "type": "mcq",
+        "o": [
+            "Optimizing hyperparameters and architecture for best performance",
+            "ML analysis",
+            "Model optimization",
+            "Selection solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for cross-validation score?",
+        "type": "mcq",
+        "c": "fold_scores = [0.85, 0.88, 0.82, 0.87, 0.83]\navg_score = sum(fold_scores) / len(fold_scores)\nprint(f'CV Score: {avg_score}')",
+        "o": [
+            "CV Score: 0.85",
+            "CV Score: 0.88",
+            "CV Score: 4.25",
+            "CV Score: 0.82"
+        ]
+    },
+    {
+        "q": "AutoML automates model and hyperparameter selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ML optimization:",
+        "type": "match",
+        "left": [
+            "Grid Search",
+            "Random Search",
+            "Bayesian",
+            "Neural Architecture"
+        ],
+        "right": [
+            "Exhaustive",
+            "Random sampling",
+            "Sequential",
+            "Network design"
+        ]
+    },
+    {
+        "q": "The ______ search explores hyperparameters sequentially using past results.",
+        "type": "fill_blank",
+        "answers": [
+            "Bayesian"
+        ],
+        "other_options": [
+            "grid",
+            "random",
+            "exhaustive"
+        ]
+    },
+    {
+        "q": "What is experiment design optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing experimental factors for information gain",
+            "Experiment analysis",
+            "Design optimization",
+            "Factor solving"
+        ]
+    },
+    {
+        "q": "What does this code output for factorial design size?",
+        "type": "mcq",
+        "c": "factors = 3\nlevels = 2\nruns = levels ** factors\nprint(f'Runs: {runs}')",
+        "o": [
+            "Runs: 8",
+            "Runs: 6",
+            "Runs: 9",
+            "Runs: 5"
+        ]
+    },
+    {
+        "q": "Rearrange experimental design:",
+        "type": "rearrange",
+        "words": [
+            "Identify Factors",
+            "Choose Levels",
+            "Select Design",
+            "Run Experiments",
+            "Analyze Results"
+        ]
+    },
+    {
+        "q": "Orthogonal arrays minimize runs while estimating effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match design types:",
+        "type": "match",
+        "left": [
+            "Full Factorial",
+            "Fractional",
+            "Latin Hypercube",
+            "Central Composite"
+        ],
+        "right": [
+            "All combinations",
+            "Subset of combinations",
+            "Space filling",
+            "Response surface"
+        ]
+    },
+    {
+        "q": "The ______ design estimates main effects with fewer runs.",
+        "type": "fill_blank",
+        "answers": [
+            "fractional factorial"
+        ],
+        "other_options": [
+            "full factorial",
+            "random",
+            "Latin square"
+        ]
+    },
+    {
+        "q": "What is simulation optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing inputs to simulation model",
+            "Simulation analysis",
+            "Input optimization",
+            "Model solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for sample mean estimation?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nreplications = [random.gauss(100, 10) for _ in range(30)]\nmean = sum(replications) / len(replications)\nprint(f'Mean: {round(mean, 1)}')",
+        "o": [
+            "Mean: 99.5",
+            "Mean: 100.0",
+            "Mean: 10.0",
+            "Mean: 30.0"
+        ]
+    },
+    {
+        "q": "Ranking and selection finds best among finite alternatives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match simulation optimization:",
+        "type": "match",
+        "left": [
+            "Ranking Selection",
+            "Response Surface",
+            "Stochastic Approximation",
+            "Metamodeling"
+        ],
+        "right": [
+            "Discrete alternatives",
+            "Continuous surface",
+            "Gradient estimation",
+            "Surrogate model"
+        ]
+    },
+    {
+        "q": "The ______ replications needed depends on variance.",
+        "type": "fill_blank",
+        "answers": [
+            "number of"
+        ],
+        "other_options": [
+            "length of",
+            "type of",
+            "cost of"
+        ]
+    },
+    {
+        "q": "What is derivative-free optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimization without computing gradients",
+            "Derivative analysis",
+            "Free optimization",
+            "Gradient-less solving"
+        ]
+    },
+    {
+        "q": "What does this code output for simplex vertices?",
+        "type": "mcq",
+        "c": "n = 2  # dimensions\nvertices = n + 1\nprint(f'Vertices: {vertices}')",
+        "o": [
+            "Vertices: 3",
+            "Vertices: 2",
+            "Vertices: 4",
+            "Vertices: 1"
+        ]
+    },
+    {
+        "q": "Rearrange Nelder-Mead steps:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Simplex",
+            "Order Vertices",
+            "Reflect",
+            "Expand or Contract",
+            "Shrink if Needed"
+        ]
+    },
+    {
+        "q": "Pattern search moves along coordinate directions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DFO methods:",
+        "type": "match",
+        "left": [
+            "Nelder-Mead",
+            "Pattern Search",
+            "COBYLA",
+            "Trust Region"
+        ],
+        "right": [
+            "Simplex method",
+            "Coordinate moves",
+            "Linear approximation",
+            "Local model"
+        ]
+    },
+    {
+        "q": "The ______ simplex method uses N+1 points for N dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "Nelder-Mead"
+        ],
+        "other_options": [
+            "linear",
+            "gradient",
+            "quasi-Newton"
+        ]
+    },
+    {
+        "q": "What is compliance optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing within regulatory and policy constraints",
+            "Compliance analysis",
+            "Regulation optimization",
+            "Policy solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for constraint violation?",
+        "type": "mcq",
+        "c": "values = [95, 102, 98, 105, 93]\nlimit = 100\nviolations = [max(0, v - limit) for v in values]\nprint(f'Violations: {sum(violations)}')",
+        "o": [
+            "Violations: 7",
+            "Violations: 5",
+            "Violations: 0",
+            "Violations: 2"
+        ]
+    },
+    {
+        "q": "Soft constraints can be violated with penalty.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match constraint types:",
+        "type": "match",
+        "left": [
+            "Hard",
+            "Soft",
+            "Logical",
+            "Temporal"
+        ],
+        "right": [
+            "Must satisfy",
+            "Can violate",
+            "Conditional",
+            "Time-based"
+        ]
+    },
+    {
+        "q": "The ______ constraint must always be satisfied.",
+        "type": "fill_blank",
+        "answers": [
+            "hard"
+        ],
+        "other_options": [
+            "soft",
+            "flexible",
+            "relaxable"
+        ]
+    },
+    {
+        "q": "What is decomposition for large-scale optimization?",
+        "type": "mcq",
+        "o": [
+            "Breaking large problems into smaller coordinated subproblems",
+            "Decomposition analysis",
+            "Large-scale solving",
+            "Problem breaking"
+        ]
+    },
+    {
+        "q": "What does this code output for subproblem count?",
+        "type": "mcq",
+        "c": "total_variables = 1000\nsubproblem_size = 100\nsubproblems = total_variables // subproblem_size\nprint(f'Subproblems: {subproblems}')",
+        "o": [
+            "Subproblems: 10",
+            "Subproblems: 100",
+            "Subproblems: 1000",
+            "Subproblems: 900"
+        ]
+    },
+    {
+        "q": "Rearrange decomposition approach:",
+        "type": "rearrange",
+        "words": [
+            "Identify Structure",
+            "Split Problem",
+            "Solve Subproblems",
+            "Coordinate Solutions",
+            "Iterate to Convergence"
+        ]
+    },
+    {
+        "q": "Dantzig-Wolfe decomposes block-angular structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match decomposition methods:",
+        "type": "match",
+        "left": [
+            "Dantzig-Wolfe",
+            "Benders",
+            "Lagrangian",
+            "Block Coordinate"
+        ],
+        "right": [
+            "Column generation",
+            "Row generation",
+            "Dual relaxation",
+            "Variable blocks"
+        ]
+    },
+    {
+        "q": "The ______ decomposition adds cuts iteratively.",
+        "type": "fill_blank",
+        "answers": [
+            "Benders"
+        ],
+        "other_options": [
+            "Dantzig-Wolfe",
+            "Lagrangian",
+            "block"
+        ]
+    },
+    {
+        "q": "What is approximation algorithm?",
+        "type": "mcq",
+        "o": [
+            "Algorithm with provable quality guarantee relative to optimal",
+            "Approximate solving",
+            "Algorithm approximation",
+            "Near-optimal method"
+        ]
+    },
+    {
+        "q": "What does this code calculate for approximation ratio?",
+        "type": "mcq",
+        "c": "algorithm_result = 120\noptimal = 100\nratio = algorithm_result / optimal\nprint(f'Ratio: {ratio}')",
+        "o": [
+            "Ratio: 1.2",
+            "Ratio: 0.83",
+            "Ratio: 20",
+            "Ratio: 220"
+        ]
+    },
+    {
+        "q": "A 2-approximation gives at most twice optimal cost.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match approximation concepts:",
+        "type": "match",
+        "left": [
+            "Ratio",
+            "PTAS",
+            "FPTAS",
+            "APX"
+        ],
+        "right": [
+            "Quality bound",
+            "Polynomial scheme",
+            "Fully polynomial",
+            "Approximation class"
+        ]
+    },
+    {
+        "q": "The ______ scheme achieves (1+epsilon) approximation.",
+        "type": "fill_blank",
+        "answers": [
+            "PTAS"
+        ],
+        "other_options": [
+            "APX",
+            "ratio",
+            "heuristic"
+        ]
+    },
+    {
+        "q": "What is fixed-parameter tractability?",
+        "type": "mcq",
+        "o": [
+            "Efficient algorithms for problems fixed on certain parameters",
+            "Parameter fixing",
+            "Tractable parameters",
+            "Fixed optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for parameterized complexity?",
+        "type": "mcq",
+        "c": "n = 1000\nk = 10\nfpt_time = n * (2 ** k)\npoly_time = n ** k\nprint(f'FPT faster: {fpt_time < poly_time}')",
+        "o": [
+            "FPT faster: True",
+            "FPT faster: False",
+            "FPT faster: Error",
+            "FPT faster: Equal"
+        ]
+    },
+    {
+        "q": "Rearrange FPT analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify Parameter",
+            "Analyze Complexity",
+            "Design Algorithm",
+            "Prove Bound",
+            "Implement"
+        ]
+    },
+    {
+        "q": "W[1]-hard problems are unlikely FPT.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match FPT concepts:",
+        "type": "match",
+        "left": [
+            "FPT",
+            "XP",
+            "W[1]",
+            "Kernel"
+        ],
+        "right": [
+            "f(k)*poly(n)",
+            "n^f(k)",
+            "Hardness class",
+            "Reduced instance"
+        ]
+    },
+    {
+        "q": "The ______ technique reduces instance size based on parameter.",
+        "type": "fill_blank",
+        "answers": [
+            "kernelization"
+        ],
+        "other_options": [
+            "parameterization",
+            "reduction",
+            "enumeration"
+        ]
+    },
+    {
+        "q": "What is constraint satisfaction problem?",
+        "type": "mcq",
+        "o": [
+            "Finding assignment satisfying all constraints",
+            "Satisfaction analysis",
+            "Constraint solving",
+            "Problem satisfaction"
+        ]
+    },
+    {
+        "q": "What does this code calculate for SAT check?",
+        "type": "mcq",
+        "c": "x, y, z = True, False, True\nclause1 = x or y\nclause2 = not x or z\nclause3 = y or z\nsat = clause1 and clause2 and clause3\nprint(f'Satisfied: {sat}')",
+        "o": [
+            "Satisfied: True",
+            "Satisfied: False",
+            "Satisfied: Error",
+            "Satisfied: 3"
+        ]
+    },
+    {
+        "q": "Arc consistency reduces domain sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match CSP techniques:",
+        "type": "match",
+        "left": [
+            "Backtracking",
+            "Arc Consistency",
+            "Propagation",
+            "Variable Ordering"
+        ],
+        "right": [
+            "Systematic search",
+            "Pairwise filtering",
+            "Spread constraints",
+            "Selection heuristic"
+        ]
+    },
+    {
+        "q": "The ______ heuristic selects variable with smallest domain.",
+        "type": "fill_blank",
+        "answers": [
+            "minimum remaining values"
+        ],
+        "other_options": [
+            "maximum degree",
+            "first fail",
+            "random"
+        ]
+    },
+    {
+        "q": "What is SAT solving?",
+        "type": "mcq",
+        "o": [
+            "Determining satisfiability of Boolean formulas",
+            "SAT analysis",
+            "Boolean solving",
+            "Formula checking"
+        ]
+    },
+    {
+        "q": "What does this code output for DPLL branching?",
+        "type": "mcq",
+        "c": "clauses = 100\nassigned = 60\nremaining = clauses - assigned\nprint(f'Remaining: {remaining}')",
+        "o": [
+            "Remaining: 40",
+            "Remaining: 100",
+            "Remaining: 60",
+            "Remaining: 160"
+        ]
+    },
+    {
+        "q": "Rearrange CDCL SAT solving:",
+        "type": "rearrange",
+        "words": [
+            "Unit Propagation",
+            "Decide Variable",
+            "Detect Conflict",
+            "Analyze Conflict",
+            "Learn Clause"
+        ]
+    },
+    {
+        "q": "Conflict-driven learning prunes search space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SAT concepts:",
+        "type": "match",
+        "left": [
+            "Unit Clause",
+            "Pure Literal",
+            "Conflict",
+            "Learned Clause"
+        ],
+        "right": [
+            "One literal",
+            "One polarity",
+            "Contradiction",
+            "From analysis"
+        ]
+    },
+    {
+        "q": "The ______ clause records reason for conflict.",
+        "type": "fill_blank",
+        "answers": [
+            "learned"
+        ],
+        "other_options": [
+            "original",
+            "unit",
+            "pure"
+        ]
+    },
+    {
+        "q": "What is SMT solving?",
+        "type": "mcq",
+        "o": [
+            "SAT modulo theories for richer constraint languages",
+            "SMT analysis",
+            "Theory solving",
+            "Modulo optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for theory check?",
+        "type": "mcq",
+        "c": "x = 5\ny = 3\nconstraint = (x > y) and (x + y == 8)\nprint(f'Satisfiable: {constraint}')",
+        "o": [
+            "Satisfiable: True",
+            "Satisfiable: False",
+            "Satisfiable: 8",
+            "Satisfiable: Error"
+        ]
+    },
+    {
+        "q": "DPLL(T) combines SAT with theory solvers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SMT theories:",
+        "type": "match",
+        "left": [
+            "Linear Arithmetic",
+            "Arrays",
+            "Bit Vectors",
+            "Uninterpreted Functions"
+        ],
+        "right": [
+            "LRA/LIA",
+            "Select/store",
+            "Bit operations",
+            "Equality only"
+        ]
+    },
+    {
+        "q": "The ______ solver handles domain-specific reasoning.",
+        "type": "fill_blank",
+        "answers": [
+            "theory"
+        ],
+        "other_options": [
+            "SAT",
+            "Boolean",
+            "constraint"
+        ]
+    },
+    {
+        "q": "What is answer set programming?",
+        "type": "mcq",
+        "o": [
+            "Declarative logic programming for combinatorial problems",
+            "Answer analysis",
+            "Set programming",
+            "Logic optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for stable model?",
+        "type": "mcq",
+        "c": "facts = {'a', 'b'}\nrules = {'c': {'a', 'b'}}\nmodel = facts.copy()\nfor head, body in rules.items():\n    if body <= model:\n        model.add(head)\nprint(f'Model: {len(model)}')",
+        "o": [
+            "Model: 3",
+            "Model: 2",
+            "Model: 1",
+            "Model: 4"
+        ]
+    },
+    {
+        "q": "Rearrange ASP solving:",
+        "type": "rearrange",
+        "words": [
+            "Ground Program",
+            "Generate Model",
+            "Check Constraints",
+            "Propagate",
+            "Output"
+        ]
+    },
+    {
+        "q": "Answer sets represent possible solutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ASP concepts:",
+        "type": "match",
+        "left": [
+            "Fact",
+            "Rule",
+            "Constraint",
+            "Stable Model"
+        ],
+        "right": [
+            "Given truth",
+            "Derivation",
+            "Restriction",
+            "Valid assignment"
+        ]
+    },
+    {
+        "q": "The ______ model represents closed-world assumption.",
+        "type": "fill_blank",
+        "answers": [
+            "stable"
+        ],
+        "other_options": [
+            "open",
+            "classical",
+            "partial"
+        ]
+    },
+    {
+        "q": "What is optimization under uncertainty?",
+        "type": "mcq",
+        "o": [
+            "Making optimal decisions with incomplete information",
+            "Uncertain optimization",
+            "Unknown solving",
+            "Incomplete analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for info value?",
+        "type": "mcq",
+        "c": "expected_with_info = 120\nexpected_without = 100\nvoi = expected_with_info - expected_without\nprint(f'Value: {voi}')",
+        "o": [
+            "Value: 20",
+            "Value: 220",
+            "Value: 0.2",
+            "Value: 100"
+        ]
+    },
+    {
+        "q": "Perfect information bounds expected value of information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match uncertainty concepts:",
+        "type": "match",
+        "left": [
+            "EVPI",
+            "EVWI",
+            "Regret",
+            "Recourse"
+        ],
+        "right": [
+            "Perfect info value",
+            "Sample info value",
+            "Opportunity cost",
+            "Corrective action"
+        ]
+    },
+    {
+        "q": "The ______ decision framework handles sequential uncertainty.",
+        "type": "fill_blank",
+        "answers": [
+            "multistage"
+        ],
+        "other_options": [
+            "single-stage",
+            "static",
+            "deterministic"
+        ]
+    },
+    {
+        "q": "What is chance-constrained optimization?",
+        "type": "mcq",
+        "o": [
+            "Requiring constraint satisfaction with probability threshold",
+            "Chance optimization",
+            "Probability constraints",
+            "Random optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for chance constraint?",
+        "type": "mcq",
+        "c": "violations = 5\ntotal = 100\nprob_satisfy = 1 - violations / total\nthreshold = 0.95\nfeasible = prob_satisfy >= threshold\nprint(f'Feasible: {feasible}')",
+        "o": [
+            "Feasible: True",
+            "Feasible: False",
+            "Feasible: 0.95",
+            "Feasible: 5"
+        ]
+    },
+    {
+        "q": "Rearrange chance constraint handling:",
+        "type": "rearrange",
+        "words": [
+            "Define Constraint",
+            "Set Probability",
+            "Reformulate",
+            "Approximate",
+            "Solve"
+        ]
+    },
+    {
+        "q": "Joint chance constraints are harder than individual.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match chance concepts:",
+        "type": "match",
+        "left": [
+            "Individual",
+            "Joint",
+            "Quantile",
+            "Big-M"
+        ],
+        "right": [
+            "Per constraint",
+            "All together",
+            "Distribution cutoff",
+            "Reformulation"
+        ]
+    },
+    {
+        "q": "The ______ reformulation converts chance to deterministic.",
+        "type": "fill_blank",
+        "answers": [
+            "safe approximation"
+        ],
+        "other_options": [
+            "exact",
+            "sample",
+            "Monte Carlo"
+        ]
+    },
+    {
+        "q": "What is penalty method in optimization?",
+        "type": "mcq",
+        "o": [
+            "Adding penalty terms for constraint violations",
+            "Penalty analysis",
+            "Method optimization",
+            "Violation handling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for penalty?",
+        "type": "mcq",
+        "c": "constraint_lhs = 12\nconstraint_rhs = 10\nviolation = max(0, constraint_lhs - constraint_rhs)\npenalty_weight = 100\npenalty = penalty_weight * violation\nprint(f'Penalty: {penalty}')",
+        "o": [
+            "Penalty: 200",
+            "Penalty: 0",
+            "Penalty: 100",
+            "Penalty: 12"
+        ]
+    },
+    {
+        "q": "Higher penalty weights improve constraint satisfaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match penalty methods:",
+        "type": "match",
+        "left": [
+            "Quadratic",
+            "Exact",
+            "Augmented Lagrangian",
+            "Barrier"
+        ],
+        "right": [
+            "Squared violation",
+            "Finite penalty",
+            "Dual + penalty",
+            "Interior"
+        ]
+    },
+    {
+        "q": "The ______ method penalizes constraint violations quadratically.",
+        "type": "fill_blank",
+        "answers": [
+            "quadratic penalty"
+        ],
+        "other_options": [
+            "linear",
+            "exact",
+            "barrier"
+        ]
+    },
+    {
+        "q": "What is alternating optimization?",
+        "type": "mcq",
+        "o": [
+            "Optimizing alternately over variable subsets",
+            "Alternating analysis",
+            "Subset optimization",
+            "Variable switching"
+        ]
+    },
+    {
+        "q": "What does this code output for block update?",
+        "type": "mcq",
+        "c": "x, y = 5, 10\n# Update x holding y fixed\nx = y / 2\n# Update y holding x fixed\ny = x * 3\nprint(f'y: {y}')",
+        "o": [
+            "y: 15.0",
+            "y: 10",
+            "y: 5.0",
+            "y: 30"
+        ]
+    },
+    {
+        "q": "Rearrange alternating optimization:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Variables",
+            "Optimize Block 1",
+            "Optimize Block 2",
+            "Check Convergence",
+            "Iterate"
+        ]
+    },
+    {
+        "q": "Alternating minimization can converge to local optima.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match alternating methods:",
+        "type": "match",
+        "left": [
+            "Block Coordinate",
+            "EM Algorithm",
+            "Proximal",
+            "ADMM"
+        ],
+        "right": [
+            "Variable blocks",
+            "Latent variables",
+            "Added penalty",
+            "Dual decomposition"
+        ]
+    },
+    {
+        "q": "The ______ descent updates one variable group at a time.",
+        "type": "fill_blank",
+        "answers": [
+            "block coordinate"
+        ],
+        "other_options": [
+            "gradient",
+            "steepest",
+            "Newton"
+        ]
+    },
+    {
+        "q": "What is proximal optimization?",
+        "type": "mcq",
+        "o": [
+            "Using proximal operators for nonsmooth optimization",
+            "Proximal analysis",
+            "Proximity optimization",
+            "Close solving"
+        ]
+    },
+    {
+        "q": "What does this code calculate for prox operator?",
+        "type": "mcq",
+        "c": "import numpy as np\nx = np.array([3, -2, 1.5, -0.5])\nlambda_val = 1\nprox = np.sign(x) * np.maximum(np.abs(x) - lambda_val, 0)\nprint(f'Prox: {list(prox)}')",
+        "o": [
+            "Prox: [2.0, -1.0, 0.5, 0.0]",
+            "Prox: [3, -2, 1.5, -0.5]",
+            "Prox: [0, 0, 0, 0]",
+            "Prox: [4, -3, 2.5, -1.5]"
+        ]
+    },
+    {
+        "q": "Proximal gradient handles composite objectives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match proximal concepts:",
+        "type": "match",
+        "left": [
+            "Prox Operator",
+            "Soft Threshold",
+            "FISTA",
+            "Douglas-Rachford"
+        ],
+        "right": [
+            "Regularized argmin",
+            "L1 prox",
+            "Accelerated",
+            "Splitting"
+        ]
+    },
+    {
+        "q": "The ______ thresholding operator is prox for L1 norm.",
+        "type": "fill_blank",
+        "answers": [
+            "soft"
+        ],
+        "other_options": [
+            "hard",
+            "firm",
+            "linear"
+        ]
+    },
+    {
+        "q": "What is first-order optimization method?",
+        "type": "mcq",
+        "o": [
+            "Optimization using only function values and gradients",
+            "First-order analysis",
+            "Gradient method",
+            "Primary optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for momentum update?",
+        "type": "mcq",
+        "c": "v = 0.8  # previous velocity\ngradient = 0.5\nbeta = 0.9\nnew_v = beta * v + gradient\nprint(f'Velocity: {new_v}')",
+        "o": [
+            "Velocity: 1.22",
+            "Velocity: 0.5",
+            "Velocity: 0.8",
+            "Velocity: 1.3"
+        ]
+    },
+    {
+        "q": "Rearrange SGD with momentum:",
+        "type": "rearrange",
+        "words": [
+            "Compute Gradient",
+            "Update Velocity",
+            "Apply Momentum",
+            "Update Parameters",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "Adam combines momentum and adaptive learning rates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match first-order methods:",
+        "type": "match",
+        "left": [
+            "SGD",
+            "Momentum",
+            "AdaGrad",
+            "Adam"
+        ],
+        "right": [
+            "Basic gradient",
+            "Velocity",
+            "Adaptive rate",
+            "Combined"
+        ]
+    },
+    {
+        "q": "The ______ rate adapts based on gradient history.",
+        "type": "fill_blank",
+        "answers": [
+            "adaptive learning"
+        ],
+        "other_options": [
+            "fixed",
+            "scheduled",
+            "constant"
+        ]
+    },
+    {
+        "q": "What is subgradient method?",
+        "type": "mcq",
+        "o": [
+            "Optimization for non-differentiable convex functions",
+            "Subgradient analysis",
+            "Nonsmooth optimization",
+            "Gradient variant"
+        ]
+    },
+    {
+        "q": "What does this code calculate for subgradient?",
+        "type": "mcq",
+        "c": "x = 0  # at non-differentiable point\n# |x| has subgradients in [-1, 1] at x=0\nsubgrad = 0  # any value in [-1, 1]\nprint(f'Subgradient: {subgrad}')",
+        "o": [
+            "Subgradient: 0",
+            "Subgradient: 1",
+            "Subgradient: -1",
+            "Subgradient: Error"
+        ]
+    },
+    {
+        "q": "Subgradient methods use diminishing step sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match subgradient concepts:",
+        "type": "match",
+        "left": [
+            "Subgradient",
+            "Subdifferential",
+            "Step Size",
+            "Convergence"
+        ],
+        "right": [
+            "Generalized gradient",
+            "Set of subgradients",
+            "Diminishing",
+            "Slower than gradient"
+        ]
+    },
+    {
+        "q": "The ______ contains all subgradients at a point.",
+        "type": "fill_blank",
+        "answers": [
+            "subdifferential"
+        ],
+        "other_options": [
+            "gradient",
+            "Hessian",
+            "Jacobian"
+        ]
+    },
+    {
+        "q": "What is bundle method?",
+        "type": "mcq",
+        "o": [
+            "Nonsmooth optimization using cutting plane model",
+            "Bundle analysis",
+            "Method bundling",
+            "Plane optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for bundle update?",
+        "type": "mcq",
+        "c": "cuts = 5\nnew_cut = True\nbundle_size = cuts + (1 if new_cut else 0)\nprint(f'Bundle: {bundle_size}')",
+        "o": [
+            "Bundle: 6",
+            "Bundle: 5",
+            "Bundle: 4",
+            "Bundle: 1"
+        ]
+    },
+    {
+        "q": "Rearrange bundle method:",
+        "type": "rearrange",
+        "words": [
+            "Evaluate Function",
+            "Compute Subgradient",
+            "Add to Bundle",
+            "Solve Model",
+            "Update"
+        ]
+    },
+    {
+        "q": "Bundle methods build piecewise linear model.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bundle concepts:",
+        "type": "match",
+        "left": [
+            "Cutting Plane",
+            "Stability Center",
+            "Serious Step",
+            "Null Step"
+        ],
+        "right": [
+            "Linear approximation",
+            "Best point",
+            "Improvement",
+            "Model update only"
+        ]
+    },
+    {
+        "q": "The ______ center represents best solution found.",
+        "type": "fill_blank",
+        "answers": [
+            "stability"
+        ],
+        "other_options": [
+            "bundle",
+            "cutting",
+            "model"
+        ]
+    },
+    {
+        "q": "What is duality gap?",
+        "type": "mcq",
+        "o": [
+            "Difference between primal and dual objective values",
+            "Gap analysis",
+            "Duality measure",
+            "Value difference"
+        ]
+    },
+    {
+        "q": "What does this code calculate for gap?",
+        "type": "mcq",
+        "c": "primal = 105\ndual = 100\ngap = primal - dual\nprint(f'Gap: {gap}')",
+        "o": [
+            "Gap: 5",
+            "Gap: 205",
+            "Gap: 0.05",
+            "Gap: 1.05"
+        ]
+    },
+    {
+        "q": "Zero duality gap means strong duality holds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match duality concepts:",
+        "type": "match",
+        "left": [
+            "Weak Duality",
+            "Strong Duality",
+            "Slater",
+            "Complementary"
+        ],
+        "right": [
+            "Always holds",
+            "Zero gap",
+            "Constraint qualification",
+            "Product = 0"
+        ]
+    },
+    {
+        "q": "The ______ condition ensures strong duality for convex problems.",
+        "type": "fill_blank",
+        "answers": [
+            "Slater"
+        ],
+        "other_options": [
+            "KKT",
+            "LICQ",
+            "MFCQ"
+        ]
+    },
+    {
+        "q": "What is coordinate descent?",
+        "type": "mcq",
+        "o": [
+            "Optimizing one coordinate at a time",
+            "Coordinate analysis",
+            "Descent coordination",
+            "Variable optimization"
+        ]
+    },
+    {
+        "q": "What does this code output for coordinate update?",
+        "type": "mcq",
+        "c": "x = [1, 2, 3]\ncoord = 1\npartial_gradient = 0.5\nstep = 0.1\nx[coord] = x[coord] - step * partial_gradient\nprint(f'x[1]: {x[1]}')",
+        "o": [
+            "x[1]: 1.95",
+            "x[1]: 2.0",
+            "x[1]: 2.05",
+            "x[1]: 1.5"
+        ]
+    },
+    {
+        "q": "Rearrange coordinate descent:",
+        "type": "rearrange",
+        "words": [
+            "Select Coordinate",
+            "Compute Partial",
+            "Minimize",
+            "Update",
+            "Next Coordinate"
+        ]
+    },
+    {
+        "q": "Cyclic coordinate descent visits coordinates in order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match coordinate methods:",
+        "type": "match",
+        "left": [
+            "Cyclic",
+            "Random",
+            "Greedy",
+            "Gauss-Seidel"
+        ],
+        "right": [
+            "In order",
+            "Random selection",
+            "Largest gradient",
+            "Linear systems"
+        ]
+    },
+    {
+        "q": "The ______ selection picks coordinate with largest gradient.",
+        "type": "fill_blank",
+        "answers": [
+            "greedy"
+        ],
+        "other_options": [
+            "cyclic",
+            "random",
+            "uniform"
+        ]
+    },
+    {
+        "q": "What is primal-dual method?",
+        "type": "mcq",
+        "o": [
+            "Simultaneously solving primal and dual problems",
+            "Primal analysis",
+            "Dual optimization",
+            "Combined solving"
+        ]
+    },
+    {
+        "q": "What does this code output for primal-dual update?",
+        "type": "mcq",
+        "c": "primal = 100\ndual = 95\nstep = 0.1\nnew_primal = primal - step * (primal - dual)\nprint(f'Primal: {new_primal}')",
+        "o": [
+            "Primal: 99.5",
+            "Primal: 100.0",
+            "Primal: 95.0",
+            "Primal: 100.5"
+        ]
+    },
+    {
+        "q": "Primal-dual interior point methods are widely used for LP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match primal-dual concepts:",
+        "type": "match",
+        "left": [
+            "Central Path",
+            "Barrier",
+            "Newton Step",
+            "Centering"
+        ],
+        "right": [
+            "Optimal trajectory",
+            "Boundary penalty",
+            "Direction",
+            "Stay interior"
+        ]
+    },
+    {
+        "q": "The ______ parameter controls how fast barrier decreases.",
+        "type": "fill_blank",
+        "answers": [
+            "barrier"
+        ],
+        "other_options": [
+            "step",
+            "primal",
+            "dual"
+        ]
+    }
+]

@@ -1,0 +1,6774 @@
+[
+    {
+        "q": "What is causal inference?",
+        "type": "mcq",
+        "o": [
+            "Determining cause-and-effect relationships from data",
+            "Correlation analysis",
+            "Inference analysis",
+            "Causal correlation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for treatment effect?",
+        "type": "mcq",
+        "c": "treated_mean = 85\ncontrol_mean = 75\nate = treated_mean - control_mean\nprint(f'ATE: {ate}')",
+        "o": [
+            "ATE: 10",
+            "ATE: 160",
+            "ATE: 0.88",
+            "ATE: 75"
+        ]
+    },
+    {
+        "q": "Correlation implies causation.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match causal concepts:",
+        "type": "match",
+        "left": [
+            "ATE",
+            "ATT",
+            "CATE",
+            "ITE"
+        ],
+        "right": [
+            "Average treatment effect",
+            "Effect on treated",
+            "Conditional effect",
+            "Individual effect"
+        ]
+    },
+    {
+        "q": "The ______ treatment effect averages over all units.",
+        "type": "fill_blank",
+        "answers": [
+            "average"
+        ],
+        "other_options": [
+            "individual",
+            "conditional",
+            "local"
+        ]
+    },
+    {
+        "q": "What is the fundamental problem of causal inference?",
+        "type": "mcq",
+        "o": [
+            "Cannot observe both potential outcomes for same unit",
+            "Cannot measure effects",
+            "Cannot randomize",
+            "Cannot observe"
+        ]
+    },
+    {
+        "q": "What does this code output for potential outcomes?",
+        "type": "mcq",
+        "c": "y1 = 100  # treated outcome\ny0 = 80   # control outcome\nite = y1 - y0\nprint(f'ITE: {ite}')",
+        "o": [
+            "ITE: 20",
+            "ITE: 180",
+            "ITE: -20",
+            "ITE: 1.25"
+        ]
+    },
+    {
+        "q": "Rearrange potential outcomes framework:",
+        "type": "rearrange",
+        "words": [
+            "Define Outcomes",
+            "Assign Treatment",
+            "Observe One Outcome",
+            "Estimate Counterfactual",
+            "Calculate Effect"
+        ]
+    },
+    {
+        "q": "Only one potential outcome is observed per unit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match potential outcomes notation:",
+        "type": "match",
+        "left": [
+            "Y(1)",
+            "Y(0)",
+            "D",
+            "Y"
+        ],
+        "right": [
+            "Treated outcome",
+            "Control outcome",
+            "Treatment assignment",
+            "Observed outcome"
+        ]
+    },
+    {
+        "q": "The ______ framework was developed by Rubin.",
+        "type": "fill_blank",
+        "answers": [
+            "potential outcomes"
+        ],
+        "other_options": [
+            "causal graph",
+            "structural",
+            "Bayesian"
+        ]
+    },
+    {
+        "q": "What is randomization in experiments?",
+        "type": "mcq",
+        "o": [
+            "Random assignment of treatment to eliminate confounding",
+            "Random selection",
+            "Random analysis",
+            "Random sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for proportion?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nn = 100\ntreated = sum(random.random() < 0.5 for _ in range(n))\nprint(f'Treated: {treated}')",
+        "o": [
+            "Treated: 52",
+            "Treated: 50",
+            "Treated: 100",
+            "Treated: 0"
+        ]
+    },
+    {
+        "q": "Randomization balances observed and unobserved confounders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match randomization types:",
+        "type": "match",
+        "left": [
+            "Simple",
+            "Stratified",
+            "Block",
+            "Cluster"
+        ],
+        "right": [
+            "Coin flip",
+            "Within strata",
+            "Fixed blocks",
+            "Group assignment"
+        ]
+    },
+    {
+        "q": "The ______ controlled trial is the gold standard for causal inference.",
+        "type": "fill_blank",
+        "answers": [
+            "randomized"
+        ],
+        "other_options": [
+            "observational",
+            "quasi",
+            "natural"
+        ]
+    },
+    {
+        "q": "What is selection bias?",
+        "type": "mcq",
+        "o": [
+            "Systematic difference between treated and control groups",
+            "Selection error",
+            "Bias analysis",
+            "Treatment bias"
+        ]
+    },
+    {
+        "q": "What does this code output for naive estimate bias?",
+        "type": "mcq",
+        "c": "treated_mean = 90\ncontrol_mean = 70\ntrue_effect = 10\nnaive_effect = treated_mean - control_mean\nbias = naive_effect - true_effect\nprint(f'Bias: {bias}')",
+        "o": [
+            "Bias: 10",
+            "Bias: 20",
+            "Bias: 0",
+            "Bias: -10"
+        ]
+    },
+    {
+        "q": "Rearrange addressing selection bias:",
+        "type": "rearrange",
+        "words": [
+            "Identify Confounders",
+            "Measure Variables",
+            "Choose Method",
+            "Apply Adjustment",
+            "Estimate Effect"
+        ]
+    },
+    {
+        "q": "Selection bias can lead to spurious causal estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bias types:",
+        "type": "match",
+        "left": [
+            "Selection",
+            "Confounding",
+            "Measurement",
+            "Attrition"
+        ],
+        "right": [
+            "Treatment assignment",
+            "Common cause",
+            "Error in variables",
+            "Dropout"
+        ]
+    },
+    {
+        "q": "The ______ bias occurs when treatment and control differ systematically.",
+        "type": "fill_blank",
+        "answers": [
+            "selection"
+        ],
+        "other_options": [
+            "measurement",
+            "attrition",
+            "response"
+        ]
+    },
+    {
+        "q": "What is a confounder?",
+        "type": "mcq",
+        "o": [
+            "Variable affecting both treatment and outcome",
+            "Confusing variable",
+            "Treatment effect",
+            "Outcome predictor"
+        ]
+    },
+    {
+        "q": "What does this code calculate for confounded estimate?",
+        "type": "mcq",
+        "c": "true_effect = 5\nconfounding_bias = 8\nobserved_effect = true_effect + confounding_bias\nprint(f'Observed: {observed_effect}')",
+        "o": [
+            "Observed: 13",
+            "Observed: 5",
+            "Observed: 8",
+            "Observed: 3"
+        ]
+    },
+    {
+        "q": "Confounders create spurious associations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match confounder characteristics:",
+        "type": "match",
+        "left": [
+            "Affects Treatment",
+            "Affects Outcome",
+            "Not Mediator",
+            "Pre-treatment"
+        ],
+        "right": [
+            "Required property",
+            "Required property",
+            "Required property",
+            "Temporal order"
+        ]
+    },
+    {
+        "q": "A ______ affects both treatment assignment and outcome.",
+        "type": "fill_blank",
+        "answers": [
+            "confounder"
+        ],
+        "other_options": [
+            "mediator",
+            "moderator",
+            "collider"
+        ]
+    },
+    {
+        "q": "What is propensity score?",
+        "type": "mcq",
+        "o": [
+            "Probability of receiving treatment given covariates",
+            "Treatment score",
+            "Propensity analysis",
+            "Score method"
+        ]
+    },
+    {
+        "q": "What does this code output for propensity score?",
+        "type": "mcq",
+        "c": "import math\nlogit = 0.5\npropensity = 1 / (1 + math.exp(-logit))\nprint(f'PS: {round(propensity, 2)}')",
+        "o": [
+            "PS: 0.62",
+            "PS: 0.5",
+            "PS: 0.38",
+            "PS: 1.0"
+        ]
+    },
+    {
+        "q": "Rearrange propensity score analysis:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Propensity",
+            "Check Balance",
+            "Match or Weight",
+            "Estimate Effect",
+            "Assess Sensitivity"
+        ]
+    },
+    {
+        "q": "Propensity scores balance covariates between groups.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match propensity score methods:",
+        "type": "match",
+        "left": [
+            "Matching",
+            "Stratification",
+            "Weighting",
+            "Covariate Adjustment"
+        ],
+        "right": [
+            "Pair similar units",
+            "Group by PS",
+            "IPW estimation",
+            "Regression control"
+        ]
+    },
+    {
+        "q": "The ______ score is estimated using logistic regression.",
+        "type": "fill_blank",
+        "answers": [
+            "propensity"
+        ],
+        "other_options": [
+            "outcome",
+            "treatment",
+            "balance"
+        ]
+    },
+    {
+        "q": "What is matching in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Pairing treated and control units with similar characteristics",
+            "Match analysis",
+            "Pairing method",
+            "Similar matching"
+        ]
+    },
+    {
+        "q": "What does this code calculate for matched pairs?",
+        "type": "mcq",
+        "c": "treated = [85, 90, 88]\nmatched_control = [75, 82, 80]\ndiffs = [t - c for t, c in zip(treated, matched_control)]\nate = sum(diffs) / len(diffs)\nprint(f'ATE: {round(ate, 1)}')",
+        "o": [
+            "ATE: 8.7",
+            "ATE: 26.0",
+            "ATE: 87.7",
+            "ATE: 3.0"
+        ]
+    },
+    {
+        "q": "Nearest neighbor matching finds closest matches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match matching methods:",
+        "type": "match",
+        "left": [
+            "Exact",
+            "Nearest Neighbor",
+            "Caliper",
+            "Kernel"
+        ],
+        "right": [
+            "Identical values",
+            "Closest distance",
+            "Within threshold",
+            "Weighted average"
+        ]
+    },
+    {
+        "q": "The ______ matching requires all covariates to be identical.",
+        "type": "fill_blank",
+        "answers": [
+            "exact"
+        ],
+        "other_options": [
+            "nearest",
+            "caliper",
+            "kernel"
+        ]
+    },
+    {
+        "q": "What is inverse probability weighting (IPW)?",
+        "type": "mcq",
+        "o": [
+            "Weighting observations by inverse of treatment probability",
+            "Inverse analysis",
+            "Probability weighting",
+            "Weighted estimation"
+        ]
+    },
+    {
+        "q": "What does this code output for IPW weight?",
+        "type": "mcq",
+        "c": "propensity = 0.4\ntreated = 1\nweight = treated / propensity + (1 - treated) / (1 - propensity)\nprint(f'Weight: {weight}')",
+        "o": [
+            "Weight: 2.5",
+            "Weight: 0.4",
+            "Weight: 1.0",
+            "Weight: 1.67"
+        ]
+    },
+    {
+        "q": "Rearrange IPW estimation:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Propensity",
+            "Calculate Weights",
+            "Check Extremes",
+            "Apply Weights",
+            "Estimate Effect"
+        ]
+    },
+    {
+        "q": "Extreme propensity scores can cause instability in IPW.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match IPW concepts:",
+        "type": "match",
+        "left": [
+            "IPW",
+            "Stabilized",
+            "Trimming",
+            "Doubly Robust"
+        ],
+        "right": [
+            "Inverse weighting",
+            "Normalized weights",
+            "Remove extremes",
+            "Model and weight"
+        ]
+    },
+    {
+        "q": "The ______ robust estimator combines weighting and regression.",
+        "type": "fill_blank",
+        "answers": [
+            "doubly"
+        ],
+        "other_options": [
+            "singly",
+            "inverse",
+            "propensity"
+        ]
+    },
+    {
+        "q": "What is instrumental variables (IV)?",
+        "type": "mcq",
+        "o": [
+            "Using exogenous variation to identify causal effects",
+            "Instrument analysis",
+            "Variable method",
+            "Exogenous analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for IV estimate?",
+        "type": "mcq",
+        "c": "cov_zy = 10\ncov_zx = 5\niv_estimate = cov_zy / cov_zx\nprint(f'IV: {iv_estimate}')",
+        "o": [
+            "IV: 2.0",
+            "IV: 15.0",
+            "IV: 50.0",
+            "IV: 0.5"
+        ]
+    },
+    {
+        "q": "Instruments must be correlated with treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match IV assumptions:",
+        "type": "match",
+        "left": [
+            "Relevance",
+            "Exclusion",
+            "Independence",
+            "Monotonicity"
+        ],
+        "right": [
+            "Affects treatment",
+            "Only through treatment",
+            "Unconfounded",
+            "Same direction effect"
+        ]
+    },
+    {
+        "q": "The ______ restriction requires instrument to affect outcome only through treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "exclusion"
+        ],
+        "other_options": [
+            "relevance",
+            "independence",
+            "monotonicity"
+        ]
+    },
+    {
+        "q": "What is two-stage least squares (2SLS)?",
+        "type": "mcq",
+        "o": [
+            "IV estimation using predicted treatment values",
+            "Two-stage regression",
+            "Least squares IV",
+            "Stage analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for first stage?",
+        "type": "mcq",
+        "c": "z = [1, 2, 3, 4, 5]\nx_hat = [0.5 + 0.8 * zi for zi in z]\nprint(f'X_hat: {x_hat[2]}')",
+        "o": [
+            "X_hat: 2.9",
+            "X_hat: 3.0",
+            "X_hat: 2.4",
+            "X_hat: 3.5"
+        ]
+    },
+    {
+        "q": "Rearrange 2SLS estimation:",
+        "type": "rearrange",
+        "words": [
+            "First Stage Regression",
+            "Get Predicted Treatment",
+            "Second Stage Regression",
+            "Use Predicted Values",
+            "Estimate Effect"
+        ]
+    },
+    {
+        "q": "Weak instruments lead to biased 2SLS estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match 2SLS stages:",
+        "type": "match",
+        "left": [
+            "First Stage",
+            "Predicted Values",
+            "Second Stage",
+            "Standard Errors"
+        ],
+        "right": [
+            "Regress X on Z",
+            "X-hat",
+            "Regress Y on X-hat",
+            "Adjust for two stages"
+        ]
+    },
+    {
+        "q": "The F-statistic in first stage tests instrument ______.",
+        "type": "fill_blank",
+        "answers": [
+            "strength"
+        ],
+        "other_options": [
+            "validity",
+            "exclusion",
+            "independence"
+        ]
+    },
+    {
+        "q": "What is regression discontinuity design (RDD)?",
+        "type": "mcq",
+        "o": [
+            "Exploiting cutoff-based treatment assignment",
+            "Regression design",
+            "Discontinuity analysis",
+            "Cutoff method"
+        ]
+    },
+    {
+        "q": "What does this code calculate for RDD effect?",
+        "type": "mcq",
+        "c": "y_above = 85\ny_below = 75\nrd_effect = y_above - y_below\nprint(f'RD: {rd_effect}')",
+        "o": [
+            "RD: 10",
+            "RD: 160",
+            "RD: 0.88",
+            "RD: 80"
+        ]
+    },
+    {
+        "q": "Sharp RDD has deterministic treatment assignment at cutoff.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match RDD types:",
+        "type": "match",
+        "left": [
+            "Sharp",
+            "Fuzzy",
+            "Running Variable",
+            "Cutoff"
+        ],
+        "right": [
+            "Deterministic assignment",
+            "Probabilistic change",
+            "Assignment basis",
+            "Treatment threshold"
+        ]
+    },
+    {
+        "q": "The ______ variable determines treatment assignment in RDD.",
+        "type": "fill_blank",
+        "answers": [
+            "running"
+        ],
+        "other_options": [
+            "outcome",
+            "treatment",
+            "control"
+        ]
+    },
+    {
+        "q": "What is difference-in-differences (DiD)?",
+        "type": "mcq",
+        "o": [
+            "Comparing changes over time between treated and control groups",
+            "Double difference",
+            "DiD analysis",
+            "Change comparison"
+        ]
+    },
+    {
+        "q": "What does this code output for DiD estimate?",
+        "type": "mcq",
+        "c": "treated_post = 100\ntreated_pre = 80\ncontrol_post = 85\ncontrol_pre = 75\ndid = (treated_post - treated_pre) - (control_post - control_pre)\nprint(f'DiD: {did}')",
+        "o": [
+            "DiD: 10",
+            "DiD: 20",
+            "DiD: 30",
+            "DiD: 5"
+        ]
+    },
+    {
+        "q": "Rearrange DiD analysis:",
+        "type": "rearrange",
+        "words": [
+            "Pre-treatment Period",
+            "Treatment Occurs",
+            "Post-treatment Period",
+            "Calculate Changes",
+            "Difference the Differences"
+        ]
+    },
+    {
+        "q": "Parallel trends assumption is key for DiD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DiD components:",
+        "type": "match",
+        "left": [
+            "Treated Pre",
+            "Treated Post",
+            "Control Pre",
+            "Control Post"
+        ],
+        "right": [
+            "Baseline treated",
+            "After treatment",
+            "Baseline control",
+            "Control after"
+        ]
+    },
+    {
+        "q": "The ______ trends assumption requires similar evolution without treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "parallel"
+        ],
+        "other_options": [
+            "common",
+            "linear",
+            "constant"
+        ]
+    },
+    {
+        "q": "What is synthetic control method?",
+        "type": "mcq",
+        "o": [
+            "Creating weighted combination of control units to match treated",
+            "Synthetic analysis",
+            "Control synthesis",
+            "Weighted control"
+        ]
+    },
+    {
+        "q": "What does this code calculate for synthetic weight?",
+        "type": "mcq",
+        "c": "controls = [80, 75, 70]\nweights = [0.5, 0.3, 0.2]\nsynthetic = sum(c * w for c, w in zip(controls, weights))\nprint(f'Synthetic: {synthetic}')",
+        "o": [
+            "Synthetic: 76.5",
+            "Synthetic: 75.0",
+            "Synthetic: 80.0",
+            "Synthetic: 225.0"
+        ]
+    },
+    {
+        "q": "Synthetic control minimizes pre-treatment differences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match synthetic control concepts:",
+        "type": "match",
+        "left": [
+            "Donor Pool",
+            "Weights",
+            "Pre-period Fit",
+            "Post-period Gap"
+        ],
+        "right": [
+            "Control units",
+            "Combination coefficients",
+            "Matching quality",
+            "Treatment effect"
+        ]
+    },
+    {
+        "q": "The ______ pool provides units to construct synthetic control.",
+        "type": "fill_blank",
+        "answers": [
+            "donor"
+        ],
+        "other_options": [
+            "control",
+            "treatment",
+            "comparison"
+        ]
+    },
+    {
+        "q": "What is mediation analysis?",
+        "type": "mcq",
+        "o": [
+            "Understanding mechanisms through which treatment affects outcome",
+            "Mediation method",
+            "Mechanism analysis",
+            "Path analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for indirect effect?",
+        "type": "mcq",
+        "c": "total_effect = 20\ndirect_effect = 12\nindirect_effect = total_effect - direct_effect\nprint(f'Indirect: {indirect_effect}')",
+        "o": [
+            "Indirect: 8",
+            "Indirect: 32",
+            "Indirect: 0.6",
+            "Indirect: 12"
+        ]
+    },
+    {
+        "q": "Rearrange mediation analysis:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Total Effect",
+            "Estimate Direct Effect",
+            "Calculate Indirect Effect",
+            "Test Significance",
+            "Interpret Mechanism"
+        ]
+    },
+    {
+        "q": "The mediator lies on the causal path between treatment and outcome.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match mediation effects:",
+        "type": "match",
+        "left": [
+            "Total",
+            "Direct",
+            "Indirect",
+            "Mediated"
+        ],
+        "right": [
+            "Overall effect",
+            "Not through mediator",
+            "Through mediator",
+            "Proportion indirect"
+        ]
+    },
+    {
+        "q": "The ______ effect operates through the mediator.",
+        "type": "fill_blank",
+        "answers": [
+            "indirect"
+        ],
+        "other_options": [
+            "direct",
+            "total",
+            "main"
+        ]
+    },
+    {
+        "q": "What is a collider in causal graphs?",
+        "type": "mcq",
+        "o": [
+            "Variable affected by two or more causes",
+            "Collision variable",
+            "Collider analysis",
+            "Variable collision"
+        ]
+    },
+    {
+        "q": "What does this DAG represent?",
+        "type": "mcq",
+        "c": "dag = 'X -> M <- Y'\nstructure = 'collider'\nprint(f'M is: {structure}')",
+        "o": [
+            "M is: collider",
+            "M is: confounder",
+            "M is: mediator",
+            "M is: effect"
+        ]
+    },
+    {
+        "q": "Conditioning on a collider can create spurious associations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DAG structures:",
+        "type": "match",
+        "left": [
+            "Confounder",
+            "Mediator",
+            "Collider",
+            "Chain"
+        ],
+        "right": [
+            "Common cause",
+            "Intermediate",
+            "Common effect",
+            "Sequential path"
+        ]
+    },
+    {
+        "q": "A ______ has arrows pointing into it from multiple causes.",
+        "type": "fill_blank",
+        "answers": [
+            "collider"
+        ],
+        "other_options": [
+            "confounder",
+            "mediator",
+            "fork"
+        ]
+    },
+    {
+        "q": "What is the backdoor criterion?",
+        "type": "mcq",
+        "o": [
+            "Set of variables to block all backdoor paths to identify effect",
+            "Backdoor analysis",
+            "Path criterion",
+            "Blocking method"
+        ]
+    },
+    {
+        "q": "What does this code check for backdoor paths?",
+        "type": "mcq",
+        "c": "paths = [['X', 'C', 'Y'], ['X', 'Y']]\nbackdoor_paths = [p for p in paths if p[0] == 'X' and p[1] != 'Y']\nprint(f'Backdoors: {len(backdoor_paths)}')",
+        "o": [
+            "Backdoors: 1",
+            "Backdoors: 0",
+            "Backdoors: 2",
+            "Backdoors: 3"
+        ]
+    },
+    {
+        "q": "Rearrange applying backdoor criterion:",
+        "type": "rearrange",
+        "words": [
+            "Draw DAG",
+            "Find Backdoor Paths",
+            "Identify Adjustment Set",
+            "Block Paths",
+            "Estimate Effect"
+        ]
+    },
+    {
+        "q": "Blocking backdoor paths removes confounding bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match backdoor concepts:",
+        "type": "match",
+        "left": [
+            "Backdoor Path",
+            "Adjustment Set",
+            "D-separation",
+            "Blocking"
+        ],
+        "right": [
+            "Confounding path",
+            "Control variables",
+            "Conditional independence",
+            "Conditioning"
+        ]
+    },
+    {
+        "q": "The ______ set blocks all backdoor paths.",
+        "type": "fill_blank",
+        "answers": [
+            "adjustment"
+        ],
+        "other_options": [
+            "control",
+            "blocking",
+            "conditioning"
+        ]
+    },
+    {
+        "q": "What is the do-operator in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Intervention notation distinct from conditioning",
+            "Do analysis",
+            "Intervention operator",
+            "Action notation"
+        ]
+    },
+    {
+        "q": "What does P(Y|do(X=x)) represent?",
+        "type": "mcq",
+        "c": "notation = 'P(Y|do(X=x))'\nmeaning = 'interventional distribution'\nprint(f'Type: {meaning}')",
+        "o": [
+            "Type: interventional distribution",
+            "Type: conditional probability",
+            "Type: joint probability",
+            "Type: marginal probability"
+        ]
+    },
+    {
+        "q": "do(X=x) differs from conditioning on X=x.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match do-calculus rules:",
+        "type": "match",
+        "left": [
+            "Rule 1",
+            "Rule 2",
+            "Rule 3",
+            "Adjustment"
+        ],
+        "right": [
+            "Insert/delete observation",
+            "Exchange action/observation",
+            "Delete action",
+            "Backdoor formula"
+        ]
+    },
+    {
+        "q": "The ______ operator represents intervention, not observation.",
+        "type": "fill_blank",
+        "answers": [
+            "do"
+        ],
+        "other_options": [
+            "set",
+            "fix",
+            "assign"
+        ]
+    },
+    {
+        "q": "What is sensitivity analysis in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Assessing robustness of causal estimates to unmeasured confounding",
+            "Sensitivity testing",
+            "Analysis robustness",
+            "Confounder testing"
+        ]
+    },
+    {
+        "q": "What does this code calculate for sensitivity bound?",
+        "type": "mcq",
+        "c": "estimate = 10\nbias_bound = 3\nlower = estimate - bias_bound\nupper = estimate + bias_bound\nprint(f'Range: [{lower}, {upper}]')",
+        "o": [
+            "Range: [7, 13]",
+            "Range: [10, 13]",
+            "Range: [3, 10]",
+            "Range: [0, 10]"
+        ]
+    },
+    {
+        "q": "Rearrange sensitivity analysis:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Effect",
+            "Specify Confounding",
+            "Calculate Bounds",
+            "Interpret Robustness",
+            "Report Conclusions"
+        ]
+    },
+    {
+        "q": "Rosenbaum bounds test sensitivity to hidden bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sensitivity methods:",
+        "type": "match",
+        "left": [
+            "Rosenbaum",
+            "E-value",
+            "Manski",
+            "VanderWeele"
+        ],
+        "right": [
+            "Gamma bounds",
+            "Required confounding strength",
+            "Worst-case bounds",
+            "Bias factor"
+        ]
+    },
+    {
+        "q": "The ______ value measures minimum confounding to explain away effect.",
+        "type": "fill_blank",
+        "answers": [
+            "E"
+        ],
+        "other_options": [
+            "P",
+            "T",
+            "Z"
+        ]
+    },
+    {
+        "q": "What is A/B testing?",
+        "type": "mcq",
+        "o": [
+            "Randomized experiment comparing treatment variations",
+            "AB analysis",
+            "Testing method",
+            "Variation comparison"
+        ]
+    },
+    {
+        "q": "What does this code output for sample size?",
+        "type": "mcq",
+        "c": "effect_size = 0.2\npower = 0.8\nalpha = 0.05\nn_per_group = int(16 / (effect_size ** 2))\nprint(f'N: {n_per_group}')",
+        "o": [
+            "N: 400",
+            "N: 80",
+            "N: 16",
+            "N: 200"
+        ]
+    },
+    {
+        "q": "Randomization in A/B tests ensures unbiased treatment effect estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match A/B test concepts:",
+        "type": "match",
+        "left": [
+            "Control",
+            "Treatment",
+            "Conversion",
+            "Lift"
+        ],
+        "right": [
+            "Baseline version",
+            "New version",
+            "Success rate",
+            "Relative improvement"
+        ]
+    },
+    {
+        "q": "The ______ rate measures proportion of successful outcomes.",
+        "type": "fill_blank",
+        "answers": [
+            "conversion"
+        ],
+        "other_options": [
+            "treatment",
+            "control",
+            "exposure"
+        ]
+    },
+    {
+        "q": "What is SUTVA?",
+        "type": "mcq",
+        "o": [
+            "Stable Unit Treatment Value Assumption",
+            "Statistical unit testing",
+            "Treatment value assumption",
+            "Unit stability"
+        ]
+    },
+    {
+        "q": "What does SUTVA violation cause?",
+        "type": "mcq",
+        "c": "spillover = True\ninterference = 'treatment affects other units'\nprint(f'Problem: {interference}')",
+        "o": [
+            "Problem: treatment affects other units",
+            "Problem: no effect",
+            "Problem: selection bias",
+            "Problem: attrition"
+        ]
+    },
+    {
+        "q": "Rearrange checking SUTVA:",
+        "type": "rearrange",
+        "words": [
+            "Define Treatment",
+            "Check No Interference",
+            "Verify No Hidden Versions",
+            "Test Independence",
+            "Proceed with Analysis"
+        ]
+    },
+    {
+        "q": "Network effects can violate SUTVA.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SUTVA components:",
+        "type": "match",
+        "left": [
+            "No Interference",
+            "Single Version",
+            "Consistency",
+            "Individualistic"
+        ],
+        "right": [
+            "Units independent",
+            "One treatment type",
+            "Same treatment effect",
+            "Unit-level assignment"
+        ]
+    },
+    {
+        "q": "The ______ assumption requires no interference between units.",
+        "type": "fill_blank",
+        "answers": [
+            "SUTVA"
+        ],
+        "other_options": [
+            "independence",
+            "ignorability",
+            "overlap"
+        ]
+    },
+    {
+        "q": "What is the local average treatment effect (LATE)?",
+        "type": "mcq",
+        "o": [
+            "Treatment effect for compliers in IV setting",
+            "Local effect",
+            "Average local",
+            "Treatment average"
+        ]
+    },
+    {
+        "q": "What does this code calculate for LATE?",
+        "type": "mcq",
+        "c": "itt = 8  # intent-to-treat\ncompliance_rate = 0.8\nlate = itt / compliance_rate\nprint(f'LATE: {late}')",
+        "o": [
+            "LATE: 10.0",
+            "LATE: 6.4",
+            "LATE: 8.8",
+            "LATE: 0.1"
+        ]
+    },
+    {
+        "q": "LATE applies only to compliers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match compliance types:",
+        "type": "match",
+        "left": [
+            "Complier",
+            "Never-taker",
+            "Always-taker",
+            "Defier"
+        ],
+        "right": [
+            "Follows assignment",
+            "Never takes treatment",
+            "Always takes treatment",
+            "Does opposite"
+        ]
+    },
+    {
+        "q": "The ______ average treatment effect is identified by IV.",
+        "type": "fill_blank",
+        "answers": [
+            "local"
+        ],
+        "other_options": [
+            "average",
+            "conditional",
+            "marginal"
+        ]
+    },
+    {
+        "q": "What is natural experiment?",
+        "type": "mcq",
+        "o": [
+            "As-if random treatment assignment from natural events",
+            "Natural analysis",
+            "Experiment type",
+            "Random nature"
+        ]
+    },
+    {
+        "q": "What does this identify in natural experiment?",
+        "type": "mcq",
+        "c": "event = 'policy change'\naffected = 'treated group'\nunaffected = 'control group'\nprint(f'Design: {event}')",
+        "o": [
+            "Design: policy change",
+            "Design: treated group",
+            "Design: control group",
+            "Design: random"
+        ]
+    },
+    {
+        "q": "Rearrange natural experiment analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify Natural Event",
+            "Define Treatment/Control",
+            "Check Exogeneity",
+            "Apply Appropriate Method",
+            "Estimate Effect"
+        ]
+    },
+    {
+        "q": "Policy changes can serve as natural experiments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match natural experiment examples:",
+        "type": "match",
+        "left": [
+            "Draft Lottery",
+            "Geographic Border",
+            "Policy Threshold",
+            "Weather Event"
+        ],
+        "right": [
+            "Random assignment",
+            "Spatial discontinuity",
+            "RDD opportunity",
+            "Exogenous shock"
+        ]
+    },
+    {
+        "q": "A ______ experiment uses naturally occurring variation.",
+        "type": "fill_blank",
+        "answers": [
+            "natural"
+        ],
+        "other_options": [
+            "controlled",
+            "randomized",
+            "lab"
+        ]
+    },
+    {
+        "q": "What is intent-to-treat (ITT) analysis?",
+        "type": "mcq",
+        "o": [
+            "Analyzing based on assigned treatment regardless of compliance",
+            "Intent analysis",
+            "Treatment intent",
+            "Assigned analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for ITT effect?",
+        "type": "mcq",
+        "c": "assigned_treated = 100\nassigned_control = 90\nitt = assigned_treated - assigned_control\nprint(f'ITT: {itt}')",
+        "o": [
+            "ITT: 10",
+            "ITT: 190",
+            "ITT: 0.9",
+            "ITT: 100"
+        ]
+    },
+    {
+        "q": "ITT preserves randomization benefits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ITT concepts:",
+        "type": "match",
+        "left": [
+            "Assignment",
+            "Compliance",
+            "ITT Effect",
+            "Per-protocol"
+        ],
+        "right": [
+            "Treatment allocated",
+            "Treatment received",
+            "Based on assignment",
+            "Based on receipt"
+        ]
+    },
+    {
+        "q": "The intent-to-______ analysis uses treatment assignment.",
+        "type": "fill_blank",
+        "answers": [
+            "treat"
+        ],
+        "other_options": [
+            "receive",
+            "comply",
+            "analyze"
+        ]
+    },
+    {
+        "q": "What is causal forest?",
+        "type": "mcq",
+        "o": [
+            "Machine learning method for heterogeneous treatment effects",
+            "Forest analysis",
+            "Causal trees",
+            "ML causal"
+        ]
+    },
+    {
+        "q": "What does this code calculate for CATE?",
+        "type": "mcq",
+        "c": "x = [1, 0, 1]\ncate_predictions = [5, 8, 6]\nmean_cate = sum(cate_predictions) / len(cate_predictions)\nprint(f'Mean CATE: {round(mean_cate, 1)}')",
+        "o": [
+            "Mean CATE: 6.3",
+            "Mean CATE: 19.0",
+            "Mean CATE: 5.0",
+            "Mean CATE: 8.0"
+        ]
+    },
+    {
+        "q": "Rearrange causal forest analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Covariates",
+            "Grow Causal Trees",
+            "Compute Honest Splits",
+            "Predict CATE",
+            "Analyze Heterogeneity"
+        ]
+    },
+    {
+        "q": "Causal forests can estimate heterogeneous treatment effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match causal ML methods:",
+        "type": "match",
+        "left": [
+            "Causal Forest",
+            "Double ML",
+            "BART",
+            "Meta-learners"
+        ],
+        "right": [
+            "Tree ensemble",
+            "Orthogonalization",
+            "Bayesian trees",
+            "T/S/X learners"
+        ]
+    },
+    {
+        "q": "The causal ______ uses random forests for treatment effects.",
+        "type": "fill_blank",
+        "answers": [
+            "forest"
+        ],
+        "other_options": [
+            "tree",
+            "model",
+            "net"
+        ]
+    },
+    {
+        "q": "What is double machine learning?",
+        "type": "mcq",
+        "o": [
+            "Using ML to estimate nuisance functions for causal inference",
+            "Double ML",
+            "Machine learning twice",
+            "Dual learning"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for DML?",
+        "type": "mcq",
+        "c": "y_residual = 2.5\nd_residual = 0.5\neffect = y_residual / d_residual\nprint(f'Effect: {effect}')",
+        "o": [
+            "Effect: 5.0",
+            "Effect: 3.0",
+            "Effect: 1.25",
+            "Effect: 0.2"
+        ]
+    },
+    {
+        "q": "DML uses sample splitting to avoid overfitting bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DML concepts:",
+        "type": "match",
+        "left": [
+            "Nuisance",
+            "Orthogonalization",
+            "Cross-fitting",
+            "Neyman orthogonal"
+        ],
+        "right": [
+            "Auxiliary parameters",
+            "Residualization",
+            "Sample splitting",
+            "Score function"
+        ]
+    },
+    {
+        "q": "The ______ machine learning method residualizes outcome and treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "double"
+        ],
+        "other_options": [
+            "single",
+            "triple",
+            "multi"
+        ]
+    },
+    {
+        "q": "What is overlap assumption?",
+        "type": "mcq",
+        "o": [
+            "Positive probability of treatment for all covariate values",
+            "Overlap analysis",
+            "Probability assumption",
+            "Treatment overlap"
+        ]
+    },
+    {
+        "q": "What does this code check for overlap?",
+        "type": "mcq",
+        "c": "propensity_scores = [0.1, 0.5, 0.9, 0.95]\nviolation = any(p < 0.05 or p > 0.95 for p in propensity_scores)\nprint(f'Violation: {violation}')",
+        "o": [
+            "Violation: True",
+            "Violation: False",
+            "Violation: 0.95",
+            "Violation: 0.1"
+        ]
+    },
+    {
+        "q": "Rearrange checking overlap:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Propensity",
+            "Plot Distribution",
+            "Check Extremes",
+            "Trim if Needed",
+            "Proceed with Analysis"
+        ]
+    },
+    {
+        "q": "Lack of overlap limits causal identification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match overlap concepts:",
+        "type": "match",
+        "left": [
+            "Positivity",
+            "Common Support",
+            "Trimming",
+            "Overlap Region"
+        ],
+        "right": [
+            "Treatment probability > 0",
+            "Shared covariate space",
+            "Remove extremes",
+            "Valid inference zone"
+        ]
+    },
+    {
+        "q": "The ______ assumption requires treatment probability between 0 and 1.",
+        "type": "fill_blank",
+        "answers": [
+            "overlap"
+        ],
+        "other_options": [
+            "ignorability",
+            "SUTVA",
+            "consistency"
+        ]
+    },
+    {
+        "q": "What is ignorability assumption?",
+        "type": "mcq",
+        "o": [
+            "Treatment assignment independent of potential outcomes given covariates",
+            "Ignorable treatment",
+            "Independence assumption",
+            "Conditional ignorability"
+        ]
+    },
+    {
+        "q": "What does this assumption allow?",
+        "type": "mcq",
+        "c": "assumption = 'Y(1), Y(0) independent of D  given X'\nresult = 'unconfounded estimation'\nprint(f'Allows: {result}')",
+        "o": [
+            "Allows: unconfounded estimation",
+            "Allows: correlation",
+            "Allows: bias",
+            "Allows: selection"
+        ]
+    },
+    {
+        "q": "Ignorability is also called unconfoundedness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ignorability concepts:",
+        "type": "match",
+        "left": [
+            "Strong Ignorability",
+            "Weak Ignorability",
+            "Selection on Observables",
+            "Conditional Independence"
+        ],
+        "right": [
+            "Full assumption",
+            "Partial assumption",
+            "Same concept",
+            "Given covariates"
+        ]
+    },
+    {
+        "q": "The ______ assumption means no unmeasured confounding.",
+        "type": "fill_blank",
+        "answers": [
+            "ignorability"
+        ],
+        "other_options": [
+            "positivity",
+            "SUTVA",
+            "consistency"
+        ]
+    },
+    {
+        "q": "What is augmented IPW (AIPW)?",
+        "type": "mcq",
+        "o": [
+            "Combining outcome regression with IPW for doubly robust estimation",
+            "Augmented weighting",
+            "IPW plus",
+            "Enhanced weighting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for AIPW?",
+        "type": "mcq",
+        "c": "ipw_term = 15\nregression_term = 5\naipw = ipw_term - regression_term\nprint(f'Correction: {aipw}')",
+        "o": [
+            "Correction: 10",
+            "Correction: 20",
+            "Correction: 75",
+            "Correction: 3"
+        ]
+    },
+    {
+        "q": "Rearrange AIPW estimation:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Propensity",
+            "Fit Outcome Model",
+            "Calculate IPW Term",
+            "Add Regression Correction",
+            "Combine Estimates"
+        ]
+    },
+    {
+        "q": "AIPW is consistent if either model is correct.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match doubly robust concepts:",
+        "type": "match",
+        "left": [
+            "AIPW",
+            "TMLE",
+            "Efficiency Bound",
+            "Robustness"
+        ],
+        "right": [
+            "Augmented IPW",
+            "Targeted learning",
+            "Optimal variance",
+            "Model misspecification"
+        ]
+    },
+    {
+        "q": "The ______ robust estimator protects against model misspecification.",
+        "type": "fill_blank",
+        "answers": [
+            "doubly"
+        ],
+        "other_options": [
+            "singly",
+            "triply",
+            "fully"
+        ]
+    },
+    {
+        "q": "What is TMLE?",
+        "type": "mcq",
+        "o": [
+            "Targeted Maximum Likelihood Estimation for causal parameters",
+            "Targeted ML",
+            "Maximum likelihood estimation",
+            "Target estimation"
+        ]
+    },
+    {
+        "q": "What does this illustrate for TMLE?",
+        "type": "mcq",
+        "c": "initial_estimate = 10\ntargeting_step = -2\nfinal_estimate = initial_estimate + targeting_step\nprint(f'TMLE: {final_estimate}')",
+        "o": [
+            "TMLE: 8",
+            "TMLE: 12",
+            "TMLE: -20",
+            "TMLE: 10"
+        ]
+    },
+    {
+        "q": "TMLE updates initial estimates with targeting step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match TMLE steps:",
+        "type": "match",
+        "left": [
+            "Initial Estimate",
+            "Clever Covariate",
+            "Targeting",
+            "Substitution"
+        ],
+        "right": [
+            "ML prediction",
+            "Weight function",
+            "Update step",
+            "Final estimate"
+        ]
+    },
+    {
+        "q": "The ______ step updates the estimate toward the target parameter.",
+        "type": "fill_blank",
+        "answers": [
+            "targeting"
+        ],
+        "other_options": [
+            "initial",
+            "final",
+            "substitution"
+        ]
+    },
+    {
+        "q": "What is generalization in experiments?",
+        "type": "mcq",
+        "o": [
+            "Extending experimental findings to target populations",
+            "General analysis",
+            "Population extension",
+            "Effect generalization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for generalization weight?",
+        "type": "mcq",
+        "c": "p_target = 0.3\np_sample = 0.6\nweight = p_target / p_sample\nprint(f'Weight: {weight}')",
+        "o": [
+            "Weight: 0.5",
+            "Weight: 0.9",
+            "Weight: 2.0",
+            "Weight: 0.18"
+        ]
+    },
+    {
+        "q": "Rearrange generalization analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Target Population",
+            "Compare to Sample",
+            "Estimate Weights",
+            "Apply Weights",
+            "Report Generalized Effect"
+        ]
+    },
+    {
+        "q": "Sample-to-population generalization requires representativeness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match generalization concepts:",
+        "type": "match",
+        "left": [
+            "SATE",
+            "PATE",
+            "Transportability",
+            "External Validity"
+        ],
+        "right": [
+            "Sample effect",
+            "Population effect",
+            "Cross-population",
+            "Generalizability"
+        ]
+    },
+    {
+        "q": "The ______ average treatment effect applies to target population.",
+        "type": "fill_blank",
+        "answers": [
+            "population"
+        ],
+        "other_options": [
+            "sample",
+            "local",
+            "conditional"
+        ]
+    },
+    {
+        "q": "What is regression adjustment in experiments?",
+        "type": "mcq",
+        "o": [
+            "Using covariates to improve precision of treatment effect estimates",
+            "Regression analysis",
+            "Adjustment method",
+            "Covariate control"
+        ]
+    },
+    {
+        "q": "What does this code output for adjusted effect?",
+        "type": "mcq",
+        "c": "unadjusted = 10\nprecision_gain = 0.2\nadjusted_se = 2 * (1 - precision_gain)\nprint(f'SE: {adjusted_se}')",
+        "o": [
+            "SE: 1.6",
+            "SE: 2.0",
+            "SE: 2.2",
+            "SE: 10.2"
+        ]
+    },
+    {
+        "q": "Covariate adjustment reduces variance in randomized experiments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match adjustment methods:",
+        "type": "match",
+        "left": [
+            "ANCOVA",
+            "Lin's Estimator",
+            "Stratified",
+            "CUPED"
+        ],
+        "right": [
+            "Covariate adjusted",
+            "Interaction-based",
+            "Blocked analysis",
+            "Pre-experiment data"
+        ]
+    },
+    {
+        "q": "The ______ estimator interacts treatment with centered covariates.",
+        "type": "fill_blank",
+        "answers": [
+            "Lin's"
+        ],
+        "other_options": [
+            "OLS",
+            "IPW",
+            "ANCOVA"
+        ]
+    },
+    {
+        "q": "What is Granger causality?",
+        "type": "mcq",
+        "o": [
+            "Testing if past values of X predict future values of Y",
+            "Granger analysis",
+            "Temporal causality",
+            "Predictive causality"
+        ]
+    },
+    {
+        "q": "What does this code test for Granger causality?",
+        "type": "mcq",
+        "c": "import numpy as np\nf_stat = 3.5\np_value = 0.02\nrejected = p_value < 0.05\nprint(f'Granger: {rejected}')",
+        "o": [
+            "Granger: True",
+            "Granger: False",
+            "Granger: 3.5",
+            "Granger: 0.02"
+        ]
+    },
+    {
+        "q": "Rearrange Granger causality test:",
+        "type": "rearrange",
+        "words": [
+            "Collect Time Series",
+            "Fit VAR Model",
+            "Test Lag Coefficients",
+            "Compute F-statistic",
+            "Interpret Results"
+        ]
+    },
+    {
+        "q": "Granger causality is predictive, not true causality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match time series causality:",
+        "type": "match",
+        "left": [
+            "Granger",
+            "Toda-Yamamoto",
+            "VAR",
+            "VECM"
+        ],
+        "right": [
+            "Predictive causality",
+            "Robust to integration",
+            "Vector autoregression",
+            "Cointegrated systems"
+        ]
+    },
+    {
+        "q": "The ______ causality test uses lagged values for prediction.",
+        "type": "fill_blank",
+        "answers": [
+            "Granger"
+        ],
+        "other_options": [
+            "Pearl",
+            "Rubin",
+            "structural"
+        ]
+    },
+    {
+        "q": "What is panel data causal inference?",
+        "type": "mcq",
+        "o": [
+            "Using repeated observations over time for causal identification",
+            "Panel analysis",
+            "Data causal",
+            "Panel method"
+        ]
+    },
+    {
+        "q": "What does this code calculate for fixed effects?",
+        "type": "mcq",
+        "c": "y_it = 100\ny_i_mean = 85\nwithin = y_it - y_i_mean\nprint(f'Within: {within}')",
+        "o": [
+            "Within: 15",
+            "Within: 185",
+            "Within: 0.85",
+            "Within: 100"
+        ]
+    },
+    {
+        "q": "Fixed effects control for time-invariant confounders.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match panel methods:",
+        "type": "match",
+        "left": [
+            "Fixed Effects",
+            "Random Effects",
+            "First Differences",
+            "Two-way FE"
+        ],
+        "right": [
+            "Unit demeaning",
+            "Unit as random",
+            "Consecutive differences",
+            "Unit and time"
+        ]
+    },
+    {
+        "q": "The ______ effects estimator removes time-invariant confounding.",
+        "type": "fill_blank",
+        "answers": [
+            "fixed"
+        ],
+        "other_options": [
+            "random",
+            "pooled",
+            "mixed"
+        ]
+    },
+    {
+        "q": "What is staggered DiD?",
+        "type": "mcq",
+        "o": [
+            "DiD with treatment adoption at different times",
+            "Staggered analysis",
+            "Time-varying DiD",
+            "Multiple DiD"
+        ]
+    },
+    {
+        "q": "What does this identify in staggered adoption?",
+        "type": "mcq",
+        "c": "adoption_times = [2010, 2012, 2015]\ngroups = ['early', 'middle', 'late']\nprint(f'Groups: {len(groups)}')",
+        "o": [
+            "Groups: 3",
+            "Groups: 2010",
+            "Groups: 2015",
+            "Groups: 1"
+        ]
+    },
+    {
+        "q": "Rearrange staggered DiD analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify Treatment Timing",
+            "Define Treatment Cohorts",
+            "Choose Comparison Groups",
+            "Apply Robust Estimator",
+            "Aggregate Effects"
+        ]
+    },
+    {
+        "q": "TWFE can be biased in staggered DiD settings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match staggered estimators:",
+        "type": "match",
+        "left": [
+            "Callaway-Sant'Anna",
+            "Sun-Abraham",
+            "de Chaisemartin",
+            "Goodman-Bacon"
+        ],
+        "right": [
+            "Group-time effects",
+            "Interaction-weighted",
+            "Heterogeneity robust",
+            "Decomposition"
+        ]
+    },
+    {
+        "q": "The ______ TWFE estimator can suffer from negative weighting.",
+        "type": "fill_blank",
+        "answers": [
+            "standard"
+        ],
+        "other_options": [
+            "robust",
+            "corrected",
+            "modified"
+        ]
+    },
+    {
+        "q": "What is event study design?",
+        "type": "mcq",
+        "o": [
+            "Examining dynamics of treatment effects over time",
+            "Event analysis",
+            "Study design",
+            "Time study"
+        ]
+    },
+    {
+        "q": "What does this code calculate for event study?",
+        "type": "mcq",
+        "c": "event_time = [-2, -1, 0, 1, 2]\ncoefficients = [0.1, 0.05, 0, 0.5, 0.6]\npost = [c for e, c in zip(event_time, coefficients) if e >= 0]\nprint(f'Post effects: {len(post)}')",
+        "o": [
+            "Post effects: 3",
+            "Post effects: 2",
+            "Post effects: 5",
+            "Post effects: 0"
+        ]
+    },
+    {
+        "q": "Pre-trends in event studies test parallel trends assumption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match event study concepts:",
+        "type": "match",
+        "left": [
+            "Event Time",
+            "Pre-trends",
+            "Dynamic Effects",
+            "Binned Endpoints"
+        ],
+        "right": [
+            "Relative to treatment",
+            "Before treatment",
+            "Time-varying impacts",
+            "Grouped far lags"
+        ]
+    },
+    {
+        "q": "The ______ study plots coefficients relative to treatment time.",
+        "type": "fill_blank",
+        "answers": [
+            "event"
+        ],
+        "other_options": [
+            "case",
+            "cohort",
+            "panel"
+        ]
+    },
+    {
+        "q": "What is Bayesian causal inference?",
+        "type": "mcq",
+        "o": [
+            "Using Bayesian methods to estimate causal effects and uncertainty",
+            "Bayes causal",
+            "Probabilistic causal",
+            "Prior inference"
+        ]
+    },
+    {
+        "q": "What does this code calculate for posterior?",
+        "type": "mcq",
+        "c": "prior_mean = 5\ndata_mean = 8\nprior_weight = 0.3\nposterior = prior_weight * prior_mean + (1 - prior_weight) * data_mean\nprint(f'Posterior: {posterior}')",
+        "o": [
+            "Posterior: 7.1",
+            "Posterior: 6.5",
+            "Posterior: 5.0",
+            "Posterior: 8.0"
+        ]
+    },
+    {
+        "q": "Rearrange Bayesian causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Specify Prior",
+            "Define Likelihood",
+            "Compute Posterior",
+            "Sample MCMC",
+            "Report Credible Intervals"
+        ]
+    },
+    {
+        "q": "Bayesian methods provide credible intervals for causal effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Bayesian causal concepts:",
+        "type": "match",
+        "left": [
+            "Prior",
+            "Likelihood",
+            "Posterior",
+            "Credible Interval"
+        ],
+        "right": [
+            "Before data",
+            "Data model",
+            "After data",
+            "Probability range"
+        ]
+    },
+    {
+        "q": "The ______ interval gives probability the parameter is in range.",
+        "type": "fill_blank",
+        "answers": [
+            "credible"
+        ],
+        "other_options": [
+            "confidence",
+            "prediction",
+            "tolerance"
+        ]
+    },
+    {
+        "q": "What is Bayesian structural time series?",
+        "type": "mcq",
+        "o": [
+            "State space model for causal impact analysis",
+            "BSTS analysis",
+            "Time series Bayes",
+            "Structural Bayes"
+        ]
+    },
+    {
+        "q": "What does CausalImpact estimate?",
+        "type": "mcq",
+        "c": "observed = 100\npredicted = 80\nimpact = observed - predicted\nprint(f'Impact: {impact}')",
+        "o": [
+            "Impact: 20",
+            "Impact: 180",
+            "Impact: 0.8",
+            "Impact: 80"
+        ]
+    },
+    {
+        "q": "CausalImpact uses synthetic counterfactual prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match CausalImpact components:",
+        "type": "match",
+        "left": [
+            "Local Level",
+            "Seasonality",
+            "Regression",
+            "Posterior Prediction"
+        ],
+        "right": [
+            "Trend component",
+            "Periodic patterns",
+            "Covariate effects",
+            "Counterfactual"
+        ]
+    },
+    {
+        "q": "The Bayesian ______ time series models intervention effects.",
+        "type": "fill_blank",
+        "answers": [
+            "structural"
+        ],
+        "other_options": [
+            "simple",
+            "random",
+            "autoregressive"
+        ]
+    },
+    {
+        "q": "What is bunching analysis?",
+        "type": "mcq",
+        "o": [
+            "Identifying behavioral responses at policy thresholds",
+            "Bunching method",
+            "Cluster analysis",
+            "Threshold analysis"
+        ]
+    },
+    {
+        "q": "What does bunching at a threshold indicate?",
+        "type": "mcq",
+        "c": "threshold = 100000\nbunching = 'excess mass at threshold'\nprint(f'Indicates: {bunching}')",
+        "o": [
+            "Indicates: excess mass at threshold",
+            "Indicates: random",
+            "Indicates: no effect",
+            "Indicates: bias"
+        ]
+    },
+    {
+        "q": "Rearrange bunching estimation:",
+        "type": "rearrange",
+        "words": [
+            "Identify Threshold",
+            "Estimate Counterfactual",
+            "Calculate Bunching Mass",
+            "Estimate Elasticity",
+            "Report Results"
+        ]
+    },
+    {
+        "q": "Bunching reveals behavioral responses to incentives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bunching concepts:",
+        "type": "match",
+        "left": [
+            "Notch",
+            "Kink",
+            "Excess Mass",
+            "Friction"
+        ],
+        "right": [
+            "Discrete change",
+            "Slope change",
+            "Bunching estimate",
+            "Response dampening"
+        ]
+    },
+    {
+        "q": "The ______ mass measures bunching at the threshold.",
+        "type": "fill_blank",
+        "answers": [
+            "excess"
+        ],
+        "other_options": [
+            "total",
+            "average",
+            "median"
+        ]
+    },
+    {
+        "q": "What is interference in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Treatment on one unit affects outcomes of other units",
+            "Interference analysis",
+            "Unit interaction",
+            "Cross-effect"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for spillover?",
+        "type": "mcq",
+        "c": "direct_effect = 10\nspillover = 3\ntotal = direct_effect + spillover\nprint(f'Total: {total}')",
+        "o": [
+            "Total: 13",
+            "Total: 7",
+            "Total: 30",
+            "Total: 10"
+        ]
+    },
+    {
+        "q": "Network experiments must account for interference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match interference concepts:",
+        "type": "match",
+        "left": [
+            "Direct Effect",
+            "Spillover",
+            "Exposure Mapping",
+            "Cluster RCT"
+        ],
+        "right": [
+            "Own treatment",
+            "Others' treatment",
+            "Treatment function",
+            "Group randomization"
+        ]
+    },
+    {
+        "q": "The ______ effect is the impact of others' treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "spillover"
+        ],
+        "other_options": [
+            "direct",
+            "total",
+            "main"
+        ]
+    },
+    {
+        "q": "What is partial identification?",
+        "type": "mcq",
+        "o": [
+            "Bounding causal effects when point identification fails",
+            "Partial analysis",
+            "Identification method",
+            "Bounded estimation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for bounds?",
+        "type": "mcq",
+        "c": "lower_bound = -2\nupper_bound = 8\nwidth = upper_bound - lower_bound\nprint(f'Width: {width}')",
+        "o": [
+            "Width: 10",
+            "Width: 6",
+            "Width: -10",
+            "Width: 16"
+        ]
+    },
+    {
+        "q": "Rearrange partial identification:",
+        "type": "rearrange",
+        "words": [
+            "State Assumptions",
+            "Derive Bounds",
+            "Compute Lower",
+            "Compute Upper",
+            "Report Interval"
+        ]
+    },
+    {
+        "q": "Manski bounds are robust to untestable assumptions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match partial ID concepts:",
+        "type": "match",
+        "left": [
+            "Point ID",
+            "Set ID",
+            "Bounds",
+            "Sensitivity"
+        ],
+        "right": [
+            "Unique value",
+            "Range of values",
+            "Interval endpoints",
+            "Assumption variation"
+        ]
+    },
+    {
+        "q": "The identified ______ contains all compatible values.",
+        "type": "fill_blank",
+        "answers": [
+            "set"
+        ],
+        "other_options": [
+            "point",
+            "value",
+            "region"
+        ]
+    },
+    {
+        "q": "What is principal stratification?",
+        "type": "mcq",
+        "o": [
+            "Stratifying by potential intermediate outcomes",
+            "Principal analysis",
+            "Stratification method",
+            "Outcome stratification"
+        ]
+    },
+    {
+        "q": "What does this define for principal strata?",
+        "type": "mcq",
+        "c": "strata = {'always_survive': 'S(0)=S(1)=1', 'never_survive': 'S(0)=S(1)=0'}\nprint(f'Strata: {len(strata)}')",
+        "o": [
+            "Strata: 2",
+            "Strata: 1",
+            "Strata: 4",
+            "Strata: 0"
+        ]
+    },
+    {
+        "q": "Principal strata are defined by potential outcomes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match principal concepts:",
+        "type": "match",
+        "left": [
+            "Always-taker",
+            "Never-taker",
+            "Complier",
+            "Survivor Average"
+        ],
+        "right": [
+            "Always treated",
+            "Never treated",
+            "Follows assignment",
+            "Conditional effect"
+        ]
+    },
+    {
+        "q": "The ______ stratification classifies by potential intermediates.",
+        "type": "fill_blank",
+        "answers": [
+            "principal"
+        ],
+        "other_options": [
+            "standard",
+            "outcome",
+            "treatment"
+        ]
+    },
+    {
+        "q": "What is bounds analysis for missing data?",
+        "type": "mcq",
+        "o": [
+            "Computing worst-case bounds under missing data",
+            "Missing analysis",
+            "Bounds method",
+            "Data bounds"
+        ]
+    },
+    {
+        "q": "What does this code calculate for missing bounds?",
+        "type": "mcq",
+        "c": "observed_mean = 50\nmissing_rate = 0.2\nworst_lower = observed_mean * (1 - missing_rate) + 0 * missing_rate\nprint(f'Lower: {worst_lower}')",
+        "o": [
+            "Lower: 40.0",
+            "Lower: 50.0",
+            "Lower: 60.0",
+            "Lower: 10.0"
+        ]
+    },
+    {
+        "q": "Rearrange missing data bounds:",
+        "type": "rearrange",
+        "words": [
+            "Identify Missing Pattern",
+            "Assume Extremes",
+            "Calculate Lower Bound",
+            "Calculate Upper Bound",
+            "Report Interval"
+        ]
+    },
+    {
+        "q": "Missing data can partially identify causal effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match missing data assumptions:",
+        "type": "match",
+        "left": [
+            "MCAR",
+            "MAR",
+            "MNAR",
+            "Bounds"
+        ],
+        "right": [
+            "Completely random",
+            "Random given observed",
+            "Not random",
+            "No assumptions"
+        ]
+    },
+    {
+        "q": "The missing ______ right assumption assigns worst values.",
+        "type": "fill_blank",
+        "answers": [
+            "worst-case"
+        ],
+        "other_options": [
+            "best-case",
+            "average",
+            "random"
+        ]
+    },
+    {
+        "q": "What is moderation analysis?",
+        "type": "mcq",
+        "o": [
+            "Examining how treatment effects vary by moderator variables",
+            "Moderation method",
+            "Effect variation",
+            "Variable interaction"
+        ]
+    },
+    {
+        "q": "What does this code calculate for moderated effect?",
+        "type": "mcq",
+        "c": "base_effect = 10\nmoderation = 5\nmoderator = 1\nmoderated = base_effect + moderation * moderator\nprint(f'Effect: {moderated}')",
+        "o": [
+            "Effect: 15",
+            "Effect: 5",
+            "Effect: 50",
+            "Effect: 10"
+        ]
+    },
+    {
+        "q": "Moderators modify the strength or direction of effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match interaction concepts:",
+        "type": "match",
+        "left": [
+            "Moderator",
+            "Interaction",
+            "Subgroup",
+            "Heterogeneity"
+        ],
+        "right": [
+            "Effect modifier",
+            "Combined effect",
+            "Subset analysis",
+            "Effect variation"
+        ]
+    },
+    {
+        "q": "The ______ variable modifies the treatment effect.",
+        "type": "fill_blank",
+        "answers": [
+            "moderator"
+        ],
+        "other_options": [
+            "mediator",
+            "confounder",
+            "outcome"
+        ]
+    },
+    {
+        "q": "What is marginal structural model?",
+        "type": "mcq",
+        "o": [
+            "Model for causal effects of time-varying treatments",
+            "Marginal model",
+            "Structural analysis",
+            "Time-varying model"
+        ]
+    },
+    {
+        "q": "What does MSM use for estimation?",
+        "type": "mcq",
+        "c": "method = 'inverse probability weighting'\nweights = 'stabilized weights'\nprint(f'Uses: {method}')",
+        "o": [
+            "Uses: inverse probability weighting",
+            "Uses: matching",
+            "Uses: regression",
+            "Uses: stratification"
+        ]
+    },
+    {
+        "q": "Rearrange MSM estimation:",
+        "type": "rearrange",
+        "words": [
+            "Specify Treatment Model",
+            "Calculate Weights",
+            "Stabilize Weights",
+            "Fit Outcome Model",
+            "Estimate Effects"
+        ]
+    },
+    {
+        "q": "MSMs handle time-varying confounding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match MSM concepts:",
+        "type": "match",
+        "left": [
+            "IPTW",
+            "Stabilized",
+            "History",
+            "Sequential"
+        ],
+        "right": [
+            "Inverse weighting",
+            "Normalized weights",
+            "Treatment sequence",
+            "Time ordering"
+        ]
+    },
+    {
+        "q": "The marginal ______ model weights by treatment probability.",
+        "type": "fill_blank",
+        "answers": [
+            "structural"
+        ],
+        "other_options": [
+            "regression",
+            "weighted",
+            "causal"
+        ]
+    },
+    {
+        "q": "What is g-computation?",
+        "type": "mcq",
+        "o": [
+            "Standardization-based method for causal effects",
+            "G-formula",
+            "Computation method",
+            "Standardization"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for g-computation?",
+        "type": "mcq",
+        "c": "predictions_treated = [90, 85, 88]\npredictions_control = [80, 75, 78]\nate = sum(predictions_treated)/3 - sum(predictions_control)/3\nprint(f'ATE: {round(ate, 1)}')",
+        "o": [
+            "ATE: 10.0",
+            "ATE: 265.0",
+            "ATE: 87.7",
+            "ATE: 77.7"
+        ]
+    },
+    {
+        "q": "G-computation extends standardization to complex settings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match g-methods:",
+        "type": "match",
+        "left": [
+            "G-computation",
+            "G-estimation",
+            "SNMM",
+            "Parametric G"
+        ],
+        "right": [
+            "Standardization",
+            "Estimating equations",
+            "Structural nested",
+            "Model-based"
+        ]
+    },
+    {
+        "q": "The ______ formula standardizes over covariate distribution.",
+        "type": "fill_blank",
+        "answers": [
+            "g"
+        ],
+        "other_options": [
+            "p",
+            "m",
+            "e"
+        ]
+    },
+    {
+        "q": "What is causal inference in healthcare?",
+        "type": "mcq",
+        "o": [
+            "Estimating treatment effects from clinical and observational data",
+            "Healthcare analysis",
+            "Medical causal",
+            "Treatment inference"
+        ]
+    },
+    {
+        "q": "What does this code calculate for treatment response?",
+        "type": "mcq",
+        "c": "baseline = 120\npost_treatment = 95\nresponse = baseline - post_treatment\nprint(f'Response: {response}')",
+        "o": [
+            "Response: 25",
+            "Response: 215",
+            "Response: -25",
+            "Response: 95"
+        ]
+    },
+    {
+        "q": "Rearrange clinical causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Outcome",
+            "Identify Confounders",
+            "Choose Method",
+            "Adjust Analysis",
+            "Interpret Results"
+        ]
+    },
+    {
+        "q": "RCTs are preferred for clinical causal inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match healthcare causal methods:",
+        "type": "match",
+        "left": [
+            "RCT",
+            "Observational",
+            "Emulated Trial",
+            "Target Trial"
+        ],
+        "right": [
+            "Randomized",
+            "Non-randomized",
+            "Mimicking RCT",
+            "Hypothetical trial"
+        ]
+    },
+    {
+        "q": "The target ______ framework guides observational analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "trial"
+        ],
+        "other_options": [
+            "study",
+            "design",
+            "analysis"
+        ]
+    },
+    {
+        "q": "What is economics causal inference?",
+        "type": "mcq",
+        "o": [
+            "Estimating policy and market effects using quasi-experimental methods",
+            "Economic analysis",
+            "Policy causal",
+            "Market inference"
+        ]
+    },
+    {
+        "q": "What does this code estimate for policy impact?",
+        "type": "mcq",
+        "c": "pre_policy = 50\npost_policy = 65\nimpact = post_policy - pre_policy\nprint(f'Impact: {impact}')",
+        "o": [
+            "Impact: 15",
+            "Impact: 115",
+            "Impact: -15",
+            "Impact: 50"
+        ]
+    },
+    {
+        "q": "Minimum wage studies often use DiD designs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match economics methods:",
+        "type": "match",
+        "left": [
+            "DiD",
+            "RDD",
+            "IV",
+            "Structural"
+        ],
+        "right": [
+            "Policy changes",
+            "Cutoff-based",
+            "Exogenous variation",
+            "Economic model"
+        ]
+    },
+    {
+        "q": "The ______ credibility revolution emphasized causal identification.",
+        "type": "fill_blank",
+        "answers": [
+            "credibility"
+        ],
+        "other_options": [
+            "statistical",
+            "empirical",
+            "theoretical"
+        ]
+    },
+    {
+        "q": "What is marketing causal inference?",
+        "type": "mcq",
+        "o": [
+            "Measuring causal effects of marketing interventions",
+            "Marketing analysis",
+            "Campaign causal",
+            "ROI inference"
+        ]
+    },
+    {
+        "q": "What does this code calculate for lift?",
+        "type": "mcq",
+        "c": "treatment_conversion = 0.12\ncontrol_conversion = 0.08\nlift = (treatment_conversion - control_conversion) / control_conversion * 100\nprint(f'Lift: {lift}%')",
+        "o": [
+            "Lift: 50.0%",
+            "Lift: 4.0%",
+            "Lift: 0.04%",
+            "Lift: 150.0%"
+        ]
+    },
+    {
+        "q": "Rearrange marketing causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Campaign",
+            "Set Up Test",
+            "Run Experiment",
+            "Measure Lift",
+            "Calculate ROI"
+        ]
+    },
+    {
+        "q": "Geo experiments use geographic regions for testing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match marketing methods:",
+        "type": "match",
+        "left": [
+            "A/B Test",
+            "Geo Experiment",
+            "Matched Market",
+            "Holdout"
+        ],
+        "right": [
+            "Online randomization",
+            "Geographic units",
+            "Similar regions",
+            "Control group"
+        ]
+    },
+    {
+        "q": "The ______ experiment randomizes by geographic region.",
+        "type": "fill_blank",
+        "answers": [
+            "geo"
+        ],
+        "other_options": [
+            "user",
+            "time",
+            "product"
+        ]
+    },
+    {
+        "q": "What is causal attribution modeling?",
+        "type": "mcq",
+        "o": [
+            "Assigning credit to touchpoints in customer journey",
+            "Attribution analysis",
+            "Credit modeling",
+            "Touchpoint analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for Shapley value?",
+        "type": "mcq",
+        "c": "contributions = [0.3, 0.5, 0.2]\ntotal = sum(contributions)\nprint(f'Total: {total}')",
+        "o": [
+            "Total: 1.0",
+            "Total: 0.3",
+            "Total: 0.5",
+            "Total: 3.0"
+        ]
+    },
+    {
+        "q": "Last-click attribution ignores prior touchpoints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match attribution models:",
+        "type": "match",
+        "left": [
+            "Last-click",
+            "First-click",
+            "Linear",
+            "Shapley"
+        ],
+        "right": [
+            "Final touchpoint",
+            "First touchpoint",
+            "Equal credit",
+            "Marginal contribution"
+        ]
+    },
+    {
+        "q": "The ______ value distributes credit fairly among channels.",
+        "type": "fill_blank",
+        "answers": [
+            "Shapley"
+        ],
+        "other_options": [
+            "marginal",
+            "average",
+            "total"
+        ]
+    },
+    {
+        "q": "What is uplift modeling?",
+        "type": "mcq",
+        "o": [
+            "Predicting individual treatment effects for targeting",
+            "Uplift analysis",
+            "Effect modeling",
+            "Target prediction"
+        ]
+    },
+    {
+        "q": "What does this code calculate for uplift?",
+        "type": "mcq",
+        "c": "p_treat = 0.15\np_control = 0.10\nuplift = p_treat - p_control\nprint(f'Uplift: {uplift}')",
+        "o": [
+            "Uplift: 0.05",
+            "Uplift: 0.25",
+            "Uplift: 1.5",
+            "Uplift: 0.15"
+        ]
+    },
+    {
+        "q": "Rearrange uplift modeling:",
+        "type": "rearrange",
+        "words": [
+            "Collect RCT Data",
+            "Train Uplift Model",
+            "Predict Individual Effects",
+            "Rank by Uplift",
+            "Target Top Segment"
+        ]
+    },
+    {
+        "q": "Persuadables have positive uplift scores.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match uplift segments:",
+        "type": "match",
+        "left": [
+            "Persuadable",
+            "Sure Thing",
+            "Lost Cause",
+            "Sleeping Dog"
+        ],
+        "right": [
+            "Positive uplift",
+            "Always convert",
+            "Never convert",
+            "Negative uplift"
+        ]
+    },
+    {
+        "q": "The ______ modeling targets individuals most likely to respond.",
+        "type": "fill_blank",
+        "answers": [
+            "uplift"
+        ],
+        "other_options": [
+            "response",
+            "conversion",
+            "prediction"
+        ]
+    },
+    {
+        "q": "What is DoWhy library?",
+        "type": "mcq",
+        "o": [
+            "Python library for causal inference using graphs and potential outcomes",
+            "DoWhy analysis",
+            "Python causal",
+            "Library tool"
+        ]
+    },
+    {
+        "q": "What does DoWhy's identify_effect do?",
+        "type": "mcq",
+        "c": "step = 'identify_effect'\nresult = 'finds estimand from causal graph'\nprint(f'Step: {step}')",
+        "o": [
+            "Step: identify_effect",
+            "Step: estimate_effect",
+            "Step: refute",
+            "Step: model"
+        ]
+    },
+    {
+        "q": "DoWhy separates identification from estimation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DoWhy workflow:",
+        "type": "match",
+        "left": [
+            "Model",
+            "Identify",
+            "Estimate",
+            "Refute"
+        ],
+        "right": [
+            "Causal graph",
+            "Estimand",
+            "Calculate effect",
+            "Sensitivity check"
+        ]
+    },
+    {
+        "q": "The ______ library uses causal graphs for inference.",
+        "type": "fill_blank",
+        "answers": [
+            "DoWhy"
+        ],
+        "other_options": [
+            "CausalML",
+            "EconML",
+            "CausalNex"
+        ]
+    },
+    {
+        "q": "What is EconML?",
+        "type": "mcq",
+        "o": [
+            "ML library for heterogeneous treatment effect estimation",
+            "Economic ML",
+            "Effect library",
+            "ML causal"
+        ]
+    },
+    {
+        "q": "What does this EconML method estimate?",
+        "type": "mcq",
+        "c": "method = 'CausalForest'\noutput = 'heterogeneous treatment effects'\nprint(f'Estimates: {output}')",
+        "o": [
+            "Estimates: heterogeneous treatment effects",
+            "Estimates: ATE only",
+            "Estimates: propensity",
+            "Estimates: outcomes"
+        ]
+    },
+    {
+        "q": "Rearrange EconML analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Model",
+            "Fit on Data",
+            "Estimate CATE",
+            "Analyze Heterogeneity",
+            "Visualize Effects"
+        ]
+    },
+    {
+        "q": "EconML implements double machine learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match EconML estimators:",
+        "type": "match",
+        "left": [
+            "DML",
+            "DRML",
+            "CausalForest",
+            "OrthoForest"
+        ],
+        "right": [
+            "Double ML",
+            "Doubly robust",
+            "Tree ensemble",
+            "Orthogonal forest"
+        ]
+    },
+    {
+        "q": "The ______ library specializes in heterogeneous effects.",
+        "type": "fill_blank",
+        "answers": [
+            "EconML"
+        ],
+        "other_options": [
+            "DoWhy",
+            "CausalImpact",
+            "statsmodels"
+        ]
+    },
+    {
+        "q": "What is CausalNex?",
+        "type": "mcq",
+        "o": [
+            "Library for Bayesian network causal discovery and inference",
+            "Causal nexus",
+            "Bayesian library",
+            "Discovery tool"
+        ]
+    },
+    {
+        "q": "What does CausalNex learn?",
+        "type": "mcq",
+        "c": "output = 'causal graph structure'\nmethod = 'structure learning'\nprint(f'Learns: {output}')",
+        "o": [
+            "Learns: causal graph structure",
+            "Learns: treatment effects",
+            "Learns: propensity",
+            "Learns: outcomes"
+        ]
+    },
+    {
+        "q": "CausalNex uses Bayesian networks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match CausalNex features:",
+        "type": "match",
+        "left": [
+            "Structure Learning",
+            "CPD",
+            "Inference",
+            "What-if"
+        ],
+        "right": [
+            "Discover DAG",
+            "Conditional probability",
+            "Query network",
+            "Counterfactual"
+        ]
+    },
+    {
+        "q": "The ______ library uses Bayesian networks for causal discovery.",
+        "type": "fill_blank",
+        "answers": [
+            "CausalNex"
+        ],
+        "other_options": [
+            "DoWhy",
+            "EconML",
+            "PyMC"
+        ]
+    },
+    {
+        "q": "What is statsmodels for causal inference?",
+        "type": "mcq",
+        "o": [
+            "Python library with regression and econometric methods",
+            "Stats models",
+            "Statistical library",
+            "Regression tool"
+        ]
+    },
+    {
+        "q": "What does statsmodels provide?",
+        "type": "mcq",
+        "c": "features = ['IV regression', 'panel data', 'propensity matching']\nprint(f'Features: {len(features)}')",
+        "o": [
+            "Features: 3",
+            "Features: 1",
+            "Features: 10",
+            "Features: 0"
+        ]
+    },
+    {
+        "q": "Rearrange statsmodels IV analysis:",
+        "type": "rearrange",
+        "words": [
+            "Prepare Data",
+            "Specify Model",
+            "Fit IV2SLS",
+            "Get Results",
+            "Interpret Estimates"
+        ]
+    },
+    {
+        "q": "statsmodels implements two-stage least squares.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match statsmodels classes:",
+        "type": "match",
+        "left": [
+            "OLS",
+            "IV2SLS",
+            "PanelOLS",
+            "PropensityScoreMatching"
+        ],
+        "right": [
+            "Ordinary least squares",
+            "Instrumental variables",
+            "Panel data",
+            "Matching"
+        ]
+    },
+    {
+        "q": "The ______ class in statsmodels fits IV regression.",
+        "type": "fill_blank",
+        "answers": [
+            "IV2SLS"
+        ],
+        "other_options": [
+            "OLS",
+            "WLS",
+            "GLS"
+        ]
+    },
+    {
+        "q": "What is causal discovery?",
+        "type": "mcq",
+        "o": [
+            "Learning causal structure from observational data",
+            "Discovery analysis",
+            "Structure learning",
+            "Causal learning"
+        ]
+    },
+    {
+        "q": "What does this identify in causal discovery?",
+        "type": "mcq",
+        "c": "algorithm = 'PC algorithm'\noutput = 'equivalence class of DAGs'\nprint(f'Output: {output}')",
+        "o": [
+            "Output: equivalence class of DAGs",
+            "Output: single DAG",
+            "Output: treatment effect",
+            "Output: propensity"
+        ]
+    },
+    {
+        "q": "Causal discovery can identify Markov equivalence class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match discovery algorithms:",
+        "type": "match",
+        "left": [
+            "PC",
+            "GES",
+            "LiNGAM",
+            "FCI"
+        ],
+        "right": [
+            "Constraint-based",
+            "Score-based",
+            "Linear non-Gaussian",
+            "Hidden confounders"
+        ]
+    },
+    {
+        "q": "The ______ algorithm uses conditional independence tests.",
+        "type": "fill_blank",
+        "answers": [
+            "PC"
+        ],
+        "other_options": [
+            "GES",
+            "LiNGAM",
+            "score"
+        ]
+    },
+    {
+        "q": "What is structural causal model (SCM)?",
+        "type": "mcq",
+        "o": [
+            "Mathematical model with structural equations and noise",
+            "Structural model",
+            "Causal structure",
+            "Equation model"
+        ]
+    },
+    {
+        "q": "What does this SCM represent?",
+        "type": "mcq",
+        "c": "equation = 'Y := f(X, U)'\nmeaning = 'Y caused by X and noise U'\nprint(f'Represents: {meaning}')",
+        "o": [
+            "Represents: Y caused by X and noise U",
+            "Represents: correlation",
+            "Represents: association",
+            "Represents: prediction"
+        ]
+    },
+    {
+        "q": "Rearrange SCM analysis:",
+        "type": "rearrange",
+        "words": [
+            "Specify Variables",
+            "Write Equations",
+            "Define Noise",
+            "Derive Interventions",
+            "Compute Counterfactuals"
+        ]
+    },
+    {
+        "q": "SCMs support counterfactual reasoning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SCM components:",
+        "type": "match",
+        "left": [
+            "Endogenous",
+            "Exogenous",
+            "Functions",
+            "Graph"
+        ],
+        "right": [
+            "Determined by model",
+            "External noise",
+            "Structural equations",
+            "DAG representation"
+        ]
+    },
+    {
+        "q": "The ______ causal model uses structural equations.",
+        "type": "fill_blank",
+        "answers": [
+            "structural"
+        ],
+        "other_options": [
+            "statistical",
+            "graphical",
+            "parametric"
+        ]
+    },
+    {
+        "q": "What is counterfactual reasoning?",
+        "type": "mcq",
+        "o": [
+            "Reasoning about what would have happened under different conditions",
+            "Counter analysis",
+            "Factual reasoning",
+            "Alternative analysis"
+        ]
+    },
+    {
+        "q": "What does this counterfactual ask?",
+        "type": "mcq",
+        "c": "question = 'What would Y be if X had been different?'\ntype_q = 'counterfactual query'\nprint(f'Type: {type_q}')",
+        "o": [
+            "Type: counterfactual query",
+            "Type: interventional",
+            "Type: observational",
+            "Type: predictive"
+        ]
+    },
+    {
+        "q": "Counterfactuals require individual-level reasoning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match query types:",
+        "type": "match",
+        "left": [
+            "Observational",
+            "Interventional",
+            "Counterfactual",
+            "Association"
+        ],
+        "right": [
+            "P(Y|X)",
+            "P(Y|do(X))",
+            "P(Y_x|X)",
+            "Correlation"
+        ]
+    },
+    {
+        "q": "The ______ query asks about alternative worlds.",
+        "type": "fill_blank",
+        "answers": [
+            "counterfactual"
+        ],
+        "other_options": [
+            "interventional",
+            "observational",
+            "associational"
+        ]
+    },
+    {
+        "q": "What is front-door adjustment?",
+        "type": "mcq",
+        "o": [
+            "Identifying effect through mediator when backdoor blocked",
+            "Front-door method",
+            "Adjustment technique",
+            "Mediator identification"
+        ]
+    },
+    {
+        "q": "What does front-door require?",
+        "type": "mcq",
+        "c": "requirement = 'fully mediating variable'\nconditions = 'blocks all direct paths'\nprint(f'Requires: {requirement}')",
+        "o": [
+            "Requires: fully mediating variable",
+            "Requires: instrument",
+            "Requires: confounder",
+            "Requires: collider"
+        ]
+    },
+    {
+        "q": "Rearrange front-door adjustment:",
+        "type": "rearrange",
+        "words": [
+            "Identify Mediator",
+            "Check Conditions",
+            "Estimate X to M",
+            "Estimate M to Y",
+            "Combine Effects"
+        ]
+    },
+    {
+        "q": "Front-door adjustment works when backdoor fails.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match front-door concepts:",
+        "type": "match",
+        "left": [
+            "Mediator",
+            "Complete Mediation",
+            "Two-step",
+            "Identification"
+        ],
+        "right": [
+            "Intermediate variable",
+            "All effect through M",
+            "X to M, M to Y",
+            "Causal estimate"
+        ]
+    },
+    {
+        "q": "The front-______ criterion uses mediating paths.",
+        "type": "fill_blank",
+        "answers": [
+            "door"
+        ],
+        "other_options": [
+            "path",
+            "adjustment",
+            "chain"
+        ]
+    },
+    {
+        "q": "What is Mendelian randomization?",
+        "type": "mcq",
+        "o": [
+            "Using genetic variants as instruments for causal inference",
+            "Mendelian analysis",
+            "Genetic causal",
+            "Randomization method"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for MR?",
+        "type": "mcq",
+        "c": "instrument = 'genetic variant'\nassumption = 'affects outcome only through exposure'\nprint(f'Uses: {instrument}')",
+        "o": [
+            "Uses: genetic variant",
+            "Uses: treatment",
+            "Uses: confounder",
+            "Uses: outcome"
+        ]
+    },
+    {
+        "q": "Mendelian randomization uses genetic variants as IVs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match MR concepts:",
+        "type": "match",
+        "left": [
+            "SNP",
+            "Exposure",
+            "Pleiotropy",
+            "MR-Egger"
+        ],
+        "right": [
+            "Genetic variant",
+            "Risk factor",
+            "Multiple effects",
+            "Robust estimate"
+        ]
+    },
+    {
+        "q": "The ______ randomization uses genetic instruments.",
+        "type": "fill_blank",
+        "answers": [
+            "Mendelian"
+        ],
+        "other_options": [
+            "genetic",
+            "natural",
+            "clinical"
+        ]
+    },
+    {
+        "q": "What is causal effect heterogeneity?",
+        "type": "mcq",
+        "o": [
+            "Variation in treatment effects across subgroups",
+            "Effect heterogeneity",
+            "Causal variation",
+            "Subgroup effects"
+        ]
+    },
+    {
+        "q": "What does this code calculate for subgroup effect?",
+        "type": "mcq",
+        "c": "overall_ate = 10\nsubgroup_effect = 15\ndifference = subgroup_effect - overall_ate\nprint(f'Difference: {difference}')",
+        "o": [
+            "Difference: 5",
+            "Difference: 25",
+            "Difference: -5",
+            "Difference: 10"
+        ]
+    },
+    {
+        "q": "Rearrange heterogeneity analysis:",
+        "type": "rearrange",
+        "words": [
+            "Estimate Overall Effect",
+            "Define Subgroups",
+            "Estimate Subgroup Effects",
+            "Test Differences",
+            "Interpret Heterogeneity"
+        ]
+    },
+    {
+        "q": "Machine learning can discover effect heterogeneity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match heterogeneity methods:",
+        "type": "match",
+        "left": [
+            "Subgroup",
+            "CATE",
+            "Causal Forest",
+            "Optimal Policy"
+        ],
+        "right": [
+            "Pre-specified groups",
+            "Conditional effect",
+            "ML discovery",
+            "Best treatment rule"
+        ]
+    },
+    {
+        "q": "The conditional ______ treatment effect varies by covariates.",
+        "type": "fill_blank",
+        "answers": [
+            "average"
+        ],
+        "other_options": [
+            "individual",
+            "marginal",
+            "total"
+        ]
+    },
+    {
+        "q": "What is optimal treatment policy?",
+        "type": "mcq",
+        "o": [
+            "Decision rule maximizing expected outcomes from treatment",
+            "Optimal policy",
+            "Treatment rule",
+            "Best decision"
+        ]
+    },
+    {
+        "q": "What does this code calculate for policy value?",
+        "type": "mcq",
+        "c": "treated_outcome = 100\ncontrol_outcome = 80\noptimal = max(treated_outcome, control_outcome)\nprint(f'Optimal: {optimal}')",
+        "o": [
+            "Optimal: 100",
+            "Optimal: 80",
+            "Optimal: 180",
+            "Optimal: 20"
+        ]
+    },
+    {
+        "q": "Optimal policies assign treatment to maximize outcomes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match policy concepts:",
+        "type": "match",
+        "left": [
+            "Policy",
+            "Value Function",
+            "Regret",
+            "Personalized"
+        ],
+        "right": [
+            "Decision rule",
+            "Expected outcome",
+            "Suboptimal loss",
+            "Individual-level"
+        ]
+    },
+    {
+        "q": "The optimal ______ assigns treatment to maximize welfare.",
+        "type": "fill_blank",
+        "answers": [
+            "policy"
+        ],
+        "other_options": [
+            "treatment",
+            "outcome",
+            "decision"
+        ]
+    },
+    {
+        "q": "What is time-varying treatment?",
+        "type": "mcq",
+        "o": [
+            "Treatment that changes over time for the same unit",
+            "Time treatment",
+            "Varying treatment",
+            "Dynamic treatment"
+        ]
+    },
+    {
+        "q": "What does this code represent for treatment history?",
+        "type": "mcq",
+        "c": "history = [0, 1, 1, 0, 1]\ntreatment_periods = sum(history)\nprint(f'Treated periods: {treatment_periods}')",
+        "o": [
+            "Treated periods: 3",
+            "Treated periods: 5",
+            "Treated periods: 2",
+            "Treated periods: 0"
+        ]
+    },
+    {
+        "q": "Rearrange time-varying treatment analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Treatment History",
+            "Model Time-varying Confounding",
+            "Apply G-methods",
+            "Estimate Dynamic Effects",
+            "Interpret Results"
+        ]
+    },
+    {
+        "q": "Time-varying confounding requires special methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match time-varying methods:",
+        "type": "match",
+        "left": [
+            "MSM",
+            "G-computation",
+            "SNMM",
+            "History"
+        ],
+        "right": [
+            "Marginal structural",
+            "Standardization",
+            "Structural nested",
+            "Treatment sequence"
+        ]
+    },
+    {
+        "q": "The ______ varying treatment requires longitudinal methods.",
+        "type": "fill_blank",
+        "answers": [
+            "time"
+        ],
+        "other_options": [
+            "dose",
+            "type",
+            "level"
+        ]
+    },
+    {
+        "q": "What is dose-response estimation?",
+        "type": "mcq",
+        "o": [
+            "Estimating treatment effects across continuous doses",
+            "Dose analysis",
+            "Response estimation",
+            "Continuous treatment"
+        ]
+    },
+    {
+        "q": "What does this code calculate for dose effect?",
+        "type": "mcq",
+        "c": "doses = [10, 20, 30]\neffects = [5, 12, 15]\nslope = (effects[-1] - effects[0]) / (doses[-1] - doses[0])\nprint(f'Slope: {slope}')",
+        "o": [
+            "Slope: 0.5",
+            "Slope: 10.0",
+            "Slope: 2.0",
+            "Slope: 0.33"
+        ]
+    },
+    {
+        "q": "Generalized propensity score handles continuous treatments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match dose-response concepts:",
+        "type": "match",
+        "left": [
+            "GPS",
+            "Dose-response Curve",
+            "Marginal Effect",
+            "Threshold"
+        ],
+        "right": [
+            "Generalized PS",
+            "Effect vs dose",
+            "Incremental effect",
+            "Minimum effective dose"
+        ]
+    },
+    {
+        "q": "The dose-______ curve shows effect by treatment level.",
+        "type": "fill_blank",
+        "answers": [
+            "response"
+        ],
+        "other_options": [
+            "effect",
+            "outcome",
+            "relationship"
+        ]
+    },
+    {
+        "q": "What is survival causal inference?",
+        "type": "mcq",
+        "o": [
+            "Causal analysis with time-to-event outcomes",
+            "Survival analysis",
+            "Time causal",
+            "Event inference"
+        ]
+    },
+    {
+        "q": "What does this code calculate for hazard ratio?",
+        "type": "mcq",
+        "c": "hazard_treated = 0.05\nhazard_control = 0.10\nhr = hazard_treated / hazard_control\nprint(f'HR: {hr}')",
+        "o": [
+            "HR: 0.5",
+            "HR: 2.0",
+            "HR: 0.15",
+            "HR: 0.005"
+        ]
+    },
+    {
+        "q": "Rearrange survival causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Time-to-event",
+            "Handle Censoring",
+            "Apply Causal Method",
+            "Estimate Survival Effect",
+            "Report Hazard Ratio"
+        ]
+    },
+    {
+        "q": "Immortal time bias can affect survival studies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match survival causal methods:",
+        "type": "match",
+        "left": [
+            "Cox",
+            "Kaplan-Meier",
+            "IPTW",
+            "Clone-Censor-Weight"
+        ],
+        "right": [
+            "Proportional hazards",
+            "Survival curve",
+            "Weighted analysis",
+            "Immortal time adjustment"
+        ]
+    },
+    {
+        "q": "The ______ time bias misclassifies pre-treatment time.",
+        "type": "fill_blank",
+        "answers": [
+            "immortal"
+        ],
+        "other_options": [
+            "survival",
+            "follow-up",
+            "censoring"
+        ]
+    },
+    {
+        "q": "What is causal mediation with survival outcomes?",
+        "type": "mcq",
+        "o": [
+            "Decomposing survival treatment effects through mediators",
+            "Survival mediation",
+            "Time mediation",
+            "Event decomposition"
+        ]
+    },
+    {
+        "q": "What does this represent in survival mediation?",
+        "type": "mcq",
+        "c": "total_effect = 'log HR = -0.5'\ndirect = 'log HR = -0.3'\nindirect = 'log HR = -0.2'\nprint(f'Total: {total_effect}')",
+        "o": [
+            "Total: log HR = -0.5",
+            "Total: -0.3",
+            "Total: -0.2",
+            "Total: 0.5"
+        ]
+    },
+    {
+        "q": "Survival mediation requires handling censoring.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match survival mediation concepts:",
+        "type": "match",
+        "left": [
+            "Direct",
+            "Indirect",
+            "Censoring",
+            "Accelerated Failure"
+        ],
+        "right": [
+            "Not through mediator",
+            "Through mediator",
+            "Incomplete observation",
+            "Time scale"
+        ]
+    },
+    {
+        "q": "The survival ______ effect operates through the mediator.",
+        "type": "fill_blank",
+        "answers": [
+            "indirect"
+        ],
+        "other_options": [
+            "direct",
+            "total",
+            "hazard"
+        ]
+    },
+    {
+        "q": "What is off-policy evaluation?",
+        "type": "mcq",
+        "o": [
+            "Evaluating new policy using data from different policy",
+            "Off-policy analysis",
+            "Policy evaluation",
+            "Historical evaluation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for importance weight?",
+        "type": "mcq",
+        "c": "pi_new = 0.6\npi_old = 0.3\nweight = pi_new / pi_old\nprint(f'Weight: {weight}')",
+        "o": [
+            "Weight: 2.0",
+            "Weight: 0.5",
+            "Weight: 0.9",
+            "Weight: 0.18"
+        ]
+    },
+    {
+        "q": "Rearrange off-policy evaluation:",
+        "type": "rearrange",
+        "words": [
+            "Define New Policy",
+            "Calculate Weights",
+            "Weight Historical Outcomes",
+            "Estimate Policy Value",
+            "Assess Variance"
+        ]
+    },
+    {
+        "q": "Off-policy evaluation enables counterfactual policy analysis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match off-policy methods:",
+        "type": "match",
+        "left": [
+            "IPS",
+            "DR",
+            "DM",
+            "SNIPS"
+        ],
+        "right": [
+            "Importance sampling",
+            "Doubly robust",
+            "Direct method",
+            "Self-normalized"
+        ]
+    },
+    {
+        "q": "The ______ policy evaluation uses historical data.",
+        "type": "fill_blank",
+        "answers": [
+            "off"
+        ],
+        "other_options": [
+            "on",
+            "current",
+            "new"
+        ]
+    },
+    {
+        "q": "What is reinforcement learning causal inference?",
+        "type": "mcq",
+        "o": [
+            "Integrating causal reasoning into sequential decision-making",
+            "RL causal",
+            "Causal RL",
+            "Sequential causal"
+        ]
+    },
+    {
+        "q": "What does this illustrate for causal RL?",
+        "type": "mcq",
+        "c": "problem = 'confounded reward'\nsolution = 'causal model of environment'\nprint(f'Addresses: {problem}')",
+        "o": [
+            "Addresses: confounded reward",
+            "Addresses: simple reward",
+            "Addresses: no reward",
+            "Addresses: prediction"
+        ]
+    },
+    {
+        "q": "Causal RL can handle confounded observations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match causal RL concepts:",
+        "type": "match",
+        "left": [
+            "Confounding",
+            "Intervention",
+            "Counterfactual",
+            "SCM"
+        ],
+        "right": [
+            "Biased data",
+            "do-operator",
+            "Alternative action",
+            "Structural model"
+        ]
+    },
+    {
+        "q": "The ______ learning benefits from causal world models.",
+        "type": "fill_blank",
+        "answers": [
+            "reinforcement"
+        ],
+        "other_options": [
+            "supervised",
+            "unsupervised",
+            "transfer"
+        ]
+    },
+    {
+        "q": "What is causal fairness?",
+        "type": "mcq",
+        "o": [
+            "Ensuring decisions don't causally discriminate",
+            "Fairness analysis",
+            "Causal equality",
+            "Fair treatment"
+        ]
+    },
+    {
+        "q": "What does this code check for direct discrimination?",
+        "type": "mcq",
+        "c": "path = 'A -> Y'\ntype_d = 'direct effect of protected attribute'\nprint(f'Checks: {type_d}')",
+        "o": [
+            "Checks: direct effect of protected attribute",
+            "Checks: indirect effect",
+            "Checks: total effect",
+            "Checks: no effect"
+        ]
+    },
+    {
+        "q": "Rearrange causal fairness analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Protected Attribute",
+            "Build Causal Graph",
+            "Identify Pathways",
+            "Measure Effects",
+            "Assess Fairness"
+        ]
+    },
+    {
+        "q": "Path-specific effects help distinguish discrimination types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match fairness concepts:",
+        "type": "match",
+        "left": [
+            "Direct",
+            "Indirect",
+            "Counterfactual",
+            "Path-specific"
+        ],
+        "right": [
+            "A to Y directly",
+            "Through mediator",
+            "What if A different",
+            "Along specific path"
+        ]
+    },
+    {
+        "q": "The ______ fairness framework uses causal graphs.",
+        "type": "fill_blank",
+        "answers": [
+            "causal"
+        ],
+        "other_options": [
+            "statistical",
+            "observational",
+            "predictive"
+        ]
+    },
+    {
+        "q": "What is education causal inference?",
+        "type": "mcq",
+        "o": [
+            "Estimating effects of educational interventions",
+            "Education analysis",
+            "Learning causal",
+            "School inference"
+        ]
+    },
+    {
+        "q": "What does this calculate for class size effect?",
+        "type": "mcq",
+        "c": "small_class = 85\nlarge_class = 78\neffect = small_class - large_class\nprint(f'Effect: {effect}')",
+        "o": [
+            "Effect: 7",
+            "Effect: 163",
+            "Effect: -7",
+            "Effect: 85"
+        ]
+    },
+    {
+        "q": "Regression discontinuity is common in education research.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match education methods:",
+        "type": "match",
+        "left": [
+            "Lottery",
+            "RDD",
+            "DiD",
+            "Fixed Effects"
+        ],
+        "right": [
+            "Random assignment",
+            "Score threshold",
+            "Policy change",
+            "Student controls"
+        ]
+    },
+    {
+        "q": "The class size ______ used random assignment.",
+        "type": "fill_blank",
+        "answers": [
+            "experiment"
+        ],
+        "other_options": [
+            "study",
+            "analysis",
+            "observation"
+        ]
+    },
+    {
+        "q": "What is social science causal inference?",
+        "type": "mcq",
+        "o": [
+            "Using causal methods to study human behavior and society",
+            "Social analysis",
+            "Science causal",
+            "Society inference"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for social experiment?",
+        "type": "mcq",
+        "c": "intervention = 'cash transfer'\noutcome = 'employment rate'\neffect = 'causal impact'\nprint(f'Studies: {effect}')",
+        "o": [
+            "Studies: causal impact",
+            "Studies: correlation",
+            "Studies: prediction",
+            "Studies: description"
+        ]
+    },
+    {
+        "q": "Rearrange social science causal study:",
+        "type": "rearrange",
+        "words": [
+            "Define Research Question",
+            "Identify Strategy",
+            "Collect Data",
+            "Estimate Effect",
+            "Consider Mechanisms"
+        ]
+    },
+    {
+        "q": "Natural experiments are common in social science.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match social science applications:",
+        "type": "match",
+        "left": [
+            "Crime",
+            "Health",
+            "Labor",
+            "Migration"
+        ],
+        "right": [
+            "Policy effects",
+            "Insurance impact",
+            "Wage effects",
+            "Border changes"
+        ]
+    },
+    {
+        "q": "The ______ science revolution emphasized causal identification.",
+        "type": "fill_blank",
+        "answers": [
+            "credibility"
+        ],
+        "other_options": [
+            "statistical",
+            "empirical",
+            "theoretical"
+        ]
+    },
+    {
+        "q": "What is environmental causal inference?",
+        "type": "mcq",
+        "o": [
+            "Estimating causal effects of environmental policies and exposures",
+            "Environmental analysis",
+            "Climate causal",
+            "Pollution inference"
+        ]
+    },
+    {
+        "q": "What does this calculate for pollution effect?",
+        "type": "mcq",
+        "c": "pre_policy = 100\npost_policy = 75\nreduction = pre_policy - post_policy\nprint(f'Reduction: {reduction}')",
+        "o": [
+            "Reduction: 25",
+            "Reduction: 175",
+            "Reduction: -25",
+            "Reduction: 75"
+        ]
+    },
+    {
+        "q": "Air quality studies use DiD around policy changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match environmental methods:",
+        "type": "match",
+        "left": [
+            "Regulation",
+            "Weather IV",
+            "Border",
+            "Emissions Trading"
+        ],
+        "right": [
+            "Policy DiD",
+            "Exogenous variation",
+            "Spatial discontinuity",
+            "Market mechanism"
+        ]
+    },
+    {
+        "q": "The Clean Air Act provided ______ experiment opportunities.",
+        "type": "fill_blank",
+        "answers": [
+            "natural"
+        ],
+        "other_options": [
+            "randomized",
+            "controlled",
+            "lab"
+        ]
+    },
+    {
+        "q": "What is negative control outcome?",
+        "type": "mcq",
+        "o": [
+            "Outcome that shouldn't be affected by treatment to test bias",
+            "Negative analysis",
+            "Control outcome",
+            "Bias test"
+        ]
+    },
+    {
+        "q": "What does a significant negative control suggest?",
+        "type": "mcq",
+        "c": "result = 'treatment affects negative control'\nimplication = 'possible bias'\nprint(f'Suggests: {implication}')",
+        "o": [
+            "Suggests: possible bias",
+            "Suggests: valid estimate",
+            "Suggests: no effect",
+            "Suggests: success"
+        ]
+    },
+    {
+        "q": "Rearrange negative control analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify Control Outcome",
+            "Check Should Be Zero",
+            "Estimate Effect",
+            "Interpret Result",
+            "Assess Bias"
+        ]
+    },
+    {
+        "q": "Negative control outcomes test assumption validity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match control types:",
+        "type": "match",
+        "left": [
+            "Negative Control Outcome",
+            "Negative Control Exposure",
+            "Placebo",
+            "Falsification"
+        ],
+        "right": [
+            "Unaffected outcome",
+            "Unrelated treatment",
+            "Inactive treatment",
+            "Should-be-zero test"
+        ]
+    },
+    {
+        "q": "The negative ______ outcome shouldn't respond to treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "control"
+        ],
+        "other_options": [
+            "placebo",
+            "test",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is regression kink design?",
+        "type": "mcq",
+        "o": [
+            "Exploiting slope change in treatment assignment function",
+            "Kink analysis",
+            "Regression design",
+            "Slope discontinuity"
+        ]
+    },
+    {
+        "q": "What does this code calculate for kink?",
+        "type": "mcq",
+        "c": "slope_below = 0.5\nslope_above = 0.3\nkink = slope_above - slope_below\nprint(f'Kink: {kink}')",
+        "o": [
+            "Kink: -0.2",
+            "Kink: 0.8",
+            "Kink: 0.2",
+            "Kink: 0.15"
+        ]
+    },
+    {
+        "q": "RKD estimates affect based on slope change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match RDD vs RKD:",
+        "type": "match",
+        "left": [
+            "RDD",
+            "RKD",
+            "Level Jump",
+            "Slope Change"
+        ],
+        "right": [
+            "Discontinuity",
+            "Kink",
+            "RDD feature",
+            "RKD feature"
+        ]
+    },
+    {
+        "q": "The regression ______ design uses slope changes.",
+        "type": "fill_blank",
+        "answers": [
+            "kink"
+        ],
+        "other_options": [
+            "discontinuity",
+            "break",
+            "jump"
+        ]
+    },
+    {
+        "q": "What is shift-share instrument?",
+        "type": "mcq",
+        "o": [
+            "Instrument combining national shifts with local shares",
+            "Shift-share analysis",
+            "Bartik instrument",
+            "Share method"
+        ]
+    },
+    {
+        "q": "What does this calculate for shift-share?",
+        "type": "mcq",
+        "c": "national_shift = 0.1\nlocal_share = 0.3\npredicted = national_shift * local_share\nprint(f'Predicted: {predicted}')",
+        "o": [
+            "Predicted: 0.03",
+            "Predicted: 0.4",
+            "Predicted: 0.1",
+            "Predicted: 0.3"
+        ]
+    },
+    {
+        "q": "Rearrange shift-share analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Industry Shares",
+            "Calculate National Shifts",
+            "Construct Instrument",
+            "Estimate IV",
+            "Check Validity"
+        ]
+    },
+    {
+        "q": "Bartik instruments use industry composition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match shift-share concepts:",
+        "type": "match",
+        "left": [
+            "Shift",
+            "Share",
+            "Bartik",
+            "Exposure"
+        ],
+        "right": [
+            "National change",
+            "Local composition",
+            "Origin name",
+            "Predicted impact"
+        ]
+    },
+    {
+        "q": "The shift-______ instrument combines national and local variation.",
+        "type": "fill_blank",
+        "answers": [
+            "share"
+        ],
+        "other_options": [
+            "composition",
+            "exposure",
+            "composition"
+        ]
+    },
+    {
+        "q": "What is triple differences (DDD)?",
+        "type": "mcq",
+        "o": [
+            "Extension of DiD with three difference dimensions",
+            "Triple DiD",
+            "DDD analysis",
+            "Three-way difference"
+        ]
+    },
+    {
+        "q": "What does DDD control for?",
+        "type": "mcq",
+        "c": "control_1 = 'time trends'\ncontrol_2 = 'group differences'\ncontrol_3 = 'additional variation'\nprint(f'Controls: {control_3}')",
+        "o": [
+            "Controls: additional variation",
+            "Controls: time trends",
+            "Controls: group differences",
+            "Controls: none"
+        ]
+    },
+    {
+        "q": "DDD can address violations of parallel trends.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match differences levels:",
+        "type": "match",
+        "left": [
+            "First Diff",
+            "Second Diff",
+            "Third Diff",
+            "DDD"
+        ],
+        "right": [
+            "Before-after",
+            "Treated-control",
+            "Within-group",
+            "Triple difference"
+        ]
+    },
+    {
+        "q": "The ______ differences design adds a third comparison.",
+        "type": "fill_blank",
+        "answers": [
+            "triple"
+        ],
+        "other_options": [
+            "double",
+            "single",
+            "quadruple"
+        ]
+    },
+    {
+        "q": "What is machine learning for causal inference?",
+        "type": "mcq",
+        "o": [
+            "Using ML methods to estimate causal effects",
+            "ML causal",
+            "Causal ML",
+            "Learning causal"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for ML causal?",
+        "type": "mcq",
+        "c": "step = 'nuisance estimation'\nmethod = 'random forest'\nprint(f'Uses ML for: {step}')",
+        "o": [
+            "Uses ML for: nuisance estimation",
+            "Uses ML for: effect estimation",
+            "Uses ML for: prediction",
+            "Uses ML for: classification"
+        ]
+    },
+    {
+        "q": "Rearrange ML causal pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Define Causal Model",
+            "Estimate Nuisance with ML",
+            "Apply Debiasing",
+            "Estimate Effect",
+            "Validate"
+        ]
+    },
+    {
+        "q": "ML helps with high-dimensional confounding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ML causal methods:",
+        "type": "match",
+        "left": [
+            "LASSO",
+            "Random Forest",
+            "Gradient Boosting",
+            "Neural Net"
+        ],
+        "right": [
+            "Sparse selection",
+            "Tree ensemble",
+            "Boosted trees",
+            "Deep learning"
+        ]
+    },
+    {
+        "q": "The ML causal methods handle high-______ data.",
+        "type": "fill_blank",
+        "answers": [
+            "dimensional"
+        ],
+        "other_options": [
+            "volume",
+            "quality",
+            "frequency"
+        ]
+    },
+    {
+        "q": "What is T-learner?",
+        "type": "mcq",
+        "o": [
+            "Training separate models for treatment and control outcomes",
+            "T-learning",
+            "Two-model learner",
+            "Treatment learner"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for T-learner?",
+        "type": "mcq",
+        "c": "model_1 = 'trained on treated'\nmodel_0 = 'trained on control'\ncate = 'model_1(x) - model_0(x)'\nprint(f'Approach: {cate}')",
+        "o": [
+            "Approach: model_1(x) - model_0(x)",
+            "Approach: single model",
+            "Approach: propensity",
+            "Approach: outcome"
+        ]
+    },
+    {
+        "q": "T-learner may overfit with imbalanced treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match meta-learners:",
+        "type": "match",
+        "left": [
+            "T-learner",
+            "S-learner",
+            "X-learner",
+            "R-learner"
+        ],
+        "right": [
+            "Two models",
+            "Single model",
+            "Cross-fit",
+            "Robinson transformation"
+        ]
+    },
+    {
+        "q": "The ______ learner trains separate models per treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "T"
+        ],
+        "other_options": [
+            "S",
+            "X",
+            "R"
+        ]
+    },
+    {
+        "q": "What is S-learner?",
+        "type": "mcq",
+        "o": [
+            "Single model predicting outcome with treatment as feature",
+            "S-learning",
+            "Single learner",
+            "Simple learner"
+        ]
+    },
+    {
+        "q": "What does this code show for S-learner?",
+        "type": "mcq",
+        "c": "features = ['x1', 'x2', 'treatment']\nmodel = 'single model with treatment feature'\nprint(f'Uses: {model}')",
+        "o": [
+            "Uses: single model with treatment feature",
+            "Uses: two models",
+            "Uses: propensity only",
+            "Uses: no treatment"
+        ]
+    },
+    {
+        "q": "Rearrange S-learner estimation:",
+        "type": "rearrange",
+        "words": [
+            "Combine Data",
+            "Include Treatment Feature",
+            "Train Single Model",
+            "Predict Both Treatments",
+            "Calculate CATE"
+        ]
+    },
+    {
+        "q": "S-learner may miss heterogeneous effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match learner characteristics:",
+        "type": "match",
+        "left": [
+            "S Simple",
+            "T Separate",
+            "X Transfer",
+            "R Robinson"
+        ],
+        "right": [
+            "Single model",
+            "Per-treatment",
+            "Cross-estimation",
+            "Residual-based"
+        ]
+    },
+    {
+        "q": "The ______ learner uses treatment as a covariate.",
+        "type": "fill_blank",
+        "answers": [
+            "S"
+        ],
+        "other_options": [
+            "T",
+            "X",
+            "R"
+        ]
+    },
+    {
+        "q": "What is X-learner?",
+        "type": "mcq",
+        "o": [
+            "Meta-learner using cross-fitting between treatment groups",
+            "X-learning",
+            "Cross learner",
+            "Exchange learner"
+        ]
+    },
+    {
+        "q": "What does X-learner estimate first?",
+        "type": "mcq",
+        "c": "step_1 = 'train outcome models per group'\nstep_2 = 'impute treatment effects'\nprint(f'First: {step_1}')",
+        "o": [
+            "First: train outcome models per group",
+            "First: propensity",
+            "First: CATE",
+            "First: residuals"
+        ]
+    },
+    {
+        "q": "X-learner performs well with imbalanced treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match X-learner steps:",
+        "type": "match",
+        "left": [
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Propensity"
+        ],
+        "right": [
+            "Outcome models",
+            "Impute effects",
+            "Weight by PS",
+            "Weighting"
+        ]
+    },
+    {
+        "q": "The ______ learner uses cross-fitting imputation.",
+        "type": "fill_blank",
+        "answers": [
+            "X"
+        ],
+        "other_options": [
+            "T",
+            "S",
+            "R"
+        ]
+    },
+    {
+        "q": "What is R-learner?",
+        "type": "mcq",
+        "o": [
+            "Meta-learner using Robinson transformation",
+            "R-learning",
+            "Residual learner",
+            "Robinson learner"
+        ]
+    },
+    {
+        "q": "What does R-learner residualize?",
+        "type": "mcq",
+        "c": "y_residual = 'Y - E[Y|X]'\nd_residual = 'D - E[D|X]'\nprint(f'Residualizes: {y_residual}')",
+        "o": [
+            "Residualizes: Y - E[Y|X]",
+            "Residualizes: Y",
+            "Residualizes: D",
+            "Residualizes: X"
+        ]
+    },
+    {
+        "q": "Rearrange R-learner estimation:",
+        "type": "rearrange",
+        "words": [
+            "Estimate E[Y|X]",
+            "Estimate E[D|X]",
+            "Compute Residuals",
+            "Regress Y-residual on D-residual",
+            "Estimate CATE"
+        ]
+    },
+    {
+        "q": "R-learner is connected to double machine learning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match R-learner concepts:",
+        "type": "match",
+        "left": [
+            "Outcome Residual",
+            "Treatment Residual",
+            "Robinson",
+            "Orthogonalization"
+        ],
+        "right": [
+            "Y - m(X)",
+            "D - e(X)",
+            "Transformation name",
+            "Debiasing"
+        ]
+    },
+    {
+        "q": "The ______ learner uses residualized outcome and treatment.",
+        "type": "fill_blank",
+        "answers": [
+            "R"
+        ],
+        "other_options": [
+            "T",
+            "S",
+            "X"
+        ]
+    },
+    {
+        "q": "What is CATE estimation?",
+        "type": "mcq",
+        "o": [
+            "Estimating conditional average treatment effects",
+            "CATE analysis",
+            "Conditional estimation",
+            "Average effect"
+        ]
+    },
+    {
+        "q": "What does CATE condition on?",
+        "type": "mcq",
+        "c": "cate = 'E[Y(1) - Y(0) | X = x]'\nconditions = 'covariates X'\nprint(f'Conditions on: {conditions}')",
+        "o": [
+            "Conditions on: covariates X",
+            "Conditions on: treatment",
+            "Conditions on: outcome",
+            "Conditions on: nothing"
+        ]
+    },
+    {
+        "q": "CATE captures treatment effect heterogeneity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match effect types:",
+        "type": "match",
+        "left": [
+            "ATE",
+            "ATT",
+            "CATE",
+            "ITE"
+        ],
+        "right": [
+            "Average all",
+            "Average treated",
+            "Conditional",
+            "Individual"
+        ]
+    },
+    {
+        "q": "The ______ average treatment effect is function of covariates.",
+        "type": "fill_blank",
+        "answers": [
+            "conditional"
+        ],
+        "other_options": [
+            "average",
+            "individual",
+            "marginal"
+        ]
+    },
+    {
+        "q": "What is GAN for causal estimation?",
+        "type": "mcq",
+        "o": [
+            "Using generative adversarial networks for counterfactual generation",
+            "GAN causal",
+            "Generative causal",
+            "Network estimation"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for GANITE?",
+        "type": "mcq",
+        "c": "component = 'counterfactual generator'\noutput = 'imputed potential outcomes'\nprint(f'Generates: {output}')",
+        "o": [
+            "Generates: imputed potential outcomes",
+            "Generates: propensity",
+            "Generates: treatment",
+            "Generates: covariates"
+        ]
+    },
+    {
+        "q": "Rearrange GAN causal inference:",
+        "type": "rearrange",
+        "words": [
+            "Train Generator",
+            "Train Discriminator",
+            "Generate Counterfactuals",
+            "Estimate Effects",
+            "Evaluate Quality"
+        ]
+    },
+    {
+        "q": "GANs can generate counterfactual outcomes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match deep causal methods:",
+        "type": "match",
+        "left": [
+            "GANITE",
+            "CEVAE",
+            "Dragonnet",
+            "CFR"
+        ],
+        "right": [
+            "GAN counterfactual",
+            "VAE causal",
+            "Propensity network",
+            "Counterfactual regression"
+        ]
+    },
+    {
+        "q": "The ______ causal network uses adversarial training.",
+        "type": "fill_blank",
+        "answers": [
+            "GAN"
+        ],
+        "other_options": [
+            "VAE",
+            "transformer",
+            "RNN"
+        ]
+    },
+    {
+        "q": "What is representation learning for causal?",
+        "type": "mcq",
+        "o": [
+            "Learning balanced representations for causal estimation",
+            "Representation causal",
+            "Feature learning",
+            "Embedding causal"
+        ]
+    },
+    {
+        "q": "What does balanced representation achieve?",
+        "type": "mcq",
+        "c": "goal = 'similar distributions for treated and control'\nmethod = 'representation learning'\nprint(f'Achieves: {goal}')",
+        "o": [
+            "Achieves: similar distributions for treated and control",
+            "Achieves: prediction",
+            "Achieves: classification",
+            "Achieves: clustering"
+        ]
+    },
+    {
+        "q": "CFR learns treatment-invariant representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match representation concepts:",
+        "type": "match",
+        "left": [
+            "Balanced",
+            "Invariant",
+            "Disentangled",
+            "Embedding"
+        ],
+        "right": [
+            "Similar distributions",
+            "Treatment-independent",
+            "Separate factors",
+            "Vector space"
+        ]
+    },
+    {
+        "q": "The ______ representations reduce treatment imbalance.",
+        "type": "fill_blank",
+        "answers": [
+            "balanced"
+        ],
+        "other_options": [
+            "random",
+            "original",
+            "transformed"
+        ]
+    },
+    {
+        "q": "What is text-based causal inference?",
+        "type": "mcq",
+        "o": [
+            "Using text data as treatment, outcome, or confounder",
+            "Text causal",
+            "NLP causal",
+            "Language inference"
+        ]
+    },
+    {
+        "q": "What does this illustrate for text causality?",
+        "type": "mcq",
+        "c": "text = 'customer review'\ntreatment = 'sentiment'\nconfounding = 'topic'\nprint(f'Text provides: {confounding}')",
+        "o": [
+            "Text provides: topic",
+            "Text provides: treatment",
+            "Text provides: outcome",
+            "Text provides: nothing"
+        ]
+    },
+    {
+        "q": "Rearrange text causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect Text",
+            "Extract Features",
+            "Identify Causal Role",
+            "Apply Method",
+            "Interpret Results"
+        ]
+    },
+    {
+        "q": "Text can serve as high-dimensional confounder.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match text causal roles:",
+        "type": "match",
+        "left": [
+            "Treatment",
+            "Outcome",
+            "Confounder",
+            "Mediator"
+        ],
+        "right": [
+            "Text intervention",
+            "Text response",
+            "Text adjustment",
+            "Text mechanism"
+        ]
+    },
+    {
+        "q": "The ______ data can encode confounding information.",
+        "type": "fill_blank",
+        "answers": [
+            "text"
+        ],
+        "other_options": [
+            "numeric",
+            "image",
+            "audio"
+        ]
+    },
+    {
+        "q": "What is image-based causal inference?",
+        "type": "mcq",
+        "o": [
+            "Using images as variables in causal analysis",
+            "Image causal",
+            "Vision causal",
+            "Picture inference"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for image causality?",
+        "type": "mcq",
+        "c": "image = 'satellite photo'\noutcome = 'economic activity'\ntreatment = 'infrastructure change'\nprint(f'Image measures: {outcome}')",
+        "o": [
+            "Image measures: economic activity",
+            "Image measures: treatment",
+            "Image measures: propensity",
+            "Image measures: nothing"
+        ]
+    },
+    {
+        "q": "Images can capture confounders not in tabular data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match image causal applications:",
+        "type": "match",
+        "left": [
+            "Satellite",
+            "Medical",
+            "Street View",
+            "Facial"
+        ],
+        "right": [
+            "Economic proxy",
+            "Diagnosis outcome",
+            "Neighborhood features",
+            "Demographic info"
+        ]
+    },
+    {
+        "q": "The ______ data can serve as high-dimensional outcome.",
+        "type": "fill_blank",
+        "answers": [
+            "image"
+        ],
+        "other_options": [
+            "text",
+            "audio",
+            "video"
+        ]
+    },
+    {
+        "q": "What is causal graph neural network?",
+        "type": "mcq",
+        "o": [
+            "GNN incorporating causal structure for prediction",
+            "Causal GNN",
+            "Graph causal",
+            "Network causal"
+        ]
+    },
+    {
+        "q": "What does this code represent for causal GNN?",
+        "type": "mcq",
+        "c": "input_g = 'causal DAG structure'\nnetwork = 'graph neural network'\noutput = 'causal effect predictions'\nprint(f'Combines: {input_g}')",
+        "o": [
+            "Combines: causal DAG structure",
+            "Combines: random graph",
+            "Combines: no structure",
+            "Combines: tree"
+        ]
+    },
+    {
+        "q": "Rearrange causal GNN:",
+        "type": "rearrange",
+        "words": [
+            "Specify Causal Graph",
+            "Build GNN Architecture",
+            "Train on Observational Data",
+            "Predict Interventions",
+            "Validate"
+        ]
+    },
+    {
+        "q": "Causal GNNs can model intervention effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match causal GNN concepts:",
+        "type": "match",
+        "left": [
+            "Message Passing",
+            "Intervention",
+            "DAG Structure",
+            "Prediction"
+        ],
+        "right": [
+            "Neighbor aggregation",
+            "Node intervention",
+            "Causal ordering",
+            "Effect estimate"
+        ]
+    },
+    {
+        "q": "The causal ______ neural network uses DAG structure.",
+        "type": "fill_blank",
+        "answers": [
+            "graph"
+        ],
+        "other_options": [
+            "convolutional",
+            "recurrent",
+            "transformer"
+        ]
+    },
+    {
+        "q": "What is dynamic treatment regime?",
+        "type": "mcq",
+        "o": [
+            "Sequence of treatment decisions based on patient history",
+            "Dynamic treatment",
+            "Treatment regime",
+            "Sequential decision"
+        ]
+    },
+    {
+        "q": "What does this code represent for DTR?",
+        "type": "mcq",
+        "c": "stages = [1, 2, 3]\ndecision = 'function of history'\nprint(f'Stages: {len(stages)}')",
+        "o": [
+            "Stages: 3",
+            "Stages: 1",
+            "Stages: decision",
+            "Stages: history"
+        ]
+    },
+    {
+        "q": "DTR optimizes treatment sequences over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DTR concepts:",
+        "type": "match",
+        "left": [
+            "Stage",
+            "Tailoring",
+            "Q-learning",
+            "Optimal"
+        ],
+        "right": [
+            "Decision point",
+            "Personalization",
+            "RL method",
+            "Best regime"
+        ]
+    },
+    {
+        "q": "The dynamic treatment ______ adapts to patient history.",
+        "type": "fill_blank",
+        "answers": [
+            "regime"
+        ],
+        "other_options": [
+            "plan",
+            "protocol",
+            "schedule"
+        ]
+    },
+    {
+        "q": "What is precision medicine causal?",
+        "type": "mcq",
+        "o": [
+            "Using causal inference for personalized treatment decisions",
+            "Precision causal",
+            "Medicine causal",
+            "Personal treatment"
+        ]
+    },
+    {
+        "q": "What does this code estimate for precision medicine?",
+        "type": "mcq",
+        "c": "prediction = 'individual treatment effect'\ndecision = 'optimal treatment for patient'\nprint(f'Estimates: {prediction}')",
+        "o": [
+            "Estimates: individual treatment effect",
+            "Estimates: ATE",
+            "Estimates: population effect",
+            "Estimates: no effect"
+        ]
+    },
+    {
+        "q": "Rearrange precision medicine causal:",
+        "type": "rearrange",
+        "words": [
+            "Collect Patient Data",
+            "Estimate Individual Effects",
+            "Identify Optimal Treatment",
+            "Assign Personalized Therapy",
+            "Monitor Outcomes"
+        ]
+    },
+    {
+        "q": "Precision medicine targets individual heterogeneity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match precision medicine concepts:",
+        "type": "match",
+        "left": [
+            "Biomarker",
+            "Subgroup",
+            "Personalized",
+            "Companion"
+        ],
+        "right": [
+            "Effect modifier",
+            "Target population",
+            "Individual decision",
+            "Diagnostic test"
+        ]
+    },
+    {
+        "q": "The ______ medicine uses individual treatment effects.",
+        "type": "fill_blank",
+        "answers": [
+            "precision"
+        ],
+        "other_options": [
+            "general",
+            "population",
+            "average"
+        ]
+    },
+    {
+        "q": "What is transportability in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Generalizing causal effects across populations",
+            "Transport analysis",
+            "Effect transfer",
+            "Population generalization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for reweighting?",
+        "type": "mcq",
+        "c": "p_source = 0.4\np_target = 0.6\nweight = p_target / p_source\nprint(f'Weight: {weight}')",
+        "o": [
+            "Weight: 1.5",
+            "Weight: 0.67",
+            "Weight: 1.0",
+            "Weight: 0.24"
+        ]
+    },
+    {
+        "q": "Rearrange transportability analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify Populations",
+            "Assess Differences",
+            "Check Transportability",
+            "Apply Weights",
+            "Estimate Target Effect"
+        ]
+    },
+    {
+        "q": "Selection diagrams represent population differences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match transportability concepts:",
+        "type": "match",
+        "left": [
+            "Source",
+            "Target",
+            "Selection",
+            "Transport Formula"
+        ],
+        "right": [
+            "Study population",
+            "New population",
+            "Population membership",
+            "Reweighting equation"
+        ]
+    },
+    {
+        "q": "The ______ formula adjusts for population differences.",
+        "type": "fill_blank",
+        "answers": [
+            "transport"
+        ],
+        "other_options": [
+            "adjustment",
+            "weighting",
+            "selection"
+        ]
+    },
+    {
+        "q": "What is external validity?",
+        "type": "mcq",
+        "o": [
+            "Generalizability of findings beyond study setting",
+            "External analysis",
+            "Validity assessment",
+            "Outside validity"
+        ]
+    },
+    {
+        "q": "What affects external validity?",
+        "type": "mcq",
+        "c": "factors = ['population differences', 'setting differences', 'time differences']\nprint(f'Factors: {len(factors)}')",
+        "o": [
+            "Factors: 3",
+            "Factors: 1",
+            "Factors: population differences",
+            "Factors: none"
+        ]
+    },
+    {
+        "q": "External validity differs from internal validity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match validity types:",
+        "type": "match",
+        "left": [
+            "Internal",
+            "External",
+            "Construct",
+            "Statistical"
+        ],
+        "right": [
+            "Causal within study",
+            "Generalization",
+            "Measurement",
+            "Inference validity"
+        ]
+    },
+    {
+        "q": "The ______ validity concerns generalization to new settings.",
+        "type": "fill_blank",
+        "answers": [
+            "external"
+        ],
+        "other_options": [
+            "internal",
+            "construct",
+            "statistical"
+        ]
+    },
+    {
+        "q": "What is covariate shift in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Change in distribution of covariates across populations",
+            "Covariate analysis",
+            "Shift detection",
+            "Distribution change"
+        ]
+    },
+    {
+        "q": "What does this code calculate for shift?",
+        "type": "mcq",
+        "c": "mean_source = 50\nmean_target = 60\nshift = mean_target - mean_source\nprint(f'Shift: {shift}')",
+        "o": [
+            "Shift: 10",
+            "Shift: 110",
+            "Shift: -10",
+            "Shift: 50"
+        ]
+    },
+    {
+        "q": "Rearrange covariate shift adjustment:",
+        "type": "rearrange",
+        "words": [
+            "Compare Distributions",
+            "Estimate Density Ratio",
+            "Apply Weights",
+            "Estimate Effect",
+            "Validate"
+        ]
+    },
+    {
+        "q": "Importance weighting addresses covariate shift.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match shift concepts:",
+        "type": "match",
+        "left": [
+            "Covariate Shift",
+            "Label Shift",
+            "Domain Shift",
+            "Dataset Shift"
+        ],
+        "right": [
+            "X distribution",
+            "Y distribution",
+            "Setting change",
+            "General change"
+        ]
+    },
+    {
+        "q": "The density ______ corrects for covariate shift.",
+        "type": "fill_blank",
+        "answers": [
+            "ratio"
+        ],
+        "other_options": [
+            "estimate",
+            "function",
+            "model"
+        ]
+    },
+    {
+        "q": "What is effect modification?",
+        "type": "mcq",
+        "o": [
+            "Treatment effect varying by another variable",
+            "Effect analysis",
+            "Modification detection",
+            "Variable interaction"
+        ]
+    },
+    {
+        "q": "What does this code calculate for modification?",
+        "type": "mcq",
+        "c": "effect_male = 10\neffect_female = 15\ndifference = effect_female - effect_male\nprint(f'Modification: {difference}')",
+        "o": [
+            "Modification: 5",
+            "Modification: 25",
+            "Modification: -5",
+            "Modification: 10"
+        ]
+    },
+    {
+        "q": "Effect modifiers help target treatment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match modification concepts:",
+        "type": "match",
+        "left": [
+            "Modifier",
+            "Interaction",
+            "Subgroup",
+            "CATE"
+        ],
+        "right": [
+            "Effect varies",
+            "Combined effect",
+            "Specific group",
+            "Conditional effect"
+        ]
+    },
+    {
+        "q": "The effect ______ changes treatment effect magnitude.",
+        "type": "fill_blank",
+        "answers": [
+            "modifier"
+        ],
+        "other_options": [
+            "mediator",
+            "confounder",
+            "outcome"
+        ]
+    },
+    {
+        "q": "What is longitudinal causal inference?",
+        "type": "mcq",
+        "o": [
+            "Causal analysis with repeated measurements over time",
+            "Longitudinal analysis",
+            "Time causal",
+            "Repeated measures"
+        ]
+    },
+    {
+        "q": "What does this code represent for longitudinal data?",
+        "type": "mcq",
+        "c": "observations = [1, 2, 3, 4, 5]\ntime_points = 5\nprint(f'Time points: {time_points}')",
+        "o": [
+            "Time points: 5",
+            "Time points: 1",
+            "Time points: 15",
+            "Time points: 0"
+        ]
+    },
+    {
+        "q": "Rearrange longitudinal causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect Repeated Data",
+            "Model Time-varying Confounding",
+            "Choose Appropriate Method",
+            "Estimate Effects",
+            "Account for Dropout"
+        ]
+    },
+    {
+        "q": "Longitudinal data enables causal effect estimation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match longitudinal methods:",
+        "type": "match",
+        "left": [
+            "Fixed Effects",
+            "Random Effects",
+            "Growth Curves",
+            "Cross-lagged"
+        ],
+        "right": [
+            "Within-person",
+            "Between and within",
+            "Trajectory modeling",
+            "Temporal ordering"
+        ]
+    },
+    {
+        "q": "The ______ effects model uses within-person variation.",
+        "type": "fill_blank",
+        "answers": [
+            "fixed"
+        ],
+        "other_options": [
+            "random",
+            "mixed",
+            "pooled"
+        ]
+    },
+    {
+        "q": "What is cross-lagged panel model?",
+        "type": "mcq",
+        "o": [
+            "Model examining temporal relationships between variables",
+            "Cross-lagged analysis",
+            "Panel model",
+            "Temporal model"
+        ]
+    },
+    {
+        "q": "What does cross-lag coefficient indicate?",
+        "type": "mcq",
+        "c": "lag_xy = 0.3  # X at t predicts Y at t+1\ninterpretation = 'temporal influence'\nprint(f'Indicates: {interpretation}')",
+        "o": [
+            "Indicates: temporal influence",
+            "Indicates: correlation",
+            "Indicates: causation",
+            "Indicates: no relationship"
+        ]
+    },
+    {
+        "q": "Cross-lagged models test temporal precedence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match cross-lagged concepts:",
+        "type": "match",
+        "left": [
+            "Auto-regressive",
+            "Cross-lag",
+            "Stability",
+            "Reciprocal"
+        ],
+        "right": [
+            "Same variable over time",
+            "Different variable influence",
+            "Consistency over time",
+            "Mutual influence"
+        ]
+    },
+    {
+        "q": "The ______ lagged path tests temporal causation.",
+        "type": "fill_blank",
+        "answers": [
+            "cross"
+        ],
+        "other_options": [
+            "auto",
+            "forward",
+            "backward"
+        ]
+    },
+    {
+        "q": "What is Mendelian randomization pleiotropy?",
+        "type": "mcq",
+        "o": [
+            "Genetic variant affecting multiple traits beyond pathway of interest",
+            "Pleiotropy analysis",
+            "MR violation",
+            "Genetic effect"
+        ]
+    },
+    {
+        "q": "What does pleiotropy violate in MR?",
+        "type": "mcq",
+        "c": "assumption = 'exclusion restriction'\nviolation = 'genetic variant affects outcome directly'\nprint(f'Violates: {assumption}')",
+        "o": [
+            "Violates: exclusion restriction",
+            "Violates: relevance",
+            "Violates: independence",
+            "Violates: monotonicity"
+        ]
+    },
+    {
+        "q": "Rearrange pleiotropy assessment:",
+        "type": "rearrange",
+        "words": [
+            "Use Multiple Instruments",
+            "Apply MR-Egger",
+            "Check Intercept",
+            "Assess Heterogeneity",
+            "Draw Conclusions"
+        ]
+    },
+    {
+        "q": "MR-Egger can detect and correct for pleiotropy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match MR robustness methods:",
+        "type": "match",
+        "left": [
+            "IVW",
+            "MR-Egger",
+            "Median",
+            "Mode"
+        ],
+        "right": [
+            "Inverse variance weighted",
+            "Pleiotropy correction",
+            "Robust estimate",
+            "Outlier resistant"
+        ]
+    },
+    {
+        "q": "The MR-______ regression detects directional pleiotropy.",
+        "type": "fill_blank",
+        "answers": [
+            "Egger"
+        ],
+        "other_options": [
+            "PRESSO",
+            "median",
+            "IVW"
+        ]
+    },
+    {
+        "q": "What is target trial emulation?",
+        "type": "mcq",
+        "o": [
+            "Designing observational study to mimic hypothetical RCT",
+            "Target analysis",
+            "Trial emulation",
+            "Observational RCT"
+        ]
+    },
+    {
+        "q": "What does target trial define?",
+        "type": "mcq",
+        "c": "components = ['eligibility', 'treatment', 'outcomes', 'follow-up']\nprint(f'Components: {len(components)}')",
+        "o": [
+            "Components: 4",
+            "Components: 1",
+            "Components: eligibility",
+            "Components: none"
+        ]
+    },
+    {
+        "q": "Target trial emulation reduces immortal time bias.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match target trial components:",
+        "type": "match",
+        "left": [
+            "Eligibility",
+            "Treatment Strategy",
+            "Assignment",
+            "Follow-up"
+        ],
+        "right": [
+            "Inclusion criteria",
+            "What interventions",
+            "How assigned",
+            "When start/end"
+        ]
+    },
+    {
+        "q": "The target ______ framework structures observational analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "trial"
+        ],
+        "other_options": [
+            "study",
+            "design",
+            "analysis"
+        ]
+    },
+    {
+        "q": "What is per-protocol analysis?",
+        "type": "mcq",
+        "o": [
+            "Analyzing outcomes based on actual treatment received",
+            "Protocol analysis",
+            "Treatment received",
+            "Compliance-based"
+        ]
+    },
+    {
+        "q": "What does this code calculate for PP effect?",
+        "type": "mcq",
+        "c": "complied_treated = 100\ncomplied_control = 80\npp_effect = complied_treated - complied_control\nprint(f'PP: {pp_effect}')",
+        "o": [
+            "PP: 20",
+            "PP: 180",
+            "PP: 0.8",
+            "PP: 100"
+        ]
+    },
+    {
+        "q": "Rearrange per-protocol analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Compliance",
+            "Inverse Probability Weight",
+            "Adjust for Confounding",
+            "Estimate Effect",
+            "Report Results"
+        ]
+    },
+    {
+        "q": "Per-protocol can be biased without proper adjustment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match analysis types:",
+        "type": "match",
+        "left": [
+            "ITT",
+            "Per-Protocol",
+            "As-Treated",
+            "Complier Average"
+        ],
+        "right": [
+            "As assigned",
+            "Following protocol",
+            "Actual treatment",
+            "CACE/LATE"
+        ]
+    },
+    {
+        "q": "The per-______ analysis considers actual compliance.",
+        "type": "fill_blank",
+        "answers": [
+            "protocol"
+        ],
+        "other_options": [
+            "intention",
+            "treatment",
+            "assignment"
+        ]
+    },
+    {
+        "q": "What is benchmark analysis in sensitivity?",
+        "type": "mcq",
+        "o": [
+            "Comparing potential unmeasured confounding to observed confounders",
+            "Benchmark testing",
+            "Sensitivity benchmark",
+            "Confounder comparison"
+        ]
+    },
+    {
+        "q": "What does this code calculate for benchmark?",
+        "type": "mcq",
+        "c": "observed_bias = 5\nbenchmark_confounder = 3\nratio = observed_bias / benchmark_confounder\nprint(f'Ratio: {round(ratio, 2)}')",
+        "o": [
+            "Ratio: 1.67",
+            "Ratio: 8.0",
+            "Ratio: 2.0",
+            "Ratio: 0.6"
+        ]
+    },
+    {
+        "q": "Observed confounders serve as benchmarks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match benchmark concepts:",
+        "type": "match",
+        "left": [
+            "Observed",
+            "Unmeasured",
+            "Ratio",
+            "Plausibility"
+        ],
+        "right": [
+            "Known confounder",
+            "Unknown confounder",
+            "Comparison",
+            "Likelihood assessment"
+        ]
+    },
+    {
+        "q": "The ______ analysis uses observed confounders as reference.",
+        "type": "fill_blank",
+        "answers": [
+            "benchmark"
+        ],
+        "other_options": [
+            "sensitivity",
+            "robustness",
+            "validation"
+        ]
+    },
+    {
+        "q": "What is quantitative bias analysis?",
+        "type": "mcq",
+        "o": [
+            "Systematically assessing impact of biases on estimates",
+            "Bias quantification",
+            "QBA method",
+            "Bias assessment"
+        ]
+    },
+    {
+        "q": "What does this code calculate for bias-adjusted estimate?",
+        "type": "mcq",
+        "c": "observed = 15\nbias = 5\nadjusted = observed - bias\nprint(f'Adjusted: {adjusted}')",
+        "o": [
+            "Adjusted: 10",
+            "Adjusted: 20",
+            "Adjusted: 75",
+            "Adjusted: 3"
+        ]
+    },
+    {
+        "q": "Rearrange quantitative bias analysis:",
+        "type": "rearrange",
+        "words": [
+            "Specify Bias Parameters",
+            "Model Bias Mechanism",
+            "Calculate Adjusted Estimate",
+            "Conduct Sensitivity Range",
+            "Report Bounds"
+        ]
+    },
+    {
+        "q": "QBA quantifies effect of misclassification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match QBA bias types:",
+        "type": "match",
+        "left": [
+            "Selection",
+            "Misclassification",
+            "Unmeasured Confounding",
+            "Recall"
+        ],
+        "right": [
+            "Sample bias",
+            "Measurement error",
+            "Omitted variable",
+            "Memory bias"
+        ]
+    },
+    {
+        "q": "The ______ bias analysis systematically models bias impact.",
+        "type": "fill_blank",
+        "answers": [
+            "quantitative"
+        ],
+        "other_options": [
+            "qualitative",
+            "subjective",
+            "informal"
+        ]
+    },
+    {
+        "q": "What is regression adjustment in RCT?",
+        "type": "mcq",
+        "o": [
+            "Using baseline covariates to improve precision",
+            "Regression RCT",
+            "Covariate adjustment",
+            "Precision improvement"
+        ]
+    },
+    {
+        "q": "What does this code calculate for variance reduction?",
+        "type": "mcq",
+        "c": "unadjusted_var = 100\nadjusted_var = 80\nreduction = (unadjusted_var - adjusted_var) / unadjusted_var * 100\nprint(f'Reduction: {reduction}%')",
+        "o": [
+            "Reduction: 20.0%",
+            "Reduction: 80.0%",
+            "Reduction: 180%",
+            "Reduction: 0.8%"
+        ]
+    },
+    {
+        "q": "Covariate adjustment in RCT improves power.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match RCT adjustment methods:",
+        "type": "match",
+        "left": [
+            "ANCOVA",
+            "Lin",
+            "Stratification",
+            "CUPED"
+        ],
+        "right": [
+            "Covariate adjusted",
+            "Interaction included",
+            "Pre-stratified",
+            "Pre-experiment data"
+        ]
+    },
+    {
+        "q": "The ______ adjustment uses baseline prognostic covariates.",
+        "type": "fill_blank",
+        "answers": [
+            "covariate"
+        ],
+        "other_options": [
+            "outcome",
+            "treatment",
+            "randomization"
+        ]
+    },
+    {
+        "q": "What is multiple testing in subgroups?",
+        "type": "mcq",
+        "o": [
+            "Testing many subgroups increases false positive rate",
+            "Multiple analysis",
+            "Subgroup testing",
+            "False positive issue"
+        ]
+    },
+    {
+        "q": "What does this code calculate for Bonferroni?",
+        "type": "mcq",
+        "c": "alpha = 0.05\nn_tests = 10\nadjusted_alpha = alpha / n_tests\nprint(f'Adjusted: {adjusted_alpha}')",
+        "o": [
+            "Adjusted: 0.005",
+            "Adjusted: 0.5",
+            "Adjusted: 0.05",
+            "Adjusted: 0.0005"
+        ]
+    },
+    {
+        "q": "Rearrange multiple testing correction:",
+        "type": "rearrange",
+        "words": [
+            "Count Tests",
+            "Choose Correction Method",
+            "Calculate Adjusted Threshold",
+            "Apply to Each Test",
+            "Interpret Results"
+        ]
+    },
+    {
+        "q": "Pre-specified subgroups require less stringent correction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match correction methods:",
+        "type": "match",
+        "left": [
+            "Bonferroni",
+            "Holm",
+            "FDR",
+            "Hierarchical"
+        ],
+        "right": [
+            "Simple division",
+            "Sequential",
+            "False discovery rate",
+            "Pre-specified order"
+        ]
+    },
+    {
+        "q": "The ______ correction divides alpha by number of tests.",
+        "type": "fill_blank",
+        "answers": [
+            "Bonferroni"
+        ],
+        "other_options": [
+            "Holm",
+            "FDR",
+            "hierarchical"
+        ]
+    },
+    {
+        "q": "What is sequential trial design?",
+        "type": "mcq",
+        "o": [
+            "Analyzing data as trial progresses with stopping rules",
+            "Sequential analysis",
+            "Adaptive trial",
+            "Progressive design"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for stopping boundary?",
+        "type": "mcq",
+        "c": "z_stat = 2.8\nboundary = 2.5\nstopped = z_stat > boundary\nprint(f'Stopped: {stopped}')",
+        "o": [
+            "Stopped: True",
+            "Stopped: False",
+            "Stopped: 2.8",
+            "Stopped: 2.5"
+        ]
+    },
+    {
+        "q": "Sequential designs can stop early for efficacy or futility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sequential concepts:",
+        "type": "match",
+        "left": [
+            "Interim",
+            "Stopping",
+            "Alpha Spending",
+            "Information"
+        ],
+        "right": [
+            "Look at data",
+            "Decision boundary",
+            "Error allocation",
+            "Data accumulated"
+        ]
+    },
+    {
+        "q": "The ______ spending function controls type I error.",
+        "type": "fill_blank",
+        "answers": [
+            "alpha"
+        ],
+        "other_options": [
+            "beta",
+            "power",
+            "information"
+        ]
+    },
+    {
+        "q": "What is adaptive enrichment design?",
+        "type": "mcq",
+        "o": [
+            "Trial adapting enrollment based on interim subgroup data",
+            "Adaptive design",
+            "Enrichment trial",
+            "Subgroup adaptation"
+        ]
+    },
+    {
+        "q": "What does this code represent for enrichment?",
+        "type": "mcq",
+        "c": "stage_1 = 'enroll all'\nstage_2 = 'enroll only responders'\nprint(f'Stage 2: {stage_2}')",
+        "o": [
+            "Stage 2: enroll only responders",
+            "Stage 2: enroll all",
+            "Stage 2: stop trial",
+            "Stage 2: no change"
+        ]
+    },
+    {
+        "q": "Rearrange adaptive enrichment:",
+        "type": "rearrange",
+        "words": [
+            "Initial Broad Enrollment",
+            "Interim Analysis",
+            "Identify Responders",
+            "Restrict Enrollment",
+            "Complete Trial"
+        ]
+    },
+    {
+        "q": "Adaptive enrichment targets treatment to those who benefit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match adaptive designs:",
+        "type": "match",
+        "left": [
+            "Seamless",
+            "Biomarker-adaptive",
+            "Enrichment",
+            "Platform"
+        ],
+        "right": [
+            "Phase II/III",
+            "Marker-based",
+            "Subpopulation focus",
+            "Multiple treatments"
+        ]
+    },
+    {
+        "q": "The adaptive ______ design restricts to responders.",
+        "type": "fill_blank",
+        "answers": [
+            "enrichment"
+        ],
+        "other_options": [
+            "seamless",
+            "platform",
+            "dose"
+        ]
+    },
+    {
+        "q": "What is Bayesian adaptive design?",
+        "type": "mcq",
+        "o": [
+            "Using Bayesian inference for adaptive trial decisions",
+            "Bayesian trial",
+            "Adaptive Bayes",
+            "Prior-based trial"
+        ]
+    },
+    {
+        "q": "What does this code calculate for posterior probability?",
+        "type": "mcq",
+        "c": "prior = 0.5\nlikelihood_ratio = 3\nposterior = (prior * likelihood_ratio) / (prior * likelihood_ratio + (1 - prior))\nprint(f'Posterior: {round(posterior, 2)}')",
+        "o": [
+            "Posterior: 0.75",
+            "Posterior: 1.5",
+            "Posterior: 0.5",
+            "Posterior: 3.0"
+        ]
+    },
+    {
+        "q": "Bayesian adaptive trials update beliefs with data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Bayesian trial concepts:",
+        "type": "match",
+        "left": [
+            "Prior",
+            "Posterior",
+            "Predictive",
+            "Decision"
+        ],
+        "right": [
+            "Before data",
+            "After data",
+            "Future outcome",
+            "Stopping rule"
+        ]
+    },
+    {
+        "q": "The ______ adaptive trial uses posterior probability thresholds.",
+        "type": "fill_blank",
+        "answers": [
+            "Bayesian"
+        ],
+        "other_options": [
+            "frequentist",
+            "hybrid",
+            "adaptive"
+        ]
+    },
+    {
+        "q": "What is treatment switching in trials?",
+        "type": "mcq",
+        "o": [
+            "Patients changing from assigned treatment during trial",
+            "Switching analysis",
+            "Treatment change",
+            "Protocol deviation"
+        ]
+    },
+    {
+        "q": "What does this code represent for switching?",
+        "type": "mcq",
+        "c": "control_switches = 0.3  # 30% switched to treatment\nmethod = 'RPSFT'\nprint(f'Handles: {method}')",
+        "o": [
+            "Handles: RPSFT",
+            "Handles: ITT",
+            "Handles: PP",
+            "Handles: none"
+        ]
+    },
+    {
+        "q": "Rearrange switching adjustment:",
+        "type": "rearrange",
+        "words": [
+            "Identify Switchers",
+            "Choose Method",
+            "Estimate Counterfactual",
+            "Adjust Outcomes",
+            "Report Results"
+        ]
+    },
+    {
+        "q": "RPSFT adjusts for treatment switching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match switching methods:",
+        "type": "match",
+        "left": [
+            "RPSFT",
+            "IPCW",
+            "Two-stage",
+            "Simple"
+        ],
+        "right": [
+            "Rank preserving",
+            "Censoring weights",
+            "Acceleration factor",
+            "Include as covariate"
+        ]
+    },
+    {
+        "q": "The rank-preserving ______ time model adjusts for switching.",
+        "type": "fill_blank",
+        "answers": [
+            "structural failure"
+        ],
+        "other_options": [
+            "accelerated failure",
+            "proportional",
+            "Cox"
+        ]
+    },
+    {
+        "q": "What is causal graphical modeling?",
+        "type": "mcq",
+        "o": [
+            "Using DAGs to represent and analyze causal relationships",
+            "Graphical analysis",
+            "DAG modeling",
+            "Causal graphs"
+        ]
+    },
+    {
+        "q": "What does this code represent for DAG?",
+        "type": "mcq",
+        "c": "nodes = ['X', 'Z', 'Y']\nedges = [('X', 'Y'), ('Z', 'X'), ('Z', 'Y')]\nprint(f'Nodes: {len(nodes)}')",
+        "o": [
+            "Nodes: 3",
+            "Nodes: 2",
+            "Nodes: edges",
+            "Nodes: 1"
+        ]
+    },
+    {
+        "q": "DAGs encode conditional independence assumptions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DAG concepts:",
+        "type": "match",
+        "left": [
+            "Node",
+            "Edge",
+            "Path",
+            "D-separation"
+        ],
+        "right": [
+            "Variable",
+            "Causal relation",
+            "Connected nodes",
+            "Conditional independence"
+        ]
+    },
+    {
+        "q": "The directed acyclic ______ represents causal structure.",
+        "type": "fill_blank",
+        "answers": [
+            "graph"
+        ],
+        "other_options": [
+            "model",
+            "diagram",
+            "network"
+        ]
+    },
+    {
+        "q": "What is single world intervention graph (SWIG)?",
+        "type": "mcq",
+        "o": [
+            "Graph combining factual and counterfactual worlds",
+            "SWIG analysis",
+            "Intervention graph",
+            "World graph"
+        ]
+    },
+    {
+        "q": "What does SWIG unify?",
+        "type": "mcq",
+        "c": "combines = ['potential outcomes', 'graphical models']\nprint(f'Unifies: {len(combines)}')",
+        "o": [
+            "Unifies: 2",
+            "Unifies: potential outcomes",
+            "Unifies: 1",
+            "Unifies: graphical models"
+        ]
+    },
+    {
+        "q": "SWIGs help derive identification formulas.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SWIG concepts:",
+        "type": "match",
+        "left": [
+            "Single World",
+            "Intervention",
+            "Counterfactual Node",
+            "Identification"
+        ],
+        "right": [
+            "One scenario",
+            "do(X=x)",
+            "Y(x)",
+            "Estimability"
+        ]
+    },
+    {
+        "q": "The single world ______ graph extends DAGs for counterfactuals.",
+        "type": "fill_blank",
+        "answers": [
+            "intervention"
+        ],
+        "other_options": [
+            "causal",
+            "outcome",
+            "potential"
+        ]
+    },
+    {
+        "q": "What is nonparametric bounds?",
+        "type": "mcq",
+        "o": [
+            "Bounds on causal effects without distributional assumptions",
+            "NP bounds",
+            "Assumption-free bounds",
+            "Distribution-free"
+        ]
+    },
+    {
+        "q": "What does this code calculate for tight bounds?",
+        "type": "mcq",
+        "c": "lower = 0\nupper = 1\nwidth = upper - lower\nprint(f'Width: {width}')",
+        "o": [
+            "Width: 1",
+            "Width: 0",
+            "Width: 0.5",
+            "Width: 2"
+        ]
+    },
+    {
+        "q": "Rearrange nonparametric bounds:",
+        "type": "rearrange",
+        "words": [
+            "Specify DAG",
+            "Identify Bounds",
+            "Compute Lower",
+            "Compute Upper",
+            "Report Interval"
+        ]
+    },
+    {
+        "q": "Tighter bounds require additional assumptions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bounds concepts:",
+        "type": "match",
+        "left": [
+            "Natural",
+            "Instrumental",
+            "Monotonicity",
+            "Tightening"
+        ],
+        "right": [
+            "Probability bounds",
+            "IV bounds",
+            "Effect direction",
+            "Extra assumptions"
+        ]
+    },
+    {
+        "q": "The ______ bounds use minimal assumptions.",
+        "type": "fill_blank",
+        "answers": [
+            "nonparametric"
+        ],
+        "other_options": [
+            "parametric",
+            "semi-parametric",
+            "distributional"
+        ]
+    },
+    {
+        "q": "What is proxy variable in causal inference?",
+        "type": "mcq",
+        "o": [
+            "Variable measured instead of unobserved confounder",
+            "Proxy analysis",
+            "Surrogate variable",
+            "Stand-in measure"
+        ]
+    },
+    {
+        "q": "What does this code represent for proxy?",
+        "type": "mcq",
+        "c": "unobserved = 'true confounder U'\nproxy = 'measured variable W'\nrelation = 'W related to U'\nprint(f'Proxy: {proxy}')",
+        "o": [
+            "Proxy: measured variable W",
+            "Proxy: true confounder U",
+            "Proxy: unrelated",
+            "Proxy: outcome"
+        ]
+    },
+    {
+        "q": "Proxies can help identify effects with hidden confounding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match proxy concepts:",
+        "type": "match",
+        "left": [
+            "Treatment Proxy",
+            "Outcome Proxy",
+            "Confounder Proxy",
+            "Bridge Function"
+        ],
+        "right": [
+            "For D",
+            "For Y",
+            "For U",
+            "Linking formula"
+        ]
+    },
+    {
+        "q": "The ______ variable stands in for unmeasured confounder.",
+        "type": "fill_blank",
+        "answers": [
+            "proxy"
+        ],
+        "other_options": [
+            "instrumental",
+            "control",
+            "indicator"
+        ]
+    },
+    {
+        "q": "What is causal inference for policy?",
+        "type": "mcq",
+        "o": [
+            "Estimating effects to inform policy decisions",
+            "Policy analysis",
+            "Causal policy",
+            "Decision analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for policy impact?",
+        "type": "mcq",
+        "c": "before = 50\nafter = 65\nimpact = after - before\nprint(f'Impact: {impact}')",
+        "o": [
+            "Impact: 15",
+            "Impact: 115",
+            "Impact: -15",
+            "Impact: 50"
+        ]
+    },
+    {
+        "q": "Rearrange policy causal evaluation:",
+        "type": "rearrange",
+        "words": [
+            "Define Policy",
+            "Identify Causal Strategy",
+            "Collect Data",
+            "Estimate Effect",
+            "Inform Decision"
+        ]
+    },
+    {
+        "q": "Policy evaluation requires causal not just predictive models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match policy contexts:",
+        "type": "match",
+        "left": [
+            "Tax",
+            "Education",
+            "Healthcare",
+            "Environment"
+        ],
+        "right": [
+            "Revenue effects",
+            "Learning outcomes",
+            "Health impacts",
+            "Pollution reduction"
+        ]
+    },
+    {
+        "q": "The ______ evaluation aims to inform decisions.",
+        "type": "fill_blank",
+        "answers": [
+            "policy"
+        ],
+        "other_options": [
+            "model",
+            "data",
+            "statistical"
+        ]
+    },
+    {
+        "q": "What is causal discovery vs causal inference?",
+        "type": "mcq",
+        "o": [
+            "Discovery learns structure, inference estimates effects",
+            "Same thing",
+            "Opposite meanings",
+            "Unrelated concepts"
+        ]
+    },
+    {
+        "q": "What does this code represent for distinction?",
+        "type": "mcq",
+        "c": "discovery = 'learn causal graph'\ninference = 'estimate causal effects'\nprint(f'Distinct: True')",
+        "o": [
+            "Distinct: True",
+            "Distinct: False",
+            "Distinct: discovery",
+            "Distinct: inference"
+        ]
+    },
+    {
+        "q": "Causal discovery typically precedes causal inference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match causal tasks:",
+        "type": "match",
+        "left": [
+            "Discovery",
+            "Inference",
+            "Structure",
+            "Effect"
+        ],
+        "right": [
+            "Learn DAG",
+            "Estimate ATE",
+            "Graph output",
+            "Numeric output"
+        ]
+    },
+    {
+        "q": "The causal ______ task learns graph structure.",
+        "type": "fill_blank",
+        "answers": [
+            "discovery"
+        ],
+        "other_options": [
+            "inference",
+            "estimation",
+            "analysis"
+        ]
+    },
+    {
+        "q": "What is bootstrap for causal inference?",
+        "type": "mcq",
+        "o": [
+            "Resampling method for causal effect uncertainty",
+            "Bootstrap analysis",
+            "Resampling causal",
+            "Uncertainty method"
+        ]
+    },
+    {
+        "q": "What does this code calculate for bootstrap CI?",
+        "type": "mcq",
+        "c": "effects = [8, 10, 12, 9, 11]\nlower = min(effects)\nupper = max(effects)\nprint(f'CI: [{lower}, {upper}]')",
+        "o": [
+            "CI: [8, 12]",
+            "CI: [10, 10]",
+            "CI: [0, 20]",
+            "CI: [9, 11]"
+        ]
+    },
+    {
+        "q": "Rearrange bootstrap causal analysis:",
+        "type": "rearrange",
+        "words": [
+            "Draw Bootstrap Sample",
+            "Estimate Effect",
+            "Repeat Many Times",
+            "Compute Percentiles",
+            "Report Interval"
+        ]
+    },
+    {
+        "q": "Bootstrap provides nonparametric confidence intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bootstrap types:",
+        "type": "match",
+        "left": [
+            "Percentile",
+            "BCa",
+            "Parametric",
+            "Block"
+        ],
+        "right": [
+            "Simple quantiles",
+            "Bias corrected",
+            "Model-based",
+            "Time series"
+        ]
+    },
+    {
+        "q": "The ______ method resamples data for inference.",
+        "type": "fill_blank",
+        "answers": [
+            "bootstrap"
+        ],
+        "other_options": [
+            "jackknife",
+            "permutation",
+            "simulation"
+        ]
+    },
+    {
+        "q": "What is permutation test for causality?",
+        "type": "mcq",
+        "o": [
+            "Randomization test for causal null hypothesis",
+            "Permutation analysis",
+            "Random test",
+            "Null testing"
+        ]
+    },
+    {
+        "q": "What does this code illustrate for permutation?",
+        "type": "mcq",
+        "c": "observed = 10\nnull_dist = [2, 5, 3, 8, 4, 6, 7, 1, 9, 5]\np_value = sum(n >= observed for n in null_dist) / len(null_dist)\nprint(f'P-value: {p_value}')",
+        "o": [
+            "P-value: 0.1",
+            "P-value: 0.5",
+            "P-value: 1.0",
+            "P-value: 0.0"
+        ]
+    },
+    {
+        "q": "Permutation tests are exact under null hypothesis.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match randomization concepts:",
+        "type": "match",
+        "left": [
+            "Permutation",
+            "Null",
+            "P-value",
+            "Exact"
+        ],
+        "right": [
+            "Shuffle assignments",
+            "No effect hypothesis",
+            "Probability extreme",
+            "Valid finite sample"
+        ]
+    },
+    {
+        "q": "The ______ test shuffles treatment assignments.",
+        "type": "fill_blank",
+        "answers": [
+            "permutation"
+        ],
+        "other_options": [
+            "bootstrap",
+            "parametric",
+            "asymptotic"
+        ]
+    },
+    {
+        "q": "What is causal effect on the treated (ATT)?",
+        "type": "mcq",
+        "o": [
+            "Average treatment effect among those who received treatment",
+            "ATT analysis",
+            "Treated effect",
+            "Average treated"
+        ]
+    },
+    {
+        "q": "What does this code calculate for ATT?",
+        "type": "mcq",
+        "c": "treated_outcome = 100\ncounterfactual = 85\natt = treated_outcome - counterfactual\nprint(f'ATT: {att}')",
+        "o": [
+            "ATT: 15",
+            "ATT: 185",
+            "ATT: 0.85",
+            "ATT: 100"
+        ]
+    },
+    {
+        "q": "ATT may differ from ATE with heterogeneity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match effect estimands:",
+        "type": "match",
+        "left": [
+            "ATE",
+            "ATT",
+            "ATU",
+            "CATE"
+        ],
+        "right": [
+            "All units",
+            "Treated units",
+            "Untreated units",
+            "Conditional"
+        ]
+    },
+    {
+        "q": "The average treatment effect on the ______ estimates effect for treated.",
+        "type": "fill_blank",
+        "answers": [
+            "treated"
+        ],
+        "other_options": [
+            "untreated",
+            "population",
+            "sample"
+        ]
+    }
+]

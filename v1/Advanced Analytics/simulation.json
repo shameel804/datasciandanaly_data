@@ -1,0 +1,6774 @@
+[
+    {
+        "q": "What is simulation modeling?",
+        "type": "mcq",
+        "o": [
+            "Creating computer models to imitate real-world system behavior",
+            "Simple modeling",
+            "Simulation analysis",
+            "Model simulation"
+        ]
+    },
+    {
+        "q": "What does this code output for random event?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nevent = 'success' if random.random() > 0.5 else 'failure'\nprint(f'Event: {event}')",
+        "o": [
+            "Event: success",
+            "Event: failure",
+            "Event: 0.5",
+            "Event: Error"
+        ]
+    },
+    {
+        "q": "Simulation allows testing what-if scenarios safely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match simulation types:",
+        "type": "match",
+        "left": [
+            "Monte Carlo",
+            "Discrete Event",
+            "Agent-Based",
+            "System Dynamics"
+        ],
+        "right": [
+            "Random sampling",
+            "Event-driven",
+            "Individual entities",
+            "Feedback loops"
+        ]
+    },
+    {
+        "q": "The ______ state captures system at a point in time.",
+        "type": "fill_blank",
+        "answers": [
+            "system"
+        ],
+        "other_options": [
+            "event",
+            "process",
+            "entity"
+        ]
+    },
+    {
+        "q": "What is Monte Carlo simulation?",
+        "type": "mcq",
+        "o": [
+            "Using repeated random sampling to estimate numerical results",
+            "Monte Carlo analysis",
+            "Random simulation",
+            "Casino modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for pi estimation?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\ninside = sum(1 for _ in range(10000) if random.random()**2 + random.random()**2 <= 1)\npi_estimate = 4 * inside / 10000\nprint(f'Pi: {round(pi_estimate, 2)}')",
+        "o": [
+            "Pi: 3.14",
+            "Pi: 4.0",
+            "Pi: 2.0",
+            "Pi: 3.0"
+        ]
+    },
+    {
+        "q": "Rearrange Monte Carlo procedure:",
+        "type": "rearrange",
+        "words": [
+            "Define Model",
+            "Generate Random Samples",
+            "Evaluate Function",
+            "Aggregate Results",
+            "Analyze Output"
+        ]
+    },
+    {
+        "q": "More samples improve Monte Carlo accuracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Monte Carlo applications:",
+        "type": "match",
+        "left": [
+            "Integration",
+            "Risk Analysis",
+            "Option Pricing",
+            "Reliability"
+        ],
+        "right": [
+            "Area estimation",
+            "Probability distribution",
+            "Financial derivatives",
+            "Failure probability"
+        ]
+    },
+    {
+        "q": "The ______ error decreases as square root of sample size.",
+        "type": "fill_blank",
+        "answers": [
+            "standard"
+        ],
+        "other_options": [
+            "mean",
+            "total",
+            "systematic"
+        ]
+    },
+    {
+        "q": "What is variance reduction?",
+        "type": "mcq",
+        "o": [
+            "Techniques to improve Monte Carlo efficiency",
+            "Variance analysis",
+            "Reduction methods",
+            "Variance control"
+        ]
+    },
+    {
+        "q": "What does this code output for antithetic variates?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nu = random.random()\nantithetic = 1 - u\nprint(f'Sum: {round(u + antithetic, 2)}')",
+        "o": [
+            "Sum: 1.0",
+            "Sum: 0.5",
+            "Sum: 2.0",
+            "Sum: 0.0"
+        ]
+    },
+    {
+        "q": "Antithetic variates induce negative correlation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match variance reduction methods:",
+        "type": "match",
+        "left": [
+            "Antithetic",
+            "Control Variate",
+            "Stratified",
+            "Importance"
+        ],
+        "right": [
+            "Complementary",
+            "Known expectation",
+            "Subpopulations",
+            "Biased sampling"
+        ]
+    },
+    {
+        "q": "The ______ variate uses correlated random variable with known mean.",
+        "type": "fill_blank",
+        "answers": [
+            "control"
+        ],
+        "other_options": [
+            "antithetic",
+            "stratified",
+            "importance"
+        ]
+    },
+    {
+        "q": "What is random number generation?",
+        "type": "mcq",
+        "o": [
+            "Producing sequences that appear random for simulation",
+            "Random analysis",
+            "Number generation",
+            "Sequence creation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for LCG?",
+        "type": "mcq",
+        "c": "a, c, m = 5, 3, 16\nx = 7\nx = (a * x + c) % m\nprint(f'Next: {x}')",
+        "o": [
+            "Next: 6",
+            "Next: 38",
+            "Next: 7",
+            "Next: 0"
+        ]
+    },
+    {
+        "q": "Rearrange RNG quality tests:",
+        "type": "rearrange",
+        "words": [
+            "Generate Sequence",
+            "Test Uniformity",
+            "Check Independence",
+            "Assess Period",
+            "Validate Quality"
+        ]
+    },
+    {
+        "q": "Pseudo-random numbers are deterministic given seed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match RNG properties:",
+        "type": "match",
+        "left": [
+            "Period",
+            "Uniformity",
+            "Independence",
+            "Reproducibility"
+        ],
+        "right": [
+            "Cycle length",
+            "Distribution",
+            "No correlation",
+            "Same seed same sequence"
+        ]
+    },
+    {
+        "q": "The ______ Twister is widely used PRNG algorithm.",
+        "type": "fill_blank",
+        "answers": [
+            "Mersenne"
+        ],
+        "other_options": [
+            "Linear",
+            "Fibonacci",
+            "Lagged"
+        ]
+    },
+    {
+        "q": "What is inverse transform sampling?",
+        "type": "mcq",
+        "o": [
+            "Generating random variates from any distribution using uniform",
+            "Inverse analysis",
+            "Transform sampling",
+            "Distribution conversion"
+        ]
+    },
+    {
+        "q": "What does this code output for exponential sample?",
+        "type": "mcq",
+        "c": "import math\nu = 0.5\nlambda_val = 2\nx = -math.log(1 - u) / lambda_val\nprint(f'Sample: {round(x, 3)}')",
+        "o": [
+            "Sample: 0.347",
+            "Sample: 0.5",
+            "Sample: 2.0",
+            "Sample: 1.0"
+        ]
+    },
+    {
+        "q": "Inverse transform requires invertible CDF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sampling methods:",
+        "type": "match",
+        "left": [
+            "Inverse Transform",
+            "Acceptance Rejection",
+            "Composition",
+            "Convolution"
+        ],
+        "right": [
+            "CDF inverse",
+            "Accept/reject",
+            "Mixture",
+            "Sum of variates"
+        ]
+    },
+    {
+        "q": "The ______ distribution function must be invertible.",
+        "type": "fill_blank",
+        "answers": [
+            "cumulative"
+        ],
+        "other_options": [
+            "probability",
+            "density",
+            "mass"
+        ]
+    },
+    {
+        "q": "What is discrete event simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling systems where state changes at discrete points",
+            "Discrete analysis",
+            "Event simulation",
+            "Point modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for event scheduling?",
+        "type": "mcq",
+        "c": "import heapq\nevents = [(5, 'arrive'), (3, 'service'), (8, 'depart')]\nheapq.heapify(events)\nnext_event = heapq.heappop(events)\nprint(f'Next: {next_event}')",
+        "o": [
+            "Next: (3, 'service')",
+            "Next: (5, 'arrive')",
+            "Next: (8, 'depart')",
+            "Next: Error"
+        ]
+    },
+    {
+        "q": "Rearrange DES execution:",
+        "type": "rearrange",
+        "words": [
+            "Initialize State",
+            "Get Next Event",
+            "Advance Clock",
+            "Process Event",
+            "Schedule New Events"
+        ]
+    },
+    {
+        "q": "Event calendar maintains scheduled events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match DES components:",
+        "type": "match",
+        "left": [
+            "Entity",
+            "Event",
+            "State",
+            "Clock"
+        ],
+        "right": [
+            "Object in system",
+            "State change",
+            "System condition",
+            "Simulation time"
+        ]
+    },
+    {
+        "q": "The ______ list orders events by scheduled time.",
+        "type": "fill_blank",
+        "answers": [
+            "future event"
+        ],
+        "other_options": [
+            "past event",
+            "current",
+            "pending"
+        ]
+    },
+    {
+        "q": "What is queueing simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling systems with arrivals, service, and waiting",
+            "Queue analysis",
+            "Waiting simulation",
+            "Line modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for queue length?",
+        "type": "mcq",
+        "c": "queue = []\nqueue.append('customer1')\nqueue.append('customer2')\nqueue.pop(0)  # service\nqueue.append('customer3')\nprint(f'Length: {len(queue)}')",
+        "o": [
+            "Length: 2",
+            "Length: 3",
+            "Length: 1",
+            "Length: 0"
+        ]
+    },
+    {
+        "q": "M/M/1 queue has exponential arrivals and service.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match queueing metrics:",
+        "type": "match",
+        "left": [
+            "Utilization",
+            "Wait Time",
+            "Queue Length",
+            "Throughput"
+        ],
+        "right": [
+            "Server busy fraction",
+            "Time in line",
+            "Customers waiting",
+            "Processed per time"
+        ]
+    },
+    {
+        "q": "The ______ notation describes queue characteristics.",
+        "type": "fill_blank",
+        "answers": [
+            "Kendall"
+        ],
+        "other_options": [
+            "Little",
+            "Jackson",
+            "Gordon"
+        ]
+    },
+    {
+        "q": "What is Little's Law?",
+        "type": "mcq",
+        "o": [
+            "L = lambda * W relating queue metrics",
+            "Little analysis",
+            "Law of queues",
+            "Small queue"
+        ]
+    },
+    {
+        "q": "What does this code calculate for average customers?",
+        "type": "mcq",
+        "c": "arrival_rate = 5  # per hour\navg_time = 0.4  # hours\nL = arrival_rate * avg_time\nprint(f'Customers: {L}')",
+        "o": [
+            "Customers: 2.0",
+            "Customers: 5.0",
+            "Customers: 0.4",
+            "Customers: 5.4"
+        ]
+    },
+    {
+        "q": "Rearrange Little's Law application:",
+        "type": "rearrange",
+        "words": [
+            "Measure Arrival Rate",
+            "Measure Wait Time",
+            "Apply Formula",
+            "Estimate Queue Length",
+            "Validate"
+        ]
+    },
+    {
+        "q": "Little's Law is distribution-free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Little's Law terms:",
+        "type": "match",
+        "left": [
+            "L",
+            "Lambda",
+            "W",
+            "Stable"
+        ],
+        "right": [
+            "Average in system",
+            "Arrival rate",
+            "Average time",
+            "Equilibrium condition"
+        ]
+    },
+    {
+        "q": "The ______ rate must equal throughput for stability.",
+        "type": "fill_blank",
+        "answers": [
+            "arrival"
+        ],
+        "other_options": [
+            "service",
+            "departure",
+            "processing"
+        ]
+    },
+    {
+        "q": "What is agent-based modeling?",
+        "type": "mcq",
+        "o": [
+            "Simulating individual agents with autonomous behaviors",
+            "Agent analysis",
+            "Based modeling",
+            "Individual simulation"
+        ]
+    },
+    {
+        "q": "What does this code output for agent state?",
+        "type": "mcq",
+        "c": "agent = {'health': 100, 'position': (5, 5)}\nagent['health'] -= 10\nagent['position'] = (6, 5)\nprint(f'Health: {agent[\"health\"]}')",
+        "o": [
+            "Health: 90",
+            "Health: 100",
+            "Health: 10",
+            "Health: 0"
+        ]
+    },
+    {
+        "q": "Emergent behavior arises from agent interactions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ABM concepts:",
+        "type": "match",
+        "left": [
+            "Agent",
+            "Environment",
+            "Rule",
+            "Emergence"
+        ],
+        "right": [
+            "Individual entity",
+            "Space/context",
+            "Behavior logic",
+            "Collective pattern"
+        ]
+    },
+    {
+        "q": "The ______ describes how agents make decisions.",
+        "type": "fill_blank",
+        "answers": [
+            "behavior rule"
+        ],
+        "other_options": [
+            "state variable",
+            "environment",
+            "interaction"
+        ]
+    },
+    {
+        "q": "What is system dynamics?",
+        "type": "mcq",
+        "o": [
+            "Modeling feedback loops and accumulations over time",
+            "System analysis",
+            "Dynamic simulation",
+            "Time modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for stock change?",
+        "type": "mcq",
+        "c": "stock = 100\ninflow = 20\noutflow = 15\ndt = 1\nstock += (inflow - outflow) * dt\nprint(f'Stock: {stock}')",
+        "o": [
+            "Stock: 105",
+            "Stock: 100",
+            "Stock: 135",
+            "Stock: 85"
+        ]
+    },
+    {
+        "q": "Rearrange system dynamics modeling:",
+        "type": "rearrange",
+        "words": [
+            "Define Stocks",
+            "Add Flows",
+            "Create Feedback",
+            "Set Parameters",
+            "Run Simulation"
+        ]
+    },
+    {
+        "q": "Negative feedback promotes stability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SD elements:",
+        "type": "match",
+        "left": [
+            "Stock",
+            "Flow",
+            "Feedback",
+            "Delay"
+        ],
+        "right": [
+            "Accumulation",
+            "Rate of change",
+            "Circular causality",
+            "Time lag"
+        ]
+    },
+    {
+        "q": "The ______ loop amplifies changes.",
+        "type": "fill_blank",
+        "answers": [
+            "positive feedback"
+        ],
+        "other_options": [
+            "negative feedback",
+            "balancing",
+            "stabilizing"
+        ]
+    },
+    {
+        "q": "What is continuous simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling systems with continuously changing state",
+            "Continuous analysis",
+            "Smooth simulation",
+            "Time modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for Euler step?",
+        "type": "mcq",
+        "c": "y = 10\ndy_dt = -0.5 * y  # decay\ndt = 0.1\ny_new = y + dy_dt * dt\nprint(f'y: {y_new}')",
+        "o": [
+            "y: 9.5",
+            "y: 10.0",
+            "y: 9.0",
+            "y: 10.5"
+        ]
+    },
+    {
+        "q": "Differential equations describe continuous dynamics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match numerical methods:",
+        "type": "match",
+        "left": [
+            "Euler",
+            "Runge-Kutta",
+            "Implicit",
+            "Adaptive"
+        ],
+        "right": [
+            "First order",
+            "Higher accuracy",
+            "Stability",
+            "Step control"
+        ]
+    },
+    {
+        "q": "The ______ method provides higher accuracy than Euler.",
+        "type": "fill_blank",
+        "answers": [
+            "Runge-Kutta"
+        ],
+        "other_options": [
+            "Euler",
+            "Forward",
+            "Backward"
+        ]
+    },
+    {
+        "q": "What is hybrid simulation?",
+        "type": "mcq",
+        "o": [
+            "Combining different simulation paradigms in one model",
+            "Hybrid analysis",
+            "Combined simulation",
+            "Mixed modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for paradigm switch?",
+        "type": "mcq",
+        "c": "population = 1000\nthreshold = 800\nmode = 'aggregate' if population > threshold else 'individual'\nprint(f'Mode: {mode}')",
+        "o": [
+            "Mode: aggregate",
+            "Mode: individual",
+            "Mode: hybrid",
+            "Mode: Error"
+        ]
+    },
+    {
+        "q": "Rearrange hybrid simulation design:",
+        "type": "rearrange",
+        "words": [
+            "Identify Subsystems",
+            "Choose Paradigms",
+            "Define Interfaces",
+            "Synchronize Time",
+            "Integrate Models"
+        ]
+    },
+    {
+        "q": "Hybrid models can combine DES and SD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match hybrid combinations:",
+        "type": "match",
+        "left": [
+            "DES-SD",
+            "ABM-DES",
+            "SD-ABM",
+            "Multi-resolution"
+        ],
+        "right": [
+            "Flow and events",
+            "Agents with queues",
+            "Agents with flows",
+            "Different scales"
+        ]
+    },
+    {
+        "q": "The ______ interface connects different paradigms.",
+        "type": "fill_blank",
+        "answers": [
+            "synchronization"
+        ],
+        "other_options": [
+            "modeling",
+            "simulation",
+            "connection"
+        ]
+    },
+    {
+        "q": "What is input modeling?",
+        "type": "mcq",
+        "o": [
+            "Selecting appropriate distributions for simulation inputs",
+            "Input analysis",
+            "Modeling inputs",
+            "Distribution selection"
+        ]
+    },
+    {
+        "q": "What does this code output for distribution fit?",
+        "type": "mcq",
+        "c": "data = [1.2, 0.8, 1.5, 1.0, 1.3]\nmean = sum(data) / len(data)\nprint(f'Mean: {mean}')",
+        "o": [
+            "Mean: 1.16",
+            "Mean: 1.0",
+            "Mean: 5.8",
+            "Mean: 0.8"
+        ]
+    },
+    {
+        "q": "Chi-square test checks distribution fit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match input modeling steps:",
+        "type": "match",
+        "left": [
+            "Collect Data",
+            "Hypothesize",
+            "Estimate",
+            "Test Fit"
+        ],
+        "right": [
+            "Gather observations",
+            "Choose distribution",
+            "Find parameters",
+            "Validate"
+        ]
+    },
+    {
+        "q": "The ______ likelihood method estimates distribution parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "maximum"
+        ],
+        "other_options": [
+            "minimum",
+            "average",
+            "total"
+        ]
+    },
+    {
+        "q": "What is output analysis?",
+        "type": "mcq",
+        "o": [
+            "Statistical analysis of simulation results",
+            "Output analysis",
+            "Result evaluation",
+            "Simulation analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for confidence interval?",
+        "type": "mcq",
+        "c": "import math\nmean = 100\nstd = 10\nn = 25\nz = 1.96\nci_width = z * std / math.sqrt(n)\nprint(f'Width: {ci_width}')",
+        "o": [
+            "Width: 3.92",
+            "Width: 1.96",
+            "Width: 10.0",
+            "Width: 0.392"
+        ]
+    },
+    {
+        "q": "Rearrange output analysis:",
+        "type": "rearrange",
+        "words": [
+            "Collect Replications",
+            "Compute Statistics",
+            "Build Intervals",
+            "Test Hypotheses",
+            "Report Results"
+        ]
+    },
+    {
+        "q": "Warm-up period removes initial transient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match output concepts:",
+        "type": "match",
+        "left": [
+            "Replication",
+            "Warm-up",
+            "Steady State",
+            "Terminating"
+        ],
+        "right": [
+            "Independent run",
+            "Initial period",
+            "Equilibrium",
+            "Natural end"
+        ]
+    },
+    {
+        "q": "The ______ period allows system to reach steady state.",
+        "type": "fill_blank",
+        "answers": [
+            "warm-up"
+        ],
+        "other_options": [
+            "cool-down",
+            "run",
+            "steady"
+        ]
+    },
+    {
+        "q": "What is verification and validation?",
+        "type": "mcq",
+        "o": [
+            "Ensuring model is correctly built and represents reality",
+            "V&V analysis",
+            "Quality checking",
+            "Model testing"
+        ]
+    },
+    {
+        "q": "What does this code output for validation check?",
+        "type": "mcq",
+        "c": "real_data = [100, 105, 98]\nsim_data = [102, 104, 99]\nerrors = [abs(r - s) for r, s in zip(real_data, sim_data)]\nmae = sum(errors) / len(errors)\nprint(f'MAE: {round(mae, 2)}')",
+        "o": [
+            "MAE: 2.0",
+            "MAE: 0.0",
+            "MAE: 6.0",
+            "MAE: 1.0"
+        ]
+    },
+    {
+        "q": "Verification checks if model is built right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match V&V methods:",
+        "type": "match",
+        "left": [
+            "Face Validity",
+            "Historical",
+            "Sensitivity",
+            "Comparison"
+        ],
+        "right": [
+            "Expert review",
+            "Past data",
+            "Parameter effects",
+            "Other models"
+        ]
+    },
+    {
+        "q": "The ______ tests if right model is built.",
+        "type": "fill_blank",
+        "answers": [
+            "validation"
+        ],
+        "other_options": [
+            "verification",
+            "testing",
+            "checking"
+        ]
+    },
+    {
+        "q": "What is sensitivity analysis in simulation?",
+        "type": "mcq",
+        "o": [
+            "Studying how output changes with input variations",
+            "Sensitivity study",
+            "Analysis sensitivity",
+            "Parameter variation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for sensitivity?",
+        "type": "mcq",
+        "c": "output_base = 100\noutput_changed = 120\ninput_change = 0.1  # 10%\nsensitivity = (output_changed - output_base) / output_base / input_change\nprint(f'Sensitivity: {sensitivity}')",
+        "o": [
+            "Sensitivity: 2.0",
+            "Sensitivity: 20.0",
+            "Sensitivity: 0.2",
+            "Sensitivity: 1.2"
+        ]
+    },
+    {
+        "q": "Rearrange sensitivity analysis:",
+        "type": "rearrange",
+        "words": [
+            "Identify Parameters",
+            "Define Ranges",
+            "Vary Inputs",
+            "Measure Outputs",
+            "Report Sensitivity"
+        ]
+    },
+    {
+        "q": "Global sensitivity considers all parameters jointly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sensitivity methods:",
+        "type": "match",
+        "left": [
+            "One-at-a-time",
+            "Tornado",
+            "Sobol",
+            "Morris"
+        ],
+        "right": [
+            "Single factor",
+            "Ranking",
+            "Variance-based",
+            "Screening"
+        ]
+    },
+    {
+        "q": "The ______ indices decompose output variance.",
+        "type": "fill_blank",
+        "answers": [
+            "Sobol"
+        ],
+        "other_options": [
+            "Morris",
+            "Tornado",
+            "sensitivity"
+        ]
+    },
+    {
+        "q": "What is experimental design for simulation?",
+        "type": "mcq",
+        "o": [
+            "Systematically planning simulation experiments",
+            "Design experiments",
+            "Experimental simulation",
+            "Plan design"
+        ]
+    },
+    {
+        "q": "What does this code output for factorial runs?",
+        "type": "mcq",
+        "c": "factors = 3\nlevels = 2\nruns = levels ** factors\nprint(f'Runs: {runs}')",
+        "o": [
+            "Runs: 8",
+            "Runs: 6",
+            "Runs: 5",
+            "Runs: 9"
+        ]
+    },
+    {
+        "q": "Latin hypercube improves space coverage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match design features:",
+        "type": "match",
+        "left": [
+            "Factorial",
+            "Fractional",
+            "LHS",
+            "CCD"
+        ],
+        "right": [
+            "All combinations",
+            "Subset",
+            "Space filling",
+            "Response surface"
+        ]
+    },
+    {
+        "q": "The ______ design reduces runs while estimating effects.",
+        "type": "fill_blank",
+        "answers": [
+            "fractional factorial"
+        ],
+        "other_options": [
+            "full factorial",
+            "random",
+            "sequential"
+        ]
+    },
+    {
+        "q": "What is metamodeling?",
+        "type": "mcq",
+        "o": [
+            "Building surrogate models from simulation output",
+            "Meta analysis",
+            "Model of model",
+            "Surrogate simulation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for response surface?",
+        "type": "mcq",
+        "c": "x1, x2 = 2, 3\nbeta = [10, 2, 3, 0.5, 0.5, 1]\ny = beta[0] + beta[1]*x1 + beta[2]*x2 + beta[3]*x1**2 + beta[4]*x2**2 + beta[5]*x1*x2\nprint(f'Y: {y}')",
+        "o": [
+            "Y: 32.5",
+            "Y: 10.0",
+            "Y: 25.0",
+            "Y: 20.0"
+        ]
+    },
+    {
+        "q": "Rearrange metamodeling process:",
+        "type": "rearrange",
+        "words": [
+            "Design Experiments",
+            "Run Simulation",
+            "Fit Metamodel",
+            "Validate Accuracy",
+            "Use for Analysis"
+        ]
+    },
+    {
+        "q": "Kriging provides uncertainty estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match metamodel types:",
+        "type": "match",
+        "left": [
+            "Polynomial",
+            "Kriging",
+            "Neural Network",
+            "Radial Basis"
+        ],
+        "right": [
+            "Regression",
+            "Gaussian process",
+            "Deep learning",
+            "Local fitting"
+        ]
+    },
+    {
+        "q": "The ______ surface approximates simulator with polynomial.",
+        "type": "fill_blank",
+        "answers": [
+            "response"
+        ],
+        "other_options": [
+            "decision",
+            "objective",
+            "constraint"
+        ]
+    },
+    {
+        "q": "What is simulation optimization?",
+        "type": "mcq",
+        "o": [
+            "Using optimization to find best simulation input parameters",
+            "Simulation optimization",
+            "Optimal simulation",
+            "Best modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for optimization step?",
+        "type": "mcq",
+        "c": "current = 100\ngradient = 5\nstep_size = 0.1\nnext_val = current - step_size * gradient\nprint(f'Next: {next_val}')",
+        "o": [
+            "Next: 99.5",
+            "Next: 100.5",
+            "Next: 105.0",
+            "Next: 95.0"
+        ]
+    },
+    {
+        "q": "Rearrange simulation optimization:",
+        "type": "rearrange",
+        "words": [
+            "Define Objective",
+            "Set Parameters",
+            "Run Simulations",
+            "Evaluate Results",
+            "Update Parameters"
+        ]
+    },
+    {
+        "q": "Gradient estimation is challenging with stochastic output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match optimization methods:",
+        "type": "match",
+        "left": [
+            "Gradient",
+            "Pattern Search",
+            "Random Search",
+            "Bayesian"
+        ],
+        "right": [
+            "Derivative-based",
+            "Direct search",
+            "Random sampling",
+            "Probabilistic"
+        ]
+    },
+    {
+        "q": "The ______ and selection finds best among finite alternatives.",
+        "type": "fill_blank",
+        "answers": [
+            "ranking"
+        ],
+        "other_options": [
+            "ordering",
+            "sorting",
+            "comparing"
+        ]
+    },
+    {
+        "q": "What is risk analysis simulation?",
+        "type": "mcq",
+        "o": [
+            "Using simulation to quantify uncertainty and risk",
+            "Risk simulation",
+            "Analysis risk",
+            "Uncertainty simulation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for VaR?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nreturns = sorted([random.gauss(0, 0.02) for _ in range(1000)])\nvar_95 = returns[int(0.05 * len(returns))]\nprint(f'VaR: {round(var_95, 4)}')",
+        "o": [
+            "VaR: -0.0334",
+            "VaR: 0.0334",
+            "VaR: 0.0",
+            "VaR: 0.02"
+        ]
+    },
+    {
+        "q": "Monte Carlo provides full risk distribution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match risk metrics:",
+        "type": "match",
+        "left": [
+            "VaR",
+            "CVaR",
+            "Standard Deviation",
+            "Maximum Loss"
+        ],
+        "right": [
+            "Quantile",
+            "Tail average",
+            "Volatility",
+            "Worst case"
+        ]
+    },
+    {
+        "q": "The ______ at risk measures potential loss at confidence level.",
+        "type": "fill_blank",
+        "answers": [
+            "value"
+        ],
+        "other_options": [
+            "risk",
+            "return",
+            "variance"
+        ]
+    },
+    {
+        "q": "What is project risk simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulating project outcomes under uncertainty",
+            "Project simulation",
+            "Risk projects",
+            "Uncertainty projects"
+        ]
+    },
+    {
+        "q": "What does this code output for project duration?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\ntasks = [random.triangular(5, 10, 7) for _ in range(5)]\ntotal = sum(tasks)\nprint(f'Duration: {round(total, 1)}')",
+        "o": [
+            "Duration: 37.1",
+            "Duration: 35.0",
+            "Duration: 50.0",
+            "Duration: 25.0"
+        ]
+    },
+    {
+        "q": "Rearrange project risk analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Tasks",
+            "Set Distributions",
+            "Run Simulations",
+            "Analyze Duration",
+            "Report Probability"
+        ]
+    },
+    {
+        "q": "Triangular distribution models expert estimates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match project distributions:",
+        "type": "match",
+        "left": [
+            "Triangular",
+            "PERT",
+            "Lognormal",
+            "Uniform"
+        ],
+        "right": [
+            "Min/mode/max",
+            "Modified triangular",
+            "Skewed positive",
+            "Equal probability"
+        ]
+    },
+    {
+        "q": "The ______ distribution requires three point estimates.",
+        "type": "fill_blank",
+        "answers": [
+            "triangular"
+        ],
+        "other_options": [
+            "normal",
+            "uniform",
+            "exponential"
+        ]
+    },
+    {
+        "q": "What is financial simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling financial instruments and markets",
+            "Financial modeling",
+            "Money simulation",
+            "Market analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for stock price?",
+        "type": "mcq",
+        "c": "import math\nimport random\nrandom.seed(42)\nS0, mu, sigma, dt = 100, 0.05, 0.2, 1/252\nz = random.gauss(0, 1)\nS1 = S0 * math.exp((mu - 0.5*sigma**2)*dt + sigma*math.sqrt(dt)*z)\nprint(f'Price: {round(S1, 2)}')",
+        "o": [
+            "Price: 99.88",
+            "Price: 100.00",
+            "Price: 105.00",
+            "Price: 95.00"
+        ]
+    },
+    {
+        "q": "Geometric Brownian motion models stock prices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match financial models:",
+        "type": "match",
+        "left": [
+            "GBM",
+            "Mean Reversion",
+            "Jump Diffusion",
+            "Stochastic Volatility"
+        ],
+        "right": [
+            "Stock prices",
+            "Interest rates",
+            "Sudden moves",
+            "Varying volatility"
+        ]
+    },
+    {
+        "q": "The ______ simulation prices path-dependent options.",
+        "type": "fill_blank",
+        "answers": [
+            "Monte Carlo"
+        ],
+        "other_options": [
+            "binomial",
+            "trinomial",
+            "analytical"
+        ]
+    },
+    {
+        "q": "What is manufacturing simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling production systems and operations",
+            "Manufacturing modeling",
+            "Production simulation",
+            "Factory analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for cycle time?",
+        "type": "mcq",
+        "c": "processing = [5, 8, 6, 7]\nbottleneck = max(processing)\nprint(f'Cycle: {bottleneck}')",
+        "o": [
+            "Cycle: 8",
+            "Cycle: 26",
+            "Cycle: 5",
+            "Cycle: 6.5"
+        ]
+    },
+    {
+        "q": "Rearrange manufacturing analysis:",
+        "type": "rearrange",
+        "words": [
+            "Map Process",
+            "Collect Data",
+            "Build Model",
+            "Validate",
+            "Experiment"
+        ]
+    },
+    {
+        "q": "Bottleneck limits system throughput.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match manufacturing concepts:",
+        "type": "match",
+        "left": [
+            "Throughput",
+            "WIP",
+            "Cycle Time",
+            "Utilization"
+        ],
+        "right": [
+            "Output rate",
+            "Work in process",
+            "Processing time",
+            "Busy fraction"
+        ]
+    },
+    {
+        "q": "The ______ law relates WIP, throughput, and cycle time.",
+        "type": "fill_blank",
+        "answers": [
+            "Little's"
+        ],
+        "other_options": [
+            "Ohm's",
+            "Newton's",
+            "Pareto's"
+        ]
+    },
+    {
+        "q": "What is healthcare simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling healthcare systems and patient flow",
+            "Healthcare modeling",
+            "Medical simulation",
+            "Hospital analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for ED wait?",
+        "type": "mcq",
+        "c": "arrivals = [10, 15, 20, 25, 30]  # per hour\navg_arrival = sum(arrivals) / len(arrivals)\nprint(f'Avg arrivals: {avg_arrival}')",
+        "o": [
+            "Avg arrivals: 20.0",
+            "Avg arrivals: 100.0",
+            "Avg arrivals: 5.0",
+            "Avg arrivals: 10.0"
+        ]
+    },
+    {
+        "q": "Patient flow depends on acuity levels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match healthcare applications:",
+        "type": "match",
+        "left": [
+            "ED Crowding",
+            "OR Scheduling",
+            "Bed Management",
+            "Staff Planning"
+        ],
+        "right": [
+            "Wait times",
+            "Surgery planning",
+            "Capacity",
+            "Nurse scheduling"
+        ]
+    },
+    {
+        "q": "The ______ department is common healthcare simulation focus.",
+        "type": "fill_blank",
+        "answers": [
+            "emergency"
+        ],
+        "other_options": [
+            "radiology",
+            "pharmacy",
+            "laboratory"
+        ]
+    },
+    {
+        "q": "What is supply chain simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling supply chain operations and logistics",
+            "Supply simulation",
+            "Chain modeling",
+            "Logistics analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for inventory level?",
+        "type": "mcq",
+        "c": "inventory = 100\ndemand = 30\norder = 50 if inventory < 40 else 0\nnew_inventory = inventory - demand + order\nprint(f'New: {new_inventory}')",
+        "o": [
+            "New: 70",
+            "New: 120",
+            "New: 80",
+            "New: 100"
+        ]
+    },
+    {
+        "q": "Rearrange supply chain modeling:",
+        "type": "rearrange",
+        "words": [
+            "Define Network",
+            "Set Policies",
+            "Model Demand",
+            "Simulate Operations",
+            "Analyze Costs"
+        ]
+    },
+    {
+        "q": "Bullwhip effect amplifies demand variability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match supply chain elements:",
+        "type": "match",
+        "left": [
+            "Inventory",
+            "Lead Time",
+            "Reorder Point",
+            "Safety Stock"
+        ],
+        "right": [
+            "Stock level",
+            "Delay",
+            "Order trigger",
+            "Buffer"
+        ]
+    },
+    {
+        "q": "The ______ stock buffers against demand uncertainty.",
+        "type": "fill_blank",
+        "answers": [
+            "safety"
+        ],
+        "other_options": [
+            "cycle",
+            "pipeline",
+            "transit"
+        ]
+    },
+    {
+        "q": "What is service system simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling customer service operations",
+            "Service modeling",
+            "System simulation",
+            "Customer analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for service level?",
+        "type": "mcq",
+        "c": "served_in_time = 85\ntotal = 100\nservice_level = served_in_time / total * 100\nprint(f'Level: {service_level}%')",
+        "o": [
+            "Level: 85.0%",
+            "Level: 15.0%",
+            "Level: 100.0%",
+            "Level: 0.85%"
+        ]
+    },
+    {
+        "q": "Call centers are common service simulation applications.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match service metrics:",
+        "type": "match",
+        "left": [
+            "ASA",
+            "Abandonment",
+            "Service Level",
+            "Occupancy"
+        ],
+        "right": [
+            "Answer speed",
+            "Customer leaves",
+            "Target met",
+            "Agent busy"
+        ]
+    },
+    {
+        "q": "The ______ speed of answer measures customer wait.",
+        "type": "fill_blank",
+        "answers": [
+            "average"
+        ],
+        "other_options": [
+            "maximum",
+            "minimum",
+            "median"
+        ]
+    },
+    {
+        "q": "What is transportation simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling traffic flow and transportation systems",
+            "Transportation modeling",
+            "Traffic simulation",
+            "Vehicle analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for travel time?",
+        "type": "mcq",
+        "c": "distance = 50  # km\nspeed = 60  # km/h\ncongestion_factor = 1.5\ntravel_time = distance / speed * congestion_factor\nprint(f'Time: {round(travel_time, 2)} hours')",
+        "o": [
+            "Time: 1.25 hours",
+            "Time: 0.83 hours",
+            "Time: 50.0 hours",
+            "Time: 1.0 hours"
+        ]
+    },
+    {
+        "q": "Rearrange traffic modeling:",
+        "type": "rearrange",
+        "words": [
+            "Define Network",
+            "Set Demand",
+            "Assign Routes",
+            "Simulate Flow",
+            "Analyze Congestion"
+        ]
+    },
+    {
+        "q": "Microscopic models simulate individual vehicles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match traffic models:",
+        "type": "match",
+        "left": [
+            "Microscopic",
+            "Mesoscopic",
+            "Macroscopic",
+            "Agent-based"
+        ],
+        "right": [
+            "Individual vehicles",
+            "Platoons",
+            "Flow equations",
+            "Driver behavior"
+        ]
+    },
+    {
+        "q": "The ______ model uses differential equations for traffic flow.",
+        "type": "fill_blank",
+        "answers": [
+            "macroscopic"
+        ],
+        "other_options": [
+            "microscopic",
+            "mesoscopic",
+            "nano"
+        ]
+    },
+    {
+        "q": "What is network simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling computer networks and communications",
+            "Network modeling",
+            "Computer simulation",
+            "Communication analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for packet delay?",
+        "type": "mcq",
+        "c": "propagation = 10  # ms\ntransmission = 5\nqueuing = 15\ntotal_delay = propagation + transmission + queuing\nprint(f'Delay: {total_delay} ms')",
+        "o": [
+            "Delay: 30 ms",
+            "Delay: 10 ms",
+            "Delay: 5 ms",
+            "Delay: 15 ms"
+        ]
+    },
+    {
+        "q": "Packet-level simulation models individual packets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match network metrics:",
+        "type": "match",
+        "left": [
+            "Throughput",
+            "Latency",
+            "Jitter",
+            "Packet Loss"
+        ],
+        "right": [
+            "Data rate",
+            "Delay",
+            "Delay variation",
+            "Dropped packets"
+        ]
+    },
+    {
+        "q": "The ______ layer handles routing in network models.",
+        "type": "fill_blank",
+        "answers": [
+            "network"
+        ],
+        "other_options": [
+            "application",
+            "transport",
+            "physical"
+        ]
+    },
+    {
+        "q": "What is parallel and distributed simulation?",
+        "type": "mcq",
+        "o": [
+            "Running simulation across multiple processors",
+            "Parallel modeling",
+            "Distributed analysis",
+            "Multi-processor simulation"
+        ]
+    },
+    {
+        "q": "What does this code output for speedup?",
+        "type": "mcq",
+        "c": "serial_time = 100\nparallel_time = 30\nspeedup = serial_time / parallel_time\nprint(f'Speedup: {round(speedup, 2)}x')",
+        "o": [
+            "Speedup: 3.33x",
+            "Speedup: 0.3x",
+            "Speedup: 70.0x",
+            "Speedup: 130.0x"
+        ]
+    },
+    {
+        "q": "Rearrange parallel simulation design:",
+        "type": "rearrange",
+        "words": [
+            "Partition Model",
+            "Assign Processors",
+            "Synchronize Events",
+            "Exchange Messages",
+            "Combine Results"
+        ]
+    },
+    {
+        "q": "Synchronization overhead limits parallel speedup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match parallel concepts:",
+        "type": "match",
+        "left": [
+            "Conservative",
+            "Optimistic",
+            "Lookahead",
+            "Rollback"
+        ],
+        "right": [
+            "Wait for safety",
+            "Speculative execution",
+            "Future knowledge",
+            "Time warp"
+        ]
+    },
+    {
+        "q": "The ______ approach uses speculative execution and rollback.",
+        "type": "fill_blank",
+        "answers": [
+            "optimistic"
+        ],
+        "other_options": [
+            "conservative",
+            "cautious",
+            "safe"
+        ]
+    },
+    {
+        "q": "What is real-time simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulation that runs at actual system speed",
+            "Real-time analysis",
+            "Time simulation",
+            "Actual simulation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for time scaling?",
+        "type": "mcq",
+        "c": "sim_time = 60  # seconds\nwall_time = 30  # seconds\nscale = sim_time / wall_time\nprint(f'Scale: {scale}x')",
+        "o": [
+            "Scale: 2.0x",
+            "Scale: 0.5x",
+            "Scale: 30.0x",
+            "Scale: 90.0x"
+        ]
+    },
+    {
+        "q": "Hardware-in-loop combines real and simulated components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match real-time types:",
+        "type": "match",
+        "left": [
+            "Faster",
+            "Real-time",
+            "Slower",
+            "Hybrid"
+        ],
+        "right": [
+            "Accelerated",
+            "1:1 ratio",
+            "Detailed analysis",
+            "Mixed timing"
+        ]
+    },
+    {
+        "q": "The ______ in the loop testing uses actual hardware.",
+        "type": "fill_blank",
+        "answers": [
+            "hardware"
+        ],
+        "other_options": [
+            "software",
+            "human",
+            "model"
+        ]
+    },
+    {
+        "q": "What is digital twin simulation?",
+        "type": "mcq",
+        "o": [
+            "Virtual replica synchronized with physical system",
+            "Digital twin",
+            "Twin simulation",
+            "Virtual copy"
+        ]
+    },
+    {
+        "q": "What does this code output for sync update?",
+        "type": "mcq",
+        "c": "physical_value = 102\ndigital_value = 100\nerror = abs(physical_value - digital_value)\nprint(f'Error: {error}')",
+        "o": [
+            "Error: 2",
+            "Error: 102",
+            "Error: 100",
+            "Error: 202"
+        ]
+    },
+    {
+        "q": "Rearrange digital twin lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create Model",
+            "Connect Sensors",
+            "Synchronize Data",
+            "Analyze Behavior",
+            "Predict Future"
+        ]
+    },
+    {
+        "q": "Digital twins enable predictive maintenance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match digital twin features:",
+        "type": "match",
+        "left": [
+            "Synchronization",
+            "Prediction",
+            "What-if",
+            "Optimization"
+        ],
+        "right": [
+            "Real-time update",
+            "Future state",
+            "Scenarios",
+            "Best parameters"
+        ]
+    },
+    {
+        "q": "The ______ twin uses sensor data for real-time updates.",
+        "type": "fill_blank",
+        "answers": [
+            "digital"
+        ],
+        "other_options": [
+            "physical",
+            "virtual",
+            "analog"
+        ]
+    },
+    {
+        "q": "What is bootstrap resampling?",
+        "type": "mcq",
+        "o": [
+            "Estimating statistics by resampling with replacement",
+            "Bootstrap analysis",
+            "Sample resampling",
+            "Replacement sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for bootstrap sample?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\ndata = [10, 20, 30, 40, 50]\nbootstrap = [random.choice(data) for _ in range(len(data))]\nprint(f'Mean: {sum(bootstrap)/len(bootstrap)}')",
+        "o": [
+            "Mean: 30.0",
+            "Mean: 50.0",
+            "Mean: 10.0",
+            "Mean: 150.0"
+        ]
+    },
+    {
+        "q": "Bootstrap works without distributional assumptions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bootstrap methods:",
+        "type": "match",
+        "left": [
+            "Percentile",
+            "BCa",
+            "Studentized",
+            "Jackknife"
+        ],
+        "right": [
+            "Simple quantile",
+            "Bias-corrected",
+            "Pivotal",
+            "Leave-one-out"
+        ]
+    },
+    {
+        "q": "The ______ resampling draws with replacement.",
+        "type": "fill_blank",
+        "answers": [
+            "bootstrap"
+        ],
+        "other_options": [
+            "jackknife",
+            "cross-validation",
+            "permutation"
+        ]
+    },
+    {
+        "q": "What is importance sampling?",
+        "type": "mcq",
+        "o": [
+            "Sampling from modified distribution to reduce variance",
+            "Importance analysis",
+            "Sampling importance",
+            "Modified sampling"
+        ]
+    },
+    {
+        "q": "What does this code output for likelihood ratio?",
+        "type": "mcq",
+        "c": "f_x = 0.1\ng_x = 0.2\nratio = f_x / g_x\nprint(f'Ratio: {ratio}')",
+        "o": [
+            "Ratio: 0.5",
+            "Ratio: 2.0",
+            "Ratio: 0.1",
+            "Ratio: 0.02"
+        ]
+    },
+    {
+        "q": "Rearrange importance sampling:",
+        "type": "rearrange",
+        "words": [
+            "Choose Proposal",
+            "Generate Samples",
+            "Compute Weights",
+            "Estimate Mean",
+            "Assess Variance"
+        ]
+    },
+    {
+        "q": "Poor proposal can increase variance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match importance concepts:",
+        "type": "match",
+        "left": [
+            "Proposal",
+            "Likelihood Ratio",
+            "Effective Sample",
+            "Self-normalized"
+        ],
+        "right": [
+            "Sampling distribution",
+            "Weight",
+            "Useful samples",
+            "Sum to one"
+        ]
+    },
+    {
+        "q": "The ______ ratio weights samples appropriately.",
+        "type": "fill_blank",
+        "answers": [
+            "likelihood"
+        ],
+        "other_options": [
+            "probability",
+            "density",
+            "mass"
+        ]
+    },
+    {
+        "q": "What is stratified sampling?",
+        "type": "mcq",
+        "o": [
+            "Dividing population into strata and sampling each",
+            "Stratified analysis",
+            "Layer sampling",
+            "Division sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for stratum sample?",
+        "type": "mcq",
+        "c": "total_sample = 100\nstratum_weight = 0.3\nstratum_sample = int(total_sample * stratum_weight)\nprint(f'Sample: {stratum_sample}')",
+        "o": [
+            "Sample: 30",
+            "Sample: 70",
+            "Sample: 100",
+            "Sample: 0.3"
+        ]
+    },
+    {
+        "q": "Stratification reduces variance when strata differ.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match stratification concepts:",
+        "type": "match",
+        "left": [
+            "Stratum",
+            "Proportional",
+            "Optimal",
+            "Post-stratification"
+        ],
+        "right": [
+            "Subpopulation",
+            "Size-based",
+            "Variance-based",
+            "After sampling"
+        ]
+    },
+    {
+        "q": "The ______ allocation assigns samples proportional to stratum size.",
+        "type": "fill_blank",
+        "answers": [
+            "proportional"
+        ],
+        "other_options": [
+            "optimal",
+            "equal",
+            "random"
+        ]
+    },
+    {
+        "q": "What is common random numbers?",
+        "type": "mcq",
+        "o": [
+            "Using same random numbers across configurations for comparison",
+            "Common numbers",
+            "Shared randoms",
+            "Number sharing"
+        ]
+    },
+    {
+        "q": "What does this code output for CRN comparison?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nconfig_a = sum(random.random() for _ in range(5))\nrandom.seed(42)\nconfig_b = sum(random.random() * 1.1 for _ in range(5))\ncorr = 'high' if config_a < config_b else 'low'\nprint(f'Correlation: {corr}')",
+        "o": [
+            "Correlation: high",
+            "Correlation: low",
+            "Correlation: zero",
+            "Correlation: Error"
+        ]
+    },
+    {
+        "q": "CRN induces positive correlation between configurations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match variance reduction:",
+        "type": "match",
+        "left": [
+            "CRN",
+            "Antithetic",
+            "Control Variate",
+            "Stratified"
+        ],
+        "right": [
+            "Same seed",
+            "Opposite",
+            "Known mean",
+            "Subgroups"
+        ]
+    },
+    {
+        "q": "The ______ random numbers use the same seed for fair comparison.",
+        "type": "fill_blank",
+        "answers": [
+            "common"
+        ],
+        "other_options": [
+            "different",
+            "independent",
+            "unique"
+        ]
+    },
+    {
+        "q": "What is Markov chain Monte Carlo?",
+        "type": "mcq",
+        "o": [
+            "Sampling from distributions using Markov chains",
+            "MCMC analysis",
+            "Chain Monte Carlo",
+            "Markov sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for Metropolis step?",
+        "type": "mcq",
+        "c": "import math\nimport random\nrandom.seed(42)\ncurrent = 5\nproposal = current + random.gauss(0, 1)\nalpha = min(1, math.exp(-(proposal**2 - current**2)/2))\naccept = random.random() < alpha\nprint(f'Accept: {accept}')",
+        "o": [
+            "Accept: True",
+            "Accept: False",
+            "Accept: 0.5",
+            "Accept: Error"
+        ]
+    },
+    {
+        "q": "Rearrange MCMC sampling:",
+        "type": "rearrange",
+        "words": [
+            "Initialize State",
+            "Propose Move",
+            "Compute Acceptance",
+            "Accept or Reject",
+            "Record Sample"
+        ]
+    },
+    {
+        "q": "MCMC requires burn-in period.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match MCMC methods:",
+        "type": "match",
+        "left": [
+            "Metropolis",
+            "Gibbs",
+            "HMC",
+            "Slice"
+        ],
+        "right": [
+            "Accept/reject",
+            "Conditional",
+            "Gradient-based",
+            "Auxiliary"
+        ]
+    },
+    {
+        "q": "The ______ sampler updates one variable at a time.",
+        "type": "fill_blank",
+        "answers": [
+            "Gibbs"
+        ],
+        "other_options": [
+            "Metropolis",
+            "HMC",
+            "slice"
+        ]
+    },
+    {
+        "q": "What is sequential Monte Carlo?",
+        "type": "mcq",
+        "o": [
+            "Particle filtering for dynamic state estimation",
+            "Sequential sampling",
+            "Monte Carlo sequence",
+            "Particle analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for particle weight?",
+        "type": "mcq",
+        "c": "likelihood = 0.8\nprior_weight = 1.0\nnew_weight = prior_weight * likelihood\nprint(f'Weight: {new_weight}')",
+        "o": [
+            "Weight: 0.8",
+            "Weight: 1.8",
+            "Weight: 0.2",
+            "Weight: 1.0"
+        ]
+    },
+    {
+        "q": "Particle filters handle nonlinear non-Gaussian models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SMC concepts:",
+        "type": "match",
+        "left": [
+            "Particle",
+            "Weight",
+            "Resampling",
+            "Effective Size"
+        ],
+        "right": [
+            "Sample",
+            "Importance",
+            "Diversify",
+            "Useful particles"
+        ]
+    },
+    {
+        "q": "The ______ step duplicates high-weight particles.",
+        "type": "fill_blank",
+        "answers": [
+            "resampling"
+        ],
+        "other_options": [
+            "weighting",
+            "propagation",
+            "correction"
+        ]
+    },
+    {
+        "q": "What is quasi-Monte Carlo?",
+        "type": "mcq",
+        "o": [
+            "Using low-discrepancy sequences instead of random",
+            "Quasi-random analysis",
+            "Near Monte Carlo",
+            "Deterministic sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for Halton sequence?",
+        "type": "mcq",
+        "c": "def halton(n, base):\n    result = 0\n    f = 1\n    while n > 0:\n        f /= base\n        result += f * (n % base)\n        n //= base\n    return result\nprint(f'H(5,2): {halton(5, 2)}')",
+        "o": [
+            "H(5,2): 0.625",
+            "H(5,2): 0.5",
+            "H(5,2): 5.0",
+            "H(5,2): 2.5"
+        ]
+    },
+    {
+        "q": "Rearrange QMC procedure:",
+        "type": "rearrange",
+        "words": [
+            "Choose Sequence",
+            "Generate Points",
+            "Evaluate Function",
+            "Average Results",
+            "Compare to MC"
+        ]
+    },
+    {
+        "q": "QMC has faster convergence than standard MC.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match QMC sequences:",
+        "type": "match",
+        "left": [
+            "Halton",
+            "Sobol",
+            "Faure",
+            "Lattice"
+        ],
+        "right": [
+            "Radical inverse",
+            "Digital",
+            "Permuted",
+            "Structured"
+        ]
+    },
+    {
+        "q": "The ______ sequence has low discrepancy.",
+        "type": "fill_blank",
+        "answers": [
+            "quasi-random"
+        ],
+        "other_options": [
+            "random",
+            "uniform",
+            "normal"
+        ]
+    },
+    {
+        "q": "What is rare event simulation?",
+        "type": "mcq",
+        "o": [
+            "Efficiently estimating probabilities of rare events",
+            "Rare simulation",
+            "Event analysis",
+            "Unusual modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for crude estimate?",
+        "type": "mcq",
+        "c": "rare_events = 5\ntotal_samples = 100000\nprob = rare_events / total_samples\nprint(f'Prob: {prob}')",
+        "o": [
+            "Prob: 5e-05",
+            "Prob: 5.0",
+            "Prob: 0.005",
+            "Prob: 0.00005"
+        ]
+    },
+    {
+        "q": "Importance sampling helps estimate rare event probabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match rare event methods:",
+        "type": "match",
+        "left": [
+            "Importance Sampling",
+            "Splitting",
+            "Cross-entropy",
+            "Subset"
+        ],
+        "right": [
+            "Biased sampling",
+            "Clone paths",
+            "Adaptive IS",
+            "Sequential conditioning"
+        ]
+    },
+    {
+        "q": "The ______ method clones particles that reach thresholds.",
+        "type": "fill_blank",
+        "answers": [
+            "splitting"
+        ],
+        "other_options": [
+            "merging",
+            "combining",
+            "averaging"
+        ]
+    },
+    {
+        "q": "What is simulation software?",
+        "type": "mcq",
+        "o": [
+            "Tools and platforms for building simulation models",
+            "Software analysis",
+            "Simulation tools",
+            "Platform modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for model size?",
+        "type": "mcq",
+        "c": "entities = 1000\nevents_per = 5\ntotal_events = entities * events_per\nprint(f'Events: {total_events}')",
+        "o": [
+            "Events: 5000",
+            "Events: 1005",
+            "Events: 200",
+            "Events: 5"
+        ]
+    },
+    {
+        "q": "Arena and Simio are commercial DES packages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match simulation tools:",
+        "type": "match",
+        "left": [
+            "Arena",
+            "AnyLogic",
+            "SimPy",
+            "NetLogo"
+        ],
+        "right": [
+            "DES package",
+            "Multi-method",
+            "Python library",
+            "ABM platform"
+        ]
+    },
+    {
+        "q": "The ______ library provides DES in Python.",
+        "type": "fill_blank",
+        "answers": [
+            "SimPy"
+        ],
+        "other_options": [
+            "NumPy",
+            "Pandas",
+            "SciPy"
+        ]
+    },
+    {
+        "q": "What is model documentation?",
+        "type": "mcq",
+        "o": [
+            "Recording model assumptions, structure, and validation",
+            "Documentation modeling",
+            "Model records",
+            "Structure recording"
+        ]
+    },
+    {
+        "q": "What does this code calculate for model complexity?",
+        "type": "mcq",
+        "c": "components = 15\nconnections = 25\ncomplexity = components + connections\nprint(f'Complexity: {complexity}')",
+        "o": [
+            "Complexity: 40",
+            "Complexity: 10",
+            "Complexity: 375",
+            "Complexity: 15"
+        ]
+    },
+    {
+        "q": "Rearrange model development:",
+        "type": "rearrange",
+        "words": [
+            "Define Scope",
+            "Build Model",
+            "Verify",
+            "Validate",
+            "Document"
+        ]
+    },
+    {
+        "q": "Documentation improves model credibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match documentation elements:",
+        "type": "match",
+        "left": [
+            "Assumptions",
+            "Data Sources",
+            "V&V Results",
+            "Limitations"
+        ],
+        "right": [
+            "Model basis",
+            "Input origins",
+            "Quality evidence",
+            "Known issues"
+        ]
+    },
+    {
+        "q": "The ______ describes what model can and cannot do.",
+        "type": "fill_blank",
+        "answers": [
+            "scope"
+        ],
+        "other_options": [
+            "structure",
+            "method",
+            "output"
+        ]
+    },
+    {
+        "q": "What is animation in simulation?",
+        "type": "mcq",
+        "o": [
+            "Visual representation of simulation execution",
+            "Animation modeling",
+            "Visual simulation",
+            "Model animation"
+        ]
+    },
+    {
+        "q": "What does this code output for frame rate?",
+        "type": "mcq",
+        "c": "frames = 60\ntime = 1  # second\nfps = frames / time\nprint(f'FPS: {fps}')",
+        "o": [
+            "FPS: 60.0",
+            "FPS: 1.0",
+            "FPS: 61.0",
+            "FPS: 0.016"
+        ]
+    },
+    {
+        "q": "Animation aids model validation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match animation uses:",
+        "type": "match",
+        "left": [
+            "Verification",
+            "Communication",
+            "Training",
+            "Analysis"
+        ],
+        "right": [
+            "Check logic",
+            "Stakeholders",
+            "Education",
+            "Behavior insight"
+        ]
+    },
+    {
+        "q": "The ______ visualization shows model behavior over time.",
+        "type": "fill_blank",
+        "answers": [
+            "animation"
+        ],
+        "other_options": [
+            "graph",
+            "table",
+            "chart"
+        ]
+    },
+    {
+        "q": "What is stochastic process simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling random processes over time",
+            "Stochastic modeling",
+            "Process simulation",
+            "Random processes"
+        ]
+    },
+    {
+        "q": "What does this code calculate for random walk?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nposition = 0\nfor _ in range(100):\n    position += random.choice([-1, 1])\nprint(f'Position: {position}')",
+        "o": [
+            "Position: -4",
+            "Position: 0",
+            "Position: 100",
+            "Position: 50"
+        ]
+    },
+    {
+        "q": "Rearrange stochastic process modeling:",
+        "type": "rearrange",
+        "words": [
+            "Define Process",
+            "Set Parameters",
+            "Generate Paths",
+            "Analyze Statistics",
+            "Report Results"
+        ]
+    },
+    {
+        "q": "Brownian motion is continuous stochastic process.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match stochastic processes:",
+        "type": "match",
+        "left": [
+            "Poisson",
+            "Wiener",
+            "Markov Chain",
+            "Birth-Death"
+        ],
+        "right": [
+            "Count events",
+            "Brownian motion",
+            "Discrete states",
+            "Population"
+        ]
+    },
+    {
+        "q": "The ______ process models random arrivals.",
+        "type": "fill_blank",
+        "answers": [
+            "Poisson"
+        ],
+        "other_options": [
+            "Wiener",
+            "Markov",
+            "Bernoulli"
+        ]
+    },
+    {
+        "q": "What is reliability simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling system failures and availability",
+            "Reliability modeling",
+            "Failure simulation",
+            "System reliability"
+        ]
+    },
+    {
+        "q": "What does this code output for MTBF?",
+        "type": "mcq",
+        "c": "failures = [100, 150, 120, 130]\nmtbf = sum(failures) / len(failures)\nprint(f'MTBF: {mtbf}')",
+        "o": [
+            "MTBF: 125.0",
+            "MTBF: 500.0",
+            "MTBF: 4.0",
+            "MTBF: 100.0"
+        ]
+    },
+    {
+        "q": "Weibull distribution models failure times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match reliability concepts:",
+        "type": "match",
+        "left": [
+            "MTBF",
+            "MTTR",
+            "Availability",
+            "Failure Rate"
+        ],
+        "right": [
+            "Between failures",
+            "Repair time",
+            "Uptime fraction",
+            "Lambda"
+        ]
+    },
+    {
+        "q": "The ______ time to failure gives average lifespan.",
+        "type": "fill_blank",
+        "answers": [
+            "mean"
+        ],
+        "other_options": [
+            "median",
+            "mode",
+            "maximum"
+        ]
+    },
+    {
+        "q": "What is simulation credibility?",
+        "type": "mcq",
+        "o": [
+            "Stakeholder confidence in model validity",
+            "Credibility modeling",
+            "Model trust",
+            "Simulation trust"
+        ]
+    },
+    {
+        "q": "What does this code calculate for error rate?",
+        "type": "mcq",
+        "c": "predictions = [100, 105, 98]\nactuals = [102, 103, 99]\nerror = sum(abs(p-a) for p, a in zip(predictions, actuals)) / len(actuals)\nprint(f'Error: {round(error, 2)}')",
+        "o": [
+            "Error: 2.33",
+            "Error: 0.0",
+            "Error: 7.0",
+            "Error: 3.0"
+        ]
+    },
+    {
+        "q": "Rearrange credibility building:",
+        "type": "rearrange",
+        "words": [
+            "Document Model",
+            "Validate Results",
+            "Review with Experts",
+            "Report Limitations",
+            "Establish Trust"
+        ]
+    },
+    {
+        "q": "Face validity involves expert review.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match credibility factors:",
+        "type": "match",
+        "left": [
+            "Accuracy",
+            "Transparency",
+            "Documentation",
+            "Track Record"
+        ],
+        "right": [
+            "Prediction quality",
+            "Open methods",
+            "Recorded process",
+            "Past success"
+        ]
+    },
+    {
+        "q": "The ______ review assesses model reasonableness.",
+        "type": "fill_blank",
+        "answers": [
+            "expert"
+        ],
+        "other_options": [
+            "technical",
+            "statistical",
+            "automated"
+        ]
+    },
+    {
+        "q": "What is scenario analysis?",
+        "type": "mcq",
+        "o": [
+            "Exploring simulation outcomes under different conditions",
+            "Scenario modeling",
+            "Analysis scenarios",
+            "Condition testing"
+        ]
+    },
+    {
+        "q": "What does this code output for scenario comparison?",
+        "type": "mcq",
+        "c": "scenarios = {'base': 100, 'optimistic': 120, 'pessimistic': 80}\nbest = max(scenarios.values())\nprint(f'Best: {best}')",
+        "o": [
+            "Best: 120",
+            "Best: 100",
+            "Best: 80",
+            "Best: 300"
+        ]
+    },
+    {
+        "q": "Stress testing explores extreme scenarios.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scenario types:",
+        "type": "match",
+        "left": [
+            "Base Case",
+            "Best Case",
+            "Worst Case",
+            "What-If"
+        ],
+        "right": [
+            "Expected",
+            "Optimistic",
+            "Pessimistic",
+            "Exploratory"
+        ]
+    },
+    {
+        "q": "The ______ case represents most likely outcome.",
+        "type": "fill_blank",
+        "answers": [
+            "base"
+        ],
+        "other_options": [
+            "best",
+            "worst",
+            "median"
+        ]
+    },
+    {
+        "q": "What is decision support simulation?",
+        "type": "mcq",
+        "o": [
+            "Using simulation to inform decision making",
+            "Decision simulation",
+            "Support modeling",
+            "Choice analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for decision value?",
+        "type": "mcq",
+        "c": "option_a = [90, 95, 100]\noption_b = [80, 100, 120]\navg_a = sum(option_a) / len(option_a)\navg_b = sum(option_b) / len(option_b)\nbetter = 'A' if avg_a > avg_b else 'B'\nprint(f'Better: {better}')",
+        "o": [
+            "Better: A",
+            "Better: B",
+            "Better: Equal",
+            "Better: Error"
+        ]
+    },
+    {
+        "q": "Rearrange decision support:",
+        "type": "rearrange",
+        "words": [
+            "Define Problem",
+            "Model Alternatives",
+            "Simulate Outcomes",
+            "Compare Results",
+            "Recommend Decision"
+        ]
+    },
+    {
+        "q": "Simulation quantifies decision uncertainty.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match decision methods:",
+        "type": "match",
+        "left": [
+            "Expected Value",
+            "Risk-adjusted",
+            "Robust",
+            "Regret"
+        ],
+        "right": [
+            "Average outcome",
+            "Risk consideration",
+            "Worst-case focus",
+            "Opportunity cost"
+        ]
+    },
+    {
+        "q": "The ______ value decision rule maximizes expected outcome.",
+        "type": "fill_blank",
+        "answers": [
+            "expected"
+        ],
+        "other_options": [
+            "maximum",
+            "minimum",
+            "median"
+        ]
+    },
+    {
+        "q": "What is simulation-based optimization?",
+        "type": "mcq",
+        "o": [
+            "Finding optimal parameters using simulation as evaluator",
+            "Simulation optimization",
+            "Optimal simulation",
+            "Parameter finding"
+        ]
+    },
+    {
+        "q": "What does this code output for objective value?",
+        "type": "mcq",
+        "c": "x = 5\nobjective = x**2 - 10*x + 25\nprint(f'Objective: {objective}')",
+        "o": [
+            "Objective: 0",
+            "Objective: 25",
+            "Objective: 50",
+            "Objective: -25"
+        ]
+    },
+    {
+        "q": "Stochastic approximation handles noisy objectives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match optimization approaches:",
+        "type": "match",
+        "left": [
+            "Direct Search",
+            "Gradient-based",
+            "Surrogate",
+            "Evolutionary"
+        ],
+        "right": [
+            "No derivatives",
+            "Gradient estimation",
+            "Metamodel",
+            "Population-based"
+        ]
+    },
+    {
+        "q": "The ______ model replaces expensive simulation.",
+        "type": "fill_blank",
+        "answers": [
+            "surrogate"
+        ],
+        "other_options": [
+            "direct",
+            "original",
+            "exact"
+        ]
+    },
+    {
+        "q": "What is simulation model calibration?",
+        "type": "mcq",
+        "o": [
+            "Adjusting parameters to match real system",
+            "Calibration modeling",
+            "Model adjustment",
+            "Parameter tuning"
+        ]
+    },
+    {
+        "q": "What does this code calculate for calibration error?",
+        "type": "mcq",
+        "c": "model_output = [100, 105, 98]\nreal_data = [102, 104, 100]\nerror = sum((m-r)**2 for m, r in zip(model_output, real_data)) / len(real_data)\nprint(f'MSE: {round(error, 2)}')",
+        "o": [
+            "MSE: 3.0",
+            "MSE: 0.0",
+            "MSE: 9.0",
+            "MSE: 1.73"
+        ]
+    },
+    {
+        "q": "Rearrange calibration process:",
+        "type": "rearrange",
+        "words": [
+            "Collect Data",
+            "Initial Parameters",
+            "Run Model",
+            "Compare Output",
+            "Adjust Parameters"
+        ]
+    },
+    {
+        "q": "Overfitting to calibration data reduces generalization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match calibration concepts:",
+        "type": "match",
+        "left": [
+            "Training Data",
+            "Validation Data",
+            "Objective",
+            "Convergence"
+        ],
+        "right": [
+            "Fit parameters",
+            "Test performance",
+            "Error measure",
+            "Stopping criterion"
+        ]
+    },
+    {
+        "q": "The ______ data is used to tune model parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "calibration"
+        ],
+        "other_options": [
+            "validation",
+            "test",
+            "future"
+        ]
+    },
+    {
+        "q": "What is model uncertainty quantification?",
+        "type": "mcq",
+        "o": [
+            "Assessing and reporting uncertainty in model predictions",
+            "Uncertainty modeling",
+            "Quantification analysis",
+            "Model uncertainty"
+        ]
+    },
+    {
+        "q": "What does this code output for uncertainty interval?",
+        "type": "mcq",
+        "c": "mean = 100\nstd = 10\nlower = mean - 2*std\nupper = mean + 2*std\nprint(f'Interval: [{lower}, {upper}]')",
+        "o": [
+            "Interval: [80, 120]",
+            "Interval: [90, 110]",
+            "Interval: [100, 100]",
+            "Interval: [0, 200]"
+        ]
+    },
+    {
+        "q": "Aleatory uncertainty is inherent randomness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match uncertainty types:",
+        "type": "match",
+        "left": [
+            "Aleatory",
+            "Epistemic",
+            "Model Form",
+            "Numerical"
+        ],
+        "right": [
+            "Random variability",
+            "Lack of knowledge",
+            "Wrong structure",
+            "Computational error"
+        ]
+    },
+    {
+        "q": "The ______ uncertainty can be reduced with more data.",
+        "type": "fill_blank",
+        "answers": [
+            "epistemic"
+        ],
+        "other_options": [
+            "aleatory",
+            "inherent",
+            "random"
+        ]
+    },
+    {
+        "q": "What is emulator-based analysis?",
+        "type": "mcq",
+        "o": [
+            "Using fast surrogate for computationally intensive simulation",
+            "Emulator analysis",
+            "Fast simulation",
+            "Surrogate modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for emulator speedup?",
+        "type": "mcq",
+        "c": "sim_time = 60  # seconds\nemulator_time = 0.01\nspeedup = sim_time / emulator_time\nprint(f'Speedup: {speedup}x')",
+        "o": [
+            "Speedup: 6000.0x",
+            "Speedup: 60.0x",
+            "Speedup: 0.01x",
+            "Speedup: 60.01x"
+        ]
+    },
+    {
+        "q": "Rearrange emulator development:",
+        "type": "rearrange",
+        "words": [
+            "Design Experiments",
+            "Run Simulations",
+            "Train Emulator",
+            "Validate Accuracy",
+            "Deploy"
+        ]
+    },
+    {
+        "q": "Gaussian process emulators provide uncertainty.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match emulator methods:",
+        "type": "match",
+        "left": [
+            "Polynomial",
+            "Gaussian Process",
+            "Neural Network",
+            "Random Forest"
+        ],
+        "right": [
+            "Regression",
+            "Kriging",
+            "Deep learning",
+            "Ensemble trees"
+        ]
+    },
+    {
+        "q": "The ______ process emulator is also called kriging.",
+        "type": "fill_blank",
+        "answers": [
+            "Gaussian"
+        ],
+        "other_options": [
+            "Poisson",
+            "Markov",
+            "Bernoulli"
+        ]
+    },
+    {
+        "q": "What is simulation reproducibility?",
+        "type": "mcq",
+        "o": [
+            "Ability to recreate exact simulation results",
+            "Reproducibility modeling",
+            "Result recreation",
+            "Simulation replication"
+        ]
+    },
+    {
+        "q": "What does this code output for seed-based reproduction?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nresult1 = sum(random.random() for _ in range(10))\nrandom.seed(42)\nresult2 = sum(random.random() for _ in range(10))\nprint(f'Equal: {result1 == result2}')",
+        "o": [
+            "Equal: True",
+            "Equal: False",
+            "Equal: Maybe",
+            "Equal: Error"
+        ]
+    },
+    {
+        "q": "Fixed random seeds enable reproducibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match reproducibility factors:",
+        "type": "match",
+        "left": [
+            "Random Seed",
+            "Software Version",
+            "Data",
+            "Parameters"
+        ],
+        "right": [
+            "RNG state",
+            "Platform",
+            "Input values",
+            "Model settings"
+        ]
+    },
+    {
+        "q": "The ______ seed initializes random number generator.",
+        "type": "fill_blank",
+        "answers": [
+            "random"
+        ],
+        "other_options": [
+            "simulation",
+            "model",
+            "system"
+        ]
+    },
+    {
+        "q": "What is arrival process modeling?",
+        "type": "mcq",
+        "o": [
+            "Statistical modeling of entity arrival patterns",
+            "Arrival modeling",
+            "Process arrivals",
+            "Pattern modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for interarrival time?",
+        "type": "mcq",
+        "c": "arrivals = [0, 3, 5, 9, 12]\ninterarrivals = [arrivals[i+1] - arrivals[i] for i in range(len(arrivals)-1)]\navg_ia = sum(interarrivals) / len(interarrivals)\nprint(f'Avg IA: {avg_ia}')",
+        "o": [
+            "Avg IA: 3.0",
+            "Avg IA: 5.8",
+            "Avg IA: 12.0",
+            "Avg IA: 4.0"
+        ]
+    },
+    {
+        "q": "Rearrange arrival modeling:",
+        "type": "rearrange",
+        "words": [
+            "Collect Data",
+            "Analyze Pattern",
+            "Fit Distribution",
+            "Validate Fit",
+            "Generate Arrivals"
+        ]
+    },
+    {
+        "q": "Non-stationary arrivals have time-varying rate.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match arrival patterns:",
+        "type": "match",
+        "left": [
+            "Stationary",
+            "Non-stationary",
+            "Batch",
+            "Scheduled"
+        ],
+        "right": [
+            "Constant rate",
+            "Varying rate",
+            "Groups",
+            "Fixed times"
+        ]
+    },
+    {
+        "q": "The ______ process assumes constant arrival rate.",
+        "type": "fill_blank",
+        "answers": [
+            "homogeneous Poisson"
+        ],
+        "other_options": [
+            "non-homogeneous",
+            "batch",
+            "scheduled"
+        ]
+    },
+    {
+        "q": "What is service time modeling?",
+        "type": "mcq",
+        "o": [
+            "Statistical modeling of processing durations",
+            "Service modeling",
+            "Time modeling",
+            "Duration modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for service time stats?",
+        "type": "mcq",
+        "c": "services = [5, 8, 6, 7, 9]\nmean = sum(services) / len(services)\nprint(f'Mean: {mean}')",
+        "o": [
+            "Mean: 7.0",
+            "Mean: 35.0",
+            "Mean: 5.0",
+            "Mean: 9.0"
+        ]
+    },
+    {
+        "q": "Exponential service gives memoryless property.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match service distributions:",
+        "type": "match",
+        "left": [
+            "Exponential",
+            "Lognormal",
+            "Erlang",
+            "Constant"
+        ],
+        "right": [
+            "Memoryless",
+            "Skewed positive",
+            "Sum of exponentials",
+            "Deterministic"
+        ]
+    },
+    {
+        "q": "The ______ time includes actual work plus variability.",
+        "type": "fill_blank",
+        "answers": [
+            "service"
+        ],
+        "other_options": [
+            "wait",
+            "queue",
+            "total"
+        ]
+    },
+    {
+        "q": "What is queueing network simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling interconnected queues and flows",
+            "Network queueing",
+            "Queue networks",
+            "Flow modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for network throughput?",
+        "type": "mcq",
+        "c": "station_throughputs = [8, 10, 7, 9]\nbottleneck = min(station_throughputs)\nprint(f'Network: {bottleneck}')",
+        "o": [
+            "Network: 7",
+            "Network: 10",
+            "Network: 34",
+            "Network: 8.5"
+        ]
+    },
+    {
+        "q": "Rearrange network analysis:",
+        "type": "rearrange",
+        "words": [
+            "Map Stations",
+            "Define Routing",
+            "Set Parameters",
+            "Simulate Flow",
+            "Analyze Bottleneck"
+        ]
+    },
+    {
+        "q": "Jackson networks have product-form solution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match network types:",
+        "type": "match",
+        "left": [
+            "Open",
+            "Closed",
+            "Mixed",
+            "Fork-Join"
+        ],
+        "right": [
+            "External arrivals",
+            "Fixed population",
+            "Both types",
+            "Parallel paths"
+        ]
+    },
+    {
+        "q": "The ______ network has fixed number of customers.",
+        "type": "fill_blank",
+        "answers": [
+            "closed"
+        ],
+        "other_options": [
+            "open",
+            "mixed",
+            "serial"
+        ]
+    },
+    {
+        "q": "What is resource allocation simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling how resources are assigned to activities",
+            "Resource modeling",
+            "Allocation simulation",
+            "Assignment modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for resource utilization?",
+        "type": "mcq",
+        "c": "busy_time = 45\ntotal_time = 60\nutilization = busy_time / total_time * 100\nprint(f'Utilization: {utilization}%')",
+        "o": [
+            "Utilization: 75.0%",
+            "Utilization: 45.0%",
+            "Utilization: 60.0%",
+            "Utilization: 133.3%"
+        ]
+    },
+    {
+        "q": "Resource pooling can improve efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match resource concepts:",
+        "type": "match",
+        "left": [
+            "Capacity",
+            "Utilization",
+            "Queue",
+            "Priority"
+        ],
+        "right": [
+            "Available units",
+            "Busy fraction",
+            "Waiting line",
+            "Importance order"
+        ]
+    },
+    {
+        "q": "The ______ time measures how long entities wait for resources.",
+        "type": "fill_blank",
+        "answers": [
+            "queue"
+        ],
+        "other_options": [
+            "service",
+            "total",
+            "system"
+        ]
+    },
+    {
+        "q": "What is scheduling simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling job sequencing and timing decisions",
+            "Scheduling modeling",
+            "Timing simulation",
+            "Job simulation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for makespan?",
+        "type": "mcq",
+        "c": "job_completions = [10, 15, 12, 18, 14]\nmakespan = max(job_completions)\nprint(f'Makespan: {makespan}')",
+        "o": [
+            "Makespan: 18",
+            "Makespan: 69",
+            "Makespan: 10",
+            "Makespan: 13.8"
+        ]
+    },
+    {
+        "q": "Rearrange scheduling steps:",
+        "type": "rearrange",
+        "words": [
+            "Define Jobs",
+            "Set Precedence",
+            "Apply Rule",
+            "Evaluate Schedule",
+            "Compare Alternatives"
+        ]
+    },
+    {
+        "q": "FIFO serves jobs in arrival order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scheduling rules:",
+        "type": "match",
+        "left": [
+            "FIFO",
+            "SPT",
+            "EDD",
+            "Critical Ratio"
+        ],
+        "right": [
+            "First come",
+            "Shortest first",
+            "Earliest due",
+            "Due date/time"
+        ]
+    },
+    {
+        "q": "The ______ processing time rule minimizes average flow time.",
+        "type": "fill_blank",
+        "answers": [
+            "shortest"
+        ],
+        "other_options": [
+            "longest",
+            "first",
+            "random"
+        ]
+    },
+    {
+        "q": "What is semiconductor manufacturing simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling complex wafer fabrication processes",
+            "Semiconductor modeling",
+            "Fab simulation",
+            "Wafer modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for reentrant flow?",
+        "type": "mcq",
+        "c": "machine_visits = {'A': 3, 'B': 2, 'C': 1}\ntotal_visits = sum(machine_visits.values())\nprint(f'Visits: {total_visits}')",
+        "o": [
+            "Visits: 6",
+            "Visits: 3",
+            "Visits: 1",
+            "Visits: 2"
+        ]
+    },
+    {
+        "q": "Reentrant flows revisit same machines.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match fab characteristics:",
+        "type": "match",
+        "left": [
+            "Reentrant",
+            "Batch",
+            "Setup",
+            "Yield"
+        ],
+        "right": [
+            "Revisit machines",
+            "Group processing",
+            "Configuration change",
+            "Good output fraction"
+        ]
+    },
+    {
+        "q": "The ______ flow pattern revisits equipment multiple times.",
+        "type": "fill_blank",
+        "answers": [
+            "reentrant"
+        ],
+        "other_options": [
+            "serial",
+            "parallel",
+            "linear"
+        ]
+    },
+    {
+        "q": "What is airport simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling airport operations and passenger flow",
+            "Airport modeling",
+            "Terminal simulation",
+            "Passenger modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for passenger processing?",
+        "type": "mcq",
+        "c": "passengers = 500\nagents = 10\nservice_time = 2  # minutes\nthroughput = agents * 60 / service_time\nprint(f'Capacity: {throughput}/hour')",
+        "o": [
+            "Capacity: 300.0/hour",
+            "Capacity: 500.0/hour",
+            "Capacity: 10.0/hour",
+            "Capacity: 2.0/hour"
+        ]
+    },
+    {
+        "q": "Rearrange passenger flow:",
+        "type": "rearrange",
+        "words": [
+            "Arrival",
+            "Check-in",
+            "Security",
+            "Departure Lounge",
+            "Boarding"
+        ]
+    },
+    {
+        "q": "Peak hours stress airport systems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match airport operations:",
+        "type": "match",
+        "left": [
+            "Check-in",
+            "Security",
+            "Gate",
+            "Baggage"
+        ],
+        "right": [
+            "Ticketing",
+            "Screening",
+            "Boarding",
+            "Handling"
+        ]
+    },
+    {
+        "q": "The ______ screening is common airport bottleneck.",
+        "type": "fill_blank",
+        "answers": [
+            "security"
+        ],
+        "other_options": [
+            "check-in",
+            "boarding",
+            "baggage"
+        ]
+    },
+    {
+        "q": "What is emergency response simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling disaster response and emergency operations",
+            "Emergency modeling",
+            "Response simulation",
+            "Disaster modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for response coverage?",
+        "type": "mcq",
+        "c": "calls = 100\nwithin_target = 85\ncoverage = within_target / calls * 100\nprint(f'Coverage: {coverage}%')",
+        "o": [
+            "Coverage: 85.0%",
+            "Coverage: 15.0%",
+            "Coverage: 100.0%",
+            "Coverage: 1.18%"
+        ]
+    },
+    {
+        "q": "Ambulance deployment affects response times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match emergency concepts:",
+        "type": "match",
+        "left": [
+            "Response Time",
+            "Coverage",
+            "Capacity",
+            "Surge"
+        ],
+        "right": [
+            "Arrival delay",
+            "Target met",
+            "Available resources",
+            "Demand spike"
+        ]
+    },
+    {
+        "q": "The ______ time target is critical for EMS.",
+        "type": "fill_blank",
+        "answers": [
+            "response"
+        ],
+        "other_options": [
+            "service",
+            "wait",
+            "processing"
+        ]
+    },
+    {
+        "q": "What is crowd simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling pedestrian movement and crowd dynamics",
+            "Crowd modeling",
+            "Pedestrian simulation",
+            "Movement modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for density?",
+        "type": "mcq",
+        "c": "people = 500\narea = 100  # square meters\ndensity = people / area\nprint(f'Density: {density} p/sqm')",
+        "o": [
+            "Density: 5.0 p/sqm",
+            "Density: 50000 p/sqm",
+            "Density: 0.2 p/sqm",
+            "Density: 600 p/sqm"
+        ]
+    },
+    {
+        "q": "Rearrange evacuation modeling:",
+        "type": "rearrange",
+        "words": [
+            "Define Layout",
+            "Place Occupants",
+            "Set Exits",
+            "Simulate Movement",
+            "Analyze Times"
+        ]
+    },
+    {
+        "q": "High density decreases walking speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match crowd models:",
+        "type": "match",
+        "left": [
+            "Social Force",
+            "Cellular Automata",
+            "Flow-based",
+            "Agent-based"
+        ],
+        "right": [
+            "Physics-based",
+            "Grid cells",
+            "Macroscopic",
+            "Individual behavior"
+        ]
+    },
+    {
+        "q": "The ______ force model uses physics principles for pedestrians.",
+        "type": "fill_blank",
+        "answers": [
+            "social"
+        ],
+        "other_options": [
+            "physical",
+            "magnetic",
+            "gravity"
+        ]
+    },
+    {
+        "q": "What is epidemiological simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling disease spread in populations",
+            "Epidemiology modeling",
+            "Disease simulation",
+            "Population modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for infection rate?",
+        "type": "mcq",
+        "c": "susceptible = 1000\ninfected = 50\ncontact_rate = 10\ntransmission = 0.05\nnew_infections = contact_rate * transmission * infected * susceptible / (susceptible + infected)\nprint(f'New: {round(new_infections, 1)}')",
+        "o": [
+            "New: 23.8",
+            "New: 500.0",
+            "New: 50.0",
+            "New: 0.05"
+        ]
+    },
+    {
+        "q": "R0 greater than 1 causes epidemic growth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match epidemiology models:",
+        "type": "match",
+        "left": [
+            "SIR",
+            "SEIR",
+            "Agent-based",
+            "Network"
+        ],
+        "right": [
+            "Three states",
+            "With exposed",
+            "Individual level",
+            "Contact structure"
+        ]
+    },
+    {
+        "q": "The ______ model tracks Susceptible, Infected, Recovered.",
+        "type": "fill_blank",
+        "answers": [
+            "SIR"
+        ],
+        "other_options": [
+            "SEIR",
+            "SIS",
+            "SIRS"
+        ]
+    },
+    {
+        "q": "What is climate simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling Earth's climate system and projections",
+            "Climate modeling",
+            "Weather simulation",
+            "Earth modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for temperature trend?",
+        "type": "mcq",
+        "c": "temps = [14.5, 14.6, 14.8, 14.9, 15.1]\ntrend = (temps[-1] - temps[0]) / (len(temps) - 1)\nprint(f'Trend: {trend} C/period')",
+        "o": [
+            "Trend: 0.15 C/period",
+            "Trend: 0.6 C/period",
+            "Trend: 15.1 C/period",
+            "Trend: -0.15 C/period"
+        ]
+    },
+    {
+        "q": "Rearrange climate projection:",
+        "type": "rearrange",
+        "words": [
+            "Define Scenario",
+            "Run GCM",
+            "Downscale",
+            "Analyze Impacts",
+            "Report Results"
+        ]
+    },
+    {
+        "q": "General circulation models simulate atmosphere and ocean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match climate components:",
+        "type": "match",
+        "left": [
+            "Atmosphere",
+            "Ocean",
+            "Land",
+            "Ice"
+        ],
+        "right": [
+            "Air dynamics",
+            "Water dynamics",
+            "Surface processes",
+            "Cryosphere"
+        ]
+    },
+    {
+        "q": "The ______ circulation model is comprehensive climate simulator.",
+        "type": "fill_blank",
+        "answers": [
+            "general"
+        ],
+        "other_options": [
+            "local",
+            "regional",
+            "partial"
+        ]
+    },
+    {
+        "q": "What is ecological simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling ecosystems and population dynamics",
+            "Ecology modeling",
+            "Population simulation",
+            "Species modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for population growth?",
+        "type": "mcq",
+        "c": "population = 100\ngrowth_rate = 0.1\nnew_pop = population * (1 + growth_rate)\nprint(f'New: {new_pop}')",
+        "o": [
+            "New: 110.0",
+            "New: 10.0",
+            "New: 100.0",
+            "New: 1000.0"
+        ]
+    },
+    {
+        "q": "Lotka-Volterra models predator-prey dynamics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ecological models:",
+        "type": "match",
+        "left": [
+            "Logistic",
+            "Lotka-Volterra",
+            "Matrix",
+            "Individual-based"
+        ],
+        "right": [
+            "Carrying capacity",
+            "Predator-prey",
+            "Age structure",
+            "Agent-based"
+        ]
+    },
+    {
+        "q": "The ______ capacity limits population growth.",
+        "type": "fill_blank",
+        "answers": [
+            "carrying"
+        ],
+        "other_options": [
+            "maximum",
+            "growth",
+            "birth"
+        ]
+    },
+    {
+        "q": "What is social simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling social systems and behavior",
+            "Social modeling",
+            "Behavior simulation",
+            "Society modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for opinion spread?",
+        "type": "mcq",
+        "c": "population = {'A': 60, 'B': 40}\ntotal = sum(population.values())\nshare_A = population['A'] / total\nprint(f'Share A: {share_A}')",
+        "o": [
+            "Share A: 0.6",
+            "Share A: 60",
+            "Share A: 0.4",
+            "Share A: 1.5"
+        ]
+    },
+    {
+        "q": "Rearrange social modeling:",
+        "type": "rearrange",
+        "words": [
+            "Define Agents",
+            "Set Network",
+            "Model Interactions",
+            "Simulate Dynamics",
+            "Analyze Patterns"
+        ]
+    },
+    {
+        "q": "Networks influence opinion diffusion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match social phenomena:",
+        "type": "match",
+        "left": [
+            "Diffusion",
+            "Segregation",
+            "Cooperation",
+            "Voting"
+        ],
+        "right": [
+            "Spread of innovation",
+            "Schelling model",
+            "Game theory",
+            "Electoral simulation"
+        ]
+    },
+    {
+        "q": "The ______ model shows segregation from mild preferences.",
+        "type": "fill_blank",
+        "answers": [
+            "Schelling"
+        ],
+        "other_options": [
+            "voter",
+            "opinion",
+            "network"
+        ]
+    },
+    {
+        "q": "What is combat simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling military operations and engagements",
+            "Combat modeling",
+            "Military simulation",
+            "Battle modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for Lanchester attrition?",
+        "type": "mcq",
+        "c": "blue = 100\nred = 80\nblue_kill = 0.01\nred_kill = 0.012\nblue_loss = red_kill * red\nred_loss = blue_kill * blue\nprint(f'Blue loss: {blue_loss}')",
+        "o": [
+            "Blue loss: 0.96",
+            "Blue loss: 1.0",
+            "Blue loss: 0.01",
+            "Blue loss: 80"
+        ]
+    },
+    {
+        "q": "Lanchester equations model force-on-force combat.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match combat models:",
+        "type": "match",
+        "left": [
+            "Lanchester",
+            "Constructive",
+            "Virtual",
+            "Live"
+        ],
+        "right": [
+            "Mathematical attrition",
+            "Entity simulation",
+            "Human in loop",
+            "Real forces"
+        ]
+    },
+    {
+        "q": "The ______ equations model attrition in combat.",
+        "type": "fill_blank",
+        "answers": [
+            "Lanchester"
+        ],
+        "other_options": [
+            "Newton",
+            "Euler",
+            "Maxwell"
+        ]
+    },
+    {
+        "q": "What is sports simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling athletic events and competitions",
+            "Sports modeling",
+            "Game simulation",
+            "Athletic modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for win probability?",
+        "type": "mcq",
+        "c": "rating_a = 1500\nrating_b = 1400\nexpected_a = 1 / (1 + 10**((rating_b - rating_a) / 400))\nprint(f'P(A wins): {round(expected_a, 2)}')",
+        "o": [
+            "P(A wins): 0.64",
+            "P(A wins): 0.50",
+            "P(A wins): 0.36",
+            "P(A wins): 1.0"
+        ]
+    },
+    {
+        "q": "Rearrange game simulation:",
+        "type": "rearrange",
+        "words": [
+            "Define Teams",
+            "Set Probabilities",
+            "Simulate Events",
+            "Determine Outcome",
+            "Record Statistics"
+        ]
+    },
+    {
+        "q": "ELO ratings estimate player strength.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sports applications:",
+        "type": "match",
+        "left": [
+            "Season",
+            "Bracket",
+            "Draft",
+            "Strategy"
+        ],
+        "right": [
+            "League simulation",
+            "Tournament",
+            "Player selection",
+            "Tactical analysis"
+        ]
+    },
+    {
+        "q": "The ______ rating system measures relative skill.",
+        "type": "fill_blank",
+        "answers": [
+            "ELO"
+        ],
+        "other_options": [
+            "power",
+            "skill",
+            "performance"
+        ]
+    },
+    {
+        "q": "What is economic simulation?",
+        "type": "mcq",
+        "o": [
+            "Modeling economic systems and market dynamics",
+            "Economic modeling",
+            "Market simulation",
+            "Price modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for market equilibrium?",
+        "type": "mcq",
+        "c": "supply = lambda p: 2*p\ndemand = lambda p: 100 - p\n# equilibrium: 2p = 100 - p => 3p = 100\nequilibrium_p = 100 / 3\nprint(f'Price: {round(equilibrium_p, 1)}')",
+        "o": [
+            "Price: 33.3",
+            "Price: 50.0",
+            "Price: 100.0",
+            "Price: 66.7"
+        ]
+    },
+    {
+        "q": "Agent-based models can show market emergence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match economic models:",
+        "type": "match",
+        "left": [
+            "DSGE",
+            "Agent-based",
+            "CGE",
+            "Macro"
+        ],
+        "right": [
+            "Dynamic stochastic",
+            "Heterogeneous agents",
+            "General equilibrium",
+            "Aggregate"
+        ]
+    },
+    {
+        "q": "The ______ based models capture individual heterogeneity.",
+        "type": "fill_blank",
+        "answers": [
+            "agent"
+        ],
+        "other_options": [
+            "equation",
+            "equilibrium",
+            "aggregate"
+        ]
+    },
+    {
+        "q": "What is gaming simulation?",
+        "type": "mcq",
+        "o": [
+            "Serious games for training and education",
+            "Game simulation",
+            "Entertainment modeling",
+            "Training games"
+        ]
+    },
+    {
+        "q": "What does this code calculate for learning curve?",
+        "type": "mcq",
+        "c": "initial_time = 100\nlearning_rate = 0.9\nrepetitions = 5\nfinal_time = initial_time * (learning_rate ** repetitions)\nprint(f'Time: {round(final_time, 1)}')",
+        "o": [
+            "Time: 59.0",
+            "Time: 100.0",
+            "Time: 90.0",
+            "Time: 45.0"
+        ]
+    },
+    {
+        "q": "Rearrange gaming simulation design:",
+        "type": "rearrange",
+        "words": [
+            "Define Objectives",
+            "Design Scenario",
+            "Build Game",
+            "Test Players",
+            "Evaluate Learning"
+        ]
+    },
+    {
+        "q": "Debriefing reinforces learning from games.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match gaming applications:",
+        "type": "match",
+        "left": [
+            "Military",
+            "Medical",
+            "Business",
+            "Emergency"
+        ],
+        "right": [
+            "War games",
+            "Surgical training",
+            "Management games",
+            "Disaster exercises"
+        ]
+    },
+    {
+        "q": "The ______ games use gameplay for non-entertainment purposes.",
+        "type": "fill_blank",
+        "answers": [
+            "serious"
+        ],
+        "other_options": [
+            "casual",
+            "entertainment",
+            "video"
+        ]
+    },
+    {
+        "q": "What is metamodeling in simulation?",
+        "type": "mcq",
+        "o": [
+            "Simplified surrogate model of complex simulation",
+            "Metadata analysis",
+            "Model documentation",
+            "Meta-analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for metamodel prediction?",
+        "type": "mcq",
+        "c": "import numpy as np\ncoeffs = [10, 2, -0.5]\nx = 5\nprediction = coeffs[0] + coeffs[1]*x + coeffs[2]*x**2\nprint(f'Pred: {prediction}')",
+        "o": [
+            "Pred: 7.5",
+            "Pred: 20.0",
+            "Pred: 10.0",
+            "Pred: 15.0"
+        ]
+    },
+    {
+        "q": "Response surface methodology builds polynomial metamodels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match metamodel types:",
+        "type": "match",
+        "left": [
+            "Polynomial",
+            "Kriging",
+            "Neural Network",
+            "Radial Basis"
+        ],
+        "right": [
+            "Response surface",
+            "Gaussian process",
+            "Deep learning",
+            "RBF interpolation"
+        ]
+    },
+    {
+        "q": "The ______ metamodel uses Gaussian processes for interpolation.",
+        "type": "fill_blank",
+        "answers": [
+            "Kriging"
+        ],
+        "other_options": [
+            "polynomial",
+            "neural",
+            "spline"
+        ]
+    },
+    {
+        "q": "What is antithetic variates?",
+        "type": "mcq",
+        "o": [
+            "Variance reduction using negatively correlated samples",
+            "Opposite values",
+            "Variable analysis",
+            "Anti-sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for antithetic estimate?",
+        "type": "mcq",
+        "c": "u = 0.7\nf_u = 2 * u + 1\nf_anti = 2 * (1 - u) + 1\nestimate = (f_u + f_anti) / 2\nprint(f'Est: {estimate}')",
+        "o": [
+            "Est: 2.0",
+            "Est: 2.4",
+            "Est: 1.6",
+            "Est: 3.0"
+        ]
+    },
+    {
+        "q": "Rearrange antithetic variates process:",
+        "type": "rearrange",
+        "words": [
+            "Generate U",
+            "Calculate 1-U",
+            "Evaluate Both",
+            "Average Results",
+            "Reduce Variance"
+        ]
+    },
+    {
+        "q": "Antithetic variates always reduce variance.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match variance reduction methods:",
+        "type": "match",
+        "left": [
+            "Antithetic",
+            "Control Variates",
+            "Stratification",
+            "Importance"
+        ],
+        "right": [
+            "Negative correlation",
+            "Known mean",
+            "Partitioning",
+            "Weighted sampling"
+        ]
+    },
+    {
+        "q": "The ______ variates method uses correlated auxiliary variables.",
+        "type": "fill_blank",
+        "answers": [
+            "control"
+        ],
+        "other_options": [
+            "antithetic",
+            "importance",
+            "stratified"
+        ]
+    },
+    {
+        "q": "What is importance sampling?",
+        "type": "mcq",
+        "o": [
+            "Sampling from modified distribution to reduce variance",
+            "Important samples",
+            "Priority sampling",
+            "Weighted selection"
+        ]
+    },
+    {
+        "q": "What does this code output for likelihood ratio?",
+        "type": "mcq",
+        "c": "import math\nx = 2\nf_x = math.exp(-x)\ng_x = 0.5 * math.exp(-0.5 * x)\nratio = f_x / g_x\nprint(f'Ratio: {round(ratio, 2)}')",
+        "o": [
+            "Ratio: 0.74",
+            "Ratio: 1.0",
+            "Ratio: 2.0",
+            "Ratio: 0.5"
+        ]
+    },
+    {
+        "q": "Importance sampling requires likelihood ratio weighting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match importance sampling concepts:",
+        "type": "match",
+        "left": [
+            "Proposal",
+            "Target",
+            "Likelihood Ratio",
+            "Self-normalized"
+        ],
+        "right": [
+            "Sampling distribution",
+            "Original distribution",
+            "Weight function",
+            "Normalized weights"
+        ]
+    },
+    {
+        "q": "The ______ distribution should cover support of target.",
+        "type": "fill_blank",
+        "answers": [
+            "proposal"
+        ],
+        "other_options": [
+            "target",
+            "prior",
+            "posterior"
+        ]
+    },
+    {
+        "q": "What is stratified sampling in simulation?",
+        "type": "mcq",
+        "o": [
+            "Dividing input space into strata and sampling each",
+            "Layer sampling",
+            "Stratum analysis",
+            "Level sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for stratified mean?",
+        "type": "mcq",
+        "c": "strata_means = [10, 20, 30]\nstrata_weights = [0.5, 0.3, 0.2]\noverall = sum(m * w for m, w in zip(strata_means, strata_weights))\nprint(f'Mean: {overall}')",
+        "o": [
+            "Mean: 17.0",
+            "Mean: 20.0",
+            "Mean: 15.0",
+            "Mean: 18.0"
+        ]
+    },
+    {
+        "q": "Rearrange stratified sampling:",
+        "type": "rearrange",
+        "words": [
+            "Define Strata",
+            "Allocate Samples",
+            "Sample Each Stratum",
+            "Compute Stratum Means",
+            "Combine Weighted"
+        ]
+    },
+    {
+        "q": "Latin Hypercube Sampling ensures coverage of each stratum.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match stratification concepts:",
+        "type": "match",
+        "left": [
+            "Proportional",
+            "Optimal",
+            "Post-stratification",
+            "LHS"
+        ],
+        "right": [
+            "Size-based allocation",
+            "Variance-based",
+            "After sampling",
+            "Latin Hypercube"
+        ]
+    },
+    {
+        "q": "The ______ allocation considers stratum variance.",
+        "type": "fill_blank",
+        "answers": [
+            "optimal"
+        ],
+        "other_options": [
+            "proportional",
+            "equal",
+            "random"
+        ]
+    },
+    {
+        "q": "What is parallel simulation?",
+        "type": "mcq",
+        "o": [
+            "Running multiple replications simultaneously on multiple processors",
+            "Parallel analysis",
+            "Concurrent modeling",
+            "Multi-processing"
+        ]
+    },
+    {
+        "q": "What does this code output for parallel speedup?",
+        "type": "mcq",
+        "c": "sequential_time = 100\nparallel_time = 30\nspeedup = sequential_time / parallel_time\nprint(f'Speedup: {round(speedup, 2)}')",
+        "o": [
+            "Speedup: 3.33",
+            "Speedup: 0.3",
+            "Speedup: 70.0",
+            "Speedup: 130.0"
+        ]
+    },
+    {
+        "q": "Amdahl's law limits maximum parallel speedup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match parallel simulation concepts:",
+        "type": "match",
+        "left": [
+            "MRIP",
+            "SRIP",
+            "Time-parallel",
+            "Space-parallel"
+        ],
+        "right": [
+            "Multiple replications",
+            "Single run partitioned",
+            "Temporal decomposition",
+            "Spatial decomposition"
+        ]
+    },
+    {
+        "q": "The ______ Replications in Parallel method runs independent runs.",
+        "type": "fill_blank",
+        "answers": [
+            "Multiple"
+        ],
+        "other_options": [
+            "Single",
+            "Batch",
+            "Sequential"
+        ]
+    },
+    {
+        "q": "What is distributed simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulation running across multiple networked computers",
+            "Distributed analysis",
+            "Network modeling",
+            "Multi-computer"
+        ]
+    },
+    {
+        "q": "What does this code calculate for efficiency?",
+        "type": "mcq",
+        "c": "speedup = 6\nprocessors = 8\nefficiency = speedup / processors\nprint(f'Eff: {efficiency}')",
+        "o": [
+            "Eff: 0.75",
+            "Eff: 1.33",
+            "Eff: 2.0",
+            "Eff: 48.0"
+        ]
+    },
+    {
+        "q": "Rearrange distributed simulation setup:",
+        "type": "rearrange",
+        "words": [
+            "Partition Model",
+            "Assign to Nodes",
+            "Establish Communication",
+            "Synchronize",
+            "Aggregate Results"
+        ]
+    },
+    {
+        "q": "HLA is a standard for distributed simulation interoperability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match distributed concepts:",
+        "type": "match",
+        "left": [
+            "HLA",
+            "DIS",
+            "Federation",
+            "RTI"
+        ],
+        "right": [
+            "High Level Architecture",
+            "Distributed Interactive",
+            "Model collection",
+            "Runtime Infrastructure"
+        ]
+    },
+    {
+        "q": "The ______ Level Architecture provides simulation interoperability.",
+        "type": "fill_blank",
+        "answers": [
+            "High"
+        ],
+        "other_options": [
+            "Low",
+            "Middle",
+            "Standard"
+        ]
+    },
+    {
+        "q": "What is simulation optimization?",
+        "type": "mcq",
+        "o": [
+            "Finding optimal input parameters using simulation outputs",
+            "Simulation improvement",
+            "Model optimization",
+            "Parameter tuning"
+        ]
+    },
+    {
+        "q": "What does this code output for gradient estimate?",
+        "type": "mcq",
+        "c": "f_plus = 105\nf_minus = 95\ndelta = 2\ngradient = (f_plus - f_minus) / (2 * delta)\nprint(f'Grad: {gradient}')",
+        "o": [
+            "Grad: 2.5",
+            "Grad: 5.0",
+            "Grad: 10.0",
+            "Grad: 1.0"
+        ]
+    },
+    {
+        "q": "Simulation optimization handles noisy objective functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match optimization methods:",
+        "type": "match",
+        "left": [
+            "Gradient-based",
+            "Ranking",
+            "Response Surface",
+            "Evolutionary"
+        ],
+        "right": [
+            "Stochastic gradient",
+            "Compare alternatives",
+            "Metamodel-based",
+            "Genetic algorithm"
+        ]
+    },
+    {
+        "q": "The ______ and selection methods compare finite alternatives.",
+        "type": "fill_blank",
+        "answers": [
+            "ranking"
+        ],
+        "other_options": [
+            "sorting",
+            "ordering",
+            "grouping"
+        ]
+    },
+    {
+        "q": "What is Bayesian optimization?",
+        "type": "mcq",
+        "o": [
+            "Sequential optimization using probabilistic surrogate models",
+            "Bayes analysis",
+            "Probability optimization",
+            "Prior optimization"
+        ]
+    },
+    {
+        "q": "What does this code calculate for expected improvement?",
+        "type": "mcq",
+        "c": "import math\nmu = 10\nsigma = 2\nbest = 8\nz = (best - mu) / sigma\nei = sigma * (z * 0.5 + 0.4)  # simplified\nprint(f'EI: {ei}')",
+        "o": [
+            "EI: -1.2",
+            "EI: 0.8",
+            "EI: 2.0",
+            "EI: 1.0"
+        ]
+    },
+    {
+        "q": "Rearrange Bayesian optimization:",
+        "type": "rearrange",
+        "words": [
+            "Initial Samples",
+            "Fit Surrogate",
+            "Compute Acquisition",
+            "Sample Next",
+            "Update Model"
+        ]
+    },
+    {
+        "q": "Gaussian processes are common surrogates in Bayesian optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Bayesian concepts:",
+        "type": "match",
+        "left": [
+            "Surrogate",
+            "Acquisition",
+            "EI",
+            "UCB"
+        ],
+        "right": [
+            "Probabilistic model",
+            "Sampling criterion",
+            "Expected improvement",
+            "Upper confidence bound"
+        ]
+    },
+    {
+        "q": "The ______ function balances exploration and exploitation.",
+        "type": "fill_blank",
+        "answers": [
+            "acquisition"
+        ],
+        "other_options": [
+            "objective",
+            "surrogate",
+            "utility"
+        ]
+    },
+    {
+        "q": "What is common random numbers (CRN)?",
+        "type": "mcq",
+        "o": [
+            "Using same random streams across scenarios for fair comparison",
+            "Common values",
+            "Shared randomness",
+            "Random sharing"
+        ]
+    },
+    {
+        "q": "What does this code output for CRN comparison?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nscenario1 = sum(random.random() for _ in range(3))\nrandom.seed(42)\nscenario2 = sum(random.random() * 1.1 for _ in range(3))\ndiff = round(scenario2 - scenario1, 2)\nprint(f'Diff: {diff}')",
+        "o": [
+            "Diff: 0.17",
+            "Diff: 0.0",
+            "Diff: 1.0",
+            "Diff: -0.17"
+        ]
+    },
+    {
+        "q": "CRN reduces variance of difference between alternatives.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match CRN concepts:",
+        "type": "match",
+        "left": [
+            "Synchronization",
+            "Dedication",
+            "Rotation",
+            "Streaming"
+        ],
+        "right": [
+            "Same random sequence",
+            "One stream per source",
+            "Cycling streams",
+            "Separate streams"
+        ]
+    },
+    {
+        "q": "The common ______ numbers technique induces positive correlation.",
+        "type": "fill_blank",
+        "answers": [
+            "random"
+        ],
+        "other_options": [
+            "fixed",
+            "constant",
+            "shared"
+        ]
+    },
+    {
+        "q": "What is batch means method?",
+        "type": "mcq",
+        "o": [
+            "Dividing single long run into batches for confidence intervals",
+            "Batch analysis",
+            "Mean calculation",
+            "Batch processing"
+        ]
+    },
+    {
+        "q": "What does this code calculate for batch mean variance?",
+        "type": "mcq",
+        "c": "batch_means = [10, 12, 11, 13, 9]\ngrand_mean = sum(batch_means) / len(batch_means)\nvar = sum((b - grand_mean)**2 for b in batch_means) / (len(batch_means) - 1)\nprint(f'Var: {var}')",
+        "o": [
+            "Var: 2.5",
+            "Var: 2.0",
+            "Var: 10.0",
+            "Var: 1.58"
+        ]
+    },
+    {
+        "q": "Rearrange batch means analysis:",
+        "type": "rearrange",
+        "words": [
+            "Run Simulation",
+            "Delete Warmup",
+            "Divide Batches",
+            "Compute Batch Means",
+            "Estimate Variance"
+        ]
+    },
+    {
+        "q": "Batch size affects independence of batch means.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match output analysis methods:",
+        "type": "match",
+        "left": [
+            "Batch Means",
+            "Regenerative",
+            "Standardized Time Series",
+            "Spectral"
+        ],
+        "right": [
+            "Single run batches",
+            "Renewal cycles",
+            "STS method",
+            "Frequency domain"
+        ]
+    },
+    {
+        "q": "The ______ means method requires sufficient batch size for independence.",
+        "type": "fill_blank",
+        "answers": [
+            "batch"
+        ],
+        "other_options": [
+            "sample",
+            "group",
+            "cluster"
+        ]
+    },
+    {
+        "q": "What is regenerative simulation?",
+        "type": "mcq",
+        "o": [
+            "Using renewal points for independent cycle analysis",
+            "Regeneration method",
+            "Cycle simulation",
+            "Renewal modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for cycle length?",
+        "type": "mcq",
+        "c": "regeneration_times = [0, 15, 28, 45, 60]\ncycle_lengths = [regeneration_times[i+1] - regeneration_times[i] for i in range(len(regeneration_times)-1)]\nprint(f'Avg: {sum(cycle_lengths)/len(cycle_lengths)}')",
+        "o": [
+            "Avg: 15.0",
+            "Avg: 60.0",
+            "Avg: 12.0",
+            "Avg: 30.0"
+        ]
+    },
+    {
+        "q": "Regenerative points create independent cycles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match regenerative concepts:",
+        "type": "match",
+        "left": [
+            "Regeneration Point",
+            "Cycle",
+            "Ratio Estimator",
+            "Tours"
+        ],
+        "right": [
+            "State return",
+            "Between regenerations",
+            "Cycle numerator/denominator",
+            "Complete cycles"
+        ]
+    },
+    {
+        "q": "The ______ estimator uses ratio of cycle sums.",
+        "type": "fill_blank",
+        "answers": [
+            "regenerative"
+        ],
+        "other_options": [
+            "batch",
+            "sample",
+            "moment"
+        ]
+    },
+    {
+        "q": "What is steady-state simulation?",
+        "type": "mcq",
+        "o": [
+            "Analyzing system behavior after initial transient period",
+            "Stable simulation",
+            "State analysis",
+            "Equilibrium modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for warmup truncation?",
+        "type": "mcq",
+        "c": "observations = [100, 95, 85, 80, 78, 79, 80, 81, 79, 80]\nwarmup = 4\nsteady_state = observations[warmup:]\nprint(f'Mean: {sum(steady_state)/len(steady_state)}')",
+        "o": [
+            "Mean: 79.5",
+            "Mean: 83.7",
+            "Mean: 80.0",
+            "Mean: 78.0"
+        ]
+    },
+    {
+        "q": "Rearrange steady-state analysis:",
+        "type": "rearrange",
+        "words": [
+            "Run Simulation",
+            "Plot Output",
+            "Detect Warmup",
+            "Truncate Initial",
+            "Analyze Steady"
+        ]
+    },
+    {
+        "q": "Welch's method helps determine warmup period.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match initialization methods:",
+        "type": "match",
+        "left": [
+            "Empty",
+            "Typical",
+            "Long Warmup",
+            "Multiple Start"
+        ],
+        "right": [
+            "Start empty system",
+            "Representative state",
+            "Extended transient",
+            "Various initial states"
+        ]
+    },
+    {
+        "q": "The ______ period bias can affect steady-state estimates.",
+        "type": "fill_blank",
+        "answers": [
+            "warmup"
+        ],
+        "other_options": [
+            "steady",
+            "final",
+            "analysis"
+        ]
+    },
+    {
+        "q": "What is terminating simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulation with natural ending condition",
+            "Ending simulation",
+            "Terminal analysis",
+            "Finite modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for replication mean?",
+        "type": "mcq",
+        "c": "replication_results = [45, 52, 48, 51, 49]\nmean = sum(replication_results) / len(replication_results)\nprint(f'Mean: {mean}')",
+        "o": [
+            "Mean: 49.0",
+            "Mean: 45.0",
+            "Mean: 52.0",
+            "Mean: 50.0"
+        ]
+    },
+    {
+        "q": "Terminating simulations do not require warmup deletion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match terminating vs steady-state:",
+        "type": "match",
+        "left": [
+            "Terminating",
+            "Steady-state",
+            "Fixed horizon",
+            "Long run"
+        ],
+        "right": [
+            "Natural stopping",
+            "Equilibrium focus",
+            "Time-limited",
+            "Asymptotic"
+        ]
+    },
+    {
+        "q": "A ______ simulation has a natural ending condition.",
+        "type": "fill_blank",
+        "answers": [
+            "terminating"
+        ],
+        "other_options": [
+            "steady-state",
+            "continuous",
+            "perpetual"
+        ]
+    },
+    {
+        "q": "What is simulation cloning?",
+        "type": "mcq",
+        "o": [
+            "Creating copies of simulation state for parallel exploration",
+            "Clone analysis",
+            "Copy simulation",
+            "Duplicate modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for variance reduction?",
+        "type": "mcq",
+        "c": "naive_var = 100\ncrn_var = 25\nreduction = (naive_var - crn_var) / naive_var * 100\nprint(f'Reduction: {reduction}%')",
+        "o": [
+            "Reduction: 75.0%",
+            "Reduction: 25.0%",
+            "Reduction: 4.0%",
+            "Reduction: 0.25%"
+        ]
+    },
+    {
+        "q": "Rearrange simulation cloning:",
+        "type": "rearrange",
+        "words": [
+            "Run to Decision Point",
+            "Clone State",
+            "Explore Options",
+            "Compare Outcomes",
+            "Select Best"
+        ]
+    },
+    {
+        "q": "Cloning preserves simulation state exactly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match cloning applications:",
+        "type": "match",
+        "left": [
+            "What-if",
+            "Lookahead",
+            "Rollback",
+            "Branching"
+        ],
+        "right": [
+            "Scenario analysis",
+            "Future preview",
+            "Undo changes",
+            "Multiple paths"
+        ]
+    },
+    {
+        "q": "The ______ clones at decision points for what-if analysis.",
+        "type": "fill_blank",
+        "answers": [
+            "simulation"
+        ],
+        "other_options": [
+            "model",
+            "process",
+            "system"
+        ]
+    },
+    {
+        "q": "What is digital twin simulation?",
+        "type": "mcq",
+        "o": [
+            "Virtual replica synchronized with physical system",
+            "Digital copy",
+            "Twin analysis",
+            "Virtual model"
+        ]
+    },
+    {
+        "q": "What does this code output for sync frequency?",
+        "type": "mcq",
+        "c": "updates_per_hour = 60\nhours = 8\ntotal_syncs = updates_per_hour * hours\nprint(f'Syncs: {total_syncs}')",
+        "o": [
+            "Syncs: 480",
+            "Syncs: 68",
+            "Syncs: 7.5",
+            "Syncs: 120"
+        ]
+    },
+    {
+        "q": "Digital twins enable real-time monitoring and prediction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match digital twin concepts:",
+        "type": "match",
+        "left": [
+            "Physical Twin",
+            "Digital Twin",
+            "Data Link",
+            "Predictive"
+        ],
+        "right": [
+            "Real asset",
+            "Virtual replica",
+            "IoT connection",
+            "Forecasting"
+        ]
+    },
+    {
+        "q": "The ______ twin is continuously updated from sensor data.",
+        "type": "fill_blank",
+        "answers": [
+            "digital"
+        ],
+        "other_options": [
+            "physical",
+            "virtual",
+            "simulated"
+        ]
+    },
+    {
+        "q": "What is hybrid simulation?",
+        "type": "mcq",
+        "o": [
+            "Combining multiple simulation paradigms",
+            "Hybrid analysis",
+            "Mixed modeling",
+            "Combined methods"
+        ]
+    },
+    {
+        "q": "What does this code output for hybrid time step?",
+        "type": "mcq",
+        "c": "continuous_dt = 0.01\nevent_time = 0.05\nnext_step = min(continuous_dt, event_time)\nprint(f'Step: {next_step}')",
+        "o": [
+            "Step: 0.01",
+            "Step: 0.05",
+            "Step: 0.06",
+            "Step: 0.0"
+        ]
+    },
+    {
+        "q": "DES and System Dynamics can be combined in hybrid models.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match hybrid combinations:",
+        "type": "match",
+        "left": [
+            "DES-SD",
+            "ABM-DES",
+            "Continuous-Discrete",
+            "Multi-scale"
+        ],
+        "right": [
+            "Events with stocks",
+            "Agents with queues",
+            "ODE with events",
+            "Different resolutions"
+        ]
+    },
+    {
+        "q": "The ______ simulation combines agent-based and discrete-event.",
+        "type": "fill_blank",
+        "answers": [
+            "hybrid"
+        ],
+        "other_options": [
+            "combined",
+            "mixed",
+            "integrated"
+        ]
+    },
+    {
+        "q": "What is sensitivity analysis in simulation?",
+        "type": "mcq",
+        "o": [
+            "Studying how input changes affect output",
+            "Sensitivity testing",
+            "Input analysis",
+            "Change detection"
+        ]
+    },
+    {
+        "q": "What does this code calculate for local sensitivity?",
+        "type": "mcq",
+        "c": "base_output = 100\nperturbed_output = 108\ndelta_input = 0.1\nsensitivity = (perturbed_output - base_output) / delta_input\nprint(f'Sens: {sensitivity}')",
+        "o": [
+            "Sens: 80.0",
+            "Sens: 8.0",
+            "Sens: 0.8",
+            "Sens: 800.0"
+        ]
+    },
+    {
+        "q": "Rearrange global sensitivity analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Input Ranges",
+            "Generate Samples",
+            "Run Simulations",
+            "Compute Indices",
+            "Interpret Results"
+        ]
+    },
+    {
+        "q": "Sobol indices measure global sensitivity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sensitivity methods:",
+        "type": "match",
+        "left": [
+            "OAT",
+            "Morris",
+            "Sobol",
+            "FAST"
+        ],
+        "right": [
+            "One-at-a-time",
+            "Elementary effects",
+            "Variance decomposition",
+            "Fourier amplitude"
+        ]
+    },
+    {
+        "q": "The ______ indices decompose output variance by input.",
+        "type": "fill_blank",
+        "answers": [
+            "Sobol"
+        ],
+        "other_options": [
+            "Morris",
+            "FAST",
+            "OAT"
+        ]
+    },
+    {
+        "q": "What is uncertainty quantification (UQ)?",
+        "type": "mcq",
+        "o": [
+            "Characterizing and propagating input uncertainty to outputs",
+            "Uncertainty analysis",
+            "Quantification method",
+            "Error measurement"
+        ]
+    },
+    {
+        "q": "What does this code output for uncertainty propagation?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nsamples = [random.gauss(10, 2) for _ in range(5)]\noutputs = [s * 2 for s in samples]\nprint(f'Std: {round((sum((x-sum(outputs)/5)**2 for x in outputs)/4)**0.5, 1)}')",
+        "o": [
+            "Std: 2.7",
+            "Std: 10.0",
+            "Std: 0.0",
+            "Std: 20.0"
+        ]
+    },
+    {
+        "q": "Polynomial chaos expansion can approximate stochastic outputs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match UQ methods:",
+        "type": "match",
+        "left": [
+            "Monte Carlo",
+            "PCE",
+            "Gaussian Process",
+            "Kriging"
+        ],
+        "right": [
+            "Random sampling",
+            "Polynomial expansion",
+            "Probabilistic surrogate",
+            "Spatial interpolation"
+        ]
+    },
+    {
+        "q": "The ______ chaos expansion uses orthogonal polynomials.",
+        "type": "fill_blank",
+        "answers": [
+            "polynomial"
+        ],
+        "other_options": [
+            "orthogonal",
+            "Gaussian",
+            "stochastic"
+        ]
+    },
+    {
+        "q": "What is model calibration in simulation?",
+        "type": "mcq",
+        "o": [
+            "Adjusting parameters to match observed data",
+            "Model tuning",
+            "Calibration process",
+            "Parameter setting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for calibration error?",
+        "type": "mcq",
+        "c": "observed = [10, 12, 11]\nsimulated = [9.5, 12.2, 11.3]\nerror = sum((o-s)**2 for o,s in zip(observed, simulated))**0.5\nprint(f'RMSE: {round(error, 2)}')",
+        "o": [
+            "RMSE: 0.58",
+            "RMSE: 0.25",
+            "RMSE: 1.0",
+            "RMSE: 33.0"
+        ]
+    },
+    {
+        "q": "Rearrange model calibration:",
+        "type": "rearrange",
+        "words": [
+            "Collect Data",
+            "Define Parameters",
+            "Run Optimization",
+            "Validate Model",
+            "Deploy Model"
+        ]
+    },
+    {
+        "q": "ABC uses simulation for likelihood-free calibration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match calibration approaches:",
+        "type": "match",
+        "left": [
+            "Least Squares",
+            "Maximum Likelihood",
+            "Bayesian",
+            "ABC"
+        ],
+        "right": [
+            "Minimize residuals",
+            "Maximize likelihood",
+            "Posterior estimation",
+            "Approximate Bayesian"
+        ]
+    },
+    {
+        "q": "The ______ Bayesian computation avoids explicit likelihood.",
+        "type": "fill_blank",
+        "answers": [
+            "approximate"
+        ],
+        "other_options": [
+            "exact",
+            "simple",
+            "direct"
+        ]
+    },
+    {
+        "q": "What is emulation in simulation?",
+        "type": "mcq",
+        "o": [
+            "Fast approximation of expensive simulation model",
+            "Emulator model",
+            "Approximation method",
+            "Fast modeling"
+        ]
+    },
+    {
+        "q": "What does this code output for emulator speedup?",
+        "type": "mcq",
+        "c": "sim_time = 3600\nemulator_time = 0.1\nspeedup = sim_time / emulator_time\nprint(f'Speedup: {int(speedup)}')",
+        "o": [
+            "Speedup: 36000",
+            "Speedup: 3600",
+            "Speedup: 36",
+            "Speedup: 360"
+        ]
+    },
+    {
+        "q": "Emulators trade accuracy for computational speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match emulator types:",
+        "type": "match",
+        "left": [
+            "GP Emulator",
+            "Neural Emulator",
+            "Reduced Order",
+            "Sparse Grid"
+        ],
+        "right": [
+            "Gaussian process",
+            "Deep learning",
+            "ROM interpolation",
+            "Hierarchical basis"
+        ]
+    },
+    {
+        "q": "A ______ emulator uses Gaussian process surrogate.",
+        "type": "fill_blank",
+        "answers": [
+            "GP"
+        ],
+        "other_options": [
+            "neural",
+            "polynomial",
+            "linear"
+        ]
+    },
+    {
+        "q": "What is scenario planning simulation?",
+        "type": "mcq",
+        "o": [
+            "Exploring alternative future scenarios",
+            "Scenario analysis",
+            "Planning simulation",
+            "Future modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for scenario probability?",
+        "type": "mcq",
+        "c": "scenarios = {'optimistic': 0.2, 'base': 0.5, 'pessimistic': 0.3}\noutcomes = {'optimistic': 150, 'base': 100, 'pessimistic': 60}\nexpected = sum(scenarios[s] * outcomes[s] for s in scenarios)\nprint(f'Expected: {expected}')",
+        "o": [
+            "Expected: 98.0",
+            "Expected: 100.0",
+            "Expected: 103.3",
+            "Expected: 90.0"
+        ]
+    },
+    {
+        "q": "Rearrange scenario planning:",
+        "type": "rearrange",
+        "words": [
+            "Define Scenarios",
+            "Develop Narratives",
+            "Build Models",
+            "Simulate Each",
+            "Compare Results"
+        ]
+    },
+    {
+        "q": "Scenarios should span plausible future ranges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match scenario types:",
+        "type": "match",
+        "left": [
+            "Exploratory",
+            "Normative",
+            "Baseline",
+            "Stress"
+        ],
+        "right": [
+            "What-if future",
+            "Desired future",
+            "Expected path",
+            "Extreme conditions"
+        ]
+    },
+    {
+        "q": "The ______ scenario represents extreme conditions.",
+        "type": "fill_blank",
+        "answers": [
+            "stress"
+        ],
+        "other_options": [
+            "base",
+            "expected",
+            "normal"
+        ]
+    },
+    {
+        "q": "What is real-time simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulation running at same pace as real time",
+            "Real-time modeling",
+            "Live simulation",
+            "Time-sync simulation"
+        ]
+    },
+    {
+        "q": "What does this code output for real-time factor?",
+        "type": "mcq",
+        "c": "sim_time = 60\nwall_time = 30\nrtf = sim_time / wall_time\nprint(f'RTF: {rtf}')",
+        "o": [
+            "RTF: 2.0",
+            "RTF: 0.5",
+            "RTF: 30.0",
+            "RTF: 90.0"
+        ]
+    },
+    {
+        "q": "Hardware-in-the-loop uses real-time simulation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match real-time concepts:",
+        "type": "match",
+        "left": [
+            "HIL",
+            "SIL",
+            "PIL",
+            "MIL"
+        ],
+        "right": [
+            "Hardware loop",
+            "Software loop",
+            "Processor loop",
+            "Model loop"
+        ]
+    },
+    {
+        "q": "The ______ in the loop connects hardware to simulation.",
+        "type": "fill_blank",
+        "answers": [
+            "hardware"
+        ],
+        "other_options": [
+            "software",
+            "model",
+            "processor"
+        ]
+    },
+    {
+        "q": "What is constructive simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulation with simulated people and equipment",
+            "Construction simulation",
+            "Constructive modeling",
+            "Build simulation"
+        ]
+    },
+    {
+        "q": "What does this code calculate for simulation taxonomy?",
+        "type": "mcq",
+        "c": "sim_types = {'live': 'real_people_real_equipment', 'virtual': 'real_people_sim_equipment', 'constructive': 'sim_people_sim_equipment'}\nprint(f'Types: {len(sim_types)}')",
+        "o": [
+            "Types: 3",
+            "Types: 2",
+            "Types: 1",
+            "Types: 6"
+        ]
+    },
+    {
+        "q": "Rearrange LVC simulation integration:",
+        "type": "rearrange",
+        "words": [
+            "Live Component",
+            "Virtual Component",
+            "Constructive Component",
+            "Connect via HLA",
+            "Run Federated"
+        ]
+    },
+    {
+        "q": "Virtual simulation uses real people with simulated equipment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match LVC simulation:",
+        "type": "match",
+        "left": [
+            "Live",
+            "Virtual",
+            "Constructive",
+            "LVC"
+        ],
+        "right": [
+            "Real both",
+            "Real people",
+            "Simulated both",
+            "Combined"
+        ]
+    },
+    {
+        "q": "The ______ simulation uses simulated people and equipment.",
+        "type": "fill_blank",
+        "answers": [
+            "constructive"
+        ],
+        "other_options": [
+            "live",
+            "virtual",
+            "real"
+        ]
+    },
+    {
+        "q": "What is stochastic modeling?",
+        "type": "mcq",
+        "o": [
+            "Modeling with random variables and probability distributions",
+            "Random modeling",
+            "Probability analysis",
+            "Stochastic analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for exponential sample?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nlambda_rate = 0.5\nsample = -1/lambda_rate * (1 - random.random())\nprint(f'Sample: {round(abs(sample), 2)}')",
+        "o": [
+            "Sample: 1.27",
+            "Sample: 0.5",
+            "Sample: 2.0",
+            "Sample: 0.64"
+        ]
+    },
+    {
+        "q": "Poisson processes model random arrival events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match stochastic processes:",
+        "type": "match",
+        "left": [
+            "Poisson",
+            "Markov",
+            "Brownian",
+            "Wiener"
+        ],
+        "right": [
+            "Count process",
+            "Memoryless chain",
+            "Random walk",
+            "Continuous motion"
+        ]
+    },
+    {
+        "q": "The ______ process has memoryless property.",
+        "type": "fill_blank",
+        "answers": [
+            "Markov"
+        ],
+        "other_options": [
+            "Poisson",
+            "Brownian",
+            "Gaussian"
+        ]
+    },
+    {
+        "q": "What is queue network simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulating connected queuing systems",
+            "Network queuing",
+            "Queue analysis",
+            "Network modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for network utilization?",
+        "type": "mcq",
+        "c": "arrival_rates = [10, 15]\nservice_rates = [12, 18]\nutilization = [a/s for a, s in zip(arrival_rates, service_rates)]\nprint(f'Util: {[round(u, 2) for u in utilization]}')",
+        "o": [
+            "Util: [0.83, 0.83]",
+            "Util: [0.5, 0.5]",
+            "Util: [1.2, 1.2]",
+            "Util: [2.0, 2.0]"
+        ]
+    },
+    {
+        "q": "Rearrange queue network analysis:",
+        "type": "rearrange",
+        "words": [
+            "Define Nodes",
+            "Specify Routing",
+            "Set Arrival Rates",
+            "Run Simulation",
+            "Analyze Performance"
+        ]
+    },
+    {
+        "q": "Jackson networks have product-form solutions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match queue network concepts:",
+        "type": "match",
+        "left": [
+            "Open Network",
+            "Closed Network",
+            "Routing",
+            "Blocking"
+        ],
+        "right": [
+            "External arrivals",
+            "Fixed population",
+            "Transition probabilities",
+            "Capacity limit"
+        ]
+    },
+    {
+        "q": "The ______ network has fixed customer population.",
+        "type": "fill_blank",
+        "answers": [
+            "closed"
+        ],
+        "other_options": [
+            "open",
+            "mixed",
+            "infinite"
+        ]
+    },
+    {
+        "q": "What is reliability simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulating system failure and repair processes",
+            "Reliability analysis",
+            "Failure modeling",
+            "System testing"
+        ]
+    },
+    {
+        "q": "What does this code output for MTBF?",
+        "type": "mcq",
+        "c": "failure_times = [100, 250, 380, 520, 700]\nmtbf = sum(failure_times[i] - failure_times[i-1] for i in range(1, len(failure_times))) / (len(failure_times) - 1)\nprint(f'MTBF: {mtbf}')",
+        "o": [
+            "MTBF: 150.0",
+            "MTBF: 100.0",
+            "MTBF: 390.0",
+            "MTBF: 700.0"
+        ]
+    },
+    {
+        "q": "Weibull distribution models component failure times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match reliability metrics:",
+        "type": "match",
+        "left": [
+            "MTBF",
+            "MTTR",
+            "Availability",
+            "Reliability"
+        ],
+        "right": [
+            "Mean time between failures",
+            "Mean time to repair",
+            "Uptime fraction",
+            "Failure probability"
+        ]
+    },
+    {
+        "q": "The mean time between ______ measures average operating time.",
+        "type": "fill_blank",
+        "answers": [
+            "failures"
+        ],
+        "other_options": [
+            "repairs",
+            "events",
+            "operations"
+        ]
+    },
+    {
+        "q": "What is capacity planning simulation?",
+        "type": "mcq",
+        "o": [
+            "Determining resource requirements to meet demand",
+            "Capacity analysis",
+            "Planning simulation",
+            "Resource modeling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for capacity need?",
+        "type": "mcq",
+        "c": "demand = 1000\nservice_time = 0.5\navailable_hours = 8\ncapacity = demand * service_time / available_hours / 60\nprint(f'Servers: {round(capacity, 1)}')",
+        "o": [
+            "Servers: 1.0",
+            "Servers: 8.0",
+            "Servers: 62.5",
+            "Servers: 0.1"
+        ]
+    },
+    {
+        "q": "Rearrange capacity planning:",
+        "type": "rearrange",
+        "words": [
+            "Forecast Demand",
+            "Model Service",
+            "Calculate Capacity",
+            "Test Scenarios",
+            "Implement Plan"
+        ]
+    },
+    {
+        "q": "Buffer capacity handles demand variability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match capacity concepts:",
+        "type": "match",
+        "left": [
+            "Theoretical",
+            "Effective",
+            "Demonstrated",
+            "Bottleneck"
+        ],
+        "right": [
+            "Maximum possible",
+            "Actual achievable",
+            "Historical actual",
+            "Limiting resource"
+        ]
+    },
+    {
+        "q": "The ______ capacity is the maximum theoretical output.",
+        "type": "fill_blank",
+        "answers": [
+            "theoretical"
+        ],
+        "other_options": [
+            "effective",
+            "actual",
+            "demonstrated"
+        ]
+    },
+    {
+        "q": "What is service system simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulating customer service operations",
+            "Service modeling",
+            "System simulation",
+            "Customer analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for service level?",
+        "type": "mcq",
+        "c": "served_in_target = 85\ntotal_served = 100\nservice_level = served_in_target / total_served * 100\nprint(f'SLA: {service_level}%')",
+        "o": [
+            "SLA: 85.0%",
+            "SLA: 15.0%",
+            "SLA: 0.85%",
+            "SLA: 100.0%"
+        ]
+    },
+    {
+        "q": "Call centers use simulation for staffing optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match service metrics:",
+        "type": "match",
+        "left": [
+            "ASA",
+            "AHT",
+            "Abandonment",
+            "Occupancy"
+        ],
+        "right": [
+            "Average speed answer",
+            "Average handle time",
+            "Customer dropout",
+            "Agent utilization"
+        ]
+    },
+    {
+        "q": "The average speed of ______ measures wait time.",
+        "type": "fill_blank",
+        "answers": [
+            "answer"
+        ],
+        "other_options": [
+            "service",
+            "handling",
+            "processing"
+        ]
+    },
+    {
+        "q": "What is project simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulating project schedules and risks",
+            "Project modeling",
+            "Schedule simulation",
+            "Risk analysis"
+        ]
+    },
+    {
+        "q": "What does this code calculate for PERT estimate?",
+        "type": "mcq",
+        "c": "optimistic = 5\nmost_likely = 10\npessimistic = 20\npert = (optimistic + 4 * most_likely + pessimistic) / 6\nprint(f'PERT: {round(pert, 1)}')",
+        "o": [
+            "PERT: 10.8",
+            "PERT: 10.0",
+            "PERT: 11.7",
+            "PERT: 8.3"
+        ]
+    },
+    {
+        "q": "Rearrange project risk simulation:",
+        "type": "rearrange",
+        "words": [
+            "Define Tasks",
+            "Estimate Durations",
+            "Set Dependencies",
+            "Run Monte Carlo",
+            "Analyze Schedule"
+        ]
+    },
+    {
+        "q": "Critical path analysis identifies project bottlenecks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match project simulation concepts:",
+        "type": "match",
+        "left": [
+            "PERT",
+            "CPM",
+            "Risk Register",
+            "S-Curve"
+        ],
+        "right": [
+            "Three-point estimate",
+            "Critical path",
+            "Risk documentation",
+            "Cumulative progress"
+        ]
+    },
+    {
+        "q": "The critical ______ is the longest sequence of dependent tasks.",
+        "type": "fill_blank",
+        "answers": [
+            "path"
+        ],
+        "other_options": [
+            "task",
+            "activity",
+            "chain"
+        ]
+    },
+    {
+        "q": "What is environmental simulation?",
+        "type": "mcq",
+        "o": [
+            "Simulating ecological and environmental systems",
+            "Environment modeling",
+            "Ecology simulation",
+            "Climate analysis"
+        ]
+    },
+    {
+        "q": "What does this code output for decay simulation?",
+        "type": "mcq",
+        "c": "initial = 100\nhalf_life = 10\ntime = 30\nremaining = initial * (0.5 ** (time / half_life))\nprint(f'Remaining: {remaining}')",
+        "o": [
+            "Remaining: 12.5",
+            "Remaining: 50.0",
+            "Remaining: 25.0",
+            "Remaining: 6.25"
+        ]
+    },
+    {
+        "q": "Climate models simulate atmospheric dynamics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match environmental simulations:",
+        "type": "match",
+        "left": [
+            "Climate",
+            "Hydrology",
+            "Ecology",
+            "Pollution"
+        ],
+        "right": [
+            "Atmospheric dynamics",
+            "Water systems",
+            "Ecosystem dynamics",
+            "Contaminant spread"
+        ]
+    },
+    {
+        "q": "The ______ model simulates ecosystem interactions.",
+        "type": "fill_blank",
+        "answers": [
+            "ecology"
+        ],
+        "other_options": [
+            "climate",
+            "hydrology",
+            "geology"
+        ]
+    },
+    {
+        "q": "What is Markov Chain Monte Carlo (MCMC)?",
+        "type": "mcq",
+        "o": [
+            "Sampling method using Markov chains for complex distributions",
+            "MCMC analysis",
+            "Monte Carlo chains",
+            "Markov sampling"
+        ]
+    },
+    {
+        "q": "What does this code output for Metropolis acceptance?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\ncurrent = 0.5\nproposed = 0.7\nalpha = min(1, proposed / current)\naccept = random.random() < alpha\nprint(f'Accept: {accept}')",
+        "o": [
+            "Accept: True",
+            "Accept: False",
+            "Accept: 0.5",
+            "Accept: 1.0"
+        ]
+    },
+    {
+        "q": "Burn-in period is discarded in MCMC sampling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match MCMC algorithms:",
+        "type": "match",
+        "left": [
+            "Metropolis-Hastings",
+            "Gibbs",
+            "HMC",
+            "NUTS"
+        ],
+        "right": [
+            "Accept-reject",
+            "Conditional sampling",
+            "Hamiltonian dynamics",
+            "No U-turn sampler"
+        ]
+    },
+    {
+        "q": "The ______ sampler uses Hamiltonian dynamics for proposals.",
+        "type": "fill_blank",
+        "answers": [
+            "HMC"
+        ],
+        "other_options": [
+            "Gibbs",
+            "Metropolis",
+            "NUTS"
+        ]
+    },
+    {
+        "q": "What is particle filtering?",
+        "type": "mcq",
+        "o": [
+            "Sequential Monte Carlo for state estimation",
+            "Particle analysis",
+            "Filter simulation",
+            "Sequential sampling"
+        ]
+    },
+    {
+        "q": "What does this code calculate for particle weight?",
+        "type": "mcq",
+        "c": "import math\nobserved = 5\npredicted = 4.5\nstd = 1\nweight = math.exp(-0.5 * ((observed - predicted) / std) ** 2)\nprint(f'Weight: {round(weight, 2)}')",
+        "o": [
+            "Weight: 0.88",
+            "Weight: 0.5",
+            "Weight: 1.0",
+            "Weight: 0.25"
+        ]
+    },
+    {
+        "q": "Rearrange particle filtering:",
+        "type": "rearrange",
+        "words": [
+            "Initialize Particles",
+            "Predict State",
+            "Compute Weights",
+            "Resample",
+            "Estimate State"
+        ]
+    },
+    {
+        "q": "Resampling prevents particle degeneracy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match particle filter concepts:",
+        "type": "match",
+        "left": [
+            "SIS",
+            "SIR",
+            "Systematic",
+            "Residual"
+        ],
+        "right": [
+            "Sequential importance",
+            "With resampling",
+            "Ordered resampling",
+            "Proportional remainder"
+        ]
+    },
+    {
+        "q": "The ______ importance sampling sequentially updates weights.",
+        "type": "fill_blank",
+        "answers": [
+            "sequential"
+        ],
+        "other_options": [
+            "parallel",
+            "batch",
+            "iterative"
+        ]
+    },
+    {
+        "q": "What is Gibbs sampling?",
+        "type": "mcq",
+        "o": [
+            "MCMC sampling from conditional distributions",
+            "Gibbs analysis",
+            "Conditional MCMC",
+            "Block sampling"
+        ]
+    },
+    {
+        "q": "What does this code output for Gibbs update?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\nx = 5\ny_given_x = random.gauss(0.5 * x, 1)\nprint(f'y: {round(y_given_x, 1)}')",
+        "o": [
+            "y: 2.6",
+            "y: 5.0",
+            "y: 0.0",
+            "y: 2.5"
+        ]
+    },
+    {
+        "q": "Gibbs sampling requires known conditional distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Gibbs concepts:",
+        "type": "match",
+        "left": [
+            "Block Gibbs",
+            "Collapsed",
+            "Slice",
+            "Component"
+        ],
+        "right": [
+            "Group variables",
+            "Marginalize out",
+            "Auxiliary uniform",
+            "Single variable"
+        ]
+    },
+    {
+        "q": "The ______ Gibbs sampler integrates out some variables.",
+        "type": "fill_blank",
+        "answers": [
+            "collapsed"
+        ],
+        "other_options": [
+            "block",
+            "component",
+            "slice"
+        ]
+    },
+    {
+        "q": "What is quasi-Monte Carlo?",
+        "type": "mcq",
+        "o": [
+            "Using low-discrepancy sequences instead of random",
+            "Quasi-random sampling",
+            "QMC analysis",
+            "Deterministic Monte Carlo"
+        ]
+    },
+    {
+        "q": "What does this code calculate for discrepancy?",
+        "type": "mcq",
+        "c": "points = [0.1, 0.3, 0.5, 0.7, 0.9]\nmax_gap = max(points[i+1] - points[i] for i in range(len(points)-1))\nprint(f'Gap: {max_gap}')",
+        "o": [
+            "Gap: 0.2",
+            "Gap: 0.1",
+            "Gap: 0.4",
+            "Gap: 0.8"
+        ]
+    },
+    {
+        "q": "Rearrange quasi-Monte Carlo:",
+        "type": "rearrange",
+        "words": [
+            "Choose Sequence",
+            "Generate Points",
+            "Evaluate Function",
+            "Average Results",
+            "Estimate Error"
+        ]
+    },
+    {
+        "q": "Sobol sequences are commonly used in QMC.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match QMC sequences:",
+        "type": "match",
+        "left": [
+            "Sobol",
+            "Halton",
+            "Faure",
+            "Niederreiter"
+        ],
+        "right": [
+            "Binary fractions",
+            "Base expansion",
+            "Generalized Halton",
+            "Optimal nets"
+        ]
+    },
+    {
+        "q": "The ______ discrepancy measures point uniformity.",
+        "type": "fill_blank",
+        "answers": [
+            "low"
+        ],
+        "other_options": [
+            "high",
+            "zero",
+            "unit"
+        ]
+    },
+    {
+        "q": "What is bootstrap simulation?",
+        "type": "mcq",
+        "o": [
+            "Resampling with replacement for uncertainty estimation",
+            "Bootstrap analysis",
+            "Resampling method",
+            "Sampling simulation"
+        ]
+    },
+    {
+        "q": "What does this code output for bootstrap mean?",
+        "type": "mcq",
+        "c": "import random\nrandom.seed(42)\ndata = [1, 2, 3, 4, 5]\nbootstrap = [random.choice(data) for _ in range(5)]\nprint(f'Mean: {sum(bootstrap)/len(bootstrap)}')",
+        "o": [
+            "Mean: 2.8",
+            "Mean: 3.0",
+            "Mean: 5.0",
+            "Mean: 1.0"
+        ]
+    },
+    {
+        "q": "Bootstrap provides nonparametric confidence intervals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bootstrap methods:",
+        "type": "match",
+        "left": [
+            "Percentile",
+            "BCa",
+            "Parametric",
+            "Block"
+        ],
+        "right": [
+            "Quantile CI",
+            "Bias-corrected",
+            "Known distribution",
+            "Time series"
+        ]
+    },
+    {
+        "q": "The ______ bootstrap assumes known distribution family.",
+        "type": "fill_blank",
+        "answers": [
+            "parametric"
+        ],
+        "other_options": [
+            "nonparametric",
+            "block",
+            "percentile"
+        ]
+    },
+    {
+        "q": "What is SimPy?",
+        "type": "mcq",
+        "o": [
+            "Python library for discrete-event simulation",
+            "Simple Python",
+            "Simulation Python",
+            "Python framework"
+        ]
+    },
+    {
+        "q": "What does this code define in SimPy?",
+        "type": "mcq",
+        "c": "import simpy\ndef process(env):\n    yield env.timeout(10)\n    print('Done')\nprint(f'Type: process function')",
+        "o": [
+            "Type: process function",
+            "Type: environment",
+            "Type: resource",
+            "Type: event"
+        ]
+    },
+    {
+        "q": "Rearrange SimPy simulation:",
+        "type": "rearrange",
+        "words": [
+            "Create Environment",
+            "Define Process",
+            "Start Process",
+            "Run Simulation",
+            "Collect Results"
+        ]
+    },
+    {
+        "q": "SimPy uses Python generators for process control.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SimPy concepts:",
+        "type": "match",
+        "left": [
+            "Environment",
+            "Process",
+            "Resource",
+            "Store"
+        ],
+        "right": [
+            "Simulation clock",
+            "Generator function",
+            "Shared capacity",
+            "Item container"
+        ]
+    },
+    {
+        "q": "The ______ object manages time in SimPy.",
+        "type": "fill_blank",
+        "answers": [
+            "environment"
+        ],
+        "other_options": [
+            "process",
+            "resource",
+            "store"
+        ]
+    },
+    {
+        "q": "What is Arena simulation?",
+        "type": "mcq",
+        "o": [
+            "Commercial DES software with visual modeling",
+            "Arena analysis",
+            "Simulation arena",
+            "Visual modeling"
+        ]
+    },
+    {
+        "q": "What does this Arena module do?",
+        "type": "mcq",
+        "c": "module_type = 'Create'\nentity = 'Customer'\ninterarrival = 'Expo(2)'\nprint(f'Module: {module_type}')",
+        "o": [
+            "Module: Create",
+            "Module: Process",
+            "Module: Decide",
+            "Module: Dispose"
+        ]
+    },
+    {
+        "q": "Arena uses flowchart-based modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Arena modules:",
+        "type": "match",
+        "left": [
+            "Create",
+            "Process",
+            "Decide",
+            "Dispose"
+        ],
+        "right": [
+            "Entity arrival",
+            "Service time",
+            "Branching",
+            "Entity exit"
+        ]
+    },
+    {
+        "q": "The ______ module generates entities in Arena.",
+        "type": "fill_blank",
+        "answers": [
+            "Create"
+        ],
+        "other_options": [
+            "Process",
+            "Decide",
+            "Dispose"
+        ]
+    },
+    {
+        "q": "What is AnyLogic?",
+        "type": "mcq",
+        "o": [
+            "Multi-method simulation software supporting DES, ABM, and SD",
+            "Any logic analysis",
+            "Multi-paradigm tool",
+            "Simulation software"
+        ]
+    },
+    {
+        "q": "What does this define in AnyLogic?",
+        "type": "mcq",
+        "c": "agent_type = 'Person'\nstate = 'Healthy'\ntransition = 'Infected'\nprint(f'Agent: {agent_type}')",
+        "o": [
+            "Agent: Person",
+            "Agent: State",
+            "Agent: Healthy",
+            "Agent: Infected"
+        ]
+    },
+    {
+        "q": "Rearrange AnyLogic model building:",
+        "type": "rearrange",
+        "words": [
+            "Create Agents",
+            "Define Behavior",
+            "Set Parameters",
+            "Run Experiment",
+            "Analyze Output"
+        ]
+    },
+    {
+        "q": "AnyLogic supports agent-based modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match AnyLogic paradigms:",
+        "type": "match",
+        "left": [
+            "Process Flow",
+            "Statechart",
+            "Stock-Flow",
+            "Agent Population"
+        ],
+        "right": [
+            "DES modeling",
+            "State transitions",
+            "System dynamics",
+            "ABM"
+        ]
+    },
+    {
+        "q": "The ______ chart defines agent state transitions.",
+        "type": "fill_blank",
+        "answers": [
+            "statechart"
+        ],
+        "other_options": [
+            "flowchart",
+            "process",
+            "stock"
+        ]
+    },
+    {
+        "q": "What is NetLogo?",
+        "type": "mcq",
+        "o": [
+            "Agent-based modeling environment with Logo-like language",
+            "Network logo",
+            "Logo simulation",
+            "Agent language"
+        ]
+    },
+    {
+        "q": "What does this NetLogo code output?",
+        "type": "mcq",
+        "c": "turtles = 100\nrandom_move = True\nprint(f'Agents: {turtles}')",
+        "o": [
+            "Agents: 100",
+            "Agents: True",
+            "Agents: move",
+            "Agents: random"
+        ]
+    },
+    {
+        "q": "NetLogo uses turtles as mobile agents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match NetLogo concepts:",
+        "type": "match",
+        "left": [
+            "Turtle",
+            "Patch",
+            "Link",
+            "Observer"
+        ],
+        "right": [
+            "Mobile agent",
+            "Grid cell",
+            "Connection",
+            "Global view"
+        ]
+    },
+    {
+        "q": "The ______ are stationary grid agents in NetLogo.",
+        "type": "fill_blank",
+        "answers": [
+            "patches"
+        ],
+        "other_options": [
+            "turtles",
+            "links",
+            "observers"
+        ]
+    },
+    {
+        "q": "What is MATLAB Simulink?",
+        "type": "mcq",
+        "o": [
+            "Block-based environment for modeling dynamic systems",
+            "MATLAB simulation",
+            "Block modeling",
+            "Dynamic analysis"
+        ]
+    },
+    {
+        "q": "What does this describe in Simulink?",
+        "type": "mcq",
+        "c": "block_type = 'Transfer Function'\nnumerator = [1]\ndenominator = [1, 2, 1]\nprint(f'Block: {block_type}')",
+        "o": [
+            "Block: Transfer Function",
+            "Block: Gain",
+            "Block: Sum",
+            "Block: Integrator"
+        ]
+    },
+    {
+        "q": "Rearrange Simulink modeling:",
+        "type": "rearrange",
+        "words": [
+            "Add Blocks",
+            "Connect Signals",
+            "Set Parameters",
+            "Run Simulation",
+            "View Scopes"
+        ]
+    },
+    {
+        "q": "Simulink uses block diagrams for modeling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Simulink blocks:",
+        "type": "match",
+        "left": [
+            "Source",
+            "Sink",
+            "Continuous",
+            "Discrete"
+        ],
+        "right": [
+            "Input signal",
+            "Output display",
+            "Differential",
+            "Sampled"
+        ]
+    },
+    {
+        "q": "The ______ blocks generate input signals.",
+        "type": "fill_blank",
+        "answers": [
+            "source"
+        ],
+        "other_options": [
+            "sink",
+            "scope",
+            "display"
+        ]
+    },
+    {
+        "q": "What is Vensim?",
+        "type": "mcq",
+        "o": [
+            "System dynamics modeling software",
+            "Venture simulation",
+            "Dynamic modeling",
+            "Systems analysis"
+        ]
+    },
+    {
+        "q": "What does this define in Vensim?",
+        "type": "mcq",
+        "c": "stock = 'Population'\nflow = 'Births'\nrate = 'Population * Birth_Rate'\nprint(f'Element: {stock}')",
+        "o": [
+            "Element: Population",
+            "Element: Births",
+            "Element: Rate",
+            "Element: Flow"
+        ]
+    },
+    {
+        "q": "Vensim uses stock and flow diagrams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Vensim elements:",
+        "type": "match",
+        "left": [
+            "Stock",
+            "Flow",
+            "Auxiliary",
+            "Constant"
+        ],
+        "right": [
+            "Accumulation",
+            "Rate of change",
+            "Calculated variable",
+            "Fixed parameter"
+        ]
+    },
+    {
+        "q": "The ______ and flow diagram represents system dynamics.",
+        "type": "fill_blank",
+        "answers": [
+            "stock"
+        ],
+        "other_options": [
+            "flow",
+            "causal",
+            "influence"
+        ]
+    },
+    {
+        "q": "What is model verification?",
+        "type": "mcq",
+        "o": [
+            "Ensuring model is built correctly as specified",
+            "Model checking",
+            "Verification analysis",
+            "Build testing"
+        ]
+    },
+    {
+        "q": "What does this test verify?",
+        "type": "mcq",
+        "c": "expected = 100\nactual = model_output(inputs)\nassert abs(expected - actual) < 0.01\nprint(f'Test: passed')",
+        "o": [
+            "Test: passed",
+            "Test: failed",
+            "Test: error",
+            "Test: skip"
+        ]
+    },
+    {
+        "q": "Rearrange model VV&A:",
+        "type": "rearrange",
+        "words": [
+            "Verification",
+            "Validation",
+            "Accreditation",
+            "Documentation",
+            "Approval"
+        ]
+    },
+    {
+        "q": "Verification asks if the model was built right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match VV&A concepts:",
+        "type": "match",
+        "left": [
+            "Verification",
+            "Validation",
+            "Accreditation",
+            "Face Validity"
+        ],
+        "right": [
+            "Built right",
+            "Right model",
+            "Official approval",
+            "Expert review"
+        ]
+    },
+    {
+        "q": "The ______ process confirms model is appropriate for use.",
+        "type": "fill_blank",
+        "answers": [
+            "accreditation"
+        ],
+        "other_options": [
+            "verification",
+            "validation",
+            "testing"
+        ]
+    },
+    {
+        "q": "What is simulation credibility?",
+        "type": "mcq",
+        "o": [
+            "Trustworthiness and acceptance of model results",
+            "Credibility analysis",
+            "Trust modeling",
+            "Model acceptance"
+        ]
+    },
+    {
+        "q": "What does this affect in credibility?",
+        "type": "mcq",
+        "c": "documentation = 'Complete'\nvalidation = 'Passed'\npeer_review = 'Approved'\nprint(f'Factor: {documentation}')",
+        "o": [
+            "Factor: Complete",
+            "Factor: Passed",
+            "Factor: Approved",
+            "Factor: None"
+        ]
+    },
+    {
+        "q": "Transparency increases model credibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match credibility factors:",
+        "type": "match",
+        "left": [
+            "Documentation",
+            "Validation",
+            "Transparency",
+            "Reproducibility"
+        ],
+        "right": [
+            "Written records",
+            "Real-world match",
+            "Open methods",
+            "Repeatable results"
+        ]
+    },
+    {
+        "q": "The ______ of results supports simulation credibility.",
+        "type": "fill_blank",
+        "answers": [
+            "reproducibility"
+        ],
+        "other_options": [
+            "complexity",
+            "speed",
+            "size"
+        ]
+    },
+    {
+        "q": "What is input modeling?",
+        "type": "mcq",
+        "o": [
+            "Fitting probability distributions to real data",
+            "Input analysis",
+            "Data modeling",
+            "Distribution fitting"
+        ]
+    },
+    {
+        "q": "What does this code calculate for fit test?",
+        "type": "mcq",
+        "c": "chi_squared = 5.2\ndf = 4\ncritical = 9.49\nfit_ok = chi_squared < critical\nprint(f'Fit: {fit_ok}')",
+        "o": [
+            "Fit: True",
+            "Fit: False",
+            "Fit: 5.2",
+            "Fit: 9.49"
+        ]
+    },
+    {
+        "q": "Rearrange input modeling:",
+        "type": "rearrange",
+        "words": [
+            "Collect Data",
+            "Hypothesize Distribution",
+            "Estimate Parameters",
+            "Test Goodness-of-Fit",
+            "Select Model"
+        ]
+    },
+    {
+        "q": "K-S test compares empirical to theoretical distributions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match goodness-of-fit tests:",
+        "type": "match",
+        "left": [
+            "Chi-squared",
+            "K-S",
+            "Anderson-Darling",
+            "Shapiro-Wilk"
+        ],
+        "right": [
+            "Binned frequencies",
+            "Maximum difference",
+            "Weighted tails",
+            "Normality test"
+        ]
+    },
+    {
+        "q": "The ______ test compares maximum CDF difference.",
+        "type": "fill_blank",
+        "answers": [
+            "Kolmogorov-Smirnov"
+        ],
+        "other_options": [
+            "chi-squared",
+            "Anderson-Darling",
+            "Shapiro"
+        ]
+    },
+    {
+        "q": "What is simulation analytics?",
+        "type": "mcq",
+        "o": [
+            "Extracting insights from simulation data",
+            "Analytics simulation",
+            "Data analysis",
+            "Simulation data"
+        ]
+    },
+    {
+        "q": "What does this code output for run count?",
+        "type": "mcq",
+        "c": "replications = 30\nconfidence = 0.95\nprecision = 0.05\nprint(f'Runs: {replications}')",
+        "o": [
+            "Runs: 30",
+            "Runs: 0.95",
+            "Runs: 0.05",
+            "Runs: 100"
+        ]
+    },
+    {
+        "q": "Confidence intervals quantify output uncertainty.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match simulation output metrics:",
+        "type": "match",
+        "left": [
+            "Mean",
+            "Variance",
+            "Percentile",
+            "Histogram"
+        ],
+        "right": [
+            "Central tendency",
+            "Spread",
+            "Quantile",
+            "Distribution shape"
+        ]
+    },
+    {
+        "q": "The ______ interval contains the true value with specified probability.",
+        "type": "fill_blank",
+        "answers": [
+            "confidence"
+        ],
+        "other_options": [
+            "prediction",
+            "tolerance",
+            "control"
+        ]
+    },
+    {
+        "q": "Rearrange simulation study phases:",
+        "type": "rearrange",
+        "words": [
+            "Problem Formulation",
+            "Model Building",
+            "Verification",
+            "Validation",
+            "Experimentation"
+        ]
+    }
+]
