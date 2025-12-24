@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Window Functions 🪟",
+        "ques": "What are **window functions**?",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "SELECT employee_id,\n       salary,\n       AVG(salary) OVER (PARTITION BY department) as dept_avg,\n       ROW_NUMBER() OVER (ORDER BY salary DESC) as rank\nFROM employees;"
+        },
+        "explanation": "**Window functions** calculate across rows without grouping."
+    },
+    {
+        "title": "Recursive Queries 🔄",
+        "ques": "What are **recursive CTEs**?",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "WITH RECURSIVE hierarchy AS (\n  SELECT id, name, manager_id, 1 as level\n  FROM employees WHERE manager_id IS NULL\n  UNION ALL\n  SELECT e.id, e.name, e.manager_id, h.level + 1\n  FROM employees e\n  JOIN hierarchy h ON e.manager_id = h.id\n)\nSELECT * FROM hierarchy;"
+        },
+        "explanation": "**Recursive CTEs** traverse hierarchical data."
+    },
+    {
+        "title": "Dynamic SQL 💬",
+        "ques": "What is **dynamic SQL**?",
+        "answer": {
+            "type": "text",
+            "content": "### Dynamic SQL:\n\n**Definition:** SQL constructed and executed at runtime.\n\n### Uses:\n| Use Case | Example |\n|----------|--------|\n| Variable tables | Audit tables |\n| Conditional logic | Dynamic filters |\n| Maintenance | Index rebuilds |\n\n### Caution: SQL injection risk"
+        },
+        "explanation": "**Dynamic SQL** provides flexibility but requires care."
+    },
+    {
+        "title": "Query Optimization 📈",
+        "ques": "How to **optimize SQL queries**?",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Tips:\n\n| Technique | Impact |\n|-----------|--------|\n| Use indexes | Faster lookups |\n| Avoid SELECT * | Less data |\n| Use EXPLAIN | Understand plan |\n| Batch updates | Reduce locking |"
+        },
+        "explanation": "**Optimization** involves query and schema changes."
+    },
+    {
+        "title": "PL/SQL Basics 📝",
+        "ques": "What is **PL/SQL**?",
+        "answer": {
+            "type": "text",
+            "content": "### PL/SQL:\n\n**Definition:** Procedural extension for SQL.\n\n### Features:\n| Feature | Purpose |\n|---------|--------|\n| Variables | Store values |\n| Loops | Iterate |\n| Conditionals | Logic |\n| Procedures | Reusable code |"
+        },
+        "explanation": "**PL/SQL** adds programming to SQL."
+    },
+    {
+        "title": "Query Hints 🎯",
+        "ques": "What are **query hints**?",
+        "answer": {
+            "type": "text",
+            "content": "### Query Hints:\n\n**Definition:** Directives to optimizer.\n\n### Examples:\n| Hint | Purpose |\n|------|--------|\n| INDEX | Force index use |\n| PARALLEL | Enable parallelism |\n| NO_CACHE | Skip cache |\n\n### Use sparingly!"
+        },
+        "explanation": "**Hints** override optimizer decisions."
+    }
+]

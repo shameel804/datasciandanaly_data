@@ -1,0 +1,56 @@
+[
+    {
+        "title": "ELT vs ETL 🔄",
+        "ques": "What's the difference between **ELT and ETL**?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | ETL | ELT |\n|--------|-----|-----|\n| Transform where | Before load | After load |\n| Best for | Traditional | Cloud DW |\n| Flexibility | Less | More |\n| Tools | Informatica, SSIS | dbt, Snowflake |"
+        },
+        "explanation": "**ELT** leverages target system's compute."
+    },
+    {
+        "title": "Data Lake Integration 🌊",
+        "ques": "How do **data lakes** integrate with warehouses?",
+        "answer": {
+            "type": "text",
+            "content": "### Integration Patterns:\n\n| Pattern | Description |\n|---------|-------------|\n| Lake → Warehouse | Curate and load |\n| Lakehouse | Combined architecture |\n| Mart from lake | Subset for analytics |"
+        },
+        "explanation": "**Integration** combines lake flexibility with warehouse structure."
+    },
+    {
+        "title": "Modern Data Stack 📊",
+        "ques": "What is the **Modern Data Stack**?",
+        "answer": {
+            "type": "text",
+            "content": "### Modern Data Stack:\n\n| Layer | Tool Examples |\n|-------|---------------|\n| Ingestion | Fivetran, Airbyte |\n| Storage | Snowflake, BigQuery |\n| Transform | dbt |\n| BI | Looker, Mode |"
+        },
+        "explanation": "**MDS** is cloud-native, modular."
+    },
+    {
+        "title": "Orchestration Tools 🎼",
+        "ques": "What **orchestration** tools work with ELT?",
+        "answer": {
+            "type": "text",
+            "content": "### Orchestration Options:\n\n| Tool | Characteristics |\n|------|----------------|\n| Airflow | Open source, Python |\n| Dagster | Asset-based |\n| Prefect | Modern Python |\n| dbt Cloud | Built-in jobs |"
+        },
+        "explanation": "**Orchestration** schedules and monitors pipelines."
+    },
+    {
+        "title": "dbt Transform 🔧",
+        "ques": "What is **dbt** in ELT?",
+        "answer": {
+            "type": "text",
+            "content": "### dbt (Data Build Tool):\n\n**Purpose:** Transform data in warehouse.\n\n### Features:\n| Feature | Benefit |\n|---------|--------|\n| SQL-based | Familiar syntax |\n| Version control | Git workflows |\n| Testing | Data quality |\n| Documentation | Auto-generated |"
+        },
+        "explanation": "**dbt** enables analytics engineering."
+    },
+    {
+        "title": "Change Data Capture 📨",
+        "ques": "What is **CDC** in ELT?",
+        "answer": {
+            "type": "text",
+            "content": "### Change Data Capture:\n\n**Definition:** Track and apply data changes.\n\n### Benefits:\n| Benefit | Value |\n|---------|------|\n| Real-time updates | Fresh data |\n| Efficiency | Only changes |\n| History | Track changes |"
+        },
+        "explanation": "**CDC** enables efficient incremental loading."
+    }
+]

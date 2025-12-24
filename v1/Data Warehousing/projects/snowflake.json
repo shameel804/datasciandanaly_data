@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Snowflake Architecture 🏗️",
+        "ques": "What is **Snowflake's architecture**?",
+        "answer": {
+            "type": "text",
+            "content": "### Snowflake Layers:\n\n| Layer | Function |\n|-------|----------|\n| Storage | Centralized data storage |\n| Compute | Virtual warehouses |\n| Cloud Services | Metadata, optimization |"
+        },
+        "explanation": "**Three-layer** architecture separates concerns."
+    },
+    {
+        "title": "Virtual Warehouses 🏭",
+        "ques": "What are **virtual warehouses**?",
+        "answer": {
+            "type": "text",
+            "content": "### Virtual Warehouses:\n\n**Definition:** Independent compute clusters.\n\n### Features:\n- Auto-suspend/resume\n- Independent scaling\n- Multi-cluster capability\n- Sizes: XS to 6XL"
+        },
+        "explanation": "**VWs** provide flexible compute resources."
+    },
+    {
+        "title": "Data Sharing 🔗",
+        "ques": "How does **data sharing** work in Snowflake?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Sharing:\n\n**Definition:** Share live data without copying.\n\n### Benefits:\n| Benefit | Value |\n|---------|------|\n| No ETL | Instant access |\n| Always current | Real-time data |\n| Secure | Reader accounts |"
+        },
+        "explanation": "**Sharing** eliminates data movement."
+    },
+    {
+        "title": "Time Travel ⏰",
+        "ques": "What is **Time Travel** in Snowflake?",
+        "answer": {
+            "type": "text",
+            "content": "### Time Travel:\n\n**Definition:** Query historical data states.\n\n### Uses:\n| Use Case | Example |\n|----------|--------|\n| Undo changes | Restore deleted data |\n| Compare | Before/after analysis |\n| Audit | Historical snapshots |\n\n### Retention: 1-90 days"
+        },
+        "explanation": "**Time Travel** enables data recovery."
+    },
+    {
+        "title": "Security Features 🔐",
+        "ques": "What **security** does Snowflake provide?",
+        "answer": {
+            "type": "text",
+            "content": "### Security Features:\n\n| Feature | Purpose |\n|---------|--------|\n| Encryption | At rest and in transit |\n| RBAC | Role-based access |\n| Network policies | IP whitelisting |\n| MFA | Multi-factor auth |"
+        },
+        "explanation": "**Enterprise-grade** security built in."
+    },
+    {
+        "title": "Cost Optimization 💰",
+        "ques": "How to **optimize costs** in Snowflake?",
+        "answer": {
+            "type": "text",
+            "content": "### Cost Tips:\n\n| Strategy | Savings |\n|----------|--------|\n| Auto-suspend | Don't pay when idle |\n| Right-size VWs | Match workload |\n| Clustering | Reduce data scanned |\n| Caching | Reuse query results |"
+        },
+        "explanation": "**Optimization** controls Snowflake costs."
+    }
+]

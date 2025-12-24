@@ -1,0 +1,58 @@
+[
+    {
+        "title": "PySpark Basics 🔥",
+        "ques": "What is **PySpark**?",
+        "answer": {
+            "type": "text",
+            "content": "### PySpark:\n\n**Definition:** Python API for Apache Spark.\n\n### Benefits:\n| Benefit | Value |\n|---------|------|\n| Python syntax | Familiar |\n| Distributed | Scale out |\n| Integration | pandas, ML |"
+        },
+        "explanation": "**PySpark** brings Spark to Python."
+    },
+    {
+        "title": "Spark DataFrames 📊",
+        "ques": "Create a **Spark DataFrame**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName('demo').getOrCreate()\n\ndf = spark.createDataFrame([\n    ('Alice', 25),\n    ('Bob', 30)\n], ['name', 'age'])\n\ndf.show()"
+        },
+        "explanation": "**DataFrames** are Spark's structured API."
+    },
+    {
+        "title": "MLlib Usage 🤖",
+        "ques": "Train a model with **MLlib**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from pyspark.ml.classification import LogisticRegression\nfrom pyspark.ml.feature import VectorAssembler\n\nassembler = VectorAssembler(inputCols=['f1', 'f2'], outputCol='features')\nlr = LogisticRegression(featuresCol='features', labelCol='label')\n\nmodel = lr.fit(train_df)"
+        },
+        "explanation": "**MLlib** enables distributed ML."
+    },
+    {
+        "title": "Streaming 🌊",
+        "ques": "What is **Spark Streaming**?",
+        "answer": {
+            "type": "text",
+            "content": "### Structured Streaming:\n\n**Definition:** Process real-time data as tables.\n\n### Features:\n| Feature | Benefit |\n|---------|--------|\n| Exactly-once | Reliability |\n| Windowing | Time-based agg |\n| Watermarks | Late data |"
+        },
+        "explanation": "**Streaming** handles real-time data."
+    },
+    {
+        "title": "Cluster Computing ☁️",
+        "ques": "How does **distributed** computing work?",
+        "answer": {
+            "type": "text",
+            "content": "### Spark Architecture:\n\n| Component | Role |\n|-----------|------|\n| Driver | Coordinates |\n| Executors | Run tasks |\n| Cluster Manager | Resources |"
+        },
+        "explanation": "**Spark** distributes work across cluster."
+    },
+    {
+        "title": "Performance Tips ⚡",
+        "ques": "How to **optimize PySpark**?",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Tips:\n\n| Tip | Effect |\n|-----|--------|\n| Cache | Reuse data |\n| Broadcast | Small tables |\n| Partition | Parallelism |\n| Avoid UDFs | Use built-ins |"
+        },
+        "explanation": "**Optimization** is key for Spark performance."
+    }
+]
