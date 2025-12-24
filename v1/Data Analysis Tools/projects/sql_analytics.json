@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Window Functions Intro 🪟",
+        "ques": "What is a **Window Function** in SQL?",
+        "answer": {
+            "type": "text",
+            "content": "### Window Functions:\n\n**Definition:** Perform calculations across a set of rows related to current row.\n\n### Key Difference from GROUP BY:\n- Window: Keeps individual rows\n- GROUP BY: Aggregates into one row\n\n### Syntax:\n```sql\nSELECT column,\n       SUM(sales) OVER (PARTITION BY region) as region_total\nFROM sales;\n```"
+        },
+        "explanation": "**Window functions** calculate without collapsing rows."
+    },
+    {
+        "title": "Common Table Expressions 📋",
+        "ques": "What is a **CTE** and why use it?",
+        "answer": {
+            "type": "text",
+            "content": "### CTE (Common Table Expression):\n\n**Definition:** Temporary named result set within a query.\n\n### Syntax:\n```sql\nWITH sales_summary AS (\n  SELECT region, SUM(sales) as total\n  FROM sales\n  GROUP BY region\n)\nSELECT * FROM sales_summary;\n```\n\n### Benefits:\n| Benefit | Description |\n|---------|-------------|\n| **Readability** | Break complex queries |\n| **Reusability** | Reference multiple times |\n| **Recursion** | Hierarchical data |"
+        },
+        "explanation": "**CTEs** improve query readability and organization."
+    },
+    {
+        "title": "Subqueries Usage 🔍",
+        "ques": "What are the **types of subqueries**?",
+        "answer": {
+            "type": "text",
+            "content": "### Subquery Types:\n\n| Type | Location | Returns |\n|------|----------|--------|\n| **Scalar** | SELECT, WHERE | Single value |\n| **Row** | WHERE | Single row |\n| **Table** | FROM | Multiple rows/columns |\n| **Correlated** | WHERE | References outer query |\n\n### Example:\n```sql\nSELECT * FROM products\nWHERE price > (SELECT AVG(price) FROM products);\n```"
+        },
+        "explanation": "**Subqueries** enable nested logic in SQL."
+    },
+    {
+        "title": "Performance Tuning Tips ⚡",
+        "ques": "Name **three ways** to improve SQL query performance.",
+        "answer": {
+            "type": "text",
+            "content": "### Performance Tips:\n\n| Technique | Impact |\n|-----------|--------|\n| **Use indexes** | Faster lookups |\n| **Limit columns** | SELECT only needed |\n| **Filter early** | WHERE before joins |\n\n### Additional:\n- Avoid SELECT *\n- Use EXPLAIN to analyze\n- Partition large tables"
+        },
+        "explanation": "**Query optimization** reduces execution time and cost."
+    },
+    {
+        "title": "Analytic Functions 📊",
+        "ques": "What do **ROW_NUMBER**, **RANK**, and **DENSE_RANK** do?",
+        "answer": {
+            "type": "text",
+            "content": "### Ranking Functions:\n\n| Function | Ties Handling |\n|----------|---------------|\n| **ROW_NUMBER** | Unique numbers (1,2,3,4) |\n| **RANK** | Same rank, skip (1,2,2,4) |\n| **DENSE_RANK** | Same rank, no skip (1,2,2,3) |\n\n### Example:\n```sql\nSELECT name, score,\n       RANK() OVER (ORDER BY score DESC) as rank\nFROM students;\n```"
+        },
+        "explanation": "**Ranking functions** assign positions to rows."
+    },
+    {
+        "title": "LAG and LEAD Functions ⬅️➡️",
+        "ques": "What do **LAG** and **LEAD** functions do?",
+        "answer": {
+            "type": "text",
+            "content": "### LAG and LEAD:\n\n| Function | Access |\n|----------|--------|\n| **LAG** | Previous row value |\n| **LEAD** | Next row value |\n\n### Use Case:\n```sql\nSELECT date, sales,\n       LAG(sales) OVER (ORDER BY date) as prev_sales,\n       sales - LAG(sales) OVER (ORDER BY date) as change\nFROM daily_sales;\n```\n\n### Applications:\n- Calculate period-over-period change\n- Identify trends"
+        },
+        "explanation": "**LAG/LEAD** enable row-to-row comparisons."
+    }
+]

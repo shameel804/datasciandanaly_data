@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Model Training 🏋️",
+        "ques": "Train a **simple classifier**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import train_test_split\n\nX_train, X_test, y_train, y_test = train_test_split(X, y)\n\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\n\naccuracy = model.score(X_test, y_test)"
+        },
+        "explanation": "**Scikit-learn** has consistent fit/predict API."
+    },
+    {
+        "title": "Preprocessing 🔧",
+        "ques": "Use **preprocessing** tools.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from sklearn.preprocessing import StandardScaler, LabelEncoder\n\n# Scale features\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)"
+        },
+        "explanation": "**Preprocessing** prepares data for ML."
+    },
+    {
+        "title": "Pipelines 🔗",
+        "ques": "Create a **pipeline**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from sklearn.pipeline import Pipeline\n\npipeline = Pipeline([\n    ('scaler', StandardScaler()),\n    ('classifier', LogisticRegression())\n])\n\npipeline.fit(X_train, y_train)\npipeline.predict(X_test)"
+        },
+        "explanation": "**Pipelines** chain preprocessing and modeling."
+    },
+    {
+        "title": "Cross-Validation 🔄",
+        "ques": "Use **cross-validation**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from sklearn.model_selection import cross_val_score\n\nscores = cross_val_score(\n    model, X, y, cv=5, scoring='accuracy'\n)\nprint(f\"Accuracy: {scores.mean():.2f} (+/- {scores.std():.2f})\")"
+        },
+        "explanation": "**CV** gives robust performance estimates."
+    },
+    {
+        "title": "Grid Search 🔍",
+        "ques": "Tune **hyperparameters**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from sklearn.model_selection import GridSearchCV\n\nparam_grid = {'C': [0.1, 1, 10]}\ngrid = GridSearchCV(LogisticRegression(), param_grid, cv=5)\ngrid.fit(X, y)\n\nprint(grid.best_params_)"
+        },
+        "explanation": "**Grid search** finds optimal hyperparameters."
+    },
+    {
+        "title": "Metrics 📊",
+        "ques": "Use **evaluation metrics**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from sklearn.metrics import classification_report, confusion_matrix\n\ny_pred = model.predict(X_test)\n\nprint(classification_report(y_test, y_pred))\nprint(confusion_matrix(y_test, y_pred))"
+        },
+        "explanation": "**Metrics** evaluate model performance."
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Trend Detection 📈",
+        "ques": "What is a **trend** in time series analysis and how can you identify it?",
+        "answer": {
+            "type": "text",
+            "content": "### Trend Definition:\n\n**Long-term increase or decrease** in the data over time.\n\n### Identification Methods:\n| Method | Description |\n|--------|-------------|\n| Visual inspection | Plot data over time |\n| Moving average | Smooth out fluctuations |\n| Regression | Fit linear/polynomial trend line |\n\n### Types:\n- **Upward trend:** Values generally increasing\n- **Downward trend:** Values generally decreasing\n- **Stationary:** No clear trend"
+        },
+        "explanation": "**Trend** represents the underlying direction of data over an extended period."
+    },
+    {
+        "title": "Seasonality Recognition 🌦️",
+        "ques": "What is **seasonality** and give an example.",
+        "answer": {
+            "type": "text",
+            "content": "### Seasonality Definition:\n\n**Regular, predictable patterns** that repeat at fixed intervals.\n\n### Examples:\n| Pattern | Cycle |\n|---------|-------|\n| Retail sales spike | December (yearly) |\n| Restaurant traffic | Weekends (weekly) |\n| Electricity usage | Summer/Winter (yearly) |\n| Rush hour traffic | 8AM, 5PM (daily) |\n\n### Detection:\n- Seasonal decomposition\n- Autocorrelation at seasonal lags\n- Visual inspection of patterns"
+        },
+        "explanation": "**Seasonality** creates predictable fluctuations at regular intervals."
+    },
+    {
+        "title": "Stationarity Concept 📉",
+        "ques": "What does it mean for a time series to be **stationary**?",
+        "answer": {
+            "type": "text",
+            "content": "### Stationary Series Properties:\n\n| Property | Requirement |\n|----------|-------------|\n| Mean | Constant over time |\n| Variance | Constant over time |\n| Autocorrelation | Only depends on lag |\n\n### Why It Matters:\n- Many models require stationarity\n- Non-stationary → transform first\n\n### How to Achieve:\n| Method | Purpose |\n|--------|--------|\n| Differencing | Remove trend |\n| Log transform | Stabilize variance |\n| Seasonal differencing | Remove seasonality |"
+        },
+        "explanation": "**Stationarity** is a prerequisite for many time series models like ARIMA."
+    },
+    {
+        "title": "ARIMA Components 🔧",
+        "ques": "What do the letters in **ARIMA(p, d, q)** represent?",
+        "answer": {
+            "type": "text",
+            "content": "### ARIMA Components:\n\n| Parameter | Name | Meaning |\n|-----------|------|--------|\n| **p** | AR (Autoregressive) | Number of lag observations |\n| **d** | I (Integrated) | Differencing order |\n| **q** | MA (Moving Average) | Size of moving average window |\n\n### Example: ARIMA(1, 1, 1)\n- p=1: Use 1 previous value\n- d=1: One differencing to achieve stationarity\n- q=1: Use 1 previous error term\n\n### Selection:\n- Use ACF/PACF plots\n- Grid search with AIC/BIC"
+        },
+        "explanation": "**ARIMA** combines autoregression, differencing, and moving average components."
+    },
+    {
+        "title": "Forecasting Methods Comparison 📊",
+        "ques": "Compare **simple moving average** vs **exponential smoothing**.",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | Moving Average | Exponential Smoothing |\n|--------|---------------|----------------------|\n| Weight | Equal weight | More weight on recent |\n| Responsiveness | Slower | Faster |\n| Smoothness | More smooth | Can be adjusted |\n| Parameters | Window size | Smoothing factor (α) |\n\n### Exponential Smoothing:\n```\nF(t+1) = α·Y(t) + (1-α)·F(t)\n```\n- α close to 1: More responsive\n- α close to 0: More smooth"
+        },
+        "explanation": "**Exponential smoothing** gives more weight to recent observations."
+    },
+    {
+        "title": "ACF and PACF Reading 📉",
+        "ques": "What is the difference between **ACF** and **PACF** plots?",
+        "answer": {
+            "type": "text",
+            "content": "### Definitions:\n\n| Plot | Measures |\n|------|----------|\n| **ACF** | Correlation at each lag (includes indirect effects) |\n| **PACF** | Direct correlation only (removes intermediate effects) |\n\n### Use in ARIMA:\n| Pattern | Model Suggested |\n|---------|----------------|\n| ACF cuts off after q | MA(q) |\n| PACF cuts off after p | AR(p) |\n| Both decay gradually | ARMA(p,q) |"
+        },
+        "explanation": "**ACF/PACF** help determine appropriate ARIMA orders."
+    },
+    {
+        "title": "Decomposition Methods 🔍",
+        "ques": "What are the components of **time series decomposition**?",
+        "answer": {
+            "type": "text",
+            "content": "### Decomposition Components:\n\n| Component | Symbol | Description |\n|-----------|--------|-------------|\n| Trend | T | Long-term direction |\n| Seasonality | S | Regular patterns |\n| Residual | R | Random noise |\n\n### Models:\n| Type | Formula |\n|------|--------|\n| Additive | Y = T + S + R |\n| Multiplicative | Y = T × S × R |\n\n### Use Multiplicative When:\nSeasonality amplitude changes with level"
+        },
+        "explanation": "**Decomposition** separates a series into interpretable components."
+    },
+    {
+        "title": "Forecast Evaluation 📏",
+        "ques": "Name **two metrics** commonly used to evaluate time series forecasts.",
+        "answer": {
+            "type": "text",
+            "content": "### Forecast Metrics:\n\n| Metric | Formula | Use Case |\n|--------|---------|----------|\n| **MAE** | Σ|actual - forecast|/n | Average error magnitude |\n| **MAPE** | Σ|error/actual|·100/n | Percentage error |\n\n### Additional:\n| Metric | Characteristic |\n|--------|---------------|\n| RMSE | Penalizes large errors |\n| MASE | Scale-independent |\n\n### Cross-validation:\nUse rolling window for time series (can't shuffle data)"
+        },
+        "explanation": "**Multiple metrics** provide complete picture of forecast accuracy."
+    }
+]

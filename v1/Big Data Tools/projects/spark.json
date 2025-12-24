@@ -1,0 +1,56 @@
+[
+    {
+        "title": "RDDs Basics 📦",
+        "ques": "What is an **RDD** in Spark?",
+        "answer": {
+            "type": "text",
+            "content": "### Resilient Distributed Dataset:\n\n**Definition:** Immutable distributed collection.\n\n### Properties:\n- Fault-tolerant\n- Parallel processing\n- Lazily evaluated\n\n### Operations:\n- Transformations (lazy)\n- Actions (trigger execution)"
+        },
+        "explanation": "**RDDs** are Spark's core abstraction."
+    },
+    {
+        "title": "DataFrames API 📊",
+        "ques": "What is a Spark **DataFrame**?",
+        "answer": {
+            "type": "text",
+            "content": "### DataFrames:\n\n**Definition:** Distributed table with schema.\n\n### Advantages over RDD:\n| Feature | Benefit |\n|---------|--------|\n| Schema | Structured data |\n| Optimization | Catalyst optimizer |\n| Interoperability | SQL queries |"
+        },
+        "explanation": "**DataFrames** provide optimized structured processing."
+    },
+    {
+        "title": "Spark SQL 💬",
+        "ques": "How does **Spark SQL** work?",
+        "answer": {
+            "type": "text",
+            "content": "### Spark SQL:\n\n**Definition:** SQL interface for Spark.\n\n### Use:\n```python\ndf.createOrReplaceTempView(\"table\")\nspark.sql(\"SELECT * FROM table\")\n```\n\n### Benefits:\n- Familiar SQL syntax\n- Optimized execution"
+        },
+        "explanation": "**SQL** provides familiar interface for Spark."
+    },
+    {
+        "title": "Spark Streaming ⚡",
+        "ques": "What is **Spark Streaming**?",
+        "answer": {
+            "type": "text",
+            "content": "### Spark Streaming:\n\n**Definition:** Real-time data processing.\n\n### Approaches:\n| Type | Description |\n|------|-------------|\n| DStreams | Micro-batches (old) |\n| Structured Streaming | Continuous (new) |"
+        },
+        "explanation": "**Streaming** processes data in real-time."
+    },
+    {
+        "title": "MLlib Library 🤖",
+        "ques": "What is **MLlib**?",
+        "answer": {
+            "type": "text",
+            "content": "### MLlib:\n\n**Definition:** Spark's machine learning library.\n\n### Capabilities:\n| Category | Algorithms |\n|----------|------------|\n| Classification | Logistic, RF, GBT |\n| Regression | Linear, RF |\n| Clustering | K-means |\n| Pipelines | ML workflows |"
+        },
+        "explanation": "**MLlib** enables distributed ML."
+    },
+    {
+        "title": "Performance Tuning ⚙️",
+        "ques": "How to **optimize Spark** performance?",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Tips:\n\n| Area | Technique |\n|------|----------|\n| **Memory** | Tune executor memory |\n| **Partitions** | Repartition wisely |\n| **Caching** | Persist frequently used |\n| **Joins** | Broadcast small tables |"
+        },
+        "explanation": "**Tuning** is critical for Spark performance."
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Star Schema ⭐",
+        "ques": "What is a **star schema**?",
+        "answer": {
+            "type": "text",
+            "content": "### Star Schema:\n\n**Structure:**\n- Central fact table\n- Dimension tables around it\n- Direct joins only\n\n### Benefits:\n- Simple queries\n- Fast performance\n- Easy to understand"
+        },
+        "explanation": "**Star** is the most common DW design."
+    },
+    {
+        "title": "Snowflake Schema ❄️",
+        "ques": "What is a **snowflake schema**?",
+        "answer": {
+            "type": "text",
+            "content": "### Snowflake Schema:\n\n**Definition:** Normalized star schema.\n\n### Comparison:\n| Aspect | Star | Snowflake |\n|--------|------|----------|\n| Dimensions | Denormalized | Normalized |\n| Complexity | Simpler | More tables |\n| Storage | More | Less |"
+        },
+        "explanation": "**Snowflake** normalizes dimensions."
+    },
+    {
+        "title": "Fact vs Dimension 📊",
+        "ques": "What is the difference between **fact and dimension tables**?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | Fact | Dimension |\n|--------|------|----------|\n| Contains | Measures | Descriptions |\n| Size | Many rows | Fewer rows |\n| Example | Sales amount | Customer info |"
+        },
+        "explanation": "**Facts** measure; **dimensions** describe."
+    },
+    {
+        "title": "Surrogate Keys 🔑",
+        "ques": "Why use **surrogate keys**?",
+        "answer": {
+            "type": "text",
+            "content": "### Surrogate Keys:\n\n**Definition:** System-generated identifiers.\n\n### Benefits:\n| Benefit | Reason |\n|---------|--------|\n| Stable | Never changes |\n| Simple | Integer, fast joins |\n| History | Track changes |"
+        },
+        "explanation": "**Surrogates** simplify dimension management."
+    },
+    {
+        "title": "Slowly Changing Dimensions 🔄",
+        "ques": "What are **SCDs**?",
+        "answer": {
+            "type": "text",
+            "content": "### SCD Types:\n\n| Type | Handling |\n|------|----------|\n| Type 1 | Overwrite |\n| Type 2 | Add new row (history) |\n| Type 3 | Add column |"
+        },
+        "explanation": "**SCDs** handle dimension changes over time."
+    },
+    {
+        "title": "Data Vault 🏛️",
+        "ques": "What is **Data Vault**?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Vault:\n\n**Components:**\n| Table Type | Purpose |\n|------------|--------|\n| Hub | Business keys |\n| Link | Relationships |\n| Satellite | Descriptive data |\n\n### Benefit: Flexible, auditable"
+        },
+        "explanation": "**Data Vault** provides flexibility and history."
+    }
+]

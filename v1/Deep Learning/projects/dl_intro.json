@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Neural Network Architecture 🧠",
+        "ques": "What are the basic components of a **neural network**?",
+        "answer": {
+            "type": "text",
+            "content": "### Neural Network Components:\n\n| Component | Function |\n|-----------|----------|\n| **Neurons** | Processing units |\n| **Weights** | Connection strengths |\n| **Biases** | Threshold adjustments |\n| **Activation** | Non-linearity |\n| **Layers** | Feature hierarchy |"
+        },
+        "explanation": "**Components** work together to learn patterns."
+    },
+    {
+        "title": "Activation Functions 📈",
+        "ques": "Compare **ReLU** and **Sigmoid** activation functions.",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | ReLU | Sigmoid |\n|--------|------|--------|\n| Formula | max(0,x) | 1/(1+e^-x) |\n| Range | [0, ∞) | (0, 1) |\n| Use | Hidden layers | Output (binary) |\n| Issue | Dead neurons | Vanishing gradient |"
+        },
+        "explanation": "**ReLU** is preferred for hidden layers due to gradient flow."
+    },
+    {
+        "title": "Backpropagation Process 🔄",
+        "ques": "Explain the steps of **backpropagation**.",
+        "answer": {
+            "type": "text",
+            "content": "### Backpropagation Steps:\n\n1. **Forward pass** - Calculate predictions\n2. **Compute loss** - Compare to targets\n3. **Backward pass** - Calculate gradients\n4. **Update weights** - Gradient descent\n\n### Chain Rule:\nGradients flow backward through layers."
+        },
+        "explanation": "**Backpropagation** is how neural networks learn."
+    },
+    {
+        "title": "Optimization Algorithms 🎯",
+        "ques": "What is **Adam** optimizer?",
+        "answer": {
+            "type": "text",
+            "content": "### Adam Optimizer:\n\n**Adaptive Moment Estimation**\n\n### Features:\n- Combines momentum and RMSprop\n- Adaptive learning rates\n- Good default choice\n\n### Hyperparameters:\n- Learning rate (~0.001)\n- Beta1 (~0.9)\n- Beta2 (~0.999)"
+        },
+        "explanation": "**Adam** adapts learning rates for each parameter."
+    },
+    {
+        "title": "Regularization Techniques 🛡️",
+        "ques": "How does **dropout** prevent overfitting?",
+        "answer": {
+            "type": "text",
+            "content": "### Dropout:\n\n**Definition:** Randomly deactivate neurons during training.\n\n### How It Works:\n- Set probability (e.g., 0.5)\n- Randomly zero out activations\n- Forces redundant learning\n\n### Effect:\nPrevents over-reliance on specific neurons."
+        },
+        "explanation": "**Dropout** creates an ensemble effect during training."
+    },
+    {
+        "title": "Batch Normalization 📊",
+        "ques": "What is **batch normalization**?",
+        "answer": {
+            "type": "text",
+            "content": "### Batch Normalization:\n\n**Definition:** Normalize layer inputs across batch.\n\n### Benefits:\n| Benefit | Effect |\n|---------|--------|\n| Faster training | Stable gradients |\n| Higher learning rates | Allows boldness |\n| Regularization | Slight noise added |\n\n### Formula:\nNormalize → Scale → Shift"
+        },
+        "explanation": "**BatchNorm** stabilizes and speeds up training."
+    }
+]

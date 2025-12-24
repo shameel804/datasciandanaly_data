@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Measures of Central Tendency 📊",
+        "ques": "Calculate the **mean**, **median**, and **mode** for this dataset: `[2, 5, 5, 7, 8, 8, 8, 10, 12]`",
+        "answer": {
+            "type": "text",
+            "content": "### Calculations:\n\n**Mean:**\n```\nMean = (2+5+5+7+8+8+8+10+12) / 9 = 65/9 = 7.22\n```\n\n**Median:**\n```\nSorted: [2, 5, 5, 7, 8, 8, 8, 10, 12]\nMiddle position = 5th value = 8\n```\n\n**Mode:**\n```\nMost frequent value = 8 (appears 3 times)\n```\n\n### Summary:\n| Measure | Value |\n|---------|-------|\n| Mean | 7.22 |\n| Median | 8 |\n| Mode | 8 |"
+        },
+        "explanation": "**Central tendency** measures describe the center of a dataset. Mean is sensitive to outliers, median is robust."
+    },
+    {
+        "title": "Measures of Dispersion 📏",
+        "ques": "For the dataset `[10, 20, 30, 40, 50]`, calculate the **range** and **variance**.",
+        "answer": {
+            "type": "text",
+            "content": "### Calculations:\n\n**Range:**\n```\nRange = Max - Min = 50 - 10 = 40\n```\n\n**Variance:**\n```\nMean = (10+20+30+40+50)/5 = 30\n\nVariance = [(10-30)² + (20-30)² + (30-30)² + (40-30)² + (50-30)²] / 5\n         = [400 + 100 + 0 + 100 + 400] / 5\n         = 1000 / 5 = 200\n```\n\n### Summary:\n| Measure | Value |\n|---------|-------|\n| Range | 40 |\n| Variance | 200 |\n| Std Dev | 14.14 |"
+        },
+        "explanation": "**Dispersion** measures how spread out data is. Variance is the average squared deviation from mean."
+    },
+    {
+        "title": "Normal Distribution Basics 🔔",
+        "ques": "In a normal distribution, what percentage of data falls within **1, 2, and 3** standard deviations of the mean?",
+        "answer": {
+            "type": "text",
+            "content": "### Empirical Rule (68-95-99.7):\n\n| Range | Percentage |\n|-------|------------|\n| μ ± 1σ | **68%** |\n| μ ± 2σ | **95%** |\n| μ ± 3σ | **99.7%** |\n\n### Visual:\n```\n         ┌───────────────────┐\n         │    99.7% (±3σ)    │\n      ┌──┴───────────────────┴──┐\n      │      95% (±2σ)          │\n   ┌──┴─────────────────────────┴──┐\n   │        68% (±1σ)              │\n   └───────────┬───────────────────┘\n               μ\n```"
+        },
+        "explanation": "The **68-95-99.7 rule** is fundamental for understanding normal distributions."
+    },
+    {
+        "title": "Correlation Coefficient 🔗",
+        "ques": "What does a **correlation coefficient of -0.85** indicate about two variables?",
+        "answer": {
+            "type": "text",
+            "content": "### Interpretation:\n\n**r = -0.85** indicates:\n\n| Aspect | Interpretation |\n|--------|----------------|\n| **Direction** | Negative (inverse relationship) |\n| **Strength** | Strong correlation |\n| **Meaning** | As one variable increases, the other decreases |\n\n### Correlation Strength Guide:\n```\n-1.0 to -0.7: Strong negative\n-0.7 to -0.4: Moderate negative\n-0.4 to -0.2: Weak negative\n-0.2 to  0.2: No/negligible\n 0.2 to  0.4: Weak positive\n 0.4 to  0.7: Moderate positive\n 0.7 to  1.0: Strong positive\n```"
+        },
+        "explanation": "**Correlation** measures linear relationship strength and direction. Does NOT imply causation."
+    },
+    {
+        "title": "Types of Distributions 📈",
+        "ques": "Match each scenario with the appropriate distribution: **Normal**, **Binomial**, **Poisson**.",
+        "answer": {
+            "type": "text",
+            "content": "### Distribution Matching:\n\n| Scenario | Distribution | Why |\n|----------|--------------|-----|\n| Heights of adults | **Normal** | Continuous, symmetrical |\n| Success/failure in 10 trials | **Binomial** | Fixed trials, binary outcome |\n| Customer arrivals per hour | **Poisson** | Counting events in fixed interval |\n\n### Quick Reference:\n- **Normal:** Continuous, symmetrical data\n- **Binomial:** n trials, success/failure\n- **Poisson:** Count of rare events over time/space"
+        },
+        "explanation": "Choosing the **right distribution** is crucial for proper statistical modeling."
+    },
+    {
+        "title": "Descriptive Statistics Summary 📋",
+        "ques": "What is the difference between **descriptive** and **inferential** statistics?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | Descriptive | Inferential |\n|--------|-------------|-------------|\n| **Purpose** | Summarize data | Make predictions |\n| **Scope** | Describes sample | Generalizes to population |\n| **Methods** | Mean, median, charts | Hypothesis tests, confidence intervals |\n| **Example** | \"Average age is 35\" | \"Population mean is 34-36 with 95% confidence\" |\n\n### Flow:\n```\nSample Data → Descriptive Stats → Inferential Stats → Population Conclusions\n```"
+        },
+        "explanation": "**Descriptive** summarizes what you have; **Inferential** predicts beyond your data."
+    },
+    {
+        "title": "Percentiles and Quartiles 📊",
+        "ques": "Given a dataset, the 25th percentile is 40 and 75th percentile is 80. What is the **IQR**?",
+        "answer": {
+            "type": "text",
+            "content": "### IQR Calculation:\n\n```\nIQR = Q3 - Q1 = 75th percentile - 25th percentile\nIQR = 80 - 40 = 40\n```\n\n### Understanding IQR:\n\n| Quartile | Percentile | Value |\n|----------|------------|-------|\n| Q1 | 25th | 40 |\n| Q2 (Median) | 50th | -- |\n| Q3 | 75th | 80 |\n| **IQR** | Q3 - Q1 | **40** |\n\n### Outlier Detection:\n- Lower bound: Q1 - 1.5·IQR = 40 - 60 = -20\n- Upper bound: Q3 + 1.5·IQR = 80 + 60 = 140"
+        },
+        "explanation": "**IQR** measures spread of middle 50% of data and helps detect outliers."
+    },
+    {
+        "title": "Skewness Identification 📐",
+        "ques": "If mean > median in a distribution, what type of **skewness** does it have?",
+        "answer": {
+            "type": "text",
+            "content": "### Answer: **Right-skewed (Positive Skewness)**\n\n### Skewness Rules:\n\n| Relationship | Skewness | Tail Direction |\n|--------------|----------|----------------|\n| Mean > Median | Right/Positive | Long tail on right |\n| Mean < Median | Left/Negative | Long tail on left |\n| Mean ≈ Median | Symmetric | No skew |\n\n### Visual:\n```\nRight-skewed:     Left-skewed:\n    ▄▄█               █▄▄\n   ▄███▄▄            ▄▄███▄\n  ▄█████▄▄▄▄      ▄▄▄▄█████▄\n```\n\n**Example:** Income distribution is typically right-skewed"
+        },
+        "explanation": "**Skewness** indicates asymmetry. Mean is pulled toward the tail."
+    }
+]

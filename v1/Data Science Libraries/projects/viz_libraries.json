@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Matplotlib Basics 📈",
+        "ques": "Create a **line plot**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 4, 6, 8, 10]\n\nplt.plot(x, y, label='Linear')\nplt.xlabel('X axis')\nplt.ylabel('Y axis')\nplt.title('Line Plot')\nplt.legend()\nplt.show()"
+        },
+        "explanation": "**Matplotlib** is Python's foundational plotting library."
+    },
+    {
+        "title": "Subplots 📊",
+        "ques": "Create **multiple subplots**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "fig, axes = plt.subplots(2, 2, figsize=(10, 8))\n\naxes[0, 0].plot(x, y)\naxes[0, 1].bar(x, y)\naxes[1, 0].scatter(x, y)\naxes[1, 1].hist(y)\n\nplt.tight_layout()\nplt.show()"
+        },
+        "explanation": "**Subplots** combine multiple charts."
+    },
+    {
+        "title": "Seaborn Style 🎨",
+        "ques": "Use **Seaborn** for better plots.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import seaborn as sns\n\n# Set style\nsns.set_style('whitegrid')\n\n# Statistical plots\nsns.boxplot(x='category', y='value', data=df)\nsns.heatmap(correlation_matrix, annot=True)"
+        },
+        "explanation": "**Seaborn** provides statistical visualizations."
+    },
+    {
+        "title": "Plotly Interactive 🔄",
+        "ques": "Create **interactive plots** with Plotly.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import plotly.express as px\n\nfig = px.scatter(\n    df, x='x', y='y',\n    color='category',\n    hover_data=['name']\n)\nfig.show()"
+        },
+        "explanation": "**Plotly** creates interactive web-based charts."
+    },
+    {
+        "title": "Customization 🎨",
+        "ques": "**Customize** plot appearance.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "plt.figure(figsize=(10, 6))\nplt.plot(x, y, color='#2ecc71', linestyle='--', linewidth=2, marker='o')\nplt.xlabel('X', fontsize=12)\nplt.title('Styled Plot', fontweight='bold')\nplt.grid(True, alpha=0.3)"
+        },
+        "explanation": "**Customization** makes plots professional."
+    },
+    {
+        "title": "Saving Figures 💾",
+        "ques": "**Save** plot to file.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "plt.savefig('plot.png', dpi=300, bbox_inches='tight')\nplt.savefig('plot.pdf')  # Vector format\nplt.savefig('plot.svg')  # Another vector format"
+        },
+        "explanation": "**Save** in various formats for different uses."
+    }
+]

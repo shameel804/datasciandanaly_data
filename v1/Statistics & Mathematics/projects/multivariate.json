@@ -1,0 +1,74 @@
+[
+    {
+        "title": "PCA Fundamentals 🔄",
+        "ques": "What is **Principal Component Analysis (PCA)** and when would you use it?",
+        "answer": {
+            "type": "text",
+            "content": "### PCA Definition:\n\n**Purpose:** Reduce dimensions while preserving maximum variance.\n\n### When to Use:\n| Scenario | Benefit |\n|----------|--------|\n| High-dimensional data | Reduce features |\n| Visualization | Project to 2D/3D |\n| Multicollinearity | Create uncorrelated components |\n| Speed up models | Fewer features to process |\n\n### Key Concept:\nPC1 captures most variance, PC2 captures second most (orthogonal to PC1), etc."
+        },
+        "explanation": "**PCA** transforms data into uncorrelated components ordered by variance explained."
+    },
+    {
+        "title": "Factor Analysis Purpose 📊",
+        "ques": "How does **Factor Analysis** differ from PCA?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | PCA | Factor Analysis |\n|--------|-----|----------------|\n| **Goal** | Reduce dimensions | Find latent factors |\n| **Variance** | Explains total variance | Explains common variance |\n| **Components** | Mathematical constructs | Interpretable factors |\n| **Use** | Data reduction | Theory testing |\n\n### Factor Analysis Example:\n```\nObserved: Test scores in Math, Physics, Chemistry\nLatent Factor: \"Scientific Ability\"\n```"
+        },
+        "explanation": "**Factor Analysis** seeks underlying constructs that explain variable correlations."
+    },
+    {
+        "title": "Cluster Analysis Basics 🎯",
+        "ques": "Name **two clustering algorithms** and describe their main difference.",
+        "answer": {
+            "type": "text",
+            "content": "### Clustering Algorithms:\n\n| Algorithm | Approach |\n|-----------|----------|\n| **K-Means** | Partition-based, requires k |\n| **Hierarchical** | Builds tree of clusters |\n\n### Key Differences:\n\n| Aspect | K-Means | Hierarchical |\n|--------|---------|-------------|\n| K required? | Yes | No |\n| Output | Single partition | Dendrogram |\n| Shape | Spherical clusters | Any shape |\n| Scalability | Good for large data | Slower |"
+        },
+        "explanation": "**Clustering** groups similar observations without predefined labels."
+    },
+    {
+        "title": "Discriminant Analysis 🔍",
+        "ques": "What is **Linear Discriminant Analysis (LDA)** used for?",
+        "answer": {
+            "type": "text",
+            "content": "### LDA Purpose:\n\n**Goal:** Find linear combination of features that best separates classes.\n\n### Use Cases:\n| Application | Example |\n|-------------|--------|\n| Classification | Predict group membership |\n| Dimensionality reduction | While preserving class separation |\n| Feature extraction | Create discriminant scores |\n\n### LDA vs PCA:\n| PCA | LDA |\n|-----|-----|\n| Unsupervised | Supervised |\n| Maximize variance | Maximize class separation |\n| Ignores labels | Uses labels |"
+        },
+        "explanation": "**LDA** combines dimensionality reduction with classification in mind."
+    },
+    {
+        "title": "Variance Explained 📏",
+        "ques": "In PCA, what does \"70% variance explained\" mean?",
+        "answer": {
+            "type": "text",
+            "content": "### Interpretation:\n\nThe selected principal components capture **70% of total data variability**.\n\n### Example:\n```\n10 original features → 3 principal components\nPC1: 40%, PC2: 20%, PC3: 10% = 70% total\n```\n\n### Common Thresholds:\n| Variance Explained | Interpretation |\n|-------------------|---------------|\n| 70-80% | Acceptable |\n| 85-95% | Good |\n| 95%+ | Excellent |\n\n### Trade-off:\n- More PCs = More variance but less reduction\n- Fewer PCs = More reduction but information loss"
+        },
+        "explanation": "**Variance explained** helps decide how many components to retain."
+    },
+    {
+        "title": "Scree Plot Reading 📉",
+        "ques": "What is a **scree plot** and how do you use it?",
+        "answer": {
+            "type": "text",
+            "content": "### Scree Plot:\n\n**Definition:** Graph of eigenvalues vs component number.\n\n### How to Use:\n```\nEigenvalue\n    │\n8.0 │●\n    │  ●\n2.0 │    ●\n1.0 │      ●━●━●━● (elbow)\n    └─────────────── Component\n       1  2  3  4  5  6\n```\n\n### Elbow Method:\n- Keep components before the \"elbow\"\n- Where curve flattens out\n- Above example: Keep 2-3 components"
+        },
+        "explanation": "**Scree plots** help determine optimal number of components to retain."
+    },
+    {
+        "title": "Choosing Number of Clusters 🔢",
+        "ques": "How can you determine the optimal number of clusters (k)?",
+        "answer": {
+            "type": "text",
+            "content": "### Methods:\n\n| Method | Approach |\n|--------|----------|\n| **Elbow Method** | Plot within-cluster SS vs k, find elbow |\n| **Silhouette Score** | Measure cluster cohesion vs separation |\n| **Gap Statistic** | Compare to random uniform data |\n\n### Elbow Method Visual:\n```\nWithin-cluster SS\n    │\n100 │●\n    │  ●\n 40 │    ●\n 30 │      ●━●━● (elbow at k=3)\n    └──────────── k\n       1  2  3  4  5\n```"
+        },
+        "explanation": "**Multiple methods** should be considered when choosing k."
+    },
+    {
+        "title": "Loadings Interpretation 📋",
+        "ques": "In PCA, if PC1 has loadings: [0.8, 0.7, -0.1] for [income, education, age], what does PC1 represent?",
+        "answer": {
+            "type": "text",
+            "content": "### Interpretation:\n\n| Variable | Loading | Contribution |\n|----------|---------|-------------|\n| Income | 0.8 | Strong positive |\n| Education | 0.7 | Strong positive |\n| Age | -0.1 | Negligible |\n\n### PC1 Interpretation:\n**\"Socioeconomic Status\"** - High income and education contribute positively, age has little effect.\n\n### Interpretation Rules:\n| Loading | Meaning |\n|---------|--------|\n| > 0.5 | Strong contribution |\n| 0.3-0.5 | Moderate |\n| < 0.3 | Weak |"
+        },
+        "explanation": "**Loadings** show how much each variable contributes to a component."
+    }
+]

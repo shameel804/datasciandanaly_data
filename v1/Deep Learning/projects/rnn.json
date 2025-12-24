@@ -1,0 +1,56 @@
+[
+    {
+        "title": "LSTM Architecture 🔄",
+        "ques": "What is **LSTM**?",
+        "answer": {
+            "type": "text",
+            "content": "### Long Short-Term Memory:\n\n**Definition:** RNN variant with memory cells.\n\n### Gates:\n| Gate | Purpose |\n|------|--------|\n| **Forget** | What to discard |\n| **Input** | What to store |\n| **Output** | What to output |\n\n### Benefit: Handles long sequences"
+        },
+        "explanation": "**LSTM** solves vanishing gradient in RNNs."
+    },
+    {
+        "title": "GRU Comparison 🔗",
+        "ques": "How does **GRU** differ from LSTM?",
+        "answer": {
+            "type": "text",
+            "content": "### GRU vs LSTM:\n\n| Aspect | LSTM | GRU |\n|--------|------|-----|\n| Gates | 3 | 2 |\n| Parameters | More | Fewer |\n| Speed | Slower | Faster |\n| Performance | Similar | Similar |"
+        },
+        "explanation": "**GRU** is simpler but often equally effective."
+    },
+    {
+        "title": "Sequence Modeling 📊",
+        "ques": "What tasks use **sequence models**?",
+        "answer": {
+            "type": "text",
+            "content": "### Sequence Tasks:\n\n| Task | Example |\n|------|--------|\n| **Many-to-One** | Sentiment analysis |\n| **One-to-Many** | Image captioning |\n| **Many-to-Many** | Translation |\n| **Sequence-to-Sequence** | Summarization |"
+        },
+        "explanation": "**RNNs** handle various sequence configurations."
+    },
+    {
+        "title": "Time Series Prediction 📈",
+        "ques": "How are RNNs used for **time series**?",
+        "answer": {
+            "type": "text",
+            "content": "### Time Series with RNNs:\n\n1. Format as sequences\n2. Use sliding window\n3. Train LSTM/GRU\n4. Predict next values\n\n### Features:\n- Past values as input\n- Future values as target"
+        },
+        "explanation": "**RNNs** capture temporal patterns."
+    },
+    {
+        "title": "Text Generation 📝",
+        "ques": "How does **text generation** work?",
+        "answer": {
+            "type": "text",
+            "content": "### Text Generation Process:\n\n1. Train on text sequences\n2. Model learns patterns\n3. Sample next character/word\n4. Feed back as input\n5. Repeat\n\n### Temperature:\nControls randomness of output"
+        },
+        "explanation": "**Generation** predicts one token at a time."
+    },
+    {
+        "title": "Bidirectional RNNs ↔️",
+        "ques": "What is a **Bidirectional RNN**?",
+        "answer": {
+            "type": "text",
+            "content": "### Bidirectional RNN:\n\n**Definition:** Process sequence in both directions.\n\n### Structure:\n- Forward RNN (left to right)\n- Backward RNN (right to left)\n- Combine outputs\n\n### Benefit: Uses full context"
+        },
+        "explanation": "**BiRNN** considers past and future context."
+    }
+]

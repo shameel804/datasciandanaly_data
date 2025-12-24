@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Calculated Fields 📐",
+        "ques": "What is a **calculated field** in Tableau?",
+        "answer": {
+            "type": "text",
+            "content": "### Calculated Fields:\n\n**Definition:** Custom formulas to create new data.\n\n### Examples:\n```\nProfit Ratio: [Profit] / [Sales]\nGrowth: ([This Year] - [Last Year]) / [Last Year]\nCategory: IF [Value] > 100 THEN \"High\" ELSE \"Low\" END\n```\n\n### Types:\n- Row-level calculations\n- Aggregate calculations\n- Table calculations"
+        },
+        "explanation": "**Calculated fields** extend your data with custom logic."
+    },
+    {
+        "title": "Parameters Usage 🎛️",
+        "ques": "What are **parameters** in Tableau?",
+        "answer": {
+            "type": "text",
+            "content": "### Parameters:\n\n**Definition:** Dynamic values that can replace constants.\n\n### Use Cases:\n| Use Case | Example |\n|----------|--------|\n| Toggle metrics | Show Sales OR Profit |\n| Set thresholds | High/Low boundary |\n| What-if analysis | Change assumptions |\n| Top N filter | Dynamic top count |\n\n### User Controls:\nDropdown, slider, or type-in input."
+        },
+        "explanation": "**Parameters** make dashboards interactive and flexible."
+    },
+    {
+        "title": "Level of Detail (LOD) 🔍",
+        "ques": "What is a **LOD expression** in Tableau?",
+        "answer": {
+            "type": "text",
+            "content": "### LOD Expressions:\n\n**Definition:** Control aggregation level independently of view.\n\n### Types:\n| Type | Syntax | Purpose |\n|------|--------|--------|\n| **FIXED** | {FIXED [Dim] : SUM([Sales])} | Ignore view dimensions |\n| **INCLUDE** | {INCLUDE [Dim] : AVG()} | Add dimension |\n| **EXCLUDE** | {EXCLUDE [Dim] : SUM()} | Remove dimension |\n\n### Example:\n```\n{FIXED [Customer] : MIN([Order Date])}\n```"
+        },
+        "explanation": "**LOD** expressions enable complex multi-level calculations."
+    },
+    {
+        "title": "Dashboard Actions 🖱️",
+        "ques": "What types of **actions** can you create in Tableau?",
+        "answer": {
+            "type": "text",
+            "content": "### Tableau Actions:\n\n| Action Type | Purpose |\n|-------------|--------|\n| **Filter** | Click to filter other sheets |\n| **Highlight** | Highlight related data |\n| **URL** | Open web pages |\n| **Navigate** | Go to other dashboards |\n| **Set** | Update set values |\n| **Parameter** | Update parameter values |\n\n### Trigger: Hover, Select, or Menu"
+        },
+        "explanation": "**Actions** create interactive, connected dashboards."
+    },
+    {
+        "title": "Data Blending 🔗",
+        "ques": "What is **data blending** in Tableau?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Blending:\n\n**Definition:** Combine data from different sources without joining.\n\n### When to Use:\n| Scenario | Approach |\n|----------|----------|\n| Same source | JOIN |\n| Different sources | BLEND |\n| Different granularity | BLEND |\n\n### How It Works:\n- Primary and secondary data sources\n- Link on common dimensions\n- Aggregation on secondary"
+        },
+        "explanation": "**Blending** connects data sources at visualization level."
+    },
+    {
+        "title": "Table Calculations 📊",
+        "ques": "What is a **table calculation** in Tableau?",
+        "answer": {
+            "type": "text",
+            "content": "### Table Calculations:\n\n**Definition:** Compute values based on visible data in view.\n\n### Common Types:\n| Function | Purpose |\n|----------|--------|\n| RUNNING_SUM | Cumulative total |\n| RANK | Position in list |\n| PERCENT_OF_TOTAL | Share of total |\n| DIFFERENCE | Change from prior |\n\n### Scope: Table, Pane, or Cell direction"
+        },
+        "explanation": "**Table calculations** work on aggregated, visible results."
+    }
+]

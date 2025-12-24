@@ -1,0 +1,56 @@
+[
+    {
+        "title": "HiveQL Basics 💬",
+        "ques": "What is **HiveQL**?",
+        "answer": {
+            "type": "text",
+            "content": "### HiveQL:\n\n**Definition:** SQL-like query language for Hive.\n\n### Features:\n- Similar to SQL\n- Runs on MapReduce/Tez/Spark\n- Schema-on-read\n\n### Example:\n```sql\nSELECT * FROM table WHERE date > '2023-01-01';\n```"
+        },
+        "explanation": "**HiveQL** provides SQL interface for big data."
+    },
+    {
+        "title": "Partitioning 📂",
+        "ques": "What is **partitioning** in Hive?",
+        "answer": {
+            "type": "text",
+            "content": "### Hive Partitioning:\n\n**Definition:** Organize data by partition columns.\n\n### Benefits:\n- Faster queries\n- Only scan relevant data\n\n### Example:\n```sql\nPARTITIONED BY (year, month)\n```"
+        },
+        "explanation": "**Partitioning** improves query performance."
+    },
+    {
+        "title": "Bucketing 🪣",
+        "ques": "What is **bucketing** in Hive?",
+        "answer": {
+            "type": "text",
+            "content": "### Bucketing:\n\n**Definition:** Hash-divide data into buckets.\n\n### Benefits:\n- Efficient joins\n- Consistent file sizes\n\n### Syntax:\n```sql\nCLUSTERED BY (id) INTO 32 BUCKETS\n```"
+        },
+        "explanation": "**Bucketing** optimizes joins and sampling."
+    },
+    {
+        "title": "External Tables 📋",
+        "ques": "What are **external tables**?",
+        "answer": {
+            "type": "text",
+            "content": "### External vs Managed:\n\n| Type | Data Management |\n|------|----------------|\n| **Managed** | Hive owns data |\n| **External** | Data stays external |\n\n### Use External When:\n- Data used by other systems\n- Don't want Hive to delete data"
+        },
+        "explanation": "**External tables** preserve data on drop."
+    },
+    {
+        "title": "Performance Tips ⚡",
+        "ques": "How to **optimize Hive queries**?",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Tips:\n\n| Technique | Effect |\n|-----------|--------|\n| Partitioning | Reduce scan |\n| ORC/Parquet | Columnar format |\n| Vectorization | Batch processing |\n| Tez engine | Faster than MR |"
+        },
+        "explanation": "**Optimization** is key for Hive performance."
+    },
+    {
+        "title": "File Formats 📄",
+        "ques": "What **file formats** does Hive support?",
+        "answer": {
+            "type": "text",
+            "content": "### Hive File Formats:\n\n| Format | Characteristics |\n|--------|----------------|\n| **Text** | Simple, slow |\n| **ORC** | Columnar, optimized |\n| **Parquet** | Columnar, portable |\n| **Avro** | Schema evolution |"
+        },
+        "explanation": "Choose **format** based on use case."
+    }
+]

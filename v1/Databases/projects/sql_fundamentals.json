@@ -1,0 +1,60 @@
+[
+    {
+        "title": "SELECT Basics 📋",
+        "ques": "Write a SQL query to select **all columns** from a table.",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "SELECT * FROM customers;"
+        },
+        "explanation": "**SELECT *** retrieves all columns from a table."
+    },
+    {
+        "title": "WHERE Clause 🔍",
+        "ques": "Filter records where **age is greater than 30**.",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "SELECT * FROM users\nWHERE age > 30;"
+        },
+        "explanation": "**WHERE** filters rows based on conditions."
+    },
+    {
+        "title": "JOIN Types 🔗",
+        "ques": "What are the **main JOIN types**?",
+        "answer": {
+            "type": "text",
+            "content": "### SQL JOIN Types:\n\n| Type | Returns |\n|------|--------|\n| **INNER** | Matching rows only |\n| **LEFT** | All left + matching |\n| **RIGHT** | All right + matching |\n| **FULL** | All from both |"
+        },
+        "explanation": "**JOINs** combine data from multiple tables."
+    },
+    {
+        "title": "GROUP BY Usage 📊",
+        "ques": "Count orders **by customer**.",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "SELECT customer_id, COUNT(*) as order_count\nFROM orders\nGROUP BY customer_id;"
+        },
+        "explanation": "**GROUP BY** aggregates rows by column."
+    },
+    {
+        "title": "ORDER BY Sorting 📈",
+        "ques": "Sort results by **date descending**.",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "SELECT * FROM events\nORDER BY event_date DESC;"
+        },
+        "explanation": "**ORDER BY** sorts results; **DESC** for descending."
+    },
+    {
+        "title": "Aggregate Functions 🔢",
+        "ques": "What are **aggregate functions**?",
+        "answer": {
+            "type": "text",
+            "content": "### Aggregate Functions:\n\n| Function | Returns |\n|----------|--------|\n| COUNT() | Number of rows |\n| SUM() | Total |\n| AVG() | Average |\n| MIN() | Minimum |\n| MAX() | Maximum |"
+        },
+        "explanation": "**Aggregates** compute values across rows."
+    }
+]

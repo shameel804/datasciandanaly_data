@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Clustering Basics 🎯",
+        "ques": "What is **clustering** in Machine Learning?",
+        "answer": {
+            "type": "text",
+            "content": "### Clustering:\n\n**Definition:** Grouping similar data points without labels.\n\n### Use Cases:\n| Use Case | Example |\n|----------|--------|\n| Customer segments | Group by behavior |\n| Document topics | Group similar articles |\n| Anomaly detection | Find outliers |\n\n### No labels needed - finds natural groups."
+        },
+        "explanation": "**Clustering** discovers hidden structure in data."
+    },
+    {
+        "title": "K-Means Algorithm 🔵",
+        "ques": "How does **K-Means** clustering work?",
+        "answer": {
+            "type": "text",
+            "content": "### K-Means Steps:\n\n1. Choose k centroids\n2. Assign points to nearest centroid\n3. Recalculate centroids\n4. Repeat until stable\n\n### Key Decision:\n- **k** = number of clusters (elbow method)\n\n### Limitations:\n- Assumes spherical clusters\n- Sensitive to initialization"
+        },
+        "explanation": "**K-Means** is simple but effective for many cases."
+    },
+    {
+        "title": "Dimensionality Reduction 📉",
+        "ques": "Why reduce **dimensions**?",
+        "answer": {
+            "type": "text",
+            "content": "### Benefits:\n\n| Benefit | Reason |\n|---------|--------|\n| **Speed** | Fewer features = faster training |\n| **Visualization** | Project to 2D/3D |\n| **Noise reduction** | Remove irrelevant features |\n| **Avoid overfitting** | Less complexity |\n\n### Methods:\n- PCA\n- t-SNE\n- UMAP"
+        },
+        "explanation": "**Dimension reduction** simplifies data while keeping information."
+    },
+    {
+        "title": "PCA Basics 🔄",
+        "ques": "What is **PCA**?",
+        "answer": {
+            "type": "text",
+            "content": "### Principal Component Analysis:\n\n**Definition:** Transform features into uncorrelated components ordered by variance.\n\n### Process:\n1. Standardize features\n2. Compute covariance matrix\n3. Find eigenvectors (principal components)\n4. Project data onto top k components\n\n### Key: PC1 captures most variance"
+        },
+        "explanation": "**PCA** creates new features that capture maximum variance."
+    },
+    {
+        "title": "Anomaly Detection 🚨",
+        "ques": "What is **anomaly detection**?",
+        "answer": {
+            "type": "text",
+            "content": "### Anomaly Detection:\n\n**Definition:** Identify unusual data points.\n\n### Methods:\n| Method | Approach |\n|--------|----------|\n| **Statistical** | Z-score, IQR |\n| **Distance** | KNN, LOF |\n| **Clustering** | Points far from clusters |\n| **Isolation Forest** | Isolate anomalies |\n\n### Applications:\n- Fraud detection\n- Network intrusion\n- Quality control"
+        },
+        "explanation": "**Anomalies** are points that don't fit normal patterns."
+    },
+    {
+        "title": "Hierarchical Clustering 🌲",
+        "ques": "What is **hierarchical clustering**?",
+        "answer": {
+            "type": "text",
+            "content": "### Hierarchical Clustering:\n\n**Definition:** Build tree of nested clusters.\n\n### Types:\n| Type | Approach |\n|------|----------|\n| **Agglomerative** | Bottom-up merging |\n| **Divisive** | Top-down splitting |\n\n### Output: Dendrogram\n- Cut at desired level for k clusters\n- No need to prespecify k"
+        },
+        "explanation": "**Hierarchical** shows cluster relationships at all levels."
+    }
+]

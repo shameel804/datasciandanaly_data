@@ -1,0 +1,56 @@
+[
+    {
+        "title": "BigQuery Architecture 🏗️",
+        "ques": "How is **BigQuery** architected?",
+        "answer": {
+            "type": "text",
+            "content": "### BigQuery Architecture:\n\n| Component | Function |\n|-----------|----------|\n| Dremel | Query execution |\n| Colossus | Storage |\n| Jupiter | Network |\n| Borg | Resource management |\n\n### Key: Compute and storage separated"
+        },
+        "explanation": "**Separation** enables independent scaling."
+    },
+    {
+        "title": "SQL Dialect 💬",
+        "ques": "What SQL features does **BigQuery** support?",
+        "answer": {
+            "type": "text",
+            "content": "### BigQuery SQL:\n\n| Feature | Support |\n|---------|--------|\n| Standard SQL | Full ANSI support |\n| Window functions | Yes |\n| CTEs | Yes |\n| UDFs | JavaScript, SQL |\n| ML | BQML built-in |"
+        },
+        "explanation": "**BigQuery SQL** is feature-rich."
+    },
+    {
+        "title": "Partitioning Strategies 📂",
+        "ques": "How does **BigQuery partitioning** work?",
+        "answer": {
+            "type": "text",
+            "content": "### Partition Types:\n\n| Type | Description |\n|------|-------------|\n| **Time** | By ingestion or column |\n| **Integer range** | Numeric column ranges |\n\n### Benefits:\n- Query only relevant data\n- Cost savings"
+        },
+        "explanation": "**Partitioning** reduces costs and improves speed."
+    },
+    {
+        "title": "Clustering 📊",
+        "ques": "What is **clustering** in BigQuery?",
+        "answer": {
+            "type": "text",
+            "content": "### Clustering:\n\n**Definition:** Sort data by specified columns.\n\n### Benefits:\n- Faster queries on cluster columns\n- Reduced bytes scanned\n- Up to 4 columns\n\n### Works with partitioning"
+        },
+        "explanation": "**Clustering** optimizes data organization."
+    },
+    {
+        "title": "Cost Optimization 💰",
+        "ques": "How to **reduce BigQuery costs**?",
+        "answer": {
+            "type": "text",
+            "content": "### Cost Tips:\n\n| Strategy | Savings |\n|----------|--------|\n| Use partitions/clusters | Pay less |\n| Avoid SELECT * | Scan less data |\n| Use BI Engine | Caching |\n| Flat-rate pricing | Predictable costs |"
+        },
+        "explanation": "**Optimization** controls costs."
+    },
+    {
+        "title": "BQML Basics 🤖",
+        "ques": "What is **BigQuery ML**?",
+        "answer": {
+            "type": "text",
+            "content": "### BigQuery ML:\n\n**Definition:** ML in BigQuery with SQL.\n\n### Models:\n| Type | Use |\n|------|-----|\n| Linear regression | Predict numbers |\n| Logistic regression | Classification |\n| K-means | Clustering |\n| Time series | Forecasting |"
+        },
+        "explanation": "**BQML** enables ML without exporting data."
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Linear Programming Basics 📐",
+        "ques": "What are the **three components** of a linear programming problem?",
+        "answer": {
+            "type": "text",
+            "content": "### LP Components:\n\n| Component | Description | Example |\n|-----------|-------------|--------|\n| **Objective Function** | What to maximize/minimize | Maximize profit |\n| **Decision Variables** | What we control | Units to produce |\n| **Constraints** | Limitations | Resource availability |\n\n### Example:\n```\nMaximize: Z = 3x + 5y\nSubject to:\n  x + y ≤ 10\n  x ≤ 6\n  x, y ≥ 0\n```"
+        },
+        "explanation": "**LP** finds optimal solutions within defined constraints."
+    },
+    {
+        "title": "Resource Allocation Problem 🔧",
+        "ques": "How can optimization help with **resource allocation**?",
+        "answer": {
+            "type": "text",
+            "content": "### Resource Allocation Uses:\n\n| Resource | Optimization Goal |\n|----------|------------------|\n| **Budget** | Best projects to fund |\n| **Staff** | Optimal team assignments |\n| **Equipment** | Maximize utilization |\n| **Time** | Best schedule |\n\n### Benefits:\n- Maximize output with limited resources\n- Minimize waste\n- Data-driven decisions"
+        },
+        "explanation": "**Optimization** ensures scarce resources are used effectively."
+    },
+    {
+        "title": "Supply Chain Optimization 🚚",
+        "ques": "What aspects of supply chain can be **optimized**?",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Opportunities:\n\n| Area | Optimization Goal |\n|------|------------------|\n| **Inventory** | Minimize holding costs |\n| **Transportation** | Minimize shipping costs |\n| **Network Design** | Optimal warehouse locations |\n| **Production** | Efficient scheduling |\n\n### Example Objective:\n```\nMinimize: Total Cost = Inventory + Transport + Handling\n```"
+        },
+        "explanation": "**Supply chain optimization** reduces costs while meeting demand."
+    },
+    {
+        "title": "Portfolio Optimization 💼",
+        "ques": "What is the goal of **portfolio optimization**?",
+        "answer": {
+            "type": "text",
+            "content": "### Portfolio Optimization:\n\n**Goal:** Maximize return for a given level of risk (or minimize risk for target return).\n\n### Markowitz Framework:\n```\nMaximize: Expected Return\nSubject to:\n- Risk ≤ tolerance\n- Sum of weights = 100%\n- Weight ≥ 0 (no short-selling)\n```\n\n### Key Trade-off:\nHigher return ↔ Higher risk"
+        },
+        "explanation": "**Portfolio optimization** balances risk and return mathematically."
+    },
+    {
+        "title": "Constraint Types ⛓️",
+        "ques": "What types of **constraints** are common in optimization problems?",
+        "answer": {
+            "type": "text",
+            "content": "### Common Constraints:\n\n| Type | Example |\n|------|--------|\n| **Resource** | Machine hours ≤ 100 |\n| **Budget** | Cost ≤ $10,000 |\n| **Capacity** | Production ≤ 500 units |\n| **Demand** | Output ≥ demand |\n| **Logical** | If X, then Y |"
+        },
+        "explanation": "**Constraints** define the boundaries of feasible solutions."
+    },
+    {
+        "title": "Optimization Solvers 🔧",
+        "ques": "Name **two tools** that can solve optimization problems.",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Tools:\n\n| Tool | Type |\n|------|------|\n| **Excel Solver** | Spreadsheet add-in |\n| **Python (PuLP, SciPy)** | Programming libraries |\n| **CPLEX** | Enterprise solver |\n| **Gurobi** | Enterprise solver |\n\n### Python Example:\n```python\nfrom pulp import *\nprob = LpProblem(\"Maximize_Profit\", LpMaximize)\n```"
+        },
+        "explanation": "Solvers handle the mathematical complexity of finding optimal solutions."
+    }
+]

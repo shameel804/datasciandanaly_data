@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Python for DS 🐍",
+        "ques": "Why is **Python** popular for data science?",
+        "answer": {
+            "type": "text",
+            "content": "### Python Advantages:\n\n| Advantage | Reason |\n|-----------|--------|\n| Easy to learn | Readable syntax |\n| Rich ecosystem | pandas, sklearn |\n| Versatile | Web, ML, scritic |\n| Community | Large, active |"
+        },
+        "explanation": "**Python** is the go-to language for data science."
+    },
+    {
+        "title": "List Comprehension 📋",
+        "ques": "Write a **list comprehension** to square numbers.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers]\n# Result: [1, 4, 9, 16, 25]"
+        },
+        "explanation": "**List comprehensions** create lists concisely."
+    },
+    {
+        "title": "Functions 📦",
+        "ques": "Write a **function** with default arguments.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "def greet(name, greeting=\"Hello\"):\n    return f\"{greeting}, {name}!\"\n\nprint(greet(\"Alice\"))  # Hello, Alice!\nprint(greet(\"Bob\", \"Hi\"))  # Hi, Bob!"
+        },
+        "explanation": "**Default args** make functions flexible."
+    },
+    {
+        "title": "Dictionary Operations 🔑",
+        "ques": "How to work with **dictionaries**?",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "data = {'a': 1, 'b': 2}\n\n# Access\nprint(data['a'])  # 1\nprint(data.get('c', 0))  # 0 (default)\n\n# Iterate\nfor key, value in data.items():\n    print(key, value)"
+        },
+        "explanation": "**Dictionaries** store key-value pairs."
+    },
+    {
+        "title": "Exception Handling ⚠️",
+        "ques": "How to handle **exceptions**?",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero!\")\nfinally:\n    print(\"Done\")"
+        },
+        "explanation": "**Try-except** handles errors gracefully."
+    },
+    {
+        "title": "Lambda Functions ⚡",
+        "ques": "What are **lambda functions**?",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "# Regular function\ndef add(x, y): return x + y\n\n# Lambda equivalent\nadd_lambda = lambda x, y: x + y\n\n# Useful with map/filter\nnumbers = [1, 2, 3, 4]\ndoubled = list(map(lambda x: x * 2, numbers))"
+        },
+        "explanation": "**Lambdas** are anonymous, one-line functions."
+    }
+]

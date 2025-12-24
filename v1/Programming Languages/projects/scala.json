@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Scala for Spark 🔥",
+        "ques": "Why use **Scala** with Spark?",
+        "answer": {
+            "type": "text",
+            "content": "### Scala Advantages:\n\n| Advantage | Reason |\n|-----------|--------|\n| Native API | Spark written in Scala |\n| Performance | JVM optimization |\n| Functional | Immutable, composable |\n| Type safety | Compile-time checks |"
+        },
+        "explanation": "**Scala** is Spark's native language."
+    },
+    {
+        "title": "Case Classes 📦",
+        "ques": "What are **case classes**?",
+        "answer": {
+            "type": "code",
+            "lang": "scala",
+            "content": "case class Person(name: String, age: Int)\n\nval alice = Person(\"Alice\", 25)\nprintln(alice.name)  // Alice\n\n// Pattern matching\nalice match {\n  case Person(n, a) if a > 21 => s\"$n is adult\"\n}"
+        },
+        "explanation": "**Case classes** are immutable data containers."
+    },
+    {
+        "title": "Collections 📋",
+        "ques": "Use **Scala collections**.",
+        "answer": {
+            "type": "code",
+            "lang": "scala",
+            "content": "val numbers = List(1, 2, 3, 4, 5)\n\nval doubled = numbers.map(_ * 2)\nval evens = numbers.filter(_ % 2 == 0)\nval sum = numbers.reduce(_ + _)"
+        },
+        "explanation": "**Scala collections** use functional operations."
+    },
+    {
+        "title": "Spark DataFrame 📊",
+        "ques": "Create a **Spark DataFrame** in Scala.",
+        "answer": {
+            "type": "code",
+            "lang": "scala",
+            "content": "import spark.implicits._\n\nval df = Seq(\n  (\"Alice\", 25),\n  (\"Bob\", 30)\n).toDF(\"name\", \"age\")\n\ndf.filter($\"age\" > 25).show()"
+        },
+        "explanation": "**DataFrames** work naturally in Scala."
+    },
+    {
+        "title": "Pattern Matching 🔍",
+        "ques": "How does **pattern matching** work?",
+        "answer": {
+            "type": "code",
+            "lang": "scala",
+            "content": "def describe(x: Any): String = x match {\n  case i: Int if i > 0 => \"positive int\"\n  case s: String => s\"string: $s\"\n  case _ => \"something else\"\n}"
+        },
+        "explanation": "**Pattern matching** is powerful control flow."
+    },
+    {
+        "title": "Option Type 🔒",
+        "ques": "What is **Option**?",
+        "answer": {
+            "type": "text",
+            "content": "### Option Type:\n\n**Definition:** Handle null safely.\n\n| Value | Meaning |\n|-------|--------|\n| Some(x) | Value exists |\n| None | No value |\n\n### Safe Access:\n```scala\nval maybe: Option[Int] = Some(5)\nmaybe.getOrElse(0)\n```"
+        },
+        "explanation": "**Option** eliminates null pointer exceptions."
+    }
+]

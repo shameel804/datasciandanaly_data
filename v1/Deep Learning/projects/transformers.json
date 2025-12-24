@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Transformer Architecture 🔄",
+        "ques": "What are the key parts of a **Transformer**?",
+        "answer": {
+            "type": "text",
+            "content": "### Transformer Components:\n\n| Component | Purpose |\n|-----------|--------|\n| **Self-Attention** | Relate positions |\n| **Feed-Forward** | Process representations |\n| **Positional Encoding** | Add position info |\n| **Layer Norm** | Stabilize training |"
+        },
+        "explanation": "**Transformers** process all positions in parallel."
+    },
+    {
+        "title": "Self-Attention 👁️",
+        "ques": "How does **self-attention** work?",
+        "answer": {
+            "type": "text",
+            "content": "### Self-Attention:\n\n**Process:**\n1. Create Query, Key, Value\n2. Score: Q · K^T\n3. Softmax for weights\n4. Weighted sum of V\n\n### Benefit: Captures long-range dependencies"
+        },
+        "explanation": "Each position **attends** to all other positions."
+    },
+    {
+        "title": "BERT Applications 📋",
+        "ques": "What tasks can **BERT** solve?",
+        "answer": {
+            "type": "text",
+            "content": "### BERT Applications:\n\n| Task | Approach |\n|------|----------|\n| **Classification** | [CLS] token |\n| **NER** | Token-level output |\n| **QA** | Start/end positions |\n| **Similarity** | Sentence embeddings |"
+        },
+        "explanation": "**BERT** fine-tunes for many NLP tasks."
+    },
+    {
+        "title": "GPT Applications 💬",
+        "ques": "What is **GPT** best at?",
+        "answer": {
+            "type": "text",
+            "content": "### GPT Strengths:\n\n| Task | Capability |\n|------|------------|\n| **Text Generation** | Fluent, coherent text |\n| **Completion** | Continue prompts |\n| **Few-shot** | Learn from examples |\n| **Chat** | Conversational AI |"
+        },
+        "explanation": "**GPT** excels at generative tasks."
+    },
+    {
+        "title": "Fine-tuning Process 🎯",
+        "ques": "How do you **fine-tune** a transformer?",
+        "answer": {
+            "type": "text",
+            "content": "### Fine-tuning Steps:\n\n1. Load pre-trained model\n2. Add task-specific head\n3. Lower learning rate\n4. Train on task data\n5. Evaluate and iterate\n\n### Tips:\n- Small learning rate (2e-5)\n- Few epochs (2-4)"
+        },
+        "explanation": "**Fine-tuning** adapts pre-trained models to specific tasks."
+    },
+    {
+        "title": "Multi-Head Attention 🔗",
+        "ques": "What is **multi-head attention**?",
+        "answer": {
+            "type": "text",
+            "content": "### Multi-Head Attention:\n\n**Definition:** Multiple attention heads in parallel.\n\n### Benefits:\n- Different attention patterns\n- Capture diverse relationships\n- Combine for richer representation\n\n### Typical: 8-16 heads"
+        },
+        "explanation": "**Multiple heads** capture different types of relationships."
+    }
+]

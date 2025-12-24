@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Anomaly Detection Methods 🔍",
+        "ques": "What are the main **approaches** to anomaly detection?",
+        "answer": {
+            "type": "text",
+            "content": "### Anomaly Detection Approaches:\n\n| Approach | Method |\n|----------|--------|\n| **Statistical** | Z-score, IQR |\n| **Distance-based** | KNN, LOF |\n| **Density-based** | DBSCAN |\n| **ML-based** | Isolation Forest |"
+        },
+        "explanation": "Different **methods** suit different data types."
+    },
+    {
+        "title": "Isolation Forest 🌲",
+        "ques": "How does **Isolation Forest** work?",
+        "answer": {
+            "type": "text",
+            "content": "### Isolation Forest:\n\n**Principle:** Anomalies are easier to isolate.\n\n### Process:\n1. Build random trees\n2. Measure path length to isolate\n3. Short paths = anomalies\n\n### Advantage: Efficient for high dimensions"
+        },
+        "explanation": "**IF** isolates anomalies quickly with random cuts."
+    },
+    {
+        "title": "Real-time Detection ⚡",
+        "ques": "How is **real-time anomaly detection** implemented?",
+        "answer": {
+            "type": "text",
+            "content": "### Real-time Detection:\n\n| Component | Purpose |\n|-----------|--------|\n| **Stream processing** | Handle incoming data |\n| **Online model** | Update with new data |\n| **Alerting** | Notify on anomalies |\n\n### Tools: Kafka, Spark Streaming"
+        },
+        "explanation": "**Real-time** requires streaming architecture."
+    },
+    {
+        "title": "Root Cause Analysis 🔎",
+        "ques": "What is **root cause analysis** for anomalies?",
+        "answer": {
+            "type": "text",
+            "content": "### Root Cause Analysis:\n\n**Goal:** Identify why anomaly occurred.\n\n### Steps:\n1. Detect anomaly\n2. Identify contributing features\n3. Trace to source\n4. Validate hypothesis\n\n### Methods: SHAP, feature contribution"
+        },
+        "explanation": "**RCA** explains anomalies, not just detects them."
+    },
+    {
+        "title": "Threshold Setting 📏",
+        "ques": "How do you set **anomaly thresholds**?",
+        "answer": {
+            "type": "text",
+            "content": "### Threshold Methods:\n\n| Method | Approach |\n|--------|----------|\n| **Statistical** | Mean ± n·std |\n| **Percentile** | Top/bottom X% |\n| **Domain** | Business rules |\n| **Adaptive** | Update with data |"
+        },
+        "explanation": "**Thresholds** balance sensitivity and false positives."
+    },
+    {
+        "title": "Types of Anomalies 📊",
+        "ques": "What **types of anomalies** exist?",
+        "answer": {
+            "type": "text",
+            "content": "### Anomaly Types:\n\n| Type | Description |\n|------|-------------|\n| **Point** | Single unusual value |\n| **Contextual** | Unusual in context |\n| **Collective** | Group forms anomaly |\n\n### Example:\n- Point: Single spike\n- Contextual: Normal value, wrong time"
+        },
+        "explanation": "Different **anomaly types** need different approaches."
+    }
+]

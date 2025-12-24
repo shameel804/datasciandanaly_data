@@ -1,0 +1,58 @@
+[
+    {
+        "title": "ACID Properties ⚡",
+        "ques": "What are the **ACID properties**?",
+        "answer": {
+            "type": "text",
+            "content": "### ACID:\n\n| Property | Meaning |\n|----------|--------|\n| **Atomicity** | All or nothing |\n| **Consistency** | Valid state transitions |\n| **Isolation** | Transactions don't interfere |\n| **Durability** | Committed = permanent |"
+        },
+        "explanation": "**ACID** guarantees reliable transactions."
+    },
+    {
+        "title": "Transaction Control 🔄",
+        "ques": "What are **transaction control commands**?",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "BEGIN TRANSACTION;\n\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\n\nCOMMIT; -- or ROLLBACK;"
+        },
+        "explanation": "**COMMIT** saves; **ROLLBACK** undoes changes."
+    },
+    {
+        "title": "Isolation Levels 🔒",
+        "ques": "What are **isolation levels**?",
+        "answer": {
+            "type": "text",
+            "content": "### Isolation Levels:\n\n| Level | Prevents |\n|-------|----------|\n| Read Uncommitted | Nothing |\n| Read Committed | Dirty reads |\n| Repeatable Read | + Non-repeatable |\n| Serializable | + Phantom reads |"
+        },
+        "explanation": "Higher **isolation** = more protection, less concurrency."
+    },
+    {
+        "title": "Locking Mechanisms 🔐",
+        "ques": "What are **database locks**?",
+        "answer": {
+            "type": "text",
+            "content": "### Lock Types:\n\n| Lock | Allows |\n|------|--------|\n| **Shared (S)** | Multiple readers |\n| **Exclusive (X)** | Single writer |\n\n### Deadlock: Circular waiting"
+        },
+        "explanation": "**Locks** prevent conflicting access."
+    },
+    {
+        "title": "Savepoints 📍",
+        "ques": "What are **savepoints**?",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "BEGIN;\nINSERT INTO orders VALUES (1, 'Order A');\nSAVEPOINT sp1;\nINSERT INTO orders VALUES (2, 'Order B');\nROLLBACK TO sp1; -- Undo Order B only\nCOMMIT;"
+        },
+        "explanation": "**Savepoints** enable partial rollbacks."
+    },
+    {
+        "title": "Concurrency Issues 🔄",
+        "ques": "What **concurrency problems** can occur?",
+        "answer": {
+            "type": "text",
+            "content": "### Concurrency Issues:\n\n| Issue | Description |\n|-------|-------------|\n| Dirty read | Read uncommitted data |\n| Non-repeatable | Different reads in same tx |\n| Phantom | New rows appear |\n| Lost update | Overwrite concurrent change |"
+        },
+        "explanation": "**Isolation levels** address these issues."
+    }
+]

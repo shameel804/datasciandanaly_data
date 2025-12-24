@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Creating DataFrames 📊",
+        "ques": "Create a **DataFrame**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import pandas as pd\n\ndf = pd.DataFrame({\n    'name': ['Alice', 'Bob'],\n    'age': [25, 30],\n    'city': ['NYC', 'LA']\n})\n\nprint(df.head())"
+        },
+        "explanation": "**DataFrames** are 2D labeled data structures."
+    },
+    {
+        "title": "Selection Methods 🔍",
+        "ques": "Select data from **DataFrame**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "# Column selection\ndf['name']\ndf[['name', 'age']]\n\n# Row selection\ndf.loc[0]  # By label\ndf.iloc[0]  # By position\n\n# Filtering\ndf[df['age'] > 25]"
+        },
+        "explanation": "**loc/iloc** are primary selection methods."
+    },
+    {
+        "title": "GroupBy Operations 📋",
+        "ques": "Use **groupby** for aggregation.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "df.groupby('city')['sales'].agg(['mean', 'sum', 'count'])\n\n# Multiple columns\ndf.groupby(['city', 'product']).agg({\n    'sales': 'sum',\n    'quantity': 'mean'\n})"
+        },
+        "explanation": "**GroupBy** enables split-apply-combine operations."
+    },
+    {
+        "title": "Handling Missing Data 🔧",
+        "ques": "Handle **missing values**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "# Check nulls\ndf.isnull().sum()\n\n# Drop nulls\ndf.dropna()\n\n# Fill nulls\ndf.fillna(0)\ndf['col'].fillna(df['col'].mean())"
+        },
+        "explanation": "**Handle** missing data appropriately."
+    },
+    {
+        "title": "Merge & Join 🔗",
+        "ques": "**Merge** two DataFrames.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "pd.merge(df1, df2, on='id', how='left')\n\n# Different column names\npd.merge(df1, df2, left_on='id', right_on='user_id')\n\n# Multiple keys\npd.merge(df1, df2, on=['id', 'date'])"
+        },
+        "explanation": "**Merge** combines DataFrames on keys."
+    },
+    {
+        "title": "Pivot Tables 📐",
+        "ques": "Create a **pivot table**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "pd.pivot_table(\n    df,\n    values='sales',\n    index='region',\n    columns='product',\n    aggfunc='sum'\n)"
+        },
+        "explanation": "**Pivot tables** reshape data for analysis."
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Null and Alternative Hypotheses 📋",
+        "ques": "For a study testing if a new drug lowers blood pressure, write the **null (H₀)** and **alternative (H₁)** hypotheses.",
+        "answer": {
+            "type": "text",
+            "content": "### Hypotheses:\n\n**H₀ (Null):** The new drug has no effect on blood pressure.\n```\nH₀: μ_drug = μ_placebo (or μ_difference = 0)\n```\n\n**H₁ (Alternative):** The new drug lowers blood pressure.\n```\nH₁: μ_drug < μ_placebo (one-tailed)\n```\n\n### Key Points:\n- H₀ represents \"no effect\" or status quo\n- H₁ represents what we're trying to prove\n- We reject H₀ to support H₁"
+        },
+        "explanation": "Proper **hypothesis formulation** is the first step in any statistical test."
+    },
+    {
+        "title": "Understanding p-values 🎯",
+        "ques": "What does a **p-value of 0.03** mean in a hypothesis test with α = 0.05?",
+        "answer": {
+            "type": "text",
+            "content": "### Interpretation:\n\n**p-value = 0.03** means:\n- 3% probability of observing this result (or more extreme) if H₀ is true\n\n### Decision:\n```\np-value (0.03) < α (0.05) → Reject H₀\n```\n\n### Conclusion:\nResult is **statistically significant** at the 5% level.\n\n### Common Thresholds:\n| p-value | Interpretation |\n|---------|---------------|\n| p < 0.01 | Very strong evidence against H₀ |\n| p < 0.05 | Strong evidence against H₀ |\n| p < 0.10 | Weak evidence against H₀ |\n| p ≥ 0.10 | Insufficient evidence |"
+        },
+        "explanation": "**p-value** measures the strength of evidence against the null hypothesis."
+    },
+    {
+        "title": "Type I and Type II Errors ⚠️",
+        "ques": "Define **Type I** and **Type II** errors and give a real-world example of each.",
+        "answer": {
+            "type": "text",
+            "content": "### Error Types:\n\n| Error | Definition | Example |\n|-------|------------|--------|\n| **Type I (α)** | Reject H₀ when true | Convicting innocent person |\n| **Type II (β)** | Fail to reject H₀ when false | Releasing guilty person |\n\n### Medical Example:\n- **Type I:** Diagnosing disease when patient is healthy (false positive)\n- **Type II:** Missing disease when patient is sick (false negative)\n\n### Trade-off:\n```\nDecrease Type I → Increase Type II\n(and vice versa)\n```"
+        },
+        "explanation": "Understanding **error types** helps design appropriate tests for the context."
+    },
+    {
+        "title": "Test Selection Guide 🔍",
+        "ques": "Which test would you use: **t-test**, **chi-square**, or **ANOVA** for comparing means of 3 groups?",
+        "answer": {
+            "type": "text",
+            "content": "### Answer: **ANOVA**\n\n### Test Selection Guide:\n\n| Scenario | Test |\n|----------|------|\n| Compare 2 means | t-test |\n| Compare 3+ means | **ANOVA** |\n| Compare proportions | chi-square |\n| Association between categoricals | chi-square |\n\n### Why ANOVA?\n- Controls Type I error rate\n- t-tests for all pairs would inflate error rate\n- ANOVA tests if ANY group differs\n- Follow up with post-hoc tests (Tukey, Bonferroni)"
+        },
+        "explanation": "**Test selection** depends on data type, number of groups, and research question."
+    },
+    {
+        "title": "One-tailed vs Two-tailed Tests 📐",
+        "ques": "When should you use a **one-tailed** test vs a **two-tailed** test?",
+        "answer": {
+            "type": "text",
+            "content": "### Guidelines:\n\n| Test Type | When to Use | Hypothesis |\n|-----------|-------------|------------|\n| **One-tailed** | Directional hypothesis | H₁: μ > μ₀ or H₁: μ < μ₀ |\n| **Two-tailed** | Non-directional hypothesis | H₁: μ ≠ μ₀ |\n\n### Examples:\n- **One-tailed:** \"New treatment is BETTER than placebo\"\n- **Two-tailed:** \"New treatment is DIFFERENT from placebo\"\n\n### Note:\n- Two-tailed is more conservative\n- One-tailed has more power if direction is correct"
+        },
+        "explanation": "Choose **based on research question**, not based on desired results."
+    },
+    {
+        "title": "Statistical Power 💪",
+        "ques": "What is **statistical power** and what factors affect it?",
+        "answer": {
+            "type": "text",
+            "content": "### Statistical Power:\n\n**Definition:** Probability of correctly rejecting H₀ when it's false.\n```\nPower = 1 - β (where β = Type II error rate)\n```\n\n### Factors Affecting Power:\n\n| Factor | Effect on Power |\n|--------|----------------|\n| Sample size ↑ | Power ↑ |\n| Effect size ↑ | Power ↑ |\n| Significance level (α) ↑ | Power ↑ |\n| Variability ↓ | Power ↑ |\n\n### Typical Target: Power ≥ 0.80 (80%)"
+        },
+        "explanation": "**Power analysis** helps determine sample size needed to detect an effect."
+    },
+    {
+        "title": "Effect Size Interpretation 📏",
+        "ques": "What is **Cohen's d** and how do you interpret d = 0.5?",
+        "answer": {
+            "type": "text",
+            "content": "### Cohen's d:\n\n**Formula:**\n```\nd = (Mean₁ - Mean₂) / Pooled Standard Deviation\n```\n\n### d = 0.5 Interpretation:\n**Medium effect size** - Difference of 0.5 standard deviations between groups.\n\n### Cohen's Guidelines:\n| d value | Effect Size |\n|---------|-------------|\n| 0.2 | Small |\n| 0.5 | Medium |\n| 0.8 | Large |\n\n### Why It Matters:\n- p-value tells IF there's a difference\n- Effect size tells HOW BIG the difference is"
+        },
+        "explanation": "**Effect size** complements p-values by quantifying practical significance."
+    },
+    {
+        "title": "Multiple Testing Correction 🔧",
+        "ques": "Why is **Bonferroni correction** used and how does it work?",
+        "answer": {
+            "type": "text",
+            "content": "### Problem: Multiple Comparisons\n\nWith many tests, Type I error rate inflates:\n```\nP(at least one false positive) = 1 - (1-α)ⁿ\n```\n\n### Bonferroni Correction:\n```\nAdjusted α = α / n\n```\n\n### Example:\n- 10 tests, original α = 0.05\n- Adjusted α = 0.05/10 = 0.005\n\n### Trade-off:\n| Aspect | Effect |\n|--------|--------|\n| Type I error | Controlled ✓ |\n| Power | Reduced |\n| Conservative | Yes |"
+        },
+        "explanation": "**Corrections** prevent false discoveries when conducting multiple tests."
+    }
+]

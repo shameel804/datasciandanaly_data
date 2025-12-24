@@ -1,0 +1,57 @@
+[
+    {
+        "title": "NoSQL Types 📦",
+        "ques": "What are the **types of NoSQL databases**?",
+        "answer": {
+            "type": "text",
+            "content": "### NoSQL Database Types:\n\n| Type | Example | Use Case |\n|------|---------|----------|\n| Document | MongoDB | Flexible schemas |\n| Key-Value | Redis | Caching |\n| Column | Cassandra | Time series |\n| Graph | Neo4j | Relationships |"
+        },
+        "explanation": "**NoSQL** offers different models for different needs."
+    },
+    {
+        "title": "Document Databases 📄",
+        "ques": "What is a **document database**?",
+        "answer": {
+            "type": "text",
+            "content": "### Document DB:\n\n**Storage:** JSON-like documents\n\n### Features:\n- Flexible schema\n- Nested data\n- Query on any field\n\n### Example: MongoDB, CouchDB"
+        },
+        "explanation": "**Documents** store hierarchical data naturally."
+    },
+    {
+        "title": "Key-Value Stores 🔑",
+        "ques": "When to use **key-value stores**?",
+        "answer": {
+            "type": "text",
+            "content": "### Key-Value Use Cases:\n\n| Use Case | Why |\n|----------|-----|\n| Caching | Fast lookups |\n| Sessions | Simple data |\n| Configuration | Key-based access |\n\n### Examples: Redis, DynamoDB"
+        },
+        "explanation": "**Key-value** excels at simple, fast access."
+    },
+    {
+        "title": "CAP Theorem ⚖️",
+        "ques": "What is the **CAP theorem**?",
+        "answer": {
+            "type": "text",
+            "content": "### CAP Theorem:\n\nDistributed systems can only guarantee 2 of 3:\n\n| Property | Meaning |\n|----------|--------|\n| **Consistency** | Same data everywhere |\n| **Availability** | Always responds |\n| **Partition tolerance** | Handles network issues |"
+        },
+        "explanation": "**Trade-offs** are inherent in distributed systems."
+    },
+    {
+        "title": "MongoDB Basics 🍃",
+        "ques": "Show a **MongoDB find query**.",
+        "answer": {
+            "type": "code",
+            "lang": "javascript",
+            "content": "db.users.find({\n  age: { $gt: 25 },\n  status: \"active\"\n});"
+        },
+        "explanation": "**MongoDB** uses JSON-like query syntax."
+    },
+    {
+        "title": "SQL vs NoSQL 🔄",
+        "ques": "When to choose **SQL vs NoSQL**?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Factor | SQL | NoSQL |\n|--------|-----|-------|\n| Schema | Fixed | Flexible |\n| Scaling | Vertical | Horizontal |\n| ACID | Full | Varies |\n| Queries | Complex joins | Simple |"
+        },
+        "explanation": "Choose based on **data model and scale needs**."
+    }
+]

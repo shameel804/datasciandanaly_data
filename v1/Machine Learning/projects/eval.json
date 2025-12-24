@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Cross-Validation Basics 🔄",
+        "ques": "What is **cross-validation**?",
+        "answer": {
+            "type": "text",
+            "content": "### Cross-Validation:\n\n**Definition:** Evaluate model on multiple data splits.\n\n### K-Fold CV:\n1. Split data into k folds\n2. Train on k-1, test on 1\n3. Repeat k times\n4. Average results\n\n### Benefit:\nMore reliable performance estimate."
+        },
+        "explanation": "**CV** reduces variance in model evaluation."
+    },
+    {
+        "title": "Hyperparameter Tuning 🎛️",
+        "ques": "What is **hyperparameter tuning**?",
+        "answer": {
+            "type": "text",
+            "content": "### Hyperparameter Tuning:\n\n**Definition:** Finding best model settings.\n\n### Methods:\n| Method | Approach |\n|--------|----------|\n| **Grid Search** | Try all combinations |\n| **Random Search** | Random combinations |\n| **Bayesian** | Smart optimization |\n\n### Examples:\n- Learning rate\n- Number of trees\n- Max depth"
+        },
+        "explanation": "**Tuning** optimizes model performance."
+    },
+    {
+        "title": "Overfitting Detection 📈",
+        "ques": "How do you detect **overfitting**?",
+        "answer": {
+            "type": "text",
+            "content": "### Overfitting Signs:\n\n| Symptom | Meaning |\n|---------|--------|\n| High training accuracy | Model memorized data |\n| Low test accuracy | Poor generalization |\n| Large gap between them | Overfitting confirmed |\n\n### Solutions:\n- More data\n- Regularization\n- Simpler model\n- Early stopping"
+        },
+        "explanation": "**Overfitting** means model doesn't generalize."
+    },
+    {
+        "title": "Underfitting Recognition 📉",
+        "ques": "What is **underfitting**?",
+        "answer": {
+            "type": "text",
+            "content": "### Underfitting:\n\n**Definition:** Model too simple to capture patterns.\n\n### Signs:\n| Symptom | Meaning |\n|---------|--------|\n| Low training accuracy | Not learning |\n| Low test accuracy | Poor performance |\n| Both similarly low | Underfitting |\n\n### Solutions:\n- More complex model\n- More features\n- Less regularization"
+        },
+        "explanation": "**Underfitting** means model is too simple."
+    },
+    {
+        "title": "Regression Metrics 📊",
+        "ques": "What metrics evaluate **regression** models?",
+        "answer": {
+            "type": "text",
+            "content": "### Regression Metrics:\n\n| Metric | Measures |\n|--------|----------|\n| **MAE** | Average absolute error |\n| **MSE** | Average squared error |\n| **RMSE** | Root of MSE (same units) |\n| **R²** | Variance explained |\n\n### Choose:\n- MAE: Interpretable\n- RMSE: Penalizes large errors\n- R²: Relative measure"
+        },
+        "explanation": "Different **metrics** highlight different aspects."
+    },
+    {
+        "title": "Learning Curves 📈",
+        "ques": "What do **learning curves** show?",
+        "answer": {
+            "type": "text",
+            "content": "### Learning Curves:\n\n**Definition:** Plot of performance vs training size.\n\n### Interpretation:\n| Pattern | Diagnosis |\n|---------|----------|\n| Both high, gap | Overfitting |\n| Both low | Underfitting |\n| Converging | Good fit |\n\n### Uses:\n- Diagnose bias/variance\n- Determine if more data helps"
+        },
+        "explanation": "**Learning curves** diagnose model behavior."
+    }
+]

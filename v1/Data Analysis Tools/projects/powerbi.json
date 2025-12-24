@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Data Modeling in Power BI 📊",
+        "ques": "What is **data modeling** in Power BI?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Modeling:\n\n**Definition:** Defining relationships between tables for analysis.\n\n### Key Components:\n| Component | Purpose |\n|-----------|--------|\n| **Tables** | Store data |\n| **Relationships** | Connect tables |\n| **Measures** | Calculated values |\n| **Hierarchies** | Drill paths |\n\n### Star Schema:\nFact table at center, dimensions around it."
+        },
+        "explanation": "Good **data model** is foundation of Power BI performance."
+    },
+    {
+        "title": "DAX Formula Basics 📝",
+        "ques": "Write a **DAX formula** to calculate year-over-year growth.",
+        "answer": {
+            "type": "text",
+            "content": "### YoY Growth DAX:\n\n```dax\nYoY Growth = \nVAR CurrentYear = SUM(Sales[Amount])\nVAR PreviousYear = CALCULATE(\n    SUM(Sales[Amount]),\n    SAMEPERIODLASTYEAR(Date[Date])\n)\nRETURN\n    DIVIDE(CurrentYear - PreviousYear, PreviousYear)\n```\n\n### DAX Basics:\n- `SUM`, `AVERAGE` - Aggregations\n- `CALCULATE` - Modify context\n- `DIVIDE` - Safe division"
+        },
+        "explanation": "**DAX** is the formula language for calculations in Power BI."
+    },
+    {
+        "title": "Power Query M Language 🔧",
+        "ques": "What is **M language** in Power BI?",
+        "answer": {
+            "type": "text",
+            "content": "### M Language:\n\n**Definition:** Functional language for Power Query transformations.\n\n### Common Operations:\n```\nTable.SelectColumns(table, {\"Col1\", \"Col2\"})\nTable.SelectRows(table, each [Value] > 100)\nTable.AddColumn(table, \"New\", each [A] + [B])\n```\n\n### When to Use:\n- Complex transformations\n- Custom data sources\n- Dynamic queries"
+        },
+        "explanation": "**M** provides programmatic control over data transformations."
+    },
+    {
+        "title": "Report Development 📋",
+        "ques": "What are **best practices** for Power BI reports?",
+        "answer": {
+            "type": "text",
+            "content": "### Report Best Practices:\n\n| Practice | Reason |\n|----------|--------|\n| **Limit visuals per page** | Reduce clutter (5-7) |\n| **Use slicers wisely** | Enable filtering |\n| **Consistent formatting** | Professional appearance |\n| **Tooltips** | Additional context |\n| **Mobile layout** | Cross-device access |"
+        },
+        "explanation": "Following **best practices** improves report usability."
+    },
+    {
+        "title": "Service Administration 🔐",
+        "ques": "What is a **Power BI workspace**?",
+        "answer": {
+            "type": "text",
+            "content": "### Workspaces:\n\n**Definition:** Containers for dashboards, reports, datasets.\n\n### Types:\n| Type | Use |\n|------|-----|\n| **My Workspace** | Personal content |\n| **App Workspace** | Team collaboration |\n\n### Roles:\n- Admin, Member, Contributor, Viewer\n\n### Apps:\nPackage workspace content for distribution."
+        },
+        "explanation": "**Workspaces** organize and control access to Power BI content."
+    },
+    {
+        "title": "Relationships and Cardinality 🔗",
+        "ques": "What is **cardinality** in Power BI relationships?",
+        "answer": {
+            "type": "text",
+            "content": "### Cardinality Types:\n\n| Type | Description |\n|------|-------------|\n| **1:1** | One-to-One |\n| **1:M** | One-to-Many (most common) |\n| **M:M** | Many-to-Many |\n\n### Best Practice:\n- Prefer 1:M relationships\n- Avoid bi-directional if possible\n- Use bridge tables for M:M"
+        },
+        "explanation": "**Cardinality** defines how tables relate to each other."
+    }
+]

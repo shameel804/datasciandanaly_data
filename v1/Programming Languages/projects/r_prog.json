@@ -1,0 +1,60 @@
+[
+    {
+        "title": "R for Statistics 📊",
+        "ques": "Why use **R** for statistics?",
+        "answer": {
+            "type": "text",
+            "content": "### R Advantages:\n\n| Advantage | Reason |\n|-----------|--------|\n| Statistical focus | Built for stats |\n| Visualization | ggplot2 |\n| Packages | CRAN ecosystem |\n| Academia | Research standard |"
+        },
+        "explanation": "**R** excels at statistical analysis."
+    },
+    {
+        "title": "Data Frames 📋",
+        "ques": "Create a **data frame** in R.",
+        "answer": {
+            "type": "code",
+            "lang": "r",
+            "content": "df <- data.frame(\n  name = c(\"Alice\", \"Bob\"),\n  age = c(25, 30),\n  score = c(85, 90)\n)\nhead(df)"
+        },
+        "explanation": "**Data frames** are R's primary data structure."
+    },
+    {
+        "title": "dplyr Verbs 🔧",
+        "ques": "What are **dplyr verbs**?",
+        "answer": {
+            "type": "text",
+            "content": "### dplyr Verbs:\n\n| Verb | Action |\n|------|--------|\n| select() | Choose columns |\n| filter() | Choose rows |\n| mutate() | Create columns |\n| summarize() | Aggregate |\n| group_by() | Group data |"
+        },
+        "explanation": "**dplyr** provides intuitive data manipulation."
+    },
+    {
+        "title": "ggplot2 Basics 📈",
+        "ques": "Create a **scatter plot** with ggplot2.",
+        "answer": {
+            "type": "code",
+            "lang": "r",
+            "content": "library(ggplot2)\n\nggplot(data, aes(x = age, y = income)) +\n  geom_point() +\n  ggtitle(\"Age vs Income\")"
+        },
+        "explanation": "**ggplot2** uses grammar of graphics."
+    },
+    {
+        "title": "Pipe Operator 🔗",
+        "ques": "What is the **pipe operator**?",
+        "answer": {
+            "type": "code",
+            "lang": "r",
+            "content": "# Without pipe\nresult <- filter(select(df, name, age), age > 25)\n\n# With pipe (%>%)\nresult <- df %>%\n  select(name, age) %>%\n  filter(age > 25)"
+        },
+        "explanation": "**Pipes** chain operations readably."
+    },
+    {
+        "title": "Statistical Tests 📐",
+        "ques": "Run a **t-test** in R.",
+        "answer": {
+            "type": "code",
+            "lang": "r",
+            "content": "# Two-sample t-test\nresult <- t.test(group1, group2)\n\nprint(result$p.value)\nprint(result$conf.int)"
+        },
+        "explanation": "**R** has built-in statistical tests."
+    }
+]

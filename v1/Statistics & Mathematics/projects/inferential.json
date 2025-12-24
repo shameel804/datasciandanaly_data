@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Sampling Methods Overview 🎯",
+        "ques": "Name **four types of sampling methods** and when each is most appropriate.",
+        "answer": {
+            "type": "text",
+            "content": "### Sampling Methods:\n\n| Method | Description | Best For |\n|--------|-------------|----------|\n| **Simple Random** | Every member has equal chance | Homogeneous populations |\n| **Stratified** | Divide into groups, sample from each | Ensuring subgroup representation |\n| **Cluster** | Select groups, sample all within | Geographically dispersed populations |\n| **Systematic** | Select every nth item | Ordered lists, easy implementation |"
+        },
+        "explanation": "Choosing the **right sampling method** ensures representative and unbiased samples."
+    },
+    {
+        "title": "Confidence Interval Calculation 📊",
+        "ques": "A sample of 100 has mean = 50, std dev = 10. Calculate the **95% confidence interval** for the population mean.",
+        "answer": {
+            "type": "text",
+            "content": "### Solution:\n\n**Formula:** CI = x̄ ± z·(σ/√n)\n\n**Values:**\n- x̄ = 50, σ = 10, n = 100\n- z(95%) = 1.96\n\n**Calculation:**\n```\nMargin of Error = 1.96 × (10/√100) = 1.96 × 1 = 1.96\nCI = 50 ± 1.96 = (48.04, 51.96)\n```\n\n### Interpretation:\nWe are **95% confident** the population mean is between **48.04 and 51.96**."
+        },
+        "explanation": "**Confidence intervals** express uncertainty in our estimates of population parameters."
+    },
+    {
+        "title": "Central Limit Theorem 📈",
+        "ques": "Explain the **Central Limit Theorem** and why it's important.",
+        "answer": {
+            "type": "text",
+            "content": "### Central Limit Theorem:\n\n**Statement:** The distribution of sample means approaches a normal distribution as sample size increases, regardless of the population distribution.\n\n**Key Points:**\n- Works for n ≥ 30 (rule of thumb)\n- Sample mean distribution: N(μ, σ/√n)\n\n### Why It Matters:\n| Importance | Application |\n|------------|-------------|\n| Enables inference | Can use normal distribution methods |\n| Works for any distribution | Applies to skewed, uniform, etc. |\n| Foundation for tests | t-tests, z-tests rely on CLT |"
+        },
+        "explanation": "**CLT** is the foundation of statistical inference, enabling normal-based calculations."
+    },
+    {
+        "title": "Estimation Types 🔢",
+        "ques": "What is the difference between **point estimate** and **interval estimate**?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | Point Estimate | Interval Estimate |\n|--------|----------------|-------------------|\n| **Definition** | Single value | Range of values |\n| **Example** | Mean = 50 | Mean: 48-52 |\n| **Uncertainty** | Not shown | Explicitly shown |\n| **Use** | Quick reference | Formal reporting |\n\n### Example:\n- **Point:** Average salary = $50,000\n- **Interval:** Average salary: $48,000-$52,000 (95% CI)"
+        },
+        "explanation": "**Interval estimates** provide more information by quantifying uncertainty."
+    },
+    {
+        "title": "Sample Size Impact 📏",
+        "ques": "How does **sample size** affect the width of a confidence interval?",
+        "answer": {
+            "type": "text",
+            "content": "### Relationship:\n\n**As n increases → CI width decreases**\n\n```\nWidth = z × (σ/√n)\n```\n\n### Example:\n| Sample Size | Width Factor |\n|-------------|-------------|\n| n = 25 | σ/5 |\n| n = 100 | σ/10 |\n| n = 400 | σ/20 |\n\n**Quadrupling sample size → Halves CI width**\n\n### Trade-off:\n- Larger n = More precision\n- Larger n = More cost/time"
+        },
+        "explanation": "Sample size affects **precision**. But doubling precision requires 4x the sample."
+    },
+    {
+        "title": "Standard Error Concept 📐",
+        "ques": "What is **Standard Error** and how is it calculated?",
+        "answer": {
+            "type": "text",
+            "content": "### Standard Error:\n\n**Definition:** The standard deviation of the sampling distribution.\n\n**Formula:**\n```\nSE = σ / √n\n```\nOr when σ unknown:\n```\nSE = s / √n\n```\n\n### Example:\n- Population σ = 20, sample n = 100\n- SE = 20/√100 = 2\n\n### Interpretation:\nSample means typically deviate by **2 units** from true population mean."
+        },
+        "explanation": "**SE** measures the variability of sample statistics, not individual observations."
+    },
+    {
+        "title": "Bias vs Variance ⚖️",
+        "ques": "Explain **bias** and **variance** in the context of estimation.",
+        "answer": {
+            "type": "text",
+            "content": "### Definitions:\n\n| Concept | Description |\n|---------|-------------|\n| **Bias** | Systematic error (consistently off-target) |\n| **Variance** | Random error (spread around target) |\n\n### Visual:\n```\nLow Bias,     Low Bias,     High Bias,    High Bias,\nLow Var       High Var      Low Var       High Var\n   ●             ●●           ●               ●●\n   ●○            ○             ●○              ○\n   ●            ●○            ●              ●○\n (ideal)     (scattered)   (consistent   (poor)\n                            but wrong)\n```\n\n**Goal:** Minimize both bias and variance."
+        },
+        "explanation": "**Unbiased estimator** with **low variance** is ideal for accurate inference."
+    },
+    {
+        "title": "Margin of Error 📍",
+        "ques": "A poll reports 55% support with margin of error ±3%. What does this mean?",
+        "answer": {
+            "type": "text",
+            "content": "### Interpretation:\n\n**Statement:** True population support is likely between **52% and 58%**.\n\n### Components:\n| Component | Value |\n|-----------|-------|\n| Point estimate | 55% |\n| Margin of error | ±3% |\n| Confidence interval | 52% - 58% |\n\n### Formula:\n```\nMoE = z × √(p(1-p)/n)\n```\n\n**For 95% CI:** z = 1.96\n\n### Key Insight:\nIf true value is 50%, result includes it in CI (52-58 doesn't), so evidence of majority support."
+        },
+        "explanation": "**Margin of error** quantifies polling uncertainty and should always be considered."
+    }
+]

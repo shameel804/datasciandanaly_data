@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Data Cleaning Basics 🧹",
+        "ques": "What are **common data quality issues** to address?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Quality Issues:\n\n| Issue | Solution |\n|-------|----------|\n| **Missing values** | Impute or drop |\n| **Duplicates** | Remove duplicates |\n| **Outliers** | Cap, transform, or remove |\n| **Inconsistencies** | Standardize formats |\n| **Incorrect types** | Convert data types |"
+        },
+        "explanation": "**Clean data** is essential for model quality."
+    },
+    {
+        "title": "Feature Scaling 📏",
+        "ques": "What is **feature scaling** and why is it important?",
+        "answer": {
+            "type": "text",
+            "content": "### Feature Scaling:\n\n**Definition:** Transforming features to similar scales.\n\n### Methods:\n| Method | Formula | Range |\n|--------|---------|-------|\n| **Normalization** | (x-min)/(max-min) | 0 to 1 |\n| **Standardization** | (x-μ)/σ | ~-3 to 3 |\n\n### When Needed:\n- Distance-based algorithms (KNN, SVM)\n- Gradient descent optimization"
+        },
+        "explanation": "**Scaling** prevents features with larger values from dominating."
+    },
+    {
+        "title": "Encoding Categories 🏷️",
+        "ques": "How do you encode **categorical variables**?",
+        "answer": {
+            "type": "text",
+            "content": "### Encoding Methods:\n\n| Method | Use Case | Example |\n|--------|----------|--------|\n| **One-Hot** | Nominal data | Red→[1,0,0] |\n| **Label** | Ordinal data | Low→0, Med→1 |\n| **Target** | High cardinality | Mean of target |\n\n### Code:\n```python\npd.get_dummies(df['color'])  # One-hot\n```"
+        },
+        "explanation": "ML algorithms need **numerical** inputs for categories."
+    },
+    {
+        "title": "Train-Test Split ✂️",
+        "ques": "What is a **train-test split**?",
+        "answer": {
+            "type": "text",
+            "content": "### Train-Test Split:\n\n**Definition:** Dividing data into training and testing sets.\n\n### Common Splits:\n| Train | Test | Use |\n|-------|------|-----|\n| 80% | 20% | Typical |\n| 70% | 30% | Small data |\n| 90% | 10% | Large data |\n\n```python\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n```"
+        },
+        "explanation": "**Holdout** test set evaluates model on unseen data."
+    },
+    {
+        "title": "Handling Missing Values 🔧",
+        "ques": "What are **strategies for handling missing values**?",
+        "answer": {
+            "type": "text",
+            "content": "### Missing Value Strategies:\n\n| Strategy | When to Use |\n|----------|-------------|\n| **Drop rows** | Few missing, random |\n| **Drop columns** | Many missing (>50%) |\n| **Mean/Median** | Numerical data |\n| **Mode** | Categorical data |\n| **Model-based** | Complex patterns |\n\n```python\ndf.fillna(df.mean())  # Mean imputation\n```"
+        },
+        "explanation": "Choose **strategy** based on missing pattern and impact."
+    },
+    {
+        "title": "Data Leakage Prevention 🚫",
+        "ques": "What is **data leakage** in ML?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Leakage:\n\n**Definition:** Information from outside training set used during training.\n\n### Common Causes:\n| Cause | Prevention |\n|-------|------------|\n| Target leakage | Remove future info |\n| Train-test leakage | Split before preprocessing |\n| Feature leakage | Check feature creation |\n\n### Impact: Model performs unrealistically well"
+        },
+        "explanation": "**Leakage** causes overly optimistic results that don't generalize."
+    }
+]

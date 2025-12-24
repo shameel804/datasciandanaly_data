@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Tensors 📦",
+        "ques": "Work with **PyTorch tensors**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import torch\n\n# Create tensors\nx = torch.tensor([1, 2, 3])\nrand = torch.randn(3, 4)\nzeros = torch.zeros(2, 3)\n\n# GPU\nif torch.cuda.is_available():\n    x = x.cuda()"
+        },
+        "explanation": "**Tensors** are PyTorch's core data structure."
+    },
+    {
+        "title": "Neural Networks 🧠",
+        "ques": "Define a **neural network**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import torch.nn as nn\n\nclass Net(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.fc1 = nn.Linear(10, 64)\n        self.fc2 = nn.Linear(64, 1)\n    \n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        return torch.sigmoid(self.fc2(x))"
+        },
+        "explanation": "**nn.Module** is the base class for networks."
+    },
+    {
+        "title": "Training Loop 🔄",
+        "ques": "Write a **training loop**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "optimizer = torch.optim.Adam(model.parameters())\ncriterion = nn.BCELoss()\n\nfor epoch in range(10):\n    optimizer.zero_grad()\n    output = model(X)\n    loss = criterion(output, y)\n    loss.backward()\n    optimizer.step()"
+        },
+        "explanation": "**Manual loop** gives full control."
+    },
+    {
+        "title": "Autograd ⚡",
+        "ques": "What is **autograd**?",
+        "answer": {
+            "type": "text",
+            "content": "### Autograd:\n\n**Definition:** Automatic differentiation engine.\n\n```python\nx = torch.tensor([2.0], requires_grad=True)\ny = x**2\ny.backward()\nprint(x.grad)  # 4.0\n```"
+        },
+        "explanation": "**Autograd** computes gradients automatically."
+    },
+    {
+        "title": "DataLoader 📊",
+        "ques": "Use **DataLoader**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "from torch.utils.data import DataLoader, TensorDataset\n\ndataset = TensorDataset(X_tensor, y_tensor)\nloader = DataLoader(dataset, batch_size=32, shuffle=True)\n\nfor batch_X, batch_y in loader:\n    # Process batch\n    pass"
+        },
+        "explanation": "**DataLoader** handles batching and shuffling."
+    },
+    {
+        "title": "Transfer Learning 🔄",
+        "ques": "Use **pre-trained models**.",
+        "answer": {
+            "type": "code",
+            "lang": "python",
+            "content": "import torchvision.models as models\n\n# Load pre-trained ResNet\nresnet = models.resnet18(pretrained=True)\n\n# Freeze layers\nfor param in resnet.parameters():\n    param.requires_grad = False\n\n# Modify final layer\nresnet.fc = nn.Linear(512, num_classes)"
+        },
+        "explanation": "**Pre-trained** models accelerate development."
+    }
+]

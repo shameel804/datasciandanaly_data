@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Linear Regression Basics 📈",
+        "ques": "Write the equation for a **simple linear regression** model and explain each component.",
+        "answer": {
+            "type": "text",
+            "content": "### Linear Regression Equation:\n\n```\ny = β₀ + β₁x + ε\n```\n\n### Components:\n| Symbol | Name | Meaning |\n|--------|------|--------|\n| y | Dependent variable | What we're predicting |\n| x | Independent variable | Predictor |\n| β₀ | Intercept | y value when x = 0 |\n| β₁ | Slope | Change in y per unit change in x |\n| ε | Error term | Random variation |"
+        },
+        "explanation": "**Linear regression** models the linear relationship between variables."
+    },
+    {
+        "title": "Logistic Regression Purpose 🔀",
+        "ques": "When would you use **logistic regression** instead of linear regression?",
+        "answer": {
+            "type": "text",
+            "content": "### Use Logistic When:\n\n**Target variable is binary/categorical:**\n- Yes/No outcomes\n- Pass/Fail\n- Fraud/Not Fraud\n\n### Comparison:\n| Aspect | Linear | Logistic |\n|--------|--------|----------|\n| Output | Continuous | Probability (0-1) |\n| Example | Price | Churn (Y/N) |\n| Function | y = mx + b | Sigmoid function |\n\n### Logistic Equation:\n```\nP(y=1) = 1 / (1 + e^(-z))\nwhere z = β₀ + β₁x\n```"
+        },
+        "explanation": "**Logistic regression** outputs probabilities for classification problems."
+    },
+    {
+        "title": "Model Assumptions 📋",
+        "ques": "List **four key assumptions** of linear regression.",
+        "answer": {
+            "type": "text",
+            "content": "### Linear Regression Assumptions:\n\n| # | Assumption | Check Method |\n|---|------------|-------------|\n| 1 | **Linearity** | Scatter plot of x vs y |\n| 2 | **Independence** | Durbin-Watson test |\n| 3 | **Homoscedasticity** | Residual vs fitted plot |\n| 4 | **Normality of residuals** | Q-Q plot, Shapiro-Wilk test |\n\n### Additional:\n- No multicollinearity (for multiple regression)\n- No autocorrelation"
+        },
+        "explanation": "**Violating assumptions** can lead to unreliable model results."
+    },
+    {
+        "title": "Residual Analysis 🔍",
+        "ques": "What should a **residual plot** look like for a good linear regression model?",
+        "answer": {
+            "type": "text",
+            "content": "### Good Residual Plot:\n\n```\n     +  +      +\n   +     +  +\n---+--+--+--+--+--- (0 line)\n     +   +  +\n   +      +     +\n```\n\n### Characteristics:\n| Feature | Meaning |\n|---------|--------|\n| Random scatter | No pattern = good |\n| Centered at 0 | Unbiased predictions |\n| Constant spread | Homoscedasticity |\n\n### Red Flags:\n- Funnel shape = Heteroscedasticity\n- Curve pattern = Non-linearity\n- Clusters = Missing variable"
+        },
+        "explanation": "**Residual analysis** is essential for validating regression assumptions."
+    },
+    {
+        "title": "R-squared Interpretation 📊",
+        "ques": "If R² = 0.75, what does this tell you about the model?",
+        "answer": {
+            "type": "text",
+            "content": "### Interpretation:\n\n**R² = 0.75** means:\n- Model explains **75%** of variance in y\n- 25% remains unexplained\n\n### Guidelines:\n| R² Value | Interpretation |\n|----------|---------------|\n| 0.9+ | Excellent fit |\n| 0.7-0.9 | Good fit |\n| 0.5-0.7 | Moderate fit |\n| < 0.5 | Weak fit |\n\n### Caution:\n- High R² doesn't guarantee good predictions\n- Use Adjusted R² for multiple regression\n- Consider domain context"
+        },
+        "explanation": "**R²** measures the proportion of variance explained, not prediction quality."
+    },
+    {
+        "title": "Multicollinearity Detection 🔗",
+        "ques": "What is **multicollinearity** and how can you detect it?",
+        "answer": {
+            "type": "text",
+            "content": "### Multicollinearity:\n\n**Definition:** High correlation between independent variables.\n\n### Detection Methods:\n| Method | Threshold |\n|--------|----------|\n| Correlation matrix | r > 0.7 |\n| VIF (Variance Inflation Factor) | VIF > 5 or 10 |\n\n### Problems Caused:\n- Unstable coefficients\n- Inflated standard errors\n- Difficult interpretation\n\n### Solutions:\n- Remove one of correlated variables\n- Combine into single variable\n- Use regularization (Ridge)"
+        },
+        "explanation": "**Multicollinearity** makes coefficient estimates unreliable."
+    },
+    {
+        "title": "Multiple Regression Extension 📐",
+        "ques": "Write the equation for **multiple linear regression** with 3 predictors.",
+        "answer": {
+            "type": "text",
+            "content": "### Multiple Regression Equation:\n\n```\ny = β₀ + β₁x₁ + β₂x₂ + β₃x₃ + ε\n```\n\n### Example:\n```\nSalary = β₀ + β₁(Experience) + β₂(Education) + β₃(Age) + ε\n```\n\n### Interpretation:\n- β₁: Change in y for 1-unit increase in x₁, **holding x₂ and x₃ constant**\n\n### Matrix Form:\n```\nY = Xβ + ε\n```"
+        },
+        "explanation": "**Multiple regression** allows modeling with multiple predictors simultaneously."
+    },
+    {
+        "title": "Goodness of Fit Metrics 📏",
+        "ques": "Besides R², name **two other metrics** to evaluate regression model fit.",
+        "answer": {
+            "type": "text",
+            "content": "### Additional Metrics:\n\n| Metric | Formula | Interpretation |\n|--------|---------|---------------|\n| **RMSE** | √(Σ(y-ŷ)²/n) | Average prediction error in original units |\n| **MAE** | Σ|y-ŷ|/n | Average absolute error |\n\n### Comparison:\n| Metric | Sensitivity |\n|--------|-------------|\n| RMSE | More sensitive to large errors |\n| MAE | Treats all errors equally |\n| R² | Scale-independent |\n\n### Lower is better for RMSE and MAE"
+        },
+        "explanation": "Multiple **metrics** give a complete picture of model performance."
+    }
+]

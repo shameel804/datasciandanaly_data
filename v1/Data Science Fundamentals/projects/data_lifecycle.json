@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Data Collection Methods 📥",
+        "ques": "Name **four different methods** of data collection and provide a **real-world example** for each method.",
+        "answer": {
+            "type": "text",
+            "content": "### Data Collection Methods:\n\n| Method | Description | Real-World Example |\n|--------|-------------|--------------------|\n| **APIs** | Programmatic data retrieval | Twitter API for social media sentiment analysis |\n| **Web Scraping** | Extracting data from websites | Scraping e-commerce sites for price comparison |\n| **Surveys/Forms** | Direct user input collection | Google Forms for customer feedback |\n| **Database Queries** | Retrieving from existing systems | SQL queries on transaction databases |\n\n### Additional Methods:\n- **IoT Sensors** - Collecting real-time sensor data\n- **Log Files** - Server and application logs\n- **Third-party Data Providers** - Purchasing datasets\n- **Public Datasets** - Government open data portals"
+        },
+        "explanation": "Data collection is the **foundation** of any data science project. The method chosen depends on **data availability**, **quality requirements**, and **legal considerations**."
+    },
+    {
+        "title": "Data Preparation Checklist ✅",
+        "ques": "You've received a raw dataset. Create a **data preparation checklist** with **5 essential steps** that should be performed before analysis.",
+        "answer": {
+            "type": "text",
+            "content": "### Data Preparation Checklist:\n\n- [ ] **1. Assess Data Quality**\n  - Check for missing values percentage\n  - Identify duplicate records\n  - Verify data types are correct\n\n- [ ] **2. Handle Missing Values**\n  - Decide: impute, drop, or flag\n  - Document missing data patterns\n  - Consider domain knowledge for imputation\n\n- [ ] **3. Fix Data Inconsistencies**\n  - Standardize date formats\n  - Normalize text (case, whitespace)\n  - Resolve conflicting records\n\n- [ ] **4. Detect and Handle Outliers**\n  - Use statistical methods (IQR, Z-score)\n  - Investigate outliers for validity\n  - Decide: keep, cap, or remove\n\n- [ ] **5. Transform and Encode Data**\n  - Scale numerical features\n  - Encode categorical variables\n  - Create derived features if needed\n\n### **Time Investment:** Data preparation typically takes **60-80%** of a data science project!"
+        },
+        "explanation": "**Data preparation** is often the most time-consuming phase. Quality data preparation directly impacts **model accuracy** and **reliability** of insights."
+    },
+    {
+        "title": "Exploratory Data Analysis Techniques 🔍",
+        "ques": "List **three visualization techniques** and **two statistical methods** commonly used during Exploratory Data Analysis (EDA).",
+        "answer": {
+            "type": "text",
+            "content": "### EDA Techniques:\n\n#### 📊 Visualization Techniques:\n\n| Technique | Use Case | Purpose |\n|-----------|----------|--------|\n| **Histogram** | Numerical data distribution | Understand data spread and shape |\n| **Box Plot** | Outlier detection | Identify quartiles and outliers |\n| **Scatter Plot** | Variable relationships | Discover correlations and patterns |\n\n#### 📈 Statistical Methods:\n\n| Method | Purpose | Key Metrics |\n|--------|---------|-------------|\n| **Descriptive Statistics** | Summarize data | Mean, median, std, min, max |\n| **Correlation Analysis** | Measure relationships | Pearson/Spearman coefficients |\n\n### Python Example:\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Descriptive stats\ndf.describe()\n\n# Correlation\ndf.corr()\n\n# Histogram\ndf['column'].hist()\nplt.show()\n```"
+        },
+        "explanation": "**EDA** is a critical step to understand data characteristics before modeling. It helps identify **patterns**, **anomalies**, and **relationships** that inform further analysis."
+    },
+    {
+        "title": "Model Building Workflow 🔧",
+        "ques": "Arrange these model building steps in the **correct order**:\n\n- Hyperparameter Tuning\n- Cross-Validation\n- Feature Selection\n- Train-Test Split\n- Model Selection\n- Final Training",
+        "answer": {
+            "type": "text",
+            "content": "### Correct Model Building Order:\n\n1. **Train-Test Split** 📊\n   - Separate data into training and test sets\n   - Typical split: 80% train, 20% test\n\n2. **Feature Selection** 🎯\n   - Choose relevant features\n   - Remove redundant or irrelevant variables\n\n3. **Model Selection** 🤖\n   - Choose candidate algorithms\n   - Consider problem type (classification/regression)\n\n4. **Cross-Validation** 🔄\n   - Evaluate model on multiple folds\n   - Get robust performance estimate\n\n5. **Hyperparameter Tuning** ⚙️\n   - Optimize model parameters\n   - Use Grid Search or Random Search\n\n6. **Final Training** ✅\n   - Train on full training data\n   - Use best hyperparameters\n\n### Workflow Diagram:\n```\nData → Split → Features → Model → CV → Tune → Train → Evaluate\n```"
+        },
+        "explanation": "Following a **systematic workflow** prevents data leakage and ensures **reliable** model evaluation. The test set should only be used for **final evaluation**."
+    },
+    {
+        "title": "Model Deployment Strategies 🚀",
+        "ques": "Compare **three model deployment strategies** and describe when each is most appropriate.",
+        "answer": {
+            "type": "text",
+            "content": "### Model Deployment Strategies:\n\n| Strategy | Description | Best For |\n|----------|-------------|----------|\n| **Batch Processing** | Models run on scheduled intervals | Non-real-time predictions, large datasets |\n| **Real-time API** | On-demand predictions via REST/gRPC | Low-latency applications, web services |\n| **Edge Deployment** | Models run on local devices | IoT, mobile apps, offline scenarios |\n\n### Detailed Comparison:\n\n#### 1️⃣ Batch Processing\n- **Pros:** Cost-effective, handles large volumes\n- **Cons:** Not suitable for immediate decisions\n- **Example:** Nightly credit risk scoring\n\n#### 2️⃣ Real-time API\n- **Pros:** Immediate predictions, scalable\n- **Cons:** Requires infrastructure, higher cost\n- **Example:** Fraud detection at transaction time\n\n#### 3️⃣ Edge Deployment\n- **Pros:** Low latency, works offline\n- **Cons:** Limited compute power, harder updates\n- **Example:** Voice assistants on smartphones"
+        },
+        "explanation": "**Deployment strategy** depends on **latency requirements**, **infrastructure constraints**, and **business needs**. Many systems use a combination of strategies."
+    },
+    {
+        "title": "Model Monitoring Essentials 📡",
+        "ques": "A deployed model's performance has started degrading. List **four possible causes** and **monitoring metrics** to detect each issue.",
+        "answer": {
+            "type": "text",
+            "content": "### Model Degradation Causes & Monitoring:\n\n| Cause | Description | Monitoring Metric |\n|-------|-------------|-------------------|\n| **Data Drift** | Input data distribution changes | Statistical tests (KS test, PSI) |\n| **Concept Drift** | Relationship between features and target changes | Model accuracy over time |\n| **Feature Issues** | Missing or corrupted input features | Feature availability rate |\n| **Infrastructure Problems** | System latency or failures | Response time, error rates |\n\n### Monitoring Dashboard Components:\n\n```\n┌─────────────────────────────────┐\n│     MODEL HEALTH DASHBOARD      │\n├─────────────────────────────────┤\n│ ● Accuracy Trend    [█████░░] 74% │\n│ ● Data Drift Score  [██░░░░░] Low  │\n│ ● Latency (p95)     [████░░░] 120ms│\n│ ● Error Rate        [█░░░░░░] 0.5% │\n└─────────────────────────────────┘\n```\n\n### Alerting Thresholds:\n- **Accuracy** drops >5% → **Warning**\n- **Latency** exceeds 500ms → **Alert**\n- **Error rate** >2% → **Critical**"
+        },
+        "explanation": "**Continuous monitoring** is essential for production ML systems. Models can degrade over time due to changing data patterns and require **retraining** or adjustments."
+    },
+    {
+        "title": "Lifecycle Phase Identification 🔎",
+        "ques": "For each activity, identify which **Data Science Lifecycle phase** it belongs to:\n\n1. Calculating correlation coefficients\n2. Setting up a REST API endpoint\n3. Filling missing values with median\n4. Downloading data from an API\n5. Tracking prediction accuracy daily",
+        "answer": {
+            "type": "text",
+            "content": "### Activity-Phase Mapping:\n\n| # | Activity | Lifecycle Phase |\n|---|----------|----------------|\n| 1 | Calculating correlation coefficients | **Exploratory Analysis** 🔍 |\n| 2 | Setting up a REST API endpoint | **Deployment** 🚀 |\n| 3 | Filling missing values with median | **Data Preparation** 🧹 |\n| 4 | Downloading data from an API | **Data Collection** 📥 |\n| 5 | Tracking prediction accuracy daily | **Monitoring** 📡 |\n\n### Complete Lifecycle:\n```\n┌───────────────────────────────────────┐\n│  📥 Collection → 🧹 Preparation →    │\n│  🔍 Exploration → 🔧 Modeling →      │\n│  🚀 Deployment → 📡 Monitoring       │\n└───────────────────────────────────────┘\n      ↑                           |\n      └───────── Feedback ────────┘\n```"
+        },
+        "explanation": "Understanding which **phase** an activity belongs to helps organize work and ensures nothing is skipped. The lifecycle is **iterative** - monitoring feedback often leads back to earlier phases."
+    },
+    {
+        "title": "Data Quality Dimensions ⭐",
+        "ques": "Define the **six dimensions of data quality** and provide a **practical check** for each dimension.",
+        "answer": {
+            "type": "text",
+            "content": "### Six Dimensions of Data Quality:\n\n| Dimension | Definition | Practical Check |\n|-----------|------------|----------------|\n| **Accuracy** | Data correctly represents reality | Compare against trusted source |\n| **Completeness** | All required data is present | Check null/missing value counts |\n| **Consistency** | Data is uniform across sources | Cross-system validation |\n| **Timeliness** | Data is up-to-date | Check last update timestamp |\n| **Uniqueness** | No duplicate records exist | Identify and count duplicates |\n| **Validity** | Data conforms to defined formats | Validate against business rules |\n\n### Python Quality Checks:\n```python\n# Completeness\ndf.isnull().sum() / len(df) * 100\n\n# Uniqueness\ndf.duplicated().sum()\n\n# Validity (example: age > 0)\n(df['age'] > 0).all()\n```\n\n### Quality Score Card:\n```\nOverall Data Quality: 87%\n├── Accuracy:     92% ✅\n├── Completeness: 85% ⚠️\n├── Consistency:  90% ✅\n├── Timeliness:   88% ✅\n├── Uniqueness:   98% ✅\n└── Validity:     79% ⚠️\n```"
+        },
+        "explanation": "Data quality directly impacts **analysis reliability** and **model performance**. Regular quality assessments should be part of any data pipeline."
+    },
+    {
+        "title": "Version Control for Data Science 📚",
+        "ques": "Explain why **version control** is important in Data Science and list **three artifacts** that should be versioned.",
+        "answer": {
+            "type": "text",
+            "content": "### Importance of Version Control in Data Science:\n\n**Why It Matters:**\n- **Reproducibility** - Recreate exact results at any point\n- **Collaboration** - Multiple team members work together\n- **Experimentation** - Try different approaches safely\n- **Auditability** - Track who changed what and when\n- **Rollback** - Revert to previous working versions\n\n### Three Key Artifacts to Version:\n\n| Artifact | Tool | Purpose |\n|----------|------|--------|\n| **1. Code** | Git, GitHub | Track training scripts, notebooks, utilities |\n| **2. Data** | DVC, LakeFS | Version datasets, handle large files |\n| **3. Models** | MLflow, W&B | Track model weights, parameters, metrics |\n\n### Example Structure:\n```\nproject/\n├── .git/              # Code versioning\n├── .dvc/              # Data versioning\n├── data/\n│   └── dataset.csv.dvc\n├── models/\n│   └── model_v1.pkl\n├── src/\n│   └── train.py\n└── mlruns/            # Experiment tracking\n```"
+        },
+        "explanation": "**Version control** ensures **reproducibility** and **collaboration** in data science projects. Unlike software engineering, data science also needs to version **data** and **models**."
+    },
+    {
+        "title": "Complete Lifecycle Case Study 📋",
+        "ques": "A retail company wants to predict **customer churn**. Outline a **mini-plan** covering all six lifecycle phases with **one key activity** for each phase.",
+        "answer": {
+            "type": "text",
+            "content": "### Customer Churn Prediction - Lifecycle Plan:\n\n#### 📥 Phase 1: Data Collection\n**Activity:** Extract customer transaction history, demographics, and support tickets from data warehouse\n- Sources: CRM, transaction DB, support system\n- Time range: Last 24 months\n\n#### 🧹 Phase 2: Data Preparation\n**Activity:** Create target variable (churned = no purchase in 90 days) and clean inconsistencies\n- Handle missing values\n- Merge datasets on customer ID\n\n#### 🔍 Phase 3: Exploratory Analysis\n**Activity:** Analyze churn patterns across segments (age, purchase frequency, support contacts)\n- Identify key churn indicators\n- Visualize trends\n\n#### 🔧 Phase 4: Model Building\n**Activity:** Train and compare classification models (Logistic Regression, Random Forest, XGBoost)\n- Feature engineering: recency, frequency, monetary\n- Cross-validation for model selection\n\n#### 🚀 Phase 5: Deployment\n**Activity:** Deploy best model as scheduled batch job scoring customers weekly\n- Output: Churn probability scores\n- Integrate with marketing automation\n\n#### 📡 Phase 6: Monitoring\n**Activity:** Track model accuracy monthly and monitor for data drift\n- Dashboard with key metrics\n- Retrain trigger if accuracy drops"
+        },
+        "explanation": "This case study demonstrates how all **lifecycle phases connect** in a real business scenario. Each phase builds on the previous one and feeds into the next."
+    }
+]

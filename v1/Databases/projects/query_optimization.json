@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Query Optimizer 🧠",
+        "ques": "What is a **query optimizer**?",
+        "answer": {
+            "type": "text",
+            "content": "### Query Optimizer:\n\n**Purpose:** Find best execution plan.\n\n### Considers:\n- Available indexes\n- Table statistics\n- Join order\n- Access methods"
+        },
+        "explanation": "**Optimizer** chooses efficient query execution."
+    },
+    {
+        "title": "EXPLAIN Command 📋",
+        "ques": "How to use **EXPLAIN**?",
+        "answer": {
+            "type": "code",
+            "lang": "sql",
+            "content": "EXPLAIN ANALYZE\nSELECT * FROM orders\nWHERE customer_id = 123;"
+        },
+        "explanation": "**EXPLAIN** shows the query execution plan."
+    },
+    {
+        "title": "Index Strategies 📈",
+        "ques": "What **index types** exist?",
+        "answer": {
+            "type": "text",
+            "content": "### Index Types:\n\n| Type | Best For |\n|------|----------|\n| B-tree | Range queries |\n| Hash | Equality |\n| GIN | Full-text |\n| Composite | Multi-column |"
+        },
+        "explanation": "Choose **index type** based on query patterns."
+    },
+    {
+        "title": "Query Rewriting ✏️",
+        "ques": "How to **rewrite queries** for performance?",
+        "answer": {
+            "type": "text",
+            "content": "### Optimization Tips:\n\n| Instead Of | Use |\n|------------|-----|\n| SELECT * | Specific columns |\n| OR | UNION or IN |\n| NOT IN | NOT EXISTS |\n| Functions on columns | Avoid in WHERE |"
+        },
+        "explanation": "**Rewriting** can dramatically improve speed."
+    },
+    {
+        "title": "Statistics Updates 📊",
+        "ques": "Why **update statistics**?",
+        "answer": {
+            "type": "text",
+            "content": "### Statistics:\n\n**Purpose:** Help optimizer make good decisions.\n\n### Stale Stats Cause:\n- Poor plan choices\n- Slow queries\n\n### Command:\n```sql\nANALYZE table_name;\n```"
+        },
+        "explanation": "**Fresh statistics** enable optimal plans."
+    },
+    {
+        "title": "Connection Pooling 🔗",
+        "ques": "What is **connection pooling**?",
+        "answer": {
+            "type": "text",
+            "content": "### Connection Pooling:\n\n**Definition:** Reuse database connections.\n\n### Benefits:\n| Benefit | Value |\n|---------|------|\n| Faster | No connection overhead |\n| Efficient | Limit connections |\n| Stable | Prevent exhaustion |"
+        },
+        "explanation": "**Pooling** improves application performance."
+    }
+]

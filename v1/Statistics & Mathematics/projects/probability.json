@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Basic Probability Rules 🎲",
+        "ques": "What is the probability of rolling a **6** on a fair die, and what is the probability of NOT rolling a 6?",
+        "answer": {
+            "type": "text",
+            "content": "### Solution:\n\n**P(rolling 6):**\n```\nP(6) = 1/6 ≈ 0.167 or 16.7%\n```\n\n**P(NOT rolling 6):**\n```\nP(not 6) = 1 - P(6) = 1 - 1/6 = 5/6 ≈ 0.833 or 83.3%\n```\n\n### Complement Rule:\n```\nP(A') = 1 - P(A)\n```"
+        },
+        "explanation": "The **complement rule** is fundamental: probability of event NOT happening = 1 minus probability of it happening."
+    },
+    {
+        "title": "Addition Rule 🔢",
+        "ques": "In a deck of 52 cards, what is the probability of drawing a **King OR a Heart**?",
+        "answer": {
+            "type": "text",
+            "content": "### Solution:\n\n**Using Addition Rule (not mutually exclusive):**\n```\nP(King OR Heart) = P(King) + P(Heart) - P(King AND Heart)\n                 = 4/52 + 13/52 - 1/52\n                 = 16/52 = 4/13 ≈ 0.308\n```\n\n### Breakdown:\n| Event | Count | Probability |\n|-------|-------|-------------|\n| Kings | 4 | 4/52 |\n| Hearts | 13 | 13/52 |\n| King of Hearts | 1 | 1/52 (overlap) |"
+        },
+        "explanation": "When events **overlap**, subtract the intersection to avoid double-counting."
+    },
+    {
+        "title": "Bayes Theorem Application 🔍",
+        "ques": "A disease affects 1% of population. A test has 99% sensitivity and 95% specificity. If you test positive, what's the probability you have the disease?",
+        "answer": {
+            "type": "text",
+            "content": "### Bayes Theorem Solution:\n\n**Given:**\n- P(Disease) = 0.01\n- P(Positive|Disease) = 0.99 (sensitivity)\n- P(Negative|No Disease) = 0.95 (specificity)\n\n**Calculate:**\n```\nP(Positive) = P(Pos|D)·P(D) + P(Pos|No D)·P(No D)\n            = 0.99·0.01 + 0.05·0.99\n            = 0.0099 + 0.0495 = 0.0594\n\nP(Disease|Positive) = P(Pos|D)·P(D) / P(Pos)\n                    = (0.99 × 0.01) / 0.0594\n                    = 0.167 or 16.7%\n```\n\n### Key Insight:\nDespite 99% accurate test, only **16.7%** chance of having disease due to low base rate!"
+        },
+        "explanation": "**Bayes Theorem** updates probability based on new evidence. Base rate matters significantly."
+    },
+    {
+        "title": "Random Variables 📊",
+        "ques": "Distinguish between **discrete** and **continuous** random variables with examples.",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Type | Definition | Examples |\n|------|------------|----------|\n| **Discrete** | Countable values | Number of heads in coin flips, dice rolls |\n| **Continuous** | Any value in range | Height, weight, temperature |\n\n### Key Differences:\n\n| Aspect | Discrete | Continuous |\n|--------|----------|------------|\n| Values | Integers/countable | Any real number |\n| Probability | P(X = x) > 0 | P(X = x) = 0 |\n| Distribution | PMF | PDF |\n| Example | Binomial | Normal |"
+        },
+        "explanation": "**Discrete** variables are countable; **continuous** can take any value in a range."
+    },
+    {
+        "title": "Expected Value Calculation 🎯",
+        "ques": "A game costs $5 to play. You win $20 with probability 0.2 and $0 otherwise. What is the **expected value**?",
+        "answer": {
+            "type": "text",
+            "content": "### Solution:\n\n**Expected Winnings:**\n```\nE(Winnings) = (0.2 × $20) + (0.8 × $0)\n            = $4 + $0 = $4\n```\n\n**Expected Profit:**\n```\nE(Profit) = E(Winnings) - Cost\n          = $4 - $5 = -$1\n```\n\n### Interpretation:\nOn average, you **lose $1** per game. Not a fair game!\n\n| Outcome | Probability | Value | Expected |\n|---------|-------------|-------|----------|\n| Win | 0.2 | $20 | $4 |\n| Lose | 0.8 | $0 | $0 |\n| **Cost** | - | -$5 | -$5 |\n| **Net** | - | - | **-$1** |"
+        },
+        "explanation": "**Expected value** is the long-run average outcome. Use it to evaluate decisions."
+    },
+    {
+        "title": "Probability Distributions Match 📈",
+        "ques": "Which distribution would you use for: (a) number of defects per batch, (b) time until next customer arrives?",
+        "answer": {
+            "type": "text",
+            "content": "### Answers:\n\n| Scenario | Distribution | Reasoning |\n|----------|--------------|----------|\n| (a) Defects per batch | **Poisson** | Counting rare events in fixed interval |\n| (b) Time until arrival | **Exponential** | Time between events |\n\n### Distribution Guide:\n\n| Distribution | Use When |\n|--------------|----------|\n| **Binomial** | n trials, success/failure |\n| **Poisson** | Count of events in fixed time/space |\n| **Exponential** | Time/distance between events |\n| **Normal** | Continuous, symmetric data |"
+        },
+        "explanation": "Matching the **right distribution** to the scenario is key to correct analysis."
+    },
+    {
+        "title": "Conditional Probability 🔄",
+        "ques": "If P(A) = 0.3, P(B) = 0.4, and P(A ∩ B) = 0.12, find P(A|B).",
+        "answer": {
+            "type": "text",
+            "content": "### Solution:\n\n**Conditional Probability Formula:**\n```\nP(A|B) = P(A ∩ B) / P(B)\n       = 0.12 / 0.4\n       = 0.3\n```\n\n### Interpretation:\n- Given B has occurred, probability of A is **30%**\n\n### Independence Check:\n```\nIf independent: P(A ∩ B) = P(A) × P(B)\n                0.3 × 0.4 = 0.12 ✓\n```\nThese events ARE independent since P(A|B) = P(A) = 0.3"
+        },
+        "explanation": "**Conditional probability** answers: what's the probability of A, given B occurred?"
+    },
+    {
+        "title": "Law of Large Numbers 📏",
+        "ques": "Explain the **Law of Large Numbers** with a coin flip example.",
+        "answer": {
+            "type": "text",
+            "content": "### Law of Large Numbers:\n\n**Statement:** As sample size increases, sample mean approaches population mean.\n\n**Coin Flip Example:**\n\n| Flips | Expected Heads | Likely Range |\n|-------|----------------|-------------|\n| 10 | 5 (50%) | 3-7 (30%-70%) |\n| 100 | 50 (50%) | 45-55 (45%-55%) |\n| 10,000 | 5,000 (50%) | 4,900-5,100 (49%-51%) |\n\n### Visual:\n```\nFlips:  10    100   1000  10000\nRange: ±20%  ±5%   ±2%   ±0.5%\n       ↓     ↓     ↓     ↓\n       Converges to 50%\n```"
+        },
+        "explanation": "**More data = better estimates.** This justifies using large samples for reliable conclusions."
+    }
+]

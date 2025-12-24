@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Associative Engine 🔗",
+        "ques": "What is Qlik's **associative engine**?",
+        "answer": {
+            "type": "text",
+            "content": "### Associative Engine:\n\n**Definition:** Qlik's in-memory data engine that maintains all relationships.\n\n### How It Works:\n- All data loaded into memory\n- Associations inferred automatically\n- Selecting data shows related and unrelated items\n\n### Visual Cues:\n| Color | Meaning |\n|-------|--------|\n| Green | Selected |\n| White | Associated |\n| Gray | Not associated |"
+        },
+        "explanation": "**Associative model** enables free-form exploration."
+    },
+    {
+        "title": "Data Modeling in Qlik 📊",
+        "ques": "What data model patterns are used in **Qlik Sense**?",
+        "answer": {
+            "type": "text",
+            "content": "### Data Model Patterns:\n\n| Pattern | Description |\n|---------|-------------|\n| **Star Schema** | Fact with dimension tables |\n| **Snowflake** | Normalized dimensions |\n| **Direct Discovery** | Query source directly |\n\n### Best Practices:\n- Use QVDs for performance\n- Avoid circular references\n- Link tables resolve many-to-many"
+        },
+        "explanation": "Proper **data modeling** is key to Qlik performance."
+    },
+    {
+        "title": "Set Analysis 📐",
+        "ques": "What is **Set Analysis** in Qlik?",
+        "answer": {
+            "type": "text",
+            "content": "### Set Analysis:\n\n**Definition:** Modify the set of data used in aggregation.\n\n### Syntax:\n```\nSum({<Year={2023}>} Sales)\n```\n\n### Use Cases:\n- Compare to different periods\n- Ignore current selections\n- Create benchmarks\n\n### Operators:\n| Operator | Meaning |\n|----------|--------|\n| $ | Current selection |\n| 1 | Full data set |\n| < > | Set modifier |"
+        },
+        "explanation": "**Set Analysis** enables complex comparison calculations."
+    },
+    {
+        "title": "Scripting Basics 📝",
+        "ques": "What is the **load script** in Qlik?",
+        "answer": {
+            "type": "text",
+            "content": "### Load Script:\n\n**Definition:** Script that loads and transforms data.\n\n### Structure:\n```qlik\nLOAD\n  Field1,\n  Field2,\n  Field3\nFROM DataSource;\n```\n\n### Capabilities:\n- Connect to sources\n- Transform data\n- Create new fields\n- Join tables"
+        },
+        "explanation": "**Load script** controls data ingestion and transformation."
+    },
+    {
+        "title": "Extensions and Mashups 🔧",
+        "ques": "What are **extensions** in Qlik Sense?",
+        "answer": {
+            "type": "text",
+            "content": "### Extensions:\n\n**Definition:** Custom visualizations built with web technologies.\n\n### Types:\n| Type | Purpose |\n|------|--------|\n| **Visualization** | Custom chart types |\n| **Mashup** | Embed Qlik in web apps |\n| **Widget** | Custom objects |\n\n### Built With:\n- JavaScript\n- HTML/CSS\n- Qlik APIs"
+        },
+        "explanation": "**Extensions** expand Qlik beyond built-in capabilities."
+    },
+    {
+        "title": "Master Items 📋",
+        "ques": "What are **master items** in Qlik Sense?",
+        "answer": {
+            "type": "text",
+            "content": "### Master Items:\n\n**Definition:** Reusable, governed definitions.\n\n### Types:\n| Type | Purpose |\n|------|--------|\n| **Dimensions** | Reusable fields |\n| **Measures** | Reusable calculations |\n| **Visualizations** | Reusable charts |\n\n### Benefits:\n- Consistency across reports\n- Single point of change\n- Governance"
+        },
+        "explanation": "**Master items** ensure consistency and governance."
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "title": "LookML Modeling Basics 📐",
+        "ques": "What is **LookML** in Looker?",
+        "answer": {
+            "type": "text",
+            "content": "### LookML:\n\n**Definition:** Looker's language for defining data models.\n\n### Key Concepts:\n| Concept | Purpose |\n|---------|--------|\n| **Views** | Define tables/columns |\n| **Explores** | Define joins/relationships |\n| **Dimensions** | Categorical fields |\n| **Measures** | Aggregated values |\n\n### Benefit:\nCentralized, reusable data definitions."
+        },
+        "explanation": "**LookML** creates a semantic layer over your database."
+    },
+    {
+        "title": "Explores Configuration 🔍",
+        "ques": "What is an **Explore** in Looker?",
+        "answer": {
+            "type": "text",
+            "content": "### Explores:\n\n**Definition:** Starting points for user queries.\n\n### Configure:\n- Which views to include\n- How views join together\n- Default fields shown\n- Access controls\n\n### Example:\n```lookml\nexplore: orders {\n  join: customers {\n    sql_on: ${orders.customer_id} = ${customers.id} ;;\n  }\n}\n```"
+        },
+        "explanation": "**Explores** define what users can query and how."
+    },
+    {
+        "title": "Dashboard Creation 📊",
+        "ques": "How do you create a **dashboard** in Looker?",
+        "answer": {
+            "type": "text",
+            "content": "### Dashboard Creation Steps:\n\n1. Create Looks (individual visualizations)\n2. New Dashboard → Add tiles\n3. Arrange and configure tiles\n4. Add filters and cross-filtering\n5. Set refresh schedule\n\n### Tile Types:\n- Visualization\n- Text\n- Markdown\n- Button"
+        },
+        "explanation": "**Dashboards** combine Looks into cohesive views."
+    },
+    {
+        "title": "Liquid Templates 🌊",
+        "ques": "What is **Liquid** used for in Looker?",
+        "answer": {
+            "type": "text",
+            "content": "### Liquid in Looker:\n\n**Definition:** Templating language for dynamic content.\n\n### Use Cases:\n| Use | Example |\n|-----|--------|\n| Dynamic labels | Change based on filter |\n| Conditional SQL | Different logic per selection |\n| Custom links | Dynamic URLs |\n\n### Syntax:\n```\n{% if condition %}\n  do something\n{% endif %}\n```"
+        },
+        "explanation": "**Liquid** enables dynamic, conditional content in LookML."
+    },
+    {
+        "title": "Git Integration 🔄",
+        "ques": "How does Looker integrate with **Git**?",
+        "answer": {
+            "type": "text",
+            "content": "### Git Integration:\n\n**Purpose:** Version control for LookML.\n\n### Workflow:\n1. Create branch\n2. Make LookML changes\n3. Pull request\n4. Code review\n5. Merge to production\n\n### Benefits:\n- Version history\n- Collaboration\n- Rollback capability"
+        },
+        "explanation": "**Git** enables safe, collaborative LookML development."
+    },
+    {
+        "title": "Derived Tables 📋",
+        "ques": "What is a **derived table** in Looker?",
+        "answer": {
+            "type": "text",
+            "content": "### Derived Tables:\n\n**Definition:** Tables created from SQL queries or LookML.\n\n### Types:\n| Type | Description |\n|------|-------------|\n| **SQL-based** | Raw SQL defines table |\n| **Native** | LookML defines structure |\n| **Persistent (PDT)** | Cached for performance |\n\n### Use Case:\nPre-aggregate data, complex transformations."
+        },
+        "explanation": "**Derived tables** create reusable, computed datasets."
+    }
+]

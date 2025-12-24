@@ -1,0 +1,56 @@
+[
+    {
+        "title": "DAGs Concept 📊",
+        "ques": "What is a **DAG** in Airflow?",
+        "answer": {
+            "type": "text",
+            "content": "### Directed Acyclic Graph:\n\n**Definition:** Workflow of tasks with dependencies.\n\n### Properties:\n- Directed: Tasks flow one way\n- Acyclic: No circular dependencies\n- Graph: Multiple paths possible"
+        },
+        "explanation": "**DAGs** define workflow structure."
+    },
+    {
+        "title": "Operators Types 🔧",
+        "ques": "What are Airflow **operators**?",
+        "answer": {
+            "type": "text",
+            "content": "### Operator Types:\n\n| Type | Use |\n|------|-----|\n| BashOperator | Shell commands |\n| PythonOperator | Python functions |\n| SQLOperator | Database queries |\n| SensorOperator | Wait for condition |"
+        },
+        "explanation": "**Operators** define task types."
+    },
+    {
+        "title": "Sensors Usage 👁️",
+        "ques": "What are **sensors**?",
+        "answer": {
+            "type": "text",
+            "content": "### Sensors:\n\n**Definition:** Wait for external condition.\n\n### Types:\n| Sensor | Waits For |\n|--------|-----------|\n| FileSensor | File exists |\n| S3Sensor | S3 object |\n| HTTPSensor | HTTP response |\n| TimeSensor | Time of day |"
+        },
+        "explanation": "**Sensors** handle external dependencies."
+    },
+    {
+        "title": "Hooks Integration 🔗",
+        "ques": "What are **hooks** in Airflow?",
+        "answer": {
+            "type": "text",
+            "content": "### Hooks:\n\n**Definition:** Connect to external systems.\n\n### Examples:\n| Hook | Connection |\n|------|------------|\n| PostgresHook | PostgreSQL |\n| S3Hook | AWS S3 |\n| HttpHook | REST APIs |"
+        },
+        "explanation": "**Hooks** abstract external connections."
+    },
+    {
+        "title": "Custom Operators ⚙️",
+        "ques": "When to create **custom operators**?",
+        "answer": {
+            "type": "text",
+            "content": "### Custom Operators:\n\n**When:**\n- Reusable task patterns\n- Complex logic encapsulation\n- Custom integrations\n\n### How:\nExtend BaseOperator and implement execute()"
+        },
+        "explanation": "**Custom operators** promote reusability."
+    },
+    {
+        "title": "Scaling Airflow 📈",
+        "ques": "How to **scale Airflow**?",
+        "answer": {
+            "type": "text",
+            "content": "### Scaling Options:\n\n| Executor | Scale |\n|----------|-------|\n| Local | Single machine |\n| Celery | Worker pool |\n| Kubernetes | K8s pods |\n\n### Tips:\n- Tune parallelism\n- Use pools\n- Optimize DAGs"
+        },
+        "explanation": "**Executor choice** determines scalability."
+    }
+]

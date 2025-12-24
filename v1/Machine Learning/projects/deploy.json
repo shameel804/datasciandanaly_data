@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Model Serialization 💾",
+        "ques": "What is **model serialization**?",
+        "answer": {
+            "type": "text",
+            "content": "### Model Serialization:\n\n**Definition:** Saving trained model to file.\n\n### Formats:\n| Format | Library |\n|--------|--------|\n| **Pickle** | Python stdlib |\n| **Joblib** | Scikit-learn |\n| **ONNX** | Cross-platform |\n| **SavedModel** | TensorFlow |\n\n```python\nimport joblib\njoblib.dump(model, 'model.pkl')\nmodel = joblib.load('model.pkl')\n```"
+        },
+        "explanation": "**Serialization** saves models for later use."
+    },
+    {
+        "title": "API Deployment 🌐",
+        "ques": "How do you serve a model via **API**?",
+        "answer": {
+            "type": "text",
+            "content": "### API Deployment:\n\n### Steps:\n1. Load saved model\n2. Create API endpoint\n3. Accept input data\n4. Return predictions\n\n### Frameworks:\n| Framework | Use Case |\n|-----------|----------|\n| **Flask** | Simple, lightweight |\n| **FastAPI** | Modern, async |\n| **Django** | Full-featured |"
+        },
+        "explanation": "**APIs** make models accessible to applications."
+    },
+    {
+        "title": "Cloud Deployment ☁️",
+        "ques": "What **cloud options** exist for ML deployment?",
+        "answer": {
+            "type": "text",
+            "content": "### Cloud Deployment Options:\n\n| Platform | Service |\n|----------|--------|\n| **AWS** | SageMaker |\n| **GCP** | Vertex AI |\n| **Azure** | Azure ML |\n\n### Benefits:\n- Scalability\n- Managed infrastructure\n- Monitoring built-in\n- Auto-scaling"
+        },
+        "explanation": "**Cloud platforms** simplify production ML."
+    },
+    {
+        "title": "Containerization 🐳",
+        "ques": "Why use **Docker** for ML deployment?",
+        "answer": {
+            "type": "text",
+            "content": "### Docker Benefits:\n\n| Benefit | Reason |\n|---------|--------|\n| **Reproducibility** | Same environment everywhere |\n| **Portability** | Run anywhere |\n| **Isolation** | Dependencies contained |\n| **Scaling** | Easy to replicate |\n\n### Dockerfile:\n```dockerfile\nFROM python:3.9\nCOPY . /app\nRUN pip install -r requirements.txt\nCMD [\"python\", \"app.py\"]\n```"
+        },
+        "explanation": "**Containers** ensure consistent deployment."
+    },
+    {
+        "title": "Monitoring in Production 📊",
+        "ques": "What should you **monitor** for deployed models?",
+        "answer": {
+            "type": "text",
+            "content": "### Monitoring Metrics:\n\n| Category | Metrics |\n|----------|--------|\n| **Performance** | Latency, throughput |\n| **Model** | Accuracy, drift |\n| **Infrastructure** | CPU, memory |\n| **Data** | Input distribution |\n\n### Alerts:\n- Accuracy drops\n- High latency\n- Data drift detected"
+        },
+        "explanation": "**Monitoring** ensures models work correctly in production."
+    },
+    {
+        "title": "CI/CD for ML 🔄",
+        "ques": "What is **MLOps**?",
+        "answer": {
+            "type": "text",
+            "content": "### MLOps:\n\n**Definition:** DevOps practices applied to ML.\n\n### Components:\n| Component | Purpose |\n|-----------|--------|\n| Version control | Code, data, models |\n| CI/CD | Automated testing, deployment |\n| Monitoring | Track production models |\n| Automation | Retrain pipelines |\n\n### Tools: MLflow, Kubeflow, DVC"
+        },
+        "explanation": "**MLOps** operationalizes ML at scale."
+    }
+]

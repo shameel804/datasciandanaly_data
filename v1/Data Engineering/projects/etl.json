@@ -1,0 +1,56 @@
+[
+    {
+        "title": "ETL Definition 🔄",
+        "ques": "What is **ETL**?",
+        "answer": {
+            "type": "text",
+            "content": "### Extract, Transform, Load:\n\n| Phase | Action |\n|-------|--------|\n| **Extract** | Get data from sources |\n| **Transform** | Clean, enrich, combine |\n| **Load** | Store in target system |"
+        },
+        "explanation": "**ETL** moves data between systems."
+    },
+    {
+        "title": "Extraction Methods 📥",
+        "ques": "What **extraction methods** exist?",
+        "answer": {
+            "type": "text",
+            "content": "### Extraction Types:\n\n| Method | Description |\n|--------|-------------|\n| **Full** | All data each time |\n| **Incremental** | Only new/changed |\n| **CDC** | Change Data Capture |"
+        },
+        "explanation": "**Incremental** is preferred for efficiency."
+    },
+    {
+        "title": "Transformation Logic ⚙️",
+        "ques": "What **transformations** are common?",
+        "answer": {
+            "type": "text",
+            "content": "### Common Transformations:\n\n| Type | Example |\n|------|--------|\n| Cleaning | Remove nulls |\n| Mapping | Code to description |\n| Aggregation | Sum, average |\n| Joins | Combine tables |"
+        },
+        "explanation": "**Transformations** prepare data for analysis."
+    },
+    {
+        "title": "Loading Strategies 📤",
+        "ques": "What **loading strategies** exist?",
+        "answer": {
+            "type": "text",
+            "content": "### Load Strategies:\n\n| Strategy | Description |\n|----------|-------------|\n| **Full refresh** | Replace all data |\n| **Append** | Add new rows |\n| **Upsert** | Update or insert |"
+        },
+        "explanation": "Choose **strategy** based on requirements."
+    },
+    {
+        "title": "Data Validation ✅",
+        "ques": "Why is **validation** important in ETL?",
+        "answer": {
+            "type": "text",
+            "content": "### Validation Points:\n\n| Check | Purpose |\n|-------|--------|\n| Row counts | Data completeness |\n| Data types | Format correctness |\n| Business rules | Logical validity |\n| Referential | Relationship integrity |"
+        },
+        "explanation": "**Validation** catches errors early."
+    },
+    {
+        "title": "ETL vs ELT 🔀",
+        "ques": "What's the difference between **ETL and ELT**?",
+        "answer": {
+            "type": "text",
+            "content": "### Comparison:\n\n| Aspect | ETL | ELT |\n|--------|-----|-----|\n| Transform where | Before load | After load |\n| Best for | On-premise | Cloud DW |\n| Flexibility | Less | More |"
+        },
+        "explanation": "**ELT** leverages destination compute power."
+    }
+]
